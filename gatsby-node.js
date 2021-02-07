@@ -1,6 +1,22 @@
 const path = require(`path`)
 const { createFilePath } = require(`gatsby-source-filesystem`)
 
+/**
+ * Returns the current date in YYYY-MM-DD format
+ */
+function getCurrentDate() {
+  const d = new Date()
+  let month = (d.getMonth() + 1).toString()
+  if (month.length < 2) {
+    month = `0${month}`
+  }
+  let day = d.getDate().toString()
+  if (day.length < 2) {
+    day = `0${day}`
+  }
+  return `${d.getFullYear()}-${month}-${day}`
+}
+
 exports.createPages = async ({ graphql, actions, reporter }) => {
   const { createPage } = actions
 
@@ -10,8 +26,14 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
   // Get all markdown blog posts sorted by date
   const result = await graphql(
     `
-      {
-        allMarkdownRemark(
+    query GetPublishedBlogPosts($currentDate: Date!){
+        allMdx(
+          filter: {
+            frontmatter: {
+              published: { eq: true },
+              date: { lte: $currentDate }
+            }
+          }
           sort: { fields: [frontmatter___date], order: ASC }
           limit: 1000
         ) {
@@ -26,6 +48,31 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
     `
   )
 
+  // Get all markdown blog posts sorted by date
+  // const result = await graphql(
+  //   ` 
+  //     query getBlogPosts($currentDate: Date!) {
+  //       allMdx(
+  //         filter: {
+  //           frontmatter: {
+  //             published: { eq: true }
+  //             deadline: { gte: $currentDate }
+  //           }
+  //         }
+  //         sort: { fields: [frontmatter___date], order: ASC }
+  //         limit: 1000
+  //         ) {
+  //           nodes {
+  //             id
+  //             fields {
+  //               slug
+  //             }
+  //           }
+  //         }
+  //       }
+  //   `
+  // )
+
   if (result.errors) {
     reporter.panicOnBuild(
       `There was an error loading your blog posts`,
@@ -34,7 +81,7 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
     return
   }
 
-  const posts = result.data.allMarkdownRemark.nodes
+  const posts = result.data.allMdx.nodes
 
   // Create blog posts pages
   // But only if there's at least one markdown file found at "content/blog" (defined in gatsby-config.js)
@@ -52,6 +99,7 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
           id: post.id,
           previousPostId,
           nextPostId,
+          currentDate: getCurrentDate()
         },
       })
     })
@@ -61,7 +109,7 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
 exports.onCreateNode = ({ node, actions, getNode }) => {
   const { createNodeField } = actions
 
-  if (node.internal.type === `MarkdownRemark`) {
+  if (node.internal.type === `Mdx`) {
     const value = createFilePath({ node, getNode })
 
     createNodeField({
@@ -97,7 +145,7 @@ exports.createSchemaCustomization = ({ actions }) => {
       twitter: String
     }
 
-    type MarkdownRemark implements Node {
+    type Mdx implements Node {
       frontmatter: Frontmatter
       fields: Fields
     }
@@ -106,6 +154,7 @@ exports.createSchemaCustomization = ({ actions }) => {
       title: String
       description: String
       date: Date @dateformat
+      published: Boolean
     }
 
     type Fields {
