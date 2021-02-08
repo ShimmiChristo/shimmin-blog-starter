@@ -2,7 +2,6 @@ import React from "react"
 import { Link, graphql } from "gatsby"
 import { MDXRenderer } from "gatsby-plugin-mdx"
 
-
 import Bio from "../components/bio"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
@@ -28,7 +27,7 @@ const BlogPostTemplate = ({ data, location }) => {
           <p>{post.frontmatter.date}</p>
         </header>
         <section>
-          <MDXRenderer itemProp="articleBody">{ post.body }</MDXRenderer>
+          <MDXRenderer itemProp="articleBody">{post.body}</MDXRenderer>
         </section>
         <hr />
         <footer>
@@ -72,13 +71,14 @@ export const pageQuery = graphql`
     $id: String!
     $previousPostId: String
     $nextPostId: String
+    $currentDate: Date!
   ) {
-    site {
+  site {
       siteMetadata {
         title
       }
     }
-    mdx(id: { eq: $id }) {
+    mdx(id: { eq: $id }, frontmatter: {date: {lte: $currentDate}}) {
       id
       excerpt(pruneLength: 160)
       body
@@ -88,7 +88,7 @@ export const pageQuery = graphql`
         description
       }
     }
-    previous: mdx(id: { eq: $previousPostId }) {
+    previous: mdx(id: { eq: $previousPostId }, frontmatter: {date: {lte: $currentDate}}) {
       fields {
         slug
       }
@@ -96,7 +96,7 @@ export const pageQuery = graphql`
         title
       }
     }
-    next: mdx(id: { eq: $nextPostId }) {
+    next: mdx(id: { eq: $nextPostId }, frontmatter: {date: {lte: $currentDate}}) {
       fields {
         slug
       }

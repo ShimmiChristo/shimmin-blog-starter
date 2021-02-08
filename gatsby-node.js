@@ -26,12 +26,11 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
   // Get all markdown blog posts sorted by date
   const result = await graphql(
     `
-    query GetPublishedBlogPosts($currentDate: Date!){
+    query GetPublishedBlogPosts {
         allMdx(
           filter: {
             frontmatter: {
               published: { eq: true },
-              date: { lte: $currentDate }
             }
           }
           sort: { fields: [frontmatter___date], order: ASC }
@@ -47,31 +46,6 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
       }
     `
   )
-
-  // Get all markdown blog posts sorted by date
-  // const result = await graphql(
-  //   ` 
-  //     query getBlogPosts($currentDate: Date!) {
-  //       allMdx(
-  //         filter: {
-  //           frontmatter: {
-  //             published: { eq: true }
-  //             deadline: { gte: $currentDate }
-  //           }
-  //         }
-  //         sort: { fields: [frontmatter___date], order: ASC }
-  //         limit: 1000
-  //         ) {
-  //           nodes {
-  //             id
-  //             fields {
-  //               slug
-  //             }
-  //           }
-  //         }
-  //       }
-  //   `
-  // )
 
   if (result.errors) {
     reporter.panicOnBuild(
