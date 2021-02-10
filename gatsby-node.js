@@ -26,13 +26,9 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
   // Get all markdown blog posts sorted by date
   const result = await graphql(
     `
-    query GetPublishedBlogPosts {
+      query GetPublishedBlogPosts {
         allMdx(
-          filter: {
-            frontmatter: {
-              published: { eq: true },
-            }
-          }
+          filter: { frontmatter: { published: { eq: true } } }
           sort: { fields: [frontmatter___date], order: ASC }
           limit: 1000
         ) {
@@ -73,7 +69,7 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
           id: post.id,
           previousPostId,
           nextPostId,
-          currentDate: getCurrentDate()
+          currentDate: getCurrentDate(),
         },
       })
     })
@@ -83,8 +79,13 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
 exports.onCreateNode = ({ node, actions, getNode }) => {
   const { createNodeField } = actions
 
-  if (node.internal.type === `Mdx`) {
-    const value = createFilePath({ node, getNode })
+  if (node.internal.type === `Mdx` && node.frontmatter.category === `blog`) {
+    const value = `/blog${createFilePath({
+      node,
+      getNode,
+      basePath: `blog/`,
+      trailingSlash: false,
+    })}`
 
     createNodeField({
       name: `slug`,
