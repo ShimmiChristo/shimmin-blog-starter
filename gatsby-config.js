@@ -7,9 +7,29 @@ module.exports = {
     },
     description: `A Gatsby starter for blogs`,
     siteUrl: `https://gatsby-starter-blog-demo.netlify.app/`,
+    headline: '',
+    description: '',
+    image: '',
+    video: '',
+    twitter: '',
+    name: '',
+    logo: '',
     social: {
       twitter: `shimmiChristo`,
+      instagram: 'shimmiChristo',
+      youtube: ''
     },
+    nav: [
+      {
+        name: 'Home',
+        link: '/'
+      },
+      {
+        name: 'Blog',
+        link: '/blog'
+      },
+    ],
+    
   },
   plugins: [
     {
@@ -97,6 +117,7 @@ module.exports = {
       },
     },
     `gatsby-plugin-sitemap`,
+    `gatsby-plugin-fontawesome-css`
 
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
