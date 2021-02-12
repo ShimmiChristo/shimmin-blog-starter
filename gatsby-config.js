@@ -4,32 +4,34 @@ module.exports = {
     author: {
       name: `Chris Shimmin`,
       summary: `who lives in NYC and makes things`,
+      website: `https://www.chrisshimmin.com`,
     },
     description: `A Gatsby starter for blogs`,
     siteUrl: `https://gatsby-starter-blog-demo.netlify.app/`,
-    headline: '',
-    description: '',
-    image: '',
-    video: '',
-    twitter: '',
-    name: '',
-    logo: '',
+    headline: ``,
+    description: ``,
+    image: ``,
+    video: ``,
+    twitter: ``,
+    name: ``,
+    logo: ``,
     social: {
-      twitter: `shimmiChristo`,
-      instagram: 'shimmiChristo',
-      youtube: ''
+      twitter: "shimmiChristo",
+      instagram: "shimmiChristo",
+      youtube: `shimdoggy`,
+      facebook: ``,
+      github: `shimmiChristo`
     },
     nav: [
       {
-        name: 'Home',
-        link: '/'
+        name: "Home",
+        link: "/",
       },
       {
-        name: 'Blog',
-        link: '/blog'
+        name: "Blog",
+        link: "/blog",
       },
     ],
-    
   },
   plugins: [
     {
@@ -117,7 +119,7 @@ module.exports = {
       },
     },
     `gatsby-plugin-sitemap`,
-    `gatsby-plugin-fontawesome-css`
+    `gatsby-plugin-fontawesome-css`,
 
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline

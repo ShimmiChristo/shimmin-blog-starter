@@ -7,6 +7,17 @@ export const useSiteMetadata = () => {
           id
           siteMetadata {
             title
+            author {
+              name
+              website
+            }
+            social {
+              twitter
+              instagram
+              youtube
+              facebook
+              github
+            }
             nav {
               name
               link
