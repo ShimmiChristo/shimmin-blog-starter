@@ -10,6 +10,8 @@ export const useSiteMetadata = () => {
             author {
               name
               website
+              email
+              phone
             }
             social {
               twitter

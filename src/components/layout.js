@@ -26,11 +26,7 @@ const Layout = ({ location, title, children }) => {
     <div data-is-root-path={isRootPath}>
       <Header></Header>
       <main className="global-wrapper">{children}</main>
-      <Footer>
-        © {new Date().getFullYear()}, Built by
-        {` `}
-        <a href="https://www.chrisshimmin.com">Chris Shimmin</a>
-      </Footer>
+      <Footer></Footer>
     </div>
   )
 }

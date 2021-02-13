@@ -1,9 +1,10 @@
 import React from "react"
 import { Link, graphql } from "gatsby"
 
-import Bio from "../components/bio"
+import AuthorBio from "../components/author-bio"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+import Aboutme from "../components/aboutme"
 
 const Homepage = ({ data, location }) => {
   const siteTitle = data.site.siteMetadata?.title || `Title`
@@ -12,12 +13,13 @@ const Homepage = ({ data, location }) => {
   return (
     <Layout location={location} title={siteTitle}>
       <SEO title="Home Page" />
-      <Bio />
+      <AuthorBio />
         <div>
           <ul style={{ listStyle: `none` }}>
             <li><Link to="/blog">Blog</Link></li>
           </ul>
         </div>
+      <Aboutme />
 
     </Layout>
   )

@@ -1,12 +1,12 @@
 import React from "react"
 import { Link } from "gatsby"
 import { useSiteMetadata } from "../hooks/use-site-metadata"
-import PropTypes from "prop-types"
+// import PropTypes from "prop-types"
 import styled from "styled-components"
 
 const FooterContainer = styled.footer`
-  background-color: #f6f6f6;
-  padding: 2rem 0 1rem;
+  background-color: var(--color-brand-gray-6);
+  padding: 1rem 0 1rem;
 `
 const FooterColumns = styled.div`
   display: flex;
@@ -15,6 +15,7 @@ const FooterColumns = styled.div`
 
   @media (max-width: 767px) {
     flex-direction: column;
+    padding: 0 0 2rem;
   }
 `
 const FooterColumn = styled.div`
@@ -25,11 +26,17 @@ const FooterColumn = styled.div`
   @media (max-width: 767px) {
     max-width: 100%;
     padding: 0 2rem;
-    margin-bottom: 2rem;
+    margin-bottom: 0;
+    flex-direction: row;
+    flex-wrap: wrap;
+    
+    & h4 {
+      flex: 0 0 100%;
+    }
   }
-
   & li {
     list-style: none;
+    padding: 0 0.2rem;
   }
 `
 const FooterCopy = styled.div`
@@ -53,13 +60,11 @@ function Footer() {
         <FooterColumn>
           <h4 className="footer__title">Follow</h4>
           <li className="footer__item">
-            <a href={`https://twitter.com/${social?.twitter || ``}`}>
-              Twitter
-            </a>
+            <a href={`https://twitter.com/${social?.twitter || ``}`}>Twitter</a>
           </li>
           <li className="footer__item">
             <a href={`https://instagram.com/${social?.instagram || ``}`}>
-             Instagram
+              Instagram
             </a>
           </li>
           <li className="footer__item">
@@ -69,10 +74,7 @@ function Footer() {
             </a>
           </li>
           <li className="footer__item">
-            <a href={`https://github.com/${social?.github || ``}`}>
-              {" "}
-              Github
-            </a>
+            <a href={`https://github.com/${social?.github || ``}`}> Github</a>
           </li>
         </FooterColumn>
       </FooterColumns>
@@ -86,12 +88,5 @@ function Footer() {
   )
 }
 
-Footer.propTypes = {
-  title: PropTypes.string,
-}
-
-Footer.defaultProps = {
-  title: ``,
-}
 
 export default Footer

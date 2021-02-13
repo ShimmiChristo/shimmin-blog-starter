@@ -2,7 +2,7 @@ import React from "react"
 import { Link, graphql } from "gatsby"
 import { MDXRenderer } from "gatsby-plugin-mdx"
 
-import Bio from "../components/bio"
+import AuthorBio from "../components/author-bio"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
@@ -31,7 +31,7 @@ const BlogPostTemplate = ({ data, location }) => {
         </section>
         <hr />
         <footer>
-          <Bio />
+          <AuthorBio />
         </footer>
       </article>
       <nav className="blog-post-nav">

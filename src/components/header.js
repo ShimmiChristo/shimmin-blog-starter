@@ -148,11 +148,11 @@ function Header() {
 }
 
 Header.propTypes = {
-  siteTitle: PropTypes.string,
+  title: PropTypes.string,
 }
 
 Header.defaultProps = {
-  siteTitle: ``,
+  title: ``,
 }
 
 export default Header

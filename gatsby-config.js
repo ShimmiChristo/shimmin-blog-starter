@@ -5,6 +5,8 @@ module.exports = {
       name: `Chris Shimmin`,
       summary: `who lives in NYC and makes things`,
       website: `https://www.chrisshimmin.com`,
+      email: `hello@chrisshimmin.com`,
+      phone: `646-580-5599`,
     },
     description: `A Gatsby starter for blogs`,
     siteUrl: `https://gatsby-starter-blog-demo.netlify.app/`,
@@ -20,7 +22,8 @@ module.exports = {
       instagram: "shimmiChristo",
       youtube: `shimdoggy`,
       facebook: ``,
-      github: `shimmiChristo`
+      github: `shimmiChristo`,
+      google: ``
     },
     nav: [
       {

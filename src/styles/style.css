@@ -60,6 +60,17 @@
   --color-heading: #1a202c;
   --color-heading-black: black;
   --color-accent: #d1dce5;
+
+  --color-brand-dark: #ff7043;
+  --color-brand-med: #ff906e;
+  --color-brand-light: #f9b19b;
+  --color-brand-black: #222222;
+  --color-brand-gray-1: #707070;
+  --color-brand-gray-2: #bdbdbd;
+  --color-brand-gray-3: #cfcfcf;
+  --color-brand-gray-4: #cfcfcf;
+  --color-brand-gray-5: #eeeeee;
+  --color-brand-gray-6: #f2f2f2;
 }
 
 /* HTML elements */
@@ -102,7 +113,7 @@ h4,
 h5,
 h6 {
   font-family: var(--font-heading);
-  margin-top: var(--spacing-12);
+  margin-top: var(--spacing-6);
   margin-bottom: var(--spacing-6);
   line-height: var(--lineHeight-tight);
   letter-spacing: -0.025em;
@@ -163,7 +174,7 @@ p {
   line-height: var(--lineHeight-relaxed);
   --baseline-multiplier: 0.179;
   --x-height-multiplier: 0.35;
-  margin: var(--spacing-0) var(--spacing-0) var(--spacing-8) var(--spacing-0);
+  margin: var(--spacing-0) var(--spacing-0) var(--spacing-6) var(--spacing-0);
   padding: var(--spacing-0);
 }
 
@@ -240,6 +251,13 @@ a:focus {
 
 /* Custom classes */
 
+b,.bold {
+  font-weight: var(--fontWeight-bold);
+}
+.underline {
+  text-decoration: underline;
+}
+
 .global-wrapper {
   margin: var(--spacing-0) auto;
   max-width: var(--maxWidth-wrapper);
@@ -301,6 +319,8 @@ a:focus {
   margin-bottom: var(--spacing-0);
   min-width: 50px;
   border-radius: 100%;
+  flex-shrink: 0;
+  flex-grow: 0;
 }
 
 .blog-post header h1 {
