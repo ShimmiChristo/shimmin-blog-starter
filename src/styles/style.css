@@ -32,8 +32,9 @@
     "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   --fontFamily-serif: "Merriweather", "Georgia", Cambria, "Times New Roman",
     Times, serif;
-  --font-body: var(--fontFamily-serif);
-  --font-heading: var(--fontFamily-sans);
+  --fontFamily-code: Menlo, Monaco, "Courier New", monospace;
+  --font-body: var(--fontFamily-sans);
+  --font-heading: var(--fontFamily-serif);
   --fontWeight-normal: 400;
   --fontWeight-medium: 500;
   --fontWeight-semibold: 600;
@@ -106,15 +107,40 @@ hr {
   height: 1px;
   border: 0;
 }
-
+code {
+  font-family: var(--fontFamily-code);
+  line-height: 1.5em;
+  font-size: var(--fontSize-0);
+  background-color: var(--color-brand-gray-5);
+  color: var(--color-brand-black);
+  border-radius: 2px;
+  display: inline-block;
+  padding: 0.2em 0.5em;
+}
+*::selection {
+  color: #222;
+  background: #f9b19b;
+}
+pre[class*="language-"] ::selection,
+code[class*="language-"]::selection,
+pre[class*="language-markdown"]::selection,
+code[class*="language-markdown"] ::selection {
+  background: #f9b19b;
+}
 /* Heading */
 
 h1,
+.h1,
 h2,
+.h2,
 h3,
+.h3,
 h4,
+.h4,
 h5,
-h6 {
+.h5,
+h6,
+.h6 {
   font-family: var(--font-heading);
   margin-top: var(--spacing-6);
   margin-bottom: var(--spacing-6);
@@ -123,37 +149,48 @@ h6 {
 }
 
 h2,
+.h2,
 h3,
+.h3,
 h4,
+.h4,
 h5,
-h6 {
+.h5,
+h6,
+.h6 {
   font-weight: var(--fontWeight-bold);
   color: var(--color-heading);
 }
 
-h1 {
+h1,
+.h1 {
   font-weight: var(--fontWeight-black);
   font-size: var(--fontSize-6);
   color: var(--color-heading-black);
 }
 
-h2 {
+h2,
+.h2 {
   font-size: var(--fontSize-5);
 }
 
-h3 {
+h3,
+.h3 {
   font-size: var(--fontSize-4);
 }
 
-h4 {
+h4,
+.h4 {
   font-size: var(--fontSize-3);
 }
 
-h5 {
+h5,
+.h5 {
   font-size: var(--fontSize-2);
 }
 
-h6 {
+h6,
+.h6 {
   font-size: var(--fontSize-1);
 }
 
@@ -246,6 +283,7 @@ table thead tr th {
 a {
   color: var(--color-link);
   text-decoration: underline;
+  cursor: pointer;
 }
 a:hover,
 a:focus {
@@ -285,6 +323,22 @@ b,
 }
 .underline {
   text-decoration: underline;
+}
+button, .button {
+  display: block;
+  border: 2px solid var(--color-brand-dark);
+  color: var(--color-brand-black);
+  border-radius: var(--spacing-4);
+  background-color: #fff;
+  padding: var(--spacing-4) var(--spacing-8);
+  margin: var(--spacing-4) 0;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+button:focus, .button:focus,
+button:hover, .button:hover {
+  background-color: var(--color-brand-dark);
+  color: #fff;
 }
 
 .global-wrapper {
@@ -354,11 +408,23 @@ b,
 
 .blog-post header h1 {
   margin: var(--spacing-0) var(--spacing-0) var(--spacing-4) var(--spacing-0);
+  font-weight: var(--fontWeight-semibold);
 }
 
 .blog-post header p {
   font-size: var(--fontSize-2);
   font-family: var(--font-heading);
+}
+.blog-post header a {
+  font-size: var(--fontSize-2);
+  font-family: var(--font-heading);
+}
+.blog-post h2 {
+  border-bottom: 3px solid var(--color-brand-dark);
+  padding-bottom: var(--spacing-2);
+  font-family: var(--fontFamily-sans);
+  font-weight: var(--fontWeight-semibold);
+  text-transform: capitalize;
 }
 
 .blog-post-nav ul {
@@ -367,6 +433,15 @@ b,
 
 .gatsby-highlight {
   margin-bottom: var(--spacing-8);
+}
+.uppercase {
+  text-transform: uppercase;
+}
+.lowercase {
+  text-transform: lowercase;
+}
+.capitalize {
+  text-transform: capitalize;
 }
 
 /* Media queries */

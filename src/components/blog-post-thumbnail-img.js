@@ -24,12 +24,20 @@ function BlogPostThumbnailImg({
   `
   const ArticleLink = styled(Link)`
     text-decoration: none;
+    margin-bottom: var(--spacing-6);
+    /* border-bottom: 2px solid;  */
+    & :hover {
+      text-decoration: underline;
+    }
   `
   const ArticleContainer = styled.article`
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
+    height: 100%;
+    justify-content: space-between;
+    margin: 0;
+    text-align: center;
   `
   const ImgContainer = styled.div`
     width: 100%;
@@ -63,36 +71,52 @@ function BlogPostThumbnailImg({
     @media (max-width: 767px) {
     }
   `
+  const CTA = styled(Link)`
+    text-transform: uppercase;
+    font-weight: var(--fontWeight-bold);
+    text-decoration: none;
+  `
+  const Section = styled.section`
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  `
+
   return (
     <ListContainer key={key}>
-      <ArticleLink to={slug} itemProp="url">
-        <ArticleContainer
-          className="post-list-item"
-          itemScope
-          itemType="http://schema.org/Article"
-        >
-          <Header>
-            <ImgContainer>
-              <FeaturedImg
-                className="featured-img"
-                fluid={featuredImg.childImageSharp.fluid}
-              />
-            </ImgContainer>
-            <h3>
-              <span itemProp="headline">{title}</span>
-            </h3>
-            <small>{date}</small>
-          </Header>
-          <section>
-            <p
-              dangerouslySetInnerHTML={{
-                __html: description || excerpt,
-              }}
-              itemProp="description"
+      <ArticleContainer
+        className="post-list-item"
+        itemScope
+        itemType="http://schema.org/Article"
+      >
+        <Header>
+          <ImgContainer>
+            <FeaturedImg
+              className="featured-img"
+              fluid={featuredImg.childImageSharp.fluid}
             />
-          </section>
-        </ArticleContainer>
-      </ArticleLink>
+          </ImgContainer>
+          <h3>
+            <ArticleLink to={slug} itemProp="url">
+              <span itemProp="headline">{title}</span>
+            </ArticleLink>
+          </h3>
+        </Header>
+        <Section>
+          <small>{date}</small>
+          {/* <p
+            dangerouslySetInnerHTML={{
+              __html: description || excerpt,
+            }}
+            itemProp="description"
+          /> */}
+          <CTA to={slug} itemProp="url" className="button">
+            <span>see review</span>
+          </CTA>
+        </Section>
+      </ArticleContainer>
     </ListContainer>
   )
 }

@@ -27,17 +27,14 @@ const BlogPostTemplate = ({ data, location }) => {
   `
   const ImgContainer = styled.div`
     width: 100%;
-    height: 250px;
+    height: auto;
+    max-height: 250px;
     overflow: hidden;
+    margin: 1rem 0;
     @media (max-width: 767px) {
       width: 100%;
       height: auto;
-      min-height: 200px;
-      max-height: 250px;
-    }
-    @media (max-width: 400px) {
-      width: 250px;
-      height: 250px;
+      max-height: 200px;
     }
   `
   const Header = styled.header`
