@@ -18,6 +18,7 @@ const Container = styled.div`
   }
   @media (max-width: 767px) {
     padding: 0rem 1rem 1rem 1rem;
+    justify-content: center;
   }
 `
 const Bio = styled.div`
@@ -32,7 +33,7 @@ const ProfilePic = styled(Image)`
   flex: 0 0 30%;
   border-radius: 50%;
   @media (max-width: 767px) {
-    flex: 0 0 100%;
+    flex: 0 0 80%;
   }
 `
 

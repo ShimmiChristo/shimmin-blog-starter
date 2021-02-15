@@ -1,6 +1,10 @@
 module.exports = {
   siteMetadata: {
     title: `Gatsby Starter Blog`,
+    description: `A Gatsby starter for projects with a blog.`,
+    siteUrl: `https://gatsby-starter-blog-demo.netlify.app/`,
+    headline: `This is the site headline.`,
+    logo: ``,
     author: {
       name: `Chris Shimmin`,
       summary: `who lives in NYC and makes things`,
@@ -8,15 +12,6 @@ module.exports = {
       email: `hello@chrisshimmin.com`,
       phone: `646-580-5599`,
     },
-    description: `A Gatsby starter for blogs`,
-    siteUrl: `https://gatsby-starter-blog-demo.netlify.app/`,
-    headline: ``,
-    description: ``,
-    image: ``,
-    video: ``,
-    twitter: ``,
-    name: ``,
-    logo: ``,
     social: {
       twitter: "shimmiChristo",
       instagram: "shimmiChristo",
@@ -59,6 +54,9 @@ module.exports = {
             resolve: `gatsby-remark-images`,
             options: {
               maxWidth: 630,
+              withWebp: true,
+              showCaptions: true,
+              quality: 100,
             },
           },
           {
@@ -98,7 +96,17 @@ module.exports = {
     {
       resolve: `gatsby-plugin-mdx`,
       options: {
-        extensions: [`.md`, `.mdx`],
+        root: __dirname,
+        extensions: [".md", ".mdx"],
+        gatsbyRemarkPlugins: [
+          {
+            resolve: "gatsby-remark-images",
+            options: {
+              maxWidth: 800,
+              quality: 70,
+            },
+          },
+        ],
       },
     },
     {

@@ -1,16 +1,52 @@
 import React from "react"
 import { Link, graphql } from "gatsby"
 import { MDXRenderer } from "gatsby-plugin-mdx"
+import styled from "styled-components"
+import Image from "gatsby-image"
 
 import AuthorBio from "../components/author-bio"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+// import { usePublishedPosts } from "../hooks/use-published-posts"
 
 const BlogPostTemplate = ({ data, location }) => {
   const post = data.mdx
   const siteTitle = data.site.siteMetadata?.title || `Title`
   const { previous, next } = data
+  // const { nodes } = usePublishedPosts()
 
+  const FeaturedImg = styled(Image)`
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+
+    @media (max-width: 767px) {
+    }
+  `
+  const ImgContainer = styled.div`
+    width: 100%;
+    height: 250px;
+    overflow: hidden;
+    @media (max-width: 767px) {
+      width: 100%;
+      height: auto;
+      min-height: 200px;
+      max-height: 250px;
+    }
+    @media (max-width: 400px) {
+      width: 250px;
+      height: 250px;
+    }
+  `
+  const Header = styled.header`
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  `
   return (
     <Layout location={location} title={siteTitle}>
       <SEO
@@ -22,10 +58,16 @@ const BlogPostTemplate = ({ data, location }) => {
         itemScope
         itemType="http://schema.org/Article"
       >
-        <header>
+        <Header>
+          <ImgContainer>
+            <FeaturedImg
+              className="featured-img"
+              fluid={post.frontmatter.featuredImg.childImageSharp.fluid}
+            />
+          </ImgContainer>
           <h1 itemProp="headline">{post.frontmatter.title}</h1>
           <p>{post.frontmatter.date}</p>
-        </header>
+        </Header>
         <section>
           <MDXRenderer itemProp="articleBody">{post.body}</MDXRenderer>
         </section>
@@ -73,12 +115,12 @@ export const pageQuery = graphql`
     $nextPostId: String
     $currentDate: Date!
   ) {
-  site {
+    site {
       siteMetadata {
         title
       }
     }
-    mdx(id: { eq: $id }, frontmatter: {date: {lte: $currentDate}}) {
+    mdx(id: { eq: $id }, frontmatter: { date: { lte: $currentDate } }) {
       id
       excerpt(pruneLength: 160)
       body
@@ -86,9 +128,19 @@ export const pageQuery = graphql`
         title
         date(formatString: "MMMM DD, YYYY")
         description
+        featuredImg {
+          childImageSharp {
+            fluid(maxWidth: 900) {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
       }
     }
-    previous: mdx(id: { eq: $previousPostId }, frontmatter: {date: {lte: $currentDate}}) {
+    previous: mdx(
+      id: { eq: $previousPostId }
+      frontmatter: { date: { lte: $currentDate } }
+    ) {
       fields {
         slug
       }
@@ -96,7 +148,10 @@ export const pageQuery = graphql`
         title
       }
     }
-    next: mdx(id: { eq: $nextPostId }, frontmatter: {date: {lte: $currentDate}}) {
+    next: mdx(
+      id: { eq: $nextPostId }
+      frontmatter: { date: { lte: $currentDate } }
+    ) {
       fields {
         slug
       }

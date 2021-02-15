@@ -95,6 +95,7 @@ exports.onCreateNode = ({ node, actions, getNode }) => {
   }
 }
 
+// foreign-key relationship for featured image
 exports.createSchemaCustomization = ({ actions }) => {
   const { createTypes } = actions
 
@@ -121,15 +122,22 @@ exports.createSchemaCustomization = ({ actions }) => {
     }
 
     type Mdx implements Node {
-      frontmatter: Frontmatter
+      frontmatter: MdxFrontmatter!
       fields: Fields
     }
-
+    type MdxFrontmatter {
+      title: String
+      description: String
+      date: Date @dateformat
+      published: Boolean
+      featuredImg: File @fileByRelativePath
+    }
     type Frontmatter {
       title: String
       description: String
       date: Date @dateformat
       published: Boolean
+      featuredImg: File @fileByRelativePath
     }
 
     type Fields {

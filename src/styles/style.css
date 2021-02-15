@@ -40,7 +40,7 @@
   --fontWeight-bold: 700;
   --fontWeight-extrabold: 800;
   --fontWeight-black: 900;
-  --fontSize-root: 16px;
+  --fontSize-root: 17px;
   --lineHeight-none: 1;
   --lineHeight-tight: 1.1;
   --lineHeight-normal: 1.5;
@@ -54,7 +54,9 @@
   --fontSize-5: 2.074rem;
   --fontSize-6: 2.488rem;
   --fontSize-7: 2.986rem;
-  --color-primary: #005b99;
+  --color-link-dark: #004f85;
+  --color-link: #007ed4;
+  --color-link-light: #23a6ff;
   --color-text: #2e353f;
   --color-text-light: #4f5969;
   --color-heading: #1a202c;
@@ -64,6 +66,7 @@
   --color-brand-dark: #ff7043;
   --color-brand-med: #ff906e;
   --color-brand-light: #f9b19b;
+  --color-brand-very-light: #fcd7cb;
   --color-brand-black: #222222;
   --color-brand-gray-1: #707070;
   --color-brand-gray-2: #bdbdbd;
@@ -212,7 +215,7 @@ blockquote {
   margin-left: calc(-1 * var(--spacing-6));
   margin-right: var(--spacing-8);
   padding: var(--spacing-0) var(--spacing-0) var(--spacing-0) var(--spacing-6);
-  border-left: var(--spacing-1) solid var(--color-primary);
+  border-left: var(--spacing-1) solid var(--color-link);
   font-size: var(--fontSize-2);
   font-style: italic;
   margin-bottom: var(--spacing-8);
@@ -238,20 +241,46 @@ table thead tr th {
   border-bottom: 1px solid var(--color-accent);
 }
 
-/* Link */
+/* Anchor Link */
 
 a {
-  color: var(--color-primary);
+  color: var(--color-link);
+  text-decoration: underline;
 }
-
 a:hover,
 a:focus {
-  text-decoration: none;
+  text-decoration-color: var(--color-link-dark);
+  color: var(--color-link-dark);
 }
+
+/* p a {
+  color: var(--color-brand-black);
+  position: relative;
+  text-decoration: none;
+  font-weight: var(--fontWeight-bold);
+  transition: all 0.2s ease;
+}
+p a::before {
+  border-bottom: 0.5em solid var(--color-brand-very-light);
+  content: " ";
+  width: 100%;
+  position: absolute;
+  bottom: 0em;
+  left: 0;
+  display: block;
+  z-index: -1;
+}
+
+p a:hover::before,
+p a:focus::before {
+  text-decoration: none;
+  border-bottom: 0;
+} */
 
 /* Custom classes */
 
-b,.bold {
+b,
+.bold {
   font-weight: var(--fontWeight-bold);
 }
 .underline {
@@ -289,7 +318,7 @@ b,.bold {
 
 .post-list-item h2 {
   font-size: var(--fontSize-4);
-  color: var(--color-primary);
+  color: var(--color-link);
   margin-bottom: var(--spacing-2);
   margin-top: var(--spacing-0);
 }

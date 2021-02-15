@@ -4,7 +4,11 @@ date: "2015-05-01"
 description: "Hello World"
 published: true
 category: blog
+featuredImg: ./hero-img.jpg
 ---
+
+
+<!-- <MDXRenderer>{props.pageContext.frontmatter.blog}</MDXRenderer> -->
 
 This is my first post on my new fake blog! How exciting!
 

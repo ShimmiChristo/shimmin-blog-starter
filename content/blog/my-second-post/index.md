@@ -1,8 +1,11 @@
 ---
 title: My Second Post!
 date: "2015-05-06"
+description: "my second post description"
 published: true
 category: blog
+featuredImg: "./hero-img.jpg"
+
 ---
 
 Wow! I love blogging so much already.

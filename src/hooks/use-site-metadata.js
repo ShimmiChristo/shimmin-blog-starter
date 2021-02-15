@@ -7,6 +7,10 @@ export const useSiteMetadata = () => {
           id
           siteMetadata {
             title
+            description
+            siteUrl
+            headline
+            logo
             author {
               name
               website
