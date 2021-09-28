@@ -1,0 +1,169 @@
+{
+  "course": {
+    "tribute": [
+      {
+        "hole": 1,
+        "tees": {
+          "blue": 362
+        },
+        "handicap": 13,
+        "par": 4
+      },
+      {
+        "hole": 2,
+        "tees": {
+          "blue": 420
+        },
+        "handicap": 9,
+        "par": 4
+      },
+      {
+        "hole": 3,
+        "tees": {
+          "blue": 410
+        },
+        "handicap": 17,
+        "par": 4
+      },
+      {
+        "hole": 4,
+        "tees": {
+          "blue": 522
+        },
+        "handicap": 7,
+        "par": 5
+      },
+      {
+        "hole": 5,
+        "tees": {
+          "blue": 444
+        },
+        "handicap": 5,
+        "par": 4
+      },
+      {
+        "hole": 6,
+        "tees": {
+          "blue": 194
+        },
+        "handicap": 11,
+        "par": 3
+      },
+      {
+        "hole": 7,
+        "tees": {
+          "blue": 556
+        },
+        "handicap": 3,
+        "par": 5
+      },
+      {
+        "hole": 8,
+        "tees": {
+          "blue": 417
+        },
+        "handicap": 1,
+        "par": 4
+      },
+      {
+        "hole": 9,
+        "tees": {
+          "blue": 216
+        },
+        "handicap": 15,
+        "par": 3
+      },
+      {
+        "hole": 10,
+        "tees": {
+          "blue": 357
+        },
+        "handicap": 12,
+        "par": 4
+      },
+      {
+        "hole": 11,
+        "tees": {
+          "blue": 481
+        },
+        "handicap": 8,
+        "par": 5
+      },
+      {
+        "hole": 12,
+        "tees": {
+          "blue": 370
+        },
+        "handicap": 6,
+        "par": 4
+      },
+      {
+        "hole": 13,
+        "tees": {
+          "blue": 182
+        },
+        "handicap": 14,
+        "par": 3
+      },
+      {
+        "hole": 14,
+        "tees": {
+          "blue": 375
+        },
+        "handicap": 4,
+        "par": 4
+      },
+      {
+        "hole": 15,
+        "tees": {
+          "blue": 401
+        },
+        "handicap": 16,
+        "par": 4
+      },
+      {
+        "hole": 16,
+        "tees": {
+          "blue": 521
+        },
+        "handicap": 2,
+        "par": 5
+      },
+      {
+        "hole": 17,
+        "tees": {
+          "blue": 146
+        },
+        "handicap": 18,
+        "par": 3
+      },
+      {
+        "hole": 18,
+        "tees": {
+          "blue": 349
+        },
+        "handicap": 10,
+        "par": 4
+      }
+    ]
+  },
+
+  "player": {
+    "one": {
+      "handicap": 4,
+      "team": "blue",
+      "course": {
+        "name": "tribute",
+        "score": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+      }
+    },
+    "two": {
+      "handicap": 4,
+      "team": "blue",
+      "course": {
+        "name": "tribute",
+        "score": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+      }
+    }
+  }
+}

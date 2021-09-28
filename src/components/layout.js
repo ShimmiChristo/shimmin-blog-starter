@@ -1,6 +1,6 @@
 import React from "react"
 import { Link } from "gatsby"
-import Header from "./header"
+import Header from "./header-v2"
 import Footer from "./footer"
 
 const Layout = ({ location, title, children }) => {

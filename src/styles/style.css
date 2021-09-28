@@ -340,7 +340,11 @@ button:hover, .button:hover {
   background-color: var(--color-brand-dark);
   color: #fff;
 }
-
+.mobile-only {
+  @media screen and (min-width:767px) {
+    display: none !important;
+  }
+}
 .global-wrapper {
   margin: var(--spacing-0) auto;
   max-width: var(--maxWidth-wrapper);

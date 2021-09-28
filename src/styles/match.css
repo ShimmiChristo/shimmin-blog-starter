@@ -1,0 +1,44 @@
+.match__course {
+  display: flex;
+}
+.match__column {
+  width: 3rem;
+  border-left: 1px solid #eee;
+}
+.match__column:last-child {
+  border-right: 1px solid #eee;
+}
+.match__column > * {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.column-left {
+  text-align: left;
+}
+.match__column--info {
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.match__column--info > * {
+  display: flex;
+  align-items: center;
+}
+.row-cell {
+  border-bottom: 1px solid #eee;
+  height: 2rem;
+}
+
+.match__teamScores {
+  display: flex;
+  flex-direction: column;
+}
+.match__playerScore {
+  display: flex;
+}
+.match__playerScore .row-cell {
+  padding: 3rem 0;
+}

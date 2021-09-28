@@ -122,9 +122,9 @@ function Header() {
     <HeaderContainer>
       <Background className={`${menuActive ? "active" : ""}`}></Background>
       <Container>
-        <h1>
+        <span>
           {logoImg}
-        </h1>
+        </span>
         <NavBtn id="navMenu--btn" onClick={navClick}>
           <FontAwesomeIcon icon={faBars} size="2x" />
         </NavBtn>
