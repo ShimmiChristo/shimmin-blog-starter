@@ -1,4 +1,24 @@
-.match__course {
+.match__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 0.5rem;
+  margin-bottom: 1rem;
+  border-bottom: 1px solid #eee;
+}
+
+.match__team {
+  display: flex;
+  width: 100px;
+  justify-content: center;
+  align-items: center;
+}
+.match__team > * {
+  padding: 0 0.5rem;
+}
+
+.match__course,
+.match__score {
   display: flex;
 }
 .match__column {
@@ -36,9 +56,23 @@
   display: flex;
   flex-direction: column;
 }
-.match__playerScore {
+.match__playerScore,
+.match__teamScore {
   display: flex;
+}
+.match__teamScore {
+  background-color: #eee;
 }
 .match__playerScore .row-cell {
   padding: 3rem 0;
+}
+
+[data-winner="tie"] {
+  background-color: #eee;
+}
+[data-winner="teamOne"] {
+  background-color: blue;
+}
+[data-winner="teamTwo"] {
+  background-color: green;
 }

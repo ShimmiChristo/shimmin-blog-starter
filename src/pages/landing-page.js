@@ -26,7 +26,21 @@ const TopicPage = ({ data, location }) => {
     <Layout location={location} title={siteTitle}>
       <SEO title="Topic Page" />
       <LandingPageHeader title="landing page title" />
-      <Match player1="chris" player2="two" player3="three" player4="four" />
+      {/* player1 and player3 are on the same team */}
+      <Match
+        id="match-one"
+        courseMatch="tribute"
+        player1="chris"
+        player2="two"
+        player3="three"
+        player4="four"
+      />
+      <Match
+        id="match-two"
+        courseMatch="tribute"
+        player1="chris"
+        player2="two"
+      />
       {/* <AuthorBio /> */}
     </Layout>
   )

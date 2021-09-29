@@ -4,13 +4,19 @@ export const CourseInfo = () => {
   const { coursesJson } = useStaticQuery(graphql`
     query CourseInfo {
       coursesJson {
-        tribute {
-          holes {
-            handicap
-            par
-            number
-            tees {
-              blue
+        course {
+          tribute {
+            holes {
+              handicap
+              number
+              par
+              tees {
+                blue
+              }
+            }
+            totals {
+              yardage
+              par
             }
           }
         }
