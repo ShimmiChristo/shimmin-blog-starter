@@ -28,19 +28,21 @@ const TopicPage = ({ data, location }) => {
       <LandingPageHeader title="landing page title" />
       {/* player1 and player3 are on the same team */}
       <Match
-        id="match-one"
-        courseMatch="tribute"
-        player1="chris"
-        player2="two"
-        player3="three"
-        player4="four"
+        matchId="1.1"
+        courseMatch="tribute1"
+        player1="matt"
+        player2="dylan"
+        player3="chris"
+        player4="rj"
       />
-      <Match
+      {/* <Match
         id="match-two"
         courseMatch="tribute"
-        player1="chris"
-        player2="two"
-      />
+        player1="derek"
+        player2="dan"
+        player3="travis"
+        player4="craig"
+      /> */}
       {/* <AuthorBio /> */}
     </Layout>
   )

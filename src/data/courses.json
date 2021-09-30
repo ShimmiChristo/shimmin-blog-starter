@@ -1,7 +1,7 @@
 [
   {
     "course": {
-      "tribute": {
+      "tribute1": {
         "holes": [
           {
             "number": 1,
@@ -74,7 +74,16 @@
             },
             "handicap": 15,
             "par": 3
-          },
+          }
+        ],
+        "totals": {
+          "yardage": 6000,
+          "par": 72
+        }
+      },
+
+      "tribute2": {
+        "holes": [
           {
             "number": 10,
             "tees": {

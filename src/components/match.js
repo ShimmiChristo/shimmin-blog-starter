@@ -1,4 +1,4 @@
-import React, { Component } from "react"
+import React, { Component, useState } from "react"
 import { CourseInfo } from "../hooks/get-course-info"
 import { PlayerInfo } from "../hooks/get-player-info"
 import styled from "styled-components"
@@ -23,13 +23,16 @@ import "../styles/match.css"
 // `
 
 const Section = styled.section`
-  margin-bottom: 2rem;
   border: 1px solid gray;
   padding: 2rem;
   border-radius: 0.7rem;
+  overflow: hidden;
+  overflow-x: scroll;
+  max-width: 1000px;
+  margin: 2rem auto 2rem;
 `
 
-function Match({ id, courseMatch, player1, player2, player3, player4 }) {
+function Match({ matchId, courseMatch, player1, player2, player3, player4 }) {
   const { course } = CourseInfo()
   const { player } = PlayerInfo()
   const courseHoles = course[`${courseMatch}`].holes
@@ -37,21 +40,9 @@ function Match({ id, courseMatch, player1, player2, player3, player4 }) {
   const playerTwo = player[`${player2}`]
   const playerThree = player[`${player3}`] || undefined
   const playerFour = player[`${player4}`] || undefined
-  const matchNumber = id
-  // const parTotal = course[`${courseMatch}`].totals.par
+  const matchNumber = matchId
 
-  // function calcTeamScore(p1Score, p2Score) {
-  //   const playerOneScore = p1Score
-  //   const playerTwoScore = p2Score
-  //   const team1 = document.querySelector(
-  //     `"#${matchNumber} .match__teamScores--team1"`
-  //   )
-  //   const team2 = document.querySelector(
-  //     `"#${matchNumber} .match__teamScores--team2"`
-  //   )
-  //   // const team2 = document.querySelector('.match__teamScores--team2');
-  //   const player1 = team1.querySelector(".match__player1")
-  // }
+  // const parTotal = course[`${courseMatch}`].totals.par
 
   function calcTeamOneScore() {
     const teamOneScoreArr = []
@@ -147,33 +138,68 @@ function Match({ id, courseMatch, player1, player2, player3, player4 }) {
     var score = s
     var playerHandicap = pHand
     var holeHandicap = hHand
-    if (holeHandicap <= playerHandicap) {
-      playerHandicap = Math.min(playerHandicap - 18, 0)
-      score--
-      return calcPlayerScore(score, playerHandicap, holeHandicap)
-    } else {
+    if (score === "-") {
       return score
+    } else {
+      if (holeHandicap <= playerHandicap) {
+        playerHandicap = Math.min(playerHandicap - 18, 0)
+        score--
+        return calcPlayerScore(score, playerHandicap, holeHandicap)
+      } else {
+        return score
+      }
     }
   }
 
   function calcHoleWinner(hole) {
     var teamOneScoreArray = calcTeamOneScore()
     var teamTwoScoreArray = calcTeamTwoScore()
-    var holeIndex = hole-1
-    console.log('hole - ', holeIndex);
-    console.log('teamTwoScoreArray - ', teamTwoScoreArray);
-    console.log('teamTwoScoreArray[i] - ', teamTwoScoreArray[holeIndex]);
+    var holeIndex = hole - 1
+    var teamWins = {
+      team: "",
+      teamOne: 0,
+      teamTwo: 0,
+    }
+
     if (teamOneScoreArray[holeIndex] > teamTwoScoreArray[holeIndex]) {
-      return "teamTwo"
+      teamWins.teamTwo++
+      teamWins.team = "teamTwo"
+      return teamWins
     } else if (teamOneScoreArray[holeIndex] < teamTwoScoreArray[holeIndex]) {
-      return "teamOne"
+      teamWins.teamOne++
+      teamWins.team = "teamOne"
+      return teamWins
     } else {
-      return "tie"
+      teamWins.teamOne = 0
+      teamWins.team = "tie"
+      return teamWins
     }
   }
 
+  function calcTeamScores() {
+    var teamOneScoreArray = calcTeamOneScore()
+    var teamTwoScoreArray = calcTeamTwoScore()
+    var holeIndex
+    const teamWins = {
+      teamOne: 0,
+      teamTwo: 0,
+    }
+    courseHoles.map((hole, i) => {
+      holeIndex = i
+      if (teamOneScoreArray[holeIndex] > teamTwoScoreArray[holeIndex]) {
+        teamWins.teamTwo++
+      } else if (teamOneScoreArray[holeIndex] < teamTwoScoreArray[holeIndex]) {
+        teamWins.teamOne++
+      }
+    })
+
+    return teamWins
+  }
+  const teamFinalScores = calcTeamScores()
+
   return (
-    <Section id={`${matchNumber}`} className="match__container">
+    <Section data-match={`${courseMatch}`} className="match__container">
+      <i class="match__number">match {matchNumber}</i>
       <div class="match__header">
         <div className="match__team color-green">
           <div className="match__team--playerOne">{player1}</div>
@@ -183,6 +209,33 @@ function Match({ id, courseMatch, player1, player2, player3, player4 }) {
             ""
           )}
         </div>
+
+        <div class="team__scores">
+          <div
+            id="team__one"
+            class={
+              "bk-gray " +
+              (teamFinalScores.teamOne > teamFinalScores.teamTwo
+                ? `team-one-color text-white`
+                : "")
+            }
+          >
+            {teamFinalScores.teamOne || 0}
+          </div>
+
+          <div
+            id="team__two"
+            class={
+              "bk-gray " +
+              (teamFinalScores.teamOne < teamFinalScores.teamTwo
+                ? `team-two-color text-white`
+                : "")
+            }
+          >
+            {teamFinalScores.teamTwo || 0}
+          </div>
+        </div>
+
         <div className="match__team color-green">
           <div className="match__team--playerTwo">{player2}</div>
           {player4 ? (
@@ -193,7 +246,7 @@ function Match({ id, courseMatch, player1, player2, player3, player4 }) {
         </div>
       </div>
       <div className="match__course">
-        <div className="match__column--info column-left">
+        <div className="match__column--info align-right">
           <div className="match__hole row-cell">hole</div>
           <div className="match__yardage row-cell">yardage</div>
           <div className="match__handicap row-cell">handicap</div>
@@ -203,7 +256,7 @@ function Match({ id, courseMatch, player1, player2, player3, player4 }) {
           <div className="match__column">
             <div
               className="match__hole row-cell"
-              data-winner={`${calcHoleWinner(hole.number)}`}
+              data-winner={`${calcHoleWinner(hole.number).team}`}
             >
               {hole.number}
             </div>
@@ -217,7 +270,7 @@ function Match({ id, courseMatch, player1, player2, player3, player4 }) {
       <div className="match__teamScores">
         <div className="match__teamScores--team1">
           <div className={"match__playerScore match__player1"}>
-            <div className="match__column--info column-left row-cell">
+            <div className="match__column--info align-left row-cell">
               {player1}
             </div>
             {playerOne
@@ -244,7 +297,7 @@ function Match({ id, courseMatch, player1, player2, player3, player4 }) {
           </div>
           {playerThree ? (
             <div className={"match__playerScore match__player3"}>
-              <div className="match__column--info column-left row-cell">
+              <div className="match__column--info align-left row-cell">
                 {player3}
               </div>
               {playerThree
@@ -286,7 +339,7 @@ function Match({ id, courseMatch, player1, player2, player3, player4 }) {
 
         <div className="match__teamScores--team2">
           <div className={"match__playerScore match__player2"}>
-            <div className="match__column--info column-left row-cell">
+            <div className="match__column--info align-left row-cell">
               {player2}
             </div>
             {playerTwo
@@ -313,7 +366,7 @@ function Match({ id, courseMatch, player1, player2, player3, player4 }) {
           </div>
           {playerFour ? (
             <div className={"match__playerScore match__player4"}>
-              <div className="match__column--info column-left row-cell">
+              <div className="match__column--info align-left row-cell">
                 {player4}
               </div>
               {playerFour

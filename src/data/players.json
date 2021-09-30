@@ -1,36 +1,92 @@
 [
   {
     "player": {
+      "matt": {
+        "name": "matt",
+        "handicap": 2,
+        "team": "blue",
+        "course": {
+          "tribute1": [0, 0, 0, 0, 0, 0, 0, 0, 0],
+          "tribute2": [0, 0, 0, 0, 0, 0, 0, 0, 0],
+          "classic1": [0, 0, 0, 0, 0, 0, 0, 0, 0],
+          "classic2": [0, 0, 0, 0, 0, 0, 0, 0, 0]
+        }
+      },
+      "dylan": {
+        "name": "dylan",
+        "handicap": 10,
+        "team": "blue",
+        "course": {
+          "tribute1": [1, 0, 0, 0, 0, 0, 0, 0, 0],
+          "tribute2": [1, 0, 0, 0, 0, 0, 0, 0, 0],
+          "classic1": [1, 0, 0, 0, 0, 0, 0, 0, 0],
+          "classic2": [1, 0, 0, 0, 0, 0, 0, 0, 0]
+        }
+      },
       "chris": {
-        "name": "one",
-        "handicap": 14,
+        "name": "chris",
+        "handicap": 16,
         "team": "blue",
         "course": {
-          "tribute": [4, 4, 4, 4, 4, 5, 5, 5, 5, 5, 6, 3, 3, 3, 3, 3, 3, 3]
+          "tribute1": [4, 0, 0, 0, 0, 0, 0, 0, 0],
+          "tribute2": [4, 0, 0, 0, 0, 0, 0, 0, 0],
+          "classic1": [4, 0, 0, 0, 0, 0, 0, 0, 0],
+          "classic2": [4, 0, 0, 0, 0, 0, 0, 0, 0]
         }
       },
-      "two": {
-        "name": "two",
-        "handicap": 4,
+      "rj": {
+        "name": "rj",
+        "handicap": 16,
         "team": "blue",
         "course": {
-          "tribute": [8, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 6]
+          "tribute1": [4, 4, 4, 4, 4, 5, 5, 5, 5],
+          "tribute2": [4, 4, 4, 4, 4, 5, 5, 5, 5],
+          "classic1": [4, 4, 4, 4, 4, 5, 5, 5, 5],
+          "classic2": [4, 4, 4, 4, 4, 5, 5, 5, 5]
         }
       },
-      "three": {
-        "name": "two",
-        "handicap": 4,
+      "derek": {
+        "name": "derek",
+        "handicap": 2,
         "team": "blue",
         "course": {
-          "tribute": [4, 4, 4, 4, 4, 5, 5, 5, 5, 5, 6, 3, 3, 3, 3, 3, 3, 1]
+          "tribute1": [0, 0, 0, 0, 0, 0, 0, 0, 0],
+          "tribute2": [0, 0, 0, 0, 0, 0, 0, 0, 0],
+          "classic1": [0, 0, 0, 0, 0, 0, 0, 0, 0],
+          "classic2": [0, 0, 0, 0, 0, 0, 0, 0, 0]
         }
       },
-      "four": {
-        "name": "two",
-        "handicap": 4,
+      "dan": {
+        "name": "dan",
+        "handicap": 10,
         "team": "blue",
         "course": {
-          "tribute": [9, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 6]
+          "tribute1": [1, 0, 0, 0, 0, 0, 0, 0, 0],
+          "tribute2": [1, 0, 0, 0, 0, 0, 0, 0, 0],
+          "classic1": [1, 0, 0, 0, 0, 0, 0, 0, 0],
+          "classic2": [1, 0, 0, 0, 0, 0, 0, 0, 0]
+        }
+      },
+      "travis": {
+        "name": "travis",
+        "handicap": 16,
+        "team": "blue",
+        "course": {
+          "tribute1": [4, 0, 0, 0, 0, 0, 0, 0, 0],
+          "tribute2": [4, 0, 0, 0, 0, 0, 0, 0, 0],
+          "classic1": [4, 0, 0, 0, 0, 0, 0, 0, 0],
+          "classic2": [4, 0, 0, 0, 0, 0, 0, 0, 0]
+        }
+      },
+      "craig": {
+        "name": "craig",
+        "handicap": 16,
+        "team": "blue",
+        "course": {
+          "tribute1": [4, 4, 4, 4, 4, 5, 5, 5, 5],
+          "tribute2": [4, 4, 4, 4, 4, 5, 5, 5, 5],
+          "classic1": [4, 4, 4, 4, 4, 5, 5, 5, 5],
+          "classic2": [4, 4, 4, 4, 4, 5, 5, 5, 5]
         }
       }
     }

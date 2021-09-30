@@ -5,7 +5,21 @@ export const CourseInfo = () => {
     query CourseInfo {
       coursesJson {
         course {
-          tribute {
+          tribute1 {
+            holes {
+              handicap
+              number
+              par
+              tees {
+                blue
+              }
+            }
+            totals {
+              yardage
+              par
+            }
+          }
+          tribute2 {
             holes {
               handicap
               number
