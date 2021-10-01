@@ -12,6 +12,8 @@ export const PlayerInfo = () => {
             course {
               tribute1
               tribute2
+              classic1
+              classic2
             }
           }
           dylan {
@@ -21,6 +23,8 @@ export const PlayerInfo = () => {
             course {
               tribute1
               tribute2
+              classic1
+              classic2
             }
           }
           chris {
@@ -30,6 +34,8 @@ export const PlayerInfo = () => {
             course {
               tribute1
               tribute2
+              classic1
+              classic2
             }
           }
           rj {
@@ -39,6 +45,8 @@ export const PlayerInfo = () => {
             course {
               tribute1
               tribute2
+              classic1
+              classic2
             }
           }
           derek {
@@ -48,6 +56,8 @@ export const PlayerInfo = () => {
             course {
               tribute1
               tribute2
+              classic1
+              classic2
             }
           }
           dan {
@@ -57,6 +67,8 @@ export const PlayerInfo = () => {
             course {
               tribute1
               tribute2
+              classic1
+              classic2
             }
           }
           travis {
@@ -66,6 +78,8 @@ export const PlayerInfo = () => {
             course {
               tribute1
               tribute2
+              classic1
+              classic2
             }
           }
           craig {
@@ -75,6 +89,8 @@ export const PlayerInfo = () => {
             course {
               tribute1
               tribute2
+              classic1
+              classic2
             }
           }
         }

@@ -11,7 +11,7 @@ export const CourseInfo = () => {
               number
               par
               tees {
-                blue
+                middle
               }
             }
             totals {
@@ -25,7 +25,36 @@ export const CourseInfo = () => {
               number
               par
               tees {
-                blue
+                middle
+              }
+            }
+            totals {
+              yardage
+              par
+            }
+          }
+
+          classic1 {
+            holes {
+              handicap
+              number
+              par
+              tees {
+                middle
+              }
+            }
+            totals {
+              yardage
+              par
+            }
+          }
+          classic2 {
+            holes {
+              handicap
+              number
+              par
+              tees {
+                middle
               }
             }
             totals {

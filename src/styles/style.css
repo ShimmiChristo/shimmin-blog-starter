@@ -62,7 +62,7 @@
   --color-text: #2e353f;
   --color-text-light: #4f5969;
   --color-heading: #1a202c;
-  --color-heading-black: black;
+  --color-heading-black: #222;
   --color-accent: #d1dce5;
 
   --color-brand-dark: #ff7043;
@@ -325,7 +325,8 @@ b,
 .underline {
   text-decoration: underline;
 }
-button, .button {
+button,
+.button {
   display: block;
   border: 2px solid var(--color-brand-dark);
   color: var(--color-brand-black);
@@ -336,13 +337,15 @@ button, .button {
   cursor: pointer;
   transition: all 0.2s ease-in-out;
 }
-button:focus, .button:focus,
-button:hover, .button:hover {
+button:focus,
+.button:focus,
+button:hover,
+.button:hover {
   background-color: var(--color-brand-dark);
   color: #fff;
 }
 .mobile-only {
-  @media screen and (min-width:767px) {
+  @media screen and (min-width: 767px) {
     display: none !important;
   }
 }
