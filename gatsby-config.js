@@ -18,7 +18,7 @@ module.exports = {
       youtube: `shimdoggy`,
       facebook: ``,
       github: `shimmiChristo`,
-      google: ``
+      google: ``,
     },
     nav: [
       {
@@ -30,8 +30,16 @@ module.exports = {
         link: "/blog",
       },
       {
-        name: "Topic Page",
-        link: "/landing-page",
+        name: "Rules",
+        link: "/rules",
+      },
+      {
+        name: "2021",
+        link: "/2021",
+      },
+      {
+        name: "About",
+        link: "/about",
       },
     ],
   },
@@ -41,6 +49,13 @@ module.exports = {
       options: {
         path: `${__dirname}/content/blog`,
         name: `blog`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: `${__dirname}/content/players`,
+        name: `players`,
       },
     },
     {

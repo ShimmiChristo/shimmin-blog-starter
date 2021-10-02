@@ -37,6 +37,9 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
             fields {
               slug
             }
+            frontmatter {
+              category
+            }
           }
         }
       }
@@ -52,12 +55,30 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
   }
 
   const posts = result.data.allMdx.nodes
+  const postsCategory = result.data.allMdx.nodes.frontmatter.category
 
   // Create blog posts pages
   // But only if there's at least one markdown file found at "content/blog" (defined in gatsby-config.js)
   // `context` is available in the template as a prop and as a variable in GraphQL
 
-  if (posts.length > 0) {
+  if (posts.length > 0 && postsCategory === "blog") {
+    posts.forEach((post, index) => {
+      const previousPostId = index === 0 ? null : posts[index - 1].id
+      const nextPostId = index === posts.length - 1 ? null : posts[index + 1].id
+
+      createPage({
+        path: post.fields.slug,
+        component: blogPost,
+        context: {
+          id: post.id,
+          previousPostId,
+          nextPostId,
+          currentDate: getCurrentDate(),
+        },
+      })
+    })
+  }
+  else if (posts.length > 0 && postsCategory === "players") {
     posts.forEach((post, index) => {
       const previousPostId = index === 0 ? null : posts[index - 1].id
       const nextPostId = index === posts.length - 1 ? null : posts[index + 1].id
@@ -84,6 +105,20 @@ exports.onCreateNode = ({ node, actions, getNode }) => {
       node,
       getNode,
       basePath: `blog/`,
+      trailingSlash: false,
+    })}`
+
+    createNodeField({
+      name: `slug`,
+      node,
+      value,
+    })
+  } 
+  else if (node.internal.type === `Mdx` && node.frontmatter.category === `players`) {
+    const value = `/players${createFilePath({
+      node,
+      getNode,
+      basePath: `players/`,
       trailingSlash: false,
     })}`
 

@@ -14,6 +14,8 @@ export const PlayerInfo = () => {
               tribute2
               classic1
               classic2
+              gaylordGolfClub1
+              gaylordGolfClub2
             }
           }
           dylan {
@@ -25,6 +27,8 @@ export const PlayerInfo = () => {
               tribute2
               classic1
               classic2
+              gaylordGolfClub1
+              gaylordGolfClub2
             }
           }
           chris {
@@ -36,6 +40,8 @@ export const PlayerInfo = () => {
               tribute2
               classic1
               classic2
+              gaylordGolfClub1
+              gaylordGolfClub2
             }
           }
           rj {
@@ -47,6 +53,8 @@ export const PlayerInfo = () => {
               tribute2
               classic1
               classic2
+              gaylordGolfClub1
+              gaylordGolfClub2
             }
           }
           derek {
@@ -58,6 +66,8 @@ export const PlayerInfo = () => {
               tribute2
               classic1
               classic2
+              gaylordGolfClub1
+              gaylordGolfClub2
             }
           }
           dan {
@@ -69,6 +79,8 @@ export const PlayerInfo = () => {
               tribute2
               classic1
               classic2
+              gaylordGolfClub1
+              gaylordGolfClub2
             }
           }
           travis {
@@ -80,6 +92,8 @@ export const PlayerInfo = () => {
               tribute2
               classic1
               classic2
+              gaylordGolfClub1
+              gaylordGolfClub2
             }
           }
           craig {
@@ -91,6 +105,8 @@ export const PlayerInfo = () => {
               tribute2
               classic1
               classic2
+              gaylordGolfClub1
+              gaylordGolfClub2
             }
           }
         }

@@ -30,13 +30,16 @@ const Section = styled.section`
   overflow-x: scroll;
   max-width: 1000px;
   margin: 2rem auto 2rem;
-  transition: all 0.5s ease-in-out;
+  transition: max-height 0.3s ease-in-out;
   max-height: 180px;
   &.open {
     max-height: 1000px;
   }
   @media (max-width: 768px) {
-    max-height: 300px;
+    max-height: 330px;
+  }
+  &:hover {
+    cursor: pointer;
   }
 `
 
@@ -163,7 +166,12 @@ function Match({ matchId, courseMatch, player1, player2, player3, player4 }) {
   function calcHoleWinner(hole) {
     var teamOneScoreArray = calcTeamOneScore()
     var teamTwoScoreArray = calcTeamTwoScore()
-    var holeIndex = hole - 1
+    var holeIndex
+    if (hole > 9) {
+      holeIndex = hole - 10
+    } else {
+      holeIndex = hole - 1
+    }
     var teamWins = {
       team: "",
       teamOne: 0,
@@ -221,9 +229,9 @@ function Match({ matchId, courseMatch, player1, player2, player3, player4 }) {
       <i class="match__number">match {matchNumber}</i>
       <div class="match__header">
         <div className="match__team color-green">
-          <div className="match__team--playerOne">{player1}</div>
+          <div className="match__team--playerOne capitalize">{player1}</div>
           {player3 ? (
-            <div className="match__team--playerThree">{player3}</div>
+            <div className="match__team--playerThree capitalize">{player3}</div>
           ) : (
             ""
           )}
@@ -256,9 +264,9 @@ function Match({ matchId, courseMatch, player1, player2, player3, player4 }) {
         </div>
 
         <div className="match__team color-green">
-          <div className="match__team--playerTwo">{player2}</div>
+          <div className="match__team--playerTwo capitalize">{player2}</div>
           {player4 ? (
-            <div className="match__team--playerFour">{player4}</div>
+            <div className="match__team--playerFour capitalize">{player4}</div>
           ) : (
             ""
           )}
@@ -276,6 +284,7 @@ function Match({ matchId, courseMatch, player1, player2, player3, player4 }) {
             <div
               className="match__hole row-cell"
               data-winner={`${calcHoleWinner(hole.number).team}`}
+              id={hole.number}
             >
               {hole.number}
             </div>

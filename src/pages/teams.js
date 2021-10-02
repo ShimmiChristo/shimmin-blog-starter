@@ -17,41 +17,18 @@ const TopicPage = ({ data, location }) => {
   const siteTitle = title || `Title`
   const posts = nodes
 
-  const LandingPageHeaderContainer = styled.section`
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
+  const LandingPageBody = styled.div`
+    max-width: var(--maxWidth-5xl);
+    margin: 0 auto;
   `
 
   return (
     <Layout location={location} title={siteTitle}>
-      <SEO title="Topic Page" />
-      <LandingPageHeader title="landing page title" />
-      {/* player1 and player3 are on the same team */}
-      <MatchScore />
-      <Match
-        matchId="1.1"
-        courseMatch="tribute1"
-        player1="matt"
-        player2="dylan"
-        player3="chris"
-        player4="rj"
-      />
-       <Match
-        matchId="1.2"
-        courseMatch="tribute1"
-        player1="matt"
-        player2="dylan"
-      />
-      {/* <Match
-        id="match-two"
-        courseMatch="tribute"
-        player1="derek"
-        player2="dan"
-        player3="travis"
-        player4="craig"
-      /> */}
-      {/* <AuthorBio /> */}
+      <SEO title="About" />
+      <LandingPageHeader title="About BFBH Cup" />
+      <LandingPageBody>
+        
+      </LandingPageBody>
     </Layout>
   )
 }

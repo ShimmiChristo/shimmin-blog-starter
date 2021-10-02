@@ -322,6 +322,167 @@
           "yardage": 3079,
           "par": 36
         }
+      },
+
+      "gaylordGolfClub1": {
+        "holes": [
+          {
+            "number": 1,
+            "tees": {
+              "middle": 371
+            },
+            "handicap": 11,
+            "par": 4
+          },
+          {
+            "number": 2,
+            "tees": {
+              "middle": 369
+            },
+            "handicap": 15,
+            "par": 4
+          },
+          {
+            "number": 3,
+            "tees": {
+              "middle": 349
+            },
+            "handicap": 5,
+            "par": 4
+          },
+          {
+            "number": 4,
+            "tees": {
+              "middle": 146
+            },
+            "handicap": 17,
+            "par": 3
+          },
+          {
+            "number": 5,
+            "tees": {
+              "middle": 444
+            },
+            "handicap": 9,
+            "par": 5
+          },
+          {
+            "number": 6,
+            "tees": {
+              "middle": 153
+            },
+            "handicap": 15,
+            "par": 3
+          },
+          {
+            "number": 7,
+            "tees": {
+              "middle": 487
+            },
+            "handicap": 1,
+            "par": 5
+          },
+          {
+            "number": 8,
+            "tees": {
+              "middle": 388
+            },
+            "handicap": 3,
+            "par": 4
+          },
+          {
+            "number": 9,
+            "tees": {
+              "middle": 345
+            },
+            "handicap": 13,
+            "par": 4
+          }
+        ],
+        "totals": {
+          "yardage": 0,
+          "par": 36
+        }
+      },
+      "gaylordGolfClub2": {
+        "holes": [
+          {
+            "number": 10,
+            "tees": {
+              "middle": 352
+            },
+            "handicap": 6,
+            "par": 4
+          },
+          {
+            "number": 11,
+            "tees": {
+              "middle": 153
+            },
+            "handicap": 16,
+            "par": 3
+          },
+          {
+            "number": 12,
+            "tees": {
+              "middle": 507
+            },
+            "handicap": 4,
+            "par": 5
+          },
+          {
+            "number": 13,
+            "tees": {
+              "middle": 312
+            },
+            "handicap": 18,
+            "par": 4
+          },
+          {
+            "number": 14,
+            "tees": {
+              "middle": 160
+            },
+            "handicap": 14,
+            "par": 3
+          },
+          {
+            "number": 15,
+            "tees": {
+              "middle": 337
+            },
+            "handicap": 12,
+            "par": 4
+          },
+          {
+            "number": 16,
+            "tees": {
+              "middle": 397
+            },
+            "handicap": 2,
+            "par": 4
+          },
+          {
+            "number": 17,
+            "tees": {
+              "middle": 479
+            },
+            "handicap": 8,
+            "par": 5
+          },
+          {
+            "number": 18,
+            "tees": {
+              "middle": 364
+            },
+            "handicap": 10,
+            "par": 4
+          }
+        ],
+        "totals": {
+          "yardage": 0,
+          "par": 36
+        }
       }
     }
   }

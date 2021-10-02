@@ -62,6 +62,35 @@ export const CourseInfo = () => {
               par
             }
           }
+          
+          gaylordGolfClub1 {
+            holes {
+              handicap
+              number
+              par
+              tees {
+                middle
+              }
+            }
+            totals {
+              yardage
+              par
+            }
+          }
+          gaylordGolfClub2 {
+            holes {
+              handicap
+              number
+              par
+              tees {
+                middle
+              }
+            }
+            totals {
+              yardage
+              par
+            }
+          }
         }
       }
     }

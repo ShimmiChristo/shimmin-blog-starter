@@ -4,12 +4,47 @@
       "matt": {
         "name": "matt",
         "handicap": 10,
-        "team": "blue",
+        "team": "green",
         "course": {
-          "tribute1": [0, 0, 0, 0, 0, 0, 0, 0, 0],
+          "tribute1": [2, 2, 2, 2, 2, 0, 0, 0, 0],
           "tribute2": [0, 0, 0, 0, 0, 0, 0, 0, 0],
           "classic1": [0, 0, 0, 0, 0, 0, 0, 0, 0],
-          "classic2": [0, 0, 0, 0, 0, 0, 0, 0, 0]
+          "classic2": [0, 0, 0, 0, 0, 0, 0, 0, 0],
+          "gaylordGolfClub1": [0, 0, 0, 0, 0, 0, 0, 0, 0],
+          "gaylordGolfClub2": [2, 2, 2, 2, 2, 0, 0, 0, 0]
+        },
+        "appearances": [2021],
+        "points": {
+          "bestBall": {
+            "wins": 0,
+            "losses": 0,
+            "ties": 0
+          },
+          "bestBallBramble": {
+            "wins": 0,
+            "losses": 0,
+            "ties": 0
+          },
+          "2BallBramble": {
+            "wins": 0,
+            "losses": 0,
+            "ties": 0
+          },
+          "brambleAlternate": {
+            "wins": 0,
+            "losses": 0,
+            "ties": 0
+          },
+          "scramble": {
+            "wins": 0,
+            "losses": 0,
+            "ties": 0
+          },
+          "singles": {
+            "wins": 0,
+            "losses": 0,
+            "ties": 0
+          }
         }
       },
       "dylan": {
@@ -20,18 +55,88 @@
           "tribute1": [0, 0, 0, 0, 0, 0, 0, 0, 0],
           "tribute2": [0, 0, 0, 0, 0, 0, 0, 0, 0],
           "classic1": [0, 0, 0, 0, 0, 0, 0, 0, 0],
-          "classic2": [0, 0, 0, 0, 0, 0, 0, 0, 0]
+          "classic2": [0, 0, 0, 0, 0, 0, 0, 0, 0],
+          "gaylordGolfClub1": [0, 0, 0, 0, 0, 0, 0, 0, 0],
+          "gaylordGolfClub2": [0, 0, 0, 0, 0, 0, 0, 0, 0]
+        },
+        "appearances": [2021],
+        "points": {
+          "bestBall": {
+            "wins": 0,
+            "losses": 0,
+            "ties": 0
+          },
+          "bestBallBramble": {
+            "wins": 0,
+            "losses": 0,
+            "ties": 0
+          },
+          "2BallBramble": {
+            "wins": 0,
+            "losses": 0,
+            "ties": 0
+          },
+          "brambleAlternate": {
+            "wins": 0,
+            "losses": 0,
+            "ties": 0
+          },
+          "scramble": {
+            "wins": 0,
+            "losses": 0,
+            "ties": 0
+          },
+          "singles": {
+            "wins": 0,
+            "losses": 0,
+            "ties": 0
+          }
         }
       },
       "chris": {
         "name": "chris",
         "handicap": 16,
-        "team": "blue",
+        "team": "green",
         "course": {
-          "tribute1": [0, 0, 0, 0, 0, 0, 0, 0, 0],
+          "tribute1": [2, 2, 2, 2, 2, 0, 0, 0, 0],
           "tribute2": [0, 0, 0, 0, 0, 0, 0, 0, 0],
           "classic1": [0, 0, 0, 0, 0, 0, 0, 0, 0],
-          "classic2": [0, 0, 0, 0, 0, 0, 0, 0, 0]
+          "classic2": [0, 0, 0, 0, 0, 0, 0, 0, 0],
+          "gaylordGolfClub1": [0, 0, 0, 0, 0, 0, 0, 0, 0],
+          "gaylordGolfClub2": [0, 0, 0, 0, 0, 0, 0, 0, 0]
+        },
+        "appearances": [2021],
+        "points": {
+          "bestBall": {
+            "wins": 0,
+            "losses": 0,
+            "ties": 0
+          },
+          "bestBallBramble": {
+            "wins": 0,
+            "losses": 0,
+            "ties": 0
+          },
+          "2BallBramble": {
+            "wins": 0,
+            "losses": 0,
+            "ties": 0
+          },
+          "brambleAlternate": {
+            "wins": 0,
+            "losses": 0,
+            "ties": 0
+          },
+          "scramble": {
+            "wins": 0,
+            "losses": 0,
+            "ties": 0
+          },
+          "singles": {
+            "wins": 0,
+            "losses": 0,
+            "ties": 0
+          }
         }
       },
       "rj": {
@@ -42,18 +147,88 @@
           "tribute1": [0, 0, 0, 0, 0, 0, 0, 0, 0],
           "tribute2": [0, 0, 0, 0, 0, 0, 0, 0, 0],
           "classic1": [0, 0, 0, 0, 0, 0, 0, 0, 0],
-          "classic2": [0, 0, 0, 0, 0, 0, 0, 0, 0]
+          "classic2": [0, 0, 0, 0, 0, 0, 0, 0, 0],
+          "gaylordGolfClub1": [0, 0, 0, 0, 0, 0, 0, 0, 0],
+          "gaylordGolfClub2": [0, 0, 0, 0, 0, 0, 0, 0, 0]
+        },
+        "appearances": [2021],
+        "points": {
+          "bestBall": {
+            "wins": 0,
+            "losses": 0,
+            "ties": 0
+          },
+          "bestBallBramble": {
+            "wins": 0,
+            "losses": 0,
+            "ties": 0
+          },
+          "2BallBramble": {
+            "wins": 0,
+            "losses": 0,
+            "ties": 0
+          },
+          "brambleAlternate": {
+            "wins": 0,
+            "losses": 0,
+            "ties": 0
+          },
+          "scramble": {
+            "wins": 0,
+            "losses": 0,
+            "ties": 0
+          },
+          "singles": {
+            "wins": 0,
+            "losses": 0,
+            "ties": 0
+          }
         }
       },
       "derek": {
         "name": "derek",
         "handicap": 28,
-        "team": "blue",
+        "team": "green",
         "course": {
           "tribute1": [0, 0, 0, 0, 0, 0, 0, 0, 0],
           "tribute2": [0, 0, 0, 0, 0, 0, 0, 0, 0],
           "classic1": [0, 0, 0, 0, 0, 0, 0, 0, 0],
-          "classic2": [0, 0, 0, 0, 0, 0, 0, 0, 0]
+          "classic2": [0, 0, 0, 0, 0, 0, 0, 0, 0],
+          "gaylordGolfClub1": [0, 0, 0, 0, 0, 0, 0, 0, 0],
+          "gaylordGolfClub2": [0, 0, 0, 0, 0, 0, 0, 0, 0]
+        },
+        "appearances": [2021],
+        "points": {
+          "bestBall": {
+            "wins": 0,
+            "losses": 0,
+            "ties": 0
+          },
+          "bestBallBramble": {
+            "wins": 0,
+            "losses": 0,
+            "ties": 0
+          },
+          "2BallBramble": {
+            "wins": 0,
+            "losses": 0,
+            "ties": 0
+          },
+          "brambleAlternate": {
+            "wins": 0,
+            "losses": 0,
+            "ties": 0
+          },
+          "scramble": {
+            "wins": 0,
+            "losses": 0,
+            "ties": 0
+          },
+          "singles": {
+            "wins": 0,
+            "losses": 0,
+            "ties": 0
+          }
         }
       },
       "dan": {
@@ -64,18 +239,88 @@
           "tribute1": [0, 0, 0, 0, 0, 0, 0, 0, 0],
           "tribute2": [0, 0, 0, 0, 0, 0, 0, 0, 0],
           "classic1": [0, 0, 0, 0, 0, 0, 0, 0, 0],
-          "classic2": [0, 0, 0, 0, 0, 0, 0, 0, 0]
+          "classic2": [0, 0, 0, 0, 0, 0, 0, 0, 0],
+          "gaylordGolfClub1": [0, 0, 0, 0, 0, 0, 0, 0, 0],
+          "gaylordGolfClub2": [0, 0, 0, 0, 0, 0, 0, 0, 0]
+        },
+        "appearances": [2021],
+        "points": {
+          "bestBall": {
+            "wins": 0,
+            "losses": 0,
+            "ties": 0
+          },
+          "bestBallBramble": {
+            "wins": 0,
+            "losses": 0,
+            "ties": 0
+          },
+          "2BallBramble": {
+            "wins": 0,
+            "losses": 0,
+            "ties": 0
+          },
+          "brambleAlternate": {
+            "wins": 0,
+            "losses": 0,
+            "ties": 0
+          },
+          "scramble": {
+            "wins": 0,
+            "losses": 0,
+            "ties": 0
+          },
+          "singles": {
+            "wins": 0,
+            "losses": 0,
+            "ties": 0
+          }
         }
       },
       "travis": {
         "name": "travis",
         "handicap": 22,
-        "team": "blue",
+        "team": "green",
         "course": {
           "tribute1": [0, 0, 0, 0, 0, 0, 0, 0, 0],
           "tribute2": [0, 0, 0, 0, 0, 0, 0, 0, 0],
           "classic1": [0, 0, 0, 0, 0, 0, 0, 0, 0],
-          "classic2": [0, 0, 0, 0, 0, 0, 0, 0, 0]
+          "classic2": [0, 0, 0, 0, 0, 0, 0, 0, 0],
+          "gaylordGolfClub1": [0, 0, 0, 0, 0, 0, 0, 0, 0],
+          "gaylordGolfClub2": [0, 0, 0, 0, 0, 0, 0, 0, 0]
+        },
+        "appearances": [2021],
+        "points": {
+          "bestBall": {
+            "wins": 0,
+            "losses": 0,
+            "ties": 0
+          },
+          "bestBallBramble": {
+            "wins": 0,
+            "losses": 0,
+            "ties": 0
+          },
+          "2BallBramble": {
+            "wins": 0,
+            "losses": 0,
+            "ties": 0
+          },
+          "brambleAlternate": {
+            "wins": 0,
+            "losses": 0,
+            "ties": 0
+          },
+          "scramble": {
+            "wins": 0,
+            "losses": 0,
+            "ties": 0
+          },
+          "singles": {
+            "wins": 0,
+            "losses": 0,
+            "ties": 0
+          }
         }
       },
       "craig": {
@@ -86,7 +331,42 @@
           "tribute1": [0, 0, 0, 0, 0, 0, 0, 0, 0],
           "tribute2": [0, 0, 0, 0, 0, 0, 0, 0, 0],
           "classic1": [0, 0, 0, 0, 0, 0, 0, 0, 0],
-          "classic2": [0, 0, 0, 0, 0, 0, 0, 0, 0]
+          "classic2": [0, 0, 0, 0, 0, 0, 0, 0, 0],
+          "gaylordGolfClub1": [0, 0, 0, 0, 0, 0, 0, 0, 0],
+          "gaylordGolfClub2": [0, 0, 0, 0, 0, 0, 0, 0, 0]
+        },
+        "appearances": [2021],
+        "points": {
+          "bestBall": {
+            "wins": 0,
+            "losses": 0,
+            "ties": 0
+          },
+          "bestBallBramble": {
+            "wins": 0,
+            "losses": 0,
+            "ties": 0
+          },
+          "2BallBramble": {
+            "wins": 0,
+            "losses": 0,
+            "ties": 0
+          },
+          "brambleAlternate": {
+            "wins": 0,
+            "losses": 0,
+            "ties": 0
+          },
+          "scramble": {
+            "wins": 0,
+            "losses": 0,
+            "ties": 0
+          },
+          "singles": {
+            "wins": 0,
+            "losses": 0,
+            "ties": 0
+          }
         }
       }
     }
