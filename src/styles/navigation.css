@@ -1,0 +1,12 @@
+#navMenu {
+}
+#navMenu__btn {
+}
+.navMenu__logo,
+.navMenu__logo a {
+  text-decoration: none;
+  color: var(--green)
+}
+#navMenu ul li a {
+  color: var(--green)
+}

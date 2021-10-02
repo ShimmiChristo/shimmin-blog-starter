@@ -3,13 +3,11 @@ import styled from "styled-components"
 import { useSiteMetadata } from "../hooks/use-site-metadata"
 import { usePublishedPosts } from "../hooks/use-published-posts"
 
-import AuthorBio from "../components/author-bio"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import LandingPageHeader from "../components/landing-page-header"
 import Match from "../components/match"
 import MatchScore from "../components/match-score"
-// import BlogPostThumbnailImg from "../components/blog-post-thumbnail-img"
 
 const TopicPage = ({ data, location }) => {
   const { title, description, headline } = useSiteMetadata()

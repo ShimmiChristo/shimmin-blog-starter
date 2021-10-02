@@ -15,11 +15,8 @@ const Homepage = ({ data, location }) => {
       <SEO title="Home Page" />
       <AboutSite />
         <div>
-          <ul style={{ listStyle: `none` }}>
-            <li><Link to="/blog">Blog</Link></li>
-          </ul>
+         
         </div>
-      <AboutMe />
     </Layout>
   )
 }

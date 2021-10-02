@@ -7,6 +7,7 @@ import styled from "styled-components"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 
 import { faBars, faTimes } from "@fortawesome/free-solid-svg-icons"
+import "../styles/navigation.css"
 
 const HeaderContainer = styled.header`
   border-bottom: 1px solid #ebebeb;
@@ -137,9 +138,13 @@ function HeaderV2() {
   let logoImg
 
   if (logo) {
-    logoImg = <Img fixed={logo.childImageSharp.fixed} />
+    logoImg = (
+      <Link to="/">
+        <Img fixed={logo.childImageSharp.fixed} />
+      </Link>
+    )
   } else {
-    logoImg = <Link>{title}</Link>
+    logoImg = <Link to="/">{title}</Link>
   }
 
   function navClick() {
@@ -150,12 +155,12 @@ function HeaderV2() {
     <HeaderContainer>
       <Background className={`${menuActive ? "active" : ""}`}></Background>
       <Container>
-        <span class="h2">{logoImg}</span>
-        <NavBtn id="navMenu--btn" onClick={navClick}>
+        <span class="h2 navMenu__logo">{logoImg}</span>
+        <NavBtn id="navMenu__btn" onClick={navClick}>
           <FontAwesomeIcon icon={faBars} size="2x" />
         </NavBtn>
         <Nav id="navMenu" className={`${menuActive ? "active" : ""}`}>
-          <CloseBtn id="navMenu--close" onClick={navClick}>
+          <CloseBtn id="navMenu__close" onClick={navClick}>
             <FontAwesomeIcon icon={faTimes} size="2x" />
           </CloseBtn>
           <ul>

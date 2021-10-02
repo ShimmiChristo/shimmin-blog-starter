@@ -351,7 +351,7 @@ button:hover,
 }
 .global-wrapper {
   margin: var(--spacing-0) auto;
-  max-width: var(--maxWidth-full);
+  max-width: var(--maxWidth-5xl);
   padding: var(--spacing-10) var(--spacing-5);
   padding-top: var(--spacing-0);
 }

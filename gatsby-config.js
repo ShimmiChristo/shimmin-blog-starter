@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Starter Blog`,
-    description: `A Gatsby starter for projects with a blog.`,
-    siteUrl: `https://gatsby-starter-blog-demo.netlify.app/`,
+    title: `BFBH Cup`,
+    description: `Boys From Back Home Cup`,
+    siteUrl: `/`,
     headline: `This is the site headline.`,
     logo: ``,
     author: {
@@ -10,7 +10,7 @@ module.exports = {
       summary: `who lives in NYC and makes things`,
       website: `https://www.chrisshimmin.com`,
       email: `hello@chrisshimmin.com`,
-      phone: `646-580-5599`,
+      phone: ``,
     },
     social: {
       twitter: "shimmiChristo",
@@ -22,20 +22,16 @@ module.exports = {
     },
     nav: [
       {
-        name: "Home",
-        link: "/",
+        name: "Scores",
+        link: "/scores",
       },
       {
-        name: "Blog",
-        link: "/blog",
+        name: "Players",
+        link: "/players",
       },
       {
         name: "Rules",
         link: "/rules",
-      },
-      {
-        name: "2021",
-        link: "/2021",
       },
       {
         name: "About",
@@ -44,13 +40,6 @@ module.exports = {
     ],
   },
   plugins: [
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        path: `${__dirname}/content/blog`,
-        name: `blog`,
-      },
-    },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
