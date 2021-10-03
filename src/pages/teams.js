@@ -1,7 +1,7 @@
 import React from "react"
 import styled from "styled-components"
 import { useSiteMetadata } from "../hooks/use-site-metadata"
-import { usePublishedPosts } from "../hooks/use-published-posts"
+// import { usePublishedPosts } from "../hooks/use-published-posts"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"

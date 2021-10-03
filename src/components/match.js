@@ -2,25 +2,7 @@ import React, { useState } from "react"
 import { CourseInfo } from "../hooks/get-course-info"
 import { PlayerInfo } from "../hooks/get-player-info"
 import styled from "styled-components"
-// import { useStaticQuery, graphql } from "gatsby"
-// import Image from "gatsby-image"
 import "../styles/match.css"
-
-// const Container = styled.div`
-//   padding: 0 2rem 2rem 2rem;
-//   border-bottom: 2px solid;
-//   border-color: var(--color-brand-med);
-//   display: flex;
-//   flex-wrap: wrap;
-//   align-items: center;
-//   & h2 {
-//     flex: 0 0 100%;
-//   }
-//   @media (max-width: 767px) {
-//     padding: 0rem 1rem 1rem 1rem;
-//     justify-content: center;
-//   }
-// `
 
 const Section = styled.section`
   border: 1px solid gray;
@@ -37,6 +19,7 @@ const Section = styled.section`
   }
   @media (max-width: 768px) {
     max-height: 330px;
+    padding: 1rem;
   }
   &:hover {
     cursor: pointer;
@@ -48,9 +31,13 @@ function Match({ matchId, courseMatch, player1, player2, player3, player4 }) {
   const { player } = PlayerInfo()
   const courseHoles = course[`${courseMatch}`].holes
   const playerOne = player[`${player1}`]
+  const playerOneHand = playerOne.handicap
   const playerTwo = player[`${player2}`]
+  const playerTwoHand = playerTwo.handicap
   const playerThree = player[`${player3}`] || undefined
+  const playerThreeHand = playerThree ? playerThree.handicap : ""
   const playerFour = player[`${player4}`] || undefined
+  const playerFourHand = playerFour ? playerFour.handicap : ""
   const matchNumber = matchId
 
   const [sectionHeight, setSectionHeight] = useState(null)
@@ -153,8 +140,9 @@ function Match({ matchId, courseMatch, player1, player2, player3, player4 }) {
     if (score === "-") {
       return score
     } else {
-      if (holeHandicap <= playerHandicap) {
-        playerHandicap = Math.min(playerHandicap - 18, 0)
+      if (holeHandicap <= playerHandicap && score > -10) {
+        // playerHandicap = Math.min(playerHandicap - 18, 0)
+        playerHandicap = playerHandicap - 18
         score--
         return calcPlayerScore(score, playerHandicap, holeHandicap)
       } else {
@@ -229,9 +217,13 @@ function Match({ matchId, courseMatch, player1, player2, player3, player4 }) {
       <i class="match__number">match {matchNumber}</i>
       <div class="match__header">
         <div className="match__team color-green">
-          <div className="match__team--playerOne capitalize">{player1}</div>
+          <div className="match__team--playerOne capitalize">
+            {player1} <span>({playerOneHand})</span>
+          </div>
           {player3 ? (
-            <div className="match__team--playerThree capitalize">{player3}</div>
+            <div className="match__team--playerThree capitalize">
+              {player3} <span>({playerThreeHand})</span>
+            </div>
           ) : (
             ""
           )}
@@ -264,9 +256,15 @@ function Match({ matchId, courseMatch, player1, player2, player3, player4 }) {
         </div>
 
         <div className="match__team color-green">
-          <div className="match__team--playerTwo capitalize">{player2}</div>
+          <div className="match__team--playerTwo capitalize">
+            {player2}
+            <span> ({playerTwoHand})</span>
+          </div>
           {player4 ? (
-            <div className="match__team--playerFour capitalize">{player4}</div>
+            <div className="match__team--playerFour capitalize">
+              {player4}
+              <span> ({playerFourHand})</span>
+            </div>
           ) : (
             ""
           )}

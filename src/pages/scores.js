@@ -19,6 +19,7 @@ const TopicPage = ({ data, location }) => {
   const pageHash = location.hash
 
   const MatchNavSection = styled.div`
+    overflow-y: scroll;
     &[data-visible="false"] {
       display: none;
       a {
@@ -71,14 +72,7 @@ const TopicPage = ({ data, location }) => {
           },
         ]}
       />
-      {/* <MatchInfo
-        courses={[
-          "The Tribute Golf Course at Otsego Resort",
-          "The Tribute Golf Course at Otsego Resort",
-          "Gaylord Golf Club",
-        ]}
-        dates="Oct. 15-16, 2021"
-      /> */}
+  
       <MatchScore />
       {/* player1 and player3 are on the same team */}
       <MatchNavSection
@@ -215,7 +209,6 @@ const TopicPage = ({ data, location }) => {
           player2="dan"
         />
       </MatchNavSection>
-      {/* <AuthorBio /> */}
     </Layout>
   )
 }
