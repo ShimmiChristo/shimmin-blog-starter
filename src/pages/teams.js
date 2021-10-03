@@ -6,14 +6,14 @@ import { usePublishedPosts } from "../hooks/use-published-posts"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import LandingPageHeader from "../components/landing-page-header"
-import Match from "../components/match"
-import MatchScore from "../components/match-score"
+// import Match from "../components/match"
+// import MatchScore from "../components/match-score"
 
 const TopicPage = ({ data, location }) => {
-  const { title, description, headline } = useSiteMetadata()
-  const { nodes } = usePublishedPosts()
+  const { title } = useSiteMetadata()
+  // const { nodes } = usePublishedPosts()
   const siteTitle = title || `Title`
-  const posts = nodes
+  // const posts = nodes
 
   const LandingPageBody = styled.div`
     max-width: var(--maxWidth-5xl);

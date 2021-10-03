@@ -1,19 +1,19 @@
 import React from "react"
 import styled from "styled-components"
 import { useSiteMetadata } from "../hooks/use-site-metadata"
-import { usePublishedPosts } from "../hooks/use-published-posts"
+// import { usePublishedPosts } from "../hooks/use-published-posts"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import LandingPageHeader from "../components/landing-page-header"
 import Match from "../components/match"
 import MatchScore from "../components/match-score"
-import MatchInfo from "../components/match-info"
+// import MatchInfo from "../components/match-info"
 import MatchNav from "../components/match-nav"
 
 const TopicPage = ({ data, location }) => {
-  const { title, description, headline } = useSiteMetadata()
-  const { nodes } = usePublishedPosts()
+  const { title } = useSiteMetadata()
+  // const { nodes } = usePublishedPosts()
   const siteTitle = title || `Title`
   // const posts = nodes
   const pageHash = location.hash
