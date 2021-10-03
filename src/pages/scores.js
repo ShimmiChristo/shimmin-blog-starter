@@ -82,6 +82,7 @@ const TopicPage = ({ data, location }) => {
         <Match
           matchId="1.1 - Best Ball. Full handicap"
           courseMatch="tribute1"
+          matchHandicap="full"
           player1="matt"
           player2="dylan"
           player3="chris"
@@ -90,6 +91,7 @@ const TopicPage = ({ data, location }) => {
         <Match
           matchId="1.1 - Best Ball Bramble. Full handicap"
           courseMatch="tribute1"
+          matchHandicap="full"
           player1="derek"
           player2="dan"
           player3="travis"
@@ -103,6 +105,7 @@ const TopicPage = ({ data, location }) => {
         <Match
           matchId="1.2 - Best Bramble. Full handicap"
           courseMatch="tribute2"
+          matchHandicap="full"
           player1="matt"
           player2="rj"
           player3="derek"
@@ -111,6 +114,7 @@ const TopicPage = ({ data, location }) => {
         <Match
           matchId="1.2 - Best Bramble. Full handicap"
           courseMatch="tribute2"
+          matchHandicap="full"
           player1="chris"
           player2="dylan"
           player3="travis"
@@ -124,6 +128,7 @@ const TopicPage = ({ data, location }) => {
         <Match
           matchId="2.1 - Bramble Alternate. Average handicap"
           courseMatch="classic1"
+          matchHandicap="average"
           player1="chris"
           player2="rj"
           player3="derek"
@@ -132,6 +137,7 @@ const TopicPage = ({ data, location }) => {
         <Match
           matchId="2.1 - Bramble Alternate. Average handicap"
           courseMatch="classic1"
+          matchHandicap="average"
           player1="matt"
           player2="dylan"
           player3="travis"
@@ -145,6 +151,7 @@ const TopicPage = ({ data, location }) => {
         <Match
           matchId="2.2 - Scramble. Average handicap"
           courseMatch="classic2"
+          matchHandicap="average"
           player1="matt"
           player2="craig"
           player3="chris"
@@ -153,6 +160,7 @@ const TopicPage = ({ data, location }) => {
         <Match
           matchId="2.2 - Scramble. Average handicap"
           courseMatch="classic2"
+          matchHandicap="average"
           player1="derek"
           player2="dylan"
           player3="travis"
@@ -166,6 +174,7 @@ const TopicPage = ({ data, location }) => {
         <Match
           matchId="3.1 - Best Ball. Full handicap"
           courseMatch="gaylordGolfClub1"
+          matchHandicap="full"
           player1="matt"
           player2="dylan"
           player3="derek"
@@ -174,6 +183,7 @@ const TopicPage = ({ data, location }) => {
         <Match
           matchId="3.1 - Best Ball. Full handicap"
           courseMatch="gaylordGolfClub1"
+          matchHandicap="full"
           player1="chris"
           player2="craig"
           player3="travis"
@@ -187,24 +197,28 @@ const TopicPage = ({ data, location }) => {
         <Match
           matchId="3.2 - Singles Matches. Full handicap"
           courseMatch="gaylordGolfClub2"
+          matchHandicap="full"
           player1="matt"
           player2="dylan"
         />
         <Match
           matchId="3.2 - Singles Matches. Full handicap"
           courseMatch="gaylordGolfClub2"
+          matchHandicap="full"
           player1="travis"
           player2="craig"
         />
         <Match
           matchId="3.2 - Singles Matches. Full handicap"
           courseMatch="gaylordGolfClub2"
+          matchHandicap="full"
           player1="chris"
           player2="rj"
         />
         <Match
           matchId="3.2 - Singles Matches. Full handicap"
           courseMatch="gaylordGolfClub2"
+          matchHandicap="full"
           player1="derek"
           player2="dan"
         />

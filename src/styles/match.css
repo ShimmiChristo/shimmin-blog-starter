@@ -19,6 +19,10 @@ body {
 .text-black {
   color: var(--black);
 }
+.flex-basis-100 {
+  flex-basis: 100%;
+  text-align: center;
+}
 
 [data-winner="tie"] {
   background-color: var(--light-gray);
@@ -45,9 +49,10 @@ body {
 
 .match__team {
   display: flex;
-  width: 100px;
+  width: auto;
   justify-content: center;
   align-items: center;
+  flex-wrap:wrap;
 }
 .match__team > * {
   padding: 0 0.5rem;

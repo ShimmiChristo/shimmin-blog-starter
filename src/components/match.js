@@ -26,7 +26,15 @@ const Section = styled.section`
   }
 `
 
-function Match({ matchId, courseMatch, player1, player2, player3, player4 }) {
+function Match({
+  matchId,
+  matchHandicap,
+  courseMatch,
+  player1,
+  player2,
+  player3,
+  player4,
+}) {
   const { course } = CourseInfo()
   const { player } = PlayerInfo()
   const courseHoles = course[`${courseMatch}`].holes
@@ -51,25 +59,49 @@ function Match({ matchId, courseMatch, player1, player2, player3, player4 }) {
     if (playerThree !== undefined) {
       var playerThreeScore = playerThree.course[`${courseMatch}`] || undefined // [scores]
       var pHandiPlayerThree = playerThree.handicap || ""
+      var teamHandicap
+      if (matchHandicap === "average") {
+        teamHandicap = (pHandiPlayerOne + pHandiPlayerThree) / 2
 
-      for (var i = 0; i < playerOneScore.length; i++) {
-        var sPlayerOne = playerOneScore[i]
-        var sPlayerThree = playerThreeScore[i]
-        var hHand = courseHoles[i].handicap
-        var playerOneHandiScore = calcPlayerScore(
-          sPlayerOne,
-          pHandiPlayerOne,
-          hHand
-        )
-        var playerThreeHandiScore = calcPlayerScore(
-          sPlayerThree,
-          pHandiPlayerThree,
-          hHand
-        )
+        for (var i = 0; i < playerOneScore.length; i++) {
+          var sPlayerOne = playerOneScore[i]
+          var sPlayerThree = playerThreeScore[i]
+          var hHand = courseHoles[i].handicap
+          var playerOneHandiScore = calcPlayerScore(
+            sPlayerOne,
+            teamHandicap,
+            hHand
+          )
+          var playerThreeHandiScore = calcPlayerScore(
+            sPlayerThree,
+            teamHandicap,
+            hHand
+          )
 
-        teamOneScoreArr.push(
-          Math.min(playerOneHandiScore, playerThreeHandiScore)
-        )
+          teamOneScoreArr.push(
+            Math.min(playerOneHandiScore, playerThreeHandiScore)
+          )
+        }
+      } else {
+        for (var i = 0; i < playerOneScore.length; i++) {
+          var sPlayerOne = playerOneScore[i]
+          var sPlayerThree = playerThreeScore[i]
+          var hHand = courseHoles[i].handicap
+          var playerOneHandiScore = calcPlayerScore(
+            sPlayerOne,
+            pHandiPlayerOne,
+            hHand
+          )
+          var playerThreeHandiScore = calcPlayerScore(
+            sPlayerThree,
+            pHandiPlayerThree,
+            hHand
+          )
+
+          teamOneScoreArr.push(
+            Math.min(playerOneHandiScore, playerThreeHandiScore)
+          )
+        }
       }
     } else {
       for (var i = 0; i < playerOneScore.length; i++) {
@@ -96,25 +128,50 @@ function Match({ matchId, courseMatch, player1, player2, player3, player4 }) {
     if (playerFour !== undefined) {
       var playerFourScore = playerFour.course[`${courseMatch}`] || undefined // [scores]
       var pHandiPlayerFour = playerFour.handicap || ""
+      var teamHandicap
+      if (matchHandicap === "average") {
+        teamHandicap = (pHandiPlayerTwo + pHandiPlayerFour) / 2
+        for (var i = 0; i < playerTwoScore.length; i++) {
+          var sPlayerTwo = playerTwoScore[i]
+          var sPlayerFour = playerFourScore[i]
+          var hHand = courseHoles[i].handicap
+          var playerTwoHandiScore = calcPlayerScore(
+            sPlayerTwo,
+            teamHandicap,
+            hHand
+          )
+          var playerFourHandiScore = calcPlayerScore(
+            sPlayerFour,
+            teamHandicap,
+            hHand
+          )
 
-      for (var i = 0; i < playerTwoScore.length; i++) {
-        var sPlayerTwo = playerTwoScore[i]
-        var sPlayerFour = playerFourScore[i]
-        var hHand = courseHoles[i].handicap
-        var playerTwoHandiScore = calcPlayerScore(
-          sPlayerTwo,
-          pHandiPlayerTwo,
-          hHand
-        )
-        var playerFourHandiScore = calcPlayerScore(
-          sPlayerFour,
-          pHandiPlayerFour,
-          hHand
-        )
+          teamTwoScoreArr.push(
+            Math.min(playerTwoHandiScore, playerFourHandiScore)
+          )
+        }
+      } else {
+        for (var i = 0; i < playerTwoScore.length; i++) {
+          var sPlayerTwo = playerTwoScore[i]
+          var sPlayerFour = playerFourScore[i]
+          var hHand = courseHoles[i].handicap
+          var playerTwoHandiScore = calcPlayerScore(
+            sPlayerTwo,
+            pHandiPlayerTwo,
+            hHand
+          )
+          var playerFourHandiScore = calcPlayerScore(
+            sPlayerFour,
+            pHandiPlayerFour,
+            hHand
+          )
 
-        teamTwoScoreArr.push(
-          Math.min(playerTwoHandiScore, playerFourHandiScore)
-        )
+          teamTwoScoreArr.push(
+            teamHandicap !== undefined || null
+              ? teamHandicap
+              : Math.min(playerTwoHandiScore, playerFourHandiScore)
+          )
+        }
       }
     } else {
       for (var i = 0; i < playerTwoScore.length; i++) {
@@ -227,6 +284,14 @@ function Match({ matchId, courseMatch, player1, player2, player3, player4 }) {
           ) : (
             ""
           )}
+          {player3 && matchHandicap === "average" ? (
+            <div class="flex-basis-100">
+              {" "}
+              ({(playerOneHand + playerThreeHand) / 2})
+            </div>
+          ) : (
+            ""
+          )}
         </div>
 
         <div class="team__scores">
@@ -255,7 +320,7 @@ function Match({ matchId, courseMatch, player1, player2, player3, player4 }) {
           </div>
         </div>
 
-        <div className="match__team color-green">
+        <div className="match__team color-blue">
           <div className="match__team--playerTwo capitalize">
             {player2}
             <span> ({playerTwoHand})</span>
@@ -264,6 +329,14 @@ function Match({ matchId, courseMatch, player1, player2, player3, player4 }) {
             <div className="match__team--playerFour capitalize">
               {player4}
               <span> ({playerFourHand})</span>
+            </div>
+          ) : (
+            ""
+          )}
+          {player4 && matchHandicap === "average" ? (
+            <div class="flex-basis-100">
+              {" "}
+              ({(playerTwoHand + playerFourHand) / 2})
             </div>
           ) : (
             ""
