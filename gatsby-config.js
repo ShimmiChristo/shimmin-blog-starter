@@ -2,7 +2,7 @@ module.exports = {
   siteMetadata: {
     title: `BFBH Cup`,
     description: `Boys From Back Home Cup`,
-    siteUrl: `/`,
+    siteUrl: `https://bfbhcup.gatsbyjs.io/`,
     headline: `This is the site headline.`,
     logo: ``,
     author: {
