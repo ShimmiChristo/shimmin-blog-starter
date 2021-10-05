@@ -2,7 +2,7 @@ import React, { useState } from "react"
 import { Link } from "gatsby"
 import { useSiteMetadata } from "../hooks/use-site-metadata"
 import PropTypes from "prop-types"
-import Img from "gatsby-image"
+import { StaticImage } from "gatsby-plugin-image"
 import styled from "styled-components"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 
@@ -140,7 +140,11 @@ function HeaderV2() {
   if (logo) {
     logoImg = (
       <Link to="/">
-        <Img fixed={logo.childImageSharp.fixed} />
+        <StaticImage
+          src="../images/logo-black.png"
+          alt="site logo"
+          height={75}
+        />
       </Link>
     )
   } else {
@@ -155,7 +159,7 @@ function HeaderV2() {
     <HeaderContainer>
       <Background className={`${menuActive ? "active" : ""}`}></Background>
       <Container>
-        <span class="h2 navMenu__logo">{logoImg}</span>
+        <span className="h2 navMenu__logo">{logoImg}</span>
         <NavBtn id="navMenu__btn" onClick={navClick}>
           <FontAwesomeIcon icon={faBars} size="2x" />
         </NavBtn>

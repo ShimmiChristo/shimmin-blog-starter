@@ -63,7 +63,6 @@ const BlogPostTemplate = ({ data, location }) => {
             />
           </ImgContainer>
           <h1 itemProp="headline">{post.frontmatter.title}</h1>
-          <p>{post.frontmatter.date}</p>
         </Header>
         <section>
           <MDXRenderer itemProp="articleBody">{post.body}</MDXRenderer>
@@ -125,6 +124,7 @@ export const pageQuery = graphql`
         title
         date(formatString: "MMMM DD, YYYY")
         description
+        team
         featuredImg {
           childImageSharp {
             fluid(maxWidth: 900) {

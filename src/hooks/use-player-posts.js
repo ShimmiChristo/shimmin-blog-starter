@@ -1,10 +1,9 @@
 import { useStaticQuery, graphql } from "gatsby"
-export const usePublishedPosts = () => {
+export const usePlayersPosts = () => {
   const { allMdx } = useStaticQuery(
     graphql`
       query {
         allMdx(
-          filter: { frontmatter: { published: { eq: true } } }
           sort: { fields: [frontmatter___date], order: DESC }
         ) {
           nodes {
@@ -14,9 +13,11 @@ export const usePublishedPosts = () => {
               slug
             }
             frontmatter {
-              date(formatString: "MMMM DD, YYYY")
-              title
+              index
+              name
+              nickname
               description
+              category
               team
               featuredImg {
                 childImageSharp {

@@ -1,16 +1,16 @@
 import React from "react"
 import styled from "styled-components"
 import { useSiteMetadata } from "../hooks/use-site-metadata"
-import { usePublishedPosts } from "../hooks/use-published-posts"
+import { usePlayersPosts } from "../hooks/use-player-posts"
 
 import AuthorBio from "../components/author-bio"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import BlogPostThumbnailImg from "../components/blog-post-thumbnail-img"
+import PlayerThumbnailImg from "../components/player-post-thumbnail-img"
 
 const PlayersIndex = ({ data, location }) => {
   const { title, description, headline } = useSiteMetadata()
-  const { nodes } = usePublishedPosts()
+  const { nodes } = usePlayersPosts()
   const siteTitle = title || `Title`
   const posts = nodes
 
@@ -34,22 +34,21 @@ const PlayersIndex = ({ data, location }) => {
         <SEO title="All posts" />
         <OlContainer style={{ listStyle: `none` }}>
           {posts.map(post => {
-            const title = post.frontmatter.title || post.fields.slug
+            const title = post.frontmatter.name || post.fields.slug
 
             return (
-              <BlogPostThumbnailImg
+              <PlayerThumbnailImg
                 key={post.id}
                 slug={post.fields.slug}
                 title={title}
+                team={post.frontmatter.team}
                 featuredImg={post.frontmatter.featuredImg}
-                date={post.frontmatter.date}
                 description={post.frontmatter.description}
                 excerpt={post.excerpt}
               />
             )
           })}
         </OlContainer>
-        <AuthorBio />
       </Layout>
     )
   }

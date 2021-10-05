@@ -2,14 +2,11 @@ import React, { useState } from "react"
 import { Link } from "gatsby"
 import { useSiteMetadata } from "../hooks/use-site-metadata"
 import PropTypes from "prop-types"
-import Img from "gatsby-image"
+import { StaticImage } from "gatsby-plugin-image"
 import styled from "styled-components"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 
-import {
-  faBars,
-  faTimes,
-} from "@fortawesome/free-solid-svg-icons"
+import { faBars, faTimes } from "@fortawesome/free-solid-svg-icons"
 
 const HeaderContainer = styled.header`
   border-bottom: 1px solid #ebebeb;
@@ -29,7 +26,7 @@ const Nav = styled.nav`
   height: 100%;
   position: absolute;
   top: 0;
-  left:0;
+  left: 0;
   background-color: #fff;
   z-index: 2;
   transform: translateX(-100%);
@@ -109,7 +106,16 @@ function Header() {
   let logoImg
 
   if (logo) {
-    logoImg = <Img fixed={logo.childImageSharp.fixed} />
+    logoImg = (
+      <Link to="/">
+        <StaticImage
+          src="../images/logo-black.png"
+          alt="site logo"
+          width={200}
+          height={100}
+        />
+      </Link>
+    )
   } else {
     logoImg = <Link>{title}</Link>
   }
@@ -122,9 +128,7 @@ function Header() {
     <HeaderContainer>
       <Background className={`${menuActive ? "active" : ""}`}></Background>
       <Container>
-        <span>
-          {logoImg}
-        </span>
+        <span>{logoImg}</span>
         <NavBtn id="navMenu--btn" onClick={navClick}>
           <FontAwesomeIcon icon={faBars} size="2x" />
         </NavBtn>
@@ -135,9 +139,7 @@ function Header() {
           <ul>
             {nav.map(navMenu => (
               <li key={navMenu.name}>
-                <Link to={navMenu.link}>
-                  {navMenu.name}
-                </Link>
+                <Link to={navMenu.link}>{navMenu.name}</Link>
               </li>
             ))}
           </ul>

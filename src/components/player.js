@@ -1,6 +1,7 @@
 import React from "react"
 import { useSiteMetadata } from "../hooks/use-site-metadata"
 import { useProfilePic } from "../hooks/use-profile-pic"
+import { PlayerInfo } from "../hooks/get-player-info"
 // import { useStaticQuery, graphql } from "gatsby"
 import styled from "styled-components"
 import Image from "gatsby-image"
@@ -37,15 +38,18 @@ const ProfilePic = styled(Image)`
   }
 `
 
-function Player() {
+function Player({ name, nickname, description, category, featuredImg, team }) {
   const { author } = useSiteMetadata()
   const { fluid } = useProfilePic()
+  const { player } = PlayerInfo()
 
   return (
     <section>
       <Container>
         <Bio>
-          <h2>About Me</h2>
+          <h2>Biography</h2>
+          <p>{description}</p>
+
           <p>I'm a web developer based in New York City.</p>
           <p>
             I create and improve existing websites with specialization in

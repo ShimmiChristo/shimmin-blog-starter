@@ -4,7 +4,7 @@ module.exports = {
     description: `Boys From Back Home Cup`,
     siteUrl: `https://bfbhcup.gatsbyjs.io/`,
     headline: `This is the site headline.`,
-    logo: ``,
+    logo: `logo-black.png`,
     author: {
       name: `Chris Shimmin`,
       summary: `who lives in NYC and makes things`,
@@ -90,13 +90,13 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Gatsby Starter Blog`,
-        short_name: `GatsbyJS`,
+        name: `BFBH Cup`,
+        short_name: `BFBH Cup`,
         start_url: `/`,
         background_color: `#ffffff`,
         theme_color: `#663399`,
         display: `minimal-ui`,
-        icon: `content/assets/gatsby-icon.png`,
+        icon: `src/images/logo-black.png`,
       },
     },
     `gatsby-plugin-react-helmet`,
@@ -149,5 +149,8 @@ module.exports = {
         path: `./src/data/`,
       },
     },
+    `gatsby-plugin-image`,
+    `gatsby-plugin-sharp`,
+    `gatsby-transformer-sharp`, // Needed for dynamic images
   ],
 }
