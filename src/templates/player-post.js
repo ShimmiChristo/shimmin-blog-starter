@@ -19,8 +19,10 @@ const PlayerPostTemplate = ({ data, location }) => {
   const FeaturedImg = styled(Image)`
     width: 200px;
     height: auto;
+    margin-bottom: 2rem;
 
-    @media (max-width: 767px) {
+    @media screen and (max-width: 767px) {
+      width: 90%;
     }
   `
   const Header = styled.header`
@@ -29,12 +31,11 @@ const PlayerPostTemplate = ({ data, location }) => {
     align-items: center;
     width: 100%;
     background-color: var(--color-brand-dark);
+    background-color: ${props =>
+      props.team === "Blue Team" ? `var(--blue)` : `var(--green)`};
     margin-bottom: 2rem;
     padding: 1rem;
     color: #fff;
-
-    .info {
-    }
   `
   const HeaderContainer = styled.div`
     height: auto;
@@ -71,9 +72,15 @@ const PlayerPostTemplate = ({ data, location }) => {
     .h4 {
       margin-top: 0;
     }
+    @media screen and (max-width: 767px) {
+      flex-direction: column;
+    }
   `
   const MdxContent = styled.div`
     max-width: 55%;
+    @media screen and (max-width: 767px) {
+      max-width: 90%;
+    }
   `
 
   return (
@@ -87,7 +94,7 @@ const PlayerPostTemplate = ({ data, location }) => {
         itemScope
         itemType="http://schema.org/Article"
       >
-        <Header>
+        <Header team={post.frontmatter.team}>
           <HeaderContainer>
             <h1 class="h1" itemProp="headline">
               {post.frontmatter.name}

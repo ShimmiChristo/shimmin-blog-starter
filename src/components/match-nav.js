@@ -17,6 +17,9 @@ const Section = styled.section`
   transition: all 0.5s ease-in-out;
   max-height: 180px;
 
+  @media screen and (max-width: 767px) {
+    padding: 1rem 0;
+  }
   > * {
     padding: 0 1rem;
     margin: 0;
@@ -27,6 +30,10 @@ const Section = styled.section`
     justify-content: space-around;
     align-items: center;
     min-width: 900px;
+
+    @media screen and (max-width: 767px) {
+      padding: 0;
+    }
   }
   li {
     text-align: center;
@@ -35,6 +42,7 @@ const Section = styled.section`
     &[data-active="true"] {
       a {
         color: var(--color-link);
+        font-weight: bold;
       }
     }
   }
