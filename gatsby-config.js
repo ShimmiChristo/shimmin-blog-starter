@@ -94,7 +94,7 @@ module.exports = {
         short_name: `BFBH Cup`,
         start_url: `/`,
         background_color: `#ffffff`,
-        theme_color: `#663399`,
+        theme_color: `#ffffff`,
         display: `minimal-ui`,
         icon: `src/images/logo-black.png`,
       },
@@ -150,7 +150,15 @@ module.exports = {
       },
     },
     `gatsby-plugin-image`,
-    `gatsby-plugin-sharp`,
     `gatsby-transformer-sharp`, // Needed for dynamic images
+    {
+      resolve: `gatsby-plugin-sharp`,
+      defaults: {
+        backgroundColor: `white`
+      },
+      options: {
+        placeholder: `none`,
+      },
+    },
   ],
 }
