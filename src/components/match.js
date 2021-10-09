@@ -1,4 +1,5 @@
 import React, { useState } from "react"
+// import { Link } from "gatsby"
 import { CourseInfo } from "../hooks/get-course-info"
 import { PlayerInfo } from "../hooks/get-player-info"
 import styled from "styled-components"
@@ -7,9 +8,11 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faChevronDown, faTimes } from "@fortawesome/free-solid-svg-icons"
 
 const CloseBtn = styled.span`
-  position: absolute;
-  top: 0.5rem;
-  right: 1rem;
+    display: block;
+    padding: 1rem 1rem 2rem 2rem;
+    position: absolute;
+    top: 0;
+    right: 0;
 
   &:hover {
     cursor: pointer;
@@ -70,8 +73,10 @@ const Section = styled.section`
   }
 
   @media (max-width: 768px) {
-    &[data-handicap="average"] {
-      max-height: 400px;
+    &.closed {
+      &[data-handicap="average"] {
+        max-height: 400px;
+      }
     }
     max-height: 350px;
     padding: 2rem 1rem;
@@ -93,6 +98,8 @@ function Match({
   const { course } = CourseInfo()
   const { player } = PlayerInfo()
   const courseHoles = course[`${courseMatch}`].holes
+  // const courseName = course[`${courseMatch}`].name
+  // const courseLink = course[`${courseMatch}`].link
   const playerOne = player[`${player1}`]
   const playerOneHand = playerOne.handicap
   const playerTwo = player[`${player2}`]
@@ -103,7 +110,7 @@ function Match({
   const playerFourHand = playerFour ? playerFour.handicap : ""
   const matchNumber = matchId
 
-  const [sectionHeight, setSectionHeight] = useState('closed')
+  const [sectionHeight, setSectionHeight] = useState("closed")
   // const parTotal = course[`${courseMatch}`].totals.par
 
   function calcTeamOneScore() {
@@ -332,7 +339,11 @@ function Match({
       <OpenBtn onClick={matchCardClick}>
         <FontAwesomeIcon icon={faChevronDown} size="2x" />
       </OpenBtn>
-
+      {/* <div class="course__info">
+        <Link to={courseLink}>
+          {courseName}
+        </Link>
+      </div> */}
       <i class="match__number">match {matchNumber}</i>
       <div class="match__header">
         <div className="match__team color-green">

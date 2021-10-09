@@ -2,6 +2,8 @@
   {
     "course": {
       "tribute1": {
+        "name": "The Tribute at Otsego Resort",
+        "link": "https://www.otsegoclub.com/golf/the-tribute/",
         "holes": [
           {
             "number": 1,
@@ -83,6 +85,8 @@
       },
 
       "tribute2": {
+        "name": "The Tribute at Otsego Resort",
+        "link": "https://www.otsegoclub.com/golf/the-tribute/",
         "holes": [
           {
             "number": 10,
@@ -164,6 +168,8 @@
       },
 
       "classic1": {
+        "name": "The Classic at Otsego Resort",
+        "link": "https://www.otsegoclub.com/golf/the-classic/",
         "holes": [
           {
             "number": 1,
@@ -244,6 +250,8 @@
         }
       },
       "classic2": {
+        "name": "The Classic at Otsego Resort",
+        "link": "https://www.otsegoclub.com/golf/the-classic/",
         "holes": [
           {
             "number": 10,
@@ -325,6 +333,8 @@
       },
 
       "gaylordGolfClub1": {
+        "name": "Gaylord Golf Club",
+        "link": "https://www.gaylordcountryclub.com/",
         "holes": [
           {
             "number": 1,
@@ -405,6 +415,8 @@
         }
       },
       "gaylordGolfClub2": {
+        "name": "Gaylord Golf Club",
+        "link": "https://www.gaylordcountryclub.com/",
         "holes": [
           {
             "number": 10,

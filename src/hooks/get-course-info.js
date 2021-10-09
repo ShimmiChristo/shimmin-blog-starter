@@ -6,6 +6,8 @@ export const CourseInfo = () => {
       coursesJson {
         course {
           tribute1 {
+            name
+            link
             holes {
               handicap
               number
@@ -20,6 +22,8 @@ export const CourseInfo = () => {
             }
           }
           tribute2 {
+            name
+            link
             holes {
               handicap
               number
@@ -35,6 +39,8 @@ export const CourseInfo = () => {
           }
 
           classic1 {
+            name
+            link
             holes {
               handicap
               number
@@ -49,6 +55,8 @@ export const CourseInfo = () => {
             }
           }
           classic2 {
+            name
+            link
             holes {
               handicap
               number
@@ -64,6 +72,8 @@ export const CourseInfo = () => {
           }
           
           gaylordGolfClub1 {
+            name
+            link
             holes {
               handicap
               number
@@ -78,6 +88,8 @@ export const CourseInfo = () => {
             }
           }
           gaylordGolfClub2 {
+            name
+            link
             holes {
               handicap
               number
