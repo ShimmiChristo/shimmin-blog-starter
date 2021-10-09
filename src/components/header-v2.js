@@ -152,7 +152,14 @@ function HeaderV2() {
   }
 
   function navClick() {
-    menuActive ? setMenuActive(false) : setMenuActive(true)
+    const bodyTag = document.getElementsByTagName("body")[0]
+    if (menuActive) {
+      bodyTag.classList.remove("no-scroll")
+      setMenuActive(false)
+    } else {
+      bodyTag.classList.add("no-scroll")
+      setMenuActive(true)
+    }
   }
 
   return (

@@ -110,6 +110,9 @@ body {
   font-size: var(--fontSize-1);
   color: var(--color-text);
 }
+.no-scroll {
+  overflow: hidden !important;
+}
 
 footer {
   padding: var(--spacing-6) var(--spacing-0);
