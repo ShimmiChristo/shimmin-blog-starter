@@ -2,12 +2,11 @@
 published: true
 index: 1
 name: derek
-nickname: "Big D"
+nickname: "D-Mo, Tube, the OG, Old Reliable"
 description: "Description"
 category: players
 featuredImg: ./profile-pic.png
 team: "Green Team"
 ---
 
-
-Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+My legal name is Derek Morris but you could do a 4 episode 30 for 30 on all my nicknames, many of which were earned for better or worse. The most recent of which is dirt tube which has often been shortened to just "tube". Then there is old reliable , the OG, d-mo. From there the variations are endless. The following list are just some of the names bestowed upon me over the last decade. Dirt tube, tube, dirt tub, Darcy, lazy, lazy dick, d-homo, d-bitch, and bitch-mo to name a few. My golf game will not lead to any of these being improved.

@@ -45,7 +45,7 @@ const Nav = styled.nav`
     margin: 0;
     max-width: 250px;
     min-width: 150px;
-    width: 40%;
+    width: 50%;
     height: 100%;
     position: absolute;
     top: 0;

@@ -19,6 +19,12 @@ body {
 .text-black {
   color: var(--black);
 }
+.team-one-color--text {
+  color: var(--green);
+}
+.team-two-color--text {
+  color: var(--blue);
+}
 .flex-basis-100 {
   flex-basis: 100%;
   text-align: center;

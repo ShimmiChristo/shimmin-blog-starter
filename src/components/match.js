@@ -3,23 +3,78 @@ import { CourseInfo } from "../hooks/get-course-info"
 import { PlayerInfo } from "../hooks/get-player-info"
 import styled from "styled-components"
 import "../styles/match.css"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import { faChevronDown, faTimes } from "@fortawesome/free-solid-svg-icons"
 
+const CloseBtn = styled.span`
+  position: absolute;
+  top: 0.5rem;
+  right: 1rem;
+
+  &:hover {
+    cursor: pointer;
+    cursor: hand;
+  }
+
+  @media (max-width: 768px) {
+    font-size: 0.5em;
+  }
+`
+const OpenBtn = styled.span`
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translatex(-50%);
+
+  &:hover {
+    cursor: pointer;
+    cursor: hand;
+  }
+`
 const Section = styled.section`
   border: 1px solid gray;
-  padding: 2rem;
+  padding: 2rem 2rem 3rem;
   border-radius: 0.7rem;
   overflow: hidden;
-  overflow-x: scroll;
   max-width: 1000px;
   margin: 2rem auto 2rem;
   transition: max-height 0.3s ease-in-out;
-  max-height: 180px;
+  max-height: 200px;
+  position: relative;
+  ${CloseBtn} {
+    display: none;
+  }
+  ${OpenBtn} {
+    display: block;
+    padding: 0 100px;
+  }
+  .match__header {
+    padding-bottom: 4rem;
+  }
+
   &.open {
     max-height: 1000px;
+
+    .match__header {
+      padding-bottom: 0.5rem;
+    }
+    ${CloseBtn} {
+      display: block;
+    }
+    ${OpenBtn} {
+      display: none;
+    }
   }
+  .match__card-container {
+    overflow-y: scroll;
+  }
+
   @media (max-width: 768px) {
-    max-height: 330px;
-    padding: 1rem;
+    &[data-handicap="average"] {
+      max-height: 400px;
+    }
+    max-height: 350px;
+    padding: 2rem 1rem;
   }
   &:hover {
     cursor: pointer;
@@ -48,7 +103,7 @@ function Match({
   const playerFourHand = playerFour ? playerFour.handicap : ""
   const matchNumber = matchId
 
-  const [sectionHeight, setSectionHeight] = useState(null)
+  const [sectionHeight, setSectionHeight] = useState('closed')
   // const parTotal = course[`${courseMatch}`].totals.par
 
   function calcTeamOneScore() {
@@ -259,18 +314,25 @@ function Match({
   }
   const teamFinalScores = calcTeamScores()
 
+  function matchCardClick() {
+    sectionHeight === "closed"
+      ? setSectionHeight("open")
+      : setSectionHeight("closed")
+  }
+
   return (
     <Section
       data-match={`${courseMatch}`}
-      className={`"match__container " ${
-        sectionHeight == "closed" ? "open" : "closed"
-      }`}
-      onClick={() => {
-        sectionHeight === "closed"
-          ? setSectionHeight("open")
-          : setSectionHeight("closed")
-      }}
+      data-handicap={`${matchHandicap}`}
+      className={`"match__container " ${sectionHeight}`}
     >
+      <CloseBtn onClick={matchCardClick}>
+        <FontAwesomeIcon icon={faTimes} size="2x" />
+      </CloseBtn>
+      <OpenBtn onClick={matchCardClick}>
+        <FontAwesomeIcon icon={faChevronDown} size="2x" />
+      </OpenBtn>
+
       <i class="match__number">match {matchNumber}</i>
       <div class="match__header">
         <div className="match__team color-green">
@@ -343,76 +405,50 @@ function Match({
           )}
         </div>
       </div>
-      <div className="match__course">
-        <div className="match__column--info align-right">
-          <div className="match__hole row-cell">hole</div>
-          <div className="match__yardage row-cell">yardage</div>
-          <div className="match__handicap row-cell">handicap</div>
-          <div className="match__par row-cell">par</div>
-        </div>
-        {courseHoles.map(hole => (
-          <div className="match__column">
-            <div
-              className="match__hole row-cell"
-              data-winner={`${calcHoleWinner(hole.number).team}`}
-              id={hole.number}
-            >
-              {hole.number}
-            </div>
-            <div className="match__yardage row-cell">{hole.tees.middle}</div>
-            <div className="match__handicap row-cell">{hole.handicap}</div>
-            <div className="match__par row-cell">{hole.par}</div>
+      <div className="match__card-container">
+        <div className="match__course">
+          <div className="match__column--info align-right">
+            <div className="match__hole row-cell">hole</div>
+            <div className="match__yardage row-cell">yardage</div>
+            <div className="match__handicap row-cell">handicap</div>
+            <div className="match__par row-cell">par</div>
           </div>
-        ))}
-      </div>
-
-      <div className="match__teamScores">
-        <div className="match__teamScores--team1">
-          <div className={"match__playerScore match__player1"}>
-            <div className="match__column--info align-left row-cell">
-              {player1}
-            </div>
-            {playerOne
-              ? playerOne.course[`${courseMatch}`].map((score, i) => (
-                  <div className="match__column">
-                    <div
-                      className="match__score row-cell"
-                      data-score={`${calcPlayerScore(
-                        score,
-                        playerOne.handicap,
-                        courseHoles[i].handicap
-                      )}`}
-                    >
-                      {calcPlayerScore(
-                        score,
-                        playerOne.handicap,
-                        courseHoles[i].handicap
-                      )}
-                      <sup>{score}</sup>
-                    </div>
-                  </div>
-                ))
-              : ""}
-          </div>
-          {playerThree ? (
-            <div className={"match__playerScore match__player3"}>
-              <div className="match__column--info align-left row-cell">
-                {player3}
+          {courseHoles.map(hole => (
+            <div className="match__column">
+              <div
+                className="match__hole row-cell"
+                data-winner={`${calcHoleWinner(hole.number).team}`}
+                id={hole.number}
+              >
+                {hole.number}
               </div>
-              {playerThree
-                ? playerThree.course[`${courseMatch}`].map((score, i) => (
+              <div className="match__yardage row-cell">{hole.tees.middle}</div>
+              <div className="match__handicap row-cell">{hole.handicap}</div>
+              <div className="match__par row-cell">{hole.par}</div>
+            </div>
+          ))}
+        </div>
+
+        <div className="match__teamScores">
+          <div className="match__teamScores--team1">
+            <div className={"match__playerScore match__player1"}>
+              <div className="match__column--info align-left row-cell">
+                {player1}
+              </div>
+              {playerOne
+                ? playerOne.course[`${courseMatch}`].map((score, i) => (
                     <div className="match__column">
                       <div
                         className="match__score row-cell"
                         data-score={`${calcPlayerScore(
                           score,
-                          playerThree.handicap,
+                          playerOne.handicap,
                           courseHoles[i].handicap
                         )}`}
                       >
                         {calcPlayerScore(
                           score,
-                          playerThree.handicap,
+                          playerOne.handicap,
                           courseHoles[i].handicap
                         )}
                         <sup>{score}</sup>
@@ -421,67 +457,67 @@ function Match({
                   ))
                 : ""}
             </div>
-          ) : (
-            ""
-          )}
-          <div className="match__teamScore">
-            <div className="match__column--info column-left">
-              <div className="match__score row-cell">score</div>
-            </div>
-            {teamOneScore.map(hole => (
-              <div className="match__column">
-                <div className="match__score row-cell">{hole}</div>
+            {playerThree ? (
+              <div className={"match__playerScore match__player3"}>
+                <div className="match__column--info align-left row-cell">
+                  {player3}
+                </div>
+                {playerThree
+                  ? playerThree.course[`${courseMatch}`].map((score, i) => (
+                      <div className="match__column">
+                        <div
+                          className="match__score row-cell"
+                          data-score={`${calcPlayerScore(
+                            score,
+                            playerThree.handicap,
+                            courseHoles[i].handicap
+                          )}`}
+                        >
+                          {calcPlayerScore(
+                            score,
+                            playerThree.handicap,
+                            courseHoles[i].handicap
+                          )}
+                          <sup>{score}</sup>
+                        </div>
+                      </div>
+                    ))
+                  : ""}
               </div>
-            ))}
+            ) : (
+              ""
+            )}
+            <div className="match__teamScore">
+              <div className="match__column--info column-left">
+                <div className="match__score row-cell">score</div>
+              </div>
+              {teamOneScore.map(hole => (
+                <div className="match__column">
+                  <div className="match__score row-cell">{hole}</div>
+                </div>
+              ))}
+            </div>
           </div>
-        </div>
 
-        <div className="match__teamScores--team2">
-          <div className={"match__playerScore match__player2"}>
-            <div className="match__column--info align-left row-cell">
-              {player2}
-            </div>
-            {playerTwo
-              ? playerTwo.course[`${courseMatch}`].map((score, i) => (
-                  <div className="match__column">
-                    <div
-                      className="match__score row-cell"
-                      data-score={`${calcPlayerScore(
-                        score,
-                        playerTwo.handicap,
-                        courseHoles[i].handicap
-                      )}`}
-                    >
-                      {calcPlayerScore(
-                        score,
-                        playerTwo.handicap,
-                        courseHoles[i].handicap
-                      )}
-                      <sup>{score}</sup>
-                    </div>
-                  </div>
-                ))
-              : ""}
-          </div>
-          {playerFour ? (
-            <div className={"match__playerScore match__player4"}>
+          <div className="match__teamScores--team2">
+            <div className={"match__playerScore match__player2"}>
               <div className="match__column--info align-left row-cell">
-                {player4}
+                {player2}
               </div>
-              {playerFour
-                ? playerFour.course[`${courseMatch}`].map((score, i) => (
+              {playerTwo
+                ? playerTwo.course[`${courseMatch}`].map((score, i) => (
                     <div className="match__column">
                       <div
                         className="match__score row-cell"
                         data-score={`${calcPlayerScore(
                           score,
-                          playerFour.handicap,
+                          playerTwo.handicap,
                           courseHoles[i].handicap
                         )}`}
                       >
                         {calcPlayerScore(
                           score,
-                          playerFour.handicap,
+                          playerTwo.handicap,
                           courseHoles[i].handicap
                         )}
                         <sup>{score}</sup>
@@ -490,18 +526,46 @@ function Match({
                   ))
                 : ""}
             </div>
-          ) : (
-            ""
-          )}
-          <div className="match__teamScore">
-            <div className="match__column--info column-left">
-              <div className="match__score row-cell">score</div>
-            </div>
-            {teamTwoScore.map(hole => (
-              <div className="match__column">
-                <div className="match__score row-cell">{hole}</div>
+            {playerFour ? (
+              <div className={"match__playerScore match__player4"}>
+                <div className="match__column--info align-left row-cell">
+                  {player4}
+                </div>
+                {playerFour
+                  ? playerFour.course[`${courseMatch}`].map((score, i) => (
+                      <div className="match__column">
+                        <div
+                          className="match__score row-cell"
+                          data-score={`${calcPlayerScore(
+                            score,
+                            playerFour.handicap,
+                            courseHoles[i].handicap
+                          )}`}
+                        >
+                          {calcPlayerScore(
+                            score,
+                            playerFour.handicap,
+                            courseHoles[i].handicap
+                          )}
+                          <sup>{score}</sup>
+                        </div>
+                      </div>
+                    ))
+                  : ""}
               </div>
-            ))}
+            ) : (
+              ""
+            )}
+            <div className="match__teamScore">
+              <div className="match__column--info column-left">
+                <div className="match__score row-cell">score</div>
+              </div>
+              {teamTwoScore.map(hole => (
+                <div className="match__column">
+                  <div className="match__score row-cell">{hole}</div>
+                </div>
+              ))}
+            </div>
           </div>
         </div>
       </div>

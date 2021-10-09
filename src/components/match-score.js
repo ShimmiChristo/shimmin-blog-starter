@@ -9,28 +9,63 @@ const Section = styled.section`
   padding: 2rem;
   border-radius: 0.7rem;
   overflow: hidden;
-  overflow-x: scroll;
+  overflow-x: hidden;
   max-width: 1000px;
-  margin: 2rem auto 2rem;
+  margin: 2rem auto 0;
   transition: all 0.5s ease-in-out;
-  max-height: 180px;
+  max-height: 100px;
   display: flex;
   justify-content: center;
 
-
   > * {
-    padding: 0 1rem;
+    padding: 0 2rem;
     margin: 0;
+
+    @media (max-width: 768px) {
+      padding: 0 1rem;
+    }
+  }
+  div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  span {
+    margin: 0 1rem;
+    text-transform: uppercase;
+  }
+  &.team-one-color,
+  &.team-two-color {
+    color: #fff;
+    .h1 {
+      color: #fff;
+    }
   }
 `
 
 function MatchScore({}) {
   const { teams } = ScoreInfo()
 
+  function changeBackgroundColor() {
+    if (teams.team1.score > teams.team2.score) {
+      return `team-one-color`
+    } else if (teams.team1.score < teams.team2.score) {
+      return `team-two-color`
+    } else {
+      return `bk-gray`
+    }
+  }
+
   return (
-    <Section>
-      <div class="h1 team-color-one">{teams.team1.score}</div>
-      <div class="h1 team-color-two">{teams.team2.score}</div>
+    <Section className={changeBackgroundColor()}>
+      <div>
+        <span>{teams.team1.name}</span>
+        <div class="h1">{teams.team1.score}</div>
+      </div>
+      <div>
+        <div class="h1">{teams.team2.score}</div>
+        <span>{teams.team2.name}</span>
+      </div>
     </Section>
   )
 }

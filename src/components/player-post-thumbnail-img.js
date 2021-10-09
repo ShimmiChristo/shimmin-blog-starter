@@ -16,8 +16,8 @@ function PlayerThumbnailImg({
   excerpt,
 }) {
   const ListContainer = styled.li`
-    width: 33%;
-    padding: 3%;
+    width: 25%;
+    padding: 0 3%;
     @media (max-width: 767px) {
       width: 100%;
     }
@@ -34,7 +34,7 @@ function PlayerThumbnailImg({
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 100%;
+    height: auto;
     justify-content: space-between;
     margin: 0;
     text-align: center;
@@ -53,8 +53,8 @@ function PlayerThumbnailImg({
       max-height: 250px;
     }
     @media (max-width: 400px) {
-      width: 250px;
-      height: 250px;
+      width: 200px;
+      height: 200px;
     }
   `
   const Header = styled.header`
@@ -68,6 +68,7 @@ function PlayerThumbnailImg({
 
     h3 {
       text-transform: capitalize;
+      margin: 0;
     }
   `
   const FeaturedImg = styled(Image)`
@@ -95,7 +96,7 @@ function PlayerThumbnailImg({
   `
 
   return (
-    <ListContainer key={key}>
+    <ListContainer key={key} data-team={team}>
       <Link to={slug} itemProp="url">
         <ArticleContainer
           className="post-list-item"
