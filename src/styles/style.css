@@ -110,7 +110,7 @@ body {
   font-size: var(--fontSize-1);
   color: var(--color-text);
 }
-.no-scroll {
+body.no-scroll #navMenu.active{
   overflow: hidden !important;
 }
 

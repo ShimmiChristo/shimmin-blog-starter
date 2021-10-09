@@ -172,12 +172,12 @@ function HeaderV2() {
         </NavBtn>
         <Nav id="navMenu" className={`${menuActive ? "active" : ""}`}>
           <CloseBtn id="navMenu__close" onClick={navClick}>
-            <FontAwesomeIcon icon={faTimes} size="2x" />
+            <FontAwesomeIcon icon={faTimes} size="1x" />
           </CloseBtn>
           <ul>
             {nav.map(navMenu => (
               <li key={navMenu.name}>
-                <Link to={navMenu.link}>{navMenu.name}</Link>
+                <Link to={navMenu.link} onClick={navClick}>{navMenu.name}</Link>
               </li>
             ))}
           </ul>
