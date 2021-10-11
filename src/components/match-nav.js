@@ -1,9 +1,5 @@
 import React from "react"
-import { Link } from "gatsby"
-// import { ScoreInfo } from "../hooks/get-team-score"
-// import { CourseInfo } from "../hooks/get-course-info"
 import styled from "styled-components"
-// import Image from "gatsby-image"
 import "../styles/match.css"
 
 const Section = styled.section`
@@ -68,10 +64,10 @@ function MatchNav({ location, titles }) {
       <ul>
         {titlesArray.map(title => (
           <li data-active={"#" + title.link === pageHash ? "true" : "false"}>
-            <Link to={`#${title.link}`}>
+            <a href={`#${title.link}`}>
               {title.round} <br />
               {title.name}
-            </Link>
+            </a>
           </li>
         ))}
       </ul>

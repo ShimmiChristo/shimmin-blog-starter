@@ -8,11 +8,11 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faChevronDown, faTimes } from "@fortawesome/free-solid-svg-icons"
 
 const CloseBtn = styled.span`
-    display: block;
-    padding: 1rem 1rem 2rem 2rem;
-    position: absolute;
-    top: 0;
-    right: 0;
+  display: block;
+  padding: 1rem 1rem 2rem 2rem;
+  position: absolute;
+  top: 0;
+  right: 0;
 
   &:hover {
     cursor: pointer;
@@ -256,8 +256,9 @@ function Match({
     var score = s
     var playerHandicap = pHand
     var holeHandicap = hHand
-    if (score === "-") {
-      return score
+    if (score > "20") {
+      console.log("score - ", score)
+      return "-"
     } else {
       if (holeHandicap <= playerHandicap && score > -10) {
         // playerHandicap = Math.min(playerHandicap - 18, 0)
@@ -462,7 +463,7 @@ function Match({
                           playerOne.handicap,
                           courseHoles[i].handicap
                         )}
-                        <sup>{score}</sup>
+                        <sup>{score > 20 ? "" : score}</sup>
                       </div>
                     </div>
                   ))
@@ -489,7 +490,7 @@ function Match({
                             playerThree.handicap,
                             courseHoles[i].handicap
                           )}
-                          <sup>{score}</sup>
+                          <sup>{score > 20 ? "" : score}</sup>
                         </div>
                       </div>
                     ))
@@ -531,7 +532,7 @@ function Match({
                           playerTwo.handicap,
                           courseHoles[i].handicap
                         )}
-                        <sup>{score}</sup>
+                        <sup>{score > 20 ? "" : score}</sup>
                       </div>
                     </div>
                   ))
@@ -558,7 +559,7 @@ function Match({
                             playerFour.handicap,
                             courseHoles[i].handicap
                           )}
-                          <sup>{score}</sup>
+                          <sup>{score > 20 ? "" : score}</sup>
                         </div>
                       </div>
                     ))
