@@ -126,7 +126,9 @@ body {
   background-color: var(--light-gray);
 }
 .match__playerScore .row-cell {
-  padding: 3rem 0;
+  padding: 2rem 0;
+  display: flex;
+  justify-content: center;
 }
 .match__number {
   display: block;
