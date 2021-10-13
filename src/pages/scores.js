@@ -40,8 +40,8 @@ const TopicPage = ({ data, location }) => {
 
   return (
     <Layout location={location} title={siteTitle}>
-      <SEO title="2021 BFBH Cup" />
-      <LandingPageHeader title="2021" />
+      <SEO title="2021 Scores" />
+      <LandingPageHeader title="Scores" />
       <MatchNav
         location={location}
         titles={[

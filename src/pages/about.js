@@ -22,6 +22,7 @@ const TopicPage = ({ data, location }) => {
     margin: 0 auto;
   `
 
+
   return (
     <Layout location={location} title={siteTitle}>
       <SEO title="About" />
@@ -42,6 +43,7 @@ const TopicPage = ({ data, location }) => {
           A group of brothers and friends who were all born and raised in the great state of Michigan.
         </p>
       </LandingPageBody>
+      
     </Layout>
   )
 }

@@ -10,7 +10,7 @@ import SEO from "../components/seo"
 import LandingPageHeader from "../components/landing-page-header"
 import Match from "../components/match"
 import MatchScore from "../components/match-score"
-// import MatchInfo from "../components/match-info"
+import AboutSite from "../components/about-site"
 import MatchNav from "../components/match-nav"
 import "../styles/match.css"
 
@@ -18,9 +18,7 @@ const TopicPage = ({ data, location }) => {
   const { title } = useSiteMetadata()
   const { course } = CourseInfo()
 
-  // const { nodes } = usePublishedPosts()
   const siteTitle = title || `Title`
-  // const posts = nodes
   const pageHash = location.hash
 
   const MatchNavSection = styled.div`
@@ -37,46 +35,53 @@ const TopicPage = ({ data, location }) => {
       }
     }
   `
+  const LandingPageBody = styled.div`
+    max-width: var(--maxWidth-5xl);
+    margin: 0 auto;
+    display: flex;
+    margin-bottom: var(--spacing-6);
+  `
+  const SectionAd = styled.div`
+    min-width: 300px;
+    margin: var(--spacing-6) 0 0 var(--spacing-6);
+    border: 1px solid;
+    border-radius: 5px;
+    display: ${props => props.Ad ? 'flex' : 'none'};
+  `
+
 
   return (
     <Layout location={location} title={siteTitle}>
-      <SEO title="2021 BFBH Cup" />
-      <LandingPageHeader title="2021" />
-      <MatchNav
-        location={location}
-        titles={[
-          {
-            name: `Best Ball`,
-            round: `Round 1.1`,
-            link: "r1-best-ball",
-          },
-          {
-            name: "Ball Bramble",
-            round: "Round 1.2",
-            link: "r1-two-ball-bramble",
-          },
-          {
-            name: "Bramble Alternate",
-            round: "Round 2.1",
-            link: "r2-bramble-alternate",
-          },
-          {
-            name: "Scramble",
-            round: "Round 2.2",
-            link: "r2-scramble",
-          },
-          {
-            name: "Best Ball",
-            round: "Round 3.1",
-            link: "r3-best-ball",
-          },
-          {
-            name: "Singles",
-            round: "Round 3.2",
-            link: "r3-singles",
-          },
-        ]}
-      />
+      <SEO title="BFBH Cup" />
+      <LandingPageHeader title="BFBH Cup" />
+
+      <LandingPageBody>
+        <div>
+          <h2 class="h4">What is the BFBH Cup?</h2>
+          <p>
+            The BFBH Cup is a annual golf competition played at different
+            courses throughout the United States, but mainly in the Great Lake
+            State, the High-Five of the country, Michigan.
+          </p>
+          <h2 class="h4">What does the BFBH Cup stand for?</h2>
+          <p>
+            Great question. The BFBH Cup stands for The "Boys From Back Home
+            Cup".
+          </p>
+          <h2 class="h4">Who are the boys from back home?</h2>
+          <p>
+            A group of brothers and friends who were all born and raised in the
+            great state of Michigan.
+          </p>
+        </div>
+        
+        <SectionAd>
+          
+        </SectionAd>
+
+      </LandingPageBody>
+      <hr />
+      <h2>Current Score</h2>
 
       <MatchScore />
       {/* player1 and player3 are on the same team */}

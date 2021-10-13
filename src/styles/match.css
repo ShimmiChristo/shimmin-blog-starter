@@ -73,6 +73,7 @@ body {
   margin: 2rem auto -1rem;
   max-width: 1000px;
   font-style: italic;
+  width: 98%;
 }
 .match__column {
   width: 3rem;

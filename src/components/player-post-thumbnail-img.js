@@ -17,7 +17,7 @@ function PlayerThumbnailImg({
 }) {
   const ListContainer = styled.li`
     width: 25%;
-    padding: 0 3%;
+    padding: 0 1%;
     @media (max-width: 767px) {
       width: 100%;
     }

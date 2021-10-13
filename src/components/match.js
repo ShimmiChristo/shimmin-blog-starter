@@ -44,6 +44,7 @@ const Section = styled.section`
   transition: max-height 0.3s ease-in-out;
   max-height: 200px;
   position: relative;
+  width: 98%;
   ${CloseBtn} {
     display: none;
   }
@@ -57,7 +58,8 @@ const Section = styled.section`
 
   &.open {
     max-height: 1000px;
-
+    box-shadow: 2px 2px 9px #333;
+    
     .match__header {
       padding-bottom: 0.5rem;
     }
@@ -140,9 +142,16 @@ function Match({
             hHand
           )
 
-          teamOneScoreArr.push(
-            Math.min(playerOneHandiScore, playerThreeHandiScore)
-          )
+          if (
+            isNaN(playerOneHandiScore) !== true &&
+            isNaN(playerThreeHandiScore) !== true
+          ) {
+            teamOneScoreArr.push(
+              Math.min(playerOneHandiScore, playerThreeHandiScore)
+            )
+          } else {
+            teamOneScoreArr.push("-")
+          }
         }
       } else {
         for (var i = 0; i < playerOneScore.length; i++) {
@@ -160,9 +169,17 @@ function Match({
             hHand
           )
 
-          teamOneScoreArr.push(
-            Math.min(playerOneHandiScore, playerThreeHandiScore)
-          )
+          if (
+            isNaN(playerOneHandiScore) !== true &&
+            isNaN(playerThreeHandiScore) !== true
+          ) {
+            teamOneScoreArr.push(
+              Math.min(playerOneHandiScore, playerThreeHandiScore)
+            )
+          } else {
+            teamOneScoreArr.push("-")
+          }
+          
         }
       }
     } else {
@@ -208,9 +225,17 @@ function Match({
             hHand
           )
 
-          teamTwoScoreArr.push(
-            Math.min(playerTwoHandiScore, playerFourHandiScore)
-          )
+         
+          if (
+            isNaN(playerTwoHandiScore) !== true &&
+            isNaN(playerFourHandiScore) !== true
+          ) {
+            teamTwoScoreArr.push(
+              Math.min(playerTwoHandiScore, playerFourHandiScore)
+            )
+          } else {
+            teamTwoScoreArr.push("-")
+          }
         }
       } else {
         for (var i = 0; i < playerTwoScore.length; i++) {
@@ -228,11 +253,16 @@ function Match({
             hHand
           )
 
-          teamTwoScoreArr.push(
-            teamHandicap !== undefined || null
-              ? teamHandicap
-              : Math.min(playerTwoHandiScore, playerFourHandiScore)
-          )
+          if (
+            isNaN(playerTwoHandiScore) !== true &&
+            isNaN(playerFourHandiScore) !== true
+          ) {
+            teamTwoScoreArr.push(
+              Math.min(playerTwoHandiScore, playerFourHandiScore)
+            )
+          } else {
+            teamTwoScoreArr.push("-")
+          }
         }
       }
     } else {
@@ -257,7 +287,6 @@ function Match({
     var playerHandicap = pHand
     var holeHandicap = hHand
     if (score > "20") {
-      console.log("score - ", score)
       return "-"
     } else {
       if (holeHandicap <= playerHandicap && score > -10) {
