@@ -58,7 +58,7 @@ const Section = styled.section`
 
   &.open {
     max-height: 1000px;
-    box-shadow: 2px 2px 9px #333;
+    box-shadow: 2px 2px 9px #CCCCCC;
     
     .match__header {
       padding-bottom: 0.5rem;
