@@ -58,8 +58,8 @@ const Section = styled.section`
 
   &.open {
     max-height: 1000px;
-    box-shadow: 2px 2px 9px #CCCCCC;
-    
+    box-shadow: 2px 2px 9px #cccccc;
+
     .match__header {
       padding-bottom: 0.5rem;
     }
@@ -91,6 +91,7 @@ const Section = styled.section`
 function Match({
   matchId,
   matchHandicap,
+  gamePlay,
   courseMatch,
   player1,
   player2,
@@ -171,15 +172,19 @@ function Match({
 
           if (
             isNaN(playerOneHandiScore) !== true &&
-            isNaN(playerThreeHandiScore) !== true
+            isNaN(playerThreeHandiScore) !== true &&
+            gamePlay !== "two-ball"
           ) {
             teamOneScoreArr.push(
               Math.min(playerOneHandiScore, playerThreeHandiScore)
             )
+          } else if (gamePlay === "two-ball") {
+            teamOneScoreArr.push(
+              Number(playerOneHandiScore) + Number(playerThreeHandiScore)
+            )
           } else {
             teamOneScoreArr.push("-")
           }
-          
         }
       }
     } else {
@@ -225,7 +230,6 @@ function Match({
             hHand
           )
 
-         
           if (
             isNaN(playerTwoHandiScore) !== true &&
             isNaN(playerFourHandiScore) !== true
@@ -255,10 +259,15 @@ function Match({
 
           if (
             isNaN(playerTwoHandiScore) !== true &&
-            isNaN(playerFourHandiScore) !== true
+            isNaN(playerFourHandiScore) !== true &&
+            gamePlay !== "two-ball"
           ) {
             teamTwoScoreArr.push(
               Math.min(playerTwoHandiScore, playerFourHandiScore)
+            )
+          } else if (gamePlay === "two-ball") {
+            teamTwoScoreArr.push(
+              Number(playerTwoHandiScore) + Number(playerFourHandiScore)
             )
           } else {
             teamTwoScoreArr.push("-")

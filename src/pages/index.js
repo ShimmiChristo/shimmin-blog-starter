@@ -119,18 +119,20 @@ const TopicPage = ({ data, location }) => {
           <Link to={course["tribute2"].link}>{course[`tribute2`].name}</Link>
         </div>
         <Match
-          matchId="1.2 - Best Bramble. Full handicap"
+          matchId="1.2 - 2 Ball Bramble. Full handicap"
           courseMatch="tribute2"
           matchHandicap="full"
+          gamePlay="two-ball"
           player1="matt"
           player2="rj"
           player3="derek"
           player4="craig"
         />
         <Match
-          matchId="1.2 - Best Bramble. Full handicap"
+          matchId="1.2 - 2 Ball Bramble. Full handicap"
           courseMatch="tribute2"
           matchHandicap="full"
+          gamePlay="two-ball"
           player1="chris"
           player2="dylan"
           player3="travis"
