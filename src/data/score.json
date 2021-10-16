@@ -4,12 +4,12 @@
       "team1": {
         "name": "crohn's crushers",
         "players": ["Matt", "Chris", "Derek", "Travis"],
-        "score": "1/2"
+        "score": "2"
       },
       "team2": {
         "name": "team ramrod",
         "players": ["Dylan", "RJ", "Craig", "Dan"],
-        "score": "1/2"
+        "score": "7"
       }
     }
   }
