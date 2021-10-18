@@ -91,12 +91,16 @@ const Section = styled.section`
 function Match({
   matchId,
   matchHandicap,
-  gamePlay,
+  gameplay,
   courseMatch,
   player1,
+  player1Handicap,
   player2,
+  player2Handicap,
   player3,
+  player3Handicap,
   player4,
+  player4Handicap,
 }) {
   const { course } = CourseInfo()
   const { player } = PlayerInfo()
@@ -104,13 +108,13 @@ function Match({
   // const courseName = course[`${courseMatch}`].name
   // const courseLink = course[`${courseMatch}`].link
   const playerOne = player[`${player1}`]
-  const playerOneHand = playerOne.handicap
+  const playerOneHand = parseInt(player1Handicap)
   const playerTwo = player[`${player2}`]
-  const playerTwoHand = playerTwo.handicap
+  const playerTwoHand = parseInt(player2Handicap)
   const playerThree = player[`${player3}`] || undefined
-  const playerThreeHand = playerThree ? playerThree.handicap : ""
+  const playerThreeHand = playerThree ? parseInt(player3Handicap) : ""
   const playerFour = player[`${player4}`] || undefined
-  const playerFourHand = playerFour ? playerFour.handicap : ""
+  const playerFourHand = playerFour ? parseInt(player4Handicap) : ""
   const matchNumber = matchId
 
   const [sectionHeight, setSectionHeight] = useState("closed")
@@ -118,26 +122,25 @@ function Match({
 
   function calcTeamOneScore() {
     const teamOneScoreArr = []
-    var playerOneScore = playerOne.course[`${courseMatch}`] // [scores]
-    var pHandiPlayerOne = playerOne.handicap
+    let playerOneScore = playerOne.course[`${courseMatch}`] // [scores]
+    let pHandiPlayerOne = parseInt(player1Handicap)
 
     if (playerThree !== undefined) {
-      var playerThreeScore = playerThree.course[`${courseMatch}`] || undefined // [scores]
-      var pHandiPlayerThree = playerThree.handicap || ""
-      var teamHandicap
+      let playerThreeScore = playerThree.course[`${courseMatch}`] || undefined // [scores]
+      let pHandiPlayerThree = parseInt(player3Handicap)
       if (matchHandicap === "average") {
-        teamHandicap = (pHandiPlayerOne + pHandiPlayerThree) / 2
+        let teamHandicap = (pHandiPlayerOne + pHandiPlayerThree) / 2
 
-        for (var i = 0; i < playerOneScore.length; i++) {
-          var sPlayerOne = playerOneScore[i]
-          var sPlayerThree = playerThreeScore[i]
-          var hHand = courseHoles[i].handicap
-          var playerOneHandiScore = calcPlayerScore(
+        for (let i = 0; i < playerOneScore.length; i++) {
+          let sPlayerOne = playerOneScore[i]
+          let sPlayerThree = playerThreeScore[i]
+          let hHand = courseHoles[i].handicap
+          let playerOneHandiScore = calcPlayerScore(
             sPlayerOne,
             teamHandicap,
             hHand
           )
-          var playerThreeHandiScore = calcPlayerScore(
+          let playerThreeHandiScore = calcPlayerScore(
             sPlayerThree,
             teamHandicap,
             hHand
@@ -155,16 +158,16 @@ function Match({
           }
         }
       } else {
-        for (var i = 0; i < playerOneScore.length; i++) {
-          var sPlayerOne = playerOneScore[i]
-          var sPlayerThree = playerThreeScore[i]
-          var hHand = courseHoles[i].handicap
-          var playerOneHandiScore = calcPlayerScore(
+        for (let i = 0; i < playerOneScore.length; i++) {
+          let sPlayerOne = playerOneScore[i]
+          let sPlayerThree = playerThreeScore[i]
+          let hHand = courseHoles[i].handicap
+          let playerOneHandiScore = calcPlayerScore(
             sPlayerOne,
             pHandiPlayerOne,
             hHand
           )
-          var playerThreeHandiScore = calcPlayerScore(
+          let playerThreeHandiScore = calcPlayerScore(
             sPlayerThree,
             pHandiPlayerThree,
             hHand
@@ -173,12 +176,12 @@ function Match({
           if (
             isNaN(playerOneHandiScore) !== true &&
             isNaN(playerThreeHandiScore) !== true &&
-            gamePlay !== "two-ball"
+            gameplay !== "two-ball"
           ) {
             teamOneScoreArr.push(
               Math.min(playerOneHandiScore, playerThreeHandiScore)
             )
-          } else if (gamePlay === "two-ball") {
+          } else if (gameplay === "two-ball") {
             teamOneScoreArr.push(
               Number(playerOneHandiScore) + Number(playerThreeHandiScore)
             )
@@ -188,10 +191,10 @@ function Match({
         }
       }
     } else {
-      for (var i = 0; i < playerOneScore.length; i++) {
-        var sPlayerOne = playerOneScore[i]
-        var hHand = courseHoles[i].handicap
-        var playerOneHandiScore = calcPlayerScore(
+      for (let i = 0; i < playerOneScore.length; i++) {
+        let sPlayerOne = playerOneScore[i]
+        let hHand = courseHoles[i].handicap
+        let playerOneHandiScore = calcPlayerScore(
           sPlayerOne,
           pHandiPlayerOne,
           hHand
@@ -206,52 +209,51 @@ function Match({
 
   function calcTeamTwoScore() {
     const teamTwoScoreArr = []
-    var playerTwoScore = playerTwo.course[`${courseMatch}`] // [scores]
-    var pHandiPlayerTwo = playerTwo.handicap
+    let playerTwoScore = playerTwo.course[`${courseMatch}`] // [scores]
+    let pHandiPlayerTwo = parseInt(player2Handicap)
 
     if (playerFour !== undefined) {
-      var playerFourScore = playerFour.course[`${courseMatch}`] || undefined // [scores]
-      var pHandiPlayerFour = playerFour.handicap || ""
-      var teamHandicap
+      let playerFourScore = playerFour.course[`${courseMatch}`] || undefined // [scores]
+      let pHandiPlayerFour = parseInt(player4Handicap) || ""
       if (matchHandicap === "average") {
-        teamHandicap = (pHandiPlayerTwo + pHandiPlayerFour) / 2
-        for (var i = 0; i < playerTwoScore.length; i++) {
-          var sPlayerTwo = playerTwoScore[i]
-          var sPlayerFour = playerFourScore[i]
-          var hHand = courseHoles[i].handicap
-          var playerTwoHandiScore = calcPlayerScore(
+        let teamHandicap = (pHandiPlayerTwo + pHandiPlayerFour) / 2
+        for (let i = 0; i < playerTwoScore.length; i++) {
+          let sPlayerTwo = playerTwoScore[i]
+          let sPlayerFour = playerFourScore[i]
+          let hHand = courseHoles[i].handicap
+          let playerTwoHandiScoreAv = calcPlayerScore(
             sPlayerTwo,
             teamHandicap,
             hHand
           )
-          var playerFourHandiScore = calcPlayerScore(
+          let playerFourHandiScoreAv = calcPlayerScore(
             sPlayerFour,
             teamHandicap,
             hHand
           )
 
           if (
-            isNaN(playerTwoHandiScore) !== true &&
-            isNaN(playerFourHandiScore) !== true
+            isNaN(playerTwoHandiScoreAv) !== true &&
+            isNaN(playerFourHandiScoreAv) !== true
           ) {
             teamTwoScoreArr.push(
-              Math.min(playerTwoHandiScore, playerFourHandiScore)
+              Math.min(playerTwoHandiScoreAv, playerFourHandiScoreAv)
             )
           } else {
             teamTwoScoreArr.push("-")
           }
         }
       } else {
-        for (var i = 0; i < playerTwoScore.length; i++) {
-          var sPlayerTwo = playerTwoScore[i]
-          var sPlayerFour = playerFourScore[i]
-          var hHand = courseHoles[i].handicap
-          var playerTwoHandiScore = calcPlayerScore(
+        for (let i = 0; i < playerTwoScore.length; i++) {
+          let sPlayerTwo = playerTwoScore[i]
+          let sPlayerFour = playerFourScore[i]
+          let hHand = courseHoles[i].handicap
+          let playerTwoHandiScore = calcPlayerScore(
             sPlayerTwo,
             pHandiPlayerTwo,
             hHand
           )
-          var playerFourHandiScore = calcPlayerScore(
+          let playerFourHandiScore = calcPlayerScore(
             sPlayerFour,
             pHandiPlayerFour,
             hHand
@@ -260,12 +262,12 @@ function Match({
           if (
             isNaN(playerTwoHandiScore) !== true &&
             isNaN(playerFourHandiScore) !== true &&
-            gamePlay !== "two-ball"
+            gameplay !== "two-ball"
           ) {
             teamTwoScoreArr.push(
               Math.min(playerTwoHandiScore, playerFourHandiScore)
             )
-          } else if (gamePlay === "two-ball") {
+          } else if (gameplay === "two-ball") {
             teamTwoScoreArr.push(
               Number(playerTwoHandiScore) + Number(playerFourHandiScore)
             )
@@ -275,10 +277,10 @@ function Match({
         }
       }
     } else {
-      for (var i = 0; i < playerTwoScore.length; i++) {
-        var sPlayerTwo = playerTwoScore[i]
-        var hHand = courseHoles[i].handicap
-        var playerTwoHandiScore = calcPlayerScore(
+      for (let i = 0; i < playerTwoScore.length; i++) {
+        let sPlayerTwo = playerTwoScore[i]
+        let hHand = courseHoles[i].handicap
+        let playerTwoHandiScore = calcPlayerScore(
           sPlayerTwo,
           pHandiPlayerTwo,
           hHand
@@ -292,9 +294,9 @@ function Match({
   const teamTwoScore = calcTeamTwoScore()
 
   function calcPlayerScore(s, pHand, hHand) {
-    var score = s
-    var playerHandicap = pHand
-    var holeHandicap = hHand
+    let score = s
+    let playerHandicap = pHand
+    const holeHandicap = hHand
     if (score > "20") {
       return "-"
     } else {
@@ -310,15 +312,15 @@ function Match({
   }
 
   function calcHoleWinner(hole) {
-    var teamOneScoreArray = calcTeamOneScore()
-    var teamTwoScoreArray = calcTeamTwoScore()
+    const teamOneScoreArray = calcTeamOneScore()
+    const teamTwoScoreArray = calcTeamTwoScore()
     var holeIndex
     if (hole > 9) {
       holeIndex = hole - 10
     } else {
       holeIndex = hole - 1
     }
-    var teamWins = {
+    const teamWins = {
       team: "",
       teamOne: 0,
       teamTwo: 0,
@@ -340,8 +342,8 @@ function Match({
   }
 
   function calcTeamScores() {
-    var teamOneScoreArray = calcTeamOneScore()
-    var teamTwoScoreArray = calcTeamTwoScore()
+    const teamOneScoreArray = calcTeamOneScore()
+    const teamTwoScoreArray = calcTeamTwoScore()
     var holeIndex
     const teamWins = {
       teamOne: 0,

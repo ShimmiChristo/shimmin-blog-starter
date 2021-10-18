@@ -10,8 +10,8 @@
           "tribute2": [4, 7, 5, 3, 5, 5, 6, 3, 5],
           "classic1": [6, 4, 6, 4, 5, 3, 5, 3, 2],
           "classic2": [6, 4, 6, 3, 4, 3, 4, 3, 4],
-          "gaylordGolfClub1": [99, 99, 99, 99, 99, 99, 99, 99, 99],
-          "gaylordGolfClub2": [99, 99, 99, 99, 99, 99, 99, 99, 99]
+          "gaylordGolfClub1": [5, 5, 4, 2, 4, 4, 5, 5, 5],
+          "gaylordGolfClub2": [6, 4, 6, 6, 6, 4, 6, 7, 6]
         },
         "appearances": [2021],
         "points": {
@@ -56,8 +56,8 @@
           "tribute2": [5, 4, 5, 4, 4, 2, 6, 6, 4],
           "classic1": [7, 5, 4, 5, 5, 3, 6, 5, 4],
           "classic2": [5, 3, 5, 4, 3, 4, 4, 4, 4],
-          "gaylordGolfClub1": [99, 99, 99, 99, 99, 99, 99, 99, 99],
-          "gaylordGolfClub2": [99, 99, 99, 99, 99, 99, 99, 99, 99]
+          "gaylordGolfClub1": [4, 4, 4, 3, 5, 4, 6, 5, 4],
+          "gaylordGolfClub2": [4, 3, 5, 4, 3, 4, 5, 5, 4]
         },
         "appearances": [2021],
         "points": {
@@ -100,10 +100,10 @@
         "course": {
           "tribute1": [5, 5, 5, 7, 5, 3, 7, 6, 5],
           "tribute2": [5, 5, 5, 7, 5, 3, 7, 6, 5],
-          "classic1": [8, 5, 4, 6, 7, 4, 5, 3, 5],
+          "classic1": [8, 5, 4, 6, 7, 4, 5, 4, 5],
           "classic2": [6, 4, 6, 3, 4, 3, 4, 3, 4],
-          "gaylordGolfClub1": [99, 99, 99, 99, 99, 99, 99, 99, 99],
-          "gaylordGolfClub2": [99, 99, 99, 99, 99, 99, 99, 99, 99]
+          "gaylordGolfClub1": [7, 4, 5, 3, 4, 4, 5, 7, 5],
+          "gaylordGolfClub2": [4, 4, 7, 5, 4, 5, 6, 5, 5]
         },
         "appearances": [2021],
         "points": {
@@ -148,8 +148,8 @@
           "tribute2": [4, 7, 4, 4, 5, 4, 6, 3, 4],
           "classic1": [5, 6, 4, 5, 6, 4, 6, 4, 5],
           "classic2": [5, 3, 5, 4, 3, 4, 4, 4, 4],
-          "gaylordGolfClub1": [99, 99, 99, 99, 99, 99, 99, 99, 99],
-          "gaylordGolfClub2": [99, 99, 99, 99, 99, 99, 99, 99, 99]
+          "gaylordGolfClub1": [5, 5, 5, 3, 6, 5, 6, 6, 5],
+          "gaylordGolfClub2": [5, 5, 6, 6, 4, 6, 5, 6, 5]
         },
         "appearances": [2021],
         "points": {
@@ -192,9 +192,9 @@
         "course": {
           "tribute1": [8, 6, 5, 10, 9, 5, 9, 8, 6],
           "tribute2": [8, 8, 7, 4, 4, 6, 9, 5, 7],
-          "classic1": [8, 5, 4, 6, 7, 4, 5, 3],
-          "classic2": [7,6,6,4,6,3,6,8, 5],
-          "gaylordGolfClub1": [99, 99, 99, 99, 99, 99, 99, 99, 99],
+          "classic1": [8, 5, 4, 6, 7, 4, 5, 4, 5],
+          "classic2": [7, 6, 6, 4, 6, 3, 6, 8, 5],
+          "gaylordGolfClub1": [6, 6, 5, 4, 7, 3, 8, 7, 6],
           "gaylordGolfClub2": [6, 8, 6, 6, 8, 6, 5, 5, 12]
         },
         "appearances": [2021],
@@ -236,11 +236,11 @@
         "handicap": 36,
         "team": "blue",
         "course": {
-          "tribute1": [6,7,7,7,7,5,8,7,3],
+          "tribute1": [6, 7, 7, 7, 7, 5, 8, 7, 3],
           "tribute2": [5, 9, 5, 4, 4, 6, 8, 3, 6],
           "classic1": [5, 6, 4, 5, 6, 4, 6, 4, 5],
           "classic2": [5, 4, 5, 4, 4, 4, 6, 4, 6],
-          "gaylordGolfClub1": [99, 99, 99, 99, 99, 99, 99, 99, 99],
+          "gaylordGolfClub1": [8, 5, 5, 4, 6, 3, 7, 7, 6],
           "gaylordGolfClub2": [10, 6, 10, 5, 7, 7, 5, 8, 12]
         },
         "appearances": [2021],
@@ -282,12 +282,12 @@
         "handicap": 22,
         "team": "green",
         "course": {
-          "tribute1": [5,7,5,9,8,5,9,8,6],
-          "tribute2": [5,10,8,3,5,5,10,3,8],
+          "tribute1": [5, 7, 5, 9, 8, 5, 9, 8, 6],
+          "tribute2": [5, 10, 8, 3, 5, 5, 10, 3, 8],
           "classic1": [6, 4, 6, 4, 5, 3, 5, 3, 2],
-          "classic2": [7,6,6,4,6,3,6,8,5],
-          "gaylordGolfClub1": [99, 99, 99, 99, 99, 99, 99, 99, 99],
-          "gaylordGolfClub2": [99, 99, 99, 99, 99, 99, 99, 99, 99]
+          "classic2": [7, 6, 6, 4, 6, 3, 6, 8, 5],
+          "gaylordGolfClub1": [5, 5, 5, 5, 10, 4, 6, 5, 5],
+          "gaylordGolfClub2": [7, 5, 7, 6, 6, 6, 6, 7, 5]
         },
         "appearances": [2021],
         "points": {
@@ -328,12 +328,12 @@
         "handicap": 22,
         "team": "blue",
         "course": {
-          "tribute1": [5,5,6,6,6,4,7,6,3],
+          "tribute1": [5, 5, 6, 6, 6, 4, 7, 6, 3],
           "tribute2": [6, 7, 5, 5, 5, 5, 7, 3, 5],
-          "classic1": [7,5,4,5,5,3,6,5,4],
-          "classic2": [5,4,5,4,4,4,6,4,5],
-          "gaylordGolfClub1": [99, 99, 99, 99, 99, 99, 99, 99, 99],
-          "gaylordGolfClub2": [99, 99, 99, 99, 99, 99, 99, 99, 99]
+          "classic1": [7, 5, 4, 5, 5, 3, 6, 5, 4],
+          "classic2": [5, 4, 5, 4, 4, 4, 6, 4, 5],
+          "gaylordGolfClub1": [5, 5, 5, 3, 7, 5, 7, 5, 5],
+          "gaylordGolfClub2": [5, 5, 7, 6, 3, 4, 5, 10, 6]
         },
         "appearances": [2021],
         "points": {

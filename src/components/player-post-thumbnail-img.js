@@ -44,18 +44,9 @@ function PlayerThumbnailImg({
   `
   const ImgContainer = styled.div`
     width: 100%;
-    height: 250px;
+    height: auto;
     overflow: hidden;
-    @media (max-width: 767px) {
-      width: 100%;
-      height: auto;
-      min-height: 200px;
-      max-height: 250px;
-    }
-    @media (max-width: 400px) {
-      width: 200px;
-      height: 200px;
-    }
+    
   `
   const Header = styled.header`
     display: flex;
@@ -73,13 +64,6 @@ function PlayerThumbnailImg({
   `
   const FeaturedImg = styled(Image)`
     display: block;
-    position: absolute;
-    top: 50%;
-    left: 0;
-    transform: translateY(-50%);
-
-    @media (max-width: 767px) {
-    }
   `
   const CTA = styled(Link)`
     text-transform: uppercase;

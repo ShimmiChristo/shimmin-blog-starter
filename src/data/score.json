@@ -2,14 +2,34 @@
   {
     "teams": {
       "team1": {
-        "name": "crohn's crushers",
+        "name": "green team",
+        "nicknam": "crohn's crushers",
         "players": ["Matt", "Chris", "Derek", "Travis"],
-        "score": "5"
+        "score": "5.5"
       },
       "team2": {
-        "name": "team ramrod",
+        "name": "blue team",
+        "nickname": "team ramrod",
         "players": ["Dylan", "RJ", "Craig", "Dan"],
-        "score": "9"
+        "score": "8.5"
+      }
+    }
+  },
+  {
+    "2021": {
+      "teams": {
+        "team1": {
+          "name": "green team",
+          "nicknam": "crohn's crushers",
+          "players": ["Matt", "Chris", "Derek", "Travis"],
+          "score": "5.5"
+        },
+        "team2": {
+          "name": "blue team",
+          "nickname": "team ramrod",
+          "players": ["Dylan", "RJ", "Craig", "Dan"],
+          "score": "8.5"
+        }
       }
     }
   }

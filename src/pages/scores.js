@@ -2,7 +2,6 @@ import React from "react"
 import { Link } from "gatsby"
 import styled from "styled-components"
 import { useSiteMetadata } from "../hooks/use-site-metadata"
-// import { usePublishedPosts } from "../hooks/use-published-posts"
 import { CourseInfo } from "../hooks/get-course-info"
 
 import Layout from "../components/layout"
@@ -10,7 +9,6 @@ import SEO from "../components/seo"
 import LandingPageHeader from "../components/landing-page-header"
 import Match from "../components/match"
 import MatchScore from "../components/match-score"
-// import MatchInfo from "../components/match-info"
 import MatchNav from "../components/match-nav"
 import "../styles/match.css"
 
@@ -18,9 +16,7 @@ const TopicPage = ({ data, location }) => {
   const { title } = useSiteMetadata()
   const { course } = CourseInfo()
 
-  // const { nodes } = usePublishedPosts()
   const siteTitle = title || `Title`
-  // const posts = nodes
   const pageHash = location.hash
 
   const MatchNavSection = styled.div`
@@ -91,19 +87,29 @@ const TopicPage = ({ data, location }) => {
           matchId="1.1 - Best Ball. Full handicap"
           courseMatch="tribute1"
           matchHandicap="full"
+          gameplay=""
           player1="matt"
+          player1Handicap="10"
           player2="dylan"
+          player2Handicap="2"
           player3="chris"
+          player3Handicap="16"
           player4="rj"
+          player4Handicap="16"
         />
         <Match
           matchId="1.1 - Best Ball Bramble. Full handicap"
           courseMatch="tribute1"
           matchHandicap="full"
+          gameplay=""
           player1="derek"
+          player1Handicap="28"
           player2="dan"
+          player2Handicap="36"
           player3="travis"
+          player3Handicap="22"
           player4="craig"
+          player4Handicap="22"
         />
       </MatchNavSection>
       <MatchNavSection
@@ -114,22 +120,32 @@ const TopicPage = ({ data, location }) => {
           <Link to={course["tribute2"].link}>{course[`tribute2`].name}</Link>
         </div>
         <Match
-          matchId="1.2 - Best Bramble. Full handicap"
+          matchId="1.2 - 2 Ball Bramble. Full handicap"
           courseMatch="tribute2"
           matchHandicap="full"
+          gameplay="two-ball"
           player1="matt"
+          player1Handicap="10"
           player2="rj"
+          player2Handicap="16"
           player3="derek"
+          player3Handicap="28"
           player4="craig"
+          player4Handicap="22"
         />
         <Match
-          matchId="1.2 - Best Bramble. Full handicap"
+          matchId="1.2 - 2 Ball Bramble. Full handicap"
           courseMatch="tribute2"
           matchHandicap="full"
+          gameplay="two-ball"
           player1="chris"
+          player1Handicap="16"
           player2="dylan"
+          player2Handicap="2"
           player3="travis"
+          player3Handicap="22"
           player4="dan"
+          player4Handicap="36"
         />
       </MatchNavSection>
       <MatchNavSection
@@ -143,19 +159,29 @@ const TopicPage = ({ data, location }) => {
           matchId="2.1 - Bramble Alternate. Average handicap"
           courseMatch="classic1"
           matchHandicap="average"
+          gameplay=""
           player1="chris"
+          player1Handicap="16"
           player2="rj"
+          player2Handicap="16"
           player3="derek"
+          player3Handicap="32"
           player4="dan"
+          player4Handicap="24"
         />
         <Match
           matchId="2.1 - Bramble Alternate. Average handicap"
           courseMatch="classic1"
           matchHandicap="average"
+          gameplay=""
           player1="matt"
+          player1Handicap="10"
           player2="dylan"
+          player2Handicap="2"
           player3="travis"
+          player3Handicap="10"
           player4="craig"
+          player4Handicap="22"
         />
       </MatchNavSection>
       <MatchNavSection
@@ -169,19 +195,29 @@ const TopicPage = ({ data, location }) => {
           matchId="2.2 - Scramble. Average handicap"
           courseMatch="classic2"
           matchHandicap="average"
+          gameplay=""
           player1="matt"
-          player2="craig"
+          player1Handicap="10"
+          player2="dylan"
+          player2Handicap="2"
           player3="chris"
-          player4="dan"
+          player3Handicap="16"
+          player4="rj"
+          player4Handicap="16"
         />
         <Match
           matchId="2.2 - Scramble. Average handicap"
           courseMatch="classic2"
           matchHandicap="average"
+          gameplay=""
           player1="derek"
-          player2="dylan"
+          player1Handicap="28"
+          player2="dan"
+          player2Handicap="20"
           player3="travis"
-          player4="rj"
+          player3Handicap="28"
+          player4="craig"
+          player4Handicap="20"
         />
       </MatchNavSection>
       <MatchNavSection
@@ -197,19 +233,29 @@ const TopicPage = ({ data, location }) => {
           matchId="3.1 - Best Ball. Full handicap"
           courseMatch="gaylordGolfClub1"
           matchHandicap="full"
+          gameplay=""
           player1="matt"
+          player1Handicap="10"
           player2="dylan"
+          player2Handicap="2"
           player3="derek"
+          player3Handicap="28"
           player4="dan"
+          player4Handicap="22"
         />
         <Match
           matchId="3.1 - Best Ball. Full handicap"
           courseMatch="gaylordGolfClub1"
           matchHandicap="full"
+          gameplay=""
           player1="chris"
+          player1Handicap="16"
           player2="craig"
+          player2Handicap="22"
           player3="travis"
+          player3Handicap="22"
           player4="rj"
+          player4Handicap="16"
         />
       </MatchNavSection>
       <MatchNavSection
@@ -225,29 +271,41 @@ const TopicPage = ({ data, location }) => {
           matchId="3.2 - Singles Matches. Full handicap"
           courseMatch="gaylordGolfClub2"
           matchHandicap="full"
+          gameplay=""
           player1="matt"
+          player1Handicap="10"
           player2="dylan"
+          player2Handicap="2"
         />
         <Match
           matchId="3.2 - Singles Matches. Full handicap"
           courseMatch="gaylordGolfClub2"
           matchHandicap="full"
+          gameplay=""
           player1="travis"
+          player1Handicap="22"
           player2="craig"
+          player2Handicap="22"
         />
         <Match
           matchId="3.2 - Singles Matches. Full handicap"
           courseMatch="gaylordGolfClub2"
           matchHandicap="full"
+          gameplay=""
           player1="chris"
+          player1Handicap="16"
           player2="rj"
+          player2Handicap="16"
         />
         <Match
           matchId="3.2 - Singles Matches. Full handicap"
           courseMatch="gaylordGolfClub2"
           matchHandicap="full"
+          gameplay=""
           player1="derek"
+          player1Handicap="28"
           player2="dan"
+          player2Handicap="36"
         />
       </MatchNavSection>
     </Layout>

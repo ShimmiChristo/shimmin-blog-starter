@@ -46,44 +46,36 @@ const TopicPage = ({ data, location }) => {
     margin: var(--spacing-6) 0 0 var(--spacing-6);
     border: 1px solid;
     border-radius: 5px;
-    display: ${props => props.Ad ? 'flex' : 'none'};
+    display: ${props => (props.Ad ? "flex" : "none")};
   `
-
 
   return (
     <Layout location={location} title={siteTitle}>
       <SEO title="BFBH Cup" />
       <LandingPageHeader title="BFBH Cup" />
 
-      <LandingPageBody>
-        <div>
-          <h2 class="h4">What is the BFBH Cup?</h2>
-          <p>
-            The BFBH Cup is a annual golf competition played at different
-            courses throughout the United States, but mainly in the Great Lake
-            State, the High-Five of the country, Michigan.
-          </p>
-          <h2 class="h4">What does the BFBH Cup stand for?</h2>
-          <p>
-            Great question. The BFBH Cup stands for The "Boys From Back Home
-            Cup".
-          </p>
-          <h2 class="h4">Who are the boys from back home?</h2>
-          <p>
-            A group of brothers and friends who were all born and raised in the
-            great state of Michigan.
-          </p>
-        </div>
-        
-        <SectionAd>
-          
-        </SectionAd>
-
-      </LandingPageBody>
-      <hr />
-      <h2>Current Score</h2>
+      <h2>Final Score</h2>
 
       <MatchScore />
+
+      <LandingPageBody>
+        <div>
+          <br />
+          <p>
+            <span class="h5">MVP: </span> Dylan
+          </p>
+          <p>
+            <span class="h5">Biggest Surprise: </span> Dan
+          </p>
+          <p>
+            <span class="h5">Most Points Scored: </span> Dylan and Dan (4)
+          </p>
+        </div>
+
+        <SectionAd></SectionAd>
+      </LandingPageBody>
+      <hr />
+
       {/* player1 and player3 are on the same team */}
       <MatchNavSection
         data-visible={pageHash === "#r1-best-ball" ? "true" : "false"}
