@@ -60,10 +60,10 @@ function MatchScore({}) {
     <Section className={changeBackgroundColor()}>
       <div>
         <span>{teams.team1.name}</span>
-        <div class="h1">{teams.team1.score}</div>
+        <div className="h1">{teams.team1.score}</div>
       </div>
       <div>
-        <div class="h1">{teams.team2.score}</div>
+        <div className="h1">{teams.team2.score}</div>
         <span>{teams.team2.name}</span>
       </div>
     </Section>

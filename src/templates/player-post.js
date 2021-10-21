@@ -96,13 +96,13 @@ const PlayerPostTemplate = ({ data, location }) => {
       >
         <Header team={post.frontmatter.team}>
           <HeaderContainer>
-            <h1 class="h1" itemProp="headline">
+            <h1 className="h1" itemProp="headline">
               {post.frontmatter.name}
             </h1>
 
             <div>{post.frontmatter.team}</div>
           </HeaderContainer>
-          <div class="info">
+          <div className="info">
             <b>AKA:</b> {post.frontmatter.nickname} <br />
             <b>Handicap:</b> {playerHandicap}
           </div>
@@ -114,7 +114,7 @@ const PlayerPostTemplate = ({ data, location }) => {
               fluid={post.frontmatter.featuredImg.childImageSharp.fluid}
             />
             <MdxContent>
-              <div class="h4">Biography</div>
+              <div className="h4">Biography</div>
               <MDXRenderer itemProp="articleBody">{post.body}</MDXRenderer>
             </MdxContent>
           </Wrapper>

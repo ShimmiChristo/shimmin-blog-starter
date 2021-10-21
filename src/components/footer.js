@@ -51,9 +51,9 @@ function Footer() {
       <FooterColumns className="footer__columns">
         <FooterColumn>
           <h4 className="footer__title">Links</h4>
-          {nav.map(column => (
-            <li className="footer__item">
-              <Link to={column.link}>{column.name}</Link>
+          {nav.map((column, i) => (
+            <li className="footer__item" key={i}>
+              <a href={column.link}>{column.name}</a>
             </li>
           ))}
         </FooterColumn>

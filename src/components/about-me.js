@@ -54,12 +54,12 @@ function AboutMe() {
           </p>
           {author.phone !== "" ? (
             <p>
-              Email me at <span class="bold">{author.email}</span> or text me at{" "}
-              <span class="bold">{author.phone}</span>
+              Email me at <span className="bold">{author.email}</span> or text me at{" "}
+              <span className="bold">{author.phone}</span>
             </p>
           ) : (
             <p>
-              Email me at <span class="bold">{author.email}</span>
+              Email me at <span className="bold">{author.email}</span>
             </p>
           )}
         </Bio>

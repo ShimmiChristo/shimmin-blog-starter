@@ -62,13 +62,13 @@ const TopicPage = ({ data, location }) => {
         <div>
           <br />
           <p>
-            <span class="h5">MVP: </span> Dylan
+            <span className="h5">MVP: </span> Dylan
           </p>
           <p>
-            <span class="h5">Biggest Surprise: </span> Dan
+            <span className="h5">Biggest Surprise: </span> Dan
           </p>
           <p>
-            <span class="h5">Most Points Scored: </span> Dylan and Dan (4)
+            <span className="h5">Most Points Scored: </span> Dylan and Dan (4)
           </p>
         </div>
 
@@ -81,8 +81,8 @@ const TopicPage = ({ data, location }) => {
         data-visible={pageHash === "#r1-best-ball" ? "true" : "false"}
         data-link-id="r1-best-ball"
       >
-        <div class="course__info">
-          <Link to={course["tribute1"].link}>{course[`tribute1`].name}</Link>
+        <div className="course__info">
+          <a href={course["tribute1"].link}>{course[`tribute1`].name}</a>
         </div>
         <Match
           matchId="1.1 - Best Ball. Full handicap"
@@ -107,8 +107,8 @@ const TopicPage = ({ data, location }) => {
         data-visible={pageHash === "#r1-two-ball-bramble" ? "true" : "false"}
         data-link-id="r1-two-ball-bramble"
       >
-        <div class="course__info">
-          <Link to={course["tribute2"].link}>{course[`tribute2`].name}</Link>
+        <div className="course__info">
+        <a href={course["tribute2"].link}>{course[`tribute2`].name}</a>
         </div>
         <Match
           matchId="1.2 - 2 Ball Bramble. Full handicap"
@@ -135,8 +135,8 @@ const TopicPage = ({ data, location }) => {
         data-visible={pageHash === "#r2-bramble-alternate" ? "true" : "false"}
         data-link-id="r2-bramble-alternate"
       >
-        <div class="course__info">
-          <Link to={course["classic1"].link}>{course[`classic1`].name}</Link>
+        <div className="course__info">
+          <a href={course["classic1"].link}>{course[`classic1`].name}</a>
         </div>
         <Match
           matchId="2.1 - Bramble Alternate. Average handicap"
@@ -161,8 +161,8 @@ const TopicPage = ({ data, location }) => {
         data-visible={pageHash === "#r2-scramble" ? "true" : "false"}
         data-link-id="r2-scramble"
       >
-        <div class="course__info">
-          <Link to={course["classic2"].link}>{course[`classic2`].name}</Link>
+        <div className="course__info">
+          <a href={course["classic2"].link}>{course[`classic2`].name}</a>
         </div>
         <Match
           matchId="2.2 - Scramble. Average handicap"
@@ -187,10 +187,10 @@ const TopicPage = ({ data, location }) => {
         data-visible={pageHash === "#r3-best-ball" ? "true" : "false"}
         data-link-id="r3-best-ball"
       >
-        <div class="course__info">
-          <Link to={course["gaylordGolfClub1"].link}>
+        <div className="course__info">
+          <a href={course["gaylordGolfClub1"].link}>
             {course[`gaylordGolfClub1`].name}
-          </Link>
+          </a>
         </div>
         <Match
           matchId="3.1 - Best Ball. Full handicap"
@@ -215,10 +215,10 @@ const TopicPage = ({ data, location }) => {
         data-visible={pageHash === "#r3-singles" ? "true" : "false"}
         data-link-id="r3-singles"
       >
-        <div class="course__info">
-          <Link to={course["gaylordGolfClub2"].link}>
+        <div className="course__info">
+          <a href={course["gaylordGolfClub2"].link}>
             {course[`gaylordGolfClub2`].name}
-          </Link>
+          </a>
         </div>
         <Match
           matchId="3.2 - Singles Matches. Full handicap"

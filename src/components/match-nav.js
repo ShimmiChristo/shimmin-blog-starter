@@ -62,8 +62,11 @@ function MatchNav({ location, titles }) {
   return (
     <Section>
       <ul>
-        {titlesArray.map(title => (
-          <li data-active={"#" + title.link === pageHash ? "true" : "false"}>
+        {titlesArray.map((title, i) => (
+          <li
+            data-active={"#" + title.link === pageHash ? "true" : "false"}
+            key={i + title}
+          >
             <a href={`#${title.link}`}>
               {title.round} <br />
               {title.name}
