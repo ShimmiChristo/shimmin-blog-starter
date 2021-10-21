@@ -15,34 +15,39 @@
         },
         "appearances": [2021],
         "points": {
-          "bestBall": {
-            "wins": 0,
-            "losses": 0,
+          "totals": {
+            "wins": 2,
+            "losses": 4,
             "ties": 0
           },
-          "bestBallBramble": {
+          "bestBall": {
+            "wins": 1,
+            "losses": 1,
+            "ties": 0
+          },
+          "1BallBramble": {
             "wins": 0,
             "losses": 0,
             "ties": 0
           },
           "2BallBramble": {
             "wins": 0,
-            "losses": 0,
+            "losses": 1,
             "ties": 0
           },
           "brambleAlternate": {
-            "wins": 0,
+            "wins": 1,
             "losses": 0,
             "ties": 0
           },
           "scramble": {
             "wins": 0,
-            "losses": 0,
+            "losses": 1,
             "ties": 0
           },
           "singles": {
             "wins": 0,
-            "losses": 0,
+            "losses": 1,
             "ties": 0
           }
         }
@@ -61,33 +66,38 @@
         },
         "appearances": [2021],
         "points": {
-          "bestBall": {
-            "wins": 0,
-            "losses": 0,
+          "totals": {
+            "wins": 4,
+            "losses": 2,
             "ties": 0
           },
-          "bestBallBramble": {
+          "bestBall": {
+            "wins": 1,
+            "losses": 1,
+            "ties": 0
+          },
+          "1BallBramble": {
             "wins": 0,
             "losses": 0,
             "ties": 0
           },
           "2BallBramble": {
-            "wins": 0,
+            "wins": 1,
             "losses": 0,
             "ties": 0
           },
           "brambleAlternate": {
             "wins": 0,
-            "losses": 0,
+            "losses": 1,
             "ties": 0
           },
           "scramble": {
-            "wins": 0,
+            "wins": 1,
             "losses": 0,
             "ties": 0
           },
           "singles": {
-            "wins": 0,
+            "wins": 1,
             "losses": 0,
             "ties": 0
           }
@@ -107,33 +117,38 @@
         },
         "appearances": [2021],
         "points": {
+          "totals": {
+            "wins": 2,
+            "losses": 3,
+            "ties": 1
+          },
           "bestBall": {
-            "wins": 0,
-            "losses": 0,
+            "wins": 1,
+            "losses": 1,
             "ties": 0
           },
-          "bestBallBramble": {
+          "1BallBramble": {
             "wins": 0,
             "losses": 0,
             "ties": 0
           },
           "2BallBramble": {
             "wins": 0,
-            "losses": 0,
+            "losses": 1,
             "ties": 0
           },
           "brambleAlternate": {
             "wins": 0,
             "losses": 0,
-            "ties": 0
+            "ties": 1
           },
           "scramble": {
             "wins": 0,
-            "losses": 0,
+            "losses": 1,
             "ties": 0
           },
           "singles": {
-            "wins": 0,
+            "wins": 1,
             "losses": 0,
             "ties": 0
           }
@@ -153,34 +168,39 @@
         },
         "appearances": [2021],
         "points": {
+          "totals": {
+            "wins": 3,
+            "losses": 2,
+            "ties": 1
+          },
           "bestBall": {
-            "wins": 0,
-            "losses": 0,
+            "wins": 1,
+            "losses": 1,
             "ties": 0
           },
-          "bestBallBramble": {
+          "1BallBramble": {
             "wins": 0,
             "losses": 0,
             "ties": 0
           },
           "2BallBramble": {
-            "wins": 0,
+            "wins": 1,
             "losses": 0,
             "ties": 0
           },
           "brambleAlternate": {
             "wins": 0,
             "losses": 0,
-            "ties": 0
+            "ties": 1
           },
           "scramble": {
-            "wins": 0,
+            "wins": 1,
             "losses": 0,
             "ties": 0
           },
           "singles": {
             "wins": 0,
-            "losses": 0,
+            "losses": 1,
             "ties": 0
           }
         }
@@ -199,29 +219,34 @@
         },
         "appearances": [2021],
         "points": {
+          "totals": {
+            "wins": 1,
+            "losses": 3,
+            "ties": 2
+          },
           "bestBall": {
-            "wins": 0,
+            "wins": 1,
             "losses": 0,
             "ties": 0
           },
-          "bestBallBramble": {
+          "1BallBramble": {
             "wins": 0,
-            "losses": 0,
+            "losses": 1,
             "ties": 0
           },
           "2BallBramble": {
             "wins": 0,
-            "losses": 0,
+            "losses": 1,
             "ties": 0
           },
           "brambleAlternate": {
             "wins": 0,
             "losses": 0,
-            "ties": 0
+            "ties": 1
           },
           "scramble": {
             "wins": 0,
-            "losses": 0,
+            "losses": 1,
             "ties": 0
           },
           "singles": {
@@ -245,28 +270,33 @@
         },
         "appearances": [2021],
         "points": {
+          "totals": {
+            "wins": 3,
+            "losses": 1,
+            "ties": 2
+          },
           "bestBall": {
             "wins": 0,
-            "losses": 0,
+            "losses": 1,
             "ties": 0
           },
-          "bestBallBramble": {
-            "wins": 0,
+          "1BallBramble": {
+            "wins": 1,
             "losses": 0,
             "ties": 0
           },
           "2BallBramble": {
-            "wins": 0,
+            "wins": 1,
             "losses": 0,
             "ties": 0
           },
           "brambleAlternate": {
             "wins": 0,
             "losses": 0,
-            "ties": 0
+            "ties": 1
           },
           "scramble": {
-            "wins": 0,
+            "wins": 1,
             "losses": 0,
             "ties": 0
           },
@@ -291,34 +321,39 @@
         },
         "appearances": [2021],
         "points": {
+          "totals": {
+            "wins": 2,
+            "losses": 4,
+            "ties": 0
+          },
           "bestBall": {
-            "wins": 0,
+            "wins": 1,
             "losses": 0,
             "ties": 0
           },
-          "bestBallBramble": {
+          "1BallBramble": {
             "wins": 0,
-            "losses": 0,
+            "losses": 1,
             "ties": 0
           },
           "2BallBramble": {
             "wins": 0,
-            "losses": 0,
+            "losses": 1,
             "ties": 0
           },
           "brambleAlternate": {
-            "wins": 0,
+            "wins": 1,
             "losses": 0,
             "ties": 0
           },
           "scramble": {
             "wins": 0,
-            "losses": 0,
+            "losses": 1,
             "ties": 0
           },
           "singles": {
             "wins": 0,
-            "losses": 0,
+            "losses": 1,
             "ties": 0
           }
         }
@@ -337,33 +372,38 @@
         },
         "appearances": [2021],
         "points": {
-          "bestBall": {
-            "wins": 0,
-            "losses": 0,
+          "totals": {
+            "wins": 4,
+            "losses": 2,
             "ties": 0
           },
-          "bestBallBramble": {
+          "bestBall": {
             "wins": 0,
+            "losses": 1,
+            "ties": 0
+          },
+          "1BallBramble": {
+            "wins": 1,
             "losses": 0,
             "ties": 0
           },
           "2BallBramble": {
-            "wins": 0,
+            "wins": 1,
             "losses": 0,
             "ties": 0
           },
           "brambleAlternate": {
             "wins": 0,
-            "losses": 0,
+            "losses": 1,
             "ties": 0
           },
           "scramble": {
-            "wins": 0,
+            "wins": 1,
             "losses": 0,
             "ties": 0
           },
           "singles": {
-            "wins": 0,
+            "wins": 1,
             "losses": 0,
             "ties": 0
           }

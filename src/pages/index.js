@@ -65,10 +65,10 @@ const TopicPage = ({ data, location }) => {
             <span className="h5">MVP: </span> Dylan
           </p>
           <p>
-            <span className="h5">Biggest Surprise: </span> Dan
+            <span className="h5">Biggest Surprise: </span> Dan (Score: 3-2-1)
           </p>
           <p>
-            <span className="h5">Most Points Scored: </span> Dylan and Dan (4)
+            <span className="h5">Most Points Scored: </span> Dylan and Craig (4)
           </p>
         </div>
 
