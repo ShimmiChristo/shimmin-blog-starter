@@ -3,7 +3,8 @@ import { Link, graphql } from "gatsby"
 import { MDXRenderer } from "gatsby-plugin-mdx"
 import styled from "styled-components"
 import Image from "gatsby-image"
-import { PlayerInfo } from "../hooks/get-player-info"
+import { PlayerInfo } from "../hooks/get-player-info--matt"
+import PlayerInfoThisYearRecord from "../components/player-info-year-record"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
@@ -13,7 +14,7 @@ const PlayerPostTemplate = ({ data, location }) => {
   const { player } = PlayerInfo()
   const post = data.mdx
   const siteTitle = data.site.siteMetadata?.name || `Name`
-  const playerHandicap = (player[post.frontmatter.name] || {}).handicap || 0
+  const playerHandicap = (player.year._2021[post.frontmatter.name] || {}).handicap || 0
   // const { nodes } = usePublishedPosts()
 
   const FeaturedImg = styled(Image)`
@@ -48,11 +49,16 @@ const PlayerPostTemplate = ({ data, location }) => {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    h1 {
+    h1,
+    .h1 {
       color: #fff;
       text-align: center;
       margin: 0 !important;
       text-transform: capitalize;
+      font-weight: var(--fontWeight-semibold);
+      font-family: var(--font-heading);
+      border: 0;
+      padding: 0;
     }
     > * {
       color: #fff;
@@ -64,7 +70,7 @@ const PlayerPostTemplate = ({ data, location }) => {
       max-height: 200px;
     }
   `
-  const Wrapper = styled.div`
+  const BioWrapper = styled.div`
     display: flex;
     justify-content: space-around;
     align-items: flex-start;
@@ -90,7 +96,7 @@ const PlayerPostTemplate = ({ data, location }) => {
         description={post.frontmatter.description || post.excerpt}
       />
       <article
-        className="blog-post"
+        className="player-post"
         itemScope
         itemType="http://schema.org/Article"
       >
@@ -108,18 +114,19 @@ const PlayerPostTemplate = ({ data, location }) => {
           </div>
         </Header>
         <section>
-          <Wrapper>
+          <BioWrapper>
             <FeaturedImg
               className="profile-img"
               fluid={post.frontmatter.featuredImg.childImageSharp.fluid}
             />
             <MdxContent>
-              <div className="h4">Biography</div>
+              <h2 className="h3">Biography</h2>
               <MDXRenderer itemProp="articleBody">{post.body}</MDXRenderer>
             </MdxContent>
-          </Wrapper>
+          </BioWrapper>
         </section>
         <hr />
+        <PlayerInfoThisYearRecord year="" teamColor="" />
       </article>
     </Layout>
   )

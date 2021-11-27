@@ -80,7 +80,9 @@
         ],
         "totals": {
           "yardage": 3551,
-          "par": 36
+          "par": 36,
+          "index": 35.95,
+          "slope": 65
         }
       },
 
@@ -163,7 +165,9 @@
         ],
         "totals": {
           "yardage": 3182,
-          "par": 36
+          "par": 36,
+          "index": 35.95,
+          "slope": 65
         }
       },
 
@@ -246,7 +250,9 @@
         ],
         "totals": {
           "yardage": 2962,
-          "par": 36
+          "par": 36,
+          "index": 34.9,
+          "slope": 60.5
         }
       },
       "classic2": {
@@ -328,7 +334,9 @@
         ],
         "totals": {
           "yardage": 3079,
-          "par": 36
+          "par": 36,
+          "index": 34.9,
+          "slope": 60.5
         }
       },
 
@@ -411,7 +419,9 @@
         ],
         "totals": {
           "yardage": 0,
-          "par": 36
+          "par": 36,
+          "index": 35.05,
+          "slope": 67.5
         }
       },
       "gaylordGolfClub2": {
@@ -493,7 +503,9 @@
         ],
         "totals": {
           "yardage": 0,
-          "par": 36
+          "par": 36,
+          "index": 35.05,
+          "slope": 67.5
         }
       }
     }

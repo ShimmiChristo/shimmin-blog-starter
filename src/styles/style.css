@@ -90,6 +90,22 @@
   --blue-50: rgba(0, 60, 130, 0.5);
 }
 
+/* Update Bootstrap Colors */
+.border.border-blue {
+  border-color: var(--blue) !important;
+}
+.text-blue,
+.blue {
+  color: var(--blue) !important;
+}
+.text-green,
+.green {
+  color: var(--green) !important;
+}
+.border.border-green {
+  border-color: var(--green) !important;
+}
+
 /* HTML elements */
 
 *,
@@ -142,8 +158,6 @@ code[class*="language-markdown"] ::selection {
 }
 /* Heading */
 
-h1,
-.h1,
 h2,
 .h2,
 h3,
@@ -154,29 +168,18 @@ h5,
 .h5,
 h6,
 .h6 {
-  font-family: var(--font-heading);
   margin-top: var(--spacing-6);
   margin-bottom: var(--spacing-6);
   line-height: var(--lineHeight-normal);
   letter-spacing: -0.025em;
-}
 
-h2,
-.h2,
-h3,
-.h3,
-h4,
-.h4,
-h5,
-.h5,
-h6,
-.h6 {
   font-weight: var(--fontWeight-bold);
   color: var(--color-heading);
 }
 
 h1,
 .h1 {
+  font-family: var(--font-heading);
   font-weight: var(--fontWeight-black);
   font-size: var(--fontSize-6);
   color: var(--color-heading-black);
@@ -443,6 +446,8 @@ button:hover,
   font-size: var(--fontSize-2);
   font-family: var(--font-heading);
 }
+
+.blog-post .h2,
 .blog-post h2 {
   border-bottom: 3px solid var(--color-brand-dark);
   padding-bottom: var(--spacing-2);

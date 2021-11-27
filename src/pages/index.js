@@ -1,8 +1,6 @@
 import React from "react"
-import { Link } from "gatsby"
 import styled from "styled-components"
 import { useSiteMetadata } from "../hooks/use-site-metadata"
-// import { usePublishedPosts } from "../hooks/use-published-posts"
 import { CourseInfo } from "../hooks/get-course-info"
 
 import Layout from "../components/layout"
@@ -10,8 +8,11 @@ import SEO from "../components/seo"
 import LandingPageHeader from "../components/landing-page-header"
 import Match from "../components/match"
 import MatchScore from "../components/match-score"
-import AboutSite from "../components/about-site"
-import MatchNav from "../components/match-nav"
+// import AboutSite from "../components/about-site"
+// import MatchNav from "../components/match-nav"
+
+import 'mdb-react-ui-kit/dist/css/mdb.min.css'
+import "../styles/style.css"
 import "../styles/match.css"
 
 const TopicPage = ({ data, location }) => {

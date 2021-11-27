@@ -13,6 +13,18 @@
           "gaylordGolfClub1": [5, 5, 4, 2, 4, 4, 5, 5, 5],
           "gaylordGolfClub2": [6, 4, 6, 6, 6, 4, 6, 7, 6]
         },
+        "jonesMasterPiece": {
+          "total": 84
+        },
+        "tribute": {
+          "total": 91
+        },
+        "classic": {
+          "total": 75
+        },
+        "gaylordGolfClub": {
+          "total": 90
+        },
         "appearances": [2021],
         "points": {
           "totals": {
@@ -63,6 +75,18 @@
           "classic2": [5, 3, 5, 4, 3, 4, 4, 4, 4],
           "gaylordGolfClub1": [4, 4, 4, 3, 5, 4, 6, 5, 4],
           "gaylordGolfClub2": [4, 3, 5, 4, 3, 4, 5, 5, 4]
+        },
+        "jonesMasterPiece": {
+          "total": 999
+        },
+        "tribute": {
+          "total": 99
+        },
+        "classic": {
+          "total": 99
+        },
+        "gaylordGolfClub": {
+          "total": 99
         },
         "appearances": [2021],
         "points": {
@@ -116,6 +140,18 @@
           "gaylordGolfClub2": [4, 4, 7, 5, 4, 5, 6, 5, 5]
         },
         "appearances": [2021],
+        "jonesMasterPiece": {
+          "total": 94
+        },
+        "tribute": {
+          "total": 99
+        },
+        "classic": {
+          "total": 99
+        },
+        "gaylordGolfClub": {
+          "total": 99
+        },
         "points": {
           "totals": {
             "wins": 2,
@@ -166,6 +202,18 @@
           "gaylordGolfClub1": [5, 5, 5, 3, 6, 5, 6, 6, 5],
           "gaylordGolfClub2": [5, 5, 6, 6, 4, 6, 5, 6, 5]
         },
+        "jonesMasterPiece": {
+          "total": 999
+        },
+        "tribute": {
+          "total": 99
+        },
+        "classic": {
+          "total": 99
+        },
+        "gaylordGolfClub": {
+          "total": 99
+        },
         "appearances": [2021],
         "points": {
           "totals": {
@@ -208,6 +256,7 @@
       "derek": {
         "name": "derek",
         "handicap": 28,
+        "calculatedHandicap": 25,
         "team": "green",
         "course": {
           "tribute1": [8, 6, 5, 10, 9, 5, 9, 8, 6],
@@ -216,6 +265,18 @@
           "classic2": [7, 6, 6, 4, 6, 3, 6, 8, 5],
           "gaylordGolfClub1": [6, 6, 5, 4, 7, 3, 8, 7, 6],
           "gaylordGolfClub2": [6, 8, 6, 6, 8, 6, 5, 5, 12]
+        },
+        "jonesMasterPiece": {
+          "total": 999
+        },
+        "tribute": {
+          "total": 124
+        },
+        "classic": {
+          "total": 99
+        },
+        "gaylordGolfClub": {
+          "total": 114
         },
         "appearances": [2021],
         "points": {
@@ -259,6 +320,7 @@
       "dan": {
         "name": "dan",
         "handicap": 36,
+        "calculatedHandicap": 13,
         "team": "blue",
         "course": {
           "tribute1": [6, 7, 7, 7, 7, 5, 8, 7, 3],
@@ -267,6 +329,18 @@
           "classic2": [5, 4, 5, 4, 4, 4, 6, 4, 6],
           "gaylordGolfClub1": [8, 5, 5, 4, 6, 3, 7, 7, 6],
           "gaylordGolfClub2": [10, 6, 10, 5, 7, 7, 5, 8, 12]
+        },
+        "jonesMasterPiece": {
+          "total": 999
+        },
+        "tribute": {
+          "total": 107
+        },
+        "classic": {
+          "total": 86
+        },
+        "gaylordGolfClub": {
+          "total": 121
         },
         "appearances": [2021],
         "points": {
@@ -319,6 +393,18 @@
           "gaylordGolfClub1": [5, 5, 5, 5, 10, 4, 6, 5, 5],
           "gaylordGolfClub2": [7, 5, 7, 6, 6, 6, 6, 7, 5]
         },
+        "jonesMasterPiece": {
+          "total": 999
+        },
+        "tribute": {
+          "total": 99
+        },
+        "classic": {
+          "total": 99
+        },
+        "gaylordGolfClub": {
+          "total": 99
+        },
         "appearances": [2021],
         "points": {
           "totals": {
@@ -369,6 +455,18 @@
           "classic2": [5, 4, 5, 4, 4, 4, 6, 4, 5],
           "gaylordGolfClub1": [5, 5, 5, 3, 7, 5, 7, 5, 5],
           "gaylordGolfClub2": [5, 5, 7, 6, 3, 4, 5, 10, 6]
+        },
+        "jonesMasterPiece": {
+          "total": 999
+        },
+        "tribute": {
+          "total": 99
+        },
+        "classic": {
+          "total": 99
+        },
+        "gaylordGolfClub": {
+          "total": 99
         },
         "appearances": [2021],
         "points": {

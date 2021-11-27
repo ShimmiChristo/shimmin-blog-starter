@@ -6,7 +6,7 @@ import Image from "gatsby-image"
 // import AuthorBio from "./author-bio"
 // import SEO from "./seo"
 
-function PlayerThumbnailImg({
+function PlayerCard({
   key,
   slug,
   title,
@@ -15,7 +15,7 @@ function PlayerThumbnailImg({
   description,
   excerpt,
 }) {
-  const ListContainer = styled.li`
+  const ListItemContainer = styled.li`
     width: 25%;
     padding: 0 1%;
     @media (max-width: 767px) {
@@ -80,7 +80,7 @@ function PlayerThumbnailImg({
   `
 
   return (
-    <ListContainer key={key} data-team={team}>
+    <ListItemContainer key={key} data-team={team}>
       <Link to={slug} itemProp="url">
         <ArticleContainer
           className="post-list-item"
@@ -114,8 +114,8 @@ function PlayerThumbnailImg({
           </Section>
         </ArticleContainer>
       </Link>
-    </ListContainer>
+    </ListItemContainer>
   )
 }
 
-export default PlayerThumbnailImg
+export default PlayerCard

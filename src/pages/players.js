@@ -6,7 +6,7 @@ import { usePlayersPosts } from "../hooks/use-player-posts"
 import AuthorBio from "../components/author-bio"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import PlayerThumbnailImg from "../components/player-post-thumbnail-img"
+import PlayerCard from "../components/player-card"
 
 const PlayersIndex = ({ data, location }) => {
   const { title, description, headline } = useSiteMetadata()
@@ -91,7 +91,7 @@ const PlayersIndex = ({ data, location }) => {
               const title = post.frontmatter.name || post.fields.slug
 
               return (
-                <PlayerThumbnailImg
+                <PlayerCard
                   key={post.id}
                   slug={post.fields.slug}
                   title={title}
