@@ -333,6 +333,9 @@ p a:focus::before {
 
 /* Custom classes */
 
+.block {
+  display: block !important;
+}
 b,
 .bold {
   font-weight: var(--fontWeight-bold);

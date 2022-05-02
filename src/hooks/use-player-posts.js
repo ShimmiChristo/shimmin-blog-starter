@@ -1,4 +1,5 @@
 import { useStaticQuery, graphql } from "gatsby"
+
 export const usePlayersPosts = () => {
   const { allMdx } = useStaticQuery(
     graphql`
@@ -21,9 +22,11 @@ export const usePlayersPosts = () => {
               team
               featuredImg {
                 childImageSharp {
-                  fluid(maxWidth: 900) {
-                    ...GatsbyImageSharpFluid
-                  }
+                  gatsbyImageData(
+                    width: 250
+                    placeholder: BLURRED
+                    formats: [AUTO, WEBP, AVIF]
+                  )
                 }
               }
             }

@@ -1,15 +1,18 @@
 import React, { useState } from "react"
 import styled from "styled-components"
+import { v1 as uuidv1 } from "uuid"
 import { useSiteMetadata } from "../hooks/use-site-metadata"
 import { usePlayersPosts } from "../hooks/use-player-posts"
 
 import AuthorBio from "../components/author-bio"
 import Layout from "../components/layout"
-import SEO from "../components/seo"
+import Seo from "../components/seo"
 import PlayerCard from "../components/player-card"
 
+const uuid = uuidv1()
+
 const PlayersIndex = ({ data, location }) => {
-  const { title, description, headline } = useSiteMetadata()
+  const { title } = useSiteMetadata()
   const { nodes } = usePlayersPosts()
   const siteTitle = title || `Title`
   const posts = nodes
@@ -62,7 +65,7 @@ const PlayersIndex = ({ data, location }) => {
   if (posts.length === 0) {
     return (
       <Layout location={location} title={siteTitle}>
-        <SEO title="Players" />
+        <Seo title="Players" />
         <AuthorBio />
         <p>No blog yet, but stay tuned!</p>
       </Layout>
@@ -70,7 +73,7 @@ const PlayersIndex = ({ data, location }) => {
   } else {
     return (
       <Layout location={location} title={siteTitle}>
-        <SEO title="All posts" />
+        <Seo title="All posts" />
         <TeamFilterContainer className={teamFilter}>
           <TeamFilter>
             <div
@@ -87,12 +90,12 @@ const PlayersIndex = ({ data, location }) => {
             </div>
           </TeamFilter>
           <OlContainer style={{ listStyle: `none` }}>
-            {posts.map(post => {
+            {posts.map((post, i) => {
               const title = post.frontmatter.name || post.fields.slug
 
               return (
                 <PlayerCard
-                  key={post.id}
+                  key={uuid + i}
                   slug={post.fields.slug}
                   title={title}
                   team={post.frontmatter.team}

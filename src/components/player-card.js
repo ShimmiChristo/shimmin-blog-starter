@@ -1,13 +1,15 @@
 import React from "react"
 import { Link } from "gatsby"
 import styled from "styled-components"
-import Image from "gatsby-image"
+// import Image from "gatsby-image"
+import { StaticImage } from "gatsby-plugin-image"
+import { GatsbyImage, getImage } from "gatsby-plugin-image"
 
 // import AuthorBio from "./author-bio"
 // import SEO from "./seo"
 
 function PlayerCard({
-  key,
+  uniqueKey,
   slug,
   title,
   team,
@@ -15,6 +17,8 @@ function PlayerCard({
   description,
   excerpt,
 }) {
+  const getFeaturedImg = getImage(featuredImg)
+  
   const ListItemContainer = styled.li`
     width: 25%;
     padding: 0 1%;
@@ -25,7 +29,6 @@ function PlayerCard({
   const ArticleLink = styled(Link)`
     text-decoration: none;
     margin-bottom: var(--spacing-6);
-    /* border-bottom: 2px solid;  */
     & :hover {
       text-decoration: underline;
     }
@@ -46,7 +49,6 @@ function PlayerCard({
     width: 100%;
     height: auto;
     overflow: hidden;
-    
   `
   const Header = styled.header`
     display: flex;
@@ -62,9 +64,9 @@ function PlayerCard({
       margin: 0;
     }
   `
-  const FeaturedImg = styled(Image)`
-    display: block;
-  `
+  // const FeaturedImg = styled(Image)`
+  //   display: block;
+  // `
   const CTA = styled(Link)`
     text-transform: uppercase;
     font-weight: var(--fontWeight-bold);
@@ -80,7 +82,8 @@ function PlayerCard({
   `
 
   return (
-    <ListItemContainer key={key} data-team={team}>
+    <ListItemContainer key={uniqueKey} data-team={team}>
+      {uniqueKey}
       <Link to={slug} itemProp="url">
         <ArticleContainer
           className="post-list-item"
@@ -88,9 +91,10 @@ function PlayerCard({
           itemType="http://schema.org/Article"
         >
           <ImgContainer>
-            <FeaturedImg
-              className="featured-img"
-              fluid={featuredImg.childImageSharp.fluid}
+            <GatsbyImage
+              className="featured-img block"
+              image={getFeaturedImg}
+              alt={title}
             />
           </ImgContainer>
           <Header>
