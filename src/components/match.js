@@ -1,11 +1,13 @@
 import React, { useState } from "react"
 // import { Link } from "gatsby"
+import { v1 as uuidv1 } from "uuid"
 import { CourseInfo } from "../hooks/get-course-info"
 import { PlayerInfo } from "../hooks/get-player-info"
 import styled from "styled-components"
 import "../styles/match.css"
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import { faChevronDown, faTimes } from "@fortawesome/free-solid-svg-icons"
+// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+// import { faChevronDown, faTimes } from "@fortawesome/free-solid-svg-icons"
+import { FaChevronDown, FaTimes } from 'react-icons/fa';
 
 
 const CloseBtn = styled.span`
@@ -567,10 +569,12 @@ function Match({
       className={`"match__container " ${sectionHeight}`}
     >
       <CloseBtn onClick={matchCardClick}>
-        <FontAwesomeIcon icon={faTimes} size="2x" />
+        {/* <FontAwesomeIcon icon={faTimes} size="2x" /> */}
+        <FaTimes size={'1.5em'} />
       </CloseBtn>
       <OpenBtn onClick={matchCardClick}>
-        <FontAwesomeIcon icon={faChevronDown} size="2x" />
+        {/* <FontAwesomeIcon icon={faChevronDown} size="2x" /> */}
+        <FaChevronDown size={'1.5em'} />
       </OpenBtn>
       {/* <div className="course__info">
         <Link to={courseLink}>
@@ -658,12 +662,11 @@ function Match({
             <div className="match__par row-cell">par</div>
           </div>
           {courseHoles.map(hole => (
-            <div className="match__column" key={hole.number}>
+            <div className="match__column" key={uuidv1()}>
               <div
                 className="match__hole row-cell"
                 data-winner={`${calcHoleWinner(hole.number).team}`}
                 id={hole.number}
-                key={hole.number}
               >
                 {hole.number}
               </div>
@@ -682,9 +685,8 @@ function Match({
               </div>
               {playerOne
                 ? playerOne.course[`${courseMatch}`].map((score, i) => (
-                    <div className="match__column" key={i+score}>
+                    <div className="match__column" key={uuidv1()}>
                       <div
-                        key={i+score}
                         className="match__score row-cell"
                         data-score={`${calcPlayerScore(
                           score,
@@ -710,9 +712,8 @@ function Match({
                 </div>
                 {playerThree
                   ? playerThree.course[`${courseMatch}`].map((score, i) => (
-                      <div className="match__column" key={i+score}>
+                      <div className="match__column" key={uuidv1()}>
                         <div
-                          key={'row-cell' + i+score}
                           className="match__score row-cell"
                           data-score={`${calcPlayerScore(
                             score,
@@ -738,9 +739,9 @@ function Match({
               <div className="match__column--info column-left">
                 <div className="match__score row-cell">score</div>
               </div>
-              {teamOneScoreArray.map(hole => (
-                <div className="match__column" key={hole}>
-                  <div className="match__score row-cell" key={'score' + hole}>
+              {teamOneScoreArray.map((hole,i) => (
+                <div className="match__column" key={uuidv1()}>
+                  <div className="match__score row-cell">
                     {hole}
                   </div>
                 </div>
@@ -755,9 +756,8 @@ function Match({
               </div>
               {playerTwo
                 ? playerTwo.course[`${courseMatch}`].map((score, i) => (
-                    <div className="match__column" key={i+score}>
+                    <div className="match__column" key={uuidv1()}>
                       <div
-                        key={i+score}
                         className="match__score row-cell"
                         data-score={`${calcPlayerScore(
                           score,
@@ -783,9 +783,8 @@ function Match({
                 </div>
                 {playerFour
                   ? playerFour.course[`${courseMatch}`].map((score, i) => (
-                      <div className="match__column" key={i+score}>
+                      <div className="match__column" key={uuidv1()}>
                         <div
-                          key={'row-cell' + i+score}
                           className="match__score row-cell"
                           data-score={`${calcPlayerScore(
                             score,
@@ -811,9 +810,9 @@ function Match({
               <div className="match__column--info column-left">
                 <div className="match__score row-cell">score</div>
               </div>
-              {teamTwoScoreArray.map(hole => (
-                <div className="match__column" key={hole}>
-                  <div className="match__score row-cell" key={'score' + hole}>
+              {teamTwoScoreArray.map((hole,i) => (
+                <div className="match__column" key={uuidv1()}>
+                  <div className="match__score row-cell">
                     {hole}
                   </div>
                 </div>
