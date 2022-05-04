@@ -1,28 +1,56 @@
 import { useStaticQuery, graphql } from "gatsby"
 
-export const PlayerInfoMatt = () => {
+export const PlayerInfoMatt = year => {
   const { playersUpdateJson } = useStaticQuery(graphql`
     query PlayerInfoMatt {
-      playersUpdateJson(player: { elemMatch: { name: { eq: "matt" } } }) {
+      playersUpdateJson(
+        player: { matt: { years: { elemMatch: { year: { eq: 2021 } } } } }
+      ) {
         player {
-          name
-          years {
-            handicap
-            team
-            year
-            scores {
-              total
-              id
-              front
-              course
-              back
-            }
-            points {
-              wins
-              losses
-              id
-              game
-              ties
+          matt {
+            name
+            years {
+              captain
+              handicap
+              year
+              team
+              scores {
+                tribute {
+                  total
+                  frontHandicap
+                  front
+                  course
+                  backHandicap
+                  back
+                }
+                jonesMasterPiece {
+                  course
+                  total
+                }
+                gaylordGolfClub {
+                  frontHandicap
+                  front
+                  total
+                  course
+                  backHandicap
+                  back
+                }
+                classic {
+                  total
+                  frontHandicap
+                  front
+                  course
+                  backHandicap
+                  back
+                }
+              }
+              points {
+                wins
+                ties
+                losses
+                id
+                game
+              }
             }
           }
         }

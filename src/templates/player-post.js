@@ -1,9 +1,9 @@
 import React from "react"
-import { Link, graphql } from "gatsby"
+import { graphql } from "gatsby"
 import { MDXRenderer } from "gatsby-plugin-mdx"
 import styled from "styled-components"
 import Image from "gatsby-image"
-import { PlayerInfo } from "../hooks/get-player-info--matt"
+import { PlayerInfoMatt } from "../hooks/get-player-info--matt"
 import PlayerInfoThisYearRecord from "../components/player-info-year-record"
 
 import Layout from "../components/layout"
@@ -11,10 +11,12 @@ import SEO from "../components/seo"
 // import { usePublishedPosts } from "../hooks/use-published-posts"
 
 const PlayerPostTemplate = ({ data, location }) => {
-  const { player } = PlayerInfo()
   const post = data.mdx
   const siteTitle = data.site.siteMetadata?.name || `Name`
-  const playerHandicap = (player.year._2021[post.frontmatter.name] || {}).handicap || 0
+  const playerHandicap = data.mdx.frontmatter.handicap
+  const playerName = data.mdx.frontmatter.name
+  const { player } = PlayerInfoMatt(2021);
+  // const playerHandicap = (player[`${playerName}`].year[2021][post.frontmatter.name] || {}).handicap || 0
   // const { nodes } = usePublishedPosts()
 
   const FeaturedImg = styled(Image)`
@@ -126,7 +128,11 @@ const PlayerPostTemplate = ({ data, location }) => {
           </BioWrapper>
         </section>
         <hr />
-        <PlayerInfoThisYearRecord year="" teamColor="" />
+        <PlayerInfoThisYearRecord
+          year="2021"
+          teamColor="green"
+          name={post.frontmatter.name}
+        />
       </article>
     </Layout>
   )
@@ -152,6 +158,7 @@ export const pageQuery = graphql`
         description
         category
         team
+        handicap
         featuredImg {
           childImageSharp {
             fluid(maxWidth: 200) {
