@@ -131,7 +131,7 @@ const PlayerPostTemplate = ({ data, location }) => {
         <PlayerInfoThisYearRecord
           year="2021"
           teamColor="green"
-          name={post.frontmatter.name}
+          post={post}
         />
       </article>
     </Layout>

@@ -14,10 +14,15 @@ import { PlayerInfoMatt } from "../hooks/get-player-info--matt"
 
 const StyledSection = styled.section``
 
-function PlayerInfoThisYearRecord({ year, teamColor, playerName }) {
-  const { player } = PlayerInfoMatt(2021);
-  const years = player.matt.years;
-  console.log('years - ', years);
+function PlayerInfoThisYearRecord({ year, teamColor, post }) {
+  const playerName = post.frontmatter.name;
+  const { [`${playerName}`]: name } = PlayerInfoMatt(2021);
+  console.log('name - ', name);
+  console.log('post - ', post);
+  console.log(name['_2021'].team);
+  // const years = matt.years;
+  // console.log('years - ', years);
+  // console.log('matt - ', matt);
   
   return (
     <StyledSection>
