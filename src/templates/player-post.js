@@ -3,7 +3,7 @@ import { graphql } from "gatsby"
 import { MDXRenderer } from "gatsby-plugin-mdx"
 import styled from "styled-components"
 import Image from "gatsby-image"
-import { PlayerInfoMatt } from "../hooks/get-player-info--matt"
+// import { PlayerInfoMatt } from "../hooks/get-player-info--matt"
 import PlayerInfoThisYearRecord from "../components/player-info-year-record"
 
 import Layout from "../components/layout"
@@ -15,10 +15,12 @@ const PlayerPostTemplate = ({ data, location }) => {
   const siteTitle = data.site.siteMetadata?.name || `Name`
   const playerHandicap = data.mdx.frontmatter.handicap
   const playerName = data.mdx.frontmatter.name
-  const { player } = PlayerInfoMatt(2021);
+  const playerNickname = data.mdx.frontmatter.nickname
+  const playerData = data.allPlayersUpdateJson.edges[0].node[`${playerName}`]
+  // const { player } = PlayerInfoMatt(2021)
   // const playerHandicap = (player[`${playerName}`].year[2021][post.frontmatter.name] || {}).handicap || 0
   // const { nodes } = usePublishedPosts()
-
+  console.log("playerData - ", playerData)
   const FeaturedImg = styled(Image)`
     width: 200px;
     height: auto;
@@ -94,7 +96,7 @@ const PlayerPostTemplate = ({ data, location }) => {
   return (
     <Layout location={location} title={siteTitle}>
       <SEO
-        title={post.frontmatter.name}
+        title={playerName}
         description={post.frontmatter.description || post.excerpt}
       />
       <article
@@ -105,13 +107,13 @@ const PlayerPostTemplate = ({ data, location }) => {
         <Header team={post.frontmatter.team}>
           <HeaderContainer>
             <h1 className="h1" itemProp="headline">
-              {post.frontmatter.name}
+              {playerName}
             </h1>
 
             <div>{post.frontmatter.team}</div>
           </HeaderContainer>
           <div className="info">
-            <b>AKA:</b> {post.frontmatter.nickname} <br />
+            <b>AKA:</b> {playerNickname} <br />
             <b>Handicap:</b> {playerHandicap}
           </div>
         </Header>
@@ -132,6 +134,7 @@ const PlayerPostTemplate = ({ data, location }) => {
           year="2021"
           teamColor="green"
           post={post}
+          playerData={playerData}
         />
       </article>
     </Layout>
@@ -163,6 +166,103 @@ export const pageQuery = graphql`
           childImageSharp {
             fluid(maxWidth: 200) {
               ...GatsbyImageSharpFluid
+            }
+          }
+        }
+      }
+    }
+    allPlayersUpdateJson {
+      edges {
+        node {
+          matt {
+            name
+            year {
+              _2021 {
+                year
+                points {
+                  game
+                  id
+                  losses
+                  ties
+                  wins
+                }
+                captain
+                handicap
+                team
+                scores {
+                  tribute {
+                    total
+                    frontHandicap
+                    front
+                    course
+                    backHandicap
+                    back
+                  }
+                  jonesMasterPiece {
+                    total
+                    course
+                  }
+                  gaylordGolfClub {
+                    total
+                    frontHandicap
+                    front
+                    course
+                    backHandicap
+                    back
+                  }
+                  classic {
+                    total
+                    frontHandicap
+                    front
+                    course
+                    back
+                    backHandicap
+                  }
+                }
+              }
+              _2022 {
+                year
+                points {
+                  game
+                  id
+                  losses
+                  ties
+                  wins
+                }
+                captain
+                handicap
+                team
+                scores {
+                  tribute {
+                    total
+                    frontHandicap
+                    front
+                    course
+                    backHandicap
+                    back
+                  }
+                  jonesMasterPiece {
+                    total
+                    course
+                  }
+                  gaylordGolfClub {
+                    total
+                    frontHandicap
+                    front
+                    course
+                    backHandicap
+                    back
+                  }
+                  classic {
+                    total
+                    frontHandicap
+                    front
+                    course
+                    back
+                    backHandicap
+                  }
+                }
+              }
             }
           }
         }

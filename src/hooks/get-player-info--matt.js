@@ -1,55 +1,56 @@
 import { useStaticQuery, graphql } from "gatsby"
 
-export const PlayerInfoMatt = year => {
+export const PlayerInfoMatt = (player, year) => {
+  console.log("player from component - ", player)
+  console.log("year from component - ", year)
   const { playersUpdateJson } = useStaticQuery(graphql`
     query PlayerInfoMatt {
       playersUpdateJson {
         matt {
           name
-          _2021 {
-            team
-          }
-          years {
-            captain
-            handicap
-            year
-            team
-            scores {
-              tribute {
-                total
-                frontHandicap
-                front
-                course
-                backHandicap
-                back
+          year {
+            _2021 {
+              year
+              points {
+                game
+                id
+                losses
+                ties
+                wins
               }
-              jonesMasterPiece {
-                course
-                total
+              captain
+              handicap
+              scores {
+                tribute {
+                  total
+                  frontHandicap
+                  front
+                  course
+                  backHandicap
+                  back
+                }
+                jonesMasterPiece {
+                  total
+                  course
+                }
+                gaylordGolfClub {
+                  total
+                  frontHandicap
+                  front
+                  course
+                  backHandicap
+                  back
+                }
+                classic {
+                  total
+                  frontHandicap
+                  front
+                  course
+                  back
+                  backHandicap
+                }
               }
-              gaylordGolfClub {
-                frontHandicap
-                front
-                total
-                course
-                backHandicap
-                back
-              }
-              classic {
-                total
-                frontHandicap
-                front
-                course
-                backHandicap
-                back
-              }
-            }
-            points {
-              wins
-              ties
-              losses
-              id
-              game
+              team
             }
           }
         }

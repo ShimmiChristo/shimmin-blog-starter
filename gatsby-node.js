@@ -73,6 +73,7 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
           previousPostId,
           nextPostId,
           currentDate: getCurrentDate(),
+          name: post.frontmatter.name
         },
       })
     })

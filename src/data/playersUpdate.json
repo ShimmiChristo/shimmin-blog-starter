@@ -2,11 +2,8 @@
   {
     "matt": {
       "name": "matt",
-      "_2021": {
-        "team": "green"
-      },
-      "years": [
-        {
+      "year": {
+        "_2021": {
           "year": 2021,
           "captain": true,
           "handicap": 10,
@@ -81,7 +78,7 @@
             }
           ]
         },
-        {
+        "_2022": {
           "year": 2022,
           "captain": true,
           "handicap": 10,
@@ -156,12 +153,11 @@
             }
           ]
         }
-      ]
+      }
     },
     "chris": {
       "name": "chris",
       "year": {
-        "id": "year",
         "_2021": {
           "id": 2021,
           "handicap": 16,
