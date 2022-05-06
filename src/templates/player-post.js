@@ -20,7 +20,7 @@ const PlayerPostTemplate = ({ data, location }) => {
   // const { player } = PlayerInfoMatt(2021)
   // const playerHandicap = (player[`${playerName}`].year[2021][post.frontmatter.name] || {}).handicap || 0
   // const { nodes } = usePublishedPosts()
-  console.log("playerData - ", playerData)
+  
   const FeaturedImg = styled(Image)`
     width: 200px;
     height: auto;
