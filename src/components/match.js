@@ -7,8 +7,7 @@ import styled from "styled-components"
 import "../styles/match.css"
 // import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 // import { faChevronDown, faTimes } from "@fortawesome/free-solid-svg-icons"
-import { FaChevronDown, FaTimes } from 'react-icons/fa';
-
+import { FaChevronDown, FaTimes } from "react-icons/fa"
 
 const CloseBtn = styled.span`
   display: block;
@@ -53,7 +52,8 @@ const Section = styled.section`
   }
   ${OpenBtn} {
     display: block;
-    padding: 0 100px;
+    width: 100%;
+    text-align: center;
   }
   .match__header {
     padding-bottom: 4rem;
@@ -440,8 +440,6 @@ function Match({
     player4Handicap
   )
 
-  // const calcTeamScoreObj = calcTeamScore();
-
   function getHandicap(player) {
     if (matchHandicap === "average") {
       if (player === playerOne.name || player === playerThree.name) {
@@ -492,10 +490,6 @@ function Match({
   }
 
   function calcHoleWinner(hole) {
-    // const teamOneScoreArray = calcTeamScore(player1,player1Handicap, player3, player3Handicap)
-    // const teamTwoScoreArray = calcTeamScore(player2,player2Handicap, player4, player4Handicap)
-    // const teamOneScoreArray = calcTeamOneScore()
-    // const teamTwoScoreArray = calcTeamTwoScore()
     var holeIndex
     if (hole > 9) {
       holeIndex = hole - 10
@@ -536,23 +530,64 @@ function Match({
       player4,
       player4Handicap
     )
-    // const teamTwoScoreArray = calcTeamTwoScore()
-    // const teamTwoScoreArray = calcTeamTwoScore()
-    var holeIndex
+    let holeIndex
     const teamWins = {
       teamOne: 0,
       teamTwo: 0,
+      winningTeam: "AS",
+      score: 0,
+      holesRemaining: courseHoles.length,
     }
-    courseHoles.map((hole, i) => {
+
+    for (var i = 0; i < courseHoles.length; i++) {
       holeIndex = i
+      teamWins.holesRemaining--
       if (teamOneScoreArray[holeIndex] > teamTwoScoreArray[holeIndex]) {
         teamWins.teamTwo++
+        if (teamWins.teamTwo - teamWins.teamOne > teamWins.holesRemaining) {
+          teamWins.winningTeam = "teamTwo"
+          teamWins.score = teamWins.teamTwo - teamWins.teamOne
+          return teamWins
+        } else if (
+          teamWins.teamTwo - teamWins.teamOne === 0 &&
+          teamWins.holesRemaining === 0
+        ) {
+          return teamWins
+        }
       } else if (teamOneScoreArray[holeIndex] < teamTwoScoreArray[holeIndex]) {
         teamWins.teamOne++
+        if (teamWins.teamOne - teamWins.teamTwo > teamWins.holesRemaining) {
+          teamWins.winningTeam = "teamOne"
+          teamWins.score = teamWins.teamOne - teamWins.teamTwo
+          return teamWins
+        } else if (
+          teamWins.teamOne - teamWins.teamTwo === 0 &&
+          teamWins.holesRemaining === 0
+        ) {
+          return teamWins
+        }
+      } else {
+        // checks for ties
+        if (teamWins.teamTwo - teamWins.teamOne > teamWins.holesRemaining) {
+          teamWins.winningTeam = "teamTwo"
+          teamWins.score = teamWins.teamTwo - teamWins.teamOne
+          return teamWins
+        } else if (
+          teamWins.teamOne - teamWins.teamTwo >
+          teamWins.holesRemaining
+        ) {
+          teamWins.winningTeam = "teamOne"
+          teamWins.score = teamWins.teamOne - teamWins.teamTwo
+          return teamWins
+        } else if (
+          teamWins.teamOne - teamWins.teamTwo === 0 &&
+          teamWins.teamTwo - teamWins.teamOne === 0 &&
+          teamWins.holesRemaining === 0
+        ) {
+          return teamWins
+        }
       }
-    })
-
-    return teamWins
+    }
   }
   const teamFinalScores = calcTeamScores()
 
@@ -560,6 +595,61 @@ function Match({
     sectionHeight === "closed"
       ? setSectionHeight("open")
       : setSectionHeight("closed")
+  }
+
+  function getWinningColor() {
+    if (teamFinalScores?.winningTeam === "teamOne") {
+      return `team-one-color text-white`
+    } else if (teamFinalScores?.winningTeam === "teamTwo") {
+      return `team-two-color text-white`
+    }
+  }
+
+  function displayWinningTeam() {
+    if (teamFinalScores?.winningTeam === "AS") {
+      return teamFinalScores?.winningTeam
+    } else if (
+      teamFinalScores?.holesRemaining === 0 &&
+      teamFinalScores?.winningTeam !== "AS"
+    ) {
+      return teamFinalScores?.score + "UP"
+    } else {
+      return teamFinalScores?.score + "&" + teamFinalScores?.holesRemaining
+    }
+  }
+
+  function calcMatchPlayerScore(playerNum, playerNumInt, matchHandicap) {
+    console.log("playerNumInt - ", playerNumInt)
+    if (playerNum) {
+      return (
+        <div className={`match__playerScore match__${playerNumInt}`}>
+          <div className="match__column--info align-left row-cell">
+            <span>
+              {playerNumInt} ({matchHandicap})
+            </span>
+          </div>
+          {playerNum.course[`${courseMatch}`].map((score, i) => (
+            <div className="match__column" key={uuidv1()}>
+              <div
+                className="match__score row-cell"
+                data-score={`${calcPlayerScore(
+                  score,
+                  getHandicap(playerNumInt),
+                  courseHoles[i].handicap
+                )}`}
+              >
+                {calcPlayerScore(
+                  score,
+                  getHandicap(playerNumInt),
+                  courseHoles[i].handicap
+                )}
+                <sup>{score > 20 ? "" : score}</sup>
+              </div>
+            </div>
+          ))}
+        </div>
+      )
+    }
   }
 
   return (
@@ -570,11 +660,11 @@ function Match({
     >
       <CloseBtn onClick={matchCardClick}>
         {/* <FontAwesomeIcon icon={faTimes} size="2x" /> */}
-        <FaTimes size={'1.5em'} />
+        <FaTimes size={"1.5em"} />
       </CloseBtn>
       <OpenBtn onClick={matchCardClick}>
         {/* <FontAwesomeIcon icon={faChevronDown} size="2x" /> */}
-        <FaChevronDown size={'1.5em'} />
+        <FaChevronDown size={"1.5em"} />
       </OpenBtn>
       {/* <div className="course__info">
         <Link to={courseLink}>
@@ -584,13 +674,9 @@ function Match({
       <i className="match__number">match {matchNumber}</i>
       <div className="match__header">
         <div className="match__team color-green">
-          <div className="match__team--playerOne capitalize">
-            {player1} <span>({playerOneHand})</span>
-          </div>
+          <div className="match__team--playerOne capitalize">{player1}</div>
           {player3 ? (
-            <div className="match__team--playerThree capitalize">
-              {player3} <span>({playerThreeHand})</span>
-            </div>
+            <div className="match__team--playerThree capitalize">{player3}</div>
           ) : (
             ""
           )}
@@ -605,41 +691,15 @@ function Match({
         </div>
 
         <div className="team__scores">
-          <div
-            id="team__one"
-            className={
-              "bk-gray " +
-              (teamFinalScores.teamOne > teamFinalScores.teamTwo
-                ? `team-one-color text-white`
-                : "")
-            }
-          >
-            {teamFinalScores.teamOne || 0}
-          </div>
-
-          <div
-            id="team__two"
-            className={
-              "bk-gray " +
-              (teamFinalScores.teamOne < teamFinalScores.teamTwo
-                ? `team-two-color text-white`
-                : "")
-            }
-          >
-            {teamFinalScores.teamTwo || 0}
+          <div className={"bk-gray " + getWinningColor()}>
+            {displayWinningTeam()}
           </div>
         </div>
 
         <div className="match__team color-blue">
-          <div className="match__team--playerTwo capitalize">
-            {player2}
-            <span> ({playerTwoHand})</span>
-          </div>
+          <div className="match__team--playerTwo capitalize">{player2}</div>
           {player4 ? (
-            <div className="match__team--playerFour capitalize">
-              {player4}
-              <span> ({playerFourHand})</span>
-            </div>
+            <div className="match__team--playerFour capitalize">{player4}</div>
           ) : (
             ""
           )}
@@ -679,142 +739,39 @@ function Match({
 
         <div className="match__teamScores">
           <div className="match__teamScores--team1">
-            <div className={"match__playerScore match__player1"}>
-              <div className="match__column--info align-left row-cell">
-                {player1}
-              </div>
-              {playerOne
-                ? playerOne.course[`${courseMatch}`].map((score, i) => (
-                    <div className="match__column" key={uuidv1()}>
-                      <div
-                        className="match__score row-cell"
-                        data-score={`${calcPlayerScore(
-                          score,
-                          getHandicap(player1),
-                          courseHoles[i].handicap
-                        )}`}
-                      >
-                        {calcPlayerScore(
-                          score,
-                          getHandicap(player1),
-                          courseHoles[i].handicap
-                        )}
-                        <sup>{score > 20 ? "" : score}</sup>
-                      </div>
-                    </div>
-                  ))
-                : ""}
-            </div>
-            {playerThree ? (
-              <div className={"match__playerScore match__player3"}>
-                <div className="match__column--info align-left row-cell">
-                  {player3}
-                </div>
-                {playerThree
-                  ? playerThree.course[`${courseMatch}`].map((score, i) => (
-                      <div className="match__column" key={uuidv1()}>
-                        <div
-                          className="match__score row-cell"
-                          data-score={`${calcPlayerScore(
-                            score,
-                            getHandicap(player3),
-                            courseHoles[i].handicap
-                          )}`}
-                        >
-                          {calcPlayerScore(
-                            score,
-                            getHandicap(player3),
-                            courseHoles[i].handicap
-                          )}
-                          <sup>{score > 20 ? "" : score}</sup>
-                        </div>
-                      </div>
-                    ))
-                  : ""}
-              </div>
-            ) : (
-              ""
-            )}
+            {playerOne
+              ? calcMatchPlayerScore(playerOne, player1, playerOneHand)
+              : ""}
+            {playerThree
+              ? calcMatchPlayerScore(playerThree, player3, playerThreeHand)
+              : ""}
+
             <div className="match__teamScore">
               <div className="match__column--info column-left">
                 <div className="match__score row-cell">score</div>
               </div>
-              {teamOneScoreArray.map((hole,i) => (
+              {teamOneScoreArray.map((hole, i) => (
                 <div className="match__column" key={uuidv1()}>
-                  <div className="match__score row-cell">
-                    {hole}
-                  </div>
+                  <div className="match__score row-cell">{hole}</div>
                 </div>
               ))}
             </div>
           </div>
 
           <div className="match__teamScores--team2">
-            <div className={"match__playerScore match__player2"}>
-              <div className="match__column--info align-left row-cell">
-                {player2}
-              </div>
-              {playerTwo
-                ? playerTwo.course[`${courseMatch}`].map((score, i) => (
-                    <div className="match__column" key={uuidv1()}>
-                      <div
-                        className="match__score row-cell"
-                        data-score={`${calcPlayerScore(
-                          score,
-                          getHandicap(player2),
-                          courseHoles[i].handicap
-                        )}`}
-                      >
-                        {calcPlayerScore(
-                          score,
-                          getHandicap(player2),
-                          courseHoles[i].handicap
-                        )}
-                        <sup>{score > 20 ? "" : score}</sup>
-                      </div>
-                    </div>
-                  ))
-                : ""}
-            </div>
-            {playerFour ? (
-              <div className={"match__playerScore match__player4"}>
-                <div className="match__column--info align-left row-cell">
-                  {player4}
-                </div>
-                {playerFour
-                  ? playerFour.course[`${courseMatch}`].map((score, i) => (
-                      <div className="match__column" key={uuidv1()}>
-                        <div
-                          className="match__score row-cell"
-                          data-score={`${calcPlayerScore(
-                            score,
-                            getHandicap(player4),
-                            courseHoles[i].handicap
-                          )}`}
-                        >
-                          {calcPlayerScore(
-                            score,
-                            getHandicap(player4),
-                            courseHoles[i].handicap
-                          )}
-                          <sup>{score > 20 ? "" : score}</sup>
-                        </div>
-                      </div>
-                    ))
-                  : ""}
-              </div>
-            ) : (
-              ""
-            )}
+            {playerTwo
+              ? calcMatchPlayerScore(playerTwo, player2, playerTwoHand)
+              : ""}
+            {playerFour
+              ? calcMatchPlayerScore(playerFour, player4, playerFourHand)
+              : ""}
             <div className="match__teamScore">
               <div className="match__column--info column-left">
                 <div className="match__score row-cell">score</div>
               </div>
-              {teamTwoScoreArray.map((hole,i) => (
+              {teamTwoScoreArray.map((hole, i) => (
                 <div className="match__column" key={uuidv1()}>
-                  <div className="match__score row-cell">
-                    {hole}
-                  </div>
+                  <div className="match__score row-cell">{hole}</div>
                 </div>
               ))}
             </div>
