@@ -476,6 +476,7 @@ button:hover,
   text-transform: capitalize;
 }
 
+
 /* Media queries */
 
 @media (max-width: 42rem) {

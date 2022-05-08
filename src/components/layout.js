@@ -1,5 +1,7 @@
 import React from "react"
-import Header from "./header-v2"
+import Header2 from "./header-v2"
+import Header4 from "./header-v4"
+import HeaderBootstrap from './header--bootstrap'
 import Footer from "./footer"
 import { Helmet } from "react-helmet"
 
@@ -39,7 +41,8 @@ const Layout = ({ location, title, children }) => {
           `}
         </script>
       </Helmet>
-      <Header></Header>
+      {/* <Header4></Header4> */}
+      <HeaderBootstrap></HeaderBootstrap>
       <main className="global-wrapper">{children}</main>
       <Footer></Footer>
     </div>

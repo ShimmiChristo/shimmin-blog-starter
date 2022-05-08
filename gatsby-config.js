@@ -23,7 +23,7 @@ module.exports = {
     nav: [
       {
         name: "Scores",
-        link: "/scores",
+        link: "/scores"
       },
       {
         name: "Players",
@@ -37,6 +37,16 @@ module.exports = {
         name: "About",
         link: "/about",
       },
+      {
+        name: 'History',
+        link: '/history',
+        subnav: [
+          {
+            name: 'Records',
+            link: '/records'
+          }
+        ]
+      }
     ],
   },
   plugins: [
