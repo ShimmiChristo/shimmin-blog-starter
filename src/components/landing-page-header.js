@@ -12,8 +12,9 @@ const Container = styled.div`
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  margin: 0 auto;
-  max-width: var(--maxWidth-5xl);
+  margin: 0 auto 2rem;
+  width: 100%;
+
   & h1 {
     margin-bottom: 0;
     font-size: clamp(1rem, 10vw, 2rem);
@@ -29,8 +30,6 @@ const Container = styled.div`
 `
 
 function LandingPageHeader({ title }) {
-  // const { author } = useSiteMetadata()
-  // const { fluid } = useProfilePic()
 
   return (
     <section>

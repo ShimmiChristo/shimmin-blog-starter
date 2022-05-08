@@ -7,6 +7,10 @@ import styled from "styled-components"
 const FooterContainer = styled.footer`
   background-color: var(--color-brand-gray-6);
   padding: 1rem 0 1rem;
+
+  a {
+    color: var(--color-link);
+  }
 `
 const FooterColumns = styled.div`
   display: flex;

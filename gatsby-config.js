@@ -23,7 +23,7 @@ module.exports = {
     nav: [
       {
         name: "Scores",
-        link: "/scores"
+        link: "/scores#r1-best-ball",
       },
       {
         name: "Players",
@@ -38,15 +38,23 @@ module.exports = {
         link: "/about",
       },
       {
-        name: 'History',
-        link: '/history',
+        name: "History",
+        link: "/history",
         subnav: [
           {
-            name: 'Records',
-            link: '/records'
-          }
-        ]
-      }
+            name: "Matches",
+            link: "/matches",
+          },
+          {
+            name: "Records",
+            link: "/records",
+          },
+          {
+            name: "Venues",
+            link: "/venues",
+          },
+        ],
+      },
     ],
   },
   plugins: [
@@ -158,7 +166,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-sharp`,
       defaults: {
-        backgroundColor: `white`
+        backgroundColor: `white`,
       },
       options: {
         placeholder: `none`,

@@ -68,8 +68,8 @@ function MatchNav({ location, titles }) {
             key={i + title}
           >
             <a href={`#${title.link}`}>
-              {title.round} <br />
-              {title.name}
+              <span className="block">{title.round}</span>
+              <span className="block">{title.name}</span>
             </a>
           </li>
         ))}

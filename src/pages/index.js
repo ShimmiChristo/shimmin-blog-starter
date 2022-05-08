@@ -11,9 +11,6 @@ import MatchScore from "../components/match-score"
 // import AboutSite from "../components/about-site"
 // import MatchNav from "../components/match-nav"
 
-import 'mdb-react-ui-kit/dist/css/mdb.min.css'
-import "../styles/style.css"
-import "../styles/match.css"
 
 const TopicPage = ({ data, location }) => {
   const { title } = useSiteMetadata()

@@ -18,32 +18,37 @@ const TopicPage = ({ data, location }) => {
   const posts = nodes
 
   const LandingPageBody = styled.div`
-    max-width: var(--maxWidth-5xl);
-    margin: 0 auto;
+    /* max-width: var(--maxWidth-xl); */
   `
-
 
   return (
     <Layout location={location} title={siteTitle}>
       <SEO title="About" />
       <LandingPageHeader title="About BFBH Cup" />
       <LandingPageBody>
-        <h2 className="h4">What is the BFBH Cup?</h2>
-        <p>
-          The BFBH Cup is a annual golf competition played at different courses
-          throughout the United States, but mainly in the Great Lake State, the
-          High-Five of the country, Michigan.
-        </p>
-        <h2 className="h4">What does the BFBH Cup stand for?</h2>
-        <p>
-          Great question. The BFBH Cup stands for The "Boys From Back Home Cup".
-        </p>
-        <h2 className="h4">Who are the boys from back home?</h2>
-        <p>
-          A group of brothers and friends who were all born and raised in the great state of Michigan.
-        </p>
+        <div class="container">
+          <div class="row">
+            <div class="col-8">
+              <h2 className="h4">What is the BFBH Cup?</h2>
+              <p>
+                The BFBH Cup is a annual golf competition played at different
+                courses throughout the United States, but mainly in the Great
+                Lake State, the High-Five of the country, Michigan.
+              </p>
+              <h2 className="h4">What does the BFBH Cup stand for?</h2>
+              <p>
+                Great question. The BFBH Cup stands for The "Boys From Back Home
+                Cup".
+              </p>
+              <h2 className="h4">Who are the boys from back home?</h2>
+              <p>
+                A group of brothers and friends who were all born and raised in
+                the great state of Michigan.
+              </p>
+            </div>
+          </div>
+        </div>
       </LandingPageBody>
-      
     </Layout>
   )
 }

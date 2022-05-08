@@ -1,28 +1,15 @@
 import React from "react"
-import Header2 from "./header-v2"
-import Header4 from "./header-v4"
-import HeaderBootstrap from './header--bootstrap'
+import HeaderBootstrap from "./header--bootstrap"
 import Footer from "./footer"
 import { Helmet } from "react-helmet"
+
+import 'mdb-react-ui-kit/dist/css/mdb.min.css'
+import "../styles/style.css"
+import "../styles/match.css"
 
 const Layout = ({ location, title, children }) => {
   const rootPath = `${__PATH_PREFIX__}/`
   const isRootPath = location.pathname === rootPath
-  // let header
-
-  // if (isRootPath) {
-  //   header = (
-  //     <h1 className="main-heading">
-  //       <Link to="/">{title}</Link>
-  //     </h1>
-  //   )
-  // } else {
-  //   header = (
-  //     <Link className="header-link-home" to="/">
-  //       {title}
-  //     </Link>
-  //   )
-  // }
 
   return (
     <div data-is-root-path={isRootPath}>
@@ -41,9 +28,8 @@ const Layout = ({ location, title, children }) => {
           `}
         </script>
       </Helmet>
-      {/* <Header4></Header4> */}
       <HeaderBootstrap></HeaderBootstrap>
-      <main className="global-wrapper">{children}</main>
+      <main className="global-wrapper container">{children}</main>
       <Footer></Footer>
     </div>
   )

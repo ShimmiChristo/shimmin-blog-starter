@@ -25,6 +25,14 @@ function PlayerCard({
     @media (max-width: 767px) {
       width: 100%;
     }
+
+    a {
+      color: var(--color-link);
+
+      &:hover {
+        color: var(--color-link-light);
+      }
+    }
   `
   const ArticleLink = styled(Link)`
     text-decoration: none;

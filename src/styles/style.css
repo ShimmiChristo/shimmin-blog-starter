@@ -56,12 +56,11 @@
   --fontSize-5: 2.074rem;
   --fontSize-6: 2.488rem;
   --fontSize-7: 2.986rem;
-  /* #004f85 */
+
   --color-link-dark: var(--color-brand-dark);
-  /* #007ed4 */
-  --color-link: var(--color-brand-dark);
-  /* --color-link-light: #23a6ff; */
-  --color-link-light: var(--color-brand-light);
+  --color-link: var(--color-text);
+  --color-link-light: var(--color-text-light);
+  --color-text-dark: #222222;
   --color-text: #2e353f;
   --color-text-light: #4f5969;
   --color-heading: #1a202c;
