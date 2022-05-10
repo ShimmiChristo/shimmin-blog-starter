@@ -7,6 +7,7 @@ description: "Description"
 category: players
 featuredImg: ./profile-pic.png
 team: "Blue Team"
+position: 07
 ---
 
 Along with golf, Craig has moved into a Residential Mortgage Loan Officer role.

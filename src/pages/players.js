@@ -91,19 +91,19 @@ const PlayersIndex = ({ data, location }) => {
           </TeamFilter>
           <OlContainer style={{ listStyle: `none` }}>
             {posts.map((post, i) => {
-              const title = post.frontmatter.name || post.fields.slug
 
               return (
                 <PlayerCard
                   key={uuid + i}
                   slug={post.fields.slug}
-                  title={title}
+                  title={post?.frontmatter?.name || post?.fields?.slug}
                   team={post.frontmatter.team}
                   featuredImg={post.frontmatter.featuredImg}
                   description={post.frontmatter.description}
                   excerpt={post.excerpt}
                 />
               )
+              
             })}
           </OlContainer>
         </TeamFilterContainer>

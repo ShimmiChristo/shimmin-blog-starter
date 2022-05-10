@@ -4,7 +4,7 @@
       "name": "matt",
       "year": {
         "_2021": {
-          "year": 2021,
+          "year": "2021",
           "captain": true,
           "handicap": 10,
           "team": "green",
@@ -79,7 +79,7 @@
           ]
         },
         "_2022": {
-          "year": 2022,
+          "year": "2022",
           "captain": true,
           "handicap": 10,
           "team": "green",

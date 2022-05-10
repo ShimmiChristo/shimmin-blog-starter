@@ -8,7 +8,7 @@ function MatchSummary2021() {
       <h2>2021 Match</h2>
       <p>
         2021 marked the first official year of the BFBH Cup. Lead by the blue
-        team captain and founder Dylan Wells, and the green team captain Matt
+        team captain and commissioner Dylan Wells, and the green team captain Matt
         Gruesbeck.
       </p>
       <p>

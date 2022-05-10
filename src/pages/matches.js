@@ -22,12 +22,18 @@ const TopicPage = ({ data, location }) => {
       <LandingPageHeader title="Matches" />
       <div class="container">
         <div class="row mb-3">
-          <div class="col-8">
+          <div class="col-lg-8">
             <MatchSummary2021 />
-            <Match year="2021" />
-            <MatchPlayers2021 />
-            <MatchVenue2021 />
           </div>
+        </div>
+        <div class="row">
+          <Match year="2021" />
+        </div>
+        <div class="row">
+          <MatchPlayers2021 />
+        </div>
+        <div class="row">
+          <MatchVenue2021 />
         </div>
       </div>
     </Layout>
