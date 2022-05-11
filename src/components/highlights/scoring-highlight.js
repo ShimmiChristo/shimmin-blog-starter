@@ -1,11 +1,31 @@
 import React from "react"
 // import { StaticImage } from "gatsby-plugin-image"
 // import styled from "styled-components"
+import { PlayerInfoUpdate } from "../../hooks/get-player-info-UPDATE"
 
-function MatchPlayers2021() {
+
+function HighlightsScoring(year) {
+
+  const players = PlayerInfoUpdate();
+
+  for (const property in players) {
+    console.log(`property - ${property}: ${players[property]}`);
+  }
+
+  function getGreenTeam () {
+
+  }
+
+
   return (
-    <div className="mb-3">
-      <h2>2021 Players</h2>
+    <>
+     
+      <div class="mb-3">
+        <div class="flex flex-column text-center">
+          <div class="h1">27 Points</div>
+          <div class="h2">2 Teams</div>
+        </div>
+      </div>
       <div class="container mb-3 col-lg-10">
         <div class="row">
           <div class="col">
@@ -17,8 +37,10 @@ function MatchPlayers2021() {
                 <li class="list-group-item m-0 py-2">
                   Matt <span className="fst-italic">*team captain</span>
                 </li>
-                <li class="list-group-item m-0 py-2">Chris</li>
+                <li class="list-group-item m-0 py-2">Evan L</li>
+                <li class="list-group-item m-0 py-2">Curtis</li>
                 <li class="list-group-item m-0 py-2">Travis</li>
+                <li class="list-group-item m-0 py-2">Gordon</li>
                 <li class="list-group-item m-0 py-2">Derek</li>
               </ul>
             </div>
@@ -35,13 +57,15 @@ function MatchPlayers2021() {
                 <li class="list-group-item m-0 py-2">RJ</li>
                 <li class="list-group-item m-0 py-2">Craig</li>
                 <li class="list-group-item m-0 py-2">Dan</li>
+                <li class="list-group-item m-0 py-2">Cam</li>
+                <li class="list-group-item m-0 py-2">Evan M</li>
               </ul>
             </div>
           </div>
         </div>
       </div>
-    </div>
+    </>
   )
 }
 
-export default MatchPlayers2021
+export default HighlightsScoring

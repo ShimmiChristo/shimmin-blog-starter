@@ -38,15 +38,15 @@ function MatchSummary2021() {
         year.
       </p>
       <p>
-        <div>
+        <span className="block">
           <span className="h5">MVP: </span> Dylan
-        </div>
-        <div>
+        </span>
+        <span className="block">
           <span className="h5">Biggest Surprise: </span> Dan (Score: 3-2-1)
-        </div>
-        <div>
+        </span>
+        <span className="block">
           <span className="h5">Most Points Scored: </span> Dylan and Craig (4)
-        </div>
+        </span>
       </p>
     </div>
   )

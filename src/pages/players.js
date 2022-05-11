@@ -8,6 +8,7 @@ import AuthorBio from "../components/author-bio"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
 import PlayerCard from "../components/player-card"
+import LandingPageHeader from "../components/landing-page-header"
 
 const uuid = uuidv1()
 
@@ -43,12 +44,12 @@ const PlayersIndex = ({ data, location }) => {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
+    padding: 0;
   `
   const TeamFilter = styled.div`
     width: 100%;
     display: flex;
     flex-wrap: wrap;
-    padding: 2rem 2rem 0;
 
     &:hover {
       cursor: pointer;
@@ -73,9 +74,10 @@ const PlayersIndex = ({ data, location }) => {
   } else {
     return (
       <Layout location={location} title={siteTitle}>
-        <Seo title="All posts" />
-        <TeamFilterContainer className={teamFilter}>
-          <TeamFilter>
+        <Seo title="All Players" />
+        <LandingPageHeader title="Players" />
+        <TeamFilterContainer className={`${teamFilter} container `}>
+          <TeamFilter className="mb-2">
             <div
               className="team-filter team-filter-green"
               onClick={() => setTeamFilter("green")}

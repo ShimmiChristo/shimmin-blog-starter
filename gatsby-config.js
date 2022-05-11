@@ -30,12 +30,18 @@ module.exports = {
         link: "/players",
       },
       {
-        name: "Rules",
-        link: "/rules",
-      },
-      {
         name: "About",
         link: "/about",
+        subnav: [
+          {
+            name: "BFBH Cup",
+            link: "/about",
+          },
+          {
+            name: "Rules",
+            link: "/rules",
+          },
+        ],
       },
       {
         name: "History",

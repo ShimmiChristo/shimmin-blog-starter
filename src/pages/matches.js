@@ -20,20 +20,26 @@ const TopicPage = ({ data, location }) => {
     <Layout location={location} title={siteTitle}>
       <SEO title="BFBH Cup Previous Matches" />
       <LandingPageHeader title="Matches" />
-      <div class="container">
-        <div class="row mb-3">
-          <div class="col-lg-8">
+      <div className="container">
+        <div className="row mb-3">
+          <div className="col-lg-8">
             <MatchSummary2021 />
           </div>
         </div>
-        <div class="row">
-          <Match year="2021" />
+        <div className="row">
+          <div className="col-lg-8">
+            <Match year="2021" />
+          </div>
         </div>
-        <div class="row">
-          <MatchPlayers2021 />
+        <div className="row">
+          <div className="col-lg-8">
+            <MatchPlayers2021 />
+          </div>
         </div>
-        <div class="row">
-          <MatchVenue2021 />
+        <div className="row">
+          <div className="col-lg-8">
+            <MatchVenue2021 />
+          </div>
         </div>
       </div>
     </Layout>

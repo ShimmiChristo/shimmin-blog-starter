@@ -5,15 +5,11 @@ import styled from "styled-components"
 // import { useStaticQuery, graphql } from "gatsby"
 // import Image from "gatsby-image"
 
-const Container = styled.div`
+const CustomContainer = styled.div`
   padding: 0 0 1rem;
   border-bottom: 2px solid;
   border-color: var(--color-brand-med);
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
   margin: 0 auto 2rem;
-  width: 100%;
 
   & h1 {
     margin-bottom: 0;
@@ -33,9 +29,9 @@ function LandingPageHeader({ title }) {
 
   return (
     <section>
-      <Container>
-        <h1>{title}</h1>
-      </Container>
+      <CustomContainer className="container">
+        <h1 className="text-center">{title}</h1>
+      </CustomContainer>
     </section>
   )
 }
