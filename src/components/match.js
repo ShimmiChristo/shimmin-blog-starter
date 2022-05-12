@@ -619,7 +619,6 @@ function Match({
   }
 
   function calcMatchPlayerScore(playerNum, playerNumInt, matchHandicap) {
-    console.log("playerNumInt - ", playerNumInt)
     if (playerNum) {
       return (
         <div className={`match__playerScore match__${playerNumInt}`}>

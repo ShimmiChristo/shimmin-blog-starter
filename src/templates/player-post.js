@@ -178,7 +178,7 @@ export const pageQuery = graphql`
             name
             year {
               _2021 {
-                year
+                id
                 points {
                   game
                   id

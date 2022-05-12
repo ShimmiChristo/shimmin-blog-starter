@@ -10,7 +10,7 @@ export const PlayerInfoMatt = (player, year) => {
           name
           year {
             _2021 {
-              year
+              id
               points {
                 game
                 id

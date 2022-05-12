@@ -4,7 +4,7 @@
       "name": "matt",
       "year": {
         "_2021": {
-          "year": "2021",
+          "id": 2021,
           "captain": true,
           "handicap": 10,
           "team": "green",
@@ -155,6 +155,85 @@
         }
       }
     },
+    "dylan": {
+      "name": "dylan",
+      "year": {
+        "_2021": {
+          "id": 2021,
+          "handicap": 2,
+          "team": "blue",
+          "scores": {
+            "jonesMasterPiece": {
+              "course": "The Jones Masterpiece at Treetops",
+              "total": 999,
+              "front": [],
+              "back": []
+            },
+            "tribute": {
+              "course": "Tribute",
+              "total": 999,
+              "front": [],
+              "frontHandicap": 999,
+              "back": [],
+              "backHandicap": 999
+            },
+            "classic": {
+              "course": "Classic",
+              "total": 999,
+              "front": [],
+              "frontHandicap": 999,
+              "back": [],
+              "backHandicap": 999
+            },
+            "gaylordGolfClub": {
+              "course": "Gaylord Golf Club",
+              "total": 999,
+              "front": [],
+              "frontHandicap": 999,
+              "back": [],
+              "backHandicap": 999
+            }
+          },
+          "points": [
+            {
+              "id": "bestBall",
+              "game": "Best Ball",
+              "wins": 1,
+              "losses": 1,
+              "ties": 0
+            },
+            {
+              "id": "bramble",
+              "game": "Bramble",
+              "wins": 0,
+              "losses": 1,
+              "ties": 0
+            },
+            {
+              "id": "brambleAlternate",
+              "game": "Bramble Alternate",
+              "wins": 0,
+              "losses": 0,
+              "ties": 1
+            },
+            {
+              "id": "scramble",
+              "game": "Scramble",
+              "wins": 0,
+              "losses": 1,
+              "ties": 0
+            },
+            {
+              "id": "singles",
+              "game": "Singles",
+              "wins": 1,
+              "losses": 0,
+              "ties": 0
+            }
+          ]
+        }
+      }
+    },
     "chris": {
       "name": "chris",
       "year": {
@@ -192,6 +271,164 @@
               "frontHandicap": 16,
               "back": [4, 4, 7, 5, 4, 5, 6, 5, 5],
               "backHandicap": 16
+            }
+          },
+          "points": [
+            {
+              "id": "bestBall",
+              "game": "Best Ball",
+              "wins": 1,
+              "losses": 1,
+              "ties": 0
+            },
+            {
+              "id": "bramble",
+              "game": "Bramble",
+              "wins": 0,
+              "losses": 1,
+              "ties": 0
+            },
+            {
+              "id": "brambleAlternate",
+              "game": "Bramble Alternate",
+              "wins": 0,
+              "losses": 0,
+              "ties": 1
+            },
+            {
+              "id": "scramble",
+              "game": "Scramble",
+              "wins": 0,
+              "losses": 1,
+              "ties": 0
+            },
+            {
+              "id": "singles",
+              "game": "Singles",
+              "wins": 1,
+              "losses": 0,
+              "ties": 0
+            }
+          ]
+        }
+      }
+    },
+    "travis": {
+      "name": "travis",
+      "year": {
+        "_2021": {
+          "id": 2021,
+          "handicap": 16,
+          "team": "green",
+          "scores": {
+            "jonesMasterPiece": {
+              "course": "The Jones Masterpiece at Treetops",
+              "total": 999,
+              "front": [],
+              "back": []
+            },
+            "tribute": {
+              "course": "Tribute",
+              "total": 999,
+              "front": [],
+              "frontHandicap": 999,
+              "back": [],
+              "backHandicap": 999
+            },
+            "classic": {
+              "course": "Classic",
+              "total": 999,
+              "front": [],
+              "frontHandicap": 999,
+              "back": [],
+              "backHandicap": 999
+            },
+            "gaylordGolfClub": {
+              "course": "Gaylord Golf Club",
+              "total": 999,
+              "front": [],
+              "frontHandicap": 999,
+              "back": [],
+              "backHandicap": 999
+            }
+          },
+          "points": [
+            {
+              "id": "bestBall",
+              "game": "Best Ball",
+              "wins": 1,
+              "losses": 1,
+              "ties": 0
+            },
+            {
+              "id": "bramble",
+              "game": "Bramble",
+              "wins": 0,
+              "losses": 1,
+              "ties": 0
+            },
+            {
+              "id": "brambleAlternate",
+              "game": "Bramble Alternate",
+              "wins": 0,
+              "losses": 0,
+              "ties": 1
+            },
+            {
+              "id": "scramble",
+              "game": "Scramble",
+              "wins": 0,
+              "losses": 1,
+              "ties": 0
+            },
+            {
+              "id": "singles",
+              "game": "Singles",
+              "wins": 1,
+              "losses": 0,
+              "ties": 0
+            }
+          ]
+        }
+      }
+    },
+    "derek": {
+      "name": "derek",
+      "year": {
+        "_2021": {
+          "id": 2021,
+          "handicap": 16,
+          "team": "green",
+          "scores": {
+            "jonesMasterPiece": {
+              "course": "The Jones Masterpiece at Treetops",
+              "total": 999,
+              "front": [],
+              "back": []
+            },
+            "tribute": {
+              "course": "Tribute",
+              "total": 999,
+              "front": [],
+              "frontHandicap": 999,
+              "back": [],
+              "backHandicap": 999
+            },
+            "classic": {
+              "course": "Classic",
+              "total": 999,
+              "front": [],
+              "frontHandicap": 999,
+              "back": [],
+              "backHandicap": 999
+            },
+            "gaylordGolfClub": {
+              "course": "Gaylord Golf Club",
+              "total": 999,
+              "front": [],
+              "frontHandicap": 999,
+              "back": [],
+              "backHandicap": 999
             }
           },
           "points": [
