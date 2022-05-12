@@ -1,4 +1,6 @@
 import React from "react"
+import { v1 as uuidv1 } from "uuid"
+
 // import { StaticImage } from "gatsby-plugin-image"
 // import styled from "styled-components"
 import { PlayerInfoUpdate } from "../../hooks/get-player-info-UPDATE"
@@ -44,12 +46,12 @@ function HighlightsScoring({ yearProp }) {
                 {greenTeam.map((player,i) => {
                   if (i === 0) {
                     return (
-                      <li class="list-group-item m-0 py-2">
+                      <li key={uuidv1()} class="list-group-item m-0 py-2">
                         {player} *team captain
                       </li>
                     )
                   } else {
-                    return <li class="list-group-item m-0 py-2">{player}</li>
+                    return <li key={uuidv1()} class="list-group-item m-0 py-2">{player}</li>
                   }
                 })}
                 {/* <li class="list-group-item m-0 py-2">
