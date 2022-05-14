@@ -53,6 +53,7 @@ const TopicPage = ({ data, location }) => {
       <SEO title="BFBH Cup | Boys From Back Home Cup" />
 
       <HighlightsScoring yearProp="2021" />
+      <HighlightsScoring yearProp="2022" />
       
     </Layout>
   )

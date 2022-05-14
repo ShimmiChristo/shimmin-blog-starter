@@ -15,7 +15,6 @@ import {
 const StyledSection = styled.section``
 
 function PlayerInfoThisYearRecord({ year, teamColor, post, playerData }) {
-
   const getOverallRecord = playerData => {
     const years = playerData.year
     let totalWins = 0
@@ -57,15 +56,13 @@ function PlayerInfoThisYearRecord({ year, teamColor, post, playerData }) {
     })
     return {
       totalWins: totalWins,
-      totalLosses: totalLosses,
       totalTies: totalTies,
+      totalLosses: totalLosses,
     }
-
-
   }
 
   const record = getOverallRecord(playerData)
-  const bestBallRecord = getGameRecord(playerData, 'bestBall')
+  const bestBallRecord = getGameRecord(playerData, "bestBall")
 
   return (
     <StyledSection>
@@ -75,25 +72,21 @@ function PlayerInfoThisYearRecord({ year, teamColor, post, playerData }) {
         </h2>
       </MDBRow>
       <MDBRow>
-        {/* <MDBCol className=''> */}
         <MDBCard className="shadow-0 border border-gray offset-md-4 col-md-4 offset- my-2">
           <MDBRow className="g-10">
             <MDBCol center>
               <MDBCardBody>
                 <MDBCardText className="text-dark text-center h1">
-                  {record.totalWins} - {record.totalLosses} - {record.totalTies}
+                  {record.totalWins} - {record.totalTies} - {record.totalLosses}
                 </MDBCardText>
-                <MDBCardTitle className="text-center">
-                  Record
-                </MDBCardTitle>
+                <MDBCardTitle className="text-center">Record</MDBCardTitle>
               </MDBCardBody>
             </MDBCol>
           </MDBRow>
         </MDBCard>
-        {/* </MDBCol> */}
       </MDBRow>
 
-      <MDBRow className="text-center mt-3">
+      {/* <MDBRow className="text-center mt-3">
         <h2 className="h3">
           <MDBCol>{year} Game Records</MDBCol>
         </h2>
@@ -104,7 +97,8 @@ function PlayerInfoThisYearRecord({ year, teamColor, post, playerData }) {
             <MDBCol center>
               <MDBCardBody>
                 <MDBCardText className="text-dark text-center h1">
-                  {bestBallRecord.totalWins} - {bestBallRecord.totalLosses} - {bestBallRecord.totalTies}
+                  {bestBallRecord.totalWins} - {bestBallRecord.totalLosses} -{" "}
+                  {bestBallRecord.totalTies}
                 </MDBCardText>
                 <MDBCardTitle className="text-center">
                   Best Ball Record
@@ -118,7 +112,8 @@ function PlayerInfoThisYearRecord({ year, teamColor, post, playerData }) {
             <MDBCol center>
               <MDBCardBody>
                 <MDBCardText className="text-dark text-center h1">
-                  {bestBallRecord.totalWins} - {bestBallRecord.totalLosses} - {bestBallRecord.totalTies}
+                  {bestBallRecord.totalWins} - {bestBallRecord.totalLosses} -{" "}
+                  {bestBallRecord.totalTies}
                 </MDBCardText>
                 <MDBCardTitle className="text-center">
                   Best Ball Record
@@ -127,7 +122,9 @@ function PlayerInfoThisYearRecord({ year, teamColor, post, playerData }) {
             </MDBCol>
           </MDBRow>
         </MDBCard>
-      </MDBRow>
+      </MDBRow> */}
+
+
     </StyledSection>
   )
 }

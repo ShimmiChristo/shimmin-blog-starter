@@ -16,11 +16,11 @@ const PlayerPostTemplate = ({ data, location }) => {
   const playerHandicap = data.mdx.frontmatter.handicap
   const playerName = data.mdx.frontmatter.name
   const playerNickname = data.mdx.frontmatter.nickname
-  const playerData = data.allPlayersUpdateJson.edges[0].node[`${playerName}`]
+  const playerData = data.playersUpdateJson[`${playerName}`]
   // const { player } = PlayerInfoMatt(2021)
   // const playerHandicap = (player[`${playerName}`].year[2021][post.frontmatter.name] || {}).handicap || 0
   // const { nodes } = usePublishedPosts()
-  
+
   const FeaturedImg = styled(Image)`
     width: 200px;
     height: auto;
@@ -171,97 +171,354 @@ export const pageQuery = graphql`
         }
       }
     }
-    allPlayersUpdateJson {
-      edges {
-        node {
-          matt {
-            name
-            year {
-              _2021 {
-                id
-                points {
-                  game
-                  id
-                  losses
-                  ties
-                  wins
-                }
-                captain
-                handicap
-                team
-                scores {
-                  tribute {
-                    total
-                    frontHandicap
-                    front
-                    course
-                    backHandicap
-                    back
-                  }
-                  jonesMasterPiece {
-                    total
-                    course
-                  }
-                  gaylordGolfClub {
-                    total
-                    frontHandicap
-                    front
-                    course
-                    backHandicap
-                    back
-                  }
-                  classic {
-                    total
-                    frontHandicap
-                    front
-                    course
-                    back
-                    backHandicap
-                  }
-                }
+    playersUpdateJson {
+      matt {
+        name
+        year {
+          _2021 {
+            id
+            captain
+            handicap
+            team
+            points {
+              game
+              id
+              losses
+              ties
+              wins
+            }
+            scores {
+              tribute {
+                frontHandicap
+                front
+                course
+                backHandicap
+                back
               }
-              _2022 {
-                year
-                points {
-                  game
-                  id
-                  losses
-                  ties
-                  wins
-                }
-                captain
-                handicap
-                team
-                scores {
-                  tribute {
-                    total
-                    frontHandicap
-                    front
-                    course
-                    backHandicap
-                    back
-                  }
-                  jonesMasterPiece {
-                    total
-                    course
-                  }
-                  gaylordGolfClub {
-                    total
-                    frontHandicap
-                    front
-                    course
-                    backHandicap
-                    back
-                  }
-                  classic {
-                    total
-                    frontHandicap
-                    front
-                    course
-                    back
-                    backHandicap
-                  }
-                }
+              jonesMasterPiece {
+                course
+              }
+              gaylordGolfClub {
+                frontHandicap
+                front
+                course
+                backHandicap
+                back
+              }
+              classic {
+                frontHandicap
+                front
+                course
+                back
+                backHandicap
+              }
+            }
+          }
+        }
+      }
+      chris {
+        name
+        year {
+          _2021 {
+            id
+            captain
+            handicap
+            team
+            points {
+              game
+              id
+              losses
+              ties
+              wins
+            }
+            scores {
+              tribute {
+                frontHandicap
+                front
+                course
+                backHandicap
+                back
+              }
+              jonesMasterPiece {
+                course
+              }
+              gaylordGolfClub {
+                frontHandicap
+                front
+                course
+                backHandicap
+                back
+              }
+              classic {
+                frontHandicap
+                front
+                course
+                back
+                backHandicap
+              }
+            }
+          }
+        }
+      }
+      rj {
+        name
+        year {
+          _2021 {
+            id
+            captain
+            handicap
+            team
+            points {
+              game
+              id
+              losses
+              ties
+              wins
+            }
+            scores {
+              tribute {
+                frontHandicap
+                front
+                course
+                backHandicap
+                back
+              }
+              jonesMasterPiece {
+                course
+              }
+              gaylordGolfClub {
+                frontHandicap
+                front
+                course
+                backHandicap
+                back
+              }
+              classic {
+                frontHandicap
+                front
+                course
+                back
+                backHandicap
+              }
+            }
+          }
+        }
+      }
+      dylan {
+        name
+        year {
+          _2021 {
+            id
+            captain
+            handicap
+            team
+            points {
+              game
+              id
+              losses
+              ties
+              wins
+            }
+            scores {
+              tribute {
+                frontHandicap
+                front
+                course
+                backHandicap
+                back
+              }
+              jonesMasterPiece {
+                course
+              }
+              gaylordGolfClub {
+                frontHandicap
+                front
+                course
+                backHandicap
+                back
+              }
+              classic {
+                frontHandicap
+                front
+                course
+                back
+                backHandicap
+              }
+            }
+          }
+        }
+      }
+      travis {
+        name
+        year {
+          _2021 {
+            id
+            captain
+            handicap
+            team
+            points {
+              game
+              id
+              losses
+              ties
+              wins
+            }
+            scores {
+              tribute {
+                frontHandicap
+                front
+                course
+                backHandicap
+                back
+              }
+              jonesMasterPiece {
+                course
+              }
+              gaylordGolfClub {
+                frontHandicap
+                front
+                course
+                backHandicap
+                back
+              }
+              classic {
+                frontHandicap
+                front
+                course
+                back
+                backHandicap
+              }
+            }
+          }
+        }
+      }
+      craig {
+        name
+        year {
+          _2021 {
+            id
+            captain
+            handicap
+            team
+            points {
+              game
+              id
+              losses
+              ties
+              wins
+            }
+            scores {
+              tribute {
+                frontHandicap
+                front
+                course
+                backHandicap
+                back
+              }
+              jonesMasterPiece {
+                course
+              }
+              gaylordGolfClub {
+                frontHandicap
+                front
+                course
+                backHandicap
+                back
+              }
+              classic {
+                frontHandicap
+                front
+                course
+                back
+                backHandicap
+              }
+            }
+          }
+        }
+      }
+      dan {
+        name
+        year {
+          _2021 {
+            id
+            captain
+            handicap
+            team
+            points {
+              game
+              id
+              losses
+              ties
+              wins
+            }
+            scores {
+              tribute {
+                frontHandicap
+                front
+                course
+                backHandicap
+                back
+              }
+              jonesMasterPiece {
+                course
+              }
+              gaylordGolfClub {
+                frontHandicap
+                front
+                course
+                backHandicap
+                back
+              }
+              classic {
+                frontHandicap
+                front
+                course
+                back
+                backHandicap
+              }
+            }
+          }
+        }
+      }
+      derek {
+        name
+        year {
+          _2021 {
+            id
+            captain
+            handicap
+            team
+            points {
+              game
+              id
+              losses
+              ties
+              wins
+            }
+            scores {
+              tribute {
+                frontHandicap
+                front
+                course
+                backHandicap
+                back
+              }
+              jonesMasterPiece {
+                course
+              }
+              gaylordGolfClub {
+                frontHandicap
+                front
+                course
+                backHandicap
+                back
+              }
+              classic {
+                frontHandicap
+                front
+                course
+                back
+                backHandicap
               }
             }
           }

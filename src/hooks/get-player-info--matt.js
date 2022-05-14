@@ -22,7 +22,6 @@ export const PlayerInfoMatt = (player, year) => {
               handicap
               scores {
                 tribute {
-                  total
                   frontHandicap
                   front
                   course
@@ -30,11 +29,9 @@ export const PlayerInfoMatt = (player, year) => {
                   back
                 }
                 jonesMasterPiece {
-                  total
                   course
                 }
                 gaylordGolfClub {
-                  total
                   frontHandicap
                   front
                   course
@@ -42,7 +39,6 @@ export const PlayerInfoMatt = (player, year) => {
                   back
                 }
                 classic {
-                  total
                   frontHandicap
                   front
                   course

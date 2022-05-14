@@ -7,25 +7,18 @@ import { PlayerInfoUpdate } from "../../hooks/get-player-info-UPDATE"
 
 function HighlightsScoring({ yearProp }) {
   const players = PlayerInfoUpdate()
-  const newProp = players.chris.year[`_${yearProp}`].handicap
+  // const newProp = players.chris.year[`_${yearProp}`].handicap
   const greenTeam = []
   const blueTeam = []
 
   for (const property in players) {
-    // let playerHandicap = property;
-    // console.log(`property - ${property}: ${Object.keys(players[property])}
-    //   year -
-    // `)
     if (players[property].year[`_${yearProp}`]?.team === "green") {
-      greenTeam.push(property)
+      players[property]?.name ? greenTeam.push(players[property].name) : greenTeam.push(property)
+      
     } else if (players[property].year[`_${yearProp}`]?.team === "blue") {
-      blueTeam.push(property)
+      players[property]?.name ? blueTeam.push(players[property].name) : blueTeam.push(property)
     }
-    console.log(greenTeam)
-    console.log(blueTeam)
   }
-
-  function getGreenTeam() {}
 
   return (
     <>
@@ -43,25 +36,22 @@ function HighlightsScoring({ yearProp }) {
                 Green Team
               </div>
               <ul class="list-group list-group-flush">
-                {greenTeam.map((player,i) => {
+                {greenTeam.map((player, i) => {
                   if (i === 0) {
                     return (
                       <li key={uuidv1()} class="list-group-item m-0 py-2">
-                        {player} *team captain
+                        <span class="capitalize">{player}</span>
+                        <em> *team captain</em>
                       </li>
                     )
                   } else {
-                    return <li key={uuidv1()} class="list-group-item m-0 py-2">{player}</li>
+                    return (
+                      <li key={uuidv1()} class="list-group-item m-0 py-2">
+                        <span class="capitalize">{player}</span>
+                      </li>
+                    )
                   }
                 })}
-                {/* <li class="list-group-item m-0 py-2">
-                  Matt <span className="fst-italic">*team captain</span>
-                </li>
-                <li class="list-group-item m-0 py-2">Evan L</li>
-                <li class="list-group-item m-0 py-2">Curtis</li>
-                <li class="list-group-item m-0 py-2">Travis</li>
-                <li class="list-group-item m-0 py-2">Gordon</li>
-                <li class="list-group-item m-0 py-2">Derek</li> */}
               </ul>
             </div>
           </div>
@@ -71,14 +61,22 @@ function HighlightsScoring({ yearProp }) {
                 Blue Team
               </div>
               <ul class="list-group list-group-flush">
-                <li class="list-group-item m-0 py-2 ">
-                  Dylan <span className="fst-italic ">*team captain</span>
-                </li>
-                <li class="list-group-item m-0 py-2">RJ</li>
-                <li class="list-group-item m-0 py-2">Craig</li>
-                <li class="list-group-item m-0 py-2">Dan</li>
-                <li class="list-group-item m-0 py-2">Cam</li>
-                <li class="list-group-item m-0 py-2">Evan M</li>
+                {blueTeam.map((player, i) => {
+                  if (i === 0) {
+                    return (
+                      <li key={uuidv1()} class="list-group-item m-0 py-2">
+                        <span class="capitalize">{player}</span>
+                        <em> *team captain</em>
+                      </li>
+                    )
+                  } else {
+                    return (
+                      <li key={uuidv1()} class="list-group-item m-0 py-2">
+                        <span class="capitalize">{player}</span>
+                      </li>
+                    )
+                  }
+                })}
               </ul>
             </div>
           </div>

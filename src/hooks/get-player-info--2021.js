@@ -2,7 +2,7 @@ import { useStaticQuery, graphql } from "gatsby"
 
 export const PlayerInfo2021 = () => {
   const { playersJson } = useStaticQuery(graphql`
-    query PlayerInfo {
+    query PlayerInfo2021 {
       playersJson {
         player {
           matt {

@@ -10,6 +10,7 @@ export const PlayerInfoUpdate = () => {
             _2021 {
               handicap
               id
+              team
               points {
                 game
                 id
@@ -24,16 +25,13 @@ export const PlayerInfoUpdate = () => {
                   course
                   frontHandicap
                   front
-                  total
                 }
                 jonesMasterPiece {
                   course
-                  total
                 }
                 gaylordGolfClub {
                   back
                   backHandicap
-                  total
                   frontHandicap
                   front
                   course
@@ -43,11 +41,47 @@ export const PlayerInfoUpdate = () => {
                   backHandicap
                   front
                   course
-                  total
                   frontHandicap
                 }
               }
+            }
+            _2022 {
+              handicap
+              id
               team
+              points {
+                game
+                id
+                wins
+                ties
+                losses
+              }
+              scores {
+                stoatinBrae {
+                  back
+                  backHandicap
+                  course
+                  frontHandicap
+                  front
+                }
+                stonehedgeSouth {
+                  course
+                }
+                gullLakeEast {
+                  back
+                  backHandicap
+                  frontHandicap
+                  front
+                  course
+                }
+                gullLakeWest {
+                  back
+                  backHandicap
+                  front
+                  course
+                  frontHandicap
+                }
+              }
             }
           }
         }
@@ -57,6 +91,7 @@ export const PlayerInfoUpdate = () => {
             _2021 {
               handicap
               id
+              team
               points {
                 game
                 id
@@ -71,16 +106,13 @@ export const PlayerInfoUpdate = () => {
                   course
                   frontHandicap
                   front
-                  total
                 }
                 jonesMasterPiece {
                   course
-                  total
                 }
                 gaylordGolfClub {
                   back
                   backHandicap
-                  total
                   frontHandicap
                   front
                   course
@@ -90,11 +122,47 @@ export const PlayerInfoUpdate = () => {
                   backHandicap
                   front
                   course
-                  total
                   frontHandicap
                 }
               }
+            }
+            _2022 {
+              handicap
+              id
               team
+              points {
+                game
+                id
+                wins
+                ties
+                losses
+              }
+              scores {
+                stoatinBrae {
+                  back
+                  backHandicap
+                  course
+                  frontHandicap
+                  front
+                }
+                stonehedgeSouth {
+                  course
+                }
+                gullLakeEast {
+                  back
+                  backHandicap
+                  frontHandicap
+                  front
+                  course
+                }
+                gullLakeWest {
+                  back
+                  backHandicap
+                  front
+                  course
+                  frontHandicap
+                }
+              }
             }
           }
         }
@@ -104,6 +172,7 @@ export const PlayerInfoUpdate = () => {
             _2021 {
               handicap
               id
+              team
               points {
                 game
                 id
@@ -118,16 +187,13 @@ export const PlayerInfoUpdate = () => {
                   course
                   frontHandicap
                   front
-                  total
                 }
                 jonesMasterPiece {
                   course
-                  total
                 }
                 gaylordGolfClub {
                   back
                   backHandicap
-                  total
                   frontHandicap
                   front
                   course
@@ -137,11 +203,9 @@ export const PlayerInfoUpdate = () => {
                   backHandicap
                   front
                   course
-                  total
                   frontHandicap
                 }
               }
-              team
             }
           }
         }
@@ -151,6 +215,7 @@ export const PlayerInfoUpdate = () => {
             _2021 {
               handicap
               id
+              team
               points {
                 game
                 id
@@ -165,16 +230,13 @@ export const PlayerInfoUpdate = () => {
                   course
                   frontHandicap
                   front
-                  total
                 }
                 jonesMasterPiece {
                   course
-                  total
                 }
                 gaylordGolfClub {
                   back
                   backHandicap
-                  total
                   frontHandicap
                   front
                   course
@@ -184,11 +246,47 @@ export const PlayerInfoUpdate = () => {
                   backHandicap
                   front
                   course
-                  total
                   frontHandicap
                 }
               }
+            }
+            _2022 {
+              handicap
+              id
               team
+              points {
+                game
+                id
+                wins
+                ties
+                losses
+              }
+              scores {
+                stoatinBrae {
+                  back
+                  backHandicap
+                  course
+                  frontHandicap
+                  front
+                }
+                stonehedgeSouth {
+                  course
+                }
+                gullLakeEast {
+                  back
+                  backHandicap
+                  frontHandicap
+                  front
+                  course
+                }
+                gullLakeWest {
+                  back
+                  backHandicap
+                  front
+                  course
+                  frontHandicap
+                }
+              }
             }
           }
         }
@@ -197,6 +295,7 @@ export const PlayerInfoUpdate = () => {
           year {
             _2021 {
               handicap
+              team
               id
               points {
                 game
@@ -212,16 +311,13 @@ export const PlayerInfoUpdate = () => {
                   course
                   frontHandicap
                   front
-                  total
                 }
                 jonesMasterPiece {
                   course
-                  total
                 }
                 gaylordGolfClub {
                   back
                   backHandicap
-                  total
                   frontHandicap
                   front
                   course
@@ -231,11 +327,47 @@ export const PlayerInfoUpdate = () => {
                   backHandicap
                   front
                   course
-                  total
                   frontHandicap
                 }
               }
+            }
+            _2022 {
+              handicap
+              id
               team
+              points {
+                game
+                id
+                wins
+                ties
+                losses
+              }
+              scores {
+                stoatinBrae {
+                  back
+                  backHandicap
+                  course
+                  frontHandicap
+                  front
+                }
+                stonehedgeSouth {
+                  course
+                }
+                gullLakeEast {
+                  back
+                  backHandicap
+                  frontHandicap
+                  front
+                  course
+                }
+                gullLakeWest {
+                  back
+                  backHandicap
+                  front
+                  course
+                  frontHandicap
+                }
+              }
             }
           }
         }
@@ -244,6 +376,7 @@ export const PlayerInfoUpdate = () => {
           year {
             _2021 {
               handicap
+              team
               id
               points {
                 game
@@ -259,16 +392,13 @@ export const PlayerInfoUpdate = () => {
                   course
                   frontHandicap
                   front
-                  total
                 }
                 jonesMasterPiece {
                   course
-                  total
                 }
                 gaylordGolfClub {
                   back
                   backHandicap
-                  total
                   frontHandicap
                   front
                   course
@@ -278,11 +408,47 @@ export const PlayerInfoUpdate = () => {
                   backHandicap
                   front
                   course
-                  total
                   frontHandicap
                 }
               }
+            }
+            _2022 {
+              handicap
+              id
               team
+              points {
+                game
+                id
+                wins
+                ties
+                losses
+              }
+              scores {
+                stoatinBrae {
+                  back
+                  backHandicap
+                  course
+                  frontHandicap
+                  front
+                }
+                stonehedgeSouth {
+                  course
+                }
+                gullLakeEast {
+                  back
+                  backHandicap
+                  frontHandicap
+                  front
+                  course
+                }
+                gullLakeWest {
+                  back
+                  backHandicap
+                  front
+                  course
+                  frontHandicap
+                }
+              }
             }
           }
         }
@@ -291,6 +457,7 @@ export const PlayerInfoUpdate = () => {
           year {
             _2021 {
               handicap
+              team
               id
               points {
                 game
@@ -306,16 +473,13 @@ export const PlayerInfoUpdate = () => {
                   course
                   frontHandicap
                   front
-                  total
                 }
                 jonesMasterPiece {
                   course
-                  total
                 }
                 gaylordGolfClub {
                   back
                   backHandicap
-                  total
                   frontHandicap
                   front
                   course
@@ -325,11 +489,47 @@ export const PlayerInfoUpdate = () => {
                   backHandicap
                   front
                   course
-                  total
                   frontHandicap
                 }
               }
+            }
+            _2022 {
+              handicap
+              id
               team
+              points {
+                game
+                id
+                wins
+                ties
+                losses
+              }
+              scores {
+                stoatinBrae {
+                  back
+                  backHandicap
+                  course
+                  frontHandicap
+                  front
+                }
+                stonehedgeSouth {
+                  course
+                }
+                gullLakeEast {
+                  back
+                  backHandicap
+                  frontHandicap
+                  front
+                  course
+                }
+                gullLakeWest {
+                  back
+                  backHandicap
+                  front
+                  course
+                  frontHandicap
+                }
+              }
             }
           }
         }
@@ -338,6 +538,7 @@ export const PlayerInfoUpdate = () => {
           year {
             _2021 {
               handicap
+              team
               id
               points {
                 game
@@ -353,16 +554,13 @@ export const PlayerInfoUpdate = () => {
                   course
                   frontHandicap
                   front
-                  total
                 }
                 jonesMasterPiece {
                   course
-                  total
                 }
                 gaylordGolfClub {
                   back
                   backHandicap
-                  total
                   frontHandicap
                   front
                   course
@@ -372,11 +570,262 @@ export const PlayerInfoUpdate = () => {
                   backHandicap
                   front
                   course
-                  total
                   frontHandicap
                 }
               }
+            }
+            _2022 {
+              handicap
+              id
               team
+              points {
+                game
+                id
+                wins
+                ties
+                losses
+              }
+              scores {
+                stoatinBrae {
+                  back
+                  backHandicap
+                  course
+                  frontHandicap
+                  front
+                }
+                stonehedgeSouth {
+                  course
+                }
+                gullLakeEast {
+                  back
+                  backHandicap
+                  frontHandicap
+                  front
+                  course
+                }
+                gullLakeWest {
+                  back
+                  backHandicap
+                  front
+                  course
+                  frontHandicap
+                }
+              }
+            }
+          }
+        }
+        evanL {
+          name
+          year {
+            _2022 {
+              handicap
+              id
+              team
+              points {
+                game
+                id
+                wins
+                ties
+                losses
+              }
+              scores {
+                stoatinBrae {
+                  back
+                  backHandicap
+                  course
+                  frontHandicap
+                  front
+                }
+                stonehedgeSouth {
+                  course
+                }
+                gullLakeEast {
+                  back
+                  backHandicap
+                  frontHandicap
+                  front
+                  course
+                }
+                gullLakeWest {
+                  back
+                  backHandicap
+                  front
+                  course
+                  frontHandicap
+                }
+              }
+            }
+          }
+        }
+        cam {
+          name
+          year {
+            _2022 {
+              handicap
+              id
+              team
+              points {
+                game
+                id
+                wins
+                ties
+                losses
+              }
+              scores {
+                stoatinBrae {
+                  back
+                  backHandicap
+                  course
+                  frontHandicap
+                  front
+                }
+                stonehedgeSouth {
+                  course
+                }
+                gullLakeEast {
+                  back
+                  backHandicap
+                  frontHandicap
+                  front
+                  course
+                }
+                gullLakeWest {
+                  back
+                  backHandicap
+                  front
+                  course
+                  frontHandicap
+                }
+              }
+            }
+          }
+        }
+        curtis {
+          name
+          year {
+            _2022 {
+              handicap
+              id
+              team
+              points {
+                game
+                id
+                wins
+                ties
+                losses
+              }
+              scores {
+                stoatinBrae {
+                  back
+                  backHandicap
+                  course
+                  frontHandicap
+                  front
+                }
+                stonehedgeSouth {
+                  course
+                }
+                gullLakeEast {
+                  back
+                  backHandicap
+                  frontHandicap
+                  front
+                  course
+                }
+                gullLakeWest {
+                  back
+                  backHandicap
+                  front
+                  course
+                  frontHandicap
+                }
+              }
+            }
+          }
+        }
+        evanM {
+          name
+          year {
+            _2022 {
+              handicap
+              id
+              team
+              points {
+                game
+                id
+                wins
+                ties
+                losses
+              }
+              scores {
+                stoatinBrae {
+                  back
+                  backHandicap
+                  course
+                  frontHandicap
+                  front
+                }
+                stonehedgeSouth {
+                  course
+                }
+                gullLakeEast {
+                  back
+                  backHandicap
+                  frontHandicap
+                  front
+                  course
+                }
+                gullLakeWest {
+                  back
+                  backHandicap
+                  front
+                  course
+                  frontHandicap
+                }
+              }
+            }
+          }
+        }
+        gordon {
+          name
+          year {
+            _2022 {
+              handicap
+              id
+              team
+              points {
+                game
+                id
+                wins
+                ties
+                losses
+              }
+              scores {
+                stoatinBrae {
+                  back
+                  backHandicap
+                  course
+                  frontHandicap
+                  front
+                }
+                stonehedgeSouth {
+                  course
+                }
+                gullLakeEast {
+                  back
+                  backHandicap
+                  frontHandicap
+                  front
+                  course
+                }
+                gullLakeWest {
+                  back
+                  backHandicap
+                  front
+                  course
+                  frontHandicap
+                }
+              }
             }
           }
         }
