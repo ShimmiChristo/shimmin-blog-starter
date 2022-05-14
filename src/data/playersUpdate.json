@@ -41,36 +41,36 @@
               "id": "bestBall",
               "game": "Best Ball",
               "wins": 1,
-              "losses": 1,
-              "ties": 0
+              "ties": 0,
+              "losses": 1
             },
             {
               "id": "bramble",
               "game": "Bramble",
               "wins": 0,
-              "losses": 1,
-              "ties": 0
+              "ties": 0,
+              "losses": 1
             },
             {
               "id": "brambleAlternate",
               "game": "Bramble Alternate",
               "wins": 1,
-              "losses": 0,
-              "ties": 0
+              "ties": 0,
+              "losses": 0
             },
             {
               "id": "scramble",
               "game": "Scramble",
               "wins": 0,
-              "losses": 1,
-              "ties": 0
+              "ties": 0,
+              "losses": 1
             },
             {
               "id": "singles",
               "game": "Singles",
               "wins": 0,
-              "losses": 1,
-              "ties": 0
+              "ties": 0,
+              "losses": 1
             }
           ],
           "records": [
@@ -97,11 +97,6 @@
                     "wins": 0,
                     "ties": 0,
                     "losses": 1
-                  },
-                  "singles": {
-                    "wins": 0,
-                    "ties": 0,
-                    "losses": 0
                   }
                 },
                 {
@@ -125,11 +120,6 @@
                     "wins": 0,
                     "ties": 0,
                     "losses": 0
-                  },
-                  "singles": {
-                    "wins": 0,
-                    "ties": 0,
-                    "losses": 0
                   }
                 },
                 {
@@ -150,11 +140,6 @@
                     "losses": 0
                   },
                   "scramble": {
-                    "wins": 0,
-                    "ties": 0,
-                    "losses": 0
-                  },
-                  "singles": {
                     "wins": 0,
                     "ties": 0,
                     "losses": 0
@@ -378,11 +363,6 @@
                     "wins": 1,
                     "ties": 0,
                     "losses": 0
-                  },
-                  "singles": {
-                    "wins": 0,
-                    "ties": 0,
-                    "losses": 0
                   }
                 },
                 {
@@ -406,11 +386,6 @@
                     "wins": 0,
                     "ties": 0,
                     "losses": 0
-                  },
-                  "singles": {
-                    "wins": 0,
-                    "ties": 0,
-                    "losses": 0
                   }
                 },
                 {
@@ -431,11 +406,6 @@
                     "losses": 0
                   },
                   "scramble": {
-                    "wins": 0,
-                    "ties": 0,
-                    "losses": 0
-                  },
-                  "singles": {
                     "wins": 0,
                     "ties": 0,
                     "losses": 0
@@ -573,13 +543,11 @@
           "scores": {
             "jonesMasterPiece": {
               "course": "The Jones Masterpiece at Treetops",
-              "total": 999,
               "front": [0],
               "back": [0]
             },
             "tribute": {
               "course": "Tribute",
-              "total": 999,
               "front": [5, 5, 5, 7, 5, 3, 7, 6, 5],
               "frontHandicap": 16,
               "back": [5, 5, 5, 7, 5, 3, 7, 6, 5],
@@ -587,7 +555,6 @@
             },
             "classic": {
               "course": "Classic",
-              "total": 999,
               "front": [8, 5, 4, 6, 7, 4, 5, 4, 5],
               "frontHandicap": 16,
               "back": [6, 4, 6, 3, 4, 3, 4, 3, 4],
@@ -595,7 +562,6 @@
             },
             "gaylordGolfClub": {
               "course": "Gaylord Golf Club",
-              "total": 999,
               "front": [7, 4, 5, 3, 4, 4, 5, 7, 5],
               "frontHandicap": 16,
               "back": [4, 4, 7, 5, 4, 5, 6, 5, 5],
@@ -607,36 +573,227 @@
               "id": "bestBall",
               "game": "Best Ball",
               "wins": 1,
-              "losses": 1,
-              "ties": 0
+              "ties": 0,
+              "losses": 1
             },
             {
               "id": "bramble",
               "game": "Bramble",
               "wins": 0,
-              "losses": 1,
-              "ties": 0
+              "ties": 0,
+              "losses": 1
             },
             {
               "id": "brambleAlternate",
               "game": "Bramble Alternate",
               "wins": 0,
-              "losses": 0,
-              "ties": 1
+              "ties": 1,
+              "losses": 0
             },
             {
               "id": "scramble",
               "game": "Scramble",
               "wins": 0,
-              "losses": 1,
-              "ties": 0
+              "ties": 0,
+              "losses": 1
             },
             {
               "id": "singles",
               "game": "Singles",
               "wins": 1,
-              "losses": 0,
-              "ties": 0
+              "ties": 0,
+              "losses": 0
+            }
+          ],
+          "records": [
+            {
+              "partners": [
+                {
+                  "name": "matt",
+                  "bestBall": {
+                    "wins": 0,
+                    "ties": 0,
+                    "losses": 1
+                  },
+                  "bramble": {
+                    "wins": 0,
+                    "ties": 0,
+                    "losses": 0
+                  },
+                  "brambleAlternate": {
+                    "wins": 0,
+                    "ties": 0,
+                    "losses": 0
+                  },
+                  "scramble": {
+                    "wins": 0,
+                    "ties": 0,
+                    "losses": 1
+                  }
+                },
+                {
+                  "name": "travis",
+                  "bestBall": {
+                    "wins": 1,
+                    "ties": 0,
+                    "losses": 0
+                  },
+                  "bramble": {
+                    "wins": 0,
+                    "ties": 0,
+                    "losses": 1
+                  },
+                  "brambleAlternate": {
+                    "wins": 0,
+                    "ties": 0,
+                    "losses": 0
+                  },
+                  "scramble": {
+                    "wins": 0,
+                    "ties": 0,
+                    "losses": 0
+                  }
+                },
+                {
+                  "name": "derek",
+                  "bestBall": {
+                    "wins": 0,
+                    "ties": 0,
+                    "losses": 0
+                  },
+                  "bramble": {
+                    "wins": 0,
+                    "ties": 0,
+                    "losses": 0
+                  },
+                  "brambleAlternate": {
+                    "wins": 0,
+                    "ties": 1,
+                    "losses": 0
+                  },
+                  "scramble": {
+                    "wins": 0,
+                    "ties": 0,
+                    "losses": 0
+                  }
+                }
+              ]
+            },
+            {
+              "opponents": [
+                {
+                  "name": "dylan",
+                  "bestBall": {
+                    "wins": 0,
+                    "ties": 0,
+                    "losses": 1
+                  },
+                  "bramble": {
+                    "wins": 0,
+                    "ties": 0,
+                    "losses": 1
+                  },
+                  "brambleAlternate": {
+                    "wins": 0,
+                    "ties": 0,
+                    "losses": 0
+                  },
+                  "scramble": {
+                    "wins": 0,
+                    "ties": 0,
+                    "losses": 1
+                  },
+                  "singles": {
+                    "wins": 0,
+                    "ties": 0,
+                    "losses": 0
+                  }
+                },
+                {
+                  "name": "rj",
+                  "bestBall": {
+                    "wins": 1,
+                    "ties": 0,
+                    "losses": 1
+                  },
+                  "bramble": {
+                    "wins": 0,
+                    "ties": 0,
+                    "losses": 0
+                  },
+                  "brambleAlternate": {
+                    "wins": 0,
+                    "ties": 1,
+                    "losses": 0
+                  },
+                  "scramble": {
+                    "wins": 0,
+                    "ties": 0,
+                    "losses": 1
+                  },
+                  "singles": {
+                    "wins": 1,
+                    "ties": 0,
+                    "losses": 0
+                  }
+                },
+                {
+                  "name": "craig",
+                  "bestBall": {
+                    "wins": 1,
+                    "ties": 0,
+                    "losses": 0
+                  },
+                  "bramble": {
+                    "wins": 0,
+                    "ties": 0,
+                    "losses": 0
+                  },
+                  "brambleAlternate": {
+                    "wins": 0,
+                    "ties": 0,
+                    "losses": 0
+                  },
+                  "scramble": {
+                    "wins": 0,
+                    "ties": 0,
+                    "losses": 0
+                  },
+                  "singles": {
+                    "wins": 0,
+                    "ties": 0,
+                    "losses": 0
+                  }
+                },
+                {
+                  "name": "dan",
+                  "bestBall": {
+                    "wins": 0,
+                    "ties": 0,
+                    "losses": 0
+                  },
+                  "bramble": {
+                    "wins": 0,
+                    "ties": 0,
+                    "losses": 1
+                  },
+                  "brambleAlternate": {
+                    "wins": 0,
+                    "ties": 1,
+                    "losses": 0
+                  },
+                  "scramble": {
+                    "wins": 0,
+                    "ties": 0,
+                    "losses": 0
+                  },
+                  "singles": {
+                    "wins": 0,
+                    "ties": 0,
+                    "losses": 0
+                  }
+                }
+              ]
             }
           ]
         }
@@ -652,32 +809,28 @@
           "scores": {
             "jonesMasterPiece": {
               "course": "The Jones Masterpiece at Treetops",
-              "total": 999,
               "front": [0],
               "back": [0]
             },
             "tribute": {
               "course": "Tribute",
-              "total": 999,
-              "front": [0],
+              "front": [5, 5, 5, 6, 5, 4, 5, 4, 5],
               "frontHandicap": 999,
-              "back": [0],
+              "back": [4, 7, 4, 4, 5, 4, 6, 3, 4],
               "backHandicap": 999
             },
             "classic": {
               "course": "Classic",
-              "total": 999,
-              "front": [0],
+              "front": [5, 6, 4, 5, 6, 4, 6, 3, 5],
               "frontHandicap": 999,
-              "back": [0],
+              "back": [5, 3, 5, 4, 3, 4, 4, 4, 4],
               "backHandicap": 999
             },
             "gaylordGolfClub": {
               "course": "Gaylord Golf Club",
-              "total": 999,
-              "front": [0],
+              "front": [5, 5, 5, 3, 6, 5, 6, 6, 5],
               "frontHandicap": 999,
-              "back": [0],
+              "back": [5, 5, 6, 6, 4, 6, 5, 6, 5],
               "backHandicap": 999
             }
           },
@@ -686,36 +839,227 @@
               "id": "bestBall",
               "game": "Best Ball",
               "wins": 1,
-              "losses": 1,
-              "ties": 0
+              "ties": 0,
+              "losses": 1
             },
             {
               "id": "bramble",
               "game": "Bramble",
-              "wins": 0,
-              "losses": 1,
-              "ties": 0
+              "wins": 1,
+              "ties": 0,
+              "losses": 0
             },
             {
               "id": "brambleAlternate",
               "game": "Bramble Alternate",
               "wins": 0,
-              "losses": 0,
-              "ties": 1
+              "ties": 1,
+              "losses": 0
             },
             {
               "id": "scramble",
               "game": "Scramble",
-              "wins": 0,
-              "losses": 1,
-              "ties": 0
+              "wins": 1,
+              "ties": 0,
+              "losses": 0
             },
             {
               "id": "singles",
               "game": "Singles",
-              "wins": 1,
-              "losses": 0,
-              "ties": 0
+              "wins": 0,
+              "ties": 0,
+              "losses": 1
+            }
+          ],
+          "records": [
+            {
+              "partners": [
+                {
+                  "name": "dylan",
+                  "bestBall": {
+                    "wins": 1,
+                    "ties": 0,
+                    "losses": 0
+                  },
+                  "bramble": {
+                    "wins": 0,
+                    "ties": 0,
+                    "losses": 0
+                  },
+                  "brambleAlternate": {
+                    "wins": 0,
+                    "ties": 0,
+                    "losses": 0
+                  },
+                  "scramble": {
+                    "wins": 1,
+                    "ties": 0,
+                    "losses": 0
+                  }
+                },
+                {
+                  "name": "craig",
+                  "bestBall": {
+                    "wins": 0,
+                    "ties": 0,
+                    "losses": 1
+                  },
+                  "bramble": {
+                    "wins": 1,
+                    "ties": 0,
+                    "losses": 0
+                  },
+                  "brambleAlternate": {
+                    "wins": 0,
+                    "ties": 0,
+                    "losses": 0
+                  },
+                  "scramble": {
+                    "wins": 0,
+                    "ties": 0,
+                    "losses": 0
+                  }
+                },
+                {
+                  "name": "dan",
+                  "bestBall": {
+                    "wins": 0,
+                    "ties": 0,
+                    "losses": 0
+                  },
+                  "bramble": {
+                    "wins": 0,
+                    "ties": 0,
+                    "losses": 0
+                  },
+                  "brambleAlternate": {
+                    "wins": 0,
+                    "ties": 1,
+                    "losses": 0
+                  },
+                  "scramble": {
+                    "wins": 0,
+                    "ties": 0,
+                    "losses": 0
+                  }
+                }
+              ]
+            },
+            {
+              "opponents": [
+                {
+                  "name": "matt",
+                  "bestBall": {
+                    "wins": 1,
+                    "ties": 0,
+                    "losses": 1
+                  },
+                  "bramble": {
+                    "wins": 0,
+                    "ties": 0,
+                    "losses": 0
+                  },
+                  "brambleAlternate": {
+                    "wins": 0,
+                    "ties": 0,
+                    "losses": 1
+                  },
+                  "scramble": {
+                    "wins": 1,
+                    "ties": 0,
+                    "losses": 0
+                  },
+                  "singles": {
+                    "wins": 1,
+                    "ties": 0,
+                    "losses": 0
+                  }
+                },
+                {
+                  "name": "chris",
+                  "bestBall": {
+                    "wins": 1,
+                    "ties": 0,
+                    "losses": 0
+                  },
+                  "bramble": {
+                    "wins": 1,
+                    "ties": 0,
+                    "losses": 0
+                  },
+                  "brambleAlternate": {
+                    "wins": 0,
+                    "ties": 0,
+                    "losses": 0
+                  },
+                  "scramble": {
+                    "wins": 1,
+                    "ties": 0,
+                    "losses": 0
+                  },
+                  "singles": {
+                    "wins": 0,
+                    "ties": 0,
+                    "losses": 0
+                  }
+                },
+                {
+                  "name": "travis",
+                  "bestBall": {
+                    "wins": 0,
+                    "ties": 0,
+                    "losses": 0
+                  },
+                  "bramble": {
+                    "wins": 1,
+                    "ties": 0,
+                    "losses": 0
+                  },
+                  "brambleAlternate": {
+                    "wins": 0,
+                    "ties": 0,
+                    "losses": 1
+                  },
+                  "scramble": {
+                    "wins": 0,
+                    "ties": 0,
+                    "losses": 0
+                  },
+                  "singles": {
+                    "wins": 0,
+                    "ties": 0,
+                    "losses": 0
+                  }
+                },
+                {
+                  "name": "derek",
+                  "bestBall": {
+                    "wins": 0,
+                    "ties": 0,
+                    "losses": 1
+                  },
+                  "bramble": {
+                    "wins": 0,
+                    "ties": 0,
+                    "losses": 0
+                  },
+                  "brambleAlternate": {
+                    "wins": 0,
+                    "ties": 0,
+                    "losses": 0
+                  },
+                  "scramble": {
+                    "wins": 0,
+                    "ties": 0,
+                    "losses": 0
+                  },
+                  "singles": {
+                    "wins": 0,
+                    "ties": 0,
+                    "losses": 0
+                  }
+                }
+              ]
             }
           ]
         }
@@ -726,37 +1070,33 @@
       "year": {
         "_2021": {
           "id": 2021,
-          "handicap": 16,
+          "handicap": 22,
           "team": "green",
           "scores": {
             "jonesMasterPiece": {
               "course": "The Jones Masterpiece at Treetops",
-              "total": 999,
               "front": [0],
               "back": [0]
             },
             "tribute": {
               "course": "Tribute",
-              "total": 999,
-              "front": [0],
+              "front": [5, 7, 5, 9, 8, 5, 9, 8, 6],
               "frontHandicap": 999,
-              "back": [0],
+              "back": [5, 10, 8, 3, 5, 5, 10, 3, 8],
               "backHandicap": 999
             },
             "classic": {
               "course": "Classic",
-              "total": 999,
-              "front": [0],
+              "front": [6, 4, 6, 4, 5, 3, 5, 3, 2],
               "frontHandicap": 999,
-              "back": [0],
+              "back": [7, 6, 6, 4, 6, 3, 6, 8, 5],
               "backHandicap": 999
             },
             "gaylordGolfClub": {
               "course": "Gaylord Golf Club",
-              "total": 999,
-              "front": [0],
+              "front": [5, 5, 5, 5, 10, 4, 6, 5, 5],
               "frontHandicap": 999,
-              "back": [0],
+              "back": [7, 5, 7, 6, 6, 6, 6, 7, 5],
               "backHandicap": 999
             }
           },
@@ -765,36 +1105,242 @@
               "id": "bestBall",
               "game": "Best Ball",
               "wins": 1,
-              "losses": 1,
-              "ties": 0
+              "ties": 0,
+              "losses": 1
             },
             {
               "id": "bramble",
               "game": "Bramble",
               "wins": 0,
-              "losses": 1,
-              "ties": 0
+              "ties": 0,
+              "losses": 1
             },
             {
               "id": "brambleAlternate",
               "game": "Bramble Alternate",
-              "wins": 0,
-              "losses": 0,
-              "ties": 1
+              "wins": 1,
+              "ties": 0,
+              "losses": 0
             },
             {
               "id": "scramble",
               "game": "Scramble",
               "wins": 0,
-              "losses": 1,
-              "ties": 0
+              "ties": 0,
+              "losses": 1
             },
             {
               "id": "singles",
               "game": "Singles",
-              "wins": 1,
-              "losses": 0,
-              "ties": 0
+              "wins": 0,
+              "ties": 0,
+              "losses": 1
+            }
+          ],
+          "records": [
+            {
+              "partners": [
+                {
+                  "name": "chris",
+                  "bestBall": {
+                    "wins": 1,
+                    "ties": 0,
+                    "losses": 0
+                  },
+                  "bramble": {
+                    "wins": 0,
+                    "ties": 0,
+                    "losses": 1
+                  },
+                  "brambleAlternate": {
+                    "wins": 0,
+                    "ties": 0,
+                    "losses": 0
+                  },
+                  "scramble": {
+                    "wins": 0,
+                    "ties": 0,
+                    "losses": 0
+                  },
+                  "singles": {
+                    "wins": 0,
+                    "ties": 0,
+                    "losses": 0
+                  }
+                },
+                {
+                  "name": "matt",
+                  "bestBall": {
+                    "wins": 0,
+                    "ties": 0,
+                    "losses": 0
+                  },
+                  "bramble": {
+                    "wins": 0,
+                    "ties": 0,
+                    "losses": 0
+                  },
+                  "brambleAlternate": {
+                    "wins": 1,
+                    "ties": 0,
+                    "losses": 0
+                  },
+                  "scramble": {
+                    "wins": 0,
+                    "ties": 0,
+                    "losses": 0
+                  },
+                  "singles": {
+                    "wins": 0,
+                    "ties": 0,
+                    "losses": 0
+                  }
+                },
+                {
+                  "name": "derek",
+                  "bestBall": {
+                    "wins": 0,
+                    "ties": 0,
+                    "losses": 1
+                  },
+                  "bramble": {
+                    "wins": 0,
+                    "ties": 0,
+                    "losses": 0
+                  },
+                  "brambleAlternate": {
+                    "wins": 0,
+                    "ties": 0,
+                    "losses": 0
+                  },
+                  "scramble": {
+                    "wins": 0,
+                    "ties": 0,
+                    "losses": 1
+                  },
+                  "singles": {
+                    "wins": 0,
+                    "ties": 0,
+                    "losses": 0
+                  }
+                }
+              ]
+            },
+            {
+              "opponents": [
+                {
+                  "name": "dylan",
+                  "bestBall": {
+                    "wins": 0,
+                    "ties": 0,
+                    "losses": 0
+                  },
+                  "bramble": {
+                    "wins": 0,
+                    "ties": 0,
+                    "losses": 1
+                  },
+                  "brambleAlternate": {
+                    "wins": 1,
+                    "ties": 0,
+                    "losses": 0
+                  },
+                  "scramble": {
+                    "wins": 0,
+                    "ties": 0,
+                    "losses": 0
+                  },
+                  "singles": {
+                    "wins": 0,
+                    "ties": 0,
+                    "losses": 0
+                  }
+                },
+                {
+                  "name": "rj",
+                  "bestBall": {
+                    "wins": 1,
+                    "ties": 0,
+                    "losses": 0
+                  },
+                  "bramble": {
+                    "wins": 0,
+                    "ties": 0,
+                    "losses": 0
+                  },
+                  "brambleAlternate": {
+                    "wins": 0,
+                    "ties": 0,
+                    "losses": 0
+                  },
+                  "scramble": {
+                    "wins": 0,
+                    "ties": 0,
+                    "losses": 0
+                  },
+                  "singles": {
+                    "wins": 0,
+                    "ties": 0,
+                    "losses": 0
+                  }
+                },
+                {
+                  "name": "craig",
+                  "bestBall": {
+                    "wins": 1,
+                    "ties": 0,
+                    "losses": 1
+                  },
+                  "bramble": {
+                    "wins": 0,
+                    "ties": 0,
+                    "losses": 0
+                  },
+                  "brambleAlternate": {
+                    "wins": 1,
+                    "ties": 0,
+                    "losses": 0
+                  },
+                  "scramble": {
+                    "wins": 0,
+                    "ties": 0,
+                    "losses": 1
+                  },
+                  "singles": {
+                    "wins": 0,
+                    "ties": 0,
+                    "losses": 1
+                  }
+                },
+                {
+                  "name": "dan",
+                  "bestBall": {
+                    "wins": 0,
+                    "ties": 0,
+                    "losses": 1
+                  },
+                  "bramble": {
+                    "wins": 0,
+                    "ties": 0,
+                    "losses": 1
+                  },
+                  "brambleAlternate": {
+                    "wins": 0,
+                    "ties": 0,
+                    "losses": 0
+                  },
+                  "scramble": {
+                    "wins": 0,
+                    "ties": 0,
+                    "losses": 1
+                  },
+                  "singles": {
+                    "wins": 0,
+                    "ties": 0,
+                    "losses": 0
+                  }
+                }
+              ]
             }
           ]
         }
@@ -805,7 +1351,7 @@
       "year": {
         "_2021": {
           "id": 2021,
-          "handicap": 2,
+          "handicap": 22,
           "team": "blue",
           "scores": {
             "jonesMasterPiece": {
@@ -816,26 +1362,23 @@
             },
             "tribute": {
               "course": "Tribute",
-              "total": 999,
-              "front": [0],
+              "front": [5, 5, 6, 6, 6, 4, 7, 6, 3],
               "frontHandicap": 999,
-              "back": [0],
+              "back": [6, 7, 5, 5, 5, 5, 7, 3, 5],
               "backHandicap": 999
             },
             "classic": {
               "course": "Classic",
-              "total": 999,
-              "front": [0],
+              "front": [7, 5, 4, 5, 5, 3, 6, 5, 4],
               "frontHandicap": 999,
-              "back": [0],
+              "back": [5, 4, 5, 4, 4, 4, 6, 4, 5],
               "backHandicap": 999
             },
             "gaylordGolfClub": {
               "course": "Gaylord Golf Club",
-              "total": 999,
-              "front": [0],
+              "front": [5, 5, 5, 3, 7, 5, 7, 5, 5],
               "frontHandicap": 999,
-              "back": [0],
+              "back": [5, 5, 7, 6, 3, 4, 5, 10, 6],
               "backHandicap": 999
             }
           },
@@ -844,15 +1387,15 @@
               "id": "bestBall",
               "game": "Best Ball",
               "wins": 1,
-              "losses": 1,
-              "ties": 0
+              "ties": 0,
+              "losses": 1
             },
             {
               "id": "bramble",
               "game": "Bramble",
-              "wins": 0,
-              "losses": 1,
-              "ties": 0
+              "wins": 1,
+              "ties": 0,
+              "losses": 0
             },
             {
               "id": "brambleAlternate",
@@ -864,16 +1407,222 @@
             {
               "id": "scramble",
               "game": "Scramble",
-              "wins": 0,
-              "losses": 1,
-              "ties": 0
+              "wins": 1,
+              "ties": 0,
+              "losses": 0
             },
             {
               "id": "singles",
               "game": "Singles",
               "wins": 1,
-              "losses": 0,
-              "ties": 0
+              "ties": 0,
+              "losses": 0
+            }
+          ],
+          "records": [
+            {
+              "partners": [
+                {
+                  "name": "rj",
+                  "bestBall": {
+                    "wins": 0,
+                    "ties": 0,
+                    "losses": 1
+                  },
+                  "bramble": {
+                    "wins": 1,
+                    "ties": 0,
+                    "losses": 0
+                  },
+                  "brambleAlternate": {
+                    "wins": 0,
+                    "ties": 0,
+                    "losses": 0
+                  },
+                  "scramble": {
+                    "wins": 0,
+                    "ties": 0,
+                    "losses": 0
+                  },
+                  "singles": {
+                    "wins": 0,
+                    "ties": 0,
+                    "losses": 0
+                  }
+                },
+                {
+                  "name": "dylan",
+                  "bestBall": {
+                    "wins": 0,
+                    "ties": 0,
+                    "losses": 0
+                  },
+                  "bramble": {
+                    "wins": 0,
+                    "ties": 0,
+                    "losses": 0
+                  },
+                  "brambleAlternate": {
+                    "wins": 0,
+                    "ties": 0,
+                    "losses": 1
+                  },
+                  "scramble": {
+                    "wins": 0,
+                    "ties": 0,
+                    "losses": 0
+                  },
+                  "singles": {
+                    "wins": 0,
+                    "ties": 0,
+                    "losses": 0
+                  }
+                },
+                {
+                  "name": "dan",
+                  "bestBall": {
+                    "wins": 1,
+                    "ties": 0,
+                    "losses": 0
+                  },
+                  "bramble": {
+                    "wins": 0,
+                    "ties": 0,
+                    "losses": 0
+                  },
+                  "brambleAlternate": {
+                    "wins": 0,
+                    "ties": 0,
+                    "losses": 0
+                  },
+                  "scramble": {
+                    "wins": 1,
+                    "ties": 0,
+                    "losses": 0
+                  },
+                  "singles": {
+                    "wins": 0,
+                    "ties": 0,
+                    "losses": 0
+                  }
+                }
+              ]
+            },
+            {
+              "opponents": [
+                {
+                  "name": "matt",
+                  "bestBall": {
+                    "wins": 0,
+                    "ties": 0,
+                    "losses": 0
+                  },
+                  "bramble": {
+                    "wins": 1,
+                    "ties": 0,
+                    "losses": 0
+                  },
+                  "brambleAlternate": {
+                    "wins": 0,
+                    "ties": 0,
+                    "losses": 1
+                  },
+                  "scramble": {
+                    "wins": 0,
+                    "ties": 0,
+                    "losses": 0
+                  },
+                  "singles": {
+                    "wins": 0,
+                    "ties": 0,
+                    "losses": 0
+                  }
+                },
+                {
+                  "name": "chris",
+                  "bestBall": {
+                    "wins": 0,
+                    "ties": 0,
+                    "losses": 1
+                  },
+                  "bramble": {
+                    "wins": 0,
+                    "ties": 0,
+                    "losses": 0
+                  },
+                  "brambleAlternate": {
+                    "wins": 0,
+                    "ties": 0,
+                    "losses": 0
+                  },
+                  "scramble": {
+                    "wins": 0,
+                    "ties": 0,
+                    "losses": 0
+                  },
+                  "singles": {
+                    "wins": 0,
+                    "ties": 0,
+                    "losses": 0
+                  }
+                },
+                {
+                  "name": "travis",
+                  "bestBall": {
+                    "wins": 1,
+                    "ties": 0,
+                    "losses": 1
+                  },
+                  "bramble": {
+                    "wins": 0,
+                    "ties": 0,
+                    "losses": 0
+                  },
+                  "brambleAlternate": {
+                    "wins": 0,
+                    "ties": 0,
+                    "losses": 1
+                  },
+                  "scramble": {
+                    "wins": 1,
+                    "ties": 0,
+                    "losses": 0
+                  },
+                  "singles": {
+                    "wins": 1,
+                    "ties": 0,
+                    "losses": 0
+                  }
+                },
+                {
+                  "name": "derek",
+                  "bestBall": {
+                    "wins": 1,
+                    "ties": 0,
+                    "losses": 0
+                  },
+                  "bramble": {
+                    "wins": 1,
+                    "ties": 0,
+                    "losses": 0
+                  },
+                  "brambleAlternate": {
+                    "wins": 0,
+                    "ties": 0,
+                    "losses": 0
+                  },
+                  "scramble": {
+                    "wins": 1,
+                    "ties": 0,
+                    "losses": 0
+                  },
+                  "singles": {
+                    "wins": 0,
+                    "ties": 0,
+                    "losses": 0
+                  }
+                }
+              ]
             }
           ]
         }
@@ -884,7 +1633,7 @@
       "year": {
         "_2021": {
           "id": 2021,
-          "handicap": 16,
+          "handicap": 28,
           "team": "green",
           "scores": {
             "jonesMasterPiece": {
@@ -895,26 +1644,23 @@
             },
             "tribute": {
               "course": "Tribute",
-              "total": 999,
-              "front": [0],
+              "front": [8, 6, 5, 10, 9, 5, 9, 8, 6],
               "frontHandicap": 999,
-              "back": [0],
+              "back": [8, 8, 7, 4, 4, 6, 9, 5, 7],
               "backHandicap": 999
             },
             "classic": {
               "course": "Classic",
-              "total": 999,
-              "front": [0],
+              "front": [8, 5, 4, 6, 7, 4, 5, 4, 5],
               "frontHandicap": 999,
-              "back": [0],
+              "back": [7, 6, 6, 4, 6, 3, 6, 8, 5],
               "backHandicap": 999
             },
             "gaylordGolfClub": {
               "course": "Gaylord Golf Club",
-              "total": 999,
-              "front": [0],
+              "front": [6, 6, 5, 4, 7, 3, 8, 7, 6],
               "frontHandicap": 999,
-              "back": [0],
+              "back": [6, 8, 6, 6, 8, 6, 5, 5, 12],
               "backHandicap": 999
             }
           },
@@ -923,36 +1669,242 @@
               "id": "bestBall",
               "game": "Best Ball",
               "wins": 1,
-              "losses": 1,
-              "ties": 0
+              "ties": 0,
+              "losses": 1
             },
             {
               "id": "bramble",
               "game": "Bramble",
               "wins": 0,
-              "losses": 1,
-              "ties": 0
+              "ties": 0,
+              "losses": 1
             },
             {
               "id": "brambleAlternate",
               "game": "Bramble Alternate",
               "wins": 0,
-              "losses": 0,
-              "ties": 1
+              "ties": 1,
+              "losses": 0
             },
             {
               "id": "scramble",
               "game": "Scramble",
               "wins": 0,
-              "losses": 1,
-              "ties": 0
+              "ties": 0,
+              "losses": 1
             },
             {
               "id": "singles",
               "game": "Singles",
-              "wins": 1,
-              "losses": 0,
-              "ties": 0
+              "wins": 0,
+              "ties": 1,
+              "losses": 0
+            }
+          ],
+          "records": [
+            {
+              "partners": [
+                {
+                  "name": "chris",
+                  "bestBall": {
+                    "wins": 0,
+                    "ties": 0,
+                    "losses": 0
+                  },
+                  "bramble": {
+                    "wins": 0,
+                    "ties": 0,
+                    "losses": 0
+                  },
+                  "brambleAlternate": {
+                    "wins": 0,
+                    "ties": 1,
+                    "losses": 0
+                  },
+                  "scramble": {
+                    "wins": 0,
+                    "ties": 0,
+                    "losses": 0
+                  },
+                  "singles": {
+                    "wins": 0,
+                    "ties": 0,
+                    "losses": 0
+                  }
+                },
+                {
+                  "name": "travis",
+                  "bestBall": {
+                    "wins": 0,
+                    "ties": 0,
+                    "losses": 1
+                  },
+                  "bramble": {
+                    "wins": 0,
+                    "ties": 0,
+                    "losses": 0
+                  },
+                  "brambleAlternate": {
+                    "wins": 0,
+                    "ties": 0,
+                    "losses": 0
+                  },
+                  "scramble": {
+                    "wins": 0,
+                    "ties": 0,
+                    "losses": 1
+                  },
+                  "singles": {
+                    "wins": 0,
+                    "ties": 0,
+                    "losses": 0
+                  }
+                },
+                {
+                  "name": "matt",
+                  "bestBall": {
+                    "wins": 1,
+                    "ties": 0,
+                    "losses": 0
+                  },
+                  "bramble": {
+                    "wins": 0,
+                    "ties": 0,
+                    "losses": 1
+                  },
+                  "brambleAlternate": {
+                    "wins": 0,
+                    "ties": 0,
+                    "losses": 0
+                  },
+                  "scramble": {
+                    "wins": 0,
+                    "ties": 0,
+                    "losses": 0
+                  },
+                  "singles": {
+                    "wins": 0,
+                    "ties": 0,
+                    "losses": 0
+                  }
+                }
+              ]
+            },
+            {
+              "opponents": [
+                {
+                  "name": "dylan",
+                  "bestBall": {
+                    "wins": 1,
+                    "ties": 0,
+                    "losses": 0
+                  },
+                  "bramble": {
+                    "wins": 0,
+                    "ties": 0,
+                    "losses": 0
+                  },
+                  "brambleAlternate": {
+                    "wins": 0,
+                    "ties": 0,
+                    "losses": 0
+                  },
+                  "scramble": {
+                    "wins": 0,
+                    "ties": 0,
+                    "losses": 0
+                  },
+                  "singles": {
+                    "wins": 0,
+                    "ties": 0,
+                    "losses": 0
+                  }
+                },
+                {
+                  "name": "rj",
+                  "bestBall": {
+                    "wins": 0,
+                    "ties": 0,
+                    "losses": 0
+                  },
+                  "bramble": {
+                    "wins": 0,
+                    "ties": 0,
+                    "losses": 1
+                  },
+                  "brambleAlternate": {
+                    "wins": 0,
+                    "ties": 1,
+                    "losses": 0
+                  },
+                  "scramble": {
+                    "wins": 0,
+                    "ties": 0,
+                    "losses": 0
+                  },
+                  "singles": {
+                    "wins": 0,
+                    "ties": 0,
+                    "losses": 0
+                  }
+                },
+                {
+                  "name": "craig",
+                  "bestBall": {
+                    "wins": 0,
+                    "ties": 0,
+                    "losses": 1
+                  },
+                  "bramble": {
+                    "wins": 0,
+                    "ties": 0,
+                    "losses": 1
+                  },
+                  "brambleAlternate": {
+                    "wins": 0,
+                    "ties": 0,
+                    "losses": 0
+                  },
+                  "scramble": {
+                    "wins": 0,
+                    "ties": 0,
+                    "losses": 1
+                  },
+                  "singles": {
+                    "wins": 0,
+                    "ties": 0,
+                    "losses": 0
+                  }
+                },
+                {
+                  "name": "dan",
+                  "bestBall": {
+                    "wins": 1,
+                    "ties": 0,
+                    "losses": 1
+                  },
+                  "bramble": {
+                    "wins": 0,
+                    "ties": 0,
+                    "losses": 0
+                  },
+                  "brambleAlternate": {
+                    "wins": 0,
+                    "ties": 1,
+                    "losses": 0
+                  },
+                  "scramble": {
+                    "wins": 0,
+                    "ties": 0,
+                    "losses": 1
+                  },
+                  "singles": {
+                    "wins": 0,
+                    "ties": 1,
+                    "losses": 0
+                  }
+                }
+              ]
             }
           ]
         }
@@ -963,37 +1915,33 @@
       "year": {
         "_2021": {
           "id": 2021,
-          "handicap": 2,
+          "handicap": 36,
           "team": "blue",
           "scores": {
             "jonesMasterPiece": {
               "course": "The Jones Masterpiece at Treetops",
-              "total": 999,
               "front": [0],
               "back": [0]
             },
             "tribute": {
               "course": "Tribute",
-              "total": 999,
-              "front": [0],
+              "front": [6, 7, 7, 7, 7, 5, 8, 7, 3],
               "frontHandicap": 999,
-              "back": [0],
+              "back": [5, 9, 5, 4, 4, 6, 8, 3, 6],
               "backHandicap": 999
             },
             "classic": {
               "course": "Classic",
-              "total": 999,
-              "front": [0],
-              "frontHandicap": 999,
-              "back": [0],
-              "backHandicap": 999
+              "front": [5, 6, 4, 5, 6, 4, 6, 3, 5],
+              "frontHandicap": 24,
+              "back": [5, 4, 5, 4, 4, 4, 6, 4, 6],
+              "backHandicap": 20
             },
             "gaylordGolfClub": {
               "course": "Gaylord Golf Club",
-              "total": 999,
-              "front": [0],
-              "frontHandicap": 999,
-              "back": [0],
+              "front": [8, 5, 5, 4, 6, 3, 7, 7, 6],
+              "frontHandicap": 22,
+              "back": [10, 6, 10, 5, 7, 7, 5, 8, 12],
               "backHandicap": 999
             }
           },
@@ -1002,36 +1950,227 @@
               "id": "bestBall",
               "game": "Best Ball",
               "wins": 1,
-              "losses": 1,
-              "ties": 0
+              "ties": 0,
+              "losses": 1
             },
             {
               "id": "bramble",
               "game": "Bramble",
-              "wins": 0,
-              "losses": 1,
-              "ties": 0
+              "wins": 1,
+              "ties": 0,
+              "losses": 0
             },
             {
               "id": "brambleAlternate",
               "game": "Bramble Alternate",
               "wins": 0,
-              "losses": 0,
-              "ties": 1
+              "ties": 1,
+              "losses": 0
             },
             {
               "id": "scramble",
               "game": "Scramble",
-              "wins": 0,
-              "losses": 1,
-              "ties": 0
+              "wins": 1,
+              "ties": 0,
+              "losses": 0
             },
             {
               "id": "singles",
               "game": "Singles",
-              "wins": 1,
-              "losses": 0,
-              "ties": 0
+              "wins": 0,
+              "ties": 1,
+              "losses": 0
+            }
+          ],
+          "records": [
+            {
+              "partners": [
+                {
+                  "name": "rj",
+                  "bestBall": {
+                    "wins": 0,
+                    "ties": 0,
+                    "losses": 0
+                  },
+                  "bramble": {
+                    "wins": 0,
+                    "ties": 0,
+                    "losses": 0
+                  },
+                  "brambleAlternate": {
+                    "wins": 0,
+                    "ties": 1,
+                    "losses": 0
+                  },
+                  "scramble": {
+                    "wins": 0,
+                    "ties": 0,
+                    "losses": 0
+                  }
+                },
+                {
+                  "name": "craig",
+                  "bestBall": {
+                    "wins": 1,
+                    "ties": 0,
+                    "losses": 0
+                  },
+                  "bramble": {
+                    "wins": 0,
+                    "ties": 0,
+                    "losses": 0
+                  },
+                  "brambleAlternate": {
+                    "wins": 0,
+                    "ties": 0,
+                    "losses": 0
+                  },
+                  "scramble": {
+                    "wins": 1,
+                    "ties": 0,
+                    "losses": 0
+                  }
+                },
+                {
+                  "name": "dylan",
+                  "bestBall": {
+                    "wins": 0,
+                    "ties": 0,
+                    "losses": 1
+                  },
+                  "bramble": {
+                    "wins": 1,
+                    "ties": 0,
+                    "losses": 0
+                  },
+                  "brambleAlternate": {
+                    "wins": 0,
+                    "ties": 0,
+                    "losses": 0
+                  },
+                  "scramble": {
+                    "wins": 0,
+                    "ties": 0,
+                    "losses": 0
+                  }
+                }
+              ]
+            },
+            {
+              "opponents": [
+                {
+                  "name": "matt",
+                  "bestBall": {
+                    "wins": 0,
+                    "ties": 0,
+                    "losses": 1
+                  },
+                  "bramble": {
+                    "wins": 0,
+                    "ties": 0,
+                    "losses": 0
+                  },
+                  "brambleAlternate": {
+                    "wins": 0,
+                    "ties": 0,
+                    "losses": 0
+                  },
+                  "scramble": {
+                    "wins": 0,
+                    "ties": 0,
+                    "losses": 0
+                  },
+                  "singles": {
+                    "wins": 0,
+                    "ties": 0,
+                    "losses": 0
+                  }
+                },
+                {
+                  "name": "chris",
+                  "bestBall": {
+                    "wins": 0,
+                    "ties": 0,
+                    "losses": 0
+                  },
+                  "bramble": {
+                    "wins": 1,
+                    "ties": 0,
+                    "losses": 0
+                  },
+                  "brambleAlternate": {
+                    "wins": 0,
+                    "ties": 1,
+                    "losses": 0
+                  },
+                  "scramble": {
+                    "wins": 0,
+                    "ties": 0,
+                    "losses": 0
+                  },
+                  "singles": {
+                    "wins": 0,
+                    "ties": 0,
+                    "losses": 0
+                  }
+                },
+                {
+                  "name": "travis",
+                  "bestBall": {
+                    "wins": 1,
+                    "ties": 0,
+                    "losses": 0
+                  },
+                  "bramble": {
+                    "wins": 1,
+                    "ties": 0,
+                    "losses": 0
+                  },
+                  "brambleAlternate": {
+                    "wins": 0,
+                    "ties": 0,
+                    "losses": 0
+                  },
+                  "scramble": {
+                    "wins": 1,
+                    "ties": 0,
+                    "losses": 0
+                  },
+                  "singles": {
+                    "wins": 0,
+                    "ties": 0,
+                    "losses": 0
+                  }
+                },
+                {
+                  "name": "derek",
+                  "bestBall": {
+                    "wins": 1,
+                    "ties": 0,
+                    "losses": 1
+                  },
+                  "bramble": {
+                    "wins": 0,
+                    "ties": 0,
+                    "losses": 0
+                  },
+                  "brambleAlternate": {
+                    "wins": 0,
+                    "ties": 1,
+                    "losses": 0
+                  },
+                  "scramble": {
+                    "wins": 1,
+                    "ties": 0,
+                    "losses": 0
+                  },
+                  "singles": {
+                    "wins": 0,
+                    "ties": 1,
+                    "losses": 0
+                  }
+                }
+              ]
             }
           ]
         }
