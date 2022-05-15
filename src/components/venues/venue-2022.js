@@ -4,19 +4,27 @@ import { StaticImage } from "gatsby-plugin-image"
 import styled from "styled-components"
 
 const ImageOverlapTL = styled.div`
-  transform: translate(-10%, 0%);
+  @media screen and (min-width: 767px) {
+    transform: translate(-10%, 0%);
+    width: calc(90%);
+    margin: 0;
+  }
   border-radius: calc(0.5rem - 1px);
-  width: calc(90%);
+  margin-bottom: 1rem;
 
   > * {
     border-radius: calc(0.5rem - 1px);
   }
 `
 const ImageOverlapBR = styled.div`
-  transform: translate(0%, -20%);
+  @media screen and (min-width: 767px) {
+    transform: translate(0%, -20%);
+    z-index: -1;
+    margin: 0;
+    width: 90%;
+  }
   position: relative;
-  z-index: -1;
-  width: 90%;
+  margin-bottom: 1rem;
 
   > * {
     border-radius: calc(0.5rem - 1px);
@@ -24,14 +32,15 @@ const ImageOverlapBR = styled.div`
 `
 const bannerImg = {
   opacity: 0.8,
+  minHeight: `200px`
 }
 
 function Venue2022() {
   return (
-    <div className="my-5">
-      <h2 className="h1 text-center mb-4">2022 Venues</h2>
+    <div className="my-3">
+      <h2 className="h1 text-center mb-3">2022 Venues</h2>
       <div className="container mb-6">
-        <div className="row mb-5">
+        <div className="row mb-3 mb-lg-5">
           <div className="col">
             <div class="card bg-dark text-white">
               <StaticImage
@@ -54,32 +63,29 @@ function Venue2022() {
           </div>
         </div>
 
-        <div className="row">
-          <div className="col-lg-6">
+        <div className="row d-flex flex-md-row flex-column-reverse">
+          <div className="col-md-6">
             <div className="images__overlap">
               <ImageOverlapTL className="images__overlap--tl">
                 <StaticImage
                   src="../../images/course-stoatin-brae/SB001.jpg"
                   alt="hole 1"
-                  loading="eager"
                   placeholder="blurred"
-                  layout="fullWidth"
+                  // layout="fullWidth"
                 />
               </ImageOverlapTL>
               <ImageOverlapBR className="images__overlap--br">
                 <StaticImage
                   src="../../images/course-stoatin-brae/SB013.jpg"
                   alt="hole 15"
-                  // height={200}
-                  layout="fullWidth"
-                  loading="eager"
+                  // layout="fullWidth"
                   placeholder="blurred"
                 />
               </ImageOverlapBR>
             </div>
           </div>
 
-          <div className="col-lg-6">
+          <div className="col-md-6">
             <h3 className="h3">Stoatin Brae</h3>
             <p>
               <Link href="https://www.gulllakeview.com/golf/stoatin-brae/">

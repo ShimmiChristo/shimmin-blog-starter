@@ -80,10 +80,10 @@ const Section = styled.section`
   @media (max-width: 768px) {
     &.closed {
       &[data-handicap="average"] {
-        max-height: 400px;
+        max-height: 380px;
       }
     }
-    max-height: 350px;
+    max-height: 320px;
     padding: 2rem 1rem;
   }
   &:hover {

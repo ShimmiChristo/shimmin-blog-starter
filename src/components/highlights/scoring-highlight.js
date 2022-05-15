@@ -25,7 +25,7 @@ function HighlightsScoring({ yearProp }) {
 
   return (
     <>
-      <div className="container mb-6 mt-5">
+      <div className="container my-3 mb-lg-5">
         <div className="row text-center justify-content-center">
           <p className="h2 mb-4">
             The Boys From Back Home Cup is returning in 2022!
@@ -58,7 +58,7 @@ function HighlightsScoring({ yearProp }) {
       </div>
       <div className="container mb-3 col-lg-10">
         <div className="row">
-          <div className="col">
+          <div className="col-12 col-md-6 mb-3">
             <div className="card shadow-none border">
               <div className="card-header team-one-color-bg text-white text-center">
                 Green Team
@@ -83,7 +83,7 @@ function HighlightsScoring({ yearProp }) {
               </ul>
             </div>
           </div>
-          <div className="col">
+          <div className="col-12 col-md-6 mb-3">
             <div className="card shadow-none border">
               <div className="card-header team-two-color-bg text-white text-center">
                 Blue Team

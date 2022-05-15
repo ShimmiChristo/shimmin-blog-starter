@@ -2,8 +2,8 @@ module.exports = {
   siteMetadata: {
     title: `BFBH Cup`,
     description: `Boys From Back Home Cup`,
-    siteUrl: `https://bfbhcup.gatsbyjs.io/`,
-    headline: `This is the site headline.`,
+    siteUrl: `https://bfbhcup.com/`,
+    headline: `The BFBH Cup is a annual golf competition played at different courses throughout the United States, but mainly in the Great Lake State, the High-Five of the country, Michigan.`,
     logo: `logo-black.png`,
     author: {
       name: `Chris Shimmin`,
@@ -14,7 +14,7 @@ module.exports = {
     },
     social: {
       twitter: "shimmiChristo",
-      instagram: "shimmiChristo",
+      instagram: "bfbhcup",
       youtube: `shimdoggy`,
       facebook: ``,
       github: `shimmiChristo`,
@@ -45,7 +45,7 @@ module.exports = {
       },
       {
         name: "History",
-        link: "/history",
+        link: "/matches",
         subnav: [
           {
             name: "2021 Scores",
@@ -55,14 +55,14 @@ module.exports = {
             name: "Matches",
             link: "/matches",
           },
-          {
-            name: "Records",
-            link: "/records",
-          },
-          {
-            name: "Venues",
-            link: "/venues",
-          },
+          // {
+          //   name: "Records",
+          //   link: "/records",
+          // },
+          // {
+          //   name: "Venues",
+          //   link: "/venues",
+          // },
         ],
       },
     ],

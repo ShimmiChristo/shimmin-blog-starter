@@ -9,6 +9,7 @@ import LandingPageHeader from "../components/landing-page-header"
 import Match from "../components/match"
 import MatchScore from "../components/match-score"
 import HighlightsScoring from "../components/highlights/scoring-highlight"
+import HighlightCountdown from "../components/highlights/coutdown-hightlight"
 import Venue2022 from "../components/venues/venue-2022"
 
 // import AboutSite from "../components/about-site"
@@ -48,14 +49,16 @@ const TopicPage = ({ data, location }) => {
     border-radius: 5px;
     display: ${props => (props.Ad ? "flex" : "none")};
   `
+  const startDate = "october, 14, 2022"
+  const locationName = "Gull Lake View Golf Resort"
 
   return (
     <Layout location={location} title={siteTitle}>
       <SEO title="BFBH Cup | Boys From Back Home Cup" />
 
+      <HighlightCountdown startTime={startDate} location={locationName} />
       <HighlightsScoring yearProp="2022" />
       <Venue2022 />
-      
     </Layout>
   )
 }

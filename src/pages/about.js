@@ -29,7 +29,7 @@ const TopicPage = ({ data, location }) => {
       <LandingPageBody>
         <div className="container mb-4">
           <div className="row">
-            <div className="col-8">
+            <div className="col-lg-8">
               <h2 className="h4">What is the BFBH Cup?</h2>
               <p>
                 The BFBH Cup is a annual golf competition played at different
