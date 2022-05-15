@@ -1,14 +1,12 @@
 <!-- AUTO-GENERATED-CONTENT:START (STARTER) -->
 <p align="center">
-  <a href="https://www.chrisshimmin.com">
-    <img alt="Gatsby" src="https://www.chrisshimmin.com/static/6fc0392aab362225b875501d4d37cd14/034c8/profile-pic.jpg" width="200" />
+  <a href="https://bfbhcup.com/">
+    <img alt="BFBH Cup Logo" src="https://bfbhcup.com/static/4c0795ea4f5ac26f519f5c86562c68c5/97d0b/logo-black.webp" width="150" />
   </a>
 </p>
 <h1 align="center">
- Chris's Gatsby blog starter
+ BFBH Cup
 </h1>
-
-This is my gatsby starter/template to use for all websites with blog functionality.
 
 
 ## Directions on how I got up and running

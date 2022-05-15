@@ -2,6 +2,7 @@ import React from "react"
 import styled from "styled-components"
 import { useSiteMetadata } from "../hooks/use-site-metadata"
 import { usePublishedPosts } from "../hooks/use-published-posts"
+import { StaticImage } from "gatsby-plugin-image"
 
 import AuthorBio from "../components/author-bio"
 import Layout from "../components/layout"
@@ -26,9 +27,9 @@ const TopicPage = ({ data, location }) => {
       <SEO title="About" />
       <LandingPageHeader title="About BFBH Cup" />
       <LandingPageBody>
-        <div class="container">
-          <div class="row">
-            <div class="col-8">
+        <div className="container mb-4">
+          <div className="row">
+            <div className="col-8">
               <h2 className="h4">What is the BFBH Cup?</h2>
               <p>
                 The BFBH Cup is a annual golf competition played at different
@@ -47,6 +48,15 @@ const TopicPage = ({ data, location }) => {
               </p>
             </div>
           </div>
+        </div>
+        <div className="container col-lg-10">
+          <StaticImage
+            src="../images/group/2021-group.jpg"
+            alt="bfbh cup players"
+            loading="eager"
+            placeholder="blurred"
+            layout="fullWidth"
+          />
         </div>
       </LandingPageBody>
     </Layout>

@@ -9,6 +9,7 @@ import LandingPageHeader from "../components/landing-page-header"
 import Match from "../components/match"
 import MatchScore from "../components/match-score"
 import HighlightsScoring from "../components/highlights/scoring-highlight"
+import Venue2022 from "../components/venues/venue-2022"
 
 // import AboutSite from "../components/about-site"
 // import MatchNav from "../components/match-nav"
@@ -52,8 +53,8 @@ const TopicPage = ({ data, location }) => {
     <Layout location={location} title={siteTitle}>
       <SEO title="BFBH Cup | Boys From Back Home Cup" />
 
-      <HighlightsScoring yearProp="2021" />
       <HighlightsScoring yearProp="2022" />
+      <Venue2022 />
       
     </Layout>
   )

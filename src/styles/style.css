@@ -221,6 +221,10 @@ h6,
   font-size: var(--fontSize-1);
 }
 
+.font-fancy {
+  font-family: var(--font-heading);
+}
+
 h1 > a {
   color: inherit;
   text-decoration: none;
@@ -349,7 +353,7 @@ p a:focus::before {
 }
 b,
 .bold {
-  font-weight: var(--fontWeight-bold);
+  font-weight: var(--fontWeight-bold) !important;
 }
 .underline {
   text-decoration: underline;
