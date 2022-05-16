@@ -1,5 +1,6 @@
 import React from "react"
 import styled from "styled-components"
+import { graphql } from "gatsby"
 import {
   MDBCard,
   MDBCardTitle,
@@ -132,7 +133,7 @@ function PlayerInfoThisYearRecord({ year, teamColor, post, playerData }) {
 export default PlayerInfoThisYearRecord
 
 export const pageQuery = graphql`
-  query PlayerPostBySlug($id: String!) {
+  query PlayerInfoYearRecord($id: String!) {
     site {
       siteMetadata {
         title
