@@ -58,6 +58,7 @@ body {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
+  width: 33%;
 }
 .match__team > * {
   padding: 0 0.5rem;

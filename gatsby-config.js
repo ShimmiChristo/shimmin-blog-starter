@@ -2,8 +2,8 @@ module.exports = {
   siteMetadata: {
     title: `BFBH Cup`,
     description: `Boys From Back Home Cup`,
-    siteUrl: `https://bfbhcup.gatsbyjs.io/`,
-    headline: `This is the site headline.`,
+    siteUrl: `https://bfbhcup.com/`,
+    headline: `The BFBH Cup is a annual golf competition played at different courses throughout the United States, but mainly in the Great Lake State, the High-Five of the country, Michigan.`,
     logo: `logo-black.png`,
     author: {
       name: `Chris Shimmin`,
@@ -14,7 +14,7 @@ module.exports = {
     },
     social: {
       twitter: "shimmiChristo",
-      instagram: "shimmiChristo",
+      instagram: "bfbhcup",
       youtube: `shimdoggy`,
       facebook: ``,
       github: `shimmiChristo`,
@@ -23,19 +23,47 @@ module.exports = {
     nav: [
       {
         name: "Scores",
-        link: "/scores",
+        link: "/scores#r1-best-ball",
       },
       {
         name: "Players",
         link: "/players",
       },
       {
-        name: "Rules",
-        link: "/rules",
-      },
-      {
         name: "About",
         link: "/about",
+        subnav: [
+          {
+            name: "BFBH Cup",
+            link: "/about",
+          },
+          {
+            name: "Rules",
+            link: "/rules",
+          },
+        ],
+      },
+      {
+        name: "History",
+        link: "/matches",
+        subnav: [
+          {
+            name: "2021 Scores",
+            link: "/scores-2021#r1-best-ball",
+          },
+          {
+            name: "Matches",
+            link: "/matches",
+          },
+          // {
+          //   name: "Records",
+          //   link: "/records",
+          // },
+          // {
+          //   name: "Venues",
+          //   link: "/venues",
+          // },
+        ],
       },
     ],
   },
@@ -148,7 +176,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-sharp`,
       defaults: {
-        backgroundColor: `white`
+        backgroundColor: `white`,
       },
       options: {
         placeholder: `none`,

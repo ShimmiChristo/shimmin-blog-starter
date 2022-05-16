@@ -38,7 +38,8 @@ const TopicPage = ({ data, location }) => {
     <Layout location={location} title={siteTitle}>
       <SEO title="2021 Scores" />
       <LandingPageHeader title="Scores" />
-      <MatchNav
+      <h2>2022 matches, coming soon!</h2>
+      {/* <MatchNav
         location={location}
         titles={[
           {
@@ -75,7 +76,7 @@ const TopicPage = ({ data, location }) => {
       />
 
       <MatchScore />
-      {/* player1 and player3 are on the same team */}
+
       <MatchNavSection
         data-visible={pageHash === "#r1-best-ball" ? "true" : "false"}
         data-link-id="r1-best-ball"
@@ -307,7 +308,7 @@ const TopicPage = ({ data, location }) => {
           player2="dan"
           player2Handicap="36"
         />
-      </MatchNavSection>
+      </MatchNavSection> */}
     </Layout>
   )
 }

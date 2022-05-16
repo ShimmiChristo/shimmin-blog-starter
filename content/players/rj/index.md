@@ -7,6 +7,7 @@ description: "description"
 category: players
 featuredImg: ./profile-pic.png
 team: "Blue Team"
+position: 06
 ---
 
 

@@ -5,15 +5,12 @@ import styled from "styled-components"
 // import { useStaticQuery, graphql } from "gatsby"
 // import Image from "gatsby-image"
 
-const Container = styled.div`
+const CustomContainer = styled.div`
   padding: 0 0 1rem;
   border-bottom: 2px solid;
   border-color: var(--color-brand-med);
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  margin: 0 auto;
-  max-width: var(--maxWidth-5xl);
+  margin: 0 auto 2rem;
+
   & h1 {
     margin-bottom: 0;
     font-size: clamp(1rem, 10vw, 2rem);
@@ -29,14 +26,12 @@ const Container = styled.div`
 `
 
 function LandingPageHeader({ title }) {
-  // const { author } = useSiteMetadata()
-  // const { fluid } = useProfilePic()
 
   return (
     <section>
-      <Container>
-        <h1>{title}</h1>
-      </Container>
+      <CustomContainer className="container">
+        <h1 className="text-center">{title}</h1>
+      </CustomContainer>
     </section>
   )
 }

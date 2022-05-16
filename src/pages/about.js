@@ -2,6 +2,7 @@ import React from "react"
 import styled from "styled-components"
 import { useSiteMetadata } from "../hooks/use-site-metadata"
 import { usePublishedPosts } from "../hooks/use-published-posts"
+import { StaticImage } from "gatsby-plugin-image"
 
 import AuthorBio from "../components/author-bio"
 import Layout from "../components/layout"
@@ -18,32 +19,46 @@ const TopicPage = ({ data, location }) => {
   const posts = nodes
 
   const LandingPageBody = styled.div`
-    max-width: var(--maxWidth-5xl);
-    margin: 0 auto;
+    /* max-width: var(--maxWidth-xl); */
   `
-
 
   return (
     <Layout location={location} title={siteTitle}>
       <SEO title="About" />
       <LandingPageHeader title="About BFBH Cup" />
       <LandingPageBody>
-        <h2 className="h4">What is the BFBH Cup?</h2>
-        <p>
-          The BFBH Cup is a annual golf competition played at different courses
-          throughout the United States, but mainly in the Great Lake State, the
-          High-Five of the country, Michigan.
-        </p>
-        <h2 className="h4">What does the BFBH Cup stand for?</h2>
-        <p>
-          Great question. The BFBH Cup stands for The "Boys From Back Home Cup".
-        </p>
-        <h2 className="h4">Who are the boys from back home?</h2>
-        <p>
-          A group of brothers and friends who were all born and raised in the great state of Michigan.
-        </p>
+        <div className="container mb-4">
+          <div className="row">
+            <div className="col-lg-8">
+              <h2 className="h4">What is the BFBH Cup?</h2>
+              <p>
+                The BFBH Cup is a annual golf competition played at different
+                courses throughout the United States, but mainly in the Great
+                Lake State, the High-Five of the country, Michigan.
+              </p>
+              <h2 className="h4">What does the BFBH Cup stand for?</h2>
+              <p>
+                Great question. The BFBH Cup stands for The "Boys From Back Home
+                Cup".
+              </p>
+              <h2 className="h4">Who are the boys from back home?</h2>
+              <p>
+                A group of brothers and friends who were all born and raised in
+                the great state of Michigan.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div className="container col-lg-10">
+          <StaticImage
+            src="../images/group/2021-group.jpg"
+            alt="bfbh cup players"
+            loading="eager"
+            placeholder="blurred"
+            layout="fullWidth"
+          />
+        </div>
       </LandingPageBody>
-      
     </Layout>
   )
 }

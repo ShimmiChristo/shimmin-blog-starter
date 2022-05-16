@@ -7,6 +7,10 @@ import styled from "styled-components"
 const FooterContainer = styled.footer`
   background-color: var(--color-brand-gray-6);
   padding: 1rem 0 1rem;
+
+  a {
+    color: var(--color-link);
+  }
 `
 const FooterColumns = styled.div`
   display: flex;
@@ -50,7 +54,7 @@ function Footer() {
     <FooterContainer>
       <FooterColumns className="footer__columns">
         <FooterColumn>
-          <h4 className="footer__title">Links</h4>
+          <h4 className="footer__title">Menu</h4>
           {nav.map((column, i) => (
             <li className="footer__item" key={i}>
               <a href={column.link}>{column.name}</a>

@@ -1,9 +1,9 @@
 import React from "react"
-import { Link, graphql } from "gatsby"
+import { graphql } from "gatsby"
 import { MDXRenderer } from "gatsby-plugin-mdx"
 import styled from "styled-components"
 import Image from "gatsby-image"
-import { PlayerInfo } from "../hooks/get-player-info--matt"
+// import { PlayerInfoMatt } from "../hooks/get-player-info--matt"
 import PlayerInfoThisYearRecord from "../components/player-info-year-record"
 
 import Layout from "../components/layout"
@@ -11,10 +11,14 @@ import SEO from "../components/seo"
 // import { usePublishedPosts } from "../hooks/use-published-posts"
 
 const PlayerPostTemplate = ({ data, location }) => {
-  const { player } = PlayerInfo()
   const post = data.mdx
   const siteTitle = data.site.siteMetadata?.name || `Name`
-  const playerHandicap = (player.year._2021[post.frontmatter.name] || {}).handicap || 0
+  const playerHandicap = data.mdx.frontmatter.handicap
+  const playerName = data.mdx.frontmatter.name
+  const playerNickname = data.mdx.frontmatter.nickname
+  const playerData = data.playersUpdateJson[`${playerName}`]
+  // const { player } = PlayerInfoMatt(2021)
+  // const playerHandicap = (player[`${playerName}`].year[2021][post.frontmatter.name] || {}).handicap || 0
   // const { nodes } = usePublishedPosts()
 
   const FeaturedImg = styled(Image)`
@@ -92,7 +96,7 @@ const PlayerPostTemplate = ({ data, location }) => {
   return (
     <Layout location={location} title={siteTitle}>
       <SEO
-        title={post.frontmatter.name}
+        title={playerName}
         description={post.frontmatter.description || post.excerpt}
       />
       <article
@@ -103,13 +107,13 @@ const PlayerPostTemplate = ({ data, location }) => {
         <Header team={post.frontmatter.team}>
           <HeaderContainer>
             <h1 className="h1" itemProp="headline">
-              {post.frontmatter.name}
+              {playerName}
             </h1>
 
             <div>{post.frontmatter.team}</div>
           </HeaderContainer>
           <div className="info">
-            <b>AKA:</b> {post.frontmatter.nickname} <br />
+            <b>AKA:</b> {playerNickname} <br />
             <b>Handicap:</b> {playerHandicap}
           </div>
         </Header>
@@ -126,7 +130,12 @@ const PlayerPostTemplate = ({ data, location }) => {
           </BioWrapper>
         </section>
         <hr />
-        <PlayerInfoThisYearRecord year="" teamColor="" />
+        <PlayerInfoThisYearRecord
+          year="2021"
+          teamColor="green"
+          post={post}
+          playerData={playerData}
+        />
       </article>
     </Layout>
   )
@@ -152,10 +161,365 @@ export const pageQuery = graphql`
         description
         category
         team
+        handicap
         featuredImg {
           childImageSharp {
             fluid(maxWidth: 200) {
               ...GatsbyImageSharpFluid
+            }
+          }
+        }
+      }
+    }
+    playersUpdateJson {
+      matt {
+        name
+        year {
+          _2021 {
+            id
+            captain
+            handicap
+            team
+            points {
+              game
+              id
+              losses
+              ties
+              wins
+            }
+            scores {
+              tribute {
+                frontHandicap
+                front
+                course
+                backHandicap
+                back
+              }
+              jonesMasterPiece {
+                course
+              }
+              gaylordGolfClub {
+                frontHandicap
+                front
+                course
+                backHandicap
+                back
+              }
+              classic {
+                frontHandicap
+                front
+                course
+                back
+                backHandicap
+              }
+            }
+          }
+        }
+      }
+      chris {
+        name
+        year {
+          _2021 {
+            id
+            captain
+            handicap
+            team
+            points {
+              game
+              id
+              losses
+              ties
+              wins
+            }
+            scores {
+              tribute {
+                frontHandicap
+                front
+                course
+                backHandicap
+                back
+              }
+              jonesMasterPiece {
+                course
+              }
+              gaylordGolfClub {
+                frontHandicap
+                front
+                course
+                backHandicap
+                back
+              }
+              classic {
+                frontHandicap
+                front
+                course
+                back
+                backHandicap
+              }
+            }
+          }
+        }
+      }
+      rj {
+        name
+        year {
+          _2021 {
+            id
+            captain
+            handicap
+            team
+            points {
+              game
+              id
+              losses
+              ties
+              wins
+            }
+            scores {
+              tribute {
+                frontHandicap
+                front
+                course
+                backHandicap
+                back
+              }
+              jonesMasterPiece {
+                course
+              }
+              gaylordGolfClub {
+                frontHandicap
+                front
+                course
+                backHandicap
+                back
+              }
+              classic {
+                frontHandicap
+                front
+                course
+                back
+                backHandicap
+              }
+            }
+          }
+        }
+      }
+      dylan {
+        name
+        year {
+          _2021 {
+            id
+            captain
+            handicap
+            team
+            points {
+              game
+              id
+              losses
+              ties
+              wins
+            }
+            scores {
+              tribute {
+                frontHandicap
+                front
+                course
+                backHandicap
+                back
+              }
+              jonesMasterPiece {
+                course
+              }
+              gaylordGolfClub {
+                frontHandicap
+                front
+                course
+                backHandicap
+                back
+              }
+              classic {
+                frontHandicap
+                front
+                course
+                back
+                backHandicap
+              }
+            }
+          }
+        }
+      }
+      travis {
+        name
+        year {
+          _2021 {
+            id
+            captain
+            handicap
+            team
+            points {
+              game
+              id
+              losses
+              ties
+              wins
+            }
+            scores {
+              tribute {
+                frontHandicap
+                front
+                course
+                backHandicap
+                back
+              }
+              jonesMasterPiece {
+                course
+              }
+              gaylordGolfClub {
+                frontHandicap
+                front
+                course
+                backHandicap
+                back
+              }
+              classic {
+                frontHandicap
+                front
+                course
+                back
+                backHandicap
+              }
+            }
+          }
+        }
+      }
+      craig {
+        name
+        year {
+          _2021 {
+            id
+            captain
+            handicap
+            team
+            points {
+              game
+              id
+              losses
+              ties
+              wins
+            }
+            scores {
+              tribute {
+                frontHandicap
+                front
+                course
+                backHandicap
+                back
+              }
+              jonesMasterPiece {
+                course
+              }
+              gaylordGolfClub {
+                frontHandicap
+                front
+                course
+                backHandicap
+                back
+              }
+              classic {
+                frontHandicap
+                front
+                course
+                back
+                backHandicap
+              }
+            }
+          }
+        }
+      }
+      dan {
+        name
+        year {
+          _2021 {
+            id
+            captain
+            handicap
+            team
+            points {
+              game
+              id
+              losses
+              ties
+              wins
+            }
+            scores {
+              tribute {
+                frontHandicap
+                front
+                course
+                backHandicap
+                back
+              }
+              jonesMasterPiece {
+                course
+              }
+              gaylordGolfClub {
+                frontHandicap
+                front
+                course
+                backHandicap
+                back
+              }
+              classic {
+                frontHandicap
+                front
+                course
+                back
+                backHandicap
+              }
+            }
+          }
+        }
+      }
+      derek {
+        name
+        year {
+          _2021 {
+            id
+            captain
+            handicap
+            team
+            points {
+              game
+              id
+              losses
+              ties
+              wins
+            }
+            scores {
+              tribute {
+                frontHandicap
+                front
+                course
+                backHandicap
+                back
+              }
+              jonesMasterPiece {
+                course
+              }
+              gaylordGolfClub {
+                frontHandicap
+                front
+                course
+                backHandicap
+                back
+              }
+              classic {
+                frontHandicap
+                front
+                course
+                back
+                backHandicap
+              }
             }
           }
         }

@@ -24,6 +24,7 @@ import {
 } from "mdb-react-ui-kit"
 
 import { faBars, faTimes } from "@fortawesome/free-solid-svg-icons"
+import { FaBars } from "react-icons/fa";
 import "../styles/navigation.css"
 
 const HeaderContainer = styled.header`
@@ -181,9 +182,9 @@ function HeaderV3() {
   }
 
   return (
-    <MDBNavbar expand="lg" light bgColor="light">
-      <MDBContainer fluid>
-        <MDBNavbarBrand href="#">Brand</MDBNavbarBrand>
+    <MDBNavbar expand="lg" light bgColor="light" className="sticky-top">
+      <MDBContainer>
+        <MDBNavbarBrand href="#">{logoImg}</MDBNavbarBrand>
 
         <MDBNavbarToggler
           aria-controls="navbarSupportedContent"
@@ -194,73 +195,43 @@ function HeaderV3() {
           <MDBIcon icon="bars" fas />
         </MDBNavbarToggler>
 
-        <MDBCollapse navbar show={showBasic}>
-          <MDBNavbarNav className="mr-auto mb-2 mb-lg-0">
-            <MDBNavbarItem>
-              <MDBNavbarLink active aria-current="page" href="#">
-                Home
-              </MDBNavbarLink>
-            </MDBNavbarItem>
-            <MDBNavbarItem>
-              <MDBNavbarLink to="about">About</MDBNavbarLink>
-            </MDBNavbarItem>
+        {/* <MDBCollapse navbar show={showBasic}> */}
 
-            <MDBNavbarItem>
-              <MDBDropdown>
-                <MDBDropdownToggle tag="a" className="nav-link">
-                  Dropdown
-                </MDBDropdownToggle>
-                <MDBDropdownMenu>
-                  <MDBDropdownItem>
-                    <MDBDropdownLink>Action</MDBDropdownLink>
-                  </MDBDropdownItem>
-                  <MDBDropdownItem>
-                    <MDBDropdownLink>Another action</MDBDropdownLink>
-                  </MDBDropdownItem>
-                  <MDBDropdownItem>
-                    <MDBDropdownLink>Something else here</MDBDropdownLink>
-                  </MDBDropdownItem>
-                </MDBDropdownMenu>
-              </MDBDropdown>
-            </MDBNavbarItem>
+        <MDBNavbarNav className="mr-auto mb-2 mb-lg-0 justify-content-end">
+          {nav.map(navItem => (
+            <>
+              {navItem.subnav ? (
+                navItem.subnav.map(subnavItem => (
+                  <MDBNavbarItem>
+                    <MDBDropdown>
+                      <MDBDropdownToggle tag="a" className="nav-link">
+                        {navItem.name}
+                      </MDBDropdownToggle>
 
-            <MDBNavbarItem>
-              <MDBNavbarLink
-                disabled
-                href="#"
-                tabIndex={-1}
-                aria-disabled="true"
-              >
-                Disabled
-              </MDBNavbarLink>
-            </MDBNavbarItem>
-
-            <ul className="navbar-nav me-auto mb-2 mb-lg-0">
-              {nav.map(navMenu => (
-                <li key={navMenu.name} className="nav-item">
-                  <Link
-                    to={navMenu.link}
-                    className="nav-link"
-                    onClick={navClick}
-                  >
-                    {navMenu.name}
+                      <MDBDropdownMenu>
+                        <MDBDropdownItem>
+                          <Link className="dropdown-item" to={subnavItem.link}>
+                            {subnavItem.name}
+                          </Link>
+                        </MDBDropdownItem>
+                      </MDBDropdownMenu>
+                    </MDBDropdown>
+                  </MDBNavbarItem>
+                ))
+              ) : (
+                <MDBNavbarItem>
+                  <Link className="dropdown-item" to={navItem.link}>
+                    {navItem.name}
                   </Link>
-                </li>
-              ))}
-            </ul>
-          </MDBNavbarNav>
-        </MDBCollapse>
+                </MDBNavbarItem>
+              )}
+            </>
+          ))}
+        </MDBNavbarNav>
+        {/* </MDBCollapse> */}
       </MDBContainer>
     </MDBNavbar>
   )
-}
-
-HeaderV3.propTypes = {
-  title: PropTypes.string,
-}
-
-HeaderV3.defaultProps = {
-  title: ``,
 }
 
 export default HeaderV3

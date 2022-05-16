@@ -1,12 +1,20 @@
-#navMenu {
-}
-#navMenu__btn {
-}
 .navMenu__logo,
 .navMenu__logo a {
   text-decoration: none;
-  color: var(--green)
+  color: var(--green);
 }
 #navMenu ul li a {
-  color: var(--green)
+  color: var(--green);
+}
+.dropdown-menu {
+  z-index: 1100 !important;
+}
+.navbar.navbar-light .navbar-nav .nav-link,
+.container .nav-link a,
+.offcanvas-body .nav-link a,
+.navbar-nav .nav-link,
+.dropdown-item > a,
+.dropdown > a,
+a {
+  color: var(--color-link);
 }

@@ -1,0 +1,43 @@
+[
+  {
+    "teams": {
+      "team1": {
+        "name": "green team",
+        "nickname": "crohn's crushers",
+        "players": ["Matt", "Chris", "Derek", "Travis"],
+        "score": "5"
+      },
+      "team2": {
+        "name": "blue team",
+        "nickname": "team ramrod",
+        "players": ["Dylan", "RJ", "Craig", "Dan"],
+        "score": "9"
+      }
+    }
+  },
+  {
+    "2021": {
+      "teams": {
+        "team1": {
+          "name": "green team",
+          "nickname": "crohn's crushers",
+          "players": ["Matt", "Chris", "Derek", "Travis"],
+          "score": "5"
+        },
+        "team2": {
+          "name": "blue team",
+          "nickname": "team ramrod",
+          "players": ["Dylan", "RJ", "Craig", "Dan"],
+          "score": "9"
+        },
+        "gamesPlayed": [
+          "bestBall",
+          "bramble",
+          "brambleAlternate",
+          "scramble",
+          "singles"
+        ]
+      }
+    }
+  }
+]
