@@ -108,7 +108,7 @@ function HeaderBootstrap(location) {
             </div>
             <div className="d-flex">
               <Link to="/sponsors">
-               <button className="btn btn-outline-dark">Sponsors</button>
+                <button className="btn btn-outline-dark">Sponsors</button>
               </Link>
             </div>
           </Nav>
@@ -153,6 +153,11 @@ function HeaderBootstrap(location) {
                   )
                 )}
               </Nav>
+              <div className="d-flex mt-4">
+                <Link to="/sponsors">
+                  <button className="btn btn-outline-dark">Sponsors</button>
+                </Link>
+              </div>
             </Offcanvas.Body>
           </Navbar.Offcanvas>
         </div>

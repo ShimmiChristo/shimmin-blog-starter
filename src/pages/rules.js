@@ -32,7 +32,7 @@ const TopicPage = ({ data, location }) => {
             <p>
               Each match is worth one point, with matches ending in a tie worth
               ½ point to each side. The first team to reach 14 points wins the
-              BFBH Cup. If the matches end in a 14-14 tie, the team holding the
+              BFBH Cup. If the matches end in a 13.5-13.5 tie, the team holding the
               BFBH Cup retains it.
             </p>
             <p>We will rotate the carts at the turn</p>
