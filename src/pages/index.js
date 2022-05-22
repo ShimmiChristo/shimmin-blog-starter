@@ -1,8 +1,11 @@
 import React from "react"
+import { Link } from "gatsby"
+import { getUser, isLoggedIn } from "../services/auth"
 import styled from "styled-components"
+
+
 import { useSiteMetadata } from "../hooks/use-site-metadata"
 import { CourseInfo } from "../hooks/get-course-info"
-
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import LandingPageHeader from "../components/landing-page-header"
@@ -54,7 +57,21 @@ const TopicPage = ({ data, location }) => {
 
   return (
     <Layout location={location} title={siteTitle}>
-      <SEO title="BFBH Cup | Boys From Back Home Cup" />
+      <SEO title="Home | BFBH Cup" />
+      <h1>Hello {isLoggedIn() ? getUser().name : "world"}!</h1>
+      <p>
+        {isLoggedIn() ? (
+          <>
+            You are logged in, so check your{" "}
+            <Link to="/app/profile">profile</Link>
+          </>
+        ) : (
+          <>
+            You should <Link to="/app/login">log in</Link> to see restricted
+            content
+          </>
+        )}
+      </p>
 
       <HighlightCountdown startTime={startDate} location={locationName} />
       <HighlightsScoring yearProp="2022" />

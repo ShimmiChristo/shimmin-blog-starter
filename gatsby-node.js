@@ -99,6 +99,18 @@ exports.onCreateNode = ({ node, actions, getNode }) => {
   }
 }
 
+//creates pages on demand
+exports.onCreatePage = async ({ page, actions }) => {
+  const { createPage } = actions
+  // page.matchPath is a special key that's used for matching pages
+  // only on the client.
+  if (page.path.match(/^\/app/)) {
+    page.matchPath = "/app/*"
+    // Update the page.
+    createPage(page)
+  }
+}
+
 // foreign-key relationship for featured image
 exports.createSchemaCustomization = ({ actions }) => {
   const { createTypes } = actions

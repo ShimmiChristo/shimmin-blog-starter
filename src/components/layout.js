@@ -9,7 +9,7 @@ import "../styles/match.css"
 
 const Layout = ({ location, title, children }) => {
   const rootPath = `${__PATH_PREFIX__}/`
-  const isRootPath = location.pathname === rootPath
+  const isRootPath = location?.pathname === rootPath
 
   return (
     <div data-is-root-path={isRootPath}>
