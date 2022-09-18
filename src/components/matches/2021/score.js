@@ -45,11 +45,14 @@ const Section = styled.section`
 
 function MatchScore({year}) {
   const { teams } = ScoreInfo()
+  const scoreInfo = ScoreInfo()
+  const currentYear = year ? scoreInfo[year].teams : undefined
+
 
   function changeBackgroundColor() {
-    if (teams.team1.score > teams.team2.score) {
+    if (currentYear.team1.score > currentYear.team2.score) {
       return `team-one-color`
-    } else if (teams.team1.score < teams.team2.score) {
+    } else if (currentYear.team1.score < currentYear.team2.score) {
       return `team-two-color`
     } else {
       return `bk-gray`
@@ -59,12 +62,12 @@ function MatchScore({year}) {
   return (
     <Section className={`${changeBackgroundColor()} mb-3`}>
       <div>
-        <span>{teams.team1.name}</span>
-        <div className="h1">{teams.team1.score}</div>
+        <span>{currentYear.team1.name}</span>
+        <div className="h1">{currentYear.team1.score}</div>
       </div>
       <div>
-        <div className="h1">{teams.team2.score}</div>
-        <span>{teams.team2.name}</span>
+        <div className="h1">{currentYear.team2.score}</div>
+        <span>{currentYear.team2.name}</span>
       </div>
     </Section>
   )

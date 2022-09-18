@@ -28,7 +28,7 @@ const TopicPage = ({ data, location }) => {
         </div>
         <div className="row">
           <div className="col-lg-8">
-            <Match year="2021" />
+            <Match year="_2021" />
           </div>
         </div>
         <div className="row">
