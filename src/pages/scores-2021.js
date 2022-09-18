@@ -74,7 +74,7 @@ const TopicPage = ({ data, location }) => {
         ]}
       />
 
-      <MatchScore />
+      <MatchScore year="_2021"/>
       {/* player1 and player3 are on the same team */}
       <MatchNavSection
         data-visible={pageHash === "#r1-best-ball" ? "true" : "false"}

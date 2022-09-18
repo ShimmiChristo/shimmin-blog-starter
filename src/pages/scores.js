@@ -84,7 +84,7 @@ const TopicPage = ({ data, location }) => {
         ]}
       />
 
-      <MatchScore />
+      <MatchScore year="_2022" />
 
       {/* <MatchNavSection
         data-visible={pageHash === "#r1-best-ball" ? "true" : "false"}

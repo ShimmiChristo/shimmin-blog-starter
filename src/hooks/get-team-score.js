@@ -4,16 +4,32 @@ export const ScoreInfo = () => {
   const { scoreJson } = useStaticQuery(graphql`
     query ScoreInfo {
       scoreJson {
-        teams {
-          team1 {
-            name
-            players
-            score
+        _2022 {
+          teams {
+            team1 {
+              name
+              players
+              score
+            }
+            team2 {
+              name
+              players
+              score
+            }
           }
-          team2 {
-            name
-            players
-            score
+        }
+        _2021 {
+          teams {
+            team1 {
+              name
+              players
+              score
+            }
+            team2 {
+              name
+              players
+              score
+            }
           }
         }
       }

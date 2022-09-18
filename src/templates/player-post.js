@@ -208,6 +208,18 @@ export const pageQuery = graphql`
       cam {
         ...CamFragment
       }
+      curtis {
+        ...CurtisFragment
+      }
+      evan {
+        ...EvanFragment
+      }
+      gordon {
+        ...GordonFragment
+      }
+      jake {
+        ...JakeFragment
+      }
     }
   }
 `
