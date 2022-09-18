@@ -17,7 +17,7 @@ function MatchPlayers2022() {
                 <li class="list-group-item m-0 py-2">
                   Matt <span className="fst-italic">*team captain</span>
                 </li>
-                <li class="list-group-item m-0 py-2">Evan L</li>
+                <li class="list-group-item m-0 py-2">Jake</li>
                 <li class="list-group-item m-0 py-2">Curtis</li>
                 <li class="list-group-item m-0 py-2">Travis</li>
                 <li class="list-group-item m-0 py-2">Gordon</li>
@@ -38,7 +38,7 @@ function MatchPlayers2022() {
                 <li class="list-group-item m-0 py-2">Craig</li>
                 <li class="list-group-item m-0 py-2">Dan</li>
                 <li class="list-group-item m-0 py-2">Cam</li>
-                <li class="list-group-item m-0 py-2">Evan M</li>
+                <li class="list-group-item m-0 py-2">Evan</li>
               </ul>
             </div>
           </div>

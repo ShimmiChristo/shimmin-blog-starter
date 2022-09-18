@@ -19,7 +19,18 @@ const PlayersIndex = ({ data, location }) => {
   const posts = nodes
 
   const TeamFilterContainer = styled.div`
+    .team-filter-all {
+      font-weight: bold;
+      border-bottom: 2px solid;
+    }
+    .team-filter {
+      color: var(--black);
+    }
     &.blue {
+      .team-filter-all {
+        font-weight: normal;
+        border-bottom: none;
+      }
       [data-team="Green Team"] {
         display: none;
       }
@@ -30,6 +41,10 @@ const PlayersIndex = ({ data, location }) => {
       }
     }
     &.green {
+      .team-filter-all {
+        font-weight: normal;
+        border-bottom: none;
+      }
       [data-team="Blue Team"] {
         display: none;
       }
@@ -45,6 +60,8 @@ const PlayersIndex = ({ data, location }) => {
     display: flex;
     flex-wrap: wrap;
     padding: 0;
+    list-style: none;
+    margin-top: 1rem;
   `
   const TeamFilter = styled.div`
     width: 100%;
@@ -79,6 +96,12 @@ const PlayersIndex = ({ data, location }) => {
         <TeamFilterContainer className={`${teamFilter} container `}>
           <TeamFilter className="mb-2">
             <div
+              className="team-filter team-filter-all"
+              onClick={() => setTeamFilter("all")}
+            >
+              All
+            </div>
+            <div
               className="team-filter team-filter-green"
               onClick={() => setTeamFilter("green")}
             >
@@ -91,9 +114,8 @@ const PlayersIndex = ({ data, location }) => {
               Blue Team
             </div>
           </TeamFilter>
-          <OlContainer style={{ listStyle: `none` }}>
+          <OlContainer>
             {posts.map((post, i) => {
-
               return (
                 <PlayerCard
                   key={uuid + i}
@@ -101,11 +123,11 @@ const PlayersIndex = ({ data, location }) => {
                   title={post?.frontmatter?.name || post?.fields?.slug}
                   team={post.frontmatter.team}
                   featuredImg={post.frontmatter.featuredImg}
+                  captain={post.frontmatter.captain}
                   description={post.frontmatter.description}
                   excerpt={post.excerpt}
                 />
               )
-              
             })}
           </OlContainer>
         </TeamFilterContainer>

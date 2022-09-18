@@ -273,6 +273,7 @@ function Match({ matchId, courseMatch, player1, player2, player3, player4 }) {
           <div className="match__par row-cell">par</div>
         </div>
         {courseHoles.map(hole => (
+          
           <div className="match__column">
             <div
               className="match__hole row-cell"
@@ -280,7 +281,7 @@ function Match({ matchId, courseMatch, player1, player2, player3, player4 }) {
             >
               {hole.number}
             </div>
-            <div className="match__yardage row-cell">{hole.tees.middle}</div>
+            <div className="match__yardage row-cell">{hole.tees[Object.keys(hole.tees)[0]]}</div>
             <div className="match__handicap row-cell">{hole.handicap}</div>
             <div className="match__par row-cell">{hole.par}</div>
           </div>

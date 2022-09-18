@@ -135,6 +135,8 @@ exports.createSchemaCustomization = ({ actions }) => {
       date: Date @dateformat
       published: Boolean
       featuredImg: File @fileByRelativePath
+      index: String
+      captain: Boolean
     }
     type Frontmatter {
       title: String
@@ -142,6 +144,8 @@ exports.createSchemaCustomization = ({ actions }) => {
       date: Date @dateformat
       published: Boolean
       featuredImg: File @fileByRelativePath
+      index: String
+      captain: Boolean
     }
 
     type Fields {

@@ -5,6 +5,7 @@ import styled from "styled-components"
 import Image from "gatsby-image"
 // import { PlayerInfoMatt } from "../hooks/get-player-info--matt"
 import PlayerInfoThisYearRecord from "../components/player-info-year-record"
+// import { Chris } from "../components/fragments/scores-2021"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
@@ -21,15 +22,6 @@ const PlayerPostTemplate = ({ data, location }) => {
   // const playerHandicap = (player[`${playerName}`].year[2021][post.frontmatter.name] || {}).handicap || 0
   // const { nodes } = usePublishedPosts()
 
-  const FeaturedImg = styled(Image)`
-    width: 200px;
-    height: auto;
-    margin-bottom: 2rem;
-
-    @media screen and (max-width: 767px) {
-      width: 90%;
-    }
-  `
   const Header = styled.header`
     display: flex;
     justify-content: space-evenly;
@@ -41,6 +33,10 @@ const PlayerPostTemplate = ({ data, location }) => {
     margin-bottom: 2rem;
     padding: 1rem;
     color: #fff;
+    flex-wrap: wrap;
+    @media (max-width: 767px) {
+      margin-bottom: 1rem;
+    }
   `
   const HeaderContainer = styled.div`
     height: auto;
@@ -53,6 +49,7 @@ const PlayerPostTemplate = ({ data, location }) => {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+
     h1,
     .h1 {
       color: #fff;
@@ -74,6 +71,17 @@ const PlayerPostTemplate = ({ data, location }) => {
       max-height: 200px;
     }
   `
+  const FeaturedImg = styled(Image)`
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    margin: 0 2rem 2rem 0;
+
+    @media screen and (max-width: 767px) {
+      width: 100%;
+      margin-right: 0;
+    }
+  `
   const BioWrapper = styled.div`
     display: flex;
     justify-content: space-around;
@@ -88,8 +96,9 @@ const PlayerPostTemplate = ({ data, location }) => {
   `
   const MdxContent = styled.div`
     max-width: 55%;
+    width: 100%;
     @media screen and (max-width: 767px) {
-      max-width: 90%;
+      max-width: 100%;
     }
   `
 
@@ -164,7 +173,7 @@ export const pageQuery = graphql`
         handicap
         featuredImg {
           childImageSharp {
-            fluid(maxWidth: 200) {
+            fluid(maxWidth: 400) {
               ...GatsbyImageSharpFluid
             }
           }
@@ -173,356 +182,31 @@ export const pageQuery = graphql`
     }
     playersUpdateJson {
       matt {
-        name
-        year {
-          _2021 {
-            id
-            captain
-            handicap
-            team
-            points {
-              game
-              id
-              losses
-              ties
-              wins
-            }
-            scores {
-              tribute {
-                frontHandicap
-                front
-                course
-                backHandicap
-                back
-              }
-              jonesMasterPiece {
-                course
-              }
-              gaylordGolfClub {
-                frontHandicap
-                front
-                course
-                backHandicap
-                back
-              }
-              classic {
-                frontHandicap
-                front
-                course
-                back
-                backHandicap
-              }
-            }
-          }
-        }
+        ...MattFragment
       }
       chris {
-        name
-        year {
-          _2021 {
-            id
-            captain
-            handicap
-            team
-            points {
-              game
-              id
-              losses
-              ties
-              wins
-            }
-            scores {
-              tribute {
-                frontHandicap
-                front
-                course
-                backHandicap
-                back
-              }
-              jonesMasterPiece {
-                course
-              }
-              gaylordGolfClub {
-                frontHandicap
-                front
-                course
-                backHandicap
-                back
-              }
-              classic {
-                frontHandicap
-                front
-                course
-                back
-                backHandicap
-              }
-            }
-          }
-        }
+        ...ChrisFragment
       }
       rj {
-        name
-        year {
-          _2021 {
-            id
-            captain
-            handicap
-            team
-            points {
-              game
-              id
-              losses
-              ties
-              wins
-            }
-            scores {
-              tribute {
-                frontHandicap
-                front
-                course
-                backHandicap
-                back
-              }
-              jonesMasterPiece {
-                course
-              }
-              gaylordGolfClub {
-                frontHandicap
-                front
-                course
-                backHandicap
-                back
-              }
-              classic {
-                frontHandicap
-                front
-                course
-                back
-                backHandicap
-              }
-            }
-          }
-        }
+        ...RjFragment
       }
       dylan {
-        name
-        year {
-          _2021 {
-            id
-            captain
-            handicap
-            team
-            points {
-              game
-              id
-              losses
-              ties
-              wins
-            }
-            scores {
-              tribute {
-                frontHandicap
-                front
-                course
-                backHandicap
-                back
-              }
-              jonesMasterPiece {
-                course
-              }
-              gaylordGolfClub {
-                frontHandicap
-                front
-                course
-                backHandicap
-                back
-              }
-              classic {
-                frontHandicap
-                front
-                course
-                back
-                backHandicap
-              }
-            }
-          }
-        }
+        ...DylanFragment
       }
       travis {
-        name
-        year {
-          _2021 {
-            id
-            captain
-            handicap
-            team
-            points {
-              game
-              id
-              losses
-              ties
-              wins
-            }
-            scores {
-              tribute {
-                frontHandicap
-                front
-                course
-                backHandicap
-                back
-              }
-              jonesMasterPiece {
-                course
-              }
-              gaylordGolfClub {
-                frontHandicap
-                front
-                course
-                backHandicap
-                back
-              }
-              classic {
-                frontHandicap
-                front
-                course
-                back
-                backHandicap
-              }
-            }
-          }
-        }
+        ...TravisFragment
       }
       craig {
-        name
-        year {
-          _2021 {
-            id
-            captain
-            handicap
-            team
-            points {
-              game
-              id
-              losses
-              ties
-              wins
-            }
-            scores {
-              tribute {
-                frontHandicap
-                front
-                course
-                backHandicap
-                back
-              }
-              jonesMasterPiece {
-                course
-              }
-              gaylordGolfClub {
-                frontHandicap
-                front
-                course
-                backHandicap
-                back
-              }
-              classic {
-                frontHandicap
-                front
-                course
-                back
-                backHandicap
-              }
-            }
-          }
-        }
+        ...CraigFragment
       }
       dan {
-        name
-        year {
-          _2021 {
-            id
-            captain
-            handicap
-            team
-            points {
-              game
-              id
-              losses
-              ties
-              wins
-            }
-            scores {
-              tribute {
-                frontHandicap
-                front
-                course
-                backHandicap
-                back
-              }
-              jonesMasterPiece {
-                course
-              }
-              gaylordGolfClub {
-                frontHandicap
-                front
-                course
-                backHandicap
-                back
-              }
-              classic {
-                frontHandicap
-                front
-                course
-                back
-                backHandicap
-              }
-            }
-          }
-        }
+        ...DanFragment
       }
       derek {
-        name
-        year {
-          _2021 {
-            id
-            captain
-            handicap
-            team
-            points {
-              game
-              id
-              losses
-              ties
-              wins
-            }
-            scores {
-              tribute {
-                frontHandicap
-                front
-                course
-                backHandicap
-                back
-              }
-              jonesMasterPiece {
-                course
-              }
-              gaylordGolfClub {
-                frontHandicap
-                front
-                course
-                backHandicap
-                back
-              }
-              classic {
-                frontHandicap
-                front
-                course
-                back
-                backHandicap
-              }
-            }
-          }
-        }
+        ...DerekFragment
+      }
+      cam {
+        ...CamFragment
       }
     }
   }

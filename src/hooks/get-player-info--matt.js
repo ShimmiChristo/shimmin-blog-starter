@@ -1,8 +1,8 @@
 import { useStaticQuery, graphql } from "gatsby"
 
 export const PlayerInfoMatt = (player, year) => {
-  console.log("player from component - ", player)
-  console.log("year from component - ", year)
+  // console.log("player from component - ", player)
+  // console.log("year from component - ", year)
   const { playersUpdateJson } = useStaticQuery(graphql`
     query PlayerInfoMatt {
       playersUpdateJson {

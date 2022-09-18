@@ -18,3 +18,8 @@
 a {
   color: var(--color-link);
 }
+
+.dropdown-item:hover,
+.dropdown-item:focus {
+  background-color: initial !important;
+}

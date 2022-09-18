@@ -618,6 +618,16 @@ function Match({
     }
   }
 
+  function isMatchOver(hole) {
+    // gray out holes once the score is irrelevant
+    const winningHole = 9 - teamFinalScores?.holesRemaining
+    if (hole > winningHole) {
+      return true
+    } else {
+      return false
+    }
+  }
+
   function calcMatchPlayerScore(playerNum, playerNumInt, matchHandicap) {
     if (playerNum) {
       return (
@@ -636,7 +646,9 @@ function Match({
                   getHandicap(playerNumInt),
                   courseHoles[i].handicap
                 )}`}
+                data-matchOver={`${isMatchOver(i + 1)}`}
               >
+                <div className="match__line"></div>
                 {calcPlayerScore(
                   score,
                   getHandicap(playerNumInt),
@@ -655,7 +667,7 @@ function Match({
     <Section
       data-match={`${courseMatch}`}
       data-handicap={`${matchHandicap}`}
-      className={`"match__container " ${sectionHeight}`}
+      className={`match__container ${sectionHeight}`}
     >
       <CloseBtn onClick={matchCardClick}>
         {/* <FontAwesomeIcon icon={faTimes} size="2x" /> */}
@@ -690,7 +702,7 @@ function Match({
         </div>
 
         <div className="team__scores">
-          <div className={"bk-gray " + getWinningColor()}>
+          <div className={"bk-gray font-weight-bold " + getWinningColor()}>
             {displayWinningTeam()}
           </div>
         </div>
@@ -720,16 +732,18 @@ function Match({
             <div className="match__handicap row-cell">handicap</div>
             <div className="match__par row-cell">par</div>
           </div>
-          {courseHoles.map(hole => (
+          {courseHoles.map((hole, i) => (
             <div className="match__column" key={uuidv1()}>
               <div
                 className="match__hole row-cell"
                 data-winner={`${calcHoleWinner(hole.number).team}`}
+                data-matchOver={`${isMatchOver(i + 1)}`}
                 id={hole.number}
               >
+                <div className="match__line"></div>
                 {hole.number}
               </div>
-              <div className="match__yardage row-cell">{hole.tees.middle}</div>
+              <div className="match__yardage row-cell">{hole.tees[Object.keys(hole.tees)[0]]}</div>
               <div className="match__handicap row-cell">{hole.handicap}</div>
               <div className="match__par row-cell">{hole.par}</div>
             </div>

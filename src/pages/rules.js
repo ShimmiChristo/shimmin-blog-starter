@@ -32,24 +32,25 @@ const TopicPage = ({ data, location }) => {
             <p>
               Each match is worth one point, with matches ending in a tie worth
               ½ point to each side. The first team to reach 14 points wins the
-              BFBH Cup. If the matches end in a 13.5-13.5 tie, the team holding the
-              BFBH Cup retains it.
+              BFBH Cup. If the matches end in a 13.5-13.5 tie, the team holding
+              the BFBH Cup retains it.
             </p>
             <p>We will rotate the carts at the turn</p>
             <p>Side bets encouraged</p>
+            <br />
 
             <h3>Points</h3>
             <p>
               The two days of the matches consist of{" "}
               <strong>27 total matches</strong>, each of which is worth one
               point. There are no extra holes in the BFBH Cup matches. Should
-              the two sides be tied after 9 holes, each side earns a half
-              point.
+              the two sides be tied after 9 holes, each side earns a half point.
             </p>
             <p>
               Each nine holes has two 2v2 matches, except for the last 9 holes.
               (Four 1v1 matches)
             </p>
+            <br />
 
             <h3>Concession</h3>
             <p>
@@ -59,22 +60,37 @@ const TopicPage = ({ data, location }) => {
               he would have made on the next stroke and moves on to the next
               hole.
             </p>
+            <br />
           </div>
         </div>
         <div class="row mb-3">
           <div class="col-lg-8">
             <h2 className="mb-3">Formats</h2>
 
-            <h3 className="h4">Best Ball</h3>
+            <h3 className="h4">1 Best Ball</h3>
             <p>
               Each player plays their own ball, whoever has the better
               handicapped score of the 2 will be score used for that hole.
+            </p>
+
+            <h3 className="h4">2 Best Ball</h3>
+            <p>
+              Each player plays their own ball and combine both players net
+              score.
             </p>
 
             <h3 className="h4">Scramble</h3>
             <p>
               Normal scramble with the 2 players, the average of the 2 players'
               handicaps will be used. Ex. an 18 with a 10 would be a 14.
+            </p>
+
+            <h3 className="h4">Alternate</h3>
+            <p>
+              One ball is used. Players alternate between shots. Ex - Whoever's
+              tee shot is not being used will hit the second shot. Alternate
+              until the ball is holed. The average of the 2 players' handicaps
+              will be used.
             </p>
 
             <h3 className="h4">Bramble</h3>

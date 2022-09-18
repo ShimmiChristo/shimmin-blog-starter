@@ -39,7 +39,7 @@ function HighlightCountdown({ startTime, location }) {
 
   return (
     <>
-      <div className="container pb-5 pb-md-3 position-relative text-center">
+      <div className="container py-3 pb-md-3 position-relative text-center">
         <div className="position-absolute top-0 start-0 ">
           <b>BFBH Cup is in: </b>
           <span className="countdown__days">

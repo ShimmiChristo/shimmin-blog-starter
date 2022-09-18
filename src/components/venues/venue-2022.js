@@ -32,7 +32,7 @@ const ImageOverlapBR = styled.div`
 `
 const bannerImg = {
   opacity: 0.8,
-  minHeight: `200px`
+  minHeight: `200px`,
 }
 
 function Venue2022() {
@@ -97,6 +97,8 @@ function Venue2022() {
             <p>2020 Michigan Golf Course of the Year - MGCA</p>
             <p>"Top 200 Resort Courses in the U.S. for 2022" - Golfweek</p>
 
+            <br />
+
             <h3 className="h3">Stonehedge South</h3>
             <p>
               <Link href="https://www.gulllakeview.com/golf/golf-courses/stonehedge-south/">
@@ -105,6 +107,7 @@ function Venue2022() {
               has been included in Golf Digest’s list of the top 75 most
               affordable courses in the United States.
             </p>
+            <br />
 
             <h3 className="h3">Gull Lake East</h3>
             <p>
@@ -115,17 +118,20 @@ function Venue2022() {
               region’s topography was recognized by Golf Advisor as one of the
               top 25 courses in Michigan in 2016.
             </p>
+            <br />
 
             <h3 className="h3">Gull Lake West</h3>
             <p>
-              While this longtime favorite,
+              While this longtime favorite,{" "}
               <Link href="https://www.gulllakeview.com/golf/golf-courses/gull-lake-view-West/">
+                {" "}
                 Gull Lake West
               </Link>
               , offers a comfortable level of challenge for experienced golfers,
               it’s mix of woods, fields, and ponds makes it a great place for
               anyone.
             </p>
+            <br />
           </div>
         </div>
       </div>

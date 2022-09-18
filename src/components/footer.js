@@ -86,7 +86,7 @@ function Footer() {
         © {new Date().getFullYear()}
         {` `}
         {` Created by `}
-        <Link to={author.website}>{author.name}</Link>
+        <a href={author.website}>{author.name}</a>
       </FooterCopy>
     </FooterContainer>
   )

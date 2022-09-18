@@ -70,7 +70,6 @@ export const CourseInfo = () => {
               par
             }
           }
-          
           gaylordGolfClub1 {
             name
             link
@@ -103,6 +102,135 @@ export const CourseInfo = () => {
               par
             }
           }
+          stoatinBrae1 {
+            name
+            link
+            holes {
+              handicap
+              number
+              par
+              tees {
+                black
+              }
+            }
+            totals {
+              yardage
+              par
+            }
+          }
+          stoatinBrae2 {
+            name
+            link
+            holes {
+              handicap
+              number
+              par
+              tees {
+                black
+              }
+            }
+            totals {
+              yardage
+              par
+            }
+          }
+          stoneHedgeSouth1 {
+            name
+            link
+            holes {
+              handicap
+              number
+              par
+              tees {
+                green
+              }
+            }
+            totals {
+              yardage
+              par
+            }
+          }
+          stoneHedgeSouth2 {
+            name
+            link
+            holes {
+              handicap
+              number
+              par
+              tees {
+                green
+              }
+            }
+            totals {
+              yardage
+              par
+            }
+          }
+          gullLakeEast1 {
+            name
+            link
+            holes {
+              handicap
+              number
+              par
+              tees {
+                green
+              }
+            }
+            totals {
+              yardage
+              par
+            }
+          }
+          gullLakeEast2 {
+            name
+            link
+            holes {
+              handicap
+              number
+              par
+              tees {
+                green
+              }
+            }
+            totals {
+              yardage
+              par
+            }
+          }
+          gullLakeWest1 {
+            name
+            link
+            holes {
+              handicap
+              number
+              par
+              tees {
+                green
+              }
+            }
+            totals {
+              yardage
+              par
+            }
+          }
+          gullLakeWest2 {
+            name
+            link
+            holes {
+              handicap
+              number
+              par
+              tees {
+                green
+              }
+            }
+            totals {
+              yardage
+              par
+            }
+          }
+
         }
       }
     }

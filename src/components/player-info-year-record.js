@@ -73,7 +73,7 @@ function PlayerInfoThisYearRecord({ year, teamColor, post, playerData }) {
         </h2>
       </MDBRow>
       <MDBRow>
-        <MDBCard className="shadow-0 border border-gray offset-md-4 col-md-4 offset- my-2">
+        <MDBCard className="shadow-0 border border-gray offset-md-4 col-md-4 offset-1 col-10 my-2">
           <MDBRow className="g-10">
             <MDBCol center>
               <MDBCardBody>
@@ -124,8 +124,6 @@ function PlayerInfoThisYearRecord({ year, teamColor, post, playerData }) {
           </MDBRow>
         </MDBCard>
       </MDBRow> */}
-
-
     </StyledSection>
   )
 }

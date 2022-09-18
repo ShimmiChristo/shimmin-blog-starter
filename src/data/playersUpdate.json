@@ -343,8 +343,8 @@
             {
               "partners": [
                 {
-                  "id": "evanL",
-                  "name": "Evan L",
+                  "id": "jake",
+                  "name": "Jake",
                   "bestBall": {
                     "wins": 0,
                     "ties": 0,
@@ -577,8 +577,8 @@
                   }
                 },
                 {
-                  "id": "evanM",
-                  "name": "Evan M",
+                  "id": "evan",
+                  "name": "Evan",
                   "bestBall": {
                     "wins": 0,
                     "ties": 0,
@@ -640,7 +640,7 @@
         }
       }
     },
-    "dylan": {
+    "dylan": { 
       "name": "dylan",
       "year": {
         "_2021": {
@@ -1076,8 +1076,8 @@
                   }
                 },
                 {
-                  "id": "evanM",
-                  "name": "Evan M",
+                  "id": "evan",
+                  "name": "Evan",
                   "bestBall": {
                     "wins": 0,
                     "ties": 0,
@@ -1217,8 +1217,8 @@
                   }
                 },
                 {
-                  "id": "evanL",
-                  "name": "Evan L",
+                  "id": "jake",
+                  "name": "Jake",
                   "bestBall": {
                     "wins": 0,
                     "ties": 0,
@@ -1819,7 +1819,7 @@
         "_2022": {
           "id": 2022,
           "handicap": 2,
-          "captain": true,
+          "captain": false,
           "team": "blue",
           "scores": {
             "stoatinBrae": {
@@ -1985,8 +1985,8 @@
                   }
                 },
                 {
-                  "id": "evanM",
-                  "name": "Evan M",
+                  "id": "evan",
+                  "name": "Evan",
                   "bestBall": {
                     "wins": 0,
                     "ties": 0,
@@ -2126,8 +2126,8 @@
                   }
                 },
                 {
-                  "id": "evanL",
-                  "name": "Evan L",
+                  "id": "jake",
+                  "name": "Jake",
                   "bestBall": {
                     "wins": 0,
                     "ties": 0,
@@ -2473,7 +2473,7 @@
         },
         "_2022": {
           "id": 2022,
-          "captain": true,
+          "captain": false,
           "handicap": 10,
           "team": "green",
           "scores": {
@@ -2547,8 +2547,8 @@
             {
               "partners": [
                 {
-                  "id": "evanL",
-                  "name": "Evan L",
+                  "id": "jake",
+                  "name": "Jake",
                   "bestBall": {
                     "wins": 0,
                     "ties": 0,
@@ -2781,8 +2781,8 @@
                   }
                 },
                 {
-                  "id": "evanM",
-                  "name": "Evan M",
+                  "id": "evan",
+                  "name": "Evan",
                   "bestBall": {
                     "wins": 0,
                     "ties": 0,
@@ -3129,7 +3129,7 @@
         "_2022": {
           "id": 2022,
           "handicap": 2,
-          "captain": true,
+          "captain": false,
           "team": "blue",
           "scores": {
             "stoatinBrae": {
@@ -3295,8 +3295,8 @@
                   }
                 },
                 {
-                  "id": "evanM",
-                  "name": "Evan M",
+                  "id": "evan",
+                  "name": "Evan",
                   "bestBall": {
                     "wins": 0,
                     "ties": 0,
@@ -3436,8 +3436,8 @@
                   }
                 },
                 {
-                  "id": "evanL",
-                  "name": "Evan L",
+                  "id": "jake",
+                  "name": "Jake",
                   "bestBall": {
                     "wins": 0,
                     "ties": 0,
@@ -3783,7 +3783,7 @@
         },
         "_2022": {
           "id": 2022,
-          "captain": true,
+          "captain": false,
           "handicap": 10,
           "team": "green",
           "scores": {
@@ -3857,8 +3857,8 @@
             {
               "partners": [
                 {
-                  "id": "evanL",
-                  "name": "Evan L",
+                  "id": "jake",
+                  "name": "Jake",
                   "bestBall": {
                     "wins": 0,
                     "ties": 0,
@@ -4091,8 +4091,8 @@
                   }
                 },
                 {
-                  "id": "evanM",
-                  "name": "Evan M",
+                  "id": "evan",
+                  "name": "Evan",
                   "bestBall": {
                     "wins": 0,
                     "ties": 0,
@@ -4424,7 +4424,7 @@
         "_2022": {
           "id": 2022,
           "handicap": 2,
-          "captain": true,
+          "captain": false,
           "team": "blue",
           "scores": {
             "stoatinBrae": {
@@ -4590,8 +4590,8 @@
                   }
                 },
                 {
-                  "id": "evanM",
-                  "name": "Evan M",
+                  "id": "evan",
+                  "name": "Evan",
                   "bestBall": {
                     "wins": 0,
                     "ties": 0,
@@ -4731,8 +4731,8 @@
                   }
                 },
                 {
-                  "id": "evanL",
-                  "name": "Evan L",
+                  "id": "jake",
+                  "name": "Jake",
                   "bestBall": {
                     "wins": 0,
                     "ties": 0,
@@ -4794,12 +4794,12 @@
         }
       }
     },
-    "evanL": {
-      "name": "evan l",
+    "jake": {
+      "name": "Jake",
       "year": {
         "_2022": {
           "id": 2022,
-          "captain": true,
+          "captain": false,
           "handicap": 10,
           "team": "green",
           "scores": {
@@ -5107,8 +5107,8 @@
                   }
                 },
                 {
-                  "id": "evanM",
-                  "name": "Evan M",
+                  "id": "evan",
+                  "name": "Evan",
                   "bestBall": {
                     "wins": 0,
                     "ties": 0,
@@ -5175,7 +5175,7 @@
       "year": {
         "_2022": {
           "id": 2022,
-          "captain": true,
+          "captain": false,
           "handicap": 10,
           "team": "green",
           "scores": {
@@ -5249,8 +5249,8 @@
             {
               "partners": [
                 {
-                  "id": "evanL",
-                  "name": "Evan L",
+                  "id": "jake",
+                  "name": "Jake",
                   "bestBall": {
                     "wins": 0,
                     "ties": 0,
@@ -5483,8 +5483,8 @@
                   }
                 },
                 {
-                  "id": "evanM",
-                  "name": "Evan M",
+                  "id": "evan",
+                  "name": "Evan",
                   "bestBall": {
                     "wins": 0,
                     "ties": 0,
@@ -5551,7 +5551,7 @@
       "year": {
         "_2022": {
           "id": 2022,
-          "captain": true,
+          "captain": false,
           "handicap": 10,
           "team": "green",
           "scores": {
@@ -5625,8 +5625,8 @@
             {
               "partners": [
                 {
-                  "id": "evanL",
-                  "name": "Evan L",
+                  "id": "jake",
+                  "name": "Jake",
                   "bestBall": {
                     "wins": 0,
                     "ties": 0,
@@ -5859,8 +5859,8 @@
                   }
                 },
                 {
-                  "id": "evanM",
-                  "name": "Evan M",
+                  "id": "evan",
+                  "name": "Evan",
                   "bestBall": {
                     "wins": 0,
                     "ties": 0,
@@ -5928,7 +5928,7 @@
         "_2022": {
           "id": 2022,
           "handicap": 2,
-          "captain": true,
+          "captain": false,
           "team": "blue",
           "scores": {
             "stoatinBrae": {
@@ -6094,8 +6094,8 @@
                   }
                 },
                 {
-                  "id": "evanM",
-                  "name": "Evan M",
+                  "id": "evan",
+                  "name": "Evan",
                   "bestBall": {
                     "wins": 0,
                     "ties": 0,
@@ -6235,8 +6235,8 @@
                   }
                 },
                 {
-                  "id": "evanL",
-                  "name": "Evan L",
+                  "id": "jake",
+                  "name": "Jake",
                   "bestBall": {
                     "wins": 0,
                     "ties": 0,
@@ -6298,13 +6298,13 @@
         }
       }
     },
-    "evanM": {
-      "name": "evan m",
+    "evan": {
+      "name": "Evan",
       "year": {
         "_2022": {
           "id": 2022,
           "handicap": 2,
-          "captain": true,
+          "captain": false,
           "team": "blue",
           "scores": {
             "stoatinBrae": {
@@ -6611,8 +6611,8 @@
                   }
                 },
                 {
-                  "id": "evanL",
-                  "name": "Evan L",
+                  "id": "jake",
+                  "name": "Jake",
                   "bestBall": {
                     "wins": 0,
                     "ties": 0,

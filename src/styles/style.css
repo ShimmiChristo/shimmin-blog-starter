@@ -28,11 +28,10 @@
   --spacing-20: 5rem;
   --spacing-24: 6rem;
   --spacing-32: 8rem;
-  --fontFamily-sans: Montserrat, system-ui, -apple-system, BlinkMacSystemFont,
-    "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif,
-    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  --fontFamily-serif: "Merriweather", "Georgia", Cambria, "Times New Roman",
-    Times, serif;
+  --fontFamily-sans: "Montserrat Regular", sans-serif;
+  --fontFamily-serif: "Merriweather Regular", serif;
+  --fontFamily-sans-bold: "Montserrat Bold", sans-serif;
+  --fontFamily-serif-bold: "Merriweather Bold", serif;
   --fontFamily-code: Menlo, Monaco, "Courier New", monospace;
   --font-body: var(--fontFamily-sans);
   --font-heading: var(--fontFamily-serif);
@@ -57,12 +56,14 @@
   --fontSize-6: 2.488rem;
   --fontSize-7: 2.986rem;
 
-  --color-link-dark: var(--color-brand-dark);
-  --color-link: var(--color-text);
-  --color-link-light: var(--color-text-light);
-  --color-text-dark: #222222;
   --color-text: #2e353f;
   --color-text-light: #4f5969;
+  --color-text-dark: #222222;
+
+  --color-link: var(--color-text);
+  --color-link-light: var(--color-text-light);
+  --color-link-dark: var(--color-brand-dark);
+
   --color-heading: #1a202c;
   --color-heading-black: #222;
   --color-accent: #d1dce5;
@@ -115,7 +116,6 @@
 .team-two-color-bg {
   background: var(--blue) !important;
 }
-
 
 /* HTML elements */
 
@@ -179,10 +179,10 @@ h5,
 .h5,
 h6,
 .h6 {
-  margin-top: var(--spacing-6);
+  /* margin-top: var(--spacing-6);
   margin-bottom: var(--spacing-6);
   line-height: var(--lineHeight-normal);
-  letter-spacing: -0.025em;
+  letter-spacing: -0.025em; */
 
   font-weight: var(--fontWeight-bold);
   color: var(--color-heading);
@@ -190,10 +190,10 @@ h6,
 
 h1,
 .h1 {
-  font-family: var(--font-heading);
-  font-weight: var(--fontWeight-black);
-  font-size: var(--fontSize-6);
-  color: var(--color-heading-black);
+  font-family: var(--font-heading) !important;
+  font-weight: var(--fontWeight-black) !important;
+  font-size: var(--fontSize-6) !important;
+  /* color: var(--color-heading-black) !important; */
 }
 
 h2,
@@ -310,7 +310,6 @@ table thead tr th {
 }
 
 /* Anchor Link */
-
 a {
   color: var(--color-link);
   text-decoration: underline;
@@ -319,7 +318,11 @@ a {
 a:hover,
 a:focus {
   text-decoration: none;
-  color: var(--color-link-light);
+  color: var(--gray) !important;
+  /* color: var(--color-brand-dark) !important; */
+}
+li[data-active="true"] a {
+  color: var(--color-text-dark) !important;
 }
 
 /* p a {
@@ -347,6 +350,19 @@ p a:focus::before {
 } */
 
 /* Custom classes */
+
+.font-regular-sans {
+  font-family: var(--fontFamily-sans);
+}
+.font-bold-sans {
+  font-family: var(--fontFamily-sans-bold);
+}
+.font-regular-serif {
+  font-family: var(--fontFamily-serif);
+}
+.font-bold-serif {
+  font-family: var(--fontFamily-serif-bold);
+}
 
 .block {
   display: block !important;

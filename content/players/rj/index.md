@@ -1,13 +1,13 @@
 ---
 published: true
-index: 1
+index: 02
 name: rj
 nickname: "RJ"
 description: "description"
 category: players
 featuredImg: ./profile-pic.png
 team: "Blue Team"
-position: 06
+handicap: 16
 ---
 
 

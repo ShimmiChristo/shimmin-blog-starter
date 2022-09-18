@@ -82,6 +82,85 @@
                 "ties": 0
               }
             ]
+          },
+          {
+            "year": 2022,
+            "handicap": 10,
+            "team": "green",
+            "scores": [
+              {
+                "id": "jonesMasterPiece",
+                "course": "The Jones Masterpiece at Treetops",
+                "total": 84,
+                "front": [],
+                "back": []
+              },
+              {
+                "id": "tribute",
+                "course": "Tribute",
+                "total": 84,
+                "front": [6, 5, 6, 6, 6, 5, 7, 4, 3],
+                "back": [4, 7, 5, 3, 5, 5, 6, 3, 5]
+              },
+              {
+                "id": "classic",
+                "course": "Classic",
+                "total": 84,
+                "front": [6, 4, 6, 4, 5, 3, 5, 3, 2],
+                "back": [6, 4, 6, 3, 4, 3, 4, 3, 4]
+              },
+              {
+                "id": "gaylordGolfClub",
+                "course": "Gaylord Golf Club",
+                "total": 84,
+                "front": [5, 5, 4, 2, 4, 4, 5, 5, 5],
+                "back": [6, 4, 6, 6, 6, 4, 6, 7, 6]
+              }
+            ],
+            "points": [
+              {
+                "id": "bestBall",
+                "game": "Best Ball",
+                "wins": 1,
+                "losses": 1,
+                "ties": 0
+              },
+              {
+                "id": "1BallBramble",
+                "game": "One Best Ball",
+                "wins": 0,
+                "losses": 0,
+                "ties": 0
+              },
+              {
+                "id": "2BallBramble",
+                "game": "Two Best Ball",
+                "wins": 1,
+                "losses": 0,
+                "ties": 0
+              },
+              {
+                "id": "brambleAlternate",
+                "game": "Bramble Alternate",
+                "wins": 0,
+                "losses": 1,
+                "ties": 0
+              },
+              {
+                "id": "scramble",
+                "game": "Scramble",
+                "wins": 1,
+                "losses": 0,
+                "ties": 0
+              },
+              {
+                "id": "singles",
+                "game": "Singles",
+                "wins": 1,
+                "losses": 0,
+                "ties": 0
+              }
+            ]
           }
         ]
       }

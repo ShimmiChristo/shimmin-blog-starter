@@ -614,7 +614,7 @@ export const PlayerInfoUpdate = () => {
             }
           }
         }
-        evanL {
+        jake {
           name
           year {
             _2022 {
@@ -743,7 +743,7 @@ export const PlayerInfoUpdate = () => {
             }
           }
         }
-        evanM {
+        evan {
           name
           year {
             _2022 {

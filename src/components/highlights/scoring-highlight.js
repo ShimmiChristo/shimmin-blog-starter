@@ -8,20 +8,20 @@ import { PlayerInfoUpdate } from "../../hooks/get-player-info-UPDATE"
 function HighlightsScoring({ yearProp }) {
   const players = PlayerInfoUpdate()
   // const newProp = players.chris.year[`_${yearProp}`].handicap
-  const greenTeam = []
-  const blueTeam = []
+  const greenTeam = ["matt", "travis", "derek", "curtis", "gordon", "jake"]
+  const blueTeam = ["dylan", "rj", "craig", "dan", "cam", "evan"]
 
-  for (const property in players) {
-    if (players[property].year[`_${yearProp}`]?.team === "green") {
-      players[property]?.name
-        ? greenTeam.push(players[property].name)
-        : greenTeam.push(property)
-    } else if (players[property].year[`_${yearProp}`]?.team === "blue") {
-      players[property]?.name
-        ? blueTeam.push(players[property].name)
-        : blueTeam.push(property)
-    }
-  }
+  // for (const property in players) {
+  //   if (players[property].year[`_${yearProp}`]?.team === "green") {
+  //     players[property]?.name
+  //       ? greenTeam.push(players[property].name)
+  //       : greenTeam.push(property)
+  //   } else if (players[property].year[`_${yearProp}`]?.team === "blue") {
+  //     players[property]?.name
+  //       ? blueTeam.push(players[property].name)
+  //       : blueTeam.push(property)
+  //   }
+  // }
 
   return (
     <>
@@ -58,7 +58,7 @@ function HighlightsScoring({ yearProp }) {
       </div>
       <div className="container mb-3 col-lg-10">
         <div className="row">
-          <div className="col-12 col-md-6 mb-3">
+          <div className="col-12 col-md-6 mb-1">
             <div className="card shadow-none border">
               <div className="card-header team-one-color-bg text-white text-center">
                 Green Team
@@ -69,7 +69,7 @@ function HighlightsScoring({ yearProp }) {
                     return (
                       <li key={uuidv1()} className="list-group-item m-0 py-2">
                         <span className="capitalize">{player}</span>
-                        <em> *team captain</em>
+                        <em>*</em>
                       </li>
                     )
                   } else {
@@ -83,7 +83,7 @@ function HighlightsScoring({ yearProp }) {
               </ul>
             </div>
           </div>
-          <div className="col-12 col-md-6 mb-3">
+          <div className="col-12 col-md-6 mb-1">
             <div className="card shadow-none border">
               <div className="card-header team-two-color-bg text-white text-center">
                 Blue Team
@@ -94,7 +94,7 @@ function HighlightsScoring({ yearProp }) {
                     return (
                       <li key={uuidv1()} className="list-group-item m-0 py-2">
                         <span className="capitalize">{player}</span>
-                        <em> *team captain</em>
+                        <em>*</em>
                       </li>
                     )
                   } else {
@@ -106,6 +106,11 @@ function HighlightsScoring({ yearProp }) {
                   }
                 })}
               </ul>
+            </div>
+          </div>
+          <div className="col-12 mb-3">
+            <div className="row">
+              <em>*team captain</em>
             </div>
           </div>
         </div>

@@ -36,7 +36,7 @@ const TopicPage = ({ data, location }) => {
             <MatchPlayers2021 />
           </div>
         </div>
-        <div className="row">
+        <div className="row mb-3">
           <div className="col-lg-8">
             <MatchVenue2021 />
           </div>

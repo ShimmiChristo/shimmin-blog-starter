@@ -1,13 +1,13 @@
 ---
 published: true
-index: 1
+index: 04
 name: dan
 nickname: "One Heel"
 description: "description"
 category: players
 featuredImg: ./profile-pic.png
 team: "Blue Team"
-position: 08
+handicap: 24
 ---
 
 

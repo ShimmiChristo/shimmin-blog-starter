@@ -507,6 +507,684 @@
           "index": 35.05,
           "slope": 67.5
         }
+      },
+      "stoatinBrae1": {
+        "name": "Stoatin Brae",
+        "link": "https://gulllakeview.com/golf/stoatin-brae/",
+        "holes": [
+          {
+            "number": 1,
+            "tees": {
+              "black": 326
+            },
+            "handicap": 13,
+            "par": 4
+          },
+          {
+            "number": 2,
+            "tees": {
+              "black": 215
+            },
+            "handicap": 15,
+            "par": 3
+          },
+          {
+            "number": 3,
+            "tees": {
+              "black": 405
+            },
+            "handicap": 5,
+            "par": 4
+          },
+          {
+            "number": 4,
+            "tees": {
+              "black": 423
+            },
+            "handicap": 1,
+            "par": 4
+          },
+          {
+            "number": 5,
+            "tees": {
+              "black": 383
+            },
+            "handicap": 3,
+            "par": 4
+          },
+          {
+            "number": 6,
+            "tees": {
+              "black": 520
+            },
+            "handicap": 9,
+            "par": 5
+          },
+          {
+            "number": 7,
+            "tees": {
+              "black": 204
+            },
+            "handicap": 17,
+            "par": 3
+          },
+          {
+            "number": 8,
+            "tees": {
+              "black": 316
+            },
+            "handicap": 11,
+            "par": 4
+          },
+          {
+            "number": 9,
+            "tees": {
+              "black": 559
+            },
+            "handicap": 7,
+            "par": 5
+          }
+        ],
+        "totals": {
+          "yardage": 3351,
+          "par": 36,
+          "index": 34.6,
+          "slope": 59.5
+        }
+      },
+      "stoatinBrae2": {
+        "name": "Stoatin Brae",
+        "link": "https://gulllakeview.com/golf/stoatin-brae/",
+        "holes": [
+          {
+            "number": 10,
+            "tees": {
+              "black": 313
+            },
+            "handicap": 6,
+            "par": 4
+          },
+          {
+            "number": 11,
+            "tees": {
+              "black": 161
+            },
+            "handicap": 16,
+            "par": 3
+          },
+          {
+            "number": 12,
+            "tees": {
+              "black": 359
+            },
+            "handicap": 8,
+            "par": 4
+          },
+          {
+            "number": 13,
+            "tees": {
+              "black": 433
+            },
+            "handicap": 2,
+            "par": 4
+          },
+          {
+            "number": 14,
+            "tees": {
+              "black": 130
+            },
+            "handicap": 18,
+            "par": 3
+          },
+          {
+            "number": 15,
+            "tees": {
+              "black": 364
+            },
+            "handicap": 12,
+            "par": 4
+          },
+          {
+            "number": 16,
+            "tees": {
+              "black": 500
+            },
+            "handicap": 10,
+            "par": 5
+          },
+          {
+            "number": 17,
+            "tees": {
+              "black": 135
+            },
+            "handicap": 14,
+            "par": 3
+          },
+          {
+            "number": 18,
+            "tees": {
+              "black": 525
+            },
+            "handicap": 4,
+            "par": 5
+          }
+        ],
+        "totals": {
+          "yardage": 2920,
+          "par": 36,
+          "index": 34.6,
+          "slope": 59.5
+        }
+      },
+
+      "stoneHedgeSouth1": {
+        "name": "Stonehedge South",
+        "link": "https://gulllakeview.com/golf/golf-courses/stonehedge-south/",
+        "holes": [
+          {
+            "number": 1,
+            "tees": {
+              "green": 341
+            },
+            "handicap": 13,
+            "par": 4
+          },
+          {
+            "number": 2,
+            "tees": {
+              "green": 397
+            },
+            "handicap": 1,
+            "par": 4
+          },
+          {
+            "number": 3,
+            "tees": {
+              "green": 163
+            },
+            "handicap": 15,
+            "par": 3
+          },
+          {
+            "number": 4,
+            "tees": {
+              "green": 510
+            },
+            "handicap": 3,
+            "par": 5
+          },
+          {
+            "number": 5,
+            "tees": {
+              "green": 314
+            },
+            "handicap": 17,
+            "par": 4
+          },
+          {
+            "number": 6,
+            "tees": {
+              "green": 170
+            },
+            "handicap": 5,
+            "par": 3
+          },
+          {
+            "number": 7,
+            "tees": {
+              "green": 476
+            },
+            "handicap": 7,
+            "par": 5
+          },
+          {
+            "number": 8,
+            "tees": {
+              "green": 369
+            },
+            "handicap": 11,
+            "par": 4
+          },
+          {
+            "number": 9,
+            "tees": {
+              "green": 373
+            },
+            "handicap": 9,
+            "par": 4
+          }
+        ],
+        "totals": {
+          "yardage": 3113,
+          "par": 36,
+          "index": 35.4,
+          "slope": 65
+        }
+      },
+
+      "stoneHedgeSouth2": {
+        "name": "Stonehedge South",
+        "link": "https://gulllakeview.com/golf/golf-courses/stonehedge-south/",
+        "holes": [
+          {
+            "number": 10,
+            "tees": {
+              "green": 535
+            },
+            "handicap": 6,
+            "par": 5
+          },
+          {
+            "number": 11,
+            "tees": {
+              "green": 372
+            },
+            "handicap": 4,
+            "par": 4
+          },
+          {
+            "number": 12,
+            "tees": {
+              "green": 313
+            },
+            "handicap": 18,
+            "par": 4
+          },
+          {
+            "number": 13,
+            "tees": {
+              "green": 169
+            },
+            "handicap": 8,
+            "par": 3
+          },
+          {
+            "number": 14,
+            "tees": {
+              "green": 372
+            },
+            "handicap": 10,
+            "par": 4
+          },
+          {
+            "number": 15,
+            "tees": {
+              "green": 336
+            },
+            "handicap": 12,
+            "par": 4
+          },
+          {
+            "number": 16,
+            "tees": {
+              "green": 152
+            },
+            "handicap": 16,
+            "par": 3
+          },
+          {
+            "number": 17,
+            "tees": {
+              "green": 478
+            },
+            "handicap": 14,
+            "par": 5
+          },
+          {
+            "number": 18,
+            "tees": {
+              "green": 404
+            },
+            "handicap": 2,
+            "par": 4
+          }
+        ],
+        "totals": {
+          "yardage": 3131,
+          "par": 36,
+          "index": 35.4,
+          "slope": 65
+        }
+      },
+
+      "gullLakeEast1": {
+        "name": "Gull Lake East",
+        "link": "https://gulllakeview.com/golf/golf-courses/gull-lake-view-east/",
+        "holes": [
+          {
+            "number": 1,
+            "tees": {
+              "green": 344
+            },
+            "handicap": 13,
+            "par": 4
+          },
+          {
+            "number": 2,
+            "tees": {
+              "green": 159
+            },
+            "handicap": 9,
+            "par": 3
+          },
+          {
+            "number": 3,
+            "tees": {
+              "green": 353
+            },
+            "handicap": 5,
+            "par": 4
+          },
+          {
+            "number": 4,
+            "tees": {
+              "green": 429
+            },
+            "handicap": 1,
+            "par": 4
+          },
+          {
+            "number": 5,
+            "tees": {
+              "green": 332
+            },
+            "handicap": 15,
+            "par": 4
+          },
+          {
+            "number": 6,
+            "tees": {
+              "green": 154
+            },
+            "handicap": 11,
+            "par": 3
+          },
+          {
+            "number": 7,
+            "tees": {
+              "green": 391
+            },
+            "handicap": 3,
+            "par": 4
+          },
+          {
+            "number": 8,
+            "tees": {
+              "green": 341
+            },
+            "handicap": 7,
+            "par": 4
+          },
+          {
+            "number": 9,
+            "tees": {
+              "green": 506
+            },
+            "handicap": 17,
+            "par": 5
+          }
+        ],
+        "totals": {
+          "yardage": 3009,
+          "par": 35,
+          "index": 34.45,
+          "slope": 62
+        }
+      },
+
+      "gullLakeEast2": {
+        "name": "Gull Lake East",
+        "link": "https://gulllakeview.com/golf/golf-courses/gull-lake-view-east/",
+        "holes": [
+          {
+            "number": 10,
+            "tees": {
+              "green": 557
+            },
+            "handicap": 14,
+            "par": 5
+          },
+          {
+            "number": 11,
+            "tees": {
+              "green": 171
+            },
+            "handicap": 12,
+            "par": 3
+          },
+          {
+            "number": 12,
+            "tees": {
+              "green": 350
+            },
+            "handicap": 6,
+            "par": 4
+          },
+          {
+            "number": 13,
+            "tees": {
+              "green": 349
+            },
+            "handicap": 8,
+            "par": 4
+          },
+          {
+            "number": 14,
+            "tees": {
+              "green": 346
+            },
+            "handicap": 10,
+            "par": 4
+          },
+          {
+            "number": 15,
+            "tees": {
+              "green": 137
+            },
+            "handicap": 16,
+            "par": 3
+          },
+          {
+            "number": 16,
+            "tees": {
+              "green": 302
+            },
+            "handicap": 18,
+            "par": 4
+          },
+          {
+            "number": 17,
+            "tees": {
+              "green": 385
+            },
+            "handicap": 4,
+            "par": 4
+          },
+          {
+            "number": 18,
+            "tees": {
+              "green": 426
+            },
+            "handicap": 2,
+            "par": 4
+          }
+        ],
+        "totals": {
+          "yardage": 3023,
+          "par": 35,
+          "index": 34.45,
+          "slope": 62
+        }
+      },
+
+      "gullLakeWest1": {
+        "name": "Gull Lake West",
+        "link": "https://gulllakeview.com/golf/golf-courses/gull-lake-view-west/",
+        "holes": [
+          {
+            "number": 1,
+            "tees": {
+              "green": 373
+            },
+            "handicap": 5,
+            "par": 4
+          },
+          {
+            "number": 2,
+            "tees": {
+              "green": 151
+            },
+            "handicap": 11,
+            "par": 3
+          },
+          {
+            "number": 3,
+            "tees": {
+              "green": 374
+            },
+            "handicap": 7,
+            "par": 4
+          },
+          {
+            "number": 4,
+            "tees": {
+              "green": 313
+            },
+            "handicap": 17,
+            "par": 4
+          },
+          {
+            "number": 5,
+            "tees": {
+              "green": 502
+            },
+            "handicap": 15,
+            "par": 5
+          },
+          {
+            "number": 6,
+            "tees": {
+              "green": 218
+            },
+            "handicap": 1,
+            "par": 3
+          },
+          {
+            "number": 7,
+            "tees": {
+              "green": 350
+            },
+            "handicap": 13,
+            "par": 4
+          },
+          {
+            "number": 8,
+            "tees": {
+              "green": 382
+            },
+            "handicap": 9,
+            "par": 4
+          },
+          {
+            "number": 9,
+            "tees": {
+              "green": 579
+            },
+            "handicap": 3,
+            "par": 5
+          }
+        ],
+        "totals": {
+          "yardage": 3242,
+          "par": 36,
+          "index": 35.3,
+          "slope": 63
+        }
+      },
+
+      "gullLakeWest2": {
+        "name": "Gull Lake West",
+        "link": "https://gulllakeview.com/golf/golf-courses/gull-lake-view-west/",
+        "holes": [
+          {
+            "number": 10,
+            "tees": {
+              "green": 557
+            },
+            "handicap": 4,
+            "par": 4
+          },
+          {
+            "number": 11,
+            "tees": {
+              "green": 171
+            },
+            "handicap": 8,
+            "par": 3
+          },
+          {
+            "number": 12,
+            "tees": {
+              "green": 350
+            },
+            "handicap": 6,
+            "par": 4
+          },
+          {
+            "number": 13,
+            "tees": {
+              "green": 349
+            },
+            "handicap": 14,
+            "par": 3
+          },
+          {
+            "number": 14,
+            "tees": {
+              "green": 346
+            },
+            "handicap": 2,
+            "par": 4
+          },
+          {
+            "number": 15,
+            "tees": {
+              "green": 137
+            },
+            "handicap": 12,
+            "par": 4
+          },
+          {
+            "number": 16,
+            "tees": {
+              "green": 302
+            },
+            "handicap": 18,
+            "par": 4
+          },
+          {
+            "number": 17,
+            "tees": {
+              "green": 385
+            },
+            "handicap": 10,
+            "par": 4
+          },
+          {
+            "number": 18,
+            "tees": {
+              "green": 426
+            },
+            "handicap": 16,
+            "par": 5
+          }
+        ],
+        "totals": {
+          "yardage": 3101,
+          "par": 36,
+          "index": 35.3,
+          "slope": 63
+        }
       }
     }
   }

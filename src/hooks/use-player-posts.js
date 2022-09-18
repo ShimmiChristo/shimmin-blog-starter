@@ -5,7 +5,7 @@ export const usePlayersPosts = () => {
     graphql`
       query {
         allMdx(
-          sort: { fields: [frontmatter___date], order: DESC }
+          sort: { fields: [frontmatter___index], order: ASC }
         ) {
           nodes {
             id
@@ -20,10 +20,11 @@ export const usePlayersPosts = () => {
               description
               category
               team
+              captain
               featuredImg {
                 childImageSharp {
                   gatsbyImageData(
-                    width: 250
+                    width: 300
                     placeholder: BLURRED
                     formats: [AUTO, WEBP, AVIF]
                   )

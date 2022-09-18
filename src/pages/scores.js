@@ -36,26 +36,25 @@ const TopicPage = ({ data, location }) => {
 
   return (
     <Layout location={location} title={siteTitle}>
-      <SEO title="2021 Scores" />
+      <SEO title="2022 Scores" />
       <LandingPageHeader title="Scores" />
-      <h2>2022 matches, coming soon!</h2>
-      {/* <MatchNav
+      <MatchNav
         location={location}
         titles={[
           {
-            name: `Best Ball`,
+            name: `1 Best Ball`,
             round: `Round 1.1`,
             link: "r1-best-ball",
           },
           {
-            name: "Ball Bramble",
+            name: "2 Best Ball",
             round: "Round 1.2",
-            link: "r1-two-ball-bramble",
+            link: "r1-two-best-ball",
           },
           {
-            name: "Bramble Alternate",
+            name: "Bramble",
             round: "Round 2.1",
-            link: "r2-bramble-alternate",
+            link: "r2-bramble",
           },
           {
             name: "Scramble",
@@ -63,30 +62,40 @@ const TopicPage = ({ data, location }) => {
             link: "r2-scramble",
           },
           {
-            name: "Best Ball",
+            name: "Bramble",
             round: "Round 3.1",
-            link: "r3-best-ball",
+            link: "r3-bramble",
+          },
+          {
+            name: "Alternate",
+            round: "Round 3.2",
+            link: "r3-alternate",
+          },
+          {
+            name: "Scramble",
+            round: "Round 4.1",
+            link: "r4-scramble",
           },
           {
             name: "Singles",
-            round: "Round 3.2",
-            link: "r3-singles",
+            round: "Round 4.2",
+            link: "r4-singles",
           },
         ]}
       />
 
       <MatchScore />
 
-      <MatchNavSection
+      {/* <MatchNavSection
         data-visible={pageHash === "#r1-best-ball" ? "true" : "false"}
         data-link-id="r1-best-ball"
       >
         <div className="course__info">
-          <a href={course["tribute1"].link}>{course[`tribute1`].name}</a>
+          <a href={course["stoatinBrae1"].link}>{course[`stoatinBrae1`].name}</a>
         </div>
         <Match
           matchId="1.1 - Best Ball. Full handicap"
-          courseMatch="tribute1"
+          courseMatch="stoatinBrae1"
           matchHandicap="full"
           gameplay=""
           player1="matt"
@@ -100,7 +109,7 @@ const TopicPage = ({ data, location }) => {
         />
         <Match
           matchId="1.1 - Best Ball Bramble. Full handicap"
-          courseMatch="tribute1"
+          courseMatch="stoatinBrae1"
           matchHandicap="full"
           gameplay=""
           player1="derek"
@@ -114,15 +123,15 @@ const TopicPage = ({ data, location }) => {
         />
       </MatchNavSection>
       <MatchNavSection
-        data-visible={pageHash === "#r1-two-ball-bramble" ? "true" : "false"}
-        data-link-id="r1-two-ball-bramble"
+        data-visible={pageHash === "#r1-two-best-ball" ? "true" : "false"}
+        data-link-id="r1-two-best-ball"
       >
         <div className="course__info">
-          <a href={course["tribute2"].link}>{course[`tribute2`].name}</a>
+          <a href={course["stoatinBrae2"].link}>{course[`stoatinBrae2`].name}</a>
         </div>
         <Match
           matchId="1.2 - 2 Ball Bramble. Full handicap"
-          courseMatch="tribute2"
+          courseMatch="stoatinBrae2"
           matchHandicap="full"
           gameplay="two-ball"
           player1="matt"
@@ -136,7 +145,7 @@ const TopicPage = ({ data, location }) => {
         />
         <Match
           matchId="1.2 - 2 Ball Bramble. Full handicap"
-          courseMatch="tribute2"
+          courseMatch="stoatinBrae2"
           matchHandicap="full"
           gameplay="two-ball"
           player1="chris"
@@ -150,8 +159,8 @@ const TopicPage = ({ data, location }) => {
         />
       </MatchNavSection>
       <MatchNavSection
-        data-visible={pageHash === "#r2-bramble-alternate" ? "true" : "false"}
-        data-link-id="r2-bramble-alternate"
+        data-visible={pageHash === "#r2-bramble" ? "true" : "false"}
+        data-link-id="r2-bramble"
       >
         <div className="course__info">
           <a href={course["classic1"].link}>{course[`classic1`].name}</a>
@@ -222,8 +231,8 @@ const TopicPage = ({ data, location }) => {
         />
       </MatchNavSection>
       <MatchNavSection
-        data-visible={pageHash === "#r3-best-ball" ? "true" : "false"}
-        data-link-id="r3-best-ball"
+        data-visible={pageHash === "#r3-bramble" ? "true" : "false"}
+        data-link-id="r3-bramble"
       >
         <div className="course__info">
           <a href={course["gaylordGolfClub1"].link}>
@@ -260,8 +269,8 @@ const TopicPage = ({ data, location }) => {
         />
       </MatchNavSection>
       <MatchNavSection
-        data-visible={pageHash === "#r3-singles" ? "true" : "false"}
-        data-link-id="r3-singles"
+        data-visible={pageHash === "#r3-alternate" ? "true" : "false"}
+        data-link-id="r3-alternate"
       >
         <div className="course__info">
           <a href={course["gaylordGolfClub2"].link}>

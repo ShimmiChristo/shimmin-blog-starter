@@ -1,0 +1,21 @@
+@font-face {
+  font-family: "Montserrat Regular";
+  src: url("../fonts/Montserrat-Regular.ttf");
+}
+@font-face {
+  font-family: "Montserrat Bold";
+  src: url("../fonts/Montserrat-Bold.ttf");
+}
+@font-face {
+  font-family: "Montserrat Semibold";
+  src: url("../fonts/Montserrat-SemiBold.ttf");
+}
+
+@font-face {
+  font-family: "Merriweather Bold";
+  src: url("../fonts/Merriweather-Bold.ttf");
+}
+@font-face {
+  font-family: "Merriweather Regular";
+  src: url("../fonts/Merriweather-Regular.ttf");
+}

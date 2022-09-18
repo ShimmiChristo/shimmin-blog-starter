@@ -14,14 +14,15 @@ function PlayerCard({
   title,
   team,
   featuredImg,
+  captain,
   description,
   excerpt,
 }) {
   const getFeaturedImg = getImage(featuredImg)
-  
+
   const ListItemContainer = styled.li`
     width: 25%;
-    padding: 0 1%;
+    padding-right: 1rem;
     @media (max-width: 767px) {
       width: 100%;
     }
@@ -34,13 +35,13 @@ function PlayerCard({
       }
     }
   `
-  const ArticleLink = styled(Link)`
-    text-decoration: none;
-    margin-bottom: var(--spacing-6);
-    & :hover {
-      text-decoration: underline;
-    }
-  `
+  // const ArticleLink = styled(Link)`
+  //   text-decoration: none;
+  //   margin-bottom: var(--spacing-6);
+  //   & :hover {
+  //     text-decoration: underline;
+  //   }
+  // `
   const ArticleContainer = styled.article`
     display: flex;
     flex-direction: column;
@@ -63,31 +64,34 @@ function PlayerCard({
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 0 1rem;
+    padding: 0.5rem 1rem;
     width: 100%;
     margin: 0 !important;
 
     h3 {
-      text-transform: capitalize;
+      text-transform: uppercase;
       margin: 0;
+      font-family: var(--font-heading);
     }
   `
   // const FeaturedImg = styled(Image)`
   //   display: block;
   // `
-  const CTA = styled(Link)`
-    text-transform: uppercase;
-    font-weight: var(--fontWeight-bold);
-    text-decoration: none;
-  `
+  // const CTA = styled(Link)`
+  //   text-transform: uppercase;
+  //   font-weight: var(--fontWeight-bold);
+  //   text-decoration: none;
+  // `
   const Section = styled.section`
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 1rem;
+    padding: 0.5rem 1rem;
     width: 100%;
   `
+
+  const teamColor = team === "Blue Team" ? "team-two-color" : "team-one-color"
 
   return (
     <ListItemContainer key={uniqueKey} data-team={team}>
@@ -106,14 +110,17 @@ function PlayerCard({
             />
           </ImgContainer>
           <Header>
-            <h3>
+            <h3 className="h5">
               {/* <ArticleLink to={slug} itemProp="url"> */}
               <span itemProp="headline">{title}</span>
               {/* </ArticleLink> */}
             </h3>
           </Header>
-          <Section>
-            <small>{team}</small>
+          <Section className={`${teamColor} text-white`}>
+            <small></small>
+            <small>
+              {team} {captain === true ? "*captain" : ""}
+            </small>
             {/* <p
             dangerouslySetInnerHTML={{
               __html: description || excerpt,
