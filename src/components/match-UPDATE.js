@@ -3,10 +3,9 @@ import React, { useState } from "react"
 import { v1 as uuidv1 } from "uuid"
 import { CourseInfo } from "../hooks/get-course-info"
 import { PlayerInfo } from "../hooks/get-player-info"
+import { PlayerInfoUpdate } from "../hooks/get-player-info-UPDATE"
 import styled from "styled-components"
 import "../styles/match.css"
-// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-// import { faChevronDown, faTimes } from "@fortawesome/free-solid-svg-icons"
 import { FaChevronDown, FaTimes } from "react-icons/fa"
 
 const CloseBtn = styled.span`
@@ -107,6 +106,8 @@ function Match({
 }) {
   const { course } = CourseInfo()
   const { player } = PlayerInfo()
+  const playersUpdateJson = PlayerInfoUpdate()
+  console.log('playersUpdateJson - ', playersUpdateJson);
   const courseHoles = course[`${courseMatch}`].holes
   // const courseName = course[`${courseMatch}`].name
   // const courseLink = course[`${courseMatch}`].link

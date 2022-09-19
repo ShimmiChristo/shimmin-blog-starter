@@ -11,7 +11,15 @@
           "classic1": [6, 4, 6, 4, 5, 3, 5, 3, 2],
           "classic2": [6, 4, 6, 3, 4, 3, 4, 3, 4],
           "gaylordGolfClub1": [5, 5, 4, 2, 4, 4, 5, 5, 5],
-          "gaylordGolfClub2": [6, 4, 6, 6, 6, 4, 6, 7, 6]
+          "gaylordGolfClub2": [6, 4, 6, 6, 6, 4, 6, 7, 6],
+          "stoatinBrae1": [0, 0, 0, 0, 0, 0, 0, 0, 0],
+          "stoatinBrae2": [0, 0, 0, 0, 0, 0, 0, 0, 0],
+          "stoneHedgeSouth1": [0, 0, 0, 0, 0, 0, 0, 0, 0],
+          "stoneHedgeSouth2": [0, 0, 0, 0, 0, 0, 0, 0, 0],
+          "gullLakeEast1": [0, 0, 0, 0, 0, 0, 0, 0, 0],
+          "gullLakeEast2": [0, 0, 0, 0, 0, 0, 0, 0, 0],
+          "gullLakeWest1": [0, 0, 0, 0, 0, 0, 0, 0, 0],
+          "gullLakeWest2": [0, 0, 0, 0, 0, 0, 0, 0, 0]
         },
         "jonesMasterPiece": {
           "total": 84
@@ -74,7 +82,15 @@
           "classic1": [7, 5, 4, 5, 5, 3, 6, 5, 4],
           "classic2": [5, 3, 5, 4, 3, 4, 4, 4, 4],
           "gaylordGolfClub1": [4, 4, 4, 3, 5, 4, 6, 5, 4],
-          "gaylordGolfClub2": [4, 3, 5, 4, 3, 4, 5, 5, 4]
+          "gaylordGolfClub2": [4, 3, 5, 4, 3, 4, 5, 5, 4],
+          "stoatinBrae1": [0, 0, 0, 0, 0, 0, 0, 0, 0],
+          "stoatinBrae2": [0, 0, 0, 0, 0, 0, 0, 0, 0],
+          "stoneHedgeSouth1": [0, 0, 0, 0, 0, 0, 0, 0, 0],
+          "stoneHedgeSouth2": [0, 0, 0, 0, 0, 0, 0, 0, 0],
+          "gullLakeEast1": [0, 0, 0, 0, 0, 0, 0, 0, 0],
+          "gullLakeEast2": [0, 0, 0, 0, 0, 0, 0, 0, 0],
+          "gullLakeWest1": [0, 0, 0, 0, 0, 0, 0, 0, 0],
+          "gullLakeWest2": [0, 0, 0, 0, 0, 0, 0, 0, 0]
         },
         "jonesMasterPiece": {
           "total": 999
@@ -200,7 +216,15 @@
           "classic1": [5, 6, 4, 5, 6, 4, 6, 3, 5],
           "classic2": [5, 3, 5, 4, 3, 4, 4, 4, 4],
           "gaylordGolfClub1": [5, 5, 5, 3, 6, 5, 6, 6, 5],
-          "gaylordGolfClub2": [5, 5, 6, 6, 4, 6, 5, 6, 5]
+          "gaylordGolfClub2": [5, 5, 6, 6, 4, 6, 5, 6, 5],
+          "stoatinBrae1": [0, 0, 0, 0, 0, 0, 0, 0, 0],
+          "stoatinBrae2": [0, 0, 0, 0, 0, 0, 0, 0, 0],
+          "stoneHedgeSouth1": [0, 0, 0, 0, 0, 0, 0, 0, 0],
+          "stoneHedgeSouth2": [0, 0, 0, 0, 0, 0, 0, 0, 0],
+          "gullLakeEast1": [0, 0, 0, 0, 0, 0, 0, 0, 0],
+          "gullLakeEast2": [0, 0, 0, 0, 0, 0, 0, 0, 0],
+          "gullLakeWest1": [0, 0, 0, 0, 0, 0, 0, 0, 0],
+          "gullLakeWest2": [0, 0, 0, 0, 0, 0, 0, 0, 0]
         },
         "jonesMasterPiece": {
           "total": 999
@@ -264,7 +288,15 @@
           "classic1": [8, 5, 4, 6, 7, 4, 5, 4, 5],
           "classic2": [7, 6, 6, 4, 6, 3, 6, 8, 5],
           "gaylordGolfClub1": [6, 6, 5, 4, 7, 3, 8, 7, 6],
-          "gaylordGolfClub2": [6, 8, 6, 6, 8, 6, 5, 5, 12]
+          "gaylordGolfClub2": [6, 8, 6, 6, 8, 6, 5, 5, 12],
+          "stoatinBrae1": [0, 0, 0, 0, 0, 0, 0, 0, 0],
+          "stoatinBrae2": [0, 0, 0, 0, 0, 0, 0, 0, 0],
+          "stoneHedgeSouth1": [0, 0, 0, 0, 0, 0, 0, 0, 0],
+          "stoneHedgeSouth2": [0, 0, 0, 0, 0, 0, 0, 0, 0],
+          "gullLakeEast1": [0, 0, 0, 0, 0, 0, 0, 0, 0],
+          "gullLakeEast2": [0, 0, 0, 0, 0, 0, 0, 0, 0],
+          "gullLakeWest1": [0, 0, 0, 0, 0, 0, 0, 0, 0],
+          "gullLakeWest2": [0, 0, 0, 0, 0, 0, 0, 0, 0]
         },
         "jonesMasterPiece": {
           "total": 999
@@ -328,7 +360,15 @@
           "classic1": [5, 6, 4, 5, 6, 4, 6, 3, 5],
           "classic2": [5, 4, 5, 4, 4, 4, 6, 4, 6],
           "gaylordGolfClub1": [8, 5, 5, 4, 6, 3, 7, 7, 6],
-          "gaylordGolfClub2": [10, 6, 10, 5, 7, 7, 5, 8, 12]
+          "gaylordGolfClub2": [10, 6, 10, 5, 7, 7, 5, 8, 12],
+          "stoatinBrae1": [0, 0, 0, 0, 0, 0, 0, 0, 0],
+          "stoatinBrae2": [0, 0, 0, 0, 0, 0, 0, 0, 0],
+          "stoneHedgeSouth1": [0, 0, 0, 0, 0, 0, 0, 0, 0],
+          "stoneHedgeSouth2": [0, 0, 0, 0, 0, 0, 0, 0, 0],
+          "gullLakeEast1": [0, 0, 0, 0, 0, 0, 0, 0, 0],
+          "gullLakeEast2": [0, 0, 0, 0, 0, 0, 0, 0, 0],
+          "gullLakeWest1": [0, 0, 0, 0, 0, 0, 0, 0, 0],
+          "gullLakeWest2": [0, 0, 0, 0, 0, 0, 0, 0, 0]
         },
         "jonesMasterPiece": {
           "total": 999
@@ -391,7 +431,15 @@
           "classic1": [6, 4, 6, 4, 5, 3, 5, 3, 2],
           "classic2": [7, 6, 6, 4, 6, 3, 6, 8, 5],
           "gaylordGolfClub1": [5, 5, 5, 5, 10, 4, 6, 5, 5],
-          "gaylordGolfClub2": [7, 5, 7, 6, 6, 6, 6, 7, 5]
+          "gaylordGolfClub2": [7, 5, 7, 6, 6, 6, 6, 7, 5],
+          "stoatinBrae1": [0, 0, 0, 0, 0, 0, 0, 0, 0],
+          "stoatinBrae2": [0, 0, 0, 0, 0, 0, 0, 0, 0],
+          "stoneHedgeSouth1": [0, 0, 0, 0, 0, 0, 0, 0, 0],
+          "stoneHedgeSouth2": [0, 0, 0, 0, 0, 0, 0, 0, 0],
+          "gullLakeEast1": [0, 0, 0, 0, 0, 0, 0, 0, 0],
+          "gullLakeEast2": [0, 0, 0, 0, 0, 0, 0, 0, 0],
+          "gullLakeWest1": [0, 0, 0, 0, 0, 0, 0, 0, 0],
+          "gullLakeWest2": [0, 0, 0, 0, 0, 0, 0, 0, 0]
         },
         "jonesMasterPiece": {
           "total": 999
@@ -454,7 +502,15 @@
           "classic1": [7, 5, 4, 5, 5, 3, 6, 5, 4],
           "classic2": [5, 4, 5, 4, 4, 4, 6, 4, 5],
           "gaylordGolfClub1": [5, 5, 5, 3, 7, 5, 7, 5, 5],
-          "gaylordGolfClub2": [5, 5, 7, 6, 3, 4, 5, 10, 6]
+          "gaylordGolfClub2": [5, 5, 7, 6, 3, 4, 5, 10, 6],
+          "stoatinBrae1": [0, 0, 0, 0, 0, 0, 0, 0, 0],
+          "stoatinBrae2": [0, 0, 0, 0, 0, 0, 0, 0, 0],
+          "stoneHedgeSouth1": [0, 0, 0, 0, 0, 0, 0, 0, 0],
+          "stoneHedgeSouth2": [0, 0, 0, 0, 0, 0, 0, 0, 0],
+          "gullLakeEast1": [0, 0, 0, 0, 0, 0, 0, 0, 0],
+          "gullLakeEast2": [0, 0, 0, 0, 0, 0, 0, 0, 0],
+          "gullLakeWest1": [0, 0, 0, 0, 0, 0, 0, 0, 0],
+          "gullLakeWest2": [0, 0, 0, 0, 0, 0, 0, 0, 0]
         },
         "jonesMasterPiece": {
           "total": 999

@@ -86,7 +86,8 @@ const TopicPage = ({ data, location }) => {
 
       <MatchScore year="_2022" />
 
-      {/* <MatchNavSection
+      {/*
+      <MatchNavSection
         data-visible={pageHash === "#r1-best-ball" ? "true" : "false"}
         data-link-id="r1-best-ball"
       >
@@ -95,32 +96,33 @@ const TopicPage = ({ data, location }) => {
         </div>
         <Match
           matchId="1.1 - Best Ball. Full handicap"
-          courseMatch="stoatinBrae1"
+          courseMatch="tribute1"
           matchHandicap="full"
           gameplay=""
+          year="_2021"
           player1="matt"
-          player1Handicap="10"
+          player1Handicap="7"
           player2="dylan"
-          player2Handicap="2"
+          player2Handicap="0"
           player3="chris"
-          player3Handicap="16"
+          player3Handicap="11"
           player4="rj"
-          player4Handicap="16"
+          player4Handicap="15"
         />
         <Match
           matchId="1.1 - Best Ball Bramble. Full handicap"
           courseMatch="stoatinBrae1"
           matchHandicap="full"
           gameplay=""
-          player1="derek"
-          player1Handicap="28"
-          player2="dan"
-          player2Handicap="36"
-          player3="travis"
-          player3Handicap="22"
-          player4="craig"
-          player4Handicap="22"
-        />
+          player1="curtis"
+          player1Handicap="21"
+          player2="craig"
+          player2Handicap="21"
+          player3="jake"
+          player3Handicap="21"
+          player4="dan"
+          player4Handicap="23"
+          />
       </MatchNavSection>
       <MatchNavSection
         data-visible={pageHash === "#r1-two-best-ball" ? "true" : "false"}
