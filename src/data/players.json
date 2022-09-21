@@ -3,7 +3,7 @@
     "player": {
       "matt": {
         "name": "matt",
-        "handicap": 8,
+        "handicap": 7,
         "team": "green",
         "course": {
           "tribute1": [6, 5, 6, 6, 6, 5, 7, 4, 3],
@@ -79,7 +79,7 @@
       },
       "dylan": {
         "name": "dylan",
-        "handicap": 2,
+        "handicap": 0,
         "team": "blue",
         "course": {
           "tribute1": [5, 4, 5, 4, 4, 2, 6, 6, 4],
@@ -155,7 +155,7 @@
       },
       "chris": {
         "name": "chris",
-        "handicap": 16,
+        "handicap": 13,
         "team": "green",
         "course": {
           "tribute1": [5, 5, 5, 7, 5, 3, 7, 6, 5],
@@ -223,7 +223,7 @@
       },
       "rj": {
         "name": "rj",
-        "handicap": 16,
+        "handicap": 12,
         "team": "blue",
         "course": {
           "tribute1": [5, 5, 5, 6, 5, 4, 5, 4, 5],
@@ -376,7 +376,7 @@
       },
       "dan": {
         "name": "dan",
-        "handicap": 36,
+        "handicap": 21,
         "calculatedHandicap": 13,
         "team": "blue",
         "course": {
@@ -605,7 +605,7 @@
       },
       "curtis": {
         "name": "curtis",
-        "handicap": 21,
+        "handicap": 23,
         "team": "green",
         "course": {
           "stoatinBrae1": [0, 0, 0, 0, 0, 0, 0, 0, 0],
@@ -745,7 +745,7 @@
       },
       "gordon": {
         "name": "gordon",
-        "handicap": 11,
+        "handicap": 12,
         "team": "green",
         "course": {
           "stoatinBrae1": [0, 0, 0, 0, 0, 0, 0, 0, 0],
@@ -885,7 +885,7 @@
       },
       "evan": {
         "name": "evan",
-        "handicap": 21,
+        "handicap": 27,
         "team": "blue",
         "course": {
           "stoatinBrae1": [0, 0, 0, 0, 0, 0, 0, 0, 0],

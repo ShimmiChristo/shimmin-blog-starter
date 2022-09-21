@@ -447,9 +447,9 @@ function Match({
   function getHandicap(player) {
     if (matchHandicap === "average") {
       if (player === playerOne.name || player === playerThree.name) {
-        return (playerOneHand + playerThreeHand) / 2
+        return Math.round((playerOneHand + playerThreeHand) / 2)
       } else if (player === playerTwo.name || player === playerFour.name) {
-        return (playerTwoHand + playerFourHand) / 2
+        return Math.round((playerTwoHand + playerFourHand) / 2)
       }
     } else if (matchHandicap === "full") {
       if (player === playerOne.name) {
@@ -698,7 +698,7 @@ function Match({
           {player3 && matchHandicap === "average" ? (
             <div className="flex-basis-100">
               {" "}
-              ({(playerOneHand + playerThreeHand) / 2})
+              ({Math.round((playerOneHand + playerThreeHand) / 2)})
             </div>
           ) : (
             ""
@@ -721,7 +721,7 @@ function Match({
           {player4 && matchHandicap === "average" ? (
             <div className="flex-basis-100">
               {" "}
-              ({(playerTwoHand + playerFourHand) / 2})
+              ({Math.round((playerTwoHand + playerFourHand) / 2)})
             </div>
           ) : (
             ""

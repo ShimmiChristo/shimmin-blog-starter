@@ -192,41 +192,56 @@ const TopicPage = ({ data, location }) => {
           player4Handicap="21"
         />
       </MatchNavSection>
-      {/*
       <MatchNavSection
         data-visible={pageHash === "#r2-bramble" ? "true" : "false"}
         data-link-id="r2-bramble"
       >
         <div className="course__info">
-          <a href={course["classic1"].link}>{course[`classic1`].name}</a>
+          <a href={course["stoneHedgeSouth1"].link}>
+            {course[`stoneHedgeSouth1`].name}
+          </a>
         </div>
         <Match
-          matchId="2.1 - Bramble Alternate. Average handicap"
-          courseMatch="classic1"
-          matchHandicap="average"
+          matchId="2.1 - Bramble. Full handicap"
+          courseMatch="stoneHedgeSouth1"
+          matchHandicap="full"
           gameplay=""
-          player1="chris"
-          player1Handicap="16"
+          player1="gordon"
+          player1Handicap="12"
           player2="rj"
-          player2Handicap="16"
-          player3="derek"
-          player3Handicap="32"
-          player4="dan"
-          player4Handicap="24"
+          player2Handicap="12"
+          player3="travis"
+          player3Handicap="21"
+          player4="craig"
+          player4Handicap="21"
         />
         <Match
-          matchId="2.1 - Bramble Alternate. Average handicap"
-          courseMatch="classic1"
-          matchHandicap="average"
+          matchId="2.1 - Bramble. Full handicap"
+          courseMatch="stoneHedgeSouth1"
+          matchHandicap="full"
+          gameplay=""
+          player1="jake"
+          player1Handicap="21"
+          player2="dylan"
+          player2Handicap="0"
+          player3="derek"
+          player3Handicap="27"
+          player4="cam"
+          player4Handicap="21"
+        />
+        <Match
+          matchId="2.1 - Bramble. Full handicap"
+          courseMatch="stoneHedgeSouth1"
+          matchHandicap="full"
           gameplay=""
           player1="matt"
-          player1Handicap="10"
-          player2="dylan"
-          player2Handicap="2"
-          player3="travis"
-          player3Handicap="10"
-          player4="craig"
-          player4Handicap="22"
+          player1Handicap="7"
+          player2="evan"
+          player2Handicap="27"
+          player3="curtis"
+          player3Handicap="23"
+          player4="dan"
+          player4Handicap="23"
         />
       </MatchNavSection>
       <MatchNavSection
@@ -234,76 +249,161 @@ const TopicPage = ({ data, location }) => {
         data-link-id="r2-scramble"
       >
         <div className="course__info">
-          <a href={course["classic2"].link}>{course[`classic2`].name}</a>
+          <a href={course["stoneHedgeSouth2"].link}>
+            {course[`stoneHedgeSouth2`].name}
+          </a>
         </div>
         <Match
           matchId="2.2 - Scramble. Average handicap"
-          courseMatch="classic2"
+          courseMatch="stoneHedgeSouth2"
           matchHandicap="average"
           gameplay=""
-          player1="matt"
-          player1Handicap="10"
-          player2="dylan"
-          player2Handicap="2"
-          player3="chris"
-          player3Handicap="16"
-          player4="rj"
-          player4Handicap="16"
+          player1="gordon"
+          player1Handicap="12"
+          player2="cam"
+          player2Handicap="21"
+          player3="jake"
+          player3Handicap="21"
+          player4="craig"
+          player4Handicap="21"
         />
         <Match
           matchId="2.2 - Scramble. Average handicap"
-          courseMatch="classic2"
+          courseMatch="stoneHedgeSouth2"
+          matchHandicap="average"
+          gameplay=""
+          player1="travis"
+          player1Handicap="21"
+          player2="dan"
+          player2Handicap="23"
+          player3="matt"
+          player3Handicap="7"
+          player4="rj"
+          player4Handicap="12"
+        />
+        <Match
+          matchId="2.2 - Scramble. Average handicap"
+          courseMatch="stoneHedgeSouth2"
           matchHandicap="average"
           gameplay=""
           player1="derek"
-          player1Handicap="28"
-          player2="dan"
-          player2Handicap="20"
-          player3="travis"
-          player3Handicap="28"
-          player4="craig"
-          player4Handicap="20"
+          player1Handicap="27"
+          player2="evan"
+          player2Handicap="27"
+          player3="curtis"
+          player3Handicap="23"
+          player4="dylan"
+          player4Handicap="0"
         />
       </MatchNavSection>
-      <MatchNavSection
+
+      {/* <MatchNavSection
         data-visible={pageHash === "#r3-bramble" ? "true" : "false"}
         data-link-id="r3-bramble"
       >
         <div className="course__info">
-          <a href={course["gaylordGolfClub1"].link}>
-            {course[`gaylordGolfClub1`].name}
+          <a href={course["gullLakeEast1"].link}>
+            {course[`gullLakeEast1`].name}
           </a>
         </div>
         <Match
-          matchId="3.1 - Best Ball. Full handicap"
-          courseMatch="gaylordGolfClub1"
+          matchId="3.1 - Bramble. Full handicap"
+          courseMatch="gullLakeEast1"
+          matchHandicap="full"
+          gameplay=""
+          player1="travis"
+          player1Handicap="21"
+          player2="dylan"
+          player2Handicap="0"
+          player3="jake"
+          player3Handicap="21"
+          player4="dan"
+          player4Handicap="23"
+        />
+        <Match
+          matchId="3.1 - Bramble. Full handicap"
+          courseMatch="gullLakeEast1"
           matchHandicap="full"
           gameplay=""
           player1="matt"
-          player1Handicap="10"
-          player2="dylan"
-          player2Handicap="2"
+          player1Handicap="7"
+          player2="rj"
+          player2Handicap="12"
           player3="derek"
-          player3Handicap="28"
-          player4="dan"
-          player4Handicap="22"
+          player3Handicap="27"
+          player4="evan"
+          player4Handicap="27"
         />
         <Match
-          matchId="3.1 - Best Ball. Full handicap"
-          courseMatch="gaylordGolfClub1"
+          matchId="3.1 - Bramble. Full handicap"
+          courseMatch="gullLakeEast1"
           matchHandicap="full"
           gameplay=""
-          player1="chris"
-          player1Handicap="16"
-          player2="craig"
-          player2Handicap="22"
-          player3="travis"
-          player3Handicap="22"
-          player4="rj"
-          player4Handicap="16"
+          player1="curtis"
+          player1Handicap="23"
+          player2="cam"
+          player2Handicap="21"
+          player3="gordon"
+          player3Handicap="12"
+          player4="craig"
+          player4Handicap="21"
         />
-      </MatchNavSection>
-      <MatchNavSection
+      </MatchNavSection> */}
+
+      {/* <MatchNavSection
+        data-visible={pageHash === "#r3-alternate" ? "true" : "false"}
+        data-link-id="r3-alternate"
+      >
+        <div className="course__info">
+          <a href={course["gullLakeEast2"].link}>
+            {course[`gullLakeEast2`].name}
+          </a>
+        </div>
+        <Match
+          matchId="3.2 - Alternate. Average handicap"
+          courseMatch="gullLakeEast2"
+          matchHandicap="average"
+          gameplay=""
+          player1="travis"
+          player1Handicap="21"
+          player2="evan"
+          player2Handicap="27"
+          player3="derek"
+          player3Handicap="27"
+          player4="dan"
+          player4Handicap="27"
+        />
+        <Match
+          matchId="3.2 - Alternate. Average handicap"
+          courseMatch="gullLakeEast2"
+          matchHandicap="average"
+          gameplay=""
+          player1="jake"
+          player1Handicap="21"
+          player2="craig"
+          player2Handicap="21"
+          player3="curtis"
+          player3Handicap="23"
+          player4="dylan"
+          player4Handicap="0"
+        />
+        <Match
+          matchId="3.2 - Alternate. Average handicap"
+          courseMatch="gullLakeEast2"
+          matchHandicap="average"
+          gameplay=""
+          player1="matt"
+          player1Handicap="7"
+          player2="cam"
+          player2Handicap="21"
+          player3="gordon"
+          player3Handicap="12"
+          player4="rj"
+          player4Handicap="12"
+        />
+      </MatchNavSection> */}
+
+      {/* <MatchNavSection
         data-visible={pageHash === "#r3-alternate" ? "true" : "false"}
         data-link-id="r3-alternate"
       >

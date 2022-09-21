@@ -19,8 +19,11 @@ export const PlayerInfo = () => {
               stoatinBrae1
               stoatinBrae2
               stoneHedgeSouth1
+              stoneHedgeSouth2
               gullLakeEast1
+              gullLakeEast2
               gullLakeWest1
+              gullLakeWest2
             }
           }
           dylan {
@@ -37,8 +40,11 @@ export const PlayerInfo = () => {
               stoatinBrae1
               stoatinBrae2
               stoneHedgeSouth1
+              stoneHedgeSouth2
               gullLakeEast1
+              gullLakeEast2
               gullLakeWest1
+              gullLakeWest2
             }
           }
           chris {
@@ -68,8 +74,11 @@ export const PlayerInfo = () => {
               stoatinBrae1
               stoatinBrae2
               stoneHedgeSouth1
+              stoneHedgeSouth2
               gullLakeEast1
+              gullLakeEast2
               gullLakeWest1
+              gullLakeWest2
             }
           }
           derek {
@@ -86,8 +95,11 @@ export const PlayerInfo = () => {
               stoatinBrae1
               stoatinBrae2
               stoneHedgeSouth1
+              stoneHedgeSouth2
               gullLakeEast1
+              gullLakeEast2
               gullLakeWest1
+              gullLakeWest2
             }
           }
           dan {
@@ -104,8 +116,11 @@ export const PlayerInfo = () => {
               stoatinBrae1
               stoatinBrae2
               stoneHedgeSouth1
+              stoneHedgeSouth2
               gullLakeEast1
+              gullLakeEast2
               gullLakeWest1
+              gullLakeWest2
             }
           }
           travis {
@@ -122,8 +137,11 @@ export const PlayerInfo = () => {
               stoatinBrae1
               stoatinBrae2
               stoneHedgeSouth1
+              stoneHedgeSouth2
               gullLakeEast1
+              gullLakeEast2
               gullLakeWest1
+              gullLakeWest2
             }
           }
           craig {
@@ -140,8 +158,11 @@ export const PlayerInfo = () => {
               stoatinBrae1
               stoatinBrae2
               stoneHedgeSouth1
+              stoneHedgeSouth2
               gullLakeEast1
+              gullLakeEast2
               gullLakeWest1
+              gullLakeWest2
             }
           }
 
@@ -153,8 +174,11 @@ export const PlayerInfo = () => {
               stoatinBrae1
               stoatinBrae2
               stoneHedgeSouth1
+              stoneHedgeSouth2
               gullLakeEast1
+              gullLakeEast2
               gullLakeWest1
+              gullLakeWest2
             }
           }
           jake {
@@ -165,8 +189,11 @@ export const PlayerInfo = () => {
               stoatinBrae1
               stoatinBrae2
               stoneHedgeSouth1
+              stoneHedgeSouth2
               gullLakeEast1
+              gullLakeEast2
               gullLakeWest1
+              gullLakeWest2
             }
           }
           gordon {
@@ -177,8 +204,11 @@ export const PlayerInfo = () => {
               stoatinBrae1
               stoatinBrae2
               stoneHedgeSouth1
+              stoneHedgeSouth2
               gullLakeEast1
+              gullLakeEast2
               gullLakeWest1
+              gullLakeWest2
             }
           }
           cam {
@@ -189,8 +219,11 @@ export const PlayerInfo = () => {
               stoatinBrae1
               stoatinBrae2
               stoneHedgeSouth1
+              stoneHedgeSouth2
               gullLakeEast1
+              gullLakeEast2
               gullLakeWest1
+              gullLakeWest2
             }
           }
           evan {
@@ -201,11 +234,13 @@ export const PlayerInfo = () => {
               stoatinBrae1
               stoatinBrae2
               stoneHedgeSouth1
+              stoneHedgeSouth2
               gullLakeEast1
+              gullLakeEast2
               gullLakeWest1
+              gullLakeWest2
             }
           }
-
         }
       }
     }
