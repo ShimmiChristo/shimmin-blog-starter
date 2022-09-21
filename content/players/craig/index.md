@@ -7,7 +7,7 @@ description: "Description"
 category: players
 featuredImg: ./profile-pic.png
 team: "Blue Team"
-handicap: 22
+handicap: 21
 ---
 
 Along with golf, Craig has moved into a Residential Mortgage Loan Officer role.

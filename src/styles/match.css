@@ -71,6 +71,9 @@ body {
   justify-content: center;
   position: relative;
 }
+.match__course {
+  justify-content: flex-start;
+}
 .match__line {
   display: none;
   border: 1px solid;
@@ -97,6 +100,7 @@ body {
 }
 .match__column {
   width: 3rem;
+  min-width: 3rem;
   border-left: 1px solid var(--light-gray);
 }
 .match__column:last-child {
@@ -117,6 +121,7 @@ body {
 }
 .match__column--info {
   width: 200px;
+  min-width: 200px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -135,7 +140,7 @@ body {
 .match__teamScores {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
 }
 .match__playerScore,
 .match__teamScore {
@@ -172,21 +177,37 @@ body {
   }
   .match__column {
     width: 3rem;
+    min-width: 3rem;
   }
   .match__column--info {
     width: 100px;
+    min-width: 100px;
   }
   .match__header {
     flex-direction: column;
   }
-  .match__course,
-  .match__score {
+  .match__course {
     justify-content: flex-start;
+  }
+  .match__score {
+    justify-content: center;
+  }
+  .match__team {
+    width: 100%;
   }
   .match__teamScores {
     align-items: flex-start;
   }
   .team__scores {
     flex-direction: column;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .match__teamScores {
+    align-items: center;
+  }
+  .match__course {
+    justify-content: center;
   }
 }

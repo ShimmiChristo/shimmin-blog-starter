@@ -16,6 +16,11 @@ export const PlayerInfo = () => {
               classic2
               gaylordGolfClub1
               gaylordGolfClub2
+              stoatinBrae1
+              stoatinBrae2
+              stoneHedgeSouth1
+              gullLakeEast1
+              gullLakeWest1
             }
           }
           dylan {
@@ -29,6 +34,11 @@ export const PlayerInfo = () => {
               classic2
               gaylordGolfClub1
               gaylordGolfClub2
+              stoatinBrae1
+              stoatinBrae2
+              stoneHedgeSouth1
+              gullLakeEast1
+              gullLakeWest1
             }
           }
           chris {
@@ -55,6 +65,11 @@ export const PlayerInfo = () => {
               classic2
               gaylordGolfClub1
               gaylordGolfClub2
+              stoatinBrae1
+              stoatinBrae2
+              stoneHedgeSouth1
+              gullLakeEast1
+              gullLakeWest1
             }
           }
           derek {
@@ -68,6 +83,11 @@ export const PlayerInfo = () => {
               classic2
               gaylordGolfClub1
               gaylordGolfClub2
+              stoatinBrae1
+              stoatinBrae2
+              stoneHedgeSouth1
+              gullLakeEast1
+              gullLakeWest1
             }
           }
           dan {
@@ -81,6 +101,11 @@ export const PlayerInfo = () => {
               classic2
               gaylordGolfClub1
               gaylordGolfClub2
+              stoatinBrae1
+              stoatinBrae2
+              stoneHedgeSouth1
+              gullLakeEast1
+              gullLakeWest1
             }
           }
           travis {
@@ -94,6 +119,11 @@ export const PlayerInfo = () => {
               classic2
               gaylordGolfClub1
               gaylordGolfClub2
+              stoatinBrae1
+              stoatinBrae2
+              stoneHedgeSouth1
+              gullLakeEast1
+              gullLakeWest1
             }
           }
           craig {
@@ -107,8 +137,75 @@ export const PlayerInfo = () => {
               classic2
               gaylordGolfClub1
               gaylordGolfClub2
+              stoatinBrae1
+              stoatinBrae2
+              stoneHedgeSouth1
+              gullLakeEast1
+              gullLakeWest1
             }
           }
+
+          curtis {
+            name
+            handicap
+            team
+            course {
+              stoatinBrae1
+              stoatinBrae2
+              stoneHedgeSouth1
+              gullLakeEast1
+              gullLakeWest1
+            }
+          }
+          jake {
+            name
+            handicap
+            team
+            course {
+              stoatinBrae1
+              stoatinBrae2
+              stoneHedgeSouth1
+              gullLakeEast1
+              gullLakeWest1
+            }
+          }
+          gordon {
+            name
+            handicap
+            team
+            course {
+              stoatinBrae1
+              stoatinBrae2
+              stoneHedgeSouth1
+              gullLakeEast1
+              gullLakeWest1
+            }
+          }
+          cam {
+            name
+            handicap
+            team
+            course {
+              stoatinBrae1
+              stoatinBrae2
+              stoneHedgeSouth1
+              gullLakeEast1
+              gullLakeWest1
+            }
+          }
+          evan {
+            name
+            handicap
+            team
+            course {
+              stoatinBrae1
+              stoatinBrae2
+              stoneHedgeSouth1
+              gullLakeEast1
+              gullLakeWest1
+            }
+          }
+
         }
       }
     }

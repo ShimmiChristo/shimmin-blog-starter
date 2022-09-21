@@ -8,6 +8,7 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import LandingPageHeader from "../components/landing-page-header"
 import Match from "../components/match"
+// import MatchUpdate from "../components/match-UPDATE"
 import MatchScore from "../components/match-score"
 import MatchNav from "../components/match-nav"
 import "../styles/match.css"
@@ -86,17 +87,18 @@ const TopicPage = ({ data, location }) => {
 
       <MatchScore year="_2022" />
 
-      {/*
       <MatchNavSection
         data-visible={pageHash === "#r1-best-ball" ? "true" : "false"}
         data-link-id="r1-best-ball"
       >
         <div className="course__info">
-          <a href={course["stoatinBrae1"].link}>{course[`stoatinBrae1`].name}</a>
+          <a href={course["stoatinBrae1"].link}>
+            {course[`stoatinBrae1`].name}
+          </a>
         </div>
         <Match
           matchId="1.1 - Best Ball. Full handicap"
-          courseMatch="tribute1"
+          courseMatch="stoatinBrae1"
           matchHandicap="full"
           gameplay=""
           year="_2021"
@@ -104,62 +106,93 @@ const TopicPage = ({ data, location }) => {
           player1Handicap="7"
           player2="dylan"
           player2Handicap="0"
-          player3="chris"
-          player3Handicap="11"
+          player3="gordon"
+          player3Handicap="12"
           player4="rj"
-          player4Handicap="15"
+          player4Handicap="12"
         />
         <Match
-          matchId="1.1 - Best Ball Bramble. Full handicap"
+          matchId="1.1 - Best Ball. Full handicap"
           courseMatch="stoatinBrae1"
           matchHandicap="full"
           gameplay=""
           player1="curtis"
-          player1Handicap="21"
+          player1Handicap="23"
           player2="craig"
           player2Handicap="21"
           player3="jake"
           player3Handicap="21"
           player4="dan"
           player4Handicap="23"
-          />
+        />
+        <Match
+          matchId="1.1 - Best Ball. Full handicap"
+          courseMatch="stoatinBrae1"
+          matchHandicap="full"
+          gameplay=""
+          player1="travis"
+          player1Handicap="21"
+          player2="cam"
+          player2Handicap="21"
+          player3="derek"
+          player3Handicap="27"
+          player4="evan"
+          player4Handicap="27"
+        />
       </MatchNavSection>
       <MatchNavSection
         data-visible={pageHash === "#r1-two-best-ball" ? "true" : "false"}
         data-link-id="r1-two-best-ball"
       >
         <div className="course__info">
-          <a href={course["stoatinBrae2"].link}>{course[`stoatinBrae2`].name}</a>
+          <a href={course["stoatinBrae2"].link}>
+            {course[`stoatinBrae2`].name}
+          </a>
         </div>
         <Match
-          matchId="1.2 - 2 Ball Bramble. Full handicap"
+          matchId="1.2 - 2 Best Ball. Full handicap"
           courseMatch="stoatinBrae2"
           matchHandicap="full"
           gameplay="two-ball"
           player1="matt"
-          player1Handicap="10"
-          player2="rj"
-          player2Handicap="16"
-          player3="derek"
-          player3Handicap="28"
-          player4="craig"
-          player4Handicap="22"
+          player1Handicap="7"
+          player2="dylan"
+          player2Handicap="0"
+          player3="curtis"
+          player3Handicap="23"
+          player4="dan"
+          player4Handicap="23"
         />
         <Match
-          matchId="1.2 - 2 Ball Bramble. Full handicap"
+          matchId="1.2 - 2 Best Ball. Full handicap"
           courseMatch="stoatinBrae2"
           matchHandicap="full"
           gameplay="two-ball"
-          player1="chris"
-          player1Handicap="16"
-          player2="dylan"
-          player2Handicap="2"
-          player3="travis"
-          player3Handicap="22"
-          player4="dan"
-          player4Handicap="36"
+          player1="gordon"
+          player1Handicap="12"
+          player2="rj"
+          player2Handicap="12"
+          player3="derek"
+          player3Handicap="27"
+          player4="evan"
+          player4Handicap="27"
+        />
+        <Match
+          matchId="1.2 - 2 Best Ball. Full handicap"
+          courseMatch="stoatinBrae2"
+          matchHandicap="full"
+          gameplay="two-ball"
+          player1="travis"
+          player1Handicap="21"
+          player2="jake"
+          player2Handicap="21"
+          player3="cam"
+          player3Handicap="21"
+          player4="craig"
+          player4Handicap="21"
         />
       </MatchNavSection>
+      {/*
       <MatchNavSection
         data-visible={pageHash === "#r2-bramble" ? "true" : "false"}
         data-link-id="r2-bramble"

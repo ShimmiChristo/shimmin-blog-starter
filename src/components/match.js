@@ -30,6 +30,9 @@ const OpenBtn = styled.span`
   bottom: 0;
   left: 50%;
   transform: translatex(-50%);
+  padding: 0.5rem;
+  background: #fff;
+  z-index: 1;
 
   &:hover {
     cursor: pointer;
@@ -75,6 +78,7 @@ const Section = styled.section`
   }
   .match__card-container {
     overflow-y: scroll;
+    padding-bottom: 1rem;
   }
 
   @media (max-width: 768px) {
@@ -83,7 +87,7 @@ const Section = styled.section`
         max-height: 380px;
       }
     }
-    max-height: 320px;
+    max-height: 300px;
     padding: 2rem 1rem;
   }
   &:hover {
@@ -475,7 +479,7 @@ function Match({
     let playerHandicap = pHand
     const holeHandicap = hHand
 
-    if (score > "20") {
+    if (score > "20" || score === 0) {
       return "-"
     } else {
       if (holeHandicap <= playerHandicap && score > -10) {
