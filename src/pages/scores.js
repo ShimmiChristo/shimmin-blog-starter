@@ -297,7 +297,7 @@ const TopicPage = ({ data, location }) => {
         />
       </MatchNavSection>
 
-      {/* <MatchNavSection
+      <MatchNavSection
         data-visible={pageHash === "#r3-bramble" ? "true" : "false"}
         data-link-id="r3-bramble"
       >
@@ -348,9 +348,9 @@ const TopicPage = ({ data, location }) => {
           player4="craig"
           player4Handicap="21"
         />
-      </MatchNavSection> */}
+      </MatchNavSection>
 
-      {/* <MatchNavSection
+      <MatchNavSection
         data-visible={pageHash === "#r3-alternate" ? "true" : "false"}
         data-link-id="r3-alternate"
       >
@@ -401,7 +401,7 @@ const TopicPage = ({ data, location }) => {
           player4="rj"
           player4Handicap="12"
         />
-      </MatchNavSection> */}
+      </MatchNavSection>
 
       {/* <MatchNavSection
         data-visible={pageHash === "#r3-alternate" ? "true" : "false"}
