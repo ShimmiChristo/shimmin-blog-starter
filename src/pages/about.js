@@ -25,7 +25,7 @@ const TopicPage = ({ data, location }) => {
   return (
     <Layout location={location} title={siteTitle}>
       <SEO title="About" />
-      <LandingPageHeader title="About BFBH Cup" />
+      <LandingPageHeader title="About" />
       <LandingPageBody>
         <div className="container mb-4">
           <div className="row">
@@ -37,10 +37,7 @@ const TopicPage = ({ data, location }) => {
                 Lake State, the High-Five of the country, Michigan.
               </p>
               <h2 className="h4">What does the BFBH Cup stand for?</h2>
-              <p>
-                Great question. The BFBH Cup stands for The "Boys From Back Home
-                Cup".
-              </p>
+              <p>The "Boys From Back Home Cup"</p>
               <h2 className="h4">Who are the boys from back home?</h2>
               <p>
                 A group of brothers and friends who were all born and raised in

@@ -23,7 +23,7 @@ const TopicPage = ({ data, location }) => {
 
   return (
     <Layout location={location} title={siteTitle}>
-      <SEO title="BFBH Cup Rules" />
+      <SEO title="Rules" />
       <LandingPageHeader title="Rules" />
       <div class="container">
         <div class="row mb-3">

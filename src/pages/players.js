@@ -91,7 +91,7 @@ const PlayersIndex = ({ data, location }) => {
   } else {
     return (
       <Layout location={location} title={siteTitle}>
-        <Seo title="All Players" />
+        <Seo title="Players" />
         <LandingPageHeader title="Players" />
         <TeamFilterContainer className={`${teamFilter} container `}>
           <TeamFilter className="mb-2">

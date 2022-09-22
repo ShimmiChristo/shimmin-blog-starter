@@ -25,7 +25,7 @@ const TopicPage = ({ data, location }) => {
 
   return (
     <Layout location={location} title={siteTitle}>
-      <SEO title="BFBH Cup Sponsors" />
+      <SEO title="Sponsors" />
       <LandingPageHeader title="BFBH Cup Supporters" />
       <div className="container mb-5">
         <h2 className="h4">A huge thank you to our supporters</h2>

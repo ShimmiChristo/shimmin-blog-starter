@@ -22,8 +22,8 @@ const TopicPage = ({ data, location }) => {
 
   return (
     <Layout location={location} title={siteTitle}>
-      <SEO title="About" />
-      <LandingPageHeader title="About BFBH Cup" />
+      <SEO title="Teams" />
+      <LandingPageHeader title="Teams" />
       <LandingPageBody>
         
       </LandingPageBody>
