@@ -49,7 +49,7 @@ const TopicPage = ({ data, location }) => {
     border-radius: 5px;
     display: ${props => (props.Ad ? "flex" : "none")};
   `
-  const startDate = "october, 14, 2022"
+  const startDate = "october, 14, 2022 12:30:00 GMT"
   const locationName = "Gull Lake View Golf Resort"
 
   return (
