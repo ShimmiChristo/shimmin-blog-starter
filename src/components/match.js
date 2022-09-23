@@ -45,7 +45,7 @@ const Section = styled.section`
   border-radius: 0.7rem;
   overflow: hidden;
   max-width: 1000px;
-  margin: 2rem auto 2rem;
+  margin: 1rem auto 2rem;
   transition: max-height 0.3s ease-in-out;
   max-height: 200px;
   position: relative;

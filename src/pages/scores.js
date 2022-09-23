@@ -403,56 +403,133 @@ const TopicPage = ({ data, location }) => {
         />
       </MatchNavSection>
 
-      {/* <MatchNavSection
-        data-visible={pageHash === "#r3-alternate" ? "true" : "false"}
-        data-link-id="r3-alternate"
+            
+      <MatchNavSection
+        data-visible={pageHash === "#r4-scramble" ? "true" : "false"}
+        data-link-id="r4-scramble"
       >
         <div className="course__info">
-          <a href={course["gaylordGolfClub2"].link}>
-            {course[`gaylordGolfClub2`].name}
+          <a href={course["gullLakeWest1"].link}>
+            {course[`gullLakeWest1`].name}
           </a>
         </div>
+        {/* <Match
+          matchId="4.1 - Scramble. Average handicap"
+          courseMatch="gullLakeWest1"
+          matchHandicap="average"
+          gameplay=""
+          player1="gordon"
+          player1Handicap="12"
+          player2="cam"
+          player2Handicap="21"
+          player3="jake"
+          player3Handicap="21"
+          player4="craig"
+          player4Handicap="21"
+        />
         <Match
-          matchId="3.2 - Singles Matches. Full handicap"
-          courseMatch="gaylordGolfClub2"
+          matchId="4.1 - Scramble. Average handicap"
+          courseMatch="gullLakeWest1"
+          matchHandicap="average"
+          gameplay=""
+          player1="travis"
+          player1Handicap="21"
+          player2="dan"
+          player2Handicap="23"
+          player3="matt"
+          player3Handicap="7"
+          player4="rj"
+          player4Handicap="12"
+        />
+        <Match
+          matchId="4.1 - Scramble. Average handicap"
+          courseMatch="gullLakeWest1"
+          matchHandicap="average"
+          gameplay=""
+          player1="derek"
+          player1Handicap="27"
+          player2="evan"
+          player2Handicap="27"
+          player3="curtis"
+          player3Handicap="23"
+          player4="dylan"
+          player4Handicap="0"
+        /> */}
+      </MatchNavSection> 
+     
+
+      
+      <MatchNavSection
+        data-visible={pageHash === "#r4-singles" ? "true" : "false"}
+        data-link-id="r4-singles"
+      >
+        <div className="course__info">
+          <a href={course["gullLakeWest2"].link}>
+            {course[`gullLakeWest2`].name}
+          </a>
+        </div>
+        {/* <Match
+          matchId="4.2 - Singles Matches. Full handicap"
+          courseMatch="gullLakeWest2"
           matchHandicap="full"
           gameplay=""
           player1="matt"
-          player1Handicap="10"
+          player1Handicap="7"
           player2="dylan"
-          player2Handicap="2"
+          player2Handicap="0"
         />
         <Match
-          matchId="3.2 - Singles Matches. Full handicap"
-          courseMatch="gaylordGolfClub2"
+          matchId="4.2 - Singles Matches. Full handicap"
+          courseMatch="gullLakeWest2"
+          matchHandicap="full"
+          gameplay=""
+          player1="gordon"
+          player1Handicap="12"
+          player2="rj"
+          player2Handicap="12"
+        />
+        <Match
+          matchId="4.2 - Singles Matches. Full handicap"
+          courseMatch="gullLakeWest2"
+          matchHandicap="full"
+          gameplay=""
+          player1="curtis"
+          player1Handicap="21"
+          player2="craig"
+          player2Handicap="23"
+        />
+         <Match
+          matchId="4.2 - Singles Matches. Full handicap"
+          courseMatch="gullLakeWest2"
+          matchHandicap="full"
+          gameplay=""
+          player1="jake"
+          player1Handicap="21"
+          player2="cam"
+          player2Handicap="21"
+        />
+        <Match
+          matchId="4.2 - Singles Matches. Full handicap"
+          courseMatch="gullLakeWest2"
           matchHandicap="full"
           gameplay=""
           player1="travis"
-          player1Handicap="22"
-          player2="craig"
-          player2Handicap="22"
+          player1Handicap="21"
+          player2="dan"
+          player2Handicap="23"
         />
         <Match
-          matchId="3.2 - Singles Matches. Full handicap"
-          courseMatch="gaylordGolfClub2"
-          matchHandicap="full"
-          gameplay=""
-          player1="chris"
-          player1Handicap="16"
-          player2="rj"
-          player2Handicap="16"
-        />
-        <Match
-          matchId="3.2 - Singles Matches. Full handicap"
-          courseMatch="gaylordGolfClub2"
+          matchId="4.2 - Singles Matches. Full handicap"
+          courseMatch="gullLakeWest2"
           matchHandicap="full"
           gameplay=""
           player1="derek"
-          player1Handicap="28"
-          player2="dan"
-          player2Handicap="36"
-        />
-      </MatchNavSection> */}
+          player1Handicap="27"
+          player2="evan"
+          player2Handicap="27"
+        /> */}
+      </MatchNavSection> 
+     
     </Layout>
   )
 }
