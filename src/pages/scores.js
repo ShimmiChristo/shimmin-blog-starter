@@ -31,6 +31,8 @@ const TopicPage = ({ data, location }) => {
     &[data-visible="true"] {
       a {
         color: var(--black);
+        text-decoration: underline;
+        text-underline-offset: 0.2rem;
       }
     }
   `
@@ -92,6 +94,7 @@ const TopicPage = ({ data, location }) => {
         data-link-id="r1-best-ball"
       >
         <div className="course__info">
+          <span>Friday Oct 14, 8:30 AM at </span>
           <a href={course["stoatinBrae1"].link}>
             {course[`stoatinBrae1`].name}
           </a>
@@ -145,6 +148,7 @@ const TopicPage = ({ data, location }) => {
         data-link-id="r1-two-best-ball"
       >
         <div className="course__info">
+          <span>Friday Oct 14, 8:30 AM at </span>
           <a href={course["stoatinBrae2"].link}>
             {course[`stoatinBrae2`].name}
           </a>
@@ -197,6 +201,7 @@ const TopicPage = ({ data, location }) => {
         data-link-id="r2-bramble"
       >
         <div className="course__info">
+          <span>Friday Oct 14, 1:57 PM at </span>
           <a href={course["stoneHedgeSouth1"].link}>
             {course[`stoneHedgeSouth1`].name}
           </a>
@@ -249,6 +254,7 @@ const TopicPage = ({ data, location }) => {
         data-link-id="r2-scramble"
       >
         <div className="course__info">
+          <span>Friday Oct 14, 1:57 PM at </span>
           <a href={course["stoneHedgeSouth2"].link}>
             {course[`stoneHedgeSouth2`].name}
           </a>
@@ -302,6 +308,7 @@ const TopicPage = ({ data, location }) => {
         data-link-id="r3-bramble"
       >
         <div className="course__info">
+          <span>Saturday Oct 15, 8:42 AM at </span>
           <a href={course["gullLakeEast1"].link}>
             {course[`gullLakeEast1`].name}
           </a>
@@ -355,6 +362,7 @@ const TopicPage = ({ data, location }) => {
         data-link-id="r3-alternate"
       >
         <div className="course__info">
+          <span>Saturday Oct 15, 8:42 AM at </span>
           <a href={course["gullLakeEast2"].link}>
             {course[`gullLakeEast2`].name}
           </a>
@@ -403,12 +411,12 @@ const TopicPage = ({ data, location }) => {
         />
       </MatchNavSection>
 
-            
       <MatchNavSection
         data-visible={pageHash === "#r4-scramble" ? "true" : "false"}
         data-link-id="r4-scramble"
       >
         <div className="course__info">
+          <span>Saturday Oct 15, 2:33 PM at </span>
           <a href={course["gullLakeWest1"].link}>
             {course[`gullLakeWest1`].name}
           </a>
@@ -455,15 +463,14 @@ const TopicPage = ({ data, location }) => {
           player4="dylan"
           player4Handicap="0"
         /> */}
-      </MatchNavSection> 
-     
+      </MatchNavSection>
 
-      
       <MatchNavSection
         data-visible={pageHash === "#r4-singles" ? "true" : "false"}
         data-link-id="r4-singles"
       >
         <div className="course__info">
+          <span>Saturday Oct 15, 2:33 PM at </span>
           <a href={course["gullLakeWest2"].link}>
             {course[`gullLakeWest2`].name}
           </a>
@@ -528,8 +535,7 @@ const TopicPage = ({ data, location }) => {
           player2="evan"
           player2Handicap="27"
         /> */}
-      </MatchNavSection> 
-     
+      </MatchNavSection>
     </Layout>
   )
 }

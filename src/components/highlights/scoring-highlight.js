@@ -28,7 +28,7 @@ function HighlightsScoring({ yearProp }) {
       <div className="container my-3 mb-lg-5">
         <div className="row text-center justify-content-center">
           <p className="h2 mb-4">
-            The Boys From Back Home Cup is returning in 2022!
+            Oct 14th-15th, 2022 Gull Lake View Golf Resort
           </p>
           <div className="col-lg-8">
             <p>
