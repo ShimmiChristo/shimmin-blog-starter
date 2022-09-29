@@ -17,6 +17,7 @@
     "@mdx-js/react": "^1.6.22",
     "babel-plugin-styled-components": "^1.13.2",
     "dotenv": "^10.0.0",
+    "eslint-config-airbnb": "^19.0.4",
     "gatsby": "^4.2.0",
     "gatsby-cli": "^4.13.0",
     "gatsby-image": "^3.11.0",
@@ -58,6 +59,8 @@
     "uuidv4": "^6.2.12"
   },
   "devDependencies": {
+    "eslint": "^8.24.0",
+    "eslint-plugin-react": "^7.31.8",
     "prettier": "^2.4.1"
   },
   "homepage": "https://github.com/gatsbyjs/gatsby-starter-blog#readme",
