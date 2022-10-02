@@ -8,7 +8,7 @@ import {
   MDBCardBody,
   MDBRow,
   MDBCol,
-  MDBContainer,
+  // MDBContainer,
 } from "mdb-react-ui-kit"
 
 // import { PlayerInfoMatt } from "../hooks/get-player-info--matt"
@@ -63,7 +63,7 @@ function PlayerInfoThisYearRecord({ year, teamColor, post, playerData }) {
   }
 
   const record = getOverallRecord(playerData)
-  const bestBallRecord = getGameRecord(playerData, "bestBall")
+  // const bestBallRecord = getGameRecord(playerData, "bestBall")
 
   return (
     <StyledSection>
