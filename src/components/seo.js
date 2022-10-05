@@ -29,6 +29,7 @@ const SEO = ({ description, lang, meta, title }) => {
 
   const metaDescription = description || site.siteMetadata.description
   const defaultTitle = site.siteMetadata?.title
+  const siteLogo = site.siteMetadata?.logo
 
   return (
     <Helmet
@@ -49,6 +50,10 @@ const SEO = ({ description, lang, meta, title }) => {
         {
           property: `og:description`,
           content: metaDescription,
+        },
+        {
+          property: `og:image`,
+          content: siteLogo,
         },
         {
           property: `og:type`,
