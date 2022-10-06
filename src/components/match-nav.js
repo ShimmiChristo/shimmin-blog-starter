@@ -14,7 +14,8 @@ const Section = styled.section`
   max-height: 180px;
 
   @media screen and (max-width: 767px) {
-    padding: 1rem 0;
+    padding: 0.2rem 0;
+    width: 90%;
   }
   > * {
     padding: 0 1rem;
@@ -29,6 +30,7 @@ const Section = styled.section`
 
     @media screen and (max-width: 767px) {
       padding: 0;
+      display: none;
     }
   }
   li {
@@ -44,11 +46,21 @@ const Section = styled.section`
   }
   a {
     color: var(--gray);
-
     &:active,
     &:focus,
     &:hover {
       color: var(--color-link);
+    }
+  }
+
+  select {
+    width: 90%;
+    box-sizing: border-box;
+    margin-left: calc(100% - 95%);
+    border: none;
+
+    @media screen and (min-width: 768px) {
+      display: none;
     }
   }
 `
@@ -58,6 +70,12 @@ function MatchNav({ location, titles }) {
   // const { course } = CourseInfo()
   const titlesArray = titles
   const pageHash = location.hash
+
+  const handleChange = e => {
+    const dataLocation =
+      e.target[e.target.selectedIndex].getAttribute("data-location")
+    window.location.hash = dataLocation
+  }
 
   return (
     <Section>
@@ -74,6 +92,19 @@ function MatchNav({ location, titles }) {
           </li>
         ))}
       </ul>
+
+      <select id="scores-selector" onChange={handleChange} className="form-select">
+        {titlesArray.map((title, i) => (
+          <option
+            key={i + title}
+            value={title.round}
+            data-active={"#" + title.link === pageHash ? "true" : "false"}
+            data-location={"#" + title.link}
+          >
+            {title.round} - {title.name}
+          </option>
+        ))}
+      </select>
     </Section>
   )
 }

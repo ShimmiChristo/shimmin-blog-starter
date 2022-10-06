@@ -650,7 +650,7 @@ function Match({
                   getHandicap(playerNumInt),
                   courseHoles[i].handicap
                 )}`}
-                data-matchOver={`${isMatchOver(i + 1)}`}
+                data-matchover={`${isMatchOver(i + 1)}`}
               >
                 <div className="match__line"></div>
                 {calcPlayerScore(
@@ -667,17 +667,32 @@ function Match({
     }
   }
 
+  const handleKeypress = e => {
+    //it triggers by pressing the enter key
+    if (e.keyCode === 13 || e.keyCode === 0) {
+      matchCardClick()
+    }
+  }
   return (
     <Section
       data-match={`${courseMatch}`}
       data-handicap={`${matchHandicap}`}
       className={`match__container ${sectionHeight}`}
+      tabIndex="0"
     >
-      <CloseBtn onClick={matchCardClick}>
+      <CloseBtn
+        onClick={matchCardClick}
+        onKeyPress={handleKeypress}
+        tabIndex="0"
+      >
         {/* <FontAwesomeIcon icon={faTimes} size="2x" /> */}
         <FaTimes size={"1.5em"} />
       </CloseBtn>
-      <OpenBtn onClick={matchCardClick}>
+      <OpenBtn
+        onClick={matchCardClick}
+        onKeyPress={handleKeypress}
+        tabIndex="0"
+      >
         {/* <FontAwesomeIcon icon={faChevronDown} size="2x" /> */}
         <FaChevronDown size={"1.5em"} />
       </OpenBtn>
@@ -741,7 +756,7 @@ function Match({
               <div
                 className="match__hole row-cell"
                 data-winner={`${calcHoleWinner(hole.number).team}`}
-                data-matchOver={`${isMatchOver(i + 1)}`}
+                data-matchover={`${isMatchOver(i + 1)}`}
                 id={hole.number}
               >
                 <div className="match__line"></div>
