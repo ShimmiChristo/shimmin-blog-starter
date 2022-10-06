@@ -33,11 +33,20 @@ const FooterColumn = styled.div`
     margin-bottom: 0;
     flex-direction: row;
     flex-wrap: wrap;
-    
+
     & h4 {
       flex: 0 0 100%;
     }
   }
+
+  ul {
+    padding: 0;
+
+    li {
+      margin: 0;
+    }
+  }
+
   & li {
     list-style: none;
     padding: 0 0.2rem;
@@ -55,31 +64,37 @@ function Footer() {
       <FooterColumns className="footer__columns">
         <FooterColumn>
           <h4 className="footer__title">Menu</h4>
-          {nav.map((column, i) => (
-            <li className="footer__item" key={i}>
-              <a href={column.link}>{column.name}</a>
-            </li>
-          ))}
+          <ul>
+            {nav.map((column, i) => (
+              <li className="footer__item" key={i}>
+                <a href={column.link}>{column.name}</a>
+              </li>
+            ))}
+          </ul>
         </FooterColumn>
         <FooterColumn>
           <h4 className="footer__title">Follow</h4>
-          <li className="footer__item">
-            <a href={`https://twitter.com/${social?.twitter || ``}`}>Twitter</a>
-          </li>
-          <li className="footer__item">
-            <a href={`https://instagram.com/${social?.instagram || ``}`}>
-              Instagram
-            </a>
-          </li>
-          <li className="footer__item">
-            <a href={`https://youtube.com/${social?.youtube || ``}`}>
-              {" "}
-              Youtube
-            </a>
-          </li>
-          <li className="footer__item">
-            <a href={`https://github.com/${social?.github || ``}`}> Github</a>
-          </li>
+          <ul>
+            <li className="footer__item">
+              <a href={`https://twitter.com/${social?.twitter || ``}`}>
+                Twitter
+              </a>
+            </li>
+            <li className="footer__item">
+              <a href={`https://instagram.com/${social?.instagram || ``}`}>
+                Instagram
+              </a>
+            </li>
+            <li className="footer__item">
+              <a href={`https://youtube.com/${social?.youtube || ``}`}>
+                {" "}
+                Youtube
+              </a>
+            </li>
+            <li className="footer__item">
+              <a href={`https://github.com/${social?.github || ``}`}> Github</a>
+            </li>
+          </ul>
         </FooterColumn>
       </FooterColumns>
       <FooterCopy>
@@ -91,6 +106,5 @@ function Footer() {
     </FooterContainer>
   )
 }
-
 
 export default Footer
