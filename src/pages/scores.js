@@ -283,7 +283,7 @@ const TopicPage = ({ data, location }) => {
           player2="dan"
           player2Handicap="23"
           player3="matt"
-          player3Handicap="6"
+          player3Handicap="7"
           player4="rj"
           player4Handicap="12"
         />
@@ -445,7 +445,7 @@ const TopicPage = ({ data, location }) => {
           player2="dan"
           player2Handicap="23"
           player3="matt"
-          player3Handicap="6"
+          player3Handicap="7"
           player4="rj"
           player4Handicap="12"
         />
