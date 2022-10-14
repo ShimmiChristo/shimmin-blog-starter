@@ -4,7 +4,7 @@
       "teams": {
         "team1": {
           "name": "green team",
-          "nickname": "crohn's crushers",
+          "nickname": "crohns crushers",
           "players": ["Matt", "Travis", "Derek", "Gordon", "Curtis", "Jake"],
           "score": "0"
         },

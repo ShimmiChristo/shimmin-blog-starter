@@ -506,6 +506,15 @@ button:hover,
 .capitalize {
   text-transform: capitalize;
 }
+.hidden {
+  display: none !important;
+}
+.invisible {
+  visibility: none;
+  position: absolute;
+  height: 0;
+  margin: 0;
+}
 
 /* Media queries */
 

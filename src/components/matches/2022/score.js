@@ -1,8 +1,9 @@
 import React from "react"
-import { ScoreInfo } from "../hooks/get-team-score"
+import { ScoreInfo } from "../../../hooks/get-team-score"
 import styled from "styled-components"
 import PropTypes from "prop-types"
-import "../styles/match.css"
+// import Image from "gatsby-image"
+import "../../../styles/match.css"
 
 const Section = styled.section`
   border: 1px solid gray;
@@ -11,7 +12,7 @@ const Section = styled.section`
   overflow: hidden;
   overflow-x: hidden;
   max-width: 1000px;
-  margin: 1rem auto 3rem;
+  margin: 2rem auto 0;
   transition: all 0.5s ease-in-out;
   max-height: 100px;
   display: flex;
@@ -44,6 +45,7 @@ const Section = styled.section`
 `
 
 function MatchScore({ year }) {
+  // const { teams } = ScoreInfo()
   const scoreInfo = ScoreInfo()
   const currentYear = year ? scoreInfo[year].teams : undefined
 
@@ -58,18 +60,16 @@ function MatchScore({ year }) {
   }
 
   return (
-    <>
-      <Section className={changeBackgroundColor()}>
-        <div>
-          <span>{currentYear.team1.name}</span>
-          <div className="h1">{currentYear.team1.score}</div>
-        </div>
-        <div>
-          <div className="h1">{currentYear.team2.score}</div>
-          <span>{currentYear.team2.name}</span>
-        </div>
-      </Section>
-    </>
+    <Section className={`${changeBackgroundColor()} mb-3`}>
+      <div>
+        <span>{currentYear.team1.name}</span>
+        <div className="h1">{currentYear.team1.score}</div>
+      </div>
+      <div>
+        <div className="h1">{currentYear.team2.score}</div>
+        <span>{currentYear.team2.name}</span>
+      </div>
+    </Section>
   )
 }
 
