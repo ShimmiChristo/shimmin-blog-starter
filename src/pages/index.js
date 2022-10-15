@@ -10,7 +10,8 @@ import LandingPageHeader from "../components/landing-page-header"
 import MatchScore from "../components/match-score"
 import HighlightsScoring from "../components/highlights/scoring-highlight"
 import Venue2022 from "../components/venues/venue-2022"
-import HighlightCountdown from "../components/highlights/coutdown-hightlight"
+// import HighlightCountdown from "../components/highlights/coutdown-hightlight"
+import HighlightDay from "../components/highlights/day-hightlights"
 
 // import AboutSite from "../components/about-site"
 // import MatchNav from "../components/match-nav"
@@ -61,6 +62,7 @@ const TopicPage = ({ data, location }) => {
 
       <h2 className="text-center bold mt-4">BFBH Current Score</h2>
       <MatchScore year="_2022" />
+      <HighlightDay />
       <hr />
       <br />
       <HighlightsScoring yearProp="2022" />
