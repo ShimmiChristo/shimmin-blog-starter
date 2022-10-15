@@ -16,8 +16,8 @@
           "stoatinBrae2": [4, 4, 4, 5, 3, 5, 6, 3, 5],
           "stoneHedgeSouth1": [4, 4, 4, 5, 4, 0, 0, 0, 0],
           "stoneHedgeSouth2": [6, 4, 4, 3, 4, 4, 3, 5, 0],
-          "gullLakeEast1": [0, 0, 0, 0, 0, 0, 0, 0, 0],
-          "gullLakeEast2": [0, 0, 0, 0, 0, 0, 0, 0, 0],
+          "gullLakeEast1": [4, 3, 4, 4, 4, 3, 4, 4, 5],
+          "gullLakeEast2": [5, 4, 4, 5, 4, 3, 0, 0, 0],
           "gullLakeWest1": [0, 0, 0, 0, 0, 0, 0, 0, 0],
           "gullLakeWest2": [0, 0, 0, 0, 0, 0, 0, 0, 0]
         },
@@ -33,20 +33,20 @@
         "gaylordGolfClub": {
           "total": 90
         },
-        "appearances": [2021],
+        "appearances": [2021, 2022],
         "points": {
           "totals": {
-            "wins": 2,
+            "wins": 6,
             "ties": 0,
             "losses": 4
           },
           "bestBall": {
-            "wins": 1,
+            "wins": 2,
             "ties": 0,
             "losses": 1
           },
           "2bestBall": {
-            "wins": 0,
+            "wins": 1,
             "ties": 0,
             "losses": 0
           },
@@ -56,7 +56,7 @@
             "losses": 0
           },
           "2BallBramble": {
-            "wins": 0,
+            "wins": 1,
             "ties": 0,
             "losses": 1
           },
@@ -66,7 +66,7 @@
             "losses": 0
           },
           "scramble": {
-            "wins": 0,
+            "wins": 1,
             "ties": 0,
             "losses": 1
           },
@@ -92,8 +92,8 @@
           "stoatinBrae2": [4, 3, 4, 5, 2, 4, 4, 3, 5],
           "stoneHedgeSouth1": [6, 4, 3, 5, 4, 3, 6, 5, 4],
           "stoneHedgeSouth2": [5, 4, 5, 4, 4, 0, 0, 0, 0],
-          "gullLakeEast1": [0, 0, 0, 0, 0, 0, 0, 0, 0],
-          "gullLakeEast2": [0, 0, 0, 0, 0, 0, 0, 0, 0],
+          "gullLakeEast1": [4, 4, 5, 5, 5, 4, 6, 0, 0],
+          "gullLakeEast2": [6, 3, 7, 6, 5, 3, 5, 5, 5],
           "gullLakeWest1": [0, 0, 0, 0, 0, 0, 0, 0, 0],
           "gullLakeWest2": [0, 0, 0, 0, 0, 0, 0, 0, 0]
         },
@@ -109,22 +109,22 @@
         "gaylordGolfClub": {
           "total": 99
         },
-        "appearances": [2021],
+        "appearances": [2021, 2022],
         "points": {
           "totals": {
             "wins": 4,
-            "ties": 0,
-            "losses": 2
+            "ties": 1,
+            "losses": 6
           },
           "bestBall": {
             "wins": 1,
             "ties": 0,
-            "losses": 1
+            "losses": 2
           },
           "2bestBall": {
             "wins": 0,
             "ties": 0,
-            "losses": 0
+            "losses": 1
           },
           "1BallBramble": {
             "wins": 0,
@@ -133,7 +133,7 @@
           },
           "2BallBramble": {
             "wins": 1,
-            "ties": 0,
+            "ties": 1,
             "losses": 0
           },
           "brambleAlternate": {
@@ -144,7 +144,7 @@
           "scramble": {
             "wins": 1,
             "ties": 0,
-            "losses": 0
+            "losses": 1
           },
           "singles": {
             "wins": 1,
@@ -236,8 +236,8 @@
           "stoatinBrae2": [5, 4, 5, 5, 3, 4, 5, 3, 5],
           "stoneHedgeSouth1": [5, 6, 3, 7, 5, 4, 5, 5, 0],
           "stoneHedgeSouth2": [6, 5, 4, 4, 4, 3, 4, 6, 0],
-          "gullLakeEast1": [0, 0, 0, 0, 0, 0, 0, 0, 0],
-          "gullLakeEast2": [0, 0, 0, 0, 0, 0, 0, 0, 0],
+          "gullLakeEast1": [4, 3, 4, 4, 4, 3, 5, 4, 5],
+          "gullLakeEast2": [6, 5, 6, 6, 6, 4, 0, 0, 0],
           "gullLakeWest1": [0, 0, 0, 0, 0, 0, 0, 0, 0],
           "gullLakeWest2": [0, 0, 0, 0, 0, 0, 0, 0, 0]
         },
@@ -253,20 +253,20 @@
         "gaylordGolfClub": {
           "total": 99
         },
-        "appearances": [2021],
+        "appearances": [2021, 2022],
         "points": {
           "totals": {
-            "wins": 3,
+            "wins": 5,
             "ties": 1,
-            "losses": 2
+            "losses": 4
           },
           "bestBall": {
             "wins": 1,
             "ties": 0,
-            "losses": 1
+            "losses": 2
           },
           "2bestBall": {
-            "wins": 0,
+            "wins": 1,
             "ties": 0,
             "losses": 0
           },
@@ -276,7 +276,7 @@
             "losses": 0
           },
           "2BallBramble": {
-            "wins": 1,
+            "wins": 2,
             "ties": 0,
             "losses": 0
           },
@@ -313,8 +313,8 @@
           "stoatinBrae2": [4, 3, 4, 4, 4, 5, 6, 4, 6],
           "stoneHedgeSouth1": [5, 6, 3, 8, 5, 6, 8, 4, 6],
           "stoneHedgeSouth2": [5, 4, 4, 5, 4, 0, 0, 0, 0],
-          "gullLakeEast1": [0, 0, 0, 0, 0, 0, 0, 0, 0],
-          "gullLakeEast2": [0, 0, 0, 0, 0, 0, 0, 0, 0],
+          "gullLakeEast1": [4, 3, 4, 4, 4, 3, 4, 4, 5],
+          "gullLakeEast2": [7, 4, 7, 6, 6, 6, 5, 6, 5],
           "gullLakeWest1": [0, 0, 0, 0, 0, 0, 0, 0, 0],
           "gullLakeWest2": [0, 0, 0, 0, 0, 0, 0, 0, 0]
         },
@@ -330,22 +330,22 @@
         "gaylordGolfClub": {
           "total": 114
         },
-        "appearances": [2021],
+        "appearances": [2021, 2022],
         "points": {
           "totals": {
-            "wins": 1,
-            "ties": 2,
-            "losses": 3
+            "wins": 3,
+            "ties": 3,
+            "losses": 4
           },
           "bestBall": {
-            "wins": 1,
+            "wins": 2,
             "ties": 0,
             "losses": 1
           },
           "2bestBall": {
             "wins": 0,
             "ties": 0,
-            "losses": 0
+            "losses": 1
           },
           "1BallBramble": {
             "wins": 0,
@@ -354,7 +354,7 @@
           },
           "2BallBramble": {
             "wins": 0,
-            "ties": 0,
+            "ties": 1,
             "losses": 1
           },
           "brambleAlternate": {
@@ -363,7 +363,7 @@
             "losses": 0
           },
           "scramble": {
-            "wins": 0,
+            "wins": 1,
             "ties": 0,
             "losses": 1
           },
@@ -390,8 +390,8 @@
           "stoatinBrae2": [4, 2, 8, 7, 6, 8, 10, 7, 8],
           "stoneHedgeSouth1": [8, 10, 6, 10, 10, 0, 0, 0, 0],
           "stoneHedgeSouth2": [6, 5, 4, 4, 4, 3, 4, 6, 0],
-          "gullLakeEast1": [0, 0, 0, 0, 0, 0, 0, 0, 0],
-          "gullLakeEast2": [0, 0, 0, 0, 0, 0, 0, 0, 0],
+          "gullLakeEast1": [7, 5, 8, 8, 8, 4, 7, 0, 0],
+          "gullLakeEast2": [7, 7, 7, 7, 8, 6, 5, 6, 7],
           "gullLakeWest1": [0, 0, 0, 0, 0, 0, 0, 0, 0],
           "gullLakeWest2": [0, 0, 0, 0, 0, 0, 0, 0, 0]
         },
@@ -407,17 +407,17 @@
         "gaylordGolfClub": {
           "total": 121
         },
-        "appearances": [2021],
+        "appearances": [2021, 2022],
         "points": {
           "totals": {
-            "wins": 3,
+            "wins": 4,
             "ties": 2,
-            "losses": 1
+            "losses": 4
           },
           "bestBall": {
-            "wins": 0,
+            "wins": 1,
             "ties": 0,
-            "losses": 1
+            "losses": 2
           },
           "2bestBall": {
             "wins": 0,
@@ -432,7 +432,7 @@
           "2BallBramble": {
             "wins": 1,
             "ties": 0,
-            "losses": 0
+            "losses": 1
           },
           "brambleAlternate": {
             "wins": 0,
@@ -442,7 +442,7 @@
           "scramble": {
             "wins": 1,
             "ties": 0,
-            "losses": 0
+            "losses": 1
           },
           "singles": {
             "wins": 0,
@@ -466,8 +466,8 @@
           "stoatinBrae2": [4, 3, 4, 4, 4, 3, 4, 5, 0],
           "stoneHedgeSouth1": [6, 5, 4, 7, 5, 6, 6, 6, 0],
           "stoneHedgeSouth2": [6, 4, 4, 3, 4, 4, 3, 5, 0],
-          "gullLakeEast1": [0, 0, 0, 0, 0, 0, 0, 0, 0],
-          "gullLakeEast2": [0, 0, 0, 0, 0, 0, 0, 0, 0],
+          "gullLakeEast1": [6, 5, 8, 5, 5, 5, 6, 0, 0],
+          "gullLakeEast2": [7, 4, 7, 6, 6, 6, 5, 6, 5],
           "gullLakeWest1": [0, 0, 0, 0, 0, 0, 0, 0, 0],
           "gullLakeWest2": [0, 0, 0, 0, 0, 0, 0, 0, 0]
         },
@@ -483,20 +483,20 @@
         "gaylordGolfClub": {
           "total": 99
         },
-        "appearances": [2021],
+        "appearances": [2021, 2022],
         "points": {
           "totals": {
-            "wins": 2,
+            "wins": 5,
             "ties": 0,
-            "losses": 4
+            "losses": 5
           },
           "bestBall": {
-            "wins": 1,
+            "wins": 2,
             "ties": 0,
             "losses": 0
           },
           "2bestBall": {
-            "wins": 0,
+            "wins": 1,
             "ties": 0,
             "losses": 0
           },
@@ -508,7 +508,7 @@
           "2BallBramble": {
             "wins": 0,
             "ties": 0,
-            "losses": 1
+            "losses": 2
           },
           "brambleAlternate": {
             "wins": 1,
@@ -516,7 +516,7 @@
             "losses": 0
           },
           "scramble": {
-            "wins": 0,
+            "wins": 1,
             "ties": 0,
             "losses": 1
           },
@@ -542,8 +542,8 @@
           "stoatinBrae2": [4, 3, 4, 4, 4, 3, 4, 6, 0],
           "stoneHedgeSouth1": [6, 7, 3, 8, 6, 7, 6, 4, 0],
           "stoneHedgeSouth2": [6, 5, 5, 4, 5, 5, 3, 0, 0],
-          "gullLakeEast1": [0, 0, 0, 0, 0, 0, 0, 0, 0],
-          "gullLakeEast2": [0, 0, 0, 0, 0, 0, 0, 0, 0],
+          "gullLakeEast1": [4, 3, 4, 4, 4, 3, 4, 5, 0],
+          "gullLakeEast2": [6, 3, 7, 6, 5, 3, 5, 5, 5],
           "gullLakeWest1": [0, 0, 0, 0, 0, 0, 0, 0, 0],
           "gullLakeWest2": [0, 0, 0, 0, 0, 0, 0, 0, 0]
         },
@@ -559,22 +559,22 @@
         "gaylordGolfClub": {
           "total": 99
         },
-        "appearances": [2021],
+        "appearances": [2021, 2022],
         "points": {
           "totals": {
-            "wins": 4,
+            "wins": 5,
             "ties": 0,
-            "losses": 2
+            "losses": 5
           },
           "bestBall": {
-            "wins": 0,
+            "wins": 1,
             "ties": 0,
             "losses": 1
           },
           "2bestBall": {
             "wins": 0,
             "ties": 0,
-            "losses": 0
+            "losses": 1
           },
           "1BallBramble": {
             "wins": 1,
@@ -582,7 +582,7 @@
             "losses": 0
           },
           "2BallBramble": {
-            "wins": 1,
+            "wins": 2,
             "ties": 0,
             "losses": 0
           },
@@ -594,7 +594,7 @@
           "scramble": {
             "wins": 1,
             "ties": 0,
-            "losses": 0
+            "losses": 1
           },
           "singles": {
             "wins": 1,
@@ -612,8 +612,8 @@
           "stoatinBrae2": [7, 5, 5, 6, 4, 8, 6, 7, 6],
           "stoneHedgeSouth1": [6, 6, 4, 9, 4, 0, 0, 0, 0],
           "stoneHedgeSouth2": [5, 4, 4, 5, 4, 0, 0, 0, 0],
-          "gullLakeEast1": [0, 0, 0, 0, 0, 0, 0, 0, 0],
-          "gullLakeEast2": [0, 0, 0, 0, 0, 0, 0, 0, 0],
+          "gullLakeEast1": [4, 3, 4, 4, 4, 3, 4, 4, 0],
+          "gullLakeEast2": [7, 6, 6, 6, 4, 5, 5, 6, 6],
           "gullLakeWest1": [0, 0, 0, 0, 0, 0, 0, 0, 0],
           "gullLakeWest2": [0, 0, 0, 0, 0, 0, 0, 0, 0]
         },
@@ -632,17 +632,17 @@
         "appearances": [2022],
         "points": {
           "totals": {
-            "wins": 0,
+            "wins": 3,
             "ties": 0,
-            "losses": 0
+            "losses": 1
           },
           "bestBall": {
             "wins": 0,
             "ties": 0,
-            "losses": 0
+            "losses": 1
           },
           "2bestBall": {
-            "wins": 0,
+            "wins": 1,
             "ties": 0,
             "losses": 0
           },
@@ -652,7 +652,7 @@
             "losses": 0
           },
           "2BallBramble": {
-            "wins": 0,
+            "wins": 1,
             "ties": 0,
             "losses": 0
           },
@@ -662,7 +662,7 @@
             "losses": 0
           },
           "scramble": {
-            "wins": 0,
+            "wins": 1,
             "ties": 0,
             "losses": 0
           },
@@ -682,8 +682,8 @@
           "stoatinBrae2": [4, 3, 4, 4, 4, 3, 4, 5, 0],
           "stoneHedgeSouth1": [5, 6, 3, 7, 5, 6, 5, 6, 5],
           "stoneHedgeSouth2": [6, 5, 4, 3, 4, 4, 3, 0, 0],
-          "gullLakeEast1": [0, 0, 0, 0, 0, 0, 0, 0, 0],
-          "gullLakeEast2": [0, 0, 0, 0, 0, 0, 0, 0, 0],
+          "gullLakeEast1": [8, 5, 6, 5, 5, 3, 5, 0, 0],
+          "gullLakeEast2": [7, 6, 6, 6, 4, 5, 5, 6, 6],
           "gullLakeWest1": [0, 0, 0, 0, 0, 0, 0, 0, 0],
           "gullLakeWest2": [0, 0, 0, 0, 0, 0, 0, 0, 0]
         },
@@ -702,17 +702,17 @@
         "appearances": [2022],
         "points": {
           "totals": {
-            "wins": 0,
-            "ties": 0,
-            "losses": 0
+            "wins": 2,
+            "ties": 1,
+            "losses": 1
           },
           "bestBall": {
             "wins": 0,
             "ties": 0,
-            "losses": 0
+            "losses": 1
           },
           "2bestBall": {
-            "wins": 0,
+            "wins": 1,
             "ties": 0,
             "losses": 0
           },
@@ -723,7 +723,7 @@
           },
           "2BallBramble": {
             "wins": 0,
-            "ties": 0,
+            "ties": 1,
             "losses": 0
           },
           "brambleAlternate": {
@@ -732,7 +732,7 @@
             "losses": 0
           },
           "scramble": {
-            "wins": 0,
+            "wins": 1,
             "ties": 0,
             "losses": 0
           },
@@ -752,8 +752,8 @@
           "stoatinBrae2": [4, 3, 4, 4, 4, 5, 6, 4, 6],
           "stoneHedgeSouth1": [7, 8, 4, 5, 5, 4, 8, 4, 0],
           "stoneHedgeSouth2": [6, 5, 4, 3, 4, 4, 3, 0, 0],
-          "gullLakeEast1": [0, 0, 0, 0, 0, 0, 0, 0, 0],
-          "gullLakeEast2": [0, 0, 0, 0, 0, 0, 0, 0, 0],
+          "gullLakeEast1": [4, 3, 4, 4, 4, 3, 4, 4, 0],
+          "gullLakeEast2": [5, 4, 4, 5, 4, 3, 0, 0, 0],
           "gullLakeWest1": [0, 0, 0, 0, 0, 0, 0, 0, 0],
           "gullLakeWest2": [0, 0, 0, 0, 0, 0, 0, 0, 0]
         },
@@ -772,19 +772,19 @@
         "appearances": [2022],
         "points": {
           "totals": {
-            "wins": 0,
+            "wins": 2,
             "ties": 0,
-            "losses": 0
+            "losses": 2
           },
           "bestBall": {
-            "wins": 0,
+            "wins": 1,
             "ties": 0,
             "losses": 0
           },
           "2bestBall": {
             "wins": 0,
             "ties": 0,
-            "losses": 0
+            "losses": 1
           },
           "1BallBramble": {
             "wins": 0,
@@ -794,7 +794,7 @@
           "2BallBramble": {
             "wins": 0,
             "ties": 0,
-            "losses": 0
+            "losses": 1
           },
           "brambleAlternate": {
             "wins": 0,
@@ -802,7 +802,7 @@
             "losses": 0
           },
           "scramble": {
-            "wins": 0,
+            "wins": 1,
             "ties": 0,
             "losses": 0
           },
@@ -822,8 +822,8 @@
           "stoatinBrae2": [4, 3, 4, 4, 4, 3, 4, 6, 0],
           "stoneHedgeSouth1": [6, 5, 4, 5, 4, 4, 6, 5, 5],
           "stoneHedgeSouth2": [6, 5, 5, 4, 5, 5, 3, 0, 0],
-          "gullLakeEast1": [0, 0, 0, 0, 0, 0, 0, 0, 0],
-          "gullLakeEast2": [0, 0, 0, 0, 0, 0, 0, 0, 0],
+          "gullLakeEast1": [4, 3, 4, 4, 4, 3, 4, 5, 0],
+          "gullLakeEast2": [6, 5, 6, 6, 6, 4, 0, 0, 0],
           "gullLakeWest1": [0, 0, 0, 0, 0, 0, 0, 0, 0],
           "gullLakeWest2": [0, 0, 0, 0, 0, 0, 0, 0, 0]
         },
@@ -843,18 +843,18 @@
         "points": {
           "totals": {
             "wins": 0,
-            "ties": 0,
-            "losses": 0
+            "ties": 1,
+            "losses": 3
           },
           "bestBall": {
             "wins": 0,
             "ties": 0,
-            "losses": 0
+            "losses": 1
           },
           "2bestBall": {
             "wins": 0,
             "ties": 0,
-            "losses": 0
+            "losses": 1
           },
           "1BallBramble": {
             "wins": 0,
@@ -863,7 +863,7 @@
           },
           "2BallBramble": {
             "wins": 0,
-            "ties": 0,
+            "ties": 1,
             "losses": 0
           },
           "brambleAlternate": {
@@ -874,7 +874,7 @@
           "scramble": {
             "wins": 0,
             "ties": 0,
-            "losses": 0
+            "losses": 1
           },
           "singles": {
             "wins": 0,
@@ -892,8 +892,8 @@
           "stoatinBrae2": [5, 4, 5, 5, 3, 4, 5, 3, 5],
           "stoneHedgeSouth1": [6, 9, 4, 10, 6, 0, 0, 0, 0],
           "stoneHedgeSouth2": [5, 4, 5, 4, 4, 0, 0, 0, 0],
-          "gullLakeEast1": [0, 0, 0, 0, 0, 0, 0, 0, 0],
-          "gullLakeEast2": [0, 0, 0, 0, 0, 0, 0, 0, 0],
+          "gullLakeEast1": [4, 3, 4, 4, 4, 3, 5, 4, 5],
+          "gullLakeEast2": [7, 7, 7, 7, 8, 6, 5, 6, 7],
           "gullLakeWest1": [0, 0, 0, 0, 0, 0, 0, 0, 0],
           "gullLakeWest2": [0, 0, 0, 0, 0, 0, 0, 0, 0]
         },
@@ -912,17 +912,17 @@
         "appearances": [2022],
         "points": {
           "totals": {
-            "wins": 0,
+            "wins": 1,
             "ties": 0,
-            "losses": 0
+            "losses": 3
           },
           "bestBall": {
             "wins": 0,
             "ties": 0,
-            "losses": 0
+            "losses": 1
           },
           "2bestBall": {
-            "wins": 0,
+            "wins": 1,
             "ties": 0,
             "losses": 0
           },
@@ -934,7 +934,7 @@
           "2BallBramble": {
             "wins": 0,
             "ties": 0,
-            "losses": 0
+            "losses": 1
           },
           "brambleAlternate": {
             "wins": 0,
@@ -944,7 +944,7 @@
           "scramble": {
             "wins": 0,
             "ties": 0,
-            "losses": 0
+            "losses": 1
           },
           "singles": {
             "wins": 0,

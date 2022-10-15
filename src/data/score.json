@@ -6,13 +6,13 @@
           "name": "green team",
           "nickname": "crohns crushers",
           "players": ["Matt", "Travis", "Derek", "Gordon", "Curtis", "Jake"],
-          "score": "8.5"
+          "score": "14"
         },
         "team2": {
           "name": "blue team",
           "nickname": "team ramrod",
           "players": ["Dylan", "RJ", "Craig", "Dan", "Cam", "Evan"],
-          "score": "3.5"
+          "score": "4"
         }
       }
     },

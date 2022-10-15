@@ -311,7 +311,21 @@
               "losses": 0
             },
             {
-              "id": "bramble",
+              "id": "2bestBall",
+              "game": "Best Ball",
+              "wins": 0,
+              "ties": 0,
+              "losses": 0
+            },
+            {
+              "id": "1BallBramble",
+              "game": "Bramble",
+              "wins": 0,
+              "ties": 0,
+              "losses": 0
+            },
+            {
+              "id": "2BallBramble",
               "game": "Bramble",
               "wins": 0,
               "ties": 0,
@@ -640,7 +654,7 @@
         }
       }
     },
-    "dylan": { 
+    "dylan": {
       "name": "dylan",
       "year": {
         "_2021": {
@@ -951,7 +965,21 @@
               "losses": 0
             },
             {
-              "id": "bramble",
+              "id": "2bestBall",
+              "game": "Best Ball",
+              "wins": 0,
+              "ties": 0,
+              "losses": 0
+            },
+            {
+              "id": "1BallBramble",
+              "game": "Bramble",
+              "wins": 0,
+              "ties": 0,
+              "losses": 0
+            },
+            {
+              "id": "2BallBramble",
               "game": "Bramble",
               "wins": 0,
               "ties": 0,
@@ -1860,7 +1888,21 @@
               "losses": 0
             },
             {
-              "id": "bramble",
+              "id": "2bestBall",
+              "game": "Best Ball",
+              "wins": 0,
+              "ties": 0,
+              "losses": 0
+            },
+            {
+              "id": "1BallBramble",
+              "game": "Bramble",
+              "wins": 0,
+              "ties": 0,
+              "losses": 0
+            },
+            {
+              "id": "2BallBramble",
               "game": "Bramble",
               "wins": 0,
               "ties": 0,
@@ -2515,7 +2557,21 @@
               "losses": 0
             },
             {
-              "id": "bramble",
+              "id": "2bestBall",
+              "game": "Best Ball",
+              "wins": 0,
+              "ties": 0,
+              "losses": 0
+            },
+            {
+              "id": "1BallBramble",
+              "game": "Bramble",
+              "wins": 0,
+              "ties": 0,
+              "losses": 0
+            },
+            {
+              "id": "2BallBramble",
               "game": "Bramble",
               "wins": 0,
               "ties": 0,
@@ -3170,7 +3226,21 @@
               "losses": 0
             },
             {
-              "id": "bramble",
+              "id": "2bestBall",
+              "game": "Best Ball",
+              "wins": 0,
+              "ties": 0,
+              "losses": 0
+            },
+            {
+              "id": "1BallBramble",
+              "game": "Bramble",
+              "wins": 0,
+              "ties": 0,
+              "losses": 0
+            },
+            {
+              "id": "2BallBramble",
               "game": "Bramble",
               "wins": 0,
               "ties": 0,
@@ -3825,7 +3895,21 @@
               "losses": 0
             },
             {
-              "id": "bramble",
+              "id": "2bestBall",
+              "game": "Best Ball",
+              "wins": 0,
+              "ties": 0,
+              "losses": 0
+            },
+            {
+              "id": "1BallBramble",
+              "game": "Bramble",
+              "wins": 0,
+              "ties": 0,
+              "losses": 0
+            },
+            {
+              "id": "2BallBramble",
               "game": "Bramble",
               "wins": 0,
               "ties": 0,
@@ -4465,7 +4549,21 @@
               "losses": 0
             },
             {
-              "id": "bramble",
+              "id": "2bestBall",
+              "game": "Best Ball",
+              "wins": 0,
+              "ties": 0,
+              "losses": 0
+            },
+            {
+              "id": "1BallBramble",
+              "game": "Bramble",
+              "wins": 0,
+              "ties": 0,
+              "losses": 0
+            },
+            {
+              "id": "2BallBramble",
               "game": "Bramble",
               "wins": 0,
               "ties": 0,
@@ -4841,7 +4939,21 @@
               "losses": 0
             },
             {
-              "id": "bramble",
+              "id": "2bestBall",
+              "game": "Best Ball",
+              "wins": 0,
+              "ties": 0,
+              "losses": 0
+            },
+            {
+              "id": "1BallBramble",
+              "game": "Bramble",
+              "wins": 0,
+              "ties": 0,
+              "losses": 0
+            },
+            {
+              "id": "2BallBramble",
               "game": "Bramble",
               "wins": 0,
               "ties": 0,
@@ -5217,7 +5329,21 @@
               "losses": 0
             },
             {
-              "id": "bramble",
+              "id": "2bestBall",
+              "game": "Best Ball",
+              "wins": 0,
+              "ties": 0,
+              "losses": 0
+            },
+            {
+              "id": "1BallBramble",
+              "game": "Bramble",
+              "wins": 0,
+              "ties": 0,
+              "losses": 0
+            },
+            {
+              "id": "2BallBramble",
               "game": "Bramble",
               "wins": 0,
               "ties": 0,
@@ -5593,7 +5719,21 @@
               "losses": 0
             },
             {
-              "id": "bramble",
+              "id": "2bestBall",
+              "game": "Best Ball",
+              "wins": 0,
+              "ties": 0,
+              "losses": 0
+            },
+            {
+              "id": "1BallBramble",
+              "game": "Bramble",
+              "wins": 0,
+              "ties": 0,
+              "losses": 0
+            },
+            {
+              "id": "2BallBramble",
               "game": "Bramble",
               "wins": 0,
               "ties": 0,
@@ -5969,7 +6109,21 @@
               "losses": 0
             },
             {
-              "id": "bramble",
+              "id": "2bestBall",
+              "game": "Best Ball",
+              "wins": 0,
+              "ties": 0,
+              "losses": 0
+            },
+            {
+              "id": "1BallBramble",
+              "game": "Bramble",
+              "wins": 0,
+              "ties": 0,
+              "losses": 0
+            },
+            {
+              "id": "2BallBramble",
               "game": "Bramble",
               "wins": 0,
               "ties": 0,
@@ -6345,7 +6499,21 @@
               "losses": 0
             },
             {
-              "id": "bramble",
+              "id": "2bestBall",
+              "game": "Best Ball",
+              "wins": 0,
+              "ties": 0,
+              "losses": 0
+            },
+            {
+              "id": "1BallBramble",
+              "game": "Bramble",
+              "wins": 0,
+              "ties": 0,
+              "losses": 0
+            },
+            {
+              "id": "2BallBramble",
               "game": "Bramble",
               "wins": 0,
               "ties": 0,

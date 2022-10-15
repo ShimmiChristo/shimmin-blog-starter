@@ -48,9 +48,9 @@ function MatchScore({ year }) {
   const currentYear = year ? scoreInfo[year].teams : undefined
 
   function changeBackgroundColor() {
-    if (currentYear.team1.score > currentYear.team2.score) {
+    if (parseInt(currentYear.team1.score) > parseInt(currentYear.team2.score)) {
       return `team-one-color`
-    } else if (currentYear.team1.score < currentYear.team2.score) {
+    } else if (parseInt(currentYear.team1.score) < parseInt(currentYear.team2.score)) {
       return `team-two-color`
     } else {
       return `bk-gray`
