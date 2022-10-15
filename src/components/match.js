@@ -55,7 +55,7 @@ const Section = styled.section`
   }
   ${OpenBtn} {
     display: block;
-    width: 100%;
+    width: 90%;
     text-align: center;
   }
   .match__header {

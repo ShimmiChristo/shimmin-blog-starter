@@ -59,6 +59,7 @@ function PlayerCard({
     width: 100%;
     height: auto;
     overflow: hidden;
+    z-index: -1;
   `
   const Header = styled.header`
     display: flex;
