@@ -421,17 +421,31 @@ const TopicPage = ({ data, location }) => {
             {course[`gullLakeWest1`].name}
           </a>
         </div>
-        {/* <Match
+        <Match
           matchId="4.1 - Scramble. Average handicap"
           courseMatch="gullLakeWest1"
           matchHandicap="average"
-          gameplay=""
-          player1="gordon"
-          player1Handicap="12"
-          player2="cam"
-          player2Handicap="21"
+          gameplay="one-ball"
+          player1="matt"
+          player1Handicap="6"
+          player2="dylan"
+          player2Handicap="0"
           player3="jake"
           player3Handicap="21"
+          player4="evan"
+          player4Handicap="27"
+        />
+        <Match
+          matchId="4.1 - Scramble. Average handicap"
+          courseMatch="gullLakeWest1"
+          matchHandicap="average"
+          gameplay="one-ball"
+          player1="travis"
+          player1Handicap="21"
+          player2="rj"
+          player2Handicap="12"
+          player3="derek"
+          player3Handicap="27"
           player4="craig"
           player4Handicap="21"
         />
@@ -439,30 +453,16 @@ const TopicPage = ({ data, location }) => {
           matchId="4.1 - Scramble. Average handicap"
           courseMatch="gullLakeWest1"
           matchHandicap="average"
-          gameplay=""
-          player1="travis"
-          player1Handicap="21"
-          player2="dan"
-          player2Handicap="23"
-          player3="matt"
-          player3Handicap="6"
-          player4="rj"
-          player4Handicap="12"
-        />
-        <Match
-          matchId="4.1 - Scramble. Average handicap"
-          courseMatch="gullLakeWest1"
-          matchHandicap="average"
-          gameplay=""
-          player1="derek"
-          player1Handicap="27"
-          player2="evan"
-          player2Handicap="27"
+          gameplay="one-ball"
+          player1="gordon"
+          player1Handicap="12"
+          player2="cam"
+          player2Handicap="21"
           player3="curtis"
           player3Handicap="23"
-          player4="dylan"
-          player4Handicap="0"
-        /> */}
+          player4="dan"
+          player4Handicap="23"
+        />
       </MatchNavSection>
 
       <MatchNavSection
@@ -475,7 +475,7 @@ const TopicPage = ({ data, location }) => {
             {course[`gullLakeWest2`].name}
           </a>
         </div>
-        {/* <Match
+        <Match
           matchId="4.2 - Singles Matches. Full handicap"
           courseMatch="gullLakeWest2"
           matchHandicap="full"
@@ -534,7 +534,7 @@ const TopicPage = ({ data, location }) => {
           player1Handicap="27"
           player2="evan"
           player2Handicap="27"
-        /> */}
+        />
       </MatchNavSection>
     </Layout>
   )

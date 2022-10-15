@@ -18,7 +18,7 @@
           "stoneHedgeSouth2": [6, 4, 4, 3, 4, 4, 3, 5, 0],
           "gullLakeEast1": [4, 3, 4, 4, 4, 3, 4, 4, 5],
           "gullLakeEast2": [5, 4, 4, 5, 4, 3, 0, 0, 0],
-          "gullLakeWest1": [0, 0, 0, 0, 0, 0, 0, 0, 0],
+          "gullLakeWest1": [5, 3, 5, 4, 7, 6, 5, 6, 0],
           "gullLakeWest2": [0, 0, 0, 0, 0, 0, 0, 0, 0]
         },
         "jonesMasterPiece": {
@@ -94,7 +94,7 @@
           "stoneHedgeSouth2": [5, 4, 5, 4, 4, 0, 0, 0, 0],
           "gullLakeEast1": [4, 4, 5, 5, 5, 4, 6, 0, 0],
           "gullLakeEast2": [6, 3, 7, 6, 5, 3, 5, 5, 5],
-          "gullLakeWest1": [0, 0, 0, 0, 0, 0, 0, 0, 0],
+          "gullLakeWest1": [5, 4, 4, 4, 5, 3, 5, 5, 0],
           "gullLakeWest2": [0, 0, 0, 0, 0, 0, 0, 0, 0]
         },
         "jonesMasterPiece": {
@@ -238,7 +238,7 @@
           "stoneHedgeSouth2": [6, 5, 4, 4, 4, 3, 4, 6, 0],
           "gullLakeEast1": [4, 3, 4, 4, 4, 3, 5, 4, 5],
           "gullLakeEast2": [6, 5, 6, 6, 6, 4, 0, 0, 0],
-          "gullLakeWest1": [0, 0, 0, 0, 0, 0, 0, 0, 0],
+          "gullLakeWest1": [4, 3, 4, 4, 5, 3, 4, 4, 5],
           "gullLakeWest2": [0, 0, 0, 0, 0, 0, 0, 0, 0]
         },
         "jonesMasterPiece": {
@@ -315,7 +315,7 @@
           "stoneHedgeSouth2": [5, 4, 4, 5, 4, 0, 0, 0, 0],
           "gullLakeEast1": [4, 3, 4, 4, 4, 3, 4, 4, 5],
           "gullLakeEast2": [7, 4, 7, 6, 6, 6, 5, 6, 5],
-          "gullLakeWest1": [0, 0, 0, 0, 0, 0, 0, 0, 0],
+          "gullLakeWest1": [4, 3, 4, 4, 5, 3, 4, 4, 5],
           "gullLakeWest2": [0, 0, 0, 0, 0, 0, 0, 0, 0]
         },
         "jonesMasterPiece": {
@@ -392,7 +392,7 @@
           "stoneHedgeSouth2": [6, 5, 4, 4, 4, 3, 4, 6, 0],
           "gullLakeEast1": [7, 5, 8, 8, 8, 4, 7, 0, 0],
           "gullLakeEast2": [7, 7, 7, 7, 8, 6, 5, 6, 7],
-          "gullLakeWest1": [0, 0, 0, 0, 0, 0, 0, 0, 0],
+          "gullLakeWest1": [4, 3, 4, 4, 5, 3, 4, 4, 0],
           "gullLakeWest2": [0, 0, 0, 0, 0, 0, 0, 0, 0]
         },
         "jonesMasterPiece": {
@@ -468,7 +468,7 @@
           "stoneHedgeSouth2": [6, 4, 4, 3, 4, 4, 3, 5, 0],
           "gullLakeEast1": [6, 5, 8, 5, 5, 5, 6, 0, 0],
           "gullLakeEast2": [7, 4, 7, 6, 6, 6, 5, 6, 5],
-          "gullLakeWest1": [0, 0, 0, 0, 0, 0, 0, 0, 0],
+          "gullLakeWest1": [4, 3, 4, 4, 5, 3, 4, 4, 5],
           "gullLakeWest2": [0, 0, 0, 0, 0, 0, 0, 0, 0]
         },
         "jonesMasterPiece": {
@@ -544,7 +544,7 @@
           "stoneHedgeSouth2": [6, 5, 5, 4, 5, 5, 3, 0, 0],
           "gullLakeEast1": [4, 3, 4, 4, 4, 3, 4, 5, 0],
           "gullLakeEast2": [6, 3, 7, 6, 5, 3, 5, 5, 5],
-          "gullLakeWest1": [0, 0, 0, 0, 0, 0, 0, 0, 0],
+          "gullLakeWest1": [4, 3, 4, 4, 5, 3, 4, 4, 5],
           "gullLakeWest2": [0, 0, 0, 0, 0, 0, 0, 0, 0]
         },
         "jonesMasterPiece": {
@@ -614,7 +614,7 @@
           "stoneHedgeSouth2": [5, 4, 4, 5, 4, 0, 0, 0, 0],
           "gullLakeEast1": [4, 3, 4, 4, 4, 3, 4, 4, 0],
           "gullLakeEast2": [7, 6, 6, 6, 4, 5, 5, 6, 6],
-          "gullLakeWest1": [0, 0, 0, 0, 0, 0, 0, 0, 0],
+          "gullLakeWest1": [4, 4, 5, 5, 5, 3, 4, 4, 0],
           "gullLakeWest2": [0, 0, 0, 0, 0, 0, 0, 0, 0]
         },
         "stoatinBrae": {
@@ -684,7 +684,7 @@
           "stoneHedgeSouth2": [6, 5, 4, 3, 4, 4, 3, 0, 0],
           "gullLakeEast1": [8, 5, 6, 5, 5, 3, 5, 0, 0],
           "gullLakeEast2": [7, 6, 6, 6, 4, 5, 5, 6, 6],
-          "gullLakeWest1": [0, 0, 0, 0, 0, 0, 0, 0, 0],
+          "gullLakeWest1": [5, 3, 5, 4, 7, 6, 5, 6, 0],
           "gullLakeWest2": [0, 0, 0, 0, 0, 0, 0, 0, 0]
         },
         "stoatinBrae": {
@@ -754,7 +754,7 @@
           "stoneHedgeSouth2": [6, 5, 4, 3, 4, 4, 3, 0, 0],
           "gullLakeEast1": [4, 3, 4, 4, 4, 3, 4, 4, 0],
           "gullLakeEast2": [5, 4, 4, 5, 4, 3, 0, 0, 0],
-          "gullLakeWest1": [0, 0, 0, 0, 0, 0, 0, 0, 0],
+          "gullLakeWest1": [4, 4, 5, 5, 5, 3, 4, 4, 0],
           "gullLakeWest2": [0, 0, 0, 0, 0, 0, 0, 0, 0]
         },
         "stoatinBrae": {
@@ -824,7 +824,7 @@
           "stoneHedgeSouth2": [6, 5, 5, 4, 5, 5, 3, 0, 0],
           "gullLakeEast1": [4, 3, 4, 4, 4, 3, 4, 5, 0],
           "gullLakeEast2": [6, 5, 6, 6, 6, 4, 0, 0, 0],
-          "gullLakeWest1": [0, 0, 0, 0, 0, 0, 0, 0, 0],
+          "gullLakeWest1": [4, 3, 4, 4, 5, 3, 4, 4, 0],
           "gullLakeWest2": [0, 0, 0, 0, 0, 0, 0, 0, 0]
         },
         "stoatinBrae": {
@@ -894,7 +894,7 @@
           "stoneHedgeSouth2": [5, 4, 5, 4, 4, 0, 0, 0, 0],
           "gullLakeEast1": [4, 3, 4, 4, 4, 3, 5, 4, 5],
           "gullLakeEast2": [7, 7, 7, 7, 8, 6, 5, 6, 7],
-          "gullLakeWest1": [0, 0, 0, 0, 0, 0, 0, 0, 0],
+          "gullLakeWest1": [5, 4, 4, 4, 5, 3, 5, 5, 0],
           "gullLakeWest2": [0, 0, 0, 0, 0, 0, 0, 0, 0]
         },
         "stoatinBrae": {
