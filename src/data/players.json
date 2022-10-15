@@ -19,7 +19,7 @@
           "gullLakeEast1": [4, 3, 4, 4, 4, 3, 4, 4, 5],
           "gullLakeEast2": [5, 4, 4, 5, 4, 3, 0, 0, 0],
           "gullLakeWest1": [5, 3, 5, 4, 7, 6, 5, 6, 0],
-          "gullLakeWest2": [0, 0, 0, 0, 0, 0, 0, 0, 0]
+          "gullLakeWest2": [4, 3, 5, 3, 5, 5, 5, 4, 5]
         },
         "jonesMasterPiece": {
           "total": 84
@@ -95,7 +95,7 @@
           "gullLakeEast1": [4, 4, 5, 5, 5, 4, 6, 0, 0],
           "gullLakeEast2": [6, 3, 7, 6, 5, 3, 5, 5, 5],
           "gullLakeWest1": [5, 4, 4, 4, 5, 3, 5, 5, 0],
-          "gullLakeWest2": [0, 0, 0, 0, 0, 0, 0, 0, 0]
+          "gullLakeWest2": [4, 4, 4, 3, 4, 4, 4, 3, 4]
         },
         "jonesMasterPiece": {
           "total": 999
@@ -239,7 +239,7 @@
           "gullLakeEast1": [4, 3, 4, 4, 4, 3, 5, 4, 5],
           "gullLakeEast2": [6, 5, 6, 6, 6, 4, 0, 0, 0],
           "gullLakeWest1": [4, 3, 4, 4, 5, 3, 4, 4, 5],
-          "gullLakeWest2": [0, 0, 0, 0, 0, 0, 0, 0, 0]
+          "gullLakeWest2": [4, 3, 4, 3, 4, 4, 4, 4, 5]
         },
         "jonesMasterPiece": {
           "total": 999
@@ -755,7 +755,7 @@
           "gullLakeEast1": [4, 3, 4, 4, 4, 3, 4, 4, 0],
           "gullLakeEast2": [5, 4, 4, 5, 4, 3, 0, 0, 0],
           "gullLakeWest1": [4, 4, 5, 5, 5, 3, 4, 4, 0],
-          "gullLakeWest2": [0, 0, 0, 0, 0, 0, 0, 0, 0]
+          "gullLakeWest2": [4, 3, 4, 3, 4, 4, 4, 4, 6]
         },
         "stoatinBrae": {
           "total": 999
