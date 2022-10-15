@@ -445,11 +445,25 @@ function Match({
   )
 
   function getHandicap(player) {
+    // for average handicap matches and singles matches, the lower handicap minus the higher handicap is used
     if (matchHandicap === "average") {
+      const avgHandicapOne = Math.round((playerOneHand + playerThreeHand) / 2)
+      const avgHandicapTwo = Math.round((playerTwoHand + playerFourHand) / 2)
+      const zeroedHandicapOne =
+        avgHandicapOne - avgHandicapTwo > 0
+          ? avgHandicapOne - avgHandicapTwo
+          : 0
+      const zeroedHandicapTwo =
+        avgHandicapTwo - avgHandicapOne > 0
+          ? avgHandicapTwo - avgHandicapOne
+          : 0
+
       if (player === playerOne.name || player === playerThree.name) {
-        return Math.round((playerOneHand + playerThreeHand) / 2)
+        // return Math.round((playerOneHand + playerThreeHand) / 2)
+        return zeroedHandicapOne
       } else if (player === playerTwo.name || player === playerFour.name) {
-        return Math.round((playerTwoHand + playerFourHand) / 2)
+        // return Math.round((playerTwoHand + playerFourHand) / 2)
+        return zeroedHandicapTwo
       }
     } else if (matchHandicap === "full") {
       if (player === playerOne.name) {

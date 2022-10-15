@@ -55,7 +55,7 @@ const TopicPage = ({ data, location }) => {
             link: "r1-two-best-ball",
           },
           {
-            name: "Bramble",
+            name: "2 Ball Bramble",
             round: "Round 2.1",
             link: "r2-bramble",
           },
@@ -65,7 +65,7 @@ const TopicPage = ({ data, location }) => {
             link: "r2-scramble",
           },
           {
-            name: "Bramble",
+            name: "1 Ball Bramble",
             round: "Round 3.1",
             link: "r3-bramble",
           },
@@ -317,7 +317,7 @@ const TopicPage = ({ data, location }) => {
           matchId="3.1 - Bramble. Full handicap"
           courseMatch="gullLakeEast1"
           matchHandicap="full"
-          gameplay="two-ball"
+          gameplay=""
           player1="travis"
           player1Handicap="21"
           player2="dylan"
@@ -331,7 +331,7 @@ const TopicPage = ({ data, location }) => {
           matchId="3.1 - Bramble. Full handicap"
           courseMatch="gullLakeEast1"
           matchHandicap="full"
-          gameplay="two-ball"
+          gameplay=""
           player1="matt"
           player1Handicap="6"
           player2="rj"
@@ -345,7 +345,7 @@ const TopicPage = ({ data, location }) => {
           matchId="3.1 - Bramble. Full handicap"
           courseMatch="gullLakeEast1"
           matchHandicap="full"
-          gameplay="two-ball"
+          gameplay=""
           player1="curtis"
           player1Handicap="23"
           player2="cam"
