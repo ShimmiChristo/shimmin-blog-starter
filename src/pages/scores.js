@@ -513,7 +513,7 @@ const TopicPage = ({ data, location }) => {
           player1="jake"
           player1Handicap="21"
           player2="cam"
-          player2Handicap="21"
+          player2Handicap="30"
         />
         <Match
           matchId="4.2 - Singles Matches. Full handicap"
@@ -523,7 +523,7 @@ const TopicPage = ({ data, location }) => {
           player1="travis"
           player1Handicap="21"
           player2="dan"
-          player2Handicap="23"
+          player2Handicap="30"
         />
         <Match
           matchId="4.2 - Singles Matches. Full handicap"

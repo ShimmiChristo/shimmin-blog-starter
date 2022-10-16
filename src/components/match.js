@@ -447,6 +447,7 @@ function Match({
   function getHandicap(player) {
     // for average handicap matches and singles matches, the lower handicap minus the higher handicap is used
     if (matchHandicap === "average") {
+      // if (playerThreeHand !== undefined && playerFourHand !== undefined) {}
       const avgHandicapOne = Math.round((playerOneHand + playerThreeHand) / 2)
       const avgHandicapTwo = Math.round((playerTwoHand + playerFourHand) / 2)
       const zeroedHandicapOne =
