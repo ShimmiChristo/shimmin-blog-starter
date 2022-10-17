@@ -17,24 +17,45 @@ const StyledSection = styled.section``
 
 function PlayerInfoThisYearRecord({ year, teamColor, post, playerData }) {
   const getOverallRecord = playerData => {
-    const years = playerData.year
-    let totalWins = 0
-    let totalLosses = 0
-    let totalTies = 0
+    if (year === "All Time") {
+      const years = playerData.year
+      let totalWins = 0
+      let totalLosses = 0
+      let totalTies = 0
 
-    Object.keys(years).forEach(key => {
-      const year = years[key]
-      const pointsArr = year.points
+      Object.keys(years).forEach(key => {
+        const year = years[key]
+        const pointsArr = year.points
+        pointsArr.map(elem => {
+          totalWins += elem.wins
+          totalLosses += elem.losses
+          totalTies += elem.ties
+        })
+      })
+      return {
+        totalWins: totalWins,
+        totalLosses: totalLosses,
+        totalTies: totalTies,
+      }
+    } else if (year !== undefined) {
+      const years = playerData.year
+      const yearProp = years[`_${year}`]
+      let totalWins = 0
+      let totalLosses = 0
+      let totalTies = 0
+      const pointsArr = yearProp.points
+
       pointsArr.map(elem => {
         totalWins += elem.wins
         totalLosses += elem.losses
         totalTies += elem.ties
       })
-    })
-    return {
-      totalWins: totalWins,
-      totalLosses: totalLosses,
-      totalTies: totalTies,
+      
+      return {
+        totalWins: totalWins,
+        totalLosses: totalLosses,
+        totalTies: totalTies,
+      }
     }
   }
 

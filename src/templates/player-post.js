@@ -140,6 +140,12 @@ const PlayerPostTemplate = ({ data, location }) => {
         </section>
         <hr />
         <PlayerInfoThisYearRecord
+          year="2022"
+          teamColor="green"
+          post={post}
+          playerData={playerData}
+        />
+        <PlayerInfoThisYearRecord
           year="All Time"
           teamColor="green"
           post={post}

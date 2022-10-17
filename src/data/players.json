@@ -36,9 +36,9 @@
         "appearances": [2021, 2022],
         "points": {
           "totals": {
-            "wins": 6,
+            "wins": 8,
             "ties": 0,
-            "losses": 4
+            "losses": 6
           },
           "bestBall": {
             "wins": 2,
@@ -51,7 +51,7 @@
             "losses": 0
           },
           "1BallBramble": {
-            "wins": 0,
+            "wins": 1,
             "ties": 0,
             "losses": 0
           },
@@ -59,6 +59,11 @@
             "wins": 1,
             "ties": 0,
             "losses": 1
+          },
+          "alternate": {
+            "wins": 1,
+            "ties": 0,
+            "losses": 0
           },
           "brambleAlternate": {
             "wins": 1,
@@ -68,12 +73,12 @@
           "scramble": {
             "wins": 1,
             "ties": 0,
-            "losses": 1
+            "losses": 2
           },
           "singles": {
             "wins": 0,
             "ties": 0,
-            "losses": 1
+            "losses": 2
           }
         }
       },
@@ -112,8 +117,8 @@
         "appearances": [2021, 2022],
         "points": {
           "totals": {
-            "wins": 4,
-            "ties": 1,
+            "wins": 6,
+            "ties": 2,
             "losses": 6
           },
           "bestBall": {
@@ -129,10 +134,15 @@
           "1BallBramble": {
             "wins": 0,
             "ties": 0,
-            "losses": 0
+            "losses": 1
           },
           "2BallBramble": {
             "wins": 1,
+            "ties": 1,
+            "losses": 0
+          },
+          "alternate": {
+            "wins": 0,
             "ties": 1,
             "losses": 0
           },
@@ -142,12 +152,12 @@
             "losses": 1
           },
           "scramble": {
-            "wins": 1,
+            "wins": 2,
             "ties": 0,
             "losses": 1
           },
           "singles": {
-            "wins": 1,
+            "wins": 2,
             "ties": 0,
             "losses": 0
           }
@@ -204,6 +214,11 @@
             "ties": 0,
             "losses": 1
           },
+          "alternate": {
+            "wins": 0,
+            "ties": 0,
+            "losses": 0
+          },
           "brambleAlternate": {
             "wins": 0,
             "ties": 1,
@@ -256,9 +271,9 @@
         "appearances": [2021, 2022],
         "points": {
           "totals": {
-            "wins": 5,
+            "wins": 6,
             "ties": 1,
-            "losses": 4
+            "losses": 7
           },
           "bestBall": {
             "wins": 1,
@@ -273,12 +288,17 @@
           "1BallBramble": {
             "wins": 0,
             "ties": 0,
-            "losses": 0
+            "losses": 1
           },
           "2BallBramble": {
             "wins": 2,
             "ties": 0,
             "losses": 0
+          },
+          "alternate": {
+            "wins": 0,
+            "ties": 0,
+            "losses": 1
           },
           "brambleAlternate": {
             "wins": 0,
@@ -288,10 +308,10 @@
           "scramble": {
             "wins": 1,
             "ties": 0,
-            "losses": 0
+            "losses": 2
           },
           "singles": {
-            "wins": 0,
+            "wins": 1,
             "ties": 0,
             "losses": 1
           }
@@ -333,7 +353,7 @@
         "appearances": [2021, 2022],
         "points": {
           "totals": {
-            "wins": 3,
+            "wins": 7,
             "ties": 3,
             "losses": 4
           },
@@ -348,14 +368,19 @@
             "losses": 1
           },
           "1BallBramble": {
-            "wins": 0,
+            "wins": 1,
             "ties": 0,
-            "losses": 1
+            "losses": 0
           },
           "2BallBramble": {
             "wins": 0,
             "ties": 1,
             "losses": 1
+          },
+          "alternate": {
+            "wins": 1,
+            "ties": 0,
+            "losses": 0
           },
           "brambleAlternate": {
             "wins": 0,
@@ -363,12 +388,12 @@
             "losses": 0
           },
           "scramble": {
-            "wins": 1,
+            "wins": 2,
             "ties": 0,
             "losses": 1
           },
           "singles": {
-            "wins": 0,
+            "wins": 1,
             "ties": 1,
             "losses": 0
           }
@@ -410,9 +435,9 @@
         "appearances": [2021, 2022],
         "points": {
           "totals": {
-            "wins": 4,
+            "wins": 5,
             "ties": 2,
-            "losses": 4
+            "losses": 7
           },
           "bestBall": {
             "wins": 1,
@@ -422,15 +447,20 @@
           "2bestBall": {
             "wins": 0,
             "ties": 0,
-            "losses": 0
+            "losses": 1
           },
           "1BallBramble": {
-            "wins": 1,
+            "wins": 0,
             "ties": 0,
-            "losses": 0
+            "losses": 1
           },
           "2BallBramble": {
             "wins": 1,
+            "ties": 0,
+            "losses": 1
+          },
+          "alternate": {
+            "wins": 0,
             "ties": 0,
             "losses": 1
           },
@@ -440,12 +470,12 @@
             "losses": 0
           },
           "scramble": {
-            "wins": 1,
+            "wins": 2,
             "ties": 0,
             "losses": 1
           },
           "singles": {
-            "wins": 0,
+            "wins": 1,
             "ties": 1,
             "losses": 0
           }
@@ -486,14 +516,14 @@
         "appearances": [2021, 2022],
         "points": {
           "totals": {
-            "wins": 5,
+            "wins": 8,
             "ties": 0,
-            "losses": 5
+            "losses": 6
           },
           "bestBall": {
             "wins": 2,
             "ties": 0,
-            "losses": 0
+            "losses": 1
           },
           "2bestBall": {
             "wins": 1,
@@ -501,14 +531,19 @@
             "losses": 0
           },
           "1BallBramble": {
-            "wins": 0,
+            "wins": 1,
             "ties": 0,
-            "losses": 1
+            "losses": 0
           },
           "2BallBramble": {
             "wins": 0,
             "ties": 0,
             "losses": 2
+          },
+          "alternate": {
+            "wins": 1,
+            "ties": 0,
+            "losses": 0
           },
           "brambleAlternate": {
             "wins": 1,
@@ -516,14 +551,14 @@
             "losses": 0
           },
           "scramble": {
-            "wins": 1,
+            "wins": 2,
             "ties": 0,
             "losses": 1
           },
           "singles": {
             "wins": 0,
             "ties": 0,
-            "losses": 1
+            "losses": 2
           }
         }
       },
@@ -563,8 +598,8 @@
         "points": {
           "totals": {
             "wins": 5,
-            "ties": 0,
-            "losses": 5
+            "ties": 1,
+            "losses": 6
           },
           "bestBall": {
             "wins": 1,
@@ -577,13 +612,18 @@
             "losses": 1
           },
           "1BallBramble": {
-            "wins": 1,
+            "wins": 0,
             "ties": 0,
-            "losses": 0
+            "losses": 1
           },
           "2BallBramble": {
             "wins": 2,
             "ties": 0,
+            "losses": 0
+          },
+          "alternate": {
+            "wins": 0,
+            "ties": 1,
             "losses": 0
           },
           "brambleAlternate": {
@@ -594,10 +634,10 @@
           "scramble": {
             "wins": 1,
             "ties": 0,
-            "losses": 1
+            "losses": 2
           },
           "singles": {
-            "wins": 1,
+            "wins": 2,
             "ties": 0,
             "losses": 0
           }
@@ -632,9 +672,9 @@
         "appearances": [2022],
         "points": {
           "totals": {
-            "wins": 3,
-            "ties": 0,
-            "losses": 1
+            "wins": 4,
+            "ties": 1,
+            "losses": 3
           },
           "bestBall": {
             "wins": 0,
@@ -647,13 +687,18 @@
             "losses": 0
           },
           "1BallBramble": {
-            "wins": 0,
+            "wins": 1,
             "ties": 0,
             "losses": 0
           },
           "2BallBramble": {
             "wins": 1,
             "ties": 0,
+            "losses": 0
+          },
+          "alternate": {
+            "wins": 0,
+            "ties": 1,
             "losses": 0
           },
           "brambleAlternate": {
@@ -664,12 +709,12 @@
           "scramble": {
             "wins": 1,
             "ties": 0,
-            "losses": 0
+            "losses": 1
           },
           "singles": {
             "wins": 0,
             "ties": 0,
-            "losses": 0
+            "losses": 1
           }
         }
       },
@@ -702,9 +747,9 @@
         "appearances": [2022],
         "points": {
           "totals": {
-            "wins": 2,
-            "ties": 1,
-            "losses": 1
+            "wins": 3,
+            "ties": 2,
+            "losses": 3
           },
           "bestBall": {
             "wins": 0,
@@ -717,11 +762,16 @@
             "losses": 0
           },
           "1BallBramble": {
-            "wins": 0,
+            "wins": 1,
             "ties": 0,
             "losses": 0
           },
           "2BallBramble": {
+            "wins": 0,
+            "ties": 1,
+            "losses": 0
+          },
+          "alternate": {
             "wins": 0,
             "ties": 1,
             "losses": 0
@@ -734,12 +784,12 @@
           "scramble": {
             "wins": 1,
             "ties": 0,
-            "losses": 0
+            "losses": 1
           },
           "singles": {
             "wins": 0,
             "ties": 0,
-            "losses": 0
+            "losses": 1
           }
         }
       },
@@ -772,9 +822,9 @@
         "appearances": [2022],
         "points": {
           "totals": {
-            "wins": 2,
+            "wins": 4,
             "ties": 0,
-            "losses": 2
+            "losses": 4
           },
           "bestBall": {
             "wins": 1,
@@ -787,7 +837,7 @@
             "losses": 1
           },
           "1BallBramble": {
-            "wins": 0,
+            "wins": 1,
             "ties": 0,
             "losses": 0
           },
@@ -795,6 +845,11 @@
             "wins": 0,
             "ties": 0,
             "losses": 1
+          },
+          "alternate": {
+            "wins": 1,
+            "ties": 0,
+            "losses": 0
           },
           "brambleAlternate": {
             "wins": 0,
@@ -804,12 +859,12 @@
           "scramble": {
             "wins": 1,
             "ties": 0,
-            "losses": 0
+            "losses": 2
           },
           "singles": {
             "wins": 0,
             "ties": 0,
-            "losses": 0
+            "losses": 1
           }
         }
       },
@@ -842,9 +897,9 @@
         "appearances": [2022],
         "points": {
           "totals": {
-            "wins": 0,
+            "wins": 2,
             "ties": 1,
-            "losses": 3
+            "losses": 5
           },
           "bestBall": {
             "wins": 0,
@@ -859,12 +914,17 @@
           "1BallBramble": {
             "wins": 0,
             "ties": 0,
-            "losses": 0
+            "losses": 1
           },
           "2BallBramble": {
             "wins": 0,
             "ties": 1,
             "losses": 0
+          },
+          "alternate": {
+            "wins": 0,
+            "ties": 0,
+            "losses": 1
           },
           "brambleAlternate": {
             "wins": 0,
@@ -872,12 +932,12 @@
             "losses": 0
           },
           "scramble": {
-            "wins": 0,
+            "wins": 1,
             "ties": 0,
             "losses": 1
           },
           "singles": {
-            "wins": 0,
+            "wins": 1,
             "ties": 0,
             "losses": 0
           }
@@ -912,9 +972,9 @@
         "appearances": [2022],
         "points": {
           "totals": {
-            "wins": 1,
+            "wins": 2,
             "ties": 0,
-            "losses": 3
+            "losses": 6
           },
           "bestBall": {
             "wins": 0,
@@ -929,9 +989,14 @@
           "1BallBramble": {
             "wins": 0,
             "ties": 0,
-            "losses": 0
+            "losses": 1
           },
           "2BallBramble": {
+            "wins": 0,
+            "ties": 0,
+            "losses": 1
+          },
+          "alternate": {
             "wins": 0,
             "ties": 0,
             "losses": 1
@@ -942,14 +1007,14 @@
             "losses": 0
           },
           "scramble": {
-            "wins": 0,
+            "wins": 1,
             "ties": 0,
             "losses": 1
           },
           "singles": {
             "wins": 0,
             "ties": 0,
-            "losses": 0
+            "losses": 1
           }
         }
       }

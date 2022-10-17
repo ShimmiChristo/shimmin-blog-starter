@@ -306,28 +306,35 @@
             {
               "id": "bestBall",
               "game": "Best Ball",
-              "wins": 0,
+              "wins": 1,
               "ties": 0,
               "losses": 0
             },
             {
               "id": "2bestBall",
               "game": "Best Ball",
-              "wins": 0,
+              "wins": 1,
               "ties": 0,
               "losses": 0
             },
             {
               "id": "1BallBramble",
               "game": "Bramble",
-              "wins": 0,
+              "wins": 1,
               "ties": 0,
               "losses": 0
             },
             {
               "id": "2BallBramble",
               "game": "Bramble",
-              "wins": 0,
+              "wins": 1,
+              "ties": 0,
+              "losses": 0
+            },
+            {
+              "id": "alternate",
+              "game": "Alternate",
+              "wins": 1,
               "ties": 0,
               "losses": 0
             },
@@ -341,16 +348,16 @@
             {
               "id": "scramble",
               "game": "Scramble",
-              "wins": 0,
+              "wins": 1,
               "ties": 0,
-              "losses": 0
+              "losses": 1
             },
             {
               "id": "singles",
               "game": "Singles",
               "wins": 0,
               "ties": 0,
-              "losses": 0
+              "losses": 1
             }
           ],
           "records": [
@@ -962,27 +969,34 @@
               "game": "Best Ball",
               "wins": 0,
               "ties": 0,
-              "losses": 0
+              "losses": 1
             },
             {
               "id": "2bestBall",
               "game": "Best Ball",
               "wins": 0,
               "ties": 0,
-              "losses": 0
+              "losses": 1
             },
             {
               "id": "1BallBramble",
               "game": "Bramble",
               "wins": 0,
               "ties": 0,
-              "losses": 0
+              "losses": 1
             },
             {
               "id": "2BallBramble",
               "game": "Bramble",
               "wins": 0,
               "ties": 0,
+              "losses": 1
+            },
+            {
+              "id": "alternate",
+              "game": "Alternate",
+              "wins": 0,
+              "ties": 1,
               "losses": 0
             },
             {
@@ -995,14 +1009,14 @@
             {
               "id": "scramble",
               "game": "Scramble",
-              "wins": 0,
+              "wins": 1,
               "ties": 0,
-              "losses": 0
+              "losses": 1
             },
             {
               "id": "singles",
               "game": "Singles",
-              "wins": 0,
+              "wins": 1,
               "ties": 0,
               "losses": 0
             }
@@ -1885,12 +1899,12 @@
               "game": "Best Ball",
               "wins": 0,
               "ties": 0,
-              "losses": 0
+              "losses": 1
             },
             {
               "id": "2bestBall",
               "game": "Best Ball",
-              "wins": 0,
+              "wins": 1,
               "ties": 0,
               "losses": 0
             },
@@ -1899,14 +1913,21 @@
               "game": "Bramble",
               "wins": 0,
               "ties": 0,
-              "losses": 0
+              "losses": 1
             },
             {
               "id": "2BallBramble",
               "game": "Bramble",
-              "wins": 0,
+              "wins": 1,
               "ties": 0,
               "losses": 0
+            },
+            {
+              "id": "alternate",
+              "game": "Alternate",
+              "wins": 0,
+              "ties": 0,
+              "losses": 1
             },
             {
               "id": "brambleAlternate",
@@ -1920,12 +1941,12 @@
               "game": "Scramble",
               "wins": 0,
               "ties": 0,
-              "losses": 0
+              "losses": 2
             },
             {
               "id": "singles",
               "game": "Singles",
-              "wins": 0,
+              "wins": 1,
               "ties": 0,
               "losses": 0
             }
@@ -2552,21 +2573,21 @@
             {
               "id": "bestBall",
               "game": "Best Ball",
-              "wins": 0,
+              "wins": 1,
               "ties": 0,
               "losses": 0
             },
             {
               "id": "2bestBall",
               "game": "Best Ball",
-              "wins": 0,
+              "wins": 1,
               "ties": 0,
               "losses": 0
             },
             {
               "id": "1BallBramble",
               "game": "Bramble",
-              "wins": 0,
+              "wins": 1,
               "ties": 0,
               "losses": 0
             },
@@ -2574,6 +2595,13 @@
               "id": "2BallBramble",
               "game": "Bramble",
               "wins": 0,
+              "ties": 0,
+              "losses": 1
+            },
+            {
+              "id": "alternate",
+              "game": "Alternate",
+              "wins": 1,
               "ties": 0,
               "losses": 0
             },
@@ -2587,7 +2615,7 @@
             {
               "id": "scramble",
               "game": "Scramble",
-              "wins": 0,
+              "wins": 2,
               "ties": 0,
               "losses": 0
             },
@@ -2596,7 +2624,7 @@
               "game": "Singles",
               "wins": 0,
               "ties": 0,
-              "losses": 0
+              "losses": 1
             }
           ],
           "records": [
@@ -3221,7 +3249,7 @@
             {
               "id": "bestBall",
               "game": "Best Ball",
-              "wins": 0,
+              "wins": 1,
               "ties": 0,
               "losses": 0
             },
@@ -3230,20 +3258,27 @@
               "game": "Best Ball",
               "wins": 0,
               "ties": 0,
-              "losses": 0
+              "losses": 1
             },
             {
               "id": "1BallBramble",
               "game": "Bramble",
               "wins": 0,
               "ties": 0,
-              "losses": 0
+              "losses": 1
             },
             {
               "id": "2BallBramble",
               "game": "Bramble",
-              "wins": 0,
+              "wins": 1,
               "ties": 0,
+              "losses": 0
+            },
+            {
+              "id": "alternate",
+              "game": "Alternate",
+              "wins": 0,
+              "ties": 1,
               "losses": 0
             },
             {
@@ -3258,12 +3293,12 @@
               "game": "Scramble",
               "wins": 0,
               "ties": 0,
-              "losses": 0
+              "losses": 2
             },
             {
               "id": "singles",
               "game": "Singles",
-              "wins": 0,
+              "wins": 1,
               "ties": 0,
               "losses": 0
             }
@@ -3890,7 +3925,7 @@
             {
               "id": "bestBall",
               "game": "Best Ball",
-              "wins": 0,
+              "wins": 1,
               "ties": 0,
               "losses": 0
             },
@@ -3899,12 +3934,12 @@
               "game": "Best Ball",
               "wins": 0,
               "ties": 0,
-              "losses": 0
+              "losses": 1
             },
             {
               "id": "1BallBramble",
               "game": "Bramble",
-              "wins": 0,
+              "wins": 1,
               "ties": 0,
               "losses": 0
             },
@@ -3912,6 +3947,13 @@
               "id": "2BallBramble",
               "game": "Bramble",
               "wins": 0,
+              "ties": 1,
+              "losses": 0
+            },
+            {
+              "id": "alternate",
+              "game": "Alternate",
+              "wins": 1,
               "ties": 0,
               "losses": 0
             },
@@ -3925,14 +3967,14 @@
             {
               "id": "scramble",
               "game": "Scramble",
-              "wins": 0,
+              "wins": 2,
               "ties": 0,
               "losses": 0
             },
             {
               "id": "singles",
               "game": "Singles",
-              "wins": 0,
+              "wins": 1,
               "ties": 0,
               "losses": 0
             }
@@ -4544,7 +4586,7 @@
             {
               "id": "bestBall",
               "game": "Best Ball",
-              "wins": 0,
+              "wins": 1,
               "ties": 0,
               "losses": 0
             },
@@ -4553,21 +4595,28 @@
               "game": "Best Ball",
               "wins": 0,
               "ties": 0,
-              "losses": 0
+              "losses": 1
             },
             {
               "id": "1BallBramble",
               "game": "Bramble",
               "wins": 0,
               "ties": 0,
-              "losses": 0
+              "losses": 1
             },
             {
               "id": "2BallBramble",
               "game": "Bramble",
               "wins": 0,
               "ties": 0,
-              "losses": 0
+              "losses": 1
+            },
+            {
+              "id": "alternate",
+              "game": "Alternate",
+              "wins": 0,
+              "ties": 0,
+              "losses": 1
             },
             {
               "id": "brambleAlternate",
@@ -4579,14 +4628,14 @@
             {
               "id": "scramble",
               "game": "Scramble",
-              "wins": 0,
+              "wins": 1,
               "ties": 0,
-              "losses": 0
+              "losses": 1
             },
             {
               "id": "singles",
               "game": "Singles",
-              "wins": 0,
+              "wins": 1,
               "ties": 0,
               "losses": 0
             }
@@ -4936,19 +4985,19 @@
               "game": "Best Ball",
               "wins": 0,
               "ties": 0,
-              "losses": 0
+              "losses": 1
             },
             {
               "id": "2bestBall",
               "game": "Best Ball",
-              "wins": 0,
+              "wins": 1,
               "ties": 0,
               "losses": 0
             },
             {
               "id": "1BallBramble",
               "game": "Bramble",
-              "wins": 0,
+              "wins": 1,
               "ties": 0,
               "losses": 0
             },
@@ -4956,7 +5005,14 @@
               "id": "2BallBramble",
               "game": "Bramble",
               "wins": 0,
-              "ties": 0,
+              "ties": 1,
+              "losses": 0
+            },
+            {
+              "id": "alternate",
+              "game": "Alternate",
+              "wins": 0,
+              "ties": 1,
               "losses": 0
             },
             {
@@ -4969,16 +5025,16 @@
             {
               "id": "scramble",
               "game": "Scramble",
-              "wins": 0,
+              "wins": 1,
               "ties": 0,
-              "losses": 0
+              "losses": 1
             },
             {
               "id": "singles",
               "game": "Singles",
               "wins": 0,
               "ties": 0,
-              "losses": 0
+              "losses": 1
             }
           ],
           "records": [
@@ -5326,27 +5382,34 @@
               "game": "Best Ball",
               "wins": 0,
               "ties": 0,
-              "losses": 0
+              "losses": 1
             },
             {
               "id": "2bestBall",
               "game": "Best Ball",
-              "wins": 0,
+              "wins": 1,
               "ties": 0,
               "losses": 0
             },
             {
               "id": "1BallBramble",
               "game": "Bramble",
-              "wins": 0,
+              "wins": 1,
               "ties": 0,
               "losses": 0
             },
             {
               "id": "2BallBramble",
               "game": "Bramble",
-              "wins": 0,
+              "wins": 1,
               "ties": 0,
+              "losses": 0
+            },
+            {
+              "id": "alternate",
+              "game": "Alternate",
+              "wins": 0,
+              "ties": 1,
               "losses": 0
             },
             {
@@ -5359,16 +5422,16 @@
             {
               "id": "scramble",
               "game": "Scramble",
-              "wins": 0,
+              "wins": 1,
               "ties": 0,
-              "losses": 0
+              "losses": 1
             },
             {
               "id": "singles",
               "game": "Singles",
               "wins": 0,
               "ties": 0,
-              "losses": 0
+              "losses": 1
             }
           ],
           "records": [
@@ -5714,7 +5777,7 @@
             {
               "id": "bestBall",
               "game": "Best Ball",
-              "wins": 0,
+              "wins": 1,
               "ties": 0,
               "losses": 0
             },
@@ -5723,12 +5786,12 @@
               "game": "Best Ball",
               "wins": 0,
               "ties": 0,
-              "losses": 0
+              "losses": 1
             },
             {
               "id": "1BallBramble",
               "game": "Bramble",
-              "wins": 0,
+              "wins": 1,
               "ties": 0,
               "losses": 0
             },
@@ -5736,6 +5799,13 @@
               "id": "2BallBramble",
               "game": "Bramble",
               "wins": 0,
+              "ties": 0,
+              "losses": 1
+            },
+            {
+              "id": "alternate",
+              "game": "Alternate",
+              "wins": 1,
               "ties": 0,
               "losses": 0
             },
@@ -5749,16 +5819,16 @@
             {
               "id": "scramble",
               "game": "Scramble",
-              "wins": 0,
+              "wins": 1,
               "ties": 0,
-              "losses": 0
+              "losses": 1
             },
             {
               "id": "singles",
               "game": "Singles",
               "wins": 0,
               "ties": 0,
-              "losses": 0
+              "losses": 1
             }
           ],
           "records": [
@@ -6106,28 +6176,35 @@
               "game": "Best Ball",
               "wins": 0,
               "ties": 0,
-              "losses": 0
+              "losses": 1
             },
             {
               "id": "2bestBall",
               "game": "Best Ball",
               "wins": 0,
               "ties": 0,
-              "losses": 0
+              "losses": 1
             },
             {
               "id": "1BallBramble",
               "game": "Bramble",
               "wins": 0,
               "ties": 0,
-              "losses": 0
+              "losses": 1
             },
             {
               "id": "2BallBramble",
               "game": "Bramble",
               "wins": 0,
-              "ties": 0,
+              "ties": 1,
               "losses": 0
+            },
+            {
+              "id": "alternate",
+              "game": "Alternate",
+              "wins": 0,
+              "ties": 0,
+              "losses": 1
             },
             {
               "id": "brambleAlternate",
@@ -6139,14 +6216,14 @@
             {
               "id": "scramble",
               "game": "Scramble",
-              "wins": 0,
+              "wins": 1,
               "ties": 0,
-              "losses": 0
+              "losses": 1
             },
             {
               "id": "singles",
               "game": "Singles",
-              "wins": 0,
+              "wins": 1,
               "ties": 0,
               "losses": 0
             }
@@ -6496,12 +6573,12 @@
               "game": "Best Ball",
               "wins": 0,
               "ties": 0,
-              "losses": 0
+              "losses": 1
             },
             {
               "id": "2bestBall",
               "game": "Best Ball",
-              "wins": 0,
+              "wins": 1,
               "ties": 0,
               "losses": 0
             },
@@ -6510,14 +6587,21 @@
               "game": "Bramble",
               "wins": 0,
               "ties": 0,
-              "losses": 0
+              "losses": 1
             },
             {
               "id": "2BallBramble",
               "game": "Bramble",
               "wins": 0,
               "ties": 0,
-              "losses": 0
+              "losses": 1
+            },
+            {
+              "id": "alternate",
+              "game": "Alternate",
+              "wins": 0,
+              "ties": 0,
+              "losses": 1
             },
             {
               "id": "brambleAlternate",
@@ -6529,16 +6613,16 @@
             {
               "id": "scramble",
               "game": "Scramble",
-              "wins": 0,
+              "wins": 1,
               "ties": 0,
-              "losses": 0
+              "losses": 1
             },
             {
               "id": "singles",
               "game": "Singles",
               "wins": 0,
               "ties": 0,
-              "losses": 0
+              "losses": 1
             }
           ],
           "records": [
