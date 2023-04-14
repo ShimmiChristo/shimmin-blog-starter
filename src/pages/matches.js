@@ -17,7 +17,7 @@ import MatchPlayers2022 from "../components/matches/2022/players"
 import MatchVenue2022 from "../components/matches/2022/venue"
 // import LandingPageBodySidebar from "../components/landing-page-body-sidebar"
 
-const TopicPage = () => {
+const TopicPage = ({data, location}) => {
   const { title } = useSiteMetadata()
   const siteTitle = title || `Title`
 
