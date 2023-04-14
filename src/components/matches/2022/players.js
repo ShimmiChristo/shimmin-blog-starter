@@ -6,7 +6,7 @@ function MatchPlayers2022() {
   return (
     <div className="mb-3">
       <h2>2022 Players</h2>
-      <div className="container mb-3 col-lg-10">
+      <div className="mb-3">
         <div className="row">
           <div className="col">
             <div className="card shadow-none border">

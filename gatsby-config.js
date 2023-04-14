@@ -48,8 +48,8 @@ module.exports = {
         link: "/matches",
         subnav: [
           {
-            name: "2021 Scores",
-            link: "/scores-2021#r1-best-ball",
+            name: "2022 Scores",
+            link: "/scores-2022#r1-best-ball",
           },
           {
             name: "Matches",

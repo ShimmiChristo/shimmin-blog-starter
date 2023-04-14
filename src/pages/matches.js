@@ -7,12 +7,17 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import LandingPageHeader from "../components/landing-page-header"
 import MatchSummary2021 from "../components/matches/2021/summary"
-import Match from "../components/matches/2021/score"
+import MatchScore2021 from "../components/matches/2021/score"
 import MatchPlayers2021 from "../components/matches/2021/players"
 import MatchVenue2021 from "../components/matches/2021/venue"
+
+import MatchSummary2022 from "../components/matches/2022/summary"
+import MatchScore2022 from "../components/matches/2022/score"
+import MatchPlayers2022 from "../components/matches/2022/players"
+import MatchVenue2022 from "../components/matches/2022/venue"
 // import LandingPageBodySidebar from "../components/landing-page-body-sidebar"
 
-const TopicPage = ({ data, location }) => {
+const TopicPage = () => {
   const { title } = useSiteMetadata()
   const siteTitle = title || `Title`
 
@@ -20,6 +25,31 @@ const TopicPage = ({ data, location }) => {
     <Layout location={location} title={siteTitle}>
       <SEO title="Previous Matches" />
       <LandingPageHeader title="Matches" />
+      {/* 2022 */}
+      <div className="container">
+        <div className="row mb-3">
+          <div className="col-lg-8">
+            <MatchSummary2022 />
+          </div>
+        </div>
+        <div className="row">
+          <div className="col-lg-8">
+            <MatchScore2022 year="_2022" />
+          </div>
+        </div>
+        <div className="row">
+          <div className="col-lg-8">
+            <MatchPlayers2022 />
+          </div>
+        </div>
+        <div className="row mb-3">
+          <div className="col-lg-8">
+            <MatchVenue2022 />
+          </div>
+        </div>
+      </div>
+      <hr />
+      {/* 2021 */}
       <div className="container">
         <div className="row mb-3">
           <div className="col-lg-8">
@@ -28,7 +58,7 @@ const TopicPage = ({ data, location }) => {
         </div>
         <div className="row">
           <div className="col-lg-8">
-            <Match year="_2021" />
+            <MatchScore2021 year="_2021" />
           </div>
         </div>
         <div className="row">

@@ -8,7 +8,7 @@ import { PlayerInfoUpdate } from "../../hooks/get-player-info-UPDATE"
 function HighlightsScoring({ yearProp }) {
   const players = PlayerInfoUpdate()
   // const newProp = players.chris.year[`_${yearProp}`].handicap
-  const greenTeam = ["matt", "travis", "derek", "curtis", "gordon", "jake"]
+  const greenTeam = ["matt", "travis", "derek", "curtis", "gordon", "chris"]
   const blueTeam = ["dylan", "rj", "craig", "dan", "cam", "evan"]
 
   // for (const property in players) {
@@ -28,21 +28,22 @@ function HighlightsScoring({ yearProp }) {
       <div className="container my-3 mb-lg-5">
         <div className="row text-center justify-content-center">
           <p className="h2 mb-4">
-            Oct 14th-15th, 2022 Gull Lake View Golf Resort
+            Sept 22nd-23rd, 2023 Boyne Highlands Golf Courses
           </p>
           <div className="col-lg-8">
             <p>
-              In 2021, with only 8 players, there were 14 points for the taking.
-              The story was all Blue team. They started with a dominant 4-0 lead
-              on day one and never looked back. The blue team was able to win
-              comfortably, 9-5.
+              In 2022, the teams expanded to 12 players. Green Team was able to
+              win comfortably, with the singles matches being a non-factor.
+              Since the thumping at Gull Lake, a lot of words were said whether
+              the handicaps and teams were fair.
             </p>
             <p>
-              In 2022, the teams are expanding. With <b>12 players</b> and{" "}
-              <b>27 points</b> available, the Blue team only needs 13.5 points
-              to retain the cup. In a new year with new faces, the biggest
-              question is, will the Green team keep it competitive? Come back in
-              October to find out.
+              In 2023, Green is lead by Goose for a third straight year. He’s
+              looking to continue his success from his 6 win performance in
+              2022. Green’s roster is being shaken up again with Shimmin coming
+              back in replace of Jake. Blue team needs 14 points to steal the
+              cup. Blue is lead by captain Dylan Wells for the third straight
+              year. Blue needs to come out hot to get the ball rolling early.
             </p>
           </div>
         </div>

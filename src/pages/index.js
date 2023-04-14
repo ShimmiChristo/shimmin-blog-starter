@@ -60,13 +60,13 @@ const TopicPage = ({ data, location }) => {
 
       {/* <HighlightCountdown startTime={startDate} location={locationName} /> */}
 
-      <h2 className="text-center bold mt-4">BFBH Current Score</h2>
+      <h2 className="text-center bold mt-4">BFBH Cup 2022 Score</h2>
       <MatchScore year="_2022" />
-      <HighlightDay />
+      {/* <HighlightDay /> */}
       <hr />
       <br />
       <HighlightsScoring yearProp="2022" />
-      <Venue2022 />
+      {/* <Venue2022 /> */}
     </Layout>
   )
 }
