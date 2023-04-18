@@ -14,7 +14,11 @@
           "players": ["Dylan", "RJ", "Craig", "Dan", "Cam", "Evan"],
           "score": "11"
         }
-      }
+      },
+      "year": "2022",
+      "date": "Oct, 14 - Oct, 15",
+      "winner": "green",
+      "location": "Gull Lake View"
     },
     "_2021": {
       "teams": {
@@ -30,7 +34,11 @@
           "players": ["Dylan", "RJ", "Craig", "Dan"],
           "score": "9"
         }
-      }
+      },
+      "year": "2021",
+      "date": "Oct, 16 - Oct, 17",
+      "winner": "blue",
+      "location": "Otsego, Galyord GC"
     }
   }
 ]

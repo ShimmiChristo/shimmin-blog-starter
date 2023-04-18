@@ -8,7 +8,7 @@ import { PlayerInfoUpdate } from "../../hooks/get-player-info-UPDATE"
 function HighlightsScoring({ yearProp }) {
   const players = PlayerInfoUpdate()
   // const newProp = players.chris.year[`_${yearProp}`].handicap
-  const greenTeam = ["matt", "travis", "derek", "curtis", "gordon", "chris"]
+  const greenTeam = ["matt", "gordon", "chris", "travis", "curtis", "derek"]
   const blueTeam = ["dylan", "rj", "craig", "dan", "cam", "evan"]
 
   // for (const property in players) {

@@ -325,6 +325,10 @@ li[data-active="true"] a {
   color: var(--color-text-dark) !important;
 }
 
+.pointer {
+  cursor: pointer;
+}
+
 /* p a {
   color: var(--color-brand-black);
   position: relative;

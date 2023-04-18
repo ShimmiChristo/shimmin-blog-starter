@@ -17,6 +17,10 @@ export const ScoreInfo = () => {
               score
             }
           }
+          year
+          date
+          winner
+          location
         }
         _2021 {
           teams {

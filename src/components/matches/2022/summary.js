@@ -3,7 +3,7 @@ import { Link } from "gatsby"
 // import { StaticImage } from "gatsby-plugin-image"
 // import styled from "styled-components"
 
-function MatchSummary() {
+function MatchSummary2022() {
   return (
     <div className="mb-3">
       <h2>2022 Match</h2>
@@ -82,4 +82,4 @@ function MatchSummary() {
   )
 }
 
-export default MatchSummary
+export default MatchSummary2022
