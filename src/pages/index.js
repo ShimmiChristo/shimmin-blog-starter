@@ -10,8 +10,8 @@ import LandingPageHeader from "../components/landing-page-header"
 import MatchScore from "../components/match-score"
 import HighlightsScoring from "../components/highlights/scoring-highlight"
 import Venue2022 from "../components/venues/venue-2022"
-// import HighlightCountdown from "../components/highlights/coutdown-hightlight"
-import HighlightDay from "../components/highlights/day-hightlights"
+import HighlightCountdown from "../components/highlights/coutdown-hightlight"
+// import HighlightDay from "../components/highlights/day-hightlights"
 
 // import AboutSite from "../components/about-site"
 // import MatchNav from "../components/match-nav"
@@ -50,15 +50,15 @@ const TopicPage = ({ data, location }) => {
   //   border-radius: 5px;
   //   display: ${props => (props.Ad ? "flex" : "none")};
   // `
-  // const startDate = "october, 14, 2022 12:30:00 GMT"
-  // const locationName = "Gull Lake View Golf Resort"
+  const startDate = "september, 22, 2023 8:30:00 EST"
+  const locationName = "Authur Hills Golf Course"
 
   return (
     <Layout location={location} title={siteTitle}>
       <SEO title="Boys From Back Home Cup" />
       <h1 className="invisible">BFBH Cup | Boys From Back Home</h1>
 
-      {/* <HighlightCountdown startTime={startDate} location={locationName} /> */}
+      <HighlightCountdown startTime={startDate} location={locationName} />
 
       <h2 className="text-center bold mt-4">BFBH Cup 2022 Score</h2>
       <MatchScore year="_2022" />

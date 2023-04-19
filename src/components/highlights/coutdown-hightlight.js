@@ -1,10 +1,9 @@
 import React, { useEffect, useState } from "react"
-// import styled from "styled-components"
+import PropTypes from "prop-types"
 
 function HighlightCountdown({ startTime, location }) {
   const [days, setDays] = useState(0)
   const [hours, setHours] = useState(0)
-  const [offset, setOffset] = useState(0)
 
   const getTimeUntilEvent = startTime => {
     const time = Date.parse(startTime) - Date.parse(new Date())
@@ -23,25 +22,11 @@ function HighlightCountdown({ startTime, location }) {
     return () => getTimeUntilEvent(startTime)
   }, [startTime])
 
-  // useEffect(() => {
-  //   const onScroll = () => setOffset(window.pageYOffset)
-  //   // clean up code
-  //   window.removeEventListener("scroll", onScroll)
-  //   window.addEventListener("scroll", onScroll, { passive: true })
-  //   return () => window.removeEventListener("scroll", onScroll)
-  // }, [])
-
-  // console.log(offset)
-  // if (offset > 30) {
-  //   // window.querySelector('.countdown-container').height = 0;
-  //   console.log(offset + ' is greater than 10');
-  // }
-
   return (
     <>
       <div className="container py-3 pb-md-3 position-relative text-center">
         <div className="position-absolute top-0 start-0 ">
-          <b>BFBH Cup is in: </b>
+          <b>BFBH Cup starts in: </b>
           <span className="countdown__days">
             <em>{days} Days</em>
           </span>
@@ -57,6 +42,11 @@ function HighlightCountdown({ startTime, location }) {
       </div>
     </>
   )
+}
+
+HighlightCountdown.propTypes = {
+  startTime: PropTypes.string,
+  location: PropTypes.string,
 }
 
 export default HighlightCountdown
