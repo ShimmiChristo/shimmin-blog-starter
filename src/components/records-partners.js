@@ -1,6 +1,7 @@
 /* eslint-disable react/prop-types */
 
 import React from "react"
+import { Link } from "gatsby"
 
 function RecordPartners({ playerData }) {
   const getGameRecord = (playerData, record) => {
@@ -32,13 +33,18 @@ function RecordPartners({ playerData }) {
   }
 
   var partnerRecords = getGameRecord(playerData, "partners")
-  var partnerRecordsArr = Object.entries(partnerRecords);
-  var sortedPartnerRecords = partnerRecordsArr.sort((a, b) => a[0].localeCompare(b[0]));
-  
-  var opponentsRecords = getGameRecord(playerData, "opponents")
-  var opponentRecordsArr = Object.entries(opponentsRecords);
-  var sortedOpponentRecords = opponentRecordsArr.sort((a, b) => a[0].localeCompare(b[0]));
+  var partnerRecordsArr = Object.entries(partnerRecords)
+  var sortedPartnerRecords = partnerRecordsArr.sort((a, b) =>
+    a[0].localeCompare(b[0])
+  )
 
+  var opponentsRecords = getGameRecord(playerData, "opponents")
+  console.log('opponentsRecords - ', opponentsRecords);
+  var opponentRecordsArr = Object.entries(opponentsRecords)
+  var sortedOpponentRecords = opponentRecordsArr.sort((a, b) =>
+    a[0].localeCompare(b[0])
+  )
+  console.log('sortedOpponentRecords - ', sortedOpponentRecords);
 
   return (
     <div className="row">
@@ -53,7 +59,9 @@ function RecordPartners({ playerData }) {
               key={i}
               className="d-flex justify-content-between align-items-start border-bottom py-2"
             >
-              <div className="text-center w-100 capitalize">{key}</div>
+              <div className="text-center w-100 capitalize">
+                <Link to={`/players/${key}`}>{key}</Link>
+              </div>
               <div className="text-center w-100">
                 {value.wins} - {value.ties} - {value.losses}
               </div>
@@ -72,7 +80,9 @@ function RecordPartners({ playerData }) {
               key={i}
               className="d-flex justify-content-between align-items-start border-bottom py-2"
             >
-              <div className="text-center w-100 capitalize">{key}</div>
+              <div className="text-center w-100 capitalize">
+                <Link to={`/players/${key}`}>{key}</Link>
+              </div>
               <div className="text-center w-100">
                 {value.wins} - {value.ties} - {value.losses}
               </div>

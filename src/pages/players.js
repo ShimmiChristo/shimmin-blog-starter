@@ -17,11 +17,9 @@ const PlayersIndex = ({ data, location }) => {
   const { nodes } = usePlayersPosts()
   const siteTitle = title || `Title`
   const posts = nodes
-  console.log('posts - ', posts);
   const activePlayers = posts.filter(
     player => player.frontmatter?.active !== false
   )
-  console.log('activePlayers - ', activePlayers);
 
   const TeamFilterContainer = styled.div`
     .team-filter-all {
@@ -85,7 +83,7 @@ const PlayersIndex = ({ data, location }) => {
 
   const [teamFilter, setTeamFilter] = useState(null)
 
-  if (posts.length === 0) {
+  if (activePlayers.length === 0) {
     return (
       <Layout location={location} title={siteTitle}>
         <Seo title="Players" />
@@ -120,7 +118,7 @@ const PlayersIndex = ({ data, location }) => {
             </div>
           </TeamFilter>
           <OlContainer>
-            {posts.map((post, i) => {
+            {activePlayers.map((post, i) => {
               return (
                 <PlayerCard
                   key={uuid + i}

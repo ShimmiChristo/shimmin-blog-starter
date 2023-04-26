@@ -1,6 +1,6 @@
 ---
 active: true
-index: 12
+index: 10
 name: curtis
 nickname: 'Curt the flirt, cowboy Curt, Kinky Curt, "That one"'
 description: ""

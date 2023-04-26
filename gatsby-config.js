@@ -116,8 +116,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `BFBH Cup`,
-        short_name: `BFBH Cup`,
+        name: `BFBH Cup logo`,
+        short_name: `BFBH Cup logo`,
         start_url: `/`,
         background_color: `#ffffff`,
         theme_color: `#ffffff`,

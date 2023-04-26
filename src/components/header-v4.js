@@ -160,7 +160,7 @@ function HeaderV3() {
     logoImg = (
       <Link to="/">
         <StaticImage
-          src="../images/logo-black.png"
+          src="../images/logo-black.jpg"
           alt="site logo"
           height={75}
         />

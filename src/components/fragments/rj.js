@@ -43,6 +43,20 @@ export const Rj = graphql`
             backHandicap
           }
         }
+        records {
+          partners {
+            name
+            wins
+            ties
+            losses
+          }
+          opponents {
+            name
+            wins
+            ties
+            losses
+          }
+        }
       }
       _2022 {
         id

@@ -263,13 +263,13 @@
               "opponents": [
                 {
                   "name": "dylan",
-                  "wins": 0,
+                  "wins": 2,
                   "ties": 0,
-                  "losses": 0
+                  "losses": 2
                 },
                 {
                   "name": "rj",
-                  "wins": 0,
+                  "wins": 4,
                   "ties": 0,
                   "losses": 0
                 },
@@ -281,21 +281,21 @@
                 },
                 {
                   "name": "dan",
-                  "wins": 0,
+                  "wins": 3,
                   "ties": 0,
                   "losses": 0
                 },
                 {
                   "id": "evan",
                   "name": "evan",
-                  "wins": 0,
+                  "wins": 2,
                   "ties": 0,
-                  "losses": 0
+                  "losses": 1
                 },
                 {
                   "id": "cam",
                   "name": "cam",
-                  "wins": 0,
+                  "wins": 1,
                   "ties": 0,
                   "losses": 0
                 }
@@ -2336,7 +2336,7 @@
             {
               "partners": [
                 {
-                  "matt": "matt",
+                  "name": "matt",
                   "wins": 0,
                   "ties": 0,
                   "losses": 1

@@ -1,6 +1,6 @@
 ---
 active: true
-index: 11
+index: 08
 name: gordon
 nickname: ""
 description: ""
