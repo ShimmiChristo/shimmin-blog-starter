@@ -159,12 +159,9 @@ const PlayerPostTemplate = ({ data, location }) => {
           </div>
         </div>
         <section>
-          <div className="row">
-            <div className="col-12 text-center h3 pt-5 pb-2">
-              Player Records
-            </div>
+          <div className="container my-3">
+            <RecordPartners playerData={playerData} />
           </div>
-          <RecordPartners playerData={playerData} />
         </section>
       </article>
     </Layout>
