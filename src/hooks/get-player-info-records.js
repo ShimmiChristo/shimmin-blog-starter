@@ -13,55 +13,16 @@ export const PlayerInfoRecords = () => {
               team
               records {
                 partners {
-                  scramble {
-                    wins
-                    ties
-                    losses
-                  }
                   name
-                  brambleAlternate {
-                    wins
-                    ties
-                    losses
-                  }
-                  bramble {
-                    wins
-                    ties
-                    losses
-                  }
-                  bestBall {
-                    wins
-                    ties
-                    losses
-                  }
+                  wins
+                  ties
+                  losses
                 }
                 opponents {
-                  singles {
-                    losses
-                    ties
-                    wins
-                  }
-                  scramble {
-                    wins
-                    ties
-                    losses
-                  }
                   name
-                  brambleAlternate {
-                    wins
-                    ties
-                    losses
-                  }
-                  bramble {
-                    wins
-                    ties
-                    losses
-                  }
-                  bestBall {
-                    wins
-                    ties
-                    losses
-                  }
+                  wins
+                  ties
+                  losses
                 }
               }
             }
@@ -76,55 +37,16 @@ export const PlayerInfoRecords = () => {
               team
               records {
                 partners {
-                  scramble {
-                    wins
-                    ties
-                    losses
-                  }
                   name
-                  brambleAlternate {
-                    wins
-                    ties
-                    losses
-                  }
-                  bramble {
-                    wins
-                    ties
-                    losses
-                  }
-                  bestBall {
-                    wins
-                    ties
-                    losses
-                  }
+                  wins
+                  ties
+                  losses
                 }
                 opponents {
-                  singles {
-                    losses
-                    ties
-                    wins
-                  }
-                  scramble {
-                    wins
-                    ties
-                    losses
-                  }
                   name
-                  brambleAlternate {
-                    wins
-                    ties
-                    losses
-                  }
-                  bramble {
-                    wins
-                    ties
-                    losses
-                  }
-                  bestBall {
-                    wins
-                    ties
-                    losses
-                  }
+                  wins
+                  ties
+                  losses
                 }
               }
             }
@@ -139,55 +61,16 @@ export const PlayerInfoRecords = () => {
               team
               records {
                 partners {
-                  scramble {
-                    wins
-                    ties
-                    losses
-                  }
                   name
-                  brambleAlternate {
-                    wins
-                    ties
-                    losses
-                  }
-                  bramble {
-                    wins
-                    ties
-                    losses
-                  }
-                  bestBall {
-                    wins
-                    ties
-                    losses
-                  }
+                  wins
+                  ties
+                  losses
                 }
                 opponents {
-                  singles {
-                    losses
-                    ties
-                    wins
-                  }
-                  scramble {
-                    wins
-                    ties
-                    losses
-                  }
                   name
-                  brambleAlternate {
-                    wins
-                    ties
-                    losses
-                  }
-                  bramble {
-                    wins
-                    ties
-                    losses
-                  }
-                  bestBall {
-                    wins
-                    ties
-                    losses
-                  }
+                  wins
+                  ties
+                  losses
                 }
               }
             }
@@ -202,55 +85,16 @@ export const PlayerInfoRecords = () => {
               team
               records {
                 partners {
-                  scramble {
-                    wins
-                    ties
-                    losses
-                  }
                   name
-                  brambleAlternate {
-                    wins
-                    ties
-                    losses
-                  }
-                  bramble {
-                    wins
-                    ties
-                    losses
-                  }
-                  bestBall {
-                    wins
-                    ties
-                    losses
-                  }
+                  wins
+                  ties
+                  losses
                 }
                 opponents {
-                  singles {
-                    losses
-                    ties
-                    wins
-                  }
-                  scramble {
-                    wins
-                    ties
-                    losses
-                  }
                   name
-                  brambleAlternate {
-                    wins
-                    ties
-                    losses
-                  }
-                  bramble {
-                    wins
-                    ties
-                    losses
-                  }
-                  bestBall {
-                    wins
-                    ties
-                    losses
-                  }
+                  wins
+                  ties
+                  losses
                 }
               }
             }
@@ -265,55 +109,16 @@ export const PlayerInfoRecords = () => {
               id
               records {
                 partners {
-                  scramble {
-                    wins
-                    ties
-                    losses
-                  }
                   name
-                  brambleAlternate {
-                    wins
-                    ties
-                    losses
-                  }
-                  bramble {
-                    wins
-                    ties
-                    losses
-                  }
-                  bestBall {
-                    wins
-                    ties
-                    losses
-                  }
+                  wins
+                  ties
+                  losses
                 }
                 opponents {
-                  singles {
-                    losses
-                    ties
-                    wins
-                  }
-                  scramble {
-                    wins
-                    ties
-                    losses
-                  }
                   name
-                  brambleAlternate {
-                    wins
-                    ties
-                    losses
-                  }
-                  bramble {
-                    wins
-                    ties
-                    losses
-                  }
-                  bestBall {
-                    wins
-                    ties
-                    losses
-                  }
+                  wins
+                  ties
+                  losses
                 }
               }
             }
@@ -328,55 +133,16 @@ export const PlayerInfoRecords = () => {
               id
               records {
                 partners {
-                  scramble {
-                    wins
-                    ties
-                    losses
-                  }
                   name
-                  brambleAlternate {
-                    wins
-                    ties
-                    losses
-                  }
-                  bramble {
-                    wins
-                    ties
-                    losses
-                  }
-                  bestBall {
-                    wins
-                    ties
-                    losses
-                  }
+                  wins
+                  ties
+                  losses
                 }
                 opponents {
-                  singles {
-                    losses
-                    ties
-                    wins
-                  }
-                  scramble {
-                    wins
-                    ties
-                    losses
-                  }
                   name
-                  brambleAlternate {
-                    wins
-                    ties
-                    losses
-                  }
-                  bramble {
-                    wins
-                    ties
-                    losses
-                  }
-                  bestBall {
-                    wins
-                    ties
-                    losses
-                  }
+                  wins
+                  ties
+                  losses
                 }
               }
             }
@@ -391,55 +157,16 @@ export const PlayerInfoRecords = () => {
               id
               records {
                 partners {
-                  scramble {
-                    wins
-                    ties
-                    losses
-                  }
                   name
-                  brambleAlternate {
-                    wins
-                    ties
-                    losses
-                  }
-                  bramble {
-                    wins
-                    ties
-                    losses
-                  }
-                  bestBall {
-                    wins
-                    ties
-                    losses
-                  }
+                  wins
+                  ties
+                  losses
                 }
                 opponents {
-                  singles {
-                    losses
-                    ties
-                    wins
-                  }
-                  scramble {
-                    wins
-                    ties
-                    losses
-                  }
                   name
-                  brambleAlternate {
-                    wins
-                    ties
-                    losses
-                  }
-                  bramble {
-                    wins
-                    ties
-                    losses
-                  }
-                  bestBall {
-                    wins
-                    ties
-                    losses
-                  }
+                  wins
+                  ties
+                  losses
                 }
               }
             }
@@ -454,55 +181,16 @@ export const PlayerInfoRecords = () => {
               id
               records {
                 partners {
-                  scramble {
-                    wins
-                    ties
-                    losses
-                  }
                   name
-                  brambleAlternate {
-                    wins
-                    ties
-                    losses
-                  }
-                  bramble {
-                    wins
-                    ties
-                    losses
-                  }
-                  bestBall {
-                    wins
-                    ties
-                    losses
-                  }
+                  wins
+                  ties
+                  losses
                 }
                 opponents {
-                  singles {
-                    losses
-                    ties
-                    wins
-                  }
-                  scramble {
-                    wins
-                    ties
-                    losses
-                  }
                   name
-                  brambleAlternate {
-                    wins
-                    ties
-                    losses
-                  }
-                  bramble {
-                    wins
-                    ties
-                    losses
-                  }
-                  bestBall {
-                    wins
-                    ties
-                    losses
-                  }
+                  wins
+                  ties
+                  losses
                 }
               }
             }

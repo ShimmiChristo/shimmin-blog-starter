@@ -5,6 +5,7 @@ import styled from "styled-components"
 import Image from "gatsby-image"
 // import { PlayerInfoMatt } from "../hooks/get-player-info--matt"
 import PlayerInfoThisYearRecord from "../components/player-info-year-record"
+import RecordPartners from "../components/records-partners"
 // import { Chris } from "../components/fragments/scores-2021"
 
 import Layout from "../components/layout"
@@ -139,18 +140,44 @@ const PlayerPostTemplate = ({ data, location }) => {
           </BioWrapper>
         </section>
         <hr />
-        <PlayerInfoThisYearRecord
-          year="2022"
-          teamColor="green"
-          post={post}
-          playerData={playerData}
-        />
-        <PlayerInfoThisYearRecord
-          year="All Time"
-          teamColor="green"
-          post={post}
-          playerData={playerData}
-        />
+        <div className="row">
+          <div className="col-12 col-lg-6">
+            <PlayerInfoThisYearRecord
+              year="2022"
+              teamColor="green"
+              post={post}
+              playerData={playerData}
+            />
+          </div>
+          <div className="col-12 col-lg-6">
+            <PlayerInfoThisYearRecord
+              year="All Time"
+              teamColor="green"
+              post={post}
+              playerData={playerData}
+            />
+          </div>
+        </div>
+        <section>
+          <div className="row">
+            <div className="col-12 text-center h3 pt-5 pb-2">
+              Partner Scores
+            </div>
+          </div>
+          <div className="d-flex justify-content-between py-2 border-bottom">
+            <div className="w-100 bold text-center">Name</div>
+            <div className="w-100 bold text-center">Best Ball</div>
+            <div className="w-100 bold text-center">2 Best Ball</div>
+            <div className="w-100 bold text-center">Bramble</div>
+            <div className="w-100 bold text-center">2 Ball Bramble</div>
+            <div className="w-100 bold text-center">Alternate</div>
+            <div className="w-100 bold text-center">Bramble Alt</div>
+            <div className="w-100 bold text-center">Scramble</div>
+          </div>
+          <div className="d-flex justify-content-between">
+            <RecordPartners playerData={playerData} />
+          </div>
+        </section>
       </article>
     </Layout>
   )

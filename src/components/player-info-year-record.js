@@ -1,3 +1,5 @@
+/* eslint-disable react/prop-types */
+
 import React from "react"
 import styled from "styled-components"
 import { graphql } from "gatsby"
@@ -50,7 +52,7 @@ function PlayerInfoThisYearRecord({ year, teamColor, post, playerData }) {
         totalLosses += elem.losses
         totalTies += elem.ties
       })
-      
+
       return {
         totalWins: totalWins,
         totalLosses: totalLosses,
@@ -85,6 +87,9 @@ function PlayerInfoThisYearRecord({ year, teamColor, post, playerData }) {
 
   const record = getOverallRecord(playerData)
   // const bestBallRecord = getGameRecord(playerData, "bestBall")
+  // const brambleRecord = getGameRecord(playerData, "bramble")
+  // const brambleAltRecord = getGameRecord(playerData, "brambleAlternate")
+  // const scrambleRecord = getGameRecord(playerData, "scramble")
 
   return (
     <StyledSection>
@@ -94,7 +99,7 @@ function PlayerInfoThisYearRecord({ year, teamColor, post, playerData }) {
         </h2>
       </MDBRow>
       <MDBRow>
-        <MDBCard className="shadow-0 border border-gray offset-md-4 col-md-4 offset-1 col-10 my-2">
+        <MDBCard className="shadow-0 border border-gray offset-md-1 col-md-10 offset-1 col-10 my-2">
           <MDBRow className="g-10">
             <MDBCol center>
               <MDBCardBody>

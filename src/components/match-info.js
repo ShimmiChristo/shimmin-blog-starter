@@ -1,7 +1,7 @@
 import React, { useState } from "react"
 import { CourseInfo } from "../hooks/get-course-info"
 import { PlayerInfo } from "../hooks/get-player-info"
-import { PlayerInfoMatt } from "../hooks/get-player-info--matt"
+// import { PlayerInfoMatt } from "../hooks/get-player-info--matt"
 import styled from "styled-components"
 // import { useStaticQuery, graphql } from "gatsby"
 // import Image from "gatsby-image"
