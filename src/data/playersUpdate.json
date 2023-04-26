@@ -494,8 +494,8 @@
               "id": "twoBallBramble",
               "game": "Bramble",
               "wins": 0,
-              "ties": 0,
-              "losses": 1
+              "ties": 1,
+              "losses": 0
             },
             {
               "id": "alternate",
