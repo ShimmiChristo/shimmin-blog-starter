@@ -43,6 +43,20 @@ export const Chris = graphql`
             backHandicap
           }
         }
+        records {
+          partners {
+            name
+            wins
+            ties
+            losses
+          }
+          opponents {
+            name
+            wins
+            ties
+            losses
+          }
+        }
       }
     }
   }

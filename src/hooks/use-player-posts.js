@@ -14,6 +14,7 @@ export const usePlayersPosts = () => {
               slug
             }
             frontmatter {
+              active
               index
               name
               nickname

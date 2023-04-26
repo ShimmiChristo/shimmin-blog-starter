@@ -1,5 +1,5 @@
 ---
-published: true
+active: false
 index: 10
 name: jake
 nickname: ""

@@ -1,5 +1,5 @@
 ---
-published: true
+active: true
 index: 11
 name: gordon
 nickname: ""

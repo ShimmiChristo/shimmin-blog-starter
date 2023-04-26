@@ -1,13 +1,13 @@
 ---
-published: false
-index: 1
+active: true
+index: 10
 name: chris
 nickname: "Shim, Shimmin"
-description: "The lead developer"
+description: "The developer"
 category: players
 featuredImg: ./profile-pic.png
 team: "Green Team"
-position: 02
+handicap: 14
 ---
 
 

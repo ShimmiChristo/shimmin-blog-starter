@@ -185,6 +185,7 @@ export const pageQuery = graphql`
       excerpt(pruneLength: 160)
       body
       frontmatter {
+        active
         index
         name
         nickname

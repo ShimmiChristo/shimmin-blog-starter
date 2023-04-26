@@ -1,5 +1,5 @@
 ---
-published: true
+active: true
 index: 03
 name: craig
 nickname: "Twin 1"

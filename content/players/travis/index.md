@@ -1,5 +1,5 @@
 ---
-published: true
+active: true
 index: 08
 name: travis
 nickname: "Shootaaa"

@@ -39,7 +39,7 @@ function PlayerInfoThisYearRecord({ year, teamColor, post, playerData }) {
         totalLosses: totalLosses,
         totalTies: totalTies,
       }
-    } else if (year !== undefined) {
+    } else if (year !== undefined && playerData.year[`_${year}`] !== undefined) {
       const years = playerData.year
       const yearProp = years[`_${year}`]
       let totalWins = 0
@@ -57,6 +57,12 @@ function PlayerInfoThisYearRecord({ year, teamColor, post, playerData }) {
         totalWins: totalWins,
         totalLosses: totalLosses,
         totalTies: totalTies,
+      }
+    } else {
+      return {
+        totalWins: 0,
+        totalLosses: 0,
+        totalTies: 0,
       }
     }
   }

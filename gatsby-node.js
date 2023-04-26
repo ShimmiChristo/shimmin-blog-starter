@@ -28,7 +28,6 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
     `
       query GetPublishedBlogPosts {
         allMdx(
-          filter: { frontmatter: { published: { eq: true } } }
           sort: { fields: [frontmatter___date], order: ASC }
           limit: 1000
         ) {
@@ -55,6 +54,7 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
   }
 
   const posts = result.data.allMdx.nodes
+  console.log('posts - ', posts);
 
   // Create blog posts pages
   // But only if there's at least one markdown file found at "content/blog" (defined in gatsby-config.js)
@@ -137,6 +137,7 @@ exports.createSchemaCustomization = ({ actions }) => {
       featuredImg: File @fileByRelativePath
       index: String
       captain: Boolean
+      active: Boolean
     }
     type Frontmatter {
       title: String
@@ -146,6 +147,7 @@ exports.createSchemaCustomization = ({ actions }) => {
       featuredImg: File @fileByRelativePath
       index: String
       captain: Boolean
+      active: Boolean
     }
 
     type Fields {

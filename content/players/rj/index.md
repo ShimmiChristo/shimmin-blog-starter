@@ -1,5 +1,5 @@
 ---
-published: true
+active: true
 index: 02
 name: rj
 nickname: "RJ"
