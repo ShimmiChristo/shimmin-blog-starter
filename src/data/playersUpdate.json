@@ -570,7 +570,6 @@
                   "losses": 2
                 },
                 {
-                  "id": "curtis",
                   "name": "curtis",
                   "wins": 0,
                   "ties": 1,
@@ -589,20 +588,16 @@
                   "losses": 1
                 },
                 {
-                  "id": "jake",
                   "name": "jake",
                   "wins": 1,
                   "ties": 2,
                   "losses": 1
                 },
                 {
-                  "id": "gordon",
                   "name": "gordon",
-                  "bestBall": {
-                    "wins": 0,
-                    "ties": 0,
-                    "losses": 1
-                  }
+                  "wins": 0,
+                  "ties": 0,
+                  "losses": 1
                 }
               ]
             }

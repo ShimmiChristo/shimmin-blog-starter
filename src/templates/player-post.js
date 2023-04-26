@@ -161,22 +161,10 @@ const PlayerPostTemplate = ({ data, location }) => {
         <section>
           <div className="row">
             <div className="col-12 text-center h3 pt-5 pb-2">
-              Partner Scores
+              Player Records
             </div>
           </div>
-          <div className="d-flex justify-content-between py-2 border-bottom">
-            <div className="w-100 bold text-center">Name</div>
-            <div className="w-100 bold text-center">Best Ball</div>
-            <div className="w-100 bold text-center">2 Best Ball</div>
-            <div className="w-100 bold text-center">Bramble</div>
-            <div className="w-100 bold text-center">2 Ball Bramble</div>
-            <div className="w-100 bold text-center">Alternate</div>
-            <div className="w-100 bold text-center">Bramble Alt</div>
-            <div className="w-100 bold text-center">Scramble</div>
-          </div>
-          <div className="d-flex justify-content-between">
-            <RecordPartners playerData={playerData} />
-          </div>
+          <RecordPartners playerData={playerData} />
         </section>
       </article>
     </Layout>

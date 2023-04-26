@@ -32,21 +32,54 @@ function RecordPartners({ playerData }) {
   }
 
   var partnerRecords = getGameRecord(playerData, "partners")
-  // var opponentsRecords = getGameRecord(playerData, "opponents")
+  var partnerRecordsArr = Object.entries(partnerRecords);
+  var sortedPartnerRecords = partnerRecordsArr.sort((a, b) => a[0].localeCompare(b[0]));
+  
+  var opponentsRecords = getGameRecord(playerData, "opponents")
+  var opponentRecordsArr = Object.entries(opponentsRecords);
+  var sortedOpponentRecords = opponentRecordsArr.sort((a, b) => a[0].localeCompare(b[0]));
+
 
   return (
     <div className="row">
-      {Object.entries(partnerRecords).map(([key, value], i) => (
-        <div
-          key={i}
-          className="d-flex justify-content-between align-items-start border-bottom py-2"
-        >
-          <div className="text-center w-100">{key}</div>
-          <div className="text-center w-100">
-            {value.wins}-{value.ties}-{value.losses}
+      <div className="col-12 col-lg-6">
+        <div className="card shadow-0 border border-gray offset-md-1 col-md-10 offset-1 col-10 my-2">
+          <div className="d-flex bold justify-content-between align-items-start border-bottom py-2">
+            <div className="text-center w-100">Partner</div>
+            <div className="text-center w-100">W - T - L</div>
           </div>
+          {sortedPartnerRecords.map(([key, value], i) => (
+            <div
+              key={i}
+              className="d-flex justify-content-between align-items-start border-bottom py-2"
+            >
+              <div className="text-center w-100 capitalize">{key}</div>
+              <div className="text-center w-100">
+                {value.wins} - {value.ties} - {value.losses}
+              </div>
+            </div>
+          ))}
         </div>
-      ))}
+      </div>
+      <div className="col-12 col-lg-6">
+        <div className="card shadow-0 border border-gray offset-md-1 col-md-10 offset-1 col-10 my-2">
+          <div className="d-flex bold justify-content-between align-items-start border-bottom py-2">
+            <div className="text-center w-100">Opponent</div>
+            <div className="text-center w-100">W - T - L</div>
+          </div>
+          {sortedOpponentRecords.map(([key, value], i) => (
+            <div
+              key={i}
+              className="d-flex justify-content-between align-items-start border-bottom py-2"
+            >
+              <div className="text-center w-100 capitalize">{key}</div>
+              <div className="text-center w-100">
+                {value.wins} - {value.ties} - {value.losses}
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
     </div>
   )
 }

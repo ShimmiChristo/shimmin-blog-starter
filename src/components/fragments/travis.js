@@ -43,6 +43,20 @@ export const Travis = graphql`
             backHandicap
           }
         }
+        records {
+          partners {
+            name
+            wins
+            ties
+            losses
+          }
+          opponents {
+            name
+            wins
+            ties
+            losses
+          }
+        }
       }
       _2022 {
         id
@@ -84,6 +98,20 @@ export const Travis = graphql`
             course
             front
             frontHandicap
+          }
+        }
+        records {
+          partners {
+            name
+            wins
+            ties
+            losses
+          }
+          opponents {
+            name
+            wins
+            ties
+            losses
           }
         }
       }

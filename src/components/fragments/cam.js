@@ -47,6 +47,20 @@ export const Cam = graphql`
             frontHandicap
           }
         }
+        records {
+          partners {
+            name
+            wins
+            ties
+            losses
+          }
+          opponents {
+            name
+            wins
+            ties
+            losses
+          }
+        }
       }
     }
   }
