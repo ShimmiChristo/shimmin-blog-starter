@@ -8,7 +8,7 @@ category: players
 featuredImg: ./profile-pic.png
 team: "Green Team"
 captain: true
-handicap: 7.9
+handicap: 4.1
 ---
 
 The Green Team captain for second year in a row. Goose is coming back more ready than ever. 

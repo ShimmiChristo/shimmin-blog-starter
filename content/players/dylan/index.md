@@ -8,7 +8,7 @@ category: players
 featuredImg: ./profile-pic.png
 team: "Blue Team"
 captain: true
-handicap: 0.8
+handicap: 0.4
 ---
 
 <!-- const { nodes } = allMdx() -->

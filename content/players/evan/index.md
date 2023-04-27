@@ -7,7 +7,7 @@ description: ""
 category: players
 featuredImg: ./profile-pic.png
 team: "Blue Team"
-handicap: 27
+handicap: 36
 ---
 
 A new member to the Blue Team in 2022. Evan is looking to have a good time, not 

@@ -7,7 +7,7 @@ description: ""
 category: players
 featuredImg: ./profile-pic.png
 team: "Blue Team"
-handicap: 21
+handicap: 25
 ---
 
 A new member to the Blue Team in 2022. Cam likes U of M sports and skiing.

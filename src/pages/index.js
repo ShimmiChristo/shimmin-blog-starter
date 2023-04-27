@@ -9,7 +9,7 @@ import LandingPageHeader from "../components/landing-page-header"
 // import Match from "../components/match"
 import MatchScore from "../components/match-score"
 import HighlightsScoring from "../components/highlights/scoring-highlight"
-import Venue2022 from "../components/venues/venue-2022"
+import Venue2023 from "../components/venues/venue-2023"
 import HighlightCountdown from "../components/highlights/coutdown-hightlight"
 // import HighlightDay from "../components/highlights/day-hightlights"
 
@@ -66,7 +66,7 @@ const TopicPage = ({ data, location }) => {
       <hr />
       <br />
       <HighlightsScoring yearProp="2022" />
-      {/* <Venue2022 /> */}
+      <Venue2023 />
     </Layout>
   )
 }

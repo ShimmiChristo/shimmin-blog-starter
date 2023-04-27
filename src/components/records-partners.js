@@ -39,12 +39,10 @@ function RecordPartners({ playerData }) {
   )
 
   var opponentsRecords = getGameRecord(playerData, "opponents")
-  console.log("opponentsRecords - ", opponentsRecords)
   var opponentRecordsArr = Object.entries(opponentsRecords)
   var sortedOpponentRecords = opponentRecordsArr.sort((a, b) =>
     a[0].localeCompare(b[0])
   )
-  console.log("sortedOpponentRecords - ", sortedOpponentRecords)
 
   return (
     <div className="row">

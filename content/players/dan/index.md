@@ -7,7 +7,7 @@ description: "description"
 category: players
 featuredImg: ./profile-pic.png
 team: "Blue Team"
-handicap: 23
+handicap: 27
 ---
 
 

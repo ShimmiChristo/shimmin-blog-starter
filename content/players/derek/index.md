@@ -7,7 +7,7 @@ description: "Description"
 category: players
 featuredImg: ./profile-pic.png
 team: "Green Team"
-handicap: 27
+handicap: 23
 ---
 
 My legal name is Derek Morris but you could do a 4 episode 30 for 30 on all my nicknames,
