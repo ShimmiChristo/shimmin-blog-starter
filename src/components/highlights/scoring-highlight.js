@@ -48,7 +48,7 @@ function HighlightsScoring({ yearProp }) {
           </div>
         </div>
       </div>
-      <div className="mb-3">
+      {/* <div className="mb-3">
         <div className="flex flex-column text-center">
           <div className="h1">27 Points</div>
           <div className="h2">2 Teams</div>
@@ -56,8 +56,9 @@ function HighlightsScoring({ yearProp }) {
             <b>1 Winner</b>
           </div>
         </div>
-      </div>
-      <div className="container mb-3 col-lg-10">
+      </div> */}
+      <h2 className="h1 text-center mb-3">Teams</h2>
+      <div className="container mb-3 pb-3 col-lg-10">
         <div className="row">
           <div className="col-12 col-md-6 mb-1">
             <div className="card shadow-none border">
