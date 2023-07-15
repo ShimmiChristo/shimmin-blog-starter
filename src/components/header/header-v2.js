@@ -1,6 +1,6 @@
 import React, { useState } from "react"
 import { Link } from "gatsby"
-import { useSiteMetadata } from "../hooks/use-site-metadata"
+import { useSiteMetadata } from "../../hooks/use-site-metadata"
 import PropTypes from "prop-types"
 import { StaticImage } from "gatsby-plugin-image"
 import styled from "styled-components"

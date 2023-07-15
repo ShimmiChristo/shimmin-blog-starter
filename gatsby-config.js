@@ -59,6 +59,10 @@ module.exports = {
             name: "Past Scores",
             link: "/past-scores",
           },
+          {
+            name: "Player Scores",
+            link: "/player-scores",
+          },
           // {
           //   name: "Records",
           //   link: "/records",
