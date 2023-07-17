@@ -5,7 +5,7 @@ import { useSiteMetadata } from "../hooks/use-site-metadata"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import LandingPageHeader from "../components/landing-page-header"
+// import LandingPageHeader from "../components/landing-page-header"
 // import Match from "../components/match"
 import MatchScore from "../components/match-score"
 import HighlightsScoring from "../components/highlights/scoring-highlight"

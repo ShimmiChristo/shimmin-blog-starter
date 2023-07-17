@@ -7,7 +7,7 @@ description: "The developer"
 category: players
 featuredImg: ./profile-pic.png
 team: "Green Team"
-handicap: 14
+handicap: 13
 ---
 
 

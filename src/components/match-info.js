@@ -1,7 +1,6 @@
 import React, { useState } from "react"
 import { CourseInfo } from "../hooks/get-course-info"
 import { PlayerInfo } from "../hooks/get-player-info"
-// import { PlayerInfoMatt } from "../hooks/get-player-info--matt"
 import styled from "styled-components"
 // import { useStaticQuery, graphql } from "gatsby"
 // import Image from "gatsby-image"
@@ -41,7 +40,7 @@ const Section = styled.section`
   }
 `
 
-function Match({ matchId, courseMatch, player1, player2, player3, player4 }) {
+function MatchInfo({ matchId, courseMatch, player1, player2, player3, player4 }) {
   const { course } = CourseInfo()
   const { player } = PlayerInfo()
   const courseHoles = course[`${courseMatch}`].holes
@@ -431,4 +430,4 @@ function Match({ matchId, courseMatch, player1, player2, player3, player4 }) {
   )
 }
 
-export default Match
+export default MatchInfo

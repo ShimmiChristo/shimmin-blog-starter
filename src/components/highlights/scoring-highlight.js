@@ -3,10 +3,10 @@ import { v1 as uuidv1 } from "uuid"
 
 // import { StaticImage } from "gatsby-plugin-image"
 // import styled from "styled-components"
-import { PlayerInfoUpdate } from "../../hooks/get-player-info-UPDATE"
+// import { PlayerInfoUpdate } from "../../hooks/get-player-info-UPDATE"
 
 function HighlightsScoring({ yearProp }) {
-  const players = PlayerInfoUpdate()
+  // const players = PlayerInfoUpdate()
   // const newProp = players.chris.year[`_${yearProp}`].handicap
   const greenTeam = ["matt", "gordon", "chris", "travis", "curtis", "derek"]
   const blueTeam = ["dylan", "rj", "craig", "dan", "cam", "evan"]

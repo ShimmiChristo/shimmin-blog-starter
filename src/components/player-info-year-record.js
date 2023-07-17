@@ -13,7 +13,6 @@ import {
   // MDBContainer,
 } from "mdb-react-ui-kit"
 
-// import { PlayerInfoMatt } from "../hooks/get-player-info--matt"
 
 const StyledSection = styled.section``
 

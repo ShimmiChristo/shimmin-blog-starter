@@ -1,6 +1,7 @@
 import React, { useState } from "react"
 // import { Link } from "gatsby"
 import { v1 as uuidv1 } from "uuid"
+import PropTypes from "prop-types"
 import { CourseInfo } from "../hooks/get-course-info"
 import { PlayerInfo } from "../hooks/get-player-info"
 import styled from "styled-components"
@@ -126,180 +127,6 @@ function Match({
 
   const [sectionHeight, setSectionHeight] = useState("closed")
   // const parTotal = course[`${courseMatch}`].totals.par
-
-  // function calcTeamOneScore() {
-  //   const teamOneScoreArr = []
-  //   let playerOneScore = playerOne.course[`${courseMatch}`] // [scores]
-  //   let pHandiPlayerOne = parseInt(player1Handicap)
-
-  //   if (playerThree !== undefined) {
-  //     let playerThreeScore = playerThree.course[`${courseMatch}`] || undefined // [scores]
-  //     let pHandiPlayerThree = parseInt(player3Handicap)
-  //     if (matchHandicap === "average") {
-  //       let teamHandicap = (pHandiPlayerOne + pHandiPlayerThree) / 2
-
-  //       for (let i = 0; i < playerOneScore.length; i++) {
-  //         let sPlayerOne = playerOneScore[i]
-  //         let sPlayerThree = playerThreeScore[i]
-  //         let hHand = courseHoles[i].handicap
-  //         let playerOneHandiScore = calcPlayerScore(
-  //           sPlayerOne,
-  //           teamHandicap,
-  //           hHand
-  //         )
-  //         let playerThreeHandiScore = calcPlayerScore(
-  //           sPlayerThree,
-  //           teamHandicap,
-  //           hHand
-  //         )
-
-  //         if (
-  //           isNaN(playerOneHandiScore) !== true &&
-  //           isNaN(playerThreeHandiScore) !== true
-  //         ) {
-  //           teamOneScoreArr.push(
-  //             Math.min(playerOneHandiScore, playerThreeHandiScore)
-  //           )
-  //         } else {
-  //           teamOneScoreArr.push("-")
-  //         }
-  //       }
-  //     } else {
-  //       for (let i = 0; i < playerOneScore.length; i++) {
-  //         let sPlayerOne = playerOneScore[i]
-  //         let sPlayerThree = playerThreeScore[i]
-  //         let hHand = courseHoles[i].handicap
-  //         let playerOneHandiScore = calcPlayerScore(
-  //           sPlayerOne,
-  //           pHandiPlayerOne,
-  //           hHand
-  //         )
-  //         let playerThreeHandiScore = calcPlayerScore(
-  //           sPlayerThree,
-  //           pHandiPlayerThree,
-  //           hHand
-  //         )
-
-  //         if (
-  //           isNaN(playerOneHandiScore) !== true &&
-  //           isNaN(playerThreeHandiScore) !== true &&
-  //           gameplay !== "two-ball"
-  //         ) {
-  //           teamOneScoreArr.push(
-  //             Math.min(playerOneHandiScore, playerThreeHandiScore)
-  //           )
-  //         } else if (gameplay === "two-ball") {
-  //           teamOneScoreArr.push(
-  //             Number(playerOneHandiScore) + Number(playerThreeHandiScore)
-  //           )
-  //         } else {
-  //           teamOneScoreArr.push("-")
-  //         }
-  //       }
-  //     }
-  //   } else {
-  //     for (let i = 0; i < playerOneScore.length; i++) {
-  //       let sPlayerOne = playerOneScore[i]
-  //       let hHand = courseHoles[i].handicap
-  //       let playerOneHandiScore = calcPlayerScore(
-  //         sPlayerOne,
-  //         pHandiPlayerOne,
-  //         hHand
-  //       )
-
-  //       teamOneScoreArr.push(playerOneHandiScore)
-  //     }
-  //   }
-
-  //   return teamOneScoreArr
-  // }
-  // const teamOneScore = calcTeamOneScore()
-
-  // function calcTeamTwoScore() {
-  //   const teamTwoScoreArr = []
-  //   let playerTwoScore = playerTwo.course[`${courseMatch}`] // [scores]
-  //   let pHandiPlayerTwo = parseInt(player2Handicap)
-
-  //   if (playerFour !== undefined) {
-  //     let playerFourScore = playerFour.course[`${courseMatch}`] || undefined // [scores]
-  //     let pHandiPlayerFour = parseInt(player4Handicap) || ""
-  //     if (matchHandicap === "average") {
-  //       let teamHandicap = (pHandiPlayerTwo + pHandiPlayerFour) / 2
-  //       for (let i = 0; i < playerTwoScore.length; i++) {
-  //         let sPlayerTwo = playerTwoScore[i]
-  //         let sPlayerFour = playerFourScore[i]
-  //         let hHand = courseHoles[i].handicap
-  //         let playerTwoHandiScoreAv = calcPlayerScore(
-  //           sPlayerTwo,
-  //           teamHandicap,
-  //           hHand
-  //         )
-  //         let playerFourHandiScoreAv = calcPlayerScore(
-  //           sPlayerFour,
-  //           teamHandicap,
-  //           hHand
-  //         )
-
-  //         if (
-  //           isNaN(playerTwoHandiScoreAv) !== true &&
-  //           isNaN(playerFourHandiScoreAv) !== true
-  //         ) {
-  //           teamTwoScoreArr.push(
-  //             Math.min(playerTwoHandiScoreAv, playerFourHandiScoreAv)
-  //           )
-  //         } else {
-  //           teamTwoScoreArr.push("-")
-  //         }
-  //       }
-  //     } else {
-  //       for (let i = 0; i < playerTwoScore.length; i++) {
-  //         let sPlayerTwo = playerTwoScore[i]
-  //         let sPlayerFour = playerFourScore[i]
-  //         let hHand = courseHoles[i].handicap
-  //         let playerTwoHandiScore = calcPlayerScore(
-  //           sPlayerTwo,
-  //           pHandiPlayerTwo,
-  //           hHand
-  //         )
-  //         let playerFourHandiScore = calcPlayerScore(
-  //           sPlayerFour,
-  //           pHandiPlayerFour,
-  //           hHand
-  //         )
-
-  //         if (
-  //           isNaN(playerTwoHandiScore) !== true &&
-  //           isNaN(playerFourHandiScore) !== true &&
-  //           gameplay !== "two-ball"
-  //         ) {
-  //           teamTwoScoreArr.push(
-  //             Math.min(playerTwoHandiScore, playerFourHandiScore)
-  //           )
-  //         } else if (gameplay === "two-ball") {
-  //           teamTwoScoreArr.push(
-  //             Number(playerTwoHandiScore) + Number(playerFourHandiScore)
-  //           )
-  //         } else {
-  //           teamTwoScoreArr.push("-")
-  //         }
-  //       }
-  //     }
-  //   } else {
-  //     for (let i = 0; i < playerTwoScore.length; i++) {
-  //       let sPlayerTwo = playerTwoScore[i]
-  //       let hHand = courseHoles[i].handicap
-  //       let playerTwoHandiScore = calcPlayerScore(
-  //         sPlayerTwo,
-  //         pHandiPlayerTwo,
-  //         hHand
-  //       )
-
-  //       teamTwoScoreArr.push(playerTwoHandiScore)
-  //     }
-  //   }
-  //   return teamTwoScoreArr
-  // }
-  // const teamTwoScore = calcTeamTwoScore()
 
   function calcTeamScore(
     player1Param,
@@ -829,6 +656,21 @@ function Match({
       </div>
     </Section>
   )
+}
+
+Match.propTypes = {
+  matchId: PropTypes.string,
+  courseMatch: PropTypes.string,
+  matchHandicap: PropTypes.string,
+  gameplay: PropTypes.string,
+  player1: PropTypes.string,
+  player1Handicap: PropTypes.string,
+  player2: PropTypes.string,
+  player2Handicap: PropTypes.string,
+  player3: PropTypes.string,
+  player3Handicap: PropTypes.string,
+  player4: PropTypes.string,
+  player4Handicap: PropTypes.string,
 }
 
 export default Match

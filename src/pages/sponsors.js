@@ -3,25 +3,21 @@ import styled from "styled-components"
 import { useSiteMetadata } from "../hooks/use-site-metadata"
 import { usePublishedPosts } from "../hooks/use-published-posts"
 
-import AuthorBio from "../components/author-bio"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import LandingPageHeader from "../components/landing-page-header"
-import Match from "../components/match"
-import MatchScore from "../components/match-score"
 import SponsorCraig from "../components/sponsor--craig"
 // import BlogPostThumbnailImg from "../components/blog-post-thumbnail-img"
 
 const TopicPage = ({ data, location }) => {
   const { title } = useSiteMetadata()
-  const { nodes } = usePublishedPosts()
+  // const { nodes } = usePublishedPosts()
   const siteTitle = title || `Title`
-  const posts = nodes
-
-  const LandingPageBody = styled.div`
-    max-width: var(--maxWidth-5xl);
-    margin: 0 auto;
-  `
+  // const posts = nodes
+  // const LandingPageBody = styled.div`
+  //   max-width: var(--maxWidth-5xl);
+  //   margin: 0 auto;
+  // `
 
   return (
     <Layout location={location} title={siteTitle}>
@@ -36,7 +32,6 @@ const TopicPage = ({ data, location }) => {
       </div>
 
       <SponsorCraig />
-      
     </Layout>
   )
 }

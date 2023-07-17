@@ -1,7 +1,2228 @@
 [
   {
+    "cam": {
+      "name": "cam",
+      "appearances": [2022],
+      "year": {
+        "_2022": {
+          "id": 2022,
+          "handicap": 2,
+          "captain": false,
+          "team": "blue",
+          "scores": {
+            "stoatinBrae": {
+              "course": "Stoatin Brae",
+              "front": [5, 5, 7, 5, 7, 8, 0, 0, 0],
+              "frontHandicap": 999,
+              "back": [4, 3, 4, 4, 4, 3, 4, 6, 0],
+              "backHandicap": 999
+            },
+            "stonehedgeSouth": {
+              "course": "Stonehedge South",
+              "front": [6, 5, 4, 5, 4, 4, 6, 5, 5],
+              "frontHandicap": 999,
+              "back": [6, 5, 5, 4, 5, 5, 3, 0, 0],
+              "backHandicap": 999
+            },
+            "gullLakeEast": {
+              "course": "Gull Lake East",
+              "front": [4, 3, 4, 4, 4, 3, 4, 5, 0],
+              "frontHandicap": 999,
+              "back": [6, 5, 6, 6, 6, 4, 0, 0, 0],
+              "backHandicap": 999
+            },
+            "gullLakeWest": {
+              "course": "Gull Lake West",
+              "front": [4, 3, 4, 4, 5, 3, 4, 4, 0],
+              "frontHandicap": 999,
+              "back": [6, 5, 7, 4, 7, 7, 7, 6, 0],
+              "backHandicap": 999
+            }
+          },
+          "points": [
+            {
+              "id": "bestBall",
+              "game": "Best Ball",
+              "wins": 0,
+              "ties": 0,
+              "losses": 1
+            },
+            {
+              "id": "twoBestBall",
+              "game": "Best Ball",
+              "wins": 0,
+              "ties": 0,
+              "losses": 1
+            },
+            {
+              "id": "bramble",
+              "game": "Bramble",
+              "wins": 0,
+              "ties": 0,
+              "losses": 1
+            },
+            {
+              "id": "twoBallBramble",
+              "game": "Bramble",
+              "wins": 0,
+              "ties": 1,
+              "losses": 0
+            },
+            {
+              "id": "alternate",
+              "game": "Alternate",
+              "wins": 0,
+              "ties": 0,
+              "losses": 1
+            },
+            {
+              "id": "brambleAlternate",
+              "game": "Bramble Alternate",
+              "wins": 0,
+              "ties": 0,
+              "losses": 0
+            },
+            {
+              "id": "scramble",
+              "game": "Scramble",
+              "wins": 1,
+              "ties": 0,
+              "losses": 1
+            },
+            {
+              "id": "singles",
+              "game": "Singles",
+              "wins": 1,
+              "ties": 0,
+              "losses": 0
+            }
+          ],
+          "records": [
+            {
+              "partners": [
+                {
+                  "name": "rj",
+                  "wins": 0,
+                  "ties": 0,
+                  "losses": 1
+                },
+                {
+                  "name": "craig",
+                  "wins": 0,
+                  "ties": 0,
+                  "losses": 3
+                },
+                {
+                  "name": "dan",
+                  "wins": 1,
+                  "ties": 0,
+                  "losses": 0
+                },
+                {
+                  "name": "dylan",
+                  "wins": 0,
+                  "ties": 1,
+                  "losses": 0
+                },
+                {
+                  "name": "evan",
+                  "wins": 0,
+                  "ties": 0,
+                  "losses": 1
+                }
+              ]
+            },
+            {
+              "opponents": [
+                {
+                  "name": "matt",
+                  "wins": 0,
+                  "ties": 0,
+                  "losses": 1
+                },
+                {
+                  "name": "curtis",
+                  "wins": 1,
+                  "ties": 0,
+                  "losses": 1
+                },
+                {
+                  "name": "travis",
+                  "wins": 0,
+                  "ties": 0,
+                  "losses": 2
+                },
+                {
+                  "name": "derek",
+                  "wins": 0,
+                  "ties": 1,
+                  "losses": 1
+                },
+                {
+                  "name": "jake",
+                  "wins": 1,
+                  "ties": 1,
+                  "losses": 2
+                },
+                {
+                  "name": "gordon",
+                  "wins": 1,
+                  "ties": 0,
+                  "losses": 3
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    "chris": {
+      "name": "chris",
+      "appearances": [2021],
+      "year": {
+        "_2021": {
+          "id": 2021,
+          "handicap": 16,
+          "captain": false,
+          "team": "green",
+          "scores": {
+            "jonesMasterPiece": {
+              "course": "The Jones Masterpiece at Treetops",
+              "front": [0],
+              "frontHandicap": 999,
+              "back": [0],
+              "backHandicap": 999
+            },
+            "tribute": {
+              "course": "Tribute",
+              "front": [5, 5, 5, 7, 5, 3, 7, 6, 5],
+              "frontHandicap": 16,
+              "back": [5, 5, 5, 7, 5, 3, 7, 6, 5],
+              "backHandicap": 16
+            },
+            "classic": {
+              "course": "Classic",
+              "front": [8, 5, 4, 6, 7, 4, 5, 4, 5],
+              "frontHandicap": 16,
+              "back": [6, 4, 6, 3, 4, 3, 4, 3, 4],
+              "backHandicap": 16
+            },
+            "gaylordGolfClub": {
+              "course": "Gaylord Golf Club",
+              "front": [7, 4, 5, 3, 4, 4, 5, 7, 5],
+              "frontHandicap": 16,
+              "back": [4, 4, 7, 5, 4, 5, 6, 5, 5],
+              "backHandicap": 16
+            }
+          },
+          "points": [
+            {
+              "id": "bestBall",
+              "game": "Best Ball",
+              "wins": 1,
+              "ties": 0,
+              "losses": 1
+            },
+            {
+              "id": "bramble",
+              "game": "Bramble",
+              "wins": 0,
+              "ties": 0,
+              "losses": 1
+            },
+            {
+              "id": "brambleAlternate",
+              "game": "Bramble Alternate",
+              "wins": 0,
+              "ties": 1,
+              "losses": 0
+            },
+            {
+              "id": "scramble",
+              "game": "Scramble",
+              "wins": 0,
+              "ties": 0,
+              "losses": 1
+            },
+            {
+              "id": "singles",
+              "game": "Singles",
+              "wins": 1,
+              "ties": 0,
+              "losses": 0
+            }
+          ],
+          "records": [
+            {
+              "partners": [
+                {
+                  "name": "matt",
+                  "wins": 0,
+                  "ties": 0,
+                  "losses": 2
+                },
+                {
+                  "name": "travis",
+                  "wins": 1,
+                  "ties": 0,
+                  "losses": 1
+                },
+                {
+                  "name": "derek",
+                  "wins": 0,
+                  "ties": 1,
+                  "losses": 0
+                }
+              ]
+            },
+            {
+              "opponents": [
+                {
+                  "name": "dylan",
+                  "wins": 0,
+                  "ties": 0,
+                  "losses": 3
+                },
+                {
+                  "name": "rj",
+                  "wins": 2,
+                  "ties": 1,
+                  "losses": 2
+                },
+                {
+                  "name": "craig",
+                  "wins": 1,
+                  "ties": 0,
+                  "losses": 0
+                },
+                {
+                  "name": "dan",
+                  "wins": 0,
+                  "ties": 1,
+                  "losses": 1
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    "craig": {
+      "name": "craig",
+      "appearances": [2021, 2022],
+      "year": {
+        "_2021": {
+          "id": 2021,
+          "handicap": 22,
+          "captain": false,
+          "team": "blue",
+          "scores": {
+            "jonesMasterPiece": {
+              "course": "The Jones Masterpiece at Treetops",
+              "front": [0],
+              "frontHandicap": 999,
+              "back": [0],
+              "backHandicap": 999
+            },
+            "tribute": {
+              "course": "Tribute",
+              "front": [5, 5, 6, 6, 6, 4, 7, 6, 3],
+              "frontHandicap": 999,
+              "back": [6, 7, 5, 5, 5, 5, 7, 3, 5],
+              "backHandicap": 999
+            },
+            "classic": {
+              "course": "Classic",
+              "front": [7, 5, 4, 5, 5, 3, 6, 5, 4],
+              "frontHandicap": 999,
+              "back": [5, 4, 5, 4, 4, 4, 6, 4, 5],
+              "backHandicap": 999
+            },
+            "gaylordGolfClub": {
+              "course": "Gaylord Golf Club",
+              "front": [5, 5, 5, 3, 7, 5, 7, 5, 5],
+              "frontHandicap": 999,
+              "back": [5, 5, 7, 6, 3, 4, 5, 10, 6],
+              "backHandicap": 999
+            }
+          },
+          "points": [
+            {
+              "id": "bestBall",
+              "game": "Best Ball",
+              "wins": 1,
+              "ties": 0,
+              "losses": 1
+            },
+            {
+              "id": "bramble",
+              "game": "Bramble",
+              "wins": 1,
+              "ties": 0,
+              "losses": 0
+            },
+            {
+              "id": "brambleAlternate",
+              "game": "Bramble Alternate",
+              "wins": 0,
+              "losses": 0,
+              "ties": 1
+            },
+            {
+              "id": "scramble",
+              "game": "Scramble",
+              "wins": 1,
+              "ties": 0,
+              "losses": 0
+            },
+            {
+              "id": "singles",
+              "game": "Singles",
+              "wins": 1,
+              "ties": 0,
+              "losses": 0
+            }
+          ],
+          "records": [
+            {
+              "partners": [
+                {
+                  "name": "rj",
+                  "wins": 1,
+                  "ties": 0,
+                  "losses": 1
+                },
+                {
+                  "name": "dylan",
+                  "wins": 0,
+                  "ties": 0,
+                  "losses": 1
+                },
+                {
+                  "name": "dan",
+                  "wins": 1,
+                  "ties": 0,
+                  "losses": 0
+                }
+              ]
+            },
+            {
+              "opponents": [
+                {
+                  "name": "matt",
+                  "wins": 1,
+                  "ties": 0,
+                  "losses": 1
+                },
+                {
+                  "name": "chris",
+                  "wins": 0,
+                  "ties": 0,
+                  "losses": 1
+                },
+                {
+                  "name": "travis",
+                  "wins": 3,
+                  "ties": 0,
+                  "losses": 2
+                },
+                {
+                  "name": "derek",
+                  "wins": 3,
+                  "ties": 0,
+                  "losses": 0
+                }
+              ]
+            }
+          ]
+        },
+        "_2022": {
+          "id": 2022,
+          "handicap": 2,
+          "captain": false,
+          "team": "blue",
+          "scores": {
+            "stoatinBrae": {
+              "course": "Stoatin Brae",
+              "front": [7, 4, 7, 7, 6, 5, 5, 7, 6],
+              "frontHandicap": 999,
+              "back": [4, 3, 4, 4, 4, 3, 4, 6, 0],
+              "backHandicap": 999
+            },
+            "stonehedgeSouth": {
+              "course": "Stonehedge South",
+              "front": [6, 7, 3, 8, 6, 7, 6, 4, 0],
+              "frontHandicap": 999,
+              "back": [6, 5, 5, 4, 5, 5, 3, 0, 0],
+              "backHandicap": 999
+            },
+            "gullLakeEast": {
+              "course": "Gull Lake East",
+              "front": [4, 3, 4, 4, 4, 3, 4, 5, 0],
+              "frontHandicap": 999,
+              "back": [6, 3, 7, 6, 5, 3, 5, 5, 5],
+              "backHandicap": 999
+            },
+            "gullLakeWest": {
+              "course": "Gull Lake West",
+              "front": [4, 3, 4, 4, 5, 3, 4, 4, 5],
+              "frontHandicap": 999,
+              "back": [4, 3, 4, 3, 4, 4, 4, 4, 5],
+              "backHandicap": 999
+            }
+          },
+          "points": [
+            {
+              "id": "bestBall",
+              "game": "Best Ball",
+              "wins": 1,
+              "ties": 0,
+              "losses": 0
+            },
+            {
+              "id": "twoBestBall",
+              "game": "Best Ball",
+              "wins": 0,
+              "ties": 0,
+              "losses": 1
+            },
+            {
+              "id": "bramble",
+              "game": "Bramble",
+              "wins": 0,
+              "ties": 0,
+              "losses": 1
+            },
+            {
+              "id": "twoBallBramble",
+              "game": "Bramble",
+              "wins": 1,
+              "ties": 0,
+              "losses": 0
+            },
+            {
+              "id": "alternate",
+              "game": "Alternate",
+              "wins": 0,
+              "ties": 1,
+              "losses": 0
+            },
+            {
+              "id": "brambleAlternate",
+              "game": "Bramble Alternate",
+              "wins": 0,
+              "ties": 0,
+              "losses": 0
+            },
+            {
+              "id": "scramble",
+              "game": "Scramble",
+              "wins": 0,
+              "ties": 0,
+              "losses": 2
+            },
+            {
+              "id": "singles",
+              "game": "Singles",
+              "wins": 1,
+              "ties": 0,
+              "losses": 0
+            }
+          ],
+          "records": [
+            {
+              "partners": [
+                {
+                  "name": "rj",
+                  "wins": 1,
+                  "ties": 0,
+                  "losses": 1
+                },
+                {
+                  "name": "dylan",
+                  "wins": 0,
+                  "ties": 1,
+                  "losses": 0
+                },
+                {
+                  "name": "dan",
+                  "wins": 1,
+                  "ties": 0,
+                  "losses": 0
+                },
+                {
+                  "name": "cam",
+                  "wins": 0,
+                  "ties": 0,
+                  "losses": 3
+                },
+                {
+                  "name": "evan",
+                  "wins": 0,
+                  "ties": 0,
+                  "losses": 0
+                }
+              ]
+            },
+            {
+              "opponents": [
+                {
+                  "name": "matt",
+                  "wins": 0,
+                  "ties": 0,
+                  "losses": 0
+                },
+                {
+                  "name": "curtis",
+                  "wins": 2,
+                  "ties": 1,
+                  "losses": 1
+                },
+                {
+                  "name": "travis",
+                  "wins": 1,
+                  "ties": 0,
+                  "losses": 2
+                },
+                {
+                  "name": "derek",
+                  "wins": 0,
+                  "ties": 0,
+                  "losses": 1
+                },
+                {
+                  "name": "jake",
+                  "wins": 1,
+                  "ties": 1,
+                  "losses": 2
+                },
+                {
+                  "name": "gordon",
+                  "wins": 1,
+                  "ties": 0,
+                  "losses": 2
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    "curtis": {
+      "name": "curtis",
+      "appearances": [2022],
+      "year": {
+        "_2022": {
+          "id": 2022,
+          "captain": false,
+          "handicap": 10,
+          "team": "green",
+          "scores": {
+            "stoatinBrae": {
+              "course": "Stoatin Brae",
+              "front": [6, 4, 7, 6, 6, 8, 5, 6, 7],
+              "frontHandicap": 999,
+              "back": [7, 5, 5, 6, 4, 8, 6, 7, 6],
+              "backHandicap": 999
+            },
+            "stonehedgeSouth": {
+              "course": "Stonehedge South",
+              "front": [6, 6, 4, 9, 4, 0, 0, 0, 0],
+              "frontHandicap": 999,
+              "back": [5, 4, 4, 5, 4, 0, 0, 0, 0],
+              "backHandicap": 999
+            },
+            "gullLakeEast": {
+              "course": "Gull Lake East",
+              "front": [4, 3, 4, 4, 4, 3, 4, 4, 0],
+              "frontHandicap": 999,
+              "back": [7, 6, 6, 6, 4, 5, 5, 6, 6],
+              "backHandicap": 999
+            },
+            "gullLakeWest": {
+              "course": "Gull Lake West",
+              "front": [4, 4, 5, 5, 5, 3, 4, 4, 0],
+              "frontHandicap": 999,
+              "back": [4, 3, 4, 3, 4, 4, 5, 5, 6],
+              "backHandicap": 999
+            }
+          },
+          "points": [
+            {
+              "id": "bestBall",
+              "game": "Best Ball",
+              "wins": 0,
+              "ties": 0,
+              "losses": 1
+            },
+            {
+              "id": "twoBestBall",
+              "game": "Best Ball",
+              "wins": 1,
+              "ties": 0,
+              "losses": 0
+            },
+            {
+              "id": "bramble",
+              "game": "Bramble",
+              "wins": 1,
+              "ties": 0,
+              "losses": 0
+            },
+            {
+              "id": "twoBallBramble",
+              "game": "Bramble",
+              "wins": 1,
+              "ties": 0,
+              "losses": 0
+            },
+            {
+              "id": "alternate",
+              "game": "Alternate",
+              "wins": 0,
+              "ties": 1,
+              "losses": 0
+            },
+            {
+              "id": "brambleAlternate",
+              "game": "Bramble Alternate",
+              "wins": 0,
+              "ties": 0,
+              "losses": 0
+            },
+            {
+              "id": "scramble",
+              "game": "Scramble",
+              "wins": 1,
+              "ties": 0,
+              "losses": 1
+            },
+            {
+              "id": "singles",
+              "game": "Singles",
+              "wins": 0,
+              "ties": 0,
+              "losses": 1
+            }
+          ],
+          "records": [
+            {
+              "partners": [
+                {
+                  "name": "jake",
+                  "wins": 0,
+                  "ties": 1,
+                  "losses": 1
+                },
+                {
+                  "name": "gordon",
+                  "wins": 1,
+                  "ties": 0,
+                  "losses": 1
+                },
+                {
+                  "name": "travis",
+                  "wins": 0,
+                  "ties": 0,
+                  "losses": 0
+                },
+                {
+                  "name": "derek",
+                  "wins": 1,
+                  "ties": 0,
+                  "losses": 0
+                },
+                {
+                  "name": "matt",
+                  "wins": 2,
+                  "ties": 0,
+                  "losses": 0
+                }
+              ]
+            },
+            {
+              "opponents": [
+                {
+                  "name": "dylan",
+                  "wins": 2,
+                  "ties": 1,
+                  "losses": 0
+                },
+                {
+                  "name": "rj",
+                  "wins": 0,
+                  "ties": 0,
+                  "losses": 0
+                },
+                {
+                  "name": "craig",
+                  "wins": 1,
+                  "ties": 1,
+                  "losses": 2
+                },
+                {
+                  "name": "dan",
+                  "wins": 2,
+                  "ties": 0,
+                  "losses": 2
+                },
+                {
+                  "id": "evan",
+                  "name": "evan",
+                  "wins": 2,
+                  "ties": 0,
+                  "losses": 0
+                },
+                {
+                  "id": "cam",
+                  "name": "cam",
+                  "wins": 1,
+                  "ties": 0,
+                  "losses": 1
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    "dan": {
+      "name": "dan",
+      "appearances": [2021, 2022],
+      "year": {
+        "_2021": {
+          "id": 2021,
+          "handicap": 36,
+          "captain": false,
+          "team": "blue",
+          "scores": {
+            "jonesMasterPiece": {
+              "course": "The Jones Masterpiece at Treetops",
+              "front": [0],
+              "frontHandicap": 999,
+              "back": [0],
+              "backHandicap": 999
+            },
+            "tribute": {
+              "course": "Tribute",
+              "front": [6, 7, 7, 7, 7, 5, 8, 7, 3],
+              "frontHandicap": 999,
+              "back": [5, 9, 5, 4, 4, 6, 8, 3, 6],
+              "backHandicap": 999
+            },
+            "classic": {
+              "course": "Classic",
+              "front": [5, 6, 4, 5, 6, 4, 6, 3, 5],
+              "frontHandicap": 24,
+              "back": [5, 4, 5, 4, 4, 4, 6, 4, 6],
+              "backHandicap": 20
+            },
+            "gaylordGolfClub": {
+              "course": "Gaylord Golf Club",
+              "front": [8, 5, 5, 4, 6, 3, 7, 7, 6],
+              "frontHandicap": 22,
+              "back": [10, 6, 10, 5, 7, 7, 5, 8, 12],
+              "backHandicap": 999
+            }
+          },
+          "points": [
+            {
+              "id": "bestBall",
+              "game": "Best Ball",
+              "wins": 1,
+              "ties": 0,
+              "losses": 1
+            },
+            {
+              "id": "bramble",
+              "game": "Bramble",
+              "wins": 1,
+              "ties": 0,
+              "losses": 0
+            },
+            {
+              "id": "brambleAlternate",
+              "game": "Bramble Alternate",
+              "wins": 0,
+              "ties": 1,
+              "losses": 0
+            },
+            {
+              "id": "scramble",
+              "game": "Scramble",
+              "wins": 1,
+              "ties": 0,
+              "losses": 0
+            },
+            {
+              "id": "singles",
+              "game": "Singles",
+              "wins": 0,
+              "ties": 1,
+              "losses": 0
+            }
+          ],
+          "records": [
+            {
+              "partners": [
+                {
+                  "name": "rj",
+                  "wins": 0,
+                  "ties": 1,
+                  "losses": 0
+                },
+                {
+                  "name": "craig",
+                  "wins": 2,
+                  "ties": 0,
+                  "losses": 0
+                },
+                {
+                  "name": "dylan",
+                  "wins": 1,
+                  "ties": 0,
+                  "losses": 1
+                }
+              ]
+            },
+            {
+              "opponents": [
+                {
+                  "name": "matt",
+                  "wins": 0,
+                  "ties": 0,
+                  "losses": 1
+                },
+                {
+                  "name": "chris",
+                  "wins": 1,
+                  "ties": 1,
+                  "losses": 0
+                },
+                {
+                  "name": "travis",
+                  "wins": 3,
+                  "ties": 0,
+                  "losses": 0
+                },
+                {
+                  "name": "derek",
+                  "wins": 2,
+                  "ties": 2,
+                  "losses": 1
+                }
+              ]
+            }
+          ]
+        },
+        "_2022": {
+          "id": 2022,
+          "handicap": 2,
+          "captain": false,
+          "team": "blue",
+          "scores": {
+            "stoatinBrae": {
+              "course": "Stoatin Brae",
+              "front": [6, 6, 3, 6, 8, 8, 8, 6, 6],
+              "frontHandicap": 999,
+              "back": [4, 2, 8, 7, 6, 8, 10, 7, 8],
+              "backHandicap": 999
+            },
+            "stonehedgeSouth": {
+              "course": "Stonehedge South",
+              "front": [8, 10, 6, 10, 10, 0, 0, 0, 0],
+              "frontHandicap": 999,
+              "back": [6, 5, 4, 4, 4, 3, 4, 6, 0],
+              "backHandicap": 999
+            },
+            "gullLakeEast": {
+              "course": "Gull Lake East",
+              "front": [7, 5, 8, 8, 8, 4, 7, 0, 0],
+              "frontHandicap": 999,
+              "back": [7, 7, 7, 7, 8, 6, 5, 6, 7],
+              "backHandicap": 999
+            },
+            "gullLakeWest": {
+              "course": "Gull Lake West",
+              "front": [4, 3, 4, 4, 5, 3, 4, 4, 0],
+              "frontHandicap": 999,
+              "back": [8, 4, 7, 6, 6, 7, 8, 7, 0],
+              "backHandicap": 999
+            }
+          },
+          "points": [
+            {
+              "id": "bestBall",
+              "game": "Best Ball",
+              "wins": 1,
+              "ties": 0,
+              "losses": 0
+            },
+            {
+              "id": "twoBestBall",
+              "game": "Best Ball",
+              "wins": 0,
+              "ties": 0,
+              "losses": 1
+            },
+            {
+              "id": "bramble",
+              "game": "Bramble",
+              "wins": 0,
+              "ties": 0,
+              "losses": 1
+            },
+            {
+              "id": "twoBallBramble",
+              "game": "Bramble",
+              "wins": 0,
+              "ties": 0,
+              "losses": 1
+            },
+            {
+              "id": "alternate",
+              "game": "Alternate",
+              "wins": 0,
+              "ties": 0,
+              "losses": 1
+            },
+            {
+              "id": "brambleAlternate",
+              "game": "Bramble Alternate",
+              "wins": 0,
+              "ties": 0,
+              "losses": 0
+            },
+            {
+              "id": "scramble",
+              "game": "Scramble",
+              "wins": 1,
+              "ties": 0,
+              "losses": 1
+            },
+            {
+              "id": "singles",
+              "game": "Singles",
+              "wins": 1,
+              "ties": 0,
+              "losses": 0
+            }
+          ],
+          "records": [
+            {
+              "partners": [
+                {
+                  "name": "rj",
+                  "wins": 0,
+                  "ties": 0,
+                  "losses": 1
+                },
+                {
+                  "name": "craig",
+                  "wins": 1,
+                  "ties": 0,
+                  "losses": 0
+                },
+                {
+                  "name": "dylan",
+                  "wins": 0,
+                  "ties": 0,
+                  "losses": 2
+                },
+                {
+                  "name": "cam",
+                  "wins": 1,
+                  "ties": 0,
+                  "losses": 0
+                },
+                {
+                  "name": "evan",
+                  "wins": 0,
+                  "ties": 0,
+                  "losses": 2
+                }
+              ]
+            },
+            {
+              "opponents": [
+                {
+                  "name": "matt",
+                  "wins": 0,
+                  "ties": 0,
+                  "losses": 3
+                },
+                {
+                  "name": "curtis",
+                  "wins": 2,
+                  "ties": 0,
+                  "losses": 2
+                },
+                {
+                  "name": "travis",
+                  "wins": 1,
+                  "ties": 0,
+                  "losses": 3
+                },
+                {
+                  "name": "derek",
+                  "wins": 0,
+                  "ties": 0,
+                  "losses": 1
+                },
+                {
+                  "name": "jake",
+                  "wins": 1,
+                  "ties": 0,
+                  "losses": 1
+                },
+                {
+                  "name": "gordon",
+                  "wins": 1,
+                  "ties": 0,
+                  "losses": 0
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    "derek": {
+      "name": "derek",
+      "appearances": [2021, 2022],
+      "year": {
+        "_2021": {
+          "id": 2021,
+          "handicap": 28,
+          "captain": false,
+          "team": "green",
+          "scores": {
+            "jonesMasterPiece": {
+              "course": "The Jones Masterpiece at Treetops",
+              "front": [0],
+              "frontHandicap": 999,
+              "back": [0],
+              "backHandicap": 999
+            },
+            "tribute": {
+              "course": "Tribute",
+              "front": [8, 6, 5, 10, 9, 5, 9, 8, 6],
+              "frontHandicap": 999,
+              "back": [8, 8, 7, 4, 4, 6, 9, 5, 7],
+              "backHandicap": 999
+            },
+            "classic": {
+              "course": "Classic",
+              "front": [8, 5, 4, 6, 7, 4, 5, 4, 5],
+              "frontHandicap": 999,
+              "back": [7, 6, 6, 4, 6, 3, 6, 8, 5],
+              "backHandicap": 999
+            },
+            "gaylordGolfClub": {
+              "course": "Gaylord Golf Club",
+              "front": [6, 6, 5, 4, 7, 3, 8, 7, 6],
+              "frontHandicap": 999,
+              "back": [6, 8, 6, 6, 8, 6, 5, 5, 12],
+              "backHandicap": 999
+            }
+          },
+          "points": [
+            {
+              "id": "bestBall",
+              "game": "Best Ball",
+              "wins": 1,
+              "ties": 0,
+              "losses": 1
+            },
+            {
+              "id": "bramble",
+              "game": "Bramble",
+              "wins": 0,
+              "ties": 0,
+              "losses": 1
+            },
+            {
+              "id": "brambleAlternate",
+              "game": "Bramble Alternate",
+              "wins": 0,
+              "ties": 1,
+              "losses": 0
+            },
+            {
+              "id": "scramble",
+              "game": "Scramble",
+              "wins": 0,
+              "ties": 0,
+              "losses": 1
+            },
+            {
+              "id": "singles",
+              "game": "Singles",
+              "wins": 0,
+              "ties": 1,
+              "losses": 0
+            }
+          ],
+          "records": [
+            {
+              "partners": [
+                {
+                  "name": "chris",
+                  "wins": 0,
+                  "ties": 2,
+                  "losses": 0
+                },
+                {
+                  "name": "travis",
+                  "wins": 0,
+                  "ties": 0,
+                  "losses": 2
+                },
+                {
+                  "name": "matt",
+                  "wins": 1,
+                  "ties": 0,
+                  "losses": 1
+                }
+              ]
+            },
+            {
+              "opponents": [
+                {
+                  "name": "dylan",
+                  "wins": 1,
+                  "ties": 0,
+                  "losses": 0
+                },
+                {
+                  "name": "rj",
+                  "wins": 0,
+                  "ties": 1,
+                  "losses": 1
+                },
+                {
+                  "name": "craig",
+                  "wins": 0,
+                  "ties": 0,
+                  "losses": 3
+                },
+                {
+                  "name": "dan",
+                  "wins": 1,
+                  "ties": 2,
+                  "losses": 2
+                }
+              ]
+            }
+          ]
+        },
+        "_2022": {
+          "id": 2022,
+          "captain": false,
+          "handicap": 10,
+          "team": "green",
+          "scores": {
+            "stoatinBrae": {
+              "course": "Stoatin Brae",
+              "front": [6, 3, 6, 6, 5, 5, 0, 0, 0],
+              "frontHandicap": 999,
+              "back": [4, 3, 4, 4, 4, 5, 6, 4, 6],
+              "backHandicap": 999
+            },
+            "stonehedgeSouth": {
+              "course": "Stonehedge South",
+              "front": [5, 6, 3, 8, 5, 6, 8, 4, 6],
+              "frontHandicap": 999,
+              "back": [5, 4, 4, 5, 4, 0, 0, 0, 0],
+              "backHandicap": 999
+            },
+            "gullLakeEast": {
+              "course": "Gull Lake East",
+              "front": [4, 3, 4, 4, 4, 3, 4, 4, 5],
+              "frontHandicap": 999,
+              "back": [7, 4, 7, 6, 6, 6, 5, 6, 5],
+              "backHandicap": 999
+            },
+            "gullLakeWest": {
+              "course": "Gull Lake West",
+              "front": [4, 3, 4, 4, 5, 3, 4, 4, 5],
+              "frontHandicap": 999,
+              "back": [4, 3, 4, 3, 4, 4, 4, 4, 5],
+              "backHandicap": 999
+            }
+          },
+          "points": [
+            {
+              "id": "bestBall",
+              "game": "Best Ball",
+              "wins": 1,
+              "ties": 0,
+              "losses": 0
+            },
+            {
+              "id": "twoBestBall",
+              "game": "Best Ball",
+              "wins": 0,
+              "ties": 0,
+              "losses": 1
+            },
+            {
+              "id": "bramble",
+              "game": "Bramble",
+              "wins": 1,
+              "ties": 0,
+              "losses": 0
+            },
+            {
+              "id": "twoBallBramble",
+              "game": "Bramble",
+              "wins": 0,
+              "ties": 1,
+              "losses": 0
+            },
+            {
+              "id": "alternate",
+              "game": "Alternate",
+              "wins": 1,
+              "ties": 0,
+              "losses": 0
+            },
+            {
+              "id": "brambleAlternate",
+              "game": "Bramble Alternate",
+              "wins": 0,
+              "ties": 0,
+              "losses": 0
+            },
+            {
+              "id": "scramble",
+              "game": "Scramble",
+              "wins": 2,
+              "ties": 0,
+              "losses": 0
+            },
+            {
+              "id": "singles",
+              "game": "Singles",
+              "wins": 1,
+              "ties": 0,
+              "losses": 0
+            }
+          ],
+          "records": [
+            {
+              "partners": [
+                {
+                  "name": "jake",
+                  "wins": 1,
+                  "ties": 0,
+                  "losses": 0
+                },
+                {
+                  "name": "gordon",
+                  "wins": 0,
+                  "ties": 0,
+                  "losses": 1
+                },
+                {
+                  "name": "travis",
+                  "wins": 3,
+                  "ties": 0,
+                  "losses": 0
+                },
+                {
+                  "name": "matt",
+                  "wins": 1,
+                  "ties": 0,
+                  "losses": 0
+                },
+                {
+                  "name": "curtis",
+                  "wins": 1,
+                  "ties": 0,
+                  "losses": 0
+                }
+              ]
+            },
+            {
+              "opponents": [
+                {
+                  "name": "dylan",
+                  "wins": 1,
+                  "ties": 1,
+                  "losses": 0
+                },
+                {
+                  "name": "rj",
+                  "wins": 2,
+                  "ties": 0,
+                  "losses": 1
+                },
+                {
+                  "name": "craig",
+                  "wins": 1,
+                  "ties": 0,
+                  "losses": 0
+                },
+                {
+                  "name": "dan",
+                  "wins": 1,
+                  "ties": 0,
+                  "losses": 0
+                },
+                {
+                  "name": "evan",
+                  "wins": 5,
+                  "ties": 0,
+                  "losses": 1
+                },
+                {
+                  "id": "cam",
+                  "name": "cam",
+                  "wins": 1,
+                  "ties": 1,
+                  "losses": 0
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    "dylan": {
+      "name": "dylan",
+      "appearances": [2021, 2022],
+      "year": {
+        "_2021": {
+          "id": 2021,
+          "handicap": 2,
+          "captain": true,
+          "team": "blue",
+          "scores": {
+            "jonesMasterPiece": {
+              "course": "The Jones Masterpiece at Treetops",
+              "front": [0],
+              "frontHandicap": 999,
+              "back": [0],
+              "backHandicap": 999
+            },
+            "tribute": {
+              "course": "Tribute",
+              "front": [5, 4, 5, 4, 4, 2, 6, 6, 4],
+              "frontHandicap": 2,
+              "back": [5, 4, 5, 4, 4, 2, 6, 6, 4],
+              "backHandicap": 2
+            },
+            "classic": {
+              "course": "Classic",
+              "front": [7, 5, 4, 5, 5, 3, 6, 5, 4],
+              "frontHandicap": 2,
+              "back": [5, 3, 5, 4, 3, 4, 4, 4, 4],
+              "backHandicap": 2
+            },
+            "gaylordGolfClub": {
+              "course": "Gaylord Golf Club",
+              "front": [4, 4, 4, 3, 5, 4, 6, 5, 4],
+              "frontHandicap": 2,
+              "back": [4, 3, 5, 4, 3, 4, 5, 5, 4],
+              "backHandicap": 2
+            }
+          },
+          "points": [
+            {
+              "id": "bestBall",
+              "game": "Best Ball",
+              "wins": 1,
+              "ties": 0,
+              "losses": 1
+            },
+            {
+              "id": "bramble",
+              "game": "Bramble",
+              "wins": 1,
+              "ties": 0,
+              "losses": 0
+            },
+            {
+              "id": "brambleAlternate",
+              "game": "Bramble Alternate",
+              "wins": 0,
+              "ties": 0,
+              "losses": 1
+            },
+            {
+              "id": "scramble",
+              "game": "Scramble",
+              "wins": 1,
+              "ties": 0,
+              "losses": 0
+            },
+            {
+              "id": "singles",
+              "game": "Singles",
+              "wins": 1,
+              "ties": 0,
+              "losses": 0
+            }
+          ],
+          "records": [
+            {
+              "partners": [
+                {
+                  "name": "rj",
+                  "wins": 2,
+                  "ties": 0,
+                  "losses": 0
+                },
+                {
+                  "name": "craig",
+                  "wins": 0,
+                  "ties": 0,
+                  "losses": 1
+                },
+                {
+                  "name": "dan",
+                  "wins": 1,
+                  "ties": 0,
+                  "losses": 1
+                }
+              ]
+            },
+            {
+              "opponents": [
+                {
+                  "name": "matt",
+                  "wins": 3,
+                  "ties": 0,
+                  "losses": 2
+                },
+                {
+                  "name": "chris",
+                  "wins": 3,
+                  "ties": 0,
+                  "losses": 0
+                },
+                {
+                  "name": "travis",
+                  "wins": 1,
+                  "ties": 0,
+                  "losses": 1
+                },
+                {
+                  "name": "derek",
+                  "wins": 0,
+                  "ties": 0,
+                  "losses": 1
+                }
+              ]
+            }
+          ]
+        },
+        "_2022": {
+          "id": 2022,
+          "handicap": 2,
+          "captain": true,
+          "team": "blue",
+          "scores": {
+            "stoatinBrae": {
+              "course": "Stoatin Brae",
+              "front": [4, 4, 4, 6, 5, 6, 0, 0, 0],
+              "frontHandicap": 999,
+              "back": [4, 3, 4, 5, 2, 4, 4, 3, 5],
+              "backHandicap": 999
+            },
+            "stonehedgeSouth": {
+              "course": "Stonehedge South",
+              "front": [6, 4, 3, 5, 4, 3, 6, 5, 4],
+              "frontHandicap": 999,
+              "back": [5, 4, 5, 4, 4, 0, 0, 0, 0],
+              "backHandicap": 999
+            },
+            "gullLakeEast": {
+              "course": "Gull Lake East",
+              "front": [4, 4, 5, 5, 5, 4, 6, 0, 0],
+              "frontHandicap": 999,
+              "back": [6, 3, 7, 6, 5, 3, 5, 5, 5],
+              "backHandicap": 999
+            },
+            "gullLakeWest": {
+              "course": "Gull Lake West",
+              "front": [5, 4, 4, 4, 5, 3, 5, 5, 0],
+              "frontHandicap": 999,
+              "back": [4, 4, 4, 3, 4, 4, 4, 3, 4],
+              "backHandicap": 999
+            }
+          },
+          "points": [
+            {
+              "id": "bestBall",
+              "game": "Best Ball",
+              "wins": 0,
+              "ties": 0,
+              "losses": 1
+            },
+            {
+              "id": "twoBestBall",
+              "game": "Best Ball",
+              "wins": 0,
+              "ties": 0,
+              "losses": 1
+            },
+            {
+              "id": "bramble",
+              "game": "Bramble",
+              "wins": 0,
+              "ties": 0,
+              "losses": 1
+            },
+            {
+              "id": "twoBallBramble",
+              "game": "Bramble",
+              "wins": 0,
+              "ties": 1,
+              "losses": 0
+            },
+            {
+              "id": "alternate",
+              "game": "Alternate",
+              "wins": 0,
+              "ties": 1,
+              "losses": 0
+            },
+            {
+              "id": "brambleAlternate",
+              "game": "Bramble Alternate",
+              "wins": 0,
+              "ties": 0,
+              "losses": 0
+            },
+            {
+              "id": "scramble",
+              "game": "Scramble",
+              "wins": 1,
+              "ties": 0,
+              "losses": 1
+            },
+            {
+              "id": "singles",
+              "game": "Singles",
+              "wins": 1,
+              "ties": 0,
+              "losses": 0
+            }
+          ],
+          "records": [
+            {
+              "partners": [
+                {
+                  "name": "cam",
+                  "wins": 0,
+                  "ties": 1,
+                  "losses": 0
+                },
+                {
+                  "name": "evan",
+                  "wins": 1,
+                  "ties": 0,
+                  "losses": 1
+                },
+                {
+                  "name": "rj",
+                  "wins": 0,
+                  "ties": 0,
+                  "losses": 1
+                },
+                {
+                  "name": "craig",
+                  "wins": 0,
+                  "ties": 1,
+                  "losses": 0
+                },
+                {
+                  "name": "dan",
+                  "wins": 0,
+                  "ties": 0,
+                  "losses": 2
+                }
+              ]
+            },
+            {
+              "opponents": [
+                {
+                  "name": "matt",
+                  "wins": 2,
+                  "ties": 0,
+                  "losses": 2
+                },
+                {
+                  "name": "curtis",
+                  "wins": 0,
+                  "ties": 1,
+                  "losses": 2
+                },
+                {
+                  "name": "travis",
+                  "wins": 0,
+                  "ties": 0,
+                  "losses": 1
+                },
+                {
+                  "name": "derek",
+                  "wins": 0,
+                  "ties": 1,
+                  "losses": 1
+                },
+                {
+                  "name": "jake",
+                  "wins": 1,
+                  "ties": 2,
+                  "losses": 1
+                },
+                {
+                  "name": "gordon",
+                  "wins": 0,
+                  "ties": 0,
+                  "losses": 1
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    "evan": {
+      "name": "evan",
+      "appearances": [2022],
+      "year": {
+        "_2022": {
+          "id": 2022,
+          "handicap": 2,
+          "captain": false,
+          "team": "blue",
+          "scores": {
+            "stoatinBrae": {
+              "course": "Stoatin Brae",
+              "front": [6, 6, 10, 6, 5, 8, 0, 0, 0],
+              "frontHandicap": 999,
+              "back": [5, 4, 5, 5, 3, 4, 5, 3, 5],
+              "backHandicap": 999
+            },
+            "stonehedgeSouth": {
+              "course": "Stonehedge South",
+              "front": [6, 9, 4, 10, 6, 0, 0, 0, 0],
+              "frontHandicap": 999,
+              "back": [5, 4, 5, 4, 4, 0, 0, 0, 0],
+              "backHandicap": 999
+            },
+            "gullLakeEast": {
+              "course": "Gull Lake East",
+              "front": [4, 3, 4, 4, 4, 3, 5, 4, 5],
+              "frontHandicap": 999,
+              "back": [7, 7, 7, 7, 8, 6, 5, 6, 7],
+              "backHandicap": 999
+            },
+            "gullLakeWest": {
+              "course": "Gull Lake West",
+              "front": [5, 4, 4, 4, 5, 3, 5, 5, 0],
+              "frontHandicap": 999,
+              "back": [4, 3, 4, 3, 4, 5, 5, 5, 6],
+              "backHandicap": 999
+            }
+          },
+          "points": [
+            {
+              "id": "bestBall",
+              "game": "Best Ball",
+              "wins": 0,
+              "ties": 0,
+              "losses": 1
+            },
+            {
+              "id": "twoBestBall",
+              "game": "Best Ball",
+              "wins": 1,
+              "ties": 0,
+              "losses": 0
+            },
+            {
+              "id": "bramble",
+              "game": "Bramble",
+              "wins": 0,
+              "ties": 0,
+              "losses": 1
+            },
+            {
+              "id": "twoBallBramble",
+              "game": "Bramble",
+              "wins": 0,
+              "ties": 0,
+              "losses": 1
+            },
+            {
+              "id": "alternate",
+              "game": "Alternate",
+              "wins": 0,
+              "ties": 0,
+              "losses": 1
+            },
+            {
+              "id": "brambleAlternate",
+              "game": "Bramble Alternate",
+              "wins": 0,
+              "ties": 0,
+              "losses": 0
+            },
+            {
+              "id": "scramble",
+              "game": "Scramble",
+              "wins": 1,
+              "ties": 0,
+              "losses": 1
+            },
+            {
+              "id": "singles",
+              "game": "Singles",
+              "wins": 0,
+              "ties": 0,
+              "losses": 1
+            }
+          ],
+          "records": [
+            {
+              "partners": [
+                {
+                  "name": "rj",
+                  "wins": 1,
+                  "ties": 0,
+                  "losses": 1
+                },
+                {
+                  "name": "craig",
+                  "wins": 0,
+                  "ties": 0,
+                  "losses": 0
+                },
+                {
+                  "name": "dan",
+                  "wins": 0,
+                  "ties": 0,
+                  "losses": 2
+                },
+                {
+                  "name": "cam",
+                  "wins": 0,
+                  "ties": 0,
+                  "losses": 1
+                },
+                {
+                  "name": "dylan",
+                  "wins": 1,
+                  "ties": 0,
+                  "losses": 1
+                }
+              ]
+            },
+            {
+              "opponents": [
+                {
+                  "name": "matt",
+                  "wins": 1,
+                  "ties": 0,
+                  "losses": 2
+                },
+                {
+                  "name": "curtis",
+                  "wins": 0,
+                  "ties": 0,
+                  "losses": 2
+                },
+                {
+                  "name": "travis",
+                  "wins": 0,
+                  "ties": 0,
+                  "losses": 2
+                },
+                {
+                  "name": "derek",
+                  "wins": 1,
+                  "ties": 0,
+                  "losses": 5
+                },
+                {
+                  "name": "jake",
+                  "wins": 1,
+                  "ties": 0,
+                  "losses": 0
+                },
+                {
+                  "name": "gordon",
+                  "wins": 1,
+                  "ties": 0,
+                  "losses": 0
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    "gordon": {
+      "name": "gordon",
+      "appearances": [2022],
+      "year": {
+        "_2022": {
+          "id": 2022,
+          "captain": false,
+          "handicap": 10,
+          "team": "green",
+          "scores": {
+            "stoatinBrae": {
+              "course": "Stoatin Brae",
+              "front": [4, 3, 5, 4, 6, 7, 0, 0, 0],
+              "frontHandicap": 999,
+              "back": [4, 3, 4, 4, 4, 5, 6, 4, 6],
+              "backHandicap": 999
+            },
+            "stonehedgeSouth": {
+              "course": "Stonehedge South",
+              "front": [7, 8, 4, 5, 5, 4, 8, 4, 0],
+              "frontHandicap": 999,
+              "back": [6, 5, 4, 3, 4, 4, 3, 0, 0],
+              "backHandicap": 999
+            },
+            "gullLakeEast": {
+              "course": "Gull Lake East",
+              "front": [4, 3, 4, 4, 4, 3, 4, 4, 0],
+              "frontHandicap": 999,
+              "back": [5, 4, 4, 5, 4, 3, 0, 0, 0],
+              "backHandicap": 999
+            },
+            "gullLakeWest": {
+              "course": "Gull Lake West",
+              "front": [4, 4, 5, 5, 5, 3, 4, 4, 0],
+              "frontHandicap": 999,
+              "back": [4, 3, 4, 3, 4, 4, 4, 4, 6],
+              "backHandicap": 999
+            }
+          },
+          "points": [
+            {
+              "id": "bestBall",
+              "game": "Best Ball",
+              "wins": 1,
+              "ties": 0,
+              "losses": 0
+            },
+            {
+              "id": "twoBestBall",
+              "game": "Best Ball",
+              "wins": 0,
+              "ties": 0,
+              "losses": 1
+            },
+            {
+              "id": "bramble",
+              "game": "Bramble",
+              "wins": 1,
+              "ties": 0,
+              "losses": 0
+            },
+            {
+              "id": "twoBallBramble",
+              "game": "Bramble",
+              "wins": 0,
+              "ties": 0,
+              "losses": 1
+            },
+            {
+              "id": "alternate",
+              "game": "Alternate",
+              "wins": 1,
+              "ties": 0,
+              "losses": 0
+            },
+            {
+              "id": "brambleAlternate",
+              "game": "Bramble Alternate",
+              "wins": 0,
+              "ties": 0,
+              "losses": 0
+            },
+            {
+              "id": "scramble",
+              "game": "Scramble",
+              "wins": 1,
+              "ties": 0,
+              "losses": 1
+            },
+            {
+              "id": "singles",
+              "game": "Singles",
+              "wins": 0,
+              "ties": 0,
+              "losses": 1
+            }
+          ],
+          "records": [
+            {
+              "partners": [
+                {
+                  "name": "jake",
+                  "wins": 1,
+                  "ties": 0,
+                  "losses": 0
+                },
+                {
+                  "name": "curtis",
+                  "wins": 1,
+                  "ties": 0,
+                  "losses": 1
+                },
+                {
+                  "name": "travis",
+                  "wins": 0,
+                  "ties": 0,
+                  "losses": 1
+                },
+                {
+                  "name": "derek",
+                  "wins": 0,
+                  "ties": 0,
+                  "losses": 1
+                },
+                {
+                  "name": "matt",
+                  "wins": 2,
+                  "ties": 0,
+                  "losses": 0
+                }
+              ]
+            },
+            {
+              "opponents": [
+                {
+                  "name": "dylan",
+                  "wins": 1,
+                  "ties": 0,
+                  "losses": 0
+                },
+                {
+                  "name": "rj",
+                  "wins": 2,
+                  "ties": 0,
+                  "losses": 3
+                },
+                {
+                  "name": "craig",
+                  "wins": 2,
+                  "ties": 0,
+                  "losses": 1
+                },
+                {
+                  "name": "dan",
+                  "wins": 0,
+                  "ties": 0,
+                  "losses": 1
+                },
+                {
+                  "id": "evan",
+                  "name": "evan",
+                  "wins": 0,
+                  "ties": 0,
+                  "losses": 1
+                },
+                {
+                  "id": "cam",
+                  "name": "cam",
+                  "wins": 3,
+                  "ties": 0,
+                  "losses": 1
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    "jake": {
+      "name": "jake",
+      "appearances": [2022],
+      "year": {
+        "_2022": {
+          "id": 2022,
+          "captain": false,
+          "handicap": 10,
+          "team": "green",
+          "scores": {
+            "stoatinBrae": {
+              "course": "Stoatin Brae",
+              "front": [7, 6, 5, 6, 6, 8, 6, 5, 6],
+              "frontHandicap": 999,
+              "back": [4, 3, 4, 4, 4, 3, 4, 5, 0],
+              "backHandicap": 999
+            },
+            "stonehedgeSouth": {
+              "course": "Stonehedge South",
+              "front": [5, 6, 3, 7, 5, 6, 5, 6, 5],
+              "frontHandicap": 999,
+              "back": [6, 5, 4, 3, 4, 4, 3, 0, 0],
+              "backHandicap": 999
+            },
+            "gullLakeEast": {
+              "course": "Gull Lake East",
+              "front": [8, 5, 6, 5, 5, 3, 5, 0, 0],
+              "frontHandicap": 999,
+              "back": [7, 6, 6, 6, 4, 5, 5, 6, 6],
+              "backHandicap": 999
+            },
+            "gullLakeWest": {
+              "course": "Gull Lake West",
+              "front": [5, 3, 5, 4, 7, 6, 5, 6, 0],
+              "frontHandicap": 999,
+              "back": [5, 4, 9, 4, 5, 7, 6, 6, 0],
+              "backHandicap": 999
+            }
+          },
+          "points": [
+            {
+              "id": "bestBall",
+              "game": "Best Ball",
+              "wins": 0,
+              "ties": 0,
+              "losses": 1
+            },
+            {
+              "id": "twoBestBall",
+              "game": "Best Ball",
+              "wins": 1,
+              "ties": 0,
+              "losses": 0
+            },
+            {
+              "id": "bramble",
+              "game": "Bramble",
+              "wins": 1,
+              "ties": 0,
+              "losses": 0
+            },
+            {
+              "id": "twoBallBramble",
+              "game": "Bramble",
+              "wins": 0,
+              "ties": 1,
+              "losses": 0
+            },
+            {
+              "id": "alternate",
+              "game": "Alternate",
+              "wins": 0,
+              "ties": 1,
+              "losses": 0
+            },
+            {
+              "id": "brambleAlternate",
+              "game": "Bramble Alternate",
+              "wins": 0,
+              "ties": 0,
+              "losses": 0
+            },
+            {
+              "id": "scramble",
+              "game": "Scramble",
+              "wins": 1,
+              "ties": 0,
+              "losses": 1
+            },
+            {
+              "id": "singles",
+              "game": "Singles",
+              "wins": 0,
+              "ties": 0,
+              "losses": 1
+            }
+          ],
+          "records": [
+            {
+              "partners": [
+                {
+                  "name": "matt",
+                  "wins": 0,
+                  "ties": 0,
+                  "losses": 1
+                },
+                {
+                  "name": "gordon",
+                  "wins": 1,
+                  "ties": 0,
+                  "losses": 0
+                },
+                {
+                  "name": "travis",
+                  "wins": 2,
+                  "ties": 0,
+                  "losses": 0
+                },
+                {
+                  "name": "derek",
+                  "wins": 0,
+                  "ties": 1,
+                  "losses": 0
+                },
+                {
+                  "name": "curtis",
+                  "wins": 0,
+                  "ties": 1,
+                  "losses": 1
+                }
+              ]
+            },
+            {
+              "opponents": [
+                {
+                  "name": "dylan",
+                  "wins": 1,
+                  "ties": 2,
+                  "losses": 1
+                },
+                {
+                  "name": "rj",
+                  "wins": 0,
+                  "ties": 0,
+                  "losses": 0
+                },
+                {
+                  "name": "craig",
+                  "wins": 2,
+                  "ties": 1,
+                  "losses": 1
+                },
+                {
+                  "name": "dan",
+                  "wins": 1,
+                  "ties": 0,
+                  "losses": 1
+                },
+                {
+                  "name": "evan",
+                  "wins": 0,
+                  "ties": 0,
+                  "losses": 1
+                },
+                {
+                  "name": "cam",
+                  "wins": 2,
+                  "ties": 1,
+                  "losses": 1
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
     "matt": {
       "name": "matt",
+      "appearances": [2021, 2022],
       "year": {
         "_2021": {
           "id": 2021,
@@ -136,30 +2357,30 @@
           "scores": {
             "stoatinBrae": {
               "course": "Stoatin Brae",
-              "front": [0],
+              "front": [4, 4, 6, 5, 4, 5, 0, 0, 0],
               "frontHandicap": 999,
-              "back": [0],
+              "back": [4, 4, 4, 5, 3, 5, 6, 3, 5],
               "backHandicap": 999
             },
             "stonehedgeSouth": {
               "course": "Stonehedge South",
-              "front": [0],
+              "front": [4, 4, 4, 5, 4, 0, 0, 0, 0],
               "frontHandicap": 999,
-              "back": [0],
+              "back": [6, 4, 4, 3, 4, 4, 3, 5, 0],
               "backHandicap": 999
             },
             "gullLakeEast": {
               "course": "Gull Lake East",
-              "front": [0],
+              "front": [4, 3, 4, 4, 4, 3, 4, 4, 5],
               "frontHandicap": 999,
-              "back": [0],
+              "back": [5, 4, 4, 5, 4, 3, 0, 0, 0],
               "backHandicap": 999
             },
             "gullLakeWest": {
               "course": "Gull Lake West",
-              "front": [0],
+              "front": [5, 3, 5, 4, 7, 6, 5, 6, 0],
               "frontHandicap": 999,
-              "back": [0],
+              "back": [4, 3, 5, 3, 5, 5, 5, 4, 5],
               "backHandicap": 999
             }
           },
@@ -305,438 +2526,9 @@
         }
       }
     },
-    "dylan": {
-      "name": "dylan",
-      "year": {
-        "_2021": {
-          "id": 2021,
-          "handicap": 2,
-          "captain": true,
-          "team": "blue",
-          "scores": {
-            "jonesMasterPiece": {
-              "course": "The Jones Masterpiece at Treetops",
-              "front": [0],
-              "frontHandicap": 999,
-              "back": [0],
-              "backHandicap": 999
-            },
-            "tribute": {
-              "course": "Tribute",
-              "front": [5, 4, 5, 4, 4, 2, 6, 6, 4],
-              "frontHandicap": 2,
-              "back": [5, 4, 5, 4, 4, 2, 6, 6, 4],
-              "backHandicap": 2
-            },
-            "classic": {
-              "course": "Classic",
-              "front": [7, 5, 4, 5, 5, 3, 6, 5, 4],
-              "frontHandicap": 2,
-              "back": [5, 3, 5, 4, 3, 4, 4, 4, 4],
-              "backHandicap": 2
-            },
-            "gaylordGolfClub": {
-              "course": "Gaylord Golf Club",
-              "front": [4, 4, 4, 3, 5, 4, 6, 5, 4],
-              "frontHandicap": 2,
-              "back": [4, 3, 5, 4, 3, 4, 5, 5, 4],
-              "backHandicap": 2
-            }
-          },
-          "points": [
-            {
-              "id": "bestBall",
-              "game": "Best Ball",
-              "wins": 1,
-              "ties": 0,
-              "losses": 1
-            },
-            {
-              "id": "bramble",
-              "game": "Bramble",
-              "wins": 1,
-              "ties": 0,
-              "losses": 0
-            },
-            {
-              "id": "brambleAlternate",
-              "game": "Bramble Alternate",
-              "wins": 0,
-              "ties": 0,
-              "losses": 1
-            },
-            {
-              "id": "scramble",
-              "game": "Scramble",
-              "wins": 1,
-              "ties": 0,
-              "losses": 0
-            },
-            {
-              "id": "singles",
-              "game": "Singles",
-              "wins": 1,
-              "ties": 0,
-              "losses": 0
-            }
-          ],
-          "records": [
-            {
-              "partners": [
-                {
-                  "name": "rj",
-                  "wins": 2,
-                  "ties": 0,
-                  "losses": 0
-                },
-                {
-                  "name": "craig",
-                  "wins": 0,
-                  "ties": 0,
-                  "losses": 1
-                },
-                {
-                  "name": "dan",
-                  "wins": 1,
-                  "ties": 0,
-                  "losses": 1
-                }
-              ]
-            },
-            {
-              "opponents": [
-                {
-                  "name": "matt",
-                  "wins": 3,
-                  "ties": 0,
-                  "losses": 2
-                },
-                {
-                  "name": "chris",
-                  "wins": 3,
-                  "ties": 0,
-                  "losses": 0
-                },
-                {
-                  "name": "travis",
-                  "wins": 1,
-                  "ties": 0,
-                  "losses": 1
-                },
-                {
-                  "name": "derek",
-                  "wins": 0,
-                  "ties": 0,
-                  "losses": 1
-                }
-              ]
-            }
-          ]
-        },
-        "_2022": {
-          "id": 2022,
-          "handicap": 2,
-          "captain": true,
-          "team": "blue",
-          "scores": {
-            "stoatinBrae": {
-              "course": "Stoatin Brae",
-              "front": [0],
-              "frontHandicap": 999,
-              "back": [0],
-              "backHandicap": 999
-            },
-            "stonehedgeSouth": {
-              "course": "Stonehedge South",
-              "front": [0],
-              "frontHandicap": 999,
-              "back": [0],
-              "backHandicap": 999
-            },
-            "gullLakeEast": {
-              "course": "Gull Lake East",
-              "front": [0],
-              "frontHandicap": 999,
-              "back": [0],
-              "backHandicap": 999
-            },
-            "gullLakeWest": {
-              "course": "Gull Lake West",
-              "front": [0],
-              "frontHandicap": 999,
-              "back": [0],
-              "backHandicap": 999
-            }
-          },
-          "points": [
-            {
-              "id": "bestBall",
-              "game": "Best Ball",
-              "wins": 0,
-              "ties": 0,
-              "losses": 1
-            },
-            {
-              "id": "twoBestBall",
-              "game": "Best Ball",
-              "wins": 0,
-              "ties": 0,
-              "losses": 1
-            },
-            {
-              "id": "bramble",
-              "game": "Bramble",
-              "wins": 0,
-              "ties": 0,
-              "losses": 1
-            },
-            {
-              "id": "twoBallBramble",
-              "game": "Bramble",
-              "wins": 0,
-              "ties": 1,
-              "losses": 0
-            },
-            {
-              "id": "alternate",
-              "game": "Alternate",
-              "wins": 0,
-              "ties": 1,
-              "losses": 0
-            },
-            {
-              "id": "brambleAlternate",
-              "game": "Bramble Alternate",
-              "wins": 0,
-              "ties": 0,
-              "losses": 0
-            },
-            {
-              "id": "scramble",
-              "game": "Scramble",
-              "wins": 1,
-              "ties": 0,
-              "losses": 1
-            },
-            {
-              "id": "singles",
-              "game": "Singles",
-              "wins": 1,
-              "ties": 0,
-              "losses": 0
-            }
-          ],
-          "records": [
-            {
-              "partners": [
-                {
-                  "name": "cam",
-                  "wins": 0,
-                  "ties": 1,
-                  "losses": 0
-                },
-                {
-                  "name": "evan",
-                  "wins": 1,
-                  "ties": 0,
-                  "losses": 1
-                },
-                {
-                  "name": "rj",
-                  "wins": 0,
-                  "ties": 0,
-                  "losses": 1
-                },
-                {
-                  "name": "craig",
-                  "wins": 0,
-                  "ties": 1,
-                  "losses": 0
-                },
-                {
-                  "name": "dan",
-                  "wins": 0,
-                  "ties": 0,
-                  "losses": 2
-                }
-              ]
-            },
-            {
-              "opponents": [
-                {
-                  "name": "matt",
-                  "wins": 2,
-                  "ties": 0,
-                  "losses": 2
-                },
-                {
-                  "name": "curtis",
-                  "wins": 0,
-                  "ties": 1,
-                  "losses": 2
-                },
-                {
-                  "name": "travis",
-                  "wins": 0,
-                  "ties": 0,
-                  "losses": 1
-                },
-                {
-                  "name": "derek",
-                  "wins": 0,
-                  "ties": 1,
-                  "losses": 1
-                },
-                {
-                  "name": "jake",
-                  "wins": 1,
-                  "ties": 2,
-                  "losses": 1
-                },
-                {
-                  "name": "gordon",
-                  "wins": 0,
-                  "ties": 0,
-                  "losses": 1
-                }
-              ]
-            }
-          ]
-        }
-      }
-    },
-    "chris": {
-      "name": "chris",
-      "year": {
-        "_2021": {
-          "id": 2021,
-          "handicap": 16,
-          "captain": false,
-          "team": "green",
-          "scores": {
-            "jonesMasterPiece": {
-              "course": "The Jones Masterpiece at Treetops",
-              "front": [0],
-              "frontHandicap": 999,
-              "back": [0],
-              "backHandicap": 999
-            },
-            "tribute": {
-              "course": "Tribute",
-              "front": [5, 5, 5, 7, 5, 3, 7, 6, 5],
-              "frontHandicap": 16,
-              "back": [5, 5, 5, 7, 5, 3, 7, 6, 5],
-              "backHandicap": 16
-            },
-            "classic": {
-              "course": "Classic",
-              "front": [8, 5, 4, 6, 7, 4, 5, 4, 5],
-              "frontHandicap": 16,
-              "back": [6, 4, 6, 3, 4, 3, 4, 3, 4],
-              "backHandicap": 16
-            },
-            "gaylordGolfClub": {
-              "course": "Gaylord Golf Club",
-              "front": [7, 4, 5, 3, 4, 4, 5, 7, 5],
-              "frontHandicap": 16,
-              "back": [4, 4, 7, 5, 4, 5, 6, 5, 5],
-              "backHandicap": 16
-            }
-          },
-          "points": [
-            {
-              "id": "bestBall",
-              "game": "Best Ball",
-              "wins": 1,
-              "ties": 0,
-              "losses": 1
-            },
-            {
-              "id": "bramble",
-              "game": "Bramble",
-              "wins": 0,
-              "ties": 0,
-              "losses": 1
-            },
-            {
-              "id": "brambleAlternate",
-              "game": "Bramble Alternate",
-              "wins": 0,
-              "ties": 1,
-              "losses": 0
-            },
-            {
-              "id": "scramble",
-              "game": "Scramble",
-              "wins": 0,
-              "ties": 0,
-              "losses": 1
-            },
-            {
-              "id": "singles",
-              "game": "Singles",
-              "wins": 1,
-              "ties": 0,
-              "losses": 0
-            }
-          ],
-          "records": [
-            {
-              "partners": [
-                {
-                  "name": "matt",
-                  "wins": 0,
-                  "ties": 0,
-                  "losses": 2
-                },
-                {
-                  "name": "travis",
-                  "wins": 1,
-                  "ties": 0,
-                  "losses": 1
-                },
-                {
-                  "name": "derek",
-                  "wins": 0,
-                  "ties": 1,
-                  "losses": 0
-                }
-              ]
-            },
-            {
-              "opponents": [
-                {
-                  "name": "dylan",
-                  "wins": 0,
-                  "ties": 0,
-                  "losses": 3
-                },
-                {
-                  "name": "rj",
-                  "wins": 2,
-                  "ties": 1,
-                  "losses": 2
-                },
-                {
-                  "name": "craig",
-                  "wins": 1,
-                  "ties": 0,
-                  "losses": 0
-                },
-                {
-                  "name": "dan",
-                  "wins": 0,
-                  "ties": 1,
-                  "losses": 1
-                }
-              ]
-            }
-          ]
-        }
-      }
-    },
     "rj": {
       "name": "rj",
+      "appearances": [2021, 2022],
       "year": {
         "_2021": {
           "id": 2021,
@@ -871,30 +2663,30 @@
           "scores": {
             "stoatinBrae": {
               "course": "Stoatin Brae",
-              "front": [0],
+              "front": [5, 5, 5, 6, 6, 7, 0, 0, 0],
               "frontHandicap": 999,
-              "back": [0],
+              "back": [5, 4, 5, 5, 3, 4, 5, 3, 5],
               "backHandicap": 999
             },
             "stonehedgeSouth": {
               "course": "Stonehedge South",
-              "front": [0],
+              "front": [5, 6, 3, 7, 5, 4, 5, 5, 0],
               "frontHandicap": 999,
-              "back": [0],
+              "back": [6, 5, 4, 4, 4, 3, 4, 6, 0],
               "backHandicap": 999
             },
             "gullLakeEast": {
               "course": "Gull Lake East",
-              "front": [0],
+              "front": [4, 3, 4, 4, 4, 3, 5, 4, 5],
               "frontHandicap": 999,
-              "back": [0],
+              "back": [6, 5, 6, 6, 6, 4, 0, 0, 0],
               "backHandicap": 999
             },
             "gullLakeWest": {
               "course": "Gull Lake West",
-              "front": [0],
+              "front": [4, 3, 4, 4, 5, 3, 4, 4, 5],
               "frontHandicap": 999,
-              "back": [0],
+              "back": [4, 3, 4, 3, 4, 4, 4, 4, 5],
               "backHandicap": 999
             }
           },
@@ -1037,6 +2829,7 @@
     },
     "travis": {
       "name": "travis",
+      "appearances": [2021, 2022],
       "year": {
         "_2021": {
           "id": 2021,
@@ -1171,30 +2964,30 @@
           "scores": {
             "stoatinBrae": {
               "course": "Stoatin Brae",
-              "front": [0],
+              "front": [6, 6, 6, 6, 8, 8, 0, 0, 0],
               "frontHandicap": 999,
-              "back": [0],
+              "back": [4, 3, 4, 4, 4, 3, 4, 5, 0],
               "backHandicap": 999
             },
             "stonehedgeSouth": {
               "course": "Stonehedge South",
-              "front": [0],
+              "front": [6, 5, 4, 7, 5, 6, 6, 6, 0],
               "frontHandicap": 999,
-              "back": [0],
+              "back": [6, 4, 4, 3, 4, 4, 3, 5, 0],
               "backHandicap": 999
             },
             "gullLakeEast": {
               "course": "Gull Lake East",
-              "front": [0],
+              "front": [6, 5, 8, 5, 5, 5, 6, 0, 0],
               "frontHandicap": 999,
-              "back": [0],
+              "back": [7, 4, 7, 6, 6, 6, 5, 6, 5],
               "backHandicap": 999
             },
             "gullLakeWest": {
               "course": "Gull Lake West",
-              "front": [0],
+              "front": [4, 3, 4, 4, 5, 3, 4, 4, 5],
               "frontHandicap": 999,
-              "back": [0],
+              "back": [4, 3, 8, 4, 8, 7, 7, 9, 0],
               "backHandicap": 999
             }
           },
@@ -1326,1786 +3119,6 @@
                 {
                   "name": "cam",
                   "wins": 2,
-                  "ties": 0,
-                  "losses": 0
-                }
-              ]
-            }
-          ]
-        }
-      }
-    },
-    "craig": {
-      "name": "craig",
-      "year": {
-        "_2021": {
-          "id": 2021,
-          "handicap": 22,
-          "captain": false,
-          "team": "blue",
-          "scores": {
-            "jonesMasterPiece": {
-              "course": "The Jones Masterpiece at Treetops",
-              "front": [0],
-              "frontHandicap": 999,
-              "back": [0],
-              "backHandicap": 999
-            },
-            "tribute": {
-              "course": "Tribute",
-              "front": [5, 5, 6, 6, 6, 4, 7, 6, 3],
-              "frontHandicap": 999,
-              "back": [6, 7, 5, 5, 5, 5, 7, 3, 5],
-              "backHandicap": 999
-            },
-            "classic": {
-              "course": "Classic",
-              "front": [7, 5, 4, 5, 5, 3, 6, 5, 4],
-              "frontHandicap": 999,
-              "back": [5, 4, 5, 4, 4, 4, 6, 4, 5],
-              "backHandicap": 999
-            },
-            "gaylordGolfClub": {
-              "course": "Gaylord Golf Club",
-              "front": [5, 5, 5, 3, 7, 5, 7, 5, 5],
-              "frontHandicap": 999,
-              "back": [5, 5, 7, 6, 3, 4, 5, 10, 6],
-              "backHandicap": 999
-            }
-          },
-          "points": [
-            {
-              "id": "bestBall",
-              "game": "Best Ball",
-              "wins": 1,
-              "ties": 0,
-              "losses": 1
-            },
-            {
-              "id": "bramble",
-              "game": "Bramble",
-              "wins": 1,
-              "ties": 0,
-              "losses": 0
-            },
-            {
-              "id": "brambleAlternate",
-              "game": "Bramble Alternate",
-              "wins": 0,
-              "losses": 0,
-              "ties": 1
-            },
-            {
-              "id": "scramble",
-              "game": "Scramble",
-              "wins": 1,
-              "ties": 0,
-              "losses": 0
-            },
-            {
-              "id": "singles",
-              "game": "Singles",
-              "wins": 1,
-              "ties": 0,
-              "losses": 0
-            }
-          ],
-          "records": [
-            {
-              "partners": [
-                {
-                  "name": "rj",
-                  "wins": 1,
-                  "ties": 0,
-                  "losses": 1
-                },
-                {
-                  "name": "dylan",
-                  "wins": 0,
-                  "ties": 0,
-                  "losses": 1
-                },
-                {
-                  "name": "dan",
-                  "wins": 1,
-                  "ties": 0,
-                  "losses": 0
-                }
-              ]
-            },
-            {
-              "opponents": [
-                {
-                  "name": "matt",
-                  "wins": 1,
-                  "ties": 0,
-                  "losses": 1
-                },
-                {
-                  "name": "chris",
-                  "wins": 0,
-                  "ties": 0,
-                  "losses": 1
-                },
-                {
-                  "name": "travis",
-                  "wins": 3,
-                  "ties": 0,
-                  "losses": 2
-                },
-                {
-                  "name": "derek",
-                  "wins": 3,
-                  "ties": 0,
-                  "losses": 0
-                }
-              ]
-            }
-          ]
-        },
-        "_2022": {
-          "id": 2022,
-          "handicap": 2,
-          "captain": false,
-          "team": "blue",
-          "scores": {
-            "stoatinBrae": {
-              "course": "Stoatin Brae",
-              "front": [0],
-              "frontHandicap": 999,
-              "back": [0],
-              "backHandicap": 999
-            },
-            "stonehedgeSouth": {
-              "course": "Stonehedge South",
-              "front": [0],
-              "frontHandicap": 999,
-              "back": [0],
-              "backHandicap": 999
-            },
-            "gullLakeEast": {
-              "course": "Gull Lake East",
-              "front": [0],
-              "frontHandicap": 999,
-              "back": [0],
-              "backHandicap": 999
-            },
-            "gullLakeWest": {
-              "course": "Gull Lake West",
-              "front": [0],
-              "frontHandicap": 999,
-              "back": [0],
-              "backHandicap": 999
-            }
-          },
-          "points": [
-            {
-              "id": "bestBall",
-              "game": "Best Ball",
-              "wins": 1,
-              "ties": 0,
-              "losses": 0
-            },
-            {
-              "id": "twoBestBall",
-              "game": "Best Ball",
-              "wins": 0,
-              "ties": 0,
-              "losses": 1
-            },
-            {
-              "id": "bramble",
-              "game": "Bramble",
-              "wins": 0,
-              "ties": 0,
-              "losses": 1
-            },
-            {
-              "id": "twoBallBramble",
-              "game": "Bramble",
-              "wins": 1,
-              "ties": 0,
-              "losses": 0
-            },
-            {
-              "id": "alternate",
-              "game": "Alternate",
-              "wins": 0,
-              "ties": 1,
-              "losses": 0
-            },
-            {
-              "id": "brambleAlternate",
-              "game": "Bramble Alternate",
-              "wins": 0,
-              "ties": 0,
-              "losses": 0
-            },
-            {
-              "id": "scramble",
-              "game": "Scramble",
-              "wins": 0,
-              "ties": 0,
-              "losses": 2
-            },
-            {
-              "id": "singles",
-              "game": "Singles",
-              "wins": 1,
-              "ties": 0,
-              "losses": 0
-            }
-          ],
-          "records": [
-            {
-              "partners": [
-                {
-                  "name": "rj",
-                  "wins": 1,
-                  "ties": 0,
-                  "losses": 1
-                },
-                {
-                  "name": "dylan",
-                  "wins": 0,
-                  "ties": 1,
-                  "losses": 0
-                },
-                {
-                  "name": "dan",
-                  "wins": 1,
-                  "ties": 0,
-                  "losses": 0
-                },
-                {
-                  "name": "cam",
-                  "wins": 0,
-                  "ties": 0,
-                  "losses": 3
-                },
-                {
-                  "name": "evan",
-                  "wins": 0,
-                  "ties": 0,
-                  "losses": 0
-                }
-              ]
-            },
-            {
-              "opponents": [
-                {
-                  "name": "matt",
-                  "wins": 0,
-                  "ties": 0,
-                  "losses": 0
-                },
-                {
-                  "name": "curtis",
-                  "wins": 2,
-                  "ties": 1,
-                  "losses": 1
-                },
-                {
-                  "name": "travis",
-                  "wins": 1,
-                  "ties": 0,
-                  "losses": 2
-                },
-                {
-                  "name": "derek",
-                  "wins": 0,
-                  "ties": 0,
-                  "losses": 1
-                },
-                {
-                  "name": "jake",
-                  "wins": 1,
-                  "ties": 1,
-                  "losses": 2
-                },
-                {
-                  "name": "gordon",
-                  "wins": 1,
-                  "ties": 0,
-                  "losses": 2
-                }
-              ]
-            }
-          ]
-        }
-      }
-    },
-    "derek": {
-      "name": "derek",
-      "year": {
-        "_2021": {
-          "id": 2021,
-          "handicap": 28,
-          "captain": false,
-          "team": "green",
-          "scores": {
-            "jonesMasterPiece": {
-              "course": "The Jones Masterpiece at Treetops",
-              "front": [0],
-              "frontHandicap": 999,
-              "back": [0],
-              "backHandicap": 999
-            },
-            "tribute": {
-              "course": "Tribute",
-              "front": [8, 6, 5, 10, 9, 5, 9, 8, 6],
-              "frontHandicap": 999,
-              "back": [8, 8, 7, 4, 4, 6, 9, 5, 7],
-              "backHandicap": 999
-            },
-            "classic": {
-              "course": "Classic",
-              "front": [8, 5, 4, 6, 7, 4, 5, 4, 5],
-              "frontHandicap": 999,
-              "back": [7, 6, 6, 4, 6, 3, 6, 8, 5],
-              "backHandicap": 999
-            },
-            "gaylordGolfClub": {
-              "course": "Gaylord Golf Club",
-              "front": [6, 6, 5, 4, 7, 3, 8, 7, 6],
-              "frontHandicap": 999,
-              "back": [6, 8, 6, 6, 8, 6, 5, 5, 12],
-              "backHandicap": 999
-            }
-          },
-          "points": [
-            {
-              "id": "bestBall",
-              "game": "Best Ball",
-              "wins": 1,
-              "ties": 0,
-              "losses": 1
-            },
-            {
-              "id": "bramble",
-              "game": "Bramble",
-              "wins": 0,
-              "ties": 0,
-              "losses": 1
-            },
-            {
-              "id": "brambleAlternate",
-              "game": "Bramble Alternate",
-              "wins": 0,
-              "ties": 1,
-              "losses": 0
-            },
-            {
-              "id": "scramble",
-              "game": "Scramble",
-              "wins": 0,
-              "ties": 0,
-              "losses": 1
-            },
-            {
-              "id": "singles",
-              "game": "Singles",
-              "wins": 0,
-              "ties": 1,
-              "losses": 0
-            }
-          ],
-          "records": [
-            {
-              "partners": [
-                {
-                  "name": "chris",
-                  "wins": 0,
-                  "ties": 2,
-                  "losses": 0
-                },
-                {
-                  "name": "travis",
-                  "wins": 0,
-                  "ties": 0,
-                  "losses": 2
-                },
-                {
-                  "name": "matt",
-                  "wins": 1,
-                  "ties": 0,
-                  "losses": 1
-                }
-              ]
-            },
-            {
-              "opponents": [
-                {
-                  "name": "dylan",
-                  "wins": 1,
-                  "ties": 0,
-                  "losses": 0
-                },
-                {
-                  "name": "rj",
-                  "wins": 0,
-                  "ties": 1,
-                  "losses": 1
-                },
-                {
-                  "name": "craig",
-                  "wins": 0,
-                  "ties": 0,
-                  "losses": 3
-                },
-                {
-                  "name": "dan",
-                  "wins": 1,
-                  "ties": 2,
-                  "losses": 2
-                }
-              ]
-            }
-          ]
-        },
-        "_2022": {
-          "id": 2022,
-          "captain": false,
-          "handicap": 10,
-          "team": "green",
-          "scores": {
-            "stoatinBrae": {
-              "course": "Stoatin Brae",
-              "front": [0],
-              "frontHandicap": 999,
-              "back": [0],
-              "backHandicap": 999
-            },
-            "stonehedgeSouth": {
-              "course": "Stonehedge South",
-              "front": [0],
-              "frontHandicap": 999,
-              "back": [0],
-              "backHandicap": 999
-            },
-            "gullLakeEast": {
-              "course": "Gull Lake East",
-              "front": [0],
-              "frontHandicap": 999,
-              "back": [0],
-              "backHandicap": 999
-            },
-            "gullLakeWest": {
-              "course": "Gull Lake West",
-              "front": [0],
-              "frontHandicap": 999,
-              "back": [0],
-              "backHandicap": 999
-            }
-          },
-          "points": [
-            {
-              "id": "bestBall",
-              "game": "Best Ball",
-              "wins": 1,
-              "ties": 0,
-              "losses": 0
-            },
-            {
-              "id": "twoBestBall",
-              "game": "Best Ball",
-              "wins": 0,
-              "ties": 0,
-              "losses": 1
-            },
-            {
-              "id": "bramble",
-              "game": "Bramble",
-              "wins": 1,
-              "ties": 0,
-              "losses": 0
-            },
-            {
-              "id": "twoBallBramble",
-              "game": "Bramble",
-              "wins": 0,
-              "ties": 1,
-              "losses": 0
-            },
-            {
-              "id": "alternate",
-              "game": "Alternate",
-              "wins": 1,
-              "ties": 0,
-              "losses": 0
-            },
-            {
-              "id": "brambleAlternate",
-              "game": "Bramble Alternate",
-              "wins": 0,
-              "ties": 0,
-              "losses": 0
-            },
-            {
-              "id": "scramble",
-              "game": "Scramble",
-              "wins": 2,
-              "ties": 0,
-              "losses": 0
-            },
-            {
-              "id": "singles",
-              "game": "Singles",
-              "wins": 1,
-              "ties": 0,
-              "losses": 0
-            }
-          ],
-          "records": [
-            {
-              "partners": [
-                {
-                  "name": "jake",
-                  "wins": 1,
-                  "ties": 0,
-                  "losses": 0
-                },
-                {
-                  "name": "gordon",
-                  "wins": 0,
-                  "ties": 0,
-                  "losses": 1
-                },
-                {
-                  "name": "travis",
-                  "wins": 3,
-                  "ties": 0,
-                  "losses": 0
-                },
-                {
-                  "name": "matt",
-                  "wins": 1,
-                  "ties": 0,
-                  "losses": 0
-                },
-                {
-                  "name": "curtis",
-                  "wins": 1,
-                  "ties": 0,
-                  "losses": 0
-                }
-              ]
-            },
-            {
-              "opponents": [
-                {
-                  "name": "dylan",
-                  "wins": 1,
-                  "ties": 1,
-                  "losses": 0
-                },
-                {
-                  "name": "rj",
-                  "wins": 2,
-                  "ties": 0,
-                  "losses": 1
-                },
-                {
-                  "name": "craig",
-                  "wins": 1,
-                  "ties": 0,
-                  "losses": 0
-                },
-                {
-                  "name": "dan",
-                  "wins": 1,
-                  "ties": 0,
-                  "losses": 0
-                },
-                {
-                  "name": "evan",
-                  "wins": 5,
-                  "ties": 0,
-                  "losses": 1
-                },
-                {
-                  "id": "cam",
-                  "name": "cam",
-                  "wins": 1,
-                  "ties": 1,
-                  "losses": 0
-                }
-              ]
-            }
-          ]
-        }
-      }
-    },
-    "dan": {
-      "name": "dan",
-      "year": {
-        "_2021": {
-          "id": 2021,
-          "handicap": 36,
-          "captain": false,
-          "team": "blue",
-          "scores": {
-            "jonesMasterPiece": {
-              "course": "The Jones Masterpiece at Treetops",
-              "front": [0],
-              "frontHandicap": 999,
-              "back": [0],
-              "backHandicap": 999
-            },
-            "tribute": {
-              "course": "Tribute",
-              "front": [6, 7, 7, 7, 7, 5, 8, 7, 3],
-              "frontHandicap": 999,
-              "back": [5, 9, 5, 4, 4, 6, 8, 3, 6],
-              "backHandicap": 999
-            },
-            "classic": {
-              "course": "Classic",
-              "front": [5, 6, 4, 5, 6, 4, 6, 3, 5],
-              "frontHandicap": 24,
-              "back": [5, 4, 5, 4, 4, 4, 6, 4, 6],
-              "backHandicap": 20
-            },
-            "gaylordGolfClub": {
-              "course": "Gaylord Golf Club",
-              "front": [8, 5, 5, 4, 6, 3, 7, 7, 6],
-              "frontHandicap": 22,
-              "back": [10, 6, 10, 5, 7, 7, 5, 8, 12],
-              "backHandicap": 999
-            }
-          },
-          "points": [
-            {
-              "id": "bestBall",
-              "game": "Best Ball",
-              "wins": 1,
-              "ties": 0,
-              "losses": 1
-            },
-            {
-              "id": "bramble",
-              "game": "Bramble",
-              "wins": 1,
-              "ties": 0,
-              "losses": 0
-            },
-            {
-              "id": "brambleAlternate",
-              "game": "Bramble Alternate",
-              "wins": 0,
-              "ties": 1,
-              "losses": 0
-            },
-            {
-              "id": "scramble",
-              "game": "Scramble",
-              "wins": 1,
-              "ties": 0,
-              "losses": 0
-            },
-            {
-              "id": "singles",
-              "game": "Singles",
-              "wins": 0,
-              "ties": 1,
-              "losses": 0
-            }
-          ],
-          "records": [
-            {
-              "partners": [
-                {
-                  "name": "rj",
-                  "wins": 0,
-                  "ties": 1,
-                  "losses": 0
-                },
-                {
-                  "name": "craig",
-                  "wins": 2,
-                  "ties": 0,
-                  "losses": 0
-                },
-                {
-                  "name": "dylan",
-                  "wins": 1,
-                  "ties": 0,
-                  "losses": 1
-                }
-              ]
-            },
-            {
-              "opponents": [
-                {
-                  "name": "matt",
-                  "wins": 0,
-                  "ties": 0,
-                  "losses": 1
-                },
-                {
-                  "name": "chris",
-                  "wins": 1,
-                  "ties": 1,
-                  "losses": 0
-                },
-                {
-                  "name": "travis",
-                  "wins": 3,
-                  "ties": 0,
-                  "losses": 0
-                },
-                {
-                  "name": "derek",
-                  "wins": 2,
-                  "ties": 2,
-                  "losses": 1
-                }
-              ]
-            }
-          ]
-        },
-        "_2022": {
-          "id": 2022,
-          "handicap": 2,
-          "captain": false,
-          "team": "blue",
-          "scores": {
-            "stoatinBrae": {
-              "course": "Stoatin Brae",
-              "front": [0],
-              "frontHandicap": 999,
-              "back": [0],
-              "backHandicap": 999
-            },
-            "stonehedgeSouth": {
-              "course": "Stonehedge South",
-              "front": [0],
-              "frontHandicap": 999,
-              "back": [0],
-              "backHandicap": 999
-            },
-            "gullLakeEast": {
-              "course": "Gull Lake East",
-              "front": [0],
-              "frontHandicap": 999,
-              "back": [0],
-              "backHandicap": 999
-            },
-            "gullLakeWest": {
-              "course": "Gull Lake West",
-              "front": [0],
-              "frontHandicap": 999,
-              "back": [0],
-              "backHandicap": 999
-            }
-          },
-          "points": [
-            {
-              "id": "bestBall",
-              "game": "Best Ball",
-              "wins": 1,
-              "ties": 0,
-              "losses": 0
-            },
-            {
-              "id": "twoBestBall",
-              "game": "Best Ball",
-              "wins": 0,
-              "ties": 0,
-              "losses": 1
-            },
-            {
-              "id": "bramble",
-              "game": "Bramble",
-              "wins": 0,
-              "ties": 0,
-              "losses": 1
-            },
-            {
-              "id": "twoBallBramble",
-              "game": "Bramble",
-              "wins": 0,
-              "ties": 0,
-              "losses": 1
-            },
-            {
-              "id": "alternate",
-              "game": "Alternate",
-              "wins": 0,
-              "ties": 0,
-              "losses": 1
-            },
-            {
-              "id": "brambleAlternate",
-              "game": "Bramble Alternate",
-              "wins": 0,
-              "ties": 0,
-              "losses": 0
-            },
-            {
-              "id": "scramble",
-              "game": "Scramble",
-              "wins": 1,
-              "ties": 0,
-              "losses": 1
-            },
-            {
-              "id": "singles",
-              "game": "Singles",
-              "wins": 1,
-              "ties": 0,
-              "losses": 0
-            }
-          ],
-          "records": [
-            {
-              "partners": [
-                {
-                  "name": "rj",
-                  "wins": 0,
-                  "ties": 0,
-                  "losses": 1
-                },
-                {
-                  "name": "craig",
-                  "wins": 1,
-                  "ties": 0,
-                  "losses": 0
-                },
-                {
-                  "name": "dylan",
-                  "wins": 0,
-                  "ties": 0,
-                  "losses": 2
-                },
-                {
-                  "name": "cam",
-                  "wins": 1,
-                  "ties": 0,
-                  "losses": 0
-                },
-                {
-                  "name": "evan",
-                  "wins": 0,
-                  "ties": 0,
-                  "losses": 2
-                }
-              ]
-            },
-            {
-              "opponents": [
-                {
-                  "name": "matt",
-                  "wins": 0,
-                  "ties": 0,
-                  "losses": 3
-                },
-                {
-                  "name": "curtis",
-                  "wins": 2,
-                  "ties": 0,
-                  "losses": 2
-                },
-                {
-                  "name": "travis",
-                  "wins": 1,
-                  "ties": 0,
-                  "losses": 3
-                },
-                {
-                  "name": "derek",
-                  "wins": 0,
-                  "ties": 0,
-                  "losses": 1
-                },
-                {
-                  "name": "jake",
-                  "wins": 1,
-                  "ties": 0,
-                  "losses": 1
-                },
-                {
-                  "name": "gordon",
-                  "wins": 1,
-                  "ties": 0,
-                  "losses": 0
-                }
-              ]
-            }
-          ]
-        }
-      }
-    },
-    "jake": {
-      "name": "jake",
-      "year": {
-        "_2022": {
-          "id": 2022,
-          "captain": false,
-          "handicap": 10,
-          "team": "green",
-          "scores": {
-            "stoatinBrae": {
-              "course": "Stoatin Brae",
-              "front": [0],
-              "frontHandicap": 999,
-              "back": [0],
-              "backHandicap": 999
-            },
-            "stonehedgeSouth": {
-              "course": "Stonehedge South",
-              "front": [0],
-              "frontHandicap": 999,
-              "back": [0],
-              "backHandicap": 999
-            },
-            "gullLakeEast": {
-              "course": "Gull Lake East",
-              "front": [0],
-              "frontHandicap": 999,
-              "back": [0],
-              "backHandicap": 999
-            },
-            "gullLakeWest": {
-              "course": "Gull Lake West",
-              "front": [0],
-              "frontHandicap": 999,
-              "back": [0],
-              "backHandicap": 999
-            }
-          },
-          "points": [
-            {
-              "id": "bestBall",
-              "game": "Best Ball",
-              "wins": 0,
-              "ties": 0,
-              "losses": 1
-            },
-            {
-              "id": "twoBestBall",
-              "game": "Best Ball",
-              "wins": 1,
-              "ties": 0,
-              "losses": 0
-            },
-            {
-              "id": "bramble",
-              "game": "Bramble",
-              "wins": 1,
-              "ties": 0,
-              "losses": 0
-            },
-            {
-              "id": "twoBallBramble",
-              "game": "Bramble",
-              "wins": 0,
-              "ties": 1,
-              "losses": 0
-            },
-            {
-              "id": "alternate",
-              "game": "Alternate",
-              "wins": 0,
-              "ties": 1,
-              "losses": 0
-            },
-            {
-              "id": "brambleAlternate",
-              "game": "Bramble Alternate",
-              "wins": 0,
-              "ties": 0,
-              "losses": 0
-            },
-            {
-              "id": "scramble",
-              "game": "Scramble",
-              "wins": 1,
-              "ties": 0,
-              "losses": 1
-            },
-            {
-              "id": "singles",
-              "game": "Singles",
-              "wins": 0,
-              "ties": 0,
-              "losses": 1
-            }
-          ],
-          "records": [
-            {
-              "partners": [
-                {
-                  "name": "matt",
-                  "wins": 0,
-                  "ties": 0,
-                  "losses": 1
-                },
-                {
-                  "name": "gordon",
-                  "wins": 1,
-                  "ties": 0,
-                  "losses": 0
-                },
-                {
-                  "name": "travis",
-                  "wins": 2,
-                  "ties": 0,
-                  "losses": 0
-                },
-                {
-                  "name": "derek",
-                  "wins": 0,
-                  "ties": 1,
-                  "losses": 0
-                },
-                {
-                  "name": "curtis",
-                  "wins": 0,
-                  "ties": 1,
-                  "losses": 1
-                }
-              ]
-            },
-            {
-              "opponents": [
-                {
-                  "name": "dylan",
-                  "wins": 1,
-                  "ties": 2,
-                  "losses": 1
-                },
-                {
-                  "name": "rj",
-                  "wins": 0,
-                  "ties": 0,
-                  "losses": 0
-                },
-                {
-                  "name": "craig",
-                  "wins": 2,
-                  "ties": 1,
-                  "losses": 1
-                },
-                {
-                  "name": "dan",
-                  "wins": 1,
-                  "ties": 0,
-                  "losses": 1
-                },
-                {
-                  "name": "evan",
-                  "wins": 0,
-                  "ties": 0,
-                  "losses": 1
-                },
-                {
-                  "name": "cam",
-                  "wins": 2,
-                  "ties": 1,
-                  "losses": 1
-                }
-              ]
-            }
-          ]
-        }
-      }
-    },
-    "curtis": {
-      "name": "curtis",
-      "year": {
-        "_2022": {
-          "id": 2022,
-          "captain": false,
-          "handicap": 10,
-          "team": "green",
-          "scores": {
-            "stoatinBrae": {
-              "course": "Stoatin Brae",
-              "front": [0],
-              "frontHandicap": 999,
-              "back": [0],
-              "backHandicap": 999
-            },
-            "stonehedgeSouth": {
-              "course": "Stonehedge South",
-              "front": [0],
-              "frontHandicap": 999,
-              "back": [0],
-              "backHandicap": 999
-            },
-            "gullLakeEast": {
-              "course": "Gull Lake East",
-              "front": [0],
-              "frontHandicap": 999,
-              "back": [0],
-              "backHandicap": 999
-            },
-            "gullLakeWest": {
-              "course": "Gull Lake West",
-              "front": [0],
-              "frontHandicap": 999,
-              "back": [0],
-              "backHandicap": 999
-            }
-          },
-          "points": [
-            {
-              "id": "bestBall",
-              "game": "Best Ball",
-              "wins": 0,
-              "ties": 0,
-              "losses": 1
-            },
-            {
-              "id": "twoBestBall",
-              "game": "Best Ball",
-              "wins": 1,
-              "ties": 0,
-              "losses": 0
-            },
-            {
-              "id": "bramble",
-              "game": "Bramble",
-              "wins": 1,
-              "ties": 0,
-              "losses": 0
-            },
-            {
-              "id": "twoBallBramble",
-              "game": "Bramble",
-              "wins": 1,
-              "ties": 0,
-              "losses": 0
-            },
-            {
-              "id": "alternate",
-              "game": "Alternate",
-              "wins": 0,
-              "ties": 1,
-              "losses": 0
-            },
-            {
-              "id": "brambleAlternate",
-              "game": "Bramble Alternate",
-              "wins": 0,
-              "ties": 0,
-              "losses": 0
-            },
-            {
-              "id": "scramble",
-              "game": "Scramble",
-              "wins": 1,
-              "ties": 0,
-              "losses": 1
-            },
-            {
-              "id": "singles",
-              "game": "Singles",
-              "wins": 0,
-              "ties": 0,
-              "losses": 1
-            }
-          ],
-          "records": [
-            {
-              "partners": [
-                {
-                  "name": "jake",
-                  "wins": 0,
-                  "ties": 1,
-                  "losses": 1
-                },
-                {
-                  "name": "gordon",
-                  "wins": 1,
-                  "ties": 0,
-                  "losses": 1
-                },
-                {
-                  "name": "travis",
-                  "wins": 0,
-                  "ties": 0,
-                  "losses": 0
-                },
-                {
-                  "name": "derek",
-                  "wins": 1,
-                  "ties": 0,
-                  "losses": 0
-                },
-                {
-                  "name": "matt",
-                  "wins": 2,
-                  "ties": 0,
-                  "losses": 0
-                }
-              ]
-            },
-            {
-              "opponents": [
-                {
-                  "name": "dylan",
-                  "wins": 2,
-                  "ties": 1,
-                  "losses": 0
-                },
-                {
-                  "name": "rj",
-                  "wins": 0,
-                  "ties": 0,
-                  "losses": 0
-                },
-                {
-                  "name": "craig",
-                  "wins": 1,
-                  "ties": 1,
-                  "losses": 2
-                },
-                {
-                  "name": "dan",
-                  "wins": 2,
-                  "ties": 0,
-                  "losses": 2
-                },
-                {
-                  "id": "evan",
-                  "name": "evan",
-                  "wins": 2,
-                  "ties": 0,
-                  "losses": 0
-                },
-                {
-                  "id": "cam",
-                  "name": "cam",
-                  "wins": 1,
-                  "ties": 0,
-                  "losses": 1
-                }
-              ]
-            }
-          ]
-        }
-      }
-    },
-    "gordon": {
-      "name": "gordon",
-      "year": {
-        "_2022": {
-          "id": 2022,
-          "captain": false,
-          "handicap": 10,
-          "team": "green",
-          "scores": {
-            "stoatinBrae": {
-              "course": "Stoatin Brae",
-              "front": [0],
-              "frontHandicap": 999,
-              "back": [0],
-              "backHandicap": 999
-            },
-            "stonehedgeSouth": {
-              "course": "Stonehedge South",
-              "front": [0],
-              "frontHandicap": 999,
-              "back": [0],
-              "backHandicap": 999
-            },
-            "gullLakeEast": {
-              "course": "Gull Lake East",
-              "front": [0],
-              "frontHandicap": 999,
-              "back": [0],
-              "backHandicap": 999
-            },
-            "gullLakeWest": {
-              "course": "Gull Lake West",
-              "front": [0],
-              "frontHandicap": 999,
-              "back": [0],
-              "backHandicap": 999
-            }
-          },
-          "points": [
-            {
-              "id": "bestBall",
-              "game": "Best Ball",
-              "wins": 1,
-              "ties": 0,
-              "losses": 0
-            },
-            {
-              "id": "twoBestBall",
-              "game": "Best Ball",
-              "wins": 0,
-              "ties": 0,
-              "losses": 1
-            },
-            {
-              "id": "bramble",
-              "game": "Bramble",
-              "wins": 1,
-              "ties": 0,
-              "losses": 0
-            },
-            {
-              "id": "twoBallBramble",
-              "game": "Bramble",
-              "wins": 0,
-              "ties": 0,
-              "losses": 1
-            },
-            {
-              "id": "alternate",
-              "game": "Alternate",
-              "wins": 1,
-              "ties": 0,
-              "losses": 0
-            },
-            {
-              "id": "brambleAlternate",
-              "game": "Bramble Alternate",
-              "wins": 0,
-              "ties": 0,
-              "losses": 0
-            },
-            {
-              "id": "scramble",
-              "game": "Scramble",
-              "wins": 1,
-              "ties": 0,
-              "losses": 1
-            },
-            {
-              "id": "singles",
-              "game": "Singles",
-              "wins": 0,
-              "ties": 0,
-              "losses": 1
-            }
-          ],
-          "records": [
-            {
-              "partners": [
-                {
-                  "name": "jake",
-                  "wins": 1,
-                  "ties": 0,
-                  "losses": 0
-                },
-                {
-                  "name": "curtis",
-                  "wins": 1,
-                  "ties": 0,
-                  "losses": 1
-                },
-                {
-                  "name": "travis",
-                  "wins": 0,
-                  "ties": 0,
-                  "losses": 1
-                },
-                {
-                  "name": "derek",
-                  "wins": 0,
-                  "ties": 0,
-                  "losses": 1
-                },
-                {
-                  "name": "matt",
-                  "wins": 2,
-                  "ties": 0,
-                  "losses": 0
-                }
-              ]
-            },
-            {
-              "opponents": [
-                {
-                  "name": "dylan",
-                  "wins": 1,
-                  "ties": 0,
-                  "losses": 0
-                },
-                {
-                  "name": "rj",
-                  "wins": 2,
-                  "ties": 0,
-                  "losses": 3
-                },
-                {
-                  "name": "craig",
-                  "wins": 2,
-                  "ties": 0,
-                  "losses": 1
-                },
-                {
-                  "name": "dan",
-                  "wins": 0,
-                  "ties": 0,
-                  "losses": 1
-                },
-                {
-                  "id": "evan",
-                  "name": "evan",
-                  "wins": 0,
-                  "ties": 0,
-                  "losses": 1
-                },
-                {
-                  "id": "cam",
-                  "name": "cam",
-                  "wins": 3,
-                  "ties": 0,
-                  "losses": 1
-                }
-              ]
-            }
-          ]
-        }
-      }
-    },
-    "cam": {
-      "name": "cam",
-      "year": {
-        "_2022": {
-          "id": 2022,
-          "handicap": 2,
-          "captain": false,
-          "team": "blue",
-          "scores": {
-            "stoatinBrae": {
-              "course": "Stoatin Brae",
-              "front": [0],
-              "frontHandicap": 999,
-              "back": [0],
-              "backHandicap": 999
-            },
-            "stonehedgeSouth": {
-              "course": "Stonehedge South",
-              "front": [0],
-              "frontHandicap": 999,
-              "back": [0],
-              "backHandicap": 999
-            },
-            "gullLakeEast": {
-              "course": "Gull Lake East",
-              "front": [0],
-              "frontHandicap": 999,
-              "back": [0],
-              "backHandicap": 999
-            },
-            "gullLakeWest": {
-              "course": "Gull Lake West",
-              "front": [0],
-              "frontHandicap": 999,
-              "back": [0],
-              "backHandicap": 999
-            }
-          },
-          "points": [
-            {
-              "id": "bestBall",
-              "game": "Best Ball",
-              "wins": 0,
-              "ties": 0,
-              "losses": 1
-            },
-            {
-              "id": "twoBestBall",
-              "game": "Best Ball",
-              "wins": 0,
-              "ties": 0,
-              "losses": 1
-            },
-            {
-              "id": "bramble",
-              "game": "Bramble",
-              "wins": 0,
-              "ties": 0,
-              "losses": 1
-            },
-            {
-              "id": "twoBallBramble",
-              "game": "Bramble",
-              "wins": 0,
-              "ties": 1,
-              "losses": 0
-            },
-            {
-              "id": "alternate",
-              "game": "Alternate",
-              "wins": 0,
-              "ties": 0,
-              "losses": 1
-            },
-            {
-              "id": "brambleAlternate",
-              "game": "Bramble Alternate",
-              "wins": 0,
-              "ties": 0,
-              "losses": 0
-            },
-            {
-              "id": "scramble",
-              "game": "Scramble",
-              "wins": 1,
-              "ties": 0,
-              "losses": 1
-            },
-            {
-              "id": "singles",
-              "game": "Singles",
-              "wins": 1,
-              "ties": 0,
-              "losses": 0
-            }
-          ],
-          "records": [
-            {
-              "partners": [
-                {
-                  "name": "rj",
-                  "wins": 0,
-                  "ties": 0,
-                  "losses": 1
-                },
-                {
-                  "name": "craig",
-                  "wins": 0,
-                  "ties": 0,
-                  "losses": 3
-                },
-                {
-                  "name": "dan",
-                  "wins": 1,
-                  "ties": 0,
-                  "losses": 0
-                },
-                {
-                  "name": "dylan",
-                  "wins": 0,
-                  "ties": 1,
-                  "losses": 0
-                },
-                {
-                  "name": "evan",
-                  "wins": 0,
-                  "ties": 0,
-                  "losses": 1
-                }
-              ]
-            },
-            {
-              "opponents": [
-                {
-                  "name": "matt",
-                  "wins": 0,
-                  "ties": 0,
-                  "losses": 1
-                },
-                {
-                  "name": "curtis",
-                  "wins": 1,
-                  "ties": 0,
-                  "losses": 1
-                },
-                {
-                  "name": "travis",
-                  "wins": 0,
-                  "ties": 0,
-                  "losses": 2
-                },
-                {
-                  "name": "derek",
-                  "wins": 0,
-                  "ties": 1,
-                  "losses": 1
-                },
-                {
-                  "name": "jake",
-                  "wins": 1,
-                  "ties": 1,
-                  "losses": 2
-                },
-                {
-                  "name": "gordon",
-                  "wins": 1,
-                  "ties": 0,
-                  "losses": 3
-                }
-              ]
-            }
-          ]
-        }
-      }
-    },
-    "evan": {
-      "name": "evan",
-      "year": {
-        "_2022": {
-          "id": 2022,
-          "handicap": 2,
-          "captain": false,
-          "team": "blue",
-          "scores": {
-            "stoatinBrae": {
-              "course": "Stoatin Brae",
-              "front": [0],
-              "frontHandicap": 999,
-              "back": [0],
-              "backHandicap": 999
-            },
-            "stonehedgeSouth": {
-              "course": "Stonehedge South",
-              "front": [0],
-              "frontHandicap": 999,
-              "back": [0],
-              "backHandicap": 999
-            },
-            "gullLakeEast": {
-              "course": "Gull Lake East",
-              "front": [0],
-              "frontHandicap": 999,
-              "back": [0],
-              "backHandicap": 999
-            },
-            "gullLakeWest": {
-              "course": "Gull Lake West",
-              "front": [0],
-              "frontHandicap": 999,
-              "back": [0],
-              "backHandicap": 999
-            }
-          },
-          "points": [
-            {
-              "id": "bestBall",
-              "game": "Best Ball",
-              "wins": 0,
-              "ties": 0,
-              "losses": 1
-            },
-            {
-              "id": "twoBestBall",
-              "game": "Best Ball",
-              "wins": 1,
-              "ties": 0,
-              "losses": 0
-            },
-            {
-              "id": "bramble",
-              "game": "Bramble",
-              "wins": 0,
-              "ties": 0,
-              "losses": 1
-            },
-            {
-              "id": "twoBallBramble",
-              "game": "Bramble",
-              "wins": 0,
-              "ties": 0,
-              "losses": 1
-            },
-            {
-              "id": "alternate",
-              "game": "Alternate",
-              "wins": 0,
-              "ties": 0,
-              "losses": 1
-            },
-            {
-              "id": "brambleAlternate",
-              "game": "Bramble Alternate",
-              "wins": 0,
-              "ties": 0,
-              "losses": 0
-            },
-            {
-              "id": "scramble",
-              "game": "Scramble",
-              "wins": 1,
-              "ties": 0,
-              "losses": 1
-            },
-            {
-              "id": "singles",
-              "game": "Singles",
-              "wins": 0,
-              "ties": 0,
-              "losses": 1
-            }
-          ],
-          "records": [
-            {
-              "partners": [
-                {
-                  "name": "rj",
-                  "wins": 1,
-                  "ties": 0,
-                  "losses": 1
-                },
-                {
-                  "name": "craig",
-                  "wins": 0,
-                  "ties": 0,
-                  "losses": 0
-                },
-                {
-                  "name": "dan",
-                  "wins": 0,
-                  "ties": 0,
-                  "losses": 2
-                },
-                {
-                  "name": "cam",
-                  "wins": 0,
-                  "ties": 0,
-                  "losses": 1
-                },
-                {
-                  "name": "dylan",
-                  "wins": 1,
-                  "ties": 0,
-                  "losses": 1
-                }
-              ]
-            },
-            {
-              "opponents": [
-                {
-                  "name": "matt",
-                  "wins": 1,
-                  "ties": 0,
-                  "losses": 2
-                },
-                {
-                  "name": "curtis",
-                  "wins": 0,
-                  "ties": 0,
-                  "losses": 2
-                },
-                {
-                  "name": "travis",
-                  "wins": 0,
-                  "ties": 0,
-                  "losses": 2
-                },
-                {
-                  "name": "derek",
-                  "wins": 1,
-                  "ties": 0,
-                  "losses": 5
-                },
-                {
-                  "name": "jake",
-                  "wins": 1,
-                  "ties": 0,
-                  "losses": 0
-                },
-                {
-                  "name": "gordon",
-                  "wins": 1,
                   "ties": 0,
                   "losses": 0
                 }
