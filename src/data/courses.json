@@ -676,7 +676,176 @@
           "slope": 59.5
         }
       },
-
+      "stoatinBrae": {
+        "name": "Stoatin Brae",
+        "link": "https://gulllakeview.com/golf/stoatin-brae/",
+        "holes": [
+          {
+            "number": 1,
+            "tees": {
+              "black": 326
+            },
+            "handicap": 13,
+            "par": 4
+          },
+          {
+            "number": 2,
+            "tees": {
+              "black": 215
+            },
+            "handicap": 15,
+            "par": 3
+          },
+          {
+            "number": 3,
+            "tees": {
+              "black": 405
+            },
+            "handicap": 5,
+            "par": 4
+          },
+          {
+            "number": 4,
+            "tees": {
+              "black": 423
+            },
+            "handicap": 1,
+            "par": 4
+          },
+          {
+            "number": 5,
+            "tees": {
+              "black": 383
+            },
+            "handicap": 3,
+            "par": 4
+          },
+          {
+            "number": 6,
+            "tees": {
+              "black": 520
+            },
+            "handicap": 9,
+            "par": 5
+          },
+          {
+            "number": 7,
+            "tees": {
+              "black": 204
+            },
+            "handicap": 17,
+            "par": 3
+          },
+          {
+            "number": 8,
+            "tees": {
+              "black": 316
+            },
+            "handicap": 11,
+            "par": 4
+          },
+          {
+            "number": 9,
+            "tees": {
+              "black": 559
+            },
+            "handicap": 7,
+            "par": 5
+          },
+          {
+            "number": 10,
+            "tees": {
+              "black": 313
+            },
+            "handicap": 6,
+            "par": 4
+          },
+          {
+            "number": 11,
+            "tees": {
+              "black": 161
+            },
+            "handicap": 16,
+            "par": 3
+          },
+          {
+            "number": 12,
+            "tees": {
+              "black": 359
+            },
+            "handicap": 8,
+            "par": 4
+          },
+          {
+            "number": 13,
+            "tees": {
+              "black": 433
+            },
+            "handicap": 2,
+            "par": 4
+          },
+          {
+            "number": 14,
+            "tees": {
+              "black": 130
+            },
+            "handicap": 18,
+            "par": 3
+          },
+          {
+            "number": 15,
+            "tees": {
+              "black": 364
+            },
+            "handicap": 12,
+            "par": 4
+          },
+          {
+            "number": 16,
+            "tees": {
+              "black": 500
+            },
+            "handicap": 10,
+            "par": 5
+          },
+          {
+            "number": 17,
+            "tees": {
+              "black": 135
+            },
+            "handicap": 14,
+            "par": 3
+          },
+          {
+            "number": 18,
+            "tees": {
+              "black": 525
+            },
+            "handicap": 4,
+            "par": 5
+          }
+        ],
+        "totals": {
+          "front": {
+            "yardage": 3351,
+            "par": 36,
+            "index": 35.6,
+            "slope": 114.0
+          },
+          "back": {
+            "yardage": 2920,
+            "par": 36,
+            "index": 33.6,
+            "slope": 123.0
+          },
+          "total": {
+            "yardage": 6271,
+            "par": 71,
+            "index": 69.2,
+            "slope": 119
+          }
+        }
+      },
       "stoneHedgeSouth1": {
         "name": "Stonehedge South",
         "link": "https://gulllakeview.com/golf/golf-courses/stonehedge-south/",

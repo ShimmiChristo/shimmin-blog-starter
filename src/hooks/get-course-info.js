@@ -230,7 +230,38 @@ export const CourseInfo = () => {
               par
             }
           }
-
+          stoatinBrae {
+            name
+            link
+            holes {
+              number
+              tees {
+                black
+              }
+              handicap
+              par
+            }
+            totals {
+              front {
+                yardage
+                par
+                index
+                slope
+              }
+              back {
+                yardage
+                par
+                index
+                slope
+              }
+              total {
+                yardage
+                par
+                index
+                slope
+              }
+            }
+          }
         }
       }
     }

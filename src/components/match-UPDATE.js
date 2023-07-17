@@ -308,7 +308,7 @@ function MatchUpdate({
     // const teamTwoScoreArr = []
     const scoresArr = []
     const playerOne = player1Param
-    let playerOneScore = playerOne.year[`${year}`].scores[`${courseMatch}`][`${holes}`] // [scores]
+    let playerOneScore = playersUpdateJson[`${playerOne}`].year[`${year}`].scores[`${courseMatch}`][`${holes}`] // [scores]
     console.log('playerOneScore - ', playerOneScore);
     let playerOneHandicap = parseInt(player1HandicapParam)
     const playerTwo =
