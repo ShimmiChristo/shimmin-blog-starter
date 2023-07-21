@@ -308,15 +308,16 @@ function MatchUpdate({
     // const teamTwoScoreArr = []
     const scoresArr = []
     const playerOne = player1Param
-    let playerOneScore = playersUpdateJson[`${playerOne}`].year[`${year}`].scores[`${courseMatch}`][`${holes}`] // [scores]
+    let playerOneScore = playersUpdateJson[`${playerOne}`]?.year[`${year}`].scores[`${courseMatch}`][`${holes}`] // [scores]
     console.log('playerOneScore - ', playerOneScore);
     let playerOneHandicap = parseInt(player1HandicapParam)
     const playerTwo =
-      player2Param !== undefined ? player[`${player2Param}`] : undefined
-    let playerTwoScore =
-      player2Param !== undefined
-        ? playerTwo.course[`${courseMatch}`]
-        : undefined // [scores]
+    player2Param !== undefined ? player2Param : undefined
+    let playerTwoScore = playersUpdateJson[`${playerTwo}`]?.year[`${year}`].scores[`${courseMatch}`][`${holes}`] // [scores]
+    // let playerTwoScore =
+    //   player2Param !== undefined
+    //     ? playerTwo.course[`${courseMatch}`]
+    //     : undefined // [scores]
     let playerTwoHandicap = player2HandicapParam
       ? parseInt(player2HandicapParam)
       : undefined

@@ -68,7 +68,6 @@ const PlayerPoints = ({ name }) => {
   }
 
   const record = getGamePoints(player)
-  console.log("record - ", record)
 
   return (
     <>
