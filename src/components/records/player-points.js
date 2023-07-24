@@ -40,16 +40,14 @@ const PlayerPoints = ({ name }) => {
       const year = player.year[key]
       const pointsArr = year.points
       pointsArr.map(elem => {
-        if (points[elem.id] !== undefined) {
+        if (points[elem.id]) {
           points[elem.id].wins += elem.wins
           points[elem.id].ties += elem.ties
           points[elem.id].losses += elem.losses
           points.total.wins += elem.wins
           points.total.ties += elem.ties
           points.total.losses += elem.losses
-          if (elem.wins) points.matches++
-          if (elem.ties) points.matches++
-          if (elem.losses) points.matches++
+          points.matches += 1
         } else {
           points[elem.id] = {}
           points[elem.id].wins = elem.wins
@@ -58,9 +56,7 @@ const PlayerPoints = ({ name }) => {
           points.total.wins += elem.wins
           points.total.ties += elem.ties
           points.total.losses += elem.losses
-          if (elem.wins) points.matches++
-          if (elem.ties) points.matches++
-          if (elem.losses) points.matches++
+          points.matches += elem.wins + elem.ties + elem.losses
         }
       })
     })

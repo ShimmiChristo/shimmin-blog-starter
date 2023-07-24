@@ -598,7 +598,7 @@ function MatchUpdate({
               <div className="match__column--info column-left">
                 <div className="match__score row-cell">score</div>
               </div>
-              {teamOneScoreArray.map((hole, i) => (
+              {teamOneScoreArray.map(hole => (
                 <div className="match__column" key={uuidv1()}>
                   <div className="match__score row-cell">{hole}</div>
                 </div>
@@ -617,7 +617,7 @@ function MatchUpdate({
               <div className="match__column--info column-left">
                 <div className="match__score row-cell">score</div>
               </div>
-              {teamTwoScoreArray.map((hole, i) => (
+              {teamTwoScoreArray.map(hole => (
                 <div className="match__column" key={uuidv1()}>
                   <div className="match__score row-cell">{hole}</div>
                 </div>

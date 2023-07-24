@@ -10,7 +10,7 @@ import PlayerPoints from "../components/records/player-points"
 
 const PlayerRecordsPage = ({ location }) => {
   const { title } = useSiteMetadata()
-  const siteTitle = title || `Title`
+  const siteTitle = title || `BFBH Cup Player Scores`
 
   return (
     <Layout location={location} title={siteTitle}>
