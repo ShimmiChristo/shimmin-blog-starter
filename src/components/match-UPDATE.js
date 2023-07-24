@@ -107,7 +107,10 @@ function MatchUpdate({
 }) {
   const { course } = CourseInfo()
   const playersUpdateJson = PlayerInfoUpdate()
-  const courseHoles = course[`${courseMatch}`].holes
+  const courseHoles =
+    holes === "front"
+      ? course[`${courseMatch}`].holes.slice(0, 9)
+      : course[`${courseMatch}`].holes.slice(9)
   // const courseName = course[`${courseMatch}`].name
   // const courseLink = course[`${courseMatch}`].link
 
@@ -124,196 +127,24 @@ function MatchUpdate({
   const [sectionHeight, setSectionHeight] = useState("closed")
   // const parTotal = course[`${courseMatch}`].totals.par
 
-  // function calcTeamOneScore() {
-  //   const teamOneScoreArr = []
-  //   let playerOneScore = playerOne.course[`${courseMatch}`] // [scores]
-  //   let pHandiPlayerOne = parseInt(player1Handicap)
-
-  //   if (playerThree !== undefined) {
-  //     let playerThreeScore = playerThree.course[`${courseMatch}`] || undefined // [scores]
-  //     let pHandiPlayerThree = parseInt(player3Handicap)
-  //     if (matchHandicap === "average") {
-  //       let teamHandicap = (pHandiPlayerOne + pHandiPlayerThree) / 2
-
-  //       for (let i = 0; i < playerOneScore.length; i++) {
-  //         let sPlayerOne = playerOneScore[i]
-  //         let sPlayerThree = playerThreeScore[i]
-  //         let hHand = courseHoles[i].handicap
-  //         let playerOneHandiScore = calcPlayerScore(
-  //           sPlayerOne,
-  //           teamHandicap,
-  //           hHand
-  //         )
-  //         let playerThreeHandiScore = calcPlayerScore(
-  //           sPlayerThree,
-  //           teamHandicap,
-  //           hHand
-  //         )
-
-  //         if (
-  //           isNaN(playerOneHandiScore) !== true &&
-  //           isNaN(playerThreeHandiScore) !== true
-  //         ) {
-  //           teamOneScoreArr.push(
-  //             Math.min(playerOneHandiScore, playerThreeHandiScore)
-  //           )
-  //         } else {
-  //           teamOneScoreArr.push("-")
-  //         }
-  //       }
-  //     } else {
-  //       for (let i = 0; i < playerOneScore.length; i++) {
-  //         let sPlayerOne = playerOneScore[i]
-  //         let sPlayerThree = playerThreeScore[i]
-  //         let hHand = courseHoles[i].handicap
-  //         let playerOneHandiScore = calcPlayerScore(
-  //           sPlayerOne,
-  //           pHandiPlayerOne,
-  //           hHand
-  //         )
-  //         let playerThreeHandiScore = calcPlayerScore(
-  //           sPlayerThree,
-  //           pHandiPlayerThree,
-  //           hHand
-  //         )
-
-  //         if (
-  //           isNaN(playerOneHandiScore) !== true &&
-  //           isNaN(playerThreeHandiScore) !== true &&
-  //           gameplay !== "two-ball"
-  //         ) {
-  //           teamOneScoreArr.push(
-  //             Math.min(playerOneHandiScore, playerThreeHandiScore)
-  //           )
-  //         } else if (gameplay === "two-ball") {
-  //           teamOneScoreArr.push(
-  //             Number(playerOneHandiScore) + Number(playerThreeHandiScore)
-  //           )
-  //         } else {
-  //           teamOneScoreArr.push("-")
-  //         }
-  //       }
-  //     }
-  //   } else {
-  //     for (let i = 0; i < playerOneScore.length; i++) {
-  //       let sPlayerOne = playerOneScore[i]
-  //       let hHand = courseHoles[i].handicap
-  //       let playerOneHandiScore = calcPlayerScore(
-  //         sPlayerOne,
-  //         pHandiPlayerOne,
-  //         hHand
-  //       )
-
-  //       teamOneScoreArr.push(playerOneHandiScore)
-  //     }
-  //   }
-
-  //   return teamOneScoreArr
-  // }
-  // const teamOneScore = calcTeamOneScore()
-
-  // function calcTeamTwoScore() {
-  //   const teamTwoScoreArr = []
-  //   let playerTwoScore = playerTwo.course[`${courseMatch}`] // [scores]
-  //   let pHandiPlayerTwo = parseInt(player2Handicap)
-
-  //   if (playerFour !== undefined) {
-  //     let playerFourScore = playerFour.course[`${courseMatch}`] || undefined // [scores]
-  //     let pHandiPlayerFour = parseInt(player4Handicap) || ""
-  //     if (matchHandicap === "average") {
-  //       let teamHandicap = (pHandiPlayerTwo + pHandiPlayerFour) / 2
-  //       for (let i = 0; i < playerTwoScore.length; i++) {
-  //         let sPlayerTwo = playerTwoScore[i]
-  //         let sPlayerFour = playerFourScore[i]
-  //         let hHand = courseHoles[i].handicap
-  //         let playerTwoHandiScoreAv = calcPlayerScore(
-  //           sPlayerTwo,
-  //           teamHandicap,
-  //           hHand
-  //         )
-  //         let playerFourHandiScoreAv = calcPlayerScore(
-  //           sPlayerFour,
-  //           teamHandicap,
-  //           hHand
-  //         )
-
-  //         if (
-  //           isNaN(playerTwoHandiScoreAv) !== true &&
-  //           isNaN(playerFourHandiScoreAv) !== true
-  //         ) {
-  //           teamTwoScoreArr.push(
-  //             Math.min(playerTwoHandiScoreAv, playerFourHandiScoreAv)
-  //           )
-  //         } else {
-  //           teamTwoScoreArr.push("-")
-  //         }
-  //       }
-  //     } else {
-  //       for (let i = 0; i < playerTwoScore.length; i++) {
-  //         let sPlayerTwo = playerTwoScore[i]
-  //         let sPlayerFour = playerFourScore[i]
-  //         let hHand = courseHoles[i].handicap
-  //         let playerTwoHandiScore = calcPlayerScore(
-  //           sPlayerTwo,
-  //           pHandiPlayerTwo,
-  //           hHand
-  //         )
-  //         let playerFourHandiScore = calcPlayerScore(
-  //           sPlayerFour,
-  //           pHandiPlayerFour,
-  //           hHand
-  //         )
-
-  //         if (
-  //           isNaN(playerTwoHandiScore) !== true &&
-  //           isNaN(playerFourHandiScore) !== true &&
-  //           gameplay !== "two-ball"
-  //         ) {
-  //           teamTwoScoreArr.push(
-  //             Math.min(playerTwoHandiScore, playerFourHandiScore)
-  //           )
-  //         } else if (gameplay === "two-ball") {
-  //           teamTwoScoreArr.push(
-  //             Number(playerTwoHandiScore) + Number(playerFourHandiScore)
-  //           )
-  //         } else {
-  //           teamTwoScoreArr.push("-")
-  //         }
-  //       }
-  //     }
-  //   } else {
-  //     for (let i = 0; i < playerTwoScore.length; i++) {
-  //       let sPlayerTwo = playerTwoScore[i]
-  //       let hHand = courseHoles[i].handicap
-  //       let playerTwoHandiScore = calcPlayerScore(
-  //         sPlayerTwo,
-  //         pHandiPlayerTwo,
-  //         hHand
-  //       )
-
-  //       teamTwoScoreArr.push(playerTwoHandiScore)
-  //     }
-  //   }
-  //   return teamTwoScoreArr
-  // }
-  // const teamTwoScore = calcTeamTwoScore()
-
   function calcTeamScore(
     player1Param,
     player1HandicapParam,
     player2Param,
     player2HandicapParam
   ) {
-    // const teamOneScoreArr = []
-    // const teamTwoScoreArr = []
     const scoresArr = []
     const playerOne = player1Param
-    let playerOneScore = playersUpdateJson[`${playerOne}`]?.year[`${year}`].scores[`${courseMatch}`][`${holes}`] // [scores]
-    console.log('playerOneScore - ', playerOneScore);
+    let playerOneScore =
+      playersUpdateJson[`${playerOne}`]?.year[`${year}`].scores[
+        `${courseMatch}`
+      ][`${holes}`] // [scores]
     let playerOneHandicap = parseInt(player1HandicapParam)
-    const playerTwo =
-    player2Param !== undefined ? player2Param : undefined
-    let playerTwoScore = playersUpdateJson[`${playerTwo}`]?.year[`${year}`].scores[`${courseMatch}`][`${holes}`] // [scores]
+    const playerTwo = player2Param !== undefined ? player2Param : undefined
+    let playerTwoScore =
+      playersUpdateJson[`${playerTwo}`]?.year[`${year}`].scores[
+        `${courseMatch}`
+      ][`${holes}`] // [scores]
     // let playerTwoScore =
     //   player2Param !== undefined
     //     ? playerTwo.course[`${courseMatch}`]
@@ -482,7 +313,6 @@ function MatchUpdate({
       return "-"
     } else {
       if (holeHandicap <= playerHandicap && score > -10) {
-        // playerHandicap = Math.min(playerHandicap - 18, 0)
         playerHandicap = playerHandicap - 18
         score--
         return calcPlayerScore(score, playerHandicap, holeHandicap)
@@ -633,6 +463,8 @@ function MatchUpdate({
 
   function calcMatchPlayerScore(playerNum, playerNumInt, matchHandicap) {
     if (playerNum) {
+      const holeScores = playerNum?.year[`${year}`].scores?.[`${courseMatch}`]
+      const totalScore = [...holeScores[`${holes}`]]
       return (
         <div className={`match__playerScore match__${playerNumInt}`}>
           <div className="match__column--info align-left row-cell">
@@ -640,7 +472,7 @@ function MatchUpdate({
               {playerNumInt} ({matchHandicap})
             </span>
           </div>
-          {playerNum.course[`${courseMatch}`].map((score, i) => (
+          {totalScore.map((score, i) => (
             <div className="match__column" key={uuidv1()}>
               <div
                 className="match__score row-cell"
@@ -649,7 +481,7 @@ function MatchUpdate({
                   getHandicap(playerNumInt),
                   courseHoles[i].handicap
                 )}`}
-                data-matchOver={`${isMatchOver(i + 1)}`}
+                data-matchover={`${isMatchOver(i + 1)}`}
               >
                 <div className="match__line"></div>
                 {calcPlayerScore(
@@ -738,7 +570,7 @@ function MatchUpdate({
               <div
                 className="match__hole row-cell"
                 data-winner={`${calcHoleWinner(hole.number).team}`}
-                data-matchOver={`${isMatchOver(i + 1)}`}
+                data-matchover={`${isMatchOver(i + 1)}`}
                 id={hole.number}
               >
                 <div className="match__line"></div>

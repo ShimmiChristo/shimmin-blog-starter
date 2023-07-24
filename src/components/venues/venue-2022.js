@@ -42,7 +42,7 @@ function Venue2022() {
       <div className="container mb-6">
         <div className="row mb-3 mb-lg-5">
           <div className="col">
-            <div class="card bg-dark text-white">
+            <div className="card bg-dark text-white">
               <StaticImage
                 src="../../images/course-stoatin-brae/SB002-banner.jpg"
                 alt="hole 1"
@@ -52,12 +52,12 @@ function Venue2022() {
                 className="card-img"
                 style={bannerImg}
               />
-              <div class="card-img-overlay text-center d-flex flex-column justify-content-center">
-                <h3 class="h2 card-title text-white ">2022</h3>
-                <p class="h3 card-text text-white">
+              <div className="card-img-overlay text-center d-flex flex-column justify-content-center">
+                <h3 className="h2 card-title text-white ">2022</h3>
+                <p className="h3 card-text text-white">
                   Gull Lake View Golf Resort
                 </p>
-                <p class="card-text">Augusta, MI</p>
+                <p className="card-text">Augusta, MI</p>
               </div>
             </div>
           </div>

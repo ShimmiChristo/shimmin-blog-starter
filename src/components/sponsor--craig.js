@@ -11,15 +11,15 @@ function SponsorCraig() {
   return (
     <section>
       <div className="container">
-        <div class="card border text-center bg-light">
-          <div class="card-header">
-            <h5 class="card-title">
+        <div className="card border text-center bg-light">
+          <div className="card-header">
+            <h5 className="card-title">
               Craig Wells - Residential Mortgage Loan Officer
             </h5>
           </div>
-          <div class="card-body mx-auto">
-            <div class="container">
-              <div class="row mb-3">
+          <div className="card-body mx-auto">
+            <div className="container">
+              <div className="row mb-3">
                 <div className="col-12 col-lg-10 mb-3">
                   <p className="card-text text-start">
 
@@ -48,7 +48,7 @@ function SponsorCraig() {
                 cwells@michiganfirstmortgage.com
               </a>
             </p>
-            {/* <a href="#" class="btn btn-primary">
+            {/* <a href="#" className="btn btn-primary">
               Go somewhere
             </a> */}
             <div className="container">
@@ -58,7 +58,7 @@ function SponsorCraig() {
               />
             </div>
           </div>
-          {/* <div class="card-footer text-muted">2 days ago</div> */}
+          {/* <div className="card-footer text-muted">2 days ago</div> */}
         </div>
       </div>
     </section>

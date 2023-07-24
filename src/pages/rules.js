@@ -25,9 +25,9 @@ const TopicPage = ({ data, location }) => {
     <Layout location={location} title={siteTitle}>
       <SEO title="Rules" />
       <LandingPageHeader title="Rules" />
-      <div class="container">
-        <div class="row mb-3">
-          <div class="col-lg-8">
+      <div className="container">
+        <div className="row mb-3">
+          <div className="col-lg-8">
             <h2>Scoring</h2>
             <p>
               Each match is worth one point, with matches ending in a tie worth
@@ -63,8 +63,8 @@ const TopicPage = ({ data, location }) => {
             <br />
           </div>
         </div>
-        <div class="row mb-3">
-          <div class="col-lg-8">
+        <div className="row mb-3">
+          <div className="col-lg-8">
             <h2 className="mb-3">Formats</h2>
 
             <h3 className="h4">1 Best Ball</h3>

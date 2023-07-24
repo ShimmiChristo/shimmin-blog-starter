@@ -114,9 +114,11 @@ const TopicPage = ({ data, location }) => {
           player4="rj"
           player4Handicap="12"
         />
-        {/* <Match
+         <Match
           matchId="1.1 - Best Ball. Full handicap"
-          courseMatch="stoatinBrae1"
+          year="_2022"
+          courseMatch="stoatinBrae"
+          holes="front"
           matchHandicap="full"
           gameplay=""
           player1="curtis"
@@ -130,7 +132,9 @@ const TopicPage = ({ data, location }) => {
         />
         <Match
           matchId="1.1 - Best Ball. Full handicap"
-          courseMatch="stoatinBrae1"
+          year="_2022"
+          courseMatch="stoatinBrae"
+          holes="front"
           matchHandicap="full"
           gameplay=""
           player1="travis"
@@ -141,9 +145,9 @@ const TopicPage = ({ data, location }) => {
           player3Handicap="27"
           player4="evan"
           player4Handicap="27"
-        /> */}
+        />
       </MatchNavSection>
-      {/* <MatchNavSection
+      <MatchNavSection
         data-visible={pageHash === "#r1-two-best-ball" ? "true" : "false"}
         data-link-id="r1-two-best-ball"
       >
@@ -155,7 +159,9 @@ const TopicPage = ({ data, location }) => {
         </div>
         <Match
           matchId="1.2 - 2 Best Ball. Full handicap"
-          courseMatch="stoatinBrae2"
+          year="_2022"
+          courseMatch="stoatinBrae"
+          holes="back"
           matchHandicap="full"
           gameplay="two-ball"
           player1="matt"
@@ -167,7 +173,7 @@ const TopicPage = ({ data, location }) => {
           player4="dan"
           player4Handicap="23"
         />
-        <Match
+        {/* <Match
           matchId="1.2 - 2 Best Ball. Full handicap"
           courseMatch="stoatinBrae2"
           matchHandicap="full"
@@ -194,8 +200,9 @@ const TopicPage = ({ data, location }) => {
           player3Handicap="21"
           player4="craig"
           player4Handicap="21"
-        />
+        /> */}
       </MatchNavSection>
+      {/* 
       <MatchNavSection
         data-visible={pageHash === "#r2-bramble" ? "true" : "false"}
         data-link-id="r2-bramble"

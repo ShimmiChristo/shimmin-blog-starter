@@ -5,6 +5,7 @@
 */
 
 import React from "react"
+import { v1 as uuidv1 } from "uuid"
 import { Link } from "gatsby"
 import { StaticImage } from "gatsby-plugin-image"
 import { useSiteMetadata } from "../hooks/use-site-metadata"
@@ -75,7 +76,7 @@ function HeaderBootstrap(location) {
           </div>
 
           <Nav className="container px-0 d-none d-lg-flex justify-content-between align-items-center">
-            <div class="d-flex align-items-center">
+            <div className="d-flex align-items-center">
               <Link to="/">
                 <span className="h2 pe-3">{logoImg}</span>
               </Link>
@@ -85,11 +86,11 @@ function HeaderBootstrap(location) {
                     as="div"
                     title={navMenu.name}
                     id="basic-nav-dropdown"
-                    key={navMenu.name}
+                    key={uuidv1()}
                     className="me-2"
                   >
                     {navMenu.subnav.map(subNavMenu => (
-                      <NavDropdown.Item as="div" key={subNavMenu.name}>
+                      <NavDropdown.Item as="div" key={uuidv1()}>
                         <Link className="d-block" to={subNavMenu.link}>
                           {subNavMenu.name}
                         </Link>
@@ -133,10 +134,10 @@ function HeaderBootstrap(location) {
                       as="div"
                       title={navMenu.name}
                       id="basic-nav-dropdown"
-                      key={navMenu.name}
+                      key={uuidv1()}
                     >
                       {navMenu.subnav.map(subNavMenu => (
-                        <NavDropdown.Item as="div" key={subNavMenu.name}>
+                        <NavDropdown.Item as="div" key={uuidv1()}>
                           <Link className="d-block" to={subNavMenu.link}>
                             {subNavMenu.name}
                           </Link>
