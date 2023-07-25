@@ -7,6 +7,7 @@ import styled from "styled-components"
 import "../styles/match.css"
 import { FaChevronDown, FaTimes } from "react-icons/fa"
 import { calcTeamScore } from "../helpers/calcTeamScore"
+import { calcPlayerScore, getMatchHandicap } from "../helpers/handicapHelper"
 
 const CloseBtn = styled.span`
   display: block;
@@ -323,23 +324,23 @@ function MatchUpdate({
     }
   }
 
-  function calcPlayerScore(s, pHand, hHand) {
-    let score = s
-    let playerHandicap = pHand
-    const holeHandicap = hHand
+  // function calcPlayerScore(s, pHand, hHand) {
+  //   let score = s
+  //   let playerHandicap = pHand
+  //   const holeHandicap = hHand
 
-    if (score > "20") {
-      return "-"
-    } else {
-      if (holeHandicap <= playerHandicap && score > -10) {
-        playerHandicap = playerHandicap - 18
-        score--
-        return calcPlayerScore(score, playerHandicap, holeHandicap)
-      } else {
-        return score
-      }
-    }
-  }
+  //   if (score > "20") {
+  //     return "-"
+  //   } else {
+  //     if (holeHandicap <= playerHandicap && score > -10) {
+  //       playerHandicap = playerHandicap - 18
+  //       score--
+  //       return calcPlayerScore(score, playerHandicap, holeHandicap)
+  //     } else {
+  //       return score
+  //     }
+  //   }
+  // }
 
   function calcHoleWinner(hole) {
     var holeIndex
@@ -507,7 +508,7 @@ function MatchUpdate({
                 className="match__score row-cell"
                 data-score={`${calcPlayerScore(
                   score,
-                  getHandicap(playerNumInt),
+                  getMatchHandicap(playerNumInt),
                   courseHoles[i].handicap
                 )}`}
                 data-matchover={`${isMatchOver(i + 1)}`}
@@ -515,7 +516,7 @@ function MatchUpdate({
                 <div className="match__line"></div>
                 {calcPlayerScore(
                   score,
-                  getHandicap(playerNumInt),
+                  getMatchHandicap(playerNumInt),
                   courseHoles[i].handicap
                 )}
                 <sup>{score > 20 ? "" : score}</sup>
@@ -525,6 +526,27 @@ function MatchUpdate({
         </div>
       )
     }
+  }
+
+  function displayTeamHandicap(gameplay, p1, p1HC, p2, p2HC) {
+    if (gameplay === "scramble") {
+      return (
+        <div className="flex-basis-100">
+          {" "}
+          ({getMatchHandicap(gameplay, p1, p1HC, p2, p2HC)})
+        </div>
+      )
+    } else {
+      return ""
+    }
+    // player4 && matchHandicap === "average" ? (
+    //   <div className="flex-basis-100">
+    //     {" "}
+    //     ({(playerTwoHand + playerFourHand) / 2})
+    //   </div>
+    // ) : (
+    //   ""
+    // )
   }
 
   return (
@@ -553,13 +575,12 @@ function MatchUpdate({
           ) : (
             ""
           )}
-          {player3 && matchHandicap === "average" ? (
-            <div className="flex-basis-100">
-              {" "}
-              ({(playerOneHand + playerThreeHand) / 2})
-            </div>
-          ) : (
-            ""
+          {displayTeamHandicap(
+            gameplay,
+            player1,
+            playerOneHand,
+            player3,
+            playerThreeHand
           )}
         </div>
 
@@ -576,13 +597,12 @@ function MatchUpdate({
           ) : (
             ""
           )}
-          {player4 && matchHandicap === "average" ? (
-            <div className="flex-basis-100">
-              {" "}
-              ({(playerTwoHand + playerFourHand) / 2})
-            </div>
-          ) : (
-            ""
+          {displayTeamHandicap(
+            gameplay,
+            player2,
+            playerTwoHand,
+            player4,
+            playerFourHand
           )}
         </div>
       </div>

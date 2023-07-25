@@ -64,7 +64,6 @@ function calcTeamScore(
     let playerOneHandicapScore = calcPlayerScore(
       sPlayerOne,
       getMatchHandicap(
-        matchHandicap,
         gameplay,
         player1Param,
         playerOneHandicap,
@@ -78,7 +77,6 @@ function calcTeamScore(
       var playerTwoHandicapScore = calcPlayerScore(
         sPlayerTwo,
         getMatchHandicap(
-          matchHandicap,
           gameplay,
           player1Param,
           playerOneHandicap,

@@ -65,53 +65,103 @@ const TopicPage = ({ data, location }) => {
         </div>
         <div className="row mb-3">
           <div className="col-lg-8">
-            <h2 className="mb-3">Formats</h2>
+            <h2 className="mb-3">Game Formats</h2>
 
-            <h3 className="h4">1 Best Ball</h3>
+            <h3 className="h4 mt-4 pt-1">1 Best Ball/Four-Ball</h3>
             <p>
-              Each player plays their own ball, whoever has the better
-              handicapped score of the 2 will be score used for that hole.
+              In 1 best ball/four-ball, each member of a two-man team plays his
+              own ball, so four balls are in play on every hole. Each team
+              counts the lowest of its two scores on each hole, and the team
+              whose player has the lowest score wins the hole. If the low scores
+              are tied, the hole is halved.
             </p>
+            <p>Handicap allowance is 90%</p>
 
-            <h3 className="h4">2 Best Ball</h3>
+            <h3 className="h4 mt-4 pt-1">2 Best Ball/Four-Ball Total</h3>
             <p>
-              Each player plays their own ball and combine both players net
-              score.
+              In 2 best ball/four-ball, each member of a two-man team plays his
+              own ball, so four balls are in play on every hole. Each team
+              counts the total of its two scores on each hole, and the team
+              whose player has the lowest total score wins the hole. If the low
+              scores are tied, the hole is halved.
             </p>
+            <p>Handicap allowance is 90%</p>
 
-            <h3 className="h4">Scramble</h3>
+            <h3 className="h4 mt-4 pt-1">Scramble</h3>
             <p>
-              Normal scramble with the 2 players, the average of the 2 players'
-              handicaps will be used. Ex. an 18 with a 10 would be a 14.
+              A scramble is played with two, three or four-person teams. Each
+              player plays from the teeing area on each hole, one of the tee
+              shots is selected and all the players play their second shots from
+              that spot. One of the second shots is then selected, and all
+              players play their third shots from that spot, and so on until the
+              ball is holed.
             </p>
+            <p>Handicap allowance is 35% low handicap + 15% high handicap</p>
 
-            <h3 className="h4">Alternate</h3>
+            <h3 className="h4 mt-4 pt-1">Alternate/Foursomes</h3>
             <p>
-              One ball is used. Players alternate between shots. Ex - Whoever's
-              tee shot is not being used will hit the second shot. Alternate
-              until the ball is holed. The average of the 2 players' handicaps
-              will be used.
+              In alternate/foursomes, each two-man team plays one ball per hole
+              with the players taking turns until each hole is complete. Players
+              alternate hitting tee shots, with one leading off on odd-numbered
+              holes, and the other hitting first on even-numbered holes. The
+              team with the low score on each hole wins that hole. If their
+              scores are tied, the hole is halved.
             </p>
+            <p>Handicap allowance is 50% of combined team handicap</p>
 
-            <h3 className="h4">Bramble</h3>
+            <h3 className="h4 mt-4 pt-1">Bramble/Shamble/1 Ball Bramble</h3>
             <p>
-              Both players tee off. Players choose the better tee shot then
-              continue the hole with their own ball/score. Both players' scores
-              will be used for the match play.
+              Each player plays from the teeing area on each hole, one of the
+              tee shots is selected and all the players play their second shots
+              from that spot. Each member of the team plays his own ball from
+              there until each ball is holed. Each team counts the lowest of its
+              two scores on each hole, and the team whose player has the lowest
+              score wins the hole. If the low scores are tied, the hole is
+              halved.
             </p>
+            <p>Handicap allowance is 85% of combined team handicap</p>
 
-            <h3 className="h4">Bramble Alternate</h3>
+            <h3 className="h4 mt-4 pt-1">2 Ball Bramble/2 Ball Shamble</h3>
             <p>
-              Both players tee off. Whoever's tee shot is not being used will
-              hit the second shot. Alternate until the ball is holed. The
-              average of the 2 players' handicaps will be used.
+              Each player plays from the teeing area on each hole, one of the
+              tee shots is selected and all the players play their second shots
+              from that spot. Each member of the team plays his own ball from
+              there until each ball is holed. Each team counts the total of the
+              two scores on each hole, and the team with the lowest score wins
+              the hole. If the low scores are tied, the hole is halved.
             </p>
+            <p>Handicap allowance is 85% of combined team handicap</p>
 
-            <h3 className="h4">Singles</h3>
+            <h3 className="h4 mt-4 pt-1">Bramble Alternate/Greensomes</h3>
+            <p>
+              Bramble alternate/greensomes is a variation of Foursomes where
+              both partners play from the teeing area and one of the two tee
+              shots is selected. The partner whose tee shot was not selected
+              then plays the next stroke and each subsequent stroke is made in
+              alternating order until the ball is holed. For example, if the tee
+              shot of player A is selected at the first hole, Player B will play
+              the next stroke, then Player A plays and so on until the ball is
+              holed. Both players then play from the teeing area of the second
+              hole and the process is repeated.
+            </p>
+            <p>Handicap allowance is 60% low handicap + 40% high handicap</p>
+
+            <h3 className="h4 mt-4 pt-1">Pinehurst/Chapman</h3>
+            <p>
+              Pinehurst Foursomes where both players tee off, then they switch
+              their play of golf balls, meaning Player A plays Player B’s ball,
+              and Player B plays Player A’s ball. After the second shots, they
+              then select which ball they will continue to play, and that ball
+              is then played by alternate-shot until holed.
+            </p>
+            <p>Handicap allowance is 60% low handicap + 40% high handicap</p>
+
+            <h3 className="h4 mt-4 pt-1">Singles</h3>
             <p>
               The player with the lower score on each hole wins that hole. If
               their scores are tied, the hole is halved.
             </p>
+            <p>Handicap allowance is 100%</p>
           </div>
         </div>
       </div>
