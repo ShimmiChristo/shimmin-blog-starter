@@ -42,7 +42,7 @@ const Section = styled.section`
   border-radius: 0.7rem;
   overflow: hidden;
   max-width: 1000px;
-  margin: 2rem auto 2rem;
+  margin: 1rem auto 2rem;
   transition: max-height 0.3s ease-in-out;
   max-height: 200px;
   position: relative;
@@ -52,7 +52,7 @@ const Section = styled.section`
   }
   ${OpenBtn} {
     display: block;
-    width: 100%;
+    width: 90%;
     text-align: center;
   }
   .match__header {
@@ -75,6 +75,7 @@ const Section = styled.section`
   }
   .match__card-container {
     overflow-y: scroll;
+    padding-bottom: 1rem;
   }
 
   @media (max-width: 768px) {
@@ -82,8 +83,15 @@ const Section = styled.section`
       &[data-handicap="average"] {
         max-height: 380px;
       }
+      .match__header {
+        padding-bottom: 0;
+      }
+      .match__card-container {
+        padding: 0;
+        height: 0;
+      }
     }
-    max-height: 320px;
+    max-height: 300px;
     padding: 2rem 1rem;
   }
   &:hover {
@@ -576,10 +584,10 @@ function MatchUpdate({
       data-handicap={`${matchHandicap}`}
       className={`match__container ${sectionHeight}`}
     >
-      <CloseBtn onClick={matchCardClick}>
+      <CloseBtn onClick={matchCardClick} tabIndex="0">
         <FaTimes size={"1.5em"} />
       </CloseBtn>
-      <OpenBtn onClick={matchCardClick}>
+      <OpenBtn onClick={matchCardClick} tabIndex="0">
         <FaChevronDown size={"1.5em"} />
       </OpenBtn>
       {/* <div className="course__info">
