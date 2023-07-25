@@ -1,6 +1,180 @@
 [
   {
     "course": {
+      "boyneHighlandsArthurHills": {
+        "name": "Arthur Hills at Boyne Highlands",
+        "link": "https://boynegolf.com/the-highlands/arthur-hills",
+        "holes": [
+          {
+            "number": 1,
+            "tees": {
+              "purple": 395
+            },
+            "handicap": 9,
+            "par": 4
+          },
+          {
+            "number": 2,
+            "tees": {
+              "purple": 341
+            },
+            "handicap": 17,
+            "par": 4
+          },
+          {
+            "number": 3,
+            "tees": {
+              "purple": 529
+            },
+            "handicap": 5,
+            "par": 5
+          },
+          {
+            "number": 4,
+            "tees": {
+              "purple": 386
+            },
+            "handicap": 7,
+            "par": 4
+          },
+          {
+            "number": 5,
+            "tees": {
+              "purple": 456
+            },
+            "handicap": 1,
+            "par": 4
+          },
+          {
+            "number": 6,
+            "tees": {
+              "purple": 547
+            },
+            "handicap": 13,
+            "par": 5
+          },
+          {
+            "number": 7,
+            "tees": {
+              "purple": 156
+            },
+            "handicap": 15,
+            "par": 3
+          },
+          {
+            "number": 8,
+            "tees": {
+              "purple": 397
+            },
+            "handicap": 3,
+            "par": 4
+          },
+          {
+            "number": 9,
+            "tees": {
+              "purple": 178
+            },
+            "handicap": 11,
+            "par": 3
+          },
+          {
+            "number": 10,
+            "tees": {
+              "purple": 325
+            },
+            "handicap": 18,
+            "par": 4
+          },
+          {
+            "number": 11,
+            "tees": {
+              "purple": 545
+            },
+            "handicap": 4,
+            "par": 5
+          },
+          {
+            "number": 12,
+            "tees": {
+              "purple": 375
+            },
+            "handicap": 8,
+            "par": 4
+          },
+          {
+            "number": 13,
+            "tees": {
+              "purple": 539
+            },
+            "handicap": 14,
+            "par": 5
+          },
+          {
+            "number": 14,
+            "tees": {
+              "purple": 176
+            },
+            "handicap": 12,
+            "par": 3
+          },
+          {
+            "number": 15,
+            "tees": {
+              "purple": 427
+            },
+            "handicap": 2,
+            "par": 4
+          },
+          {
+            "number": 16,
+            "tees": {
+              "purple": 188
+            },
+            "handicap": 16,
+            "par": 3
+          },
+          {
+            "number": 17,
+            "tees": {
+              "purple": 405
+            },
+            "handicap": 6,
+            "par": 4
+          },
+          {
+            "number": 18,
+            "tees": {
+              "purple": 554
+            },
+            "handicap": 10,
+            "par": 5
+          }
+        ],
+        "totals": {
+          "tees": {
+            "purple": {
+              "out": {
+                "yardage": 3385,
+                "par": 36,
+                "index": 36.4,
+                "slope": 143.0
+              },
+              "in": {
+                "yardage": 3534,
+                "par": 37,
+                "index": 36.9,
+                "slope": 137.0
+              },
+              "total": {
+                "yardage": 6919,
+                "par": 73,
+                "index": 73.3,
+                "slope": 140
+              }
+            }
+          }
+        }
+      },
       "tribute1": {
         "name": "The Tribute at Otsego Resort",
         "link": "https://www.otsegoclub.com/golf/the-tribute/",
@@ -85,7 +259,6 @@
           "slope": 65
         }
       },
-
       "tribute2": {
         "name": "The Tribute at Otsego Resort",
         "link": "https://www.otsegoclub.com/golf/the-tribute/",
@@ -170,7 +343,6 @@
           "slope": 65
         }
       },
-
       "classic1": {
         "name": "The Classic at Otsego Resort",
         "link": "https://www.otsegoclub.com/golf/the-classic/",
@@ -339,7 +511,6 @@
           "slope": 60.5
         }
       },
-
       "gaylordGolfClub1": {
         "name": "Gaylord Golf Club",
         "link": "https://www.gaylordcountryclub.com/",
@@ -506,6 +677,342 @@
           "par": 36,
           "index": 35.05,
           "slope": 67.5
+        }
+      },
+      "gullLakeEast1": {
+        "name": "Gull Lake East",
+        "link": "https://gulllakeview.com/golf/golf-courses/gull-lake-view-east/",
+        "holes": [
+          {
+            "number": 1,
+            "tees": {
+              "green": 344
+            },
+            "handicap": 13,
+            "par": 4
+          },
+          {
+            "number": 2,
+            "tees": {
+              "green": 159
+            },
+            "handicap": 9,
+            "par": 3
+          },
+          {
+            "number": 3,
+            "tees": {
+              "green": 353
+            },
+            "handicap": 5,
+            "par": 4
+          },
+          {
+            "number": 4,
+            "tees": {
+              "green": 429
+            },
+            "handicap": 1,
+            "par": 4
+          },
+          {
+            "number": 5,
+            "tees": {
+              "green": 332
+            },
+            "handicap": 15,
+            "par": 4
+          },
+          {
+            "number": 6,
+            "tees": {
+              "green": 154
+            },
+            "handicap": 11,
+            "par": 3
+          },
+          {
+            "number": 7,
+            "tees": {
+              "green": 391
+            },
+            "handicap": 3,
+            "par": 4
+          },
+          {
+            "number": 8,
+            "tees": {
+              "green": 341
+            },
+            "handicap": 7,
+            "par": 4
+          },
+          {
+            "number": 9,
+            "tees": {
+              "green": 506
+            },
+            "handicap": 17,
+            "par": 5
+          }
+        ],
+        "totals": {
+          "yardage": 3009,
+          "par": 35,
+          "index": 34.45,
+          "slope": 62
+        }
+      },
+      "gullLakeEast2": {
+        "name": "Gull Lake East",
+        "link": "https://gulllakeview.com/golf/golf-courses/gull-lake-view-east/",
+        "holes": [
+          {
+            "number": 10,
+            "tees": {
+              "green": 557
+            },
+            "handicap": 14,
+            "par": 5
+          },
+          {
+            "number": 11,
+            "tees": {
+              "green": 171
+            },
+            "handicap": 12,
+            "par": 3
+          },
+          {
+            "number": 12,
+            "tees": {
+              "green": 350
+            },
+            "handicap": 6,
+            "par": 4
+          },
+          {
+            "number": 13,
+            "tees": {
+              "green": 349
+            },
+            "handicap": 8,
+            "par": 4
+          },
+          {
+            "number": 14,
+            "tees": {
+              "green": 346
+            },
+            "handicap": 10,
+            "par": 4
+          },
+          {
+            "number": 15,
+            "tees": {
+              "green": 137
+            },
+            "handicap": 16,
+            "par": 3
+          },
+          {
+            "number": 16,
+            "tees": {
+              "green": 302
+            },
+            "handicap": 18,
+            "par": 4
+          },
+          {
+            "number": 17,
+            "tees": {
+              "green": 385
+            },
+            "handicap": 4,
+            "par": 4
+          },
+          {
+            "number": 18,
+            "tees": {
+              "green": 426
+            },
+            "handicap": 2,
+            "par": 4
+          }
+        ],
+        "totals": {
+          "yardage": 3023,
+          "par": 35,
+          "index": 34.45,
+          "slope": 62
+        }
+      },
+      "gullLakeWest1": {
+        "name": "Gull Lake West",
+        "link": "https://gulllakeview.com/golf/golf-courses/gull-lake-view-west/",
+        "holes": [
+          {
+            "number": 1,
+            "tees": {
+              "green": 373
+            },
+            "handicap": 5,
+            "par": 4
+          },
+          {
+            "number": 2,
+            "tees": {
+              "green": 151
+            },
+            "handicap": 11,
+            "par": 3
+          },
+          {
+            "number": 3,
+            "tees": {
+              "green": 374
+            },
+            "handicap": 7,
+            "par": 4
+          },
+          {
+            "number": 4,
+            "tees": {
+              "green": 313
+            },
+            "handicap": 17,
+            "par": 4
+          },
+          {
+            "number": 5,
+            "tees": {
+              "green": 502
+            },
+            "handicap": 15,
+            "par": 5
+          },
+          {
+            "number": 6,
+            "tees": {
+              "green": 218
+            },
+            "handicap": 1,
+            "par": 3
+          },
+          {
+            "number": 7,
+            "tees": {
+              "green": 350
+            },
+            "handicap": 13,
+            "par": 4
+          },
+          {
+            "number": 8,
+            "tees": {
+              "green": 382
+            },
+            "handicap": 9,
+            "par": 4
+          },
+          {
+            "number": 9,
+            "tees": {
+              "green": 579
+            },
+            "handicap": 3,
+            "par": 5
+          }
+        ],
+        "totals": {
+          "yardage": 3242,
+          "par": 36,
+          "index": 35.3,
+          "slope": 63
+        }
+      },
+      "gullLakeWest2": {
+        "name": "Gull Lake West",
+        "link": "https://gulllakeview.com/golf/golf-courses/gull-lake-view-west/",
+        "holes": [
+          {
+            "number": 10,
+            "tees": {
+              "green": 557
+            },
+            "handicap": 4,
+            "par": 4
+          },
+          {
+            "number": 11,
+            "tees": {
+              "green": 171
+            },
+            "handicap": 8,
+            "par": 3
+          },
+          {
+            "number": 12,
+            "tees": {
+              "green": 350
+            },
+            "handicap": 6,
+            "par": 4
+          },
+          {
+            "number": 13,
+            "tees": {
+              "green": 349
+            },
+            "handicap": 14,
+            "par": 3
+          },
+          {
+            "number": 14,
+            "tees": {
+              "green": 346
+            },
+            "handicap": 2,
+            "par": 4
+          },
+          {
+            "number": 15,
+            "tees": {
+              "green": 137
+            },
+            "handicap": 12,
+            "par": 4
+          },
+          {
+            "number": 16,
+            "tees": {
+              "green": 302
+            },
+            "handicap": 18,
+            "par": 4
+          },
+          {
+            "number": 17,
+            "tees": {
+              "green": 385
+            },
+            "handicap": 10,
+            "par": 4
+          },
+          {
+            "number": 18,
+            "tees": {
+              "green": 426
+            },
+            "handicap": 16,
+            "par": 5
+          }
+        ],
+        "totals": {
+          "yardage": 3101,
+          "par": 36,
+          "index": 35.3,
+          "slope": 63
         }
       },
       "stoatinBrae1": {
@@ -930,7 +1437,6 @@
           "slope": 65
         }
       },
-
       "stoneHedgeSouth2": {
         "name": "Stonehedge South",
         "link": "https://gulllakeview.com/golf/golf-courses/stonehedge-south/",
@@ -1013,346 +1519,6 @@
           "par": 36,
           "index": 35.4,
           "slope": 65
-        }
-      },
-
-      "gullLakeEast1": {
-        "name": "Gull Lake East",
-        "link": "https://gulllakeview.com/golf/golf-courses/gull-lake-view-east/",
-        "holes": [
-          {
-            "number": 1,
-            "tees": {
-              "green": 344
-            },
-            "handicap": 13,
-            "par": 4
-          },
-          {
-            "number": 2,
-            "tees": {
-              "green": 159
-            },
-            "handicap": 9,
-            "par": 3
-          },
-          {
-            "number": 3,
-            "tees": {
-              "green": 353
-            },
-            "handicap": 5,
-            "par": 4
-          },
-          {
-            "number": 4,
-            "tees": {
-              "green": 429
-            },
-            "handicap": 1,
-            "par": 4
-          },
-          {
-            "number": 5,
-            "tees": {
-              "green": 332
-            },
-            "handicap": 15,
-            "par": 4
-          },
-          {
-            "number": 6,
-            "tees": {
-              "green": 154
-            },
-            "handicap": 11,
-            "par": 3
-          },
-          {
-            "number": 7,
-            "tees": {
-              "green": 391
-            },
-            "handicap": 3,
-            "par": 4
-          },
-          {
-            "number": 8,
-            "tees": {
-              "green": 341
-            },
-            "handicap": 7,
-            "par": 4
-          },
-          {
-            "number": 9,
-            "tees": {
-              "green": 506
-            },
-            "handicap": 17,
-            "par": 5
-          }
-        ],
-        "totals": {
-          "yardage": 3009,
-          "par": 35,
-          "index": 34.45,
-          "slope": 62
-        }
-      },
-
-      "gullLakeEast2": {
-        "name": "Gull Lake East",
-        "link": "https://gulllakeview.com/golf/golf-courses/gull-lake-view-east/",
-        "holes": [
-          {
-            "number": 10,
-            "tees": {
-              "green": 557
-            },
-            "handicap": 14,
-            "par": 5
-          },
-          {
-            "number": 11,
-            "tees": {
-              "green": 171
-            },
-            "handicap": 12,
-            "par": 3
-          },
-          {
-            "number": 12,
-            "tees": {
-              "green": 350
-            },
-            "handicap": 6,
-            "par": 4
-          },
-          {
-            "number": 13,
-            "tees": {
-              "green": 349
-            },
-            "handicap": 8,
-            "par": 4
-          },
-          {
-            "number": 14,
-            "tees": {
-              "green": 346
-            },
-            "handicap": 10,
-            "par": 4
-          },
-          {
-            "number": 15,
-            "tees": {
-              "green": 137
-            },
-            "handicap": 16,
-            "par": 3
-          },
-          {
-            "number": 16,
-            "tees": {
-              "green": 302
-            },
-            "handicap": 18,
-            "par": 4
-          },
-          {
-            "number": 17,
-            "tees": {
-              "green": 385
-            },
-            "handicap": 4,
-            "par": 4
-          },
-          {
-            "number": 18,
-            "tees": {
-              "green": 426
-            },
-            "handicap": 2,
-            "par": 4
-          }
-        ],
-        "totals": {
-          "yardage": 3023,
-          "par": 35,
-          "index": 34.45,
-          "slope": 62
-        }
-      },
-
-      "gullLakeWest1": {
-        "name": "Gull Lake West",
-        "link": "https://gulllakeview.com/golf/golf-courses/gull-lake-view-west/",
-        "holes": [
-          {
-            "number": 1,
-            "tees": {
-              "green": 373
-            },
-            "handicap": 5,
-            "par": 4
-          },
-          {
-            "number": 2,
-            "tees": {
-              "green": 151
-            },
-            "handicap": 11,
-            "par": 3
-          },
-          {
-            "number": 3,
-            "tees": {
-              "green": 374
-            },
-            "handicap": 7,
-            "par": 4
-          },
-          {
-            "number": 4,
-            "tees": {
-              "green": 313
-            },
-            "handicap": 17,
-            "par": 4
-          },
-          {
-            "number": 5,
-            "tees": {
-              "green": 502
-            },
-            "handicap": 15,
-            "par": 5
-          },
-          {
-            "number": 6,
-            "tees": {
-              "green": 218
-            },
-            "handicap": 1,
-            "par": 3
-          },
-          {
-            "number": 7,
-            "tees": {
-              "green": 350
-            },
-            "handicap": 13,
-            "par": 4
-          },
-          {
-            "number": 8,
-            "tees": {
-              "green": 382
-            },
-            "handicap": 9,
-            "par": 4
-          },
-          {
-            "number": 9,
-            "tees": {
-              "green": 579
-            },
-            "handicap": 3,
-            "par": 5
-          }
-        ],
-        "totals": {
-          "yardage": 3242,
-          "par": 36,
-          "index": 35.3,
-          "slope": 63
-        }
-      },
-
-      "gullLakeWest2": {
-        "name": "Gull Lake West",
-        "link": "https://gulllakeview.com/golf/golf-courses/gull-lake-view-west/",
-        "holes": [
-          {
-            "number": 10,
-            "tees": {
-              "green": 557
-            },
-            "handicap": 4,
-            "par": 4
-          },
-          {
-            "number": 11,
-            "tees": {
-              "green": 171
-            },
-            "handicap": 8,
-            "par": 3
-          },
-          {
-            "number": 12,
-            "tees": {
-              "green": 350
-            },
-            "handicap": 6,
-            "par": 4
-          },
-          {
-            "number": 13,
-            "tees": {
-              "green": 349
-            },
-            "handicap": 14,
-            "par": 3
-          },
-          {
-            "number": 14,
-            "tees": {
-              "green": 346
-            },
-            "handicap": 2,
-            "par": 4
-          },
-          {
-            "number": 15,
-            "tees": {
-              "green": 137
-            },
-            "handicap": 12,
-            "par": 4
-          },
-          {
-            "number": 16,
-            "tees": {
-              "green": 302
-            },
-            "handicap": 18,
-            "par": 4
-          },
-          {
-            "number": 17,
-            "tees": {
-              "green": 385
-            },
-            "handicap": 10,
-            "par": 4
-          },
-          {
-            "number": 18,
-            "tees": {
-              "green": 426
-            },
-            "handicap": 16,
-            "par": 5
-          }
-        ],
-        "totals": {
-          "yardage": 3101,
-          "par": 36,
-          "index": 35.3,
-          "slope": 63
         }
       }
     }

@@ -4,60 +4,8 @@ import { graphql } from "gatsby"
 export const Craig = graphql`
   fragment CraigFragment on PlayersUpdateJsonCraig {
     name
+    handicap
     year {
-      _2021 {
-        id
-        captain
-        handicap
-        team
-        points {
-          game
-          id
-          losses
-          ties
-          wins
-        }
-        scores {
-          tribute {
-            frontHandicap
-            front
-            course
-            backHandicap
-            back
-          }
-          jonesMasterPiece {
-            course
-          }
-          gaylordGolfClub {
-            frontHandicap
-            front
-            course
-            backHandicap
-            back
-          }
-          classic {
-            frontHandicap
-            front
-            course
-            back
-            backHandicap
-          }
-        }
-        records {
-          partners {
-            name
-            wins
-            ties
-            losses
-          }
-          opponents {
-            name
-            wins
-            ties
-            losses
-          }
-        }
-      }
       _2022 {
         id
         handicap
@@ -98,6 +46,59 @@ export const Craig = graphql`
             course
             front
             frontHandicap
+          }
+        }
+        records {
+          partners {
+            name
+            wins
+            ties
+            losses
+          }
+          opponents {
+            name
+            wins
+            ties
+            losses
+          }
+        }
+      }
+      _2021 {
+        id
+        captain
+        handicap
+        team
+        points {
+          game
+          id
+          losses
+          ties
+          wins
+        }
+        scores {
+          tribute {
+            frontHandicap
+            front
+            course
+            backHandicap
+            back
+          }
+          jonesMasterPiece {
+            course
+          }
+          gaylordGolfClub {
+            frontHandicap
+            front
+            course
+            backHandicap
+            back
+          }
+          classic {
+            frontHandicap
+            front
+            course
+            back
+            backHandicap
           }
         }
         records {

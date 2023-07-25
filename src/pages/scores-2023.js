@@ -1,5 +1,5 @@
 import React from "react"
-import { Link } from "gatsby"
+import PropTypes from "prop-types"
 import styled from "styled-components"
 import { useSiteMetadata } from "../hooks/use-site-metadata"
 import { CourseInfo } from "../hooks/get-course-info"
@@ -12,7 +12,7 @@ import MatchScore from "../components/match-score"
 import MatchNav from "../components/match-nav"
 import "../styles/match.css"
 
-const TopicPage = ({ data, location }) => {
+const TopicPage = ({ location }) => {
   const { title } = useSiteMetadata()
   const { course } = CourseInfo()
 
@@ -39,7 +39,7 @@ const TopicPage = ({ data, location }) => {
   return (
     <Layout location={location} title={siteTitle}>
       <SEO title="2023 Scores" />
-      <LandingPageHeader title="2022 Scores" />
+      <LandingPageHeader title="2023 Scores" />
       <MatchNav
         location={location}
         titles={[
@@ -93,58 +93,58 @@ const TopicPage = ({ data, location }) => {
         data-link-id="r1-best-ball"
       >
         <div className="course__info">
-          <span>Friday Oct 14, 8:30 AM at </span>
-          <a href={course["stoatinBrae1"].link}>
-            {course[`stoatinBrae1`].name}
+          <span>Friday Sept 22, 8:30 AM at </span>
+          <a href={course["boyneHighlandsArthurHills"].link}>
+            {course[`boyneHighlandsArthurHills`].name}
           </a>
         </div>
         <Match
           matchId="1.1 - Best Ball. Full handicap"
-          year="_2022"
-          courseMatch="stoatinBrae"
+          year="_2023"
+          courseMatch="boyneHighlandsArthurHills"
           holes="front"
-          matchHandicap="full"
+          matchHandicap="average"
           gameplay=""
-          player1="matt"
-          player1Handicap="6"
+          player1="gordon"
           player2="dylan"
-          player2Handicap="0"
-          player3="gordon"
-          player3Handicap="12"
-          player4="rj"
-          player4Handicap="12"
+          player3="derek"
+          player4="dan"
+          player1MatchHandicap=""
+          player2MatchHandicap=""
+          player3MatchHandicap=""
+          player4MatchHandicap=""
         />
-         <Match
+        <Match
           matchId="1.1 - Best Ball. Full handicap"
-          year="_2022"
-          courseMatch="stoatinBrae"
+          year="_2023"
+          courseMatch="boyneHighlandsArthurHills"
           holes="front"
           matchHandicap="full"
           gameplay=""
           player1="curtis"
-          player1Handicap="23"
-          player2="craig"
-          player2Handicap="21"
-          player3="jake"
-          player3Handicap="21"
-          player4="dan"
-          player4Handicap="23"
+          player2="rj"
+          player3="travis"
+          player4="craig"
+          player1MatchHandicap=""
+          player2MatchHandicap=""
+          player3MatchHandicap=""
+          player4MatchHandicap=""
         />
         <Match
           matchId="1.1 - Best Ball. Full handicap"
-          year="_2022"
-          courseMatch="stoatinBrae"
+          year="_2023"
+          courseMatch="boyneHighlandsArthurHills"
           holes="front"
           matchHandicap="full"
           gameplay=""
-          player1="travis"
-          player1Handicap="21"
+          player1="matt"
           player2="cam"
-          player2Handicap="21"
-          player3="derek"
-          player3Handicap="27"
+          player3="chris"
           player4="evan"
-          player4Handicap="27"
+          player1MatchHandicap=""
+          player2MatchHandicap=""
+          player3MatchHandicap=""
+          player4MatchHandicap=""
         />
       </MatchNavSection>
       <MatchNavSection
@@ -152,55 +152,59 @@ const TopicPage = ({ data, location }) => {
         data-link-id="r1-two-best-ball"
       >
         <div className="course__info">
-          <span>Friday Oct 14, 8:30 AM at </span>
-          <a href={course["stoatinBrae2"].link}>
-            {course[`stoatinBrae2`].name}
+          <span>Friday Sept 22, 11:00 AM at </span>
+          <a href={course["boyneHighlandsArthurHills"].link}>
+            {course[`boyneHighlandsArthurHills`].name}
           </a>
         </div>
         <Match
           matchId="1.2 - 2 Best Ball. Full handicap"
-          year="_2022"
-          courseMatch="stoatinBrae"
+          year="_2023"
+          courseMatch="boyneHighlandsArthurHills"
           holes="back"
           matchHandicap="full"
-          gameplay="two-ball"
-          player1="matt"
-          player1Handicap="6"
-          player2="dylan"
-          player2Handicap="0"
-          player3="curtis"
-          player3Handicap="23"
-          player4="dan"
-          player4Handicap="23"
-        />
-        {/* <Match
-          matchId="1.2 - 2 Best Ball. Full handicap"
-          courseMatch="stoatinBrae2"
-          matchHandicap="full"
-          gameplay="two-ball"
+          gameplay=""
           player1="gordon"
-          player1Handicap="12"
-          player2="rj"
-          player2Handicap="12"
-          player3="derek"
-          player3Handicap="27"
-          player4="evan"
-          player4Handicap="27"
+          player2="dylan"
+          player3="travis"
+          player4="craig"
+          player1MatchHandicap=""
+          player2MatchHandicap=""
+          player3MatchHandicap=""
+          player4MatchHandicap=""
         />
         <Match
           matchId="1.2 - 2 Best Ball. Full handicap"
-          courseMatch="stoatinBrae2"
+          year="_2023"
+          courseMatch="boyneHighlandsArthurHills"
+          holes="back"
           matchHandicap="full"
-          gameplay="two-ball"
-          player1="travis"
-          player1Handicap="21"
-          player2="cam"
-          player2Handicap="21"
-          player3="jake"
-          player3Handicap="21"
-          player4="craig"
-          player4Handicap="21"
-        /> */}
+          gameplay=""
+          player1="matt"
+          player2="dan"
+          player3="curtis"
+          player4="cam"
+          player1MatchHandicap=""
+          player2MatchHandicap=""
+          player3MatchHandicap=""
+          player4MatchHandicap=""
+        />
+        <Match
+          matchId="1.2 - 2 Best Ball. Full handicap"
+          year="_2023"
+          courseMatch="boyneHighlandsArthurHills"
+          holes="back"
+          matchHandicap="full"
+          gameplay=""
+          player1="chris"
+          player2="rj"
+          player3="derek"
+          player4="evan"
+          player1MatchHandicap=""
+          player2MatchHandicap=""
+          player3MatchHandicap=""
+          player4MatchHandicap=""
+        />
       </MatchNavSection>
       {/* 
       <MatchNavSection
@@ -219,13 +223,13 @@ const TopicPage = ({ data, location }) => {
           matchHandicap="full"
           gameplay="two-ball"
           player1="gordon"
-          player1Handicap="12"
-          player2="rj"
+          player1MatchHandicap="12"
+          player2Match="rj"
           player2Handicap="12"
           player3="travis"
-          player3Handicap="21"
+          player3MatchHandicap="21"
           player4="craig"
-          player4Handicap="21"
+          player4MatchHandicap="21"
         />
         <Match
           matchId="2.1 - Bramble. Full handicap"
@@ -233,13 +237,13 @@ const TopicPage = ({ data, location }) => {
           matchHandicap="full"
           gameplay="two-ball"
           player1="jake"
-          player1Handicap="21"
-          player2="dylan"
+          player1MatchHandicap="21"
+          player2Match="dylan"
           player2Handicap="0"
           player3="derek"
-          player3Handicap="27"
+          player3MatchHandicap="27"
           player4="cam"
-          player4Handicap="21"
+          player4MatchHandicap="21"
         />
         <Match
           matchId="2.1 - Bramble. Full handicap"
@@ -247,13 +251,13 @@ const TopicPage = ({ data, location }) => {
           matchHandicap="full"
           gameplay="two-ball"
           player1="matt"
-          player1Handicap="6"
-          player2="evan"
+          player1MatchHandicap="6"
+          player2Match="evan"
           player2Handicap="27"
           player3="curtis"
-          player3Handicap="23"
+          player3MatchHandicap="23"
           player4="dan"
-          player4Handicap="23"
+          player4MatchHandicap="23"
         />
       </MatchNavSection>
       <MatchNavSection
@@ -272,13 +276,13 @@ const TopicPage = ({ data, location }) => {
           matchHandicap="average"
           gameplay=""
           player1="gordon"
-          player1Handicap="12"
-          player2="cam"
+          player1MatchHandicap="12"
+          player2Match="cam"
           player2Handicap="21"
           player3="jake"
-          player3Handicap="21"
+          player3MatchHandicap="21"
           player4="craig"
-          player4Handicap="21"
+          player4MatchHandicap="21"
         />
         <Match
           matchId="2.2 - Scramble. Average handicap"
@@ -286,13 +290,13 @@ const TopicPage = ({ data, location }) => {
           matchHandicap="average"
           gameplay=""
           player1="travis"
-          player1Handicap="21"
-          player2="dan"
+          player1MatchHandicap="21"
+          player2Match="dan"
           player2Handicap="23"
           player3="matt"
-          player3Handicap="6"
+          player3MatchHandicap="6"
           player4="rj"
-          player4Handicap="12"
+          player4MatchHandicap="12"
         />
         <Match
           matchId="2.2 - Scramble. Average handicap"
@@ -300,13 +304,13 @@ const TopicPage = ({ data, location }) => {
           matchHandicap="average"
           gameplay=""
           player1="derek"
-          player1Handicap="27"
-          player2="evan"
+          player1MatchHandicap="27"
+          player2Match="evan"
           player2Handicap="27"
           player3="curtis"
-          player3Handicap="23"
+          player3MatchHandicap="23"
           player4="dylan"
-          player4Handicap="0"
+          player4MatchHandicap="0"
         />
       </MatchNavSection>
 
@@ -326,13 +330,13 @@ const TopicPage = ({ data, location }) => {
           matchHandicap="full"
           gameplay=""
           player1="travis"
-          player1Handicap="21"
-          player2="dylan"
+          player1MatchHandicap="21"
+          player2Match="dylan"
           player2Handicap="0"
           player3="jake"
-          player3Handicap="21"
+          player3MatchHandicap="21"
           player4="dan"
-          player4Handicap="23"
+          player4MatchHandicap="23"
         />
         <Match
           matchId="3.1 - Bramble. Full handicap"
@@ -340,13 +344,13 @@ const TopicPage = ({ data, location }) => {
           matchHandicap="full"
           gameplay=""
           player1="matt"
-          player1Handicap="6"
-          player2="rj"
+          player1MatchHandicap="6"
+          player2Match="rj"
           player2Handicap="12"
           player3="derek"
-          player3Handicap="27"
+          player3MatchHandicap="27"
           player4="evan"
-          player4Handicap="27"
+          player4MatchHandicap="27"
         />
         <Match
           matchId="3.1 - Bramble. Full handicap"
@@ -354,13 +358,13 @@ const TopicPage = ({ data, location }) => {
           matchHandicap="full"
           gameplay=""
           player1="curtis"
-          player1Handicap="23"
-          player2="cam"
+          player1MatchHandicap="23"
+          player2Match="cam"
           player2Handicap="21"
           player3="gordon"
-          player3Handicap="12"
+          player3MatchHandicap="12"
           player4="craig"
-          player4Handicap="21"
+          player4MatchHandicap="21"
         />
       </MatchNavSection>
 
@@ -380,13 +384,13 @@ const TopicPage = ({ data, location }) => {
           matchHandicap="average"
           gameplay=""
           player1="travis"
-          player1Handicap="21"
-          player2="evan"
+          player1MatchHandicap="21"
+          player2Match="evan"
           player2Handicap="27"
           player3="derek"
-          player3Handicap="27"
+          player3MatchHandicap="27"
           player4="dan"
-          player4Handicap="27"
+          player4MatchHandicap="27"
         />
         <Match
           matchId="3.2 - Alternate. Average handicap"
@@ -394,13 +398,13 @@ const TopicPage = ({ data, location }) => {
           matchHandicap="average"
           gameplay=""
           player1="jake"
-          player1Handicap="21"
-          player2="craig"
+          player1MatchHandicap="21"
+          player2Match="craig"
           player2Handicap="21"
           player3="curtis"
-          player3Handicap="23"
+          player3MatchHandicap="23"
           player4="dylan"
-          player4Handicap="0"
+          player4MatchHandicap="0"
         />
         <Match
           matchId="3.2 - Alternate. Average handicap"
@@ -408,13 +412,13 @@ const TopicPage = ({ data, location }) => {
           matchHandicap="average"
           gameplay=""
           player1="matt"
-          player1Handicap="6"
-          player2="cam"
+          player1MatchHandicap="6"
+          player2Match="cam"
           player2Handicap="21"
           player3="gordon"
-          player3Handicap="12"
+          player3MatchHandicap="12"
           player4="rj"
-          player4Handicap="12"
+          player4MatchHandicap="12"
         />
       </MatchNavSection>
 
@@ -434,13 +438,13 @@ const TopicPage = ({ data, location }) => {
           matchHandicap="average"
           gameplay="one-ball"
           player1="matt"
-          player1Handicap="6"
-          player2="dylan"
+          player1MatchHandicap="6"
+          player2Match="dylan"
           player2Handicap="0"
           player3="jake"
-          player3Handicap="21"
+          player3MatchHandicap="21"
           player4="evan"
-          player4Handicap="27"
+          player4MatchHandicap="27"
         />
         <Match
           matchId="4.1 - Scramble. Average handicap"
@@ -448,13 +452,13 @@ const TopicPage = ({ data, location }) => {
           matchHandicap="average"
           gameplay="one-ball"
           player1="travis"
-          player1Handicap="21"
-          player2="rj"
+          player1MatchHandicap="21"
+          player2Match="rj"
           player2Handicap="12"
           player3="derek"
-          player3Handicap="27"
+          player3MatchHandicap="27"
           player4="craig"
-          player4Handicap="21"
+          player4MatchHandicap="21"
         />
         <Match
           matchId="4.1 - Scramble. Average handicap"
@@ -462,13 +466,13 @@ const TopicPage = ({ data, location }) => {
           matchHandicap="average"
           gameplay="one-ball"
           player1="gordon"
-          player1Handicap="12"
-          player2="cam"
+          player1MatchHandicap="12"
+          player2Match="cam"
           player2Handicap="21"
           player3="curtis"
-          player3Handicap="23"
+          player3MatchHandicap="23"
           player4="dan"
-          player4Handicap="23"
+          player4MatchHandicap="23"
         />
       </MatchNavSection>
 
@@ -488,8 +492,8 @@ const TopicPage = ({ data, location }) => {
           matchHandicap="full"
           gameplay=""
           player1="matt"
-          player1Handicap="6"
-          player2="dylan"
+          player1MatchHandicap="6"
+          player2Match="dylan"
           player2Handicap="0"
         />
         <Match
@@ -498,8 +502,8 @@ const TopicPage = ({ data, location }) => {
           matchHandicap="full"
           gameplay=""
           player1="gordon"
-          player1Handicap="12"
-          player2="rj"
+          player1MatchHandicap="12"
+          player2Match="rj"
           player2Handicap="12"
         />
         <Match
@@ -508,8 +512,8 @@ const TopicPage = ({ data, location }) => {
           matchHandicap="full"
           gameplay=""
           player1="curtis"
-          player1Handicap="21"
-          player2="craig"
+          player1MatchHandicap="21"
+          player2Match="craig"
           player2Handicap="23"
         />
         <Match
@@ -518,8 +522,8 @@ const TopicPage = ({ data, location }) => {
           matchHandicap="full"
           gameplay=""
           player1="jake"
-          player1Handicap="21"
-          player2="cam"
+          player1MatchHandicap="21"
+          player2Match="cam"
           player2Handicap="30"
         />
         <Match
@@ -528,8 +532,8 @@ const TopicPage = ({ data, location }) => {
           matchHandicap="full"
           gameplay=""
           player1="travis"
-          player1Handicap="21"
-          player2="dan"
+          player1MatchHandicap="21"
+          player2Match="dan"
           player2Handicap="30"
         />
         <Match
@@ -538,13 +542,17 @@ const TopicPage = ({ data, location }) => {
           matchHandicap="full"
           gameplay=""
           player1="derek"
-          player1Handicap="27"
-          player2="evan"
+          player1MatchHandicap="27"
+          player2Match="evan"
           player2Handicap="27"
         />
       </MatchNavSection> */}
     </Layout>
   )
+}
+
+TopicPage.propTypes = {
+  location: PropTypes.string,
 }
 
 export default TopicPage

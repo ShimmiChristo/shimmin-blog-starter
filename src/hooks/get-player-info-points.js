@@ -6,6 +6,7 @@ export const PlayerInfoPoints = () => {
       playersUpdateJson {
         cam {
           name
+          handicap
           year {
             _2022 {
               handicap
@@ -23,6 +24,7 @@ export const PlayerInfoPoints = () => {
         }
         chris {
           name
+          handicap
           year {
             _2021 {
               handicap
@@ -40,6 +42,7 @@ export const PlayerInfoPoints = () => {
         }
         craig {
           name
+          handicap
           year {
             _2021 {
               handicap
@@ -69,6 +72,7 @@ export const PlayerInfoPoints = () => {
         }
         curtis {
           name
+          handicap
           year {
             _2022 {
               handicap
@@ -86,6 +90,7 @@ export const PlayerInfoPoints = () => {
         }
         dan {
           name
+          handicap
           year {
             _2021 {
               handicap
@@ -115,6 +120,7 @@ export const PlayerInfoPoints = () => {
         }
         derek {
           name
+          handicap
           year {
             _2021 {
               handicap
@@ -144,6 +150,7 @@ export const PlayerInfoPoints = () => {
         }
         dylan {
           name
+          handicap
           year {
             _2021 {
               handicap
@@ -173,6 +180,7 @@ export const PlayerInfoPoints = () => {
         }
         evan {
           name
+          handicap
           year {
             _2022 {
               handicap
@@ -190,6 +198,7 @@ export const PlayerInfoPoints = () => {
         } 
         gordon {
           name
+          handicap
           year {
             _2022 {
               handicap
@@ -207,6 +216,7 @@ export const PlayerInfoPoints = () => {
         }
         jake {
           name
+          handicap
           year {
             _2022 {
               handicap
@@ -224,6 +234,7 @@ export const PlayerInfoPoints = () => {
         }
         matt {
           name
+          handicap
           year {
             _2021 {
               handicap
@@ -253,6 +264,7 @@ export const PlayerInfoPoints = () => {
         }
         rj {
           name
+          handicap
           year {
             _2021 {
               handicap
@@ -282,6 +294,7 @@ export const PlayerInfoPoints = () => {
         }
         travis {
           name
+          handicap
           year {
             _2021 {
               handicap

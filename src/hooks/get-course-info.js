@@ -5,39 +5,42 @@ export const CourseInfo = () => {
     query CourseInfo {
       coursesJson {
         course {
-          tribute1 {
+          boyneHighlandsArthurHills {
             name
             link
             holes {
-              handicap
               number
-              par
               tees {
-                middle
+                purple
               }
+              handicap
+              par
             }
             totals {
-              yardage
-              par
-            }
-          }
-          tribute2 {
-            name
-            link
-            holes {
-              handicap
-              number
-              par
               tees {
-                middle
+                purple {
+                  out {
+                    yardage
+                    par
+                    index
+                    slope
+                  }
+                  in {
+                    yardage
+                    par
+                    index
+                    slope
+                  }
+                  total {
+                    yardage
+                    par
+                    index
+                    slope
+                  }
+                }
               }
             }
-            totals {
-              yardage
-              par
-            }
           }
-
           classic1 {
             name
             link
@@ -95,70 +98,6 @@ export const CourseInfo = () => {
               par
               tees {
                 middle
-              }
-            }
-            totals {
-              yardage
-              par
-            }
-          }
-          stoatinBrae1 {
-            name
-            link
-            holes {
-              handicap
-              number
-              par
-              tees {
-                black
-              }
-            }
-            totals {
-              yardage
-              par
-            }
-          }
-          stoatinBrae2 {
-            name
-            link
-            holes {
-              handicap
-              number
-              par
-              tees {
-                black
-              }
-            }
-            totals {
-              yardage
-              par
-            }
-          }
-          stoneHedgeSouth1 {
-            name
-            link
-            holes {
-              handicap
-              number
-              par
-              tees {
-                green
-              }
-            }
-            totals {
-              yardage
-              par
-            }
-          }
-          stoneHedgeSouth2 {
-            name
-            link
-            holes {
-              handicap
-              number
-              par
-              tees {
-                green
               }
             }
             totals {
@@ -230,6 +169,71 @@ export const CourseInfo = () => {
               par
             }
           }
+          stoatinBrae1 {
+            name
+            link
+            holes {
+              handicap
+              number
+              par
+              tees {
+                black
+              }
+            }
+            totals {
+              yardage
+              par
+            }
+          }
+          stoatinBrae2 {
+            name
+            link
+            holes {
+              handicap
+              number
+              par
+              tees {
+                black
+              }
+            }
+            totals {
+              yardage
+              par
+            }
+          }
+          stoneHedgeSouth1 {
+            name
+            link
+            holes {
+              handicap
+              number
+              par
+              tees {
+                green
+              }
+            }
+            totals {
+              yardage
+              par
+            }
+          }
+          stoneHedgeSouth2 {
+            name
+            link
+            holes {
+              handicap
+              number
+              par
+              tees {
+                green
+              }
+            }
+            totals {
+              yardage
+              par
+            }
+          }
+
           stoatinBrae {
             name
             link
@@ -260,6 +264,38 @@ export const CourseInfo = () => {
                 index
                 slope
               }
+            }
+          }
+          tribute1 {
+            name
+            link
+            holes {
+              handicap
+              number
+              par
+              tees {
+                middle
+              }
+            }
+            totals {
+              yardage
+              par
+            }
+          }
+          tribute2 {
+            name
+            link
+            holes {
+              handicap
+              number
+              par
+              tees {
+                middle
+              }
+            }
+            totals {
+              yardage
+              par
             }
           }
         }

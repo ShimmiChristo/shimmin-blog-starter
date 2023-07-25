@@ -1,11 +1,11 @@
 import React from "react"
+import PropTypes from "prop-types"
 import { graphql } from "gatsby"
 import { MDXRenderer } from "gatsby-plugin-mdx"
 import styled from "styled-components"
 import Image from "gatsby-image"
 import PlayerInfoThisYearRecord from "../components/player-info-year-record"
 import RecordPartners from "../components/records-partners"
-// import { Chris } from "../components/fragments/scores-2021"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
@@ -14,13 +14,10 @@ import SEO from "../components/seo"
 const PlayerPostTemplate = ({ data, location }) => {
   const post = data.mdx
   const siteTitle = data.site.siteMetadata?.name || `Name`
-  const playerHandicap = data.mdx.frontmatter.handicap
   const playerName = data.mdx.frontmatter.name
   const playerNickname = data.mdx.frontmatter.nickname
   const playerData = data.playersUpdateJson[`${playerName}`]
-  // const { player } = PlayerInfoMatt(2021)
-  // const playerHandicap = (player[`${playerName}`].year[2021][post.frontmatter.name] || {}).handicap || 0
-  // const { nodes } = usePublishedPosts()
+  const playerHandicap = data.playersUpdateJson[`${playerName}`].handicap
 
   const Header = styled.header`
     display: flex;
@@ -165,6 +162,12 @@ const PlayerPostTemplate = ({ data, location }) => {
       </article>
     </Layout>
   )
+}
+
+PlayerPostTemplate.propTypes = {
+  data: PropTypes.object,
+  location: PropTypes.object,
+  team: PropTypes.string,
 }
 
 export default PlayerPostTemplate

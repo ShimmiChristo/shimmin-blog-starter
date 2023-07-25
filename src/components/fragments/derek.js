@@ -4,6 +4,7 @@ import { graphql } from "gatsby"
 export const Derek = graphql`
   fragment DerekFragment on PlayersUpdateJsonDerek {
     name
+    handicap
     year {
       _2021 {
         id
