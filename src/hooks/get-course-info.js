@@ -41,6 +41,114 @@ export const CourseInfo = () => {
               }
             }
           }
+          boyneHighlandsDonaldRoss {
+            name
+            link
+            holes {
+              number
+              tees {
+                purple
+              }
+              handicap
+              par
+            }
+            totals {
+              tees {
+                purple {
+                  out {
+                    yardage
+                    par
+                    index
+                    slope
+                  }
+                  in {
+                    yardage
+                    par
+                    index
+                    slope
+                  }
+                  total {
+                    yardage
+                    par
+                    index
+                    slope
+                  }
+                }
+              }
+            }
+          }
+          boyneHighlandsHeather {
+            name
+            link
+            holes {
+              number
+              tees {
+                purple
+              }
+              handicap
+              par
+            }
+            totals {
+              tees {
+                purple {
+                  out {
+                    yardage
+                    par
+                    index
+                    slope
+                  }
+                  in {
+                    yardage
+                    par
+                    index
+                    slope
+                  }
+                  total {
+                    yardage
+                    par
+                    index
+                    slope
+                  }
+                }
+              }
+            }
+          }
+          boyneHighlandsMoor {
+            name
+            link
+            holes {
+              number
+              tees {
+                purple
+              }
+              handicap
+              par
+            }
+            totals {
+              tees {
+                purple {
+                  out {
+                    yardage
+                    par
+                    index
+                    slope
+                  }
+                  in {
+                    yardage
+                    par
+                    index
+                    slope
+                  }
+                  total {
+                    yardage
+                    par
+                    index
+                    slope
+                  }
+                }
+              }
+            }
+          }
           classic1 {
             name
             link

@@ -26,6 +26,27 @@ export const PlayerInfoUpdate = () => {
                   back
                   backHandicap
                 }
+                boyneHighlandsDonaldRoss {
+                  course
+                  frontHandicap
+                  front
+                  back
+                  backHandicap
+                }
+                boyneHighlandsMoor {
+                  course
+                  frontHandicap
+                  front
+                  back
+                  backHandicap
+                }
+                boyneHighlandsHeather {
+                  course
+                  frontHandicap
+                  front
+                  back
+                  backHandicap
+                }
               }
             }
             _2022 {
@@ -84,6 +105,27 @@ export const PlayerInfoUpdate = () => {
               }
               scores {
                 boyneHighlandsArthurHills {
+                  course
+                  frontHandicap
+                  front
+                  back
+                  backHandicap
+                }
+                boyneHighlandsDonaldRoss {
+                  course
+                  frontHandicap
+                  front
+                  back
+                  backHandicap
+                }
+                boyneHighlandsMoor {
+                  course
+                  frontHandicap
+                  front
+                  back
+                  backHandicap
+                }
+                boyneHighlandsHeather {
                   course
                   frontHandicap
                   front
@@ -154,43 +196,26 @@ export const PlayerInfoUpdate = () => {
                   back
                   backHandicap
                 }
-              }
-            }
-            _2021 {
-              handicap
-              team
-              id
-              points {
-                game
-                id
-                wins
-                ties
-                losses
-              }
-              scores {
-                classic {
-                  back
-                  backHandicap
+                boyneHighlandsDonaldRoss {
                   course
                   frontHandicap
                   front
-                }
-                jonesMasterPiece {
-                  course
-                }
-                gaylordGolfClub {
                   back
                   backHandicap
+                }
+                boyneHighlandsMoor {
+                  course
                   frontHandicap
                   front
-                  course
-                }
-                tribute {
                   back
                   backHandicap
-                  front
+                }
+                boyneHighlandsHeather {
                   course
                   frontHandicap
+                  front
+                  back
+                  backHandicap
                 }
               }
             }
@@ -232,6 +257,44 @@ export const PlayerInfoUpdate = () => {
                 }
               }
             }
+            _2021 {
+              handicap
+              team
+              id
+              points {
+                game
+                id
+                wins
+                ties
+                losses
+              }
+              scores {
+                classic {
+                  back
+                  backHandicap
+                  course
+                  frontHandicap
+                  front
+                }
+                jonesMasterPiece {
+                  course
+                }
+                gaylordGolfClub {
+                  back
+                  backHandicap
+                  frontHandicap
+                  front
+                  course
+                }
+                tribute {
+                  back
+                  backHandicap
+                  front
+                  course
+                  frontHandicap
+                }
+              }
+            }
           }
         }
         curtis {
@@ -250,6 +313,27 @@ export const PlayerInfoUpdate = () => {
               }
               scores {
                 boyneHighlandsArthurHills {
+                  course
+                  frontHandicap
+                  front
+                  back
+                  backHandicap
+                }
+                boyneHighlandsDonaldRoss {
+                  course
+                  frontHandicap
+                  front
+                  back
+                  backHandicap
+                }
+                boyneHighlandsMoor {
+                  course
+                  frontHandicap
+                  front
+                  back
+                  backHandicap
+                }
+                boyneHighlandsHeather {
                   course
                   frontHandicap
                   front
@@ -320,43 +404,26 @@ export const PlayerInfoUpdate = () => {
                   back
                   backHandicap
                 }
-              }
-            }
-            _2021 {
-              handicap
-              team
-              id
-              points {
-                game
-                id
-                wins
-                ties
-                losses
-              }
-              scores {
-                classic {
-                  back
-                  backHandicap
+                boyneHighlandsDonaldRoss {
                   course
                   frontHandicap
                   front
-                }
-                jonesMasterPiece {
-                  course
-                }
-                gaylordGolfClub {
                   back
                   backHandicap
+                }
+                boyneHighlandsMoor {
+                  course
                   frontHandicap
                   front
-                  course
-                }
-                tribute {
                   back
                   backHandicap
-                  front
+                }
+                boyneHighlandsHeather {
                   course
                   frontHandicap
+                  front
+                  back
+                  backHandicap
                 }
               }
             }
@@ -390,6 +457,44 @@ export const PlayerInfoUpdate = () => {
                   course
                 }
                 gullLakeWest {
+                  back
+                  backHandicap
+                  front
+                  course
+                  frontHandicap
+                }
+              }
+            }
+            _2021 {
+              handicap
+              team
+              id
+              points {
+                game
+                id
+                wins
+                ties
+                losses
+              }
+              scores {
+                classic {
+                  back
+                  backHandicap
+                  course
+                  frontHandicap
+                  front
+                }
+                jonesMasterPiece {
+                  course
+                }
+                gaylordGolfClub {
+                  back
+                  backHandicap
+                  frontHandicap
+                  front
+                  course
+                }
+                tribute {
                   back
                   backHandicap
                   front
@@ -422,43 +527,26 @@ export const PlayerInfoUpdate = () => {
                   back
                   backHandicap
                 }
-              }
-            }
-            _2021 {
-              handicap
-              team
-              id
-              points {
-                game
-                id
-                wins
-                ties
-                losses
-              }
-              scores {
-                classic {
-                  back
-                  backHandicap
+                boyneHighlandsDonaldRoss {
                   course
                   frontHandicap
                   front
-                }
-                jonesMasterPiece {
-                  course
-                }
-                gaylordGolfClub {
                   back
                   backHandicap
+                }
+                boyneHighlandsMoor {
+                  course
                   frontHandicap
                   front
-                  course
-                }
-                tribute {
                   back
                   backHandicap
-                  front
+                }
+                boyneHighlandsHeather {
                   course
                   frontHandicap
+                  front
+                  back
+                  backHandicap
                 }
               }
             }
@@ -492,6 +580,44 @@ export const PlayerInfoUpdate = () => {
                   course
                 }
                 gullLakeWest {
+                  back
+                  backHandicap
+                  front
+                  course
+                  frontHandicap
+                }
+              }
+            }
+            _2021 {
+              handicap
+              team
+              id
+              points {
+                game
+                id
+                wins
+                ties
+                losses
+              }
+              scores {
+                classic {
+                  back
+                  backHandicap
+                  course
+                  frontHandicap
+                  front
+                }
+                jonesMasterPiece {
+                  course
+                }
+                gaylordGolfClub {
+                  back
+                  backHandicap
+                  frontHandicap
+                  front
+                  course
+                }
+                tribute {
                   back
                   backHandicap
                   front
@@ -524,43 +650,26 @@ export const PlayerInfoUpdate = () => {
                   back
                   backHandicap
                 }
-              }
-            }
-            _2021 {
-              handicap
-              id
-              team
-              points {
-                game
-                id
-                wins
-                ties
-                losses
-              }
-              scores {
-                classic {
-                  back
-                  backHandicap
+                boyneHighlandsDonaldRoss {
                   course
                   frontHandicap
                   front
-                }
-                jonesMasterPiece {
-                  course
-                }
-                gaylordGolfClub {
                   back
                   backHandicap
+                }
+                boyneHighlandsMoor {
+                  course
                   frontHandicap
                   front
-                  course
-                }
-                tribute {
                   back
                   backHandicap
-                  front
+                }
+                boyneHighlandsHeather {
                   course
                   frontHandicap
+                  front
+                  back
+                  backHandicap
                 }
               }
             }
@@ -602,6 +711,44 @@ export const PlayerInfoUpdate = () => {
                 }
               }
             }
+            _2021 {
+              handicap
+              id
+              team
+              points {
+                game
+                id
+                wins
+                ties
+                losses
+              }
+              scores {
+                classic {
+                  back
+                  backHandicap
+                  course
+                  frontHandicap
+                  front
+                }
+                jonesMasterPiece {
+                  course
+                }
+                gaylordGolfClub {
+                  back
+                  backHandicap
+                  frontHandicap
+                  front
+                  course
+                }
+                tribute {
+                  back
+                  backHandicap
+                  front
+                  course
+                  frontHandicap
+                }
+              }
+            }
           }
         }
         evan {
@@ -620,6 +767,27 @@ export const PlayerInfoUpdate = () => {
               }
               scores {
                 boyneHighlandsArthurHills {
+                  course
+                  frontHandicap
+                  front
+                  back
+                  backHandicap
+                }
+                boyneHighlandsDonaldRoss {
+                  course
+                  frontHandicap
+                  front
+                  back
+                  backHandicap
+                }
+                boyneHighlandsMoor {
+                  course
+                  frontHandicap
+                  front
+                  back
+                  backHandicap
+                }
+                boyneHighlandsHeather {
                   course
                   frontHandicap
                   front
@@ -684,6 +852,27 @@ export const PlayerInfoUpdate = () => {
               }
               scores {
                 boyneHighlandsArthurHills {
+                  course
+                  frontHandicap
+                  front
+                  back
+                  backHandicap
+                }
+                boyneHighlandsDonaldRoss {
+                  course
+                  frontHandicap
+                  front
+                  back
+                  backHandicap
+                }
+                boyneHighlandsMoor {
+                  course
+                  frontHandicap
+                  front
+                  back
+                  backHandicap
+                }
+                boyneHighlandsHeather {
                   course
                   frontHandicap
                   front
@@ -797,43 +986,26 @@ export const PlayerInfoUpdate = () => {
                   back
                   backHandicap
                 }
-              }
-            }
-            _2021 {
-              handicap
-              id
-              team
-              points {
-                game
-                id
-                wins
-                ties
-                losses
-              }
-              scores {
-                classic {
-                  back
-                  backHandicap
+                boyneHighlandsDonaldRoss {
                   course
                   frontHandicap
                   front
-                }
-                jonesMasterPiece {
-                  course
-                }
-                gaylordGolfClub {
                   back
                   backHandicap
+                }
+                boyneHighlandsMoor {
+                  course
                   frontHandicap
                   front
-                  course
-                }
-                tribute {
                   back
                   backHandicap
-                  front
+                }
+                boyneHighlandsHeather {
                   course
                   frontHandicap
+                  front
+                  back
+                  backHandicap
                 }
               }
             }
@@ -867,6 +1039,44 @@ export const PlayerInfoUpdate = () => {
                   course
                 }
                 gullLakeWest {
+                  back
+                  backHandicap
+                  front
+                  course
+                  frontHandicap
+                }
+              }
+            }
+            _2021 {
+              handicap
+              id
+              team
+              points {
+                game
+                id
+                wins
+                ties
+                losses
+              }
+              scores {
+                classic {
+                  back
+                  backHandicap
+                  course
+                  frontHandicap
+                  front
+                }
+                jonesMasterPiece {
+                  course
+                }
+                gaylordGolfClub {
+                  back
+                  backHandicap
+                  frontHandicap
+                  front
+                  course
+                }
+                tribute {
                   back
                   backHandicap
                   front
@@ -899,43 +1109,26 @@ export const PlayerInfoUpdate = () => {
                   back
                   backHandicap
                 }
-              }
-            }
-            _2021 {
-              handicap
-              id
-              team
-              points {
-                game
-                id
-                wins
-                ties
-                losses
-              }
-              scores {
-                classic {
-                  back
-                  backHandicap
+                boyneHighlandsDonaldRoss {
                   course
                   frontHandicap
                   front
-                }
-                jonesMasterPiece {
-                  course
-                }
-                gaylordGolfClub {
                   back
                   backHandicap
+                }
+                boyneHighlandsMoor {
+                  course
                   frontHandicap
                   front
-                  course
-                }
-                tribute {
                   back
                   backHandicap
-                  front
+                }
+                boyneHighlandsHeather {
                   course
                   frontHandicap
+                  front
+                  back
+                  backHandicap
                 }
               }
             }
@@ -969,6 +1162,44 @@ export const PlayerInfoUpdate = () => {
                   course
                 }
                 gullLakeWest {
+                  back
+                  backHandicap
+                  front
+                  course
+                  frontHandicap
+                }
+              }
+            }
+            _2021 {
+              handicap
+              id
+              team
+              points {
+                game
+                id
+                wins
+                ties
+                losses
+              }
+              scores {
+                classic {
+                  back
+                  backHandicap
+                  course
+                  frontHandicap
+                  front
+                }
+                jonesMasterPiece {
+                  course
+                }
+                gaylordGolfClub {
+                  back
+                  backHandicap
+                  frontHandicap
+                  front
+                  course
+                }
+                tribute {
                   back
                   backHandicap
                   front
@@ -1001,43 +1232,26 @@ export const PlayerInfoUpdate = () => {
                   back
                   backHandicap
                 }
-              }
-            }
-            _2021 {
-              handicap
-              team
-              id
-              points {
-                game
-                id
-                wins
-                ties
-                losses
-              }
-              scores {
-                classic {
-                  back
-                  backHandicap
+                boyneHighlandsDonaldRoss {
                   course
                   frontHandicap
                   front
-                }
-                jonesMasterPiece {
-                  course
-                }
-                gaylordGolfClub {
                   back
                   backHandicap
+                }
+                boyneHighlandsMoor {
+                  course
                   frontHandicap
                   front
-                  course
-                }
-                tribute {
                   back
                   backHandicap
-                  front
+                }
+                boyneHighlandsHeather {
                   course
                   frontHandicap
+                  front
+                  back
+                  backHandicap
                 }
               }
             }
@@ -1071,6 +1285,44 @@ export const PlayerInfoUpdate = () => {
                   course
                 }
                 gullLakeWest {
+                  back
+                  backHandicap
+                  front
+                  course
+                  frontHandicap
+                }
+              }
+            }
+            _2021 {
+              handicap
+              team
+              id
+              points {
+                game
+                id
+                wins
+                ties
+                losses
+              }
+              scores {
+                classic {
+                  back
+                  backHandicap
+                  course
+                  frontHandicap
+                  front
+                }
+                jonesMasterPiece {
+                  course
+                }
+                gaylordGolfClub {
+                  back
+                  backHandicap
+                  frontHandicap
+                  front
+                  course
+                }
+                tribute {
                   back
                   backHandicap
                   front

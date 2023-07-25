@@ -23,25 +23,28 @@ function calcPlayerScore(s, pHand, hHand) {
 
 /**
  * @param {string} gameplay - gameplay
- * @param {string} player1Param - player name
+ * @param {string} player1Name - player name
  * @param {int} player1Handicap - player HC
- * @param {string} player2Param - player name
+ * @param {string} player2Name - player name
  * @param {int} player2Handicap - player HC
  */
 function getMatchHandicap(
   gameplay,
-  player1Param,
-  player1Handicap,
-  player2Param,
-  player2Handicap
+  player1Name,
+  playerOneHandicap,
+  player2Name,
+  playerTwoHandicap
 ) {
-  const player1Name = player1Param
   if (gameplay === "scramble" || gameplay === "pinehurst") {
-    let lowHC = Math.min(player1Handicap, player2Handicap)
-    let highHC = Math.max(player1Handicap, player2Handicap)
+    let lowHC = Math.min(playerOneHandicap, playerTwoHandicap)
+    let highHC = Math.max(playerOneHandicap, playerTwoHandicap)
     return Math.round(0.6 * lowHC + 0.4 * highHC)
+  } else if (gameplay === "alternate") {
+    return Math.round((playerOneHandicap + playerTwoHandicap) / 2)
+  } else if (player2Name && playerTwoHandicap) {
+    return playerTwoHandicap
   } else {
-    player1Name
+    return playerOneHandicap
   }
 
   // if (player1Param)

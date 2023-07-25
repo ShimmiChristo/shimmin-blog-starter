@@ -19,15 +19,16 @@ function calcTeamScore(
     holes === "front"
       ? course[`${courseMatch}`].holes.slice(0, 9)
       : course[`${courseMatch}`].holes.slice(9)
+  const player1Name = player1Param
+  const player2Name = player2Param
 
   const scoresArr = []
-  // const playerOne = player1Param
   let playerOneScore =
-    playersUpdateJson[`${player1Param}`]?.year[`${year}`].scores[
+    playersUpdateJson[`${player1Name}`]?.year[`${year}`].scores[
       `${courseMatch}`
     ][`${holes}`] // [scores]
   let playerOneHandicap = parseInt(player1HandicapParam)
-  const playerTwo = player2Param !== undefined ? player2Param : undefined
+  const playerTwo = player2Name !== undefined ? player2Name : undefined
   let playerTwoScore =
     playersUpdateJson[`${playerTwo}`]?.year[`${year}`].scores[`${courseMatch}`][
       `${holes}`
@@ -63,13 +64,7 @@ function calcTeamScore(
 
     let playerOneHandicapScore = calcPlayerScore(
       sPlayerOne,
-      getMatchHandicap(
-        gameplay,
-        player1Param,
-        playerOneHandicap,
-        player2Param,
-        playerTwoHandicap
-      ),
+      getMatchHandicap(gameplay, player1Name, playerOneHandicap),
       hHand
     )
 
@@ -78,9 +73,9 @@ function calcTeamScore(
         sPlayerTwo,
         getMatchHandicap(
           gameplay,
-          player1Param,
+          player1Name,
           playerOneHandicap,
-          player2Param,
+          player2Name,
           playerTwoHandicap
         ),
         hHand
@@ -89,7 +84,7 @@ function calcTeamScore(
 
     if (
       isNaN(playerTwoHandicapScore) !== true &&
-      player2Param !== undefined &&
+      player2Name !== undefined &&
       gameplay !== "two-ball"
     ) {
       scoresArr.push(Math.min(playerOneHandicapScore, playerTwoHandicapScore))
