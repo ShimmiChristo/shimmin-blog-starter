@@ -2,6 +2,7 @@ import React from "react"
 import styled from "styled-components"
 import { useSiteMetadata } from "../hooks/use-site-metadata"
 import { usePublishedPosts } from "../hooks/use-published-posts"
+import { Link } from "gatsby"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
@@ -164,6 +165,13 @@ const TopicPage = ({ data, location }) => {
             <p>Handicap allowance is 100%</p>
           </div>
         </div>
+        <p>
+          All handicap allowances are found at the{" "}
+          <Link to="https://www.usga.org/content/usga/home-page/handicapping/roh/Content/rules/Appendix%20C%20Handicap%20Allowances.htm">
+            USGA Handicap Allowances website
+          </Link>
+          .
+        </p>
       </div>
     </Layout>
   )
