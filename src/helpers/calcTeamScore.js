@@ -63,14 +63,28 @@ function calcTeamScore(
 
     let playerOneHandicapScore = calcPlayerScore(
       sPlayerOne,
-      getMatchHandicap(matchHandicap, gameplay, player1Param, player2Param),
+      getMatchHandicap(
+        matchHandicap,
+        gameplay,
+        player1Param,
+        playerOneHandicap,
+        player2Param,
+        playerTwoHandicap
+      ),
       hHand
     )
 
     if (playerTwo !== undefined) {
       var playerTwoHandicapScore = calcPlayerScore(
         sPlayerTwo,
-        getMatchHandicap(matchHandicap, gameplay, player1Param, player2Param),
+        getMatchHandicap(
+          matchHandicap,
+          gameplay,
+          player1Param,
+          playerOneHandicap,
+          player2Param,
+          playerTwoHandicap
+        ),
         hHand
       )
     }

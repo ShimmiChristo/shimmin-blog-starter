@@ -21,15 +21,27 @@ function calcPlayerScore(s, pHand, hHand) {
   }
 }
 
-// function a(gameplay, p1Param, p2Param )
-
-function getMatchHandicap(matchHandicap, gameplay, player1Param, player2Param) {
-  if (matchHandicap === "average") {
-    if (player1Param && player2Param) {
-      return (player1Param + player2Param) / 2
-    }
+function getMatchHandicap(
+  matchHandicap,
+  gameplay,
+  player1Param,
+  player1Handicap,
+  player2Param,
+  player2Handicap
+) {
+  const player1Name = player1Param
+  const player2Name = player2Param
+  if (gameplay === "scramble") {
+    let lowHC = Math.min(player1Handicap, player2Handicap)
+    let highHC = Math.max(player1Handicap, player2Handicap)
+    return 0.6 * lowHC + 0.4 * highHC
+    // }
+    // if (matchHandicap === "average") {
+    //   if (player1Name && player2Name) {
+    //     return (player1Name + player2Name) / 2
+    //   }
   } else {
-    player1Param
+    player1Name
   }
 
   // if (player1Param)

@@ -104,7 +104,7 @@ const TopicPage = ({ location }) => {
           courseMatch="boyneHighlandsArthurHills"
           holes="front"
           matchHandicap="average"
-          gameplay=""
+          gameplay="scramble"
           player1="gordon"
           player2="dylan"
           player3="derek"
