@@ -46,35 +46,6 @@ function getMatchHandicap(
   } else {
     return playerOneHandicap
   }
-
-  // if (player1Param)
-  // if (matchHandicap === "average") {
-  //   if (player === playerOne.name || player === playerThree.name) {
-  //     return (playerOneHand + playerThreeHand) / 2
-  //   } else if (player === playerTwo.name || player === playerFour.name) {
-  //     return (playerTwoHand + playerFourHand) / 2
-  //   }
-  // } else if (matchHandicap === "full") {
-  //   if (player === playerOne.name) {
-  //     return playerOneHand
-  //   } else if (player === playerTwo.name) {
-  //     return playerTwoHand
-  //   } else if (playerThree !== undefined && player === playerThree.name) {
-  //     return playerThreeHand
-  //   } else if (playerFour !== undefined && player === playerFour.name) {
-  //     return playerFourHand
-  //   }
-  // } else {
-  // if (player === playerOne.name) {
-  //   return playerOneHand
-  // } else if (player === playerTwo.name) {
-  //   return playerTwoHand
-  // } else if (playerThree !== undefined && player === playerThree.name) {
-  //   return playerThreeHand
-  // } else if (playerFour !== undefined && player === playerFour.name) {
-  //   return playerFourHand
-  // }
-  // }
 }
 
 export { calcPlayerScore, getMatchHandicap }
