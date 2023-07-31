@@ -1,4 +1,5 @@
 import React from "react"
+import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import { PlayerInfoPoints } from "../../hooks/get-player-info-points"
 
@@ -68,7 +69,9 @@ const PlayerPoints = ({ name }) => {
   return (
     <>
       <div className="row border-bottom py-3">
-        <div className="col-12 col-lg-1 text-center fontSize-0">{name}</div>
+        <div className="col-12 col-lg-1 text-center fontSize-0">
+          <Link to={`/players/${name.toLowerCase()}/`}>{name}</Link>
+        </div>
         <div className="col-12 col-lg-1 text-center fontSize-0">
           {record.matches}
         </div>
