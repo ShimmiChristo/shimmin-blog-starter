@@ -13,11 +13,11 @@ module.exports = {
       phone: ``,
     },
     social: {
-      twitter: "shimmiChristo",
+      twitter: ``,
       instagram: "bfbhcup",
-      youtube: `shimdoggy`,
+      youtube: `@bfbhcup`,
       facebook: ``,
-      github: `shimmiChristo`,
+      github: ``,
       google: ``,
     },
     nav: [

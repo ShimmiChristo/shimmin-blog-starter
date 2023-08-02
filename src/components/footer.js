@@ -76,11 +76,6 @@ function Footer() {
           <h4 className="footer__title">Follow</h4>
           <ul>
             <li className="footer__item">
-              <a href={`https://twitter.com/${social?.twitter || ``}`}>
-                Twitter
-              </a>
-            </li>
-            <li className="footer__item">
               <a href={`https://instagram.com/${social?.instagram || ``}`}>
                 Instagram
               </a>
@@ -90,9 +85,6 @@ function Footer() {
                 {" "}
                 Youtube
               </a>
-            </li>
-            <li className="footer__item">
-              <a href={`https://github.com/${social?.github || ``}`}> Github</a>
             </li>
           </ul>
         </FooterColumn>

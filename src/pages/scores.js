@@ -18,6 +18,7 @@ const TopicPage = ({ location }) => {
 
   const siteTitle = title || `Scores`
   const pageHash = location.hash
+  console.log("location - ", location)
 
   const MatchNavSection = styled.div`
     overflow-y: scroll;
@@ -89,7 +90,12 @@ const TopicPage = ({ location }) => {
       <MatchScore year="_2023" />
 
       <MatchNavSection
-        data-visible={pageHash === "#r1-best-ball" ? "true" : "false"}
+        data-visible={
+          (location.pathname === "/scores/" && pageHash === "#r1-best-ball") ||
+          (location.pathname === "/scores" && pageHash === "#r1-best-ball")
+            ? "true"
+            : "false"
+        }
         data-link-id="r1-best-ball"
       >
         <div className="course__info">
