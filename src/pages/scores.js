@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useState, useEffect } from "react"
 import PropTypes from "prop-types"
 import styled from "styled-components"
 import { useSiteMetadata } from "../hooks/use-site-metadata"
@@ -15,10 +15,9 @@ import "../styles/match.css"
 const TopicPage = ({ location }) => {
   const { title } = useSiteMetadata()
   const { course } = CourseInfo()
+  // const [activetab, setActivetab] = useState(false)
 
   const siteTitle = title || `Scores`
-  const pageHash = location.hash
-  console.log("location - ", location)
 
   const MatchNavSection = styled.div`
     overflow-y: scroll;
@@ -36,6 +35,11 @@ const TopicPage = ({ location }) => {
       }
     }
   `
+  // useEffect(() => {
+  //   // Update the document title using the browser API
+  //   console.log("location - ", location)
+  //   // if ()
+  // })
 
   return (
     <Layout location={location} title={siteTitle}>
@@ -91,8 +95,9 @@ const TopicPage = ({ location }) => {
 
       <MatchNavSection
         data-visible={
-          (location.pathname === "/scores/" && pageHash === "#r1-best-ball") ||
-          (location.pathname === "/scores" && pageHash === "#r1-best-ball")
+          (location.pathname === "/scores/" &&
+            location.hash === "#r1-best-ball") ||
+          (location.pathname === "/scores" && location.hash === "#r1-best-ball")
             ? "true"
             : "false"
         }
@@ -154,7 +159,7 @@ const TopicPage = ({ location }) => {
         />
       </MatchNavSection>
       <MatchNavSection
-        data-visible={pageHash === "#r1-two-best-ball" ? "true" : "false"}
+        data-visible={location.hash === "#r1-two-best-ball" ? "true" : "false"}
         data-link-id="r1-two-best-ball"
       >
         <div className="course__info">
@@ -213,7 +218,7 @@ const TopicPage = ({ location }) => {
         />
       </MatchNavSection>
       <MatchNavSection
-        data-visible={pageHash === "#r2-pinehurst" ? "true" : "false"}
+        data-visible={location.hash === "#r2-pinehurst" ? "true" : "false"}
         data-link-id="r2-pinehurst"
       >
         <div className="course__info">
@@ -273,7 +278,7 @@ const TopicPage = ({ location }) => {
       </MatchNavSection>
 
       <MatchNavSection
-        data-visible={pageHash === "#r2-alternate" ? "true" : "false"}
+        data-visible={location.hash === "#r2-alternate" ? "true" : "false"}
         data-link-id="r2-alternate"
       >
         <div className="course__info">
@@ -333,7 +338,7 @@ const TopicPage = ({ location }) => {
       </MatchNavSection>
 
       <MatchNavSection
-        data-visible={pageHash === "#r3-bramble" ? "true" : "false"}
+        data-visible={location.hash === "#r3-bramble" ? "true" : "false"}
         data-link-id="r3-bramble"
       >
         <div className="course__info">
@@ -393,7 +398,7 @@ const TopicPage = ({ location }) => {
       </MatchNavSection>
 
       <MatchNavSection
-        data-visible={pageHash === "#r3-2-ball-bramble" ? "true" : "false"}
+        data-visible={location.hash === "#r3-2-ball-bramble" ? "true" : "false"}
         data-link-id="r3-2-ball-bramble"
       >
         <div className="course__info">
@@ -453,7 +458,7 @@ const TopicPage = ({ location }) => {
       </MatchNavSection>
 
       <MatchNavSection
-        data-visible={pageHash === "#r4-scramble" ? "true" : "false"}
+        data-visible={location.hash === "#r4-scramble" ? "true" : "false"}
         data-link-id="r4-scramble"
       >
         <div className="course__info">
@@ -513,7 +518,7 @@ const TopicPage = ({ location }) => {
       </MatchNavSection>
 
       <MatchNavSection
-        data-visible={pageHash === "#r4-singles" ? "true" : "false"}
+        data-visible={location.hash === "#r4-singles" ? "true" : "false"}
         data-link-id="r4-singles"
       >
         <div className="course__info">
