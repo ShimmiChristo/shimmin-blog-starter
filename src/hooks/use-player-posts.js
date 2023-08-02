@@ -31,6 +31,15 @@ export const usePlayersPosts = () => {
                   )
                 }
               }
+              thumbnail {
+                childImageSharp {
+                  gatsbyImageData(
+                    width: 100
+                    placeholder: BLURRED
+                    formats: [AUTO, WEBP, AVIF]
+                  )
+                }
+              }
             }
           }
         }

@@ -562,7 +562,7 @@ function Match({
           )}
         </div>
 
-        <div className="team__scores">
+        <div className="team__scores py-2">
           <div className={"bk-gray font-weight-bold " + getWinningColor()}>
             {displayWinningTeam()}
           </div>

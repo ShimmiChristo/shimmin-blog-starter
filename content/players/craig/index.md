@@ -6,6 +6,7 @@ nickname: "Twin 1"
 description: "Description"
 category: players
 featuredImg: ./profile-pic.png
+thumbnail: ./thumbnail.png
 team: "Blue Team"
 handicap: 21
 ---

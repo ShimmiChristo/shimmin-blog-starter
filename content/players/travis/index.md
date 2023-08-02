@@ -6,6 +6,7 @@ nickname: "Shootaaa"
 description: "Description"
 category: players
 featuredImg: ./profile-pic.png
+thumbnail: ./thumbnail.png
 team: "Green Team"
 handicap: 21
 ---

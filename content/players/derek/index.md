@@ -6,6 +6,7 @@ nickname: "D-Mo, Tube, the OG, Old Reliable"
 description: "Description"
 category: players
 featuredImg: ./profile-pic.png
+thumbnail: ./thumbnail.png
 team: "Green Team"
 handicap: 23
 ---

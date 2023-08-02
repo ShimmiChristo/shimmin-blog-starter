@@ -5,7 +5,8 @@ name: curtis
 nickname: 'Curt the flirt, cowboy Curt, Kinky Curt, "That one"'
 description: ""
 category: players
-featuredImg: ./profile-pic.png
+featuredImg: ./profile-pic.png,
+thumbnail: ./thumbnail.png
 team: "Green Team"
 handicap: 23
 ---

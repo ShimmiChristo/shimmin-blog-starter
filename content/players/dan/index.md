@@ -6,6 +6,7 @@ nickname: "One Heel"
 description: "description"
 category: players
 featuredImg: ./profile-pic.png
+thumbnail: ./thumbnail.png
 team: "Blue Team"
 handicap: 27
 ---

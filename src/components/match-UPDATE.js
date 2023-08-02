@@ -1,4 +1,6 @@
 import React, { useState } from "react"
+import { GatsbyImage, getImage } from "gatsby-plugin-image"
+import { usePlayersPosts } from "../hooks/use-player-posts"
 import PropTypes from "prop-types"
 import { v1 as uuidv1 } from "uuid"
 import { CourseInfo } from "../hooks/get-course-info"
@@ -91,7 +93,7 @@ const Section = styled.section`
         height: 0;
       }
     }
-    max-height: 300px;
+    max-height: 500px;
     padding: 2rem 1rem;
   }
   &:hover {
@@ -117,6 +119,25 @@ function MatchUpdate({
 }) {
   const { course } = CourseInfo()
   const playersUpdateJson = PlayerInfoUpdate()
+  const { nodes } = usePlayersPosts()
+  const posts = nodes
+  const player1Post = posts.filter(
+    player => player.frontmatter?.name === player1.toLowerCase()
+  )
+  const player1Pic = getImage(player1Post[0].frontmatter.thumbnail)
+  const player2Post = posts.filter(
+    player => player.frontmatter?.name === player2.toLowerCase()
+  )
+  const player2Pic = getImage(player2Post[0].frontmatter.thumbnail)
+  const player3Post = posts.filter(
+    player => player.frontmatter?.name === player3?.toLowerCase()
+  )
+  const player3Pic = getImage(player3Post[0]?.frontmatter.thumbnail)
+  const player4Post = posts.filter(
+    player => player.frontmatter?.name === player4?.toLowerCase()
+  )
+  const player4Pic = getImage(player4Post[0]?.frontmatter.thumbnail)
+
   const courseHoles =
     holes === "front"
       ? course[`${courseMatch}`].holes.slice(0, 9)
@@ -155,141 +176,6 @@ function MatchUpdate({
   const matchNumber = matchId
 
   const [sectionHeight, setSectionHeight] = useState("closed")
-  // const parTotal = course[`${courseMatch}`].totals.par
-
-  // function calcTeamScore(
-  // player1Param,
-  // player1HandicapParam,
-  // player2Param,
-  // player2HandicapParam
-  // ) {
-  //   const scoresArr = []
-  //   const playerOne = player1Param
-  //   let playerOneScore =
-  //     playersUpdateJson[`${playerOne}`]?.year[`${year}`].scores[
-  //       `${courseMatch}`
-  //     ][`${holes}`] // [scores]
-  //   let playerOneHandicap = parseInt(player1HandicapParam)
-  //   const playerTwo = player2Param !== undefined ? player2Param : undefined
-  //   let playerTwoScore =
-  //     playersUpdateJson[`${playerTwo}`]?.year[`${year}`].scores[
-  //       `${courseMatch}`
-  //     ][`${holes}`] // [scores]
-  //   // let playerTwoScore =
-  //   //   player2Param !== undefined
-  //   //     ? playerTwo.course[`${courseMatch}`]
-  //   //     : undefined // [scores]
-  //   let playerTwoHandicap = player2HandicapParam
-  //     ? parseInt(player2HandicapParam)
-  //     : undefined
-  //   // let playerThreeScore = playerThree ? playerThree.course[`${courseMatch}`] : undefined // [scores]
-  //   // let playerThreeHandicap = parseInt(player3MatchHandicap)
-  //   // let playerFourScore = playerFour ? playerFour.course[`${courseMatch}`] : undefined // [scores]
-  //   // let playerFourHandicap = parseInt(player4MatchHandicap)
-  //   // let getHandicap = function (playerHandicapParam) {
-  //   //   if (matchHandicap === "average" && playerTwo !== undefined) {
-  //   //     return (playerOneHandicap + playerTwoHandicap) / 2
-  //   //   } else {
-  //   //     return playerHandicapParam
-  //   //   }
-  //   // }
-  //   let gameplayParam = gameplay
-  //   let matchHandicapParam = matchHandicap
-
-  //   for (let i = 0; i < playerOneScore.length; i++) {
-  //     let hHand = courseHoles[i].handicap
-  //     let sPlayerOne = playerOneScore[i]
-  //     let sPlayerTwo =
-  //       playerTwoScore !== undefined ? playerTwoScore[i] : undefined
-  //     // let sPlayerThree = playerThreeScore !== undefined ? playerThreeScore[i] : undefined
-  //     // let sPlayerFour = playerFourScore !== undefined ? playerFourScore[i] : undefined
-
-  //     let playerOneHandicapScore = calcPlayerScore(
-  //       sPlayerOne,
-  //       getHandicap(playerOne.name),
-  //       hHand
-  //     )
-
-  //     if (playerTwo !== undefined) {
-  //       var playerTwoHandicapScore = calcPlayerScore(
-  //         sPlayerTwo,
-  //         getHandicap(playerTwo.name),
-  //         hHand
-  //       )
-  //     }
-
-  //     if (
-  //       isNaN(playerTwoHandicapScore) !== true &&
-  //       player2Param !== undefined &&
-  //       gameplay !== "two-ball"
-  //     ) {
-  //       scoresArr.push(Math.min(playerOneHandicapScore, playerTwoHandicapScore))
-  //     } else if (
-  //       isNaN(playerTwoHandicapScore) !== true &&
-  //       gameplay === "two-ball"
-  //     ) {
-  //       scoresArr.push(
-  //         Number(playerOneHandicapScore) + Number(playerTwoHandicapScore)
-  //       )
-  //     } else if (isNaN(playerOneHandicapScore) !== true) {
-  //       scoresArr.push(playerOneHandicapScore)
-  //     } else {
-  //       scoresArr.push("-")
-  //     }
-
-  //     // let playerThreeHandiScore = calcPlayerScore(
-  //     //   sPlayerThree,
-  //     //   teamHandicap,
-  //     //   hHand
-  //     // )
-  //     // let playerFourHandiScore = calcPlayerScore(
-  //     //   sPlayerFour,
-  //     //   teamHandicap,
-  //     //   hHand
-  //     // )
-  //     // if (isNaN(playerOneHandiScore) !== true && isNaN(playerTwoHandiScore) && isNaN(playerThreeHandiScore) && isNaN(playerFourHandiScore) !== true) {
-  //     //   teamOneScoreArr.push(Math.min(playerOneHandiScore, playerThreeHandiScore))
-  //     //   teamTwoScoreArr.push(Math.min(playerTwoHandiScore, playerFourHandiScore))
-  //     // } else {
-  //     //   teamOneScoreArr.push("-")
-  //     //   teamTwoScoreArr.push("-")
-  //     // }
-
-  //     // } else if (matchHandicapParam === "full") {
-  //     //   let playerOneHandiScore = calcPlayerScore(
-  //     //     sPlayerOne,
-  //     //     playerOneHandicap,
-  //     //     hHand
-  //     //   )
-  //     //   let playerTwoHandiScore = calcPlayerScore(
-  //     //     sPlayerTwo,
-  //     //     playerTwoHandicap,
-  //     //     hHand
-  //     //   )
-  //     //   let playerThreeHandiScore = calcPlayerScore(
-  //     //     sPlayerThree,
-  //     //     playerThreeHandicap,
-  //     //     hHand
-  //     //   )
-  //     //   let playerFourHandiScore = calcPlayerScore(
-  //     //     sPlayerFour,
-  //     //     playerFourHandicap,
-  //     //     hHand
-  //     //   )
-  //     //   if (isNaN(playerOneHandiScore) !== true && isNaN(playerThreeHandiScore) !== true) {
-  //     //     teamOneScoreArr.push(Math.min(playerOneHandiScore, playerThreeHandiScore))
-  //     //   } else {
-  //     //     teamOneScoreArr.push("-")
-  //     //   }
-  //   }
-
-  //   // var scores = {
-  //   //   teamOne: teamOneScoreArr,
-  //   //   teamTwo: teamTwoScoreArr,
-  //   // }
-
-  //   return scoresArr
-  // }
 
   const teamOneScoreArray = calcTeamScore(
     year,
@@ -313,54 +199,6 @@ function MatchUpdate({
     player4,
     playerFourHand
   )
-
-  // function getHandicap(player) {
-  //   if (matchHandicap === "average") {
-  //     if (player === playerOne.name || player === playerThree.name) {
-  //       return (playerOneHand + playerThreeHand) / 2
-  //     } else if (player === playerTwo.name || player === playerFour.name) {
-  //       return (playerTwoHand + playerFourHand) / 2
-  //     }
-  //   } else if (matchHandicap === "full") {
-  //     if (player === playerOne.name) {
-  //       return playerOneHand
-  //     } else if (player === playerTwo.name) {
-  //       return playerTwoHand
-  //     } else if (playerThree !== undefined && player === playerThree.name) {
-  //       return playerThreeHand
-  //     } else if (playerFour !== undefined && player === playerFour.name) {
-  //       return playerFourHand
-  //     }
-  //   } else {
-  //     if (player === playerOne.name) {
-  //       return playerOneHand
-  //     } else if (player === playerTwo.name) {
-  //       return playerTwoHand
-  //     } else if (playerThree !== undefined && player === playerThree.name) {
-  //       return playerThreeHand
-  //     } else if (playerFour !== undefined && player === playerFour.name) {
-  //       return playerFourHand
-  //     }
-  //   }
-  // }
-
-  // function calcPlayerScore(s, pHand, hHand) {
-  //   let score = s
-  //   let playerHandicap = pHand
-  //   const holeHandicap = hHand
-
-  //   if (score > "20") {
-  //     return "-"
-  //   } else {
-  //     if (holeHandicap <= playerHandicap && score > -10) {
-  //       playerHandicap = playerHandicap - 18
-  //       score--
-  //       return calcPlayerScore(score, playerHandicap, holeHandicap)
-  //     } else {
-  //       return score
-  //     }
-  //   }
-  // }
 
   function calcHoleWinner(hole) {
     var holeIndex
@@ -511,45 +349,78 @@ function MatchUpdate({
     }
   }
 
-  function calcMatchPlayerScore(
-    playerObj,
-    playerName,
-    matchHandicap,
-    gameplay
-  ) {
+  function calcMatchPlayerScore(gameplay, playerObj, p1, p1HC, p2, p2HC) {
     if (playerObj) {
       const holeScores = playerObj?.year[`${year}`].scores?.[`${courseMatch}`]
       const totalScore = [...holeScores[`${holes}`]]
-      return (
-        <div className={`match__playerScore match__${playerName}`}>
-          <div className="match__column--info align-left row-cell capitalize">
-            <span>
-              {playerName} ({matchHandicap})
-            </span>
-          </div>
-          {totalScore.map((score, i) => (
-            <div className="match__column" key={uuidv1()}>
-              <div
-                className="match__score row-cell"
-                data-score={`${calcPlayerScore(
-                  score,
-                  getMatchHandicap(gameplay, playerName, matchHandicap),
-                  courseHoles[i].handicap
-                )}`}
-                data-matchover={`${isMatchOver(i + 1)}`}
-              >
-                <div className="match__line"></div>
-                {calcPlayerScore(
-                  score,
-                  getMatchHandicap(gameplay, playerName, matchHandicap),
-                  courseHoles[i].handicap
-                )}
-                <sup>{score > 20 ? "" : score}</sup>
-              </div>
+      if (
+        p2 &&
+        (gameplay === "scramble" ||
+          gameplay === "pinehurst" ||
+          gameplay === "alternate")
+      ) {
+        return (
+          <div className={`match__playerScore match__${p1}`}>
+            <div className="match__column--info align-left row-cell capitalize">
+              <span>
+                {p1} ({getMatchHandicap(gameplay, p1, p1HC, p2, p2HC)})
+              </span>
             </div>
-          ))}
-        </div>
-      )
+            {totalScore.map((score, i) => (
+              <div className="match__column" key={uuidv1()}>
+                <div
+                  className="match__score row-cell"
+                  data-score={`${calcPlayerScore(
+                    score,
+                    getMatchHandicap(gameplay, p1, p1HC, p2, p2HC),
+                    courseHoles[i].handicap
+                  )}`}
+                  data-matchover={`${isMatchOver(i + 1)}`}
+                >
+                  <div className="match__line"></div>
+                  {calcPlayerScore(
+                    score,
+                    getMatchHandicap(gameplay, p1, p1HC, p2, p2HC),
+                    courseHoles[i].handicap
+                  )}
+                  <sup>{score > 20 ? "" : score}</sup>
+                </div>
+              </div>
+            ))}
+          </div>
+        )
+      } else {
+        return (
+          <div className={`match__playerScore match__${p1}`}>
+            <div className="match__column--info align-left row-cell capitalize">
+              <span>
+                {p1} ({p1HC})
+              </span>
+            </div>
+            {totalScore.map((score, i) => (
+              <div className="match__column" key={uuidv1()}>
+                <div
+                  className="match__score row-cell"
+                  data-score={`${calcPlayerScore(
+                    score,
+                    getMatchHandicap(gameplay, p1, p1HC),
+                    courseHoles[i].handicap
+                  )}`}
+                  data-matchover={`${isMatchOver(i + 1)}`}
+                >
+                  <div className="match__line"></div>
+                  {calcPlayerScore(
+                    score,
+                    getMatchHandicap(gameplay, p1, p1HC),
+                    courseHoles[i].handicap
+                  )}
+                  <sup>{score > 20 ? "" : score}</sup>
+                </div>
+              </div>
+            ))}
+          </div>
+        )
+      }
     }
   }
 
@@ -568,14 +439,6 @@ function MatchUpdate({
     } else {
       return ""
     }
-    // player4 && matchHandicap === "average" ? (
-    //   <div className="flex-basis-100">
-    //     {" "}
-    //     ({(playerTwoHand + playerFourHand) / 2})
-    //   </div>
-    // ) : (
-    //   ""
-    // )
   }
 
   return (
@@ -598,40 +461,50 @@ function MatchUpdate({
       <i className="match__number">match {matchNumber}</i>
       <div className="match__header">
         <div className="match__team color-green">
-          <div className="match__team--playerOne capitalize">{player1}</div>
+          <div className="flex-column text-center">
+            <div className="match__team--playerOne capitalize">{player1}</div>
+            <div>
+              <GatsbyImage image={player1Pic} alt={player1} loading="lazy" />
+            </div>
+          </div>
           {player3 ? (
-            <div className="match__team--playerThree capitalize">{player3}</div>
+            <div className="flex-column text-center">
+              <div className="match__team--playerThree capitalize">
+                {player3}
+              </div>
+              <div>
+                <GatsbyImage image={player3Pic} alt={player4} loading="lazy" />
+              </div>
+            </div>
           ) : (
             ""
           )}
-          {displayTeamHandicap(
-            gameplay,
-            player1,
-            playerOneHand,
-            player3,
-            playerThreeHand
-          )}
         </div>
 
-        <div className="team__scores">
+        <div className="team__scores py-2">
           <div className={"bk-gray font-weight-bold " + getWinningColor()}>
             {displayWinningTeam()}
           </div>
         </div>
 
         <div className="match__team color-blue">
-          <div className="match__team--playerTwo capitalize">{player2}</div>
+          <div className="flex-column text-center ">
+            <div className="match__team--playerTwo capitalize">{player2}</div>
+            <div>
+              <GatsbyImage image={player2Pic} alt={player2} loading="lazy" />
+            </div>
+          </div>
           {player4 ? (
-            <div className="match__team--playerFour capitalize">{player4}</div>
+            <div className="flex-column text-center">
+              <div className="match__team--playerFour capitalize">
+                {player4}
+              </div>
+              <div>
+                <GatsbyImage image={player4Pic} alt={player4} loading="lazy" />
+              </div>
+            </div>
           ) : (
             ""
-          )}
-          {displayTeamHandicap(
-            gameplay,
-            player2,
-            playerTwoHand,
-            player4,
-            playerFourHand
           )}
         </div>
       </div>
@@ -665,11 +538,30 @@ function MatchUpdate({
 
         <div className="match__teamScores">
           <div className="match__teamScores--team1">
-            {playerOne
-              ? calcMatchPlayerScore(playerOne, player1, playerOneHand)
-              : ""}
+            {playerOne && playerThree
+              ? calcMatchPlayerScore(
+                  gameplay,
+                  playerOne,
+                  player1,
+                  playerOneHand,
+                  player3,
+                  playerThreeHand
+                )
+              : calcMatchPlayerScore(
+                  gameplay,
+                  playerOne,
+                  player1,
+                  playerOneHand
+                )}
             {playerThree
-              ? calcMatchPlayerScore(playerThree, player3, playerThreeHand)
+              ? calcMatchPlayerScore(
+                  gameplay,
+                  playerThree,
+                  player3,
+                  playerThreeHand,
+                  player1,
+                  playerOneHand
+                )
               : ""}
 
             <div className="match__teamScore">
@@ -685,11 +577,30 @@ function MatchUpdate({
           </div>
 
           <div className="match__teamScores--team2">
-            {playerTwo
-              ? calcMatchPlayerScore(playerTwo, player2, playerTwoHand)
-              : ""}
+            {playerTwo && playerFour
+              ? calcMatchPlayerScore(
+                  gameplay,
+                  playerTwo,
+                  player2,
+                  playerTwoHand,
+                  player4,
+                  playerFourHand
+                )
+              : calcMatchPlayerScore(
+                  gameplay,
+                  playerTwo,
+                  player2,
+                  playerTwoHand
+                )}
             {playerFour
-              ? calcMatchPlayerScore(playerFour, player4, playerFourHand)
+              ? calcMatchPlayerScore(
+                  gameplay,
+                  playerFour,
+                  player4,
+                  playerFourHand,
+                  player2,
+                  playerTwoHand
+                )
               : ""}
             <div className="match__teamScore">
               <div className="match__column--info column-left">

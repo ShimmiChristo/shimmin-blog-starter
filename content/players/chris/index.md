@@ -6,6 +6,7 @@ nickname: "Shim, Shimmin"
 description: "The developer"
 category: players
 featuredImg: ./profile-pic.png
+thumbnail: ./thumbnail.png
 team: "Green Team"
 handicap: 13
 ---
