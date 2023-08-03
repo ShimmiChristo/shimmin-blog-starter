@@ -102,6 +102,7 @@ body {
   width: 3rem;
   min-width: 3rem;
   border-left: 1px solid var(--light-gray);
+  position: relative;
 }
 .match__column:last-child {
   border-right: 1px solid var(--light-gray);
@@ -169,6 +170,23 @@ body {
 }
 .team__scores {
   display: flex;
+}
+.pops {
+  display: inline-block;
+  position: absolute;
+  width: 3px;
+  height: 3px;
+  border-radius: 50%;
+  border: 1px solid var(--blue);
+  background-color: var(--blue);
+}
+.pops--1 {
+  top: 4px;
+  right: 4px;
+}
+.pops--2 {
+  top: 4px;
+  right: 9px;
 }
 
 @media screen and (max-width: 767px) {
