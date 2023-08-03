@@ -359,13 +359,17 @@ function MatchUpdate({
     }
   }
 
-  function calcPops(score, p1HC, handicap) {
-    const playerScore = parseInt(calcPlayerScore(score, p1HC, handicap))
-      ? calcPlayerScore(score, p1HC, handicap)
-      : 0
+  function calcPops(score, p1HC, handicap, holePar) {
+    let playerHCScore = ""
+    if (score < 50) {
+      playerHCScore = parseInt(calcPlayerScore(score, p1HC, handicap))
+    } else {
+      playerHCScore = parseInt(calcPlayerScore(holePar, p1HC, handicap))
+    }
+
     // 20 is a random high number
-    const actualScore = score < 20 ? score : 0
-    const total = actualScore - playerScore
+    const actualScore = score < 20 ? score : holePar
+    const total = actualScore - playerHCScore
     if (total === 2) {
       return (
         <>
@@ -432,7 +436,14 @@ function MatchUpdate({
           </div>
           {totalScore.map((score, i) => (
             <div className="match__column" key={uuidv1()}>
-              <>{calcPops(score, p1HC, courseHoles[i].handicap)}</>
+              <>
+                {calcPops(
+                  score,
+                  p1HC,
+                  courseHoles[i].handicap,
+                  courseHoles[i].par
+                )}
+              </>
               <div
                 className="match__score row-cell"
                 data-score={`${calcPlayerScore(
