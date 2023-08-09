@@ -9,11 +9,7 @@ import styled from "styled-components"
 import "../styles/match.css"
 import { FaChevronDown, FaTimes } from "react-icons/fa"
 import { calcTeamScore } from "../helpers/calcTeamScore"
-import {
-  calcPlayerScore,
-  getMatchHandicap,
-  getPlayerHandicap,
-} from "../helpers/handicapHelper"
+import { calcPlayerScore, getPlayerHandicap } from "../helpers/handicapHelper"
 
 const CloseBtn = styled.span`
   display: block;
@@ -36,6 +32,7 @@ const OpenBtn = styled.span`
   bottom: 0;
   left: 50%;
   transform: translatex(-50%);
+  z-index: 1;
 
   &:hover {
     cursor: pointer;
@@ -57,9 +54,14 @@ const Section = styled.section`
     display: none;
   }
   ${OpenBtn} {
-    display: block;
-    width: 90%;
-    text-align: center;
+    /* display: block; */
+    /* width: 90%; */
+    /* text-align: center; */
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: end;
+    justify-content: center;
   }
   .match__header {
     padding-bottom: 4rem;
@@ -87,7 +89,7 @@ const Section = styled.section`
   @media (max-width: 768px) {
     &.closed {
       &[data-handicap="average"] {
-        max-height: 380px;
+        max-height: 400px;
       }
       .match__header {
         padding-bottom: 0;
@@ -101,7 +103,7 @@ const Section = styled.section`
     padding: 2rem 1rem;
   }
   &:hover {
-    cursor: pointer;
+    /* cursor: pointer; */
   }
 `
 
@@ -390,43 +392,6 @@ function MatchUpdate({
     if (playerObj) {
       const holeScores = playerObj?.year[`${year}`].scores?.[`${courseMatch}`]
       const totalScore = [...holeScores[`${holes}`]]
-      // if (
-      //   p2 &&
-      //   (gameplay === "scramble" ||
-      //     gameplay === "pinehurst" ||
-      //     gameplay === "alternate")
-      // ) {
-      //   return (
-      //     <div className={`match__playerScore match__${p1}`}>
-      //       <div className="match__column--info align-left row-cell capitalize">
-      //         <span>
-      //           {p1} ({getMatchHandicap(gameplay, p1, p1HC, p2, p2HC)})
-      //         </span>
-      //       </div>
-      //       {totalScore.map((score, i) => (
-      //         <div className="match__column" key={uuidv1()}>
-      //           <div
-      //             className="match__score row-cell"
-      //             data-score={`${calcPlayerScore(
-      //               score,
-      //               getMatchHandicap(gameplay, p1, p1HC, p2, p2HC),
-      //               courseHoles[i].handicap
-      //             )}`}
-      //             data-matchover={`${isMatchOver(i + 1)}`}
-      //           >
-      //             <div className="match__line"></div>
-      //             {calcPlayerScore(
-      //               score,
-      //               getMatchHandicap(gameplay, p1, p1HC, p2, p2HC),
-      //               courseHoles[i].handicap
-      //             )}
-      //             <sup>{score > 20 ? "" : score}</sup>
-      //           </div>
-      //         </div>
-      //       ))}
-      //     </div>
-      //   )
-      // } else {
       return (
         <div className={`match__playerScore match__${p1}`}>
           <div className="match__column--info align-left row-cell capitalize">
