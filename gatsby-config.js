@@ -4,7 +4,7 @@ module.exports = {
     description: `Boys From Back Home Cup`,
     siteUrl: `https://bfbhcup.com/`,
     headline: `The BFBH Cup is a annual golf competition played at different courses throughout the United States, but mainly in the Great Lake State, the High-Five of the country, Michigan.`,
-    logo: `./logo-black.jpg`,
+    logo: `./logo-black-circle.png`,
     author: {
       name: `Chris Shimmin`,
       summary: `who lives in NYC and makes things`,
@@ -126,7 +126,7 @@ module.exports = {
         background_color: `#ffffff`,
         theme_color: `#ffffff`,
         display: `minimal-ui`,
-        icon: `src/images/logo-black.jpg`,
+        icon: `src/images/logo-black-circle.png`,
       },
     },
     `gatsby-plugin-react-helmet`,
