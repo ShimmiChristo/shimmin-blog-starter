@@ -362,9 +362,9 @@ function MatchUpdate({
   function calcPops(score, p1HC, handicap, holePar) {
     let playerHCScore = ""
     if (score < 50) {
-      playerHCScore = parseInt(calcPlayerScore(score, p1HC, handicap))
+      playerHCScore = parseInt(calcPlayerScore(score, p1HC, handicap, holes))
     } else {
-      playerHCScore = parseInt(calcPlayerScore(holePar, p1HC, handicap))
+      playerHCScore = parseInt(calcPlayerScore(holePar, p1HC, handicap, holes))
     }
 
     // 20 is a random high number
@@ -449,12 +449,13 @@ function MatchUpdate({
                 data-score={`${calcPlayerScore(
                   score,
                   p1HC,
-                  courseHoles[i].handicap
+                  courseHoles[i].handicap,
+                  holes
                 )}`}
                 data-matchover={`${isMatchOver(i + 1)}`}
               >
                 <div className="match__line"></div>
-                {calcPlayerScore(score, p1HC, courseHoles[i].handicap)}
+                {calcPlayerScore(score, p1HC, courseHoles[i].handicap, holes)}
                 <sup>{score > 20 ? "" : score}</sup>
               </div>
             </div>

@@ -4,19 +4,29 @@ import MatchNav from "../components/match-nav"
  * @param {int} s - player score
  * @param {int} pHand - player handicap
  * @param {int} hHand - hole handicap
+ * @param {string} courseHoles - front, back, or total
  */
-function calcPlayerScore(s, pHand, hHand) {
+function calcPlayerScore(s, pHand, hHand, holes) {
   let score = s
   let playerHandicap = pHand
   const holeHandicap = hHand
+  const matchHoles = holes
 
   if (score > "20") {
     return "-"
+  } else if (holes !== undefined && holes !== "total") {
+    if (Math.round(holeHandicap / 2) <= playerHandicap && score > -10) {
+      playerHandicap = playerHandicap - 9
+      score--
+      return calcPlayerScore(score, playerHandicap, holeHandicap, matchHoles)
+    } else {
+      return score
+    }
   } else {
     if (holeHandicap <= playerHandicap && score > -10) {
       playerHandicap = playerHandicap - 18
       score--
-      return calcPlayerScore(score, playerHandicap, holeHandicap)
+      return calcPlayerScore(score, playerHandicap, holeHandicap, matchHoles)
     } else {
       return score
     }
@@ -41,10 +51,11 @@ function getPlayerHandicap(player, gameplay, handicaps) {
     player3: 99,
     player4: 99,
   }
-  const p1 = handicaps[0]
-  const p2 = handicaps[1]
-  const p3 = handicaps[2] ? handicaps[2] : 99
-  const p4 = handicaps[3] ? handicaps[3] : 99
+  //* handicap is half of what it is bc of 9 hole matches.
+  const p1 = Math.round(handicaps[0] / 2) // half bc of 9 hole matches
+  const p2 = Math.round(handicaps[1] / 2)
+  const p3 = handicaps[2] ? Math.round(handicaps[2] / 2) : 99
+  const p4 = handicaps[3] ? Math.round(handicaps[3] / 2) : 99
   const lowHC = Math.min(p1, p2, p3, p4)
   const lowHCTeam1 = Math.min(p1, p3)
   const highHCTeam1 = Math.max(p1, p3)
