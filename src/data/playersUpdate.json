@@ -546,11 +546,11 @@
     "chris": {
       "name": "chris",
       "appearances": [2021, 2023],
-      "handicap": 13.0,
+      "handicap": 13,
       "year": {
         "sample": {
           "id": 2023,
-          "handicap": 13.0,
+          "handicap": 13,
           "captain": false,
           "team": "green",
           "scores": {
@@ -2074,7 +2074,7 @@
     "dan": {
       "name": "dan",
       "appearances": [2021, 2022, 2023],
-      "handicap": 25,
+      "handicap": 28,
       "year": {
         "_2023": {
           "id": 2023,
@@ -4257,7 +4257,7 @@
         "_2022": {
           "id": 2022,
           "captain": false,
-          "handicap": 10,
+          "handicap": 21,
           "team": "green",
           "scores": {
             "stoatinBrae": {
@@ -4923,7 +4923,7 @@
       "year": {
         "_2023": {
           "id": 2023,
-          "handicap": 13,
+          "handicap": 12,
           "captain": false,
           "team": "blue",
           "scores": {

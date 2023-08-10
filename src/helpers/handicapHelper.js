@@ -1,4 +1,4 @@
-import MatchNav from "../components/match-nav"
+// import MatchNav from "../components/match-nav"
 
 /**
  * @param {int} s - player score
@@ -118,17 +118,10 @@ function getMatchHandicap(
     let team1Adj = Math.round(0.6 * lowHCTeam1 + 0.4 * highHCTeam1)
     let team2Adj = Math.round(0.6 * lowHCTeam2 + 0.4 * highHCTeam2)
     return calcToLowestHandicap(team1Adj, team2Adj, 99, 99).player1
-    // const team2 = calcToLowestHandicap(team1Adj, team2Adj, 99, 99).player2
-    // if (team1 < team2) return team1
-    // else return team2
-    // let lowHC = Math.min(player1HC, player2HC)
-    // let highHC = Math.max(player1HC, player2HC)
-    // return Math.round(0.6 * lowHC + 0.4 * highHC)
   } else if (gameplay === "alternate") {
     let team1Adj = Math.round((player1HC + player2HC) / 2)
     let team2Adj = Math.round((player3HC + player4HC) / 2)
     return calcToLowestHandicap(team1Adj, team2Adj, 99, 99).player1
-    // return Math.round((player1HC + player2HC) / 2)
   } else if (gameplay === "one-ball" || gameplay === "two-ball") {
     return calcToLowestHandicap(p1HC, p2HC, p3HC, p4HC).player1
   } else if (player2Name && player2HC) {
