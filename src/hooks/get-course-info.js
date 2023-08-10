@@ -38,6 +38,26 @@ export const CourseInfo = () => {
                     slope
                   }
                 }
+                orange {
+                  out {
+                    yardage
+                    par
+                    index
+                    slope
+                  }
+                  in {
+                    yardage
+                    par
+                    index
+                    slope
+                  }
+                  total {
+                    yardage
+                    par
+                    index
+                    slope
+                  }
+                }
               }
             }
           }
@@ -55,6 +75,26 @@ export const CourseInfo = () => {
             totals {
               tees {
                 purple {
+                  out {
+                    yardage
+                    par
+                    index
+                    slope
+                  }
+                  in {
+                    yardage
+                    par
+                    index
+                    slope
+                  }
+                  total {
+                    yardage
+                    par
+                    index
+                    slope
+                  }
+                }
+                orange {
                   out {
                     yardage
                     par
@@ -110,6 +150,26 @@ export const CourseInfo = () => {
                     slope
                   }
                 }
+                orange {
+                  out {
+                    yardage
+                    par
+                    index
+                    slope
+                  }
+                  in {
+                    yardage
+                    par
+                    index
+                    slope
+                  }
+                  total {
+                    yardage
+                    par
+                    index
+                    slope
+                  }
+                }
               }
             }
           }
@@ -127,6 +187,26 @@ export const CourseInfo = () => {
             totals {
               tees {
                 purple {
+                  out {
+                    yardage
+                    par
+                    index
+                    slope
+                  }
+                  in {
+                    yardage
+                    par
+                    index
+                    slope
+                  }
+                  total {
+                    yardage
+                    par
+                    index
+                    slope
+                  }
+                }
+                orange {
                   out {
                     yardage
                     par

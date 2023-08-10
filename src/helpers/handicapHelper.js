@@ -131,9 +131,24 @@ function getMatchHandicap(
   }
 }
 
+function getCourseHandicap(
+  playerHandicap,
+  courseSlope,
+  courseRating,
+  coursePar
+) {
+  /* 
+    *** FORMULA ****
+    handicap * (course slope / 113) + (course rating - course par)
+  */
+  const form = playerHandicap * (courseSlope / 113) + (courseRating - coursePar)
+  return Math.round(form * 10) / 10
+}
+
 export {
   calcPlayerScore,
   getMatchHandicap,
   calcToLowestHandicap,
   getPlayerHandicap,
+  getCourseHandicap,
 }

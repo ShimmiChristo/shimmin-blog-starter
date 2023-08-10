@@ -9,7 +9,11 @@ import styled from "styled-components"
 import "../styles/match.css"
 import { FaChevronDown, FaTimes } from "react-icons/fa"
 import { calcTeamScore } from "../helpers/calcTeamScore"
-import { calcPlayerScore, getPlayerHandicap } from "../helpers/handicapHelper"
+import {
+  calcPlayerScore,
+  getPlayerHandicap,
+  getCourseHandicap,
+} from "../helpers/handicapHelper"
 
 const CloseBtn = styled.span`
   display: block;
@@ -152,36 +156,105 @@ function MatchUpdate({
   // const courseLink = course[`${courseMatch}`].link
 
   const playerOne = playersUpdateJson[`${player1}`]
+  const p1Name = playerOne.name
   const playerOneHand = player1MatchHandicap
     ? parseInt(player1MatchHandicap)
     : playerOne.year[`${year}`].handicap
   const playerTwo = playersUpdateJson[`${player2}`]
+  const p2Name = playerTwo.name
   const playerTwoHand = player2MatchHandicap
     ? parseInt(player2MatchHandicap)
     : playerTwo.year[`${year}`].handicap
   const playerThree = playersUpdateJson[`${player3}`] || undefined
+  const p3Name = playerThree?.name
   const playerThreeHand = (() => {
     if (player3MatchHandicap) return parseInt(player3MatchHandicap)
     else if (playerThree !== undefined && playerThree.year[`${year}`].handicap)
       return playerThree?.year[`${year}`].handicap
-    else return ""
+    else return 99
   })()
   const playerFour = playersUpdateJson[`${player4}`] || undefined
+  const p4Name = playerFour?.name
   const playerFourHand = (() => {
     if (player4MatchHandicap) return parseInt(player4MatchHandicap)
     else if (playerFour !== undefined && playerFour.year[`${year}`].handicap)
       return playerFour.year[`${year}`].handicap
-    else return ""
+    else return 99
   })()
 
   const matchNumber = matchId
+  let playerOneTees = "orange"
+  let playerTwoTees = "orange"
+  let playerThreeTees = "orange"
+  let playerFourTees = "orange"
+  if (["chris", "matt", "gordon", "rj", "dylan"].indexOf(p1Name) > -1) {
+    playerOneTees = "purple"
+  }
+  if (["chris", "matt", "gordon", "rj", "dylan"].indexOf(p2Name) > -1) {
+    playerTwoTees = "purple"
+  }
+  if (["chris", "matt", "gordon", "rj", "dylan"].indexOf(p3Name) > -1) {
+    playerThreeTees = "purple"
+  }
+  if (["chris", "matt", "gordon", "rj", "dylan"].indexOf(p4Name) > -1) {
+    playerFourTees = "purple"
+  }
+  const courseSlopeP1 =
+    course[`${courseMatch}`].totals.tees[`${playerOneTees}`].total.slope
+  const courseIndexP1 =
+    course[`${courseMatch}`].totals.tees[`${playerOneTees}`].total.index
+  const courseParP1 =
+    course[`${courseMatch}`].totals.tees[`${playerOneTees}`].total.par
+  const playerOneCourseHC = getCourseHandicap(
+    playerOneHand,
+    courseSlopeP1,
+    courseIndexP1,
+    courseParP1
+  )
+  const courseSlopeP2 =
+    course[`${courseMatch}`].totals.tees[`${playerTwoTees}`].total.slope
+  const courseIndexP2 =
+    course[`${courseMatch}`].totals.tees[`${playerTwoTees}`].total.index
+  const courseParP2 =
+    course[`${courseMatch}`].totals.tees[`${playerTwoTees}`].total.par
+  const playerTwoCourseHC = getCourseHandicap(
+    playerTwoHand,
+    courseSlopeP2,
+    courseIndexP2,
+    courseParP2
+  )
+  const courseSlopeP3 =
+    course[`${courseMatch}`].totals.tees[`${playerThreeTees}`].total.slope
+  const courseIndexP3 =
+    course[`${courseMatch}`].totals.tees[`${playerThreeTees}`].total.index
+  const courseParP3 =
+    course[`${courseMatch}`].totals.tees[`${playerThreeTees}`].total.par
+  const playerThreeCourseHC = getCourseHandicap(
+    playerThreeHand,
+    courseSlopeP3,
+    courseIndexP3,
+    courseParP3
+  )
+  const courseSlopeP4 =
+    course[`${courseMatch}`].totals.tees[`${playerFourTees}`].total.slope
+  const courseIndexP4 =
+    course[`${courseMatch}`].totals.tees[`${playerFourTees}`].total.index
+  const courseParP4 =
+    course[`${courseMatch}`].totals.tees[`${playerFourTees}`].total.par
+  const playerFourCourseHC = getCourseHandicap(
+    playerFourHand,
+    courseSlopeP4,
+    courseIndexP4,
+    courseParP4
+  )
 
   const handicaps = [
-    playerOneHand,
-    playerTwoHand,
-    playerThreeHand,
-    playerFourHand,
+    playerOneCourseHC,
+    playerTwoCourseHC,
+    playerThreeCourseHC,
+    playerFourCourseHC,
   ]
+
   const p1HCglobal = getPlayerHandicap("player1", gameplay, handicaps)
   const p2HCglobal = getPlayerHandicap("player2", gameplay, handicaps)
   const p3HCglobal = getPlayerHandicap("player3", gameplay, handicaps)
