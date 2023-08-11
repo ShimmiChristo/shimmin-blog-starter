@@ -136,8 +136,8 @@ body {
 .row-cell {
   border-bottom: 1px solid var(--light-gray);
   height: 2rem;
+  position: relative;
 }
-
 .match__teamScores {
   display: flex;
   flex-direction: column;
@@ -218,6 +218,11 @@ body {
   }
   .team__scores {
     flex-direction: column;
+  }
+  .course-rating {
+    position: absolute;
+    top: 0;
+    left: 0;
   }
 }
 

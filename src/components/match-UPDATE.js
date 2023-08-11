@@ -601,16 +601,16 @@ function MatchUpdate({
           <div className="match__column--info align-right">
             <div className="match__hole row-cell">hole</div>
             <div className="match__yardage row-cell">
-              <span className="fontSize-xs">
+              <span className="fontSize-xs course-rating">
                 {purpleTeesIndex + "/" + purpleTeesSlope}
               </span>
-              purple
+              <span className="fontSize-1 fontSize-0-mb">purple</span>
             </div>
             <div className="match__yardage row-cell">
-              <span className="fontSize-xs">
+              <span className="fontSize-xs course-rating">
                 {orangeTeesIndex + "/" + orangeTeesSlope}
               </span>
-              orange
+              <span className="fontSize-1 fontSize-0-mb">orange</span>
             </div>
             <div className="match__handicap row-cell">handicap</div>
             <div className="match__par row-cell">par</div>

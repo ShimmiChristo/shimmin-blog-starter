@@ -373,7 +373,8 @@ p a:focus::before {
   padding: 0 4px;
   display: inline-block;
 }
-.fontSize-0 {
+.fontSize-0,
+.fontSize-small {
   font-size: var(--fontSize-0);
 }
 .fontSize-1 {
@@ -536,7 +537,6 @@ button:hover,
 .position-sticky-header {
   top: 93px !important;
   background-color: var(--light-gray);
-  
 }
 
 /* Media queries */
@@ -549,5 +549,12 @@ button:hover,
   ul,
   ol {
     list-style-position: inside;
+  }
+}
+
+@media (max-width: 768px) {
+  .fontSize-0-mb,
+  .fontSize-small-mb {
+    font-size: var(--fontSize-0);
   }
 }
