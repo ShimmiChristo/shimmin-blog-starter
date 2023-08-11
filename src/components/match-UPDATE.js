@@ -199,6 +199,14 @@ function MatchUpdate({
   if (["chris", "matt", "gordon", "rj", "dylan"].indexOf(p4Name) > -1) {
     playerFourTees = "purple"
   }
+  const purpleTeesSlope =
+    course[`${courseMatch}`].totals.tees["purple"].total.slope
+  const purpleTeesIndex =
+    course[`${courseMatch}`].totals.tees["purple"].total.index
+  const orangeTeesSlope =
+    course[`${courseMatch}`].totals.tees["orange"].total.slope
+  const orangeTeesIndex =
+    course[`${courseMatch}`].totals.tees["orange"].total.index
   const courseSlopeP1 =
     course[`${courseMatch}`].totals.tees[`${playerOneTees}`].total.slope
   const courseIndexP1 =
@@ -592,8 +600,18 @@ function MatchUpdate({
         <div className="match__course">
           <div className="match__column--info align-right">
             <div className="match__hole row-cell">hole</div>
-            <div className="match__yardage row-cell">purple</div>
-            <div className="match__yardage row-cell">orange</div>
+            <div className="match__yardage row-cell">
+              <span className="fontSize-xs">
+                {purpleTeesIndex + "/" + purpleTeesSlope}
+              </span>
+              purple
+            </div>
+            <div className="match__yardage row-cell">
+              <span className="fontSize-xs">
+                {orangeTeesIndex + "/" + orangeTeesSlope}
+              </span>
+              orange
+            </div>
             <div className="match__handicap row-cell">handicap</div>
             <div className="match__par row-cell">par</div>
           </div>

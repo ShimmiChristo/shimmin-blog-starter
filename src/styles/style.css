@@ -55,7 +55,7 @@
   --fontSize-5: 2.074rem;
   --fontSize-6: 2.488rem;
   --fontSize-7: 2.986rem;
-  --fontSize-xs: 0.8rem;
+  --fontSize-xs: 0.6rem;
 
   --color-text: #2e353f;
   --color-text-light: #4f5969;
@@ -367,6 +367,11 @@ p a:focus::before {
 }
 .font-bold-serif {
   font-family: var(--fontFamily-serif-bold);
+}
+.fontSize-xs {
+  font-size: var(--fontSize-xs);
+  padding: 0 4px;
+  display: inline-block;
 }
 .fontSize-0 {
   font-size: var(--fontSize-0);
