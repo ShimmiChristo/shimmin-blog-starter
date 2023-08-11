@@ -592,7 +592,8 @@ function MatchUpdate({
         <div className="match__course">
           <div className="match__column--info align-right">
             <div className="match__hole row-cell">hole</div>
-            <div className="match__yardage row-cell">yardage</div>
+            <div className="match__yardage row-cell">purple</div>
+            <div className="match__yardage row-cell">orange</div>
             <div className="match__handicap row-cell">handicap</div>
             <div className="match__par row-cell">par</div>
           </div>
@@ -609,6 +610,9 @@ function MatchUpdate({
               </div>
               <div className="match__yardage row-cell">
                 {hole.tees[Object.keys(hole.tees)[0]]}
+              </div>
+              <div className="match__yardage row-cell">
+                {hole.tees[Object.keys(hole.tees)[1]]}
               </div>
               <div className="match__handicap row-cell">{hole.handicap}</div>
               <div className="match__par row-cell">{hole.par}</div>

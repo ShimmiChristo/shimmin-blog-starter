@@ -12,6 +12,7 @@ export const CourseInfo = () => {
               number
               tees {
                 purple
+                orange
               }
               handicap
               par
