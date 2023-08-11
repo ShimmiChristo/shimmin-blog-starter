@@ -3,7 +3,7 @@
     "cam": {
       "name": "cam",
       "appearances": [2022, 2023],
-      "handicap": 22,
+      "handicap": 21,
       "year": {
         "sample": {
           "id": 2023,
@@ -190,7 +190,7 @@
         },
         "_2023": {
           "id": 2023,
-          "handicap": 22,
+          "handicap": 21,
           "captain": false,
           "team": "blue",
           "scores": {
@@ -1044,7 +1044,7 @@
     "craig": {
       "name": "craig",
       "appearances": [2021, 2022, 2023],
-      "handicap": 21,
+      "handicap": 20,
       "year": {
         "sample": {
           "id": 2023,
@@ -1231,7 +1231,7 @@
         },
         "_2023": {
           "id": 2023,
-          "handicap": 21,
+          "handicap": 20,
           "captain": false,
           "team": "blue",
           "scores": {
@@ -2074,11 +2074,11 @@
     "dan": {
       "name": "dan",
       "appearances": [2021, 2022, 2023],
-      "handicap": 28,
+      "handicap": 31,
       "year": {
         "_2023": {
           "id": 2023,
-          "handicap": 28,
+          "handicap": 31,
           "captain": false,
           "team": "blue",
           "scores": {
@@ -2559,11 +2559,11 @@
     "derek": {
       "name": "derek",
       "appearances": [2021, 2022, 2023],
-      "handicap": 25,
+      "handicap": 27,
       "year": {
         "_2023": {
           "id": 2023,
-          "handicap": 25,
+          "handicap": 27,
           "captain": false,
           "team": "green",
           "scores": {
@@ -4919,11 +4919,11 @@
     "rj": {
       "name": "rj",
       "appearances": [2021, 2022, 2023],
-      "handicap": 12,
+      "handicap": 13,
       "year": {
         "_2023": {
           "id": 2023,
-          "handicap": 12,
+          "handicap": 13,
           "captain": false,
           "team": "blue",
           "scores": {
