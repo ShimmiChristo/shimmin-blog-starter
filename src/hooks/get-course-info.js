@@ -69,6 +69,7 @@ export const CourseInfo = () => {
               number
               tees {
                 purple
+                orange
               }
               handicap
               par
@@ -125,6 +126,7 @@ export const CourseInfo = () => {
               number
               tees {
                 purple
+                orange
               }
               handicap
               par
@@ -181,6 +183,7 @@ export const CourseInfo = () => {
               number
               tees {
                 purple
+                orange
               }
               handicap
               par
