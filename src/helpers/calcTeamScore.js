@@ -1,6 +1,6 @@
 import { PlayerInfoUpdate } from "/src/hooks/get-player-info-UPDATE"
 import { CourseInfo } from "/src/hooks/get-course-info"
-import { calcPlayerScore, getMatchHandicap } from "./handicapHelper"
+import { calcPlayerScore } from "./handicapHelper"
 
 function calcTeamScore(
   year,
@@ -46,23 +46,17 @@ function calcTeamScore(
 
     let playerOneHandicapScore = calcPlayerScore(
       sPlayerOne,
-      // getMatchHandicap(gameplay, player1Name, playerOneHandicap),
       playerOneHandicap,
-      hHand
+      hHand,
+      holes
     )
 
     if (playerTwo !== undefined) {
       var playerTwoHandicapScore = calcPlayerScore(
         sPlayerTwo,
-        // getMatchHandicap(
-        //   gameplay,
-        //   player1Name,
-        //   playerOneHandicap,
-        //   player2Name,
-        //   playerTwoHandicap
-        // ),
         playerTwoHandicap,
-        hHand
+        hHand,
+        holes
       )
     }
 

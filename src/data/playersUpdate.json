@@ -5,189 +5,6 @@
       "appearances": [2022, 2023],
       "handicap": 21,
       "year": {
-        "sample": {
-          "id": 2023,
-          "handicap": 2,
-          "captain": false,
-          "team": "blue",
-          "scores": {
-            "boyneHighlandsArthurHills": {
-              "course": "Arthur Hills at Boyne Highlands",
-              "front": [99, 99, 99, 99, 99, 99, 99, 99, 99],
-              "frontHandicap": 999,
-              "back": [99, 99, 99, 99, 99, 99, 99, 99, 99],
-              "backHandicap": 999
-            },
-            "boyneHighlandsDonaldRoss": {
-              "course": "Donald Ross at Boyne Highlands",
-              "front": [99, 99, 99, 99, 99, 99, 99, 99, 99],
-              "frontHandicap": 999,
-              "back": [99, 99, 99, 99, 99, 99, 99, 99, 99],
-              "backHandicap": 999
-            },
-            "boyneHighlandsMoor": {
-              "course": "The Moor at Boyne Highlands",
-              "front": [99, 99, 99, 99, 99, 99, 99, 99, 99],
-              "frontHandicap": 999,
-              "back": [99, 99, 99, 99, 99, 99, 99, 99, 99],
-              "backHandicap": 999
-            },
-            "boyneHighlandsHeather": {
-              "course": "The Heather at Boyne Highlands",
-              "front": [99, 99, 99, 99, 99, 99, 99, 99, 99],
-              "frontHandicap": 999,
-              "back": [99, 99, 99, 99, 99, 99, 99, 99, 99],
-              "backHandicap": 999
-            }
-          },
-          "points": [
-            {
-              "id": "bestBall",
-              "game": "Best Ball",
-              "wins": 0,
-              "ties": 0,
-              "losses": 0
-            },
-            {
-              "id": "twoBestBall",
-              "game": "Best Ball",
-              "wins": 0,
-              "ties": 0,
-              "losses": 0
-            },
-            {
-              "id": "bramble",
-              "game": "Bramble",
-              "wins": 0,
-              "ties": 0,
-              "losses": 0
-            },
-            {
-              "id": "twoBallBramble",
-              "game": "Bramble",
-              "wins": 0,
-              "ties": 0,
-              "losses": 0
-            },
-            {
-              "id": "alternate",
-              "game": "Alternate",
-              "wins": 0,
-              "ties": 0,
-              "losses": 0
-            },
-            {
-              "id": "brambleAlternate",
-              "game": "Bramble Alternate",
-              "wins": 0,
-              "ties": 0,
-              "losses": 0
-            },
-            {
-              "id": "pinehurst",
-              "game": "Pinehurst",
-              "wins": 0,
-              "ties": 0,
-              "losses": 0
-            },
-            {
-              "id": "scramble",
-              "game": "Scramble",
-              "wins": 0,
-              "ties": 0,
-              "losses": 0
-            },
-            {
-              "id": "singles",
-              "game": "Singles",
-              "wins": 0,
-              "ties": 0,
-              "losses": 0
-            }
-          ],
-          "records": [
-            {
-              "partners": [
-                {
-                  "name": "craig",
-                  "wins": 0,
-                  "ties": 0,
-                  "losses": 0
-                },
-                {
-                  "name": "dan",
-                  "wins": 0,
-                  "ties": 0,
-                  "losses": 0
-                },
-                {
-                  "name": "dylan",
-                  "wins": 0,
-                  "ties": 0,
-                  "losses": 0
-                },
-                {
-                  "name": "evan",
-                  "wins": 0,
-                  "ties": 0,
-                  "losses": 0
-                },
-                {
-                  "name": "rj",
-                  "wins": 0,
-                  "ties": 0,
-                  "losses": 0
-                }
-              ]
-            },
-            {
-              "opponents": [
-                {
-                  "name": "chris",
-                  "wins": 0,
-                  "ties": 0,
-                  "losses": 0
-                },
-                {
-                  "name": "curtis",
-                  "wins": 0,
-                  "ties": 0,
-                  "losses": 0
-                },
-                {
-                  "name": "derek",
-                  "wins": 0,
-                  "ties": 0,
-                  "losses": 0
-                },
-                {
-                  "name": "gordon",
-                  "wins": 0,
-                  "ties": 0,
-                  "losses": 0
-                },
-                {
-                  "name": "jake",
-                  "wins": 0,
-                  "ties": 0,
-                  "losses": 0
-                },
-                {
-                  "name": "matt",
-                  "wins": 0,
-                  "ties": 0,
-                  "losses": 0
-                },
-                {
-                  "name": "travis",
-                  "wins": 0,
-                  "ties": 0,
-                  "losses": 0
-                }
-              ]
-            }
-          ]
-        },
         "_2023": {
           "id": 2023,
           "handicap": 21,
@@ -540,19 +357,12 @@
               ]
             }
           ]
-        }
-      }
-    },
-    "chris": {
-      "name": "chris",
-      "appearances": [2021, 2023],
-      "handicap": 13,
-      "year": {
+        },
         "sample": {
           "id": 2023,
-          "handicap": 13,
+          "handicap": 2,
           "captain": false,
-          "team": "green",
+          "team": "blue",
           "scores": {
             "boyneHighlandsArthurHills": {
               "course": "Arthur Hills at Boyne Highlands",
@@ -652,6 +462,46 @@
             {
               "partners": [
                 {
+                  "name": "craig",
+                  "wins": 0,
+                  "ties": 0,
+                  "losses": 0
+                },
+                {
+                  "name": "dan",
+                  "wins": 0,
+                  "ties": 0,
+                  "losses": 0
+                },
+                {
+                  "name": "dylan",
+                  "wins": 0,
+                  "ties": 0,
+                  "losses": 0
+                },
+                {
+                  "name": "evan",
+                  "wins": 0,
+                  "ties": 0,
+                  "losses": 0
+                },
+                {
+                  "name": "rj",
+                  "wins": 0,
+                  "ties": 0,
+                  "losses": 0
+                }
+              ]
+            },
+            {
+              "opponents": [
+                {
+                  "name": "chris",
+                  "wins": 0,
+                  "ties": 0,
+                  "losses": 0
+                },
+                {
                   "name": "curtis",
                   "wins": 0,
                   "ties": 0,
@@ -688,49 +538,16 @@
                   "losses": 0
                 }
               ]
-            },
-            {
-              "opponents": [
-                {
-                  "name": "cam",
-                  "wins": 0,
-                  "ties": 0,
-                  "losses": 0
-                },
-                {
-                  "name": "craig",
-                  "wins": 0,
-                  "ties": 0,
-                  "losses": 0
-                },
-                {
-                  "name": "dan",
-                  "wins": 0,
-                  "ties": 0,
-                  "losses": 0
-                },
-                {
-                  "name": "dylan",
-                  "wins": 0,
-                  "ties": 0,
-                  "losses": 0
-                },
-                {
-                  "name": "evan",
-                  "wins": 0,
-                  "ties": 0,
-                  "losses": 0
-                },
-                {
-                  "name": "rj",
-                  "wins": 0,
-                  "ties": 0,
-                  "losses": 0
-                }
-              ]
             }
           ]
-        },
+        }
+      }
+    },
+    "chris": {
+      "name": "chris",
+      "appearances": [2021, 2023],
+      "handicap": 13,
+      "year": {
         "_2023": {
           "id": 2023,
           "handicap": 13,
@@ -1038,19 +855,12 @@
               ]
             }
           ]
-        }
-      }
-    },
-    "craig": {
-      "name": "craig",
-      "appearances": [2021, 2022, 2023],
-      "handicap": 20,
-      "year": {
+        },
         "sample": {
           "id": 2023,
-          "handicap": 999,
+          "handicap": 13,
           "captain": false,
-          "team": "blue",
+          "team": "green",
           "scores": {
             "boyneHighlandsArthurHills": {
               "course": "Arthur Hills at Boyne Highlands",
@@ -1150,46 +960,6 @@
             {
               "partners": [
                 {
-                  "name": "cam",
-                  "wins": 0,
-                  "ties": 0,
-                  "losses": 0
-                },
-                {
-                  "name": "dan",
-                  "wins": 0,
-                  "ties": 0,
-                  "losses": 0
-                },
-                {
-                  "name": "dylan",
-                  "wins": 0,
-                  "ties": 0,
-                  "losses": 0
-                },
-                {
-                  "name": "evan",
-                  "wins": 0,
-                  "ties": 0,
-                  "losses": 0
-                },
-                {
-                  "name": "rj",
-                  "wins": 0,
-                  "ties": 0,
-                  "losses": 0
-                }
-              ]
-            },
-            {
-              "opponents": [
-                {
-                  "name": "chris",
-                  "wins": 0,
-                  "ties": 0,
-                  "losses": 0
-                },
-                {
                   "name": "curtis",
                   "wins": 0,
                   "ties": 0,
@@ -1226,9 +996,56 @@
                   "losses": 0
                 }
               ]
+            },
+            {
+              "opponents": [
+                {
+                  "name": "cam",
+                  "wins": 0,
+                  "ties": 0,
+                  "losses": 0
+                },
+                {
+                  "name": "craig",
+                  "wins": 0,
+                  "ties": 0,
+                  "losses": 0
+                },
+                {
+                  "name": "dan",
+                  "wins": 0,
+                  "ties": 0,
+                  "losses": 0
+                },
+                {
+                  "name": "dylan",
+                  "wins": 0,
+                  "ties": 0,
+                  "losses": 0
+                },
+                {
+                  "name": "evan",
+                  "wins": 0,
+                  "ties": 0,
+                  "losses": 0
+                },
+                {
+                  "name": "rj",
+                  "wins": 0,
+                  "ties": 0,
+                  "losses": 0
+                }
+              ]
             }
           ]
-        },
+        }
+      }
+    },
+    "craig": {
+      "name": "craig",
+      "appearances": [2021, 2022, 2023],
+      "handicap": 20,
+      "year": {
         "_2023": {
           "id": 2023,
           "handicap": 20,
