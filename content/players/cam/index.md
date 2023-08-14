@@ -1,6 +1,6 @@
 ---
 active: true
-index: 05
+index: 04
 name: cam
 nickname: ""
 description: ""
@@ -11,8 +11,6 @@ team: "Blue Team"
 handicap: 25
 ---
 
-A new member to the Blue Team in 2022. Cam likes U of M sports and skiing.
+A new member in 2022, Cam is back in 2023 as a new father and a lighter man. He's looking to improve after only winning 2 matches in 2022. An early favorite for MIP.
 
-Cam is a comptetor looking to compete in 2022. His greatest skills aren't on the golf course, but he'll still find a way to win.
-
-Early favorite for the John Daly award.
+Cam likes U of M sports and skiing.

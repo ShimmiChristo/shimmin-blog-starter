@@ -924,6 +924,48 @@ export const PlayerInfoUpdate = () => {
         jake {
           name
           year {
+            _2023 {
+              handicap
+              id
+              team
+              points {
+                game
+                id
+                wins
+                ties
+                losses
+              }
+              scores {
+                boyneHighlandsArthurHills {
+                  course
+                  frontHandicap
+                  front
+                  back
+                  backHandicap
+                }
+                boyneHighlandsDonaldRoss {
+                  course
+                  frontHandicap
+                  front
+                  back
+                  backHandicap
+                }
+                boyneHighlandsMoor {
+                  course
+                  frontHandicap
+                  front
+                  back
+                  backHandicap
+                }
+                boyneHighlandsHeather {
+                  course
+                  frontHandicap
+                  front
+                  back
+                  backHandicap
+                }
+              }
+            }
             _2022 {
               handicap
               id

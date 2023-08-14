@@ -11,5 +11,4 @@ team: "Blue Team"
 handicap: 36
 ---
 
-A new member to the Blue Team in 2022. Evan is looking to have a good time, not 
-embarrass himself, and not let the Blue Team down.
+After an abysmal 2022 opening, Evan is looking to redeem himself. Evan is the wildcard of the Blue Team. He may shake things up early. 

@@ -1,6 +1,6 @@
 ---
 active: true
-index: 09
+index: 08
 name: chris
 nickname: "Shim, Shimmin"
 description: "The developer"
@@ -11,9 +11,8 @@ team: "Green Team"
 handicap: 13
 ---
 
+After sitting out in 2022, Chris is chomping at the bit to get back out there. He still doesn't golf much, but he bought a new TaylorMade wedge and wears the most comfortable golf shoes from New Balance.
 
-<!-- const { nodes } = allMdx() -->
-<!-- <MDXRenderer>{props.pageContext.frontmatter.blog}</MDXRenderer> -->
+Chris is looking to get his first win against Dylan.
 
-Living in NYC, he's golfed 5 times in the last 5 years. You'll want to stand behind him while he hits. 
-Creator and Developer of BFBHCup.com. Maybe if he golfed more and worked less, he could shoot under 90.
+Creator and Developer of BFBHCup.com.
