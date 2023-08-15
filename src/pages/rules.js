@@ -83,7 +83,7 @@ const TopicPage = ({ data, location }) => {
               In 2 best ball/four-ball, each member of a two-man team plays his
               own ball, so four balls are in play on every hole. Each team
               counts the total of its two scores on each hole, and the team
-              whose player has the lowest total score wins the hole. If the low
+              with lowest total score wins the hole. If the low
               scores are tied, the hole is halved.
             </p>
             <p>Handicap allowance is 90%</p>
