@@ -8,7 +8,7 @@ category: players
 featuredImg: ./profile-pic.png
 thumbnail: ./thumbnail.png
 team: "Green Team"
-handicap: 21
+handicap: 19
 ---
 
 A new member to the Green Team in 2022. Jake is replacing Chris (family obligations) in 2022.
