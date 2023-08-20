@@ -5404,11 +5404,11 @@
     "travis": {
       "name": "travis",
       "appearances": [2021, 2022, 2023],
-      "handicap": 22,
+      "handicap": 21,
       "year": {
         "_2023": {
           "id": 2023,
-          "handicap": 22,
+          "handicap": 21,
           "captain": false,
           "team": "green",
           "scores": {
