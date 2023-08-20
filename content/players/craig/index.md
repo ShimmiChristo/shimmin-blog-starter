@@ -2,7 +2,7 @@
 active: true
 index: 03
 name: craig
-nickname: "Twin 1"
+nickname: "Crohnsie"
 description: "Description"
 category: players
 featuredImg: ./profile-pic.png
