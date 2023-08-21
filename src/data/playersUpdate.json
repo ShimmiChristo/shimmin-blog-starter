@@ -546,11 +546,11 @@
     "chris": {
       "name": "chris",
       "appearances": [2021, 2023],
-      "handicap": 13,
+      "handicap": 13.0,
       "year": {
         "_2023": {
           "id": 2023,
-          "handicap": 13,
+          "handicap": 13.0,
           "captain": false,
           "team": "green",
           "scores": {
@@ -2862,11 +2862,11 @@
     "dylan": {
       "name": "dylan",
       "appearances": [2021, 2022, 2023],
-      "handicap": 1.2,
+      "handicap": 1.1,
       "year": {
         "_2023": {
           "id": 2022,
-          "handicap": 1.2,
+          "handicap": 1.1,
           "captain": false,
           "team": "blue",
           "scores": {
@@ -4429,11 +4429,11 @@
     "matt": {
       "name": "matt",
       "appearances": [2021, 2022, 2023],
-      "handicap": 6.2,
+      "handicap": 5.4,
       "year": {
         "_2023": {
           "id": 2023,
-          "handicap": 6.2,
+          "handicap": 5.4,
           "captain": false,
           "team": "green",
           "scores": {
