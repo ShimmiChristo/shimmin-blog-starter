@@ -78,11 +78,16 @@ function getPlayerHandicap(player, gameplay, handicaps) {
     score.player2 = team2Adj - lowHCTeam
     score.player3 = team1Adj - lowHCTeam
     score.player4 = team2Adj - lowHCTeam
-  } else {
+  } else if (gameplay === "singles") {
     score.player1 = p1 - lowHC
     score.player2 = p2 - lowHC
     score.player3 = p3 - lowHC
     score.player4 = p4 - lowHC
+  } else {
+    score.player1 = Math.round((p1 - lowHC) * 0.9)
+    score.player2 = Math.round((p2 - lowHC) * 0.9)
+    score.player3 = Math.round((p3 - lowHC) * 0.9)
+    score.player4 = Math.round((p4 - lowHC) * 0.9)
   }
   return score[`${player}`]
 }
