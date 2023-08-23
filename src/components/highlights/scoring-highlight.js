@@ -8,7 +8,7 @@ import { v1 as uuidv1 } from "uuid"
 function HighlightsScoring({ yearProp }) {
   // const players = PlayerInfoUpdate()
   // const newProp = players.chris.year[`_${yearProp}`].handicap
-  const greenTeam = ["matt", "chris", "jake", "travis", "curtis", "derek"]
+  const greenTeam = ["matt", "chris", "jake", "travis", "derek", "curtis"]
   const blueTeam = ["dylan", "rj", "craig", "cam", "dan", "evan"]
 
   // for (const property in players) {

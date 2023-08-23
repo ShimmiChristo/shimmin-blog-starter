@@ -50,9 +50,9 @@ const TopicPage = ({ location }) => {
   const p7 = "matt"
   const p8 = "chris"
   const p9 = "jake"
-  const p10 = "curtis"
-  const p11 = "travis"
-  const p12 = "derek"
+  const p10 = "travis"
+  const p11 = "derek"
+  const p12 = "curtis"
 
   return (
     <Layout location={location} title={siteTitle}>
