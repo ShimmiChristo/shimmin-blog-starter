@@ -3347,11 +3347,11 @@
     "evan": {
       "name": "evan",
       "appearances": [2022, 2023],
-      "handicap": 27,
+      "handicap": 31,
       "year": {
         "_2023": {
           "id": 2023,
-          "handicap": 27,
+          "handicap": 31,
           "captain": false,
           "team": "blue",
           "scores": {
@@ -4429,11 +4429,11 @@
     "matt": {
       "name": "matt",
       "appearances": [2021, 2022, 2023],
-      "handicap": 5.4,
+      "handicap": 5.2,
       "year": {
         "_2023": {
           "id": 2023,
-          "handicap": 5.4,
+          "handicap": 5.2,
           "captain": false,
           "team": "green",
           "scores": {
