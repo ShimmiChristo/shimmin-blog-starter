@@ -18,6 +18,8 @@ const PlayerPostTemplate = ({ data, location }) => {
   const playerNickname = data.mdx.frontmatter.nickname
   const playerData = data.playersUpdateJson[`${playerName}`]
   const playerHandicap = data.playersUpdateJson[`${playerName}`].handicap
+  const appearances = data.playersUpdateJson[`${playerName}`].appearances
+  console.log('appearances - ', appearances);
 
   const Header = styled.header`
     display: flex;
@@ -120,7 +122,8 @@ const PlayerPostTemplate = ({ data, location }) => {
           </HeaderContainer>
           <div className="info">
             <b>AKA:</b> {playerNickname} <br />
-            <b>Handicap:</b> {playerHandicap}
+            <b>Handicap:</b> {playerHandicap} <br />
+            <b>Appearances:</b> {appearances.length}
           </div>
         </Header>
         <section>

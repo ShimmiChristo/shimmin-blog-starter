@@ -2,7 +2,7 @@
 active: true
 index: 07
 name: matt
-nickname: "Gruesy, Goose, Goose Poop, Papi, Champ?"
+nickname: "Mr G"
 description: "The description."
 category: players
 featuredImg: ./profile-pic.png
@@ -12,6 +12,7 @@ captain: true
 handicap: 4.1
 ---
 
-The Green Team captain for second year in a row. Goose is coming back more ready than ever. 
+Flying in from Colorado for a third straight year, the Green Team Captain, the 2022 MVP, Mr. G!
 
-Matt took last years loss pretty hard and has put in the #timein and is ready to get the dub.
+Matt suffered tough lost in his country club member-guest. He's working through it and ready to take out his aggression. Watch out Blue Team. 
+

@@ -3347,11 +3347,11 @@
     "evan": {
       "name": "evan",
       "appearances": [2022, 2023],
-      "handicap": 36,
+      "handicap": 27,
       "year": {
         "_2023": {
           "id": 2023,
-          "handicap": 36,
+          "handicap": 27,
           "captain": false,
           "team": "blue",
           "scores": {

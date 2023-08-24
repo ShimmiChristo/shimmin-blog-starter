@@ -4,6 +4,7 @@ import { graphql } from "gatsby"
 export const Cam = graphql`
   fragment CamFragment on PlayersUpdateJsonCam {
     name
+    appearances
     handicap
     year {
       _2022 {

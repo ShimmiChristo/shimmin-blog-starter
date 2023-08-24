@@ -11,6 +11,8 @@ team: "Blue Team"
 handicap: 21
 ---
 
+In 2022, Craig missed a 2 foot putt to extend the match against the Green Team. You can say Blue lost because of that missed putt. 
+
 Along with golf, Craig has moved into a Residential Mortgage Loan Officer role.
 
 If you are looking into purchasing or refinancing a home, or just have questions, please let me know and I’d love to help! I’m located in Grand Rapids but can assist anyone within Michigan. Shoot me a message, text, or call at anytime at (517) 667-1154.
