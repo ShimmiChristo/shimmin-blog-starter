@@ -4429,11 +4429,11 @@
     "matt": {
       "name": "matt",
       "appearances": [2021, 2022, 2023],
-      "handicap": 5.2,
+      "handicap": 4.6,
       "year": {
         "_2023": {
           "id": 2023,
-          "handicap": 5.2,
+          "handicap": 4.6,
           "captain": false,
           "team": "green",
           "scores": {
