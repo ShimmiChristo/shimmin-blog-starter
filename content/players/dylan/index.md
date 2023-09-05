@@ -15,7 +15,7 @@ handicap: 0.4
 <!-- const { nodes } = allMdx() -->
 <!-- <MDXRenderer>{props.pageContext.frontmatter.blog}</MDXRenderer> -->
 
-2021 MVP and second year captain. Dylan is looking to lead his team to victory for the second straight year. 
+The 2021 MVP and third year Blue Team captain. Dylan is looking to getting his team back on track for a second cup victory. 
 
 El Capitan of the blue team. Self proclaimed commissioner of the BFBH Cup. 
 Crohn's bro. Proud owner of a Dodge Grand Caravan. Don't be fooled by the low handicap, golf courses in Indiana are EZ.

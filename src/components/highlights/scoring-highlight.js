@@ -32,6 +32,14 @@ function HighlightsScoring({ yearProp }) {
           </p>
           <div className="col-lg-8">
             <p>
+              With the 2023 cup is nearly two weeks away, a lot has changed for
+              the scoring. We’ve implemented the official USGA scoring for match
+              play, we’ve added a new game called Pinehurst, the handicap system
+              is simplified, and the player handicaps are the most accurate
+              they’ve ever been. All these improvements will help for more
+              competitive mathches. Stay tuned for an exciting 2023 cup!
+            </p>
+            <p>
               In 2022, the teams expanded to 12 players. Green Team was able to
               win comfortably, with the singles matches being a non-factor.
               Since the thumping at Gull Lake, a lot of words were said whether
@@ -41,9 +49,10 @@ function HighlightsScoring({ yearProp }) {
               In 2023, Green is lead by Goose for a third straight year. He’s
               looking to continue his success from his 6 win performance in
               2022. Green’s roster is being shaken up again with Shimmin coming
-              back in replace of Jake. Blue team needs 14 points to steal the
-              cup. Blue is lead by captain Dylan Wells for the third straight
-              year. Blue needs to come out hot to get the ball rolling early.
+              back. Jake is filling in for the second straight year, this time
+              for Gordon. Blue team needs 14 points to steal the cup. Blue is
+              lead by captain Dylan Wells for the third straight year. Blue
+              needs to come out hot to get the ball rolling early.
             </p>
           </div>
         </div>
