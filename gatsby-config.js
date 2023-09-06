@@ -190,5 +190,6 @@ module.exports = {
         placeholder: `none`,
       },
     },
+    `gatsby-plugin-netlify`
   ],
 }
