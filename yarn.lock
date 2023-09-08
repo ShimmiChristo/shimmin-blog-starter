@@ -6464,7 +6464,7 @@
     "tmp" "^0.2.1"
     "xdg-basedir" "^4.0.0"
 
-"gatsby-core-utils@^4.0.0", "gatsby-core-utils@^4.12.0":
+"gatsby-core-utils@^4.0.0":
   "integrity" "sha512-1vK0cmL8FNHAddQ5WZt0yTPdFSZuMPNUSsHckM+ZdVmRxyif3aZYSi7ofj6sJo/UvhKj7fBqJv/smZYpp2PRqg=="
   "resolved" "https://registry.npmjs.org/gatsby-core-utils/-/gatsby-core-utils-4.12.0.tgz"
   "version" "4.12.0"
