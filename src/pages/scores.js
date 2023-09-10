@@ -35,11 +35,6 @@ const TopicPage = ({ location }) => {
       }
     }
   `
-  // useEffect(() => {
-  //   // Update the document title using the browser API
-  //   console.log("location - ", location)
-  //   // if ()
-  // })
 
   const p1 = "dylan"
   const p2 = "rj"

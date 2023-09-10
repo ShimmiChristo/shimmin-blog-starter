@@ -2,7 +2,7 @@ import React from "react"
 import { Link } from "gatsby"
 import styled from "styled-components"
 // import Image from "gatsby-image"
-import { StaticImage } from "gatsby-plugin-image"
+// import { StaticImage } from "gatsby-plugin-image"
 import { GatsbyImage, getImage } from "gatsby-plugin-image"
 
 // import AuthorBio from "./author-bio"

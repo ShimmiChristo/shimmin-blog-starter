@@ -1,4 +1,9 @@
-module.exports = {
+import { fileURLToPath } from "url"
+import { dirname } from "path"
+const __filename = fileURLToPath(import.meta.url)
+const __dirname = dirname(__filename)
+
+const config = {
   siteMetadata: {
     title: `BFBH Cup`,
     description: `Boys From Back Home Cup`,
@@ -181,15 +186,24 @@ module.exports = {
     },
     `gatsby-plugin-image`,
     `gatsby-transformer-sharp`, // Needed for dynamic images
+    `gatsby-plugin-sharp`,
     {
-      resolve: `gatsby-plugin-sharp`,
-      defaults: {
-        backgroundColor: `white`,
-      },
+      resolve: `gatsby-source-filesystem`,
       options: {
-        placeholder: `none`,
+        path: `${__dirname}/src/images`,
       },
     },
-    `gatsby-plugin-netlify`
+    // {
+    //   resolve: `gatsby-plugin-sharp`,
+    //   defaults: {
+    //     backgroundColor: `white`,
+    //   },
+    //   options: {
+    //     placeholder: `none`,
+    //   },
+    // },
+    `gatsby-plugin-netlify`,
   ],
 }
+
+export default config

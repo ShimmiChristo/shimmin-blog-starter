@@ -5,7 +5,7 @@ export const usePublishedPosts = () => {
       query {
         allMdx(
           filter: { frontmatter: { published: { eq: true } } }
-          sort: { fields: [frontmatter___date], order: DESC }
+          sort: { frontmatter: { date: DESC } }
         ) {
           nodes {
             id

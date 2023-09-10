@@ -1,9 +1,9 @@
 import React from "react"
 import PropTypes from "prop-types"
 import { graphql } from "gatsby"
-import { MDXRenderer } from "gatsby-plugin-mdx"
 import styled from "styled-components"
-import Image from "gatsby-image"
+// import Image from "gatsby-image"
+import { GatsbyImage, getImage } from "gatsby-plugin-image"
 import PlayerInfoThisYearRecord from "../components/player-info-year-record"
 import RecordPartners from "../components/records-partners"
 
@@ -11,7 +11,7 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 // import { usePublishedPosts } from "../hooks/use-published-posts"
 
-const PlayerPostTemplate = ({ data, location }) => {
+const PlayerPostTemplate = ({ data, location, children }) => {
   const post = data.mdx
   const siteTitle = data.site.siteMetadata?.name || `Name`
   const playerName = data.mdx.frontmatter.name
@@ -19,6 +19,10 @@ const PlayerPostTemplate = ({ data, location }) => {
   const playerData = data.playersUpdateJson[`${playerName}`]
   const playerHandicap = data.playersUpdateJson[`${playerName}`].handicap
   const appearances = data.playersUpdateJson[`${playerName}`].appearances
+  const featuredImage = getImage(
+    post.frontmatter.featuredImg?.childImageSharp?.gatsbyImageData
+  )
+  
 
   const Header = styled.header`
     display: flex;
@@ -69,17 +73,6 @@ const PlayerPostTemplate = ({ data, location }) => {
       max-height: 200px;
     }
   `
-  const FeaturedImg = styled(Image)`
-    width: 100%;
-    max-width: 500px;
-    height: auto;
-    margin: 0 2rem 2rem 0;
-
-    @media screen and (max-width: 767px) {
-      width: 100%;
-      margin-right: 0;
-    }
-  `
   const BioWrapper = styled.div`
     display: flex;
     justify-content: space-around;
@@ -90,6 +83,18 @@ const PlayerPostTemplate = ({ data, location }) => {
     }
     @media screen and (max-width: 767px) {
       flex-direction: column;
+    }
+
+    .profile-img {
+      width: 100%;
+      max-width: 500px;
+      height: auto;
+      margin: 0 2rem 2rem 0;
+
+      @media screen and (max-width: 767px) {
+        width: 100%;
+        margin-right: 0;
+      }
     }
   `
   const MdxContent = styled.div`
@@ -127,13 +132,11 @@ const PlayerPostTemplate = ({ data, location }) => {
         </Header>
         <section>
           <BioWrapper>
-            <FeaturedImg
-              className="profile-img"
-              fluid={post.frontmatter.featuredImg.childImageSharp.fluid}
-            />
+            <GatsbyImage image={featuredImage} className="profile-img" />
             <MdxContent>
               <h2 className="h3">Biography</h2>
-              <MDXRenderer itemProp="articleBody">{post.body}</MDXRenderer>
+              {/* <MDXRenderer itemProp="articleBody">{post.body}</MDXRenderer> */}
+              {children}
             </MdxContent>
           </BioWrapper>
         </section>
@@ -184,7 +187,6 @@ export const pageQuery = graphql`
     mdx(id: { eq: $id }) {
       id
       excerpt(pruneLength: 160)
-      body
       frontmatter {
         active
         index
@@ -196,9 +198,7 @@ export const pageQuery = graphql`
         handicap
         featuredImg {
           childImageSharp {
-            fluid(maxWidth: 400) {
-              ...GatsbyImageSharpFluid
-            }
+            gatsbyImageData(width: 400)
           }
         }
       }

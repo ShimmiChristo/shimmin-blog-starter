@@ -1,3 +1,5 @@
+import { createRequire } from "module"
+const require = createRequire(import.meta.url)
 const path = require(`path`)
 const { createFilePath } = require(`gatsby-source-filesystem`)
 
@@ -17,20 +19,17 @@ function getCurrentDate() {
   return `${d.getFullYear()}-${month}-${day}`
 }
 
-exports.createPages = async ({ graphql, actions, reporter }) => {
+export const createPages = async ({ graphql, actions, reporter }) => {
   const { createPage } = actions
 
   // Define a template for blog post
-  const blogPost = path.resolve(`./src/templates/player-post.js`)
+  const playerPost = path.resolve(`./src/templates/player-post.js`)
 
   // Get all markdown blog posts sorted by date
   const result = await graphql(
     `
-      query GetPublishedBlogPosts {
-        allMdx(
-          sort: { fields: [frontmatter___date], order: ASC }
-          limit: 1000
-        ) {
+      query GetPublishedPlayerPosts {
+        allMdx(sort: { frontmatter: { date: ASC } }, limit: 1000) {
           nodes {
             id
             fields {
@@ -38,6 +37,9 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
             }
             frontmatter {
               category
+            }
+            internal {
+              contentFilePath
             }
           }
         }
@@ -66,20 +68,20 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
 
       createPage({
         path: post.fields.slug,
-        component: blogPost,
+        component: `${playerPost}?__contentFilePath=${post.internal.contentFilePath}`,
         context: {
           id: post.id,
           previousPostId,
           nextPostId,
           currentDate: getCurrentDate(),
-          name: post.frontmatter.name
+          name: post.frontmatter.name,
         },
       })
     })
   }
 }
 
-exports.onCreateNode = ({ node, actions, getNode }) => {
+export const onCreateNode = ({ node, actions, getNode }) => {
   const { createNodeField } = actions
 
   if (node.internal.type === `Mdx` && node.frontmatter.category === `players`) {
@@ -87,7 +89,6 @@ exports.onCreateNode = ({ node, actions, getNode }) => {
       node,
       getNode,
       basePath: `players/`,
-      trailingSlash: false,
     })}`
 
     createNodeField({
@@ -99,7 +100,7 @@ exports.onCreateNode = ({ node, actions, getNode }) => {
 }
 
 // foreign-key relationship for featured image
-exports.createSchemaCustomization = ({ actions }) => {
+export const createSchemaCustomization = ({ actions }) => {
   const { createTypes } = actions
 
   // Explicitly define the siteMetadata {} object

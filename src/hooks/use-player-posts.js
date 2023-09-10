@@ -4,9 +4,7 @@ export const usePlayersPosts = () => {
   const { allMdx } = useStaticQuery(
     graphql`
       query {
-        allMdx(
-          sort: { fields: [frontmatter___index], order: ASC }
-        ) {
+        allMdx(sort: { frontmatter: { index: ASC } }) {
           nodes {
             id
             excerpt

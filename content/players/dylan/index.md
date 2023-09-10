@@ -12,8 +12,6 @@ captain: true
 handicap: 0.4
 ---
 
-<!-- const { nodes } = allMdx() -->
-<!-- <MDXRenderer>{props.pageContext.frontmatter.blog}</MDXRenderer> -->
 
 The 2021 MVP and third year Blue Team captain. Dylan is looking to getting his team back on track for a second cup victory. 
 
