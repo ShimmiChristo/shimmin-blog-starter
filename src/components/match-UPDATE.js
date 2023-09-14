@@ -262,7 +262,6 @@ function MatchUpdate({
     playerThreeCourseHC,
     playerFourCourseHC,
   ]
-  console.log('playerOneCourseHC - ', playerOneCourseHC);
 
   const p1HCglobal = getPlayerHandicap("player1", gameplay, handicaps)
   const p2HCglobal = getPlayerHandicap("player2", gameplay, handicaps)
