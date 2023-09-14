@@ -145,9 +145,10 @@ function getCourseHandicap(
   /* 
     *** FORMULA ****
     handicap * (course slope / 113) + (course rating - course par)
+    round to nearest whole number (based on USGA handicap)
   */
   const form = playerHandicap * (courseSlope / 113) + (courseRating - coursePar)
-  return Math.round(form * 10) / 10
+  return Math.round(form)
 }
 
 export {
