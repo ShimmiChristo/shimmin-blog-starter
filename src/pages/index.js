@@ -58,6 +58,9 @@ const TopicPage = ({ data, location }) => {
       <SEO title="Boys From Back Home Cup" />
       <h1 className="invisible">BFBH Cup | Boys From Back Home</h1>
       <HighlightCountdown startTime={startDate} location={locationName} />
+      <h2 className="text-center bold mt-4">BFBH Cup 2023 Score</h2>
+      <MatchScore year="_2023" />
+      
       <HighlightsScoring yearProp="2022" />
       <h2 className="text-center bold mt-4">BFBH Cup 2022 Score</h2>
       <MatchScore year="_2022" />
