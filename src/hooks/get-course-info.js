@@ -13,6 +13,7 @@ export const CourseInfo = () => {
               tees {
                 purple
                 orange
+                blue
               }
               handicap
               par
@@ -40,6 +41,26 @@ export const CourseInfo = () => {
                   }
                 }
                 orange {
+                  out {
+                    yardage
+                    par
+                    index
+                    slope
+                  }
+                  in {
+                    yardage
+                    par
+                    index
+                    slope
+                  }
+                  total {
+                    yardage
+                    par
+                    index
+                    slope
+                  }
+                }
+                blue {
                   out {
                     yardage
                     par
@@ -70,6 +91,7 @@ export const CourseInfo = () => {
               tees {
                 purple
                 orange
+                blue
               }
               handicap
               par
@@ -97,6 +119,26 @@ export const CourseInfo = () => {
                   }
                 }
                 orange {
+                  out {
+                    yardage
+                    par
+                    index
+                    slope
+                  }
+                  in {
+                    yardage
+                    par
+                    index
+                    slope
+                  }
+                  total {
+                    yardage
+                    par
+                    index
+                    slope
+                  }
+                }
+                blue {
                   out {
                     yardage
                     par
@@ -127,6 +169,7 @@ export const CourseInfo = () => {
               tees {
                 purple
                 orange
+                blue
               }
               handicap
               par
@@ -154,6 +197,26 @@ export const CourseInfo = () => {
                   }
                 }
                 orange {
+                  out {
+                    yardage
+                    par
+                    index
+                    slope
+                  }
+                  in {
+                    yardage
+                    par
+                    index
+                    slope
+                  }
+                  total {
+                    yardage
+                    par
+                    index
+                    slope
+                  }
+                }
+                blue {
                   out {
                     yardage
                     par
@@ -184,6 +247,7 @@ export const CourseInfo = () => {
               tees {
                 purple
                 orange
+                blue
               }
               handicap
               par
@@ -211,6 +275,26 @@ export const CourseInfo = () => {
                   }
                 }
                 orange {
+                  out {
+                    yardage
+                    par
+                    index
+                    slope
+                  }
+                  in {
+                    yardage
+                    par
+                    index
+                    slope
+                  }
+                  total {
+                    yardage
+                    par
+                    index
+                    slope
+                  }
+                }
+                blue {
                   out {
                     yardage
                     par
