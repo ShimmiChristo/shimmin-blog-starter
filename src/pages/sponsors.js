@@ -1,13 +1,13 @@
 import React from "react"
 import styled from "styled-components"
 import { useSiteMetadata } from "../hooks/use-site-metadata"
-import { usePublishedPosts } from "../hooks/use-published-posts"
+// import { usePublishedPosts } from "../hooks/use-published-posts"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import LandingPageHeader from "../components/landing-page-header"
 import SponsorCraig from "../components/sponsor--craig"
-// import BlogPostThumbnailImg from "../components/blog-post-thumbnail-img"
+import SponsorHWS from "../components/sponsor--hws"
 
 const TopicPage = ({ data, location }) => {
   const { title } = useSiteMetadata()
@@ -31,7 +31,12 @@ const TopicPage = ({ data, location }) => {
         </p>
       </div>
 
-      <SponsorCraig />
+      <div className="container">
+        <div className="row col-12">
+          <SponsorCraig />
+          <SponsorHWS />
+        </div>
+      </div>
     </Layout>
   )
 }
