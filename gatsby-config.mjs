@@ -78,6 +78,10 @@ const config = {
           // },
         ],
       },
+      {
+        name: "Shop",
+        link: "/shop",
+      },
     ],
   },
   plugins: [
