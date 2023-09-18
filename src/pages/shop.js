@@ -25,7 +25,7 @@ const TopicPage = ({ data, location }) => {
       <LandingPageHeader title="Shop" />
       <div className="container mb-5">
         <div className="row">
-          <div className="col-6 col-md-12">
+          <div className="col-12 col-md-6">
             <h2 className="h1">HATS for sale!</h2>
             <h3 className="mb-5">Only a small quantity available</h3>
             <p className="bold">$25 per hat. Shipping is included.</p>
@@ -45,7 +45,7 @@ const TopicPage = ({ data, location }) => {
               updates.
             </p>
           </div>
-          <div className="col-6 col-md-12">
+          <div className="col-12 col-md-6">
             <SaleHats />
           </div>
         </div>
