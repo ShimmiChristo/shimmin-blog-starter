@@ -15,33 +15,25 @@ function SaleHats() {
         <div className="card-header">
           <h5 className="card-title">Offical BFBH Cup Hat</h5>
         </div>
-        <div className="card-body mx-auto">
-          <div className="container">
-            <div className="row mb-3">
-              {/* <div className="col-12 col-lg-10 mb-3">
+        <div className="card-body mx-auto container">
+          <div className="row my-2">
+            {/* <div className="col-12 col-lg-10 mb-3">
                 <p className="card-text text-start h2">
                   Creating Digital Dreams, One Website At A Time
                 </p>
               </div> */}
-              <StaticImage
-                src="../../static/hat.jpeg"
-                height={700}
-                width={600}
-                alt="bfbh cup hat"
-              />
-            </div>
-            <div>
-              <video width="400" height="600" controls autoPlay>
-                <source src={HatVideo} type="video/mp4" />
-              </video>
-            </div>
+            <StaticImage
+              src="../../static/hat.jpeg"
+              height={700}
+              width={600}
+              alt="bfbh cup hat"
+            />
           </div>
-          {/* <p className="justify-content-center">
-            Email today at {`  `}
-            <a href="mailto:hello@hobokenwebsolutions.com">
-              hello@hobokenwebsolutions.com
-            </a>
-          </p> */}
+          <div className="row my-2">
+            <video width="400" height="auto" controls autoPlay>
+              <source src={HatVideo} type="video/mp4" />
+            </video>
+          </div>
         </div>
       </div>
     </section>
