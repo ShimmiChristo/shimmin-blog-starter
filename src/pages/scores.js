@@ -544,44 +544,8 @@ const TopicPage = ({ location }) => {
           holes="back"
           matchHandicap="full"
           gameplay="singles"
-          player1={p7}
-          player2={p1}
-          player1MatchHandicap=""
-          player2MatchHandicap=""
-        />
-        <Match
-          matchId="4.2 - Singles Match. Full HC"
-          year="_2023"
-          courseMatch="boyneHighlandsHeather"
-          holes="back"
-          matchHandicap="full"
-          gameplay="singles"
-          player1={p8}
-          player2={p2}
-          player1MatchHandicap=""
-          player2MatchHandicap=""
-        />
-        <Match
-          matchId="4.2 - Singles Match. Full HC"
-          year="_2023"
-          courseMatch="boyneHighlandsHeather"
-          holes="back"
-          matchHandicap="full"
-          gameplay="singles"
-          player1={p9}
-          player2={p3}
-          player1MatchHandicap=""
-          player2MatchHandicap=""
-        />
-        <Match
-          matchId="4.2 - Singles Match. Full HC"
-          year="_2023"
-          courseMatch="boyneHighlandsHeather"
-          holes="back"
-          matchHandicap="full"
-          gameplay="singles"
-          player1={p10}
-          player2={p4}
+          player1={p11}
+          player2={p6}
           player1MatchHandicap=""
           player2MatchHandicap=""
         />
@@ -604,8 +568,45 @@ const TopicPage = ({ location }) => {
           holes="back"
           matchHandicap="full"
           gameplay="singles"
-          player1={p11}
-          player2={p6}
+          player1={p10}
+          player2={p4}
+          player1MatchHandicap=""
+          player2MatchHandicap=""
+        />
+        <Match
+          matchId="4.2 - Singles Match. Full HC"
+          year="_2023"
+          courseMatch="boyneHighlandsHeather"
+          holes="back"
+          matchHandicap="full"
+          gameplay="singles"
+          player1={p9}
+          player2={p3}
+          player1MatchHandicap=""
+          player2MatchHandicap=""
+        />
+
+        <Match
+          matchId="4.2 - Singles Match. Full HC"
+          year="_2023"
+          courseMatch="boyneHighlandsHeather"
+          holes="back"
+          matchHandicap="full"
+          gameplay="singles"
+          player1={p8}
+          player2={p2}
+          player1MatchHandicap=""
+          player2MatchHandicap=""
+        />
+        <Match
+          matchId="4.2 - Singles Match. Full HC"
+          year="_2023"
+          courseMatch="boyneHighlandsHeather"
+          holes="back"
+          matchHandicap="full"
+          gameplay="singles"
+          player1={p7}
+          player2={p1}
           player1MatchHandicap=""
           player2MatchHandicap=""
         />
