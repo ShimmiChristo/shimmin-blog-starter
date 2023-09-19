@@ -477,6 +477,7 @@ const TopicPage = ({ location }) => {
             {course[`boyneHighlandsHeather`].name}
           </a>
         </div>
+
         <Match
           matchId="4.1 - Pinehurst. 60% low HC + 40% high HC"
           year="_2023"
@@ -484,10 +485,10 @@ const TopicPage = ({ location }) => {
           holes="front"
           matchHandicap="average"
           gameplay="pinehurst"
-          player1={p7}
-          player2={p1}
-          player3={p8}
-          player4={p2}
+          player1={p11}
+          player2={p5}
+          player3={p12}
+          player4={p6}
           player1MatchHandicap=""
           player2MatchHandicap=""
           player3MatchHandicap=""
@@ -516,10 +517,10 @@ const TopicPage = ({ location }) => {
           holes="front"
           matchHandicap="average"
           gameplay="pinehurst"
-          player1={p11}
-          player2={p5}
-          player3={p12}
-          player4={p6}
+          player1={p7}
+          player2={p1}
+          player3={p8}
+          player4={p2}
           player1MatchHandicap=""
           player2MatchHandicap=""
           player3MatchHandicap=""
