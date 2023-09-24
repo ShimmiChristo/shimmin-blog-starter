@@ -6,18 +6,18 @@
           "name": "green team",
           "nickname": "crohns crushers",
           "players": ["Matt", "Chris", "Travis", "Derek", "Jake", "Curtis"],
-          "score": "0"
+          "score": "13"
         },
         "team2": {
           "name": "blue team",
           "nickname": "team ramrod",
           "players": ["Dylan", "RJ", "Craig", "Dan", "Cam", "Evan"],
-          "score": "0"
+          "score": "14"
         }
       },
       "year": "2023",
       "date": "Sept, 22 - Sept, 23",
-      "winner": "",
+      "winner": "blue",
       "location": "Boyne Highlands"
     },
     "_2022": {

@@ -485,9 +485,9 @@ const TopicPage = ({ location }) => {
           holes="front"
           matchHandicap="average"
           gameplay="pinehurst"
-          player1={p11}
+          player1={p12}
           player2={p5}
-          player3={p12}
+          player3={p11}
           player4={p6}
           player1MatchHandicap=""
           player2MatchHandicap=""
@@ -546,7 +546,7 @@ const TopicPage = ({ location }) => {
           matchHandicap="full"
           gameplay="singles"
           player1={p11}
-          player2={p6}
+          player2={p5}
           player1MatchHandicap=""
           player2MatchHandicap=""
         />
@@ -558,7 +558,7 @@ const TopicPage = ({ location }) => {
           matchHandicap="full"
           gameplay="singles"
           player1={p12}
-          player2={p5}
+          player2={p6}
           player1MatchHandicap=""
           player2MatchHandicap=""
         />
