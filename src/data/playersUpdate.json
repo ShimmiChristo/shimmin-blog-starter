@@ -44,7 +44,7 @@
             {
               "id": "bestBall",
               "game": "Best Ball",
-              "wins": 0,
+              "wins": 1,
               "ties": 0,
               "losses": 0
             },
@@ -53,19 +53,19 @@
               "game": "Best Ball",
               "wins": 0,
               "ties": 0,
-              "losses": 0
+              "losses": 1
             },
             {
               "id": "bramble",
               "game": "Bramble",
               "wins": 0,
               "ties": 0,
-              "losses": 0
+              "losses": 1
             },
             {
               "id": "twoBallBramble",
               "game": "Bramble",
-              "wins": 0,
+              "wins": 1,
               "ties": 0,
               "losses": 0
             },
@@ -74,7 +74,7 @@
               "game": "Alternate",
               "wins": 0,
               "ties": 0,
-              "losses": 0
+              "losses": 1
             },
             {
               "id": "brambleAlternate",
@@ -88,20 +88,20 @@
               "game": "Pinehurst",
               "wins": 0,
               "ties": 0,
-              "losses": 0
+              "losses": 1
             },
             {
               "id": "scramble",
               "game": "Scramble",
               "wins": 0,
               "ties": 0,
-              "losses": 0
+              "losses": 1
             },
             {
               "id": "singles",
               "game": "Singles",
               "wins": 0,
-              "ties": 0,
+              "ties": 1,
               "losses": 0
             }
           ],
@@ -112,23 +112,23 @@
                   "name": "craig",
                   "wins": 0,
                   "ties": 0,
-                  "losses": 0
+                  "losses": 2
                 },
                 {
                   "name": "dan",
                   "wins": 0,
                   "ties": 0,
-                  "losses": 0
+                  "losses": 2
                 },
                 {
                   "name": "dylan",
-                  "wins": 0,
+                  "wins": 1,
                   "ties": 0,
                   "losses": 0
                 },
                 {
                   "name": "evan",
-                  "wins": 0,
+                  "wins": 1,
                   "ties": 0,
                   "losses": 0
                 },
@@ -136,7 +136,7 @@
                   "name": "rj",
                   "wins": 0,
                   "ties": 0,
-                  "losses": 0
+                  "losses": 1
                 }
               ]
             },
@@ -144,21 +144,21 @@
               "opponents": [
                 {
                   "name": "chris",
-                  "wins": 0,
+                  "wins": 2,
                   "ties": 0,
-                  "losses": 0
+                  "losses": 1
                 },
                 {
                   "name": "curtis",
-                  "wins": 0,
+                  "wins": 2,
                   "ties": 0,
-                  "losses": 0
+                  "losses": 1
                 },
                 {
                   "name": "derek",
                   "wins": 0,
                   "ties": 0,
-                  "losses": 0
+                  "losses": 3
                 },
                 {
                   "name": "gordon",
@@ -170,19 +170,19 @@
                   "name": "jake",
                   "wins": 0,
                   "ties": 0,
-                  "losses": 0
+                  "losses": 1
                 },
                 {
                   "name": "matt",
                   "wins": 0,
                   "ties": 0,
-                  "losses": 0
+                  "losses": 2
                 },
                 {
                   "name": "travis",
                   "wins": 0,
-                  "ties": 0,
-                  "losses": 0
+                  "ties": 1,
+                  "losses": 2
                 }
               ]
             }
@@ -589,19 +589,19 @@
               "game": "Best Ball",
               "wins": 0,
               "ties": 0,
-              "losses": 0
+              "losses": 1
             },
             {
               "id": "twoBestBall",
               "game": "Best Ball",
               "wins": 0,
               "ties": 0,
-              "losses": 0
+              "losses": 1
             },
             {
               "id": "bramble",
               "game": "Bramble",
-              "wins": 0,
+              "wins": 1,
               "ties": 0,
               "losses": 0
             },
@@ -610,14 +610,14 @@
               "game": "Bramble",
               "wins": 0,
               "ties": 0,
-              "losses": 0
+              "losses": 1
             },
             {
               "id": "alternate",
               "game": "Alternate",
               "wins": 0,
               "ties": 0,
-              "losses": 0
+              "losses": 1
             },
             {
               "id": "brambleAlternate",
@@ -630,7 +630,7 @@
               "id": "pinehurst",
               "game": "Pinehurst",
               "wins": 0,
-              "ties": 0,
+              "ties": 1,
               "losses": 0
             },
             {
@@ -638,12 +638,12 @@
               "game": "Scramble",
               "wins": 0,
               "ties": 0,
-              "losses": 0
+              "losses": 1
             },
             {
               "id": "singles",
               "game": "Singles",
-              "wins": 0,
+              "wins": 1,
               "ties": 0,
               "losses": 0
             }
@@ -655,13 +655,13 @@
                   "name": "curtis",
                   "wins": 0,
                   "ties": 0,
-                  "losses": 0
+                  "losses": 2
                 },
                 {
                   "name": "derek",
-                  "wins": 0,
+                  "wins": 1,
                   "ties": 0,
-                  "losses": 0
+                  "losses": 1
                 },
                 {
                   "name": "gordon",
@@ -673,19 +673,19 @@
                   "name": "jake",
                   "wins": 0,
                   "ties": 0,
-                  "losses": 0
+                  "losses": 1
                 },
                 {
                   "name": "matt",
                   "wins": 0,
-                  "ties": 0,
+                  "ties": 1,
                   "losses": 0
                 },
                 {
                   "name": "travis",
                   "wins": 0,
                   "ties": 0,
-                  "losses": 0
+                  "losses": 1
                 }
               ]
             },
@@ -693,39 +693,39 @@
               "opponents": [
                 {
                   "name": "cam",
-                  "wins": 0,
+                  "wins": 1,
                   "ties": 0,
-                  "losses": 0
+                  "losses": 2
                 },
                 {
                   "name": "craig",
                   "wins": 0,
                   "ties": 0,
-                  "losses": 0
+                  "losses": 1
                 },
                 {
                   "name": "dan",
-                  "wins": 0,
+                  "wins": 1,
                   "ties": 0,
                   "losses": 0
                 },
                 {
                   "name": "dylan",
                   "wins": 0,
-                  "ties": 0,
-                  "losses": 0
+                  "ties": 1,
+                  "losses": 3
                 },
                 {
                   "name": "evan",
                   "wins": 0,
                   "ties": 0,
-                  "losses": 0
+                  "losses": 3
                 },
                 {
                   "name": "rj",
-                  "wins": 0,
-                  "ties": 0,
-                  "losses": 0
+                  "wins": 1,
+                  "ties": 1,
+                  "losses": 1
                 }
               ]
             }
@@ -1087,19 +1087,19 @@
               "game": "Best Ball",
               "wins": 0,
               "ties": 0,
-              "losses": 0
+              "losses": 1
             },
             {
               "id": "twoBestBall",
               "game": "Best Ball",
-              "wins": 0,
+              "wins": 1,
               "ties": 0,
               "losses": 0
             },
             {
               "id": "bramble",
               "game": "Bramble",
-              "wins": 0,
+              "wins": 1,
               "ties": 0,
               "losses": 0
             },
@@ -1107,7 +1107,7 @@
               "id": "twoBallBramble",
               "game": "Bramble",
               "wins": 0,
-              "ties": 0,
+              "ties": 1,
               "losses": 0
             },
             {
@@ -1115,7 +1115,7 @@
               "game": "Alternate",
               "wins": 0,
               "ties": 0,
-              "losses": 0
+              "losses": 1
             },
             {
               "id": "brambleAlternate",
@@ -1129,19 +1129,19 @@
               "game": "Pinehurst",
               "wins": 0,
               "ties": 0,
-              "losses": 0
+              "losses": 1
             },
             {
               "id": "scramble",
               "game": "Scramble",
-              "wins": 0,
+              "wins": 1,
               "ties": 0,
               "losses": 0
             },
             {
               "id": "singles",
               "game": "Singles",
-              "wins": 0,
+              "wins": 1,
               "ties": 0,
               "losses": 0
             }
@@ -1153,23 +1153,23 @@
                   "name": "cam",
                   "wins": 0,
                   "ties": 0,
-                  "losses": 0
+                  "losses": 2
                 },
                 {
                   "name": "dan",
-                  "wins": 0,
+                  "wins": 1,
                   "ties": 0,
                   "losses": 0
                 },
                 {
                   "name": "dylan",
-                  "wins": 0,
-                  "ties": 0,
+                  "wins": 1,
+                  "ties": 1,
                   "losses": 0
                 },
                 {
                   "name": "evan",
-                  "wins": 0,
+                  "wins": 1,
                   "ties": 0,
                   "losses": 0
                 },
@@ -1177,7 +1177,7 @@
                   "name": "rj",
                   "wins": 0,
                   "ties": 0,
-                  "losses": 0
+                  "losses": 1
                 }
               ]
             },
@@ -1185,21 +1185,21 @@
               "opponents": [
                 {
                   "name": "chris",
-                  "wins": 0,
+                  "wins": 1,
                   "ties": 0,
                   "losses": 0
                 },
                 {
                   "name": "curtis",
-                  "wins": 0,
+                  "wins": 2,
                   "ties": 0,
-                  "losses": 0
+                  "losses": 1
                 },
                 {
                   "name": "derek",
-                  "wins": 0,
+                  "wins": 1,
                   "ties": 0,
-                  "losses": 0
+                  "losses": 2
                 },
                 {
                   "name": "gordon",
@@ -1211,19 +1211,19 @@
                   "name": "jake",
                   "wins": 0,
                   "ties": 0,
-                  "losses": 0
+                  "losses": 1
                 },
                 {
                   "name": "matt",
-                  "wins": 0,
-                  "ties": 0,
+                  "wins": 1,
+                  "ties": 1,
                   "losses": 0
                 },
                 {
                   "name": "travis",
-                  "wins": 0,
-                  "ties": 0,
-                  "losses": 0
+                  "wins": 1,
+                  "ties": 1,
+                  "losses": 2
                 }
               ]
             }
@@ -1572,33 +1572,33 @@
               "game": "Best Ball",
               "wins": 0,
               "ties": 0,
-              "losses": 0
+              "losses": 1
             },
             {
               "id": "twoBestBall",
               "game": "Best Ball",
               "wins": 0,
               "ties": 0,
-              "losses": 0
+              "losses": 1
             },
             {
               "id": "bramble",
               "game": "Bramble",
               "wins": 0,
               "ties": 0,
-              "losses": 0
+              "losses": 1
             },
             {
               "id": "twoBallBramble",
               "game": "Bramble",
               "wins": 0,
               "ties": 0,
-              "losses": 0
+              "losses": 1
             },
             {
               "id": "alternate",
               "game": "Alternate",
-              "wins": 0,
+              "wins": 1,
               "ties": 0,
               "losses": 0
             },
@@ -1613,7 +1613,7 @@
               "id": "pinehurst",
               "game": "Pinehurst",
               "wins": 0,
-              "ties": 0,
+              "ties": 1,
               "losses": 0
             },
             {
@@ -1621,14 +1621,14 @@
               "game": "Scramble",
               "wins": 0,
               "ties": 0,
-              "losses": 0
+              "losses": 1
             },
             {
               "id": "singles",
               "game": "Singles",
               "wins": 0,
               "ties": 0,
-              "losses": 0
+              "losses": 1
             }
           ],
           "records": [
@@ -1638,12 +1638,12 @@
                   "name": "chris",
                   "wins": 0,
                   "ties": 0,
-                  "losses": 0
+                  "losses": 2
                 },
                 {
                   "name": "derek",
-                  "wins": 0,
-                  "ties": 0,
+                  "wins": 1,
+                  "ties": 1,
                   "losses": 0
                 },
                 {
@@ -1656,19 +1656,19 @@
                   "name": "jake",
                   "wins": 0,
                   "ties": 0,
-                  "losses": 0
+                  "losses": 1
                 },
                 {
                   "name": "matt",
                   "wins": 0,
                   "ties": 0,
-                  "losses": 0
+                  "losses": 1
                 },
                 {
                   "name": "travis",
                   "wins": 0,
                   "ties": 0,
-                  "losses": 0
+                  "losses": 1
                 }
               ]
             },
@@ -1676,39 +1676,39 @@
               "opponents": [
                 {
                   "name": "cam",
-                  "wins": 0,
+                  "wins": 1,
                   "ties": 0,
-                  "losses": 0
+                  "losses": 2
                 },
                 {
                   "name": "craig",
-                  "wins": 0,
+                  "wins": 1,
                   "ties": 0,
-                  "losses": 0
+                  "losses": 2
                 },
                 {
                   "name": "dan",
                   "wins": 0,
-                  "ties": 0,
-                  "losses": 0
+                  "ties": 1,
+                  "losses": 1
                 },
                 {
                   "name": "dylan",
                   "wins": 0,
                   "ties": 0,
-                  "losses": 0
+                  "losses": 1
                 },
                 {
                   "name": "evan",
                   "wins": 0,
-                  "ties": 0,
-                  "losses": 0
+                  "ties": 1,
+                  "losses": 4
                 },
                 {
                   "name": "rj",
                   "wins": 0,
                   "ties": 0,
-                  "losses": 0
+                  "losses": 1
                 }
               ]
             }
@@ -1934,33 +1934,33 @@
               "game": "Best Ball",
               "wins": 0,
               "ties": 0,
-              "losses": 0
+              "losses": 1
             },
             {
               "id": "twoBestBall",
               "game": "Best Ball",
               "wins": 0,
               "ties": 0,
-              "losses": 0
+              "losses": 1
             },
             {
               "id": "bramble",
               "game": "Bramble",
               "wins": 0,
               "ties": 0,
-              "losses": 0
+              "losses": 1
             },
             {
               "id": "twoBallBramble",
               "game": "Bramble",
               "wins": 0,
               "ties": 0,
-              "losses": 0
+              "losses": 1
             },
             {
               "id": "alternate",
               "game": "Alternate",
-              "wins": 0,
+              "wins": 1,
               "ties": 0,
               "losses": 0
             },
@@ -1975,13 +1975,13 @@
               "id": "pinehurst",
               "game": "Pinehurst",
               "wins": 0,
-              "ties": 0,
+              "ties": 1,
               "losses": 0
             },
             {
               "id": "scramble",
               "game": "Scramble",
-              "wins": 0,
+              "wins": 1,
               "ties": 0,
               "losses": 0
             },
@@ -1990,7 +1990,7 @@
               "game": "Singles",
               "wins": 0,
               "ties": 0,
-              "losses": 0
+              "losses": 1
             }
           ],
           "records": [
@@ -2000,31 +2000,31 @@
                   "name": "cam",
                   "wins": 0,
                   "ties": 0,
-                  "losses": 0
+                  "losses": 2
                 },
                 {
                   "name": "craig",
-                  "wins": 0,
+                  "wins": 1,
                   "ties": 0,
                   "losses": 0
                 },
                 {
                   "name": "dylan",
-                  "wins": 0,
+                  "wins": 1,
                   "ties": 0,
                   "losses": 0
                 },
                 {
                   "name": "evan",
                   "wins": 0,
-                  "ties": 0,
-                  "losses": 0
+                  "ties": 1,
+                  "losses": 1
                 },
                 {
                   "name": "rj",
                   "wins": 0,
                   "ties": 0,
-                  "losses": 0
+                  "losses": 1
                 }
               ]
             },
@@ -2034,19 +2034,19 @@
                   "name": "chris",
                   "wins": 0,
                   "ties": 0,
-                  "losses": 0
+                  "losses": 1
                 },
                 {
                   "name": "curtis",
-                  "wins": 0,
-                  "ties": 0,
+                  "wins": 1,
+                  "ties": 1,
                   "losses": 0
                 },
                 {
                   "name": "derek",
                   "wins": 0,
-                  "ties": 0,
-                  "losses": 0
+                  "ties": 1,
+                  "losses": 3
                 },
                 {
                   "name": "gordon",
@@ -2056,21 +2056,21 @@
                 },
                 {
                   "name": "jake",
-                  "wins": 0,
+                  "wins": 1,
                   "ties": 0,
-                  "losses": 0
+                  "losses": 2
                 },
                 {
                   "name": "matt",
-                  "wins": 0,
+                  "wins": 1,
                   "ties": 0,
-                  "losses": 0
+                  "losses": 2
                 },
                 {
                   "name": "travis",
-                  "wins": 0,
+                  "wins": 1,
                   "ties": 0,
-                  "losses": 0
+                  "losses": 1
                 }
               ]
             }
@@ -2417,7 +2417,7 @@
             {
               "id": "bestBall",
               "game": "Best Ball",
-              "wins": 0,
+              "wins": 1,
               "ties": 0,
               "losses": 0
             },
@@ -2426,26 +2426,26 @@
               "game": "Best Ball",
               "wins": 0,
               "ties": 0,
-              "losses": 0
+              "losses": 1
             },
             {
               "id": "bramble",
               "game": "Bramble",
-              "wins": 0,
+              "wins": 1,
               "ties": 0,
               "losses": 0
             },
             {
               "id": "twoBallBramble",
               "game": "Bramble",
-              "wins": 0,
+              "wins": 1,
               "ties": 0,
               "losses": 0
             },
             {
               "id": "alternate",
               "game": "Alternate",
-              "wins": 0,
+              "wins": 1,
               "ties": 0,
               "losses": 0
             },
@@ -2460,20 +2460,20 @@
               "id": "pinehurst",
               "game": "Pinehurst",
               "wins": 0,
-              "ties": 0,
+              "ties": 1,
               "losses": 0
             },
             {
               "id": "scramble",
               "game": "Scramble",
-              "wins": 0,
+              "wins": 1,
               "ties": 0,
               "losses": 0
             },
             {
               "id": "singles",
               "game": "Singles",
-              "wins": 0,
+              "wins": 1,
               "ties": 0,
               "losses": 0
             }
@@ -2483,14 +2483,14 @@
               "partners": [
                 {
                   "name": "chris",
-                  "wins": 0,
+                  "wins": 1,
                   "ties": 0,
-                  "losses": 0
+                  "losses": 1
                 },
                 {
                   "name": "curtis",
-                  "wins": 0,
-                  "ties": 0,
+                  "wins": 1,
+                  "ties": 1,
                   "losses": 0
                 },
                 {
@@ -2501,19 +2501,19 @@
                 },
                 {
                   "name": "jake",
-                  "wins": 0,
+                  "wins": 1,
                   "ties": 0,
                   "losses": 0
                 },
                 {
                   "name": "matt",
-                  "wins": 0,
+                  "wins": 1,
                   "ties": 0,
                   "losses": 0
                 },
                 {
                   "name": "travis",
-                  "wins": 0,
+                  "wins": 1,
                   "ties": 0,
                   "losses": 0
                 }
@@ -2523,37 +2523,37 @@
               "opponents": [
                 {
                   "name": "cam",
-                  "wins": 0,
+                  "wins": 3,
                   "ties": 0,
                   "losses": 0
                 },
                 {
                   "name": "craig",
-                  "wins": 0,
+                  "wins": 2,
                   "ties": 0,
-                  "losses": 0
+                  "losses": 1
                 },
                 {
                   "name": "dan",
-                  "wins": 0,
-                  "ties": 0,
+                  "wins": 3,
+                  "ties": 1,
                   "losses": 0
                 },
                 {
                   "name": "dylan",
                   "wins": 0,
                   "ties": 0,
-                  "losses": 0
+                  "losses": 1
                 },
                 {
                   "name": "evan",
                   "wins": 0,
-                  "ties": 0,
+                  "ties": 1,
                   "losses": 0
                 },
                 {
                   "name": "rj",
-                  "wins": 0,
+                  "wins": 3,
                   "ties": 0,
                   "losses": 0
                 }
@@ -2903,21 +2903,21 @@
             {
               "id": "bestBall",
               "game": "Best Ball",
-              "wins": 0,
+              "wins": 1,
               "ties": 0,
               "losses": 0
             },
             {
               "id": "twoBestBall",
               "game": "Best Ball",
-              "wins": 0,
+              "wins": 1,
               "ties": 0,
               "losses": 0
             },
             {
               "id": "bramble",
               "game": "Bramble",
-              "wins": 0,
+              "wins": 1,
               "ties": 0,
               "losses": 0
             },
@@ -2925,13 +2925,13 @@
               "id": "twoBallBramble",
               "game": "Bramble",
               "wins": 0,
-              "ties": 0,
+              "ties": 1,
               "losses": 0
             },
             {
               "id": "alternate",
               "game": "Alternate",
-              "wins": 0,
+              "wins": 1,
               "ties": 0,
               "losses": 0
             },
@@ -2946,13 +2946,13 @@
               "id": "pinehurst",
               "game": "Pinehurst",
               "wins": 0,
-              "ties": 0,
+              "ties": 1,
               "losses": 0
             },
             {
               "id": "scramble",
               "game": "Scramble",
-              "wins": 0,
+              "wins": 1,
               "ties": 0,
               "losses": 0
             },
@@ -2961,7 +2961,7 @@
               "game": "Singles",
               "wins": 0,
               "ties": 0,
-              "losses": 0
+              "losses": 1
             }
           ],
           "records": [
@@ -2969,32 +2969,32 @@
               "partners": [
                 {
                   "name": "cam",
-                  "wins": 0,
+                  "wins": 1,
                   "ties": 0,
                   "losses": 0
                 },
                 {
                   "name": "craig",
-                  "wins": 0,
-                  "ties": 0,
+                  "wins": 1,
+                  "ties": 1,
                   "losses": 0
                 },
                 {
                   "name": "dan",
-                  "wins": 0,
+                  "wins": 1,
                   "ties": 0,
                   "losses": 0
                 },
                 {
                   "name": "evan",
-                  "wins": 0,
+                  "wins": 1,
                   "ties": 0,
                   "losses": 0
                 },
                 {
                   "name": "rj",
-                  "wins": 0,
-                  "ties": 0,
+                  "wins": 1,
+                  "ties": 1,
                   "losses": 0
                 }
               ]
@@ -3003,19 +3003,19 @@
               "opponents": [
                 {
                   "name": "chris",
-                  "wins": 0,
-                  "ties": 0,
+                  "wins": 3,
+                  "ties": 1,
                   "losses": 0
                 },
                 {
                   "name": "curtis",
-                  "wins": 0,
+                  "wins": 1,
                   "ties": 0,
                   "losses": 0
                 },
                 {
                   "name": "derek",
-                  "wins": 0,
+                  "wins": 1,
                   "ties": 0,
                   "losses": 0
                 },
@@ -3027,20 +3027,20 @@
                 },
                 {
                   "name": "jake",
-                  "wins": 0,
+                  "wins": 3,
                   "ties": 0,
                   "losses": 0
                 },
                 {
                   "name": "matt",
-                  "wins": 0,
-                  "ties": 0,
-                  "losses": 0
+                  "wins": 1,
+                  "ties": 2,
+                  "losses": 1
                 },
                 {
                   "name": "travis",
-                  "wins": 0,
-                  "ties": 0,
+                  "wins": 1,
+                  "ties": 1,
                   "losses": 0
                 }
               ]
@@ -3390,33 +3390,33 @@
               "game": "Best Ball",
               "wins": 0,
               "ties": 0,
-              "losses": 0
+              "losses": 1
             },
             {
               "id": "twoBestBall",
               "game": "Best Ball",
-              "wins": 0,
+              "wins": 1,
               "ties": 0,
               "losses": 0
             },
             {
               "id": "bramble",
               "game": "Bramble",
-              "wins": 0,
+              "wins": 1,
               "ties": 0,
               "losses": 0
             },
             {
               "id": "twoBallBramble",
               "game": "Bramble",
-              "wins": 0,
+              "wins": 1,
               "ties": 0,
               "losses": 0
             },
             {
               "id": "alternate",
               "game": "Alternate",
-              "wins": 0,
+              "wins": 1,
               "ties": 0,
               "losses": 0
             },
@@ -3431,20 +3431,20 @@
               "id": "pinehurst",
               "game": "Pinehurst",
               "wins": 0,
-              "ties": 0,
+              "ties": 1,
               "losses": 0
             },
             {
               "id": "scramble",
               "game": "Scramble",
-              "wins": 0,
+              "wins": 1,
               "ties": 0,
               "losses": 0
             },
             {
               "id": "singles",
               "game": "Singles",
-              "wins": 0,
+              "wins": 1,
               "ties": 0,
               "losses": 0
             }
@@ -3454,31 +3454,31 @@
               "partners": [
                 {
                   "name": "cam",
-                  "wins": 0,
+                  "wins": 1,
                   "ties": 0,
                   "losses": 0
                 },
                 {
                   "name": "craig",
-                  "wins": 0,
+                  "wins": 1,
                   "ties": 0,
                   "losses": 0
                 },
                 {
                   "name": "dan",
                   "wins": 0,
-                  "ties": 0,
-                  "losses": 0
+                  "ties": 1,
+                  "losses": 1
                 },
                 {
                   "name": "dylan",
-                  "wins": 0,
+                  "wins": 1,
                   "ties": 0,
                   "losses": 0
                 },
                 {
                   "name": "rj",
-                  "wins": 0,
+                  "wins": 2,
                   "ties": 0,
                   "losses": 0
                 }
@@ -3488,20 +3488,20 @@
               "opponents": [
                 {
                   "name": "chris",
-                  "wins": 0,
+                  "wins": 3,
                   "ties": 0,
                   "losses": 0
                 },
                 {
                   "name": "curtis",
-                  "wins": 0,
-                  "ties": 0,
+                  "wins": 4,
+                  "ties": 1,
                   "losses": 0
                 },
                 {
                   "name": "derek",
                   "wins": 0,
-                  "ties": 0,
+                  "ties": 1,
                   "losses": 0
                 },
                 {
@@ -3512,19 +3512,19 @@
                 },
                 {
                   "name": "jake",
-                  "wins": 0,
+                  "wins": 2,
                   "ties": 0,
-                  "losses": 0
+                  "losses": 1
                 },
                 {
                   "name": "matt",
-                  "wins": 0,
+                  "wins": 1,
                   "ties": 0,
-                  "losses": 0
+                  "losses": 1
                 },
                 {
                   "name": "travis",
-                  "wins": 0,
+                  "wins": 1,
                   "ties": 0,
                   "losses": 0
                 }
@@ -4110,7 +4110,7 @@
             {
               "id": "bestBall",
               "game": "Best Ball",
-              "wins": 0,
+              "wins": 1,
               "ties": 0,
               "losses": 0
             },
@@ -4119,19 +4119,19 @@
               "game": "Best Ball",
               "wins": 0,
               "ties": 0,
-              "losses": 0
+              "losses": 1
             },
             {
               "id": "bramble",
               "game": "Bramble",
               "wins": 0,
               "ties": 0,
-              "losses": 0
+              "losses": 1
             },
             {
               "id": "twoBallBramble",
               "game": "Bramble",
-              "wins": 0,
+              "wins": 1,
               "ties": 0,
               "losses": 0
             },
@@ -4140,7 +4140,7 @@
               "game": "Alternate",
               "wins": 0,
               "ties": 0,
-              "losses": 0
+              "losses": 1
             },
             {
               "id": "brambleAlternate",
@@ -4152,7 +4152,7 @@
             {
               "id": "pinehurst",
               "game": "Pinehurst",
-              "wins": 0,
+              "wins": 1,
               "ties": 0,
               "losses": 0
             },
@@ -4161,14 +4161,14 @@
               "game": "Scramble",
               "wins": 0,
               "ties": 0,
-              "losses": 0
+              "losses": 1
             },
             {
               "id": "singles",
               "game": "Singles",
               "wins": 0,
               "ties": 0,
-              "losses": 0
+              "losses": 1
             }
           ],
           "records": [
@@ -4178,17 +4178,17 @@
                   "name": "chris",
                   "wins": 0,
                   "ties": 0,
-                  "losses": 0
+                  "losses": 1
                 },
                 {
                   "name": "curtis",
                   "wins": 0,
                   "ties": 0,
-                  "losses": 0
+                  "losses": 1
                 },
                 {
                   "name": "derek",
-                  "wins": 0,
+                  "wins": 1,
                   "ties": 0,
                   "losses": 0
                 },
@@ -4200,15 +4200,15 @@
                 },
                 {
                   "name": "matt",
-                  "wins": 0,
+                  "wins": 1,
                   "ties": 0,
-                  "losses": 0
+                  "losses": 1
                 },
                 {
                   "name": "travis",
-                  "wins": 0,
+                  "wins": 1,
                   "ties": 0,
-                  "losses": 0
+                  "losses": 1
                 }
               ]
             },
@@ -4216,39 +4216,39 @@
               "opponents": [
                 {
                   "name": "cam",
-                  "wins": 0,
+                  "wins": 1,
                   "ties": 0,
                   "losses": 0
                 },
                 {
                   "name": "craig",
-                  "wins": 0,
+                  "wins": 1,
                   "ties": 0,
-                  "losses": 0
+                  "losses": 1
                 },
                 {
                   "name": "dan",
-                  "wins": 0,
+                  "wins": 2,
                   "ties": 0,
-                  "losses": 0
+                  "losses": 1
                 },
                 {
                   "name": "dylan",
                   "wins": 0,
                   "ties": 0,
-                  "losses": 0
+                  "losses": 3
                 },
                 {
                   "name": "evan",
-                  "wins": 0,
+                  "wins": 1,
                   "ties": 0,
-                  "losses": 0
+                  "losses": 2
                 },
                 {
                   "name": "rj",
-                  "wins": 0,
+                  "wins": 1,
                   "ties": 0,
-                  "losses": 0
+                  "losses": 2
                 }
               ]
             }
@@ -4470,14 +4470,14 @@
             {
               "id": "bestBall",
               "game": "Best Ball",
-              "wins": 0,
+              "wins": 1,
               "ties": 0,
               "losses": 0
             },
             {
               "id": "twoBestBall",
               "game": "Best Ball",
-              "wins": 0,
+              "wins": 1,
               "ties": 0,
               "losses": 0
             },
@@ -4486,13 +4486,13 @@
               "game": "Bramble",
               "wins": 0,
               "ties": 0,
-              "losses": 0
+              "losses": 1
             },
             {
               "id": "twoBallBramble",
               "game": "Bramble",
               "wins": 0,
-              "ties": 0,
+              "ties": 1,
               "losses": 0
             },
             {
@@ -4500,7 +4500,7 @@
               "game": "Alternate",
               "wins": 0,
               "ties": 0,
-              "losses": 0
+              "losses": 1
             },
             {
               "id": "brambleAlternate",
@@ -4513,20 +4513,20 @@
               "id": "pinehurst",
               "game": "Pinehurst",
               "wins": 0,
-              "ties": 0,
+              "ties": 1,
               "losses": 0
             },
             {
               "id": "scramble",
               "game": "Scramble",
-              "wins": 0,
+              "wins": 1,
               "ties": 0,
               "losses": 0
             },
             {
               "id": "singles",
               "game": "Singles",
-              "wins": 0,
+              "wins": 1,
               "ties": 0,
               "losses": 0
             }
@@ -4537,18 +4537,18 @@
                 {
                   "name": "chris",
                   "wins": 0,
-                  "ties": 0,
+                  "ties": 1,
                   "losses": 0
                 },
                 {
                   "name": "curtis",
                   "wins": 0,
                   "ties": 0,
-                  "losses": 0
+                  "losses": 1
                 },
                 {
                   "name": "derek",
-                  "wins": 0,
+                  "wins": 1,
                   "ties": 0,
                   "losses": 0
                 },
@@ -4560,14 +4560,14 @@
                 },
                 {
                   "name": "jake",
-                  "wins": 0,
+                  "wins": 1,
                   "ties": 0,
-                  "losses": 0
+                  "losses": 1
                 },
                 {
                   "name": "travis",
-                  "wins": 0,
-                  "ties": 0,
+                  "wins": 1,
+                  "ties": 1,
                   "losses": 0
                 }
               ]
@@ -4576,38 +4576,38 @@
               "opponents": [
                 {
                   "name": "cam",
-                  "wins": 0,
+                  "wins": 2,
                   "ties": 0,
                   "losses": 0
                 },
                 {
                   "name": "craig",
                   "wins": 0,
-                  "ties": 0,
-                  "losses": 0
+                  "ties": 1,
+                  "losses": 1
                 },
                 {
                   "name": "dan",
-                  "wins": 0,
+                  "wins": 2,
                   "ties": 0,
-                  "losses": 0
+                  "losses": 1
                 },
                 {
                   "name": "dylan",
-                  "wins": 0,
-                  "ties": 0,
-                  "losses": 0
+                  "wins": 1,
+                  "ties": 2,
+                  "losses": 1
                 },
                 {
                   "name": "evan",
-                  "wins": 0,
+                  "wins": 1,
                   "ties": 0,
-                  "losses": 0
+                  "losses": 1
                 },
                 {
                   "name": "rj",
-                  "wins": 0,
-                  "ties": 0,
+                  "wins": 1,
+                  "ties": 1,
                   "losses": 0
                 }
               ]
@@ -4962,19 +4962,19 @@
               "game": "Best Ball",
               "wins": 0,
               "ties": 0,
-              "losses": 0
+              "losses": 1
             },
             {
               "id": "twoBestBall",
               "game": "Best Ball",
-              "wins": 0,
+              "wins": 1,
               "ties": 0,
               "losses": 0
             },
             {
               "id": "bramble",
               "game": "Bramble",
-              "wins": 0,
+              "wins": 1,
               "ties": 0,
               "losses": 0
             },
@@ -4983,12 +4983,12 @@
               "game": "Bramble",
               "wins": 0,
               "ties": 0,
-              "losses": 0
+              "losses": 1
             },
             {
               "id": "alternate",
               "game": "Alternate",
-              "wins": 0,
+              "wins": 1,
               "ties": 0,
               "losses": 0
             },
@@ -5003,7 +5003,7 @@
               "id": "pinehurst",
               "game": "Pinehurst",
               "wins": 0,
-              "ties": 0,
+              "ties": 1,
               "losses": 0
             },
             {
@@ -5011,14 +5011,14 @@
               "game": "Scramble",
               "wins": 0,
               "ties": 0,
-              "losses": 0
+              "losses": 1
             },
             {
               "id": "singles",
               "game": "Singles",
               "wins": 0,
               "ties": 0,
-              "losses": 0
+              "losses": 1
             }
           ],
           "records": [
@@ -5028,29 +5028,29 @@
                   "name": "cam",
                   "wins": 0,
                   "ties": 0,
-                  "losses": 0
+                  "losses": 1
                 },
                 {
                   "name": "craig",
                   "wins": 0,
                   "ties": 0,
-                  "losses": 0
+                  "losses": 1
                 },
                 {
                   "name": "dan",
                   "wins": 0,
                   "ties": 0,
-                  "losses": 0
+                  "losses": 1
                 },
                 {
                   "name": "dylan",
-                  "wins": 0,
-                  "ties": 0,
+                  "wins": 1,
+                  "ties": 1,
                   "losses": 0
                 },
                 {
                   "name": "evan",
-                  "wins": 0,
+                  "wins": 2,
                   "ties": 0,
                   "losses": 0
                 }
@@ -5060,13 +5060,13 @@
               "opponents": [
                 {
                   "name": "chris",
-                  "wins": 0,
-                  "ties": 0,
-                  "losses": 0
+                  "wins": 1,
+                  "ties": 1,
+                  "losses": 1
                 },
                 {
                   "name": "curtis",
-                  "wins": 0,
+                  "wins": 1,
                   "ties": 0,
                   "losses": 0
                 },
@@ -5074,7 +5074,7 @@
                   "name": "derek",
                   "wins": 0,
                   "ties": 0,
-                  "losses": 0
+                  "losses": 3
                 },
                 {
                   "name": "gordon",
@@ -5084,21 +5084,21 @@
                 },
                 {
                   "name": "jake",
-                  "wins": 0,
+                  "wins": 2,
                   "ties": 0,
-                  "losses": 0
+                  "losses": 1
                 },
                 {
                   "name": "matt",
                   "wins": 0,
-                  "ties": 0,
-                  "losses": 0
+                  "ties": 1,
+                  "losses": 1
                 },
                 {
                   "name": "travis",
-                  "wins": 0,
+                  "wins": 2,
                   "ties": 0,
-                  "losses": 0
+                  "losses": 1
                 }
               ]
             }
@@ -5445,14 +5445,14 @@
             {
               "id": "bestBall",
               "game": "Best Ball",
-              "wins": 0,
+              "wins": 1,
               "ties": 0,
               "losses": 0
             },
             {
               "id": "twoBestBall",
               "game": "Best Ball",
-              "wins": 0,
+              "wins": 1,
               "ties": 0,
               "losses": 0
             },
@@ -5461,13 +5461,13 @@
               "game": "Bramble",
               "wins": 0,
               "ties": 0,
-              "losses": 0
+              "losses": 1
             },
             {
               "id": "twoBallBramble",
               "game": "Bramble",
               "wins": 0,
-              "ties": 0,
+              "ties": 1,
               "losses": 0
             },
             {
@@ -5475,7 +5475,7 @@
               "game": "Alternate",
               "wins": 0,
               "ties": 0,
-              "losses": 0
+              "losses": 1
             },
             {
               "id": "brambleAlternate",
@@ -5487,7 +5487,7 @@
             {
               "id": "pinehurst",
               "game": "Pinehurst",
-              "wins": 0,
+              "wins": 1,
               "ties": 0,
               "losses": 0
             },
@@ -5496,13 +5496,13 @@
               "game": "Scramble",
               "wins": 0,
               "ties": 0,
-              "losses": 0
+              "losses": 1
             },
             {
               "id": "singles",
               "game": "Singles",
               "wins": 0,
-              "ties": 0,
+              "ties": 1,
               "losses": 0
             }
           ],
@@ -5513,17 +5513,17 @@
                   "name": "chris",
                   "wins": 0,
                   "ties": 0,
-                  "losses": 0
+                  "losses": 1
                 },
                 {
                   "name": "curtis",
                   "wins": 0,
                   "ties": 0,
-                  "losses": 0
+                  "losses": 1
                 },
                 {
                   "name": "derek",
-                  "wins": 0,
+                  "wins": 1,
                   "ties": 0,
                   "losses": 0
                 },
@@ -5535,14 +5535,14 @@
                 },
                 {
                   "name": "jake",
-                  "wins": 0,
+                  "wins": 1,
                   "ties": 0,
-                  "losses": 0
+                  "losses": 1
                 },
                 {
                   "name": "matt",
-                  "wins": 0,
-                  "ties": 0,
+                  "wins": 1,
+                  "ties": 1,
                   "losses": 0
                 }
               ]
@@ -5551,39 +5551,39 @@
               "opponents": [
                 {
                   "name": "cam",
-                  "wins": 0,
-                  "ties": 0,
+                  "wins": 2,
+                  "ties": 1,
                   "losses": 0
                 },
                 {
                   "name": "craig",
-                  "wins": 0,
-                  "ties": 0,
-                  "losses": 0
+                  "wins": 2,
+                  "ties": 1,
+                  "losses": 1
                 },
                 {
                   "name": "dan",
-                  "wins": 0,
+                  "wins": 1,
                   "ties": 0,
-                  "losses": 0
+                  "losses": 1
                 },
                 {
                   "name": "dylan",
                   "wins": 0,
-                  "ties": 0,
-                  "losses": 0
+                  "ties": 1,
+                  "losses": 1
                 },
                 {
                   "name": "evan",
                   "wins": 0,
                   "ties": 0,
-                  "losses": 0
+                  "losses": 1
                 },
                 {
                   "name": "rj",
-                  "wins": 0,
+                  "wins": 1,
                   "ties": 0,
-                  "losses": 0
+                  "losses": 2
                 }
               ]
             }

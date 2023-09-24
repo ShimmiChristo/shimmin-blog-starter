@@ -144,7 +144,7 @@ const PlayerPostTemplate = ({ data, location, children }) => {
         <div className="row">
           <div className="col-12 col-lg-6">
             <PlayerInfoThisYearRecord
-              year="2022"
+              year="2023"
               teamColor="green"
               post={post}
               playerData={playerData}

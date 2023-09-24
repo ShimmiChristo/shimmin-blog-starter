@@ -18,7 +18,17 @@
       "year": "2023",
       "date": "Sept, 22 - Sept, 23",
       "winner": "blue",
-      "location": "Boyne Highlands"
+      "location": "Boyne Highlands",
+      "gamesPlayed": [
+        "bestBall",
+        "twoBestBall",
+        "alternate",
+        "scramble",
+        "bramble",
+        "twoBallBramble",
+        "pinehurst",
+        "singles"
+      ]
     },
     "_2022": {
       "teams": {
@@ -38,7 +48,17 @@
       "year": "2022",
       "date": "Oct, 14 - Oct, 15",
       "winner": "green",
-      "location": "Gull Lake View"
+      "location": "Gull Lake View",
+      "gamesPlayed": [
+        "bestBall",
+        "twoBestBall",
+        "twoBallBramble",
+        "scramble",
+        "bramble",
+        "alternate",
+        "scramble",
+        "singles"
+      ]
     },
     "_2021": {
       "teams": {
@@ -58,7 +78,14 @@
       "year": "2021",
       "date": "Oct, 16 - Oct, 17",
       "winner": "blue",
-      "location": "Otsego, Galyord GC"
+      "location": "Otsego, Galyord GC",
+      "gamesPlayed": [
+        "bestBall",
+        "bramble",
+        "brambleAlternate",
+        "scramble",
+        "singles"
+      ]
     }
   }
 ]

@@ -559,7 +559,7 @@ const TopicPage = ({ location }) => {
           gameplay="singles"
           player1={p12}
           player2={p6}
-          player1MatchHandicap=""
+          player1MatchHandicap="27"
           player2MatchHandicap=""
         />
         <Match

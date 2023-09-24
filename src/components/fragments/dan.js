@@ -7,6 +7,63 @@ export const Dan = graphql`
     appearances
     handicap
     year {
+      _2023 {
+        id
+        handicap
+        captain
+        team
+        points {
+          wins
+          ties
+          losses
+          id
+          game
+        }
+        scores {
+          boyneHighlandsArthurHills {
+            course
+            frontHandicap
+            backHandicap
+            back
+            front
+          }
+          boyneHighlandsDonaldRoss {
+            frontHandicap
+            front
+            course
+            backHandicap
+            back
+          }
+          boyneHighlandsMoor {
+            frontHandicap
+            front
+            course
+            backHandicap
+            back
+          }
+          boyneHighlandsHeather {
+            back
+            backHandicap
+            course
+            front
+            frontHandicap
+          }
+        }
+        records {
+          partners {
+            name
+            wins
+            ties
+            losses
+          }
+          opponents {
+            name
+            wins
+            ties
+            losses
+          }
+        }
+      }
       _2021 {
         id
         captain
