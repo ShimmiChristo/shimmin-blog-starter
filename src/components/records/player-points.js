@@ -48,7 +48,7 @@ const PlayerPoints = ({ name }) => {
           points.total.wins += elem.wins
           points.total.ties += elem.ties
           points.total.losses += elem.losses
-          points.matches += 1
+          points.matches += elem.wins + elem.ties + elem.losses
         } else {
           points[elem.id] = {}
           points[elem.id].wins = elem.wins
