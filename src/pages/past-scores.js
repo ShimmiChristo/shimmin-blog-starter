@@ -8,6 +8,7 @@ import LandingPageHeader from "../components/landing-page-header"
 import PastScoresComponent from "../components/past-scores-component"
 import MatchSummary2021 from "../components/matches/2021/summary"
 import MatchSummary2022 from "../components/matches/2022/summary"
+import MatchSummary2023 from "../components/matches/2023/summary"
 
 import "../styles/match.css"
 
@@ -16,6 +17,7 @@ const PastScoresPage = ({ location }) => {
   const siteTitle = title || `Title`
   const summary2021 = MatchSummary2021()
   const summary2022 = MatchSummary2022()
+  const summary2023 = MatchSummary2023()
 
   return (
     <Layout location={location} title={siteTitle}>
@@ -28,6 +30,13 @@ const PastScoresPage = ({ location }) => {
           <div className="col-6 col-sm-2">Winner</div>
           <div className="col-6 col-sm-5">Location</div>
         </div>
+        <PastScoresComponent
+          year="2023"
+          date="Sep, 22 - Sep, 23"
+          winner="blue"
+          location="Boyne Highlands"
+          summary={summary2023}
+        />
         <PastScoresComponent
           year="2022"
           date="Oct, 14 - Oct, 15"
