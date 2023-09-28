@@ -43,16 +43,16 @@ const PastScoresComponent = ({ year, date, winner, location, summary }) => {
       </div>
       <div className={"container collapse " + open}>
         <div className="row py-5">
-          <div className="col-3 h2">Final Score</div>
+          <div className="col-5 col-lg-3 offset-lg-1 h2">Final Score</div>
           <div
             className={
-              "col-9 h3 bold text-uppercase align-right " + eventWinner
+              "col-7 col-lg-7 h3 bold text-uppercase align-right " + eventWinner
             }
           >
             {teamOneName} {teamOneScore} - {teamTwoName} {teamTwoScore}
           </div>
         </div>
-        <div className="row">{summary}</div>
+        <div className="row col-10 col-lg-7 offset-lg-1">{summary}</div>
       </div>
     </>
   )
