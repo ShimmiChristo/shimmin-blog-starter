@@ -138,17 +138,17 @@ function HighlightDay() {
           </p>
           <p>
             The back nine was a two-ball bramble. The first match was {curtis},
-            {chris} vs Cam, Evan. The fairytale story continues as {evan} seems
-            unbeatable with an extra stroke a hole. {cam} and {evan} win 2&1 and
-            Blue takes a 4 shot lead. The third match before the second. Green
-            was able to stop the bleeding, winning a very important point, 4&2.
-            The second match of the nine came down to the last hole. It was{" "}
-            {matt} and {travis} vs {dylan} and Craig. With every hole giving a
+            {chris} vs {cam}, Evan. The fairytale story continues as {evan}{" "}
+            seems unbeatable with an extra stroke a hole. {cam} and {evan} win
+            2&1 and Blue takes a 4 shot lead. The third match before the second.
+            Green was able to stop the bleeding, winning a very important point,
+            4&2. The second match of the nine came down to the last hole. It was{" "}
+            {matt} and {travis} vs {dylan} and {craig}. With every hole giving a
             point to a team, the match was all square going into the last hole.
             All four players eventually made it to the green for a putt-off.
-            Dylan putting for eagle, {matt} putting for birdie, {travis} putting
-            for par, and {craig} putting for bogey. With the pressure on,
-            everyone two-putted and the match ended AS.
+            {dylan} putting for eagle, {matt} putting for birdie, {travis}{" "}
+            putting for par, and {craig} putting for bogey. With the pressure
+            on, everyone two-putted and the match ended AS.
           </p>
           <br />
           <span className="block bold green">Green Team: 7.5</span>
@@ -170,8 +170,8 @@ function HighlightDay() {
             18 holes. The first match was {curtis} and {derek} vs {evan} and
             Dan. That match went down to the wire. Green won the last hole and
             pushed the match. The second match was {jake} and {travis} vs{" "}
-            {craig} and Cam. Green got the better of Blue and won on the last
-            hole. The third and final match was Blue team captain, Dylan, and{" "}
+            {craig} and {cam}. Green got the better of Blue and won on the last
+            hole. The third and final match was Blue team captain, {dylan}, and{" "}
             {rj} vs Green team captain, {matt}, and {chris}. With all the stakes
             on the line, this was one of the most competitive matches of the
             weekend. Down 1 with 1 to play,
@@ -200,7 +200,7 @@ function HighlightDay() {
             <span className="bold green">Green 10.5</span>.
           </p>
           <p>
-            The next match to end was {jake} vs Craig. {craig} got a stroke
+            The next match to end was {jake} vs {craig}. {craig} got a stroke
             against
             {jake} (questionable) and he took advantage of it. {craig} won 2&1
             on hole 8. <span className="bold blue">Blue 12.5</span>,{" "}
@@ -213,17 +213,17 @@ function HighlightDay() {
             <span className="bold green">Green 11.5</span>.
           </p>
           <p>
-            Next to finish was {matt} vs Dylan. On hole 13, we were hitting into
-            the sun. After thinking he had a great shot, we found {dylan} in the
-            rough without a shot at the green. {dylan} ended up losing the hole
-            and losing his composure. {matt} would win 13, 14 and 15. After the
-            push on 17, it was over 2&1, Green team.{" "}
+            Next to finish was {matt} vs {dylan}. On hole 13, we were hitting
+            into the sun. After thinking he had a great shot, we found {dylan}{" "}
+            in the rough without a shot at the green. {dylan} ended up losing
+            the hole and losing his composure. {matt} would win 13, 14 and 15.
+            After the push on 17, it was over 2&1, Green team.{" "}
             <span className="bold blue">Blue 12.5</span>,{" "}
             <span className="bold green">Green 12.5</span>.
           </p>
           <p>
             Two groups played the 18th hole. {curtis} vs {evan} and {travis} vs
-            Cam.
+            {cam}.
           </p>
           <p>
             Going into the 18th hole, {evan}vs {curtis}. {evan} was up 1 and he
@@ -232,13 +232,13 @@ function HighlightDay() {
             <span className="bold green">Green 12.5</span>.
           </p>
           <p>
-            It all came down to the final match. {travis} vs Cam. {travis} is up
-            1. All {travis} needs to do is tie against {cam} on the hole and
+            It all came down to the final match. {travis} vs {cam}. {travis} is
+            up 1. All {travis} needs to do is tie against {cam} on the hole and
             Green wins the cup. The 18th hole is one of the hardest holes on all
             of Boyne’s property. The second shot is a 180 yard shot over water
             to a green. {cam} tees off with an iron to play it safe. He duffs it
             right, about 50 yards. {travis}
-            ’s tee shot is a hook left into the weeds. Cam’s second shot is a
+            ’s tee shot is a hook left into the weeds. {cam}’s second shot is a
             duck hook left, down a hill to hole 10. {travis} takes a drop and
             hits it into the water. Takes another drop and hits back into the
             water. {cam} hits on the green. {travis} concedes the hole, ending
