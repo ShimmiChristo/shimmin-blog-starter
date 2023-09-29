@@ -5,7 +5,7 @@ export default async function handler(req, res) {
   if (req.httpMethod === "GET") {
     try {
       // Process the GET request as needed
-      const data = require("../src/data/playersUpdate.json")
+      const data = require("../data/playersUpdate.json")
 
       // Return the data as the response
       return {
