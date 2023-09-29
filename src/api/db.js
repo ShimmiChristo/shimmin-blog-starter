@@ -1,15 +1,15 @@
 // import { createRequire } from "module"
 // const require = createRequire(import.meta.url)
-import { PlayerInfoUpdate } from "../hooks/get-player-info-UPDATE"
+// import { PlayerInfoUpdate } from "../../src/hooks/get-player-info-UPDATE"
 
 export default function handler(req, res) {
-  const playersUpdateJson = PlayerInfoUpdate()
+  // const playersUpdateJson = PlayerInfoUpdate()
 
   if (req.httpMethod === "GET") {
     try {
       // Process the GET request as needed
       // const data = require("../data/playersUpdate.json")
-      const data = playersUpdateJson();
+      const data = { hello: `world` };
 
       // Add CORS headers
       const headers = {
