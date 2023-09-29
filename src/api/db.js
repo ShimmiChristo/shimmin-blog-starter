@@ -7,9 +7,16 @@ export default async function handler(req, res) {
       // Process the GET request as needed
       const data = require("../data/playersUpdate.json")
 
+      // Add CORS headers
+      const headers = {
+        "Access-Control-Allow-Origin": "*", // Replace * with the appropriate domain
+        "Access-Control-Allow-Headers": "Content-Type",
+      }
+
       // Return the data as the response
       return {
         statusCode: 200,
+        headers,
         body: JSON.stringify(data),
       }
     } catch (error) {
