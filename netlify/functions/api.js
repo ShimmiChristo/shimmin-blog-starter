@@ -1,24 +1,11 @@
-// import { PlayerInfoUpdate } from "../../src/hooks/get-player-info-UPDATE"
+import { createRequire } from "module"
+const require = createRequire(import.meta.url)
 
-
-export default async function handler(req, res) {
-  // const playersUpdateJson = PlayerInfoUpdate()
-
+export default function handler(req, res) {
   if (req.httpMethod === "GET") {
     try {
-      // Process the GET request as needed
-      // const data = playersUpdateJson();
-      const data = { hello: `world` };
-      const headers = {
-        "Access-Control-Allow-Origin": "*", // Replace * with the appropriate domain
-        "Access-Control-Allow-Headers": "Content-Type",
-      }
-      // Return the data as the response
-      return {
-        statusCode: 200,
-        headers,
-        body: JSON.stringify(data),
-      }
+      const data = require("../data/playersUpdate.json")
+      res.status(200).json(data)
     } catch (error) {
       // Return an error response if there was an issue processing the request
       return {
