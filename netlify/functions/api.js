@@ -1,8 +1,9 @@
 import { PlayerInfoUpdate } from "../hooks/get-player-info-UPDATE"
-const playersUpdateJson = PlayerInfoUpdate()
 
 
 export default async function handler(req, res) {
+  const playersUpdateJson = PlayerInfoUpdate()
+  
   if (req.httpMethod === "GET") {
     try {
       // Process the GET request as needed

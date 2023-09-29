@@ -1,9 +1,10 @@
 // import { createRequire } from "module"
 // const require = createRequire(import.meta.url)
 import { PlayerInfoUpdate } from "../hooks/get-player-info-UPDATE"
-const playersUpdateJson = PlayerInfoUpdate()
 
 export default function handler(req, res) {
+  const playersUpdateJson = PlayerInfoUpdate()
+
   if (req.httpMethod === "GET") {
     try {
       // Process the GET request as needed
