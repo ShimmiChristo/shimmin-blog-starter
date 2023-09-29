@@ -5,6 +5,8 @@
 export default function handler(req, res) {
   // const playersUpdateJson = PlayerInfoUpdate()
 
+  console.log('req - ', req);
+  
   if (req.httpMethod === "GET") {
     try {
       // Process the GET request as needed
@@ -12,15 +14,14 @@ export default function handler(req, res) {
       const data = { hello: `world` };
 
       // Add CORS headers
-      const headers = {
-        "Access-Control-Allow-Origin": "*", // Replace * with the appropriate domain
-        "Access-Control-Allow-Headers": "Content-Type",
-        "Content-Type": "application/json"
-      }
+      // const headers = {
+      //   "Access-Control-Allow-Origin": "*", // Replace * with the appropriate domain
+      //   "Access-Control-Allow-Headers": "Content-Type",
+      //   "Content-Type": "application/json"
+      // }
       // Return the data as the response
       return {
         statusCode: 200,
-        headers,
         body: JSON.stringify(data),
       }
     } catch (error) {
