@@ -1,8 +1,8 @@
 import { createRequire } from "module"
 const require = createRequire(import.meta.url)
 
-export const handler = async (event, context) => {
-  if (event.httpMethod === "GET") {
+export default async function handler(req, res) {
+  if (req.httpMethod === "GET") {
     try {
       // Process the GET request as needed
       const data = require("./data/playersUpdate.json")
