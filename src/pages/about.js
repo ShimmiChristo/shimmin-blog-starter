@@ -48,8 +48,8 @@ const TopicPage = ({ data, location }) => {
         </div>
         <div className="container col-lg-8">
           <StaticImage
-            src="../images/group/2022-group.jpg"
-            alt="2022 bfbh cup players"
+            src="../images/group/2023-group.jpg"
+            alt="2023 bfbh cup players"
             loading="eager"
             placeholder="blurred"
             layout="fullWidth"

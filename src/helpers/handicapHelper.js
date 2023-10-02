@@ -1,4 +1,13 @@
 // import MatchNav from "../components/match-nav"
+/* 
+      - Shamble (Bramble) - 80% of handicap
+      - Foursomes (alternate shot) - 50% of combined team handicap
+      - Greensomes (alternate shot and best drive) - 60% low handicap + 40% high handicap
+      - Pinehurst - 60% low handicap + 40% high handicap
+      - Scramble (2 players) - 35% low/15% high
+      - Match play individual - 100% of handicap 
+      - Match play Four-Ball - 90% of handicap
+  */
 
 /**
  * @param {int} s - player score
@@ -70,6 +79,11 @@ function getPlayerHandicap(player, gameplay, handicaps) {
     score.player2 = team2Adj - lowHCTeam
     score.player3 = team1Adj - lowHCTeam
     score.player4 = team2Adj - lowHCTeam
+  } else if (gameplay === "bramble") {
+    score.player1 = Math.round((p1 - lowHC) * 0.8)
+    score.player2 = Math.round((p2 - lowHC) * 0.8)
+    score.player3 = Math.round((p3 - lowHC) * 0.8)
+    score.player4 = Math.round((p4 - lowHC) * 0.8)
   } else if (gameplay === "alternate") {
     let team1Adj = Math.round((p1 + p3) / 2)
     let team2Adj = Math.round((p2 + p4) / 2)
