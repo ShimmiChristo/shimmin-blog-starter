@@ -87,8 +87,7 @@ const TopicPage = ({ data, location }) => {
         ]}
       />
 
-      <MatchScore year="_2022" />
-
+      <MatchScore year="_2022" lastYearWinner="blue" />
       <MatchNavSection
         data-visible={pageHash === "#r1-best-ball" ? "true" : "false"}
         data-link-id="r1-best-ball"
@@ -505,7 +504,7 @@ const TopicPage = ({ data, location }) => {
           player2="craig"
           player2Handicap="23"
         />
-         <Match
+        <Match
           matchId="4.2 - Singles Matches. Full handicap"
           courseMatch="gullLakeWest2"
           matchHandicap="full"

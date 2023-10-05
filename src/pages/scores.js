@@ -99,8 +99,7 @@ const TopicPage = ({ location }) => {
         ]}
       />
 
-      <MatchScore year="_2023" />
-
+      <MatchScore year="_2023" lastYearWinner="green" />
       <MatchNavSection
         data-visible={
           (location.pathname === "/scores/" &&

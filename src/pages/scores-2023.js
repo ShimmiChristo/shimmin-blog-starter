@@ -86,8 +86,7 @@ const TopicPage = ({ location }) => {
         ]}
       />
 
-      <MatchScore year="_2023" />
-
+      <MatchScore year="_2023" lastYearWinner="green" />
       <MatchNavSection
         data-visible={pageHash === "#r1-best-ball" ? "true" : "false"}
         data-link-id="r1-best-ball"
