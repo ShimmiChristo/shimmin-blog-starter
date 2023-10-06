@@ -152,6 +152,9 @@ const ScoreTeamTwo = styled.div`
 const TeamPointsNum = styled.div`
   line-height: 1;
   font-size: 2rem;
+  @media (max-width: 768px) {
+    font-size: 1rem;
+  }
 `
 const TeamPointsText = styled.div`
   font-size: 0.7rem;
@@ -161,6 +164,14 @@ const TeamPointsText = styled.div`
 const TeamFlag = styled.div`
   font-size: 2rem;
   letter-spacing: 0;
+  @media (max-width: 768px) {
+    font-size: 1rem;
+  }
+`
+const PointsNeeded = styled.h3`
+  @media (max-width: 768px) {
+    font-size: 1rem;
+  }
 `
 
 function MatchScore({ year, lastYearWinner }) {
@@ -185,7 +196,7 @@ function MatchScore({ year, lastYearWinner }) {
     <>
       <div className="d-flex justify-content-around align-items-center">
         <div
-          className="d-flex team align-items-center justify-content-center flex-basis-0 flex-grow-1"
+          className="d-flex flex-column flex-md-row team align-items-center justify-content-md-center justify-content-start flex-basis-0 flex-grow-1"
           data-team="green"
           data-guest="false"
         >
@@ -218,9 +229,13 @@ function MatchScore({ year, lastYearWinner }) {
             }
           })()}
         </div>
-        <h3 className="h5">Points Needed</h3>
+        <PointsNeeded className="h5">
+          Points
+          <br />
+          Needed
+        </PointsNeeded>
         <div
-          className="d-flex team align-items-center justify-content-center flex-basis-0 flex-grow-1"
+          className="d-flex flex-column-reverse flex-md-row team align-items-center justify-content-md-center justify-content-end flex-basis-0 flex-grow-1"
           data-team="blue"
           data-guest="false"
         >
