@@ -362,7 +362,7 @@ const TopicPage = ({ location }) => {
           courseMatch="boyneHighlandsMoor"
           holes="front"
           matchHandicap="full"
-          gameplay=""
+          gameplay="one-ball"
           player1={p7}
           player2={p3}
           player3={p12}
@@ -378,7 +378,7 @@ const TopicPage = ({ location }) => {
           courseMatch="boyneHighlandsMoor"
           holes="front"
           matchHandicap="full"
-          gameplay=""
+          gameplay="one-ball"
           player1={p8}
           player2={p4}
           player3={p11}
@@ -394,7 +394,7 @@ const TopicPage = ({ location }) => {
           courseMatch="boyneHighlandsMoor"
           holes="front"
           matchHandicap="full"
-          gameplay=""
+          gameplay="one-ball"
           player1={p9}
           player2={p1}
           player3={p10}
@@ -422,7 +422,7 @@ const TopicPage = ({ location }) => {
           courseMatch="boyneHighlandsMoor"
           holes="back"
           matchHandicap="full"
-          gameplay=""
+          gameplay="two-ball"
           player1={p8}
           player2={p4}
           player3={p12}
@@ -438,7 +438,7 @@ const TopicPage = ({ location }) => {
           courseMatch="boyneHighlandsMoor"
           holes="back"
           matchHandicap="full"
-          gameplay=""
+          gameplay="two-ball"
           player1={p7}
           player2={p1}
           player3={p10}
@@ -454,7 +454,7 @@ const TopicPage = ({ location }) => {
           courseMatch="boyneHighlandsMoor"
           holes="back"
           matchHandicap="full"
-          gameplay=""
+          gameplay="two-ball"
           player1={p9}
           player2={p2}
           player3={p11}
