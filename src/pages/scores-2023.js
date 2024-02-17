@@ -36,6 +36,118 @@ const TopicPage = ({ location }) => {
     }
   `
 
+  const p1 = "dylan"
+  const p2 = "rj"
+  const p3 = "craig"
+  const p4 = "cam"
+  const p5 = "dan"
+  const p6 = "evan"
+  const p7 = "matt"
+  const p8 = "chris"
+  const p9 = "jake"
+  const p10 = "travis"
+  const p11 = "derek"
+  const p12 = "curtis"
+
+  const matchesArr = [
+    {
+      matchId: "1.1 - Best Ball. Full handicap",
+      year: "_2023",
+      courseMatch: "boyneHighlandsArthurHills",
+      holes: "front",
+      matchHandicap: "full",
+      gameplay: "one-ball",
+      player1MatchHandicap: "",
+      player2MatchHandicap: "",
+      player3MatchHandicap: "",
+      player4MatchHandicap: "",
+    },
+    {
+      matchId: "1.2 - 2 Best Ball. Full handicap",
+      year: "_2023",
+      courseMatch: "boyneHighlandsArthurHills",
+      holes: "back",
+      matchHandicap: "full",
+      gameplay: "two-ball",
+      player1MatchHandicap: "",
+      player2MatchHandicap: "",
+      player3MatchHandicap: "",
+      player4MatchHandicap: "",
+    },
+    {
+      matchId: "2.1 - Alternate. 50% HC",
+      year: "_2023",
+      courseMatch: "boyneHighlandsDonaldRoss",
+      holes: "front",
+      matchHandicap: "full",
+      gameplay: "alternate",
+      player1MatchHandicap: "",
+      player2MatchHandicap: "",
+      player3MatchHandicap: "",
+      player4MatchHandicap: "",
+    },
+    {
+      matchId: "2.2 - Scramble. 35% low HC + 15% high HC",
+      year: "_2023",
+      courseMatch: "boyneHighlandsDonaldRoss",
+      holes: "back",
+      matchHandicap: "average",
+      gameplay: "scramble",
+      player1MatchHandicap: "",
+      player2MatchHandicap: "",
+      player3MatchHandicap: "",
+      player4MatchHandicap: "",
+    },
+    {
+      matchId: "3.1 - Bramble. Full HC",
+      year: "_2023",
+      courseMatch: "boyneHighlandsMoor",
+      holes: "front",
+      matchHandicap: "full",
+      gameplay: "bramble",
+      player1MatchHandicap: "",
+      player2MatchHandicap: "",
+      player3MatchHandicap: "",
+      player4MatchHandicap: "",
+    },
+    {
+      matchId: "3.2 - 2 Ball Bramble. Full HC",
+      year: "_2023",
+      courseMatch: "boyneHighlandsMoor",
+      holes: "back",
+      matchHandicap: "full",
+      gameplay: "two-ball",
+      player1MatchHandicap: "",
+      player2MatchHandicap: "",
+      player3MatchHandicap: "",
+      player4MatchHandicap: "",
+    },
+    {
+      matchId: "4.1 - Pinehurst. 60% low HC + 40% high HC",
+      year: "_2023",
+      courseMatch: "boyneHighlandsHeather",
+      holes: "front",
+      matchHandicap: "average",
+      gameplay: "pinehurst",
+      player1MatchHandicap: "",
+      player2MatchHandicap: "",
+      player3MatchHandicap: "",
+      player4MatchHandicap: "",
+    },
+    {
+      matchId: "4.2 - Singles Match. Full HC",
+      year: "_2023",
+      courseMatch: "boyneHighlandsHeather",
+      holes: "back",
+      matchHandicap: "full",
+      gameplay: "singles",
+      player1MatchHandicap: "",
+      player2MatchHandicap: "",
+      player3MatchHandicap: "",
+      player4MatchHandicap: "",
+    },
+  ]
+
   return (
     <Layout location={location} title={siteTitle}>
       <SEO title="2023 Scores" />
@@ -54,14 +166,14 @@ const TopicPage = ({ location }) => {
             link: "r1-two-best-ball",
           },
           {
-            name: "Pinehurst",
+            name: "Alternate",
             round: "Round 2.1",
-            link: "r2-pinehurst",
+            link: "r2-alternate",
           },
           {
-            name: "Alternate",
+            name: "Scramble",
             round: "Round 2.2",
-            link: "r2-alternate",
+            link: "r2-scramble",
           },
           {
             name: "1 Ball Bramble",
@@ -74,9 +186,9 @@ const TopicPage = ({ location }) => {
             link: "r3-2-ball-bramble",
           },
           {
-            name: "Scramble",
+            name: "Pinehurst",
             round: "Round 4.1",
-            link: "r4-scramble",
+            link: "r4-pinehurst",
           },
           {
             name: "Singles",
@@ -98,56 +210,56 @@ const TopicPage = ({ location }) => {
           </a>
         </div>
         <Match
-          matchId="1.1 - Best Ball. Full handicap"
-          year="_2023"
-          courseMatch="boyneHighlandsArthurHills"
-          holes="front"
-          matchHandicap="full"
-          gameplay="one-ball"
-          player1="gordon"
-          player2="dylan"
-          player3="derek"
-          player4="dan"
-          player1MatchHandicap=""
-          player2MatchHandicap=""
-          player3MatchHandicap=""
-          player4MatchHandicap=""
+          matchId={matchesArr[0].matchId}
+          year={matchesArr[0].year}
+          courseMatch={matchesArr[0].courseMatch}
+          holes={matchesArr[0].holes}
+          matchHandicap={matchesArr[0].matchHandicap}
+          gameplay={matchesArr[0].gameplay}
+          player1={p8}
+          player2={p1}
+          player3={p12}
+          player4={p4}
+          player1MatchHandicap={matchesArr[0].player1MatchHandicap}
+          player2MatchHandicap={matchesArr[0].player2MatchHandicap}
+          player3MatchHandicap={matchesArr[0].player3MatchHandicap}
+          player4MatchHandicap={matchesArr[0].player4MatchHandicap}
         />
         <Match
-          matchId="1.1 - Best Ball. Full handicap"
-          year="_2023"
-          courseMatch="boyneHighlandsArthurHills"
-          holes="front"
-          matchHandicap="full"
-          gameplay="one-ball"
-          player1="curtis"
-          player2="rj"
-          player3="travis"
-          player4="craig"
-          player1MatchHandicap=""
-          player2MatchHandicap=""
-          player3MatchHandicap=""
-          player4MatchHandicap=""
+          matchId={matchesArr[0].matchId}
+          year={matchesArr[0].year}
+          courseMatch={matchesArr[0].courseMatch}
+          holes={matchesArr[0].holes}
+          matchHandicap={matchesArr[0].matchHandicap}
+          gameplay={matchesArr[0].gameplay}
+          player1={p10}
+          player2={p2}
+          player3={p11}
+          player4={p3}
+          player1MatchHandicap={matchesArr[0].player1MatchHandicap}
+          player2MatchHandicap={matchesArr[0].player2MatchHandicap}
+          player3MatchHandicap={matchesArr[0].player3MatchHandicap}
+          player4MatchHandicap={matchesArr[0].player4MatchHandicap}
         />
         <Match
-          matchId="1.1 - Best Ball. Full handicap"
-          year="_2023"
-          courseMatch="boyneHighlandsArthurHills"
-          holes="front"
-          matchHandicap="full"
-          gameplay="one-ball"
-          player1="matt"
-          player2="cam"
-          player3="chris"
-          player4="evan"
-          player1MatchHandicap=""
-          player2MatchHandicap=""
-          player3MatchHandicap=""
-          player4MatchHandicap=""
+          matchId={matchesArr[0].matchId}
+          year={matchesArr[0].year}
+          courseMatch={matchesArr[0].courseMatch}
+          holes={matchesArr[0].holes}
+          matchHandicap={matchesArr[0].matchHandicap}
+          gameplay={matchesArr[0].gameplay}
+          player1={p7}
+          player2={p5}
+          player3={p9}
+          player4={p6}
+          player1MatchHandicap={matchesArr[0].player1MatchHandicap}
+          player2MatchHandicap={matchesArr[0].player2MatchHandicap}
+          player3MatchHandicap={matchesArr[0].player3MatchHandicap}
+          player4MatchHandicap={matchesArr[0].player4MatchHandicap}
         />
       </MatchNavSection>
       <MatchNavSection
-        data-visible={pageHash === "#r1-two-best-ball" ? "true" : "false"}
+        data-visible={location.hash === "#r1-two-best-ball" ? "true" : "false"}
         data-link-id="r1-two-best-ball"
       >
         <div className="course__info">
@@ -157,57 +269,57 @@ const TopicPage = ({ location }) => {
           </a>
         </div>
         <Match
-          matchId="1.2 - 2 Best Ball. Full handicap"
-          year="_2023"
-          courseMatch="boyneHighlandsArthurHills"
-          holes="back"
-          matchHandicap="full"
-          gameplay="two-ball"
-          player1="gordon"
-          player2="dylan"
-          player3="travis"
-          player4="craig"
-          player1MatchHandicap=""
-          player2MatchHandicap=""
-          player3MatchHandicap=""
-          player4MatchHandicap=""
+          matchId={matchesArr[1].matchId}
+          year={matchesArr[1].year}
+          courseMatch={matchesArr[1].courseMatch}
+          holes={matchesArr[1].holes}
+          matchHandicap={matchesArr[1].matchHandicap}
+          gameplay={matchesArr[1].gameplay}
+          player1={p8}
+          player2={p1}
+          player3={p11}
+          player4={p3}
+          player1MatchHandicap={matchesArr[1].player1MatchHandicap}
+          player2MatchHandicap={matchesArr[1].player2MatchHandicap}
+          player3MatchHandicap={matchesArr[1].player3MatchHandicap}
+          player4MatchHandicap={matchesArr[1].player4MatchHandicap}
         />
         <Match
-          matchId="1.2 - 2 Best Ball. Full handicap"
-          year="_2023"
-          courseMatch="boyneHighlandsArthurHills"
-          holes="back"
-          matchHandicap="full"
-          gameplay="two-ball"
-          player1="matt"
-          player2="dan"
-          player3="curtis"
-          player4="cam"
-          player1MatchHandicap=""
-          player2MatchHandicap=""
-          player3MatchHandicap=""
-          player4MatchHandicap=""
+          matchId={matchesArr[1].matchId}
+          year={matchesArr[1].year}
+          courseMatch={matchesArr[1].courseMatch}
+          holes={matchesArr[1].holes}
+          matchHandicap={matchesArr[1].matchHandicap}
+          gameplay={matchesArr[1].gameplay}
+          player1={p7}
+          player2={p4}
+          player3={p10}
+          player4={p5}
+          player1MatchHandicap={matchesArr[1].player1MatchHandicap}
+          player2MatchHandicap={matchesArr[1].player2MatchHandicap}
+          player3MatchHandicap={matchesArr[1].player3MatchHandicap}
+          player4MatchHandicap={matchesArr[1].player4MatchHandicap}
         />
         <Match
-          matchId="1.2 - 2 Best Ball. Full handicap"
-          year="_2023"
-          courseMatch="boyneHighlandsArthurHills"
-          holes="back"
-          matchHandicap="full"
-          gameplay="two-ball"
-          player1="chris"
-          player2="rj"
-          player3="derek"
-          player4="evan"
-          player1MatchHandicap=""
-          player2MatchHandicap=""
-          player3MatchHandicap=""
-          player4MatchHandicap=""
+          matchId={matchesArr[1].matchId}
+          year={matchesArr[1].year}
+          courseMatch={matchesArr[1].courseMatch}
+          holes={matchesArr[1].holes}
+          matchHandicap={matchesArr[1].matchHandicap}
+          gameplay={matchesArr[1].gameplay}
+          player1={p9}
+          player2={p2}
+          player3={p12}
+          player4={p6}
+          player1MatchHandicap={matchesArr[1].player1MatchHandicap}
+          player2MatchHandicap={matchesArr[1].player2MatchHandicap}
+          player3MatchHandicap={matchesArr[1].player3MatchHandicap}
+          player4MatchHandicap={matchesArr[1].player4MatchHandicap}
         />
       </MatchNavSection>
       <MatchNavSection
-        data-visible={pageHash === "#r2-pinehurst" ? "true" : "false"}
-        data-link-id="r2-pinehurst"
+        data-visible={location.hash === "#r2-alternate" ? "true" : "false"}
+        data-link-id="r2-alternate"
       >
         <div className="course__info">
           <span>Friday Sept 22, 2:30 PM at </span>
@@ -216,58 +328,58 @@ const TopicPage = ({ location }) => {
           </a>
         </div>
         <Match
-          matchId="2.1 - Pinehurst. 60% low HC + 40% high HC"
-          year="_2023"
-          courseMatch="boyneHighlandsDonaldRoss"
-          holes="front"
-          matchHandicap="full"
-          gameplay="pinehurst"
-          player1="matt"
-          player2="dylan"
-          player3="chris"
-          player4="cam"
-          player1MatchHandicap=""
-          player2MatchHandicap=""
-          player3MatchHandicap=""
-          player4MatchHandicap=""
+          matchId={matchesArr[2].matchId}
+          year={matchesArr[2].year}
+          courseMatch={matchesArr[2].courseMatch}
+          holes={matchesArr[2].holes}
+          matchHandicap={matchesArr[2].matchHandicap}
+          gameplay={matchesArr[2].gameplay}
+          player1={p7}
+          player2={p1}
+          player3={p9}
+          player4={p5}
+          player1MatchHandicap={matchesArr[2].player1MatchHandicap}
+          player2MatchHandicap={matchesArr[2].player2MatchHandicap}
+          player3MatchHandicap={matchesArr[2].player3MatchHandicap}
+          player4MatchHandicap={matchesArr[2].player4MatchHandicap}
         />
         <Match
-          matchId="2.1 - Pinehurst. 60% low HC + 40% high HC"
-          year="_2023"
-          courseMatch="boyneHighlandsDonaldRoss"
-          holes="front"
-          matchHandicap="full"
-          gameplay="pinehurst"
-          player1="gordon"
-          player2="rj"
-          player3="curtis"
-          player4="evan"
-          player1MatchHandicap=""
-          player2MatchHandicap=""
-          player3MatchHandicap=""
-          player4MatchHandicap=""
+          matchId={matchesArr[2].matchId}
+          year={matchesArr[2].year}
+          courseMatch={matchesArr[2].courseMatch}
+          holes={matchesArr[2].holes}
+          matchHandicap={matchesArr[2].matchHandicap}
+          gameplay={matchesArr[2].gameplay}
+          player1={p8}
+          player2={p2}
+          player3={p10}
+          player4={p6}
+          player1MatchHandicap={matchesArr[2].player1MatchHandicap}
+          player2MatchHandicap={matchesArr[2].player2MatchHandicap}
+          player3MatchHandicap={matchesArr[2].player3MatchHandicap}
+          player4MatchHandicap={matchesArr[2].player4MatchHandicap}
         />
         <Match
-          matchId="2.1 - Pinehurst. 60% low HC + 40% high HC"
-          year="_2023"
-          courseMatch="boyneHighlandsDonaldRoss"
-          holes="front"
-          matchHandicap="full"
-          gameplay="pinehurst"
-          player1="travis"
-          player2="craig"
-          player3="derek"
-          player4="dan"
-          player1MatchHandicap=""
-          player2MatchHandicap=""
-          player3MatchHandicap=""
-          player4MatchHandicap=""
+          matchId={matchesArr[2].matchId}
+          year={matchesArr[2].year}
+          courseMatch={matchesArr[2].courseMatch}
+          holes={matchesArr[2].holes}
+          matchHandicap={matchesArr[2].matchHandicap}
+          gameplay={matchesArr[2].gameplay}
+          player1={p11}
+          player2={p3}
+          player3={p12}
+          player4={p4}
+          player1MatchHandicap={matchesArr[2].player1MatchHandicap}
+          player2MatchHandicap={matchesArr[2].player2MatchHandicap}
+          player3MatchHandicap={matchesArr[2].player3MatchHandicap}
+          player4MatchHandicap={matchesArr[2].player4MatchHandicap}
         />
       </MatchNavSection>
 
       <MatchNavSection
-        data-visible={pageHash === "#r2-alternate" ? "true" : "false"}
-        data-link-id="r2-alternate"
+        data-visible={location.hash === "#r2-scramble" ? "true" : "false"}
+        data-link-id="r2-scramble"
       >
         <div className="course__info">
           <span>Friday Sept 22, 5:00 PM at </span>
@@ -276,57 +388,57 @@ const TopicPage = ({ location }) => {
           </a>
         </div>
         <Match
-          matchId="2.2 - Alternate. 50% HC"
-          year="_2023"
-          courseMatch="boyneHighlandsDonaldRoss"
-          holes="back"
-          matchHandicap="average"
-          gameplay="alternate"
-          player1="gordon"
-          player2="dylan"
-          player3="chris"
-          player4="evan"
-          player1MatchHandicap=""
-          player2MatchHandicap=""
-          player3MatchHandicap=""
-          player4MatchHandicap=""
+          matchId={matchesArr[3].matchId}
+          year={matchesArr[3].year}
+          courseMatch={matchesArr[3].courseMatch}
+          holes={matchesArr[3].holes}
+          matchHandicap={matchesArr[3].matchHandicap}
+          gameplay={matchesArr[3].gameplay}
+          player1={p8}
+          player2={p1}
+          player3={p9}
+          player4={p6}
+          player1MatchHandicap={matchesArr[3].player1MatchHandicap}
+          player2MatchHandicap={matchesArr[3].player2MatchHandicap}
+          player3MatchHandicap={matchesArr[3].player3MatchHandicap}
+          player4MatchHandicap={matchesArr[3].player4MatchHandicap}
         />
         <Match
-          matchId="2.2 - Alternate. 50% HC"
-          year="_2023"
-          courseMatch="boyneHighlandsDonaldRoss"
-          holes="back"
-          matchHandicap="average"
-          gameplay="alternate"
-          player1="curtis"
-          player2="craig"
-          player3="derek"
-          player4="cam"
-          player1MatchHandicap=""
-          player2MatchHandicap=""
-          player3MatchHandicap=""
-          player4MatchHandicap=""
+          matchId={matchesArr[3].matchId}
+          year={matchesArr[3].year}
+          courseMatch={matchesArr[3].courseMatch}
+          holes={matchesArr[3].holes}
+          matchHandicap={matchesArr[3].matchHandicap}
+          gameplay={matchesArr[3].gameplay}
+          player1={p10}
+          player2={p3}
+          player3={p12}
+          player4={p5}
+          player1MatchHandicap={matchesArr[3].player1MatchHandicap}
+          player2MatchHandicap={matchesArr[3].player2MatchHandicap}
+          player3MatchHandicap={matchesArr[3].player3MatchHandicap}
+          player4MatchHandicap={matchesArr[3].player4MatchHandicap}
         />
         <Match
-          matchId="2.2 - Alternate. 50% HC"
-          year="_2023"
-          courseMatch="boyneHighlandsDonaldRoss"
-          holes="back"
-          matchHandicap="average"
-          gameplay="alternate"
-          player1="matt"
-          player2="rj"
-          player3="travis"
-          player4="dan"
-          player1MatchHandicap=""
-          player2MatchHandicap=""
-          player3MatchHandicap=""
-          player4MatchHandicap=""
+          matchId={matchesArr[3].matchId}
+          year={matchesArr[3].year}
+          courseMatch={matchesArr[3].courseMatch}
+          holes={matchesArr[3].holes}
+          matchHandicap={matchesArr[3].matchHandicap}
+          gameplay={matchesArr[3].gameplay}
+          player1={p7}
+          player2={p2}
+          player3={p11}
+          player4={p4}
+          player1MatchHandicap={matchesArr[3].player1MatchHandicap}
+          player2MatchHandicap={matchesArr[3].player2MatchHandicap}
+          player3MatchHandicap={matchesArr[3].player3MatchHandicap}
+          player4MatchHandicap={matchesArr[3].player4MatchHandicap}
         />
       </MatchNavSection>
 
       <MatchNavSection
-        data-visible={pageHash === "#r3-bramble" ? "true" : "false"}
+        data-visible={location.hash === "#r3-bramble" ? "true" : "false"}
         data-link-id="r3-bramble"
       >
         <div className="course__info">
@@ -336,57 +448,57 @@ const TopicPage = ({ location }) => {
           </a>
         </div>
         <Match
-          matchId="3.1 - Bramble. Full HC"
-          year="_2023"
-          courseMatch="boyneHighlandsMoor"
-          holes="front"
-          matchHandicap="full"
-          gameplay="one-ball"
-          player1="matt"
-          player2="craig"
-          player3="derek"
-          player4="evan"
-          player1MatchHandicap=""
-          player2MatchHandicap=""
-          player3MatchHandicap=""
-          player4MatchHandicap=""
+          matchId={matchesArr[4].matchId}
+          year={matchesArr[4].year}
+          courseMatch={matchesArr[4].courseMatch}
+          holes={matchesArr[4].holes}
+          matchHandicap={matchesArr[4].matchHandicap}
+          gameplay={matchesArr[4].gameplay}
+          player1={p7}
+          player2={p3}
+          player3={p12}
+          player4={p6}
+          player1MatchHandicap={matchesArr[4].player1MatchHandicap}
+          player2MatchHandicap={matchesArr[4].player2MatchHandicap}
+          player3MatchHandicap={matchesArr[4].player3MatchHandicap}
+          player4MatchHandicap={matchesArr[4].player4MatchHandicap}
         />
         <Match
-          matchId="3.1 - Bramble. Full HC"
-          year="_2023"
-          courseMatch="boyneHighlandsMoor"
-          holes="front"
-          matchHandicap="full"
-          gameplay="one-ball"
-          player1="gordon"
-          player2="dan"
-          player3="travis"
-          player4="cam"
-          player1MatchHandicap=""
-          player2MatchHandicap=""
-          player3MatchHandicap=""
-          player4MatchHandicap=""
+          matchId={matchesArr[4].matchId}
+          year={matchesArr[4].year}
+          courseMatch={matchesArr[4].courseMatch}
+          holes={matchesArr[4].holes}
+          matchHandicap={matchesArr[4].matchHandicap}
+          gameplay={matchesArr[4].gameplay}
+          player1={p8}
+          player2={p4}
+          player3={p11}
+          player4={p5}
+          player1MatchHandicap={matchesArr[4].player1MatchHandicap}
+          player2MatchHandicap={matchesArr[4].player2MatchHandicap}
+          player3MatchHandicap={matchesArr[4].player3MatchHandicap}
+          player4MatchHandicap={matchesArr[4].player4MatchHandicap}
         />
         <Match
-          matchId="3.1 - Bramble. Full HC"
-          year="_2023"
-          courseMatch="boyneHighlandsMoor"
-          holes="front"
-          matchHandicap="full"
-          gameplay="one-ball"
-          player1="chris"
-          player2="dylan"
-          player3="curtis"
-          player4="rj"
-          player1MatchHandicap=""
-          player2MatchHandicap=""
-          player3MatchHandicap=""
-          player4MatchHandicap=""
+          matchId={matchesArr[4].matchId}
+          year={matchesArr[4].year}
+          courseMatch={matchesArr[4].courseMatch}
+          holes={matchesArr[4].holes}
+          matchHandicap={matchesArr[4].matchHandicap}
+          gameplay={matchesArr[4].gameplay}
+          player1={p9}
+          player2={p1}
+          player3={p10}
+          player4={p2}
+          player1MatchHandicap={matchesArr[4].player1MatchHandicap}
+          player2MatchHandicap={matchesArr[4].player2MatchHandicap}
+          player3MatchHandicap={matchesArr[4].player3MatchHandicap}
+          player4MatchHandicap={matchesArr[4].player4MatchHandicap}
         />
       </MatchNavSection>
 
       <MatchNavSection
-        data-visible={pageHash === "#r3-2-ball-bramble" ? "true" : "false"}
+        data-visible={location.hash === "#r3-2-ball-bramble" ? "true" : "false"}
         data-link-id="r3-2-ball-bramble"
       >
         <div className="course__info">
@@ -396,58 +508,58 @@ const TopicPage = ({ location }) => {
           </a>
         </div>
         <Match
-          matchId="3.2 - 2 Ball Bramble. Full HC"
-          year="_2023"
-          courseMatch="boyneHighlandsMoor"
-          holes="back"
-          matchHandicap="full"
-          gameplay="two-ball"
-          player1="gordon"
-          player2="dan"
-          player3="derek"
-          player4="evan"
-          player1MatchHandicap=""
-          player2MatchHandicap=""
-          player3MatchHandicap=""
-          player4MatchHandicap=""
+          matchId={matchesArr[5].matchId}
+          year={matchesArr[5].year}
+          courseMatch={matchesArr[5].courseMatch}
+          holes={matchesArr[5].holes}
+          matchHandicap={matchesArr[5].matchHandicap}
+          gameplay={matchesArr[5].gameplay}
+          player1={p8}
+          player2={p4}
+          player3={p12}
+          player4={p6}
+          player1MatchHandicap={matchesArr[5].player1MatchHandicap}
+          player2MatchHandicap={matchesArr[5].player2MatchHandicap}
+          player3MatchHandicap={matchesArr[5].player3MatchHandicap}
+          player4MatchHandicap={matchesArr[5].player4MatchHandicap}
         />
         <Match
-          matchId="3.2 - 2 Ball Bramble. Full HC"
-          year="_2023"
-          courseMatch="boyneHighlandsMoor"
-          holes="back"
-          matchHandicap="full"
-          gameplay="two-ball"
-          player1="matt"
-          player2="dylan"
-          player3="curtis"
-          player4="craig"
-          player1MatchHandicap=""
-          player2MatchHandicap=""
-          player3MatchHandicap=""
-          player4MatchHandicap=""
+          matchId={matchesArr[5].matchId}
+          year={matchesArr[5].year}
+          courseMatch={matchesArr[5].courseMatch}
+          holes={matchesArr[5].holes}
+          matchHandicap={matchesArr[5].matchHandicap}
+          gameplay={matchesArr[5].gameplay}
+          player1={p7}
+          player2={p1}
+          player3={p10}
+          player4={p3}
+          player1MatchHandicap={matchesArr[5].player1MatchHandicap}
+          player2MatchHandicap={matchesArr[5].player2MatchHandicap}
+          player3MatchHandicap={matchesArr[5].player3MatchHandicap}
+          player4MatchHandicap={matchesArr[5].player4MatchHandicap}
         />
         <Match
-          matchId="3.2 - 2 Ball Bramble. Full HC"
-          year="_2023"
-          courseMatch="boyneHighlandsMoor"
-          holes="back"
-          matchHandicap="full"
-          gameplay="two-ball"
-          player1="chris"
-          player2="rj"
-          player3="travis"
-          player4="cam"
-          player1MatchHandicap=""
-          player2MatchHandicap=""
-          player3MatchHandicap=""
-          player4MatchHandicap=""
+          matchId={matchesArr[5].matchId}
+          year={matchesArr[5].year}
+          courseMatch={matchesArr[5].courseMatch}
+          holes={matchesArr[5].holes}
+          matchHandicap={matchesArr[5].matchHandicap}
+          gameplay={matchesArr[5].gameplay}
+          player1={p9}
+          player2={p2}
+          player3={p11}
+          player4={p5}
+          player1MatchHandicap={matchesArr[5].player1MatchHandicap}
+          player2MatchHandicap={matchesArr[5].player2MatchHandicap}
+          player3MatchHandicap={matchesArr[5].player3MatchHandicap}
+          player4MatchHandicap={matchesArr[5].player4MatchHandicap}
         />
       </MatchNavSection>
 
       <MatchNavSection
-        data-visible={pageHash === "#r4-scramble" ? "true" : "false"}
-        data-link-id="r4-scramble"
+        data-visible={location.hash === "#r4-pinehurst" ? "true" : "false"}
+        data-link-id="r4-pinehurst"
       >
         <div className="course__info">
           <span>Saturday Sept 23, 2:50 PM at </span>
@@ -455,58 +567,59 @@ const TopicPage = ({ location }) => {
             {course[`boyneHighlandsHeather`].name}
           </a>
         </div>
+
         <Match
-          matchId="4.1 - Scramble. 35% low HC + 15% high HC"
-          year="_2023"
-          courseMatch="boyneHighlandsHeather"
-          holes="front"
-          matchHandicap="average"
-          gameplay="scramble"
-          player1="matt"
-          player2="dylan"
-          player3="gordon"
-          player4="rj"
-          player1MatchHandicap=""
-          player2MatchHandicap=""
-          player3MatchHandicap=""
-          player4MatchHandicap=""
+          matchId={matchesArr[6].matchId}
+          year={matchesArr[6].year}
+          courseMatch={matchesArr[6].courseMatch}
+          holes={matchesArr[6].holes}
+          matchHandicap={matchesArr[6].matchHandicap}
+          gameplay={matchesArr[6].gameplay}
+          player1={p12}
+          player2={p5}
+          player3={p11}
+          player4={p6}
+          player1MatchHandicap={matchesArr[6].player1MatchHandicap}
+          player2MatchHandicap={matchesArr[6].player2MatchHandicap}
+          player3MatchHandicap={matchesArr[6].player3MatchHandicap}
+          player4MatchHandicap={matchesArr[6].player4MatchHandicap}
         />
         <Match
-          matchId="4.1 - Scramble. 35% low HC + 15% high HC"
-          year="_2023"
-          courseMatch="boyneHighlandsHeather"
-          holes="front"
-          matchHandicap="average"
-          gameplay="scramble"
-          player1="chris"
-          player2="craig"
-          player3="curtis"
-          player4="dan"
-          player1MatchHandicap=""
-          player2MatchHandicap=""
-          player3MatchHandicap=""
-          player4MatchHandicap=""
+          matchId={matchesArr[6].matchId}
+          year={matchesArr[6].year}
+          courseMatch={matchesArr[6].courseMatch}
+          holes={matchesArr[6].holes}
+          matchHandicap={matchesArr[6].matchHandicap}
+          gameplay={matchesArr[6].gameplay}
+          player1={p9}
+          player2={p3}
+          player3={p10}
+          player4={p4}
+          player1MatchHandicap={matchesArr[6].player1MatchHandicap}
+          player2MatchHandicap={matchesArr[6].player2MatchHandicap}
+          player3MatchHandicap={matchesArr[6].player3MatchHandicap}
+          player4MatchHandicap={matchesArr[6].player4MatchHandicap}
         />
         <Match
-          matchId="4.1 - Scramble. 35% low HC + 15% high HC"
-          year="_2023"
-          courseMatch="boyneHighlandsHeather"
-          holes="front"
-          matchHandicap="average"
-          gameplay="scramble"
-          player1="travis"
-          player2="cam"
-          player3="derek"
-          player4="evan"
-          player1MatchHandicap=""
-          player2MatchHandicap=""
-          player3MatchHandicap=""
-          player4MatchHandicap=""
+          matchId={matchesArr[6].matchId}
+          year={matchesArr[6].year}
+          courseMatch={matchesArr[6].courseMatch}
+          holes={matchesArr[6].holes}
+          matchHandicap={matchesArr[6].matchHandicap}
+          gameplay={matchesArr[6].gameplay}
+          player1={p7}
+          player2={p1}
+          player3={p8}
+          player4={p2}
+          player1MatchHandicap={matchesArr[6].player1MatchHandicap}
+          player2MatchHandicap={matchesArr[6].player2MatchHandicap}
+          player3MatchHandicap={matchesArr[6].player3MatchHandicap}
+          player4MatchHandicap={matchesArr[6].player4MatchHandicap}
         />
       </MatchNavSection>
 
       <MatchNavSection
-        data-visible={pageHash === "#r4-singles" ? "true" : "false"}
+        data-visible={location.hash === "#r4-singles" ? "true" : "false"}
         data-link-id="r4-singles"
       >
         <div className="course__info">
@@ -516,74 +629,75 @@ const TopicPage = ({ location }) => {
           </a>
         </div>
         <Match
-          matchId="4.2 - Singles Match. Full HC"
-          year="_2023"
-          courseMatch="boyneHighlandsHeather"
-          holes="back"
-          matchHandicap="full"
-          gameplay="singles"
-          player1="matt"
-          player2="dylan"
+          matchId={matchesArr[7].matchId}
+          year={matchesArr[7].year}
+          courseMatch={matchesArr[7].courseMatch}
+          holes={matchesArr[7].holes}
+          matchHandicap={matchesArr[7].matchHandicap}
+          gameplay={matchesArr[7].gameplay}
+          player1={p11}
+          player2={p5}
           player1MatchHandicap=""
           player2MatchHandicap=""
         />
         <Match
-          matchId="4.2 - Singles Match. Full HC"
-          year="_2023"
-          courseMatch="boyneHighlandsHeather"
-          holes="back"
-          matchHandicap="full"
-          gameplay="singles"
-          player1="gordon"
-          player2="rj"
+          matchId={matchesArr[7].matchId}
+          year={matchesArr[7].year}
+          courseMatch={matchesArr[7].courseMatch}
+          holes={matchesArr[7].holes}
+          matchHandicap={matchesArr[7].matchHandicap}
+          gameplay={matchesArr[7].gameplay}
+          player1={p12}
+          player2={p6}
+          player1MatchHandicap="27"
+          player2MatchHandicap=""
+        />
+        <Match
+          matchId={matchesArr[7].matchId}
+          year={matchesArr[7].year}
+          courseMatch={matchesArr[7].courseMatch}
+          holes={matchesArr[7].holes}
+          matchHandicap={matchesArr[7].matchHandicap}
+          gameplay={matchesArr[7].gameplay}
+          player1={p10}
+          player2={p4}
           player1MatchHandicap=""
           player2MatchHandicap=""
         />
         <Match
-          matchId="4.2 - Singles Match. Full HC"
-          year="_2023"
-          courseMatch="boyneHighlandsHeather"
-          holes="back"
-          matchHandicap="full"
-          gameplay="singles"
-          player1="chris"
-          player2="craig"
+          matchId={matchesArr[7].matchId}
+          year={matchesArr[7].year}
+          courseMatch={matchesArr[7].courseMatch}
+          holes={matchesArr[7].holes}
+          matchHandicap={matchesArr[7].matchHandicap}
+          gameplay={matchesArr[7].gameplay}
+          player1={p9}
+          player2={p3}
+          player1MatchHandicap=""
+          player2MatchHandicap=""
+        />
+
+        <Match
+          matchId={matchesArr[7].matchId}
+          year={matchesArr[7].year}
+          courseMatch={matchesArr[7].courseMatch}
+          holes={matchesArr[7].holes}
+          matchHandicap={matchesArr[7].matchHandicap}
+          gameplay={matchesArr[7].gameplay}
+          player1={p8}
+          player2={p2}
           player1MatchHandicap=""
           player2MatchHandicap=""
         />
         <Match
-          matchId="4.2 - Singles Match. Full HC"
-          year="_2023"
-          courseMatch="boyneHighlandsHeather"
-          holes="back"
-          matchHandicap="full"
-          gameplay="singles"
-          player1="curtis"
-          player2="dan"
-          player1MatchHandicap=""
-          player2MatchHandicap=""
-        />
-        <Match
-          matchId="4.2 - Singles Match. Full HC"
-          year="_2023"
-          courseMatch="boyneHighlandsHeather"
-          holes="back"
-          matchHandicap="full"
-          gameplay="singles"
-          player1="derek"
-          player2="cam"
-          player1MatchHandicap=""
-          player2MatchHandicap=""
-        />
-        <Match
-          matchId="4.2 - Singles Match. Full HC"
-          year="_2023"
-          courseMatch="boyneHighlandsHeather"
-          holes="back"
-          matchHandicap="full"
-          gameplay="singles"
-          player1="travis"
-          player2="evan"
+          matchId={matchesArr[7].matchId}
+          year={matchesArr[7].year}
+          courseMatch={matchesArr[7].courseMatch}
+          holes={matchesArr[7].holes}
+          matchHandicap={matchesArr[7].matchHandicap}
+          gameplay={matchesArr[7].gameplay}
+          player1={p7}
+          player2={p1}
           player1MatchHandicap=""
           player2MatchHandicap=""
         />

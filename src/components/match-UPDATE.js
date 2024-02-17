@@ -269,6 +269,7 @@ function MatchUpdate({
   const p4HCglobal = getPlayerHandicap("player4", gameplay, handicaps)
 
   const [sectionHeight, setSectionHeight] = useState("closed")
+  const [showHandicapScore, setShowHandicapScore] = useState(false)
 
   const teamOneScoreArray = calcTeamScore(
     year,
@@ -501,8 +502,13 @@ function MatchUpdate({
                 data-matchover={`${isMatchOver(i + 1)}`}
               >
                 <div className="match__line"></div>
-                {calcPlayerScore(score, p1HC, courseHoles[i].handicap, holes)}
-                <sup>{score > 20 ? "" : score}</sup>
+                {/* {calcPlayerScore(score, p1HC, courseHoles[i].handicap, holes)}
+                <sup>{score > 20 ? "" : score}</sup> */}
+                {showHandicapScore
+                  ? calcPlayerScore(score, p1HC, courseHoles[i].handicap, holes)
+                  : score > 20
+                  ? ""
+                  : score}
               </div>
             </div>
           ))}
@@ -710,6 +716,20 @@ function MatchUpdate({
             </div>
           </div>
         </div>
+      </div>
+      <div className="form-check form-switch">
+        <input
+          className="form-check-input"
+          type="checkbox"
+          role="switch"
+          id="flexSwitchCheckHandicapScore"
+          onClick={() =>
+            setShowHandicapScore(showHandicapScore => !showHandicapScore)
+          }
+        />
+        <label className="form-check-label" for="flexSwitchCheckHandicapScore">
+          Show scores with handicap applied
+        </label>
       </div>
     </Section>
   )

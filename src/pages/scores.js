@@ -49,6 +49,105 @@ const TopicPage = ({ location }) => {
   const p11 = "derek"
   const p12 = "curtis"
 
+  const matchesArr = [
+    {
+      matchId: "1.1 - Best Ball. Full handicap",
+      year: "_2023",
+      courseMatch: "boyneHighlandsArthurHills",
+      holes: "front",
+      matchHandicap: "full",
+      gameplay: "one-ball",
+      player1MatchHandicap: "",
+      player2MatchHandicap: "",
+      player3MatchHandicap: "",
+      player4MatchHandicap: "",
+    },
+    {
+      matchId: "1.2 - 2 Best Ball. Full handicap",
+      year: "_2023",
+      courseMatch: "boyneHighlandsArthurHills",
+      holes: "back",
+      matchHandicap: "full",
+      gameplay: "two-ball",
+      player1MatchHandicap: "",
+      player2MatchHandicap: "",
+      player3MatchHandicap: "",
+      player4MatchHandicap: "",
+    },
+    {
+      matchId: "2.1 - Alternate. 50% HC",
+      year: "_2023",
+      courseMatch: "boyneHighlandsDonaldRoss",
+      holes: "front",
+      matchHandicap: "full",
+      gameplay: "alternate",
+      player1MatchHandicap: "",
+      player2MatchHandicap: "",
+      player3MatchHandicap: "",
+      player4MatchHandicap: "",
+    },
+    {
+      matchId: "2.2 - Scramble. 35% low HC + 15% high HC",
+      year: "_2023",
+      courseMatch: "boyneHighlandsDonaldRoss",
+      holes: "back",
+      matchHandicap: "average",
+      gameplay: "scramble",
+      player1MatchHandicap: "",
+      player2MatchHandicap: "",
+      player3MatchHandicap: "",
+      player4MatchHandicap: "",
+    },
+    {
+      matchId: "3.1 - Bramble. Full HC",
+      year: "_2023",
+      courseMatch: "boyneHighlandsMoor",
+      holes: "front",
+      matchHandicap: "full",
+      gameplay: "bramble",
+      player1MatchHandicap: "",
+      player2MatchHandicap: "",
+      player3MatchHandicap: "",
+      player4MatchHandicap: "",
+    },
+    {
+      matchId: "3.2 - 2 Ball Bramble. Full HC",
+      year: "_2023",
+      courseMatch: "boyneHighlandsMoor",
+      holes: "back",
+      matchHandicap: "full",
+      gameplay: "two-ball",
+      player1MatchHandicap: "",
+      player2MatchHandicap: "",
+      player3MatchHandicap: "",
+      player4MatchHandicap: "",
+    },
+    {
+      matchId: "4.1 - Pinehurst. 60% low HC + 40% high HC",
+      year: "_2023",
+      courseMatch: "boyneHighlandsHeather",
+      holes: "front",
+      matchHandicap: "average",
+      gameplay: "pinehurst",
+      player1MatchHandicap: "",
+      player2MatchHandicap: "",
+      player3MatchHandicap: "",
+      player4MatchHandicap: "",
+    },
+    {
+      matchId: "4.2 - Singles Match. Full HC",
+      year: "_2023",
+      courseMatch: "boyneHighlandsHeather",
+      holes: "back",
+      matchHandicap: "full",
+      gameplay: "singles",
+      player1MatchHandicap: "",
+      player2MatchHandicap: "",
+      player3MatchHandicap: "",
+      player4MatchHandicap: "",
+    },
+  ]
+
   return (
     <Layout location={location} title={siteTitle}>
       <SEO title="Scores" />
@@ -362,7 +461,7 @@ const TopicPage = ({ location }) => {
           courseMatch="boyneHighlandsMoor"
           holes="front"
           matchHandicap="full"
-          gameplay="one-ball"
+          gameplay="bramble"
           player1={p7}
           player2={p3}
           player3={p12}
@@ -378,7 +477,7 @@ const TopicPage = ({ location }) => {
           courseMatch="boyneHighlandsMoor"
           holes="front"
           matchHandicap="full"
-          gameplay="one-ball"
+          gameplay="bramble"
           player1={p8}
           player2={p4}
           player3={p11}
@@ -394,7 +493,7 @@ const TopicPage = ({ location }) => {
           courseMatch="boyneHighlandsMoor"
           holes="front"
           matchHandicap="full"
-          gameplay="one-ball"
+          gameplay="bramble"
           player1={p9}
           player2={p1}
           player3={p10}

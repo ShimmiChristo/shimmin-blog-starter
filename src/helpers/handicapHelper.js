@@ -1,13 +1,13 @@
 // import MatchNav from "../components/match-nav"
 /*
-  *    - Shamble (Bramble) - 80% of handicap (or 85% of combined team HC)
-  *    - Foursomes (alternate shot) - 50% of combined team handicap
-  *    - Greensomes (alternate shot and best drive) - 60% low handicap + 40% high handicap
-  *    - Pinehurst - 60% low handicap + 40% high handicap
-  *    - Scramble (2 players) - 35% low/15% high
-  *    - Match play individual - 100% of handicap 
-  *    - Match play Four-Ball - 90% of handicap
-*/
+ *    - Shamble (Bramble) - 80% of handicap (or 85% of combined team HC)
+ *    - Foursomes (alternate shot) - 50% of combined team handicap
+ *    - Greensomes (alternate shot and best drive) - 60% low handicap + 40% high handicap
+ *    - Pinehurst - 60% low handicap + 40% high handicap
+ *    - Scramble (2 players) - 35% low/15% high
+ *    - Match play individual - 100% of handicap
+ *    - Match play Four-Ball - 90% of handicap
+ */
 
 /**
  * @param {int} s - player score
@@ -54,7 +54,8 @@ function calcToLowestHandicap(p1HC, p2HC, p3HC, p4HC) {
 }
 
 function getPlayerHandicap(player, gameplay, handicaps) {
-  const score = {
+  console.log('gameplay - ', gameplay);
+  const newHC = {
     player1: 99,
     player2: 99,
     player3: 99,
@@ -71,42 +72,67 @@ function getPlayerHandicap(player, gameplay, handicaps) {
   const lowHCTeam2 = Math.min(p2, p4)
   const highHCTeam2 = Math.max(p2, p4)
 
-  if (gameplay === "scramble" || gameplay === "pinehurst") {
+  // if (gameplay === "pinehurst" || gameplay === "scramble") {
+  if (gameplay === "pinehurst") {
     let team1Adj = Math.round(0.6 * lowHCTeam1 + 0.4 * highHCTeam1)
     let team2Adj = Math.round(0.6 * lowHCTeam2 + 0.4 * highHCTeam2)
     let lowHCTeam = Math.min(team1Adj, team2Adj)
-    score.player1 = team1Adj - lowHCTeam
-    score.player2 = team2Adj - lowHCTeam
-    score.player3 = team1Adj - lowHCTeam
-    score.player4 = team2Adj - lowHCTeam
-  } else if (gameplay === "bramble") {
-    let team1Adj = Math.round((p1 + p3) * 0.8)
-    let team2Adj = Math.round((p2 + p4) * 0.8)
+    newHC.player1 = team1Adj - lowHCTeam
+    newHC.player2 = team2Adj - lowHCTeam
+    newHC.player3 = team1Adj - lowHCTeam
+    newHC.player4 = team2Adj - lowHCTeam
+  } else if (gameplay === "scramble") {
+    // TODO: need to look at this math again. 
+    // ! I think I need to add the high HC + low HC
+    // let player1Adj = Math.round(0.35 * lowHCTeam1)
+    // let player2Adj = Math.round(0.35 * lowHCTeam2)
+    // let player3Adj = Math.round(0.15 * highHCTeam1)
+    // let player4Adj = Math.round(0.15 * highHCTeam2)
+    // let lowHCTeam = Math.min(player1Adj, player2Adj, player3Adj, player4Adj)
+    // console.log('lowHCTeam - ', lowHCTeam);
+    // newHC.player1 = player1Adj - lowHCTeam
+    // newHC.player2 = player2Adj - lowHCTeam
+    // newHC.player3 = player3Adj - lowHCTeam
+    // newHC.player4 = player4Adj - lowHCTeam
+    let team1Adj = Math.round(0.35 * lowHCTeam1 + 0.15 * highHCTeam1)
+    let team2Adj = Math.round(0.35 * lowHCTeam2 + 0.15 * highHCTeam2)
     let lowHCTeam = Math.min(team1Adj, team2Adj)
-    score.player1 = team1Adj - lowHCTeam
-    score.player2 = team2Adj - lowHCTeam
-    score.player3 = team1Adj - lowHCTeam
-    score.player4 = team2Adj - lowHCTeam
+    newHC.player1 = team1Adj - lowHCTeam
+    newHC.player2 = team2Adj - lowHCTeam
+    newHC.player3 = team1Adj - lowHCTeam
+    newHC.player4 = team2Adj - lowHCTeam
+  } else if (gameplay === "bramble") {
+    // let team1Adj = Math.round((p1 + p3) * 0.8)
+    // let team2Adj = Math.round((p2 + p4) * 0.8)
+    // let lowHCTeam = Math.min(team1Adj, team2Adj)
+    // newHC.player1 = team1Adj - lowHCTeam
+    // newHC.player2 = team2Adj - lowHCTeam
+    // newHC.player3 = team1Adj - lowHCTeam
+    // newHC.player4 = team2Adj - lowHCTeam
+    newHC.player1 = Math.round((p1 - lowHC) * 0.8)
+    newHC.player2 = Math.round((p2 - lowHC) * 0.8)
+    newHC.player3 = Math.round((p3 - lowHC) * 0.8)
+    newHC.player4 = Math.round((p4 - lowHC) * 0.8)
   } else if (gameplay === "alternate") {
     let team1Adj = Math.round((p1 + p3) / 2)
     let team2Adj = Math.round((p2 + p4) / 2)
     let lowHCTeam = Math.min(team1Adj, team2Adj)
-    score.player1 = team1Adj - lowHCTeam
-    score.player2 = team2Adj - lowHCTeam
-    score.player3 = team1Adj - lowHCTeam
-    score.player4 = team2Adj - lowHCTeam
+    newHC.player1 = team1Adj - lowHCTeam
+    newHC.player2 = team2Adj - lowHCTeam
+    newHC.player3 = team1Adj - lowHCTeam
+    newHC.player4 = team2Adj - lowHCTeam
   } else if (gameplay === "singles") {
-    score.player1 = p1 - lowHC
-    score.player2 = p2 - lowHC
-    score.player3 = p3 - lowHC
-    score.player4 = p4 - lowHC
+    newHC.player1 = p1 - lowHC
+    newHC.player2 = p2 - lowHC
+    newHC.player3 = p3 - lowHC
+    newHC.player4 = p4 - lowHC
   } else {
-    score.player1 = Math.round((p1 - lowHC) * 0.9)
-    score.player2 = Math.round((p2 - lowHC) * 0.9)
-    score.player3 = Math.round((p3 - lowHC) * 0.9)
-    score.player4 = Math.round((p4 - lowHC) * 0.9)
+    newHC.player1 = Math.round((p1 - lowHC) * 0.9)
+    newHC.player2 = Math.round((p2 - lowHC) * 0.9)
+    newHC.player3 = Math.round((p3 - lowHC) * 0.9)
+    newHC.player4 = Math.round((p4 - lowHC) * 0.9)
   }
-  return score[`${player}`]
+  return newHC[`${player}`]
 }
 
 /**
