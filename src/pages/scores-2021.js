@@ -1,5 +1,4 @@
 import React from "react"
-import { Link } from "gatsby"
 import styled from "styled-components"
 import { useSiteMetadata } from "../hooks/use-site-metadata"
 import { CourseInfo } from "../hooks/get-course-info"
@@ -7,7 +6,7 @@ import { CourseInfo } from "../hooks/get-course-info"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import LandingPageHeader from "../components/landing-page-header"
-import Match from "../components/match"
+import MatchOld from "../components/match-OLD"
 import MatchScore from "../components/match-score"
 import MatchNav from "../components/match-nav"
 import "../styles/match.css"
@@ -74,7 +73,7 @@ const TopicPage = ({ data, location }) => {
         ]}
       />
 
-      <MatchScore year="_2021"/>
+      <MatchScore year="_2021" />
       {/* player1 and player3 are on the same team */}
       <MatchNavSection
         data-visible={pageHash === "#r1-best-ball" ? "true" : "false"}
@@ -83,7 +82,7 @@ const TopicPage = ({ data, location }) => {
         <div className="course__info">
           <a href={course["tribute1"].link}>{course[`tribute1`].name}</a>
         </div>
-        <Match
+        <MatchOld
           matchId="1.1 - Best Ball. Full handicap"
           courseMatch="tribute1"
           matchHandicap="full"
@@ -97,7 +96,7 @@ const TopicPage = ({ data, location }) => {
           player4="rj"
           player4Handicap="16"
         />
-        <Match
+        <MatchOld
           matchId="1.1 - Best Ball Bramble. Full handicap"
           courseMatch="tribute1"
           matchHandicap="full"
@@ -119,7 +118,7 @@ const TopicPage = ({ data, location }) => {
         <div className="course__info">
           <a href={course["tribute2"].link}>{course[`tribute2`].name}</a>
         </div>
-        <Match
+        <MatchOld
           matchId="1.2 - 2 Ball Bramble. Full handicap"
           courseMatch="tribute2"
           matchHandicap="full"
@@ -133,7 +132,7 @@ const TopicPage = ({ data, location }) => {
           player4="craig"
           player4Handicap="22"
         />
-        <Match
+        <MatchOld
           matchId="1.2 - 2 Ball Bramble. Full handicap"
           courseMatch="tribute2"
           matchHandicap="full"
@@ -155,7 +154,7 @@ const TopicPage = ({ data, location }) => {
         <div className="course__info">
           <a href={course["classic1"].link}>{course[`classic1`].name}</a>
         </div>
-        <Match
+        <MatchOld
           matchId="2.1 - Bramble Alternate. Average handicap"
           courseMatch="classic1"
           matchHandicap="average"
@@ -169,7 +168,7 @@ const TopicPage = ({ data, location }) => {
           player4="dan"
           player4Handicap="24"
         />
-        <Match
+        <MatchOld
           matchId="2.1 - Bramble Alternate. Average handicap"
           courseMatch="classic1"
           matchHandicap="average"
@@ -191,7 +190,7 @@ const TopicPage = ({ data, location }) => {
         <div className="course__info">
           <a href={course["classic2"].link}>{course[`classic2`].name}</a>
         </div>
-        <Match
+        <MatchOld
           matchId="2.2 - Scramble. Average handicap"
           courseMatch="classic2"
           matchHandicap="average"
@@ -205,7 +204,7 @@ const TopicPage = ({ data, location }) => {
           player4="rj"
           player4Handicap="16"
         />
-        <Match
+        <MatchOld
           matchId="2.2 - Scramble. Average handicap"
           courseMatch="classic2"
           matchHandicap="average"
@@ -229,7 +228,7 @@ const TopicPage = ({ data, location }) => {
             {course[`gaylordGolfClub1`].name}
           </a>
         </div>
-        <Match
+        <MatchOld
           matchId="3.1 - Best Ball. Full handicap"
           courseMatch="gaylordGolfClub1"
           matchHandicap="full"
@@ -243,7 +242,7 @@ const TopicPage = ({ data, location }) => {
           player4="dan"
           player4Handicap="22"
         />
-        <Match
+        <MatchOld
           matchId="3.1 - Best Ball. Full handicap"
           courseMatch="gaylordGolfClub1"
           matchHandicap="full"
@@ -267,7 +266,7 @@ const TopicPage = ({ data, location }) => {
             {course[`gaylordGolfClub2`].name}
           </a>
         </div>
-        <Match
+        <MatchOld
           matchId="3.2 - Singles Matches. Full handicap"
           courseMatch="gaylordGolfClub2"
           matchHandicap="full"
@@ -277,7 +276,7 @@ const TopicPage = ({ data, location }) => {
           player2="dylan"
           player2Handicap="2"
         />
-        <Match
+        <MatchOld
           matchId="3.2 - Singles Matches. Full handicap"
           courseMatch="gaylordGolfClub2"
           matchHandicap="full"
@@ -287,7 +286,7 @@ const TopicPage = ({ data, location }) => {
           player2="craig"
           player2Handicap="22"
         />
-        <Match
+        <MatchOld
           matchId="3.2 - Singles Matches. Full handicap"
           courseMatch="gaylordGolfClub2"
           matchHandicap="full"
@@ -297,7 +296,7 @@ const TopicPage = ({ data, location }) => {
           player2="rj"
           player2Handicap="16"
         />
-        <Match
+        <MatchOld
           matchId="3.2 - Singles Matches. Full handicap"
           courseMatch="gaylordGolfClub2"
           matchHandicap="full"
