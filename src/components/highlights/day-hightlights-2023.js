@@ -137,7 +137,7 @@ function HighlightDay() {
             the day began, they needed to make up some ground.
           </p>
           <p>
-            The back nine was a two-ball bramble. The first match was {curtis},
+            The back nine was a two-ball bramble. The first match was {curtis},{" "}
             {chris} vs {cam}, Evan. The fairytale story continues as {evan}{" "}
             seems unbeatable with an extra stroke a hole. {cam} and {evan} win
             2&1 and Blue takes a 4 shot lead. The third match before the second.
@@ -174,8 +174,8 @@ function HighlightDay() {
             hole. The third and final match was Blue team captain, {dylan}, and{" "}
             {rj} vs Green team captain, {matt}, and {chris}. With all the stakes
             on the line, this was one of the most competitive matches of the
-            weekend. Down 1 with 1 to play,
-            {matt} and {chris} won the last hole to push the match.
+            weekend. Down 1 with 1 to play, {matt} and {chris} won the last hole
+            to push the match.
           </p>
           <p>
             After the Pinehurst matches, Green gains 1 point on Blue. Blue leads
@@ -194,21 +194,20 @@ function HighlightDay() {
             for at least 30 minutes.
           </p>
           <p>
-            The first match, {derek} vs Dan. {derek} was on fire all weekend.
+            The first match, {derek} vs Dan. {derek} was on fire all weekend.{" "}
             {dan} didn’t stand a chance. {derek} won 5&4.{" "}
             <span className="bold blue">Blue 11.5</span>,{" "}
             <span className="bold green">Green 10.5</span>.
           </p>
           <p>
             The next match to end was {jake} vs {craig}. {craig} got a stroke
-            against
-            {jake} (questionable) and he took advantage of it. {craig} won 2&1
-            on hole 8. <span className="bold blue">Blue 12.5</span>,{" "}
+            against {jake} (questionable) and he took advantage of it. {craig}{" "}
+            won 2&1 on hole 8. <span className="bold blue">Blue 12.5</span>,{" "}
             <span className="bold green">Green 10.5</span>.
           </p>
           <p>
             The next match to finish was {chris} vs RJ. Surprisingly, this match
-            ended earlier than we all expected. In the end, the bunkers won.
+            ended earlier than we all expected. In the end, the bunkers won.{" "}
             {chris} won 3&2. <span className="bold blue">Blue 12.5</span>,{" "}
             <span className="bold green">Green 11.5</span>.
           </p>
@@ -222,7 +221,7 @@ function HighlightDay() {
             <span className="bold green">Green 12.5</span>.
           </p>
           <p>
-            Two groups played the 18th hole. {curtis} vs {evan} and {travis} vs
+            Two groups played the 18th hole. {curtis} vs {evan} and {travis} vs{" "}
             {cam}.
           </p>
           <p>
@@ -245,10 +244,9 @@ function HighlightDay() {
             the match in a push and giving Blue the 1/2 point they needed. Blue
             wins the 2023 BFBH Cup.
           </p>
-          <h3>Final 2023 BFBH Cup Score</h3>
-          <br />
-          <span className="block bold green">Green Team: 13</span>
-          <span className="block bold blue">Blue Team: 14</span>
+          <h3 className="pt-5 pb-2">Final 2023 BFBH Cup Score</h3>
+          <span className="h4 block bold green">Green Team: 13</span>
+          <span className="h4 block bold blue">Blue Team: 14</span>
         </div>
       </div>
     </>

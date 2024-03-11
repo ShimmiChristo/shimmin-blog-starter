@@ -1,4 +1,5 @@
 import React, { useState } from "react"
+import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import { ScoreInfo } from "../hooks/get-team-score"
 import "../styles/match.css"
@@ -24,7 +25,9 @@ const PastScoresComponent = ({ year, date, winner, location, summary }) => {
   return (
     <>
       <div className="row py-3 border-bottom">
-        <div className="col-6 col-sm-2">{eventYear}</div>
+        <div className="col-6 col-sm-2">
+          <Link to={`/scores-${eventYear}`}>{eventYear}</Link>
+        </div>
         <div className="col-6 col-sm-3 text-capitalize">{eventDate}</div>
         <div className="col-3 col-sm-2 text-capitalize">{eventWinner}</div>
         <div className="col-5 col-sm-3 text-capitalize">{teamLocation}</div>

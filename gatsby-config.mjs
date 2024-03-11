@@ -53,8 +53,8 @@ const config = {
         link: "/matches",
         subnav: [
           {
-            name: "2022 Scores",
-            link: "/scores-2022#r1-best-ball",
+            name: "2023 Scores",
+            link: "/scores-2023#r1-best-ball",
           },
           {
             name: "Matches",

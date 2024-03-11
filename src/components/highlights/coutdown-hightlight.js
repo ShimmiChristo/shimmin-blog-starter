@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from "react"
+import { Link } from "gatsby"
 import PropTypes from "prop-types"
 
-function HighlightCountdown({ startTime, location }) {
+function HighlightCountdown({ startTime, location, courseUrl }) {
   const [days, setDays] = useState(0)
   const [hours, setHours] = useState(0)
 
@@ -34,9 +35,15 @@ function HighlightCountdown({ startTime, location }) {
           <span className="countdown__hours">
             <em>{hours} Hours</em>
           </span>{" "}
-          -{" "}
+          at{" "}
           <span>
-            <em>{location}</em>
+            {courseUrl ? (
+              <Link to={courseUrl}>
+                <em>{location}</em>
+              </Link>
+            ) : (
+              <em>{location}</em>
+            )}
           </span>
         </div>
       </div>
@@ -47,6 +54,7 @@ function HighlightCountdown({ startTime, location }) {
 HighlightCountdown.propTypes = {
   startTime: PropTypes.string,
   location: PropTypes.string,
+  courseUrl: PropTypes.string,
 }
 
 export default HighlightCountdown

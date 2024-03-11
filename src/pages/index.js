@@ -35,10 +35,10 @@ const TopicPage = ({ data, location }) => {
       <MatchScore year="_2023" lastYearWinner="green" />
 
       <HighlightDay />
-      <HighlightsScoring yearProp="2022" />
-      <hr />
-      <br />
-      <Venue2023 />
+      {/* <HighlightsScoring yearProp="2022" /> */}
+      {/* <hr /> */}
+      {/* <br /> */}
+      {/* <Venue2023 /> */}
     </Layout>
   )
 }
