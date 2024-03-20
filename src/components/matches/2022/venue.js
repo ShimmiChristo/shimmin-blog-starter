@@ -7,29 +7,29 @@ import { Link } from "gatsby"
 function MatchVenue2022() {
   return (
     <div className="mb-3">
-      <h2>2023 Venue</h2>
+      <h2>2022 Venue</h2>
       <div>
         <span>Round 1: </span>
-        <Link href="https://boynegolf.com/the-highlands/arthur-hills">
-          Arthur Hills
+        <Link to="https://www.gulllakeview.com/golf/stoatin-brae/">
+          Stoatin Brae
         </Link>
       </div>
       <div>
         <span>Round 2: </span>
-        <Link href="https://boynegolf.com/the-highlands/donald-ross-memorial">
-          Donald Ross Memorial
+        <Link to="https://www.gulllakeview.com/golf/golf-courses/stonehedge-south/">
+          Stonehedge South
         </Link>
       </div>
       <div>
         <span>Round 3: </span>
-        <Link href="https://boynegolf.com/the-highlands/the-moor">
-          The Moor
+        <Link to="https://www.gulllakeview.com/golf/golf-courses/gull-lake-view-east/">
+          Gull Lake East
         </Link>
       </div>
       <div>
         <span>Round 4: </span>
-        <Link href="https://boynegolf.com/the-highlands/the-heather">
-          The Heather
+        <Link to="https://www.gulllakeview.com/golf/golf-courses/gull-lake-view-west/">
+          Gull Lake West
         </Link>
       </div>
     </div>
