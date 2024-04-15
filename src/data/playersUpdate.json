@@ -190,7 +190,7 @@
         },
         "_2022": {
           "id": 2022,
-          "handicap": 2,
+          "handicap": 21,
           "captain": false,
           "team": "blue",
           "scores": {
@@ -2564,7 +2564,7 @@
         "_2022": {
           "id": 2022,
           "captain": false,
-          "handicap": 10,
+          "handicap": 28,
           "team": "green",
           "scores": {
             "stoatinBrae": {
@@ -4086,7 +4086,7 @@
             },
             "boyneHighlandsDonaldRoss": {
               "course": "Donald Ross at Boyne Highlands",
-              "front": [4, 4, 3, 4, 5, 4, 4, 3, 5],
+              "front": [4, 4, 3, 5, 5, 5, 4, 3, 5],
               "frontHandicap": 999,
               "back": [4, 5, 4, 5, 4, 5, 10, 4, 6],
               "backHandicap": 999
@@ -4446,7 +4446,7 @@
             },
             "boyneHighlandsDonaldRoss": {
               "course": "Donald Ross at Boyne Highlands",
-              "front": [4, 4, 3, 4, 5, 4, 4, 3, 5],
+              "front": [4, 4, 3, 5, 5, 5, 4, 3, 5],
               "frontHandicap": 999,
               "back": [5, 4, 3, 4, 4, 4, 5, 4, 4],
               "backHandicap": 999
@@ -5106,7 +5106,7 @@
         },
         "_2022": {
           "id": 2022,
-          "handicap": 2,
+          "handicap": 12,
           "captain": false,
           "team": "blue",
           "scores": {
