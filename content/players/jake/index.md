@@ -1,13 +1,13 @@
 ---
 active: true
-index: 09
+index: 04
 name: jake
 nickname: "the fill-in, silent assassin"
 description: ""
 category: players
 featuredImg: ./profile-pic.png
 thumbnail: ./thumbnail.png
-team: "Green Team"
+team: "Blue Team"
 handicap: 19
 ---
 

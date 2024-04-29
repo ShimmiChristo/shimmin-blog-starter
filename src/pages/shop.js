@@ -40,10 +40,7 @@ const TopicPage = ({ data, location }) => {
               us at <a href="mailto:bfbhcup@gmail.com">bfbhcup@gmail.com</a> if
               interested.
             </p>
-            <p>
-              The 2023 BFBH Cup begins September 22nd! Follows us for live
-              updates.
-            </p>
+            <p>Follows us for live updates of the upcoming BFBH Cup!</p>
           </div>
           <div className="col-12 col-md-6">
             <SaleHats />

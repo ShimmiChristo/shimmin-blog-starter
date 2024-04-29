@@ -7,8 +7,8 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 // import LandingPageHeader from "../components/landing-page-header"
 import MatchScore from "../components/match-score"
-import HighlightsScoring from "../components/highlights/scoring-highlight"
-import Venue2023 from "../components/venues/venue-2023"
+import Highlight2024 from "../components/highlights/highlight-2024"
+import Venue2024 from "../components/venues/venue-2024"
 import HighlightCountdown from "../components/highlights/coutdown-hightlight"
 import HighlightDay from "../components/highlights/day-hightlights-2023"
 
@@ -22,23 +22,28 @@ const TopicPage = ({ data, location }) => {
   const siteTitle = title || `Title`
   // const pageHash = location.hash
 
-  const startDate = "september, 22, 2023 8:30:00 EST"
-  const locationName = "Authur Hills Golf Course"
+  const startDate = "september, 27, 2024 8:30:00 EST"
+  const locationName = "Bay Harbor Golf Club"
+  const courseUrl = "https://bayharborgolf.com/linksquarry"
 
   return (
     <Layout location={location} title={siteTitle}>
       <SEO title="Boys From Back Home Cup" />
-      <h1 className="invisible">BFBH Cup | Boys From Back Home</h1>
-      {/* <HighlightCountdown startTime={startDate} location={locationName} /> */}
-      <h2 className="text-center bold my-4">BFBH Cup 2023 Score</h2>
+      <h1 className="invisible">BFBH Cup | Boys From Back Home Cup</h1>
+      <HighlightCountdown
+        startTime={startDate}
+        location={locationName}
+        courseUrl={courseUrl}
+      />
 
-      <MatchScore year="_2023" lastYearWinner="green" />
-
-      <HighlightDay />
-      {/* <HighlightsScoring yearProp="2022" /> */}
+      {/* <HighlightDay /> */}
+      <Highlight2024 />
       {/* <hr /> */}
       {/* <br /> */}
-      {/* <Venue2023 /> */}
+      <Venue2024 />
+
+      <h2 className="text-center bold my-4">BFBH Cup 2023 Score</h2>
+      <MatchScore year="_2023" lastYearWinner="green" />
     </Layout>
   )
 }
