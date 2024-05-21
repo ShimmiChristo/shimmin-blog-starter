@@ -20,14 +20,27 @@ const calcCourseDiff = (playerScore, courseSlope, courseRating) => {
    * score diff = (course slope / 113) * (adjusted gross score – Course Rating – PCC adjustment))
    * round to nearest whole number (based on USGA handicap)
    */
-  const form = (113 / courseSlope) * (playerScore - courseRating)
-  return Math.round(form)
+  const formula = (113 / courseSlope) * (playerScore - courseRating)
+  return formula.toFixed(1)
+}
+
+const calcHandicapDiff = roundsArr => {
+  if (roundsArr.length < 6) {
+    // * return lowest 1
+    let lowest = roundsArr.reduce(function (prev, curr) {
+      return parseFloat(prev.coursehandicap) < parseFloat(curr.coursehandicap)
+        ? prev
+        : curr
+    })
+    return lowest.coursehandicap
+  }
 }
 
 const GolfHandicapCalc = ({ data, location }) => {
   const { title } = useSiteMetadata()
   const siteTitle = title || `Golf Handicap Calculator`
-  const [showCalculatedHC, setShowCalculatedHC] = useState(false)
+  const [showCalculatedHC, setShowCalculatedHC] = useState(true)
+  const [calculatedHC, setCalculatedHC] = useState(0)
 
   const inputInitialValue = () => {
     const localVar = localStorage.getItem("inputScores") || JSON.stringify([])
@@ -39,7 +52,8 @@ const GolfHandicapCalc = ({ data, location }) => {
 
   const saveArr = arr => {
     localStorage.setItem("inputScores", JSON.stringify(arr))
-    console.log("arr - ", arr)
+    calcHandicapDiff(arr)
+    setCalculatedHC(calcHandicapDiff(arr))
   }
 
   // const handleInputChange = ({ value, name }) => {
@@ -84,18 +98,7 @@ const GolfHandicapCalc = ({ data, location }) => {
           val.courseslope = courseslope ? courseslope : val.courseslope
           val.eighteenholes = eighteenholes ? eighteenholes : val.eighteenholes
           val.nineholes = nineholes ? nineholes : val.nineholes
-          // val.courserating === null && obj.courserating !== null
-          // ? (val.courserating = obj.courserating)
-          // : val.courserating
-          // val.courseslope === null && obj.courseslope !== null
-          //   ? (val.courseslope = obj.courseslope)
-          //   : val.courseslope
-          // val.eighteenholes === null && obj.eighteenholes !== null
-          //   ? (val.eighteenholes = obj.eighteenholes)
-          //   : val.eighteenholes
-          // val.nineholes === null && obj.nineholes !== null
-          //   ? (val.nineholes = obj.nineholes)
-          //   : val.nineholes
+
           let playerScore = val.eighteenholes
             ? val.eighteenholes
             : val.nineholes
@@ -112,8 +115,6 @@ const GolfHandicapCalc = ({ data, location }) => {
 
     setInputValues(valueCopy)
   }
-
-  const calculatedHC = 0
 
   return (
     <Layout location={location} title={siteTitle}>
