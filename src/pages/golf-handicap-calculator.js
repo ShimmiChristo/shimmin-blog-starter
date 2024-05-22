@@ -228,9 +228,10 @@ const GolfHandicapCalc = ({ data, location }) => {
                     // defaultValue={
                     //   round["course-rating"] ? round["course-rating"] : 0
                     // }
-                    // defaultValue={inputValues[inputId] ?? ""}
                     id={"c" + colNum + "-r" + 1}
-                    value={inputValues[i]?.courserating ?? ""}
+                    value={
+                      inputValues?.length ? inputValues[i]?.courserating : ""
+                    }
                     data-courserating={``}
                     onChange={e =>
                       handleInputChange({
@@ -248,7 +249,9 @@ const GolfHandicapCalc = ({ data, location }) => {
                     type="number"
                     name={"c" + colNum + "-r" + 2}
                     id={"c" + colNum + "-r" + 2}
-                    value={inputValues[i]?.courseslope ?? ""}
+                    value={
+                      inputValues?.length ? inputValues[i]?.courseslope : ""
+                    }
                     onChange={e =>
                       handleInputChange({
                         hole: colNum,
@@ -265,7 +268,9 @@ const GolfHandicapCalc = ({ data, location }) => {
                     type="number"
                     name={"c" + colNum + "-r" + 3}
                     id={"c" + colNum + "-r" + 3}
-                    value={inputValues[i]?.eighteenholes ?? ""}
+                    value={
+                      inputValues?.length ? inputValues[i]?.eighteenholes : ""
+                    }
                     onChange={e =>
                       handleInputChange({
                         hole: colNum,
@@ -282,7 +287,7 @@ const GolfHandicapCalc = ({ data, location }) => {
                     type="number"
                     name={"c" + colNum + "-r" + 4}
                     id={"c" + colNum + "-r" + 4}
-                    value={inputValues[i]?.nineholes ?? ""}
+                    value={inputValues?.length ? inputValues[i]?.nineholes : ""}
                     onChange={e =>
                       handleInputChange({
                         hole: colNum,
