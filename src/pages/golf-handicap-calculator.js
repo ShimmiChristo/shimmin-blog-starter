@@ -102,8 +102,13 @@ const GolfHandicapCalc = ({ data, location }) => {
   const [calculatedHC, setCalculatedHC] = useState(0)
 
   const inputInitialValue = () => {
-    if (typeof window !== "undefined") {
-      const localVar = localStorage.getItem("inputScores") || JSON.stringify([])
+    if (
+      typeof window !== "undefined" &&
+      window.localStorage.getItem("inputScores")
+    ) {
+      console.log("inputInitVal")
+      const localVar =
+        window.localStorage.getItem("inputScores") || JSON.stringify([])
       const parsedVar = JSON.parse(localVar)
       return parsedVar
     }
@@ -112,8 +117,9 @@ const GolfHandicapCalc = ({ data, location }) => {
   const [inputValues, setInputValues] = useState(inputInitialValue)
 
   const saveArr = arr => {
+    console.log("arr - ", arr)
     if (typeof window !== "undefined") {
-      localStorage.setItem("inputScores", JSON.stringify(arr))
+      window.localStorage.setItem("inputScores", JSON.stringify(arr))
       console.log("arr - ", arr)
       let t = calcHandicapDiff(arr)
       console.log("t - ", t)
@@ -138,7 +144,6 @@ const GolfHandicapCalc = ({ data, location }) => {
     value,
     name,
   }) => {
-    console.log("keyCode - ", keyCode)
     let obj = {
       hole: hole,
       courserating: courserating || null,
@@ -194,6 +199,8 @@ const GolfHandicapCalc = ({ data, location }) => {
 
     setInputValues(valueCopy)
   }
+
+  useEffect(() => {}, [location])
 
   return (
     <Layout location={location} title={siteTitle}>
