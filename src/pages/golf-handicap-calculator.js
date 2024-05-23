@@ -40,7 +40,6 @@ const calcHandicapDiff = roundsArr => {
   let scoreSix = parseFloat(sortedArr[5]?.coursehandicap)
   let scoreSeven = parseFloat(sortedArr[6]?.coursehandicap)
   let scoreEight = parseFloat(sortedArr[7]?.coursehandicap)
-  console.log("sortedArr - ", sortedArr)
   switch (roundsPlayed) {
     case 3:
       // * return lowest 1 - 2.0
@@ -52,7 +51,6 @@ const calcHandicapDiff = roundsArr => {
       // * return lowest 1 - 0
       return scoreOne
     case 6:
-      console.log("scoreOne - ", scoreOne)
       return (scoreOne + scoreTwo) / 2 - 1.0
     case 7 || 8:
       return (scoreOne + scoreTwo) / 2
@@ -102,11 +100,7 @@ const GolfHandicapCalc = ({ data, location }) => {
   const [calculatedHC, setCalculatedHC] = useState(0)
 
   const inputInitialValue = () => {
-    if (
-      typeof window !== "undefined" &&
-      window.localStorage.getItem("inputScores")
-    ) {
-      console.log("inputInitVal")
+    if (typeof window !== "undefined") {
       const localVar =
         window.localStorage.getItem("inputScores") || JSON.stringify([])
       const parsedVar = JSON.parse(localVar)
@@ -117,22 +111,22 @@ const GolfHandicapCalc = ({ data, location }) => {
   const [inputValues, setInputValues] = useState(inputInitialValue)
 
   const saveArr = arr => {
-    console.log("arr - ", arr)
+    const inputValuesCopy = [...arr]
     if (typeof window !== "undefined") {
-      window.localStorage.setItem("inputScores", JSON.stringify(arr))
-      console.log("arr - ", arr)
-      let t = calcHandicapDiff(arr)
-      console.log("t - ", t)
-      setCalculatedHC(calcHandicapDiff(arr))
+      const filteredArr = inputValuesCopy.filter(item => {
+        return (
+          item.courseslope !== "" &&
+          item.courseslope !== null &&
+          item.courserating !== "" &&
+          item.courserating !== null
+        )
+      })
+      setInputValues(filteredArr)
+      window.localStorage.setItem("inputScores", JSON.stringify(filteredArr))
+      let hcDiff = calcHandicapDiff(filteredArr).toFixed(1)
+      setCalculatedHC(hcDiff)
     }
   }
-
-  // const handleInputChange = ({ value, name }) => {
-  //   setInputValues({
-  //     ...inputValues,
-  //     [name]: value,
-  //   })
-  // }
 
   const handleInputChange = ({
     hole,
@@ -140,7 +134,7 @@ const GolfHandicapCalc = ({ data, location }) => {
     courseslope,
     eighteenholes,
     nineholes,
-    keyCode,
+    key,
     value,
     name,
   }) => {
@@ -150,7 +144,7 @@ const GolfHandicapCalc = ({ data, location }) => {
       courseslope: courseslope || null,
       eighteenholes: eighteenholes || null,
       nineholes: nineholes || null,
-      keyCode: keyCode,
+      key: key,
       value: value,
       name: name,
     }
@@ -163,17 +157,22 @@ const GolfHandicapCalc = ({ data, location }) => {
       }
     })
 
-    if (keyCode === 8) {
-      console.log("keyCode - ", keyCode)
-    }
     if (holeFound) {
       for (let val of valueCopy) {
         // * check if already exists
         if (val.hole === obj.hole) {
-          val.courserating = courserating ? courserating : val.courserating
-          val.courseslope = courseslope ? courseslope : val.courseslope
-          val.eighteenholes = eighteenholes ? eighteenholes : val.eighteenholes
-          val.nineholes = nineholes ? nineholes : val.nineholes
+          val.courserating =
+            courserating || courserating === ""
+              ? courserating
+              : val.courserating
+          val.courseslope =
+            courseslope || courseslope === "" ? courseslope : val.courseslope
+          val.eighteenholes =
+            eighteenholes || eighteenholes === ""
+              ? eighteenholes
+              : val.eighteenholes
+          val.nineholes =
+            nineholes || nineholes === "" ? nineholes : val.nineholes
 
           // let nineholematch = val.nineholes ? true : false
           let playerScore = val.nineholes ? val.nineholes : val.eighteenholes
@@ -200,7 +199,15 @@ const GolfHandicapCalc = ({ data, location }) => {
     setInputValues(valueCopy)
   }
 
-  useEffect(() => {}, [location])
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      const localVar =
+        window.localStorage.getItem("inputScores") || JSON.stringify([])
+      const parsedVar = JSON.parse(localVar)
+      let hcDiff = calcHandicapDiff(parsedVar).toFixed(1)
+      setCalculatedHC(hcDiff)
+    }
+  }, [location])
 
   return (
     <Layout location={location} title={siteTitle}>
@@ -213,7 +220,8 @@ const GolfHandicapCalc = ({ data, location }) => {
           </button>
         </div>
         <div className={showCalculatedHC ? "" : "d-none"}>
-          Your handicap index is: <span>{calculatedHC}</span>
+          Your handicap index is:{" "}
+          <span>{calculatedHC === 0 ? `add more rounds` : calculatedHC}</span>
         </div>
         <div className="container">
           <div className="row">
@@ -232,9 +240,6 @@ const GolfHandicapCalc = ({ data, location }) => {
                   <input
                     type="number"
                     name={"course-rating"}
-                    // defaultValue={
-                    //   round["course-rating"] ? round["course-rating"] : 0
-                    // }
                     id={"c" + colNum + "-r" + 1}
                     value={
                       inputValues?.length ? inputValues[i]?.courserating : ""
@@ -244,9 +249,6 @@ const GolfHandicapCalc = ({ data, location }) => {
                       handleInputChange({
                         hole: colNum,
                         courserating: e.target.value,
-                        keyCode: e,
-                        // value: e.target.value,
-                        // name: e.target.name,
                       })
                     }
                   />
@@ -263,9 +265,6 @@ const GolfHandicapCalc = ({ data, location }) => {
                       handleInputChange({
                         hole: colNum,
                         courseslope: e.target.value,
-                        keyCode: e,
-                        // value: e.target.value,
-                        // name: e.target.name,
                       })
                     }
                   />
@@ -282,9 +281,6 @@ const GolfHandicapCalc = ({ data, location }) => {
                       handleInputChange({
                         hole: colNum,
                         eighteenholes: e.target.value,
-                        keyCode: e,
-                        // value: e.target.value,
-                        // name: e.target.name,
                       })
                     }
                   />
@@ -299,9 +295,6 @@ const GolfHandicapCalc = ({ data, location }) => {
                       handleInputChange({
                         hole: colNum,
                         nineholes: e.target.value,
-                        keyCode: e,
-                        // value: e.target.value,
-                        // name: e.target.name,
                       })
                     }
                   />
