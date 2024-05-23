@@ -223,26 +223,25 @@ const GolfHandicapCalc = ({ data, location }) => {
             </span>
           </div>
           <button
-            className="col-4 mt-3 mb-5"
+            className="col-auto mt-3 mb-5"
             onClick={() => saveArr(inputValues)}
           >
             Calculate Handicap Index
           </button>
         </div>
-        <div className="container">
+        <div className="container golf-handicap-calculator">
           <div className="row">
-            <div className="col"></div>
-            <div className="col">Course Rating</div>
-            <div className="col">Course Slope</div>
-            <div className="col">18 Hole Score</div>
-            <div className="col">9 Hole Score</div>
+            <div className="col-3">Course Rating</div>
+            <div className="col-3">Course Slope</div>
+            <div className="col-3">18 Hole Score</div>
+            <div className="col-3">9 Hole Score</div>
           </div>
           {[...Array(20)].map((round, i) => {
             let colNum = i + 1
             return (
               <div className="row" data-round={i + 1} key={i}>
-                <div className="col">Round #{i + 1}</div>
-                <div className="col">
+                <div className="col-12">Round #{i + 1}</div>
+                <div className="col-3">
                   <input
                     type="number"
                     name={"course-rating"}
@@ -259,7 +258,7 @@ const GolfHandicapCalc = ({ data, location }) => {
                     }
                   />
                 </div>
-                <div className="col">
+                <div className="col-3">
                   <input
                     type="number"
                     name={"c" + colNum + "-r" + 2}
@@ -275,7 +274,7 @@ const GolfHandicapCalc = ({ data, location }) => {
                     }
                   />
                 </div>
-                <div className="col">
+                <div className="col-3">
                   <input
                     type="number"
                     name={"c" + colNum + "-r" + 3}
@@ -291,7 +290,7 @@ const GolfHandicapCalc = ({ data, location }) => {
                     }
                   />
                 </div>
-                <div className="col">
+                <div className="col-3">
                   <input
                     type="number"
                     name={"c" + colNum + "-r" + 4}
