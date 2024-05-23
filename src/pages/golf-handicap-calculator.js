@@ -214,14 +214,20 @@ const GolfHandicapCalc = ({ data, location }) => {
       <SEO title="Golf Handicap Calculator" />
       <LandingPageHeader title="Golf Handicap Calculator" />
       <LandingPageBody>
-        <div>
-          <button onClick={() => saveArr(inputValues)}>
+        <div className="d-flex flex-column justify-content-center align-items-center">
+          <div className={showCalculatedHC ? "h3" : "d-none h3"}>
+            <span>
+              {calculatedHC === 0 || calculatedHC === "0.0"
+                ? `Need at least 3 rounds`
+                : `Your handicap index is: ${calculatedHC}`}
+            </span>
+          </div>
+          <button
+            className="col-4 mt-3 mb-5"
+            onClick={() => saveArr(inputValues)}
+          >
             Calculate Handicap Index
           </button>
-        </div>
-        <div className={showCalculatedHC ? "" : "d-none"}>
-          Your handicap index is:{" "}
-          <span>{calculatedHC === 0 ? `add more rounds` : calculatedHC}</span>
         </div>
         <div className="container">
           <div className="row">
