@@ -16,14 +16,14 @@ const TeamRecordsPage = ({ location }) => {
     <Layout location={location} title={siteTitle}>
       <SEO title="Team Scores" />
       <LandingPageHeader title="Team Scores" />
-      <div className="container">
+      <div className="container col-12 col-md-6">
         <div className="h4 text-center">Total Points</div>
-        <div className="row border-bottom py-3 bold sticky-top position-sticky-header">
+        <div className="row border-bottom bold sticky-top position-sticky-header">
           <div className="col-4 text-center fontSize-0"></div>
-          <div className="col-4 text-center fontSize-0">
+          <div className="col-4 text-center fontSize-0 team-one-color-bg text-white py-2">
             Green Team
           </div>
-          <div className="col-4 text-center fontSize-0">
+          <div className="col-4 text-center fontSize-0 team-two-color-bg text-white py-2">
             Blue Team
           </div>
         </div>

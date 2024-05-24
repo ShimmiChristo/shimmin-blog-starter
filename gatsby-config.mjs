@@ -72,6 +72,10 @@ const config = {
             name: "Player Scores",
             link: "/player-scores",
           },
+          {
+            name: "Team Scores",
+            link: "/team-scores",
+          },
           // {
           //   name: "Records",
           //   link: "/records",
