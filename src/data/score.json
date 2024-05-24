@@ -7,6 +7,11 @@
           "nickname": "crohns crushers",
           "players": ["Matt", "Chris", "Travis", "Derek", "Jake", "Curtis"],
           "score": "13",
+          "scores": {
+            "dayone": "5",
+            "daytwo": "8",
+            "total": "13"
+          },
           "points": [
             {
               "id": "bestBall",
@@ -78,6 +83,11 @@
           "nickname": "team ramrod",
           "players": ["Dylan", "RJ", "Craig", "Dan", "Cam", "Evan"],
           "score": "14",
+          "scores": {
+            "dayone": "7",
+            "daytwo": "7",
+            "total": "14"
+          },
           "points": [
             {
               "id": "bestBall",
@@ -167,6 +177,11 @@
           "nickname": "crohns crushers",
           "players": ["Matt", "Travis", "Derek", "Gordon", "Curtis", "Jake"],
           "score": "16",
+          "scores": {
+            "dayone": "8.5",
+            "daytwo": "7.5",
+            "total": "16"
+          },
           "points": [
             {
               "id": "bestBall",
@@ -231,6 +246,11 @@
           "nickname": "team ramrod",
           "players": ["Dylan", "RJ", "Craig", "Dan", "Cam", "Evan"],
           "score": "11",
+          "scores": {
+            "dayone": "3.5",
+            "daytwo": "7.5",
+            "total": "11"
+          },
           "points": [
             {
               "id": "bestBall",
@@ -313,6 +333,11 @@
           "nickname": "crohn's crushers",
           "players": ["Matt", "Chris", "Derek", "Travis"],
           "score": "5",
+          "scores": {
+            "dayone": "1.5",
+            "daytwo": "3.5",
+            "total": "5"
+          },
           "points": [
             {
               "id": "bestBall",
@@ -356,6 +381,11 @@
           "nickname": "team ramrod",
           "players": ["Dylan", "RJ", "Craig", "Dan"],
           "score": "9",
+          "scores": {
+            "dayone": "6.5",
+            "daytwo": "2.5",
+            "total": "9"
+          },
           "points": [
             {
               "id": "bestBall",

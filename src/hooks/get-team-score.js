@@ -10,6 +10,11 @@ export const ScoreInfo = () => {
               name
               players
               score
+              scores {
+                dayone
+                daytwo
+                total
+              }
               points {
                 id
                 game
@@ -22,6 +27,11 @@ export const ScoreInfo = () => {
               name
               players
               score
+              scores {
+                dayone
+                daytwo
+                total
+              }
               points {
                 id
                 game
@@ -42,6 +52,11 @@ export const ScoreInfo = () => {
               name
               players
               score
+              scores {
+                dayone
+                daytwo
+                total
+              }
               points {
                 id
                 game
@@ -54,6 +69,11 @@ export const ScoreInfo = () => {
               name
               players
               score
+              scores {
+                dayone
+                daytwo
+                total
+              }
               points {
                 id
                 game
@@ -74,6 +94,11 @@ export const ScoreInfo = () => {
               name
               players
               score
+              scores {
+                dayone
+                daytwo
+                total
+              }
               points {
                 id
                 game
@@ -86,6 +111,11 @@ export const ScoreInfo = () => {
               name
               players
               score
+              scores {
+                dayone
+                daytwo
+                total
+              }
               points {
                 id
                 game

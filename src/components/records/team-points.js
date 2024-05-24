@@ -1,7 +1,7 @@
 import React from "react"
 import { Link } from "gatsby"
 import PropTypes from "prop-types"
-import { PlayerInfoPoints } from "../../hooks/get-player-info-points"
+// import { PlayerInfoPoints } from "../../hooks/get-player-info-points"
 import { ScoreInfo } from "../../hooks/get-team-score"
 
 const TeamPoints = () => {
@@ -28,14 +28,12 @@ const TeamPoints = () => {
     }
 
     for (const [year, yearObj] of Object.entries(teamScores)) {
-      // console.log(`${year}: ${yearObj}`)
       for (const [teams, teamsObj] of Object.entries(yearObj)) {
         if (
           teamsObj != null &&
           typeof teamsObj == "object" &&
           !Array.isArray(teamsObj)
         ) {
-          // console.log("teamsObj - ", teamsObj)
           teamsObj[`${team}`].points.map(elem => {
             if (elem.id in points) {
               if (elem.ties) points[elem.id] += elem.ties / 2
