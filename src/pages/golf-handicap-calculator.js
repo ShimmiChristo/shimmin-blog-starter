@@ -174,17 +174,9 @@ const GolfHandicapCalc = ({ data, location }) => {
           val.nineholes =
             nineholes || nineholes === "" ? nineholes : val.nineholes
 
-          // let nineholematch = val.nineholes ? true : false
           let playerScore = val.nineholes ? val.nineholes : val.eighteenholes
           let courseRating = nineholes ? val.courserating / 2 : val.courserating
-          // let playerScore = () => {
-          // if (val.eighteenholes) {
-          // return val.eighteenholes
-          // } else {
-          // nineholematch = true
-          // return val.nineholes
-          // }
-          // }
+
           val.coursehandicap = calcCourseDiff(
             playerScore,
             val.courseslope,

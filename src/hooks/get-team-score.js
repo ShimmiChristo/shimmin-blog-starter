@@ -10,11 +10,25 @@ export const ScoreInfo = () => {
               name
               players
               score
+              points {
+                id
+                game
+                wins
+                ties
+                losses
+              }
             }
             team2 {
               name
               players
               score
+              points {
+                id
+                game
+                wins
+                ties
+                losses
+              }
             }
           }
           year
@@ -28,11 +42,25 @@ export const ScoreInfo = () => {
               name
               players
               score
+              points {
+                id
+                game
+                wins
+                ties
+                losses
+              }
             }
             team2 {
               name
               players
               score
+              points {
+                id
+                game
+                wins
+                ties
+                losses
+              }
             }
           }
           year
@@ -46,11 +74,25 @@ export const ScoreInfo = () => {
               name
               players
               score
+              points {
+                id
+                game
+                wins
+                ties
+                losses
+              }
             }
             team2 {
               name
               players
               score
+              points {
+                id
+                game
+                wins
+                ties
+                losses
+              }
             }
           }
         }

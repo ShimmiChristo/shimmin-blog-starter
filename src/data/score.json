@@ -6,13 +6,143 @@
           "name": "green team",
           "nickname": "crohns crushers",
           "players": ["Matt", "Chris", "Travis", "Derek", "Jake", "Curtis"],
-          "score": "13"
+          "score": "13",
+          "points": [
+            {
+              "id": "bestBall",
+              "game": "Best Ball",
+              "wins": 2,
+              "ties": 0,
+              "losses": 1
+            },
+            {
+              "id": "twoBestBall",
+              "game": "Best Ball",
+              "wins": 1,
+              "ties": 0,
+              "losses": 2
+            },
+            {
+              "id": "bramble",
+              "game": "Bramble",
+              "wins": 1,
+              "ties": 0,
+              "losses": 2
+            },
+            {
+              "id": "twoBallBramble",
+              "game": "Bramble",
+              "wins": 1,
+              "ties": 1,
+              "losses": 1
+            },
+            {
+              "id": "alternate",
+              "game": "Alternate",
+              "wins": 1,
+              "ties": 0,
+              "losses": 2
+            },
+            {
+              "id": "brambleAlternate",
+              "game": "Bramble Alternate",
+              "wins": 0,
+              "ties": 0,
+              "losses": 0
+            },
+            {
+              "id": "pinehurst",
+              "game": "Pinehurst",
+              "wins": 1,
+              "ties": 2,
+              "losses": 0
+            },
+            {
+              "id": "scramble",
+              "game": "Scramble",
+              "wins": 1,
+              "ties": 0,
+              "losses": 2
+            },
+            {
+              "id": "singles",
+              "game": "Singles",
+              "wins": 3,
+              "ties": 1,
+              "losses": 2
+            }
+          ]
         },
         "team2": {
           "name": "blue team",
           "nickname": "team ramrod",
           "players": ["Dylan", "RJ", "Craig", "Dan", "Cam", "Evan"],
-          "score": "14"
+          "score": "14",
+          "points": [
+            {
+              "id": "bestBall",
+              "game": "Best Ball",
+              "wins": 1,
+              "ties": 0,
+              "losses": 2
+            },
+            {
+              "id": "twoBestBall",
+              "game": "Best Ball",
+              "wins": 2,
+              "ties": 0,
+              "losses": 1
+            },
+            {
+              "id": "bramble",
+              "game": "Bramble",
+              "wins": 2,
+              "ties": 0,
+              "losses": 1
+            },
+            {
+              "id": "twoBallBramble",
+              "game": "Bramble",
+              "wins": 1,
+              "ties": 1,
+              "losses": 1
+            },
+            {
+              "id": "alternate",
+              "game": "Alternate",
+              "wins": 2,
+              "ties": 0,
+              "losses": 1
+            },
+            {
+              "id": "brambleAlternate",
+              "game": "Bramble Alternate",
+              "wins": 0,
+              "ties": 0,
+              "losses": 0
+            },
+            {
+              "id": "pinehurst",
+              "game": "Pinehurst",
+              "wins": 0,
+              "ties": 2,
+              "losses": 1
+            },
+            {
+              "id": "scramble",
+              "game": "Scramble",
+              "wins": 2,
+              "ties": 0,
+              "losses": 1
+            },
+            {
+              "id": "singles",
+              "game": "Singles",
+              "wins": 2,
+              "ties": 1,
+              "losses": 3
+            }
+          ]
         }
       },
       "year": "2023",
@@ -36,13 +166,129 @@
           "name": "green team",
           "nickname": "crohns crushers",
           "players": ["Matt", "Travis", "Derek", "Gordon", "Curtis", "Jake"],
-          "score": "16"
+          "score": "16",
+          "points": [
+            {
+              "id": "bestBall",
+              "game": "Best Ball",
+              "wins": 2,
+              "ties": 0,
+              "losses": 1
+            },
+            {
+              "id": "twoBestBall",
+              "game": "Best Ball",
+              "wins": 2,
+              "ties": 0,
+              "losses": 1
+            },
+            {
+              "id": "bramble",
+              "game": "Bramble",
+              "wins": 3,
+              "ties": 0,
+              "losses": 0
+            },
+            {
+              "id": "twoBallBramble",
+              "game": "Bramble",
+              "wins": 1,
+              "ties": 1,
+              "losses": 1
+            },
+            {
+              "id": "alternate",
+              "game": "Alternate",
+              "wins": 2,
+              "ties": 1,
+              "losses": 0
+            },
+            {
+              "id": "brambleAlternate",
+              "game": "Bramble Alternate",
+              "wins": 0,
+              "ties": 0,
+              "losses": 0
+            },
+            {
+              "id": "scramble",
+              "game": "Scramble",
+              "wins": 4,
+              "ties": 0,
+              "losses": 2
+            },
+            {
+              "id": "singles",
+              "game": "Singles",
+              "wins": 1,
+              "ties": 0,
+              "losses": 5
+            }
+          ]
         },
         "team2": {
           "name": "blue team",
           "nickname": "team ramrod",
           "players": ["Dylan", "RJ", "Craig", "Dan", "Cam", "Evan"],
-          "score": "11"
+          "score": "11",
+          "points": [
+            {
+              "id": "bestBall",
+              "game": "Best Ball",
+              "wins": 1,
+              "ties": 0,
+              "losses": 2
+            },
+            {
+              "id": "twoBestBall",
+              "game": "Best Ball",
+              "wins": 1,
+              "ties": 0,
+              "losses": 2
+            },
+            {
+              "id": "bramble",
+              "game": "Bramble",
+              "wins": 0,
+              "ties": 0,
+              "losses": 3
+            },
+            {
+              "id": "twoBallBramble",
+              "game": "Bramble",
+              "wins": 1,
+              "ties": 1,
+              "losses": 1
+            },
+            {
+              "id": "alternate",
+              "game": "Alternate",
+              "wins": 0,
+              "ties": 1,
+              "losses": 2
+            },
+            {
+              "id": "brambleAlternate",
+              "game": "Bramble Alternate",
+              "wins": 0,
+              "ties": 0,
+              "losses": 0
+            },
+            {
+              "id": "scramble",
+              "game": "Scramble",
+              "wins": 2,
+              "ties": 0,
+              "losses": 3
+            },
+            {
+              "id": "singles",
+              "game": "Singles",
+              "wins": 5,
+              "ties": 0,
+              "losses": 1
+            }
+          ]
         }
       },
       "year": "2022",
@@ -66,13 +312,87 @@
           "name": "green team",
           "nickname": "crohn's crushers",
           "players": ["Matt", "Chris", "Derek", "Travis"],
-          "score": "5"
+          "score": "5",
+          "points": [
+            {
+              "id": "bestBall",
+              "game": "Best Ball",
+              "wins": 2,
+              "ties": 0,
+              "losses": 2
+            },
+            {
+              "id": "bramble",
+              "game": "Bramble",
+              "wins": 0,
+              "ties": 0,
+              "losses": 2
+            },
+            {
+              "id": "brambleAlternate",
+              "game": "Bramble Alternate",
+              "wins": 1,
+              "ties": 1,
+              "losses": 0
+            },
+            {
+              "id": "scramble",
+              "game": "Scramble",
+              "wins": 0,
+              "ties": 0,
+              "losses": 2
+            },
+            {
+              "id": "singles",
+              "game": "Singles",
+              "wins": 1,
+              "ties": 1,
+              "losses": 2
+            }
+          ]
         },
         "team2": {
           "name": "blue team",
           "nickname": "team ramrod",
           "players": ["Dylan", "RJ", "Craig", "Dan"],
-          "score": "9"
+          "score": "9",
+          "points": [
+            {
+              "id": "bestBall",
+              "game": "Best Ball",
+              "wins": 2,
+              "ties": 0,
+              "losses": 2
+            },
+            {
+              "id": "bramble",
+              "game": "Bramble",
+              "wins": 2,
+              "ties": 0,
+              "losses": 0
+            },
+            {
+              "id": "brambleAlternate",
+              "game": "Bramble Alternate",
+              "wins": 0,
+              "ties": 1,
+              "losses": 1
+            },
+            {
+              "id": "scramble",
+              "game": "Scramble",
+              "wins": 2,
+              "ties": 0,
+              "losses": 0
+            },
+            {
+              "id": "singles",
+              "game": "Singles",
+              "wins": 2,
+              "ties": 1,
+              "losses": 1
+            }
+          ]
         }
       },
       "year": "2021",
