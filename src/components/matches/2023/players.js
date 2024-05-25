@@ -5,7 +5,7 @@ import React from "react"
 function MatchPlayers2022() {
   return (
     <div className="mb-3">
-      <h2>2022 Players</h2>
+      <h2>2023 Players</h2>
       <div className="mb-3">
         <div className="row">
           <div className="col">
@@ -17,10 +17,10 @@ function MatchPlayers2022() {
                 <li className="list-group-item m-0 py-2">
                   Matt <span className="fst-italic">*team captain</span>
                 </li>
-                <li className="list-group-item m-0 py-2">Jake</li>
+                <li className="list-group-item m-0 py-2">Chris</li>
                 <li className="list-group-item m-0 py-2">Curtis</li>
                 <li className="list-group-item m-0 py-2">Travis</li>
-                <li className="list-group-item m-0 py-2">Gordon</li>
+                <li className="list-group-item m-0 py-2">Jake</li>
                 <li className="list-group-item m-0 py-2">Derek</li>
               </ul>
             </div>
