@@ -54,7 +54,6 @@ function calcToLowestHandicap(p1HC, p2HC, p3HC, p4HC) {
 }
 
 function getPlayerHandicap(player, gameplay, handicaps) {
-  console.log('gameplay - ', gameplay);
   const newHC = {
     player1: 99,
     player2: 99,

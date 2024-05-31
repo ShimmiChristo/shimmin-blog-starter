@@ -475,12 +475,24 @@ function Match({
     if (playerObj) {
       const holeScores = playerObj?.year[`${year}`].scores?.[`${courseMatch}`]
       const totalScore = [...holeScores[`${holes}`]]
+      const oneScoreGameplay = ["scramble", "alternate", "pinehurst"].includes(
+        gameplay
+      )
       return (
         <div className={`match__playerScore match__${p1}`}>
           <div className="match__column--info align-left row-cell capitalize">
-            <span>
-              {p1} ({p1HC})
-            </span>
+            {p2 && oneScoreGameplay ? (
+              <div className="d-flex justify-content-center align-items-center">
+                <div className="d-flex flex-column pe-3">
+                  <span>{p1}</span> <span>{p2}</span>
+                </div>
+                <div>({p1HC})</div>
+              </div>
+            ) : (
+              <span>
+                {p1} ({p1HC})
+              </span>
+            )}
           </div>
           {totalScore.map((score, i) => (
             <div className="match__column" key={uuidv1()}>
@@ -536,6 +548,10 @@ function Match({
   //     return ""
   //   }
   // }
+
+  const oneScoreGameplay = ["scramble", "alternate", "pinehurst"].includes(
+    gameplay
+  )
 
   return (
     <Section
@@ -658,7 +674,7 @@ function Match({
                   p3HCglobal
                 )
               : calcMatchPlayerScore(gameplay, playerOne, player1, p1HCglobal)}
-            {playerThree
+            {playerThree && !oneScoreGameplay
               ? calcMatchPlayerScore(
                   gameplay,
                   playerThree,
@@ -694,7 +710,8 @@ function Match({
                   p4HCglobal
                 )
               : calcMatchPlayerScore(gameplay, playerTwo, player2, p2HCglobal)}
-            {playerFour
+
+            {playerFour && !oneScoreGameplay
               ? calcMatchPlayerScore(
                   gameplay,
                   playerFour,
