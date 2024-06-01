@@ -7,6 +7,8 @@ import LandingPageHeader from "../components/landing-page-header"
 
 import "../styles/player-records.css"
 import TeamPoints from "../components/records/team-points"
+import LargestVictoryMargin from "../components/records/largest-victory-margin"
+import MostPlayerPoints from "../components/records/most-player-points"
 
 const TeamRecordsPage = ({ location }) => {
   const { title } = useSiteMetadata()
@@ -29,6 +31,32 @@ const TeamRecordsPage = ({ location }) => {
         </div>
         <TeamPoints />
       </div>
+      {/* <div className="mt-5 container col-12 col-md-6">
+        <div className="h4 text-center">Largest Margin of Victory</div>
+        <div className="row border-bottom bold sticky-top position-sticky-header">
+          <div className="col-4 text-center fontSize-0"></div>
+          <div className="col-4 text-center fontSize-0 team-one-color-bg text-white py-2">
+            Green Team
+          </div>
+          <div className="col-4 text-center fontSize-0 team-two-color-bg text-white py-2">
+            Blue Team
+          </div>
+        </div>
+        <LargestVictoryMargin />
+      </div> */}
+      {/* <div className="mt-5 container col-12 col-md-6"> */}
+      {/* <div className="h4 text-center">Most Points Won</div> */}
+      {/* <div className="row border-bottom bold sticky-top position-sticky-header">
+          <div className="col-4 text-center fontSize-0"></div>
+          <div className="col-4 text-center fontSize-0 team-one-color-bg text-white py-2">
+            Green Team
+          </div>
+          <div className="col-4 text-center fontSize-0 team-two-color-bg text-white py-2">
+            Blue Team
+          </div>
+        </div> */}
+      <MostPlayerPoints />
+      {/* </div> */}
     </Layout>
   )
 }
