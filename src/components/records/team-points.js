@@ -54,91 +54,69 @@ const TeamPoints = () => {
 
   return (
     <>
-      <div className="row border-bottom py-2">
-        <div className="col-4 text-center fontSize-0">
-          Total Points
+      <div className="container col-12 col-md-6">
+        <div className="h4 text-center">Total Points</div>
+        <div className="row border-bottom bold">
+          <div className="col-4 text-center fontSize-0"></div>
+          <div className="col-4 text-center fontSize-0 team-one-color-bg text-white py-2">
+            Green Team
+          </div>
+          <div className="col-4 text-center fontSize-0 team-two-color-bg text-white py-2">
+            Blue Team
+          </div>
         </div>
-        <div className="col-4 text-center fontSize-0">
-          {team1.matches}
+        <div className="row border-bottom py-2">
+          <div className="col-4 text-center fontSize-0">Total Points</div>
+          <div className="col-4 text-center fontSize-0">{team1.matches}</div>
+          <div className="col-4 text-center fontSize-0">{team2.matches}</div>
         </div>
-        <div className="col-4 text-center fontSize-0">
-          {team2.matches}
+        <div className="row border-bottom py-2">
+          <div className="col-4 text-center fontSize-0">Best Ball</div>
+          <div className="col-4 text-center fontSize-0">{team1.bestBall}</div>
+          <div className="col-4 text-center fontSize-0">{team2.bestBall}</div>
         </div>
-      </div>
-      <div className="row border-bottom py-2">
-        <div className="col-4 text-center fontSize-0">Best Ball</div>
-        <div className="col-4 text-center fontSize-0">
-          {team1.bestBall}
+        <div className="row border-bottom py-2">
+          <div className="col-4 text-center fontSize-0">2 Best Ball</div>
+          <div className="col-4 text-center fontSize-0">
+            {team1.twoBestBall}
+          </div>
+          <div className="col-4 text-center fontSize-0">
+            {team2.twoBestBall}
+          </div>
         </div>
-        <div className="col-4 text-center fontSize-0">
-          {team2.bestBall}
+        <div className="row border-bottom py-2">
+          <div className="col-4 text-center fontSize-0">Bramble</div>
+          <div className="col-4 text-center fontSize-0">{team1.bramble}</div>
+          <div className="col-4 text-center fontSize-0">{team2.bramble}</div>
         </div>
-      </div>
-      <div className="row border-bottom py-2">
-        <div className="col-4 text-center fontSize-0">
-          2 Best Ball
+        <div className="row border-bottom py-2">
+          <div className="col-4 text-center fontSize-0">2 Ball Bramble</div>
+          <div className="col-4 text-center fontSize-0">
+            {team1.twoBallBramble}
+          </div>
+          <div className="col-4 text-center fontSize-0">
+            {team2.twoBallBramble}
+          </div>
         </div>
-        <div className="col-4 text-center fontSize-0">
-          {team1.twoBestBall}
+        <div className="row border-bottom py-2">
+          <div className="col-4 text-center fontSize-0">Alternate</div>
+          <div className="col-4 text-center fontSize-0">{team1.alternate}</div>
+          <div className="col-4 text-center fontSize-0">{team2.alternate}</div>
         </div>
-        <div className="col-4 text-center fontSize-0">
-          {team2.twoBestBall}
+        <div className="row border-bottom py-2">
+          <div className="col-4 text-center fontSize-0">Scramble</div>
+          <div className="col-4 text-center fontSize-0">{team1.scramble}</div>
+          <div className="col-4 text-center fontSize-0">{team2.scramble}</div>
         </div>
-      </div>
-      <div className="row border-bottom py-2">
-        <div className="col-4 text-center fontSize-0">Bramble</div>
-        <div className="col-4 text-center fontSize-0">
-          {team1.bramble}
+        <div className="row border-bottom py-2">
+          <div className="col-4 text-center fontSize-0">Pinehurst</div>
+          <div className="col-4 text-center fontSize-0">{team1.pinehurst}</div>
+          <div className="col-4 text-center fontSize-0">{team2.pinehurst}</div>
         </div>
-        <div className="col-4 text-center fontSize-0">
-          {team2.bramble}
-        </div>
-      </div>
-      <div className="row border-bottom py-2">
-        <div className="col-4 text-center fontSize-0">
-          2 Ball Bramble
-        </div>
-        <div className="col-4 text-center fontSize-0">
-          {team1.twoBallBramble}
-        </div>
-        <div className="col-4 text-center fontSize-0">
-          {team2.twoBallBramble}
-        </div>
-      </div>
-      <div className="row border-bottom py-2">
-        <div className="col-4 text-center fontSize-0">Alternate</div>
-        <div className="col-4 text-center fontSize-0">
-          {team1.alternate}
-        </div>
-        <div className="col-4 text-center fontSize-0">
-          {team2.alternate}
-        </div>
-      </div>
-      <div className="row border-bottom py-2">
-        <div className="col-4 text-center fontSize-0">Scramble</div>
-        <div className="col-4 text-center fontSize-0">
-          {team1.scramble}
-        </div>
-        <div className="col-4 text-center fontSize-0">
-          {team2.scramble}
-        </div>
-      </div>
-      <div className="row border-bottom py-2">
-        <div className="col-4 text-center fontSize-0">Pinehurst</div>
-        <div className="col-4 text-center fontSize-0">
-          {team1.pinehurst}
-        </div>
-        <div className="col-4 text-center fontSize-0">
-          {team2.pinehurst}
-        </div>
-      </div>
-      <div className="row border-bottom py-2">
-        <div className="col-4 text-center fontSize-0">Singles</div>
-        <div className="col-4 text-center fontSize-0">
-          {team1.singles}
-        </div>
-        <div className="col-4 text-center fontSize-0">
-          {team2.singles}
+        <div className="row border-bottom py-2">
+          <div className="col-4 text-center fontSize-0">Singles</div>
+          <div className="col-4 text-center fontSize-0">{team1.singles}</div>
+          <div className="col-4 text-center fontSize-0">{team2.singles}</div>
         </div>
       </div>
     </>

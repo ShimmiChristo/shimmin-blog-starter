@@ -18,45 +18,10 @@ const TeamRecordsPage = ({ location }) => {
     <Layout location={location} title={siteTitle}>
       <SEO title="Team Scores" />
       <LandingPageHeader title="Team Scores" />
-      <div className="container col-12 col-md-6">
-        <div className="h4 text-center">Total Points</div>
-        <div className="row border-bottom bold sticky-top position-sticky-header">
-          <div className="col-4 text-center fontSize-0"></div>
-          <div className="col-4 text-center fontSize-0 team-one-color-bg text-white py-2">
-            Green Team
-          </div>
-          <div className="col-4 text-center fontSize-0 team-two-color-bg text-white py-2">
-            Blue Team
-          </div>
-        </div>
-        <TeamPoints />
-      </div>
-      {/* <div className="mt-5 container col-12 col-md-6">
-        <div className="h4 text-center">Largest Margin of Victory</div>
-        <div className="row border-bottom bold sticky-top position-sticky-header">
-          <div className="col-4 text-center fontSize-0"></div>
-          <div className="col-4 text-center fontSize-0 team-one-color-bg text-white py-2">
-            Green Team
-          </div>
-          <div className="col-4 text-center fontSize-0 team-two-color-bg text-white py-2">
-            Blue Team
-          </div>
-        </div>
-        <LargestVictoryMargin />
-      </div> */}
-      {/* <div className="mt-5 container col-12 col-md-6"> */}
-      {/* <div className="h4 text-center">Most Points Won</div> */}
-      {/* <div className="row border-bottom bold sticky-top position-sticky-header">
-          <div className="col-4 text-center fontSize-0"></div>
-          <div className="col-4 text-center fontSize-0 team-one-color-bg text-white py-2">
-            Green Team
-          </div>
-          <div className="col-4 text-center fontSize-0 team-two-color-bg text-white py-2">
-            Blue Team
-          </div>
-        </div> */}
+
+      <TeamPoints />
+      {/* <LargestVictoryMargin /> */}
       <MostPlayerPoints />
-      {/* </div> */}
     </Layout>
   )
 }
