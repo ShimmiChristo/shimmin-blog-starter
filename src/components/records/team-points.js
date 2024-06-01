@@ -99,6 +99,11 @@ const TeamPoints = () => {
           </div>
         </div>
         <div className="row border-bottom py-2">
+          <div className="col-4 text-center fontSize-0">Bramble Alternate</div>
+          <div className="col-4 text-center fontSize-0">{team1.brambleAlternate}</div>
+          <div className="col-4 text-center fontSize-0">{team2.brambleAlternate}</div>
+        </div>
+        <div className="row border-bottom py-2">
           <div className="col-4 text-center fontSize-0">Alternate</div>
           <div className="col-4 text-center fontSize-0">{team1.alternate}</div>
           <div className="col-4 text-center fontSize-0">{team2.alternate}</div>
