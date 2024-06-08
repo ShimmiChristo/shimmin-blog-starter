@@ -61,10 +61,10 @@ function getPlayerHandicap(player, gameplay, handicaps) {
     player4: 99,
   }
   //* handicap is half of what it is bc of 9 hole matches.
-  const p1 = Math.round(handicaps[0] / 2) // half bc of 9 hole matches
-  const p2 = Math.round(handicaps[1] / 2)
-  const p3 = handicaps[2] ? Math.round(handicaps[2] / 2) : 99
-  const p4 = handicaps[3] ? Math.round(handicaps[3] / 2) : 99
+  const p1 = Math.round(handicaps[0]) // half bc of 9 hole matches
+  const p2 = Math.round(handicaps[1])
+  const p3 = handicaps[2] ? Math.round(handicaps[2]) : 99
+  const p4 = handicaps[3] ? Math.round(handicaps[3]) : 99
   const lowHC = Math.min(p1, p2, p3, p4)
   const lowHCTeam1 = Math.min(p1, p3)
   const highHCTeam1 = Math.max(p1, p3)
@@ -81,14 +81,13 @@ function getPlayerHandicap(player, gameplay, handicaps) {
     newHC.player3 = team1Adj - lowHCTeam
     newHC.player4 = team2Adj - lowHCTeam
   } else if (gameplay === "scramble") {
-    // TODO: need to look at this math again. 
+    // TODO: need to look at this math again.
     // ! I think I need to add the high HC + low HC
     // let player1Adj = Math.round(0.35 * lowHCTeam1)
     // let player2Adj = Math.round(0.35 * lowHCTeam2)
     // let player3Adj = Math.round(0.15 * highHCTeam1)
     // let player4Adj = Math.round(0.15 * highHCTeam2)
     // let lowHCTeam = Math.min(player1Adj, player2Adj, player3Adj, player4Adj)
-    // console.log('lowHCTeam - ', lowHCTeam);
     // newHC.player1 = player1Adj - lowHCTeam
     // newHC.player2 = player2Adj - lowHCTeam
     // newHC.player3 = player3Adj - lowHCTeam
@@ -131,7 +130,8 @@ function getPlayerHandicap(player, gameplay, handicaps) {
     newHC.player3 = Math.round((p3 - lowHC) * 0.9)
     newHC.player4 = Math.round((p4 - lowHC) * 0.9)
   }
-  return newHC[`${player}`]
+  let playingHandicap = Math.round(newHC[`${player}`])
+  return playingHandicap
 }
 
 /**
@@ -188,9 +188,18 @@ function getCourseHandicap(
     *** FORMULA ****
     handicap * (course slope / 113) + (course rating - course par)
     round to nearest whole number (based on USGA handicap)
+
+    **** playing handicap ****
+    https://www.usga.org/content/usga/home-page/handicapping/roh/Content/rules/6%202%20Playing%20Handicap%20Calculation.htm
+
+    **** course handicap ****
+    https://www.usga.org/content/usga/home-page/handicapping/roh/Content/rules/6%201%20Course%20Handicap%20Calculation.htm
   */
-  const form = playerHandicap * (courseSlope / 113) + (courseRating - coursePar)
-  return Math.round(form)
+  const courseHandicap =
+    playerHandicap * (courseSlope / 113) + (courseRating - coursePar)
+  // * divide in 2 for 9 hole matches. (the hc is not exactly the same as the usga but close enough)
+  // * do not round before getting playing handicap
+  return courseHandicap / 2
 }
 
 export {
