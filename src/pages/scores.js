@@ -40,117 +40,146 @@ const TopicPage = ({ location }) => {
   const locationName = "Bay Harbor Golf Club"
   const courseUrl = "https://bayharborgolf.com/linksquarry"
 
-  // const p1 = "dylan"
-  // const p2 = "rj"
-  // const p3 = "craig"
-  // const p4 = "cam"
-  // const p5 = "dan"
-  // const p6 = "evan"
-  // const p7 = "matt"
-  // const p8 = "chris"
-  // const p9 = "jake"
-  // const p10 = "travis"
-  // const p11 = "derek"
-  // const p12 = "curtis"
+  const p1 = "dylan"
+  const p2 = "rj"
+  const p3 = "craig"
+  const p4 = "cam"
+  const p5 = "dan"
+  const p6 = "evan"
+  const p7 = "matt"
+  const p8 = "chris"
+  const p9 = "jake"
+  const p10 = "travis"
+  const p11 = "derek"
+  const p12 = "curtis"
 
-  // const matchesArr = [
-  //   {
-  //     matchId: "1.1 - Best Ball. Full handicap",
-  //     year: "_2023",
-  //     courseMatch: "boyneHighlandsArthurHills",
-  //     holes: "front",
-  //     matchHandicap: "full",
-  //     gameplay: "one-ball",
-  //     player1MatchHandicap: "",
-  //     player2MatchHandicap: "",
-  //     player3MatchHandicap: "",
-  //     player4MatchHandicap: "",
-  //   },
-  //   {
-  //     matchId: "1.2 - 2 Best Ball. Full handicap",
-  //     year: "_2023",
-  //     courseMatch: "boyneHighlandsArthurHills",
-  //     holes: "back",
-  //     matchHandicap: "full",
-  //     gameplay: "two-ball",
-  //     player1MatchHandicap: "",
-  //     player2MatchHandicap: "",
-  //     player3MatchHandicap: "",
-  //     player4MatchHandicap: "",
-  //   },
-  //   {
-  //     matchId: "2.1 - Alternate. 50% HC",
-  //     year: "_2023",
-  //     courseMatch: "boyneHighlandsDonaldRoss",
-  //     holes: "front",
-  //     matchHandicap: "full",
-  //     gameplay: "alternate",
-  //     player1MatchHandicap: "",
-  //     player2MatchHandicap: "",
-  //     player3MatchHandicap: "",
-  //     player4MatchHandicap: "",
-  //   },
-  //   {
-  //     matchId: "2.2 - Scramble. 35% low HC + 15% high HC",
-  //     year: "_2023",
-  //     courseMatch: "boyneHighlandsDonaldRoss",
-  //     holes: "back",
-  //     matchHandicap: "average",
-  //     gameplay: "scramble",
-  //     player1MatchHandicap: "",
-  //     player2MatchHandicap: "",
-  //     player3MatchHandicap: "",
-  //     player4MatchHandicap: "",
-  //   },
-  //   {
-  //     matchId: "3.1 - Bramble. Full HC",
-  //     year: "_2023",
-  //     courseMatch: "boyneHighlandsMoor",
-  //     holes: "front",
-  //     matchHandicap: "full",
-  //     gameplay: "bramble",
-  //     player1MatchHandicap: "",
-  //     player2MatchHandicap: "",
-  //     player3MatchHandicap: "",
-  //     player4MatchHandicap: "",
-  //   },
-  //   {
-  //     matchId: "3.2 - 2 Ball Bramble. Full HC",
-  //     year: "_2023",
-  //     courseMatch: "boyneHighlandsMoor",
-  //     holes: "back",
-  //     matchHandicap: "full",
-  //     gameplay: "two-ball",
-  //     player1MatchHandicap: "",
-  //     player2MatchHandicap: "",
-  //     player3MatchHandicap: "",
-  //     player4MatchHandicap: "",
-  //   },
-  //   {
-  //     matchId: "4.1 - Pinehurst. 60% low HC + 40% high HC",
-  //     year: "_2023",
-  //     courseMatch: "boyneHighlandsHeather",
-  //     holes: "front",
-  //     matchHandicap: "average",
-  //     gameplay: "pinehurst",
-  //     player1MatchHandicap: "",
-  //     player2MatchHandicap: "",
-  //     player3MatchHandicap: "",
-  //     player4MatchHandicap: "",
-  //   },
-  //   {
-  //     matchId: "4.2 - Singles Match. Full HC",
-  //     year: "_2023",
-  //     courseMatch: "boyneHighlandsHeather",
-  //     holes: "back",
-  //     matchHandicap: "full",
-  //     gameplay: "singles",
-  //     player1MatchHandicap: "",
-  //     player2MatchHandicap: "",
-  //     player3MatchHandicap: "",
-  //     player4MatchHandicap: "",
-  //   },
-  // ]
+  const matchesArr = [
+    {
+      matchId: "1.1 - Best Ball. Full handicap",
+      year: "_2024",
+      courseMatch: "bayHarborGolfClub",
+      holes: "front",
+      matchHandicap: "full",
+      gameplay: "one-ball",
+      player1MatchHandicap: "",
+      player2MatchHandicap: "",
+      player3MatchHandicap: "",
+      player4MatchHandicap: "",
+    },
+    {
+      matchId: "1.2 - 2 Best Ball. Full handicap",
+      year: "_2024",
+      courseMatch: "bayHarborGolfClub",
+      holes: "back",
+      matchHandicap: "full",
+      gameplay: "two-ball",
+      player1MatchHandicap: "",
+      player2MatchHandicap: "",
+      player3MatchHandicap: "",
+      player4MatchHandicap: "",
+    },
+    {
+      matchId: "2.1 - Alternate. 50% HC",
+      year: "_2024",
+      courseMatch: "boyneHighlandsMoor",
+      holes: "front",
+      matchHandicap: "full",
+      gameplay: "alternate",
+      player1MatchHandicap: "",
+      player2MatchHandicap: "",
+      player3MatchHandicap: "",
+      player4MatchHandicap: "",
+    },
+    {
+      matchId: "2.2 - Scramble. 35% low HC + 15% high HC",
+      year: "_2024",
+      courseMatch: "boyneHighlandsMoor",
+      holes: "back",
+      matchHandicap: "average",
+      gameplay: "scramble",
+      player1MatchHandicap: "",
+      player2MatchHandicap: "",
+      player3MatchHandicap: "",
+      player4MatchHandicap: "",
+    },
+    {
+      matchId: "3.1 - Bramble. Full HC",
+      year: "_2024",
+      courseMatch: "boyneHighlandsArthurHills",
+      holes: "front",
+      matchHandicap: "full",
+      gameplay: "bramble",
+      player1MatchHandicap: "",
+      player2MatchHandicap: "",
+      player3MatchHandicap: "",
+      player4MatchHandicap: "",
+    },
+    {
+      matchId: "3.2 - 2 Ball Bramble. Full HC",
+      year: "_2024",
+      courseMatch: "boyneHighlandsArthurHills",
+      holes: "back",
+      matchHandicap: "full",
+      gameplay: "two-ball",
+      player1MatchHandicap: "",
+      player2MatchHandicap: "",
+      player3MatchHandicap: "",
+      player4MatchHandicap: "",
+    },
+    {
+      matchId: "4.1 - Pinehurst. 60% low HC + 40% high HC",
+      year: "_2024",
+      courseMatch: "boyneHighlandsHeather",
+      holes: "front",
+      matchHandicap: "average",
+      gameplay: "pinehurst",
+      player1MatchHandicap: "",
+      player2MatchHandicap: "",
+      player3MatchHandicap: "",
+      player4MatchHandicap: "",
+    },
+    {
+      matchId: "4.2 - Singles Match. Full HC",
+      year: "_2024",
+      courseMatch: "boyneHighlandsHeather",
+      holes: "back",
+      matchHandicap: "full",
+      gameplay: "singles",
+      player1MatchHandicap: "",
+      player2MatchHandicap: "",
+      player3MatchHandicap: "",
+      player4MatchHandicap: "",
+    },
+  ]
+
+  const day1 = {
+    round1: {
+      times: ["8:30 AM", "11:00 AM"],
+      date: "Friday Sept 27",
+      courseLink: course["bayHarborGolfClub"].link,
+      courseName: course["bayHarborGolfClub"].name,
+    },
+    round2: {
+      times: ["2:30 PM", "5:00 PM"],
+      date: "Friday Sept 27",
+      courseLink: course["boyneHighlandsMoor"].link,
+      courseName: course["boyneHighlandsMoor"].name,
+    },
+  }
+  const day2 = {
+    round1: {
+      times: ["8:00 AM", "10:30 AM"],
+      date: "Saturday Sept 28",
+      courseLink: course["boyneHighlandsArthurHills"].link,
+      courseName: course["boyneHighlandsArthurHills"].name,
+    },
+    round2: {
+      times: ["2:00 PM", "4:30 PM"],
+      date: "Saturday Sept 28",
+      courseLink: course["boyneHighlandsHeather"].link,
+      courseName: course["boyneHighlandsHeather"].name,
+    },
+  }
 
   return (
     <Layout location={location} title={siteTitle}>
@@ -163,7 +192,7 @@ const TopicPage = ({ location }) => {
         courseUrl={courseUrl}
       />
 
-      {/* <MatchNav
+      <MatchNav
         location={location}
         titles={[
           {
@@ -209,7 +238,7 @@ const TopicPage = ({ location }) => {
         ]}
       />
 
-      <MatchScore year="_2023" lastYearWinner="green" />
+      <MatchScore year="_2024" lastYearWinner="blue" />
       <MatchNavSection
         data-visible={
           (location.pathname === "/scores/" &&
@@ -221,15 +250,15 @@ const TopicPage = ({ location }) => {
         data-link-id="r1-best-ball"
       >
         <div className="course__info">
-          <span>Friday Sept 22, 8:30 AM at </span>
-          <a href={course["boyneHighlandsArthurHills"].link}>
-            {course[`boyneHighlandsArthurHills`].name}
+          <span>Friday Sept 27, 8:30 AM at </span>
+          <a href={course["bayHarborGolfClub"].link}>
+            {course[`bayHarborGolfClub`].name}
           </a>
         </div>
-        <Match
+        {/* <Match
           matchId="1.1 - Best Ball. Full handicap"
-          year="_2023"
-          courseMatch="boyneHighlandsArthurHills"
+          year="_2024"
+          courseMatch="bayHarborGolfClub"
           holes="front"
           matchHandicap="full"
           gameplay="one-ball"
@@ -244,8 +273,8 @@ const TopicPage = ({ location }) => {
         />
         <Match
           matchId="1.1 - Best Ball. Full handicap"
-          year="_2023"
-          courseMatch="boyneHighlandsArthurHills"
+          year="_2024"
+          courseMatch="bayHarborGolfClub"
           holes="front"
           matchHandicap="full"
           gameplay="one-ball"
@@ -260,8 +289,8 @@ const TopicPage = ({ location }) => {
         />
         <Match
           matchId="1.1 - Best Ball. Full handicap"
-          year="_2023"
-          courseMatch="boyneHighlandsArthurHills"
+          year="_2024"
+          courseMatch="bayHarborGolfClub"
           holes="front"
           matchHandicap="full"
           gameplay="one-ball"
@@ -273,7 +302,7 @@ const TopicPage = ({ location }) => {
           player2MatchHandicap=""
           player3MatchHandicap=""
           player4MatchHandicap=""
-        />
+        /> */}
       </MatchNavSection>
 
       <MatchNavSection
@@ -281,15 +310,15 @@ const TopicPage = ({ location }) => {
         data-link-id="r1-two-best-ball"
       >
         <div className="course__info">
-          <span>Friday Sept 22, 11:00 AM at </span>
-          <a href={course["boyneHighlandsArthurHills"].link}>
-            {course[`boyneHighlandsArthurHills`].name}
+          <span>Friday Sept 27, 11:00 AM at </span>
+          <a href={course["bayHarborGolfClub"].link}>
+            {course[`bayHarborGolfClub`].name}
           </a>
         </div>
-        <Match
+        {/* <Match
           matchId="1.2 - 2 Best Ball. Full handicap"
-          year="_2023"
-          courseMatch="boyneHighlandsArthurHills"
+          year="_2024"
+          courseMatch="bayHarborGolfClub"
           holes="back"
           matchHandicap="full"
           gameplay="two-ball"
@@ -304,8 +333,8 @@ const TopicPage = ({ location }) => {
         />
         <Match
           matchId="1.2 - 2 Best Ball. Full handicap"
-          year="_2023"
-          courseMatch="boyneHighlandsArthurHills"
+          year="_2024"
+          courseMatch="bayHarborGolfClub"
           holes="back"
           matchHandicap="full"
           gameplay="two-ball"
@@ -320,8 +349,8 @@ const TopicPage = ({ location }) => {
         />
         <Match
           matchId="1.2 - 2 Best Ball. Full handicap"
-          year="_2023"
-          courseMatch="boyneHighlandsArthurHills"
+          year="_2024"
+          courseMatch="bayHarborGolfClub"
           holes="back"
           matchHandicap="full"
           gameplay="two-ball"
@@ -333,7 +362,7 @@ const TopicPage = ({ location }) => {
           player2MatchHandicap=""
           player3MatchHandicap=""
           player4MatchHandicap=""
-        />
+        /> */}
       </MatchNavSection>
 
       <MatchNavSection
@@ -341,15 +370,15 @@ const TopicPage = ({ location }) => {
         data-link-id="r2-alternate"
       >
         <div className="course__info">
-          <span>Friday Sept 22, 2:30 PM at </span>
-          <a href={course["boyneHighlandsDonaldRoss"].link}>
-            {course[`boyneHighlandsDonaldRoss`].name}
+          <span>Friday Sept 27, 2:30 PM at </span>
+          <a href={course["boyneHighlandsMoor"].link}>
+            {course[`boyneHighlandsMoor`].name}
           </a>
         </div>
-        <Match
+        {/* <Match
           matchId="2.1 - Alternate. 50% HC"
-          year="_2023"
-          courseMatch="boyneHighlandsDonaldRoss"
+          year="_2024"
+          courseMatch="boyneHighlandsMoor"
           holes="front"
           matchHandicap="full"
           gameplay="alternate"
@@ -364,8 +393,8 @@ const TopicPage = ({ location }) => {
         />
         <Match
           matchId="2.1 - Alternate. 50% HC"
-          year="_2023"
-          courseMatch="boyneHighlandsDonaldRoss"
+          year="_2024"
+          courseMatch="boyneHighlandsMoor"
           holes="front"
           matchHandicap="full"
           gameplay="alternate"
@@ -380,8 +409,8 @@ const TopicPage = ({ location }) => {
         />
         <Match
           matchId="2.1 - Alternate. 50% HC"
-          year="_2023"
-          courseMatch="boyneHighlandsDonaldRoss"
+          year="_2024"
+          courseMatch="boyneHighlandsMoor"
           holes="front"
           matchHandicap="full"
           gameplay="alternate"
@@ -393,23 +422,23 @@ const TopicPage = ({ location }) => {
           player2MatchHandicap=""
           player3MatchHandicap=""
           player4MatchHandicap=""
-        />
+        /> */}
       </MatchNavSection>
 
-      <MatchNavSection
+      <MatchNavSection 
         data-visible={location.hash === "#r2-scramble" ? "true" : "false"}
         data-link-id="r2-scramble"
       >
         <div className="course__info">
-          <span>Friday Sept 22, 5:00 PM at </span>
-          <a href={course["boyneHighlandsDonaldRoss"].link}>
-            {course[`boyneHighlandsDonaldRoss`].name}
+          <span>Friday Sept 27, 5:00 PM at </span>
+          <a href={course["boyneHighlandsMoor"].link}>
+            {course[`boyneHighlandsMoor`].name}
           </a>
         </div>
-        <Match
+        {/* <Match
           matchId="2.2 - Scramble. 35% low HC + 15% high HC"
-          year="_2023"
-          courseMatch="boyneHighlandsDonaldRoss"
+          year="_2024"
+          courseMatch="boyneHighlandsMoor"
           holes="back"
           matchHandicap="average"
           gameplay="scramble"
@@ -424,8 +453,8 @@ const TopicPage = ({ location }) => {
         />
         <Match
           matchId="2.2 - Scramble. 35% low HC + 15% high HC"
-          year="_2023"
-          courseMatch="boyneHighlandsDonaldRoss"
+          year="_2024"
+          courseMatch="boyneHighlandsMoor"
           holes="back"
           matchHandicap="average"
           gameplay="scramble"
@@ -440,8 +469,8 @@ const TopicPage = ({ location }) => {
         />
         <Match
           matchId="2.2 - Scramble. 35% low HC + 15% high HC"
-          year="_2023"
-          courseMatch="boyneHighlandsDonaldRoss"
+          year="_2024"
+          courseMatch="boyneHighlandsMoor"
           holes="back"
           matchHandicap="average"
           gameplay="scramble"
@@ -453,7 +482,7 @@ const TopicPage = ({ location }) => {
           player2MatchHandicap=""
           player3MatchHandicap=""
           player4MatchHandicap=""
-        />
+        /> */}
       </MatchNavSection>
 
       <MatchNavSection
@@ -461,15 +490,15 @@ const TopicPage = ({ location }) => {
         data-link-id="r3-bramble"
       >
         <div className="course__info">
-          <span>Saturday Sept 23, 8:50 AM at </span>
-          <a href={course["boyneHighlandsMoor"].link}>
-            {course[`boyneHighlandsMoor`].name}
+          <span>Saturday Sept 28, 8:00 AM at </span>
+          <a href={course["boyneHighlandsArthurHills"].link}>
+            {course[`boyneHighlandsArthurHills`].name}
           </a>
         </div>
-        <Match
+        {/* <Match
           matchId="3.1 - Bramble. Full HC"
-          year="_2023"
-          courseMatch="boyneHighlandsMoor"
+          year="_2024"
+          courseMatch="boyneHighlandsArthurHills"
           holes="front"
           matchHandicap="full"
           gameplay="bramble"
@@ -484,8 +513,8 @@ const TopicPage = ({ location }) => {
         />
         <Match
           matchId="3.1 - Bramble. Full HC"
-          year="_2023"
-          courseMatch="boyneHighlandsMoor"
+          year="_2024"
+          courseMatch="boyneHighlandsArthurHills"
           holes="front"
           matchHandicap="full"
           gameplay="bramble"
@@ -500,8 +529,8 @@ const TopicPage = ({ location }) => {
         />
         <Match
           matchId="3.1 - Bramble. Full HC"
-          year="_2023"
-          courseMatch="boyneHighlandsMoor"
+          year="_2024"
+          courseMatch="boyneHighlandsArthurHills"
           holes="front"
           matchHandicap="full"
           gameplay="bramble"
@@ -513,7 +542,7 @@ const TopicPage = ({ location }) => {
           player2MatchHandicap=""
           player3MatchHandicap=""
           player4MatchHandicap=""
-        />
+        /> */}
       </MatchNavSection>
 
       <MatchNavSection
@@ -521,15 +550,15 @@ const TopicPage = ({ location }) => {
         data-link-id="r3-2-ball-bramble"
       >
         <div className="course__info">
-          <span>Saturday Sept 23, 11:30 AM at </span>
-          <a href={course["boyneHighlandsMoor"].link}>
-            {course[`boyneHighlandsMoor`].name}
+          <span>Saturday Sept 28, 11:00 AM at </span>
+          <a href={course["boyneHighlandsArthurHills"].link}>
+            {course[`boyneHighlandsArthurHills`].name}
           </a>
         </div>
-        <Match
+        {/* <Match
           matchId="3.2 - 2 Ball Bramble. Full HC"
-          year="_2023"
-          courseMatch="boyneHighlandsMoor"
+          year="_2024"
+          courseMatch="boyneHighlandsArthurHills"
           holes="back"
           matchHandicap="full"
           gameplay="two-ball"
@@ -544,8 +573,8 @@ const TopicPage = ({ location }) => {
         />
         <Match
           matchId="3.2 - 2 Ball Bramble. Full HC"
-          year="_2023"
-          courseMatch="boyneHighlandsMoor"
+          year="_2024"
+          courseMatch="boyneHighlandsArthurHills"
           holes="back"
           matchHandicap="full"
           gameplay="two-ball"
@@ -560,8 +589,8 @@ const TopicPage = ({ location }) => {
         />
         <Match
           matchId="3.2 - 2 Ball Bramble. Full HC"
-          year="_2023"
-          courseMatch="boyneHighlandsMoor"
+          year="_2024"
+          courseMatch="boyneHighlandsArthurHills"
           holes="back"
           matchHandicap="full"
           gameplay="two-ball"
@@ -573,7 +602,7 @@ const TopicPage = ({ location }) => {
           player2MatchHandicap=""
           player3MatchHandicap=""
           player4MatchHandicap=""
-        />
+        /> */}
       </MatchNavSection>
 
       <MatchNavSection
@@ -581,15 +610,15 @@ const TopicPage = ({ location }) => {
         data-link-id="r4-pinehurst"
       >
         <div className="course__info">
-          <span>Saturday Sept 23, 2:50 PM at </span>
+          <span>Saturday Sept 28, 2:00 PM at </span>
           <a href={course["boyneHighlandsHeather"].link}>
             {course[`boyneHighlandsHeather`].name}
           </a>
         </div>
 
-        <Match
+        {/* <Match
           matchId="4.1 - Pinehurst. 60% low HC + 40% high HC"
-          year="_2023"
+          year="_2024"
           courseMatch="boyneHighlandsHeather"
           holes="front"
           matchHandicap="average"
@@ -605,7 +634,7 @@ const TopicPage = ({ location }) => {
         />
         <Match
           matchId="4.1 - Pinehurst. 60% low HC + 40% high HC"
-          year="_2023"
+          year="_2024"
           courseMatch="boyneHighlandsHeather"
           holes="front"
           matchHandicap="average"
@@ -621,7 +650,7 @@ const TopicPage = ({ location }) => {
         />
         <Match
           matchId="4.1 - Pinehurst. 60% low HC + 40% high HC"
-          year="_2023"
+          year="_2024"
           courseMatch="boyneHighlandsHeather"
           holes="front"
           matchHandicap="average"
@@ -634,7 +663,7 @@ const TopicPage = ({ location }) => {
           player2MatchHandicap=""
           player3MatchHandicap=""
           player4MatchHandicap=""
-        />
+        /> */}
       </MatchNavSection>
 
       <MatchNavSection
@@ -642,14 +671,14 @@ const TopicPage = ({ location }) => {
         data-link-id="r4-singles"
       >
         <div className="course__info">
-          <span>Saturday Sept 23, 5:30 PM at </span>
+          <span>Saturday Sept 28, 5:00 PM at </span>
           <a href={course["boyneHighlandsHeather"].link}>
             {course[`boyneHighlandsHeather`].name}
           </a>
         </div>
-        <Match
+        {/* <Match
           matchId="4.2 - Singles Match. Full HC"
-          year="_2023"
+          year="_2024"
           courseMatch="boyneHighlandsHeather"
           holes="back"
           matchHandicap="full"
@@ -661,7 +690,7 @@ const TopicPage = ({ location }) => {
         />
         <Match
           matchId="4.2 - Singles Match. Full HC"
-          year="_2023"
+          year="_2024"
           courseMatch="boyneHighlandsHeather"
           holes="back"
           matchHandicap="full"
@@ -673,7 +702,7 @@ const TopicPage = ({ location }) => {
         />
         <Match
           matchId="4.2 - Singles Match. Full HC"
-          year="_2023"
+          year="_2024"
           courseMatch="boyneHighlandsHeather"
           holes="back"
           matchHandicap="full"
@@ -685,7 +714,7 @@ const TopicPage = ({ location }) => {
         />
         <Match
           matchId="4.2 - Singles Match. Full HC"
-          year="_2023"
+          year="_2024"
           courseMatch="boyneHighlandsHeather"
           holes="back"
           matchHandicap="full"
@@ -698,7 +727,7 @@ const TopicPage = ({ location }) => {
 
         <Match
           matchId="4.2 - Singles Match. Full HC"
-          year="_2023"
+          year="_2024"
           courseMatch="boyneHighlandsHeather"
           holes="back"
           matchHandicap="full"
@@ -710,7 +739,7 @@ const TopicPage = ({ location }) => {
         />
         <Match
           matchId="4.2 - Singles Match. Full HC"
-          year="_2023"
+          year="_2024"
           courseMatch="boyneHighlandsHeather"
           holes="back"
           matchHandicap="full"
@@ -719,8 +748,8 @@ const TopicPage = ({ location }) => {
           player2={p1}
           player1MatchHandicap=""
           player2MatchHandicap=""
-        />
-      </MatchNavSection> */}
+        /> */}
+      </MatchNavSection>
     </Layout>
   )
 }

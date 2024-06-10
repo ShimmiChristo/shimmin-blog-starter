@@ -1,6 +1,218 @@
 [
   {
     "course": {
+      "bayHarborGolfClub": {
+        "name": "Links/Quarry at Bay Harbor GC",
+        "link": "https://bayharborgolf.com/linksquarry",
+        "holes": [
+          {
+            "number": 1,
+            "tees": {
+              "purple": 405,
+              "orange": 375
+            },
+            "handicap": 5,
+            "par": 4
+          },
+          {
+            "number": 2,
+            "tees": {
+              "purple": 420,
+              "orange": 383
+            },
+            "handicap": 9,
+            "par": 4
+          },
+          {
+            "number": 3,
+            "tees": {
+              "purple": 368,
+              "orange": 368
+            },
+            "handicap": 7,
+            "par": 4
+          },
+          {
+            "number": 4,
+            "tees": {
+              "purple": 151,
+              "orange": 151
+            },
+            "handicap": 17,
+            "par": 3
+          },
+          {
+            "number": 5,
+            "tees": {
+              "purple": 332,
+              "orange": 332
+            },
+            "handicap": 11,
+            "par": 4
+          },
+          {
+            "number": 6,
+            "tees": {
+              "purple": 388,
+              "orange": 352
+            },
+            "handicap": 1,
+            "par": 4
+          },
+          {
+            "number": 7,
+            "tees": {
+              "purple": 490,
+              "orange": 490
+            },
+            "handicap": 13,
+            "par": 5
+          },
+          {
+            "number": 8,
+            "tees": {
+              "purple": 206,
+              "orange": 175
+            },
+            "handicap": 15,
+            "par": 3
+          },
+          {
+            "number": 9,
+            "tees": {
+              "purple": 490,
+              "orange": 490
+            },
+            "handicap": 3,
+            "par": 5
+          },
+          {
+            "number": 10,
+            "tees": {
+              "purple": 355,
+              "orange": 355
+            },
+            "handicap": 14,
+            "par": 4
+          },
+          {
+            "number": 11,
+            "tees": {
+              "purple": 173,
+              "orange": 146
+            },
+            "handicap": 18,
+            "par": 3
+          },
+          {
+            "number": 12,
+            "tees": {
+              "purple": 523,
+              "orange": 523
+            },
+            "handicap": 6,
+            "par": 5
+          },
+          {
+            "number": 13,
+            "tees": {
+              "purple": 412,
+              "orange": 412
+            },
+            "handicap": 10,
+            "par": 4
+          },
+          {
+            "number": 14,
+            "tees": {
+              "purple": 468,
+              "orange": 468
+            },
+            "handicap": 2,
+            "par": 5
+          },
+          {
+            "number": 15,
+            "tees": {
+              "purple": 312,
+              "orange": 312
+            },
+            "handicap": 12,
+            "par": 4
+          },
+          {
+            "number": 16,
+            "tees": {
+              "purple": 392,
+              "orange": 366
+            },
+            "handicap": 4,
+            "par": 4
+          },
+          {
+            "number": 17,
+            "tees": {
+              "purple": 172,
+              "orange": 172
+            },
+            "handicap": 16,
+            "par": 3
+          },
+          {
+            "number": 18,
+            "tees": {
+              "purple": 370,
+              "orange": 358
+            },
+            "handicap": 8,
+            "par": 4
+          }
+        ],
+        "totals": {
+          "tees": {
+            "purple": {
+              "out": {
+                "yardage": 3250,
+                "par": 36,
+                "index": 36.1,
+                "slope": 139.0
+              },
+              "in": {
+                "yardage": 3177,
+                "par": 37,
+                "index": 36.0,
+                "slope": 147.0
+              },
+              "total": {
+                "yardage": 6427,
+                "par": 72,
+                "index": 72.1,
+                "slope": 143
+              }
+            },
+            "orange": {
+              "out": {
+                "yardage": 3116,
+                "par": 36,
+                "index": 35.3,
+                "slope": 138.0
+              },
+              "in": {
+                "yardage": 3112,
+                "par": 36,
+                "index": 35.6,
+                "slope": 146.0
+              },
+              "total": {
+                "yardage": 6228,
+                "par": 72,
+                "index": 70.9,
+                "slope": 142
+              }
+            }
+          }
+        }
+      },
       "boyneHighlandsArthurHills": {
         "name": "Arthur Hills at Boyne Highlands",
         "link": "https://boynegolf.com/the-highlands/arthur-hills",
