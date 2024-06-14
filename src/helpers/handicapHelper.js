@@ -99,7 +99,7 @@ function getPlayerHandicap(player, gameplay, handicaps) {
     newHC.player2 = team2Adj - lowHCTeam
     newHC.player3 = team1Adj - lowHCTeam
     newHC.player4 = team2Adj - lowHCTeam
-  } else if (gameplay === "bramble") {
+  } else if (gameplay === "bramble" || gameplay === "two-ball-bramble") {
     // let team1Adj = Math.round((p1 + p3) * 0.8)
     // let team2Adj = Math.round((p2 + p4) * 0.8)
     // let lowHCTeam = Math.min(team1Adj, team2Adj)
@@ -169,7 +169,11 @@ function getMatchHandicap(
     let team1Adj = Math.round((player1HC + player2HC) / 2)
     let team2Adj = Math.round((player3HC + player4HC) / 2)
     return calcToLowestHandicap(team1Adj, team2Adj, 99, 99).player1
-  } else if (gameplay === "one-ball" || gameplay === "two-ball") {
+  } else if (
+    gameplay === "one-ball" ||
+    gameplay === "two-ball" ||
+    gameplay === "two-ball-bramble"
+  ) {
     return calcToLowestHandicap(p1HC, p2HC, p3HC, p4HC).player1
   } else if (player2Name && player2HC) {
     return p2HC

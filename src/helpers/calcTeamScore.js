@@ -63,12 +63,13 @@ function calcTeamScore(
     if (
       isNaN(playerTwoHandicapScore) !== true &&
       player2Name !== undefined &&
-      gameplay !== "two-ball"
+      gameplay !== "two-ball" &&
+      gameplay !== "two-ball-bramble"
     ) {
       scoresArr.push(Math.min(playerOneHandicapScore, playerTwoHandicapScore))
     } else if (
-      isNaN(playerTwoHandicapScore) !== true &&
-      gameplay === "two-ball"
+      (isNaN(playerTwoHandicapScore) !== true && gameplay === "two-ball") ||
+      gameplay === "two-ball-bramble"
     ) {
       scoresArr.push(
         Number(playerOneHandicapScore) + Number(playerTwoHandicapScore)
