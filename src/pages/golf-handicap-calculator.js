@@ -176,10 +176,11 @@ const GolfHandicapCalc = ({ data, location }) => {
 
           let playerScore = val.nineholes ? val.nineholes : val.eighteenholes
           let courseRating = nineholes ? val.courserating / 2 : val.courserating
+          let courseSlope = nineholes ? val.courseslope / 2 : val.courseslope
 
           val.coursehandicap = calcCourseDiff(
             playerScore,
-            val.courseslope,
+            courseSlope,
             courseRating
           )
         }
