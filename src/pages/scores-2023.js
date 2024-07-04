@@ -51,7 +51,7 @@ const TopicPage = ({ location }) => {
 
   const matchesArr = [
     {
-      matchId: "1.1 - Best Ball. Full handicap",
+      matchId: "Best Ball. Full handicap",
       year: "_2023",
       courseMatch: "boyneHighlandsArthurHills",
       holes: "front",
@@ -63,7 +63,7 @@ const TopicPage = ({ location }) => {
       player4MatchHandicap: "",
     },
     {
-      matchId: "1.2 - 2 Best Ball. Full handicap",
+      matchId: "2 Best Ball. Full handicap",
       year: "_2023",
       courseMatch: "boyneHighlandsArthurHills",
       holes: "back",
@@ -75,7 +75,7 @@ const TopicPage = ({ location }) => {
       player4MatchHandicap: "",
     },
     {
-      matchId: "2.1 - Alternate. 50% HC",
+      matchId: "Alternate. 50% HC",
       year: "_2023",
       courseMatch: "boyneHighlandsDonaldRoss",
       holes: "front",
@@ -87,7 +87,7 @@ const TopicPage = ({ location }) => {
       player4MatchHandicap: "",
     },
     {
-      matchId: "2.2 - Scramble. 35% low HC + 15% high HC",
+      matchId: "Scramble. 35% low HC + 15% high HC",
       year: "_2023",
       courseMatch: "boyneHighlandsDonaldRoss",
       holes: "back",
@@ -99,7 +99,7 @@ const TopicPage = ({ location }) => {
       player4MatchHandicap: "",
     },
     {
-      matchId: "3.1 - Bramble. Full HC",
+      matchId: "Bramble. Full HC",
       year: "_2023",
       courseMatch: "boyneHighlandsMoor",
       holes: "front",
@@ -111,7 +111,7 @@ const TopicPage = ({ location }) => {
       player4MatchHandicap: "",
     },
     {
-      matchId: "3.2 - 2 Ball Bramble. Full HC",
+      matchId: "2 Ball Bramble. Full HC",
       year: "_2023",
       courseMatch: "boyneHighlandsMoor",
       holes: "back",
@@ -123,7 +123,7 @@ const TopicPage = ({ location }) => {
       player4MatchHandicap: "",
     },
     {
-      matchId: "4.1 - Pinehurst. 60% low HC + 40% high HC",
+      matchId: "Pinehurst. 60% low HC + 40% high HC",
       year: "_2023",
       courseMatch: "boyneHighlandsHeather",
       holes: "front",
@@ -135,7 +135,7 @@ const TopicPage = ({ location }) => {
       player4MatchHandicap: "",
     },
     {
-      matchId: "4.2 - Singles Match. Full HC",
+      matchId: "Singles Match. Full HC",
       year: "_2023",
       courseMatch: "boyneHighlandsHeather",
       holes: "back",
@@ -210,7 +210,7 @@ const TopicPage = ({ location }) => {
           </a>
         </div>
         <Match
-          matchId={matchesArr[0].matchId}
+          matchId={`1 ${matchesArr[0].matchId}`}
           year={matchesArr[0].year}
           courseMatch={matchesArr[0].courseMatch}
           holes={matchesArr[0].holes}
@@ -226,7 +226,7 @@ const TopicPage = ({ location }) => {
           player4MatchHandicap={matchesArr[0].player4MatchHandicap}
         />
         <Match
-          matchId={matchesArr[0].matchId}
+          matchId={`2 ${matchesArr[0].matchId}`}
           year={matchesArr[0].year}
           courseMatch={matchesArr[0].courseMatch}
           holes={matchesArr[0].holes}
@@ -242,7 +242,7 @@ const TopicPage = ({ location }) => {
           player4MatchHandicap={matchesArr[0].player4MatchHandicap}
         />
         <Match
-          matchId={matchesArr[0].matchId}
+          matchId={`3 ${matchesArr[0].matchId}`}
           year={matchesArr[0].year}
           courseMatch={matchesArr[0].courseMatch}
           holes={matchesArr[0].holes}
@@ -269,7 +269,7 @@ const TopicPage = ({ location }) => {
           </a>
         </div>
         <Match
-          matchId={matchesArr[1].matchId}
+          matchId={`4 ${matchesArr[1].matchId}`}
           year={matchesArr[1].year}
           courseMatch={matchesArr[1].courseMatch}
           holes={matchesArr[1].holes}
@@ -285,7 +285,7 @@ const TopicPage = ({ location }) => {
           player4MatchHandicap={matchesArr[1].player4MatchHandicap}
         />
         <Match
-          matchId={matchesArr[1].matchId}
+          matchId={`5 ${matchesArr[1].matchId}`}
           year={matchesArr[1].year}
           courseMatch={matchesArr[1].courseMatch}
           holes={matchesArr[1].holes}
@@ -301,7 +301,7 @@ const TopicPage = ({ location }) => {
           player4MatchHandicap={matchesArr[1].player4MatchHandicap}
         />
         <Match
-          matchId={matchesArr[1].matchId}
+          matchId={`6 ${matchesArr[1].matchId}`}
           year={matchesArr[1].year}
           courseMatch={matchesArr[1].courseMatch}
           holes={matchesArr[1].holes}
@@ -328,7 +328,7 @@ const TopicPage = ({ location }) => {
           </a>
         </div>
         <Match
-          matchId={matchesArr[2].matchId}
+          matchId={`7 ${matchesArr[2].matchId}`}
           year={matchesArr[2].year}
           courseMatch={matchesArr[2].courseMatch}
           holes={matchesArr[2].holes}
@@ -344,7 +344,7 @@ const TopicPage = ({ location }) => {
           player4MatchHandicap={matchesArr[2].player4MatchHandicap}
         />
         <Match
-          matchId={matchesArr[2].matchId}
+          matchId={`8 ${matchesArr[2].matchId}`}
           year={matchesArr[2].year}
           courseMatch={matchesArr[2].courseMatch}
           holes={matchesArr[2].holes}
@@ -360,7 +360,7 @@ const TopicPage = ({ location }) => {
           player4MatchHandicap={matchesArr[2].player4MatchHandicap}
         />
         <Match
-          matchId={matchesArr[2].matchId}
+          matchId={`9 ${matchesArr[2].matchId}`}
           year={matchesArr[2].year}
           courseMatch={matchesArr[2].courseMatch}
           holes={matchesArr[2].holes}
@@ -388,7 +388,7 @@ const TopicPage = ({ location }) => {
           </a>
         </div>
         <Match
-          matchId={matchesArr[3].matchId}
+          matchId={`10 ${matchesArr[3].matchId}`}
           year={matchesArr[3].year}
           courseMatch={matchesArr[3].courseMatch}
           holes={matchesArr[3].holes}
@@ -404,7 +404,7 @@ const TopicPage = ({ location }) => {
           player4MatchHandicap={matchesArr[3].player4MatchHandicap}
         />
         <Match
-          matchId={matchesArr[3].matchId}
+          matchId={`11 ${matchesArr[3].matchId}`}
           year={matchesArr[3].year}
           courseMatch={matchesArr[3].courseMatch}
           holes={matchesArr[3].holes}
@@ -420,7 +420,7 @@ const TopicPage = ({ location }) => {
           player4MatchHandicap={matchesArr[3].player4MatchHandicap}
         />
         <Match
-          matchId={matchesArr[3].matchId}
+          matchId={`12 ${matchesArr[3].matchId}`}
           year={matchesArr[3].year}
           courseMatch={matchesArr[3].courseMatch}
           holes={matchesArr[3].holes}
@@ -448,7 +448,7 @@ const TopicPage = ({ location }) => {
           </a>
         </div>
         <Match
-          matchId={matchesArr[4].matchId}
+          matchId={`13 ${matchesArr[4].matchId}`}
           year={matchesArr[4].year}
           courseMatch={matchesArr[4].courseMatch}
           holes={matchesArr[4].holes}
@@ -464,7 +464,7 @@ const TopicPage = ({ location }) => {
           player4MatchHandicap={matchesArr[4].player4MatchHandicap}
         />
         <Match
-          matchId={matchesArr[4].matchId}
+          matchId={`14 ${matchesArr[4].matchId}`}
           year={matchesArr[4].year}
           courseMatch={matchesArr[4].courseMatch}
           holes={matchesArr[4].holes}
@@ -480,7 +480,7 @@ const TopicPage = ({ location }) => {
           player4MatchHandicap={matchesArr[4].player4MatchHandicap}
         />
         <Match
-          matchId={matchesArr[4].matchId}
+          matchId={`15 ${matchesArr[4].matchId}`}
           year={matchesArr[4].year}
           courseMatch={matchesArr[4].courseMatch}
           holes={matchesArr[4].holes}
@@ -508,7 +508,7 @@ const TopicPage = ({ location }) => {
           </a>
         </div>
         <Match
-          matchId={matchesArr[5].matchId}
+          matchId={`16 ${matchesArr[5].matchId}`}
           year={matchesArr[5].year}
           courseMatch={matchesArr[5].courseMatch}
           holes={matchesArr[5].holes}
@@ -524,7 +524,7 @@ const TopicPage = ({ location }) => {
           player4MatchHandicap={matchesArr[5].player4MatchHandicap}
         />
         <Match
-          matchId={matchesArr[5].matchId}
+          matchId={`17 ${matchesArr[5].matchId}`}
           year={matchesArr[5].year}
           courseMatch={matchesArr[5].courseMatch}
           holes={matchesArr[5].holes}
@@ -540,7 +540,7 @@ const TopicPage = ({ location }) => {
           player4MatchHandicap={matchesArr[5].player4MatchHandicap}
         />
         <Match
-          matchId={matchesArr[5].matchId}
+          matchId={`18 ${matchesArr[5].matchId}`}
           year={matchesArr[5].year}
           courseMatch={matchesArr[5].courseMatch}
           holes={matchesArr[5].holes}
@@ -569,7 +569,7 @@ const TopicPage = ({ location }) => {
         </div>
 
         <Match
-          matchId={matchesArr[6].matchId}
+          matchId={`19 ${matchesArr[6].matchId}`}
           year={matchesArr[6].year}
           courseMatch={matchesArr[6].courseMatch}
           holes={matchesArr[6].holes}
@@ -585,7 +585,7 @@ const TopicPage = ({ location }) => {
           player4MatchHandicap={matchesArr[6].player4MatchHandicap}
         />
         <Match
-          matchId={matchesArr[6].matchId}
+          matchId={`20 ${matchesArr[6].matchId}`}
           year={matchesArr[6].year}
           courseMatch={matchesArr[6].courseMatch}
           holes={matchesArr[6].holes}
@@ -601,7 +601,7 @@ const TopicPage = ({ location }) => {
           player4MatchHandicap={matchesArr[6].player4MatchHandicap}
         />
         <Match
-          matchId={matchesArr[6].matchId}
+          matchId={`21 ${matchesArr[6].matchId}`}
           year={matchesArr[6].year}
           courseMatch={matchesArr[6].courseMatch}
           holes={matchesArr[6].holes}
@@ -629,7 +629,7 @@ const TopicPage = ({ location }) => {
           </a>
         </div>
         <Match
-          matchId={matchesArr[7].matchId}
+          matchId={`22 ${matchesArr[7].matchId}`}
           year={matchesArr[7].year}
           courseMatch={matchesArr[7].courseMatch}
           holes={matchesArr[7].holes}
@@ -641,7 +641,7 @@ const TopicPage = ({ location }) => {
           player2MatchHandicap=""
         />
         <Match
-          matchId={matchesArr[7].matchId}
+          matchId={`23 ${matchesArr[7].matchId}`}
           year={matchesArr[7].year}
           courseMatch={matchesArr[7].courseMatch}
           holes={matchesArr[7].holes}
@@ -653,7 +653,7 @@ const TopicPage = ({ location }) => {
           player2MatchHandicap=""
         />
         <Match
-          matchId={matchesArr[7].matchId}
+          matchId={`24 ${matchesArr[7].matchId}`}
           year={matchesArr[7].year}
           courseMatch={matchesArr[7].courseMatch}
           holes={matchesArr[7].holes}
@@ -665,7 +665,7 @@ const TopicPage = ({ location }) => {
           player2MatchHandicap=""
         />
         <Match
-          matchId={matchesArr[7].matchId}
+          matchId={`25 ${matchesArr[7].matchId}`}
           year={matchesArr[7].year}
           courseMatch={matchesArr[7].courseMatch}
           holes={matchesArr[7].holes}
@@ -678,7 +678,7 @@ const TopicPage = ({ location }) => {
         />
 
         <Match
-          matchId={matchesArr[7].matchId}
+          matchId={`26 ${matchesArr[7].matchId}`}
           year={matchesArr[7].year}
           courseMatch={matchesArr[7].courseMatch}
           holes={matchesArr[7].holes}
@@ -690,7 +690,7 @@ const TopicPage = ({ location }) => {
           player2MatchHandicap=""
         />
         <Match
-          matchId={matchesArr[7].matchId}
+          matchId={`27 ${matchesArr[7].matchId}`}
           year={matchesArr[7].year}
           courseMatch={matchesArr[7].courseMatch}
           holes={matchesArr[7].holes}
