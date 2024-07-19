@@ -92,6 +92,48 @@ export const PlayerInfoUpdate = () => {
         chris {
           name
           year {
+            _2024 {
+              handicap
+              id
+              team
+              points {
+                game
+                id
+                wins
+                ties
+                losses
+              }
+              scores {
+                boyneHighlandsArthurHills {
+                  course
+                  frontHandicap
+                  front
+                  back
+                  backHandicap
+                }
+                bayHarborGolfClub {
+                  course
+                  frontHandicap
+                  front
+                  back
+                  backHandicap
+                }
+                boyneHighlandsMoor {
+                  course
+                  frontHandicap
+                  front
+                  back
+                  backHandicap
+                }
+                boyneHighlandsHeather {
+                  course
+                  frontHandicap
+                  front
+                  back
+                  backHandicap
+                }
+              }
+            }
             _2023 {
               handicap
               id
@@ -177,6 +219,48 @@ export const PlayerInfoUpdate = () => {
         craig {
           name
           year {
+            _2024 {
+              handicap
+              id
+              team
+              points {
+                game
+                id
+                wins
+                ties
+                losses
+              }
+              scores {
+                boyneHighlandsArthurHills {
+                  course
+                  frontHandicap
+                  front
+                  back
+                  backHandicap
+                }
+                bayHarborGolfClub {
+                  course
+                  frontHandicap
+                  front
+                  back
+                  backHandicap
+                }
+                boyneHighlandsMoor {
+                  course
+                  frontHandicap
+                  front
+                  back
+                  backHandicap
+                }
+                boyneHighlandsHeather {
+                  course
+                  frontHandicap
+                  front
+                  back
+                  backHandicap
+                }
+              }
+            }
             _2023 {
               handicap
               id
@@ -300,6 +384,48 @@ export const PlayerInfoUpdate = () => {
         curtis {
           name
           year {
+            _2024 {
+              handicap
+              id
+              team
+              points {
+                game
+                id
+                wins
+                ties
+                losses
+              }
+              scores {
+                boyneHighlandsArthurHills {
+                  course
+                  frontHandicap
+                  front
+                  back
+                  backHandicap
+                }
+                bayHarborGolfClub {
+                  course
+                  frontHandicap
+                  front
+                  back
+                  backHandicap
+                }
+                boyneHighlandsMoor {
+                  course
+                  frontHandicap
+                  front
+                  back
+                  backHandicap
+                }
+                boyneHighlandsHeather {
+                  course
+                  frontHandicap
+                  front
+                  back
+                  backHandicap
+                }
+              }
+            }
             _2023 {
               handicap
               id
@@ -385,6 +511,48 @@ export const PlayerInfoUpdate = () => {
         dan {
           name
           year {
+            _2024 {
+              handicap
+              id
+              team
+              points {
+                game
+                id
+                wins
+                ties
+                losses
+              }
+              scores {
+                boyneHighlandsArthurHills {
+                  course
+                  frontHandicap
+                  front
+                  back
+                  backHandicap
+                }
+                bayHarborGolfClub {
+                  course
+                  frontHandicap
+                  front
+                  back
+                  backHandicap
+                }
+                boyneHighlandsMoor {
+                  course
+                  frontHandicap
+                  front
+                  back
+                  backHandicap
+                }
+                boyneHighlandsHeather {
+                  course
+                  frontHandicap
+                  front
+                  back
+                  backHandicap
+                }
+              }
+            }
             _2023 {
               handicap
               id
@@ -508,6 +676,48 @@ export const PlayerInfoUpdate = () => {
         derek {
           name
           year {
+            _2024 {
+              handicap
+              id
+              team
+              points {
+                game
+                id
+                wins
+                ties
+                losses
+              }
+              scores {
+                boyneHighlandsArthurHills {
+                  course
+                  frontHandicap
+                  front
+                  back
+                  backHandicap
+                }
+                bayHarborGolfClub {
+                  course
+                  frontHandicap
+                  front
+                  back
+                  backHandicap
+                }
+                boyneHighlandsMoor {
+                  course
+                  frontHandicap
+                  front
+                  back
+                  backHandicap
+                }
+                boyneHighlandsHeather {
+                  course
+                  frontHandicap
+                  front
+                  back
+                  backHandicap
+                }
+              }
+            }
             _2023 {
               handicap
               id
@@ -631,6 +841,48 @@ export const PlayerInfoUpdate = () => {
         dylan {
           name
           year {
+            _2024 {
+              handicap
+              id
+              team
+              points {
+                game
+                id
+                wins
+                ties
+                losses
+              }
+              scores {
+                boyneHighlandsArthurHills {
+                  course
+                  frontHandicap
+                  front
+                  back
+                  backHandicap
+                }
+                bayHarborGolfClub {
+                  course
+                  frontHandicap
+                  front
+                  back
+                  backHandicap
+                }
+                boyneHighlandsMoor {
+                  course
+                  frontHandicap
+                  front
+                  back
+                  backHandicap
+                }
+                boyneHighlandsHeather {
+                  course
+                  frontHandicap
+                  front
+                  back
+                  backHandicap
+                }
+              }
+            }
             _2023 {
               handicap
               id
@@ -754,6 +1006,48 @@ export const PlayerInfoUpdate = () => {
         evan {
           name
           year {
+            _2024 {
+              handicap
+              id
+              team
+              points {
+                game
+                id
+                wins
+                ties
+                losses
+              }
+              scores {
+                boyneHighlandsArthurHills {
+                  course
+                  frontHandicap
+                  front
+                  back
+                  backHandicap
+                }
+                bayHarborGolfClub {
+                  course
+                  frontHandicap
+                  front
+                  back
+                  backHandicap
+                }
+                boyneHighlandsMoor {
+                  course
+                  frontHandicap
+                  front
+                  back
+                  backHandicap
+                }
+                boyneHighlandsHeather {
+                  course
+                  frontHandicap
+                  front
+                  back
+                  backHandicap
+                }
+              }
+            }
             _2023 {
               handicap
               id
@@ -839,6 +1133,48 @@ export const PlayerInfoUpdate = () => {
         gordon {
           name
           year {
+            _2024 {
+              handicap
+              id
+              team
+              points {
+                game
+                id
+                wins
+                ties
+                losses
+              }
+              scores {
+                boyneHighlandsArthurHills {
+                  course
+                  frontHandicap
+                  front
+                  back
+                  backHandicap
+                }
+                bayHarborGolfClub {
+                  course
+                  frontHandicap
+                  front
+                  back
+                  backHandicap
+                }
+                boyneHighlandsMoor {
+                  course
+                  frontHandicap
+                  front
+                  back
+                  backHandicap
+                }
+                boyneHighlandsHeather {
+                  course
+                  frontHandicap
+                  front
+                  back
+                  backHandicap
+                }
+              }
+            }
             _2023 {
               handicap
               id
@@ -924,6 +1260,48 @@ export const PlayerInfoUpdate = () => {
         jake {
           name
           year {
+            _2024 {
+              handicap
+              id
+              team
+              points {
+                game
+                id
+                wins
+                ties
+                losses
+              }
+              scores {
+                boyneHighlandsArthurHills {
+                  course
+                  frontHandicap
+                  front
+                  back
+                  backHandicap
+                }
+                bayHarborGolfClub {
+                  course
+                  frontHandicap
+                  front
+                  back
+                  backHandicap
+                }
+                boyneHighlandsMoor {
+                  course
+                  frontHandicap
+                  front
+                  back
+                  backHandicap
+                }
+                boyneHighlandsHeather {
+                  course
+                  frontHandicap
+                  front
+                  back
+                  backHandicap
+                }
+              }
+            }
             _2023 {
               handicap
               id
@@ -1009,6 +1387,48 @@ export const PlayerInfoUpdate = () => {
         matt {
           name
           year {
+            _2024 {
+              handicap
+              id
+              team
+              points {
+                game
+                id
+                wins
+                ties
+                losses
+              }
+              scores {
+                boyneHighlandsArthurHills {
+                  course
+                  frontHandicap
+                  front
+                  back
+                  backHandicap
+                }
+                bayHarborGolfClub {
+                  course
+                  frontHandicap
+                  front
+                  back
+                  backHandicap
+                }
+                boyneHighlandsMoor {
+                  course
+                  frontHandicap
+                  front
+                  back
+                  backHandicap
+                }
+                boyneHighlandsHeather {
+                  course
+                  frontHandicap
+                  front
+                  back
+                  backHandicap
+                }
+              }
+            }
             _2023 {
               handicap
               id
@@ -1132,6 +1552,48 @@ export const PlayerInfoUpdate = () => {
         rj {
           name
           year {
+            _2024 {
+              handicap
+              id
+              team
+              points {
+                game
+                id
+                wins
+                ties
+                losses
+              }
+              scores {
+                boyneHighlandsArthurHills {
+                  course
+                  frontHandicap
+                  front
+                  back
+                  backHandicap
+                }
+                bayHarborGolfClub {
+                  course
+                  frontHandicap
+                  front
+                  back
+                  backHandicap
+                }
+                boyneHighlandsMoor {
+                  course
+                  frontHandicap
+                  front
+                  back
+                  backHandicap
+                }
+                boyneHighlandsHeather {
+                  course
+                  frontHandicap
+                  front
+                  back
+                  backHandicap
+                }
+              }
+            }
             _2023 {
               handicap
               id
@@ -1255,6 +1717,48 @@ export const PlayerInfoUpdate = () => {
         travis {
           name
           year {
+            _2024 {
+              handicap
+              id
+              team
+              points {
+                game
+                id
+                wins
+                ties
+                losses
+              }
+              scores {
+                boyneHighlandsArthurHills {
+                  course
+                  frontHandicap
+                  front
+                  back
+                  backHandicap
+                }
+                bayHarborGolfClub {
+                  course
+                  frontHandicap
+                  front
+                  back
+                  backHandicap
+                }
+                boyneHighlandsMoor {
+                  course
+                  frontHandicap
+                  front
+                  back
+                  backHandicap
+                }
+                boyneHighlandsHeather {
+                  course
+                  frontHandicap
+                  front
+                  back
+                  backHandicap
+                }
+              }
+            }
             _2023 {
               handicap
               id
