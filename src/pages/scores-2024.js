@@ -183,15 +183,8 @@ const TopicPage = ({ location }) => {
 
   return (
     <Layout location={location} title={siteTitle}>
-      <SEO title="Scores" />
-      <LandingPageHeader title="Scores" />
-
-      <HighlightCountdown
-        startTime={startDate}
-        location={locationName}
-        courseUrl={courseUrl}
-      />
-
+      <SEO title="2024 Scores" />
+      <LandingPageHeader title="2024 Scores" />
       <MatchNav
         location={location}
         titles={[
@@ -490,7 +483,7 @@ const TopicPage = ({ location }) => {
           </a>
         </div>
         <Match
-          matchId="3.1 - Bramble. Full HC"
+          matchId="3.1 - Bramble. 80% HC"
           year="_2024"
           courseMatch="boyneHighlandsArthurHills"
           holes="front"
@@ -506,7 +499,7 @@ const TopicPage = ({ location }) => {
           player4MatchHandicap=""
         />
         <Match
-          matchId="3.1 - Bramble. Full HC"
+          matchId="3.1 - Bramble. 80% HC"
           year="_2024"
           courseMatch="boyneHighlandsArthurHills"
           holes="front"
@@ -522,7 +515,7 @@ const TopicPage = ({ location }) => {
           player4MatchHandicap=""
         />
         <Match
-          matchId="3.1 - Bramble. Full HC"
+          matchId="3.1 - Bramble. 80% HC"
           year="_2024"
           courseMatch="boyneHighlandsArthurHills"
           holes="front"
@@ -550,7 +543,7 @@ const TopicPage = ({ location }) => {
           </a>
         </div>
         <Match
-          matchId="3.2 - 2 Ball Bramble. Full HC"
+          matchId="3.2 - 2 Ball Bramble. 80% HC"
           year="_2024"
           courseMatch="boyneHighlandsArthurHills"
           holes="back"
@@ -566,7 +559,7 @@ const TopicPage = ({ location }) => {
           player4MatchHandicap=""
         />
         <Match
-          matchId="3.2 - 2 Ball Bramble. Full HC"
+          matchId="3.2 - 2 Ball Bramble. 80% HC"
           year="_2024"
           courseMatch="boyneHighlandsArthurHills"
           holes="back"
@@ -582,7 +575,7 @@ const TopicPage = ({ location }) => {
           player4MatchHandicap=""
         />
         <Match
-          matchId="3.2 - 2 Ball Bramble. Full HC"
+          matchId="3.2 - 2 Ball Bramble. 80% HC"
           year="_2024"
           courseMatch="boyneHighlandsArthurHills"
           holes="back"
