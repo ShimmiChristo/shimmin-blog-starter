@@ -200,20 +200,25 @@ function Match({
   if (["chris", "matt", "gordon", "rj", "dylan"].indexOf(p4Name) > -1) {
     playerFourTees = "purple"
   }
+
+  const holesPlayed = holes === "front" ? "out" : "in"
   const purpleTeesSlope =
-    course[`${courseMatch}`].totals.tees["purple"].total.slope
+    course[`${courseMatch}`].totals.tees["purple"][`${holesPlayed}`].slope
   const purpleTeesIndex =
-    course[`${courseMatch}`].totals.tees["purple"].total.index
+    course[`${courseMatch}`].totals.tees["purple"][`${holesPlayed}`].index
   const orangeTeesSlope =
-    course[`${courseMatch}`].totals.tees["orange"].total.slope
+    course[`${courseMatch}`].totals.tees["orange"][`${holesPlayed}`].slope
   const orangeTeesIndex =
-    course[`${courseMatch}`].totals.tees["orange"].total.index
+    course[`${courseMatch}`].totals.tees["orange"][`${holesPlayed}`].index
   const courseSlopeP1 =
-    course[`${courseMatch}`].totals.tees[`${playerOneTees}`].total.slope
+    course[`${courseMatch}`].totals.tees[`${playerOneTees}`][`${holesPlayed}`]
+      .slope
   const courseIndexP1 =
-    course[`${courseMatch}`].totals.tees[`${playerOneTees}`].total.index
+    course[`${courseMatch}`].totals.tees[`${playerOneTees}`][`${holesPlayed}`]
+      .index
   const courseParP1 =
-    course[`${courseMatch}`].totals.tees[`${playerOneTees}`].total.par
+    course[`${courseMatch}`].totals.tees[`${playerOneTees}`][`${holesPlayed}`]
+      .par
   const playerOneCourseHC = getCourseHandicap(
     playerOneHand,
     courseSlopeP1,
@@ -221,11 +226,14 @@ function Match({
     courseParP1
   )
   const courseSlopeP2 =
-    course[`${courseMatch}`].totals.tees[`${playerTwoTees}`].total.slope
+    course[`${courseMatch}`].totals.tees[`${playerTwoTees}`][`${holesPlayed}`]
+      .slope
   const courseIndexP2 =
-    course[`${courseMatch}`].totals.tees[`${playerTwoTees}`].total.index
+    course[`${courseMatch}`].totals.tees[`${playerTwoTees}`][`${holesPlayed}`]
+      .index
   const courseParP2 =
-    course[`${courseMatch}`].totals.tees[`${playerTwoTees}`].total.par
+    course[`${courseMatch}`].totals.tees[`${playerTwoTees}`][`${holesPlayed}`]
+      .par
   const playerTwoCourseHC = getCourseHandicap(
     playerTwoHand,
     courseSlopeP2,
@@ -233,11 +241,14 @@ function Match({
     courseParP2
   )
   const courseSlopeP3 =
-    course[`${courseMatch}`].totals.tees[`${playerThreeTees}`].total.slope
+    course[`${courseMatch}`].totals.tees[`${playerThreeTees}`][`${holesPlayed}`]
+      .slope
   const courseIndexP3 =
-    course[`${courseMatch}`].totals.tees[`${playerThreeTees}`].total.index
+    course[`${courseMatch}`].totals.tees[`${playerThreeTees}`][`${holesPlayed}`]
+      .index
   const courseParP3 =
-    course[`${courseMatch}`].totals.tees[`${playerThreeTees}`].total.par
+    course[`${courseMatch}`].totals.tees[`${playerThreeTees}`][`${holesPlayed}`]
+      .par
   const playerThreeCourseHC = getCourseHandicap(
     playerThreeHand,
     courseSlopeP3,
@@ -245,11 +256,14 @@ function Match({
     courseParP3
   )
   const courseSlopeP4 =
-    course[`${courseMatch}`].totals.tees[`${playerFourTees}`].total.slope
+    course[`${courseMatch}`].totals.tees[`${playerFourTees}`][`${holesPlayed}`]
+      .slope
   const courseIndexP4 =
-    course[`${courseMatch}`].totals.tees[`${playerFourTees}`].total.index
+    course[`${courseMatch}`].totals.tees[`${playerFourTees}`][`${holesPlayed}`]
+      .index
   const courseParP4 =
-    course[`${courseMatch}`].totals.tees[`${playerFourTees}`].total.par
+    course[`${courseMatch}`].totals.tees[`${playerFourTees}`][`${holesPlayed}`]
+      .par
   const playerFourCourseHC = getCourseHandicap(
     playerFourHand,
     courseSlopeP4,
@@ -258,10 +272,10 @@ function Match({
   )
 
   const handicaps = [
-    playerOneCourseHC,
-    playerTwoCourseHC,
-    playerThreeCourseHC,
-    playerFourCourseHC,
+    playerOneCourseHC.toFixed(2),
+    playerTwoCourseHC.toFixed(2),
+    playerThreeCourseHC.toFixed(2),
+    playerFourCourseHC.toFixed(2),
   ]
 
   const p1HCglobal = getPlayerHandicap("player1", gameplay, handicaps)

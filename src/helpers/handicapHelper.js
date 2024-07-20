@@ -61,10 +61,10 @@ function getPlayerHandicap(player, gameplay, handicaps) {
     player4: 99,
   }
   //* handicap is half of what it is bc of 9 hole matches.
-  const p1 = Math.round(handicaps[0]) // half bc of 9 hole matches
-  const p2 = Math.round(handicaps[1])
-  const p3 = handicaps[2] ? Math.round(handicaps[2]) : 99
-  const p4 = handicaps[3] ? Math.round(handicaps[3]) : 99
+  const p1 = handicaps[0] // half bc of 9 hole matches
+  const p2 = handicaps[1]
+  const p3 = handicaps[2] ? handicaps[2] : 99
+  const p4 = handicaps[3] ? handicaps[3] : 99
   const lowHC = Math.min(p1, p2, p3, p4)
   const lowHCTeam1 = Math.min(p1, p3)
   const highHCTeam1 = Math.max(p1, p3)
@@ -73,8 +73,10 @@ function getPlayerHandicap(player, gameplay, handicaps) {
 
   // if (gameplay === "pinehurst" || gameplay === "scramble") {
   if (gameplay === "pinehurst") {
-    let team1Adj = Math.round(0.6 * lowHCTeam1 + 0.4 * highHCTeam1)
-    let team2Adj = Math.round(0.6 * lowHCTeam2 + 0.4 * highHCTeam2)
+    let team1Adj = (0.6 * lowHCTeam1 + 0.4 * highHCTeam1).toFixed(1)
+    // console.log("team1Adj - ", team1Adj)
+    let team2Adj = (0.6 * lowHCTeam2 + 0.4 * highHCTeam2).toFixed(1)
+    // console.log('team2Adj - ', team2Adj);
     let lowHCTeam = Math.min(team1Adj, team2Adj)
     newHC.player1 = team1Adj - lowHCTeam
     newHC.player2 = team2Adj - lowHCTeam
@@ -92,25 +94,24 @@ function getPlayerHandicap(player, gameplay, handicaps) {
     // newHC.player2 = player2Adj - lowHCTeam
     // newHC.player3 = player3Adj - lowHCTeam
     // newHC.player4 = player4Adj - lowHCTeam
-    let team1Adj = Math.round(0.35 * lowHCTeam1 + 0.15 * highHCTeam1)
-    let team2Adj = Math.round(0.35 * lowHCTeam2 + 0.15 * highHCTeam2)
+    let team1Adj = (0.35 * lowHCTeam1 + 0.15 * highHCTeam1).toFixed(1)
+    let team2Adj = (0.35 * lowHCTeam2 + 0.15 * highHCTeam2).toFixed(1)
     let lowHCTeam = Math.min(team1Adj, team2Adj)
     newHC.player1 = team1Adj - lowHCTeam
     newHC.player2 = team2Adj - lowHCTeam
     newHC.player3 = team1Adj - lowHCTeam
     newHC.player4 = team2Adj - lowHCTeam
   } else if (gameplay === "bramble" || gameplay === "two-ball-bramble") {
-    // let team1Adj = Math.round((p1 + p3) * 0.8)
-    // let team2Adj = Math.round((p2 + p4) * 0.8)
-    // let lowHCTeam = Math.min(team1Adj, team2Adj)
-    // newHC.player1 = team1Adj - lowHCTeam
-    // newHC.player2 = team2Adj - lowHCTeam
-    // newHC.player3 = team1Adj - lowHCTeam
-    // newHC.player4 = team2Adj - lowHCTeam
-    newHC.player1 = Math.round((p1 - lowHC) * 0.8)
-    newHC.player2 = Math.round((p2 - lowHC) * 0.8)
-    newHC.player3 = Math.round((p3 - lowHC) * 0.8)
-    newHC.player4 = Math.round((p4 - lowHC) * 0.8)
+    let p1round = p1 * 0.8
+    let p2round = p2 * 0.8
+    let p3round = p3 * 0.8
+    let p4round = p4 * 0.8
+    let lowPlayer = Math.min(p1round, p2round, p3round, p4round)
+
+    newHC.player1 = (p1round - lowPlayer).toFixed(1)
+    newHC.player2 = (p2round - lowPlayer).toFixed(1)
+    newHC.player3 = (p3round - lowPlayer).toFixed(1)
+    newHC.player4 = (p4round - lowPlayer).toFixed(1)
   } else if (gameplay === "alternate") {
     let team1Adj = Math.round((p1 + p3) / 2)
     let team2Adj = Math.round((p2 + p4) / 2)
@@ -125,10 +126,17 @@ function getPlayerHandicap(player, gameplay, handicaps) {
     newHC.player3 = p3 - lowHC
     newHC.player4 = p4 - lowHC
   } else {
-    newHC.player1 = Math.round((p1 - lowHC) * 0.9)
-    newHC.player2 = Math.round((p2 - lowHC) * 0.9)
-    newHC.player3 = Math.round((p3 - lowHC) * 0.9)
-    newHC.player4 = Math.round((p4 - lowHC) * 0.9)
+    let p1round = p1 * 0.9
+    let p2round = p2 * 0.9
+    let p3round = p3 * 0.9
+    let p4round = p4 * 0.9
+    let lowPlayer = Math.min(p1round, p2round, p3round, p4round)
+
+    // * set lowest HC to zero
+    newHC.player1 = (p1round - lowPlayer).toFixed(1)
+    newHC.player2 = (p2round - lowPlayer).toFixed(1)
+    newHC.player3 = (p3round - lowPlayer).toFixed(1)
+    newHC.player4 = (p4round - lowPlayer).toFixed(1)
   }
   let playingHandicap = Math.round(newHC[`${player}`])
   return playingHandicap
@@ -199,13 +207,20 @@ function getCourseHandicap(
     **** course handicap ****
     https://www.usga.org/content/usga/home-page/handicapping/roh/Content/rules/6%201%20Course%20Handicap%20Calculation.htm
   */
+
+  // const courseHandicap =
+  //   playerHandicap * (courseSlope / 113) + (courseRating - coursePar)
+  // // * divide in 2 for 9 hole matches. (the hc is not exactly the same as the usga but close enough)
+  // // * do not round before getting playing handicap
+  // return courseHandicap
+  //  * USGA site says for 9 hole HC, divide player HC in half to nearest tenth
+  const playerNineHoleHC = Math.round((playerHandicap / 2) * 10) / 10
   const courseHandicap =
-    playerHandicap * (courseSlope / 113) + (courseRating - coursePar)
+    playerNineHoleHC * (courseSlope / 113) + (courseRating - coursePar)
   // * divide in 2 for 9 hole matches. (the hc is not exactly the same as the usga but close enough)
   // * do not round before getting playing handicap
-  return courseHandicap / 2
+  return courseHandicap
 }
-
 export {
   calcPlayerScore,
   getMatchHandicap,
