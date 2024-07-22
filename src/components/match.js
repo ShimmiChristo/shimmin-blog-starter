@@ -123,6 +123,10 @@ function Match({
   player2,
   player3,
   player4,
+  player1Tees,
+  player2Tees,
+  player3Tees,
+  player4Tees,
   player1MatchHandicap,
   player2MatchHandicap,
   player3MatchHandicap,
@@ -153,6 +157,9 @@ function Match({
     holes === "front"
       ? course[`${courseMatch}`].holes.slice(0, 9)
       : course[`${courseMatch}`].holes.slice(9)
+  const hardestHole = course[`${courseMatch}`].holes.filter(
+    h => h.handicap === 1
+  )[0].number
   // const courseName = course[`${courseMatch}`].name
   // const courseLink = course[`${courseMatch}`].link
 
@@ -184,24 +191,14 @@ function Match({
   })()
 
   const matchNumber = matchId
-  let playerOneTees = "orange"
-  let playerTwoTees = "orange"
-  let playerThreeTees = "orange"
-  let playerFourTees = "orange"
-  if (["chris", "matt", "gordon", "rj", "dylan"].indexOf(p1Name) > -1) {
-    playerOneTees = "purple"
-  }
-  if (["chris", "matt", "gordon", "rj", "dylan"].indexOf(p2Name) > -1) {
-    playerTwoTees = "purple"
-  }
-  if (["chris", "matt", "gordon", "rj", "dylan"].indexOf(p3Name) > -1) {
-    playerThreeTees = "purple"
-  }
-  if (["chris", "matt", "gordon", "rj", "dylan"].indexOf(p4Name) > -1) {
-    playerFourTees = "purple"
-  }
+  let playerOneTees = player1Tees
+  let playerTwoTees = player2Tees
+  let playerThreeTees = player3Tees ?? "orange" //orange is default
+  let playerFourTees = player4Tees ?? "orange" //orange is default
 
   const holesPlayed = holes === "front" ? "out" : "in"
+  // const holesPlayed = "total"
+
   const purpleTeesSlope =
     course[`${courseMatch}`].totals.tees["purple"][`${holesPlayed}`].slope
   const purpleTeesIndex =
@@ -210,14 +207,15 @@ function Match({
     course[`${courseMatch}`].totals.tees["orange"][`${holesPlayed}`].slope
   const orangeTeesIndex =
     course[`${courseMatch}`].totals.tees["orange"][`${holesPlayed}`].index
+
   const courseSlopeP1 =
-    course[`${courseMatch}`].totals.tees[`${playerOneTees}`][`${holesPlayed}`]
+    course[`${courseMatch}`].totals.tees[`${playerOneTees}`]?.[`${holesPlayed}`]
       .slope
   const courseIndexP1 =
-    course[`${courseMatch}`].totals.tees[`${playerOneTees}`][`${holesPlayed}`]
+    course[`${courseMatch}`].totals.tees[`${playerOneTees}`]?.[`${holesPlayed}`]
       .index
   const courseParP1 =
-    course[`${courseMatch}`].totals.tees[`${playerOneTees}`][`${holesPlayed}`]
+    course[`${courseMatch}`].totals.tees[`${playerOneTees}`]?.[`${holesPlayed}`]
       .par
   const playerOneCourseHC = getCourseHandicap(
     playerOneHand,
@@ -226,13 +224,13 @@ function Match({
     courseParP1
   )
   const courseSlopeP2 =
-    course[`${courseMatch}`].totals.tees[`${playerTwoTees}`][`${holesPlayed}`]
+    course[`${courseMatch}`].totals.tees[`${playerTwoTees}`]?.[`${holesPlayed}`]
       .slope
   const courseIndexP2 =
-    course[`${courseMatch}`].totals.tees[`${playerTwoTees}`][`${holesPlayed}`]
+    course[`${courseMatch}`].totals.tees[`${playerTwoTees}`]?.[`${holesPlayed}`]
       .index
   const courseParP2 =
-    course[`${courseMatch}`].totals.tees[`${playerTwoTees}`][`${holesPlayed}`]
+    course[`${courseMatch}`].totals.tees[`${playerTwoTees}`]?.[`${holesPlayed}`]
       .par
   const playerTwoCourseHC = getCourseHandicap(
     playerTwoHand,
@@ -272,16 +270,39 @@ function Match({
   )
 
   const handicaps = [
-    playerOneCourseHC.toFixed(2),
-    playerTwoCourseHC.toFixed(2),
-    playerThreeCourseHC.toFixed(2),
-    playerFourCourseHC.toFixed(2),
+    playerOneCourseHC,
+    playerTwoCourseHC,
+    playerThreeCourseHC,
+    playerFourCourseHC,
   ]
+  // console.log('handicaps - ', handicaps);
 
-  const p1HCglobal = getPlayerHandicap("player1", gameplay, handicaps)
-  const p2HCglobal = getPlayerHandicap("player2", gameplay, handicaps)
-  const p3HCglobal = getPlayerHandicap("player3", gameplay, handicaps)
-  const p4HCglobal = getPlayerHandicap("player4", gameplay, handicaps)
+  const hardestHoleNine =
+    holesPlayed === "out" && hardestHole < 10 ? true : false
+  const p1HCglobal = getPlayerHandicap(
+    "player1",
+    gameplay,
+    handicaps,
+    hardestHoleNine
+  )
+  const p2HCglobal = getPlayerHandicap(
+    "player2",
+    gameplay,
+    handicaps,
+    hardestHoleNine
+  )
+  const p3HCglobal = getPlayerHandicap(
+    "player3",
+    gameplay,
+    handicaps,
+    hardestHoleNine
+  )
+  const p4HCglobal = getPlayerHandicap(
+    "player4",
+    gameplay,
+    handicaps,
+    hardestHoleNine
+  )
 
   const [sectionHeight, setSectionHeight] = useState("closed")
   const [showHandicapScore, setShowHandicapScore] = useState(false)
@@ -713,7 +734,7 @@ function Match({
             </div>
           </div>
 
-          <div className="match__teamScores--team2">
+          <div className="match__teamScores--team2" data-p2hc={playerTwoHand}>
             {playerTwo && playerFour
               ? calcMatchPlayerScore(
                   gameplay,

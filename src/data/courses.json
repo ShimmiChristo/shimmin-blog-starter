@@ -1,6 +1,137 @@
 [
   {
     "course": {
+      "bayHarborLinks": {
+        "name": "Links at Bay Harbor GC",
+        "link": "https://bayharborgolf.com/linksquarry",
+        "holes": [
+          {
+            "number": 1,
+            "tees": {
+              "purple": 405,
+              "orange": 375
+            },
+            "handicap": 5,
+            "par": 4
+          },
+          {
+            "number": 2,
+            "tees": {
+              "purple": 420,
+              "orange": 383
+            },
+            "handicap": 9,
+            "par": 4
+          },
+          {
+            "number": 3,
+            "tees": {
+              "purple": 368,
+              "orange": 368
+            },
+            "handicap": 7,
+            "par": 4
+          },
+          {
+            "number": 4,
+            "tees": {
+              "purple": 151,
+              "orange": 151
+            },
+            "handicap": 17,
+            "par": 3
+          },
+          {
+            "number": 5,
+            "tees": {
+              "purple": 332,
+              "orange": 332
+            },
+            "handicap": 11,
+            "par": 4
+          },
+          {
+            "number": 6,
+            "tees": {
+              "purple": 388,
+              "orange": 352
+            },
+            "handicap": 1,
+            "par": 4
+          },
+          {
+            "number": 7,
+            "tees": {
+              "purple": 490,
+              "orange": 490
+            },
+            "handicap": 13,
+            "par": 5
+          },
+          {
+            "number": 8,
+            "tees": {
+              "purple": 206,
+              "orange": 175
+            },
+            "handicap": 15,
+            "par": 3
+          },
+          {
+            "number": 9,
+            "tees": {
+              "purple": 490,
+              "orange": 490
+            },
+            "handicap": 3,
+            "par": 5
+          }
+        ],
+        "totals": {
+          "tees": {
+            "purple": {
+              "out": {
+                "yardage": 3250,
+                "par": 36,
+                "index": 36.1,
+                "slope": 139.0
+              },
+              "in": {
+                "yardage": 3250,
+                "par": 36,
+                "index": 36.1,
+                "slope": 139.0
+              },
+              "total": {
+                "yardage": 6500,
+                "par": 72,
+                "index": 72.2,
+                "slope": 139
+              }
+            },
+            "orange": {
+              "out": {
+                "yardage": 3116,
+                "par": 36,
+                "index": 35.3,
+                "slope": 138.0
+              },
+              "in": {
+                "yardage": 3116,
+                "par": 36,
+                "index": 35.3,
+                "slope": 138.0
+              },
+              "total": {
+                "yardage": 6232,
+                "par": 72,
+                "index": 70.6,
+                "slope": 138
+              }
+            }
+          }
+        }
+      },
       "bayHarborGolfClub": {
         "name": "Links/Quarry at Bay Harbor GC",
         "link": "https://bayharborgolf.com/linksquarry",
@@ -179,7 +310,7 @@
               },
               "in": {
                 "yardage": 3177,
-                "par": 37,
+                "par": 36,
                 "index": 36.0,
                 "slope": 147.0
               },
@@ -405,39 +536,39 @@
                 "yardage": 3385,
                 "par": 36,
                 "index": 36.4,
-                "slope": 143.0
+                "slope": 141.0
               },
               "in": {
                 "yardage": 3534,
                 "par": 37,
-                "index": 36.9,
-                "slope": 137.0
+                "index": 37.3,
+                "slope": 144.0
               },
               "total": {
                 "yardage": 6919,
                 "par": 73,
-                "index": 73.3,
-                "slope": 140
+                "index": 73.7,
+                "slope": 143
               }
             },
             "orange": {
               "out": {
                 "yardage": 3094,
                 "par": 36,
-                "index": 35.3,
-                "slope": 135.0
+                "index": 35.1,
+                "slope": 131.0
               },
               "in": {
                 "yardage": 3258,
                 "par": 37,
-                "index": 35.0,
-                "slope": 128.0
+                "index": 35.7,
+                "slope": 136.0
               },
               "total": {
                 "yardage": 6352,
                 "par": 73,
-                "index": 70.3,
-                "slope": 132
+                "index": 70.8,
+                "slope": 134
               }
             },
             "blue": {

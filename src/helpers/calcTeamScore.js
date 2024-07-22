@@ -69,7 +69,8 @@ function calcTeamScore(
       scoresArr.push(Math.min(playerOneHandicapScore, playerTwoHandicapScore))
     } else if (
       (isNaN(playerTwoHandicapScore) !== true && gameplay === "two-ball") ||
-      gameplay === "two-ball-bramble"
+      (isNaN(playerTwoHandicapScore) !== true &&
+        gameplay === "two-ball-bramble")
     ) {
       scoresArr.push(
         Number(playerOneHandicapScore) + Number(playerTwoHandicapScore)
