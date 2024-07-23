@@ -49,6 +49,21 @@ const TopicPage = ({ location }) => {
   const p11 = "derek"
   const p12 = "curtis"
 
+  const playerTees = {
+    p1: "purple",
+    p2: "purple",
+    p3: "orange",
+    p4: "orange",
+    p5: "orange",
+    p6: "orange",
+    p7: "purple",
+    p8: "purple",
+    p9: "orange",
+    p10: "orange",
+    p11: "orange",
+    p12: "orange",
+  }
+
   const matchesArr = [
     {
       matchId: "Best Ball. Full handicap",
@@ -220,10 +235,14 @@ const TopicPage = ({ location }) => {
           player2={p1}
           player3={p12}
           player4={p4}
-          player1MatchHandicap={matchesArr[0].player1MatchHandicap}
-          player2MatchHandicap={matchesArr[0].player2MatchHandicap}
-          player3MatchHandicap={matchesArr[0].player3MatchHandicap}
-          player4MatchHandicap={matchesArr[0].player4MatchHandicap}
+          player1Tees={playerTees.p8}
+          player2Tees={playerTees.p1}
+          player3Tees={playerTees.p12}
+          player4Tees={playerTees.p4}
+          player1MatchHandicap=""
+          player2MatchHandicap=""
+          player3MatchHandicap=""
+          player4MatchHandicap=""
         />
         <Match
           matchId={`2 ${matchesArr[0].matchId}`}
@@ -236,10 +255,14 @@ const TopicPage = ({ location }) => {
           player2={p2}
           player3={p11}
           player4={p3}
-          player1MatchHandicap={matchesArr[0].player1MatchHandicap}
-          player2MatchHandicap={matchesArr[0].player2MatchHandicap}
-          player3MatchHandicap={matchesArr[0].player3MatchHandicap}
-          player4MatchHandicap={matchesArr[0].player4MatchHandicap}
+          player1Tees={playerTees.p10}
+          player2Tees={playerTees.p2}
+          player3Tees={playerTees.p11}
+          player4Tees={playerTees.p3}
+          player1MatchHandicap=""
+          player2MatchHandicap=""
+          player3MatchHandicap=""
+          player4MatchHandicap=""
         />
         <Match
           matchId={`3 ${matchesArr[0].matchId}`}
@@ -252,10 +275,14 @@ const TopicPage = ({ location }) => {
           player2={p5}
           player3={p9}
           player4={p6}
-          player1MatchHandicap={matchesArr[0].player1MatchHandicap}
-          player2MatchHandicap={matchesArr[0].player2MatchHandicap}
-          player3MatchHandicap={matchesArr[0].player3MatchHandicap}
-          player4MatchHandicap={matchesArr[0].player4MatchHandicap}
+          player1Tees={playerTees.p7}
+          player2Tees={playerTees.p5}
+          player3Tees={playerTees.p9}
+          player4Tees={playerTees.p6}
+          player1MatchHandicap=""
+          player2MatchHandicap=""
+          player3MatchHandicap=""
+          player4MatchHandicap=""
         />
       </MatchNavSection>
       <MatchNavSection
@@ -279,10 +306,14 @@ const TopicPage = ({ location }) => {
           player2={p1}
           player3={p11}
           player4={p3}
-          player1MatchHandicap={matchesArr[1].player1MatchHandicap}
-          player2MatchHandicap={matchesArr[1].player2MatchHandicap}
-          player3MatchHandicap={matchesArr[1].player3MatchHandicap}
-          player4MatchHandicap={matchesArr[1].player4MatchHandicap}
+          player1Tees={playerTees.p8}
+          player2Tees={playerTees.p1}
+          player3Tees={playerTees.p11}
+          player4Tees={playerTees.p3}
+          player1MatchHandicap=""
+          player2MatchHandicap=""
+          player3MatchHandicap=""
+          player4MatchHandicap=""
         />
         <Match
           matchId={`5 ${matchesArr[1].matchId}`}
@@ -295,10 +326,14 @@ const TopicPage = ({ location }) => {
           player2={p4}
           player3={p10}
           player4={p5}
-          player1MatchHandicap={matchesArr[1].player1MatchHandicap}
-          player2MatchHandicap={matchesArr[1].player2MatchHandicap}
-          player3MatchHandicap={matchesArr[1].player3MatchHandicap}
-          player4MatchHandicap={matchesArr[1].player4MatchHandicap}
+          player1Tees={playerTees.p7}
+          player2Tees={playerTees.p4}
+          player3Tees={playerTees.p10}
+          player4Tees={playerTees.p5}
+          player1MatchHandicap=""
+          player2MatchHandicap=""
+          player3MatchHandicap=""
+          player4MatchHandicap=""
         />
         <Match
           matchId={`6 ${matchesArr[1].matchId}`}
@@ -311,10 +346,14 @@ const TopicPage = ({ location }) => {
           player2={p2}
           player3={p12}
           player4={p6}
-          player1MatchHandicap={matchesArr[1].player1MatchHandicap}
-          player2MatchHandicap={matchesArr[1].player2MatchHandicap}
-          player3MatchHandicap={matchesArr[1].player3MatchHandicap}
-          player4MatchHandicap={matchesArr[1].player4MatchHandicap}
+          player1Tees={playerTees.p9}
+          player2Tees={playerTees.p2}
+          player3Tees={playerTees.p12}
+          player4Tees={playerTees.p6}
+          player1MatchHandicap=""
+          player2MatchHandicap=""
+          player3MatchHandicap=""
+          player4MatchHandicap=""
         />
       </MatchNavSection>
       <MatchNavSection
@@ -338,10 +377,14 @@ const TopicPage = ({ location }) => {
           player2={p1}
           player3={p9}
           player4={p5}
-          player1MatchHandicap={matchesArr[2].player1MatchHandicap}
-          player2MatchHandicap={matchesArr[2].player2MatchHandicap}
-          player3MatchHandicap={matchesArr[2].player3MatchHandicap}
-          player4MatchHandicap={matchesArr[2].player4MatchHandicap}
+          player1Tees={playerTees.p7}
+          player2Tees={playerTees.p1}
+          player3Tees={playerTees.p9}
+          player4Tees={playerTees.p5}
+          player1MatchHandicap=""
+          player2MatchHandicap=""
+          player3MatchHandicap=""
+          player4MatchHandicap=""
         />
         <Match
           matchId={`8 ${matchesArr[2].matchId}`}
@@ -354,10 +397,14 @@ const TopicPage = ({ location }) => {
           player2={p2}
           player3={p10}
           player4={p6}
-          player1MatchHandicap={matchesArr[2].player1MatchHandicap}
-          player2MatchHandicap={matchesArr[2].player2MatchHandicap}
-          player3MatchHandicap={matchesArr[2].player3MatchHandicap}
-          player4MatchHandicap={matchesArr[2].player4MatchHandicap}
+          player1Tees={playerTees.p8}
+          player2Tees={playerTees.p2}
+          player3Tees={playerTees.p10}
+          player4Tees={playerTees.p6}
+          player1MatchHandicap=""
+          player2MatchHandicap=""
+          player3MatchHandicap=""
+          player4MatchHandicap=""
         />
         <Match
           matchId={`9 ${matchesArr[2].matchId}`}
@@ -370,10 +417,14 @@ const TopicPage = ({ location }) => {
           player2={p3}
           player3={p12}
           player4={p4}
-          player1MatchHandicap={matchesArr[2].player1MatchHandicap}
-          player2MatchHandicap={matchesArr[2].player2MatchHandicap}
-          player3MatchHandicap={matchesArr[2].player3MatchHandicap}
-          player4MatchHandicap={matchesArr[2].player4MatchHandicap}
+          player1Tees={playerTees.p11}
+          player2Tees={playerTees.p3}
+          player3Tees={playerTees.p12}
+          player4Tees={playerTees.p4}
+          player1MatchHandicap=""
+          player2MatchHandicap=""
+          player3MatchHandicap=""
+          player4MatchHandicap=""
         />
       </MatchNavSection>
 
@@ -398,10 +449,14 @@ const TopicPage = ({ location }) => {
           player2={p1}
           player3={p9}
           player4={p6}
-          player1MatchHandicap={matchesArr[3].player1MatchHandicap}
-          player2MatchHandicap={matchesArr[3].player2MatchHandicap}
-          player3MatchHandicap={matchesArr[3].player3MatchHandicap}
-          player4MatchHandicap={matchesArr[3].player4MatchHandicap}
+          player1Tees={playerTees.p8}
+          player2Tees={playerTees.p1}
+          player3Tees={playerTees.p9}
+          player4Tees={playerTees.p6}
+          player1MatchHandicap=""
+          player2MatchHandicap=""
+          player3MatchHandicap=""
+          player4MatchHandicap=""
         />
         <Match
           matchId={`11 ${matchesArr[3].matchId}`}
@@ -414,10 +469,14 @@ const TopicPage = ({ location }) => {
           player2={p3}
           player3={p12}
           player4={p5}
-          player1MatchHandicap={matchesArr[3].player1MatchHandicap}
-          player2MatchHandicap={matchesArr[3].player2MatchHandicap}
-          player3MatchHandicap={matchesArr[3].player3MatchHandicap}
-          player4MatchHandicap={matchesArr[3].player4MatchHandicap}
+          player1Tees={playerTees.p10}
+          player2Tees={playerTees.p3}
+          player3Tees={playerTees.p12}
+          player4Tees={playerTees.p5}
+          player1MatchHandicap=""
+          player2MatchHandicap=""
+          player3MatchHandicap=""
+          player4MatchHandicap=""
         />
         <Match
           matchId={`12 ${matchesArr[3].matchId}`}
@@ -430,10 +489,14 @@ const TopicPage = ({ location }) => {
           player2={p2}
           player3={p11}
           player4={p4}
-          player1MatchHandicap={matchesArr[3].player1MatchHandicap}
-          player2MatchHandicap={matchesArr[3].player2MatchHandicap}
-          player3MatchHandicap={matchesArr[3].player3MatchHandicap}
-          player4MatchHandicap={matchesArr[3].player4MatchHandicap}
+          player1Tees={playerTees.p7}
+          player2Tees={playerTees.p2}
+          player3Tees={playerTees.p11}
+          player4Tees={playerTees.p4}
+          player1MatchHandicap=""
+          player2MatchHandicap=""
+          player3MatchHandicap=""
+          player4MatchHandicap=""
         />
       </MatchNavSection>
 
@@ -458,10 +521,14 @@ const TopicPage = ({ location }) => {
           player2={p3}
           player3={p12}
           player4={p6}
-          player1MatchHandicap={matchesArr[4].player1MatchHandicap}
-          player2MatchHandicap={matchesArr[4].player2MatchHandicap}
-          player3MatchHandicap={matchesArr[4].player3MatchHandicap}
-          player4MatchHandicap={matchesArr[4].player4MatchHandicap}
+          player1Tees={playerTees.p7}
+          player2Tees={playerTees.p3}
+          player3Tees={playerTees.p12}
+          player4Tees={playerTees.p6}
+          player1MatchHandicap=""
+          player2MatchHandicap=""
+          player3MatchHandicap=""
+          player4MatchHandicap=""
         />
         <Match
           matchId={`14 ${matchesArr[4].matchId}`}
@@ -474,10 +541,14 @@ const TopicPage = ({ location }) => {
           player2={p4}
           player3={p11}
           player4={p5}
-          player1MatchHandicap={matchesArr[4].player1MatchHandicap}
-          player2MatchHandicap={matchesArr[4].player2MatchHandicap}
-          player3MatchHandicap={matchesArr[4].player3MatchHandicap}
-          player4MatchHandicap={matchesArr[4].player4MatchHandicap}
+          player1Tees={playerTees.p8}
+          player2Tees={playerTees.p4}
+          player3Tees={playerTees.p11}
+          player4Tees={playerTees.p5}
+          player1MatchHandicap=""
+          player2MatchHandicap=""
+          player3MatchHandicap=""
+          player4MatchHandicap=""
         />
         <Match
           matchId={`15 ${matchesArr[4].matchId}`}
@@ -490,10 +561,14 @@ const TopicPage = ({ location }) => {
           player2={p1}
           player3={p10}
           player4={p2}
-          player1MatchHandicap={matchesArr[4].player1MatchHandicap}
-          player2MatchHandicap={matchesArr[4].player2MatchHandicap}
-          player3MatchHandicap={matchesArr[4].player3MatchHandicap}
-          player4MatchHandicap={matchesArr[4].player4MatchHandicap}
+          player1Tees={playerTees.p9}
+          player2Tees={playerTees.p1}
+          player3Tees={playerTees.p10}
+          player4Tees={playerTees.p2}
+          player1MatchHandicap=""
+          player2MatchHandicap=""
+          player3MatchHandicap=""
+          player4MatchHandicap=""
         />
       </MatchNavSection>
 
@@ -518,10 +593,14 @@ const TopicPage = ({ location }) => {
           player2={p4}
           player3={p12}
           player4={p6}
-          player1MatchHandicap={matchesArr[5].player1MatchHandicap}
-          player2MatchHandicap={matchesArr[5].player2MatchHandicap}
-          player3MatchHandicap={matchesArr[5].player3MatchHandicap}
-          player4MatchHandicap={matchesArr[5].player4MatchHandicap}
+          player1Tees={playerTees.p8}
+          player2Tees={playerTees.p4}
+          player3Tees={playerTees.p12}
+          player4Tees={playerTees.p6}
+          player1MatchHandicap=""
+          player2MatchHandicap=""
+          player3MatchHandicap=""
+          player4MatchHandicap=""
         />
         <Match
           matchId={`17 ${matchesArr[5].matchId}`}
@@ -534,10 +613,14 @@ const TopicPage = ({ location }) => {
           player2={p1}
           player3={p10}
           player4={p3}
-          player1MatchHandicap={matchesArr[5].player1MatchHandicap}
-          player2MatchHandicap={matchesArr[5].player2MatchHandicap}
-          player3MatchHandicap={matchesArr[5].player3MatchHandicap}
-          player4MatchHandicap={matchesArr[5].player4MatchHandicap}
+          player1Tees={playerTees.p7}
+          player2Tees={playerTees.p1}
+          player3Tees={playerTees.p10}
+          player4Tees={playerTees.p3}
+          player1MatchHandicap=""
+          player2MatchHandicap=""
+          player3MatchHandicap=""
+          player4MatchHandicap=""
         />
         <Match
           matchId={`18 ${matchesArr[5].matchId}`}
@@ -550,10 +633,14 @@ const TopicPage = ({ location }) => {
           player2={p2}
           player3={p11}
           player4={p5}
-          player1MatchHandicap={matchesArr[5].player1MatchHandicap}
-          player2MatchHandicap={matchesArr[5].player2MatchHandicap}
-          player3MatchHandicap={matchesArr[5].player3MatchHandicap}
-          player4MatchHandicap={matchesArr[5].player4MatchHandicap}
+          player1Tees={playerTees.p9}
+          player2Tees={playerTees.p2}
+          player3Tees={playerTees.p11}
+          player4Tees={playerTees.p5}
+          player1MatchHandicap=""
+          player2MatchHandicap=""
+          player3MatchHandicap=""
+          player4MatchHandicap=""
         />
       </MatchNavSection>
 
@@ -579,10 +666,14 @@ const TopicPage = ({ location }) => {
           player2={p5}
           player3={p11}
           player4={p6}
-          player1MatchHandicap={matchesArr[6].player1MatchHandicap}
-          player2MatchHandicap={matchesArr[6].player2MatchHandicap}
-          player3MatchHandicap={matchesArr[6].player3MatchHandicap}
-          player4MatchHandicap={matchesArr[6].player4MatchHandicap}
+          player1Tees={playerTees.p11}
+          player2Tees={playerTees.p5}
+          player3Tees={playerTees.p12}
+          player4Tees={playerTees.p6}
+          player1MatchHandicap=""
+          player2MatchHandicap=""
+          player3MatchHandicap=""
+          player4MatchHandicap=""
         />
         <Match
           matchId={`20 ${matchesArr[6].matchId}`}
@@ -595,10 +686,14 @@ const TopicPage = ({ location }) => {
           player2={p3}
           player3={p10}
           player4={p4}
-          player1MatchHandicap={matchesArr[6].player1MatchHandicap}
-          player2MatchHandicap={matchesArr[6].player2MatchHandicap}
-          player3MatchHandicap={matchesArr[6].player3MatchHandicap}
-          player4MatchHandicap={matchesArr[6].player4MatchHandicap}
+          player1Tees={playerTees.p9}
+          player2Tees={playerTees.p3}
+          player3Tees={playerTees.p10}
+          player4Tees={playerTees.p4}
+          player1MatchHandicap=""
+          player2MatchHandicap=""
+          player3MatchHandicap=""
+          player4MatchHandicap=""
         />
         <Match
           matchId={`21 ${matchesArr[6].matchId}`}
@@ -611,10 +706,14 @@ const TopicPage = ({ location }) => {
           player2={p1}
           player3={p8}
           player4={p2}
-          player1MatchHandicap={matchesArr[6].player1MatchHandicap}
-          player2MatchHandicap={matchesArr[6].player2MatchHandicap}
-          player3MatchHandicap={matchesArr[6].player3MatchHandicap}
-          player4MatchHandicap={matchesArr[6].player4MatchHandicap}
+          player1Tees={playerTees.p7}
+          player2Tees={playerTees.p1}
+          player3Tees={playerTees.p8}
+          player4Tees={playerTees.p2}
+          player1MatchHandicap=""
+          player2MatchHandicap=""
+          player3MatchHandicap=""
+          player4MatchHandicap=""
         />
       </MatchNavSection>
 
@@ -637,6 +736,8 @@ const TopicPage = ({ location }) => {
           gameplay={matchesArr[7].gameplay}
           player1={p11}
           player2={p5}
+          player1Tees={playerTees.p11}
+          player2Tees={playerTees.p5}
           player1MatchHandicap=""
           player2MatchHandicap=""
         />
@@ -649,6 +750,8 @@ const TopicPage = ({ location }) => {
           gameplay={matchesArr[7].gameplay}
           player1={p12}
           player2={p6}
+          player1Tees={playerTees.p12}
+          player2Tees={playerTees.p6}
           player1MatchHandicap="27"
           player2MatchHandicap=""
         />
@@ -661,6 +764,8 @@ const TopicPage = ({ location }) => {
           gameplay={matchesArr[7].gameplay}
           player1={p10}
           player2={p4}
+          player1Tees={playerTees.p10}
+          player2Tees={playerTees.p4}
           player1MatchHandicap=""
           player2MatchHandicap=""
         />
@@ -673,6 +778,8 @@ const TopicPage = ({ location }) => {
           gameplay={matchesArr[7].gameplay}
           player1={p9}
           player2={p3}
+          player1Tees={playerTees.p9}
+          player2Tees={playerTees.p3}
           player1MatchHandicap=""
           player2MatchHandicap=""
         />
@@ -686,6 +793,8 @@ const TopicPage = ({ location }) => {
           gameplay={matchesArr[7].gameplay}
           player1={p8}
           player2={p2}
+          player1Tees={playerTees.p8}
+          player2Tees={playerTees.p2}
           player1MatchHandicap=""
           player2MatchHandicap=""
         />
@@ -698,6 +807,8 @@ const TopicPage = ({ location }) => {
           gameplay={matchesArr[7].gameplay}
           player1={p7}
           player2={p1}
+          player1Tees={playerTees.p7}
+          player2Tees={playerTees.p1}
           player1MatchHandicap=""
           player2MatchHandicap=""
         />
