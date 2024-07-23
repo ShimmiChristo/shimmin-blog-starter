@@ -114,6 +114,7 @@ body {
   pointer-events: none;
   text-decoration: none;
   color: inherit;
+  text-decoration: none;
 }
 .align-left {
   text-align: left;
