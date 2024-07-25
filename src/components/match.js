@@ -1,4 +1,5 @@
 import React, { useState } from "react"
+import { Link } from "gatsby"
 import { GatsbyImage, getImage } from "gatsby-plugin-image"
 import { usePlayersPosts } from "../hooks/use-player-posts"
 import PropTypes from "prop-types"
@@ -306,6 +307,7 @@ function Match({
 
   const [sectionHeight, setSectionHeight] = useState("closed")
   const [showHandicapScore, setShowHandicapScore] = useState(false)
+  const [showFullHandicap, setShowFullHandicap] = useState(false)
 
   const teamOneScoreArray = calcTeamScore(
     year,
@@ -506,7 +508,16 @@ function Match({
   //   }
   // }
 
-  function calcMatchPlayerScore(gameplay, playerObj, p1, p1HC, p2, p2HC) {
+  function calcMatchPlayerScore(
+    gameplay,
+    playerObj,
+    p1,
+    p1HC,
+    p1DefaultHC,
+    p2,
+    p2HC,
+    p2DefaultHC
+  ) {
     if (playerObj) {
       const holeScores = playerObj?.year[`${year}`].scores?.[`${courseMatch}`]
       const totalScore = [...holeScores[`${holes}`]]
@@ -519,13 +530,27 @@ function Match({
             {p2 && oneScoreGameplay ? (
               <div className="d-flex justify-content-center align-items-center">
                 <div className="d-flex flex-column pe-3">
-                  <span>{p1}</span> <span>{p2}</span>
+                  <span>
+                    <Link to={`/players/${p1}`}>{p1}</Link>
+                  </span>
+                  <span>
+                    <Link to={`/players/${p2}`}>{p2}</Link>
+                  </span>
                 </div>
                 <div>({p1HC})</div>
               </div>
             ) : (
               <span>
-                {p1} ({p1HC})
+                <Link to={`/players/${p1}`}>{p1}</Link>
+                <span
+                  onClick={() => {
+                    showFullHandicap === false
+                      ? setShowFullHandicap(true)
+                      : setShowFullHandicap(false)
+                  }}
+                >
+                  {showFullHandicap ? ` (${p1DefaultHC})` : ` (${p1HC})`}
+                </span>
               </span>
             )}
           </div>
@@ -705,18 +730,28 @@ function Match({
                   playerOne,
                   player1,
                   p1HCglobal,
+                  playerOneHand,
                   player3,
-                  p3HCglobal
+                  p3HCglobal,
+                  playerThreeHand
                 )
-              : calcMatchPlayerScore(gameplay, playerOne, player1, p1HCglobal)}
+              : calcMatchPlayerScore(
+                  gameplay,
+                  playerOne,
+                  player1,
+                  p1HCglobal,
+                  playerOneHand
+                )}
             {playerThree && !oneScoreGameplay
               ? calcMatchPlayerScore(
                   gameplay,
                   playerThree,
                   player3,
                   p3HCglobal,
+                  playerThreeHand,
                   player1,
-                  p1HCglobal
+                  p1HCglobal,
+                  playerOneHand
                 )
               : ""}
 
@@ -741,8 +776,10 @@ function Match({
                   playerTwo,
                   player2,
                   p2HCglobal,
+                  playerTwoHand,
                   player4,
-                  p4HCglobal
+                  p4HCglobal,
+                  playerFourHand
                 )
               : calcMatchPlayerScore(gameplay, playerTwo, player2, p2HCglobal)}
 
@@ -752,8 +789,10 @@ function Match({
                   playerFour,
                   player4,
                   p4HCglobal,
+                  playerFourHand,
                   player2,
-                  p2HCglobal
+                  p2HCglobal,
+                  playerTwoHand
                 )
               : ""}
             <div className="match__teamScore">
