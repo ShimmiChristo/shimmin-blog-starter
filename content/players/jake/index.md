@@ -8,7 +8,7 @@ category: players
 featuredImg: ./profile-pic.png
 thumbnail: ./thumbnail.png
 team: "Blue Team"
-handicap: 19
+handicap: 20
 ---
 
 Jake is back for 2023! Jake was so loved by the Green Team in 2022, we've asked him back to fill in for another member that is out. If he keeps it up, he may be a season regular.

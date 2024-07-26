@@ -9,7 +9,7 @@ featuredImg: ./profile-pic.png
 thumbnail: ./thumbnail.png
 team: "Blue Team"
 captain: true
-handicap: 0.4
+handicap: +0.5
 ---
 
 

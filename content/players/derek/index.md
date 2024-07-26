@@ -8,7 +8,7 @@ category: players
 featuredImg: ./profile-pic.png
 thumbnail: ./thumbnail.png
 team: "Green Team"
-handicap: 23
+handicap: 21
 ---
 
 2022 was a huge year for D-Mo. With 6 wins and only 1 loss. No one had a better record. He's looking to continue the domination in 2023.

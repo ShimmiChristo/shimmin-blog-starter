@@ -8,7 +8,7 @@ category: players
 featuredImg: ./profile-pic.png
 thumbnail: ./thumbnail.png
 team: "Blue Team"
-handicap: 21
+handicap: 18.7
 ---
 
 In 2022, Craig missed a 2 foot putt to extend the match against the Green Team. You can say Blue lost because of that missed putt. 

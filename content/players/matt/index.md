@@ -9,7 +9,7 @@ featuredImg: ./profile-pic.png
 thumbnail: ./thumbnail.png
 team: "Green Team"
 captain: true
-handicap: 4.1
+handicap: 4
 ---
 
 Flying in from Colorado for a third straight year, the Green Team Captain, the 2022 MVP, Mr. G!
