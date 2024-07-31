@@ -49,3 +49,10 @@ const TopicPage = ({ data, location }) => {
 }
 
 export default TopicPage
+
+// export const Head = () => (
+//   <>
+//     <title>Hello World</title>
+//     <meta name="description" content="Hello World" />
+//   </>
+// )

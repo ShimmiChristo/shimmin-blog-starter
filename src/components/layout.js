@@ -3,7 +3,7 @@ import HeaderBootstrap from "./header--bootstrap"
 import Footer from "./footer"
 import { Helmet } from "react-helmet"
 
-import 'mdb-react-ui-kit/dist/css/mdb.min.css'
+import "mdb-react-ui-kit/dist/css/mdb.min.css"
 import "../styles/style.css"
 import "../styles/match.css"
 
