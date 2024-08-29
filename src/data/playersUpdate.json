@@ -546,11 +546,11 @@
     "chris": {
       "name": "chris",
       "appearances": [2021, 2023, 2024],
-      "handicap": 13.0,
+      "handicap": 13.8,
       "year": {
         "_2024": {
           "id": 2024,
-          "handicap": 13.3,
+          "handicap": 13.8,
           "captain": false,
           "team": "green",
           "scores": {
@@ -7417,11 +7417,11 @@
     "travis": {
       "name": "travis",
       "appearances": [2021, 2022, 2023, 2024],
-      "handicap": 20,
+      "handicap": 22,
       "year": {
         "_2024": {
           "id": 2024,
-          "handicap": 20.4,
+          "handicap": 22,
           "captain": false,
           "team": "green",
           "scores": {
