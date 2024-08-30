@@ -1227,7 +1227,7 @@
     "craig": {
       "name": "craig",
       "appearances": [2021, 2022, 2023, 2024],
-      "handicap": 20,
+      "handicap": 18.7,
       "year": {
         "_2024": {
           "id": 2024,
@@ -1895,11 +1895,11 @@
     "curtis": {
       "name": "curtis",
       "appearances": [2022, 2023, 2024],
-      "handicap": 23,
+      "handicap": 26,
       "year": {
         "_2024": {
           "id": 2024,
-          "handicap": 23.4,
+          "handicap": 26,
           "captain": false,
           "team": "green",
           "scores": {
@@ -3112,7 +3112,7 @@
       "year": {
         "_2024": {
           "id": 2024,
-          "handicap": 21,
+          "handicap": 22,
           "captain": false,
           "team": "green",
           "scores": {
@@ -3777,11 +3777,11 @@
     "dylan": {
       "name": "dylan",
       "appearances": [2021, 2022, 2023, 2024],
-      "handicap": 1.8,
+      "handicap": 0.3,
       "year": {
         "_2024": {
           "id": 2024,
-          "handicap": -0.5,
+          "handicap": 0.3,
           "captain": false,
           "team": "blue",
           "scores": {
@@ -4445,7 +4445,7 @@
     "evan": {
       "name": "evan",
       "appearances": [2022, 2023, 2024],
-      "handicap": 31,
+      "handicap": 22,
       "year": {
         "_2024": {
           "id": 2024,
@@ -4988,11 +4988,11 @@
     "gordon": {
       "name": "gordon",
       "appearances": [2022, 2024],
-      "handicap": 12,
+      "handicap": 10,
       "year": {
         "_2024": {
           "id": 2024,
-          "handicap": 12,
+          "handicap": 10,
           "captain": false,
           "team": "green",
           "scores": {
@@ -5533,11 +5533,11 @@
     "jake": {
       "name": "jake",
       "appearances": [2022, 2023, 2024],
-      "handicap": 23.6,
+      "handicap": 23,
       "year": {
         "_2024": {
           "id": 2024,
-          "handicap": 20,
+          "handicap": 23,
           "captain": false,
           "team": "blue",
           "scores": {
@@ -6076,11 +6076,11 @@
     "matt": {
       "name": "matt",
       "appearances": [2021, 2022, 2023, 2024],
-      "handicap": 4.8,
+      "handicap": 7,
       "year": {
         "_2024": {
           "id": 2024,
-          "handicap": 7.3,
+          "handicap": 7,
           "captain": true,
           "team": "green",
           "scores": {
@@ -6749,11 +6749,11 @@
     "rj": {
       "name": "rj",
       "appearances": [2021, 2022, 2023, 2024],
-      "handicap": 13,
+      "handicap": 11,
       "year": {
         "_2024": {
           "id": 2024,
-          "handicap": 13,
+          "handicap": 11,
           "captain": false,
           "team": "blue",
           "scores": {
