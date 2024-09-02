@@ -546,11 +546,11 @@
     "chris": {
       "name": "chris",
       "appearances": [2021, 2023, 2024],
-      "handicap": 13.8,
+      "handicap": 14,
       "year": {
         "_2024": {
           "id": 2024,
-          "handicap": 13.8,
+          "handicap": 14,
           "captain": false,
           "team": "green",
           "scores": {
@@ -1227,11 +1227,11 @@
     "craig": {
       "name": "craig",
       "appearances": [2021, 2022, 2023, 2024],
-      "handicap": 18.7,
+      "handicap": 19,
       "year": {
         "_2024": {
           "id": 2024,
-          "handicap": 18.7,
+          "handicap": 19,
           "captain": false,
           "team": "blue",
           "scores": {
@@ -4445,11 +4445,11 @@
     "evan": {
       "name": "evan",
       "appearances": [2022, 2023, 2024],
-      "handicap": 22,
+      "handicap": 23,
       "year": {
         "_2024": {
           "id": 2024,
-          "handicap": 22,
+          "handicap": 23,
           "captain": false,
           "team": "blue",
           "scores": {
@@ -6076,11 +6076,11 @@
     "matt": {
       "name": "matt",
       "appearances": [2021, 2022, 2023, 2024],
-      "handicap": 7,
+      "handicap": 8,
       "year": {
         "_2024": {
           "id": 2024,
-          "handicap": 7,
+          "handicap": 8,
           "captain": true,
           "team": "green",
           "scores": {
