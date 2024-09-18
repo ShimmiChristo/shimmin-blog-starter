@@ -49,7 +49,7 @@ const TopicPage = ({ data, location }) => {
             </p>
             <p>
               Each nine holes has two 2v2 matches, except for the last 9 holes.
-              (Four 1v1 matches)
+              (Six 1v1 matches)
             </p>
             <br />
 
@@ -120,7 +120,7 @@ const TopicPage = ({ data, location }) => {
               score wins the hole. If the low scores are tied, the hole is
               halved.
             </p>
-            <p>Handicap allowance is 85% of combined team handicap</p>
+            <p>Handicap allowance is 80% of combined team handicap</p>
 
             <h3 className="h4 mt-4 pt-1">2 Ball Bramble/2 Ball Shamble</h3>
             <p>
@@ -131,7 +131,7 @@ const TopicPage = ({ data, location }) => {
               two scores on each hole, and the team with the lowest score wins
               the hole. If the low scores are tied, the hole is halved.
             </p>
-            <p>Handicap allowance is 85% of combined team handicap</p>
+            <p>Handicap allowance is 80% of combined team handicap</p>
 
             <h3 className="h4 mt-4 pt-1">Bramble Alternate/Greensomes</h3>
             <p>
