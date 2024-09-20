@@ -3967,11 +3967,11 @@
     "dylan": {
       "name": "dylan",
       "appearances": [2021, 2022, 2023, 2024],
-      "handicap": 0.3,
+      "handicap": 0.0,
       "year": {
         "_2024": {
           "id": 2024,
-          "handicap": 0.3,
+          "handicap": 0.0,
           "captain": false,
           "team": "blue",
           "scores": {
