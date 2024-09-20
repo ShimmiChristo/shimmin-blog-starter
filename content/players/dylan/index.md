@@ -1,6 +1,6 @@
 ---
 published: true
-index: 01
+index: 00
 name: dylan
 nickname: "Dyl"
 description: "El Capitan"

@@ -1,6 +1,6 @@
 ---
 published: true
-index: 06
+index: 02
 name: evan
 nickname: ""
 description: ""

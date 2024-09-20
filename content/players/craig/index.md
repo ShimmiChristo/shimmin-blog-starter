@@ -1,6 +1,6 @@
 ---
 active: true
-index: 03
+index: 01
 name: craig
 nickname: "Crohnsie"
 description: "Description"

@@ -1,6 +1,6 @@
 ---
 active: true
-index: 08
+index: 04
 name: chris
 nickname: "Shim, Shimmin"
 description: "The developer"

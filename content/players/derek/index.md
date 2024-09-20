@@ -1,6 +1,6 @@
 ---
 published: true
-index: 12
+index: 04
 name: derek
 nickname: "D-Mo, Tube, the OG, Old Reliable"
 description: "Description"
