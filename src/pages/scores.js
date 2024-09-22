@@ -135,7 +135,7 @@ const TopicPage = ({ location }) => {
       courseMatch: "boyneHighlandsArthurHills",
       holes: "back",
       matchHandicap: "full",
-      gameplay: "two-ball",
+      gameplay: "two-ball-bramble",
       player1MatchHandicap: "",
       player2MatchHandicap: "",
       player3MatchHandicap: "",

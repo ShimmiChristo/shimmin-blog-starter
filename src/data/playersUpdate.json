@@ -3967,11 +3967,11 @@
     "dylan": {
       "name": "dylan",
       "appearances": [2021, 2022, 2023, 2024],
-      "handicap": 0.0,
+      "handicap": 0.2,
       "year": {
         "_2024": {
           "id": 2024,
-          "handicap": 0.0,
+          "handicap": 0.2,
           "captain": false,
           "team": "blue",
           "scores": {
@@ -6248,11 +6248,11 @@
     "matt": {
       "name": "matt",
       "appearances": [2021, 2022, 2023, 2024],
-      "handicap": 8,
+      "handicap": 7.6,
       "year": {
         "_2024": {
           "id": 2024,
-          "handicap": 8,
+          "handicap": 7.6,
           "captain": true,
           "team": "green",
           "scores": {

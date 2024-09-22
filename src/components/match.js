@@ -270,13 +270,13 @@ function Match({
     courseParP4
   )
 
+  // * array of course handicaps
   const handicaps = [
     playerOneCourseHC,
     playerTwoCourseHC,
     playerThreeCourseHC,
     playerFourCourseHC,
   ]
-  // console.log('handicaps - ', handicaps);
 
   const hardestHoleNine =
     holesPlayed === "out" && hardestHole < 10 ? true : false
@@ -514,9 +514,11 @@ function Match({
     p1,
     p1HC,
     p1DefaultHC,
+    p1CourseHC,
     p2,
     p2HC,
-    p2DefaultHC
+    p2DefaultHC,
+    p2CourseHC
   ) {
     if (playerObj) {
       const holeScores = playerObj?.year[`${year}`].scores?.[`${courseMatch}`]
@@ -543,13 +545,16 @@ function Match({
               <span>
                 <Link to={`/players/${p1}`}>{p1}</Link>
                 <span
+                  className="full-handicap"
                   onClick={() => {
                     showFullHandicap === false
                       ? setShowFullHandicap(true)
                       : setShowFullHandicap(false)
                   }}
                 >
-                  {showFullHandicap ? ` (${p1DefaultHC})` : ` (${p1HC})`}
+                  {showFullHandicap
+                    ? ` (${p1DefaultHC.toFixed(1)}) | (${p1CourseHC.toFixed()})`
+                    : ` (${p1HC})`}
                 </span>
               </span>
             )}
@@ -731,16 +736,19 @@ function Match({
                   player1,
                   p1HCglobal,
                   playerOneHand,
+                  playerOneCourseHC,
                   player3,
                   p3HCglobal,
-                  playerThreeHand
+                  playerThreeHand,
+                  playerThreeCourseHC
                 )
               : calcMatchPlayerScore(
                   gameplay,
                   playerOne,
                   player1,
                   p1HCglobal,
-                  playerOneHand
+                  playerOneHand,
+                  playerOneCourseHC
                 )}
             {playerThree && !oneScoreGameplay
               ? calcMatchPlayerScore(
@@ -749,9 +757,11 @@ function Match({
                   player3,
                   p3HCglobal,
                   playerThreeHand,
+                  playerThreeCourseHC,
                   player1,
                   p1HCglobal,
-                  playerOneHand
+                  playerOneHand,
+                  playerOneCourseHC
                 )
               : ""}
 
@@ -777,11 +787,20 @@ function Match({
                   player2,
                   p2HCglobal,
                   playerTwoHand,
+                  playerTwoCourseHC,
                   player4,
                   p4HCglobal,
-                  playerFourHand
+                  playerFourHand,
+                  playerFourCourseHC
                 )
-              : calcMatchPlayerScore(gameplay, playerTwo, player2, p2HCglobal)}
+              : calcMatchPlayerScore(
+                  gameplay,
+                  playerTwo,
+                  player2,
+                  p2HCglobal,
+                  playerTwoHand,
+                  playerTwoCourseHC
+                )}
 
             {playerFour && !oneScoreGameplay
               ? calcMatchPlayerScore(
@@ -790,9 +809,11 @@ function Match({
                   player4,
                   p4HCglobal,
                   playerFourHand,
+                  playerFourCourseHC,
                   player2,
                   p2HCglobal,
-                  playerTwoHand
+                  playerTwoHand,
+                  playerTwoCourseHC
                 )
               : ""}
             <div className="match__teamScore">
