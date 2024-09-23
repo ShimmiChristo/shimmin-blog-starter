@@ -9,6 +9,7 @@ import PastScoresComponent from "../components/past-scores-component"
 import MatchSummary2021 from "../components/matches/2021/summary"
 import MatchSummary2022 from "../components/matches/2022/summary"
 import MatchSummary2023 from "../components/matches/2023/summary"
+import MatchSummary2024 from "../components/matches/2024/summary"
 
 import "../styles/match.css"
 
@@ -18,7 +19,7 @@ const PastScoresPage = ({ location }) => {
   const summary2021 = MatchSummary2021()
   const summary2022 = MatchSummary2022()
   const summary2023 = MatchSummary2023()
-  const summary2024 = MatchSummary2024()
+  // const summary2024 = MatchSummary2024()
 
   return (
     <Layout location={location} title={siteTitle}>
