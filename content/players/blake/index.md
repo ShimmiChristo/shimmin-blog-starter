@@ -11,4 +11,4 @@ team: "Blue Team"
 handicap: 12
 ---
 
-A new member in 2024, A friend of RJ and Craig. A possible secret agent man.
+A new member in 2024, A cousin to Blue team members. A possible secret agent man.
