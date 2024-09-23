@@ -43,14 +43,14 @@ const TopicPage = ({ location }) => {
   const p1 = "dylan"
   const p2 = "rj"
   const p3 = "craig"
-  const p4 = "jake"
+  const p4 = "blake"
   const p5 = "evan"
   const p6 = "dan"
   const p7 = "matt"
   const p8 = "chris"
   const p9 = "gordon"
   const p10 = "derek"
-  const p11 = "travis"
+  const p11 = "jake"
   const p12 = "curtis"
 
   const playerTees = {

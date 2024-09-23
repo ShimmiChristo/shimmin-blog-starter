@@ -5,7 +5,7 @@
         "team1": {
           "name": "green team",
           "nickname": "crohns crushers",
-          "players": ["Matt", "Gordon", "Chris", "Travis", "Derek", "Curtis"],
+          "players": ["Matt", "Chris", "Gordon", "Jake", "Derek", "Curtis"],
           "score": "0",
           "scores": {
             "dayone": "0",
@@ -81,7 +81,7 @@
         "team2": {
           "name": "blue team",
           "nickname": "team ramrod",
-          "players": ["Dylan", "RJ", "Craig", "Dan", "Jake", "Evan"],
+          "players": ["Dylan", "RJ", "Craig", "Dan", "Blake", "Evan"],
           "score": "0",
           "scores": {
             "dayone": "0",

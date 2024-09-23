@@ -7,7 +7,7 @@ description: ""
 category: players
 featuredImg: ./profile-pic.png
 thumbnail: ./thumbnail.png
-team: "Blue Team"
+team: "Green Team"
 handicap: 20
 ---
 
