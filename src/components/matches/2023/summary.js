@@ -53,25 +53,17 @@ function MatchSummary2022() {
       </p>
       <p>
         The second matches were 2 best ball. Hole 13 might be the most
-        breathtaking hole in all of the Highlands. The matches started with
+        breathtaking hole in all of the Highlands. The matches started with{" "}
         {dylan} and {craig} taking a point for {chris} and {derek} and giving{" "}
-        {derek}
-        his only loss of the weekend. {dylan} beats {chris} again (he’s
+        {derek} his only loss of the weekend. {dylan} beats {chris} again (he’s
         undefeated against {chris}). {matt} and {travis} play well and beat{" "}
         {cam} and {dan}. The third match didn’t seem very close. {rj} and {evan}{" "}
         take an easy point.
       </p>
+
       <p>
-        The second matches were 2 best ball. Hole 13 might be the most
-        breathtaking hole in all of the Highlands. The matches started with
-        {dylan} and {craig} taking a point for {chris} and {derek} and giving{" "}
-        {derek}
-        his only loss of the weekend. {dylan} beats {chris} again (he’s
-        undefeated against {chris}). {matt} and {travis} play well and beat{" "}
-        {cam} and {dan}. The third match didn’t seem very close. {rj} and {evan}{" "}
-        take an easy point.
+        <b>After 18 holes and 2 matches, the Cup is tied 3-3.</b>
       </p>
-      <p>After 18 holes and 2 matches, the Cup is tied 3-3.</p>
       <p>
         After a delicious lunch at Seminole Pub, we were off to the next 18
         holes. The 3rd match was alternate shot at The Ross. One player on each
@@ -89,7 +81,9 @@ function MatchSummary2022() {
         it, giving {derek} another win and {curtis}’s first and only win. Green
         won 4&3.
       </p>
-      <p>After 3 matches, Blue led 5-4.</p>
+      <p>
+        <b>After 3 matches, Blue led 5-4.</b>
+      </p>
       <p>
         Still at the Ross, the last 9 holes and the last match of the day. The
         gameplay was the Scramble format. With both players playing from the
@@ -107,7 +101,9 @@ function MatchSummary2022() {
         Green. Green wins 2UP.
       </p>
       <p>
-        After day 1, Blue leads 7-5. {dylan} goes 4-0, {chris} goes 0-4.
+        <b>
+          After day 1, Blue leads 7-5. {dylan} goes 4-0, {chris} goes 0-4.
+        </b>
       </p>
       <h2>Day 2</h2>
       <p>
@@ -133,20 +129,21 @@ function MatchSummary2022() {
       </p>
       <p>
         The back nine was a two-ball bramble. The first match was {curtis},{" "}
-        {chris}
-        vs {cam}, {evan}. The fairytale story continues as {evan} seems
+        {chris} vs {cam}, {evan}. The fairytale story continues as {evan} seems
         unbeatable with an extra stroke a hole. {cam} and {evan} win 2&1 and
         Blue takes a 4 shot lead. The third match before the second. Green was
         able to stop the bleeding, winning a very important point, 4&2. The
         second match of the nine came down to the last hole. It was {matt} and{" "}
-        {travis} vs {dylan} and
-        {craig}. With every hole giving a point to a team, the match was all
-        square going into the last hole. All four players eventually made it to
-        the green for a putt-off. {dylan} putting for eagle, {matt} putting for
-        birdie, {travis} putting for par, and {craig} putting for bogey. With
-        the pressure on, everyone two-putted and the match ended AS.
+        {travis} vs {dylan} and {craig}. With every hole giving a point to a
+        team, the match was all square going into the last hole. All four
+        players eventually made it to the green for a putt-off. {dylan} putting
+        for eagle, {matt} putting for birdie, {travis} putting for par, and{" "}
+        {craig} putting for bogey. With the pressure on, everyone two-putted and
+        the match ended AS.
       </p>
-      <p>After the third round, Blue was leading, 10.5-7.5.</p>
+      <p>
+        <b>After the third round, Blue was leading, 10.5-7.5.</b>
+      </p>
       <p>
         The last 18 holes of the 2023 BFBH Cup were played at Boyne Highlands
         championship course, The Heather. 9 points were still available for the
@@ -168,8 +165,8 @@ function MatchSummary2022() {
         play, {matt} and {chris} won the last hole to push the match.
       </p>
       <p>
-        After the Pinehurst matches, Green gains 1 point on Blue. Blue leads
-        Green 11.5-9.5.
+        After the Pinehurst matches, Green gains 1 point on Blue.{" "}
+        <b>Blue leads Green 11.5-9.5.</b>
       </p>
       <p>
         This is it ladies and gentlemen. It came down to the last nine holes.
@@ -184,9 +181,8 @@ function MatchSummary2022() {
       </p>
       <p>
         The next match to end was {jake} vs {craig}. {craig} got a stroke
-        against
-        {jake} (questionable) and he took advantage of it. {craig} won 2&1 on
-        hole 8. Blue 12.5, Green 10.5.
+        against {jake} (questionable) and he took advantage of it. {craig} won
+        2&1 on hole 8. Blue 12.5, Green 10.5.
       </p>
 
       <p>
@@ -199,7 +195,7 @@ function MatchSummary2022() {
         the sun. After thinking he had a great shot, we found {dylan} in the
         rough without a shot at the green. {dylan} ended up losing the hole and
         losing his composure. {matt} would win 13, 14 and 15. After the push on
-        17, it was over 2&1, Green team. Blue 12.5, Green 12.5.
+        17, it was over 2&1, Green team. <b>Blue 12.5, Green 12.5</b>.
       </p>
       <p>
         Two groups played the 18th hole. {curtis} vs {evan} and {travis} vs{" "}
@@ -208,20 +204,19 @@ function MatchSummary2022() {
       <p>
         Going into the 18th hole, {evan} vs {curtis}. {evan} was up 1 and he
         took care of business after {curtis} went into the water. {evan} won for
-        the 6th time. Blue 13.5, Green 12.5.
+        the 6th time. <b>Blue 13.5, Green 12.5</b>.
       </p>
       <p>
         It all came down to the final match. {travis} vs {cam}. {travis} is up
         1. All {travis} needs to do is tie against {cam} on the hole and Green
         wins the cup. The 18th hole is one of the hardest holes on all of
         Boyne’s property. The second shot is a 180 yard shot over water to a
-        green. {cam}
-        tees off with an iron to play it safe. He duffs it right, about 50
-        yards. {travis}’s tee shot is a hook left into the weeds. {cam}’s second
-        shot is a duck hook left, down a hill to hole 10. {travis} takes a drop
-        and hits it into the water. Takes a drop and hits back into the water.
-        {cam} hits on the green. {travis} concedes and the match ends in a push.
-        Blue wins the 2023 BFBH cup 14 points to 13 points.
+        green. {cam} tees off with an iron to play it safe. He duffs it right,
+        about 50 yards. {travis}’s tee shot is a hook left into the weeds. {cam}
+        ’s second shot is a duck hook left, down a hill to hole 10. {travis}{" "}
+        takes a drop and hits it into the water. Takes a drop and hits back into
+        the water. {cam} hits on the green. {travis} concedes and the match ends
+        in a push. Blue wins the 2023 BFBH cup 14 points to 13 points.
       </p>
 
       <p>
