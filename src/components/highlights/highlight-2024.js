@@ -6,8 +6,8 @@ import { v1 as uuidv1 } from "uuid"
 // import { PlayerInfoUpdate } from "../../hooks/get-player-info-UPDATE"
 
 function Highlight2024() {
-  const greenTeam = ["matt", "gordon", "chris", "derek", "travis", "curtis"]
-  const blueTeam = ["dylan", "rj", "craig", "jake", "evan", "dan"]
+  const greenTeam = ["matt", "gordon", "chris", "derek", "jake", "curtis"]
+  const blueTeam = ["dylan", "rj", "blake", "craig", "evan", "dan"]
 
   return (
     <>

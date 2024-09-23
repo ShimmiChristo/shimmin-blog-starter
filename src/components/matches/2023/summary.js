@@ -17,7 +17,7 @@ import {
   rj,
 } from "../../../helpers/playerLinks"
 
-function MatchSummary2022() {
+function MatchSummary2023() {
   return (
     <div className="mb-3">
       <h2>2023 Match</h2>
@@ -238,4 +238,4 @@ function MatchSummary2022() {
   )
 }
 
-export default MatchSummary2022
+export default MatchSummary2023

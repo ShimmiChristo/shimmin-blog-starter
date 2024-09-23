@@ -4,7 +4,7 @@ import { Link } from "gatsby"
 // import { StaticImage } from "gatsby-plugin-image"
 // import styled from "styled-components"
 
-function MatchVenue2022() {
+function MatchVenue2023() {
   return (
     <div className="mb-3">
     <h2>2023 Venue</h2>
@@ -36,4 +36,4 @@ function MatchVenue2022() {
   )
 }
 
-export default MatchVenue2022
+export default MatchVenue2023

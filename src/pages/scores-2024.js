@@ -57,7 +57,7 @@ const TopicPage = ({ location }) => {
     p1: "purple",
     p2: "purple",
     p3: "orange",
-    p4: "orange",
+    p4: "purple",
     p5: "orange",
     p6: "orange",
     p7: "purple",

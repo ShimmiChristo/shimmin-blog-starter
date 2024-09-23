@@ -16,14 +16,15 @@ import MatchScore2022 from "../components/matches/2022/score"
 import MatchPlayers2022 from "../components/matches/2022/players"
 import MatchVenue2022 from "../components/matches/2022/venue"
 
-import MatchSummary2023 from "../components/matches/2023/summary"
-import MatchScore2023 from "../components/matches/2023/score"
-import MatchPlayers2023 from "../components/matches/2023/players"
-import MatchVenue2023 from "../components/matches/2023/venue"
-
+import {
+  MatchSummary2023,
+  MatchScore2023,
+  MatchVenue2023,
+  MatchPlayers2023,
+} from "../components/matches/2023"
 // import LandingPageBodySidebar from "../components/landing-page-body-sidebar"
 
-const TopicPage = ({data, location}) => {
+const TopicPage = ({ data, location }) => {
   const { title } = useSiteMetadata()
   const siteTitle = title || `Title`
 

@@ -18,6 +18,7 @@ const PastScoresPage = ({ location }) => {
   const summary2021 = MatchSummary2021()
   const summary2022 = MatchSummary2022()
   const summary2023 = MatchSummary2023()
+  const summary2024 = MatchSummary2024()
 
   return (
     <Layout location={location} title={siteTitle}>
@@ -30,6 +31,15 @@ const PastScoresPage = ({ location }) => {
           <div className="col-6 col-sm-2">Winner</div>
           <div className="col-6 col-sm-5">Location</div>
         </div>
+        {/* 
+         <PastScoresComponent
+          year="2024"
+          date="Sep, 27 - Sep, 28"
+          winner=""
+          location="Bay Harbor, Boyne Highlands"
+          summary={summary2024}
+        />
+        */}
         <PastScoresComponent
           year="2023"
           date="Sep, 22 - Sep, 23"

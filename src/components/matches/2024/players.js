@@ -2,10 +2,10 @@ import React from "react"
 // import { StaticImage } from "gatsby-plugin-image"
 // import styled from "styled-components"
 
-function MatchPlayers2023() {
+function MatchPlayers2024() {
   return (
     <div className="mb-3">
-      <h2>2023 Players</h2>
+      <h2>2024 Players</h2>
       <div className="mb-3">
         <div className="row">
           <div className="col">
@@ -18,10 +18,10 @@ function MatchPlayers2023() {
                   Matt <span className="fst-italic">*team captain</span>
                 </li>
                 <li className="list-group-item m-0 py-2">Chris</li>
-                <li className="list-group-item m-0 py-2">Curtis</li>
-                <li className="list-group-item m-0 py-2">Travis</li>
-                <li className="list-group-item m-0 py-2">Jake</li>
+                <li className="list-group-item m-0 py-2">Gordon</li>
                 <li className="list-group-item m-0 py-2">Derek</li>
+                <li className="list-group-item m-0 py-2">Jake</li>
+                <li className="list-group-item m-0 py-2">Curtis</li>
               </ul>
             </div>
           </div>
@@ -36,8 +36,8 @@ function MatchPlayers2023() {
                 </li>
                 <li className="list-group-item m-0 py-2">RJ</li>
                 <li className="list-group-item m-0 py-2">Craig</li>
+                <li className="list-group-item m-0 py-2">Blake</li>
                 <li className="list-group-item m-0 py-2">Dan</li>
-                <li className="list-group-item m-0 py-2">Cam</li>
                 <li className="list-group-item m-0 py-2">Evan</li>
               </ul>
             </div>
@@ -48,4 +48,4 @@ function MatchPlayers2023() {
   )
 }
 
-export default MatchPlayers2023
+export default MatchPlayers2024

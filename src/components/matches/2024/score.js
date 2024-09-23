@@ -44,7 +44,7 @@ const Section = styled.section`
   }
 `
 
-function MatchScore2023({ year }) {
+function MatchScore({ year }) {
   // const { teams } = ScoreInfo()
   const scoreInfo = ScoreInfo()
   const currentYear = year ? scoreInfo[year].teams : undefined
@@ -73,8 +73,8 @@ function MatchScore2023({ year }) {
   )
 }
 
-MatchScore2023.propTypes = {
+MatchScore.propTypes = {
   year: PropTypes.string,
 }
 
-export default MatchScore2023
+export default MatchScore
