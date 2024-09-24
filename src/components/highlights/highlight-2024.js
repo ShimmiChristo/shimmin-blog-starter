@@ -46,7 +46,7 @@ function Highlight2024() {
           <h3 className="h4">Predictions</h3>
           <p>
             I'm predicting that the Cup will come down to the last day, singles
-            matches. It went to the end last and I don't see a reason why it
+            matches. It went to the end last year and I don't see a reason why it
             won't do the same this year. Each of the last two years, we've had
             multiple people with 6 points scored. I don't anticipate anyone
             getting 6 points this year. I also don't predict any scoreless days.
