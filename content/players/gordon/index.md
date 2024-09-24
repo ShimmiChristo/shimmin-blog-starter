@@ -11,10 +11,7 @@ team: "Green Team"
 handicap: 12
 ---
 
-A new member to the Green Team in 2022. He's the only player who played
-in high school, so expectations are high.
-
-Can Gordon be the secret weapon to Green Team's success in 2022?
+Back in 2024 and ready to help lead Green to victory!
 
 <br/>
 

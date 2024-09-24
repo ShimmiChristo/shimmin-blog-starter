@@ -14,4 +14,4 @@ handicap: 13
 
 What can be said about RJ, he's there to gamble and golf. Unfortunately he has a losing record in both. 
 
-He's hoping to make a turn around in 2023.
+He's hoping to make a turn around in 2024.

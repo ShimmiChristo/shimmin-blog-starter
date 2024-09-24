@@ -11,4 +11,4 @@ team: "Blue Team"
 handicap: 22
 ---
 
-After an abysmal 2022 opening, Evan is looking to redeem himself. Evan is the wildcard of the Blue Team. He may shake things up early. 
+A MVP year in 2023. Let's see how he does in 2024. 

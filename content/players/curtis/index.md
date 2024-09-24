@@ -12,5 +12,3 @@ handicap: 23.4
 ---
 
 Proud Crohn's bro. Prefers sharts over farts. Is widely regarded as the most well rounded twin.
-
-Curtis was a new member to the Green Team in 2022.

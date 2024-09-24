@@ -11,6 +11,4 @@ team: "Green Team"
 handicap: 20
 ---
 
-Jake is back for 2023! Jake was so loved by the Green Team in 2022, we've asked him back to fill in for another member that is out. If he keeps it up, he may be a season regular.
-
-Jake steps in as the third lowest handicap on the Green Team. 
+Green member in 2022, 2023, and 2024. He's ready to take the cup back in 2024!

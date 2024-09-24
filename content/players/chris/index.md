@@ -11,8 +11,8 @@ team: "Green Team"
 handicap: 13.3
 ---
 
-After sitting out in 2022, Chris is chomping at the bit to get back out there. He still doesn't golf much, but he bought a new TaylorMade wedge and wears the most comfortable golf shoes from New Balance.
+Still looking to get his first win against Dylan and Evan.
 
-Chris is looking to get his first win against Dylan.
+In 2024, Chris is looking to not lose his camera and bring home the cup.
 
 Creator and Developer of BFBHCup.com.
