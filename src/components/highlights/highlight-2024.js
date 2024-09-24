@@ -6,109 +6,132 @@ import { v1 as uuidv1 } from "uuid"
 // import { PlayerInfoUpdate } from "../../hooks/get-player-info-UPDATE"
 
 function Highlight2024() {
-  const greenTeam = ["matt", "gordon", "chris", "derek", "jake", "curtis"]
+  const greenTeam = ["matt", "chris", "gordon", "derek", "jake", "curtis"]
   const blueTeam = ["dylan", "rj", "blake", "craig", "evan", "dan"]
 
   return (
     <>
       <div className="container my-3 mb-lg-5">
-        <div className="row text-center justify-content-center">
+        <div className="row col-12 text-center justify-content-center">
           <p className="h2 m-4">
             Sept 27th-28th, 2024
             <br /> Bay Harbor & Boyne Highlands Golf Courses
           </p>
-          {/* <div className="col-lg-8">
-            <p>
-              With the 2023 cup is nearly two weeks away, a lot has changed for
-              the scoring. We’ve implemented the official USGA scoring for match
-              play, we’ve added a new game called Pinehurst, the handicap system
-              is simplified, and the player handicaps are the most accurate
-              they’ve ever been. All these improvements will help for more
-              competitive mathches. Stay tuned for an exciting 2023 cup!
-            </p>
-            <p>
-              In 2022, the teams expanded to 12 players. Green Team was able to
-              win comfortably, with the singles matches being a non-factor.
-              Since the thumping at Gull Lake, a lot of words were said whether
-              the handicaps and teams were fair.
-            </p>
-            <p>
-              In 2023, Green is lead by Goose for a third straight year. He’s
-              looking to continue his success from his 6 win performance in
-              2022. Green’s roster is being shaken up again with Shimmin coming
-              back. Jake is filling in for the second straight year, this time
-              for Gordon. Blue team needs 14 points to steal the cup. Blue is
-              lead by captain Dylan Wells for the third straight year. Blue
-              needs to come out hot to get the ball rolling early.
-            </p>
-          </div> */}
         </div>
       </div>
-      {/* <div className="mb-3">
-        <div className="flex flex-column text-center">
-          <div className="h1">27 Points</div>
-          <div className="h2">2 Teams</div>
-          <div className="h3">
-            <b>1 Winner</b>
-          </div>
+      <div className="row">
+        <div className="col-12 col-md-6">
+          <h3 className="h4">2024 Cup Foreword</h3>
+          <p>
+            What will 2024 bring? We're going back to Boyne for the second
+            straight year. Same place, yet slightly different. We're playing a
+            week later in the season, we're adding Bay Harbor Golf Club, adding
+            a familiar face and a new face. Gordon is back for his second BFBH
+            Cup, Jake is staying on Green (his alternate status on Green is
+            becoming very permanent), Cam and Travis are OOO, and cousin Blake
+            (HC 16) is filling in on Blue.
+          </p>
+          <h3 className="h4">Handicaps</h3>
+          <p>
+            There's some early Cup rumblings about the handicaps. Some people
+            are too high, some people are too low, blah, blah. We use an honor
+            system when it comes to handicapping the BFBH Cup. Since we have an
+            array of talent (to put it nicely), all of scores are net scores.
+            Last year was the first year we asked everyone to maintain a HC and
+            I think it was a great success, considering it came down to the last
+            hole. Our total team handicaps in 2024 are Green, 102.6 and Blue,
+            102.2. It doesn't get closer than that.
+          </p>
+
+          <h3 className="h4">Predictions</h3>
+          <p>
+            I'm predicting that the Cup will come down to the last day, singles
+            matches. It went to the end last and I don't see a reason why it
+            won't do the same this year. Each of the last two years, we've had
+            multiple people with 6 points scored. I don't anticipate anyone
+            getting 6 points this year. I also don't predict any scoreless days.
+            Last year Chris was winless on day 1.
+          </p>
+
+          <h3 className="h4">Scoring</h3>
+          <p>
+            Blue only needs 13.5 points to retain and cup and Green needs 14
+            points to take it. Which begs the question, how is Green going
+            to get an extra 1/2 point? Who will step up this year?
+          </p>
         </div>
-      </div> */}
-      <h2 className="h1 text-center mb-3">2024 Teams</h2>
-      <div className="container mb-3 pb-3 col-lg-10">
-        <div className="row">
-          <div className="col-12 col-md-6 mb-1">
-            <div className="card shadow-none border">
-              <div className="card-header team-one-color-bg text-white text-center">
-                Green Team
-              </div>
-              <ul className="list-group list-group-flush">
-                {greenTeam.map((player, i) => {
-                  if (i === 0) {
-                    return (
-                      <li key={uuidv1()} className="list-group-item m-0 py-2">
-                        <span className="capitalize">{player}</span>
-                        <em>*</em>
-                      </li>
-                    )
-                  } else {
-                    return (
-                      <li key={uuidv1()} className="list-group-item m-0 py-2">
-                        <span className="capitalize">{player}</span>
-                      </li>
-                    )
-                  }
-                })}
-              </ul>
-            </div>
-          </div>
-          <div className="col-12 col-md-6 mb-1">
-            <div className="card shadow-none border">
-              <div className="card-header team-two-color-bg text-white text-center">
-                Blue Team
-              </div>
-              <ul className="list-group list-group-flush">
-                {blueTeam.map((player, i) => {
-                  if (i === 0) {
-                    return (
-                      <li key={uuidv1()} className="list-group-item m-0 py-2">
-                        <span className="capitalize">{player}</span>
-                        <em>*</em>
-                      </li>
-                    )
-                  } else {
-                    return (
-                      <li key={uuidv1()} className="list-group-item m-0 py-2">
-                        <span className="capitalize">{player}</span>
-                      </li>
-                    )
-                  }
-                })}
-              </ul>
-            </div>
-          </div>
-          <div className="col-12 mb-3">
+        <div className="col-12 col-md-6">
+          <h2 className="h1 text-center mb-3">2024 Teams</h2>
+          <div className="container mb-3 pb-3 col-lg-10">
             <div className="row">
-              <em>*team captain</em>
+              <div className="col-12 mb-1">
+                <div className="card shadow-none border">
+                  <div className="card-header team-two-color-bg text-white text-center">
+                    Blue Team
+                  </div>
+                  <ul className="list-group list-group-flush">
+                    {blueTeam.map((player, i) => {
+                      if (i === 0) {
+                        return (
+                          <li
+                            key={uuidv1()}
+                            className="list-group-item m-0 py-2"
+                          >
+                            <span className="capitalize">{player}</span>
+                            <em>*</em>
+                          </li>
+                        )
+                      } else {
+                        return (
+                          <li
+                            key={uuidv1()}
+                            className="list-group-item m-0 py-2"
+                          >
+                            <span className="capitalize">{player}</span>
+                          </li>
+                        )
+                      }
+                    })}
+                  </ul>
+                </div>
+              </div>
+              <div className="col-12 mb-1">
+                <div className="card shadow-none border">
+                  <div className="card-header team-one-color-bg text-white text-center">
+                    Green Team
+                  </div>
+                  <ul className="list-group list-group-flush">
+                    {greenTeam.map((player, i) => {
+                      if (i === 0) {
+                        return (
+                          <li
+                            key={uuidv1()}
+                            className="list-group-item m-0 py-2"
+                          >
+                            <span className="capitalize">{player}</span>
+                            <em>*</em>
+                          </li>
+                        )
+                      } else {
+                        return (
+                          <li
+                            key={uuidv1()}
+                            className="list-group-item m-0 py-2"
+                          >
+                            <span className="capitalize">{player}</span>
+                          </li>
+                        )
+                      }
+                    })}
+                  </ul>
+                </div>
+              </div>
+
+              <div className="col-12 mb-3">
+                <div className="row">
+                  <em>*team captain</em>
+                </div>
+              </div>
             </div>
           </div>
         </div>
