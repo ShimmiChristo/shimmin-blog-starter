@@ -98,7 +98,7 @@ function MatchSummary2023() {
         With all 8 other players circling around the ball, {evan} took a swing…
         solid contact... and he stuck the green. An unbelievable shot with all
         eyes on him. After that shot, there was no chance to take the point for
-        Green. Green wins 2UP.
+        Green. Blue wins 2UP.
       </p>
       <p>
         <b>
