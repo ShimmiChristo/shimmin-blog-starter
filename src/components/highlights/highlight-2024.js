@@ -28,7 +28,7 @@ function Highlight2024() {
             week later in the season, we're adding Bay Harbor Golf Club, adding
             a familiar face and a new face. Gordon is back for his second BFBH
             Cup, Jake is staying on Green (his alternate status on Green is
-            becoming very permanent), Cam and Travis are OOO, and cousin Blake
+            becoming very permanent), Cam and Travis are sitting out this year, and cousin Blake
             (HC 16) is filling in on Blue.
           </p>
           <h3 className="h4">Handicaps</h3>
