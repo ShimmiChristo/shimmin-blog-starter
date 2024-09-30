@@ -9,7 +9,7 @@ featuredImg: ./profile-pic.png
 thumbnail: ./thumbnail.png
 team: "Blue Team"
 captain: true
-handicap: +0.5
+handicap: 0.3
 ---
 
 2 time cup champion and blue team captain. Dylan is looking to lead his team to back to back cup titles and 3rd overall championship.
