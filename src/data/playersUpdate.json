@@ -34,7 +34,7 @@
             },
             "boyneHighlandsHeather": {
               "course": "The Heather at Boyne Highlands",
-              "front": [4, 5, 4, 4, 7, 3, 5, 5, 99],
+              "front": [4, 5, 4, 4, 8, 3, 5, 5, 99],
               "frontHandicap": 999,
               "back": [7, 7, 3, 5, 5, 6, 6, 6, 5],
               "backHandicap": 999
@@ -767,7 +767,7 @@
             },
             "boyneHighlandsHeather": {
               "course": "The Heather at Boyne Highlands",
-              "front": [5, 4, 4, 4, 4, 4, 3, 5, 6],
+              "front": [5, 5, 4, 4, 5, 4, 4, 6, 6],
               "frontHandicap": 999,
               "back": [5, 5, 5, 6, 4, 6, 4, 10, 7],
               "backHandicap": 999
@@ -1448,7 +1448,7 @@
             },
             "boyneHighlandsHeather": {
               "course": "The Heather at Boyne Highlands",
-              "front": [4, 5, 4, 4, 7, 3, 5, 5, 99],
+              "front": [4, 5, 4, 4, 8, 3, 5, 5, 99],
               "frontHandicap": 999,
               "back": [6, 6, 3, 6, 6, 7, 4, 5, 6],
               "backHandicap": 999
@@ -3993,7 +3993,7 @@
               "course": "Arthur Hills at Boyne Highlands",
               "front": [5, 4, 4, 4, 4, 4, 2, 4, 99],
               "frontHandicap": 999,
-              "back": [6, 6, 7, 7, 5, 7, 4, 99, 99],
+              "back": [5, 5, 5, 5, 4, 5, 3, 99, 99],
               "backHandicap": 999
             },
             "boyneHighlandsHeather": {
@@ -4659,16 +4659,16 @@
             },
             "boyneHighlandsArthurHills": {
               "course": "Arthur Hills at Boyne Highlands",
-              "front": [99, 99, 99, 99, 99, 99, 99, 99, 99],
+              "front": [6, 5, 6, 4, 6, 6, 5, 5, 5],
               "frontHandicap": 999,
-              "back": [99, 99, 99, 99, 99, 99, 99, 99, 99],
+              "back": [5, 5, 7, 6, 4, 9, 3, 99, 99],
               "backHandicap": 999
             },
             "boyneHighlandsHeather": {
               "course": "The Heather at Boyne Highlands",
-              "front": [99, 99, 99, 99, 99, 99, 99, 99, 99],
+              "front": [3, 7, 6, 3, 7, 4, 6, 7, 9],
               "frontHandicap": 999,
-              "back": [99, 99, 99, 99, 99, 99, 99, 99, 99],
+              "back": [10, 8, 5, 6, 7, 5, 5, 7, 6],
               "backHandicap": 999
             }
           },
@@ -5202,16 +5202,16 @@
             },
             "boyneHighlandsArthurHills": {
               "course": "Arthur Hills at Boyne Highlands",
-              "front": [99, 99, 99, 99, 99, 99, 99, 99, 99],
+              "front": [7, 3, 3, 5, 5, 7, 3, 5, 99],
               "frontHandicap": 999,
-              "back": [99, 99, 99, 99, 99, 99, 99, 99, 99],
+              "back": [5, 7, 5, 7, 3, 5, 5, 5, 5],
               "backHandicap": 999
             },
             "boyneHighlandsHeather": {
               "course": "The Heather at Boyne Highlands",
-              "front": [99, 99, 99, 99, 99, 99, 99, 99, 99],
+              "front": [5, 4, 6, 5, 6, 3, 5, 7, 99],
               "frontHandicap": 999,
-              "back": [99, 99, 99, 99, 99, 99, 99, 99, 99],
+              "back": [8, 6, 3, 7, 6, 6, 3, 5, 5],
               "backHandicap": 999
             }
           },
@@ -5747,16 +5747,16 @@
             },
             "boyneHighlandsArthurHills": {
               "course": "Arthur Hills at Boyne Highlands",
-              "front": [99, 99, 99, 99, 99, 99, 99, 99, 99],
+              "front": [4, 6, 8, 6, 5, 6, 4, 7, 5],
               "frontHandicap": 999,
-              "back": [99, 99, 99, 99, 99, 99, 99, 99, 99],
+              "back": [4, 7, 8, 5, 2, 6, 99, 99, 99],
               "backHandicap": 999
             },
             "boyneHighlandsHeather": {
               "course": "The Heather at Boyne Highlands",
-              "front": [99, 99, 99, 99, 99, 99, 99, 99, 99],
+              "front": [4, 6, 6, 4, 7, 4, 5, 5, 7],
               "frontHandicap": 999,
-              "back": [99, 99, 99, 99, 99, 99, 99, 99, 99],
+              "back": [7, 8, 6, 6, 7, 7, 4, 5, 6],
               "backHandicap": 999
             }
           },
@@ -6272,16 +6272,16 @@
             },
             "boyneHighlandsArthurHills": {
               "course": "Arthur Hills at Boyne Highlands",
-              "front": [99, 99, 99, 99, 99, 99, 99, 99, 99],
+              "front": [4, 4, 6, 4, 5, 5, 3, 4, 3],
               "frontHandicap": 999,
-              "back": [99, 99, 99, 99, 99, 99, 99, 99, 99],
+              "back": [5, 8, 5, 6, 4, 4, 3, 99, 99],
               "backHandicap": 999
             },
             "boyneHighlandsHeather": {
               "course": "The Heather at Boyne Highlands",
-              "front": [99, 99, 99, 99, 99, 99, 99, 99, 99],
+              "front": [5, 5, 4, 4, 5, 4, 4, 6, 6],
               "frontHandicap": 999,
-              "back": [99, 99, 99, 99, 99, 99, 99, 99, 99],
+              "back": [5, 7, 3, 5, 5, 6, 4, 4, 6],
               "backHandicap": 999
             }
           },
@@ -6945,16 +6945,16 @@
             },
             "boyneHighlandsArthurHills": {
               "course": "Arthur Hills at Boyne Highlands",
-              "front": [99, 99, 99, 99, 99, 99, 99, 99, 99],
+              "front": [6, 4, 6, 6, 6, 6, 3, 6, 3],
               "frontHandicap": 999,
-              "back": [99, 99, 99, 99, 99, 99, 99, 99, 99],
+              "back": [5, 6, 5, 6, 3, 6, 99, 99, 99],
               "backHandicap": 999
             },
             "boyneHighlandsHeather": {
               "course": "The Heather at Boyne Highlands",
-              "front": [99, 99, 99, 99, 99, 99, 99, 99, 99],
+              "front": [4, 5, 4, 3, 5, 3, 5, 4, 6],
               "frontHandicap": 999,
-              "back": [99, 99, 99, 99, 99, 99, 99, 99, 99],
+              "back": [6, 6, 3, 6, 5, 6, 6, 99, 6],
               "backHandicap": 999
             }
           },
