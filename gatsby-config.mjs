@@ -28,7 +28,7 @@ const config = {
     nav: [
       {
         name: "Scores",
-        link: "/scores#r1-best-ball",
+        link: "/scores",
       },
       {
         name: "Players",

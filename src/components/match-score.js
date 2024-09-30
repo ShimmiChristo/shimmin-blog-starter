@@ -179,32 +179,35 @@ function MatchScore({ year, lastYearWinner, location }) {
   const currentYear = year ? scoreInfo[year].teams : undefined
   let team1RoundScore = currentYear.team1.scores.total
   let team2RoundScore = currentYear.team2.scores.total
-  console.log("location.hash - ", location)
+  // console.log("location.hash - ", location)/
 
-  if (location.hash.includes("#r1f")) {
+  if (location?.hash.includes("#r1f")) {
     team1RoundScore = currentYear.team1.scores.round1
     team2RoundScore = currentYear.team2.scores.round1
-  } else if (location.hash.includes("#r1b")) {
+  } else if (location?.hash.includes("#r1b")) {
     team1RoundScore = currentYear.team1.scores.round2
     team2RoundScore = currentYear.team2.scores.round2
-  } else if (location.hash.includes("#r2f")) {
+  } else if (location?.hash.includes("#r2f")) {
     team1RoundScore = currentYear.team1.scores.round3
     team2RoundScore = currentYear.team2.scores.round3
-  } else if (location.hash.includes("#r2b")) {
+  } else if (location?.hash.includes("#r2b")) {
     team1RoundScore = currentYear.team1.scores.round4
     team2RoundScore = currentYear.team2.scores.round4
-  } else if (location.hash.includes("#r3f")) {
+  } else if (location?.hash.includes("#r3f")) {
     team1RoundScore = currentYear.team1.scores.round5
     team2RoundScore = currentYear.team2.scores.round5
-  } else if (location.hash.includes("#r3b")) {
+  } else if (location?.hash.includes("#r3b")) {
     team1RoundScore = currentYear.team1.scores.round6
     team2RoundScore = currentYear.team2.scores.round6
-  } else if (location.hash.includes("#r4f")) {
+  } else if (location?.hash.includes("#r4f")) {
     team1RoundScore = currentYear.team1.scores.round7
     team2RoundScore = currentYear.team2.scores.round7
-  } else if (location.hash.includes("#r4b")) {
+  } else if (location?.hash.includes("#r4b")) {
     team1RoundScore = currentYear.team1.scores.round8
     team2RoundScore = currentYear.team2.scores.round8
+  } else {
+    team1RoundScore = currentYear.team1.scores.total
+    team2RoundScore = currentYear.team2.scores.total
   }
 
   let team1BarWidth = (team1RoundScore / 27) * 100
