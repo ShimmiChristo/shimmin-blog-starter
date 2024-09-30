@@ -10,7 +10,15 @@
           "scores": {
             "dayone": "6",
             "daytwo": "8.5",
-            "total": "14.5"
+            "total": "14.5",
+            "round1": "1.5",
+            "round2": "3.5",
+            "round3": "4.5",
+            "round4": "6",
+            "round5": "8.5",
+            "round6": "10.5",
+            "round7": "11.5",
+            "round8": "14.5"
           },
           "points": [
             {
@@ -86,7 +94,15 @@
           "scores": {
             "dayone": "6",
             "daytwo": "6.5",
-            "total": "12.5"
+            "total": "12.5",
+            "round1": "1.5",
+            "round2": "2.5",
+            "round3": "4.5",
+            "round4": "6",
+            "round5": "6.5",
+            "round6": "7.5",
+            "round7": "9.5",
+            "round8": "12.5"
           },
           "points": [
             {

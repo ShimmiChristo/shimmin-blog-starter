@@ -174,11 +174,41 @@ const PointsNeeded = styled.h3`
   }
 `
 
-function MatchScore({ year, lastYearWinner }) {
+function MatchScore({ year, lastYearWinner, location }) {
   const scoreInfo = ScoreInfo()
   const currentYear = year ? scoreInfo[year].teams : undefined
-  const team1BarWidth = (currentYear.team1.score / 27) * 100
-  const team2BarWidth = (currentYear.team2.score / 27) * 100
+  let team1RoundScore = currentYear.team1.scores.total
+  let team2RoundScore = currentYear.team2.scores.total
+  console.log("location.hash - ", location)
+
+  if (location.hash.includes("#r1f")) {
+    team1RoundScore = currentYear.team1.scores.round1
+    team2RoundScore = currentYear.team2.scores.round1
+  } else if (location.hash.includes("#r1b")) {
+    team1RoundScore = currentYear.team1.scores.round2
+    team2RoundScore = currentYear.team2.scores.round2
+  } else if (location.hash.includes("#r2f")) {
+    team1RoundScore = currentYear.team1.scores.round3
+    team2RoundScore = currentYear.team2.scores.round3
+  } else if (location.hash.includes("#r2b")) {
+    team1RoundScore = currentYear.team1.scores.round4
+    team2RoundScore = currentYear.team2.scores.round4
+  } else if (location.hash.includes("#r3f")) {
+    team1RoundScore = currentYear.team1.scores.round5
+    team2RoundScore = currentYear.team2.scores.round5
+  } else if (location.hash.includes("#r3b")) {
+    team1RoundScore = currentYear.team1.scores.round6
+    team2RoundScore = currentYear.team2.scores.round6
+  } else if (location.hash.includes("#r4f")) {
+    team1RoundScore = currentYear.team1.scores.round7
+    team2RoundScore = currentYear.team2.scores.round7
+  } else if (location.hash.includes("#r4b")) {
+    team1RoundScore = currentYear.team1.scores.round8
+    team2RoundScore = currentYear.team2.scores.round8
+  }
+
+  let team1BarWidth = (team1RoundScore / 27) * 100
+  let team2BarWidth = (team2RoundScore / 27) * 100
 
   // function changeBackgroundColor() {
   //   if (parseInt(currentYear.team1.score) > parseInt(currentYear.team2.score)) {
@@ -277,7 +307,7 @@ function MatchScore({ year, lastYearWinner }) {
         <ScoreTrackerBar>
           <div>
             <ScoreTeamOne className="h1">
-              {currentYear.team1.score}
+              {team1RoundScore}
             </ScoreTeamOne>
             <ScoreTrackerTeamOne
               className="ScoreTrackerTeam team-one-color"
@@ -287,7 +317,7 @@ function MatchScore({ year, lastYearWinner }) {
           </div>
           <div>
             <ScoreTeamTwo className="h1">
-              {currentYear.team2.score}
+              {team2RoundScore}
             </ScoreTeamTwo>
             <ScoreTrackerTeamTwo
               className="ScoreTrackerTeam team-two-color"

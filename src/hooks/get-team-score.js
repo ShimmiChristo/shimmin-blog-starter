@@ -14,6 +14,14 @@ export const ScoreInfo = () => {
                 dayone
                 daytwo
                 total
+                round1
+                round2
+                round3
+                round4
+                round5
+                round6
+                round7
+                round8
               }
               points {
                 id
@@ -31,6 +39,14 @@ export const ScoreInfo = () => {
                 dayone
                 daytwo
                 total
+                round1
+                round2
+                round3
+                round4
+                round5
+                round6
+                round7
+                round8
               }
               points {
                 id
