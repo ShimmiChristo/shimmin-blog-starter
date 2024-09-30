@@ -179,7 +179,6 @@ function MatchScore({ year, lastYearWinner, location }) {
   const currentYear = year ? scoreInfo[year].teams : undefined
   let team1RoundScore = currentYear.team1.scores.total
   let team2RoundScore = currentYear.team2.scores.total
-  // console.log("location.hash - ", location)/
 
   if (location?.hash.includes("#r1f")) {
     team1RoundScore = currentYear.team1.scores.round1
