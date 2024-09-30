@@ -11,15 +11,15 @@ function Highlight2024() {
 
   return (
     <>
-      <div className="container my-3 mb-lg-5">
-        <div className="row col-12 text-center justify-content-center">
+      {/* <div className="container my-3 mb-lg-5">
+         <div className="row col-12 text-center justify-content-center">
           <p className="h2 m-4">
             Sept 27th-28th, 2024
             <br /> Bay Harbor & Boyne Highlands Golf Courses
           </p>
-        </div>
-      </div>
-      <div className="row">
+        </div> 
+      </div> */}
+      <div className="row pt-5">
         <div className="col-12 col-md-6">
           <h3 className="h4">2024 Cup Foreword</h3>
           <p>
@@ -46,9 +46,9 @@ function Highlight2024() {
           <h3 className="h4">Predictions</h3>
           <p>
             I'm predicting that the Cup will come down to the last day, singles
-            matches. It went to the end last year and I don't see a reason why it
-            won't do the same this year. Each of the last two years, we've had
-            multiple people with 6 points scored. I don't anticipate anyone
+            matches. It went to the end last year and I don't see a reason why
+            it won't do the same this year. Each of the last two years, we've
+            had multiple people with 6 points scored. I don't anticipate anyone
             getting 6 points this year. I also don't predict any scoreless days.
             Last year Chris was winless on day 1.
           </p>
@@ -56,8 +56,8 @@ function Highlight2024() {
           <h3 className="h4">Scoring</h3>
           <p>
             Blue only needs 13.5 points to retain and cup and Green needs 14
-            points to take it. Which begs the question, how is Green going
-            to get an extra 1/2 point? Who will step up this year?
+            points to take it. Which begs the question, how is Green going to
+            get an extra 1/2 point? Who will step up this year?
           </p>
         </div>
         <div className="col-12 col-md-6">
