@@ -30,20 +30,19 @@ const TopicPage = ({ data, location }) => {
     <Layout location={location} title={siteTitle}>
       <SEO title="Boys From Back Home Cup" />
       <h1 className="invisible">BFBH Cup | Boys From Back Home Cup</h1>
-      <HighlightCountdown
+      {/* <HighlightCountdown
         startTime={startDate}
         location={locationName}
         courseUrl={courseUrl}
-      />
+        /> */}
 
       {/* <HighlightDay /> */}
+      <h2 className="text-center bold my-5">BFBH Cup 2024 Score</h2>
+      <MatchScore year="_2024" lastYearWinner="green" />
       <Highlight2024 />
       {/* <hr /> */}
       {/* <br /> */}
       <Venue2024 />
-
-      <h2 className="text-center bold my-4">BFBH Cup 2023 Score</h2>
-      <MatchScore year="_2023" lastYearWinner="green" />
     </Layout>
   )
 }
