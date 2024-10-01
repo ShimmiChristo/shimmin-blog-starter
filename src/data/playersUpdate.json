@@ -2712,20 +2712,20 @@
             {
               "partners": [
                 {
-                  "name": "jake",
+                  "name": "blake",
                   "wins": 0,
                   "ties": 0,
-                  "losses": 0
+                  "losses": 1
                 },
                 {
-                  "name": "dan",
+                  "name": "craig",
                   "wins": 0,
                   "ties": 0,
-                  "losses": 0
+                  "losses": 2
                 },
                 {
                   "name": "dylan",
-                  "wins": 0,
+                  "wins": 1,
                   "ties": 0,
                   "losses": 0
                 },
@@ -2733,12 +2733,12 @@
                   "name": "evan",
                   "wins": 0,
                   "ties": 0,
-                  "losses": 0
+                  "losses": 2
                 },
                 {
                   "name": "rj",
                   "wins": 0,
-                  "ties": 0,
+                  "ties": 1,
                   "losses": 0
                 }
               ]
@@ -2748,44 +2748,38 @@
                 {
                   "name": "chris",
                   "wins": 0,
-                  "ties": 0,
-                  "losses": 0
+                  "ties": 1,
+                  "losses": 3
                 },
                 {
                   "name": "curtis",
-                  "wins": 0,
-                  "ties": 0,
-                  "losses": 0
+                  "wins": 1,
+                  "ties": 1,
+                  "losses": 1
                 },
                 {
                   "name": "derek",
                   "wins": 0,
                   "ties": 0,
-                  "losses": 0
+                  "losses": 2
+                },
+                {
+                  "name": "jake",
+                  "wins": 0,
+                  "ties": 0,
+                  "losses": 1
                 },
                 {
                   "name": "gordon",
                   "wins": 0,
                   "ties": 0,
-                  "losses": 0
-                },
-                {
-                  "name": "gordon",
-                  "wins": 0,
-                  "ties": 0,
-                  "losses": 0
+                  "losses": 2
                 },
                 {
                   "name": "matt",
                   "wins": 0,
                   "ties": 0,
-                  "losses": 0
-                },
-                {
-                  "name": "travis",
-                  "wins": 0,
-                  "ties": 0,
-                  "losses": 0
+                  "losses": 3
                 }
               ]
             }
