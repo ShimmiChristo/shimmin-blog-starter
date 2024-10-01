@@ -38,6 +38,18 @@ export const PlayerInfoPoints = () => {
           name
           handicap
           year {
+            _2024 {
+              handicap
+              id
+              team
+              points {
+                game
+                id
+                wins
+                ties
+                losses
+              }
+            }
             _2023 {
               handicap
               id
@@ -68,6 +80,18 @@ export const PlayerInfoPoints = () => {
           name
           handicap
           year {
+            _2024 {
+              handicap
+              id
+              team
+              points {
+                game
+                id
+                wins
+                ties
+                losses
+              }
+            }
             _2023 {
               handicap
               id
@@ -110,6 +134,18 @@ export const PlayerInfoPoints = () => {
           name
           handicap
           year {
+            _2024 {
+              handicap
+              id
+              team
+              points {
+                game
+                id
+                wins
+                ties
+                losses
+              }
+            }
             _2023 {
               handicap
               id
@@ -140,6 +176,18 @@ export const PlayerInfoPoints = () => {
           name
           handicap
           year {
+            _2024 {
+              handicap
+              id
+              team
+              points {
+                game
+                id
+                wins
+                ties
+                losses
+              }
+            }
             _2023 {
               handicap
               id
@@ -182,6 +230,18 @@ export const PlayerInfoPoints = () => {
           name
           handicap
           year {
+            _2024 {
+              handicap
+              id
+              team
+              points {
+                game
+                id
+                wins
+                ties
+                losses
+              }
+            }
             _2023 {
               handicap
               id
@@ -224,6 +284,18 @@ export const PlayerInfoPoints = () => {
           name
           handicap
           year {
+            _2024 {
+              handicap
+              id
+              team
+              points {
+                game
+                id
+                wins
+                ties
+                losses
+              }
+            }
             _2023 {
               handicap
               id
@@ -266,6 +338,18 @@ export const PlayerInfoPoints = () => {
           name
           handicap
           year {
+            _2024 {
+              handicap
+              id
+              team
+              points {
+                game
+                id
+                wins
+                ties
+                losses
+              }
+            }
             _2023 {
               handicap
               id
@@ -291,11 +375,23 @@ export const PlayerInfoPoints = () => {
               }
             }
           }
-        } 
+        }
         gordon {
           name
           handicap
           year {
+            _2024 {
+              handicap
+              id
+              team
+              points {
+                game
+                id
+                wins
+                ties
+                losses
+              }
+            }
             _2022 {
               handicap
               id
@@ -314,6 +410,18 @@ export const PlayerInfoPoints = () => {
           name
           handicap
           year {
+            _2024 {
+              handicap
+              id
+              team
+              points {
+                game
+                id
+                wins
+                ties
+                losses
+              }
+            }
             _2023 {
               handicap
               id
@@ -344,6 +452,18 @@ export const PlayerInfoPoints = () => {
           name
           handicap
           year {
+            _2024 {
+              handicap
+              id
+              team
+              points {
+                game
+                id
+                wins
+                ties
+                losses
+              }
+            }
             _2023 {
               handicap
               id
@@ -386,6 +506,18 @@ export const PlayerInfoPoints = () => {
           name
           handicap
           year {
+            _2024 {
+              handicap
+              id
+              team
+              points {
+                game
+                id
+                wins
+                ties
+                losses
+              }
+            }
             _2023 {
               handicap
               id
