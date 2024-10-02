@@ -22,7 +22,6 @@ const PlayerPostTemplate = ({ data, location, children }) => {
   const featuredImage = getImage(
     post.frontmatter.featuredImg?.childImageSharp?.gatsbyImageData
   )
-  
 
   const Header = styled.header`
     display: flex;
@@ -144,7 +143,7 @@ const PlayerPostTemplate = ({ data, location, children }) => {
         <div className="row">
           <div className="col-12 col-lg-6">
             <PlayerInfoThisYearRecord
-              year="2024"
+              year="All Time"
               teamColor="green"
               post={post}
               playerData={playerData}
@@ -152,8 +151,38 @@ const PlayerPostTemplate = ({ data, location, children }) => {
           </div>
           <div className="col-12 col-lg-6">
             <PlayerInfoThisYearRecord
-              year="All Time"
+              year="2024"
               teamColor="green"
+              post={post}
+              playerData={playerData}
+            />
+          </div>
+        </div>
+        <div className="row">
+          <div className="col-12 offset-lg-6 col-lg-6">
+            <PlayerInfoThisYearRecord
+              year="2023"
+              teamColor=""
+              post={post}
+              playerData={playerData}
+            />
+          </div>
+        </div>
+        <div className="row">
+          <div className="col-12 offset-lg-6 col-lg-6">
+            <PlayerInfoThisYearRecord
+              year="2022"
+              teamColor=""
+              post={post}
+              playerData={playerData}
+            />
+          </div>
+        </div>
+        <div className="row">
+          <div className="col-12 offset-lg-6 col-lg-6">
+            <PlayerInfoThisYearRecord
+              year="2021"
+              teamColor=""
               post={post}
               playerData={playerData}
             />
@@ -243,7 +272,7 @@ export const pageQuery = graphql`
       jake {
         ...JakeFragment
       }
-      blake{
+      blake {
         ...BlakeFragment
       }
     }
