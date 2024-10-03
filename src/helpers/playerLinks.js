@@ -61,3 +61,13 @@ export const rj = (
     RJ
   </Link>
 )
+export const gordon = (
+  <Link to="/players/gordon/" className="green underline">
+    Gordon
+  </Link>
+)
+export const blake = (
+  <Link to="/players/blake/" className="blue underline">
+    Blake
+  </Link>
+)

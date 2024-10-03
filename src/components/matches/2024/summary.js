@@ -45,8 +45,68 @@ function MatchSummary2024() {
       <h3>Predictions</h3>
       <p>
         I'm predicting that the Cup will come down to the last day, singles
-        matches. It went to the end last year and I don't see a reason why it won't
-        do the same this year.
+        matches. It went to the end last year and I don't see a reason why it
+        won't do the same this year.
+      </p>
+
+      <h3>The Trip</h3>
+      <p>
+        For the location of the 2024, we decided to go back to Boyne. The deal
+        and courses are just too good. An exciting change, we added the Pebble
+        Beach of the Midwest -- Bay Harbor Golf Club. At Boyne Highlands, we are
+        welcomed with Champaign and fresh chocolate chip cookies. Boyne is
+        class.
+      </p>
+      <p>
+        We started the trip with a practice round at Hidden River Golf and
+        Casting Club on Thursday afternoon. We had a little compition on who
+        would pay for dinner later that night. It was 4 Green Team members vs 5
+        Blue Team members. The game was 2 best ball, stroke play. Long story,
+        short, Green came out victorious by 9 strokes. Chris and Gordon lead the
+        way for Green, each shooting net 1 under par. Matt shot the low gross
+        score with 11 over.
+      </p>
+
+      <h3>Day 1</h3>
+      <p>
+        First tee time is 8:30am at Bay Harbor Golf Club. We have the first tee
+        time on the sheet. We'll be setting the pace of play. Each day consists
+        of 4, 9-hole rounds. Each round is a different gameplay.The opening
+        round is the front 9 at Bay Harbor, and the gameplay is 1 Best Ball.
+        Meaning between the two partners, we write down the low score for each
+        hole. The opening round is {`${matt} and ${chris}`} against{" "}
+        {`${dylan} and ${dan}`}. Going into this featured matchup, Chris had
+        never beaten Dylan (0-1-6 all time). This match was back and forth and
+        eventually came down to the last hole where {dylan} and {dan} both had
+        eagle putts but {matt} closed the door with a 30 foot putt to push on
+        the last hole and hold off Blue to get the first point of the cup. Every
+        year thus far, the winning team of the opening matchup has aligned with
+        the winning team of the cup. Will 2024 outcome be the same?
+      </p>
+      <p>
+        Match 2 was {gordon} and {curtis} against new commer, {blake} and last
+        year's mvp, {evan}. This match came down to the last hole, Blue was down
+        2 with 2 to play, but they found a way to win 8 and 9 and push the
+        match.
+      </p>
+      <p>
+        Match 3 was {derek} and {jake} against {rj} and {craig}. {jake} is back
+        on Green after starting as an alternate. In a match that started tight,
+        Blue was too much and won holes 5,6,7 to win 3&2.
+      </p>
+
+      <p>
+        Round 2 was at the Quarry and the gameplay was 2 best ball. Now this
+        time, both players on the team add their scores to have a combined
+        score. Match 4 was Green's lower handicaps, {matt} and {gordon} vs
+        Blue's high handicaps, {evan} and {dan}. {evan} and {dan} have never won
+        together. After this match, that still remains true. Green takes 5 of
+        the first 6 holes to win 4&3.
+      </p>
+      <p>
+        Match 5 is the featured match. It's {chris} and {jake} vs {dylan} and{" "}
+        {craig}. {chris} (+0 net) and {jake} (+10 net) score on the right holes
+        and beat {dylan} (+7 net) and {craig} (+3 net).
       </p>
 
       {/* <p>
