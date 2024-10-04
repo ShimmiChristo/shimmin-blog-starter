@@ -85,7 +85,7 @@ function MatchSummary2024() {
         the winning team of the cup. Would 2024 outcome be the same?
       </p>
       <p>
-        Match 2 was {gordon} and {curtis} against new commer, {blake} and last
+        Match 2 was {gordon} and {curtis} against newcomer, {blake} and last
         year's mvp, {evan}. This match came down to the last hole, Blue was down
         2 with 2 to play, but they found a way to win 8 and 9 and push the
         match.
