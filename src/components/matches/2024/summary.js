@@ -108,22 +108,27 @@ function MatchSummary2024() {
         {craig}. {chris} (+0 net) and {jake} (+10 net) score on the right holes
         and beat {dylan} (+7 net) and {craig} (+3 net).
       </p>
+      <p>
+        Match 6 was {derek} and {curtis} vs {rj} and {blake}. {derek} and{" "}
+        {curtis} jumped out to a quick lead after the first hole but Blue was
+        too much. {rj} is 2-0 after 2 matches and {blake} gets his first win at
+        a BFBH Cup.
+      </p>
 
-      {/* <p>
+      <p>
         <div className="block mb-1">
           <span className="bold">MVP: </span>
-          <Link to="/players/{evan}">{evan}</Link>
+          <Link to="/players/{chris}">{chris}</Link>
         </div>
         <div className="block mb-1">
           <span className="bold">Biggest Surprise: </span>
-          <Link to="/players/{evan}">{evan}</Link> (Score: 6-1-1),{" "}
+          <Link to="/players/{dan}">{dan}</Link> (Score: 1-1-6),{" "}
         </div>
         <div className="block mb-1">
           <span className="bold">Most Points Scored: </span>
-          <Link to="/players/{derek}">{evan}</Link> (6),{" "}
-          <Link to="/players/{derek}">{derek}</Link> (6)
+          <Link to="/players/{chris}">{chris}</Link> 6 (5-2-1)
         </div>
-      </p> */}
+      </p>
     </div>
   )
 }

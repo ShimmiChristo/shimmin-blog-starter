@@ -230,8 +230,8 @@ function MatchSummary2023() {
         </div>
         <div className="block mb-1">
           <span className="bold">Most Points Scored: </span>
-          <Link to="/players/{derek}">{evan}</Link> (6),{" "}
-          <Link to="/players/{derek}">{derek}</Link> (6)
+          <Link to="/players/{derek}">{evan}</Link> 6.5 (6-1-1),{" "}
+          <Link to="/players/{derek}">{derek}</Link> 6.5 (6-1-1)
         </div>
       </p>
     </div>
