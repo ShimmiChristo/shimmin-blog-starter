@@ -52,8 +52,7 @@ function MatchSummary2021() {
         </div>
         <div className="block mb-1">
           <span className="bold">Most Points Scored: </span>
-          <Link to="/players/dylan">Dylan</Link> and{" "}
-          <Link to="/players/craig">Craig</Link> (4)
+          <Link to="/players/craig">Craig</Link> 4.5 (4-1-1)
         </div>
       </p>
     </div>

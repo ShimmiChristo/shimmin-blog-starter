@@ -73,9 +73,7 @@ function MatchSummary2022() {
         </div>
         <div className="block mb-1">
           <span className="bold">Most Points Scored: </span>
-          <Link to="/players/derek">Derek</Link> (6),{" "}
-          <Link to="/players/matt">Matt</Link> (6),{" "}
-          <Link to="/players/travis">Travis</Link> (6)
+          <Link to="/players/derek">Derek</Link> 6.5 (6-1-1)
         </div>
       </p>
     </div>

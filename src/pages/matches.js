@@ -22,6 +22,12 @@ import {
   MatchVenue2023,
   MatchPlayers2023,
 } from "../components/matches/2023"
+import {
+  MatchSummary2024,
+  MatchScore2024,
+  MatchVenue2024,
+  MatchPlayers2024,
+} from "../components/matches/2024"
 // import LandingPageBodySidebar from "../components/landing-page-body-sidebar"
 
 const TopicPage = ({ data, location }) => {
@@ -32,6 +38,32 @@ const TopicPage = ({ data, location }) => {
     <Layout location={location} title={siteTitle}>
       <SEO title="Previous Matches" />
       <LandingPageHeader title="Matches" />
+
+      {/* {2024} */}
+      <div className="container">
+        <div className="row mb-3">
+          <div className="col-lg-8">
+            <MatchSummary2024 />
+          </div>
+        </div>
+        <div className="row">
+          <div className="col-lg-8">
+            <MatchScore2024 year="_2024" />
+          </div>
+        </div>
+        <div className="row">
+          <div className="col-lg-8">
+            <MatchPlayers2024 />
+          </div>
+        </div>
+        <div className="row mb-3">
+          <div className="col-lg-8">
+            <MatchVenue2024 />
+          </div>
+        </div>
+      </div>
+      <hr />
+
       {/* 2023 */}
       <div className="container">
         <div className="row mb-3">

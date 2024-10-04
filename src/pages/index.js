@@ -10,7 +10,8 @@ import MatchScore from "../components/match-score"
 import Highlight2024 from "../components/highlights/highlight-2024"
 import Venue2024 from "../components/venues/venue-2024"
 import HighlightCountdown from "../components/highlights/coutdown-hightlight"
-import HighlightDay from "../components/highlights/day-hightlights-2023"
+// import HighlightDay from "../components/highlights/day-hightlights-2023"
+import MatchSummary2024 from "../components/matches/2024/summary"
 
 // import AboutSite from "../components/about-site"
 // import MatchNav from "../components/match-nav"
@@ -36,9 +37,9 @@ const TopicPage = ({ data, location }) => {
         courseUrl={courseUrl}
         /> */}
 
-      {/* <HighlightDay /> */}
       <h2 className="text-center bold my-5">BFBH Cup 2024 Score</h2>
       <MatchScore year="_2024" lastYearWinner="green" />
+      <MatchSummary2024 />
       <Highlight2024 />
       {/* <hr /> */}
       {/* <br /> */}
