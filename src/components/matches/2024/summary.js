@@ -170,6 +170,63 @@ function MatchSummary2024() {
         3-1-0.{" "}
       </p>
 
+      <h3>Day 2</h3>
+      <p>
+        Day 2 started at Arthur Hills. The first 9 holes was a one best-ball
+        bramble and the second 9 holes was a two best-ball bramble. It's the
+        longest course at Boyne so Bramble helps teams off the tee.
+      </p>
+      <p>
+        The opening match, match 13, started the day will excitement. It was{" "}
+        {gordon} and {curtis} against {dylan} and {blake}. I'll start with this.{" "}
+        {dylan} was 2 under par and Blue lost the match on the 8th hole, 2&1!
+        There were two holes were a player didn't shoot under par (net par).
+        Holes 1 and 8. Hole 1 was won by a net par for Green. {gordon} had a
+        gross birdie on 2, then on 3 {gordon} made an eagle from 130 yards out!
+        The guys didn't see it go in, they looked around for a few minutes until
+        someone said "hey, maybe it's in the cup", and it was! The Cup's first
+        gross eagle! {dylan} shot birdie and lost the hole. The 4th hole,{" "}
+        {blake} shot net birdie. On hole 5, {curtis} shot net birdie. On hole 6,
+        {dylan} chipped in from 30 yards out for birdie. Then while Gren was
+        looking for a ball to play, {dylan} putted in for back to back birdies
+        on hole 7. Eventually, {curtis} found a ball to play and chipped past
+        the hole 30+ feet but was able to make the comeback par putt for net
+        birdie! They pushed on hole 7. Both teams parred 8 and the match was
+        over. According to the scores, this match alone had 11 net birdies or
+        better. What a performance gentlemen.
+      </p>
+      <p>
+        Match 14 was a dogfight between {chris}, {jake} and {rj}, {evan} to the
+        end. {chris} and {rj} still haven't lost at this point and they just got
+        done tieing in the previous match. {chris} had the driver working early.
+        Hitting 5 or 6 straight fairways but after 4 holes, Blue was up 2-1.
+        Then Green got on track and took a 1UP lead after winning holes 5 and 6.
+        Then the momentum switched on the par 3, 7. {chris} hit on the green
+        giving a both players on Green a birdie putt. Both players on Blue
+        missed the green. {chris} and {jake} were sitting on the green with a
+        huge advantage. {rj} has a great up and down from just off the green.{" "}
+        {chris} and {jake} would both go on to 3 putt the hole. Instead of being
+        2 down with 2 to play (dormie). The match was all square. Then on 8,
+        everyone is getting a stroke except {rj}. On the tee at 8, {rj} pushed
+        his drive OB. With the door wide open, {chris} steps up and does the
+        same thing. {evan} then hits a 5 iron off the tee box to get in play and{" "}
+        {jake} hits a bomb, and keeps Green in it. On to hole 9, the second par
+        3. Again Green hits on and Blue is just off. And again Blue is able to
+        get up and down and put the pressure on Green team. With the last putt
+        of the match, {chris} is able to make the little 3/4 footer to push the
+        match.
+      </p>
+      <p>
+        Match 15 was {matt} and {derek} vs {craig} and {dan}. This match would
+        come down to the last hole. Green jumps to a quick lead on hole 1. Blue
+        eventually ties the match on hole 5. Then it's back and forth, Green
+        then Blue. On the last hole, it's a par 3 with the match all square.
+        Green is able to hit just off the green and {matt} nails a 7/8 footer to
+        get up and down for par and Green takes a point 1UP.
+      </p>
+      <p>
+        <b>After the first 5 rounds, the score is 8.5, Green to 6.5, Blue.</b>
+      </p>
       {/* <p>
         <div className="block mb-1">
           <span className="bold">MVP: </span>
