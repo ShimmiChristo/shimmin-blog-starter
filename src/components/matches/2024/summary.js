@@ -21,7 +21,6 @@ function MatchSummary2024() {
   return (
     <div className="mb-3">
       <h2>2024 Match</h2>
-
       {/* <h3>Before the 2024 Cup</h3>
       <p>
         What will 2024 bring? We're going back to Boyne for the second straight
@@ -49,7 +48,6 @@ function MatchSummary2024() {
         matches. It went to the end last year and I don't see a reason why it
         won't do the same this year.
       </p> */}
-
       {/* <h3>The Trip</h3>
       <p>
         For the location of the 2024, we decided to go back to Boyne. The deal
@@ -67,7 +65,6 @@ function MatchSummary2024() {
         way for Green, each shooting net 1 under par. Matt shot the low gross
         score with 11 over.
       </p> */}
-
       <h3>Day 1</h3>
       <p>
         First tee time was 8:30am at Bay Harbor Golf Club. We had the first tee
@@ -95,7 +92,6 @@ function MatchSummary2024() {
         on Green after starting as an alternate. In a match that started tight,
         Blue was too much and won holes 5,6,7 to win 3&2.
       </p>
-
       <p>
         Round 2 was at the Quarry and the gameplay was 2 best ball. Now this
         time, both players on the team add their scores to have a combined
@@ -116,12 +112,10 @@ function MatchSummary2024() {
         too much. {rj} starts 2-0 after 2 matches and {blake} gets his first win
         at a BFBH Cup.
       </p>
-
       <p>
         After the best ball and 2 best ball matches, Green was up 1 point on
         Blue. <b>3.5 to 2.5</b>
       </p>
-
       <p>
         Matches 7-12 were played at The Moor Course at Boyne Highlands. The
         first 3 matches were Alternate format and the last 3 were Scramble.{" "}
@@ -169,7 +163,6 @@ function MatchSummary2024() {
         After Day 1, the score was tied 6-6. {chris} goes 3-1-0 and {rj} goes
         3-1-0.{" "}
       </p>
-
       <h3>Day 2</h3>
       <p>
         Day 2 started at Arthur Hills. The first 9 holes was a one best-ball
@@ -227,7 +220,137 @@ function MatchSummary2024() {
       <p>
         <b>After the first 5 rounds, the score is 8.5, Green to 6.5, Blue.</b>
       </p>
-      {/* <p>
+      <p>
+        Match 16 was the start of 2 best-ball bramble format. The 2 best-ball
+        bramble ended up having 3 lopsided victories. To start off, it was{" "}
+        {jake} and {curtis} against {rj} and {blake}. In a bit of a surprise,
+        Green won 5 of the first 6 holes and won the match 4&3. Giving {curtis}{" "}
+        his second win of the tournament.
+      </p>
+      <p>
+        The next match was {chris} and {gordon} against {craig} and {dan}.{" "}
+        {chris} and {gordon} felt very confident going into this match. {craig}{" "}
+        had a great 7/8 foot putt on 11 to push the hole. In the end, Green was
+        too consistent and took 4 of the first 6 holes to win 4&3. {chris} ended
+        with 2 over par.
+      </p>
+      <p>
+        Match 18, the last match at The Hills, was between {matt} and {derek}{" "}
+        against {dylan} and {evan}. This was another not-so-close match. Green
+        scores on one hole but it's Blue who gets the easy win 4&2.
+        {dylan} and {evan} are 4-0-1 all time together.{" "}
+      </p>
+      <p>
+        <b>Highlights for rounds 5 and 6 at The Hills.</b> {gordon} had the
+        first eagle of the cup. {dylan} shot -2 under on the front. Green took
+        4.5 of the 6 points available.
+      </p>
+      <p>
+        After 6 rounds, the score is now, 10.5, Green to 7.5, Blue. Green jumped
+        to a 3 point lead after the first 18 holes on day 2.{" "}
+      </p>
+      <p>
+        <b>Pinehurst and singles matches</b> at The Heather. Green needs to 3.5
+        points to win and Blue needs 6 points to retain the cup. No matter what
+        happens on Pinehurst, it's coming down to the singles matches.
+      </p>
+      <p>
+        Match 19 was an exciting one. Like I said earlier, {dan} and {evan} have
+        never won together as partners. However in this match, they found
+        themselves up 2 points with 3 to play. I'm not sure what happened next,
+        but Green came alive. {curtis} and {jake} won 3 straight holes to win
+        the match 1UP on the last hole. A huge point for Green. Green now has
+        11.5 points. 2.5 points to go.
+      </p>
+      <p>
+        Match 20 was {gordon}, {derek} vs {craig}, {blake}. This one started out
+        with a lot of scoring. It went Blue, Green, Blue, Blue, Green, then 2
+        holes of AS. Blue finished them off on hole 8, winning 2&1. Blue now has
+        8.5. 5 points to go.
+      </p>
+      <p>
+        Match 21, the featured match between {dylan}, {rj} and {matt}, {chris}.
+        This is a rematch of last year. Last year, Green was able to win 2 of
+        the last 3 holes to push the match. This match was just as close but
+        with a different outcome. This year, Green was given 4 strokes to
+        account for handicaps. Every holes besides hole 3 and 9 were scored on.
+        The scoring for the first 8 holes went like this: Blue, Green, tie,
+        Blue, Green, Blue, Green, Blue. The two teams just going back and forth.
+        We find ourselves near the green on 9. {chris} chips on with about a 30
+        footer left for {matt} to make par. {dylan} hits his shot long, giving{" "}
+        {rj} a chip from behind the green, on a tree root for par. {rj} chips
+        and leaves it just off the green in the rough about 15/20 feet from the
+        pin. So now {matt} has putt for par and {dylan} has a chip for bogey.
+        Green needs to win the hole to push the match. What do you think happens
+        next? You guessed it, {dylan} gets up there and hits a perfect chip to
+        drain it for bogey! {matt} gives it his best but misses it just right.
+        They push the hole and Blue wins the match.
+      </p>
+      <p>
+        <b>After 7 rounds, the score is 11.5, Green to 8.5, Blue.</b> Blue won 2
+        of the 3 points at Pinehurst.
+      </p>
+      <p>
+        <b>The Singles Matches</b>. The groups stay together and the matchups
+        are {curtis} vs {dan}, {jake} vs {evan}, {derek} vs {blake}, {gordon} vs{" "}
+        {craig}, {chris} vs {rj}, and {matt} vs {dylan}. Since this matches were
+        so close in time, we need to talk about them as they finish, so I'll be
+        jumping out of order.
+      </p>
+      <p>
+        The first match to end was Match 22. {curtis} vs {dan}. A hard fought
+        victory and {dan} gets his first win of the cup, winning 2&1 on hole 17.
+        The other 2 groups were on 15 and 16.{" "}
+        <b>Score update. Green: 11.5, Blue: 10.5</b>.
+      </p>
+      <p>
+        The next match to end was Match 26, {chris} vs {rj}. This match was
+        about putting. Who could putt less worse. The greens were extremely fast
+        in the afternoon and it hurt both players. In this year's rematch,{" "}
+        {chris} ended up winning on the same hole as last year, hole 16.{" "}
+        <b>Score update. Green: 12.5, Blue: 10.5</b>.
+      </p>
+      <p>
+        The next match to finish was on 17. Match 24, {derek} vs {blake}. This
+        was a tough fought match. Every hole had a winner, so no pushes. {derek}{" "}
+        had a little 3 footer to win the hole and match and he sealed it.{" "}
+        <b>Score update. Green: 13.5, Blue: 10.5</b>.
+      </p>
+      <p>
+        {derek}'s putt put Green ahead, 13.5 to 10.5. Which meant Green only
+        needed a 0.5 point to win the cup. Which meant we just needed one player
+        to push a match to get the 14 points. Right after {derek}'s putt, we
+        found out {jake} was 1 up on {evan} going into the last hole, which
+        meant the worst he could do is push, meaning Green had the 14 they need
+        to win! It was over, {derek}'s putt sealed the victory for Green in
+        2024!👏👏🙌🙌
+      </p>
+      <p>
+        Match 23, {jake} vs {evan}. This match would come down to the last hole.{" "}
+        {jake} won the first hole, but found himself down 1 with 3 to play. He
+        went on to win holes 16 and 17. So he was 1 up going into the last hole.
+        After {evan} hit in the water, {jake} finished him off and won the match
+        1UP. <b>Score update. Green: 14.5, Blue: 10.5</b>.
+      </p>
+      <p>
+        Match 25 between {gordon} and {craig} came down to the last hole for
+        pride. {craig} held {gordon} off and won his 4th singles match all time,
+        1UP. <b>Score update. Green: 14.5, Blue: 11.5</b>.
+      </p>
+      <p>
+        The last match was between {matt} and {dylan}. {matt} made a clutch putt
+        on 17 after a misread by {dylan}. The match came down the green on 18.{" "}
+        {matt} dunked his in the water and {dylan} made par. Dylan won 1UP.{" "}
+        <b>Score update. Green: 14.5, Blue: 12.5</b>.
+      </p>
+
+      <p>
+        Day 2 highlights, {curtis} goes 3-0-1, {jake} goes 3-1-0, {chris} and{" "}
+        {craig} win their singles matches to stay undefeated in singles, {dylan}{" "}
+        chips in on 9 to save a 0.5 point, and {derek} is the point that seals
+        the win for the Green Team!
+      </p>
+      <p>
         <div className="block mb-1">
           <span className="bold">MVP: </span>
           <Link to="/players/{chris}">{chris}</Link>
@@ -240,7 +363,7 @@ function MatchSummary2024() {
           <span className="bold">Most Points Scored: </span>
           <Link to="/players/{chris}">{chris}</Link> 6 (5-2-1)
         </div>
-      </p> */}
+      </p>
     </div>
   )
 }
