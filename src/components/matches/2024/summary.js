@@ -72,14 +72,14 @@ function MatchSummary2024() {
         of 4, 9-hole rounds. Each round is a different gameplay.The opening
         round was the front 9 at Bay Harbor, and the gameplay was 1 Best Ball.
         Meaning, between the two partners, we write down the low score for each
-        hole. The opening round was {`${matt} and ${chris}`} against{" "}
-        {`${dylan} and ${dan}`}. Going into this featured matchup, Chris had
-        never beaten Dylan (0-1-6 all time). This match was back and forth and
-        eventually came down to the last hole where {dylan} and {dan} both had
-        eagle putts but {matt} closed the door with a 30 foot putt to push on
-        the last hole and hold off Blue to get the first point of the cup. Every
-        year thus far, the winning team of the opening matchup has aligned with
-        the winning team of the cup. Would 2024 outcome be the same?
+        hole. The opening round was {matt} and {chris} against {dylan} and {dan}
+        . Going into this featured matchup, Chris had never beaten Dylan (0-1-6
+        all time). This match was back and forth and eventually came down to the
+        last hole where {dylan} and {dan} both had eagle putts but {matt} closed
+        the door with a 30 foot putt to push on the last hole and hold off Blue
+        to get the first point of the cup. Every year thus far, the winning team
+        of the opening matchup has aligned with the winning team of the cup.
+        Would 2024 outcome be the same?
       </p>
       <p>
         Match 2 was {gordon} and {curtis} against newcomer, {blake} and last
