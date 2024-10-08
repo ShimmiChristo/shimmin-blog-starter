@@ -55,7 +55,7 @@ const PastScoresComponent = ({ year, date, winner, location, summary }) => {
             {teamOneName} {teamOneScore} - {teamTwoName} {teamTwoScore}
           </div>
         </div>
-        <div className="row col-10 col-lg-7 offset-lg-1">{summary}</div>
+        <div className="row col-12 col-lg-8 offset-lg-1">{summary}</div>
       </div>
     </>
   )
