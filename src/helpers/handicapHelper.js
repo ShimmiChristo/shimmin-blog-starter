@@ -54,9 +54,11 @@ function calcToLowestHandicap(p1HC, p2HC, p3HC, p4HC) {
 }
 
 function getHardestNineHandicap(score, hardestHoleNine) {
+  // * round up
   if (hardestHoleNine) {
     return Math.round(score)
   } else {
+    // * round down
     return Math.floor(score)
   }
 }
@@ -86,6 +88,9 @@ function getPlayerHandicap(player, gameplay, handicaps, hardestHoleNine) {
    *
    * REASON FOR NOT GETTING PARAMETER IN AS FULL HC.
    * Some courses are 9 holes so it's better to get the 9 hole course HC and multiply by 2
+   * THIS LOGIC WAS ONLY TO MATCH SQUABBIT APP.
+   * The reason logic is to get the 9 hole handicap and use that.
+   * No need to multiple by 2. 
    */
   const p1 = handicaps[0] * 2
   const p2 = handicaps[1] * 2
