@@ -214,6 +214,142 @@ const MostPlayerPoints = () => {
           )
         })}
       </div>
+      {/* MATCHES */}
+      <div className="mt-5 container col-12 col-md-6">
+        <div className="h4 text-center">Most Matches Won</div>
+        {top5GamePoints("total").map((player, i) => {
+          return (
+            <div className="row border-bottom py-2" key={`top5MostWins` + i}>
+              <div className="col-6 text-center fontSize-0 capitalize">
+                {player.name}
+              </div>
+              <div className="col-6 text-center fontSize-0">
+                {player.total.wins}
+              </div>
+            </div>
+          )
+        })}
+      </div>
+      <div className="mt-5 container col-12 col-md-6">
+        <div className="h4 text-center">Most Best Ball Matches Won</div>
+        {top5GamePoints("bestBall").map((player, i) => {
+          return (
+            <div className="row border-bottom py-2" key={`top5MostWins` + i}>
+              <div className="col-6 text-center fontSize-0 capitalize">
+                {player.name}
+              </div>
+              <div className="col-6 text-center fontSize-0">
+                {player.bestBall.wins}
+              </div>
+            </div>
+          )
+        })}
+      </div>
+      <div className="mt-5 container col-12 col-md-6">
+        <div className="h4 text-center">Most 2 Best Ball Matches Won</div>
+        {top5GamePoints("twoBestBall").map((player, i) => {
+          return (
+            <div className="row border-bottom py-2" key={`top5MostWins` + i}>
+              <div className="col-6 text-center fontSize-0 capitalize">
+                {player.name}
+              </div>
+              <div className="col-6 text-center fontSize-0">
+                {player.twoBestBall.wins}
+              </div>
+            </div>
+          )
+        })}
+      </div>
+      <div className="mt-5 container col-12 col-md-6">
+        <div className="h4 text-center">Most Bramble Matches Won</div>
+        {top5GamePoints("bramble").map((player, i) => {
+          return (
+            <div className="row border-bottom py-2" key={`top5MostWins` + i}>
+              <div className="col-6 text-center fontSize-0 capitalize">
+                {player.name}
+              </div>
+              <div className="col-6 text-center fontSize-0">
+                {player.bramble.wins}
+              </div>
+            </div>
+          )
+        })}
+      </div>
+      <div className="mt-5 container col-12 col-md-6">
+        <div className="h4 text-center">Most 2 Ball Bramble Matches Won</div>
+        {top5GamePoints("twoBallBramble").map((player, i) => {
+          return (
+            <div className="row border-bottom py-2" key={`top5MostWins` + i}>
+              <div className="col-6 text-center fontSize-0 capitalize">
+                {player.name}
+              </div>
+              <div className="col-6 text-center fontSize-0">
+                {player.twoBallBramble.wins}
+              </div>
+            </div>
+          )
+        })}
+      </div>
+      <div className="mt-5 container col-12 col-md-6">
+        <div className="h4 text-center">Most Alternate Matches Won</div>
+        {top5GamePoints("alternate").map((player, i) => {
+          return (
+            <div className="row border-bottom py-2" key={`top5MostWins` + i}>
+              <div className="col-6 text-center fontSize-0 capitalize">
+                {player.name}
+              </div>
+              <div className="col-6 text-center fontSize-0">
+                {player.alternate.wins}
+              </div>
+            </div>
+          )
+        })}
+      </div>
+      <div className="mt-5 container col-12 col-md-6">
+        <div className="h4 text-center">Most Scramble Matches Won</div>
+        {top5GamePoints("scramble").map((player, i) => {
+          return (
+            <div className="row border-bottom py-2" key={`top5MostWins` + i}>
+              <div className="col-6 text-center fontSize-0 capitalize">
+                {player.name}
+              </div>
+              <div className="col-6 text-center fontSize-0">
+                {player.scramble.wins}
+              </div>
+            </div>
+          )
+        })}
+      </div>
+      <div className="mt-5 container col-12 col-md-6">
+        <div className="h4 text-center">Most Pinehurst Matches Won</div>
+        {top5GamePoints("pinehurst").map((player, i) => {
+          return (
+            <div className="row border-bottom py-2" key={`top5MostWins` + i}>
+              <div className="col-6 text-center fontSize-0 capitalize">
+                {player.name}
+              </div>
+              <div className="col-6 text-center fontSize-0">
+                {player.pinehurst.wins}
+              </div>
+            </div>
+          )
+        })}
+      </div>
+      <div className="mt-5 container col-12 col-md-6">
+        <div className="h4 text-center">Most Singles Matches Won</div>
+        {top5GamePoints("singles").map((player, i) => {
+          return (
+            <div className="row border-bottom py-2" key={`top5MostWins` + i}>
+              <div className="col-6 text-center fontSize-0 capitalize">
+                {player.name}
+              </div>
+              <div className="col-6 text-center fontSize-0">
+                {player.singles.wins}
+              </div>
+            </div>
+          )
+        })}
+      </div>
     </>
   )
 }
