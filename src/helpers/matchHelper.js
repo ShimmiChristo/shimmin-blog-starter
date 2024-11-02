@@ -28,4 +28,30 @@ function calcPops(holes, score, p1HC, handicap, holePar) {
   }
 }
 
-export { calcPops }
+function calcScorecardMarks(score, holePar) {
+  // birdie
+  if (holePar - score > 0 && holePar - score === 1) {
+    return (
+      <>
+        <div className="scorecard-circle circle--1"></div>
+      </>
+    )
+  } else if (holePar - score > 0 && holePar - score === 2){
+    return (
+      <>
+        <div className="scorecard-circle circle--1"></div>
+        <div className="scorecard-circle circle--2"></div>
+      </>
+    )
+  } else if (holePar - score > 0 && holePar - score === 3){
+    return (
+      <>
+        <div className="scorecard-circle circle--1"></div>
+        <div className="scorecard-circle circle--2"></div>
+        <div className="scorecard-circle circle--3"></div>
+      </>
+    )
+  }
+}
+
+export { calcPops, calcScorecardMarks }

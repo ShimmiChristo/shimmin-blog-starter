@@ -193,6 +193,29 @@ body {
   right: 9px;
 }
 
+.scorecard-circle {
+  display: inline-block;
+  position: absolute;
+  border-radius: 50%;
+  border: 1px solid var(--green);
+  background-color: transparent;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.circle--1 {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+.circle--2 {
+  width: 2rem;
+  height: 2rem;
+}
+.circle--3 {
+  width: 2.5rem;
+  height: 2.5rem;
+}
+
 @media screen and (max-width: 767px) {
   .row-cell {
     min-width: 3rem;
