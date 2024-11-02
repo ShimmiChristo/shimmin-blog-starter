@@ -348,10 +348,12 @@ function Match({
     if (teamOneScoreArray[holeIndex] > teamTwoScoreArray[holeIndex]) {
       teamWins.teamTwo++
       teamWins.team = "teamTwo"
+      teamWins.nickname="blue"
       return teamWins
     } else if (teamOneScoreArray[holeIndex] < teamTwoScoreArray[holeIndex]) {
       teamWins.teamOne++
       teamWins.team = "teamOne"
+      teamWins.nickname="green"
       return teamWins
     } else {
       teamWins.teamOne = 0
@@ -542,7 +544,10 @@ function Match({
                   courseHoles[i].handicap,
                   courseHoles[i].par
                 )}
-                {calcScorecardMarks(calcPlayerScore(score, p1HC, courseHoles[i].handicap, holes), courseHoles[i].par)}
+                {calcScorecardMarks(
+                  calcPlayerScore(score, p1HC, courseHoles[i].handicap, holes),
+                  courseHoles[i].par
+                )}
               </>
               <div
                 className="match__score row-cell"
@@ -552,6 +557,13 @@ function Match({
                   courseHoles[i].handicap,
                   holes
                 )}`}
+                data-netscore={`${calcPlayerScore(
+                  score,
+                  p1HC,
+                  courseHoles[i].handicap,
+                  holes
+                )}`}
+                data-grossscore={score}
                 data-par={`${courseHoles[i].par}`}
                 data-matchover={`${isMatchOver(i + 1)}`}
               >
@@ -685,6 +697,7 @@ function Match({
                 className="match__hole row-cell"
                 data-winner={`${calcHoleWinner(hole.number).team}`}
                 data-matchover={`${isMatchOver(i + 1)}`}
+                data-holewinner={`${calcHoleWinner(hole.number).nickname ?? 'tie'}`}
                 id={hole.number}
               >
                 <div className="match__line"></div>
