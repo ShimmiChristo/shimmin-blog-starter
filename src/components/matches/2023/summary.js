@@ -1,6 +1,6 @@
 import React from "react"
 import { Link } from "gatsby"
-// import { StaticImage } from "gatsby-plugin-image"
+import { StaticImage } from "gatsby-plugin-image"
 // import styled from "styled-components"
 import {
   cam,
@@ -244,7 +244,7 @@ function MatchSummary2023() {
       </div>
       <div className="container col-lg-8">
         <StaticImage
-          src="../images/group/2023-group.jpg"
+          src="../../../images/group/2023-group.jpg"
           alt="2023 bfbh cup players"
           loading="eager"
           placeholder="blurred"
