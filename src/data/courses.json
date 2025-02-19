@@ -3,7 +3,7 @@
     "course": {
       "bayHarborLinks": {
         "name": "Links at Bay Harbor GC",
-        "link": "https://bayharborgolf.com/linksquarry",
+        "link": "https://www.boynegolf.com/eleven-courses/links-quarry",
         "holes": [
           {
             "number": 1,
@@ -134,7 +134,7 @@
       },
       "bayHarborGolfClub": {
         "name": "Links/Quarry at Bay Harbor GC",
-        "link": "https://bayharborgolf.com/linksquarry",
+        "link": "https://www.boynegolf.com/eleven-courses/links-quarry",
         "holes": [
           {
             "number": 1,
@@ -344,9 +344,221 @@
           }
         }
       },
+      "bayHarborPreserveLinks": {
+        "name": "Links/Quarry at Bay Harbor GC",
+        "link": "https://www.boynegolf.com/eleven-courses/preserve-links",
+        "holes": [
+          {
+            "number": 1,
+            "tees": {
+              "purple": 352,
+              "orange": 352
+            },
+            "handicap": 11,
+            "par": 4
+          },
+          {
+            "number": 2,
+            "tees": {
+              "purple": 322,
+              "orange": 322
+            },
+            "handicap": 13,
+            "par": 4
+          },
+          {
+            "number": 3,
+            "tees": {
+              "purple": 403,
+              "orange": 403
+            },
+            "handicap": 3,
+            "par": 4
+          },
+          {
+            "number": 4,
+            "tees": {
+              "purple": 542,
+              "orange": 542
+            },
+            "handicap": 7,
+            "par": 5
+          },
+          {
+            "number": 5,
+            "tees": {
+              "purple": 169,
+              "orange": 169
+            },
+            "handicap": 9,
+            "par": 3
+          },
+          {
+            "number": 6,
+            "tees": {
+              "purple": 467,
+              "orange": 467
+            },
+            "handicap": 1,
+            "par": 5
+          },
+          {
+            "number": 7,
+            "tees": {
+              "purple": 381,
+              "orange": 381
+            },
+            "handicap": 15,
+            "par": 4
+          },
+          {
+            "number": 8,
+            "tees": {
+              "purple": 343,
+              "orange": 343
+            },
+            "handicap": 17,
+            "par": 4
+          },
+          {
+            "number": 9,
+            "tees": {
+              "purple": 171,
+              "orange": 171
+            },
+            "handicap": 5,
+            "par": 3
+          },
+          {
+            "number": 10,
+            "tees": {
+              "purple": 405,
+              "orange": 375
+            },
+            "handicap": 6,
+            "par": 4
+          },
+          {
+            "number": 11,
+            "tees": {
+              "purple": 420,
+              "orange": 383
+            },
+            "handicap": 10,
+            "par": 4
+          },
+          {
+            "number": 12,
+            "tees": {
+              "purple": 368,
+              "orange": 368
+            },
+            "handicap": 8,
+            "par": 4
+          },
+          {
+            "number": 13,
+            "tees": {
+              "purple": 151,
+              "orange": 151
+            },
+            "handicap": 18,
+            "par": 3
+          },
+          {
+            "number": 14,
+            "tees": {
+              "purple": 332,
+              "orange": 332
+            },
+            "handicap": 12,
+            "par": 4
+          },
+          {
+            "number": 15,
+            "tees": {
+              "purple": 388,
+              "orange": 352
+            },
+            "handicap": 2,
+            "par": 4
+          },
+          {
+            "number": 16,
+            "tees": {
+              "purple": 490,
+              "orange": 490
+            },
+            "handicap": 14,
+            "par": 5
+          },
+          {
+            "number": 17,
+            "tees": {
+              "purple": 206,
+              "orange": 175
+            },
+            "handicap": 16,
+            "par": 3
+          },
+          {
+            "number": 18,
+            "tees": {
+              "purple": 490,
+              "orange": 490
+            },
+            "handicap": 4,
+            "par": 5
+          }
+        ],
+        "totals": {
+          "tees": {
+            "purple": {
+              "out": {
+                "yardage": 3150,
+                "par": 36,
+                "index": 35.4,
+                "slope": 140.0
+              },
+              "in": {
+                "yardage": 3250,
+                "par": 36,
+                "index": 36.1,
+                "slope": 139.0
+              },
+              "total": {
+                "yardage": 6400,
+                "par": 72,
+                "index": 71.5,
+                "slope": 140.0
+              }
+            },
+            "orange": {
+              "out": {
+                "yardage": 3150,
+                "par": 36,
+                "index": 35.4,
+                "slope": 140.0
+              },
+              "in": {
+                "yardage": 3116,
+                "par": 36,
+                "index": 35.3,
+                "slope": 138.0
+              },
+              "total": {
+                "yardage": 6266,
+                "par": 72,
+                "index": 70.7,
+                "slope": 139
+              }
+            }
+          }
+        }
+      },
       "boyneHighlandsArthurHills": {
         "name": "Arthur Hills at Boyne Highlands",
-        "link": "https://boynegolf.com/the-highlands/arthur-hills",
+        "link": "https://www.boynegolf.com/eleven-courses/arthur-hills",
         "holes": [
           {
             "number": 1,
@@ -596,7 +808,7 @@
       },
       "boyneHighlandsDonaldRoss": {
         "name": "Donald Ross at Boyne Highlands",
-        "link": "https://boynegolf.com/the-highlands/donald-ross-memorial",
+        "link": "https://www.boynegolf.com/eleven-courses/donald-ross-memorial",
         "holes": [
           {
             "number": 1,
@@ -846,7 +1058,7 @@
       },
       "boyneHighlandsHeather": {
         "name": "The Heather at Boyne Highlands",
-        "link": "https://boynegolf.com/the-highlands/the-heather",
+        "link": "https://www.boynegolf.com/eleven-courses/the-heather",
         "holes": [
           {
             "number": 1,
@@ -1096,7 +1308,7 @@
       },
       "boyneHighlandsMoor": {
         "name": "The Moor at Boyne Highlands",
-        "link": "https://boynegolf.com/the-highlands/the-moor",
+        "link": "https://www.boynegolf.com/eleven-courses/the-moor",
         "holes": [
           {
             "number": 1,
@@ -1339,6 +1551,256 @@
                 "par": 72,
                 "index": 69.6,
                 "slope": 130.0
+              }
+            }
+          }
+        }
+      },
+      "crookedTree": {
+        "name": "Crooked Tree Golf Club",
+        "link": "https://www.boynegolf.com/eleven-courses/crooked-tree-golf-club",
+        "holes": [
+          {
+            "number": 1,
+            "tees": {
+              "purple": 376,
+              "orange": 376,
+              "blue": 338
+            },
+            "handicap": 7,
+            "par": 4
+          },
+          {
+            "number": 2,
+            "tees": {
+              "purple": 166,
+              "orange": 151,
+              "blue": 151
+            },
+            "handicap": 11,
+            "par": 3
+          },
+          {
+            "number": 3,
+            "tees": {
+              "purple": 403,
+              "orange": 383,
+              "blue": 383
+            },
+            "handicap": 3,
+            "par": 4
+          },
+          {
+            "number": 4,
+            "tees": {
+              "purple": 388,
+              "orange": 381,
+              "blue": 381
+            },
+            "handicap": 1,
+            "par": 4
+          },
+          {
+            "number": 5,
+            "tees": {
+              "purple": 166,
+              "orange": 166,
+              "blue": 160
+            },
+            "handicap": 13,
+            "par": 3
+          },
+          {
+            "number": 6,
+            "tees": {
+              "purple": 532,
+              "orange": 532,
+              "blue": 492
+            },
+            "handicap": 9,
+            "par": 5
+          },
+          {
+            "number": 7,
+            "tees": {
+              "purple": 388,
+              "orange": 368,
+              "blue": 368
+            },
+            "handicap": 5,
+            "par": 4
+          },
+          {
+            "number": 8,
+            "tees": {
+              "purple": 160,
+              "orange": 143,
+              "blue": 143
+            },
+            "handicap": 15,
+            "par": 3
+          },
+          {
+            "number": 9,
+            "tees": {
+              "purple": 470,
+              "orange": 470,
+              "blue": 449
+            },
+            "handicap": 17,
+            "par": 5
+          },
+          {
+            "number": 10,
+            "tees": {
+              "purple": 431,
+              "orange": 398,
+              "blue": 398
+            },
+            "handicap": 8,
+            "par": 4
+          },
+          {
+            "number": 11,
+            "tees": {
+              "purple": 170,
+              "orange": 165,
+              "blue": 165
+            },
+            "handicap": 14,
+            "par": 3
+          },
+          {
+            "number": 12,
+            "tees": {
+              "purple": 405,
+              "orange": 384,
+              "blue": 384
+            },
+            "handicap": 2,
+            "par": 4
+          },
+          {
+            "number": 13,
+            "tees": {
+              "purple": 551,
+              "orange": 516,
+              "blue": 516
+            },
+            "handicap": 6,
+            "par": 5
+          },
+          {
+            "number": 14,
+            "tees": {
+              "purple": 377,
+              "orange": 377,
+              "blue": 372
+            },
+            "handicap": 12,
+            "par": 4
+          },
+          {
+            "number": 15,
+            "tees": {
+              "purple": 173,
+              "orange": 147,
+              "blue": 147
+            },
+            "handicap": 16,
+            "par": 3
+          },
+          {
+            "number": 16,
+            "tees": {
+              "purple": 376,
+              "orange": 343,
+              "blue": 343
+            },
+            "handicap": 10,
+            "par": 4
+          },
+          {
+            "number": 17,
+            "tees": {
+              "purple": 474,
+              "orange": 474,
+              "blue": 428
+            },
+            "handicap": 18,
+            "par": 5
+          },
+          {
+            "number": 18,
+            "tees": {
+              "purple": 390,
+              "orange": 360,
+              "blue": 360
+            },
+            "handicap": 4,
+            "par": 4
+          }
+        ],
+        "totals": {
+          "tees": {
+            "purple": {
+              "out": {
+                "yardage": 3049,
+                "par": 35,
+                "index": 35.1,
+                "slope": 133.0
+              },
+              "in": {
+                "yardage": 3347,
+                "par": 36,
+                "index": 36.3,
+                "slope": 136.0
+              },
+              "total": {
+                "yardage": 6396,
+                "par": 71,
+                "index": 71.4,
+                "slope": 135.0
+              }
+            },
+            "orange": {
+              "out": {
+                "yardage": 2970,
+                "par": 35,
+                "index": 34.7,
+                "slope": 131.0
+              },
+              "in": {
+                "yardage": 3164,
+                "par": 36,
+                "index": 35.5,
+                "slope": 135.0
+              },
+              "total": {
+                "yardage": 6134,
+                "par": 71,
+                "index": 70.2,
+                "slope": 133.0
+              }
+            },
+            "blue": {
+              "out": {
+                "yardage": 2865,
+                "par": 35,
+                "index": 34.3,
+                "slope": 130.0
+              },
+              "in": {
+                "yardage": 3113,
+                "par": 36,
+                "index": 35.3,
+                "slope": 133.0
+              },
+              "total": {
+                "yardage": 5978,
+                "par": 71,
+                "index": 69.6,
+                "slope": 132.0
               }
             }
           }

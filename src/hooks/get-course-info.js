@@ -62,6 +62,63 @@ export const CourseInfo = () => {
               }
             }
           }
+          bayHarborPreserveLinks {
+            name
+            link
+            holes {
+              number
+              tees {
+                purple
+                orange
+              }
+              handicap
+              par
+            }
+            totals {
+              tees {
+                purple {
+                  out {
+                    yardage
+                    par
+                    index
+                    slope
+                  }
+                  in {
+                    yardage
+                    par
+                    index
+                    slope
+                  }
+                  total {
+                    yardage
+                    par
+                    index
+                    slope
+                  }
+                }
+                orange {
+                  out {
+                    yardage
+                    par
+                    index
+                    slope
+                  }
+                  in {
+                    yardage
+                    par
+                    index
+                    slope
+                  }
+                  total {
+                    yardage
+                    par
+                    index
+                    slope
+                  }
+                }
+              }
+            }
+          }
           boyneHighlandsArthurHills {
             name
             link
@@ -404,6 +461,63 @@ export const CourseInfo = () => {
             totals {
               yardage
               par
+            }
+          }
+          crookedTree {
+            name
+            link
+            holes {
+              number
+              tees {
+                purple
+                orange
+              }
+              handicap
+              par
+            }
+            totals {
+              tees {
+                purple {
+                  out {
+                    yardage
+                    par
+                    index
+                    slope
+                  }
+                  in {
+                    yardage
+                    par
+                    index
+                    slope
+                  }
+                  total {
+                    yardage
+                    par
+                    index
+                    slope
+                  }
+                }
+                orange {
+                  out {
+                    yardage
+                    par
+                    index
+                    slope
+                  }
+                  in {
+                    yardage
+                    par
+                    index
+                    slope
+                  }
+                  total {
+                    yardage
+                    par
+                    index
+                    slope
+                  }
+                }
+              }
             }
           }
           gaylordGolfClub1 {

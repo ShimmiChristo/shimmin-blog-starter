@@ -1,5 +1,195 @@
 [
   {
+    "green_example": {
+      "name": "name",
+      "appearances": [2021, 2023, 2024],
+      "handicap": 22,
+      "year": {
+        "_xxxx": {
+          "id": 2023,
+          "handicap": 13,
+          "captain": false,
+          "team": "green",
+          "scores": {
+            "boyneHighlandsArthurHills": {
+              "course": "Arthur Hills at Boyne Highlands",
+              "front": [99, 99, 99, 99, 99, 99, 99, 99, 99],
+              "frontHandicap": 999,
+              "back": [99, 99, 99, 99, 99, 99, 99, 99, 99],
+              "backHandicap": 999
+            },
+            "boyneHighlandsDonaldRoss": {
+              "course": "Donald Ross at Boyne Highlands",
+              "front": [99, 99, 99, 99, 99, 99, 99, 99, 99],
+              "frontHandicap": 999,
+              "back": [99, 99, 99, 99, 99, 99, 99, 99, 99],
+              "backHandicap": 999
+            },
+            "boyneHighlandsMoor": {
+              "course": "The Moor at Boyne Highlands",
+              "front": [99, 99, 99, 99, 99, 99, 99, 99, 99],
+              "frontHandicap": 999,
+              "back": [99, 99, 99, 99, 99, 99, 99, 99, 99],
+              "backHandicap": 999
+            },
+            "boyneHighlandsHeather": {
+              "course": "The Heather at Boyne Highlands",
+              "front": [99, 99, 99, 99, 99, 99, 99, 99, 99],
+              "frontHandicap": 999,
+              "back": [99, 99, 99, 99, 99, 99, 99, 99, 99],
+              "backHandicap": 999
+            }
+          },
+          "points": [
+            {
+              "id": "bestBall",
+              "game": "Best Ball",
+              "wins": 0,
+              "ties": 0,
+              "losses": 0
+            },
+            {
+              "id": "twoBestBall",
+              "game": "Best Ball",
+              "wins": 0,
+              "ties": 0,
+              "losses": 0
+            },
+            {
+              "id": "bramble",
+              "game": "Bramble",
+              "wins": 0,
+              "ties": 0,
+              "losses": 0
+            },
+            {
+              "id": "twoBallBramble",
+              "game": "Bramble",
+              "wins": 0,
+              "ties": 0,
+              "losses": 0
+            },
+            {
+              "id": "alternate",
+              "game": "Alternate",
+              "wins": 0,
+              "ties": 0,
+              "losses": 0
+            },
+            {
+              "id": "brambleAlternate",
+              "game": "Bramble Alternate",
+              "wins": 0,
+              "ties": 0,
+              "losses": 0
+            },
+            {
+              "id": "pinehurst",
+              "game": "Pinehurst",
+              "wins": 0,
+              "ties": 0,
+              "losses": 0
+            },
+            {
+              "id": "scramble",
+              "game": "Scramble",
+              "wins": 0,
+              "ties": 0,
+              "losses": 0
+            },
+            {
+              "id": "singles",
+              "game": "Singles",
+              "wins": 0,
+              "ties": 0,
+              "losses": 0
+            }
+          ],
+          "records": [
+            {
+              "partners": [
+                {
+                  "name": "curtis",
+                  "wins": 0,
+                  "ties": 0,
+                  "losses": 0
+                },
+                {
+                  "name": "derek",
+                  "wins": 0,
+                  "ties": 0,
+                  "losses": 0
+                },
+                {
+                  "name": "gordon",
+                  "wins": 0,
+                  "ties": 0,
+                  "losses": 0
+                },
+                {
+                  "name": "jake",
+                  "wins": 0,
+                  "ties": 0,
+                  "losses": 0
+                },
+                {
+                  "name": "matt",
+                  "wins": 0,
+                  "ties": 0,
+                  "losses": 0
+                },
+                {
+                  "name": "travis",
+                  "wins": 0,
+                  "ties": 0,
+                  "losses": 0
+                }
+              ]
+            },
+            {
+              "opponents": [
+                {
+                  "name": "cam",
+                  "wins": 0,
+                  "ties": 0,
+                  "losses": 0
+                },
+                {
+                  "name": "craig",
+                  "wins": 0,
+                  "ties": 0,
+                  "losses": 0
+                },
+                {
+                  "name": "dan",
+                  "wins": 0,
+                  "ties": 0,
+                  "losses": 0
+                },
+                {
+                  "name": "dylan",
+                  "wins": 0,
+                  "ties": 0,
+                  "losses": 0
+                },
+                {
+                  "name": "evan",
+                  "wins": 0,
+                  "ties": 0,
+                  "losses": 0
+                },
+                {
+                  "name": "rj",
+                  "wins": 0,
+                  "ties": 0,
+                  "losses": 0
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
     "blake": {
       "name": "blake",
       "appearances": [2024],
@@ -189,6 +379,12 @@
       "appearances": [2022, 2023],
       "handicap": 19,
       "year": {
+        "_2025": {
+          "id": 2025,
+          "handicap": 19,
+          "captain": false,
+          "team": "blue"
+        },
         "_2023": {
           "id": 2023,
           "handicap": 19,
