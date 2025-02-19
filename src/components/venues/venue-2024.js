@@ -117,7 +117,7 @@ function Venue2024() {
           <div className="col-md-6">
             <h3 className="h3">The Moor</h3>
             <p>
-              <Link href="https://boynegolf.com/the-highlands/the-moor">
+              <Link href="https://www.boynegolf.com/eleven-courses/the-moor">
                 The Moor scorecard
               </Link>
             </p>
@@ -159,7 +159,7 @@ function Venue2024() {
           <div className="col-md-6">
             <h3 className="h3">Arthur Hills</h3>
             <p>
-              <Link href="https://boynegolf.com/the-highlands/arthur-hills">
+              <Link href="https://www.boynegolf.com/eleven-courses/arthur-hills">
                 Arthur Hills scorecard
               </Link>
             </p>

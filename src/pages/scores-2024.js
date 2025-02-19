@@ -38,7 +38,7 @@ const TopicPage = ({ location }) => {
   `
   const startDate = "september, 27, 2024 8:30:00 EST"
   const locationName = "Bay Harbor Golf Club"
-  const courseUrl = "https://bayharborgolf.com/linksquarry"
+  const courseUrl = "https://www.boynegolf.com/eleven-courses/links-quarry"
 
   const p1 = "dylan"
   const p2 = "rj"

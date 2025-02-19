@@ -20,28 +20,27 @@ const TopicPage = ({ data, location }) => {
   const { title } = useSiteMetadata()
   // const { course } = CourseInfo()
 
-  const siteTitle = title || `Title`
+  const siteTitle = title || `BFBH Cup Home Page`
   // const pageHash = location.hash
 
-  const startDate = "september, 27, 2024 8:30:00 EST"
+  const startDate = "september, 26, 2025 8:30:00 EST"
   const locationName = "Bay Harbor Golf Club"
-  const courseUrl = "https://bayharborgolf.com/linksquarry"
+  const courseUrl = "https://www.bayharborgolf.com/courses/preserve-links"
 
   return (
     <Layout location={location} title={siteTitle}>
       <SEO title="Boys From Back Home Cup" />
       <h1 className="invisible">BFBH Cup | Boys From Back Home Cup</h1>
-      {/* <HighlightCountdown
+      <HighlightCountdown
         startTime={startDate}
         location={locationName}
         courseUrl={courseUrl}
-        /> */}
+      />
 
       <h2 className="text-center bold my-5">BFBH Cup 2024 Score</h2>
       <MatchScore year="_2024" lastYearWinner="blue" />
       <div className="col-lg-6 offset-lg-3">
-
-      <MatchSummary2024 />
+        <MatchSummary2024 />
       </div>
       <Highlight2024 />
       {/* <hr /> */}

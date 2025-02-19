@@ -90,7 +90,7 @@ function Venue2023() {
           <div className="col-md-6">
             <h3 className="h3">Arthur Hills</h3>
             <p>
-              <Link href="https://boynegolf.com/the-highlands/arthur-hills">
+              <Link href="https://www.boynegolf.com/eleven-courses/arthur-hills">
                 Arthur Hills scorecard
               </Link>
             </p>
@@ -109,7 +109,7 @@ function Venue2023() {
           <div className="col-md-6">
             <h3 className="h3">Donald Ross Memorial</h3>
             <p>
-              <Link href="https://boynegolf.com/the-highlands/donald-ross-memorial">
+              <Link href="https://www.boynegolf.com/eleven-courses/donald-ross-memorial">
                 Donald Ross Memorial scorecard
               </Link>
               <br />
@@ -155,7 +155,7 @@ function Venue2023() {
           <div className="col-md-6">
             <h3 className="h3">The Moor</h3>
             <p>
-              <Link href="https://boynegolf.com/the-highlands/the-moor">
+              <Link href="https://www.boynegolf.com/eleven-courses/the-moor">
                 The Moor scorecard
               </Link>
             </p>
@@ -176,7 +176,7 @@ function Venue2023() {
           <div className="col-md-6">
             <h3 className="h3">The Heather</h3>
             <p>
-              <Link href="https://boynegolf.com/the-highlands/the-heather">
+              <Link href="https://www.boynegolf.com/eleven-courses/the-heather">
                 The Heather scorecard
               </Link>{" "}
             </p>
