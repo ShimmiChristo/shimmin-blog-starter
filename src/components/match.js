@@ -4,12 +4,12 @@ import { GatsbyImage, getImage } from "gatsby-plugin-image"
 import { usePlayersPosts } from "../hooks/use-player-posts"
 import PropTypes from "prop-types"
 import { v1 as uuidv1 } from "uuid"
-import { CourseInfo } from "../hooks/get-course-info"
-import { PlayerInfoUpdate } from "../hooks/get-player-info-UPDATE"
 import styled from "styled-components"
 import "../styles/match.css"
 import { FaChevronDown, FaTimes } from "react-icons/fa"
 import { calcTeamScore } from "../helpers/calcTeamScore"
+import { CourseInfo } from "../hooks/get-course-info"
+import { PlayerInfoUpdate } from "../hooks/get-player-info-UPDATE"
 import {
   calcPlayerScore,
   getPlayerHandicap,

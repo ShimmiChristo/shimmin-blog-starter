@@ -43,21 +43,21 @@ const TopicPage = ({ location }) => {
   const p1 = "dylan"
   const p2 = "rj"
   const p3 = "craig"
-  const p4 = "blake"
+  const p4 = "cam"
   const p5 = "evan"
   const p6 = "dan"
   const p7 = "matt"
   const p8 = "chris"
   const p9 = "gordon"
   const p10 = "derek"
-  const p11 = "jake"
+  const p11 = "travis"
   const p12 = "curtis"
 
   const playerTees = {
     p1: "purple",
     p2: "purple",
     p3: "orange",
-    p4: "purple",
+    p4: "orange",
     p5: "orange",
     p6: "orange",
     p7: "purple",
@@ -71,7 +71,7 @@ const TopicPage = ({ location }) => {
   const matchesArr = [
     {
       matchId: " - Best Ball. Full handicap",
-      year: "_2024",
+      year: "_2025",
       courseMatch: "bayHarborPreserveLinks",
       holes: "front",
       matchHandicap: "full",
@@ -83,7 +83,7 @@ const TopicPage = ({ location }) => {
     },
     {
       matchId: " - 2 Best Ball. Full handicap",
-      year: "_2024",
+      year: "_2025",
       courseMatch: "bayHarborPreserveLinks",
       holes: "back",
       matchHandicap: "full",
@@ -95,7 +95,7 @@ const TopicPage = ({ location }) => {
     },
     {
       matchId: " - Alternate. 50% HC",
-      year: "_2024",
+      year: "_2025",
       courseMatch: "crookedTree",
       holes: "front",
       matchHandicap: "full",
@@ -107,7 +107,7 @@ const TopicPage = ({ location }) => {
     },
     {
       matchId: " - Scramble. 35% low HC + 15% high HC",
-      year: "_2024",
+      year: "_2025",
       courseMatch: "crookedTree",
       holes: "back",
       matchHandicap: "average",
@@ -119,7 +119,7 @@ const TopicPage = ({ location }) => {
     },
     {
       matchId: " - Bramble. 80% HC",
-      year: "_2024",
+      year: "_2025",
       courseMatch: "boyneHighlandsHeather",
       holes: "front",
       matchHandicap: "full",
@@ -131,7 +131,7 @@ const TopicPage = ({ location }) => {
     },
     {
       matchId: " - 2 Ball Bramble. 80% HC",
-      year: "_2024",
+      year: "_2025",
       courseMatch: "boyneHighlandsHeather",
       holes: "back",
       matchHandicap: "full",
@@ -143,7 +143,7 @@ const TopicPage = ({ location }) => {
     },
     {
       matchId: " - Pinehurst. 60% low HC + 40% high HC",
-      year: "_2024",
+      year: "_2025",
       courseMatch: "boyneHighlandsArthurHills",
       holes: "front",
       matchHandicap: "average",
@@ -155,7 +155,7 @@ const TopicPage = ({ location }) => {
     },
     {
       matchId: " - Singles Match. Full HC",
-      year: "_2024",
+      year: "_2025",
       courseMatch: "boyneHighlandsArthurHills",
       holes: "back",
       matchHandicap: "full",
@@ -166,6 +166,39 @@ const TopicPage = ({ location }) => {
       player4MatchHandicap: "",
     },
   ]
+
+  // const match1Matchups = [
+  //   {
+  //     player1: `${p7}`,
+  //     player2: `${p1}`,
+  //     player3: `${p8}`,
+  //     player4: `${p6}`,
+  //     player1Tees: `${playerTees.p7}`,
+  //     player2Tees: `${playerTees.p1}`,
+  //     player3Tees: `${playerTees.p8}`,
+  //     player4Tees: `${playerTees.p6}`,
+  //   },
+  //   {
+  //     player1: `${p7}`,
+  //     player2: `${p1}`,
+  //     player3: `${p8}`,
+  //     player4: `${p6}`,
+  //     player1Tees: `${playerTees.p7}`,
+  //     player2Tees: `${playerTees.p1}`,
+  //     player3Tees: `${playerTees.p8}`,
+  //     player4Tees: `${playerTees.p6}`,
+  //   },
+  //   {
+  //     player1: `${p7}`,
+  //     player2: `${p1}`,
+  //     player3: `${p8}`,
+  //     player4: `${p6}`,
+  //     player1Tees: `${playerTees.p7}`,
+  //     player2Tees: `${playerTees.p1}`,
+  //     player3Tees: `${playerTees.p8}`,
+  //     player4Tees: `${playerTees.p6}`,
+  //   },
+  // ]
 
   const day1 = {
     round1: {
@@ -198,8 +231,8 @@ const TopicPage = ({ location }) => {
 
   return (
     <Layout location={location} title={siteTitle}>
-      <SEO title="2024 Scores" />
-      <LandingPageHeader title="2024 Scores" />
+      <SEO title="2025 Scores" />
+      <LandingPageHeader title="2025 Scores" />
       <MatchNav
         location={location}
         titles={[
@@ -246,7 +279,7 @@ const TopicPage = ({ location }) => {
         ]}
       />
 
-      <MatchScore year="_2024" lastYearWinner="blue" />
+      <MatchScore year="_2025" lastYearWinner="green" />
       <MatchNavSection
         data-visible={location.hash === "#r1-best-ball" ? "true" : "false"}
         data-link-id="r1-best-ball"
@@ -284,10 +317,10 @@ const TopicPage = ({ location }) => {
           holes={matchesArr[0].holes}
           matchHandicap={matchesArr[0].matchHandicap}
           gameplay={matchesArr[0].gameplay}
-          player1={p9}
-          player2={p4}
+          player1={p11}
+          player2={p2}
           player3={p12}
-          player4={p5}
+          player4={p4}
           player1Tees={playerTees.p9}
           player2Tees={playerTees.p4}
           player3Tees={playerTees.p12}
@@ -304,10 +337,10 @@ const TopicPage = ({ location }) => {
           holes={matchesArr[0].holes}
           matchHandicap={matchesArr[0].matchHandicap}
           gameplay={matchesArr[0].gameplay}
-          player1={p10}
-          player2={p2}
-          player3={p11}
-          player4={p3}
+          player1={p9}
+          player2={p3}
+          player3={p10}
+          player4={p4}
           player1Tees={playerTees.p10}
           player2Tees={playerTees.p2}
           player3Tees={playerTees.p11}

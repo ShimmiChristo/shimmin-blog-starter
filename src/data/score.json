@@ -1,5 +1,377 @@
 [
   {
+    "_2025": {
+      "teams": {
+        "team1": {
+          "name": "green team",
+          "nickname": "crohns crushers",
+          "players": ["Matt", "Chris", "Gordon", "Jake", "Derek", "Curtis"],
+          "score": "0",
+          "scores": {
+            "dayone": "0",
+            "daytwo": "0",
+            "total": "0",
+            "round1": "0",
+            "round2": "0",
+            "round3": "0",
+            "round4": "0",
+            "round5": "0",
+            "round6": "0",
+            "round7": "0",
+            "round8": "0"
+          },
+          "points": [
+            {
+              "id": "bestBall",
+              "game": "Best Ball",
+              "wins": 1,
+              "ties": 1,
+              "losses": 1
+            },
+            {
+              "id": "twoBestBall",
+              "game": "Best Ball",
+              "wins": 2,
+              "ties": 0,
+              "losses": 1
+            },
+            {
+              "id": "bramble",
+              "game": "Bramble",
+              "wins": 2,
+              "ties": 1,
+              "losses": 0
+            },
+            {
+              "id": "twoBallBramble",
+              "game": "Bramble",
+              "wins": 2,
+              "ties": 0,
+              "losses": 1
+            },
+            {
+              "id": "alternate",
+              "game": "Alternate",
+              "wins": 1,
+              "ties": 0,
+              "losses": 2
+            },
+            {
+              "id": "brambleAlternate",
+              "game": "Bramble Alternate",
+              "wins": 0,
+              "ties": 0,
+              "losses": 0
+            },
+            {
+              "id": "pinehurst",
+              "game": "Pinehurst",
+              "wins": 1,
+              "ties": 0,
+              "losses": 2
+            },
+            {
+              "id": "scramble",
+              "game": "Scramble",
+              "wins": 1,
+              "ties": 1,
+              "losses": 1
+            },
+            {
+              "id": "singles",
+              "game": "Singles",
+              "wins": 3,
+              "ties": 0,
+              "losses": 3
+            }
+          ]
+        },
+        "team2": {
+          "name": "blue team",
+          "nickname": "team ramrod",
+          "players": ["Dylan", "RJ", "Craig", "Dan", "Blake", "Evan"],
+          "score": "0",
+          "scores": {
+            "dayone": "0",
+            "daytwo": "0",
+            "total": "0",
+            "round1": "0",
+            "round2": "0",
+            "round3": "0",
+            "round4": "0",
+            "round5": "0",
+            "round6": "0",
+            "round7": "0",
+            "round8": "0"
+          },
+          "points": [
+            {
+              "id": "bestBall",
+              "game": "Best Ball",
+              "wins": 1,
+              "ties": 1,
+              "losses": 1
+            },
+            {
+              "id": "twoBestBall",
+              "game": "Best Ball",
+              "wins": 1,
+              "ties": 0,
+              "losses": 2
+            },
+            {
+              "id": "bramble",
+              "game": "Bramble",
+              "wins": 0,
+              "ties": 1,
+              "losses": 2
+            },
+            {
+              "id": "twoBallBramble",
+              "game": "Bramble",
+              "wins": 1,
+              "ties": 0,
+              "losses": 2
+            },
+            {
+              "id": "alternate",
+              "game": "Alternate",
+              "wins": 2,
+              "ties": 0,
+              "losses": 1
+            },
+            {
+              "id": "brambleAlternate",
+              "game": "Bramble Alternate",
+              "wins": 0,
+              "ties": 0,
+              "losses": 0
+            },
+            {
+              "id": "pinehurst",
+              "game": "Pinehurst",
+              "wins": 2,
+              "ties": 0,
+              "losses": 1
+            },
+            {
+              "id": "scramble",
+              "game": "Scramble",
+              "wins": 1,
+              "ties": 1,
+              "losses": 1
+            },
+            {
+              "id": "singles",
+              "game": "Singles",
+              "wins": 3,
+              "ties": 0,
+              "losses": 3
+            }
+          ]
+        }
+      },
+      "year": "2025",
+      "date": "Sept, 27 - Sept, 28",
+      "winner": "",
+      "location": "Bay Harbor, Boyne Highlands",
+      "gamesPlayed": [
+        "bestBall",
+        "twoBestBall",
+        "alternate",
+        "scramble",
+        "bramble",
+        "twoBallBramble",
+        "pinehurst",
+        "singles"
+      ]
+    },
+    "example": {
+      "teams": {
+        "team1": {
+          "name": "green team",
+          "nickname": "crohns crushers",
+          "players": ["Matt", "Chris", "Gordon", "Jake", "Derek", "Curtis"],
+          "score": "14.5",
+          "scores": {
+            "dayone": "6",
+            "daytwo": "8.5",
+            "total": "14.5",
+            "round1": "1.5",
+            "round2": "3.5",
+            "round3": "4.5",
+            "round4": "6",
+            "round5": "8.5",
+            "round6": "10.5",
+            "round7": "11.5",
+            "round8": "14.5"
+          },
+          "points": [
+            {
+              "id": "bestBall",
+              "game": "Best Ball",
+              "wins": 1,
+              "ties": 1,
+              "losses": 1
+            },
+            {
+              "id": "twoBestBall",
+              "game": "Best Ball",
+              "wins": 2,
+              "ties": 0,
+              "losses": 1
+            },
+            {
+              "id": "bramble",
+              "game": "Bramble",
+              "wins": 2,
+              "ties": 1,
+              "losses": 0
+            },
+            {
+              "id": "twoBallBramble",
+              "game": "Bramble",
+              "wins": 2,
+              "ties": 0,
+              "losses": 1
+            },
+            {
+              "id": "alternate",
+              "game": "Alternate",
+              "wins": 1,
+              "ties": 0,
+              "losses": 2
+            },
+            {
+              "id": "brambleAlternate",
+              "game": "Bramble Alternate",
+              "wins": 0,
+              "ties": 0,
+              "losses": 0
+            },
+            {
+              "id": "pinehurst",
+              "game": "Pinehurst",
+              "wins": 1,
+              "ties": 0,
+              "losses": 2
+            },
+            {
+              "id": "scramble",
+              "game": "Scramble",
+              "wins": 1,
+              "ties": 1,
+              "losses": 1
+            },
+            {
+              "id": "singles",
+              "game": "Singles",
+              "wins": 3,
+              "ties": 0,
+              "losses": 3
+            }
+          ]
+        },
+        "team2": {
+          "name": "blue team",
+          "nickname": "team ramrod",
+          "players": ["Dylan", "RJ", "Craig", "Dan", "Blake", "Evan"],
+          "score": "12.5",
+          "scores": {
+            "dayone": "6",
+            "daytwo": "6.5",
+            "total": "12.5",
+            "round1": "1.5",
+            "round2": "2.5",
+            "round3": "4.5",
+            "round4": "6",
+            "round5": "6.5",
+            "round6": "7.5",
+            "round7": "9.5",
+            "round8": "12.5"
+          },
+          "points": [
+            {
+              "id": "bestBall",
+              "game": "Best Ball",
+              "wins": 1,
+              "ties": 1,
+              "losses": 1
+            },
+            {
+              "id": "twoBestBall",
+              "game": "Best Ball",
+              "wins": 1,
+              "ties": 0,
+              "losses": 2
+            },
+            {
+              "id": "bramble",
+              "game": "Bramble",
+              "wins": 0,
+              "ties": 1,
+              "losses": 2
+            },
+            {
+              "id": "twoBallBramble",
+              "game": "Bramble",
+              "wins": 1,
+              "ties": 0,
+              "losses": 2
+            },
+            {
+              "id": "alternate",
+              "game": "Alternate",
+              "wins": 2,
+              "ties": 0,
+              "losses": 1
+            },
+            {
+              "id": "brambleAlternate",
+              "game": "Bramble Alternate",
+              "wins": 0,
+              "ties": 0,
+              "losses": 0
+            },
+            {
+              "id": "pinehurst",
+              "game": "Pinehurst",
+              "wins": 2,
+              "ties": 0,
+              "losses": 1
+            },
+            {
+              "id": "scramble",
+              "game": "Scramble",
+              "wins": 1,
+              "ties": 1,
+              "losses": 1
+            },
+            {
+              "id": "singles",
+              "game": "Singles",
+              "wins": 3,
+              "ties": 0,
+              "losses": 3
+            }
+          ]
+        }
+      },
+      "year": "2023",
+      "date": "Sept, 27 - Sept, 28",
+      "winner": "",
+      "location": "Bay Harbor, Boyne Highlands",
+      "gamesPlayed": [
+        "bestBall",
+        "twoBestBall",
+        "alternate",
+        "scramble",
+        "bramble",
+        "twoBallBramble",
+        "pinehurst",
+        "singles"
+      ]
+    },
     "_2024": {
       "teams": {
         "team1": {

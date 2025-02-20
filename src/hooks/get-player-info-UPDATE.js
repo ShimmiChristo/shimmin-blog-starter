@@ -54,6 +54,48 @@ export const PlayerInfoUpdate = () => {
         cam {
           name
           year {
+            _2025 {
+              handicap
+              id
+              team
+              points {
+                game
+                id
+                wins
+                ties
+                losses
+              }
+              scores {
+                bayHarborPreserveLinks {
+                  course
+                  frontHandicap
+                  front
+                  back
+                  backHandicap
+                }
+                crookedTree {
+                  course
+                  frontHandicap
+                  front
+                  back
+                  backHandicap
+                }
+                boyneHighlandsHeather {
+                  course
+                  frontHandicap
+                  front
+                  back
+                  backHandicap
+                }
+                boyneHighlandsArthurHills {
+                  course
+                  frontHandicap
+                  front
+                  back
+                  backHandicap
+                }
+              }
+            }
             _2023 {
               handicap
               id
@@ -139,6 +181,48 @@ export const PlayerInfoUpdate = () => {
         chris {
           name
           year {
+            _2025 {
+              handicap
+              id
+              team
+              points {
+                game
+                id
+                wins
+                ties
+                losses
+              }
+              scores {
+                bayHarborPreserveLinks {
+                  course
+                  frontHandicap
+                  front
+                  back
+                  backHandicap
+                }
+                crookedTree {
+                  course
+                  frontHandicap
+                  front
+                  back
+                  backHandicap
+                }
+                boyneHighlandsHeather {
+                  course
+                  frontHandicap
+                  front
+                  back
+                  backHandicap
+                }
+                boyneHighlandsArthurHills {
+                  course
+                  frontHandicap
+                  front
+                  back
+                  backHandicap
+                }
+              }
+            }
             _2024 {
               handicap
               id
@@ -266,6 +350,48 @@ export const PlayerInfoUpdate = () => {
         craig {
           name
           year {
+            _2025 {
+              handicap
+              id
+              team
+              points {
+                game
+                id
+                wins
+                ties
+                losses
+              }
+              scores {
+                bayHarborPreserveLinks {
+                  course
+                  frontHandicap
+                  front
+                  back
+                  backHandicap
+                }
+                crookedTree {
+                  course
+                  frontHandicap
+                  front
+                  back
+                  backHandicap
+                }
+                boyneHighlandsHeather {
+                  course
+                  frontHandicap
+                  front
+                  back
+                  backHandicap
+                }
+                boyneHighlandsArthurHills {
+                  course
+                  frontHandicap
+                  front
+                  back
+                  backHandicap
+                }
+              }
+            }
             _2024 {
               handicap
               id
@@ -431,6 +557,48 @@ export const PlayerInfoUpdate = () => {
         curtis {
           name
           year {
+            _2025 {
+              handicap
+              id
+              team
+              points {
+                game
+                id
+                wins
+                ties
+                losses
+              }
+              scores {
+                bayHarborPreserveLinks {
+                  course
+                  frontHandicap
+                  front
+                  back
+                  backHandicap
+                }
+                crookedTree {
+                  course
+                  frontHandicap
+                  front
+                  back
+                  backHandicap
+                }
+                boyneHighlandsHeather {
+                  course
+                  frontHandicap
+                  front
+                  back
+                  backHandicap
+                }
+                boyneHighlandsArthurHills {
+                  course
+                  frontHandicap
+                  front
+                  back
+                  backHandicap
+                }
+              }
+            }
             _2024 {
               handicap
               id
@@ -558,6 +726,48 @@ export const PlayerInfoUpdate = () => {
         dan {
           name
           year {
+            _2025 {
+              handicap
+              id
+              team
+              points {
+                game
+                id
+                wins
+                ties
+                losses
+              }
+              scores {
+                bayHarborPreserveLinks {
+                  course
+                  frontHandicap
+                  front
+                  back
+                  backHandicap
+                }
+                crookedTree {
+                  course
+                  frontHandicap
+                  front
+                  back
+                  backHandicap
+                }
+                boyneHighlandsHeather {
+                  course
+                  frontHandicap
+                  front
+                  back
+                  backHandicap
+                }
+                boyneHighlandsArthurHills {
+                  course
+                  frontHandicap
+                  front
+                  back
+                  backHandicap
+                }
+              }
+            }
             _2024 {
               handicap
               id
@@ -723,6 +933,48 @@ export const PlayerInfoUpdate = () => {
         derek {
           name
           year {
+            _2025 {
+              handicap
+              id
+              team
+              points {
+                game
+                id
+                wins
+                ties
+                losses
+              }
+              scores {
+                bayHarborPreserveLinks {
+                  course
+                  frontHandicap
+                  front
+                  back
+                  backHandicap
+                }
+                crookedTree {
+                  course
+                  frontHandicap
+                  front
+                  back
+                  backHandicap
+                }
+                boyneHighlandsHeather {
+                  course
+                  frontHandicap
+                  front
+                  back
+                  backHandicap
+                }
+                boyneHighlandsArthurHills {
+                  course
+                  frontHandicap
+                  front
+                  back
+                  backHandicap
+                }
+              }
+            }
             _2024 {
               handicap
               id
@@ -888,6 +1140,48 @@ export const PlayerInfoUpdate = () => {
         dylan {
           name
           year {
+            _2025 {
+              handicap
+              id
+              team
+              points {
+                game
+                id
+                wins
+                ties
+                losses
+              }
+              scores {
+                bayHarborPreserveLinks {
+                  course
+                  frontHandicap
+                  front
+                  back
+                  backHandicap
+                }
+                crookedTree {
+                  course
+                  frontHandicap
+                  front
+                  back
+                  backHandicap
+                }
+                boyneHighlandsHeather {
+                  course
+                  frontHandicap
+                  front
+                  back
+                  backHandicap
+                }
+                boyneHighlandsArthurHills {
+                  course
+                  frontHandicap
+                  front
+                  back
+                  backHandicap
+                }
+              }
+            }
             _2024 {
               handicap
               id
@@ -1053,6 +1347,48 @@ export const PlayerInfoUpdate = () => {
         evan {
           name
           year {
+            _2025 {
+              handicap
+              id
+              team
+              points {
+                game
+                id
+                wins
+                ties
+                losses
+              }
+              scores {
+                bayHarborPreserveLinks {
+                  course
+                  frontHandicap
+                  front
+                  back
+                  backHandicap
+                }
+                crookedTree {
+                  course
+                  frontHandicap
+                  front
+                  back
+                  backHandicap
+                }
+                boyneHighlandsHeather {
+                  course
+                  frontHandicap
+                  front
+                  back
+                  backHandicap
+                }
+                boyneHighlandsArthurHills {
+                  course
+                  frontHandicap
+                  front
+                  back
+                  backHandicap
+                }
+              }
+            }
             _2024 {
               handicap
               id
@@ -1180,6 +1516,48 @@ export const PlayerInfoUpdate = () => {
         gordon {
           name
           year {
+            _2025 {
+              handicap
+              id
+              team
+              points {
+                game
+                id
+                wins
+                ties
+                losses
+              }
+              scores {
+                bayHarborPreserveLinks {
+                  course
+                  frontHandicap
+                  front
+                  back
+                  backHandicap
+                }
+                crookedTree {
+                  course
+                  frontHandicap
+                  front
+                  back
+                  backHandicap
+                }
+                boyneHighlandsHeather {
+                  course
+                  frontHandicap
+                  front
+                  back
+                  backHandicap
+                }
+                boyneHighlandsArthurHills {
+                  course
+                  frontHandicap
+                  front
+                  back
+                  backHandicap
+                }
+              }
+            }
             _2024 {
               handicap
               id
@@ -1392,6 +1770,48 @@ export const PlayerInfoUpdate = () => {
         matt {
           name
           year {
+            _2025 {
+              handicap
+              id
+              team
+              points {
+                game
+                id
+                wins
+                ties
+                losses
+              }
+              scores {
+                bayHarborPreserveLinks {
+                  course
+                  frontHandicap
+                  front
+                  back
+                  backHandicap
+                }
+                crookedTree {
+                  course
+                  frontHandicap
+                  front
+                  back
+                  backHandicap
+                }
+                boyneHighlandsHeather {
+                  course
+                  frontHandicap
+                  front
+                  back
+                  backHandicap
+                }
+                boyneHighlandsArthurHills {
+                  course
+                  frontHandicap
+                  front
+                  back
+                  backHandicap
+                }
+              }
+            }
             _2024 {
               handicap
               id
@@ -1557,6 +1977,48 @@ export const PlayerInfoUpdate = () => {
         rj {
           name
           year {
+            _2025 {
+              handicap
+              id
+              team
+              points {
+                game
+                id
+                wins
+                ties
+                losses
+              }
+              scores {
+                bayHarborPreserveLinks {
+                  course
+                  frontHandicap
+                  front
+                  back
+                  backHandicap
+                }
+                crookedTree {
+                  course
+                  frontHandicap
+                  front
+                  back
+                  backHandicap
+                }
+                boyneHighlandsHeather {
+                  course
+                  frontHandicap
+                  front
+                  back
+                  backHandicap
+                }
+                boyneHighlandsArthurHills {
+                  course
+                  frontHandicap
+                  front
+                  back
+                  backHandicap
+                }
+              }
+            }
             _2024 {
               handicap
               id
@@ -1722,6 +2184,48 @@ export const PlayerInfoUpdate = () => {
         travis {
           name
           year {
+            _2025 {
+              handicap
+              id
+              team
+              points {
+                game
+                id
+                wins
+                ties
+                losses
+              }
+              scores {
+                bayHarborPreserveLinks {
+                  course
+                  frontHandicap
+                  front
+                  back
+                  backHandicap
+                }
+                crookedTree {
+                  course
+                  frontHandicap
+                  front
+                  back
+                  backHandicap
+                }
+                boyneHighlandsHeather {
+                  course
+                  frontHandicap
+                  front
+                  back
+                  backHandicap
+                }
+                boyneHighlandsArthurHills {
+                  course
+                  frontHandicap
+                  front
+                  back
+                  backHandicap
+                }
+              }
+            }
             _2023 {
               handicap
               id

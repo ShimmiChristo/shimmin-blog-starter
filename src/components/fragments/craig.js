@@ -7,6 +7,63 @@ export const Craig = graphql`
     appearances
     handicap
     year {
+      _2025 {
+        id
+        handicap
+        captain
+        team
+        points {
+          wins
+          ties
+          losses
+          id
+          game
+        }
+        scores {
+          bayHarborPreserveLinks {
+            frontHandicap
+            front
+            course
+            backHandicap
+            back
+          }
+          crookedTree {
+            frontHandicap
+            front
+            course
+            backHandicap
+            back
+          }
+          boyneHighlandsHeather {
+            back
+            backHandicap
+            course
+            front
+            frontHandicap
+          }
+          boyneHighlandsArthurHills {
+            course
+            frontHandicap
+            backHandicap
+            back
+            front
+          }
+        }
+        records {
+          partners {
+            name
+            wins
+            ties
+            losses
+          }
+          opponents {
+            name
+            wins
+            ties
+            losses
+          }
+        }
+      }
       _2024 {
         id
         handicap
