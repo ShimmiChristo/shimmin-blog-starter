@@ -10,6 +10,7 @@ import MatchSummary2021 from "../components/matches/2021/summary"
 import MatchSummary2022 from "../components/matches/2022/summary"
 import MatchSummary2023 from "../components/matches/2023/summary"
 import MatchSummary2024 from "../components/matches/2024/summary"
+import MatchSummary2025 from "../components/matches/2025/summary"
 
 import "../styles/match.css"
 
@@ -20,6 +21,7 @@ const PastScoresPage = ({ location }) => {
   const summary2022 = MatchSummary2022()
   const summary2023 = MatchSummary2023()
   const summary2024 = MatchSummary2024()
+  const summary2025 = MatchSummary2025()
 
   return (
     <Layout location={location} title={siteTitle}>
@@ -32,12 +34,20 @@ const PastScoresPage = ({ location }) => {
           <div className="col-6 col-sm-2">Winner</div>
           <div className="col-6 col-sm-5">Location</div>
         </div>
+
+        {/* <PastScoresComponent
+          year="2025"
+          date="Sep, 26 - Sep, 27"
+          winner="green"
+          location="Bay Harbor GC, Crooked Tree GC, Boyne Highlands"
+          summary={summary2025}
+        /> */}
         
          <PastScoresComponent
           year="2024"
           date="Sep, 27 - Sep, 28"
           winner="green"
-          location="Bay Harbor, Boyne Highlands"
+          location="Bay Harbor GC, Boyne Highlands"
           summary={summary2024}
         />
        

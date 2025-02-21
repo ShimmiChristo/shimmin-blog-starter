@@ -57,7 +57,7 @@ const TopicPage = ({ location }) => {
     p1: "purple",
     p2: "purple",
     p3: "orange",
-    p4: "purple",
+    p4: "orange",
     p5: "orange",
     p6: "orange",
     p7: "purple",
@@ -721,7 +721,7 @@ const TopicPage = ({ location }) => {
           player2={p3}
           player3={p10}
           player4={p4}
-          player1Tees="orange"
+          player1Tees={playerTees.p9}
           player2Tees={playerTees.p3}
           player3Tees={playerTees.p10}
           player4Tees={playerTees.p4}
@@ -813,7 +813,7 @@ const TopicPage = ({ location }) => {
           gameplay={matchesArr[7].gameplay}
           player1={p9}
           player2={p3}
-          player1Tees="orange"
+          player1Tees={playerTees.p9}
           player2Tees={playerTees.p3}
           player1MatchHandicap=""
           player2MatchHandicap=""

@@ -2155,7 +2155,7 @@
       "year": {
         "_2025": {
           "id": 2025,
-          "handicap": 2,
+          "handicap": 20,
           "captain": false,
           "team": "blue",
           "scores": {
@@ -3000,7 +3000,7 @@
       "year": {
         "_2025": {
           "id": 2025,
-          "handicap": 13,
+          "handicap": 26,
           "captain": false,
           "team": "green",
           "scores": {
@@ -4567,7 +4567,7 @@
       "year": {
         "_2025": {
           "id": 2025,
-          "handicap": 13,
+          "handicap": 22,
           "captain": false,
           "team": "green",
           "scores": {
@@ -6258,7 +6258,7 @@
       "year": {
         "_2025": {
           "id": 2025,
-          "handicap": 2,
+          "handicap": 22,
           "captain": false,
           "team": "blue",
           "scores": {
@@ -6978,7 +6978,7 @@
       "year": {
         "_2025": {
           "id": 2025,
-          "handicap": 13,
+          "handicap": 12,
           "captain": false,
           "team": "green",
           "scores": {
@@ -8898,7 +8898,7 @@
       "year": {
         "_2025": {
           "id": 2025,
-          "handicap": 2,
+          "handicap": 11,
           "captain": false,
           "team": "blue",
           "scores": {
@@ -9749,7 +9749,7 @@
       "year": {
         "_2025": {
           "id": 2025,
-          "handicap": 13,
+          "handicap": 22,
           "captain": false,
           "team": "green",
           "scores": {
