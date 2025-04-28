@@ -183,32 +183,32 @@ const TopicPage = ({ location }) => {
           {
             name: "Alternate",
             round: "Round 2.1",
-            link: "r2-alternate",
+            link: "r2f-alternate",
           },
           {
             name: "Scramble",
             round: "Round 2.2",
-            link: "r2-scramble",
+            link: "r2b-scramble",
           },
           {
             name: "1 Ball Bramble",
             round: "Round 3.1",
-            link: "r3-bramble",
+            link: "r3f-bramble",
           },
           {
             name: "2 Ball Bramble",
             round: "Round 3.2",
-            link: "r3-2-ball-bramble",
+            link: "r3b-2-ball-bramble",
           },
           {
             name: "Pinehurst",
             round: "Round 4.1",
-            link: "r4-pinehurst",
+            link: "r4f-pinehurst",
           },
           {
             name: "Singles",
             round: "Round 4.2",
-            link: "r4-singles",
+            link: "r4b-singles",
           },
         ]}
       />
@@ -357,8 +357,8 @@ const TopicPage = ({ location }) => {
         />
       </MatchNavSection>
       <MatchNavSection
-        data-visible={location.hash === "#r2-alternate" ? "true" : "false"}
-        data-link-id="r2-alternate"
+        data-visible={location.hash === "#r2f-alternate" ? "true" : "false"}
+        data-link-id="r2f-alternate"
       >
         <div className="course__info">
           <span>Friday Sept 22, 2:30 PM at </span>
@@ -429,8 +429,8 @@ const TopicPage = ({ location }) => {
       </MatchNavSection>
 
       <MatchNavSection
-        data-visible={location.hash === "#r2-scramble" ? "true" : "false"}
-        data-link-id="r2-scramble"
+        data-visible={location.hash === "#r2b-scramble" ? "true" : "false"}
+        data-link-id="r2b-scramble"
       >
         <div className="course__info">
           <span>Friday Sept 22, 5:00 PM at </span>
@@ -501,8 +501,8 @@ const TopicPage = ({ location }) => {
       </MatchNavSection>
 
       <MatchNavSection
-        data-visible={location.hash === "#r3-bramble" ? "true" : "false"}
-        data-link-id="r3-bramble"
+        data-visible={location.hash === "#r3f-bramble" ? "true" : "false"}
+        data-link-id="r3f-bramble"
       >
         <div className="course__info">
           <span>Saturday Sept 23, 8:50 AM at </span>
@@ -573,8 +573,8 @@ const TopicPage = ({ location }) => {
       </MatchNavSection>
 
       <MatchNavSection
-        data-visible={location.hash === "#r3-2-ball-bramble" ? "true" : "false"}
-        data-link-id="r3-2-ball-bramble"
+        data-visible={location.hash === "#r3b-2-ball-bramble" ? "true" : "false"}
+        data-link-id="r3b-2-ball-bramble"
       >
         <div className="course__info">
           <span>Saturday Sept 23, 11:30 AM at </span>
@@ -645,8 +645,8 @@ const TopicPage = ({ location }) => {
       </MatchNavSection>
 
       <MatchNavSection
-        data-visible={location.hash === "#r4-pinehurst" ? "true" : "false"}
-        data-link-id="r4-pinehurst"
+        data-visible={location.hash === "#r4f-pinehurst" ? "true" : "false"}
+        data-link-id="r4f-pinehurst"
       >
         <div className="course__info">
           <span>Saturday Sept 23, 2:50 PM at </span>
@@ -718,8 +718,8 @@ const TopicPage = ({ location }) => {
       </MatchNavSection>
 
       <MatchNavSection
-        data-visible={location.hash === "#r4-singles" ? "true" : "false"}
-        data-link-id="r4-singles"
+        data-visible={location.hash === "#r4b-singles" ? "true" : "false"}
+        data-link-id="r4b-singles"
       >
         <div className="course__info">
           <span>Saturday Sept 23, 5:30 PM at </span>

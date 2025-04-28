@@ -46,50 +46,50 @@ const TopicPage = ({ data, location }) => {
           {
             name: `1 Best Ball`,
             round: `Round 1.1`,
-            link: "r1-best-ball",
+            link: "r1f-best-ball",
           },
           {
             name: "2 Best Ball",
             round: "Round 1.2",
-            link: "r1-two-best-ball",
+            link: "r1b-two-best-ball",
           },
           {
             name: "2 Ball Bramble",
             round: "Round 2.1",
-            link: "r2-bramble",
+            link: "r2f-bramble",
           },
           {
             name: "Scramble",
             round: "Round 2.2",
-            link: "r2-scramble",
+            link: "r2b-scramble",
           },
           {
             name: "1 Ball Bramble",
             round: "Round 3.1",
-            link: "r3-bramble",
+            link: "r3f-bramble",
           },
           {
             name: "Alternate",
             round: "Round 3.2",
-            link: "r3-alternate",
+            link: "r3b-alternate",
           },
           {
             name: "Scramble",
             round: "Round 4.1",
-            link: "r4-scramble",
+            link: "r4f-scramble",
           },
           {
             name: "Singles",
             round: "Round 4.2",
-            link: "r4-singles",
+            link: "r4b-singles",
           },
         ]}
       />
 
-      <MatchScore year="_2022" lastYearWinner="blue" />
+      <MatchScore year="_2022" lastYearWinner="blue" location={location} />
       <MatchNavSection
-        data-visible={pageHash === "#r1-best-ball" ? "true" : "false"}
-        data-link-id="r1-best-ball"
+        data-visible={pageHash === "#r1f-best-ball" ? "true" : "false"}
+        data-link-id="r1f-best-ball"
       >
         <div className="course__info">
           <span>Friday Oct 14, 8:30 AM at </span>
@@ -142,8 +142,8 @@ const TopicPage = ({ data, location }) => {
         />
       </MatchNavSection>
       <MatchNavSection
-        data-visible={pageHash === "#r1-two-best-ball" ? "true" : "false"}
-        data-link-id="r1-two-best-ball"
+        data-visible={pageHash === "#r1b-two-best-ball" ? "true" : "false"}
+        data-link-id="r1b-two-best-ball"
       >
         <div className="course__info">
           <span>Friday Oct 14, 8:30 AM at </span>
@@ -195,8 +195,8 @@ const TopicPage = ({ data, location }) => {
         />
       </MatchNavSection>
       <MatchNavSection
-        data-visible={pageHash === "#r2-bramble" ? "true" : "false"}
-        data-link-id="r2-bramble"
+        data-visible={pageHash === "#r2f-bramble" ? "true" : "false"}
+        data-link-id="r2f-bramble"
       >
         <div className="course__info">
           <span>Friday Oct 14, 1:57 PM at </span>
@@ -248,8 +248,8 @@ const TopicPage = ({ data, location }) => {
         />
       </MatchNavSection>
       <MatchNavSection
-        data-visible={pageHash === "#r2-scramble" ? "true" : "false"}
-        data-link-id="r2-scramble"
+        data-visible={pageHash === "#r2b-scramble" ? "true" : "false"}
+        data-link-id="r2b-scramble"
       >
         <div className="course__info">
           <span>Friday Oct 14, 1:57 PM at </span>
@@ -302,8 +302,8 @@ const TopicPage = ({ data, location }) => {
       </MatchNavSection>
 
       <MatchNavSection
-        data-visible={pageHash === "#r3-bramble" ? "true" : "false"}
-        data-link-id="r3-bramble"
+        data-visible={pageHash === "#r3f-bramble" ? "true" : "false"}
+        data-link-id="r3f-bramble"
       >
         <div className="course__info">
           <span>Saturday Oct 15, 8:42 AM at </span>
@@ -356,8 +356,8 @@ const TopicPage = ({ data, location }) => {
       </MatchNavSection>
 
       <MatchNavSection
-        data-visible={pageHash === "#r3-alternate" ? "true" : "false"}
-        data-link-id="r3-alternate"
+        data-visible={pageHash === "#r3b-alternate" ? "true" : "false"}
+        data-link-id="r3b-alternate"
       >
         <div className="course__info">
           <span>Saturday Oct 15, 8:42 AM at </span>
@@ -410,8 +410,8 @@ const TopicPage = ({ data, location }) => {
       </MatchNavSection>
 
       <MatchNavSection
-        data-visible={pageHash === "#r4-scramble" ? "true" : "false"}
-        data-link-id="r4-scramble"
+        data-visible={pageHash === "#r4f-scramble" ? "true" : "false"}
+        data-link-id="r4f-scramble"
       >
         <div className="course__info">
           <span>Saturday Oct 15, 2:33 PM at </span>
@@ -464,8 +464,8 @@ const TopicPage = ({ data, location }) => {
       </MatchNavSection>
 
       <MatchNavSection
-        data-visible={pageHash === "#r4-singles" ? "true" : "false"}
-        data-link-id="r4-singles"
+        data-visible={pageHash === "#r4b-singles" ? "true" : "false"}
+        data-link-id="r4b-singles"
       >
         <div className="course__info">
           <span>Saturday Oct 15, 2:33 PM at </span>
