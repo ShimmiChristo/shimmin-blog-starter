@@ -20,7 +20,6 @@ const TopicPage = ({ location }) => {
   const scoreInfo = ScoreInfo()
   let year = "_2024"
   const currentYear = year ? scoreInfo[year].teams : undefined
-  console.log("currentYear - ", currentYear)
   const team1Score = currentYear.team1.scores
   const team2Score = currentYear.team2.scores
 

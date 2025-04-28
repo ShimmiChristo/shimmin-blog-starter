@@ -3,6 +3,7 @@ import PropTypes from "prop-types"
 import styled from "styled-components"
 import { useSiteMetadata } from "../hooks/use-site-metadata"
 import { CourseInfo } from "../hooks/get-course-info"
+import { ScoreInfo } from "../hooks/get-team-score"
 
 import HighlightCountdown from "../components/highlights/coutdown-hightlight"
 import Layout from "../components/layout"
@@ -16,7 +17,11 @@ import "../styles/match.css"
 const TopicPage = ({ location }) => {
   const { title } = useSiteMetadata()
   const { course } = CourseInfo()
-  // const [activetab, setActivetab] = useState(false)
+  const scoreInfo = ScoreInfo()
+  let year = "_2024"
+  const currentYear = year ? scoreInfo[year].teams : undefined
+  const team1Score = currentYear.team1.scores
+  const team2Score = currentYear.team2.scores
 
   const siteTitle = title || `Scores`
 
@@ -206,50 +211,52 @@ const TopicPage = ({ location }) => {
           {
             name: `1 Best Ball`,
             round: `Round 1.1`,
-            link: "r1-best-ball",
+            link: "r1f-best-ball",
           },
           {
             name: "2 Best Ball",
             round: "Round 1.2",
-            link: "r1-two-best-ball",
+            link: "r1b-two-best-ball",
           },
           {
             name: "Alternate",
             round: "Round 2.1",
-            link: "r2-alternate",
+            link: "r2f-alternate",
           },
           {
             name: "Scramble",
             round: "Round 2.2",
-            link: "r2-scramble",
+            link: "r2b-scramble",
           },
           {
             name: "1 Ball Bramble",
             round: "Round 3.1",
-            link: "r3-bramble",
+            link: "r3f-bramble",
           },
           {
             name: "2 Ball Bramble",
             round: "Round 3.2",
-            link: "r3-2-ball-bramble",
+            link: "r3b-2-ball-bramble",
           },
           {
             name: "Pinehurst",
             round: "Round 4.1",
-            link: "r4-pinehurst",
+            link: "r4f-pinehurst",
           },
           {
             name: "Singles",
             round: "Round 4.2",
-            link: "r4-singles",
+            link: "r4b-singles",
           },
         ]}
       />
 
       <MatchScore year="_2024" lastYearWinner="blue" location={location} />
       <MatchNavSection
-        data-visible={location.hash === "#r1-best-ball" ? "true" : "false"}
-        data-link-id="r1-best-ball"
+        data-visible={location.hash === "#r1f-best-ball" ? "true" : "false"}
+        data-link-id="r1f-best-ball"
+        data-team1Score={team1Score.round1}
+        data-team2Score={team2Score.round1}
       >
         <div className="course__info">
           <span>Friday Sept 27, 8:30 AM at </span>
@@ -320,8 +327,8 @@ const TopicPage = ({ location }) => {
       </MatchNavSection>
 
       <MatchNavSection
-        data-visible={location.hash === "#r1-two-best-ball" ? "true" : "false"}
-        data-link-id="r1-two-best-ball"
+        data-visible={location.hash === "#r1b-two-best-ball" ? "true" : "false"}
+        data-link-id="r1b-two-best-ball"
       >
         <div className="course__info">
           <span>Friday Sept 27, 11:00 AM at </span>
@@ -392,8 +399,8 @@ const TopicPage = ({ location }) => {
       </MatchNavSection>
 
       <MatchNavSection
-        data-visible={location.hash === "#r2-alternate" ? "true" : "false"}
-        data-link-id="r2-alternate"
+        data-visible={location.hash === "#r2f-alternate" ? "true" : "false"}
+        data-link-id="r2f-alternate"
       >
         <div className="course__info">
           <span>Friday Sept 27, 2:30 PM at </span>
@@ -464,8 +471,8 @@ const TopicPage = ({ location }) => {
       </MatchNavSection>
 
       <MatchNavSection
-        data-visible={location.hash === "#r2-scramble" ? "true" : "false"}
-        data-link-id="r2-scramble"
+        data-visible={location.hash === "#r2b-scramble" ? "true" : "false"}
+        data-link-id="r2b-scramble"
       >
         <div className="course__info">
           <span>Friday Sept 27, 5:00 PM at </span>
@@ -536,8 +543,8 @@ const TopicPage = ({ location }) => {
       </MatchNavSection>
 
       <MatchNavSection
-        data-visible={location.hash === "#r3-bramble" ? "true" : "false"}
-        data-link-id="r3-bramble"
+        data-visible={location.hash === "#r3f-bramble" ? "true" : "false"}
+        data-link-id="r3f-bramble"
       >
         <div className="course__info">
           <span>Saturday Sept 28, 8:00 AM at </span>
@@ -608,8 +615,8 @@ const TopicPage = ({ location }) => {
       </MatchNavSection>
 
       <MatchNavSection
-        data-visible={location.hash === "#r3-2-ball-bramble" ? "true" : "false"}
-        data-link-id="r3-2-ball-bramble"
+        data-visible={location.hash === "#r3b-2-ball-bramble" ? "true" : "false"}
+        data-link-id="r3b-2-ball-bramble"
       >
         <div className="course__info">
           <span>Saturday Sept 28, 11:00 AM at </span>
@@ -680,8 +687,8 @@ const TopicPage = ({ location }) => {
       </MatchNavSection>
 
       <MatchNavSection
-        data-visible={location.hash === "#r4-pinehurst" ? "true" : "false"}
-        data-link-id="r4-pinehurst"
+        data-visible={location.hash === "#r4f-pinehurst" ? "true" : "false"}
+        data-link-id="r4f-pinehurst"
       >
         <div className="course__info">
           <span>Saturday Sept 28, 2:00 PM at </span>
@@ -753,8 +760,8 @@ const TopicPage = ({ location }) => {
       </MatchNavSection>
 
       <MatchNavSection
-        data-visible={location.hash === "#r4-singles" ? "true" : "false"}
-        data-link-id="r4-singles"
+        data-visible={location.hash === "#r4b-singles" ? "true" : "false"}
+        data-link-id="r4b-singles"
       >
         <div className="course__info">
           <span>Saturday Sept 28, 5:00 PM at </span>

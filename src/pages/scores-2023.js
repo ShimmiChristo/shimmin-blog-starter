@@ -173,12 +173,12 @@ const TopicPage = ({ location }) => {
           {
             name: `1 Best Ball`,
             round: `Round 1.1`,
-            link: "r1-best-ball",
+            link: "r1f-best-ball",
           },
           {
             name: "2 Best Ball",
             round: "Round 1.2",
-            link: "r1-two-best-ball",
+            link: "r1b-two-best-ball",
           },
           {
             name: "Alternate",
@@ -213,10 +213,10 @@ const TopicPage = ({ location }) => {
         ]}
       />
 
-      <MatchScore year="_2023" lastYearWinner="green" />
+      <MatchScore year="_2023" lastYearWinner="green" location={location} />
       <MatchNavSection
-        data-visible={pageHash === "#r1-best-ball" ? "true" : "false"}
-        data-link-id="r1-best-ball"
+        data-visible={pageHash === "#r1f-best-ball" ? "true" : "false"}
+        data-link-id="r1f-best-ball"
       >
         <div className="course__info">
           <span>Friday Sept 22, 8:30 AM at </span>
@@ -286,8 +286,8 @@ const TopicPage = ({ location }) => {
         />
       </MatchNavSection>
       <MatchNavSection
-        data-visible={location.hash === "#r1-two-best-ball" ? "true" : "false"}
-        data-link-id="r1-two-best-ball"
+        data-visible={location.hash === "#r1b-two-best-ball" ? "true" : "false"}
+        data-link-id="r1b-two-best-ball"
       >
         <div className="course__info">
           <span>Friday Sept 22, 11:00 AM at </span>
