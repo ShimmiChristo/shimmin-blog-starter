@@ -132,6 +132,7 @@ function Match({
   player2MatchHandicap,
   player3MatchHandicap,
   player4MatchHandicap,
+  ytVideo,
 }) {
   const { course } = CourseInfo()
   const playersUpdateJson = PlayerInfoUpdate()
@@ -348,12 +349,12 @@ function Match({
     if (teamOneScoreArray[holeIndex] > teamTwoScoreArray[holeIndex]) {
       teamWins.teamTwo++
       teamWins.team = "teamTwo"
-      teamWins.nickname="blue"
+      teamWins.nickname = "blue"
       return teamWins
     } else if (teamOneScoreArray[holeIndex] < teamTwoScoreArray[holeIndex]) {
       teamWins.teamOne++
       teamWins.team = "teamOne"
-      teamWins.nickname="green"
+      teamWins.nickname = "green"
       return teamWins
     } else {
       teamWins.teamOne = 0
@@ -697,7 +698,9 @@ function Match({
                 className="match__hole row-cell"
                 data-winner={`${calcHoleWinner(hole.number).team}`}
                 data-matchover={`${isMatchOver(i + 1)}`}
-                data-holewinner={`${calcHoleWinner(hole.number).nickname ?? 'tie'}`}
+                data-holewinner={`${
+                  calcHoleWinner(hole.number).nickname ?? "tie"
+                }`}
                 id={hole.number}
               >
                 <div className="match__line"></div>
@@ -817,6 +820,19 @@ function Match({
               ))}
             </div>
           </div>
+        </div>
+        <div className="youtube__video m-3">
+          {ytVideo ? (
+            <a
+              href={ytVideo}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Link to YouTube video
+            </a>
+          ) : (
+            ""
+          )}
         </div>
         <div className="form-check form-switch my-3">
           <input

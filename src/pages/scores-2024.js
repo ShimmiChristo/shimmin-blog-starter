@@ -283,6 +283,7 @@ const TopicPage = ({ location }) => {
           player2MatchHandicap=""
           player3MatchHandicap=""
           player4MatchHandicap=""
+          ytVideo={"https://www.youtube.com/watch?v=Q41VRXjgXtQ"}
         />
         <Match
           matchId={`2 ${matchesArr[0].matchId}`}
@@ -375,6 +376,7 @@ const TopicPage = ({ location }) => {
           player2MatchHandicap=""
           player3MatchHandicap=""
           player4MatchHandicap=""
+          ytVideo={"https://www.youtube.com/watch?v=5wVoMvfMlSw&t=301s"}
         />
         <Match
           matchId={`6 ${matchesArr[1].matchId}`}
@@ -615,7 +617,9 @@ const TopicPage = ({ location }) => {
       </MatchNavSection>
 
       <MatchNavSection
-        data-visible={location.hash === "#r3b-2-ball-bramble" ? "true" : "false"}
+        data-visible={
+          location.hash === "#r3b-2-ball-bramble" ? "true" : "false"
+        }
         data-link-id="r3b-2-ball-bramble"
       >
         <div className="course__info">
