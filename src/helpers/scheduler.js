@@ -129,7 +129,14 @@ const minNumberInArray = arr => {
   return Math.min(...arr)
 }
 
-function findBestPair(remainingPlayers, partnerMap, iterateParam) {
+function findBestPair(
+  remainingPlayers,
+  partnerMap,
+  iterateParam,
+  roundsParam,
+  roundParam
+) {
+  const roundNo = roundParam + 1
   console.log("remainingPlayers - ", remainingPlayers)
   let bestScore = Infinity
   let bestPair = []
@@ -205,6 +212,32 @@ function findBestPair(remainingPlayers, partnerMap, iterateParam) {
         continue
       }
 
+      // * check let the last 2 players in the odd rounds do not play in the first match of the even rounds.
+      console.log(
+        "JSON.parse(JSON.stringify(roundsParam)) - ",
+        JSON.parse(JSON.stringify(roundsParam))
+      )
+      console.log("roundNo - ", roundNo)
+      if (roundNo % 2 === 0 && roundsParam[roundParam - 1].matches.length > 0) {
+        const last = roundsParam[roundParam - 1].matches.length - 1
+        const lastMatchTeamA = roundsParam[roundParam - 1].matches[last].teamA
+        // console.log("lastMatchTeamA - ", lastMatchTeamA)
+        // * check if players are first match in round
+        const isFirstMatchInRound =
+          roundsParam[roundParam].matches.length === 0 && remainingPlayers.length === 6
+        console.log("isFirstMatchInRound - ", isFirstMatchInRound)
+        if (
+          lastMatchTeamA.includes(player1) ||
+          (lastMatchTeamA.includes(player2) && isFirstMatchInRound)
+        ) {
+          console.log(
+            "Skipping pair due to last match in even round - ",
+            lastMatchTeamA
+          )
+          continue
+        }
+      }
+
       // ! bestScore is always Infinity, so this will always be true.
       if (score < bestScore && player1 !== player2) {
         lowerPlayerNo = Math.min(player1, player2).toString()
@@ -229,6 +262,7 @@ function findBestPair(remainingPlayers, partnerMap, iterateParam) {
   // * return something
   // bestPair = [Math.min(player1, player2).toString(), Math.max(player1, player2).toString()];
 
+  // * 20 is the max attempts to find a pair.
   if (iterate === 20 - 1) {
     console.log(
       "No valid pair found after max attempts, returning best pair found so far."
@@ -237,16 +271,15 @@ function findBestPair(remainingPlayers, partnerMap, iterateParam) {
     bestPair = remainingPlayers.slice(0, 2)
   }
 
+  if (bestPair.length > 0) {
+    console.log('JSON.parse(JSON.stringify(bestPair)) - ', JSON.parse(JSON.stringify(bestPair)));
+  }
   return bestPair
   // }
 
   // // Start the recursive search
   // return findOptimalPartner();
 }
-
-// function findBestPartnerPairs(remainingPlayers, partnerMap) {}
-
-// findBestPair(teamA, partnerMapA);
 
 function generateMatches(
   rounds,
@@ -258,6 +291,7 @@ function generateMatches(
 ) {
   const maxAttempts = 20
   const roundsParam = rounds
+  const roundParam = round
   const matchesPerRound = 3
   const remainingACopy = [...remainingA]
   // const partnerMapACopy = { ...partnerMapAParam };
@@ -310,7 +344,13 @@ function generateMatches(
 
     let potentialMatchesBoolean
     for (let i = 0; i < matchesPerRound; i++) {
-      const bestPairA = findBestPair(remainingA, partnerMapACopy, iterate)
+      const bestPairA = findBestPair(
+        remainingA,
+        partnerMapACopy,
+        iterate,
+        roundsParam,
+        roundParam
+      )
       console.log("bestPairA - ", bestPairA)
       console.log("remainingA - ", remainingA)
       // console.log('JSON.parse(JSON.stringify(bestPairA)) - ', JSON.parse(JSON.stringify(bestPairA)));
@@ -393,94 +433,3 @@ function generateRounds(teamA, teamB, totalRounds) {
 }
 // totalRounds = 8;
 generateRounds(teamA, teamB, totalRounds)
-
-// **************************************************************
-
-// function generateRounds(teamA, teamB, totalRounds = 8) {
-//   const initPairMap = (players) => {
-//     const map = {};
-//     for (let i = 0; i < players.length; i++) {
-//       for (let j = i + 1; j < players.length; j++) {
-//         const key = [players[i], players[j]].sort().join('-');
-//         map[key] = 0;
-//       }
-//     }
-//     return map;
-//   };
-
-//   const incrementPairMap = (map, p1, p2) => {
-//     const key = [p1, p2].sort().join('-');
-//     if (map[key] !== undefined) map[key]++;
-//   };
-
-//   const getPairCount = (map, p1, p2) => {
-//     const key = [p1, p2].sort().join('-');
-//     return map[key] || 0;
-//   };
-
-//   // Shuffle function to randomize the order of players array
-//   const shuffle = (array) => array.sort(() => Math.random() - 0.5);
-
-//   const partnerMapA = initPairMap(teamA);
-//   const partnerMapB = initPairMap(teamB);
-//   const opponentMap = {};
-
-//   const rounds = [];
-
-//   for (let round = 0; round < totalRounds; round++) {
-//     let roundMatches = [];
-
-//     let remainingA = shuffle([...teamA]);
-//     let remainingB = shuffle([...teamB]);
-
-//     for (let i = 0; i < 3; i++) {
-//       let bestScore = Infinity;
-//       let bestPairA = [];
-
-//       for (let j = 0; j < remainingA.length; j++) {
-//         for (let k = j + 1; k < remainingA.length; k++) {
-//           let score = getPairCount(partnerMapA, remainingA[j], remainingA[k]);
-//           if (score < bestScore) {
-//             bestScore = score;
-//             bestPairA = [remainingA[j], remainingA[k]];
-//           }
-//         }
-//       }
-
-//       bestScore = Infinity;
-//       let bestPairB = [];
-
-//       for (let j = 0; j < remainingB.length; j++) {
-//         for (let k = j + 1; k < remainingB.length; k++) {
-//           let score = getPairCount(partnerMapB, remainingB[j], remainingB[k]);
-//           if (score < bestScore) {
-//             bestScore = score;
-//             bestPairB = [remainingB[j], remainingB[k]];
-//           }
-//         }
-//       }
-
-//       incrementPairMap(partnerMapA, bestPairA[0], bestPairA[1]);
-//       incrementPairMap(partnerMapB, bestPairB[0], bestPairB[1]);
-
-//       bestPairA.forEach((a) => {
-//         bestPairB.forEach((b) => {
-//           const key = [a, b].sort().join('-');
-//           opponentMap[key] = (opponentMap[key] || 0) + 1;
-//         });
-//       });
-
-//       remainingA = remainingA.filter((p) => !bestPairA.includes(p));
-//       remainingB = remainingB.filter((p) => !bestPairB.includes(p));
-
-//       roundMatches.push({
-//         teamA: bestPairA,
-//         teamB: bestPairB,
-//       });
-//     }
-
-//     rounds.push(roundMatches);
-//   }
-
-//   return rounds;
-// }
