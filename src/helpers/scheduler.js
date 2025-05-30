@@ -163,6 +163,10 @@ function findBestPair(remainingPlayers, partnerMap, iterateParam) {
   // }
 
   let iterate = iterateParam || 0;
+  let lowerPlayerNo
+  let higherPlayerNo;
+  let player1;
+  let player2;
 
   for (let i = iterate; i < remainingPlayers.length + iterate; i++) {
     console.log('iterate - ', iterate);
@@ -170,14 +174,15 @@ function findBestPair(remainingPlayers, partnerMap, iterateParam) {
     // try to get a player that has played the least number of times
 
     for (let j = iterate + 1; j < remainingPlayers.length + iterate; j++) {
-      const player1 = remainingPlayers[i % remainingPlayers.length];
-      const player2 = remainingPlayers[j % remainingPlayers.length];
+      player1 = remainingPlayers[i % remainingPlayers.length];
+      player2 = remainingPlayers[j % remainingPlayers.length];
 
       console.log('player1 - ', player1);
       console.log('player2 - ', player2);
 
       const score = getPairCount(partnerMap, player1, player2);
       console.log('score - ', score);
+      console.log('bestScore - ', bestScore);
       // let maxScore = maxNumberInArray(Object.values(partnerMap));
       // let minScore = minNumberInArray(Object.values(partnerMap));
       // * if score is more than 1 more than other pairs, add
@@ -190,11 +195,15 @@ function findBestPair(remainingPlayers, partnerMap, iterateParam) {
         continue;
       }
 
-      // if (score > 2) continue;
+      // * used to check 0 partner pairs with 2 partners.
+      if (maxScore === 2 && score === 1 && minScore === 0) {
+        console.log('maxScore === 2 && score < 2 - ', score);
+        continue;
+      }
 
       if (score < bestScore && player1 !== player2) {
-        let lowerPlayerNo = Math.min(player1, player2).toString();
-        let higherPlayerNo = Math.max(player1, player2).toString();
+        lowerPlayerNo = Math.min(player1, player2).toString();
+        higherPlayerNo = Math.max(player1, player2).toString();
         bestScore = score;
         // console.log('lowerPlayerNo ----- ', lowerPlayerNo);
         // console.log('higherPlayerNo ----- ', higherPlayerNo);
@@ -212,6 +221,15 @@ function findBestPair(remainingPlayers, partnerMap, iterateParam) {
   //   return findOptimalPartner(iterate + 1, attempt + 1);
   // }
 
+  // * return something
+  // bestPair = [Math.min(player1, player2).toString(), Math.max(player1, player2).toString()];
+
+  if (iterate === 19) {
+    console.log('No valid pair found after max attempts, returning best pair found so far.');
+    console.log('remainingPlayers - ', remainingPlayers);
+    bestPair = remainingPlayers.slice(0, 2);
+  }
+
   return bestPair;
   // }
 
@@ -219,7 +237,7 @@ function findBestPair(remainingPlayers, partnerMap, iterateParam) {
   // return findOptimalPartner();
 }
 
-function findBestPartnerPairs(remainingPlayers, partnerMap) {}
+// function findBestPartnerPairs(remainingPlayers, partnerMap) {}
 
 // findBestPair(teamA, partnerMapA);
 
@@ -332,7 +350,7 @@ function generateMatches(rounds, round, remainingA, partnerMapAParam, remainingB
   // ! 2 functions in here.
   // * 1. check if the paritings will work with a copy of the partnerMap and round matches.
   // * 2. try 10 or x times. and return the roundsParam after trying different vaiations.
-  return roundsParam;
+  // return roundsParam;
 }
 
 function generateRounds(teamA, teamB, totalRounds) {
@@ -341,7 +359,7 @@ function generateRounds(teamA, teamB, totalRounds) {
     rounds.push({ round: rounds.length + 1, matches: [] });
   }
 
-  for (let round = 0; round < totalRounds; round++) {
+  for (let round = roundsInit.length; round < rounds.length; round++) {
     let remainingA = [...teamA];
     let remainingB = [...teamB];
 
