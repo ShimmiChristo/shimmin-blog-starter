@@ -20,6 +20,8 @@ const teams = {
   teamB: teamB,
 }
 const totalRounds = 6
+const maxAttempts = 20
+
 // const matchesPerRound = 3
 // const matchExample = [
 //   { teamA: ["1", "2"], teamB: ["7", "8"] },
@@ -145,9 +147,15 @@ const partnerMaps = {
 }
 
 const getPairCount = (map, p1, p2) => {
-  const key = [p1, p2].sort().join("-")
+  const key = [p1, p2].sort((a, b) => a - b).join("-")
   return map[key] || 0
 }
+
+// const getPairCountOpponents = (map, teamAp1, teamAp2, teamBp) => {
+//   const key1 = [p1, p2].sort((a, b) => a - b).join("-")
+//   const key2 = [p3, p4].sort((a, b) => a - b).join("-")
+//   return (map[key1] || 0) + (map[key2] || 0)
+// }
 
 const maxNumberInArray = arr => {
   return Math.max(...arr)
@@ -164,7 +172,8 @@ function findBestPair(
   roundsParam,
   roundParam,
   teamName,
-  opponentMap
+  opponentMap,
+  matchIterationInRound
 ) {
   const roundNo = roundParam + 1
   // console.log("remainingPlayers - ", remainingPlayers)
@@ -191,16 +200,17 @@ function findBestPair(
   let maxScoreOpponents = maxNumberInArray(Object.values(opponentMap))
   let minScoreOpponents = minNumberInArray(Object.values(opponentMap))
 
-  console.log(
-    "JSON.parse(JSON.stringify(partnerMap)) - ",
-    JSON.parse(JSON.stringify(partnerMap))
-  )
+  // console.log(
+  //   "JSON.parse(JSON.stringify(partnerMap)) - ",
+  //   JSON.parse(JSON.stringify(partnerMap))
+  // )
 
   let iterate = iterateParam || 0
   let lowerPlayerNo
   let higherPlayerNo
   let player1
   let player2
+  let exitsLoops = false
 
   for (let i = iterate; i < remainingPlayers.length + iterate; i++) {
     // console.log("iterate - ", iterate)
@@ -214,7 +224,7 @@ function findBestPair(
 
       // * if score is more than 1 more than other pairs, add
       if (maxScore - score < 1 && score > 0 && maxScore - minScore !== 0) {
-        console.log("continued score - ", score)
+        // console.log("continued score - ", score)
         // * create a recursive function to find the best pair
         continue
       }
@@ -243,6 +253,97 @@ function findBestPair(
         }
       }
 
+      // * check opponent
+      // on teamB, check opponentMap to minimize the number of times opponents play together.
+      if (teamName === "teamB") {
+        let passOppoentCheck = true
+        let opponentScorePlayer1
+        let opponentScorePlayer2
+        const teamAMatch =
+          roundsParam[roundParam].matches[matchIterationInRound]["teamA"]
+        // console.log("player1 - ", player1)
+        // console.log("player2 - ", player2)
+        // console.log("teamAMatch - ", teamAMatch)
+
+
+        // * check pair count of each player and opponent in teamA
+        for (let x = 0; x < teamAMatch.length; x++) {
+          const teamAPlayer = teamAMatch[x]
+          // opponentScorePlayer1 = getPairCount(opponentMap, teamAPlayer, player1)
+
+          if (maxScoreOpponents - minScoreOpponents > 4) {
+            passOppoentCheck = false
+          }
+        }
+
+        for (let x = 0; x < teamAMatch.length; x++) {
+          const teamAPlayer = teamAMatch[x]
+          // opponentScorePlayer2 = getPairCount(opponentMap, teamAPlayer, player2)
+
+          if (maxScoreOpponents - minScoreOpponents > 4) {
+            passOppoentCheck = false
+          }
+        }
+
+        // if (
+        //   maxScoreOpponents === 2 &&
+        //   opponentScorePlayer1 === 1 &&
+        //   minScoreOpponents === 0
+        // ) {
+        //   passOppoentCheck = false
+        // }
+
+        // if (
+        //   maxScoreOpponents === 2 &&
+        //   opponentScorePlayer2 === 1 &&
+        //   minScoreOpponents === 0
+        // ) {
+        //   passOppoentCheck = false
+        // }
+
+        // if (
+        //   maxScoreOpponents - opponentScorePlayer1 < 1 &&
+        //   opponentScorePlayer1 > 0 &&
+        //   maxScoreOpponents - minScoreOpponents !== 0
+        // ) {
+        //   passOppoentCheck = false
+        // }
+
+        // if (
+        //   maxScoreOpponents - opponentScorePlayer2 < 1 &&
+        //   opponentScorePlayer2 > 0 &&
+        //   maxScoreOpponents - minScoreOpponents !== 0
+        // ) {
+        //   passOppoentCheck = false
+        // }
+
+        // ! need to check what is happening here.
+        // if (!passOppoentCheck) {
+        //   // console.log("continued opponent check - ", minScoreOpponents)
+        //   break
+        // }
+
+        // compare player from teamB with the players from teamA in the same match (current match - 3)
+
+        // if (roundsParam[roundParam].matches.length > 0) {
+
+        // }
+        // console.log('JSON.parse(JSON.stringify(roundsParam)) - ', JSON.parse(JSON.stringify(roundsParam)));
+        // const opponentScore = getPairCount(opponentMap, player1, player2)
+        // // * if opponentScore is more than 1 more than other pairs, add
+        // console.log('maxScoreOpponents - ', maxScoreOpponents);
+        // console.log('minScoreOpponents - ', minScoreOpponents);
+        // console.log('opponentScore - ', opponentScore);
+        // if (
+        //   maxScoreOpponents - opponentScore < 1 &&
+        //   opponentScore > 0 &&
+        //   maxScoreOpponents - minScoreOpponents !== 0
+        // ) {
+        //   // console.log("continued opponent score - ", opponentScore)
+        //   continue
+        // }
+      }
+
       // ! bestScore is always Infinity, so this will always be true.
       if (score < bestScore && player1 !== player2) {
         lowerPlayerNo = Math.min(player1, player2).toString()
@@ -254,14 +355,15 @@ function findBestPair(
         // potentialBestPair = [player1, player2];
       }
     }
+    // if (exitsLoops) break
   }
 
-  // * 20 is the max attempts to find a pair.
-  if (iterate === 20 - 1) {
-    // console.log(
-    //   "No valid pair found after max attempts, returning best pair found so far."
-    // )
-    // console.log("remainingPlayers - ", remainingPlayers)
+  // * max attempts to find a pair.
+  if (iterate === maxAttempts - 1) {
+    console.log(
+      "--------------- No valid pair found after max attempts, returning best pair found so far.----------------"
+    )
+    console.log("remainingPlayers - ", remainingPlayers)
     let sortedArr = remainingPlayers.sort((a, b) => a - b)
     bestPair = sortedArr.slice(0, 2)
   }
@@ -283,7 +385,7 @@ function generateMatches(
   partnerMapAParam,
   opponentMapTeam
 ) {
-  const maxAttempts = 20
+  // const maxAttempts = 20
   const roundsParam = rounds
   const roundParam = round
   const matchesPerRound = 3
@@ -341,6 +443,7 @@ function generateMatches(
 
     let potentialMatchesBoolean
     for (let i = 0; i < matchesPerRound; i++) {
+      let matchIterationInRound = i
       const bestPairA = findBestPair(
         remainingA,
         partnerMapCopy,
@@ -348,14 +451,15 @@ function generateMatches(
         roundsParam,
         roundParam,
         teamName,
-        opponentMapCopy
+        opponentMapCopy,
+        matchIterationInRound
       )
 
       potentialMatchesArr.push({ [teamName]: bestPairA })
 
       remainingA = remainingA.filter(p => !bestPairA.includes(p))
 
-      if (potentialMatchesArr[i]?.[teamName].length > 0) {
+      if (potentialMatchesArr[i]?.[teamName]?.length > 0) {
         partnerMapCopy[bestPairA.join("-")]++
         potentialMatchesBoolean = true
         if (teamName === "teamB") {
@@ -391,10 +495,10 @@ function generateMatches(
     if (partnerMapCopy) {
       partnerMaps[teamName] = { ...partnerMapCopy }
 
-      console.log(
-        "JSON.parse(JSON.stringify( partnerMaps[teamName])) - ",
-        JSON.parse(JSON.stringify(partnerMaps[teamName]))
-      )
+      // console.log(
+      //   "JSON.parse(JSON.stringify( partnerMaps[teamName])) - ",
+      //   JSON.parse(JSON.stringify(partnerMaps[teamName]))
+      // )
     }
 
     if (opponentMapCopy) {
@@ -417,7 +521,7 @@ function generateRounds(teamName, rounds) {
     let opponentMapTeam = opponentMap
 
     // generate matches for each round
-    console.log("ROUND ------------- - ", round)
+    console.log("ROUND START ------------- - ", round)
 
     generateMatches(
       rounds,
@@ -427,6 +531,8 @@ function generateRounds(teamName, rounds) {
       partnerMapTeam,
       opponentMapTeam
     )
+
+    // console.log('JSON.parse(JSON.stringify(rounds[round])) - ', JSON.parse(JSON.stringify(rounds[round])));
 
     console.log(
       "JSON.parse(JSON.stringify(opponentMap)) - ",
