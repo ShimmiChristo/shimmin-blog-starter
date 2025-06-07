@@ -20,7 +20,7 @@ function generateTeamRoundsMain() {
     teamA: teamA,
     teamB: teamB,
   }
-  const totalRounds = 5
+  const totalRounds = 4
   const maxAttempts = 20
 
   // const matchesPerRound = 3
@@ -79,6 +79,30 @@ function generateTeamRoundsMain() {
     },
     {
       round: 3,
+      matches: [
+        {
+          teamA: ["1", "2"],
+        },
+        {
+          teamA: ["3", "4"],
+        },
+        {
+          teamA: ["5", "6"],
+        },
+        {
+          teamB: ["7", "8"],
+        },
+        {
+          teamB: ["9", "10"],
+        },
+        {
+          teamB: ["11", "12"],
+        },
+      ],
+    },
+
+    {
+      round: 4,
       matches: [
         {
           teamA: ["1", "2"],
@@ -199,7 +223,7 @@ function generateTeamRoundsMain() {
     opponentMap,
     matchIterationInRound
   ) {
-    const roundNo = roundParam + 1 // for even rounds. 
+    const roundNo = roundParam + 1 // for even rounds.
     let bestScore = Infinity
     let bestPair = []
 
@@ -254,14 +278,23 @@ function generateTeamRoundsMain() {
           roundNo % 2 === 0 &&
           roundsParam[roundParam - 1].matches.length > 0
         ) {
-          const last = roundsParam[roundParam - 1].matches.length - 1
-          const lastMatchTeamA =
-            roundsParam[roundParam - 1].matches[last][teamName]
+          const findLastObjectWithKey = (arr, key, value) => {
+            return arr.findLast(obj => obj && obj[key])
+          }
+          // const last = roundsParam[roundParam - 1].matches.length - 1
+          const last = findLastObjectWithKey(
+            roundsParam[roundParam - 1].matches,
+            teamName
+          )
+          // const lastMatchTeamA =
+          //   roundsParam[roundParam - 1].matches[last][teamName]
+          const lastMatchTeamA = last[teamName]
           // * check if players are first match in round
           const isFirstMatchInRound =
             (roundsParam[roundParam].matches.length === 0 ||
               roundsParam[roundParam].matches.length === 3) &&
             remainingPlayers.length === 6
+
           if (
             lastMatchTeamA.includes(player1) ||
             (lastMatchTeamA.includes(player2) && isFirstMatchInRound)
@@ -531,7 +564,7 @@ function generateTeamRoundsMain() {
       let opponentMapTeam = opponentMap
 
       // generate matches for each round
-      console.log("ROUND START ------------- - ", round)
+      // console.log("ROUND START ------------- - ", round)
 
       generateMatches(
         rounds,
@@ -544,14 +577,14 @@ function generateTeamRoundsMain() {
 
       // console.log('JSON.parse(JSON.stringify(rounds[round])) - ', JSON.parse(JSON.stringify(rounds[round])));
 
-      console.log(
-        "JSON.parse(JSON.stringify(opponentMap)) - ",
-        JSON.parse(JSON.stringify(opponentMap))
-      )
-      console.log(
-        "JSON.parse(JSON.stringify(partnerMaps)) - ",
-        JSON.parse(JSON.stringify(partnerMaps))
-      )
+      // console.log(
+      //   "JSON.parse(JSON.stringify(opponentMap)) - ",
+      //   JSON.parse(JSON.stringify(opponentMap))
+      // )
+      // console.log(
+      //   "JSON.parse(JSON.stringify(partnerMaps)) - ",
+      //   JSON.parse(JSON.stringify(partnerMaps))
+      // )
     }
 
     return rounds
@@ -579,52 +612,58 @@ function generateTeamRoundsMain() {
     let minScoreOpponents = minNumberInArray(Object.values(opponentMap))
   */
     if (
-      maxNumberInArray(Object.values(opponentMap)) > 5 ||
-      minNumberInArray(Object.values(opponentMap)) === 0 ||
+      maxNumberInArray(Object.values(partnerMaps.teamA)) > 5 ||
+      maxNumberInArray(Object.values(partnerMaps.teamB)) > 5
+    ) {
+      console.log(
+        "----------------- ERROR: Opponent map has more than 5 -----------------"
+      )
+      // console.log("rounds - ", rounds)
+      return false
+    } else if (minNumberInArray(Object.values(opponentMap)) === 0) {
+      console.log(
+        "----------------- ERROR: Opponent map has a 0 -----------------"
+      )
+      // console.log("rounds - ", rounds)
+      return false
+    } else if (
       minNumberInArray(Object.values(partnerMaps.teamA)) === 0 ||
       minNumberInArray(Object.values(partnerMaps.teamB)) === 0
     ) {
       console.log(
-        "----------------- ERROR: Opponent map has a 0 -----------------"
+        "----------------- ERROR: Partner map has a 0 -----------------"
       )
+      // console.log("rounds - ", rounds)
       return false
     } else {
       console.log("GOOOOOOOOD")
+      console.log("'var opp' - ", JSON.parse(JSON.stringify(opponentMap)))
+      console.log("var teams - ", JSON.parse(JSON.stringify(partnerMaps)))
+      console.log("rounds - ", rounds)
+      return true
     }
-    console.log("rounds - ", rounds)
-    return rounds
+    // return rounds
   }
 
-  generateTeamRounds()
+  return generateTeamRounds()
 }
-// generateTeamRoundsMain()
 
 // recursive function to call generateTeamRounds 10 times
 function recursiveGenerateTeamRounds(iteration = 0) {
-  if (iteration >= 50) {
+  // if (iteration >= 7733) {
+  if (iteration >= 2) {
     return
   }
-  console.log(`Iteration ${iteration + 1}`)
-  // if (
-  //   minNumberInArray(Object.values(opponentMap)) === 0 ||
-  //   minNumberInArray(Object.values(partnerMaps.teamA)) === 0 ||
-  //   minNumberInArray(Object.values(partnerMaps.teamB)) === 0
-  // ) {
-  //   console.log(
-  //     "----------------- ERROR: Opponent map has a 0 -----------------"
-  //   )
-  //   generateTeamRounds()
-  // } else {
-  //   console.log("GOOD")
-  //   return
-  // }
-  // let test = generateTeamRoundsMain()
-  // if (!test) {
-  //   console.log("Retrying...")
-  //   return generateTeamRoundsMain(iteration)
-  // }
-  generateTeamRoundsMain()
-  console.log("Generated rounds successfully." + ` Iteration: ${iteration + 1}`)
-  recursiveGenerateTeamRounds(iteration + 1)
+  if (generateTeamRoundsMain()) {
+    console.log(
+      "Generated rounds successfully." + ` Iteration: ${iteration + 1}`
+    )
+    return true
+  } else {
+    console.log(
+      "Generated rounds successfully." + ` Iteration: ${iteration + 1}`
+    )
+    recursiveGenerateTeamRounds(iteration + 1)
+  }
 }
 recursiveGenerateTeamRounds()
