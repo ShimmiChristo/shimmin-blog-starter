@@ -7,11 +7,12 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 // import LandingPageHeader from "../components/landing-page-header"
 import MatchScore from "../components/match-score"
-import Highlight2024 from "../components/highlights/highlight-2024"
+import Highlight2025 from "../components/highlights/highlight-2025"
 import Venue2024 from "../components/venues/venue-2024"
 import HighlightCountdown from "../components/highlights/coutdown-hightlight"
 // import HighlightDay from "../components/highlights/day-hightlights-2023"
 import MatchSummary2024 from "../components/matches/2024/summary"
+import Foreword2025 from "../components/matches/2025/foreword"
 
 // import AboutSite from "../components/about-site"
 // import MatchNav from "../components/match-nav"
@@ -37,15 +38,17 @@ const TopicPage = ({ data, location }) => {
         courseUrl={courseUrl}
       />
 
-      <h2 className="text-center bold my-5">BFBH Cup 2024 Score</h2>
-      <MatchScore year="_2024" lastYearWinner="blue" />
-      <div className="col-lg-6 offset-lg-3">
+      {/* <h2 className="text-center bold my-5">BFBH Cup 2024 Score</h2>
+      <MatchScore year="_2024" lastYearWinner="blue" /> */}
+      {/* <div className="col-lg-6 offset-lg-3">
         <MatchSummary2024 />
-      </div>
-      <Highlight2024 />
+      </div> */}
+      <h2 className="text-center bold my-5">BFBH Cup 2025</h2>
+      <Highlight2025 />
+      {/* <Highlight2024 /> */}
       {/* <hr /> */}
       {/* <br /> */}
-      <Venue2024 />
+      {/* <Venue2024 /> */}
     </Layout>
   )
 }
