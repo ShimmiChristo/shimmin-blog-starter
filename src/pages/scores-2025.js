@@ -36,7 +36,7 @@ const TopicPage = ({ location }) => {
       }
     }
   `
-  const startDate = "september, 27, 2024 8:30:00 EST"
+  const startDate = "september, 26, 2025 8:30:00 EST"
   const locationName = "Bay Harbor Golf Club"
   const courseUrl = "https://www.boynegolf.com/eleven-courses/links-quarry"
 
@@ -239,50 +239,50 @@ const TopicPage = ({ location }) => {
           {
             name: `1 Best Ball`,
             round: `Round 1.1`,
-            link: "r1-best-ball",
+            link: "r1f-best-ball",
           },
           {
             name: "2 Best Ball",
             round: "Round 1.2",
-            link: "r1-two-best-ball",
+            link: "r1b-two-best-ball",
           },
           {
             name: "Alternate",
             round: "Round 2.1",
-            link: "r2-alternate",
+            link: "r2f-alternate",
           },
           {
             name: "Scramble",
             round: "Round 2.2",
-            link: "r2-scramble",
+            link: "r2b-scramble",
           },
           {
             name: "1 Ball Bramble",
             round: "Round 3.1",
-            link: "r3-bramble",
+            link: "r3f-bramble",
           },
           {
             name: "2 Ball Bramble",
             round: "Round 3.2",
-            link: "r3-2-ball-bramble",
+            link: "r3b-2-ball-bramble",
           },
           {
             name: "Pinehurst",
             round: "Round 4.1",
-            link: "r4-pinehurst",
+            link: "r4f-pinehurst",
           },
           {
             name: "Singles",
             round: "Round 4.2",
-            link: "r4-singles",
+            link: "r4b-singles",
           },
         ]}
       />
 
       <MatchScore year="_2025" lastYearWinner="green" />
       <MatchNavSection
-        data-visible={location.hash === "#r1-best-ball" ? "true" : "false"}
-        data-link-id="r1-best-ball"
+        data-visible={location.hash === "#r1f-best-ball" ? "true" : "false"}
+        data-link-id="r1f-best-ball"
       >
         <div className="course__info">
           <span>
@@ -353,8 +353,8 @@ const TopicPage = ({ location }) => {
       </MatchNavSection>
 
       <MatchNavSection
-        data-visible={location.hash === "#r1-two-best-ball" ? "true" : "false"}
-        data-link-id="r1-two-best-ball"
+        data-visible={location.hash === "#r1b-two-best-ball" ? "true" : "false"}
+        data-link-id="r1b-two-best-ball"
       >
         <div className="course__info">
           <span>
@@ -425,8 +425,8 @@ const TopicPage = ({ location }) => {
       </MatchNavSection>
 
       <MatchNavSection
-        data-visible={location.hash === "#r2-alternate" ? "true" : "false"}
-        data-link-id="r2-alternate"
+        data-visible={location.hash === "#r2f-alternate" ? "true" : "false"}
+        data-link-id="r2f-alternate"
       >
         <div className="course__info">
           <span>
@@ -434,7 +434,7 @@ const TopicPage = ({ location }) => {
           </span>
           <a href={day1.round2.courseLink}>{day1.round2.courseName}</a>
         </div>
-        <Match
+        {/* <Match
           matchId={`7 ${matchesArr[2].matchId}`}
           year={matchesArr[2].year}
           courseMatch={matchesArr[2].courseMatch}
@@ -493,12 +493,12 @@ const TopicPage = ({ location }) => {
           player2MatchHandicap=""
           player3MatchHandicap=""
           player4MatchHandicap=""
-        />
+        /> */}
       </MatchNavSection>
 
       <MatchNavSection
-        data-visible={location.hash === "#r2-scramble" ? "true" : "false"}
-        data-link-id="r2-scramble"
+        data-visible={location.hash === "#r2b-scramble" ? "true" : "false"}
+        data-link-id="r2b-scramble"
       >
         <div className="course__info">
           <span>
@@ -506,7 +506,7 @@ const TopicPage = ({ location }) => {
           </span>
           <a href={day1.round2.courseLink}>{day1.round2.courseName}</a>
         </div>
-        <Match
+        {/* <Match
           matchId={`10 ${matchesArr[3].matchId}`}
           year={matchesArr[3].year}
           courseMatch={matchesArr[3].courseMatch}
@@ -565,12 +565,12 @@ const TopicPage = ({ location }) => {
           player2MatchHandicap=""
           player3MatchHandicap=""
           player4MatchHandicap=""
-        />
+        /> */}
       </MatchNavSection>
 
       <MatchNavSection
-        data-visible={location.hash === "#r3-bramble" ? "true" : "false"}
-        data-link-id="r3-bramble"
+        data-visible={location.hash === "#r3f-bramble" ? "true" : "false"}
+        data-link-id="r3f-bramble"
       >
         <div className="course__info">
           <span>
@@ -579,7 +579,7 @@ const TopicPage = ({ location }) => {
 
           <a href={day2.round1.courseLink}>{day2.round1.courseName}</a>
         </div>
-        <Match
+        {/* <Match
           matchId={`13 ${matchesArr[4].matchId}`}
           year={matchesArr[4].year}
           courseMatch={matchesArr[4].courseMatch}
@@ -638,12 +638,12 @@ const TopicPage = ({ location }) => {
           player2MatchHandicap=""
           player3MatchHandicap=""
           player4MatchHandicap=""
-        />
+        /> */}
       </MatchNavSection>
 
       <MatchNavSection
-        data-visible={location.hash === "#r3-2-ball-bramble" ? "true" : "false"}
-        data-link-id="r3-2-ball-bramble"
+        data-visible={location.hash === "#r3b-2-ball-bramble" ? "true" : "false"}
+        data-link-id="r3b-2-ball-bramble"
       >
         <div className="course__info">
           <span>
@@ -651,7 +651,7 @@ const TopicPage = ({ location }) => {
           </span>
           <a href={day2.round1.courseLink}>{day2.round1.courseName}</a>
         </div>
-        <Match
+        {/* <Match
           matchId={`16 ${matchesArr[5].matchId}`}
           year={matchesArr[5].year}
           courseMatch={matchesArr[5].courseMatch}
@@ -710,12 +710,12 @@ const TopicPage = ({ location }) => {
           player2MatchHandicap=""
           player3MatchHandicap=""
           player4MatchHandicap=""
-        />
+        /> */}
       </MatchNavSection>
 
       <MatchNavSection
-        data-visible={location.hash === "#r4-pinehurst" ? "true" : "false"}
-        data-link-id="r4-pinehurst"
+        data-visible={location.hash === "#r4f-pinehurst" ? "true" : "false"}
+        data-link-id="r4f-pinehurst"
       >
         <div className="course__info">
           <span>
@@ -724,7 +724,7 @@ const TopicPage = ({ location }) => {
           <a href={day2.round2.courseLink}>{day2.round2.courseName}</a>
         </div>
 
-        <Match
+        {/* <Match
           matchId={`19 ${matchesArr[6].matchId}`}
           year={matchesArr[6].year}
           courseMatch={matchesArr[6].courseMatch}
@@ -783,12 +783,12 @@ const TopicPage = ({ location }) => {
           player2MatchHandicap=""
           player3MatchHandicap=""
           player4MatchHandicap=""
-        />
+        /> */}
       </MatchNavSection>
 
       <MatchNavSection
-        data-visible={location.hash === "#r4-singles" ? "true" : "false"}
-        data-link-id="r4-singles"
+        data-visible={location.hash === "#r4b-singles" ? "true" : "false"}
+        data-link-id="r4b-singles"
       >
         <div className="course__info">
           <span>
@@ -796,7 +796,7 @@ const TopicPage = ({ location }) => {
           </span>
           <a href={day2.round2.courseLink}>{day2.round2.courseName}</a>
         </div>
-        <Match
+        {/* <Match
           matchId={`22 ${matchesArr[7].matchId}`}
           year={matchesArr[7].year}
           courseMatch={matchesArr[7].courseMatch}
@@ -880,7 +880,7 @@ const TopicPage = ({ location }) => {
           player2Tees={playerTees.p6}
           player1MatchHandicap=""
           player2MatchHandicap=""
-        />
+        /> */}
       </MatchNavSection>
     </Layout>
   )

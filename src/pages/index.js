@@ -43,7 +43,7 @@ const TopicPage = ({ data, location }) => {
       {/* <div className="col-lg-6 offset-lg-3">
         <MatchSummary2024 />
       </div> */}
-      <h2 className="text-center bold my-5">BFBH Cup 2025</h2>
+      <h2 className="text-center bold mt-5">BFBH Cup 2025</h2>
       <Highlight2025 />
       {/* <Highlight2024 /> */}
       {/* <hr /> */}
