@@ -1,3 +1,12 @@
+const fs = require("fs")
+const os = require("os")
+const path = require("path")
+
+const desktopPath = path.join(os.homedir(), "Desktop")
+const folderPath = path.join(desktopPath, "test")
+const filePath = path.join(desktopPath, "new_file.js")
+// const content = 'Hello, this is the content of the new file.';
+
 /* 
 - iterate through the rounds
 - for each round, iterate through the players
@@ -20,8 +29,6 @@ function generateTeamRoundsMain() {
     teamA: teamA,
     teamB: teamB,
   }
-  const totalRounds = 4
-  const maxAttempts = 20
 
   // const matchesPerRound = 3
   // const matchExample = [
@@ -101,30 +108,33 @@ function generateTeamRoundsMain() {
       ],
     },
 
-    {
-      round: 4,
-      matches: [
-        {
-          teamA: ["1", "2"],
-        },
-        {
-          teamA: ["3", "4"],
-        },
-        {
-          teamA: ["5", "6"],
-        },
-        {
-          teamB: ["7", "8"],
-        },
-        {
-          teamB: ["9", "10"],
-        },
-        {
-          teamB: ["11", "12"],
-        },
-      ],
-    },
+    // {
+    //   round: 4,
+    //   matches: [
+    //     {
+    //       teamA: ["1", "2"],
+    //     },
+    //     {
+    //       teamA: ["3", "4"],
+    //     },
+    //     {
+    //       teamA: ["5", "6"],
+    //     },
+    //     {
+    //       teamB: ["7", "8"],
+    //     },
+    //     {
+    //       teamB: ["9", "10"],
+    //     },
+    //     {
+    //       teamB: ["11", "12"],
+    //     },
+    //   ],
+    // },
   ]
+
+  const totalRounds = 8 - roundsInit.length // 8 rounds total, 3 rounds already initialized
+  const maxAttempts = 20
 
   const initPairMap = (players, teamName) => {
     const map = {}
@@ -590,6 +600,38 @@ function generateTeamRoundsMain() {
     return rounds
   }
 
+  async function writeSequentiallyNumberedFile(directoryPath, baseName, data) {
+    try {
+      // Ensure the directory exists (create it recursively if not)
+      await fs.promises.mkdir(directoryPath, { recursive: true })
+
+      let nextNumber = 1
+
+      // Get list of files in the directory
+      const files = await fs.promises.readdir(directoryPath)
+
+      // Find the highest existing number
+      const matchingFiles = files.filter(
+        file => file.startsWith(baseName) && /\d+\./.test(file)
+      )
+      if (matchingFiles.length > 0) {
+        const numbers = matchingFiles.map(file =>
+          parseInt(file.match(/\d+/)[0])
+        )
+        nextNumber = Math.max(...numbers) + 1
+      }
+
+      const filename = `${baseName}${nextNumber}.js`
+      const filePath = path.join(directoryPath, filename)
+
+      // Write the file
+      await fs.promises.writeFile(filePath, data)
+      console.log(`File saved successfully: ${filePath}`)
+    } catch (err) {
+      console.error(`Error writing file: ${err.message}`)
+    }
+  }
+
   /* 
   loops through the teams and generates the rounds
 */
@@ -612,11 +654,17 @@ function generateTeamRoundsMain() {
     let minScoreOpponents = minNumberInArray(Object.values(opponentMap))
   */
     if (
-      maxNumberInArray(Object.values(partnerMaps.teamA)) > 5 ||
-      maxNumberInArray(Object.values(partnerMaps.teamB)) > 5
+      maxNumberInArray(Object.values(partnerMaps.teamA)) > 3 ||
+      maxNumberInArray(Object.values(partnerMaps.teamB)) > 3
     ) {
       console.log(
-        "----------------- ERROR: Opponent map has more than 5 -----------------"
+        "----------------- ERROR: team map has more than 3 -----------------"
+      )
+      // console.log("rounds - ", rounds)
+      return false
+    } else if (maxNumberInArray(Object.values(opponentMap)) > 4) {
+      console.log(
+        "----------------- ERROR: Opponent map more than 4 -----------------"
       )
       // console.log("rounds - ", rounds)
       return false
@@ -637,9 +685,31 @@ function generateTeamRoundsMain() {
       return false
     } else {
       console.log("GOOOOOOOOD")
-      console.log("'var opp' - ", JSON.parse(JSON.stringify(opponentMap)))
-      console.log("var teams - ", JSON.parse(JSON.stringify(partnerMaps)))
-      console.log("rounds - ", rounds)
+      // console.log("let rounds = ", JSON.parse(JSON.stringify(rounds)))
+      console.dir(rounds, { depth: null })
+      console.log("let opp = ", JSON.parse(JSON.stringify(opponentMap)))
+      console.log("let teams = ", JSON.parse(JSON.stringify(partnerMaps)))
+      // fs.writeFile('mynewfile.txt', 'Hello content!', (err) => {
+      //   if (err) throw err;
+      //   console.log('File saved!');
+      // });
+      const content = `let rounds = ${JSON.stringify(
+        rounds,
+        null,
+        2
+      )}\nlet opp = ${JSON.stringify(
+        opponentMap,
+        null,
+        2
+      )}\nlet teams = ${JSON.stringify(partnerMaps, null, 2)}`
+      // fs.writeFile(filePath, content, err => {
+      //   if (err) {
+      //     console.error("Error writing file:", err)
+      //   } else {
+      //     console.log("File written successfully to the desktop!")
+      //   }
+      // })
+      writeSequentiallyNumberedFile(folderPath, "matches-", content)
       return true
     }
     // return rounds
@@ -650,8 +720,7 @@ function generateTeamRoundsMain() {
 
 // recursive function to call generateTeamRounds 10 times
 function recursiveGenerateTeamRounds(iteration = 0) {
-  // if (iteration >= 7733) {
-  if (iteration >= 2) {
+  if (iteration >= 7733) {
     return
   }
   if (generateTeamRoundsMain()) {
