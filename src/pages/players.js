@@ -17,9 +17,9 @@ const PlayersIndex = ({ data, location }) => {
   const { nodes } = usePlayersPosts()
   const siteTitle = title || `Title`
   const posts = nodes
-  const activePlayers = posts.filter(
-    player => player.frontmatter?.active !== false
-  )
+  const activePlayers = posts
+    .filter(player => player.frontmatter?.active !== false)
+    .sort((a, b) => a.frontmatter.index - b.frontmatter.index)
 
   const TeamFilterContainer = styled.div`
     .team-filter-all {

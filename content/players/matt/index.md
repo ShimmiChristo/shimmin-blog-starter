@@ -1,6 +1,6 @@
 ---
 active: true
-index: 03
+index: 00
 name: matt
 nickname: "Mr G"
 description: "The description."
