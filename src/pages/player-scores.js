@@ -31,6 +31,7 @@ const PlayerRecordsPage = ({ location }) => {
           <div className="col-6 col-lg-1 text-center fontSize-0">Pinehurst</div>
           <div className="col-6 col-lg-1 text-center fontSize-0">Singles</div>
         </div>
+        <PlayerPoints name="Blake" />
         <PlayerPoints name="Cam" />
         <PlayerPoints name="Chris" />
         <PlayerPoints name="Craig" />

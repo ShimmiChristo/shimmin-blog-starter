@@ -4,6 +4,24 @@ export const PlayerInfoPoints = () => {
   const { playersUpdateJson } = useStaticQuery(graphql`
     query PlayerInfoPoints {
       playersUpdateJson {
+        blake {
+          name
+          handicap
+          year {
+            _2024 {
+              handicap
+              id
+              team
+              points {
+                game
+                id
+                wins
+                ties
+                losses
+              }
+            }
+          }
+        }
         cam {
           name
           handicap
