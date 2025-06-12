@@ -426,7 +426,7 @@ function generateTeamRoundsMain() {
               teamAPlayer,
               player1
             )
-         
+
             if (opponentScorePlayer1 > 4) {
               passOppoentCheck = false
               continue
