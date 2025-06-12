@@ -133,6 +133,102 @@ function generateTeamRoundsMain() {
     },
   ]
 
+  // const roundsInit = [
+  //   {
+  //     round: 1,
+  //     matches: [
+  //       {
+  //         teamA: ["1", "2"],
+  //       },
+  //       {
+  //         teamA: ["5", "6"],
+  //       },
+  //       {
+  //         teamA: ["3", "4"],
+  //       },
+  //       {
+  //         teamB: ["7", "12"],
+  //       },
+  //       {
+  //         teamB: ["8", "10"],
+  //       },
+  //       {
+  //         teamB: ["9", "11"],
+  //       },
+  //     ],
+  //   },
+  //   {
+  //     round: 2,
+  //     matches: [
+  //       {
+  //         teamA: ["1", "2"],
+  //       },
+  //       {
+  //         teamA: ["5", "6"],
+  //       },
+  //       {
+  //         teamA: ["3", "4"],
+  //       },
+  //       {
+  //         teamB: ["7", "12"],
+  //       },
+  //       {
+  //         teamB: ["8", "10"],
+  //       },
+  //       {
+  //         teamB: ["9", "11"],
+  //       },
+  //     ],
+  //   },
+  //   {
+  //     round: 3,
+  //     matches: [
+  //       {
+  //         teamA: ["1", "2"],
+  //       },
+  //       {
+  //         teamA: ["3", "4"],
+  //       },
+  //       {
+  //         teamA: ["5", "6"],
+  //       },
+  //       {
+  //         teamB: ["7", "8"],
+  //       },
+  //       {
+  //         teamB: ["9", "10"],
+  //       },
+  //       {
+  //         teamB: ["11", "12"],
+  //       },
+  //     ],
+  //   },
+
+  //   {
+  //     round: 4,
+  //     matches: [
+  //       {
+  //         teamA: ["1", "2"],
+  //       },
+  //       {
+  //         teamA: ["3", "4"],
+  //       },
+  //       {
+  //         teamA: ["5", "6"],
+  //       },
+  //       {
+  //         teamB: ["7", "8"],
+  //       },
+  //       {
+  //         teamB: ["9", "10"],
+  //       },
+  //       {
+  //         teamB: ["11", "12"],
+  //       },
+  //     ],
+  //   },
+  // ]
+
   const totalRounds = 8 - roundsInit.length // 8 rounds total, 3 rounds already initialized
   const maxAttempts = 20
 
@@ -584,17 +680,6 @@ function generateTeamRoundsMain() {
         partnerMapTeam,
         opponentMapTeam
       )
-
-      // console.log('JSON.parse(JSON.stringify(rounds[round])) - ', JSON.parse(JSON.stringify(rounds[round])));
-
-      // console.log(
-      //   "JSON.parse(JSON.stringify(opponentMap)) - ",
-      //   JSON.parse(JSON.stringify(opponentMap))
-      // )
-      // console.log(
-      //   "JSON.parse(JSON.stringify(partnerMaps)) - ",
-      //   JSON.parse(JSON.stringify(partnerMaps))
-      // )
     }
 
     return rounds
@@ -653,6 +738,13 @@ function generateTeamRoundsMain() {
     let maxScoreOpponents = maxNumberInArray(Object.values(opponentMap))
     let minScoreOpponents = minNumberInArray(Object.values(opponentMap))
   */
+    // if (partnerMaps.teamA["1-6"] > 1) {
+    //   console.log(
+    //     "----------------- ERROR: team map has more than 1 -----------------"
+    //   )
+    //   // console.log("rounds - ", rounds)
+    //   return false
+    // }
     if (
       maxNumberInArray(Object.values(partnerMaps.teamA)) > 4 ||
       maxNumberInArray(Object.values(partnerMaps.teamB)) > 4
