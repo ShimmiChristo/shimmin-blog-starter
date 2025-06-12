@@ -535,7 +535,7 @@ function generateTeamRoundsMain() {
     round,
     remainingA,
     teamName,
-    partnerMapAParam,
+    partnerMapTeam,
     opponentMapTeam
   ) {
     // const maxAttempts = 20
@@ -543,14 +543,17 @@ function generateTeamRoundsMain() {
     const roundParam = round
     const matchesPerRound = 3
     const remainingACopy = [...remainingA]
-    // let partnerMapTeam = partnerMaps[teamName]
 
     // let matchesArr = []
     let matchesArr = [
       ...roundsParam[round].matches.filter(item => !item.teamName),
     ]
-    let partnerMapACopyOrig = { ...partnerMaps[teamName] }
-    let partnerMapCopy = { ...partnerMaps[teamName] }
+    // !updating partnerMap vars to partnerMapTeam param
+    // let partnerMapACopyOrig = { ...partnerMaps[teamName] }
+    // let partnerMapCopy = { ...partnerMaps[teamName] }
+    let partnerMapACopyOrig = { ...partnerMapTeam }
+    let partnerMapCopy = { ...partnerMapTeam }
+
     let opponentMapCopyOrig = { ...opponentMapTeam }
     let opponentMapCopy = { ...opponentMapTeam }
 
