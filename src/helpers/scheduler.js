@@ -238,21 +238,38 @@ function generateTeamRoundsMain() {
       for (let j = i + 1; j < players.length; j++) {
         const key = [players[i], players[j]].sort((a, b) => a - b).join("-")
 
-        // * if exist in roundsInit, then include each in the map object.
-        roundsInit.forEach(round => {
-          if (
-            round.matches.some(
-              match =>
-                match[teamName]?.includes(players[i]) &&
-                match[teamName]?.includes(players[j])
-            )
-          ) {
-            map[key] = map[key] + 1 || 1 // * if already played together, set to 1
-          } else {
-            // * if not played together, set to 0
-            map[key] = 0
+        // // * if exist in roundsInit, then include each in the map object.
+        // roundsInit.forEach(round => {
+        //   if (
+        //     round.matches.some(
+        //       match =>
+        //         match[teamName]?.includes(players[i]) &&
+        //         match[teamName]?.includes(players[j])
+        //     )
+        //   ) {
+        //     map[key] = map[key] + 1 || 1 // * if already played together, set to 1
+        //   } else {
+        //     // * if not played together, set to 0
+        //     map[key] = 0
+        //   }
+        // })
+
+        for (let k = 0; k < roundsInit.length; k++) {
+          const round = roundsInit[k]
+          for (let m = 0; m < round.matches.length; m++) {
+            if (
+              round.matches[m]?.[teamName]?.includes(players[i]) &&
+              round.matches[m]?.[teamName]?.includes(players[j])
+            ) {
+              map[key] = map[key] + 1 || 1 // * if already played together, set to 1
+              break // * no need to check further matches in the round
+            }
           }
-        })
+        }
+        if (!map[key]) {
+          // * if not played together, set to 0
+          map[key] = 0
+        }
       }
     }
     return map
@@ -288,6 +305,8 @@ function generateTeamRoundsMain() {
     return map
   }
 
+  // console.log('initPairMap(teamA, "teamA") - ', initPairMap(teamA, "teamA"));
+
   // Shuffle function to randomize the order of players arrayAdd commentMore actions
   const shuffle = array => array.sort(() => Math.random() - 0.5)
 
@@ -299,6 +318,9 @@ function generateTeamRoundsMain() {
     teamA: partnerMap_teamA,
     teamB: partnerMap_teamB,
   }
+  // console.log("partnerMap_teamA - ", partnerMap_teamA)
+  // console.log("partnerMap_teamB - ", partnerMap_teamB)
+  // console.log('partnerMaps - ', partnerMaps);
 
   const getPairCount = (map, p1, p2) => {
     const key = [p1, p2].sort((a, b) => a - b).join("-")
@@ -549,9 +571,9 @@ function generateTeamRoundsMain() {
       ...roundsParam[round].matches.filter(item => !item.teamName),
     ]
     // !updating partnerMap vars to partnerMapTeam param
-    // let partnerMapACopyOrig = { ...partnerMaps[teamName] }
+    // let partnerMapCopyOrig = { ...partnerMaps[teamName] }
     // let partnerMapCopy = { ...partnerMaps[teamName] }
-    let partnerMapACopyOrig = { ...partnerMapTeam }
+    let partnerMapCopyOrig = { ...partnerMapTeam }
     let partnerMapCopy = { ...partnerMapTeam }
 
     let opponentMapCopyOrig = { ...opponentMapTeam }
@@ -626,7 +648,7 @@ function generateTeamRoundsMain() {
           potentialMatchesBoolean = false
           // reset remaining players
           remainingA = [...remainingACopy]
-          partnerMapCopy = { ...partnerMapACopyOrig }
+          partnerMapCopy = { ...partnerMapCopyOrig }
           opponentMapCopy = { ...opponentMapCopyOrig }
           potentialMatchesArr = matchesArr
         }
@@ -642,19 +664,15 @@ function generateTeamRoundsMain() {
         ...potentialMatchesArr,
       ]
 
+      //* reset partnerMap and opponentMap
       if (partnerMapCopy) {
         partnerMaps[teamName] = { ...partnerMapCopy }
-
-        // console.log(
-        //   "JSON.parse(JSON.stringify( partnerMaps[teamName])) - ",
-        //   JSON.parse(JSON.stringify(partnerMaps[teamName]))
-        // )
       }
-
       if (opponentMapCopy) {
         opponentMap = { ...opponentMapCopy }
       }
     }
+
     // Start the recursive search
     return findOptimalPair()
   }
@@ -682,7 +700,6 @@ function generateTeamRoundsMain() {
         opponentMapTeam
       )
     }
-
     return rounds
   }
 
@@ -698,7 +715,7 @@ function generateTeamRoundsMain() {
 
       // Find the highest existing number
       const matchingFiles = files.filter(
-        file => file.startsWith(baseName) && /\d+\./.matches_generator(file)
+        file => file.startsWith(baseName) && /\d+\./.test(file)
       )
       if (matchingFiles.length > 0) {
         const numbers = matchingFiles.map(file =>
@@ -747,8 +764,8 @@ function generateTeamRoundsMain() {
     //   return false
     // }
     if (
-      maxNumberInArray(Object.values(partnerMaps.teamA)) > 4 ||
-      maxNumberInArray(Object.values(partnerMaps.teamB)) > 4
+      maxNumberInArray(Object.values(partnerMaps.teamA)) > 5 ||
+      maxNumberInArray(Object.values(partnerMaps.teamB)) > 5
     ) {
       console.log(
         "----------------- ERROR: team map has more than 4 -----------------"
@@ -813,6 +830,7 @@ function generateTeamRoundsMain() {
 
 // recursive function to call generateTeamRounds 10 times
 function recursiveGenerateTeamRounds(iteration = 0) {
+  // if (iteration >= 7733) {
   if (iteration >= 7733) {
     return
   }
