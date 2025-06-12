@@ -426,9 +426,7 @@ function generateTeamRoundsMain() {
               teamAPlayer,
               player1
             )
-            // console.log('opponentScorePlayer1 - ', opponentScorePlayer1);
-            // console.log('teamAPlayer - ', teamAPlayer);
-            // console.log('player1 - ', player1);
+         
             if (opponentScorePlayer1 > 4) {
               passOppoentCheck = false
               continue
