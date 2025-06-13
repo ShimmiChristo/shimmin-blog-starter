@@ -141,52 +141,6 @@ function generateTeamRoundsMain() {
   //         teamA: ["1", "2"],
   //       },
   //       {
-  //         teamA: ["5", "6"],
-  //       },
-  //       {
-  //         teamA: ["3", "4"],
-  //       },
-  //       {
-  //         teamB: ["7", "12"],
-  //       },
-  //       {
-  //         teamB: ["8", "10"],
-  //       },
-  //       {
-  //         teamB: ["9", "11"],
-  //       },
-  //     ],
-  //   },
-  //   {
-  //     round: 2,
-  //     matches: [
-  //       {
-  //         teamA: ["1", "2"],
-  //       },
-  //       {
-  //         teamA: ["5", "6"],
-  //       },
-  //       {
-  //         teamA: ["3", "4"],
-  //       },
-  //       {
-  //         teamB: ["7", "12"],
-  //       },
-  //       {
-  //         teamB: ["8", "10"],
-  //       },
-  //       {
-  //         teamB: ["9", "11"],
-  //       },
-  //     ],
-  //   },
-  //   {
-  //     round: 3,
-  //     matches: [
-  //       {
-  //         teamA: ["1", "2"],
-  //       },
-  //       {
   //         teamA: ["3", "4"],
   //       },
   //       {
@@ -203,9 +157,8 @@ function generateTeamRoundsMain() {
   //       },
   //     ],
   //   },
-
   //   {
-  //     round: 4,
+  //     round: 2,
   //     matches: [
   //       {
   //         teamA: ["1", "2"],
@@ -763,18 +716,24 @@ function generateTeamRoundsMain() {
     //   // console.log("rounds - ", rounds)
     //   return false
     // }
+    const maxPartnerVal = roundsInit.length < 3 ? 4 : 5
+    const maxOpponentVal = roundsInit.length < 3 ? 4 : 5
     if (
-      maxNumberInArray(Object.values(partnerMaps.teamA)) > 5 ||
-      maxNumberInArray(Object.values(partnerMaps.teamB)) > 5
+      maxNumberInArray(Object.values(partnerMaps.teamA)) > maxPartnerVal ||
+      maxNumberInArray(Object.values(partnerMaps.teamB)) > maxPartnerVal
     ) {
       console.log(
-        "----------------- ERROR: team map has more than 4 -----------------"
+        "----------------- ERROR: team map has more than " +
+          maxPartnerVal +
+          " -----------------"
       )
       // console.log("rounds - ", rounds)
       return false
-    } else if (maxNumberInArray(Object.values(opponentMap)) > 5) {
+    } else if (maxNumberInArray(Object.values(opponentMap)) > maxOpponentVal) {
       console.log(
-        "----------------- ERROR: Opponent map more than 5 -----------------"
+        "----------------- ERROR: Opponent map more than " +
+          maxOpponentVal +
+          " -----------------"
       )
       // console.log("rounds - ", rounds)
       return false
