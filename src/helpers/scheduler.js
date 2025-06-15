@@ -45,19 +45,19 @@ function generateTeamRoundsMain() {
           teamA: ["1", "6"],
         },
         {
-          teamA: ["2", "4"],
+          teamA: ["2", "3"],
         },
         {
-          teamA: ["3", "5"],
+          teamA: ["4", "5"],
         },
         {
           teamB: ["7", "8"],
         },
         {
-          teamB: ["11", "12"],
+          teamB: ["10", "11"],
         },
         {
-          teamB: ["9", "10"],
+          teamB: ["9", "12"],
         },
       ],
     },
@@ -68,19 +68,19 @@ function generateTeamRoundsMain() {
           teamA: ["1", "6"],
         },
         {
-          teamA: ["2", "4"],
+          teamA: ["2", "3"],
         },
         {
-          teamA: ["3", "5"],
+          teamA: ["4", "5"],
         },
         {
           teamB: ["7", "8"],
         },
         {
-          teamB: ["11", "12"],
+          teamB: ["10", "11"],
         },
         {
-          teamB: ["9", "10"],
+          teamB: ["9", "12"],
         },
       ],
     },
@@ -716,7 +716,7 @@ function generateTeamRoundsMain() {
     //   // console.log("rounds - ", rounds)
     //   return false
     // }
-    const maxPartnerVal = roundsInit.length < 3 ? 4 : 5
+    const maxPartnerVal = roundsInit.length < 3 ? 3 : 5
     const maxOpponentVal = roundsInit.length < 3 ? 4 : 5
     if (
       maxNumberInArray(Object.values(partnerMaps.teamA)) > maxPartnerVal ||
