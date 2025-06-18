@@ -8,7 +8,7 @@ import SEO from "../components/seo"
 // import LandingPageHeader from "../components/landing-page-header"
 import MatchScore from "../components/match-score"
 import Highlight2025 from "../components/highlights/highlight-2025"
-import Venue2024 from "../components/venues/venue-2024"
+import Venue2025 from "../components/venues/venue-2025"
 import HighlightCountdown from "../components/highlights/coutdown-hightlight"
 // import HighlightDay from "../components/highlights/day-hightlights-2023"
 import MatchSummary2024 from "../components/matches/2024/summary"
@@ -48,7 +48,7 @@ const TopicPage = ({ data, location }) => {
       {/* <Highlight2024 /> */}
       {/* <hr /> */}
       {/* <br /> */}
-      {/* <Venue2024 /> */}
+      <Venue2025 />
     </Layout>
   )
 }

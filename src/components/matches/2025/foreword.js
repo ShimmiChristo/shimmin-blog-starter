@@ -54,7 +54,7 @@ function Foreword2025() {
 
       <h3 className="h4">Predictions</h3>
       <p>
-        The cup will come down to the singles matches, the par 3 course will be
+        The cup will come down to the singles matches, <Link href="https://www.boynegolf.com/eleven-courses/doon-brae-short-course">Doon Brae</Link>, the par 3 course, will be
         awesome and someone will get a hole-in-one.{" "}
       </p>
 
