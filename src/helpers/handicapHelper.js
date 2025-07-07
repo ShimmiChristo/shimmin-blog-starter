@@ -90,12 +90,16 @@ function getPlayerHandicap(player, gameplay, handicaps, hardestHoleNine) {
    * Some courses are 9 holes so it's better to get the 9 hole course HC and multiply by 2
    * THIS LOGIC WAS ONLY TO MATCH SQUABBIT APP.
    * The reason logic is to get the 9 hole handicap and use that.
-   * No need to multiple by 2. 
+   * No need to multiple by 2.
+   *
+   * 07/07/25 - update
+   * To Match USGA match handicap
+   * WE need to get the 18 hole handicap and divide by 2
    */
-  const p1 = handicaps[0] * 2
-  const p2 = handicaps[1] * 2
-  const p3 = handicaps[2] ? handicaps[2] * 2 : 99
-  const p4 = handicaps[3] ? handicaps[3] * 2 : 99
+  const p1 = handicaps[0]
+  const p2 = handicaps[1]
+  const p3 = handicaps[2] ? handicaps[2] : 99
+  const p4 = handicaps[3] ? handicaps[3] : 99
   const lowHC = Math.min(p1, p2, p3, p4)
   const lowHCTeam1 = Math.min(p1, p3)
   const highHCTeam1 = Math.max(p1, p3)
@@ -169,10 +173,15 @@ function getPlayerHandicap(player, gameplay, handicaps, hardestHoleNine) {
     newHC.player4 = getHardestNineHandicap((p4 - lowHC) / 2, hardestHoleNine)
   } else {
     // * best ball games
-    let p1PlayingHC = p1 < 0 ? Math.round(p1 / 0.9) : Math.round(p1 * 0.9)
-    let p2PlayingHC = p2 < 0 ? Math.round(p2 / 0.9) : Math.round(p2 * 0.9)
-    let p3PlayingHC = p3 < 0 ? Math.round(p3 / 0.9) : Math.round(p3 * 0.9)
-    let p4PlayingHC = p4 < 0 ? Math.round(p4 / 0.9) : Math.round(p4 * 0.9)
+    let p1PlayingHC = p1 < 0 ? p1 / 0.9 : p1 * 0.9
+    let p2PlayingHC = p2 < 0 ? p2 / 0.9 : p2 * 0.9
+    let p3PlayingHC = p3 < 0 ? p3 / 0.9 : p3 * 0.9
+    let p4PlayingHC = p4 < 0 ? p4 / 0.9 : p4 * 0.9
+    // console.log("p1PlayingHC - ", p1PlayingHC)
+    // console.log("p2PlayingHC - ", p2PlayingHC)
+    // console.log("p3PlayingHC - ", p3PlayingHC)
+    // console.log("p4PlayingHC - ", p4PlayingHC)
+
     let lowPlayer = Math.min(p1PlayingHC, p2PlayingHC, p3PlayingHC, p4PlayingHC)
     // * set lowest HC to zero
     let relP1HC = p1PlayingHC - lowPlayer
@@ -259,10 +268,15 @@ function getCourseHandicap(
   // const courseHandicap =
   //   playerHandicap * (courseSlope / 113) + (courseRating - coursePar)
 
-  //  * USGA site says for 9 hole HC, divide player HC in half to nearest tenth
-  const playerNineHoleHC = Math.round((playerHandicap / 2) * 10) / 10
+  // * USGA site says for 9 hole HC, divide player HC in half to nearest tenth
+  // * USGA is getting the full 18 HC (by doubling the 9 hole calculation)
+  // * then calculating divide by 2 for the 9 hole course HC
+  // * then times the handicap allowance to get playing handicap
+  // const playerNineHoleHC = Math.round((playerHandicap / 2) * 10) / 10
+  const eighteenholeRating = courseRating * 2
+  const eighteenPar = coursePar * 2
   const courseHandicap =
-    playerNineHoleHC * (courseSlope / 113) + (courseRating - coursePar)
+    playerHandicap * (courseSlope / 113) + (eighteenholeRating - eighteenPar)
   // * do not round before getting playing handicap
   return courseHandicap
 }
