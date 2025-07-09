@@ -1497,8 +1497,8 @@
               "out": {
                 "yardage": 3299,
                 "par": 36,
-                "index": 36.1,
-                "slope": 140.0
+                "index": 36.2,
+                "slope": 136.0
               },
               "in": {
                 "yardage": 3298,
@@ -1517,7 +1517,7 @@
               "out": {
                 "yardage": 3106,
                 "par": 36,
-                "index": 35.5,
+                "index": 35.4,
                 "slope": 133.0
               },
               "in": {
