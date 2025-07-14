@@ -75,7 +75,7 @@ const TopicPage = ({ location }) => {
 
   const matchesArr = [
     {
-      matchId: " - Best Ball. Full handicap",
+      matchId: " - Best Ball. 90% handicap",
       year: "_2025",
       courseMatch: "bayHarborPreserveLinks",
       holes: "front",
@@ -87,7 +87,7 @@ const TopicPage = ({ location }) => {
       player4MatchHandicap: "",
     },
     {
-      matchId: " - 2 Best Ball. Full handicap",
+      matchId: " - 2 Best Ball. 90% handicap",
       year: "_2025",
       courseMatch: "bayHarborPreserveLinks",
       holes: "back",
@@ -159,7 +159,7 @@ const TopicPage = ({ location }) => {
       player4MatchHandicap: "",
     },
     {
-      matchId: " - Singles Match. Full HC",
+      matchId: " - Singles Match. 100% HC",
       year: "_2025",
       courseMatch: "boyneHighlandsArthurHills",
       holes: "back",
