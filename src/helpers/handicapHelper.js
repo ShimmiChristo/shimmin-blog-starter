@@ -63,12 +63,19 @@ function calcToLowestHandicap(p1HC, p2HC, p3HC, p4HC) {
 }
 
 function getHardestNineHandicap(score, hardestHoleNine) {
-  // * round up
-  if (hardestHoleNine) {
-    return Math.round(score * 10) / 10
+  const parsedScore = parseFloat(score.toFixed(1))
+
+  // * if 0.5, round up for hardest hole
+  if (parsedScore % 1 === 0.5) {
+    // * round up
+    if (hardestHoleNine) {
+      return Math.round(parsedScore)
+    } else {
+      // * round down
+      return Math.floor(parsedScore)
+    }
   } else {
-    // * round down
-    return Math.floor(score * 10) / 10
+    return Math.round(parsedScore)
   }
 }
 
@@ -175,7 +182,7 @@ function getPlayerHandicap(player, gameplay, handicaps, hardestHoleNine) {
       Math.round((p1NineHoleHC + p3NineHoleHC) * 0.5 * 10) / 10
     let team2PlayingHCSum =
       Math.round((p2NineHoleHC + p4NineHoleHC) * 0.5 * 10) / 10
-      // * round the team total HC
+    // * round the team total HC
     let team1PlayingHC = Math.round(team1PlayingHCSum)
     let team2PlayingHC = Math.round(team2PlayingHCSum)
     let lowHCTeam = Math.min(team1PlayingHC, team2PlayingHC)

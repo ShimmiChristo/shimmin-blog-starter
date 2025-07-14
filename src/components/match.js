@@ -529,7 +529,7 @@ function Match({
                   }}
                 >
                   {showFullHandicap
-                    ? ` (${p1DefaultHC.toFixed(1)}) | (${p1CourseHC.toFixed()})`
+                    ? ` (${p1DefaultHC.toFixed(1)}) | (${p1CourseHC.toFixed(1)})`
                     : ` (${p1HC})`}
                 </span>
               </span>
