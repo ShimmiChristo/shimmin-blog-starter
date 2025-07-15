@@ -117,21 +117,56 @@ function getPlayerHandicap(player, gameplay, handicaps, hardestHoleNine) {
   const p3 = handicaps[2] ? handicaps[2] : 99
   const p4 = handicaps[3] ? handicaps[3] : 99
   const lowHC = Math.min(p1, p2, p3, p4)
-  const lowHCTeam1 = Math.min(p1, p3)
-  const highHCTeam1 = Math.max(p1, p3)
-  const lowHCTeam2 = Math.min(p2, p4)
-  const highHCTeam2 = Math.max(p2, p4)
+  // const lowHCTeam1 = Math.min(p1, p3)
+  // const highHCTeam1 = Math.max(p1, p3)
+  // const lowHCTeam2 = Math.min(p2, p4)
+  // const highHCTeam2 = Math.max(p2, p4)
 
   // if (gameplay === "pinehurst" || gameplay === "scramble") {
   if (gameplay === "pinehurst") {
-    let team1Adj = Math.round(0.6 * lowHCTeam1 + 0.4 * highHCTeam1) / 2
-    let team2Adj = Math.round(0.6 * lowHCTeam2 + 0.4 * highHCTeam2) / 2
-    let lowHCTeam = Math.min(team1Adj, team2Adj)
-    newHC.player1 = team1Adj - lowHCTeam
-    newHC.player2 = team2Adj - lowHCTeam
-    newHC.player3 = team1Adj - lowHCTeam
-    newHC.player4 = team2Adj - lowHCTeam
+    // * get 9 hole HC
+    let p1NineHoleHC = p1 / 2
+    let p2NineHoleHC = p2 / 2
+    let p3NineHoleHC = p3 / 2
+    let p4NineHoleHC = p4 / 2
+    // * take percentage of the HC
+    let lowHCTeam1 = Math.min(p1NineHoleHC, p3NineHoleHC)
+    let highHCTeam1 = Math.max(p1NineHoleHC, p3NineHoleHC)
+    let lowHCTeam2 = Math.min(p2NineHoleHC, p4NineHoleHC)
+    let highHCTeam2 = Math.max(p2NineHoleHC, p4NineHoleHC)
+    let lowPlayingHCTeam1 = lowHCTeam1 < 0 ? lowHCTeam1 / 0.6 : lowHCTeam1 * 0.6
+    let highPlayingHCTeam1 =
+      highHCTeam1 < 0 ? highHCTeam1 / 0.4 : highHCTeam1 * 0.4
+    let lowPlayingHCTeam2 = lowHCTeam2 < 0 ? lowHCTeam2 / 0.6 : lowHCTeam2 * 0.6
+    let highPlayingHCTeam2 =
+      highHCTeam2 < 0 ? highHCTeam2 / 0.4 : highHCTeam2 * 0.4
+    // * round the team total HC
+    let team1PlayingHC = Math.round(lowPlayingHCTeam1 + highPlayingHCTeam1)
+    let team2PlayingHC = Math.round(lowPlayingHCTeam2 + highPlayingHCTeam2)
+    // console.log('lowPlayingHCTeam1 - ', lowPlayingHCTeam1);
+    // console.log('highPlayingHCTeam21- ', highPlayingHCTeam1);
+    // console.log('team1PlayingHC - ', team1PlayingHC);
+    // console.log('team2PlayingHC - ', team2PlayingHC);
+
+    // * zero out the lowest HC
+    let lowHCTeam = Math.min(team1PlayingHC, team2PlayingHC)
+    let relTeam1HC = Math.round(team1PlayingHC - lowHCTeam)
+    let relTeam2HC = Math.round(team2PlayingHC - lowHCTeam)
+    newHC.player1 = relTeam1HC
+    newHC.player2 = relTeam2HC
+    newHC.player3 = relTeam1HC
+    newHC.player4 = relTeam2HC
   } else if (gameplay === "scramble") {
+    // * get 9 hole HC
+    let p1NineHoleHC = p1 / 2
+    let p2NineHoleHC = p2 / 2
+    let p3NineHoleHC = p3 / 2
+    let p4NineHoleHC = p4 / 2
+    // * take percentage of the HC
+    let lowHCTeam1 = Math.min(p1NineHoleHC, p3NineHoleHC)
+    let highHCTeam1 = Math.max(p1NineHoleHC, p3NineHoleHC)
+    let lowHCTeam2 = Math.min(p2NineHoleHC, p4NineHoleHC)
+    let highHCTeam2 = Math.max(p2NineHoleHC, p4NineHoleHC)
     let lowPlayingHCTeam1 =
       lowHCTeam1 < 0 ? lowHCTeam1 / 0.35 : lowHCTeam1 * 0.35
     let highPlayingHCTeam1 =
@@ -141,15 +176,19 @@ function getPlayerHandicap(player, gameplay, handicaps, hardestHoleNine) {
     let highPlayingHCTeam2 =
       highHCTeam2 < 0 ? highHCTeam2 / 0.15 : highHCTeam2 * 0.15
 
-    let team1PlayingHC = (lowPlayingHCTeam1 + highPlayingHCTeam1).toFixed(1)
-    let team2PlayingHC = (lowPlayingHCTeam2 + highPlayingHCTeam2).toFixed(1)
+    // * round the team total HC
+    let team1PlayingHC = Math.round(lowPlayingHCTeam1 + highPlayingHCTeam1)
+    let team2PlayingHC = Math.round(lowPlayingHCTeam2 + highPlayingHCTeam2)
+    // * zero out the lowest HC
     let lowHCTeam = Math.min(team1PlayingHC, team2PlayingHC)
     let relTeam1HC = Math.round(team1PlayingHC - lowHCTeam)
     let relTeam2HC = Math.round(team2PlayingHC - lowHCTeam)
-    newHC.player1 = getHardestNineHandicap(relTeam1HC / 2, hardestHoleNine)
-    newHC.player2 = getHardestNineHandicap(relTeam2HC / 2, hardestHoleNine)
-    newHC.player3 = getHardestNineHandicap(relTeam1HC / 2, hardestHoleNine)
-    newHC.player4 = getHardestNineHandicap(relTeam2HC / 2, hardestHoleNine)
+
+    newHC.player1 = relTeam1HC
+    newHC.player2 = relTeam2HC
+    newHC.player3 = relTeam1HC
+    newHC.player4 = relTeam2HC
+    // * bramble and two-ball-bramble
   } else if (gameplay === "bramble" || gameplay === "two-ball-bramble") {
     let p1PlayingHC = p1 < 0 ? Math.round(p1 / 0.8) : Math.round(p1 * 0.8)
     let p2PlayingHC = p2 < 0 ? Math.round(p2 / 0.8) : Math.round(p2 * 0.8)
@@ -162,26 +201,25 @@ function getPlayerHandicap(player, gameplay, handicaps, hardestHoleNine) {
     let relP4HC = p4PlayingHC - lowPlayer
 
     // * divide by 2 for 9 holes
-    newHC.player1 = getHardestNineHandicap(relP1HC / 2, hardestHoleNine)
-    newHC.player2 = getHardestNineHandicap(relP2HC / 2, hardestHoleNine)
-    newHC.player3 = getHardestNineHandicap(relP3HC / 2, hardestHoleNine)
-    newHC.player4 = getHardestNineHandicap(relP4HC / 2, hardestHoleNine)
+    newHC.player1 = relP1HC / 2
+    newHC.player2 = relP2HC / 2
+    newHC.player3 = relP3HC / 2
+    newHC.player4 = relP4HC / 2
+    // *alternate shot and greensomes
   } else if (gameplay === "alternate") {
     // let p1PlayingHC = p1 < 0 ? p1 / 0.5 : p1 * 0.5
     // let p2PlayingHC = p2 < 0 ? p2 / 0.5 : p2 * 0.5
     // let p3PlayingHC = p3 < 0 ? p3 / 0.5 : p3 * 0.5
     // let p4PlayingHC = p4 < 0 ? p4 / 0.5 : p4 * 0.5
     // * get 9 hole HC
-    let p1NineHoleHC = getHardestNineHandicap(p1 / 2, hardestHoleNine)
-    let p2NineHoleHC = getHardestNineHandicap(p2 / 2, hardestHoleNine)
-    let p3NineHoleHC = getHardestNineHandicap(p3 / 2, hardestHoleNine)
-    let p4NineHoleHC = getHardestNineHandicap(p4 / 2, hardestHoleNine)
+    let p1NineHoleHC = p1 / 2
+    let p2NineHoleHC = p2 / 2
+    let p3NineHoleHC = p3 / 2
+    let p4NineHoleHC = p4 / 2
 
     // * get 50% for alternate shot
-    let team1PlayingHCSum =
-      Math.round((p1NineHoleHC + p3NineHoleHC) * 0.5 * 10) / 10
-    let team2PlayingHCSum =
-      Math.round((p2NineHoleHC + p4NineHoleHC) * 0.5 * 10) / 10
+    let team1PlayingHCSum = (p1NineHoleHC + p3NineHoleHC) * 0.5
+    let team2PlayingHCSum = (p2NineHoleHC + p4NineHoleHC) * 0.5
     // * round the team total HC
     let team1PlayingHC = Math.round(team1PlayingHCSum)
     let team2PlayingHC = Math.round(team2PlayingHCSum)
@@ -196,10 +234,14 @@ function getPlayerHandicap(player, gameplay, handicaps, hardestHoleNine) {
     newHC.player4 = relTeam2HC
   } else if (gameplay === "singles") {
     // * divide by 2 for 9 holes
-    newHC.player1 = getHardestNineHandicap((p1 - lowHC) / 2, hardestHoleNine)
-    newHC.player2 = getHardestNineHandicap((p2 - lowHC) / 2, hardestHoleNine)
-    newHC.player3 = getHardestNineHandicap((p3 - lowHC) / 2, hardestHoleNine)
-    newHC.player4 = getHardestNineHandicap((p4 - lowHC) / 2, hardestHoleNine)
+    // newHC.player1 = getHardestNineHandicap((p1 - lowHC) / 2, hardestHoleNine)
+    // newHC.player2 = getHardestNineHandicap((p2 - lowHC) / 2, hardestHoleNine)
+    // newHC.player3 = getHardestNineHandicap((p3 - lowHC) / 2, hardestHoleNine)
+    // newHC.player4 = getHardestNineHandicap((p4 - lowHC) / 2, hardestHoleNine)
+    newHC.player1 = (p1 - lowHC) / 2
+    newHC.player2 = (p2 - lowHC) / 2
+    newHC.player3 = (p3 - lowHC) / 2
+    newHC.player4 = (p4 - lowHC) / 2
   } else {
     // * best ball games
     let p1PlayingHC = p1 < 0 ? p1 / 0.9 : p1 * 0.9
@@ -235,7 +277,18 @@ function getPlayerHandicap(player, gameplay, handicaps, hardestHoleNine) {
     newHC.player3 = relP3HC
     newHC.player4 = relP4HC
   }
-  // * if 1 handicap is on the front then, Math.round, if not then Math.floor
+  // // * if 1 handicap is on the front then, Math.round, if not then Math.floor
+  // if (hardestHoleNine && newHC[`${player}`] === 1) {
+  //   newHC.player1 = Math.round(newHC.player1)
+  //   newHC.player2 = Math.round(newHC.player2)
+  //   newHC.player3 = Math.round(newHC.player3)
+  //   newHC.player4 = Math.round(newHC.player4)
+  // } else if (!hardestHoleNine) {
+  //   newHC.player1 = Math.floor(newHC.player1)
+  //   newHC.player2 = Math.floor(newHC.player2)
+  //   newHC.player3 = Math.floor(newHC.player3)
+  //   newHC.player4 = Math.floor(newHC.player4)
+  // }
   return Math.round(newHC[`${player}`])
 }
 
