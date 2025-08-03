@@ -201,6 +201,10 @@ function Match({
   const holesPlayed = holes === "front" ? "out" : "in"
   // const holesPlayed = "total"
 
+  const brownTeesSlope =
+    course[`${courseMatch}`]?.totals?.tees?.["brown"]?.[`${holesPlayed}`]?.slope
+  const brownTeesIndex =
+    course[`${courseMatch}`]?.totals?.tees?.["brown"]?.[`${holesPlayed}`]?.index
   const purpleTeesSlope =
     course[`${courseMatch}`].totals.tees["purple"][`${holesPlayed}`].slope
   const purpleTeesIndex =
@@ -212,13 +216,13 @@ function Match({
 
   const courseSlopeP1 =
     course[`${courseMatch}`].totals.tees[`${playerOneTees}`]?.[`${holesPlayed}`]
-      .slope
+      ?.slope
   const courseIndexP1 =
     course[`${courseMatch}`].totals.tees[`${playerOneTees}`]?.[`${holesPlayed}`]
-      .index
+      ?.index
   const courseParP1 =
     course[`${courseMatch}`].totals.tees[`${playerOneTees}`]?.[`${holesPlayed}`]
-      .par
+      ?.par
   const playerOneCourseHC = getCourseHandicap(
     playerOneHand,
     courseSlopeP1,
@@ -227,13 +231,13 @@ function Match({
   )
   const courseSlopeP2 =
     course[`${courseMatch}`].totals.tees[`${playerTwoTees}`]?.[`${holesPlayed}`]
-      .slope
+      ?.slope
   const courseIndexP2 =
     course[`${courseMatch}`].totals.tees[`${playerTwoTees}`]?.[`${holesPlayed}`]
-      .index
+      ?.index
   const courseParP2 =
     course[`${courseMatch}`].totals.tees[`${playerTwoTees}`]?.[`${holesPlayed}`]
-      .par
+      ?.par
   const playerTwoCourseHC = getCourseHandicap(
     playerTwoHand,
     courseSlopeP2,
@@ -242,13 +246,13 @@ function Match({
   )
   const courseSlopeP3 =
     course[`${courseMatch}`].totals.tees[`${playerThreeTees}`][`${holesPlayed}`]
-      .slope
+      ?.slope
   const courseIndexP3 =
     course[`${courseMatch}`].totals.tees[`${playerThreeTees}`][`${holesPlayed}`]
-      .index
+      ?.index
   const courseParP3 =
     course[`${courseMatch}`].totals.tees[`${playerThreeTees}`][`${holesPlayed}`]
-      .par
+      ?.par
   const playerThreeCourseHC = getCourseHandicap(
     playerThreeHand,
     courseSlopeP3,
@@ -257,13 +261,13 @@ function Match({
   )
   const courseSlopeP4 =
     course[`${courseMatch}`].totals.tees[`${playerFourTees}`][`${holesPlayed}`]
-      .slope
+      ?.slope
   const courseIndexP4 =
     course[`${courseMatch}`].totals.tees[`${playerFourTees}`][`${holesPlayed}`]
-      .index
+      ?.index
   const courseParP4 =
     course[`${courseMatch}`].totals.tees[`${playerFourTees}`][`${holesPlayed}`]
-      .par
+      ?.par
   const playerFourCourseHC = getCourseHandicap(
     playerFourHand,
     courseSlopeP4,
@@ -529,7 +533,9 @@ function Match({
                   }}
                 >
                   {showFullHandicap
-                    ? ` (${p1DefaultHC.toFixed(1)}) | (${p1CourseHC.toFixed(1)})`
+                    ? ` (${p1DefaultHC.toFixed(1)}) | (${p1CourseHC.toFixed(
+                        1
+                      )})`
                     : ` (${p1HC})`}
                 </span>
               </span>
@@ -679,9 +685,15 @@ function Match({
             <div className="match__hole row-cell">hole</div>
             <div className="match__yardage row-cell">
               <span className="fontSize-xs course-rating">
-                {purpleTeesIndex + "/" + purpleTeesSlope}
+                {brownTeesIndex && brownTeesSlope
+                  ? `${brownTeesIndex}/${brownTeesSlope}`
+                  : purpleTeesIndex + "/" + purpleTeesSlope}
               </span>
-              <span className="fontSize-1 fontSize-0-mb">purple</span>
+              {brownTeesIndex && brownTeesSlope ? (
+                <span className="fontSize-1 fontSize-0-mb">brown</span>
+              ) : (
+                <span className="fontSize-1 fontSize-0-mb">purple</span>
+              )}
             </div>
             <div className="match__yardage row-cell">
               <span className="fontSize-xs course-rating">
@@ -706,9 +718,17 @@ function Match({
                 <div className="match__line"></div>
                 {hole.number}
               </div>
-              <div className="match__yardage row-cell">
-                {hole.tees[Object.keys(hole.tees)[0]]}
-              </div>
+
+              {hole.tees[Object.keys(hole.tees)[2]] ? (
+                <div className="match__yardage row-cell">
+                  {hole.tees[Object.keys(hole.tees)[2]]}
+                </div>
+              ) : (
+                <div className="match__yardage row-cell">
+                  {hole.tees[Object.keys(hole.tees)[0]]}
+                </div>
+              )}
+
               <div className="match__yardage row-cell">
                 {hole.tees[Object.keys(hole.tees)[1]]}
               </div>
@@ -823,11 +843,7 @@ function Match({
         </div>
         <div className="youtube__video m-3">
           {ytVideo ? (
-            <a
-              href={ytVideo}
-              target="_blank"
-              rel="noopener noreferrer"
-            >
+            <a href={ytVideo} target="_blank" rel="noopener noreferrer">
               Link to YouTube video
             </a>
           ) : (

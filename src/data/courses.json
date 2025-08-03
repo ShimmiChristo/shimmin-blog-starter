@@ -352,7 +352,8 @@
             "number": 1,
             "tees": {
               "purple": 352,
-              "orange": 352
+              "orange": 352,
+              "brown": 391
             },
             "handicap": 11,
             "par": 4
@@ -361,7 +362,8 @@
             "number": 2,
             "tees": {
               "purple": 322,
-              "orange": 322
+              "orange": 322,
+              "brown": 341
             },
             "handicap": 13,
             "par": 4
@@ -370,7 +372,8 @@
             "number": 3,
             "tees": {
               "purple": 403,
-              "orange": 403
+              "orange": 403,
+              "brown": 423
             },
             "handicap": 3,
             "par": 4
@@ -379,7 +382,8 @@
             "number": 4,
             "tees": {
               "purple": 542,
-              "orange": 542
+              "orange": 542,
+              "brown": 577
             },
             "handicap": 7,
             "par": 5
@@ -388,7 +392,8 @@
             "number": 5,
             "tees": {
               "purple": 169,
-              "orange": 169
+              "orange": 169,
+              "brown": 191
             },
             "handicap": 9,
             "par": 3
@@ -397,7 +402,8 @@
             "number": 6,
             "tees": {
               "purple": 467,
-              "orange": 467
+              "orange": 467,
+              "brown": 493
             },
             "handicap": 1,
             "par": 5
@@ -406,7 +412,8 @@
             "number": 7,
             "tees": {
               "purple": 381,
-              "orange": 381
+              "orange": 381,
+              "brown": 404
             },
             "handicap": 15,
             "par": 4
@@ -415,7 +422,8 @@
             "number": 8,
             "tees": {
               "purple": 343,
-              "orange": 343
+              "orange": 343,
+              "brown": 372
             },
             "handicap": 17,
             "par": 4
@@ -424,7 +432,8 @@
             "number": 9,
             "tees": {
               "purple": 171,
-              "orange": 171
+              "orange": 171,
+              "brown": 186
             },
             "handicap": 5,
             "par": 3
@@ -551,6 +560,20 @@
                 "par": 72,
                 "index": 70.7,
                 "slope": 139
+              }
+            },
+            "brown": {
+              "out": {
+                "yardage": 3378,
+                "par": 36,
+                "index": 36.8,
+                "slope": 142.0
+              },
+              "total": {
+                "yardage": 6628,
+                "par": 72,
+                "index": 72.9,
+                "slope": 140.5
               }
             }
           }

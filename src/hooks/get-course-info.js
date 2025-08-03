@@ -70,12 +70,27 @@ export const CourseInfo = () => {
               tees {
                 purple
                 orange
+                brown
               }
               handicap
               par
             }
             totals {
               tees {
+                brown {
+                  out {
+                    yardage
+                    par
+                    index
+                    slope
+                  }
+                  total {
+                    yardage
+                    par
+                    index
+                    slope
+                  }
+                }
                 purple {
                   out {
                     yardage
