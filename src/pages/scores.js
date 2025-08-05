@@ -75,7 +75,7 @@ const TopicPage = ({ location }) => {
 
   const matchesArr = [
     {
-      matchId: " - Best Ball. 90% handicap",
+      matchId: " - Best Ball. Full handicap",
       year: "_2025",
       courseMatch: "bayHarborPreserveLinks",
       holes: "front",
@@ -85,9 +85,21 @@ const TopicPage = ({ location }) => {
       player2MatchHandicap: "",
       player3MatchHandicap: "",
       player4MatchHandicap: "",
+      p1Tees: "brown",
+      p2Tees: "brown",
+      p3Tees: playerTees.p3,
+      p4Tees: playerTees.p4,
+      p5Tees: playerTees.p5,
+      p6Tees: playerTees.p6,
+      p7Tees: "brown",
+      p8Tees: "brown",
+      p9Tees: "brown",
+      p10Tees: playerTees.p10,
+      p11Tees: playerTees.p11,
+      p12Tees: playerTees.p12,
     },
     {
-      matchId: " - 2 Best Ball. 90% handicap",
+      matchId: " - 2 Best Ball. Full handicap",
       year: "_2025",
       courseMatch: "bayHarborPreserveLinks",
       holes: "back",
@@ -97,6 +109,18 @@ const TopicPage = ({ location }) => {
       player2MatchHandicap: "",
       player3MatchHandicap: "",
       player4MatchHandicap: "",
+      p1Tees: playerTees.p1,
+      p2Tees: playerTees.p2,
+      p3Tees: playerTees.p3,
+      p4Tees: playerTees.p4,
+      p5Tees: playerTees.p5,
+      p6Tees: playerTees.p6,
+      p7Tees: playerTees.p7,
+      p8Tees: playerTees.p8,
+      p9Tees: playerTees.p9,
+      p10Tees: playerTees.p10,
+      p11Tees: playerTees.p11,
+      p12Tees: playerTees.p12,
     },
     {
       matchId: " - Alternate. 50% HC",
@@ -109,6 +133,18 @@ const TopicPage = ({ location }) => {
       player2MatchHandicap: "",
       player3MatchHandicap: "",
       player4MatchHandicap: "",
+      p1Tees: playerTees.p1,
+      p2Tees: playerTees.p2,
+      p3Tees: playerTees.p3,
+      p4Tees: playerTees.p4,
+      p5Tees: playerTees.p5,
+      p6Tees: playerTees.p6,
+      p7Tees: playerTees.p7,
+      p8Tees: playerTees.p8,
+      p9Tees: playerTees.p9,
+      p10Tees: playerTees.p10,
+      p11Tees: playerTees.p11,
+      p12Tees: playerTees.p12,
     },
     {
       matchId: " - Scramble. 35% low HC + 15% high HC",
@@ -121,6 +157,18 @@ const TopicPage = ({ location }) => {
       player2MatchHandicap: "",
       player3MatchHandicap: "",
       player4MatchHandicap: "",
+      p1Tees: playerTees.p1,
+      p2Tees: playerTees.p2,
+      p3Tees: playerTees.p3,
+      p4Tees: playerTees.p4,
+      p5Tees: playerTees.p5,
+      p6Tees: playerTees.p6,
+      p7Tees: playerTees.p7,
+      p8Tees: playerTees.p8,
+      p9Tees: playerTees.p9,
+      p10Tees: playerTees.p10,
+      p11Tees: playerTees.p11,
+      p12Tees: playerTees.p12,
     },
     {
       matchId: " - Bramble. 80% HC",
@@ -133,6 +181,18 @@ const TopicPage = ({ location }) => {
       player2MatchHandicap: "",
       player3MatchHandicap: "",
       player4MatchHandicap: "",
+      p1Tees: playerTees.p1,
+      p2Tees: playerTees.p2,
+      p3Tees: playerTees.p3,
+      p4Tees: playerTees.p4,
+      p5Tees: playerTees.p5,
+      p6Tees: playerTees.p6,
+      p7Tees: playerTees.p7,
+      p8Tees: playerTees.p8,
+      p9Tees: playerTees.p9,
+      p10Tees: playerTees.p10,
+      p11Tees: playerTees.p11,
+      p12Tees: playerTees.p12,
     },
     {
       matchId: " - 2 Ball Bramble. 80% HC",
@@ -145,6 +205,18 @@ const TopicPage = ({ location }) => {
       player2MatchHandicap: "",
       player3MatchHandicap: "",
       player4MatchHandicap: "",
+      p1Tees: playerTees.p1,
+      p2Tees: playerTees.p2,
+      p3Tees: playerTees.p3,
+      p4Tees: playerTees.p4,
+      p5Tees: playerTees.p5,
+      p6Tees: playerTees.p6,
+      p7Tees: playerTees.p7,
+      p8Tees: playerTees.p8,
+      p9Tees: playerTees.p9,
+      p10Tees: playerTees.p10,
+      p11Tees: playerTees.p11,
+      p12Tees: playerTees.p12,
     },
     {
       matchId: " - Pinehurst. 60% low HC + 40% high HC",
@@ -157,9 +229,21 @@ const TopicPage = ({ location }) => {
       player2MatchHandicap: "",
       player3MatchHandicap: "",
       player4MatchHandicap: "",
+      p1Tees: playerTees.p1,
+      p2Tees: playerTees.p2,
+      p3Tees: playerTees.p3,
+      p4Tees: playerTees.p4,
+      p5Tees: playerTees.p5,
+      p6Tees: playerTees.p6,
+      p7Tees: playerTees.p7,
+      p8Tees: playerTees.p8,
+      p9Tees: playerTees.p9,
+      p10Tees: playerTees.p10,
+      p11Tees: playerTees.p11,
+      p12Tees: playerTees.p12,
     },
     {
-      matchId: " - Singles Match. 100% HC",
+      matchId: " - Singles Match. Full HC",
       year: "_2025",
       courseMatch: "boyneHighlandsArthurHills",
       holes: "back",
@@ -169,8 +253,119 @@ const TopicPage = ({ location }) => {
       player2MatchHandicap: "",
       player3MatchHandicap: "",
       player4MatchHandicap: "",
+      p1Tees: playerTees.p1,
+      p2Tees: playerTees.p2,
+      p3Tees: playerTees.p3,
+      p4Tees: playerTees.p4,
+      p5Tees: playerTees.p5,
+      p6Tees: playerTees.p6,
+      p7Tees: playerTees.p7,
+      p8Tees: playerTees.p8,
+      p9Tees: playerTees.p9,
+      p10Tees: playerTees.p10,
+      p11Tees: playerTees.p11,
+      p12Tees: playerTees.p12,
     },
   ]
+
+  // const matchesArr = [
+  //   {
+  //     matchId: " - Best Ball. 90% handicap",
+  //     year: "_2025",
+  //     courseMatch: "bayHarborPreserveLinks",
+  //     holes: "front",
+  //     matchHandicap: "full",
+  //     gameplay: "one-ball",
+  //     player1MatchHandicap: "",
+  //     player2MatchHandicap: "",
+  //     player3MatchHandicap: "",
+  //     player4MatchHandicap: "",
+  //   },
+  //   {
+  //     matchId: " - 2 Best Ball. 90% handicap",
+  //     year: "_2025",
+  //     courseMatch: "bayHarborPreserveLinks",
+  //     holes: "back",
+  //     matchHandicap: "full",
+  //     gameplay: "two-ball",
+  //     player1MatchHandicap: "",
+  //     player2MatchHandicap: "",
+  //     player3MatchHandicap: "",
+  //     player4MatchHandicap: "",
+  //   },
+  //   {
+  //     matchId: " - Alternate. 50% HC",
+  //     year: "_2025",
+  //     courseMatch: "crookedTree",
+  //     holes: "front",
+  //     matchHandicap: "full",
+  //     gameplay: "alternate",
+  //     player1MatchHandicap: "",
+  //     player2MatchHandicap: "",
+  //     player3MatchHandicap: "",
+  //     player4MatchHandicap: "",
+  //   },
+  //   {
+  //     matchId: " - Scramble. 35% low HC + 15% high HC",
+  //     year: "_2025",
+  //     courseMatch: "crookedTree",
+  //     holes: "back",
+  //     matchHandicap: "average",
+  //     gameplay: "scramble",
+  //     player1MatchHandicap: "",
+  //     player2MatchHandicap: "",
+  //     player3MatchHandicap: "",
+  //     player4MatchHandicap: "",
+  //   },
+  //   {
+  //     matchId: " - Bramble. 80% HC",
+  //     year: "_2025",
+  //     courseMatch: "boyneHighlandsHeather",
+  //     holes: "front",
+  //     matchHandicap: "full",
+  //     gameplay: "bramble",
+  //     player1MatchHandicap: "",
+  //     player2MatchHandicap: "",
+  //     player3MatchHandicap: "",
+  //     player4MatchHandicap: "",
+  //   },
+  //   {
+  //     matchId: " - 2 Ball Bramble. 80% HC",
+  //     year: "_2025",
+  //     courseMatch: "boyneHighlandsHeather",
+  //     holes: "back",
+  //     matchHandicap: "full",
+  //     gameplay: "two-ball-bramble",
+  //     player1MatchHandicap: "",
+  //     player2MatchHandicap: "",
+  //     player3MatchHandicap: "",
+  //     player4MatchHandicap: "",
+  //   },
+  //   {
+  //     matchId: " - Pinehurst. 60% low HC + 40% high HC",
+  //     year: "_2025",
+  //     courseMatch: "boyneHighlandsArthurHills",
+  //     holes: "front",
+  //     matchHandicap: "average",
+  //     gameplay: "pinehurst",
+  //     player1MatchHandicap: "",
+  //     player2MatchHandicap: "",
+  //     player3MatchHandicap: "",
+  //     player4MatchHandicap: "",
+  //   },
+  //   {
+  //     matchId: " - Singles Match. 100% HC",
+  //     year: "_2025",
+  //     courseMatch: "boyneHighlandsArthurHills",
+  //     holes: "back",
+  //     matchHandicap: "full",
+  //     gameplay: "singles",
+  //     player1MatchHandicap: "",
+  //     player2MatchHandicap: "",
+  //     player3MatchHandicap: "",
+  //     player4MatchHandicap: "",
+  //   },
+  // ]
 
   const day1 = {
     round1: {
@@ -288,10 +483,10 @@ const TopicPage = ({ location }) => {
           player2={p1}
           player3={p8}
           player4={p6}
-          player1Tees={playerTees.p7}
-          player2Tees={playerTees.p1}
-          player3Tees={playerTees.p8}
-          player4Tees={playerTees.p6}
+          player1Tees={matchesArr[0].p7Tees}
+          player2Tees={matchesArr[0].p1Tees}
+          player3Tees={matchesArr[0].p8Tees}
+          player4Tees={matchesArr[0].p6Tees}
           player1MatchHandicap=""
           player2MatchHandicap=""
           player3MatchHandicap=""
@@ -308,10 +503,10 @@ const TopicPage = ({ location }) => {
           player2={p2}
           player3={p11}
           player4={p3}
-          player1Tees={playerTees.p10}
-          player2Tees={playerTees.p2}
-          player3Tees={playerTees.p11}
-          player4Tees={playerTees.p3}
+          player1Tees={matchesArr[0].p10}
+          player2Tees={matchesArr[0].p2}
+          player3Tees={matchesArr[0].p11}
+          player4Tees={matchesArr[0].p3}
           player1MatchHandicap=""
           player2MatchHandicap=""
           player3MatchHandicap=""
@@ -328,10 +523,10 @@ const TopicPage = ({ location }) => {
           player2={p4}
           player3={p12}
           player4={p5}
-          player1Tees={playerTees.p9}
-          player2Tees={playerTees.p4}
-          player3Tees={playerTees.p12}
-          player4Tees={playerTees.p5}
+          player1Tees={matchesArr[0].p9}
+          player2Tees={matchesArr[0].p4}
+          player3Tees={matchesArr[0].p12}
+          player4Tees={matchesArr[0].p5}
           player1MatchHandicap=""
           player2MatchHandicap=""
           player3MatchHandicap=""
@@ -362,10 +557,10 @@ const TopicPage = ({ location }) => {
           player2={p1}
           player3={p8}
           player4={p6}
-          player1Tees={playerTees.p7}
-          player2Tees={playerTees.p1}
-          player3Tees={playerTees.p8}
-          player4Tees={playerTees.p6}
+          player1Tees={matchesArr[1].p7}
+          player2Tees={matchesArr[1].p1}
+          player3Tees={matchesArr[1].p8}
+          player4Tees={matchesArr[1].p6}
           player1MatchHandicap=""
           player2MatchHandicap=""
           player3MatchHandicap=""
@@ -382,10 +577,10 @@ const TopicPage = ({ location }) => {
           player2={p2}
           player3={p11}
           player4={p3}
-          player1Tees={playerTees.p10}
-          player2Tees={playerTees.p2}
-          player3Tees={playerTees.p11}
-          player4Tees={playerTees.p3}
+          player1Tees={matchesArr[1].p10}
+          player2Tees={matchesArr[1].p2}
+          player3Tees={matchesArr[1].p11}
+          player4Tees={matchesArr[1].p3}
           player1MatchHandicap=""
           player2MatchHandicap=""
           player3MatchHandicap=""
@@ -402,10 +597,10 @@ const TopicPage = ({ location }) => {
           player2={p4}
           player3={p12}
           player4={p5}
-          player1Tees={playerTees.p9}
-          player2Tees={playerTees.p4}
-          player3Tees={playerTees.p12}
-          player4Tees={playerTees.p5}
+          player1Tees={matchesArr[1].p9}
+          player2Tees={matchesArr[1].p4}
+          player3Tees={matchesArr[1].p12}
+          player4Tees={matchesArr[1].p5}
           player1MatchHandicap=""
           player2MatchHandicap=""
           player3MatchHandicap=""
@@ -434,10 +629,10 @@ const TopicPage = ({ location }) => {
           player2={p3}
           player3={p12}
           player4={p5}
-          player1Tees={playerTees.p7}
-          player2Tees={playerTees.p3}
-          player3Tees={playerTees.p12}
-          player4Tees={playerTees.p5}
+          player1Tees={matchesArr[2].p7}
+          player2Tees={matchesArr[2].p3}
+          player3Tees={matchesArr[2].p12}
+          player4Tees={matchesArr[2].p5}
           player1MatchHandicap=""
           player2MatchHandicap=""
           player3MatchHandicap=""
@@ -454,10 +649,10 @@ const TopicPage = ({ location }) => {
           player2={p4}
           player3={p10}
           player4={p6}
-          player1Tees={playerTees.p8}
-          player2Tees={playerTees.p4}
-          player3Tees={playerTees.p10}
-          player4Tees={playerTees.p6}
+          player1Tees={matchesArr[2].p8}
+          player2Tees={matchesArr[2].p4}
+          player3Tees={matchesArr[2].p10}
+          player4Tees={matchesArr[2].p6}
           player1MatchHandicap=""
           player2MatchHandicap=""
           player3MatchHandicap=""
@@ -474,10 +669,10 @@ const TopicPage = ({ location }) => {
           player2={p1}
           player3={p11}
           player4={p2}
-          player1Tees={playerTees.p9}
-          player2Tees={playerTees.p1}
-          player3Tees={playerTees.p11}
-          player4Tees={playerTees.p2}
+          player1Tees={matchesArr[2].p9}
+          player2Tees={matchesArr[2].p1}
+          player3Tees={matchesArr[2].p11}
+          player4Tees={matchesArr[2].p2}
           player1MatchHandicap=""
           player2MatchHandicap=""
           player3MatchHandicap=""
@@ -506,10 +701,10 @@ const TopicPage = ({ location }) => {
           player2={p3}
           player3={p11}
           player4={p5}
-          player1Tees={playerTees.p8}
-          player2Tees={playerTees.p3}
-          player3Tees={playerTees.p11}
-          player4Tees={playerTees.p5}
+          player1Tees={matchesArr[3].p8}
+          player2Tees={matchesArr[3].p3}
+          player3Tees={matchesArr[3].p11}
+          player4Tees={matchesArr[3].p5}
           player1MatchHandicap=""
           player2MatchHandicap=""
           player3MatchHandicap=""
@@ -526,10 +721,10 @@ const TopicPage = ({ location }) => {
           player2={p2}
           player3={p12}
           player4={p6}
-          player1Tees={playerTees.p7}
-          player2Tees={playerTees.p2}
-          player3Tees={playerTees.p12}
-          player4Tees={playerTees.p6}
+          player1Tees={matchesArr[3].p7}
+          player2Tees={matchesArr[3].p2}
+          player3Tees={matchesArr[3].p12}
+          player4Tees={matchesArr[3].p6}
           player1MatchHandicap=""
           player2MatchHandicap=""
           player3MatchHandicap=""
@@ -546,10 +741,10 @@ const TopicPage = ({ location }) => {
           player2={p1}
           player3={p10}
           player4={p4}
-          player1Tees={playerTees.p9}
-          player2Tees={playerTees.p1}
-          player3Tees={playerTees.p10}
-          player4Tees={playerTees.p4}
+          player1Tees={matchesArr[3].p9}
+          player2Tees={matchesArr[3].p1}
+          player3Tees={matchesArr[3].p10}
+          player4Tees={matchesArr[3].p4}
           player1MatchHandicap=""
           player2MatchHandicap=""
           player3MatchHandicap=""
@@ -579,10 +774,10 @@ const TopicPage = ({ location }) => {
           player2={p1}
           player3={p12}
           player4={p5}
-          player1Tees={playerTees.p9}
-          player2Tees={playerTees.p1}
-          player3Tees={playerTees.p12}
-          player4Tees={playerTees.p5}
+          player1Tees={matchesArr[4].p9}
+          player2Tees={matchesArr[4].p1}
+          player3Tees={matchesArr[4].p12}
+          player4Tees={matchesArr[4].p5}
           player1MatchHandicap=""
           player2MatchHandicap=""
           player3MatchHandicap=""
@@ -599,10 +794,10 @@ const TopicPage = ({ location }) => {
           player2={p4}
           player3={p11}
           player4={p6}
-          player1Tees={playerTees.p7}
-          player2Tees={playerTees.p4}
-          player3Tees={playerTees.p11}
-          player4Tees={playerTees.p6}
+          player1Tees={matchesArr[4].p7}
+          player2Tees={matchesArr[4].p4}
+          player3Tees={matchesArr[4].p11}
+          player4Tees={matchesArr[4].p6}
           player1MatchHandicap=""
           player2MatchHandicap=""
           player3MatchHandicap=""
@@ -619,10 +814,10 @@ const TopicPage = ({ location }) => {
           player2={p2}
           player3={p10}
           player4={p3}
-          player1Tees={playerTees.p8}
-          player2Tees={playerTees.p2}
-          player3Tees={playerTees.p10}
-          player4Tees={playerTees.p3}
+          player1Tees={matchesArr[4].p8}
+          player2Tees={matchesArr[4].p2}
+          player3Tees={matchesArr[4].p10}
+          player4Tees={matchesArr[4].p3}
           player1MatchHandicap=""
           player2MatchHandicap=""
           player3MatchHandicap=""
@@ -653,10 +848,10 @@ const TopicPage = ({ location }) => {
           player2={p5}
           player3={p12}
           player4={p6}
-          player1Tees={playerTees.p11}
-          player2Tees={playerTees.p5}
-          player3Tees={playerTees.p12}
-          player4Tees={playerTees.p6}
+          player1Tees={matchesArr[5].p11}
+          player2Tees={matchesArr[5].p5}
+          player3Tees={matchesArr[5].p12}
+          player4Tees={matchesArr[5].p6}
           player1MatchHandicap=""
           player2MatchHandicap=""
           player3MatchHandicap=""
@@ -673,10 +868,10 @@ const TopicPage = ({ location }) => {
           player2={p1}
           player3={p9}
           player4={p3}
-          player1Tees={playerTees.p7}
-          player2Tees={playerTees.p1}
-          player3Tees={playerTees.p9}
-          player4Tees={playerTees.p3}
+          player1Tees={matchesArr[5].p7}
+          player2Tees={matchesArr[5].p1}
+          player3Tees={matchesArr[5].p9}
+          player4Tees={matchesArr[5].p3}
           player1MatchHandicap=""
           player2MatchHandicap=""
           player3MatchHandicap=""
@@ -693,10 +888,10 @@ const TopicPage = ({ location }) => {
           player2={p2}
           player3={p10}
           player4={p4}
-          player1Tees={playerTees.p8}
-          player2Tees={playerTees.p2}
-          player3Tees={playerTees.p10}
-          player4Tees={playerTees.p4}
+          player1Tees={matchesArr[5].p8}
+          player2Tees={matchesArr[5].p2}
+          player3Tees={matchesArr[5].p10}
+          player4Tees={matchesArr[5].p4}
           player1MatchHandicap=""
           player2MatchHandicap=""
           player3MatchHandicap=""
@@ -726,10 +921,10 @@ const TopicPage = ({ location }) => {
           player2={p1}
           player3={p8}
           player4={p2}
-          player1Tees={playerTees.p7}
-          player2Tees={playerTees.p1}
-          player3Tees={playerTees.p8}
-          player4Tees={playerTees.p2}
+          player1Tees={matchesArr[6].p7}
+          player2Tees={matchesArr[6].p1}
+          player3Tees={matchesArr[6].p8}
+          player4Tees={matchesArr[6].p2}
           player1MatchHandicap=""
           player2MatchHandicap=""
           player3MatchHandicap=""
@@ -746,10 +941,10 @@ const TopicPage = ({ location }) => {
           player2={p4}
           player3={p12}
           player4={p5}
-          player1Tees={playerTees.p9}
-          player2Tees={playerTees.p4}
-          player3Tees={playerTees.p12}
-          player4Tees={playerTees.p5}
+          player1Tees={matchesArr[6].p9}
+          player2Tees={matchesArr[6].p4}
+          player3Tees={matchesArr[6].p12}
+          player4Tees={matchesArr[6].p5}
           player1MatchHandicap=""
           player2MatchHandicap=""
           player3MatchHandicap=""
@@ -766,10 +961,10 @@ const TopicPage = ({ location }) => {
           player2={p3}
           player3={p11}
           player4={p6}
-          player1Tees={playerTees.p10}
-          player2Tees={playerTees.p3}
-          player3Tees={playerTees.p11}
-          player4Tees={playerTees.p6}
+          player1Tees={matchesArr[6].p10}
+          player2Tees={matchesArr[6].p3}
+          player3Tees={matchesArr[6].p11}
+          player4Tees={matchesArr[6].p6}
           player1MatchHandicap=""
           player2MatchHandicap=""
           player3MatchHandicap=""
@@ -796,8 +991,8 @@ const TopicPage = ({ location }) => {
           gameplay={matchesArr[7].gameplay}
           player1={p8}
           player2={p2}
-          player1Tees={playerTees.p8}
-          player2Tees={playerTees.p2}
+          player1Tees={matchesArr[7].p8}
+          player2Tees={matchesArr[7].p2}
           player1MatchHandicap=""
           player2MatchHandicap=""
         />
@@ -810,8 +1005,8 @@ const TopicPage = ({ location }) => {
           gameplay={matchesArr[7].gameplay}
           player1={p9}
           player2={p4}
-          player1Tees={playerTees.p9}
-          player2Tees={playerTees.p4}
+          player1Tees={matchesArr[7].p9}
+          player2Tees={matchesArr[7].p4}
           player1MatchHandicap=""
           player2MatchHandicap=""
         />
@@ -824,8 +1019,8 @@ const TopicPage = ({ location }) => {
           gameplay={matchesArr[7].gameplay}
           player1={p11}
           player2={p3}
-          player1Tees={playerTees.p11}
-          player2Tees={playerTees.p3}
+          player1Tees={matchesArr[7].p11}
+          player2Tees={matchesArr[7].p3}
           player1MatchHandicap=""
           player2MatchHandicap=""
         />
@@ -838,8 +1033,8 @@ const TopicPage = ({ location }) => {
           gameplay={matchesArr[7].gameplay}
           player1={p7}
           player2={p1}
-          player1Tees={playerTees.p7}
-          player2Tees={playerTees.p1}
+          player1Tees={matchesArr[7].p7}
+          player2Tees={matchesArr[7].p1}
           player1MatchHandicap=""
           player2MatchHandicap=""
         />
@@ -853,8 +1048,8 @@ const TopicPage = ({ location }) => {
           gameplay={matchesArr[7].gameplay}
           player1={p10}
           player2={p5}
-          player1Tees={playerTees.p10}
-          player2Tees={playerTees.p5}
+          player1Tees={matchesArr[7].p10}
+          player2Tees={matchesArr[7].p5}
           player1MatchHandicap=""
           player2MatchHandicap=""
         />
@@ -867,8 +1062,8 @@ const TopicPage = ({ location }) => {
           gameplay={matchesArr[7].gameplay}
           player1={p12}
           player2={p6}
-          player1Tees={playerTees.p12}
-          player2Tees={playerTees.p6}
+          player1Tees={matchesArr[7].p12}
+          player2Tees={matchesArr[7].p6}
           player1MatchHandicap=""
           player2MatchHandicap=""
         /> */}
