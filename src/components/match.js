@@ -282,6 +282,7 @@ function Match({
     playerThreeCourseHC,
     playerFourCourseHC,
   ]
+  console.log("handicaps - ", handicaps)
 
   const hardestHoleNine =
     holesPlayed === "out" && hardestHole < 10 ? true : false
@@ -880,12 +881,16 @@ Match.propTypes = {
   matchHandicap: PropTypes.string,
   gameplay: PropTypes.string,
   player1: PropTypes.string,
+  player1Tees: PropTypes.string,
   player1MatchHandicap: PropTypes.string,
   player2: PropTypes.string,
+  player2Tees: PropTypes.string,
   player2MatchHandicap: PropTypes.string,
   player3: PropTypes.string,
+  player3Tees: PropTypes.string,
   player3MatchHandicap: PropTypes.string,
   player4: PropTypes.string,
+  player4Tees: PropTypes.string,
   player4MatchHandicap: PropTypes.string,
 }
 

@@ -51,13 +51,13 @@ function generateTeamRoundsMain() {
           teamA: ["4", "5"],
         },
         {
-          teamB: ["7", "8"],
+          teamB: ["7", "9"],
         },
         {
           teamB: ["10", "11"],
         },
         {
-          teamB: ["9", "12"],
+          teamB: ["8", "12"],
         },
       ],
     },
@@ -74,13 +74,13 @@ function generateTeamRoundsMain() {
           teamA: ["4", "5"],
         },
         {
-          teamB: ["7", "8"],
+          teamB: ["7", "9"],
         },
         {
           teamB: ["10", "11"],
         },
         {
-          teamB: ["9", "12"],
+          teamB: ["8", "12"],
         },
       ],
     },

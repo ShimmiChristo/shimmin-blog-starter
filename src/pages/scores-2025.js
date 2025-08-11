@@ -1,10 +1,10 @@
-import React, { useState, useEffect } from "react"
+import React from "react"
 import PropTypes from "prop-types"
 import styled from "styled-components"
 import { useSiteMetadata } from "../hooks/use-site-metadata"
 import { CourseInfo } from "../hooks/get-course-info"
 
-import HighlightCountdown from "../components/highlights/coutdown-hightlight"
+// import HighlightCountdown from "../components/highlights/coutdown-hightlight"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import LandingPageHeader from "../components/landing-page-header"
