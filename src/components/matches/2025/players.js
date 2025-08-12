@@ -3,7 +3,7 @@ import { v1 as uuidv1 } from "uuid"
 // import { StaticImage } from "gatsby-plugin-image"
 // import styled from "styled-components"
 
-const greenTeam = ["matt", "chris", "gordon", "derek", "travis", "curtis"]
+const greenTeam = ["matt", "gordon", "chris", "derek", "travis", "curtis"]
 const blueTeam = ["dylan", "rj", "craig", "cam", "evan", "dan"]
 
 function MatchPlayers2025() {
