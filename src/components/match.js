@@ -120,6 +120,7 @@ function Match({
   holes,
   matchHandicap,
   gameplay,
+  matchTees,
   player1,
   player2,
   player3,
@@ -214,6 +215,23 @@ function Match({
   const orangeTeesIndex =
     course[`${courseMatch}`].totals.tees["orange"][`${holesPlayed}`].index
 
+  const p1TeesSlope =
+    course[`${courseMatch}`]?.totals?.tees?.[`${player1Tees}`]?.[
+      `${holesPlayed}`
+    ]?.slope
+  const p1TeesIndex =
+    course[`${courseMatch}`]?.totals?.tees?.[`${player1Tees}`]?.[
+      `${holesPlayed}`
+    ]?.index
+  const p2TeesSlope =
+    course[`${courseMatch}`]?.totals?.tees?.[`${player2Tees}`]?.[
+      `${holesPlayed}`
+    ]?.slope
+  const p2TeesIndex =
+    course[`${courseMatch}`]?.totals?.tees?.[`${player2Tees}`]?.[
+      `${holesPlayed}`
+    ]?.index
+
   const courseSlopeP1 =
     course[`${courseMatch}`].totals.tees[`${playerOneTees}`]?.[`${holesPlayed}`]
       ?.slope
@@ -282,7 +300,6 @@ function Match({
     playerThreeCourseHC,
     playerFourCourseHC,
   ]
-  console.log("handicaps - ", handicaps)
 
   const hardestHoleNine =
     holesPlayed === "out" && hardestHole < 10 ? true : false
@@ -684,59 +701,73 @@ function Match({
         <div className="match__course">
           <div className="match__column--info align-right">
             <div className="match__hole row-cell">hole</div>
-            <div className="match__yardage row-cell">
-              <span className="fontSize-xs course-rating">
-                {brownTeesIndex && brownTeesSlope
-                  ? `${brownTeesIndex}/${brownTeesSlope}`
-                  : purpleTeesIndex + "/" + purpleTeesSlope}
-              </span>
-              {brownTeesIndex && brownTeesSlope ? (
-                <span className="fontSize-1 fontSize-0-mb">brown</span>
-              ) : (
-                <span className="fontSize-1 fontSize-0-mb">purple</span>
-              )}
-            </div>
-            <div className="match__yardage row-cell">
-              <span className="fontSize-xs course-rating">
-                {orangeTeesIndex + "/" + orangeTeesSlope}
-              </span>
-              <span className="fontSize-1 fontSize-0-mb">orange</span>
-            </div>
+
+            {matchTees && matchTees.length > 0 ? (
+              matchTees.map(tee => {
+                return (
+                  <div className="match__yardage row-cell" key={uuidv1()}>
+                    <span className="fontSize-xs course-rating">
+                      {`${
+                        course[`${courseMatch}`]?.totals?.tees?.[`${tee}`]?.[
+                          `${holesPlayed}`
+                        ]?.index
+                      }/${
+                        course[`${courseMatch}`]?.totals?.tees?.[`${tee}`]?.[
+                          `${holesPlayed}`
+                        ]?.slope
+                      }`}
+                    </span>
+                    <span className="fontSize-1 fontSize-0-mb">{tee}</span>
+                  </div>
+                )
+              })
+            ) : (
+              <div className="match__yardage row-cell">
+                <span className="fontSize-xs course-rating">
+                  {`${p1TeesIndex}/${p1TeesSlope}`}
+                </span>
+                <span className="fontSize-1 fontSize-0-mb">{player1Tees}</span>
+              </div>
+            )}
+
             <div className="match__handicap row-cell">handicap</div>
             <div className="match__par row-cell">par</div>
           </div>
-          {courseHoles.map((hole, i) => (
-            <div className="match__column" key={uuidv1()}>
-              <div
-                className="match__hole row-cell"
-                data-winner={`${calcHoleWinner(hole.number).team}`}
-                data-matchover={`${isMatchOver(i + 1)}`}
-                data-holewinner={`${
-                  calcHoleWinner(hole.number).nickname ?? "tie"
-                }`}
-                id={hole.number}
-              >
-                <div className="match__line"></div>
-                {hole.number}
-              </div>
-
-              {hole.tees[Object.keys(hole.tees)[2]] ? (
-                <div className="match__yardage row-cell">
-                  {hole.tees[Object.keys(hole.tees)[2]]}
+          {courseHoles.map((hole, i) => {
+            return (
+              <div className="match__column" key={uuidv1()}>
+                <div
+                  className="match__hole row-cell"
+                  data-winner={`${calcHoleWinner(hole.number).team}`}
+                  data-matchover={`${isMatchOver(i + 1)}`}
+                  data-holewinner={`${
+                    calcHoleWinner(hole.number).nickname ?? "tie"
+                  }`}
+                  id={hole.number}
+                >
+                  <div className="match__line"></div>
+                  {hole.number}
                 </div>
-              ) : (
-                <div className="match__yardage row-cell">
-                  {hole.tees[Object.keys(hole.tees)[0]]}
-                </div>
-              )}
 
-              <div className="match__yardage row-cell">
-                {hole.tees[Object.keys(hole.tees)[1]]}
+                {matchTees && matchTees.length > 0 ? (
+                  matchTees.map(tee => {
+                    return (
+                      <div className="match__yardage row-cell" key={uuidv1()}>
+                        {hole.tees[tee]}
+                      </div>
+                    )
+                  })
+                ) : (
+                  <div className="match__yardage row-cell">
+                    {hole.tees[player1Tees]}
+                  </div>
+                )}
+
+                <div className="match__handicap row-cell">{hole.handicap}</div>
+                <div className="match__par row-cell">{hole.par}</div>
               </div>
-              <div className="match__handicap row-cell">{hole.handicap}</div>
-              <div className="match__par row-cell">{hole.par}</div>
-            </div>
-          ))}
+            )
+          })}
         </div>
 
         <div className="match__teamScores">
@@ -880,6 +911,7 @@ Match.propTypes = {
   courseMatch: PropTypes.string,
   matchHandicap: PropTypes.string,
   gameplay: PropTypes.string,
+  matchTees: PropTypes.arrayOf(PropTypes.string),
   player1: PropTypes.string,
   player1Tees: PropTypes.string,
   player1MatchHandicap: PropTypes.string,

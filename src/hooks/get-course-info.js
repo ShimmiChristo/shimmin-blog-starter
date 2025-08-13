@@ -189,26 +189,6 @@ export const CourseInfo = () => {
                     slope
                   }
                 }
-                blue {
-                  out {
-                    yardage
-                    par
-                    index
-                    slope
-                  }
-                  in {
-                    yardage
-                    par
-                    index
-                    slope
-                  }
-                  total {
-                    yardage
-                    par
-                    index
-                    slope
-                  }
-                }
               }
             }
           }
@@ -248,26 +228,6 @@ export const CourseInfo = () => {
                   }
                 }
                 orange {
-                  out {
-                    yardage
-                    par
-                    index
-                    slope
-                  }
-                  in {
-                    yardage
-                    par
-                    index
-                    slope
-                  }
-                  total {
-                    yardage
-                    par
-                    index
-                    slope
-                  }
-                }
-                blue {
                   out {
                     yardage
                     par

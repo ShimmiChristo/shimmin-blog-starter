@@ -81,6 +81,7 @@ const TopicPage = ({ location }) => {
       holes: "front",
       matchHandicap: "full",
       gameplay: "one-ball",
+      matchTees: ["brown", "orange"],
       player1MatchHandicap: "",
       player2MatchHandicap: "",
       player3MatchHandicap: "",
@@ -105,6 +106,7 @@ const TopicPage = ({ location }) => {
       holes: "back",
       matchHandicap: "full",
       gameplay: "two-ball",
+      matchTees: ["purple", "orange"],
       player1MatchHandicap: "",
       player2MatchHandicap: "",
       player3MatchHandicap: "",
@@ -129,6 +131,7 @@ const TopicPage = ({ location }) => {
       holes: "front",
       matchHandicap: "full",
       gameplay: "alternate",
+      matchTees: ["purple", "orange"],
       player1MatchHandicap: "",
       player2MatchHandicap: "",
       player3MatchHandicap: "",
@@ -153,6 +156,7 @@ const TopicPage = ({ location }) => {
       holes: "back",
       matchHandicap: "average",
       gameplay: "scramble",
+      matchTees: ["purple", "orange"],
       player1MatchHandicap: "",
       player2MatchHandicap: "",
       player3MatchHandicap: "",
@@ -177,6 +181,7 @@ const TopicPage = ({ location }) => {
       holes: "front",
       matchHandicap: "full",
       gameplay: "bramble",
+      matchTees: ["purple", "orange"],
       player1MatchHandicap: "",
       player2MatchHandicap: "",
       player3MatchHandicap: "",
@@ -201,6 +206,7 @@ const TopicPage = ({ location }) => {
       holes: "back",
       matchHandicap: "full",
       gameplay: "two-ball-bramble",
+      matchTees: ["purple", "orange"],
       player1MatchHandicap: "",
       player2MatchHandicap: "",
       player3MatchHandicap: "",
@@ -225,6 +231,7 @@ const TopicPage = ({ location }) => {
       holes: "front",
       matchHandicap: "average",
       gameplay: "pinehurst",
+      matchTees: ["purple", "orange"],
       player1MatchHandicap: "",
       player2MatchHandicap: "",
       player3MatchHandicap: "",
@@ -249,6 +256,7 @@ const TopicPage = ({ location }) => {
       holes: "back",
       matchHandicap: "full",
       gameplay: "singles",
+      matchTees: ["purple", "orange"],
       player1MatchHandicap: "",
       player2MatchHandicap: "",
       player3MatchHandicap: "",
@@ -479,6 +487,7 @@ const TopicPage = ({ location }) => {
           holes={matchesArr[0].holes}
           matchHandicap={matchesArr[0].matchHandicap}
           gameplay={matchesArr[0].gameplay}
+          matchTees={matchesArr[0].matchTees}
           player1={p7}
           player2={p1}
           player3={p9}
@@ -499,6 +508,7 @@ const TopicPage = ({ location }) => {
           holes={matchesArr[0].holes}
           matchHandicap={matchesArr[0].matchHandicap}
           gameplay={matchesArr[0].gameplay}
+          matchTees={matchesArr[0].matchTees}
           player1={p10}
           player2={p2}
           player3={p12}
@@ -519,6 +529,7 @@ const TopicPage = ({ location }) => {
           holes={matchesArr[0].holes}
           matchHandicap={matchesArr[0].matchHandicap}
           gameplay={matchesArr[0].gameplay}
+          matchTees={matchesArr[0].matchTees}
           player1={p8}
           player2={p4}
           player3={p11}
@@ -553,6 +564,7 @@ const TopicPage = ({ location }) => {
           holes={matchesArr[1].holes}
           matchHandicap={matchesArr[1].matchHandicap}
           gameplay={matchesArr[1].gameplay}
+          matchTees={matchesArr[1].matchTees}
           player1={p7}
           player2={p1}
           player3={p9}
@@ -573,6 +585,7 @@ const TopicPage = ({ location }) => {
           holes={matchesArr[1].holes}
           matchHandicap={matchesArr[1].matchHandicap}
           gameplay={matchesArr[1].gameplay}
+          matchTees={matchesArr[1].matchTees}
           player1={p10}
           player2={p2}
           player3={p12}
@@ -593,6 +606,7 @@ const TopicPage = ({ location }) => {
           holes={matchesArr[1].holes}
           matchHandicap={matchesArr[1].matchHandicap}
           gameplay={matchesArr[1].gameplay}
+          matchTees={matchesArr[1].matchTees}
           player1={p8}
           player2={p4}
           player3={p11}
@@ -625,6 +639,7 @@ const TopicPage = ({ location }) => {
           holes={matchesArr[2].holes}
           matchHandicap={matchesArr[2].matchHandicap}
           gameplay={matchesArr[2].gameplay}
+          matchTees={matchesArr[2].matchTees}
           player1={p7}
           player2={p3}
           player3={p11}
@@ -645,6 +660,7 @@ const TopicPage = ({ location }) => {
           holes={matchesArr[2].holes}
           matchHandicap={matchesArr[2].matchHandicap}
           gameplay={matchesArr[2].gameplay}
+          matchTees={matchesArr[2].matchTees}
           player1={p8}
           player2={p1}
           player3={p10}
@@ -665,6 +681,7 @@ const TopicPage = ({ location }) => {
           holes={matchesArr[2].holes}
           matchHandicap={matchesArr[2].matchHandicap}
           gameplay={matchesArr[2].gameplay}
+          matchTees={matchesArr[2].matchTees}
           player1={p9}
           player2={p2}
           player3={p12}
@@ -697,6 +714,7 @@ const TopicPage = ({ location }) => {
           holes={matchesArr[3].holes}
           matchHandicap={matchesArr[3].matchHandicap}
           gameplay={matchesArr[3].gameplay}
+          matchTees={matchesArr[3].matchTees}
           player1={p7}
           player2={p3}
           player3={p10}
@@ -717,6 +735,7 @@ const TopicPage = ({ location }) => {
           holes={matchesArr[3].holes}
           matchHandicap={matchesArr[3].matchHandicap}
           gameplay={matchesArr[3].gameplay}
+          matchTees={matchesArr[3].matchTees}
           player1={p9}
           player2={p1}
           player3={p11}
@@ -737,6 +756,7 @@ const TopicPage = ({ location }) => {
           holes={matchesArr[3].holes}
           matchHandicap={matchesArr[3].matchHandicap}
           gameplay={matchesArr[3].gameplay}
+          matchTees={matchesArr[3].matchTees}
           player1={p8}
           player2={p2}
           player3={p12}
@@ -770,6 +790,7 @@ const TopicPage = ({ location }) => {
           holes={matchesArr[4].holes}
           matchHandicap={matchesArr[4].matchHandicap}
           gameplay={matchesArr[4].gameplay}
+          matchTees={matchesArr[4].matchTees}
           player1={p7}
           player2={p1}
           player3={p12}
@@ -790,6 +811,7 @@ const TopicPage = ({ location }) => {
           holes={matchesArr[4].holes}
           matchHandicap={matchesArr[4].matchHandicap}
           gameplay={matchesArr[4].gameplay}
+          matchTees={matchesArr[4].matchTees}
           player1={p8}
           player2={p3}
           player3={p9}
@@ -810,6 +832,7 @@ const TopicPage = ({ location }) => {
           holes={matchesArr[4].holes}
           matchHandicap={matchesArr[4].matchHandicap}
           gameplay={matchesArr[4].gameplay}
+          matchTees={matchesArr[4].matchTees}
           player1={p10}
           player2={p2}
           player3={p11}
@@ -844,6 +867,7 @@ const TopicPage = ({ location }) => {
           holes={matchesArr[5].holes}
           matchHandicap={matchesArr[5].matchHandicap}
           gameplay={matchesArr[5].gameplay}
+          matchTees={matchesArr[5].matchTees}
           player1={p8}
           player2={p1}
           player3={p12}
@@ -864,6 +888,7 @@ const TopicPage = ({ location }) => {
           holes={matchesArr[5].holes}
           matchHandicap={matchesArr[5].matchHandicap}
           gameplay={matchesArr[5].gameplay}
+          matchTees={matchesArr[5].matchTees}
           player1={p7}
           player2={p2}
           player3={p10}
@@ -884,6 +909,7 @@ const TopicPage = ({ location }) => {
           holes={matchesArr[5].holes}
           matchHandicap={matchesArr[5].matchHandicap}
           gameplay={matchesArr[5].gameplay}
+          matchTees={matchesArr[5].matchTees}
           player1={p9}
           player2={p4}
           player3={p11}
@@ -917,6 +943,7 @@ const TopicPage = ({ location }) => {
           holes={matchesArr[6].holes}
           matchHandicap={matchesArr[6].matchHandicap}
           gameplay={matchesArr[6].gameplay}
+          matchTees={matchesArr[6].matchTees}
           player1={p7}
           player2={p1}
           player3={p8}
@@ -937,6 +964,7 @@ const TopicPage = ({ location }) => {
           holes={matchesArr[6].holes}
           matchHandicap={matchesArr[6].matchHandicap}
           gameplay={matchesArr[6].gameplay}
+          matchTees={matchesArr[6].matchTees}
           player1={p9}
           player2={p3}
           player3={p10}
@@ -957,6 +985,7 @@ const TopicPage = ({ location }) => {
           holes={matchesArr[6].holes}
           matchHandicap={matchesArr[6].matchHandicap}
           gameplay={matchesArr[6].gameplay}
+          matchTees={matchesArr[6].matchTees}
           player1={p11}
           player2={p5}
           player3={p12}
@@ -989,6 +1018,7 @@ const TopicPage = ({ location }) => {
           holes={matchesArr[7].holes}
           matchHandicap={matchesArr[7].matchHandicap}
           gameplay={matchesArr[7].gameplay}
+          matchTees={matchesArr[7].matchTees}
           player1={p12}
           player2={p6}
           player1Tees={matchesArr[7].p12Tees}
@@ -1003,6 +1033,7 @@ const TopicPage = ({ location }) => {
           holes={matchesArr[7].holes}
           matchHandicap={matchesArr[7].matchHandicap}
           gameplay={matchesArr[7].gameplay}
+          matchTees={matchesArr[7].matchTees}
           player1={p11}
           player2={p5}
           player1Tees={matchesArr[7].p11Tees}
@@ -1017,6 +1048,7 @@ const TopicPage = ({ location }) => {
           holes={matchesArr[7].holes}
           matchHandicap={matchesArr[7].matchHandicap}
           gameplay={matchesArr[7].gameplay}
+          matchTees={matchesArr[7].matchTees}
           player1={p10}
           player2={p4}
           player1Tees={matchesArr[7].p10Tees}
@@ -1031,6 +1063,7 @@ const TopicPage = ({ location }) => {
           holes={matchesArr[7].holes}
           matchHandicap={matchesArr[7].matchHandicap}
           gameplay={matchesArr[7].gameplay}
+          matchTees={matchesArr[7].matchTees}
           player1={p9}
           player2={p3}
           player1Tees={matchesArr[7].p9Tees}
@@ -1046,6 +1079,7 @@ const TopicPage = ({ location }) => {
           holes={matchesArr[7].holes}
           matchHandicap={matchesArr[7].matchHandicap}
           gameplay={matchesArr[7].gameplay}
+          matchTees={matchesArr[7].matchTees}
           player1={p8}
           player2={p2}
           player1Tees={matchesArr[7].p8Tees}
@@ -1060,6 +1094,7 @@ const TopicPage = ({ location }) => {
           holes={matchesArr[7].holes}
           matchHandicap={matchesArr[7].matchHandicap}
           gameplay={matchesArr[7].gameplay}
+          matchTees={matchesArr[7].matchTees}
           player1={p7}
           player2={p1}
           player1Tees={matchesArr[7].p7Tees}
