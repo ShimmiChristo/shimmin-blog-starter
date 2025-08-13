@@ -2151,11 +2151,11 @@
     "craig": {
       "name": "craig",
       "appearances": [2021, 2022, 2023, 2024],
-      "handicap": 20,
+      "handicap": 17,
       "year": {
         "_2025": {
           "id": 2025,
-          "handicap": 20,
+          "handicap": 17,
           "captain": false,
           "team": "blue",
           "scores": {
