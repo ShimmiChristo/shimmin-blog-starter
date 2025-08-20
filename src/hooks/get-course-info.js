@@ -1,411 +1,17 @@
 import { useStaticQuery, graphql } from "gatsby"
+// import { BayHarborGolfClubFragment } from "./fragments/bayHarborGolfClub"
 
 export const CourseInfo = () => {
   const { coursesJson } = useStaticQuery(graphql`
     query CourseInfo {
       coursesJson {
         course {
-          bayHarborGolfClub {
-            name
-            link
-            holes {
-              number
-              tees {
-                purple
-                orange
-              }
-              handicap
-              par
-            }
-            totals {
-              tees {
-                purple {
-                  out {
-                    yardage
-                    par
-                    index
-                    slope
-                  }
-                  in {
-                    yardage
-                    par
-                    index
-                    slope
-                  }
-                  total {
-                    yardage
-                    par
-                    index
-                    slope
-                  }
-                }
-                orange {
-                  out {
-                    yardage
-                    par
-                    index
-                    slope
-                  }
-                  in {
-                    yardage
-                    par
-                    index
-                    slope
-                  }
-                  total {
-                    yardage
-                    par
-                    index
-                    slope
-                  }
-                }
-              }
-            }
-          }
-          bayHarborPreserveLinks {
-            name
-            link
-            holes {
-              number
-              tees {
-                purple
-                orange
-                brown
-              }
-              handicap
-              par
-            }
-            totals {
-              tees {
-                brown {
-                  out {
-                    yardage
-                    par
-                    index
-                    slope
-                  }
-                  total {
-                    yardage
-                    par
-                    index
-                    slope
-                  }
-                }
-                purple {
-                  out {
-                    yardage
-                    par
-                    index
-                    slope
-                  }
-                  in {
-                    yardage
-                    par
-                    index
-                    slope
-                  }
-                  total {
-                    yardage
-                    par
-                    index
-                    slope
-                  }
-                }
-                orange {
-                  out {
-                    yardage
-                    par
-                    index
-                    slope
-                  }
-                  in {
-                    yardage
-                    par
-                    index
-                    slope
-                  }
-                  total {
-                    yardage
-                    par
-                    index
-                    slope
-                  }
-                }
-              }
-            }
-          }
-          boyneHighlandsArthurHills {
-            name
-            link
-            holes {
-              number
-              tees {
-                purple
-                orange
-                blue
-              }
-              handicap
-              par
-            }
-            totals {
-              tees {
-                purple {
-                  out {
-                    yardage
-                    par
-                    index
-                    slope
-                  }
-                  in {
-                    yardage
-                    par
-                    index
-                    slope
-                  }
-                  total {
-                    yardage
-                    par
-                    index
-                    slope
-                  }
-                }
-                orange {
-                  out {
-                    yardage
-                    par
-                    index
-                    slope
-                  }
-                  in {
-                    yardage
-                    par
-                    index
-                    slope
-                  }
-                  total {
-                    yardage
-                    par
-                    index
-                    slope
-                  }
-                }
-              }
-            }
-          }
-          boyneHighlandsDonaldRoss {
-            name
-            link
-            holes {
-              number
-              tees {
-                purple
-                orange
-                blue
-              }
-              handicap
-              par
-            }
-            totals {
-              tees {
-                purple {
-                  out {
-                    yardage
-                    par
-                    index
-                    slope
-                  }
-                  in {
-                    yardage
-                    par
-                    index
-                    slope
-                  }
-                  total {
-                    yardage
-                    par
-                    index
-                    slope
-                  }
-                }
-                orange {
-                  out {
-                    yardage
-                    par
-                    index
-                    slope
-                  }
-                  in {
-                    yardage
-                    par
-                    index
-                    slope
-                  }
-                  total {
-                    yardage
-                    par
-                    index
-                    slope
-                  }
-                }
-              }
-            }
-          }
-          boyneHighlandsHeather {
-            name
-            link
-            holes {
-              number
-              tees {
-                purple
-                orange
-                blue
-              }
-              handicap
-              par
-            }
-            totals {
-              tees {
-                purple {
-                  out {
-                    yardage
-                    par
-                    index
-                    slope
-                  }
-                  in {
-                    yardage
-                    par
-                    index
-                    slope
-                  }
-                  total {
-                    yardage
-                    par
-                    index
-                    slope
-                  }
-                }
-                orange {
-                  out {
-                    yardage
-                    par
-                    index
-                    slope
-                  }
-                  in {
-                    yardage
-                    par
-                    index
-                    slope
-                  }
-                  total {
-                    yardage
-                    par
-                    index
-                    slope
-                  }
-                }
-                blue {
-                  out {
-                    yardage
-                    par
-                    index
-                    slope
-                  }
-                  in {
-                    yardage
-                    par
-                    index
-                    slope
-                  }
-                  total {
-                    yardage
-                    par
-                    index
-                    slope
-                  }
-                }
-              }
-            }
-          }
-          boyneHighlandsMoor {
-            name
-            link
-            holes {
-              number
-              tees {
-                purple
-                orange
-                blue
-              }
-              handicap
-              par
-            }
-            totals {
-              tees {
-                purple {
-                  out {
-                    yardage
-                    par
-                    index
-                    slope
-                  }
-                  in {
-                    yardage
-                    par
-                    index
-                    slope
-                  }
-                  total {
-                    yardage
-                    par
-                    index
-                    slope
-                  }
-                }
-                orange {
-                  out {
-                    yardage
-                    par
-                    index
-                    slope
-                  }
-                  in {
-                    yardage
-                    par
-                    index
-                    slope
-                  }
-                  total {
-                    yardage
-                    par
-                    index
-                    slope
-                  }
-                }
-                blue {
-                  out {
-                    yardage
-                    par
-                    index
-                    slope
-                  }
-                  in {
-                    yardage
-                    par
-                    index
-                    slope
-                  }
-                  total {
-                    yardage
-                    par
-                    index
-                    slope
-                  }
-                }
-              }
-            }
-          }
+          ...BayHarborGolfClubFragment
+          ...BayHarborPreserveLinksFragment
+          ...BoyneHighlandsArthurHillsFragment
+          ...BoyneHighlandsDonaldRossFragment
+          ...BoyneHighlandsHeatherFragment
+          ...BoyneHighlandsMoorFragment
           classic1 {
             name
             link
@@ -490,6 +96,61 @@ export const CourseInfo = () => {
                     par
                     index
                     slope
+                  }
+                }
+              }
+            }
+            _2025 {
+              holes {
+                number
+                tees {
+                  purple
+                  orange
+                }
+                handicap
+                par
+              }
+              totals {
+                tees {
+                  purple {
+                    out {
+                      yardage
+                      par
+                      index
+                      slope
+                    }
+                    in {
+                      yardage
+                      par
+                      index
+                      slope
+                    }
+                    total {
+                      yardage
+                      par
+                      index
+                      slope
+                    }
+                  }
+                  orange {
+                    out {
+                      yardage
+                      par
+                      index
+                      slope
+                    }
+                    in {
+                      yardage
+                      par
+                      index
+                      slope
+                    }
+                    total {
+                      yardage
+                      par
+                      index
+                      slope
+                    }
                   }
                 }
               }
