@@ -139,6 +139,9 @@ function Match({
   const playersUpdateJson = PlayerInfoUpdate()
   const { nodes } = usePlayersPosts()
   const posts = nodes
+  const courseMatchQuery = course[`${courseMatch}`]?.year
+    ? course[`${courseMatch}`]?.year
+    : course[`${courseMatch}`]
   const player1Post = posts.filter(
     player => player.frontmatter?.name === player1.toLowerCase()
   )
@@ -158,13 +161,13 @@ function Match({
 
   const courseHoles =
     holes === "front"
-      ? course[`${courseMatch}`].holes.slice(0, 9)
-      : course[`${courseMatch}`].holes.slice(9)
-  const hardestHole = course[`${courseMatch}`].holes.filter(
+      ? courseMatchQuery.holes.slice(0, 9)
+      : courseMatchQuery.holes.slice(9)
+  const hardestHole = courseMatchQuery.holes.filter(
     h => h.handicap === 1
   )[0].number
-  // const courseName = course[`${courseMatch}`].name
-  // const courseLink = course[`${courseMatch}`].link
+  // const courseName = courseMatchQuery.name
+  // const courseLink = courseMatchQuery.link
 
   const playerOne = playersUpdateJson[`${player1}`]
   const p1Name = playerOne.name
@@ -202,44 +205,44 @@ function Match({
   const holesPlayed = holes === "front" ? "out" : "in"
   // const holesPlayed = "total"
 
-  const brownTeesSlope =
-    course[`${courseMatch}`]?.totals?.tees?.["brown"]?.[`${holesPlayed}`]?.slope
-  const brownTeesIndex =
-    course[`${courseMatch}`]?.totals?.tees?.["brown"]?.[`${holesPlayed}`]?.index
-  const purpleTeesSlope =
-    course[`${courseMatch}`].totals.tees["purple"][`${holesPlayed}`].slope
-  const purpleTeesIndex =
-    course[`${courseMatch}`].totals.tees["purple"][`${holesPlayed}`].index
-  const orangeTeesSlope =
-    course[`${courseMatch}`].totals.tees["orange"][`${holesPlayed}`].slope
-  const orangeTeesIndex =
-    course[`${courseMatch}`].totals.tees["orange"][`${holesPlayed}`].index
+  // const brownTeesSlope =
+  //   courseMatchQuery?.totals?.tees?.["brown"]?.[`${holesPlayed}`]?.slope
+  // const brownTeesIndex =
+  //   courseMatchQuery?.totals?.tees?.["brown"]?.[`${holesPlayed}`]?.index
+  // const purpleTeesSlope =
+  //   courseMatchQuery.totals.tees["purple"][`${holesPlayed}`].slope
+  // const purpleTeesIndex =
+  //   courseMatchQuery.totals.tees["purple"][`${holesPlayed}`].index
+  // const orangeTeesSlope =
+  //   courseMatchQuery.totals.tees["orange"][`${holesPlayed}`].slope
+  // const orangeTeesIndex =
+  //   courseMatchQuery.totals.tees["orange"][`${holesPlayed}`].index
 
   const p1TeesSlope =
-    course[`${courseMatch}`]?.totals?.tees?.[`${player1Tees}`]?.[
+    courseMatchQuery?.totals?.tees?.[`${player1Tees}`]?.[
       `${holesPlayed}`
     ]?.slope
   const p1TeesIndex =
-    course[`${courseMatch}`]?.totals?.tees?.[`${player1Tees}`]?.[
+    courseMatchQuery?.totals?.tees?.[`${player1Tees}`]?.[
       `${holesPlayed}`
     ]?.index
   const p2TeesSlope =
-    course[`${courseMatch}`]?.totals?.tees?.[`${player2Tees}`]?.[
+    courseMatchQuery?.totals?.tees?.[`${player2Tees}`]?.[
       `${holesPlayed}`
     ]?.slope
   const p2TeesIndex =
-    course[`${courseMatch}`]?.totals?.tees?.[`${player2Tees}`]?.[
+    courseMatchQuery?.totals?.tees?.[`${player2Tees}`]?.[
       `${holesPlayed}`
     ]?.index
 
   const courseSlopeP1 =
-    course[`${courseMatch}`].totals.tees[`${playerOneTees}`]?.[`${holesPlayed}`]
+    courseMatchQuery.totals.tees[`${playerOneTees}`]?.[`${holesPlayed}`]
       ?.slope
   const courseIndexP1 =
-    course[`${courseMatch}`].totals.tees[`${playerOneTees}`]?.[`${holesPlayed}`]
+    courseMatchQuery.totals.tees[`${playerOneTees}`]?.[`${holesPlayed}`]
       ?.index
   const courseParP1 =
-    course[`${courseMatch}`].totals.tees[`${playerOneTees}`]?.[`${holesPlayed}`]
+    courseMatchQuery.totals.tees[`${playerOneTees}`]?.[`${holesPlayed}`]
       ?.par
   const playerOneCourseHC = getCourseHandicap(
     playerOneHand,
@@ -248,13 +251,13 @@ function Match({
     courseParP1
   )
   const courseSlopeP2 =
-    course[`${courseMatch}`].totals.tees[`${playerTwoTees}`]?.[`${holesPlayed}`]
+    courseMatchQuery.totals.tees[`${playerTwoTees}`]?.[`${holesPlayed}`]
       ?.slope
   const courseIndexP2 =
-    course[`${courseMatch}`].totals.tees[`${playerTwoTees}`]?.[`${holesPlayed}`]
+    courseMatchQuery.totals.tees[`${playerTwoTees}`]?.[`${holesPlayed}`]
       ?.index
   const courseParP2 =
-    course[`${courseMatch}`].totals.tees[`${playerTwoTees}`]?.[`${holesPlayed}`]
+    courseMatchQuery.totals.tees[`${playerTwoTees}`]?.[`${holesPlayed}`]
       ?.par
   const playerTwoCourseHC = getCourseHandicap(
     playerTwoHand,
@@ -263,13 +266,13 @@ function Match({
     courseParP2
   )
   const courseSlopeP3 =
-    course[`${courseMatch}`].totals.tees[`${playerThreeTees}`][`${holesPlayed}`]
+    courseMatchQuery.totals.tees[`${playerThreeTees}`][`${holesPlayed}`]
       ?.slope
   const courseIndexP3 =
-    course[`${courseMatch}`].totals.tees[`${playerThreeTees}`][`${holesPlayed}`]
+    courseMatchQuery.totals.tees[`${playerThreeTees}`][`${holesPlayed}`]
       ?.index
   const courseParP3 =
-    course[`${courseMatch}`].totals.tees[`${playerThreeTees}`][`${holesPlayed}`]
+    courseMatchQuery.totals.tees[`${playerThreeTees}`][`${holesPlayed}`]
       ?.par
   const playerThreeCourseHC = getCourseHandicap(
     playerThreeHand,
@@ -278,13 +281,13 @@ function Match({
     courseParP3
   )
   const courseSlopeP4 =
-    course[`${courseMatch}`].totals.tees[`${playerFourTees}`][`${holesPlayed}`]
+    courseMatchQuery.totals.tees[`${playerFourTees}`][`${holesPlayed}`]
       ?.slope
   const courseIndexP4 =
-    course[`${courseMatch}`].totals.tees[`${playerFourTees}`][`${holesPlayed}`]
+    courseMatchQuery.totals.tees[`${playerFourTees}`][`${holesPlayed}`]
       ?.index
   const courseParP4 =
-    course[`${courseMatch}`].totals.tees[`${playerFourTees}`][`${holesPlayed}`]
+    courseMatchQuery.totals.tees[`${playerFourTees}`][`${holesPlayed}`]
       ?.par
   const playerFourCourseHC = getCourseHandicap(
     playerFourHand,
@@ -708,11 +711,11 @@ function Match({
                   <div className="match__yardage row-cell" key={uuidv1()}>
                     <span className="fontSize-xs course-rating">
                       {`${
-                        course[`${courseMatch}`]?.totals?.tees?.[`${tee}`]?.[
+                        courseMatchQuery?.totals?.tees?.[`${tee}`]?.[
                           `${holesPlayed}`
                         ]?.index
                       }/${
-                        course[`${courseMatch}`]?.totals?.tees?.[`${tee}`]?.[
+                        courseMatchQuery?.totals?.tees?.[`${tee}`]?.[
                           `${holesPlayed}`
                         ]?.slope
                       }`}

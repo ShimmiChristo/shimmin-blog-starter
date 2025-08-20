@@ -2317,6 +2317,234 @@
               }
             }
           }
+        },
+        "_2023": {
+          "holes": [
+            {
+              "number": 1,
+              "tees": {
+                "purple": 395,
+                "orange": 355,
+                "blue": 355
+              },
+              "handicap": 9,
+              "par": 4
+            },
+            {
+              "number": 2,
+              "tees": {
+                "purple": 341,
+                "orange": 311,
+                "blue": 311
+              },
+              "handicap": 17,
+              "par": 4
+            },
+            {
+              "number": 3,
+              "tees": {
+                "purple": 529,
+                "orange": 494,
+                "blue": 467
+              },
+              "handicap": 5,
+              "par": 5
+            },
+            {
+              "number": 4,
+              "tees": {
+                "purple": 386,
+                "orange": 367,
+                "blue": 367
+              },
+              "handicap": 7,
+              "par": 4
+            },
+            {
+              "number": 5,
+              "tees": {
+                "purple": 456,
+                "orange": 417,
+                "blue": 365
+              },
+              "handicap": 1,
+              "par": 4
+            },
+            {
+              "number": 6,
+              "tees": {
+                "purple": 547,
+                "orange": 487,
+                "blue": 456
+              },
+              "handicap": 13,
+              "par": 5
+            },
+            {
+              "number": 7,
+              "tees": {
+                "purple": 156,
+                "orange": 136,
+                "blue": 136
+              },
+              "handicap": 15,
+              "par": 3
+            },
+            {
+              "number": 8,
+              "tees": {
+                "purple": 397,
+                "orange": 361,
+                "blue": 361
+              },
+              "handicap": 3,
+              "par": 4
+            },
+            {
+              "number": 9,
+              "tees": {
+                "purple": 178,
+                "orange": 166,
+                "blue": 154
+              },
+              "handicap": 11,
+              "par": 3
+            },
+            {
+              "number": 10,
+              "tees": {
+                "purple": 325,
+                "orange": 285,
+                "blue": 285
+              },
+              "handicap": 18,
+              "par": 4
+            },
+            {
+              "number": 11,
+              "tees": {
+                "purple": 545,
+                "orange": 531,
+                "blue": 494
+              },
+              "handicap": 4,
+              "par": 5
+            },
+            {
+              "number": 12,
+              "tees": {
+                "purple": 375,
+                "orange": 331,
+                "blue": 331
+              },
+              "handicap": 8,
+              "par": 4
+            },
+            {
+              "number": 13,
+              "tees": {
+                "purple": 539,
+                "orange": 516,
+                "blue": 516
+              },
+              "handicap": 14,
+              "par": 5
+            },
+            {
+              "number": 14,
+              "tees": {
+                "purple": 176,
+                "orange": 160,
+                "blue": 154
+              },
+              "handicap": 12,
+              "par": 3
+            },
+            {
+              "number": 15,
+              "tees": {
+                "purple": 427,
+                "orange": 401,
+                "blue": 375
+              },
+              "handicap": 2,
+              "par": 4
+            },
+            {
+              "number": 16,
+              "tees": {
+                "purple": 188,
+                "orange": 151,
+                "blue": 151
+              },
+              "handicap": 16,
+              "par": 3
+            },
+            {
+              "number": 17,
+              "tees": {
+                "purple": 405,
+                "orange": 385,
+                "blue": 351
+              },
+              "handicap": 6,
+              "par": 4
+            },
+            {
+              "number": 18,
+              "tees": {
+                "purple": 554,
+                "orange": 498,
+                "blue": 498
+              },
+              "handicap": 10,
+              "par": 5
+            }
+          ],
+          "totals": {
+            "tees": {
+              "purple": {
+                "out": {
+                  "yardage": 3385,
+                  "par": 36,
+                  "index": 36.4,
+                  "slope": 143.0
+                },
+                "in": {
+                  "yardage": 3534,
+                  "par": 37,
+                  "index": 36.9,
+                  "slope": 137.0
+                },
+                "total": {
+                  "yardage": 6919,
+                  "par": 73,
+                  "index": 73.3,
+                  "slope": 140
+                }
+              },
+              "orange": {
+                "out": {
+                  "yardage": 3094,
+                  "par": 36,
+                  "index": 35.3,
+                  "slope": 135.0
+                },
+                "in": {
+                  "yardage": 3258,
+                  "par": 37,
+                  "index": 35.0,
+                  "slope": 128.0
+                },
+                "total": {
+                  "yardage": 6352,
+                  "par": 73,
+                  "index": 70.3,
+                  "slope": 132
+                }
+              }
+            }
+          }
         }
       },
       "boyneHighlandsDonaldRoss": {

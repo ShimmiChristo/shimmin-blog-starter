@@ -12,6 +12,7 @@ export const CourseInfo = () => {
           ...BoyneHighlandsDonaldRossFragment
           ...BoyneHighlandsHeatherFragment
           ...BoyneHighlandsMoorFragment
+          ...CrookedTreeFragment
           classic1 {
             name
             link
@@ -44,118 +45,7 @@ export const CourseInfo = () => {
               par
             }
           }
-          crookedTree {
-            name
-            link
-            holes {
-              number
-              tees {
-                purple
-                orange
-              }
-              handicap
-              par
-            }
-            totals {
-              tees {
-                purple {
-                  out {
-                    yardage
-                    par
-                    index
-                    slope
-                  }
-                  in {
-                    yardage
-                    par
-                    index
-                    slope
-                  }
-                  total {
-                    yardage
-                    par
-                    index
-                    slope
-                  }
-                }
-                orange {
-                  out {
-                    yardage
-                    par
-                    index
-                    slope
-                  }
-                  in {
-                    yardage
-                    par
-                    index
-                    slope
-                  }
-                  total {
-                    yardage
-                    par
-                    index
-                    slope
-                  }
-                }
-              }
-            }
-            _2025 {
-              holes {
-                number
-                tees {
-                  purple
-                  orange
-                }
-                handicap
-                par
-              }
-              totals {
-                tees {
-                  purple {
-                    out {
-                      yardage
-                      par
-                      index
-                      slope
-                    }
-                    in {
-                      yardage
-                      par
-                      index
-                      slope
-                    }
-                    total {
-                      yardage
-                      par
-                      index
-                      slope
-                    }
-                  }
-                  orange {
-                    out {
-                      yardage
-                      par
-                      index
-                      slope
-                    }
-                    in {
-                      yardage
-                      par
-                      index
-                      slope
-                    }
-                    total {
-                      yardage
-                      par
-                      index
-                      slope
-                    }
-                  }
-                }
-              }
-            }
-          }
+
           gaylordGolfClub1 {
             name
             link

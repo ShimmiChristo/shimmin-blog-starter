@@ -115,6 +115,117 @@ export const BoyneHighlandsArthurHillsFragment = graphql`
           }
         }
       }
+      _2024 {
+        holes {
+          number
+          tees {
+            purple
+            orange
+            blue
+          }
+          handicap
+          par
+        }
+        totals {
+          tees {
+            purple {
+              out {
+                yardage
+                par
+                index
+                slope
+              }
+              in {
+                yardage
+                par
+                index
+                slope
+              }
+              total {
+                yardage
+                par
+                index
+                slope
+              }
+            }
+            orange {
+              out {
+                yardage
+                par
+                index
+                slope
+              }
+              in {
+                yardage
+                par
+                index
+                slope
+              }
+              total {
+                yardage
+                par
+                index
+                slope
+              }
+            }
+          }
+        }
+      }
+      _2023 {
+        holes {
+          number
+          tees {
+            purple
+            orange
+          }
+          handicap
+          par
+        }
+        totals {
+          tees {
+            purple {
+              out {
+                yardage
+                par
+                index
+                slope
+              }
+              in {
+                yardage
+                par
+                index
+                slope
+              }
+              total {
+                yardage
+                par
+                index
+                slope
+              }
+            }
+            orange {
+              out {
+                yardage
+                par
+                index
+                slope
+              }
+              in {
+                yardage
+                par
+                index
+                slope
+              }
+              total {
+                yardage
+                par
+                index
+                slope
+              }
+            }
+          }
+        }
+      }
     }
   }
 `

@@ -1,8 +1,8 @@
 import { graphql } from "gatsby"
 
-export const BayHarborGolfClubFragment = graphql`
-  fragment BayHarborGolfClubFragment on CoursesJsonCourse {
-    bayHarborGolfClub {
+export const CrookedTreeFragment = graphql`
+  fragment CrookedTreeFragment on CoursesJsonCourse {
+    crookedTree {
       name
       link
       holes {
@@ -58,7 +58,7 @@ export const BayHarborGolfClubFragment = graphql`
           }
         }
       }
-      _2024 {
+      _2025 {
         holes {
           number
           tees {
