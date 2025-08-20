@@ -11,17 +11,17 @@ team: "Blue Team"
 handicap: 18.7
 ---
 
-In 2022, Craig missed a 2 foot putt to extend the match against the Green Team. You can say Blue lost because of that missed putt. 
+Craig’s been swinging the sticks consistently for five years, and while his game might still have its ups and downs, his spot in the Cup is rock solid. 
 
-Along with golf, Craig has moved into a Residential Mortgage Loan Officer role.
+Known as the guy everyone wants to tee it up with, Craig brings good vibes, steady play, and just enough birdie potential to keep things interesting. 
 
-If you are looking into purchasing or refinancing a home, or just have questions, please let me know and I’d love to help! I’m located in Grand Rapids but can assist anyone within Michigan. Shoot me a message, text, or call at anytime at (517) 667-1154.
+Off the course, he’s a mortgage loan officer—so whether it’s greens or loans, he knows how to close.
 
-Be sure to like and follow <a href="https://www.facebook.com/CraigWellsMLO/">Craig's facebook page</a>!
+<!-- Be sure to like and follow <a href="https://www.facebook.com/CraigWellsMLO/">Craig's facebook page</a>!
 
 <p>
 Craig Wells: <br/>
 <a href="mailto:cwells@michiganfirstmortgage.com">cwells@michiganfirstmortgage.com</a>
 </p>
 
-![Michigan First Mortgage](./michigan-first.jpeg)
+![Michigan First Mortgage](./michigan-first.jpeg) -->
