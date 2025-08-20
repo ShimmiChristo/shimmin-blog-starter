@@ -24,4 +24,5 @@ Craig Wells: <br/>
 <a href="mailto:cwells@michiganfirstmortgage.com">cwells@michiganfirstmortgage.com</a>
 </p>
 
-![Michigan First Mortgage](./michigan-first.jpeg) -->
+[Michigan First Mortgage](./michigan-first.jpeg) 
+-->
