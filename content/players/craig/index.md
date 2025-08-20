@@ -11,18 +11,8 @@ team: "Blue Team"
 handicap: 18.7
 ---
 
-Craig’s been swinging the sticks consistently for five years, and while his game might still have its ups and downs, his spot in the Cup is rock solid. 
+Craig’s been swinging the sticks consistently for five years, and while his game might still have its ups and downs, his spot in the Cup is rock solid.
 
-Known as the guy everyone wants to tee it up with, Craig brings good vibes, steady play, and just enough birdie potential to keep things interesting. 
+Known as the guy everyone wants to tee it up with, Craig brings good vibes, steady play, and just enough birdie potential to keep things interesting.
 
 Off the course, he’s a mortgage loan officer—so whether it’s greens or loans, he knows how to close.
-
-<!-- Be sure to like and follow <a href="https://www.facebook.com/CraigWellsMLO/">Craig's facebook page</a>!
-
-<p>
-Craig Wells: <br/>
-<a href="mailto:cwells@michiganfirstmortgage.com">cwells@michiganfirstmortgage.com</a>
-</p>
-
-[Michigan First Mortgage](./michigan-first.jpeg) 
--->
