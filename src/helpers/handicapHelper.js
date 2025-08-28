@@ -194,17 +194,30 @@ function getPlayerHandicap(player, gameplay, handicaps, hardestHoleNine) {
     let p2PlayingHC = p2 < 0 ? Math.round(p2 / 0.8) : Math.round(p2 * 0.8)
     let p3PlayingHC = p3 < 0 ? Math.round(p3 / 0.8) : Math.round(p3 * 0.8)
     let p4PlayingHC = p4 < 0 ? Math.round(p4 / 0.8) : Math.round(p4 * 0.8)
-    let lowPlayer = Math.min(p1PlayingHC, p2PlayingHC, p3PlayingHC, p4PlayingHC)
-    let relP1HC = p1PlayingHC - lowPlayer
-    let relP2HC = p2PlayingHC - lowPlayer
-    let relP3HC = p3PlayingHC - lowPlayer
-    let relP4HC = p4PlayingHC - lowPlayer
 
-    // * divide by 2 for 9 holes
-    newHC.player1 = relP1HC / 2
-    newHC.player2 = relP2HC / 2
-    newHC.player3 = relP3HC / 2
-    newHC.player4 = relP4HC / 2
+    // * divide by 2 for 9 hole matches
+    let p1NineHoleHC = Math.round(p1PlayingHC / 2)
+    let p2NineHoleHC = Math.round(p2PlayingHC / 2)
+    let p3NineHoleHC = Math.round(p3PlayingHC / 2)
+    let p4NineHoleHC = Math.round(p4PlayingHC / 2)
+
+    // * get the lowest 9 hole HC
+    let lowPlayer = Math.min(
+      p1NineHoleHC,
+      p2NineHoleHC,
+      p3NineHoleHC,
+      p4NineHoleHC
+    )
+
+    let relP1HC = p1NineHoleHC - lowPlayer
+    let relP2HC = p2NineHoleHC - lowPlayer
+    let relP3HC = p3NineHoleHC - lowPlayer
+    let relP4HC = p4NineHoleHC - lowPlayer
+
+    newHC.player1 = relP1HC
+    newHC.player2 = relP2HC
+    newHC.player3 = relP3HC
+    newHC.player4 = relP4HC
     // *alternate shot and greensomes
   } else if (gameplay === "alternate") {
     // let p1PlayingHC = p1 < 0 ? p1 / 0.5 : p1 * 0.5
