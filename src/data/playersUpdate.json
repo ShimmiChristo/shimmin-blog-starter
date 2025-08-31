@@ -2151,11 +2151,11 @@
     "craig": {
       "name": "craig",
       "appearances": [2021, 2022, 2023, 2024],
-      "handicap": 17,
+      "handicap": 16,
       "year": {
         "_2025": {
           "id": 2025,
-          "handicap": 17,
+          "handicap": 16,
           "captain": false,
           "team": "blue",
           "scores": {
@@ -3718,11 +3718,11 @@
     "dan": {
       "name": "dan",
       "appearances": [2021, 2022, 2023, 2024],
-      "handicap": 24.0,
+      "handicap": 25.0,
       "year": {
         "_2025": {
           "id": 2025,
-          "handicap": 24.0,
+          "handicap": 25.0,
           "captain": false,
           "team": "blue",
           "scores": {
@@ -5409,11 +5409,11 @@
     "dylan": {
       "name": "dylan",
       "appearances": [2021, 2022, 2023, 2024],
-      "handicap": 2.6,
+      "handicap": 1.4,
       "year": {
         "_2025": {
           "id": 2025,
-          "handicap": 2.6,
+          "handicap": 1.4,
           "captain": false,
           "team": "blue",
           "scores": {
@@ -8044,11 +8044,11 @@
     "matt": {
       "name": "matt",
       "appearances": [2021, 2022, 2023, 2024],
-      "handicap": 6.1,
+      "handicap": 4.8,
       "year": {
         "_2025": {
           "id": 2025,
-          "handicap": 6.1,
+          "handicap": 4.8,
           "captain": false,
           "team": "green",
           "scores": {
