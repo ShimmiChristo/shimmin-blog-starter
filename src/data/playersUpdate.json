@@ -8044,11 +8044,11 @@
     "matt": {
       "name": "matt",
       "appearances": [2021, 2022, 2023, 2024],
-      "handicap": 4.8,
+      "handicap": 4.5,
       "year": {
         "_2025": {
           "id": 2025,
-          "handicap": 4.8,
+          "handicap": 4.5,
           "captain": false,
           "team": "green",
           "scores": {
