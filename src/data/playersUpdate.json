@@ -4563,11 +4563,11 @@
     "derek": {
       "name": "derek",
       "appearances": [2021, 2022, 2023, 2024],
-      "handicap": 22,
+      "handicap": 23,
       "year": {
         "_2025": {
           "id": 2025,
-          "handicap": 22,
+          "handicap": 23,
           "captain": false,
           "team": "green",
           "scores": {
@@ -6974,11 +6974,11 @@
     "gordon": {
       "name": "gordon",
       "appearances": [2022, 2024],
-      "handicap": 13.8,
+      "handicap": 11,
       "year": {
         "_2025": {
           "id": 2025,
-          "handicap": 13.8,
+          "handicap": 11,
           "captain": false,
           "team": "green",
           "scores": {
@@ -8894,11 +8894,11 @@
     "rj": {
       "name": "rj",
       "appearances": [2021, 2022, 2023, 2024],
-      "handicap": 11,
+      "handicap": 12,
       "year": {
         "_2025": {
           "id": 2025,
-          "handicap": 11,
+          "handicap": 12,
           "captain": false,
           "team": "blue",
           "scores": {

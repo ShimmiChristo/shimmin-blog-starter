@@ -251,10 +251,16 @@ function getPlayerHandicap(player, gameplay, handicaps, hardestHoleNine) {
     // newHC.player2 = getHardestNineHandicap((p2 - lowHC) / 2, hardestHoleNine)
     // newHC.player3 = getHardestNineHandicap((p3 - lowHC) / 2, hardestHoleNine)
     // newHC.player4 = getHardestNineHandicap((p4 - lowHC) / 2, hardestHoleNine)
-    newHC.player1 = (p1 - lowHC) / 2
-    newHC.player2 = (p2 - lowHC) / 2
-    newHC.player3 = (p3 - lowHC) / 2
-    newHC.player4 = (p4 - lowHC) / 2
+    let p1NineHoleHC = Math.round(p1 / 2)
+    let p2NineHoleHC = Math.round(p2 / 2)
+    let p3NineHoleHC = Math.round(p3 / 2)
+    let p4NineHoleHC = Math.round(p4 / 2)
+    let lowHC = Math.min(p1NineHoleHC, p2NineHoleHC, p3NineHoleHC, p4NineHoleHC)
+
+    newHC.player1 = p1NineHoleHC - lowHC
+    newHC.player2 = p2NineHoleHC - lowHC
+    newHC.player3 = p3NineHoleHC - lowHC
+    newHC.player4 = p4NineHoleHC - lowHC
   } else {
     // * best ball games
     let p1PlayingHC = p1 < 0 ? p1 / 0.9 : p1 * 0.9
