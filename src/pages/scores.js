@@ -269,7 +269,7 @@ const TopicPage = ({ location }) => {
       p6Tees: playerTees.p6,
       p7Tees: playerTees.p7,
       p8Tees: playerTees.p8,
-      p9Tees: playerTees.p9,
+      p9Tees: 'orange',
       p10Tees: playerTees.p10,
       p11Tees: playerTees.p11,
       p12Tees: playerTees.p12,
@@ -944,14 +944,14 @@ const TopicPage = ({ location }) => {
           matchHandicap={matchesArr[6].matchHandicap}
           gameplay={matchesArr[6].gameplay}
           matchTees={matchesArr[6].matchTees}
-          player1={p7}
-          player2={p1}
-          player3={p8}
-          player4={p2}
-          player1Tees={matchesArr[6].p7Tees}
-          player2Tees={matchesArr[6].p1Tees}
-          player3Tees={matchesArr[6].p8Tees}
-          player4Tees={matchesArr[6].p2Tees}
+          player1={p11}
+          player2={p5}
+          player3={p12}
+          player4={p6}
+          player1Tees={matchesArr[6].p11Tees}
+          player2Tees={matchesArr[6].p5Tees}
+          player3Tees={matchesArr[6].p12Tees}
+          player4Tees={matchesArr[6].p6Tees}
           player1MatchHandicap=""
           player2MatchHandicap=""
           player3MatchHandicap=""
@@ -986,14 +986,14 @@ const TopicPage = ({ location }) => {
           matchHandicap={matchesArr[6].matchHandicap}
           gameplay={matchesArr[6].gameplay}
           matchTees={matchesArr[6].matchTees}
-          player1={p11}
-          player2={p5}
-          player3={p12}
-          player4={p6}
-          player1Tees={matchesArr[6].p11Tees}
-          player2Tees={matchesArr[6].p5Tees}
-          player3Tees={matchesArr[6].p12Tees}
-          player4Tees={matchesArr[6].p6Tees}
+          player1={p7}
+          player2={p1}
+          player3={p8}
+          player4={p2}
+          player1Tees={matchesArr[6].p7Tees}
+          player2Tees={matchesArr[6].p1Tees}
+          player3Tees={matchesArr[6].p8Tees}
+          player4Tees={matchesArr[6].p2Tees}
           player1MatchHandicap=""
           player2MatchHandicap=""
           player3MatchHandicap=""
