@@ -190,10 +190,11 @@ function getPlayerHandicap(player, gameplay, handicaps, hardestHoleNine) {
     newHC.player4 = relTeam2HC
     // * bramble and two-ball-bramble
   } else if (gameplay === "bramble" || gameplay === "two-ball-bramble") {
-    let p1PlayingHC = p1 < 0 ? Math.round(p1 / 0.8) : Math.round(p1 * 0.8)
-    let p2PlayingHC = p2 < 0 ? Math.round(p2 / 0.8) : Math.round(p2 * 0.8)
-    let p3PlayingHC = p3 < 0 ? Math.round(p3 / 0.8) : Math.round(p3 * 0.8)
-    let p4PlayingHC = p4 < 0 ? Math.round(p4 / 0.8) : Math.round(p4 * 0.8)
+    // * get 9 hole HC
+    let p1PlayingHC = p1 < 0 ? p1 / 0.8 : p1 * 0.8
+    let p2PlayingHC = p2 < 0 ? p2 / 0.8 : p2 * 0.8
+    let p3PlayingHC = p3 < 0 ? p3 / 0.8 : p3 * 0.8
+    let p4PlayingHC = p4 < 0 ? p4 / 0.8 : p4 * 0.8
 
     // * divide by 2 for 9 hole matches
     let p1NineHoleHC = Math.round(p1PlayingHC / 2)
@@ -220,10 +221,6 @@ function getPlayerHandicap(player, gameplay, handicaps, hardestHoleNine) {
     newHC.player4 = relP4HC
     // *alternate shot and greensomes
   } else if (gameplay === "alternate") {
-    // let p1PlayingHC = p1 < 0 ? p1 / 0.5 : p1 * 0.5
-    // let p2PlayingHC = p2 < 0 ? p2 / 0.5 : p2 * 0.5
-    // let p3PlayingHC = p3 < 0 ? p3 / 0.5 : p3 * 0.5
-    // let p4PlayingHC = p4 < 0 ? p4 / 0.5 : p4 * 0.5
     // * get 9 hole HC
     let p1NineHoleHC = p1 / 2
     let p2NineHoleHC = p2 / 2
@@ -247,10 +244,6 @@ function getPlayerHandicap(player, gameplay, handicaps, hardestHoleNine) {
     newHC.player4 = relTeam2HC
   } else if (gameplay === "singles") {
     // * divide by 2 for 9 holes
-    // newHC.player1 = getHardestNineHandicap((p1 - lowHC) / 2, hardestHoleNine)
-    // newHC.player2 = getHardestNineHandicap((p2 - lowHC) / 2, hardestHoleNine)
-    // newHC.player3 = getHardestNineHandicap((p3 - lowHC) / 2, hardestHoleNine)
-    // newHC.player4 = getHardestNineHandicap((p4 - lowHC) / 2, hardestHoleNine)
     let p1NineHoleHC = Math.round(p1 / 2)
     let p2NineHoleHC = Math.round(p2 / 2)
     let p3NineHoleHC = Math.round(p3 / 2)
