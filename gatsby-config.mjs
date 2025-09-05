@@ -54,16 +54,16 @@ const config = {
       },
       {
         name: "History",
-        link: "/matches",
+        link: "/past-scores",
         subnav: [
           {
             name: "2024 Scores",
             link: "/scores-2024#r4b-singles",
           },
-          {
-            name: "Matches",
-            link: "/matches",
-          },
+          // {
+          //   name: "Matches",
+          //   link: "/matches",
+          // },
           {
             name: "Past Scores",
             link: "/past-scores",
@@ -86,10 +86,10 @@ const config = {
           // },
         ],
       },
-      {
-        name: "Shop",
-        link: "/shop",
-      },
+      // {
+      //   name: "Shop",
+      //   link: "/shop",
+      // },
     ],
   },
   plugins: [

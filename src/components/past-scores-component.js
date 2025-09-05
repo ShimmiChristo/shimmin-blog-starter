@@ -5,7 +5,16 @@ import { ScoreInfo } from "../hooks/get-team-score"
 import "../styles/match.css"
 import { FaChevronDown, FaChevronUp } from "react-icons/fa"
 
-const PastScoresComponent = ({ year, date, winner, location, summary }) => {
+const PastScoresComponent = ({
+  year,
+  date,
+  winner,
+  location,
+  summary,
+  score,
+  venue,
+  players,
+}) => {
   const scoreInfo = ScoreInfo()
   const eventYear = year
   const eventDate = date
@@ -55,7 +64,12 @@ const PastScoresComponent = ({ year, date, winner, location, summary }) => {
             {teamOneName} {teamOneScore} - {teamTwoName} {teamTwoScore}
           </div>
         </div>
-        <div className="row col-12 col-lg-8 offset-lg-1">{summary}</div>
+        <div className="row pb-4">
+          <div className="row col-12 col-lg-8 offset-lg-1">{summary}</div>
+          <div className="row col-12 col-lg-8 offset-lg-1">{score}</div>
+          <div className="row col-12 col-lg-8 offset-lg-1">{venue}</div>
+          <div className="row col-12 col-lg-8 offset-lg-1">{players}</div>
+        </div>
       </div>
     </>
   )
