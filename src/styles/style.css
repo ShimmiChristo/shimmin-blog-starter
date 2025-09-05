@@ -90,6 +90,9 @@
 
   --green-50: rgba(24, 69, 59, 0.5);
   --blue-50: rgba(0, 60, 130, 0.5);
+
+  --green-light: #2c7e6c;
+  --blue-light: #0054b5;
 }
 
 /* Update Bootstrap Colors */

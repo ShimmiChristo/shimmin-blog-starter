@@ -17,6 +17,7 @@ import Offcanvas from "react-bootstrap/Offcanvas"
 import styled from "styled-components"
 import { FaBars } from "react-icons/fa"
 import "../styles/navigation.css"
+import "../styles/custom.css"
 
 const HeaderContainer = styled.header`
   .navbar-toggler {
@@ -109,7 +110,7 @@ function HeaderBootstrap(location) {
             </div>
             <div className="d-flex">
               <Link to="/sponsors">
-                <button className="btn btn-outline-dark">Sponsors</button>
+                <d className="green-blue-btn">Sponsors</d>
               </Link>
             </div>
           </Nav>
@@ -156,7 +157,7 @@ function HeaderBootstrap(location) {
               </Nav>
               <div className="d-flex mt-4">
                 <Link to="/sponsors">
-                  <button className="btn btn-outline-dark">Sponsors</button>
+                  <button className="green-blue-btn">Sponsors</button>
                 </Link>
               </div>
             </Offcanvas.Body>

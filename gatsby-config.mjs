@@ -11,7 +11,7 @@ const config = {
     headline: `The BFBH Cup is a annual golf competition played at different courses throughout the United States, but mainly in the Great Lake State, the High-Five of the country, Michigan.`,
     logo: `./logo-black-circle.png`,
     author: {
-      name: `Chris on the Green Team`,
+      name: `Chris. Go Green!`,
       summary: `who lives in NYC and makes things`,
       website: `https://www.chrisshimmin.com`,
       email: `hello@chrisshimmin.com`,
