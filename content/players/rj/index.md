@@ -11,7 +11,4 @@ team: "Blue Team"
 handicap: 13
 ---
 
-
-What can be said about RJ, he's there to gamble and golf. Unfortunately he has a losing record in both. 
-
-He's hoping to make a turn around in 2024.
+Just a point machine for Blue. RJ is consistent and gets the job done when needed. He'll be a problem for Green in 2025.

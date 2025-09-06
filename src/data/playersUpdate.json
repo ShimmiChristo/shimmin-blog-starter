@@ -567,11 +567,11 @@
     "cam": {
       "name": "cam",
       "appearances": [2022, 2023],
-      "handicap": 19,
+      "handicap": 21,
       "year": {
         "_2025": {
           "id": 2025,
-          "handicap": 19,
+          "handicap": 21,
           "captain": false,
           "team": "blue",
           "scores": {

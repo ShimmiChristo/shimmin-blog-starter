@@ -12,6 +12,7 @@ function PlayerCard({
   uniqueKey,
   slug,
   title,
+  name,
   team,
   featuredImg,
   captain,
@@ -111,18 +112,22 @@ function PlayerCard({
               alt={title}
             />
           </ImgContainer>
-          <Header>
-            <h3 className="h5">
-              {/* <ArticleLink to={slug} itemProp="url"> */}
+          {/* <Header>
+            <div className="text-capitalize">
               <span itemProp="headline">{title}</span>
-              {/* </ArticleLink> */}
-            </h3>
-          </Header>
+            </div>
+          </Header> */}
           <Section className={`${teamColor} text-white`}>
-            <small></small>
+            <div className="text-capitalize">
+              <span itemProp="headline">
+                {name}
+                {captain === true ? "*" : ""}
+              </span>
+            </div>
+            {/* <small></small>
             <small>
               {team} {captain === true ? "*captain" : ""}
-            </small>
+            </small> */}
             {/* <p
             dangerouslySetInnerHTML={{
               __html: description || excerpt,

@@ -2,7 +2,7 @@
 active: true
 index: 02
 name: chris
-nickname: "Shim, Shimmin"
+nickname: "Chris"
 description: "The developer"
 category: players
 featuredImg: ./profile-pic.png
@@ -11,8 +11,8 @@ team: "Green Team"
 handicap: 13.3
 ---
 
-Still looking to get his first win against Dylan and Evan.
+Chris finally beat Dylan in 2024 and played a major roll in bringing the cup to Green.
 
-In 2024, Chris is looking to not lose his camera and bring home the cup.
+Chris is still looking to get his first win against Evan.
 
 Creator and Developer of BFBHCup.com.

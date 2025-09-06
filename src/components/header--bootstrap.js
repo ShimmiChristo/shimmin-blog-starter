@@ -110,7 +110,7 @@ function HeaderBootstrap(location) {
             </div>
             <div className="d-flex">
               <Link to="/sponsors">
-                <d className="green-blue-btn">Sponsors</d>
+                <div className="green-blue-btn">Sponsors</div>
               </Link>
             </div>
           </Nav>

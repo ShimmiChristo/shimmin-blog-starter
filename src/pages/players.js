@@ -117,6 +117,7 @@ const PlayersIndex = ({ data, location }) => {
               Blue Team
             </div>
           </TeamFilter>
+
           <OlContainer>
             {activePlayers.map((post, i) => {
               return (
@@ -124,6 +125,7 @@ const PlayersIndex = ({ data, location }) => {
                   key={uuid + i}
                   slug={post.fields.slug}
                   title={post?.frontmatter?.name || post?.fields?.slug}
+                  name={post?.frontmatter?.nickname}
                   team={post.frontmatter.team}
                   featuredImg={post.frontmatter.featuredImg}
                   captain={post.frontmatter.captain}
@@ -133,6 +135,9 @@ const PlayersIndex = ({ data, location }) => {
               )
             })}
           </OlContainer>
+          <div>
+            <em>*team captain</em>
+          </div>
         </TeamFilterContainer>
       </Layout>
     )

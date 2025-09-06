@@ -2,7 +2,7 @@
 active: true
 index: 10
 name: cam
-nickname: ""
+nickname: "Cam"
 description: ""
 category: players
 featuredImg: ./profile-pic.png
@@ -11,6 +11,6 @@ team: "Blue Team"
 handicap: 25
 ---
 
-A new member in 2022, Cam is back in 2023 as a new father and a lighter man. He's looking to improve after only winning 2 matches in 2022. An early favorite for MIP.
+The last match Cam played was in 2023 and it was a big one. He sealed the cup clinching point on the last hole of the Cup. Cam took a year off to help with the family. He's back and ready to keep the ball rolling in 2025.
 
-Cam likes U of M sports and skiing.
+Cam still likes U of M sports and skiing.

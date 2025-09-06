@@ -2,7 +2,7 @@
 published: true
 index: 04
 name: derek
-nickname: "D-Mo, Tube, the OG, Old Reliable"
+nickname: "Derek"
 description: "Description"
 category: players
 featuredImg: ./profile-pic.png

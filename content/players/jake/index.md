@@ -2,7 +2,7 @@
 active: false
 index: 04
 name: jake
-nickname: "the fill-in, silent assassin"
+nickname: "Jake"
 description: ""
 category: players
 featuredImg: ./profile-pic.png

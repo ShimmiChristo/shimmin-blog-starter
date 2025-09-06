@@ -15,7 +15,6 @@ const PlayerPostTemplate = ({ data, location, children }) => {
   const post = data.mdx
   const siteTitle = data.site.siteMetadata?.name || `Name`
   const playerName = data.mdx.frontmatter.name
-  const playerNickname = data.mdx.frontmatter.nickname
   const playerData = data.playersUpdateJson[`${playerName}`]
   const playerHandicap = data.playersUpdateJson[`${playerName}`].handicap
   const appearances = data.playersUpdateJson[`${playerName}`].appearances
@@ -124,7 +123,7 @@ const PlayerPostTemplate = ({ data, location, children }) => {
             <div>{post.frontmatter.team}</div>
           </HeaderContainer>
           <div className="info">
-            <b>AKA:</b> {playerNickname} <br />
+            {/* <b>AKA:</b> {playerNickname} <br /> */}
             <b>Handicap:</b> {playerHandicap} <br />
             <b>Appearances:</b> {appearances?.length}
           </div>

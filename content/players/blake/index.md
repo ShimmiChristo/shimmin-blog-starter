@@ -2,7 +2,7 @@
 active: false
 index: 01
 name: blake
-nickname: ""
+nickname: "Blake"
 description: ""
 category: players
 featuredImg: ./profile-pic.png

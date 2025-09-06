@@ -2,7 +2,7 @@
 active: true
 index: 12
 name: dan
-nickname: "One Heel"
+nickname: "Dan"
 description: "description"
 category: players
 featuredImg: ./profile-pic.png
@@ -11,4 +11,6 @@ team: "Blue Team"
 handicap: 35
 ---
 
-His clubs were stolen in 2024. He has a new set and a 33 handicap. 
+In 2024, Dan was a 33 handicap, went 1-1-6. I'd say it's only up from there.
+
+In 2025, Dan's handicap is down to a 25. We'll wait and see if the lower handicap attribtues to more points.
