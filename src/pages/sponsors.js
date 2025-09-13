@@ -6,8 +6,9 @@ import { useSiteMetadata } from "../hooks/use-site-metadata"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import LandingPageHeader from "../components/landing-page-header"
-import SponsorCraig from "../components/sponsor--craig"
-import SponsorHWS from "../components/sponsor--hws"
+import SponsorCraig from "../components/sponsors/sponsor--craig"
+import SponsorCurtis from "../components/sponsors/sponsor--curtis"
+import SponsorHWS from "../components/sponsors/sponsor--hws"
 
 const TopicPage = ({ data, location }) => {
   const { title } = useSiteMetadata()
@@ -33,6 +34,7 @@ const TopicPage = ({ data, location }) => {
 
       <div className="container">
         <div className="row col-12">
+          <SponsorCurtis />
           <SponsorCraig />
           <SponsorHWS />
         </div>

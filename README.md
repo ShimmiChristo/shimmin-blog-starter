@@ -1,7 +1,7 @@
 <!-- AUTO-GENERATED-CONTENT:START (STARTER) -->
 <p align="center">
   <a href="https://bfbhcup.com/">
-    <img alt="BFBH Cup Logo" src="https://bfbhcup.com/static/4c0795ea4f5ac26f519f5c86562c68c5/97d0b/logo-black.webp" width="150" />
+    <img alt="BFBH Cup" src="https://bfbhcup.com/static/4c0795ea4f5ac26f519f5c86562c68c5/97d0b/logo-black.webp" width="150" />
   </a>
 </p>
 <h1 align="center">

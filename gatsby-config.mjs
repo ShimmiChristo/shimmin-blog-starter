@@ -6,7 +6,7 @@ const __dirname = dirname(__filename)
 const config = {
   siteMetadata: {
     title: `BFBH Cup`,
-    description: `Boys From Back Home Cup`,
+    description: `BFBH Cup | Boys From Back Home Cup. A annual golf ryder cup style competition played between a group of friends and family from the Great Lake State, Michigan.`,
     siteUrl: `https://bfbhcup.com/`,
     headline: `The BFBH Cup is a annual golf competition played at different courses throughout the United States, but mainly in the Great Lake State, the High-Five of the country, Michigan.`,
     logo: `./logo-black-circle.png`,
@@ -137,8 +137,8 @@ const config = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `BFBH Cup logo`,
-        short_name: `BFBH Cup logo`,
+        name: `BFBH Cup`,
+        short_name: `BFBH Cup`,
         start_url: `/`,
         background_color: `#ffffff`,
         theme_color: `#ffffff`,

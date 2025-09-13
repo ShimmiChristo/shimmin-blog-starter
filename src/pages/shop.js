@@ -6,7 +6,7 @@ import { useSiteMetadata } from "../hooks/use-site-metadata"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import LandingPageHeader from "../components/landing-page-header"
-import SponsorCraig from "../components/sponsor--craig"
+// import SponsorCraig from "../components/sponsors/sponsor--craig"
 import SaleHats from "../components/sale--hats"
 
 const TopicPage = ({ data, location }) => {
