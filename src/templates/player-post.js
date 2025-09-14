@@ -274,6 +274,9 @@ export const pageQuery = graphql`
       blake {
         ...BlakeFragment
       }
+      stephen {
+        ...StephenFragment
+      }
     }
   }
 `
