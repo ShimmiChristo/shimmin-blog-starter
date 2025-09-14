@@ -8,18 +8,25 @@ const filePath = path.join(desktopPath, "new_file.js")
 // const content = 'Hello, this is the content of the new file.';
 
 /* 
-- iterate through the rounds
-- for each round, iterate through the players
-- for each player, find the best pair that has played the least number of times
-- increment the pair count for both players
-- add the pair to the round
-- return the rounds
+* - iterate through the rounds
+* - for each round, iterate through the players
+* - for each player, find the best pair that has played the least number of times
+* - increment the pair count for both players
+* - add the pair to the round
+* - return the rounds
 // - for each round, shuffle the players
 // - for each player, find the best pair that has played the least number of times
 // - increment the pair count for both players
 // - add the pair to the round
 // - return the rounds
+*/
 
+// ! important
+/* 
+  variables to adjust
+  maxOpponentVal
+  maxPartnerVal
+  maxOpponentMatches
 */
 
 function generateTeamRoundsMain() {
@@ -29,13 +36,6 @@ function generateTeamRoundsMain() {
     teamA: teamA,
     teamB: teamB,
   }
-
-  // const matchesPerRound = 3
-  // const matchExample = [
-  //   { teamA: ["1", "2"], teamB: ["7", "8"] },
-  //   { teamA: ["3", "4"], teamB: ["9", "10"] },
-  //   { teamA: ["5", "6"], teamB: ["11", "12"] },
-  // ]
 
   const roundsInit = [
     {
@@ -334,6 +334,7 @@ function generateTeamRoundsMain() {
     let player1
     let player2
     let exitsLoops = false
+    const maxOpponentMatches = 4
 
     for (let i = iterate; i < remainingPlayers.length + iterate; i++) {
       // try to get a player that has played the least number of times
@@ -402,7 +403,7 @@ function generateTeamRoundsMain() {
               player1
             )
 
-            if (opponentScorePlayer1 > 4) {
+            if (opponentScorePlayer1 > maxOpponentMatches) {
               passOppoentCheck = false
               continue
             }
@@ -416,7 +417,7 @@ function generateTeamRoundsMain() {
               player2
             )
 
-            if (opponentScorePlayer2 > 4) {
+            if (opponentScorePlayer2 > maxOpponentMatches) {
               passOppoentCheck = false
               continue
             }
@@ -716,8 +717,11 @@ function generateTeamRoundsMain() {
     //   // console.log("rounds - ", rounds)
     //   return false
     // }
+
+    // * max variables
     const maxPartnerVal = roundsInit.length < 3 ? 3 : 5
     const maxOpponentVal = roundsInit.length < 3 ? 4 : 5
+
     if (
       maxNumberInArray(Object.values(partnerMaps.teamA)) > maxPartnerVal ||
       maxNumberInArray(Object.values(partnerMaps.teamB)) > maxPartnerVal
