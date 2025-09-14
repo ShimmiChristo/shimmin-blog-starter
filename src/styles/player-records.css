@@ -208,12 +208,12 @@ body {
   height: 1.5rem;
 }
 .circle--2 {
-  width: 2rem;
-  height: 2rem;
+  width: 1.7rem;
+  height: 1.7rem;
 }
 .circle--3 {
-  width: 2.5rem;
-  height: 2.5rem;
+  width: 1.9rem;
+  height: 1.9rem;
 }
 
 @media screen and (max-width: 767px) {
