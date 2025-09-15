@@ -8,7 +8,7 @@ category: players
 featuredImg: ./profile-pic.png
 thumbnail: ./thumbnail.png
 team: "Green Team"
-handicap: 15
+handicap: 12
 ---
 
 The newest member of the BFBH Cup. 

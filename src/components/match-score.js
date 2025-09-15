@@ -336,6 +336,8 @@ function MatchScore({ year, lastYearWinner, location }) {
 
 MatchScore.propTypes = {
   year: PropTypes.string,
+  lastYearWinner: PropTypes.string,
+  location: PropTypes.object,
 }
 
 export default MatchScore
