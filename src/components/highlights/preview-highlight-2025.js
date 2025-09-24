@@ -5,8 +5,8 @@ import { v1 as uuidv1 } from "uuid"
 // import styled from "styled-components"
 // import { PlayerInfoUpdate } from "../../hooks/get-player-info-UPDATE"
 
-function Highlight2024() {
-  const greenTeam = ["matt", "chris", "gordon", "derek", "travis", "curtis"]
+function Highlight2025() {
+  const greenTeam = ["matt", "chris", "gordon", "derek", "stephen", "curtis"]
   const blueTeam = ["dylan", "rj", "craig", "cam", "evan", "dan"]
 
   return (
@@ -140,4 +140,4 @@ function Highlight2024() {
   )
 }
 
-export default Highlight2024
+export default Highlight2025
