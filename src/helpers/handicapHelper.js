@@ -191,10 +191,10 @@ function getPlayerHandicap(player, gameplay, handicaps, hardestHoleNine) {
     // * bramble and two-ball-bramble
   } else if (gameplay === "bramble" || gameplay === "two-ball-bramble") {
     // * get 9 hole HC
-    let p1PlayingHC = p1 < 0 ? p1 / 0.8 : p1 * 0.8
-    let p2PlayingHC = p2 < 0 ? p2 / 0.8 : p2 * 0.8
-    let p3PlayingHC = p3 < 0 ? p3 / 0.8 : p3 * 0.8
-    let p4PlayingHC = p4 < 0 ? p4 / 0.8 : p4 * 0.8
+    let p1PlayingHC = p1 < 0 ? p1 / 0.75 : p1 * 0.75
+    let p2PlayingHC = p2 < 0 ? p2 / 0.75 : p2 * 0.75
+    let p3PlayingHC = p3 < 0 ? p3 / 0.75 : p3 * 0.75
+    let p4PlayingHC = p4 < 0 ? p4 / 0.75 : p4 * 0.75
 
     // * divide by 2 for 9 hole matches
     let p1NineHoleHC = Math.round(p1PlayingHC / 2)
