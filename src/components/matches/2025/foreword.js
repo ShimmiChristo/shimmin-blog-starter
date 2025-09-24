@@ -2,20 +2,20 @@ import React from "react"
 import { Link } from "gatsby"
 // import { StaticImage } from "gatsby-plugin-image"
 // import styled from "styled-components"
-import {
-  blake,
-  chris,
-  craig,
-  curtis,
-  dan,
-  derek,
-  dylan,
-  evan,
-  gordon,
-  jake,
-  matt,
-  rj,
-} from "../../../helpers/playerLinks"
+// import {
+//   blake,
+//   chris,
+//   craig,
+//   curtis,
+//   dan,
+//   derek,
+//   dylan,
+//   evan,
+//   gordon,
+//   jake,
+//   matt,
+//   rj,
+// } from "../../../helpers/playerLinks"
 
 function Foreword2025() {
   return (
@@ -23,8 +23,8 @@ function Foreword2025() {
       <h3 className="h4 mb-4">2025 Cup Foreword</h3>
       <p>
         The BFBH Cup is entering the 5th year of a tradition. The Boys are
-        bringing it back to Boyne and looking to get the original crew together
-        for the first time ever.
+        bringing it back to Boyne and looking forward to playing the new par 3
+        course, Doon Brae!
       </p>
       <h3 className="h4">Venue</h3>
       <p>
@@ -54,8 +54,11 @@ function Foreword2025() {
 
       <h3 className="h4">Predictions</h3>
       <p>
-        The cup will come down to the singles matches, <Link href="https://www.boynegolf.com/eleven-courses/doon-brae-short-course">Doon Brae</Link>, the par 3 course, will be
-        awesome and someone will get a hole-in-one.{" "}
+        The cup will come down to the singles matches,{" "}
+        <Link href="https://www.boynegolf.com/eleven-courses/doon-brae-short-course">
+          Doon Brae
+        </Link>
+        , the par 3 course, will be awesome and someone will get a hole-in-one.{" "}
       </p>
 
       <h3 className="h4">Scoring</h3>
