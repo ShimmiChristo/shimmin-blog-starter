@@ -55,7 +55,7 @@ const TopicPage = ({ location }) => {
   const p8 = "gordon"
   const p9 = "chris"
   const p10 = "derek"
-  const p11 = "blake"
+  const p11 = "stephen"
   const p12 = "curtis"
 
   const playerTees = {
@@ -69,7 +69,7 @@ const TopicPage = ({ location }) => {
     p8: "purple",
     p9: "purple",
     p10: "orange",
-    p11: "orange",
+    p11: "purple",
     p12: "orange",
   }
 
@@ -269,7 +269,7 @@ const TopicPage = ({ location }) => {
       p6Tees: playerTees.p6,
       p7Tees: playerTees.p7,
       p8Tees: playerTees.p8,
-      p9Tees: 'orange',
+      p9Tees: playerTees.p9,
       p10Tees: playerTees.p10,
       p11Tees: playerTees.p11,
       p12Tees: playerTees.p12,
