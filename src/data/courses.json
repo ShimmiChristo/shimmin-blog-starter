@@ -4726,62 +4726,42 @@
           "tees": {
             "purple": {
               "out": {
-                "yardage": 3049,
+                "yardage": 2961,
                 "par": 35,
-                "index": 35.1,
-                "slope": 133.0
+                "index": 34.6,
+                "slope": 129.0
               },
               "in": {
-                "yardage": 3347,
+                "yardage": 3276,
                 "par": 36,
                 "index": 36.3,
-                "slope": 136.0
+                "slope": 138.0
               },
               "total": {
-                "yardage": 6396,
+                "yardage": 6237,
                 "par": 71,
-                "index": 71.4,
-                "slope": 135.0
+                "index": 70.9,
+                "slope": 134.0
               }
             },
             "orange": {
               "out": {
-                "yardage": 2970,
+                "yardage": 2858,
                 "par": 35,
-                "index": 34.7,
-                "slope": 131.0
+                "index": 34.0,
+                "slope": 127.0
               },
               "in": {
-                "yardage": 3164,
-                "par": 36,
-                "index": 35.5,
-                "slope": 135.0
-              },
-              "total": {
-                "yardage": 6134,
-                "par": 71,
-                "index": 70.2,
-                "slope": 133.0
-              }
-            },
-            "blue": {
-              "out": {
-                "yardage": 2865,
-                "par": 35,
-                "index": 34.3,
-                "slope": 130.0
-              },
-              "in": {
-                "yardage": 3113,
+                "yardage": 3136,
                 "par": 36,
                 "index": 35.3,
                 "slope": 133.0
               },
               "total": {
-                "yardage": 5978,
+                "yardage": 5994,
                 "par": 71,
-                "index": 69.6,
-                "slope": 132.0
+                "index": 69.3,
+                "slope": 130.0
               }
             }
           }
