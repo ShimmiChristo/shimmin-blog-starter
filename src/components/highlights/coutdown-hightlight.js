@@ -38,9 +38,9 @@ function HighlightCountdown({ startTime, location, courseUrl }) {
           at{" "}
           <span>
             {courseUrl ? (
-              <Link to={courseUrl}>
+              <a href={courseUrl} target="_blank" rel="noreferrer">
                 <em>{location}</em>
-              </Link>
+              </a>
             ) : (
               <em>{location}</em>
             )}

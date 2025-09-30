@@ -567,40 +567,40 @@
     "cam": {
       "name": "cam",
       "appearances": [2022, 2023],
-      "handicap": 21,
+      "handicap": 27,
       "year": {
         "_2025": {
           "id": 2025,
-          "handicap": 21,
+          "handicap": 27,
           "captain": false,
           "team": "blue",
           "scores": {
             "bayHarborPreserveLinks": {
               "course": "Bay Harbor Preserve Links",
-              "front": [99, 99, 99, 99, 99, 99, 99, 99, 99],
+              "front": [8, 6, 5, 7, 4, 6, 8, 6, 4],
               "frontHandicap": 999,
-              "back": [99, 99, 99, 99, 99, 99, 99, 99, 99],
+              "back": [6, 6, 7, 6, 8, 8, 10, 5, 8],
               "backHandicap": 999
             },
             "crookedTree": {
               "course": "Crooked Tree Golf Club",
-              "front": [99, 99, 99, 99, 99, 99, 99, 99, 99],
+              "front": [6, 7, 6, 10, 5, 99, 99, 99, 99],
               "frontHandicap": 999,
-              "back": [99, 99, 99, 99, 99, 99, 99, 99, 99],
+              "back": [5, 3, 4, 5, 4, 5, 4, 6, 4],
               "backHandicap": 999
             },
             "boyneHighlandsHeather": {
               "course": "The Heather at Boyne Highlands",
-              "front": [99, 99, 99, 99, 99, 99, 99, 99, 99],
+              "front": [7, 5, 7, 3, 7, 5, 4, 6, 6],
               "frontHandicap": 999,
-              "back": [99, 99, 99, 99, 99, 99, 99, 99, 99],
+              "back": [5, 5, 4, 4, 6, 5, 4, 5, 6],
               "backHandicap": 999
             },
             "boyneHighlandsArthurHills": {
               "course": "Arthur Hills at Boyne Highlands",
-              "front": [99, 99, 99, 99, 99, 99, 99, 99, 99],
+              "front": [5, 5, 7, 4, 5, 7, 4, 5, 99],
               "frontHandicap": 999,
-              "back": [99, 99, 99, 99, 99, 99, 99, 99, 99],
+              "back": [5, 8, 7, 7, 3, 6, 3, 99, 99],
               "backHandicap": 999
             }
           },
@@ -1303,30 +1303,30 @@
           "scores": {
             "bayHarborPreserveLinks": {
               "course": "Bay Harbor Preserve Links",
-              "front": [99, 99, 99, 99, 99, 99, 99, 99, 99],
+              "front": [6, 6, 5, 6, 4, 6, 4, 6, 4],
               "frontHandicap": 999,
-              "back": [99, 99, 99, 99, 99, 99, 99, 99, 99],
+              "back": [5, 4, 4, 4, 4, 6, 6, 4, 4],
               "backHandicap": 999
             },
             "crookedTree": {
               "course": "Crooked Tree Golf Club",
-              "front": [99, 99, 99, 99, 99, 99, 99, 99, 99],
+              "front": [4, 6, 5, 5, 3, 99, 99, 99, 99],
               "frontHandicap": 999,
-              "back": [99, 99, 99, 99, 99, 99, 99, 99, 99],
+              "back": [5, 4, 3, 6, 3, 3, 4, 5, 5],
               "backHandicap": 999
             },
             "boyneHighlandsHeather": {
               "course": "The Heather at Boyne Highlands",
-              "front": [99, 99, 99, 99, 99, 99, 99, 99, 99],
+              "front": [6, 5, 4, 4, 6, 6, 3, 5, 5],
               "frontHandicap": 999,
-              "back": [99, 99, 99, 99, 99, 99, 99, 99, 99],
+              "back": [5, 5, 3, 5, 4, 7, 4, 6, 6],
               "backHandicap": 999
             },
             "boyneHighlandsArthurHills": {
               "course": "Arthur Hills at Boyne Highlands",
-              "front": [99, 99, 99, 99, 99, 99, 99, 99, 99],
+              "front": [4, 5, 7, 5, 4, 6, 3, 5, 99],
               "frontHandicap": 999,
-              "back": [99, 99, 99, 99, 99, 99, 99, 99, 99],
+              "back": [7, 7, 5, 6, 5, 4, 6, 4, 5],
               "backHandicap": 999
             }
           },
@@ -2161,30 +2161,30 @@
           "scores": {
             "bayHarborPreserveLinks": {
               "course": "Bay Harbor Preserve Links",
-              "front": [99, 99, 99, 99, 99, 99, 99, 99, 99],
+              "front": [7, 7, 4, 6, 6, 7, 5, 6, 4],
               "frontHandicap": 999,
-              "back": [99, 99, 99, 99, 99, 99, 99, 99, 99],
+              "back": [7, 4, 3, 6, 7, 5, 6, 4],
               "backHandicap": 999
             },
             "crookedTree": {
               "course": "Crooked Tree Golf Club",
-              "front": [99, 99, 99, 99, 99, 99, 99, 99, 99],
+              "front": [5, 4, 6, 5, 5, 6, 6, 6, 5],
               "frontHandicap": 999,
-              "back": [99, 99, 99, 99, 99, 99, 99, 99, 99],
+              "back": [7, 4, 4, 6, 4, 4, 4, 4, 4],
               "backHandicap": 999
             },
             "boyneHighlandsHeather": {
               "course": "The Heather at Boyne Highlands",
-              "front": [99, 99, 99, 99, 99, 99, 99, 99, 99],
+              "front": [5, 7, 7, 6, 7, 4, 4, 5, 6],
               "frontHandicap": 999,
-              "back": [99, 99, 99, 99, 99, 99, 99, 99, 99],
+              "back": [99, 9, 4, 6, 5, 6, 3, 5, 99],
               "backHandicap": 999
             },
             "boyneHighlandsArthurHills": {
               "course": "Arthur Hills at Boyne Highlands",
-              "front": [99, 99, 99, 99, 99, 99, 99, 99, 99],
+              "front": [5, 5, 7, 4, 5, 7, 4, 5, 99],
               "frontHandicap": 999,
-              "back": [99, 99, 99, 99, 99, 99, 99, 99, 99],
+              "back": [8, 7, 4, 6, 4, 6, 3, 4, 5],
               "backHandicap": 999
             }
           },
@@ -3006,30 +3006,30 @@
           "scores": {
             "bayHarborPreserveLinks": {
               "course": "Bay Harbor Preserve Links",
-              "front": [99, 99, 99, 99, 99, 99, 99, 99, 99],
+              "front": [5, 7, 6, 5, 5, 7, 7, 6, 4],
               "frontHandicap": 999,
-              "back": [99, 99, 99, 99, 99, 99, 99, 99, 99],
+              "back": [5, 7, 8, 5, 6, 6, 8, 4, 8],
               "backHandicap": 999
             },
             "crookedTree": {
               "course": "Crooked Tree Golf Club",
-              "front": [99, 99, 99, 99, 99, 99, 99, 99, 99],
+              "front": [4, 6, 5, 5, 3, 99, 99, 99, 99],
               "frontHandicap": 999,
-              "back": [99, 99, 99, 99, 99, 99, 99, 99, 99],
+              "back": [5, 4, 3, 4, 6, 3, 4, 4, 4],
               "backHandicap": 999
             },
             "boyneHighlandsHeather": {
               "course": "The Heather at Boyne Highlands",
-              "front": [99, 99, 99, 99, 99, 99, 99, 99, 99],
+              "front": [5, 6, 6, 5, 8, 3, 6, 7, 8],
               "frontHandicap": 999,
-              "back": [99, 99, 99, 99, 99, 99, 99, 99, 99],
+              "back": [7, 6, 3, 7, 7, 8, 4, 5, 99],
               "backHandicap": 999
             },
             "boyneHighlandsArthurHills": {
               "course": "Arthur Hills at Boyne Highlands",
-              "front": [99, 99, 99, 99, 99, 99, 99, 99, 99],
+              "front": [5, 4, 6, 4, 7, 7, 4, 5, 5],
               "frontHandicap": 999,
-              "back": [99, 99, 99, 99, 99, 99, 99, 99, 99],
+              "back": [8, 8, 8, 6, 8, 7, 4, 6, 7],
               "backHandicap": 999
             }
           },
@@ -3728,30 +3728,30 @@
           "scores": {
             "bayHarborPreserveLinks": {
               "course": "Bay Harbor Preserve Links",
-              "front": [99, 99, 99, 99, 99, 99, 99, 99, 99],
+              "front": [7, 7, 4, 9, 5, 8, 7, 6, 6],
               "frontHandicap": 999,
-              "back": [99, 99, 99, 99, 99, 99, 99, 99, 99],
+              "back": [5, 5, 3, 3, 6, 6, 8, 4, 6],
               "backHandicap": 999
             },
             "crookedTree": {
               "course": "Crooked Tree Golf Club",
-              "front": [99, 99, 99, 99, 99, 99, 99, 99, 99],
+              "front": [5, 4, 6, 5, 5, 6, 6, 6, 5],
               "frontHandicap": 999,
-              "back": [99, 99, 99, 99, 99, 99, 99, 99, 99],
+              "back": [4, 3, 3, 5, 5, 4, 4, 5, 3],
               "backHandicap": 999
             },
             "boyneHighlandsHeather": {
               "course": "The Heather at Boyne Highlands",
-              "front": [99, 99, 99, 99, 99, 99, 99, 99, 99],
+              "front": [6, 7, 7, 3, 7, 3, 4, 6, 6],
               "frontHandicap": 999,
-              "back": [99, 99, 99, 99, 99, 99, 99, 99, 99],
+              "back": [8, 4, 3, 6, 5, 6, 3, 6, 6],
               "backHandicap": 999
             },
             "boyneHighlandsArthurHills": {
               "course": "Arthur Hills at Boyne Highlands",
-              "front": [99, 99, 99, 99, 99, 99, 99, 99, 99],
+              "front": [5, 5, 7, 8, 4, 6, 4, 5, 4],
               "frontHandicap": 999,
-              "back": [99, 99, 99, 99, 99, 99, 99, 99, 99],
+              "back": [6, 6, 6, 6, 5, 4, 5, 5, 7],
               "backHandicap": 999
             }
           },
@@ -4573,30 +4573,30 @@
           "scores": {
             "bayHarborPreserveLinks": {
               "course": "Bay Harbor Preserve Links",
-              "front": [99, 99, 99, 99, 99, 99, 99, 99, 99],
+              "front": [5, 5, 7, 7, 6, 7, 6, 6, 4],
               "frontHandicap": 999,
-              "back": [99, 99, 99, 99, 99, 99, 99, 99, 99],
+              "back": [6, 6, 6, 5, 6, 4, 7, 4, 5],
               "backHandicap": 999
             },
             "crookedTree": {
               "course": "Crooked Tree Golf Club",
-              "front": [99, 99, 99, 99, 99, 99, 99, 99, 99],
+              "front": [4, 4, 6, 5, 6, 6, 5, 3, 6],
               "frontHandicap": 999,
-              "back": [99, 99, 99, 99, 99, 99, 99, 99, 99],
+              "back": [4, 3, 4, 5, 4, 4, 4, 5, 4],
               "backHandicap": 999
             },
             "boyneHighlandsHeather": {
               "course": "The Heather at Boyne Highlands",
-              "front": [99, 99, 99, 99, 99, 99, 99, 99, 99],
+              "front": [5, 6, 6, 5, 6, 3, 5, 7, 6],
               "frontHandicap": 999,
-              "back": [99, 99, 99, 99, 99, 99, 99, 99, 99],
+              "back": [5, 6, 3, 8, 7, 7, 3, 5, 99],
               "backHandicap": 999
             },
             "boyneHighlandsArthurHills": {
               "course": "Arthur Hills at Boyne Highlands",
-              "front": [99, 99, 99, 99, 99, 99, 99, 99, 99],
+              "front": [4, 5, 7, 5, 4, 6, 3, 5, 99],
               "frontHandicap": 999,
-              "back": [99, 99, 99, 99, 99, 99, 99, 99, 99],
+              "back": [4, 6, 5, 6, 4, 4, 5, 99, 99],
               "backHandicap": 999
             }
           },
@@ -5419,30 +5419,30 @@
           "scores": {
             "bayHarborPreserveLinks": {
               "course": "Bay Harbor Preserve Links",
-              "front": [99, 99, 99, 99, 99, 99, 99, 99, 99],
+              "front": [3, 4, 4, 6, 4, 6, 4, 3, 4],
               "frontHandicap": 999,
-              "back": [99, 99, 99, 99, 99, 99, 99, 99, 99],
+              "back": [5, 4, 6, 2, 5, 4, 6, 4, 5],
               "backHandicap": 999
             },
             "crookedTree": {
               "course": "Crooked Tree Golf Club",
-              "front": [99, 99, 99, 99, 99, 99, 99, 99, 99],
+              "front": [5, 3, 4, 5, 4, 7, 6, 3, 5],
               "frontHandicap": 999,
-              "back": [99, 99, 99, 99, 99, 99, 99, 99, 99],
+              "back": [5, 3, 4, 5, 4, 5, 4, 6, 4],
               "backHandicap": 999
             },
             "boyneHighlandsHeather": {
               "course": "The Heather at Boyne Highlands",
-              "front": [99, 99, 99, 99, 99, 99, 99, 99, 99],
+              "front": [4, 4, 5, 3, 4, 5, 3, 4, 5],
               "frontHandicap": 999,
-              "back": [99, 99, 99, 99, 99, 99, 99, 99, 99],
+              "back": [4, 4, 3, 5, 5, 6, 3, 4, 99],
               "backHandicap": 999
             },
             "boyneHighlandsArthurHills": {
               "course": "Arthur Hills at Boyne Highlands",
-              "front": [99, 99, 99, 99, 99, 99, 99, 99, 99],
+              "front": [4, 4, 5, 5, 4, 5, 3, 4, 4],
               "frontHandicap": 999,
-              "back": [99, 99, 99, 99, 99, 99, 99, 99, 99],
+              "back": [5, 5, 5, 5, 3, 5, 3, 4, 5],
               "backHandicap": 999
             }
           },
@@ -6264,30 +6264,30 @@
           "scores": {
             "bayHarborPreserveLinks": {
               "course": "Bay Harbor Preserve Links",
-              "front": [99, 99, 99, 99, 99, 99, 99, 99, 99],
+              "front": [7, 8, 5, 7, 6, 10, 7, 4, 5],
               "frontHandicap": 999,
-              "back": [99, 99, 99, 99, 99, 99, 99, 99, 99],
+              "back": [6, 5, 7, 3, 6, 10, 8, 4, 9],
               "backHandicap": 999
             },
             "crookedTree": {
               "course": "Crooked Tree Golf Club",
-              "front": [99, 99, 99, 99, 99, 99, 99, 99, 99],
+              "front": [5, 3, 4, 5, 4, 7, 6, 3, 5],
               "frontHandicap": 999,
-              "back": [99, 99, 99, 99, 99, 99, 99, 99, 99],
+              "back": [7, 4, 4, 6, 4, 4, 4, 4, 4],
               "backHandicap": 999
             },
             "boyneHighlandsHeather": {
               "course": "The Heather at Boyne Highlands",
-              "front": [99, 99, 99, 99, 99, 99, 99, 99, 99],
+              "front": [5, 6, 7, 6, 8, 3, 5, 6, 7],
               "frontHandicap": 999,
-              "back": [99, 99, 99, 99, 99, 99, 99, 99, 99],
+              "back": [8, 7, 4, 9, 5, 6, 4, 7, 99],
               "backHandicap": 999
             },
             "boyneHighlandsArthurHills": {
               "course": "Arthur Hills at Boyne Highlands",
-              "front": [99, 99, 99, 99, 99, 99, 99, 99, 99],
+              "front": [5, 5, 7, 8, 4, 6, 4, 5, 4],
               "frontHandicap": 999,
-              "back": [99, 99, 99, 99, 99, 99, 99, 99, 99],
+              "back": [6, 9, 6, 6, 5, 8, 5, 7, 10],
               "backHandicap": 999
             }
           },
@@ -6984,30 +6984,30 @@
           "scores": {
             "bayHarborPreserveLinks": {
               "course": "Bay Harbor Preserve Links",
-              "front": [99, 99, 99, 99, 99, 99, 99, 99, 99],
+              "front": [4, 4, 4, 7, 5, 5, 4, 6, 5],
               "frontHandicap": 999,
-              "back": [99, 99, 99, 99, 99, 99, 99, 99, 99],
+              "back": [4, 4, 5, 3, 4, 9, 6, 5, 6],
               "backHandicap": 999
             },
             "crookedTree": {
               "course": "Crooked Tree Golf Club",
-              "front": [99, 99, 99, 99, 99, 99, 99, 99, 99],
+              "front": [4, 4, 6, 5, 6, 6, 5, 3, 6],
               "frontHandicap": 999,
-              "back": [99, 99, 99, 99, 99, 99, 99, 99, 99],
+              "back": [5, 4, 3, 4, 6, 3, 4, 4, 4],
               "backHandicap": 999
             },
             "boyneHighlandsHeather": {
               "course": "The Heather at Boyne Highlands",
-              "front": [99, 99, 99, 99, 99, 99, 99, 99, 99],
+              "front": [6, 4, 4, 4, 5, 6, 3, 4, 5],
               "frontHandicap": 999,
-              "back": [99, 99, 99, 99, 99, 99, 99, 99, 99],
+              "back": [6, 5, 4, 7, 5, 6, 4, 5],
               "backHandicap": 999
             },
             "boyneHighlandsArthurHills": {
               "course": "Arthur Hills at Boyne Highlands",
-              "front": [99, 99, 99, 99, 99, 99, 99, 99, 99],
+              "front": [3, 3, 6, 4, 4, 6, 3, 5, 4],
               "frontHandicap": 999,
-              "back": [99, 99, 99, 99, 99, 99, 99, 99, 99],
+              "back": [6, 8, 7, 7, 4, 4, 5, 5, 5],
               "backHandicap": 999
             }
           },
@@ -8054,30 +8054,30 @@
           "scores": {
             "bayHarborPreserveLinks": {
               "course": "Bay Harbor Preserve Links",
-              "front": [99, 99, 99, 99, 99, 99, 99, 99, 99],
+              "front": [6, 4, 4, 5, 4, 6, 3, 6, 3],
               "frontHandicap": 999,
-              "back": [99, 99, 99, 99, 99, 99, 99, 99, 99],
+              "back": [5, 4, 4, 3, 5, 5, 4, 3, 5],
               "backHandicap": 999
             },
             "crookedTree": {
               "course": "Crooked Tree Golf Club",
-              "front": [99, 99, 99, 99, 99, 99, 99, 99, 99],
+              "front": [4, 3, 5, 5, 4, 5, 5, 5, 5],
               "frontHandicap": 999,
-              "back": [99, 99, 99, 99, 99, 99, 99, 99, 99],
+              "back": [4, 3, 4, 5, 4, 4, 4, 5, 4],
               "backHandicap": 999
             },
             "boyneHighlandsHeather": {
               "course": "The Heather at Boyne Highlands",
-              "front": [99, 99, 99, 99, 99, 99, 99, 99, 99],
+              "front": [4, 4, 4, 3, 6, 3, 4, 4, 6],
               "frontHandicap": 999,
-              "back": [99, 99, 99, 99, 99, 99, 99, 99, 99],
+              "back": [4, 8, 3, 5, 4, 6, 3, 4, 99],
               "backHandicap": 999
             },
             "boyneHighlandsArthurHills": {
               "course": "Arthur Hills at Boyne Highlands",
-              "front": [99, 99, 99, 99, 99, 99, 99, 99, 99],
+              "front": [3, 3, 6, 4, 4, 6, 3, 5, 4],
               "frontHandicap": 999,
-              "back": [99, 99, 99, 99, 99, 99, 99, 99, 99],
+              "back": [6, 5, 4, 6, 4, 4, 3, 4, 5],
               "backHandicap": 999
             }
           },
@@ -8904,30 +8904,30 @@
           "scores": {
             "bayHarborPreserveLinks": {
               "course": "Bay Harbor Preserve Links",
-              "front": [99, 99, 99, 99, 99, 99, 99, 99, 99],
+              "front": [7, 5, 5, 7, 5, 7, 5, 6, 4],
               "frontHandicap": 999,
-              "back": [99, 99, 99, 99, 99, 99, 99, 99, 99],
+              "back": [6, 5, 4, 4, 5, 5, 5, 3, 4],
               "backHandicap": 999
             },
             "crookedTree": {
               "course": "Crooked Tree Golf Club",
-              "front": [99, 99, 99, 99, 99, 99, 99, 99, 99],
+              "front": [6, 7, 6, 10, 5, 99, 99, 99, 99],
               "frontHandicap": 999,
-              "back": [99, 99, 99, 99, 99, 99, 99, 99, 99],
+              "back": [4, 3, 3, 5, 5, 4, 4, 5, 3],
               "backHandicap": 999
             },
             "boyneHighlandsHeather": {
               "course": "The Heather at Boyne Highlands",
-              "front": [99, 99, 99, 99, 99, 99, 99, 99, 99],
+              "front": [5, 5, 6, 3, 6, 3, 4, 6, 7],
               "frontHandicap": 999,
-              "back": [99, 99, 99, 99, 99, 99, 99, 99, 99],
+              "back": [5, 6, 4, 5, 7, 5, 4, 5, 99],
               "backHandicap": 999
             },
             "boyneHighlandsArthurHills": {
               "course": "Arthur Hills at Boyne Highlands",
-              "front": [99, 99, 99, 99, 99, 99, 99, 99, 99],
+              "front": [4, 4, 5, 5, 4, 5, 3, 4, 4],
               "frontHandicap": 999,
-              "back": [99, 99, 99, 99, 99, 99, 99, 99, 99],
+              "back": [4, 7, 5, 7, 5, 6, 5, 5, 4],
               "backHandicap": 999
             }
           },
@@ -9755,30 +9755,30 @@
           "scores": {
             "bayHarborPreserveLinks": {
               "course": "Bay Harbor Preserve Links",
-              "front": [99, 99, 99, 99, 99, 99, 99, 99, 99],
+              "front": [5, 6, 6, 8, 4, 6, 5, 5, 3],
               "frontHandicap": 999,
-              "back": [99, 99, 99, 99, 99, 99, 99, 99, 99],
+              "back": [5, 5, 6, 3, 4, 6, 7, 4, 6],
               "backHandicap": 999
             },
             "crookedTree": {
               "course": "Crooked Tree Golf Club",
-              "front": [99, 99, 99, 99, 99, 99, 99, 99, 99],
+              "front": [4, 3, 5, 5, 4, 5, 5, 5, 5],
               "frontHandicap": 999,
-              "back": [99, 99, 99, 99, 99, 99, 99, 99, 99],
+              "back": [5, 4, 3, 6, 3, 3, 4, 5, 5],
               "backHandicap": 999
             },
             "boyneHighlandsHeather": {
               "course": "The Heather at Boyne Highlands",
-              "front": [99, 99, 99, 99, 99, 99, 99, 99, 99],
+              "front": [5, 5, 4, 4, 6, 3, 4, 5, 7],
               "frontHandicap": 999,
-              "back": [99, 99, 99, 99, 99, 99, 99, 99, 99],
+              "back": [6, 6, 3, 7, 4, 7, 5, 5, 6],
               "backHandicap": 999
             },
             "boyneHighlandsArthurHills": {
               "course": "Arthur Hills at Boyne Highlands",
-              "front": [99, 99, 99, 99, 99, 99, 99, 99, 99],
+              "front": [5, 4, 6, 4, 7, 7, 4, 5, 5],
               "frontHandicap": 999,
-              "back": [99, 99, 99, 99, 99, 99, 99, 99, 99],
+              "back": [5, 9, 5, 6, 4, 6, 6, 5, 5],
               "backHandicap": 999
             }
           },

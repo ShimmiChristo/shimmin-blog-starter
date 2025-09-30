@@ -18,7 +18,7 @@ const TopicPage = ({ location }) => {
   const { title } = useSiteMetadata()
   const { course } = CourseInfo()
   const scoreInfo = ScoreInfo()
-  let year = "_2024"
+  let year = "_2025"
   const currentYear = year ? scoreInfo[year].teams : undefined
   const team1Score = currentYear.team1.scores
   const team2Score = currentYear.team2.scores
@@ -69,7 +69,7 @@ const TopicPage = ({ location }) => {
     p8: "purple",
     p9: "purple",
     p10: "orange",
-    p11: "purple",
+    p11: "orange",
     p12: "orange",
   }
 
@@ -81,7 +81,7 @@ const TopicPage = ({ location }) => {
       holes: "front",
       matchHandicap: "full",
       gameplay: "one-ball",
-      matchTees: ["brown", "orange"],
+      matchTees: ["brown", "purple"],
       player1MatchHandicap: "",
       player2MatchHandicap: "",
       player3MatchHandicap: "",
@@ -460,7 +460,7 @@ const TopicPage = ({ location }) => {
         ]}
       />
 
-      <MatchScore year="_2025" lastYearWinner="green" />
+      <MatchScore year="_2025" lastYearWinner="green" location={location} />
       <MatchNavSection
         data-visible={
           (location.pathname === "/scores/" &&
@@ -478,7 +478,9 @@ const TopicPage = ({ location }) => {
           <span>
             {day1.round1.date}, {day1.round1.times[0]} at{" "}
           </span>
-          <a href={day1.round1.courseLink}>{day1.round1.courseName}</a>
+          <a href={day1.round1.courseLink} target="_blank" rel="noreferrer">
+            {day1.round1.courseName}
+          </a>
         </div>
         <Match
           matchId={`1 ${matchesArr[0].matchId}`}
@@ -555,7 +557,9 @@ const TopicPage = ({ location }) => {
           <span>
             {day1.round1.date}, {day1.round1.times[1]} at{" "}
           </span>
-          <a href={day1.round1.courseLink}>{day1.round1.courseName}</a>
+          <a href={day1.round1.courseLink} target="_blank" rel="noreferrer">
+            {day1.round1.courseName}
+          </a>
         </div>
         <Match
           matchId={`4 ${matchesArr[1].matchId}`}
@@ -630,7 +634,9 @@ const TopicPage = ({ location }) => {
           <span>
             {day1.round2.date}, {day1.round2.times[0]} at{" "}
           </span>
-          <a href={day1.round2.courseLink}>{day1.round2.courseName}</a>
+          <a href={day1.round2.courseLink} target="_blank" rel="noreferrer">
+            {day1.round2.courseName}
+          </a>
         </div>
         <Match
           matchId={`7 ${matchesArr[2].matchId}`}
@@ -705,7 +711,9 @@ const TopicPage = ({ location }) => {
           <span>
             {day1.round2.date}, {day1.round2.times[1]} at{" "}
           </span>
-          <a href={day1.round2.courseLink}>{day1.round2.courseName}</a>
+          <a href={day1.round2.courseLink} target="_blank" rel="noreferrer">
+            {day1.round2.courseName}
+          </a>
         </div>
         <Match
           matchId={`10 ${matchesArr[3].matchId}`}
@@ -781,7 +789,9 @@ const TopicPage = ({ location }) => {
             {day2.round1.date}, {day2.round1.times[0]} at{" "}
           </span>
 
-          <a href={day2.round1.courseLink}>{day2.round1.courseName}</a>
+          <a href={day2.round1.courseLink} target="_blank" rel="noreferrer">
+            {day2.round1.courseName}
+          </a>
         </div>
         <Match
           matchId={`13 ${matchesArr[4].matchId}`}
@@ -858,7 +868,9 @@ const TopicPage = ({ location }) => {
           <span>
             {day2.round1.date}, {day2.round1.times[1]} at{" "}
           </span>
-          <a href={day2.round1.courseLink}>{day2.round1.courseName}</a>
+          <a href={day2.round1.courseLink} target="_blank" rel="noreferrer">
+            {day2.round1.courseName}
+          </a>
         </div>
         <Match
           matchId={`16 ${matchesArr[5].matchId}`}
@@ -933,7 +945,9 @@ const TopicPage = ({ location }) => {
           <span>
             {day2.round2.date}, {day2.round2.times[0]} at{" "}
           </span>
-          <a href={day2.round2.courseLink}>{day2.round2.courseName}</a>
+          <a href={day2.round2.courseLink} target="_blank" rel="noreferrer">
+            {day2.round2.courseName}
+          </a>
         </div>
 
         <Match
@@ -1009,7 +1023,9 @@ const TopicPage = ({ location }) => {
           <span>
             {day2.round2.date}, {day2.round2.times[1]} at{" "}
           </span>
-          <a href={day2.round2.courseLink}>{day2.round2.courseName}</a>
+          <a href={day2.round2.courseLink} target="_blank" rel="noreferrer">
+            {day2.round2.courseName}
+          </a>
         </div>
         <Match
           matchId={`22 ${matchesArr[7].matchId}`}

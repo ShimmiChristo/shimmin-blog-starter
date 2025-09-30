@@ -1,5 +1,4 @@
 import { useStaticQuery, graphql } from "gatsby"
-// import { BayHarborGolfClubFragment } from "./fragments/bayHarborGolfClub"
 
 export const CourseInfo = () => {
   const { coursesJson } = useStaticQuery(graphql`

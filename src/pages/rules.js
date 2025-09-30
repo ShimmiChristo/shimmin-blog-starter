@@ -27,8 +27,62 @@ const TopicPage = ({ data, location }) => {
       <SEO title="Rules" />
       <LandingPageHeader title="Rules" />
       <div className="container">
-        <div className="row mb-3">
-          <div className="col-lg-8">
+        <div className="row my-3">
+          <div className="col-lg-9">
+            <h2>Local Rules</h2>
+            <ol>
+              <li>Ball in divot rule.</li>
+              <ol type="a">
+                <li>
+                  When a ball comes to rest in an existing divot, the player is
+                  allowed a one club length free drop, no closer to the hole.
+                </li>
+              </ol>
+              <li>White OB stakes</li>
+              <ol type="a">
+                <li>All white stakes are played as red stakes.</li>
+              </ol>
+              <li>"Gallery Drop" rule</li>
+              <ol type="a">
+                <li>
+                  A free drop is given at an estimated position of where all
+                  players believe the original ball came to rest. The following
+                  conditions must be true:
+                  <ol type="1">
+                    <li>
+                      During seasons of excessive foliage/leaves/grass/ on the
+                      ground.
+                    </li>
+                    <li>
+                      All 4 members of the group must agree the ball is under
+                      foliage/leaves and
+                    </li>
+                    <li>
+                      All 4 member of the group must agree on the estimated drop
+                    </li>
+                  </ol>
+                </li>
+              </ol>
+
+              <li>Lift, clean, replace rule</li>
+              <ol type="a">
+                <li>
+                  Allowed under any of the following conditions
+                  <ol type="1">
+                    <li>Playing in the rain</li>
+                    <li>Agreed conditions by all members of the group</li>
+                  </ol>
+                </li>
+              </ol>
+            </ol>
+          </div>
+        </div>
+        <div className="row my-3">
+          <hr />
+        </div>
+
+        <div className="row my-3">
+          <div className="col-lg-9">
             <h2>Scoring</h2>
             <p>
               Each match is worth one point, with matches ending in a tie worth
@@ -64,8 +118,9 @@ const TopicPage = ({ data, location }) => {
             <br />
           </div>
         </div>
-        <div className="row mb-3">
-          <div className="col-lg-8">
+
+        <div className="row my-3">
+          <div className="col-lg-9">
             <h2 className="mb-3">Game Formats</h2>
 
             <h3 className="h4 mt-4 pt-1">1 Best Ball/Four-Ball</h3>
@@ -82,9 +137,9 @@ const TopicPage = ({ data, location }) => {
             <p>
               In 2 best ball/four-ball, each member of a two-man team plays his
               own ball, so four balls are in play on every hole. Each team
-              counts the total of its two scores on each hole, and the team
-              with lowest total score wins the hole. If the low
-              scores are tied, the hole is halved.
+              counts the total of its two scores on each hole, and the team with
+              lowest total score wins the hole. If the low scores are tied, the
+              hole is halved.
             </p>
             <p>Handicap allowance is 90%</p>
 
