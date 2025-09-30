@@ -6254,11 +6254,11 @@
     "evan": {
       "name": "evan",
       "appearances": [2022, 2023, 2024],
-      "handicap": 22,
+      "handicap": 23,
       "year": {
         "_2025": {
           "id": 2025,
-          "handicap": 22,
+          "handicap": 23,
           "captain": false,
           "team": "blue",
           "scores": {
@@ -8894,11 +8894,11 @@
     "rj": {
       "name": "rj",
       "appearances": [2021, 2022, 2023, 2024],
-      "handicap": 12,
+      "handicap": 13,
       "year": {
         "_2025": {
           "id": 2025,
-          "handicap": 12,
+          "handicap": 13,
           "captain": false,
           "team": "blue",
           "scores": {
