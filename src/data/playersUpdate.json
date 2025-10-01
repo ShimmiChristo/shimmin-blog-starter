@@ -566,7 +566,7 @@
     },
     "cam": {
       "name": "cam",
-      "appearances": [2022, 2023],
+      "appearances": [2022, 2023, 2025],
       "handicap": 27,
       "year": {
         "_2025": {
@@ -610,26 +610,26 @@
               "game": "Best Ball",
               "wins": 0,
               "ties": 0,
-              "losses": 0
+              "losses": 1
             },
             {
               "id": "twoBestBall",
               "game": "Best Ball",
               "wins": 0,
               "ties": 0,
-              "losses": 0
+              "losses": 1
             },
             {
               "id": "bramble",
               "game": "Bramble",
-              "wins": 0,
+              "wins": 1,
               "ties": 0,
               "losses": 0
             },
             {
               "id": "twoBallBramble",
               "game": "Bramble",
-              "wins": 0,
+              "wins": 1,
               "ties": 0,
               "losses": 0
             },
@@ -638,7 +638,7 @@
               "game": "Alternate",
               "wins": 0,
               "ties": 0,
-              "losses": 0
+              "losses": 1
             },
             {
               "id": "brambleAlternate",
@@ -652,21 +652,21 @@
               "game": "Pinehurst",
               "wins": 0,
               "ties": 0,
-              "losses": 0
+              "losses": 1
             },
             {
               "id": "scramble",
               "game": "Scramble",
               "wins": 0,
               "ties": 0,
-              "losses": 0
+              "losses": 1
             },
             {
               "id": "singles",
               "game": "Singles",
               "wins": 0,
               "ties": 0,
-              "losses": 0
+              "losses": 1
             }
           ],
           "records": [
@@ -1292,7 +1292,7 @@
     },
     "chris": {
       "name": "chris",
-      "appearances": [2021, 2023, 2024],
+      "appearances": [2021, 2023, 2024, 2025],
       "handicap": 14,
       "year": {
         "_2025": {
@@ -1334,21 +1334,21 @@
             {
               "id": "bestBall",
               "game": "Best Ball",
-              "wins": 0,
+              "wins": 1,
               "ties": 0,
               "losses": 0
             },
             {
               "id": "twoBestBall",
               "game": "Best Ball",
-              "wins": 0,
+              "wins": 1,
               "ties": 0,
               "losses": 0
             },
             {
               "id": "bramble",
               "game": "Bramble",
-              "wins": 0,
+              "wins": 1,
               "ties": 0,
               "losses": 0
             },
@@ -1357,12 +1357,12 @@
               "game": "Bramble",
               "wins": 0,
               "ties": 0,
-              "losses": 0
+              "losses": 1
             },
             {
               "id": "alternate",
               "game": "Alternate",
-              "wins": 0,
+              "wins": 1,
               "ties": 0,
               "losses": 0
             },
@@ -1376,14 +1376,14 @@
             {
               "id": "pinehurst",
               "game": "Pinehurst",
-              "wins": 0,
+              "wins": 1,
               "ties": 0,
               "losses": 0
             },
             {
               "id": "scramble",
               "game": "Scramble",
-              "wins": 0,
+              "wins": 1,
               "ties": 0,
               "losses": 0
             },
@@ -1392,7 +1392,7 @@
               "game": "Singles",
               "wins": 0,
               "ties": 0,
-              "losses": 0
+              "losses": 1
             }
           ],
           "records": [
@@ -2150,7 +2150,7 @@
     },
     "craig": {
       "name": "craig",
-      "appearances": [2021, 2022, 2023, 2024],
+      "appearances": [2021, 2022, 2023, 2024, 2025],
       "handicap": 17,
       "year": {
         "_2025": {
@@ -2194,12 +2194,12 @@
               "game": "Best Ball",
               "wins": 0,
               "ties": 0,
-              "losses": 0
+              "losses": 1
             },
             {
               "id": "twoBestBall",
               "game": "Best Ball",
-              "wins": 0,
+              "wins": 1,
               "ties": 0,
               "losses": 0
             },
@@ -2208,12 +2208,12 @@
               "game": "Bramble",
               "wins": 0,
               "ties": 0,
-              "losses": 0
+              "losses": 1
             },
             {
               "id": "twoBallBramble",
               "game": "Bramble",
-              "wins": 0,
+              "wins": 1,
               "ties": 0,
               "losses": 0
             },
@@ -2221,7 +2221,7 @@
               "id": "alternate",
               "game": "Alternate",
               "wins": 0,
-              "ties": 0,
+              "ties": 1,
               "losses": 0
             },
             {
@@ -2236,19 +2236,19 @@
               "game": "Pinehurst",
               "wins": 0,
               "ties": 0,
-              "losses": 0
+              "losses": 1
             },
             {
               "id": "scramble",
               "game": "Scramble",
               "wins": 0,
-              "ties": 0,
+              "ties": 1,
               "losses": 0
             },
             {
               "id": "singles",
               "game": "Singles",
-              "wins": 0,
+              "wins": 1,
               "ties": 0,
               "losses": 0
             }
@@ -2995,7 +2995,7 @@
     },
     "curtis": {
       "name": "curtis",
-      "appearances": [2022, 2023, 2024],
+      "appearances": [2022, 2023, 2024, 2025],
       "handicap": 26,
       "year": {
         "_2025": {
@@ -3037,7 +3037,7 @@
             {
               "id": "bestBall",
               "game": "Best Ball",
-              "wins": 0,
+              "wins": 1,
               "ties": 0,
               "losses": 0
             },
@@ -3046,26 +3046,26 @@
               "game": "Best Ball",
               "wins": 0,
               "ties": 0,
-              "losses": 0
+              "losses": 1
             },
             {
               "id": "bramble",
               "game": "Bramble",
               "wins": 0,
               "ties": 0,
-              "losses": 0
+              "losses": 1
             },
             {
               "id": "twoBallBramble",
               "game": "Bramble",
               "wins": 0,
               "ties": 0,
-              "losses": 0
+              "losses": 1
             },
             {
               "id": "alternate",
               "game": "Alternate",
-              "wins": 0,
+              "wins": 1,
               "ties": 0,
               "losses": 0
             },
@@ -3081,21 +3081,21 @@
               "game": "Pinehurst",
               "wins": 0,
               "ties": 0,
-              "losses": 0
+              "losses": 1
             },
             {
               "id": "scramble",
               "game": "Scramble",
               "wins": 0,
               "ties": 0,
-              "losses": 0
+              "losses": 1
             },
             {
               "id": "singles",
               "game": "Singles",
               "wins": 0,
               "ties": 0,
-              "losses": 0
+              "losses": 1
             }
           ],
           "records": [
@@ -3717,7 +3717,7 @@
     },
     "dan": {
       "name": "dan",
-      "appearances": [2021, 2022, 2023, 2024],
+      "appearances": [2021, 2022, 2023, 2024, 2025],
       "handicap": 24,
       "year": {
         "_2025": {
@@ -3761,26 +3761,26 @@
               "game": "Best Ball",
               "wins": 0,
               "ties": 0,
-              "losses": 0
+              "losses": 1
             },
             {
               "id": "twoBestBall",
               "game": "Best Ball",
               "wins": 0,
               "ties": 0,
-              "losses": 0
+              "losses": 1
             },
             {
               "id": "bramble",
               "game": "Bramble",
-              "wins": 0,
+              "wins": 1,
               "ties": 0,
               "losses": 0
             },
             {
               "id": "twoBallBramble",
               "game": "Bramble",
-              "wins": 0,
+              "wins": 1,
               "ties": 0,
               "losses": 0
             },
@@ -3788,7 +3788,7 @@
               "id": "alternate",
               "game": "Alternate",
               "wins": 0,
-              "ties": 0,
+              "ties": 1,
               "losses": 0
             },
             {
@@ -3801,21 +3801,21 @@
             {
               "id": "pinehurst",
               "game": "Pinehurst",
-              "wins": 0,
+              "wins": 1,
               "ties": 0,
               "losses": 0
             },
             {
               "id": "scramble",
               "game": "Scramble",
-              "wins": 0,
+              "wins": 1,
               "ties": 0,
               "losses": 0
             },
             {
               "id": "singles",
               "game": "Singles",
-              "wins": 0,
+              "wins": 1,
               "ties": 0,
               "losses": 0
             }
@@ -4562,7 +4562,7 @@
     },
     "derek": {
       "name": "derek",
-      "appearances": [2021, 2022, 2023, 2024],
+      "appearances": [2021, 2022, 2023, 2024, 2025],
       "handicap": 23,
       "year": {
         "_2025": {
@@ -4604,7 +4604,7 @@
             {
               "id": "bestBall",
               "game": "Best Ball",
-              "wins": 0,
+              "wins": 1,
               "ties": 0,
               "losses": 0
             },
@@ -4613,19 +4613,19 @@
               "game": "Best Ball",
               "wins": 0,
               "ties": 0,
-              "losses": 0
+              "losses": 1
             },
             {
               "id": "bramble",
               "game": "Bramble",
               "wins": 0,
               "ties": 0,
-              "losses": 0
+              "losses": 1
             },
             {
               "id": "twoBallBramble",
               "game": "Bramble",
-              "wins": 0,
+              "wins": 1,
               "ties": 0,
               "losses": 0
             },
@@ -4633,7 +4633,7 @@
               "id": "alternate",
               "game": "Alternate",
               "wins": 0,
-              "ties": 0,
+              "ties": 1,
               "losses": 0
             },
             {
@@ -4646,7 +4646,7 @@
             {
               "id": "pinehurst",
               "game": "Pinehurst",
-              "wins": 0,
+              "wins": 1,
               "ties": 0,
               "losses": 0
             },
@@ -4654,13 +4654,13 @@
               "id": "scramble",
               "game": "Scramble",
               "wins": 0,
-              "ties": 0,
+              "ties": 1,
               "losses": 0
             },
             {
               "id": "singles",
               "game": "Singles",
-              "wins": 0,
+              "wins": 1,
               "ties": 0,
               "losses": 0
             }
@@ -5408,7 +5408,7 @@
     },
     "dylan": {
       "name": "dylan",
-      "appearances": [2021, 2022, 2023, 2024],
+      "appearances": [2021, 2022, 2023, 2024, 2025],
       "handicap": 0.0,
       "year": {
         "_2025": {
@@ -5452,26 +5452,26 @@
               "game": "Best Ball",
               "wins": 0,
               "ties": 0,
-              "losses": 0
+              "losses": 1
             },
             {
               "id": "twoBestBall",
               "game": "Best Ball",
               "wins": 0,
               "ties": 0,
-              "losses": 0
+              "losses": 1
             },
             {
               "id": "bramble",
               "game": "Bramble",
-              "wins": 0,
+              "wins": 1,
               "ties": 0,
               "losses": 0
             },
             {
               "id": "twoBallBramble",
               "game": "Bramble",
-              "wins": 0,
+              "wins": 1,
               "ties": 0,
               "losses": 0
             },
@@ -5479,7 +5479,7 @@
               "id": "alternate",
               "game": "Alternate",
               "wins": 0,
-              "ties": 0,
+              "ties": 1,
               "losses": 0
             },
             {
@@ -5493,7 +5493,7 @@
               "id": "pinehurst",
               "game": "Pinehurst",
               "wins": 0,
-              "ties": 0,
+              "ties": 1,
               "losses": 0
             },
             {
@@ -5501,13 +5501,13 @@
               "game": "Scramble",
               "wins": 0,
               "ties": 0,
-              "losses": 0
+              "losses": 1
             },
             {
               "id": "singles",
               "game": "Singles",
               "wins": 0,
-              "ties": 0,
+              "ties": 1,
               "losses": 0
             }
           ],
@@ -6253,7 +6253,7 @@
     },
     "evan": {
       "name": "evan",
-      "appearances": [2022, 2023, 2024],
+      "appearances": [2022, 2023, 2024, 2025],
       "handicap": 23,
       "year": {
         "_2025": {
@@ -6297,34 +6297,34 @@
               "game": "Best Ball",
               "wins": 0,
               "ties": 0,
-              "losses": 0
+              "losses": 1
             },
             {
               "id": "twoBestBall",
               "game": "Best Ball",
               "wins": 0,
               "ties": 0,
-              "losses": 0
+              "losses": 1
             },
             {
               "id": "bramble",
               "game": "Bramble",
               "wins": 0,
               "ties": 0,
-              "losses": 0
+              "losses": 1
             },
             {
               "id": "twoBallBramble",
               "game": "Bramble",
               "wins": 0,
               "ties": 0,
-              "losses": 0
+              "losses": 1
             },
             {
               "id": "alternate",
               "game": "Alternate",
               "wins": 0,
-              "ties": 0,
+              "ties": 1,
               "losses": 0
             },
             {
@@ -6337,7 +6337,7 @@
             {
               "id": "pinehurst",
               "game": "Pinehurst",
-              "wins": 0,
+              "wins": 1,
               "ties": 0,
               "losses": 0
             },
@@ -6345,7 +6345,7 @@
               "id": "scramble",
               "game": "Scramble",
               "wins": 0,
-              "ties": 0,
+              "ties": 1,
               "losses": 0
             },
             {
@@ -6353,7 +6353,7 @@
               "game": "Singles",
               "wins": 0,
               "ties": 0,
-              "losses": 0
+              "losses": 1
             }
           ],
           "records": [
@@ -6973,7 +6973,7 @@
     },
     "gordon": {
       "name": "gordon",
-      "appearances": [2022, 2024],
+      "appearances": [2022, 2024, 2025],
       "handicap": 11,
       "year": {
         "_2025": {
@@ -7015,21 +7015,21 @@
             {
               "id": "bestBall",
               "game": "Best Ball",
-              "wins": 0,
+              "wins": 1,
               "ties": 0,
               "losses": 0
             },
             {
               "id": "twoBestBall",
               "game": "Best Ball",
-              "wins": 0,
+              "wins": 1,
               "ties": 0,
               "losses": 0
             },
             {
               "id": "bramble",
               "game": "Bramble",
-              "wins": 0,
+              "wins": 1,
               "ties": 0,
               "losses": 0
             },
@@ -7038,13 +7038,13 @@
               "game": "Bramble",
               "wins": 0,
               "ties": 0,
-              "losses": 0
+              "losses": 1
             },
             {
               "id": "alternate",
               "game": "Alternate",
               "wins": 0,
-              "ties": 0,
+              "ties": 1,
               "losses": 0
             },
             {
@@ -7058,7 +7058,7 @@
               "id": "pinehurst",
               "game": "Pinehurst",
               "wins": 0,
-              "ties": 0,
+              "ties": 1,
               "losses": 0
             },
             {
@@ -7066,14 +7066,14 @@
               "game": "Scramble",
               "wins": 0,
               "ties": 0,
-              "losses": 0
+              "losses": 1
             },
             {
               "id": "singles",
               "game": "Singles",
               "wins": 0,
               "ties": 0,
-              "losses": 0
+              "losses": 1
             }
           ],
           "records": [
@@ -8043,7 +8043,7 @@
     },
     "matt": {
       "name": "matt",
-      "appearances": [2021, 2022, 2023, 2024],
+      "appearances": [2021, 2022, 2023, 2024, 2025],
       "handicap": 3.0,
       "year": {
         "_2025": {
@@ -8085,14 +8085,14 @@
             {
               "id": "bestBall",
               "game": "Best Ball",
-              "wins": 0,
+              "wins": 1,
               "ties": 0,
               "losses": 0
             },
             {
               "id": "twoBestBall",
               "game": "Best Ball",
-              "wins": 0,
+              "wins": 1,
               "ties": 0,
               "losses": 0
             },
@@ -8101,12 +8101,12 @@
               "game": "Bramble",
               "wins": 0,
               "ties": 0,
-              "losses": 0
+              "losses": 1
             },
             {
               "id": "twoBallBramble",
               "game": "Bramble",
-              "wins": 0,
+              "wins": 1,
               "ties": 0,
               "losses": 0
             },
@@ -8114,7 +8114,7 @@
               "id": "alternate",
               "game": "Alternate",
               "wins": 0,
-              "ties": 0,
+              "ties": 1,
               "losses": 0
             },
             {
@@ -8128,21 +8128,21 @@
               "id": "pinehurst",
               "game": "Pinehurst",
               "wins": 0,
-              "ties": 0,
+              "ties": 1,
               "losses": 0
             },
             {
               "id": "scramble",
               "game": "Scramble",
               "wins": 0,
-              "ties": 0,
+              "ties": 1,
               "losses": 0
             },
             {
               "id": "singles",
               "game": "Singles",
               "wins": 0,
-              "ties": 0,
+              "ties": 1,
               "losses": 0
             }
           ],
@@ -8893,7 +8893,7 @@
     },
     "rj": {
       "name": "rj",
-      "appearances": [2021, 2022, 2023, 2024],
+      "appearances": [2021, 2022, 2023, 2024, 2025],
       "handicap": 13,
       "year": {
         "_2025": {
@@ -8937,19 +8937,19 @@
               "game": "Best Ball",
               "wins": 0,
               "ties": 0,
-              "losses": 0
+              "losses": 1
             },
             {
               "id": "twoBestBall",
               "game": "Best Ball",
-              "wins": 0,
+              "wins": 1,
               "ties": 0,
               "losses": 0
             },
             {
               "id": "bramble",
               "game": "Bramble",
-              "wins": 0,
+              "wins": 1,
               "ties": 0,
               "losses": 0
             },
@@ -8958,14 +8958,14 @@
               "game": "Bramble",
               "wins": 0,
               "ties": 0,
-              "losses": 0
+              "losses": 1
             },
             {
               "id": "alternate",
               "game": "Alternate",
               "wins": 0,
               "ties": 0,
-              "losses": 0
+              "losses": 1
             },
             {
               "id": "brambleAlternate",
@@ -8978,20 +8978,20 @@
               "id": "pinehurst",
               "game": "Pinehurst",
               "wins": 0,
-              "ties": 0,
+              "ties": 1,
               "losses": 0
             },
             {
               "id": "scramble",
               "game": "Scramble",
-              "wins": 0,
+              "wins": 1,
               "ties": 0,
               "losses": 0
             },
             {
               "id": "singles",
               "game": "Singles",
-              "wins": 0,
+              "wins": 1,
               "ties": 0,
               "losses": 0
             }
@@ -9786,14 +9786,14 @@
             {
               "id": "bestBall",
               "game": "Best Ball",
-              "wins": 0,
+              "wins": 1,
               "ties": 0,
               "losses": 0
             },
             {
               "id": "twoBestBall",
               "game": "Best Ball",
-              "wins": 0,
+              "wins": 1,
               "ties": 0,
               "losses": 0
             },
@@ -9802,20 +9802,20 @@
               "game": "Bramble",
               "wins": 0,
               "ties": 0,
-              "losses": 0
+              "losses": 1
             },
             {
               "id": "twoBallBramble",
               "game": "Bramble",
               "wins": 0,
               "ties": 0,
-              "losses": 0
+              "losses": 1
             },
             {
               "id": "alternate",
               "game": "Alternate",
               "wins": 0,
-              "ties": 0,
+              "ties": 1,
               "losses": 0
             },
             {
@@ -9830,19 +9830,19 @@
               "game": "Pinehurst",
               "wins": 0,
               "ties": 0,
-              "losses": 0
+              "losses": 1
             },
             {
               "id": "scramble",
               "game": "Scramble",
-              "wins": 0,
+              "wins": 1,
               "ties": 0,
               "losses": 0
             },
             {
               "id": "singles",
               "game": "Singles",
-              "wins": 0,
+              "wins": 1,
               "ties": 0,
               "losses": 0
             }
