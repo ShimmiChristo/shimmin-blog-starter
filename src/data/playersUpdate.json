@@ -1299,7 +1299,7 @@
               "course": "Bay Harbor Preserve Links",
               "front": [6, 6, 5, 6, 4, 6, 4, 6, 4],
               "frontHandicap": 999,
-              "back": [5, 4, 4, 4, 4, 6, 6, 4, 4],
+              "back": [5, 4, 4, 3, 4, 6, 6, 4, 4],
               "backHandicap": 999
             },
             "crookedTree": {
@@ -3085,39 +3085,33 @@
               "partners": [
                 {
                   "name": "chris",
-                  "wins": 0,
-                  "ties": 0,
-                  "losses": 0
-                },
-                {
-                  "name": "curtis",
-                  "wins": 0,
+                  "wins": 1,
                   "ties": 0,
                   "losses": 0
                 },
                 {
                   "name": "derek",
-                  "wins": 0,
+                  "wins": 1,
                   "ties": 0,
-                  "losses": 0
+                  "losses": 1
                 },
                 {
                   "name": "gordon",
                   "wins": 0,
                   "ties": 0,
-                  "losses": 0
+                  "losses": 2
                 },
                 {
                   "name": "matt",
                   "wins": 0,
                   "ties": 0,
-                  "losses": 0
+                  "losses": 1
                 },
                 {
-                  "name": "blake",
+                  "name": "stephen",
                   "wins": 0,
                   "ties": 0,
-                  "losses": 0
+                  "losses": 1
                 }
               ]
             },
@@ -3125,39 +3119,39 @@
               "opponents": [
                 {
                   "name": "cam",
-                  "wins": 0,
+                  "wins": 1,
                   "ties": 0,
-                  "losses": 0
+                  "losses": 1
                 },
                 {
                   "name": "craig",
-                  "wins": 0,
+                  "wins": 1,
                   "ties": 0,
-                  "losses": 0
+                  "losses": 2
                 },
                 {
                   "name": "dan",
                   "wins": 0,
                   "ties": 0,
-                  "losses": 0
+                  "losses": 3
                 },
                 {
                   "name": "dylan",
                   "wins": 0,
                   "ties": 0,
-                  "losses": 0
+                  "losses": 2
                 },
                 {
                   "name": "evan",
                   "wins": 0,
                   "ties": 0,
-                  "losses": 0
+                  "losses": 1
                 },
                 {
                   "name": "rj",
-                  "wins": 0,
+                  "wins": 2,
                   "ties": 0,
-                  "losses": 0
+                  "losses": 2
                 }
               ]
             }
@@ -3807,37 +3801,31 @@
               "partners": [
                 {
                   "name": "cam",
-                  "wins": 0,
+                  "wins": 1,
                   "ties": 0,
                   "losses": 0
                 },
                 {
                   "name": "craig",
                   "wins": 0,
-                  "ties": 0,
-                  "losses": 0
-                },
-                {
-                  "name": "dan",
-                  "wins": 0,
-                  "ties": 0,
+                  "ties": 1,
                   "losses": 0
                 },
                 {
                   "name": "dylan",
                   "wins": 0,
                   "ties": 0,
-                  "losses": 0
+                  "losses": 2
                 },
                 {
                   "name": "evan",
-                  "wins": 0,
+                  "wins": 1,
                   "ties": 0,
                   "losses": 0
                 },
                 {
                   "name": "rj",
-                  "wins": 0,
+                  "wins": 2,
                   "ties": 0,
                   "losses": 0
                 }
@@ -3847,38 +3835,38 @@
               "opponents": [
                 {
                   "name": "chris",
-                  "wins": 0,
+                  "wins": 1,
                   "ties": 0,
-                  "losses": 0
+                  "losses": 2
                 },
                 {
                   "name": "curtis",
-                  "wins": 0,
+                  "wins": 3,
                   "ties": 0,
                   "losses": 0
                 },
                 {
                   "name": "derek",
-                  "wins": 0,
+                  "wins": 1,
                   "ties": 0,
                   "losses": 0
                 },
                 {
                   "name": "gordon",
-                  "wins": 0,
+                  "wins": 1,
                   "ties": 0,
                   "losses": 0
                 },
                 {
                   "name": "matt",
                   "wins": 0,
-                  "ties": 0,
-                  "losses": 0
+                  "ties": 1,
+                  "losses": 2
                 },
                 {
-                  "name": "blake",
-                  "wins": 0,
-                  "ties": 0,
+                  "name": "stephen",
+                  "wins": 3,
+                  "ties": 1,
                   "losses": 0
                 }
               ]
@@ -4652,39 +4640,33 @@
               "partners": [
                 {
                   "name": "chris",
-                  "wins": 0,
+                  "wins": 1,
                   "ties": 0,
                   "losses": 0
                 },
                 {
                   "name": "curtis",
-                  "wins": 0,
+                  "wins": 1,
                   "ties": 0,
-                  "losses": 0
-                },
-                {
-                  "name": "derek",
-                  "wins": 0,
-                  "ties": 0,
-                  "losses": 0
+                  "losses": 1
                 },
                 {
                   "name": "gordon",
                   "wins": 0,
-                  "ties": 0,
+                  "ties": 1,
                   "losses": 0
                 },
                 {
                   "name": "matt",
-                  "wins": 0,
-                  "ties": 0,
+                  "wins": 1,
+                  "ties": 1,
                   "losses": 0
                 },
                 {
-                  "name": "blake",
+                  "name": "stephen",
                   "wins": 0,
                   "ties": 0,
-                  "losses": 0
+                  "losses": 1
                 }
               ]
             },
@@ -4692,39 +4674,39 @@
               "opponents": [
                 {
                   "name": "cam",
-                  "wins": 0,
+                  "wins": 2,
                   "ties": 0,
                   "losses": 0
                 },
                 {
                   "name": "craig",
-                  "wins": 0,
-                  "ties": 0,
-                  "losses": 0
+                  "wins": 2,
+                  "ties": 1,
+                  "losses": 1
                 },
                 {
                   "name": "dan",
                   "wins": 0,
                   "ties": 0,
-                  "losses": 0
+                  "losses": 1
                 },
                 {
                   "name": "dylan",
                   "wins": 0,
-                  "ties": 0,
+                  "ties": 1,
                   "losses": 0
                 },
                 {
                   "name": "evan",
-                  "wins": 0,
-                  "ties": 0,
+                  "wins": 1,
+                  "ties": 2,
                   "losses": 0
                 },
                 {
                   "name": "rj",
-                  "wins": 0,
+                  "wins": 2,
                   "ties": 0,
-                  "losses": 0
+                  "losses": 2
                 }
               ]
             }
@@ -5498,13 +5480,13 @@
               "partners": [
                 {
                   "name": "cam",
-                  "wins": 0,
+                  "wins": 1,
                   "ties": 0,
-                  "losses": 0
+                  "losses": 1
                 },
                 {
                   "name": "craig",
-                  "wins": 0,
+                  "wins": 1,
                   "ties": 0,
                   "losses": 0
                 },
@@ -5512,24 +5494,18 @@
                   "name": "dan",
                   "wins": 0,
                   "ties": 0,
-                  "losses": 0
-                },
-                {
-                  "name": "dylan",
-                  "wins": 0,
-                  "ties": 0,
-                  "losses": 0
+                  "losses": 2
                 },
                 {
                   "name": "evan",
                   "wins": 0,
-                  "ties": 0,
+                  "ties": 1,
                   "losses": 0
                 },
                 {
                   "name": "rj",
                   "wins": 0,
-                  "ties": 0,
+                  "ties": 1,
                   "losses": 0
                 }
               ]
@@ -5540,37 +5516,37 @@
                   "name": "chris",
                   "wins": 0,
                   "ties": 0,
-                  "losses": 0
+                  "losses": 3
                 },
                 {
                   "name": "curtis",
-                  "wins": 0,
+                  "wins": 2,
                   "ties": 0,
                   "losses": 0
                 },
                 {
                   "name": "derek",
                   "wins": 0,
-                  "ties": 0,
+                  "ties": 1,
                   "losses": 0
                 },
                 {
                   "name": "gordon",
-                  "wins": 0,
-                  "ties": 0,
+                  "wins": 1,
+                  "ties": 2,
                   "losses": 0
                 },
                 {
                   "name": "matt",
-                  "wins": 0,
-                  "ties": 0,
-                  "losses": 0
+                  "wins": 1,
+                  "ties": 2,
+                  "losses": 2
                 },
                 {
-                  "name": "blake",
+                  "name": "stephen",
                   "wins": 0,
                   "ties": 0,
-                  "losses": 0
+                  "losses": 1
                 }
               ]
             }
