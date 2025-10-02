@@ -6,6 +6,18 @@ export const CurtisPlayerPoints = graphql`
       name
       handicap
       year {
+        _2025 {
+          handicap
+          id
+          team
+          points {
+            game
+            id
+            wins
+            ties
+            losses
+          }
+        }
         _2024 {
           handicap
           id
