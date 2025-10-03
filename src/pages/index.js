@@ -38,13 +38,13 @@ const TopicPage = ({ data, location }) => {
         courseUrl={courseUrl}
       /> */}
 
-      {/* <h2 className="text-center bold my-5">BFBH Cup 2024 Score</h2>
-      <MatchScore year="_2024" lastYearWinner="blue" /> */}
+      <h2 className="text-center bold my-5">BFBH Cup 2025 Score</h2>
+      <MatchScore year="_2025" lastYearWinner="green" />
       {/* <div className="col-lg-6 offset-lg-3">
         <MatchSummary2024 />
       </div> */}
-      <h2 className="text-center bold mt-5">BFBH Cup 2025</h2>
-      <Highlight2025 />
+      {/* <h2 className="text-center bold mt-5">BFBH Cup 2025</h2> */}
+      {/* <Highlight2025 /> */}
       {/* <Highlight2024 /> */}
       {/* <hr /> */}
       {/* <br /> */}
