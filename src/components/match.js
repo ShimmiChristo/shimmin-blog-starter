@@ -163,9 +163,8 @@ function Match({
     holes === "front"
       ? courseMatchQuery.holes.slice(0, 9)
       : courseMatchQuery.holes.slice(9)
-  const hardestHole = courseMatchQuery.holes.filter(
-    h => h.handicap === 1
-  )[0].number
+  const hardestHole = courseMatchQuery.holes.filter(h => h.handicap === 1)[0]
+    .number
   // const courseName = courseMatchQuery.name
   // const courseLink = courseMatchQuery.link
 
@@ -202,6 +201,7 @@ function Match({
   let playerThreeTees = player3Tees ?? "orange" //orange is default
   let playerFourTees = player4Tees ?? "orange" //orange is default
 
+  // check for in or out
   const holesPlayed = holes === "front" ? "out" : "in"
   // const holesPlayed = "total"
 
@@ -219,31 +219,29 @@ function Match({
   //   courseMatchQuery.totals.tees["orange"][`${holesPlayed}`].index
 
   const p1TeesSlope =
-    courseMatchQuery?.totals?.tees?.[`${player1Tees}`]?.[
-      `${holesPlayed}`
-    ]?.slope
+    courseMatchQuery?.totals?.tees?.[`${player1Tees}`]?.[`${holesPlayed}`]
+      ?.slope
   const p1TeesIndex =
-    courseMatchQuery?.totals?.tees?.[`${player1Tees}`]?.[
-      `${holesPlayed}`
-    ]?.index
+    courseMatchQuery?.totals?.tees?.[`${player1Tees}`]?.[`${holesPlayed}`]
+      ?.index
+  const p1TeesYardage =
+    courseMatchQuery?.totals?.tees?.[`${player1Tees}`]?.[`${holesPlayed}`]
+      ?.yardage
+  const p1TeesPar =
+    courseMatchQuery?.totals?.tees?.[`${player1Tees}`]?.[`${holesPlayed}`]?.par
   const p2TeesSlope =
-    courseMatchQuery?.totals?.tees?.[`${player2Tees}`]?.[
-      `${holesPlayed}`
-    ]?.slope
+    courseMatchQuery?.totals?.tees?.[`${player2Tees}`]?.[`${holesPlayed}`]
+      ?.slope
   const p2TeesIndex =
-    courseMatchQuery?.totals?.tees?.[`${player2Tees}`]?.[
-      `${holesPlayed}`
-    ]?.index
+    courseMatchQuery?.totals?.tees?.[`${player2Tees}`]?.[`${holesPlayed}`]
+      ?.index
 
   const courseSlopeP1 =
-    courseMatchQuery.totals.tees[`${playerOneTees}`]?.[`${holesPlayed}`]
-      ?.slope
+    courseMatchQuery.totals.tees[`${playerOneTees}`]?.[`${holesPlayed}`]?.slope
   const courseIndexP1 =
-    courseMatchQuery.totals.tees[`${playerOneTees}`]?.[`${holesPlayed}`]
-      ?.index
+    courseMatchQuery.totals.tees[`${playerOneTees}`]?.[`${holesPlayed}`]?.index
   const courseParP1 =
-    courseMatchQuery.totals.tees[`${playerOneTees}`]?.[`${holesPlayed}`]
-      ?.par
+    courseMatchQuery.totals.tees[`${playerOneTees}`]?.[`${holesPlayed}`]?.par
   const playerOneCourseHC = getCourseHandicap(
     playerOneHand,
     courseSlopeP1,
@@ -251,14 +249,11 @@ function Match({
     courseParP1
   )
   const courseSlopeP2 =
-    courseMatchQuery.totals.tees[`${playerTwoTees}`]?.[`${holesPlayed}`]
-      ?.slope
+    courseMatchQuery.totals.tees[`${playerTwoTees}`]?.[`${holesPlayed}`]?.slope
   const courseIndexP2 =
-    courseMatchQuery.totals.tees[`${playerTwoTees}`]?.[`${holesPlayed}`]
-      ?.index
+    courseMatchQuery.totals.tees[`${playerTwoTees}`]?.[`${holesPlayed}`]?.index
   const courseParP2 =
-    courseMatchQuery.totals.tees[`${playerTwoTees}`]?.[`${holesPlayed}`]
-      ?.par
+    courseMatchQuery.totals.tees[`${playerTwoTees}`]?.[`${holesPlayed}`]?.par
   const playerTwoCourseHC = getCourseHandicap(
     playerTwoHand,
     courseSlopeP2,
@@ -266,14 +261,11 @@ function Match({
     courseParP2
   )
   const courseSlopeP3 =
-    courseMatchQuery.totals.tees[`${playerThreeTees}`][`${holesPlayed}`]
-      ?.slope
+    courseMatchQuery.totals.tees[`${playerThreeTees}`][`${holesPlayed}`]?.slope
   const courseIndexP3 =
-    courseMatchQuery.totals.tees[`${playerThreeTees}`][`${holesPlayed}`]
-      ?.index
+    courseMatchQuery.totals.tees[`${playerThreeTees}`][`${holesPlayed}`]?.index
   const courseParP3 =
-    courseMatchQuery.totals.tees[`${playerThreeTees}`][`${holesPlayed}`]
-      ?.par
+    courseMatchQuery.totals.tees[`${playerThreeTees}`][`${holesPlayed}`]?.par
   const playerThreeCourseHC = getCourseHandicap(
     playerThreeHand,
     courseSlopeP3,
@@ -281,14 +273,11 @@ function Match({
     courseParP3
   )
   const courseSlopeP4 =
-    courseMatchQuery.totals.tees[`${playerFourTees}`][`${holesPlayed}`]
-      ?.slope
+    courseMatchQuery.totals.tees[`${playerFourTees}`][`${holesPlayed}`]?.slope
   const courseIndexP4 =
-    courseMatchQuery.totals.tees[`${playerFourTees}`][`${holesPlayed}`]
-      ?.index
+    courseMatchQuery.totals.tees[`${playerFourTees}`][`${holesPlayed}`]?.index
   const courseParP4 =
-    courseMatchQuery.totals.tees[`${playerFourTees}`][`${holesPlayed}`]
-      ?.par
+    courseMatchQuery.totals.tees[`${playerFourTees}`][`${holesPlayed}`]?.par
   const playerFourCourseHC = getCourseHandicap(
     playerFourHand,
     courseSlopeP4,
@@ -346,6 +335,11 @@ function Match({
     player3,
     p3HCglobal
   )
+  const totalNetTeamOneScore = teamOneScoreArray.reduce(
+    (a, b) => (b === 99 || b === "-" ? a + 0 : a + b),
+    0
+  )
+
   const teamTwoScoreArray = calcTeamScore(
     year,
     courseMatch,
@@ -356,6 +350,9 @@ function Match({
     p2HCglobal,
     player4,
     p4HCglobal
+  )
+  const totalNetTeamTwoScore = teamTwoScoreArray.reduce((a, b) =>
+    b === 99 || b === "-" ? a + 0 : a + b
   )
 
   function calcHoleWinner(hole) {
@@ -522,8 +519,17 @@ function Match({
     p2CourseHC
   ) {
     if (playerObj) {
-      const holeScores = playerObj?.year[`${year}`].scores?.[`${courseMatch}`]
-      const totalScore = [...holeScores[`${holes}`]]
+      const courseScores = playerObj?.year[`${year}`].scores?.[`${courseMatch}`]
+      const matchScoresArr = [...courseScores[`${holes}`]]
+      const totalScore = matchScoresArr.reduce(
+        (a, b) => (a === 99 || b === 99 ? a + 0 : a + b),
+        0
+      )
+      const totalNetScore = matchScoresArr
+        .map((score, i) =>
+          calcPlayerScore(score, p1HC, courseHoles[i].handicap, holes)
+        )
+        .reduce((a, b) => (a === 99 || b === 99 ? a + 0 : a + b), 0)
       const oneScoreGameplay = ["scramble", "alternate", "pinehurst"].includes(
         gameplay
       )
@@ -562,8 +568,8 @@ function Match({
               </span>
             )}
           </div>
-          {totalScore.map((score, i) => (
-            <div className="match__column" key={uuidv1()}>
+          {matchScoresArr.map((score, i) => (
+            <div className="match__column total-score" key={uuidv1()}>
               <>
                 {calcPops(
                   holes,
@@ -606,6 +612,11 @@ function Match({
               </div>
             </div>
           ))}
+          <div className="match__column total-score" key={uuidv1()}>
+            <div className="match__score row-cell total-score-final">
+              {showHandicapScore ? totalNetScore : totalScore}
+            </div>
+          </div>
         </div>
       )
       // }
@@ -738,7 +749,7 @@ function Match({
           </div>
           {courseHoles.map((hole, i) => {
             return (
-              <div className="match__column" key={uuidv1()}>
+              <div className="match__column course-holes" key={uuidv1()}>
                 <div
                   className="match__hole row-cell"
                   data-winner={`${calcHoleWinner(hole.number).team}`}
@@ -771,6 +782,32 @@ function Match({
               </div>
             )
           })}
+          <div className="match__column course-holes total" key={uuidv1()}>
+            <div className="match__hole row-cell" id="">
+              <div className="match__line"></div>
+              {holesPlayed}
+            </div>
+
+            {matchTees && matchTees.length > 0 ? (
+              matchTees.map(tee => {
+                return (
+                  <div className="match__yardage row-cell" key={uuidv1()}>
+                    {
+                      courseMatchQuery?.totals?.tees?.[`${tee}`]?.[
+                        `${holesPlayed}`
+                      ]?.yardage
+                    }
+                  </div>
+                )
+              })
+            ) : (
+              <div className="match__yardage row-cell" key={uuidv1()}>
+                {p1TeesYardage}
+              </div>
+            )}
+            <div className="match__handicap row-cell"></div>
+            <div className="match__par row-cell">{p1TeesPar}</div>
+          </div>
         </div>
 
         <div className="match__teamScores">
@@ -816,12 +853,28 @@ function Match({
                 <div className="match__score row-cell">score</div>
               </div>
               {teamOneScoreArray.map(hole => (
-                <div className="match__column" key={uuidv1()}>
-                  <div className="match__score row-cell final__score--teamOne">
+                <div
+                  className="match__column"
+                  data-teamscore="team-one"
+                  key={uuidv1()}
+                >
+                  <div
+                    className="match__score row-cell final__score--teamOne"
+                    data-finalscore={hole}
+                  >
                     {hole}
                   </div>
                 </div>
               ))}
+              <div
+                className="match__column"
+                data-teamscore="team-one"
+                key={uuidv1()}
+              >
+                <div className="match__score row-cell final__score--teamOne">
+                  {totalNetTeamOneScore}
+                </div>
+              </div>
             </div>
           </div>
 
@@ -867,12 +920,28 @@ function Match({
                 <div className="match__score row-cell">score</div>
               </div>
               {teamTwoScoreArray.map(hole => (
-                <div className="match__column" key={uuidv1()}>
-                  <div className="match__score row-cell final__score--teamTwo">
+                <div
+                  className="match__column"
+                  data-teamscore="team-two"
+                  key={uuidv1()}
+                >
+                  <div
+                    className="match__score row-cell final__score--teamTwo"
+                    data-finalscore={hole}
+                  >
                     {hole}
                   </div>
                 </div>
               ))}
+              <div
+                className="match__column"
+                data-teamscore="team-two"
+                key={uuidv1()}
+              >
+                <div className="match__score row-cell final__score--teamTwo">
+                  {totalNetTeamTwoScore}
+                </div>
+              </div>
             </div>
           </div>
         </div>
