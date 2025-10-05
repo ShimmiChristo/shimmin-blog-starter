@@ -11,7 +11,7 @@ import Highlight2025 from "../components/highlights/highlight-2025"
 import Venue2025 from "../components/venues/venue-2025"
 import HighlightCountdown from "../components/highlights/coutdown-hightlight"
 // import HighlightDay from "../components/highlights/day-hightlights-2023"
-import MatchSummary2024 from "../components/matches/2024/summary"
+import MatchSummary2025 from "../components/matches/2025/summary"
 import Foreword2025 from "../components/matches/2025/foreword"
 
 // import AboutSite from "../components/about-site"
@@ -40,15 +40,17 @@ const TopicPage = ({ data, location }) => {
 
       <h2 className="text-center bold my-5">BFBH Cup 2025 Score</h2>
       <MatchScore year="_2025" lastYearWinner="green" />
-      {/* <div className="col-lg-6 offset-lg-3">
-        <MatchSummary2024 />
-      </div> */}
+      <div className="col-lg-6 offset-lg-3">
+        <MatchSummary2025 />
+      </div>
       {/* <h2 className="text-center bold mt-5">BFBH Cup 2025</h2> */}
       {/* <Highlight2025 /> */}
       {/* <Highlight2024 /> */}
       {/* <hr /> */}
       {/* <br /> */}
-      <Venue2025 />
+      <div className="py-3">
+        <Venue2025 />
+      </div>
     </Layout>
   )
 }

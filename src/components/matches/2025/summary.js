@@ -12,7 +12,7 @@ import {
   dylan,
   evan,
   gordon,
-  jake,
+  stephen,
   matt,
   rj,
 } from "../../../helpers/playerLinks"
@@ -24,11 +24,17 @@ function MatchSummary2025() {
         <div className="container">
           <h2>2025 Match</h2>
           <p>
-            The 2025 Boys From Back Home Cup was the 5th year of the annual
-            tradition. It was held again at Boyne Highlands in Harbor Springs,
-            MI. The cup is a 2-day event, 8 9-hole matches, Ryder Cup style. To
-            contiue the tradition, we played our practice round the day before
-            at Hidden River Golf and Casting Club.
+            The 2025 Boys From Back Home Cup was the 5th year of the annual golf
+            tradition. It was held for the third straight year at Boyne
+            Highlands in Harbor Springs, MI. The cup is a 2-day event, 8 9-hole
+            matches, Ryder Cup style. To contiue the tradition, we played our
+            practice round the day before at Hidden River Golf and Casting Club.
+            Along with the practice round, we also added the par 3 course, Doon
+            Brae on Saturday night.
+          </p>
+          <p>
+            Historically, the team that wins the first match has won the cup.
+            We'll see what happens this year!
           </p>
           <div className="mt-3 mb-4">
             <h3>Day 1</h3>
@@ -37,17 +43,51 @@ function MatchSummary2025() {
             </h4>
           </div>
           <h5 className="font-weight-bold">
-            Round 1 - Best Ball & 2 Best Ball
+            Round 1 & 2 - Best Ball & 2 Best Ball
           </h5>
-          <p></p>
           <p>
             The first day of the 2025 match was held at Bay Harbor Golf Club.
-            The weather was perfect, with mostly clear skies and a light breeze.
-            The Green Team took an early lead, thanks to strong performances
-            from {matt} and {chris}, who both won their matches convincingly.
-            The Blue Team fought back in the afternoon, with {dylan} and {rj}{" "}
-            securing important wins. However, the Green Team maintained their
-            lead, finishing the day at 4-2.
+            The weather was perfect, with partly clear skies and a light breeze.
+            Green jumped out early, winning the first three matches to take a
+            3-0 lead.They continued theri momentum, winning 2 of the next 3
+            matches to take a commanding 5-1 lead into the lunch break.
+          </p>
+          <p>
+            The score won't show it, but all the matches were tight with 5 of
+            the 6 matches came down to the last hole.
+          </p>
+          <h4 className="h5">
+            Crooked Tree Golf Club - Friday, September 26, 2025
+          </h4>
+          <h5 className="font-weight-bold">
+            Round 3 & 4 - Alt Shot & Scramble
+          </h5>
+          <p>
+            For the first year, we played our second round at Crooked Tree Golf
+            Club. The course was in great shape and provided a good challenge
+            for both teams. The weather was again perfect, with sunny skies and
+            a light breeze. The greens were fast and firm, making putting a
+            challenge.
+          </p>
+          <p>
+            The first match of alt shot was a nail biter. It was {matt} and{" "}
+            {stephen} vs {craig} and {dan}. 7 of the 9 holes were halved, with
+            the match all square going into the 9th hole. In the end, they
+            halved the last hole to halve the match. It was the weekend's first
+            halved match.
+          </p>
+          <p>
+            The next match was {gordon} and {derek} vs {dylan} and {evan}. This
+            match was the opposite of the first match. Green and Blue were going
+            back and forth in scoring. 8 of the 9 holes were won by a team. It
+            came down to the 9th hole with Green up. Blue was able to get par to
+            win the hole and halve the match. Another tie on alt shot.
+          </p>
+          <p>
+            The final match of alt shot was {curtis} and {chris} vs {rj} and
+            {cam}. This match was one of a kind. It was all Green. They won the
+            first 5 holes to go 5 and 4. This is one of the few 5&4 matches in
+            cup history. Green won 5 over through 5 holes.
           </p>
         </div>
 
