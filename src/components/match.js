@@ -578,10 +578,17 @@ function Match({
                   courseHoles[i].handicap,
                   courseHoles[i].par
                 )}
-                {calcScorecardMarks(
-                  calcPlayerScore(score, p1HC, courseHoles[i].handicap, holes),
-                  courseHoles[i].par
-                )}
+                {showHandicapScore
+                  ? calcScorecardMarks(
+                      calcPlayerScore(
+                        score,
+                        p1HC,
+                        courseHoles[i].handicap,
+                        holes
+                      ),
+                      courseHoles[i].par
+                    )
+                  : calcScorecardMarks(score, courseHoles[i].par)}
               </>
               <div
                 className="match__score row-cell"

@@ -36,14 +36,14 @@ function calcScorecardMarks(score, holePar) {
         <div className="scorecard-circle circle--1"></div>
       </>
     )
-  } else if (holePar - score > 0 && holePar - score === 2){
+  } else if (holePar - score > 0 && holePar - score === 2) {
     return (
       <>
         <div className="scorecard-circle circle--1"></div>
         <div className="scorecard-circle circle--2"></div>
       </>
     )
-  } else if (holePar - score > 0 && holePar - score === 3){
+  } else if (holePar - score > 0 && holePar - score === 3) {
     return (
       <>
         <div className="scorecard-circle circle--1"></div>
