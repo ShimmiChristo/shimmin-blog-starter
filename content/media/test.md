@@ -1,0 +1,20 @@
+---
+active: true
+index: 01
+category: media
+title: "Exciting New Features Released"
+date: "2025-09-22"
+author: "Chris Shimmin"
+tags:
+  - news
+  - updates
+---
+
+We are thrilled to announce the release of several new features designed to enhance your experience. These updates include:
+
+1. **Improved Performance**: Faster load times across the platform.
+2. **New Design**: A fresh, modern look to improve usability.
+3. **Enhanced Security**: Additional layers of protection for your data.
+
+Stay tuned for more updates, and thank you for your continued support!
+
