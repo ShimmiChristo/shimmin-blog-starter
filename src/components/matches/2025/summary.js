@@ -22,7 +22,7 @@ function MatchSummary2025() {
     <>
       <div className="mb-3">
         <div className="container">
-          <h2>2025 Match</h2>
+          <h2>2025 BFBH Cup</h2>
           <p>
             The 2025 Boys From Back Home Cup was the 5th year of the annual golf
             tradition. It was held for the third straight year at Boyne
@@ -114,10 +114,54 @@ function MatchSummary2025() {
             {dan} was able to make a clutch birdie putt to win the hole and the
             the match.
           </p>
-          <p className="bold">
-            After day 1, Green team has a commanding lead of 8.5 to 3.5. With 15
+          <p>
+            <span className="bold">After day 1</span>, Green team has a
+            commanding lead of <span className="bold">8.5 to 3.5</span>. With 15
             points left, Green needs just 5 points on day 2 to clinch the cup.
           </p>
+          <div className="mt-3 mb-4">
+            <h3>Day 2</h3>
+            <h4 className="h5">
+              Boyne Highlands - Saturday, September 27, 2025
+            </h4>
+          </div>
+          <h5 className="font-weight-bold">
+            Round 5 & 6 - Best Ball Bramble & 2 Best Ball Bramble
+          </h5>
+          <p>
+            Rounds 5 and 6 were held at The Heather at Boyne Highlands. The
+            weather was perfect again, with sunny skies and a light breeze. The
+            course was in great shape, with fast greens and firm fairways.
+          </p>
+          <p>
+            With Blue finding themselves down 5 points, they needed a big day to
+            have a chance at winning the cup. They came out strong in the first
+            match of the day, with {dylan} and {cam} vs {matt} and {curtis}.
+            Blue won 2UP in a back and forth match. {cam} was able to seal his
+            first point of the weekend and {dylan} was able to get his first win
+            of the cup.
+          </p>
+          <p>
+            The next match was the featuerd match, {gordon} and {chris} vs{" "}
+            {craig} and {evan}. Blue was able to jump out to a 1UP lead on the
+            first hole. Then Green got it going and won the next 4 holes.{" "}
+            {gordon} was on fire and made clutch drives. Green was able to win
+            easily, 3&2.
+          </p>
+          <p>
+            In the 3rd match of the round, {rj} and {dan} vs {stephen} and{" "}
+            {derek}. This match only had 3 holes won. Green won hole 3, but then
+            Blue won holes 4 and 7. Blue was able to hang on and win 1UP.
+          </p>
+          <p>
+            After the first round of the day, Green still has a commanding lead
+            of 9.5 to 5.5.
+          </p>
+          {/* <p>
+            The second round of the day was 2 best ball bramble. The first was{" "}
+            {gordon} and {curtis} vs {dylan} and {craig}. Blue was able to win
+            the first hole, but then Green took the next 2 holes. 
+          </p> */}
         </div>
 
         <div className="container">
