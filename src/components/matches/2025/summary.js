@@ -119,7 +119,7 @@ function MatchSummary2025() {
             commanding lead of <span className="bold">8.5 to 3.5</span>. With 15
             points left, Green needs just 5 points on day 2 to clinch the cup.
           </p>
-          <div className="mt-3 mb-4">
+          <div className="mt-4 mb-4">
             <h3>Day 2</h3>
             <h4 className="h5">
               Boyne Highlands - Saturday, September 27, 2025
@@ -157,14 +157,39 @@ function MatchSummary2025() {
             After the first round of the day, Green still has a commanding lead
             of 9.5 to 5.5.
           </p>
-          {/* <p>
-            The second round of the day was 2 best ball bramble. The first was{" "}
-            {gordon} and {curtis} vs {dylan} and {craig}. Blue was able to win
-            the first hole, but then Green took the next 2 holes. 
-          </p> */}
+          <p>
+            The second round of the day was 2 best ball bramble. The first match
+            was {gordon} and {curtis} vs {dylan} and {craig}. Blue was able to
+            win the first hole, but then Green took the next 2 holes to go
+            1UP.Blue got things going and won 3 of the next 4 holes to go 2UP
+            through 7 holes. Hole 8 was havled and Blue won the match, 2&1.
+          </p>
+          <p>
+            THe next match {matt} and {derek} vs {rj} and {evan}. This match
+            played out very similar to the first match, but for Green. Green won
+            the first hole, but Blue fought back and the match was tied through
+            6. Green won holes 7 and 8 to win the match 2&1.
+          </p>
+          <p>
+            The final match of the Heather was the featured match. {chris} and{" "}
+            {stephen} vs {cam} and {dan}. The match started with a push on hole
+            1, but that would be the only halved hole of the match. Cam had his
+            best 9 of the cup in this match. Luckily for him, it was recorded.
+            Blue won hole 2 with par-birdie. Then Green won hole 3, Blue won
+            hole 4, then Green won hole 5. This is where the back and fourth
+            ended. Blue won the next 3 holes wiht a combined 9 strokes ahead of
+            Green. With greate performances by {dan} and {cam}, Blue won the
+            match 3&1.
+          </p>
+          <p>
+            🟩🟦 Score Update. After 6 rounds, Green is up 10.5 to Blue 7.5.
+            Blue fought back and narrowed the gap. The score is at the 2023
+            score, when Green came back and lost the Cup on the last hole of the
+            weekend.
+          </p>
         </div>
 
-        <div className="container">
+        <div className="container mt-3">
           <p>
             <div className="block mb-1">
               <span className="bold">MVP: </span>
