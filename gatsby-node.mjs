@@ -22,13 +22,14 @@ function getCurrentDate() {
 export const createPages = async ({ graphql, actions, reporter }) => {
   const { createPage } = actions
 
-  // Define a template for blog post
+  // Define templates for different post types
   const playerPost = path.resolve(`./src/templates/player-post.js`)
+  const mediaPost = path.resolve(`./src/templates/news-media-post.js`)
 
   // Get all markdown blog posts sorted by date
   const result = await graphql(
     `
-      query GetPublishedPlayerPosts {
+      query GetPublishedPosts {
         allMdx(sort: { frontmatter: { date: ASC } }, limit: 1000) {
           nodes {
             id
@@ -49,7 +50,7 @@ export const createPages = async ({ graphql, actions, reporter }) => {
 
   if (result.errors) {
     reporter.panicOnBuild(
-      `There was an error loading your blog posts`,
+      `There was an error loading your posts`,
       result.errors
     )
     return
@@ -57,18 +58,15 @@ export const createPages = async ({ graphql, actions, reporter }) => {
 
   const posts = result.data.allMdx.nodes
 
-  // Create blog posts pages
-  // But only if there's at least one markdown file found at "content/blog" (defined in gatsby-config.js)
-  // `context` is available in the template as a prop and as a variable in GraphQL
-
   if (posts.length > 0) {
     posts.forEach((post, index) => {
       const previousPostId = index === 0 ? null : posts[index - 1].id
       const nextPostId = index === posts.length - 1 ? null : posts[index + 1].id
+      const template = post.frontmatter.category === 'media' ? mediaPost : playerPost
 
       createPage({
         path: post.fields.slug,
-        component: `${playerPost}?__contentFilePath=${post.internal.contentFilePath}`,
+        component: `${template}?__contentFilePath=${post.internal.contentFilePath}`,
         context: {
           id: post.id,
           previousPostId,
@@ -84,18 +82,29 @@ export const createPages = async ({ graphql, actions, reporter }) => {
 export const onCreateNode = ({ node, actions, getNode }) => {
   const { createNodeField } = actions
 
-  if (node.internal.type === `Mdx` && node.frontmatter.category === `players`) {
-    const value = `/players${createFilePath({
-      node,
-      getNode,
-      basePath: `players/`,
-    })}`
+  if (node.internal.type === `Mdx`) {
+    let value
+    if (node.frontmatter.category === 'players') {
+      value = `/players${createFilePath({
+        node,
+        getNode,
+        basePath: `players/`,
+      })}`
+    } else if (node.frontmatter.category === 'media') {
+      value = `/news-media${createFilePath({
+        node,
+        getNode,
+        basePath: `media/`,
+      })}`
+    }
 
-    createNodeField({
-      name: `slug`,
-      node,
-      value,
-    })
+    if (value) {
+      createNodeField({
+        name: `slug`,
+        node,
+        value,
+      })
+    }
   }
 }
 
@@ -135,9 +144,11 @@ export const createSchemaCustomization = ({ actions }) => {
       date: Date @dateformat
       published: Boolean
       featuredImg: File @fileByRelativePath
+      thumbnail: File @fileByRelativePath
       index: String
       captain: Boolean
       active: Boolean
+      category: String
     }
     type Frontmatter {
       title: String
@@ -145,9 +156,11 @@ export const createSchemaCustomization = ({ actions }) => {
       date: Date @dateformat
       published: Boolean
       featuredImg: File @fileByRelativePath
+      thumbnail: File @fileByRelativePath
       index: String
       captain: Boolean
       active: Boolean
+      category: String
     }
 
     type Fields {

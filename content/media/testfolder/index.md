@@ -1,13 +1,10 @@
 ---
-active: false
-index: 01
-category: media
-title: "Exciting New Features Released"
-date: "2025-09-22"
-author: "Chris Shimmin"
-tags:
-  - news
-  - updates
+title: "Team Launches Youth Development Program"
+date: "2025-09-28"
+category: "media"
+description: "New initiative aims to nurture local talent and give back to the community"
+featuredImg: "../assets/youth-program.jpg"
+active: true
 ---
 
 We are thrilled to announce the release of several new features designed to enhance your experience. These updates include:

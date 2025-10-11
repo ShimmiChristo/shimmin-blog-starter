@@ -1,101 +1,110 @@
-import React from "react"
-// import styled from "styled-components"
-
-import { useSiteMetadata } from "../hooks/use-site-metadata"
-import { graphql } from "gatsby"
-import { v1 as uuidv1 } from "uuid"
-const uuid = uuidv1()
-
+import * as React from "react"
+import { Link, graphql } from "gatsby"
+import { GatsbyImage, getImage } from "gatsby-plugin-image"
 import Layout from "../components/layout"
-import SEO from "../components/seo"
-import LandingPageHeader from "../components/landing-page-header"
-import NewsThumbnail from "../components/news-media/thumbnail"
+import Seo from "../components/seo"
 
-const LatestPage = ({ data, location }) => {
-  console.log('data - ', data);
-  const { title } = useSiteMetadata()
-  // const { nodes } = usePublishedPosts()
-  const siteTitle = title || `Title`
-  // const posts = nodes
-  // const LandingPageBody = styled.div`
-  //   max-width: var(--maxWidth-5xl);
-  //   margin: 0 auto;
-  // `
+const NewsMediaGrid = ({ data, location }) => {
+  const posts = data.allMdx.nodes
 
-  const activePosts = data.allMdx.nodes
-    .filter(post => post.frontmatter?.active !== false)
-    .sort((a, b) => a.frontmatter.index - b.frontmatter.index)
-
-  console.log("activePosts - ", activePosts)
+  console.log("News media posts:", posts) // Add this for debugging
 
   return (
-    <Layout location={location} title={siteTitle}>
-      <SEO title="Sponsors" />
-      <LandingPageHeader title="Latest News" />
-      <div className="container mb-5"></div>
+    <Layout location={location}>
+      <h1>News & Media</h1>
+      <div
+        style={{
+          display: "grid",
+          gridTemplateColumns: "repeat(auto-fill, minmax(300px, 1fr))",
+          gap: "2rem",
+          padding: "2rem 0",
+        }}
+      >
+        {posts.length === 0 ? (
+          <p>No news posts found.</p>
+        ) : (
+          posts.map(post => {
+            const title = post.frontmatter.title || post.fields.slug
+            const image = post.frontmatter.featuredImg ? getImage(post.frontmatter.featuredImg) : null
 
-      <div className="container">
-        <div className="row col-12">
-          {activePosts.map((post, i) => (
-            <NewsThumbnail
-              key={uuid + i}
-              slug={post.fields.slug}
-              title={post?.frontmatter?.name || post?.fields?.slug}
-              name={post?.frontmatter?.nickname}
-              team={post.frontmatter.team}
-              featuredImg={post.frontmatter.featuredImg}
-              captain={post.frontmatter.captain}
-              description={post.frontmatter.description}
-              excerpt={post.excerpt}
-            />
-          ))}
-          {/* <NewsThumbnail
-            title="test"
-            date="2024"
-            // key={uuid + i}
-            // slug={post.fields.slug}
-            // title={post?.frontmatter?.name || post?.fields?.slug}
-            // name={post?.frontmatter?.nickname}
-            // team={post.frontmatter.team}
-            // featuredImg={post.frontmatter.featuredImg}
-            // captain={post.frontmatter.captain}
-            // description={post.frontmatter.description}
-            // excerpt={post.excerpt}
-          /> */}
-        </div>
+            return (
+              <article
+                key={post.fields.slug}
+                className="post-card"
+                itemScope
+                itemType="http://schema.org/Article"
+                style={{
+                  background: "#fff",
+                  borderRadius: "8px",
+                  boxShadow: "0 2px 8px rgba(0,0,0,0.1)",
+                  overflow: "hidden",
+                  transition: "transform 0.2s ease",
+                  cursor: "pointer",
+                }}
+                onMouseOver={e => e.currentTarget.style.transform = "translateY(-4px)"}
+                onMouseOut={e => e.currentTarget.style.transform = "translateY(0)"}
+              >
+                <Link to={post.fields.slug} itemProp="url" style={{ textDecoration: "none", color: "inherit" }}>
+                  {image && (
+                    <GatsbyImage
+                      image={image}
+                      alt={title}
+                      style={{ height: "200px" }}
+                    />
+                  )}
+                  <div style={{ padding: "1.5rem" }}>
+                    <header>
+                      <h2 style={{ marginBottom: "0.5rem" }}>
+                        <span itemProp="headline">{title}</span>
+                      </h2>
+                      <small>{post.frontmatter.date}</small>
+                    </header>
+                    <section>
+                      <p
+                        dangerouslySetInnerHTML={{
+                          __html: post.frontmatter.description || post.excerpt,
+                        }}
+                        itemProp="description"
+                      />
+                    </section>
+                  </div>
+                </Link>
+              </article>
+            )
+          })
+        )}
       </div>
     </Layout>
   )
 }
 
-export default LatestPage
+export default NewsMediaGrid
+
+export const Head = () => <Seo title="News & Media" />
 
 export const pageQuery = graphql`
   query {
-    allMdx(filter: { frontmatter: { category: { eq: "media" } } }) {
+    allMdx(
+      filter: { frontmatter: { category: { eq: "media" } } }
+      sort: { frontmatter: { date: DESC } }
+    ) {
       nodes {
-        id
         excerpt
         fields {
           slug
         }
         frontmatter {
-          active
-          index
-          name
-          nickname
+          date(formatString: "MMMM DD, YYYY")
+          title
           description
-          category
-          team
-          captain
           featuredImg {
             childImageSharp {
-              gatsbyImageData(width: 300)
-            }
-          }
-          thumbnail {
-            childImageSharp {
-              gatsbyImageData(width: 100)
+              gatsbyImageData(
+                width: 300
+                height: 200
+                placeholder: BLURRED
+                formats: [AUTO, WEBP, AVIF]
+              )
             }
           }
         }
