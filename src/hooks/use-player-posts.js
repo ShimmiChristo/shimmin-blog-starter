@@ -4,7 +4,10 @@ export const usePlayersPosts = () => {
   const { allMdx } = useStaticQuery(
     graphql`
       query {
-        allMdx(sort: { frontmatter: { index: ASC } }) {
+        allMdx(
+          filter: { internal: { contentFilePath: { regex: "/players/" } } }
+          sort: { frontmatter: { index: ASC } }
+        ) {
           nodes {
             id
             excerpt
