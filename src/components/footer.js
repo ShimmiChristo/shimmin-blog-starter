@@ -57,15 +57,25 @@ const FooterCopy = styled.div`
 `
 
 function Footer() {
-  const { nav, social, author } = useSiteMetadata()
+  const { nav, footerNav, social, author } = useSiteMetadata()
 
   return (
     <FooterContainer>
       <FooterColumns className="footer__columns">
         <FooterColumn>
-          <h4 className="footer__title">Menu</h4>
+          <h4 className="footer__title">About</h4>
           <ul>
             {nav.map((column, i) => (
+              <li className="footer__item" key={i}>
+                <a href={column.link}>{column.name}</a>
+              </li>
+            ))}
+          </ul>
+        </FooterColumn>
+        <FooterColumn>
+          <h4 className="footer__title">Latest</h4>
+          <ul>
+            {footerNav.map((column, i) => (
               <li className="footer__item" key={i}>
                 <a href={column.link}>{column.name}</a>
               </li>

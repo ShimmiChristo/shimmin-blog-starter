@@ -33,6 +33,10 @@ export const useSiteMetadata = () => {
                 link
               }
             }
+            footerNav {
+              name
+              link
+            }
           }
         }
       }

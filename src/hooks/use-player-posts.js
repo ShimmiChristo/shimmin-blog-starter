@@ -5,8 +5,11 @@ export const usePlayersPosts = () => {
     graphql`
       query {
         allMdx(
-          filter: { internal: { contentFilePath: { regex: "/players/" } } }
-          sort: { frontmatter: { index: ASC } }
+          filter: { 
+            internal: { contentFilePath: { regex: "/players/" } }
+            frontmatter: { active: { eq: true } }
+          }
+          sort: { frontmatter: { date: DESC } }
         ) {
           nodes {
             id

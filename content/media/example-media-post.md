@@ -4,8 +4,8 @@ date: "2025-10-10"
 category: "media"
 description: "This is an example media post showcasing all available markdown formatting options and frontmatter fields."
 featuredImg: "../assets/profile-pic.jpg"
-active: true
-published: true
+active: false
+published: false
 author: "Chris Shimmin"
 tags: ["example", "formatting", "guide"]
 ---

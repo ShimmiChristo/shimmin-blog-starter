@@ -91,6 +91,24 @@ const config = {
       //   link: "/shop",
       // },
     ],
+    footerNav: [
+      {
+        name: "Rules",
+        link: "/rules",
+      },
+      {
+        name: "News",
+        link: "/news-media",
+      },
+      // {
+      //   name: "Handicap Calculator",
+      //   link: "/golf-handicap-calculator",
+      // },
+      {
+        name: "Shop",
+        link: "/shop",
+      },
+    ],
   },
   plugins: [
     {

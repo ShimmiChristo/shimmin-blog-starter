@@ -25,7 +25,9 @@ const NewsMediaGrid = ({ data, location }) => {
         ) : (
           posts.map(post => {
             const title = post.frontmatter.title || post.fields.slug
-            const image = post.frontmatter.featuredImg ? getImage(post.frontmatter.featuredImg) : null
+            const image = post.frontmatter.featuredImg
+              ? getImage(post.frontmatter.featuredImg)
+              : null
 
             return (
               <article
@@ -41,10 +43,18 @@ const NewsMediaGrid = ({ data, location }) => {
                   transition: "transform 0.2s ease",
                   cursor: "pointer",
                 }}
-                onMouseOver={e => e.currentTarget.style.transform = "translateY(-4px)"}
-                onMouseOut={e => e.currentTarget.style.transform = "translateY(0)"}
+                onMouseOver={e =>
+                  (e.currentTarget.style.transform = "translateY(-4px)")
+                }
+                onMouseOut={e =>
+                  (e.currentTarget.style.transform = "translateY(0)")
+                }
               >
-                <Link to={post.fields.slug} itemProp="url" style={{ textDecoration: "none", color: "inherit" }}>
+                <Link
+                  to={post.fields.slug}
+                  itemProp="url"
+                  style={{ textDecoration: "none", color: "inherit" }}
+                >
                   {image && (
                     <GatsbyImage
                       image={image}
@@ -85,7 +95,9 @@ export const Head = () => <Seo title="News & Media" />
 export const pageQuery = graphql`
   query {
     allMdx(
-      filter: { frontmatter: { category: { eq: "media" } } }
+      filter: {
+        frontmatter: { category: { eq: "media" }, active: { eq: true } }
+      }
       sort: { frontmatter: { date: DESC } }
     ) {
       nodes {
