@@ -4,7 +4,7 @@ date: "2025-09-28"
 category: "media"
 description: "New initiative aims to nurture local talent and give back to the community"
 featuredImg: "../assets/youth-program.jpg"
-active: true
+active: false
 ---
 
 Today marks the launch of our comprehensive Youth Development Program, designed to discover and nurture young talent in our local community. The program will provide free training sessions, equipment, and mentorship opportunities to aspiring young athletes aged 8-16.

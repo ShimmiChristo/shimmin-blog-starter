@@ -4,7 +4,7 @@ date: "2025-09-28"
 category: "media"
 description: "New initiative aims to nurture local talent and give back to the community"
 featuredImg: "../assets/youth-program.jpg"
-active: true
+active: false
 ---
 
 We are thrilled to announce the release of several new features designed to enhance your experience. These updates include:

@@ -4,7 +4,7 @@ date: "2025-10-01"
 category: "media"
 description: "Team strengthens squad with exciting new signing"
 featuredImg: "../assets/new-signing.jpg"
-active: true
+active: false
 ---
 
 We are thrilled to announce the signing of international star player Alex Thompson on a three-year contract. This landmark signing represents our continued commitment to building a world-class squad.

@@ -4,7 +4,7 @@ date: "2025-09-15"
 category: "media"
 description: "An incredible performance leads to a stunning victory in the regional championships"
 featuredImg: "./assets/mountains.jpg"
-active: true
+active: false
 ---
 
 In a thrilling display of skill and teamwork, our team emerged victorious at the 2025 Regional Championships. The squad showed remarkable resilience throughout the tournament, culminating in a spectacular final match that kept supporters on the edge of their seats.

@@ -4,7 +4,7 @@ date: "2025-09-20"
 category: "media"
 description: "State-of-the-art renovations coming to enhance fan and player experience"
 featuredImg: "../assets/facility-upgrade.jpg"
-active: true
+active: false
 ---
 
 We're excited to announce a comprehensive upgrade to our main facility, scheduled to begin next month. This $10 million investment will significantly enhance both player facilities and fan experience.

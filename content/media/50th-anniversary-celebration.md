@@ -4,7 +4,7 @@ date: "2025-10-05"
 category: "media"
 description: "A look back at five decades of achievements as we celebrate our 50th anniversary"
 featuredImg: "../assets/50th-anniversary.jpg"
-active: true
+active: false
 ---
 
 This month marks an incredible milestone as we celebrate 50 years since our organization's founding. From humble beginnings in 1975 to becoming one of the most respected institutions in the sport, our journey has been nothing short of remarkable.

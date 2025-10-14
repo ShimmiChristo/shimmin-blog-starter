@@ -21,7 +21,7 @@ const NewsMediaGrid = ({ data, location }) => {
         }}
       >
         {posts.length === 0 ? (
-          <p>No news posts found.</p>
+          <p>News and Media posts coming soon!</p>
         ) : (
           posts.map(post => {
             const title = post.frontmatter.title || post.fields.slug
