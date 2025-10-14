@@ -6,6 +6,8 @@ export const PlayerInfoUpdate = () => {
       playersUpdateJson {
         blake {
           name
+          appearances
+          handicap
           year {
             _2024 {
               handicap
@@ -53,6 +55,8 @@ export const PlayerInfoUpdate = () => {
         }
         cam {
           name
+          appearances
+          handicap
           year {
             _2025 {
               handicap
@@ -180,6 +184,8 @@ export const PlayerInfoUpdate = () => {
         }
         chris {
           name
+          appearances
+          handicap
           year {
             _2025 {
               handicap
@@ -349,6 +355,8 @@ export const PlayerInfoUpdate = () => {
         }
         craig {
           name
+          appearances
+          handicap
           year {
             _2025 {
               handicap
@@ -556,6 +564,8 @@ export const PlayerInfoUpdate = () => {
         }
         curtis {
           name
+          appearances
+          handicap
           year {
             _2025 {
               handicap
@@ -725,6 +735,8 @@ export const PlayerInfoUpdate = () => {
         }
         dan {
           name
+          appearances
+          handicap
           year {
             _2025 {
               handicap
@@ -932,6 +944,8 @@ export const PlayerInfoUpdate = () => {
         }
         derek {
           name
+          appearances
+          handicap
           year {
             _2025 {
               handicap
@@ -1139,6 +1153,8 @@ export const PlayerInfoUpdate = () => {
         }
         dylan {
           name
+          appearances
+          handicap
           year {
             _2025 {
               handicap
@@ -1346,6 +1362,8 @@ export const PlayerInfoUpdate = () => {
         }
         evan {
           name
+          appearances
+          handicap
           year {
             _2025 {
               handicap
@@ -1515,6 +1533,8 @@ export const PlayerInfoUpdate = () => {
         }
         gordon {
           name
+          appearances
+          handicap
           year {
             _2025 {
               handicap
@@ -1642,6 +1662,8 @@ export const PlayerInfoUpdate = () => {
         }
         jake {
           name
+          appearances
+          handicap
           year {
             _2024 {
               handicap
@@ -1769,6 +1791,8 @@ export const PlayerInfoUpdate = () => {
         }
         matt {
           name
+          appearances
+          handicap
           year {
             _2025 {
               handicap
@@ -1976,6 +2000,8 @@ export const PlayerInfoUpdate = () => {
         }
         rj {
           name
+          appearances
+          handicap
           year {
             _2025 {
               handicap
@@ -2183,6 +2209,8 @@ export const PlayerInfoUpdate = () => {
         }
         stephen {
           name
+          appearances
+          handicap
           year {
             _2025 {
               handicap
@@ -2230,6 +2258,8 @@ export const PlayerInfoUpdate = () => {
         }
         stephen {
           name
+          appearances
+          handicap
           year {
             _2025 {
               handicap
@@ -2277,6 +2307,8 @@ export const PlayerInfoUpdate = () => {
         }
         travis {
           name
+          appearances
+          handicap
           year {
             _2025 {
               handicap

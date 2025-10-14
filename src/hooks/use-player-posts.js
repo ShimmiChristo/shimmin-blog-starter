@@ -7,7 +7,6 @@ export const usePlayersPosts = () => {
         allMdx(
           filter: { 
             internal: { contentFilePath: { regex: "/players/" } }
-            frontmatter: { active: { eq: true } }
           }
           sort: { frontmatter: { date: DESC } }
         ) {

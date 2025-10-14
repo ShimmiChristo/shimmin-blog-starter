@@ -46,10 +46,10 @@ const config = {
             name: "Rules",
             link: "/rules",
           },
-          {
-            name: "Handicap Calculator",
-            link: "/golf-handicap-calculator",
-          },
+          // {
+          //   name: "Handicap Calculator",
+          //   link: "/golf-handicap-calculator",
+          // },
         ],
       },
       {

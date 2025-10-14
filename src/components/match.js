@@ -145,11 +145,11 @@ function Match({
   const player1Post = posts.filter(
     player => player.frontmatter?.name === player1.toLowerCase()
   )
-  const player1Pic = getImage(player1Post[0].frontmatter.thumbnail)
+  const player1Pic = getImage(player1Post[0]?.frontmatter.thumbnail)
   const player2Post = posts.filter(
     player => player.frontmatter?.name === player2.toLowerCase()
   )
-  const player2Pic = getImage(player2Post[0].frontmatter.thumbnail)
+  const player2Pic = getImage(player2Post[0]?.frontmatter.thumbnail)
   const player3Post = posts.filter(
     player => player.frontmatter?.name === player3?.toLowerCase()
   )
