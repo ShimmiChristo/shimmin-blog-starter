@@ -14,8 +14,10 @@
             "bayHarborPreserveLinks": {
               "course": "Bay Harbor Preserve Links",
               "front": [99, 99, 99, 99, 99, 99, 99, 99, 99],
+              "frontGross": 891,
               "frontHandicap": 999,
               "back": [99, 99, 99, 99, 99, 99, 99, 99, 99],
+              "backGross": 891,
               "backHandicap": 999
             },
             "crookedTree": {
@@ -204,8 +206,10 @@
             "bayHarborPreserveLinks": {
               "course": "Bay Harbor Preserve Links",
               "front": [99, 99, 99, 99, 99, 99, 99, 99, 99],
+              "frontGross": 891,
               "frontHandicap": 999,
               "back": [99, 99, 99, 99, 99, 99, 99, 99, 99],
+              "backGross": 891,
               "backHandicap": 999
             },
             "crookedTree": {
@@ -394,29 +398,37 @@
             "bayHarborGolfClub": {
               "course": "Bay Harbor Golf Club",
               "front": [7, 5, 6, 3, 4, 4, 6, 4, 6],
+              "frontGross": 45,
               "frontHandicap": 999,
               "back": [6, 5, 8, 5, 7, 5, 5, 5, 99],
+              "backGross": 46,
               "backHandicap": 999
             },
             "boyneHighlandsMoor": {
               "course": "The Moor at Boyne Highlands",
               "front": [5, 7, 7, 5, 6, 2, 4, 7, 7],
+              "frontGross": 50,
               "frontHandicap": 999,
               "back": [5, 4, 4, 5, 4, 6, 5, 3, 5],
+              "backGross": 41,
               "backHandicap": 999
             },
             "boyneHighlandsArthurHills": {
               "course": "Arthur Hills at Boyne Highlands",
               "front": [6, 4, 5, 4, 6, 5, 3, 5, 99],
+              "frontGross": 38,
               "frontHandicap": 999,
               "back": [6, 8, 4, 6, 3, 6, 99, 99, 99],
+              "backGross": 33,
               "backHandicap": 999
             },
             "boyneHighlandsHeather": {
               "course": "The Heather at Boyne Highlands",
               "front": [4, 5, 4, 4, 8, 3, 5, 5, 99],
+              "frontGross": 38,
               "frontHandicap": 999,
               "back": [7, 7, 3, 5, 5, 6, 6, 6, 5],
+              "backGross": 50,
               "backHandicap": 999
             }
           },
@@ -575,32 +587,49 @@
           "captain": false,
           "team": "blue",
           "scores": {
+            "hiddenRiverGolfClub": {
+              "course": "Hidden River Golf Club",
+              "front": [6, 6, 5, 6, 7, 6, 7, 6, 4],
+              "frontGross": 53,
+              "frontHandicap": 999,
+              "back": [5, 6, 8, 4, 6, 7, 8, 10, 7],
+              "backGross": 61,
+              "backHandicap": 999
+            },
             "bayHarborPreserveLinks": {
               "course": "Bay Harbor Preserve Links",
               "front": [8, 6, 5, 7, 4, 6, 8, 6, 4],
+              "frontGross": 54,
               "frontHandicap": 999,
               "back": [6, 6, 7, 6, 8, 8, 10, 5, 8],
+              "backGross": 64,
               "backHandicap": 999
             },
             "crookedTree": {
               "course": "Crooked Tree Golf Club",
               "front": [6, 7, 6, 10, 5, 99, 99, 99, 99],
+              "frontGross": 34,
               "frontHandicap": 999,
               "back": [5, 3, 4, 5, 4, 5, 4, 6, 4],
+              "backGross": 40,
               "backHandicap": 999
             },
             "boyneHighlandsHeather": {
               "course": "The Heather at Boyne Highlands",
               "front": [7, 5, 7, 3, 7, 5, 4, 6, 6],
+              "frontGross": 50,
               "frontHandicap": 999,
               "back": [5, 5, 4, 4, 6, 5, 4, 5, 6],
+              "backGross": 44,
               "backHandicap": 999
             },
             "boyneHighlandsArthurHills": {
               "course": "Arthur Hills at Boyne Highlands",
               "front": [5, 5, 7, 4, 5, 7, 4, 5, 99],
+              "frontGross": 42,
               "frontHandicap": 999,
               "back": [5, 8, 7, 7, 3, 6, 3, 99, 99],
+              "backGross": 39,
               "backHandicap": 999
             }
           },
@@ -744,7 +773,24 @@
                 }
               ]
             }
-          ]
+          ],
+          "stats": {
+            "gamesPlayed": 8,
+            "winPercentage": 16.67,
+            "pointsPerGame": 0.67,
+            "points": 4,
+            "wins": 1,
+            "ties": 1,
+            "losses": 4,
+            "grossPars": 18,
+            "netPars": 12,
+            "grossBirdies": 5,
+            "netBirdies": 8,
+            "grossEagles": 0,
+            "netEagles": 0,
+            "grossHolesInOne": 0,
+            "netHolesInOne": 0
+          }
         },
         "_2023": {
           "id": 2023,
@@ -752,32 +798,49 @@
           "captain": false,
           "team": "blue",
           "scores": {
+            "bayHarborLinksQuarry": {
+              "course": "Bay Harbor Links Quarry",
+              "front": [5, 4, 7, 5, 6, 4, 7, 4, 7],
+              "frontGross": 49,
+              "frontHandicap": 999,
+              "back": [],
+              "backGross": 0,
+              "backHandicap": 999
+            },
             "boyneHighlandsArthurHills": {
               "course": "Arthur Hills at Boyne Highlands",
               "front": [7, 4, 6, 6, 6, 8, 5, 5, 6],
+              "frontGross": 53,
               "frontHandicap": 999,
               "back": [8, 6, 7, 7, 4, 7, 5, 6, 7],
+              "backGross": 57,
               "backHandicap": 999
             },
             "boyneHighlandsDonaldRoss": {
               "course": "Donald Ross at Boyne Highlands",
               "front": [6, 6, 4, 7, 7, 6, 4, 4, 5],
+              "frontGross": 49,
               "frontHandicap": 999,
               "back": [5, 5, 4, 5, 5, 4, 5, 3, 4],
+              "backGross": 40,
               "backHandicap": 999
             },
             "boyneHighlandsMoor": {
               "course": "The Moor at Boyne Highlands",
               "front": [6, 7, 6, 3, 5, 4, 5, 5, 5],
+              "frontGross": 46,
               "frontHandicap": 999,
               "back": [5, 4, 4, 5, 10, 5, 8, 3, 5],
+              "backGross": 49,
               "backHandicap": 999
             },
             "boyneHighlandsHeather": {
               "course": "The Heather at Boyne Highlands",
               "front": [4, 4, 4, 3, 5, 3, 4, 4, 6],
+              "frontGross": 37,
               "frontHandicap": 999,
               "back": [4, 5, 3, 4, 4, 4, 4, 5, 4],
+              "backGross": 37,
               "backHandicap": 999
             }
           },
@@ -938,29 +1001,37 @@
             "stoatinBrae": {
               "course": "Stoatin Brae",
               "front": [5, 5, 7, 5, 7, 8, 0, 0, 0],
+              "frontGross": 37,
               "frontHandicap": 999,
               "back": [4, 3, 4, 4, 4, 3, 4, 6, 0],
+              "backGross": 32,
               "backHandicap": 999
             },
             "stonehedgeSouth": {
               "course": "Stonehedge South",
               "front": [6, 5, 4, 5, 4, 4, 6, 5, 5],
+              "frontGross": 44,
               "frontHandicap": 999,
               "back": [6, 5, 5, 4, 5, 5, 3, 0, 0],
+              "backGross": 33,
               "backHandicap": 999
             },
             "gullLakeEast": {
               "course": "Gull Lake East",
               "front": [4, 3, 4, 4, 4, 3, 4, 5, 0],
+              "frontGross": 31,
               "frontHandicap": 999,
               "back": [6, 5, 6, 6, 6, 4, 0, 0, 0],
+              "backGross": 33,
               "backHandicap": 999
             },
             "gullLakeWest": {
               "course": "Gull Lake West",
               "front": [4, 3, 4, 4, 5, 3, 4, 4, 0],
+              "frontGross": 31,
               "frontHandicap": 999,
               "back": [6, 5, 7, 4, 7, 7, 7, 6, 0],
+              "backGross": 49,
               "backHandicap": 999
             }
           },
@@ -1295,32 +1366,49 @@
           "captain": false,
           "team": "green",
           "scores": {
+            "hiddenRiverGolfClub": {
+              "course": "Hidden River Golf Club",
+              "front": [4, 5, 3, 6, 6, 5, 7, 5, 3],
+              "frontGross": 44,
+              "frontHandicap": 999,
+              "back": [5, 8, 5, 4, 5, 5, 7, 6, 4],
+              "backGross": 49,
+              "backHandicap": 999
+            },
             "bayHarborPreserveLinks": {
               "course": "Bay Harbor Preserve Links",
               "front": [6, 6, 5, 6, 4, 6, 4, 6, 4],
+              "frontGross": 47,
               "frontHandicap": 999,
               "back": [5, 4, 4, 3, 4, 6, 6, 4, 4],
+              "backGross": 40,
               "backHandicap": 999
             },
             "crookedTree": {
               "course": "Crooked Tree Golf Club",
               "front": [4, 6, 5, 5, 3, 99, 99, 99, 99],
+              "frontGross": 23,
               "frontHandicap": 999,
               "back": [5, 4, 3, 6, 3, 3, 4, 5, 5],
+              "backGross": 38,
               "backHandicap": 999
             },
             "boyneHighlandsHeather": {
               "course": "The Heather at Boyne Highlands",
               "front": [6, 5, 4, 4, 6, 6, 3, 5, 5],
+              "frontGross": 44,
               "frontHandicap": 999,
               "back": [5, 5, 3, 5, 4, 7, 4, 6, 6],
+              "backGross": 45,
               "backHandicap": 999
             },
             "boyneHighlandsArthurHills": {
               "course": "Arthur Hills at Boyne Highlands",
               "front": [4, 5, 7, 5, 4, 6, 3, 5, 99],
+              "frontGross": 39,
               "frontHandicap": 999,
               "back": [7, 7, 5, 6, 5, 4, 6, 4, 5],
+              "backGross": 49,
               "backHandicap": 999
             }
           },
@@ -1464,7 +1552,24 @@
                 }
               ]
             }
-          ]
+          ],
+          "stats": {
+            "gamesPlayed": 8,
+            "winPercentage": 66.67,
+            "pointsPerGame": 1.33,
+            "points": 12,
+            "wins": 6,
+            "ties": 0,
+            "losses": 3,
+            "grossPars": 26,
+            "netPars": 18,
+            "grossBirdies": 10,
+            "netBirdies": 14,
+            "grossEagles": 0,
+            "netEagles": 0,
+            "grossHolesInOne": 0,
+            "netHolesInOne": 0
+          }
         },
         "_2024": {
           "id": 2024,
@@ -1472,6 +1577,15 @@
           "captain": false,
           "team": "green",
           "scores": {
+            "hiddenRiverGolfClub": {
+              "course": "Hidden River Golf Club",
+              "front": [6, 6, 4, 5, 6, 6, 6, 4, 3],
+              "frontGross": 46,
+              "frontHandicap": 999,
+              "back": [5, 4, 5, 4, 6, 4, 4, 5, 4],
+              "backGross": 41,
+              "backHandicap": 999
+            },
             "bayHarborGolfClub": {
               "course": "Bay Harbor Golf Club",
               "front": [6, 6, 4, 4, 5, 4, 5, 4, 8],
@@ -1649,6 +1763,15 @@
           "captain": false,
           "team": "green",
           "scores": {
+            "bayHarborLinksQuarry": {
+              "course": "Bay Harbor Links Quarry",
+              "front": [4, 4, 5, 4, 4, 6, 6, 5, 4],
+              "frontGross": 42,
+              "frontHandicap": 999,
+              "back": [6, 5, 6, 6, 9, 4, 5, 5, 6],
+              "backGross": 52,
+              "backHandicap": 999
+            },
             "boyneHighlandsArthurHills": {
               "course": "Arthur Hills at Boyne Highlands",
               "front": [6, 6, 7, 6, 6, 6, 3, 4, 4],
@@ -2316,7 +2439,24 @@
                 }
               ]
             }
-          ]
+          ],
+          "stats": {
+            "gamesPlayed": 8,
+            "winPercentage": 50.0,
+            "pointsPerGame": 1.0,
+            "points": 8,
+            "wins": 4,
+            "ties": 2,
+            "losses": 2,
+            "grossPars": 24,
+            "netPars": 16,
+            "grossBirdies": 8,
+            "netBirdies": 12,
+            "grossEagles": 0,
+            "netEagles": 0,
+            "grossHolesInOne": 0,
+            "netHolesInOne": 0
+          }
         },
         "_2024": {
           "id": 2024,
@@ -2324,6 +2464,15 @@
           "captain": false,
           "team": "blue",
           "scores": {
+            "hiddenRiverGolfClub": {
+              "course": "Hidden River Golf Club",
+              "front": [5, 6, 5, 5, 6, 4, 7, 5, 5],
+              "frontGross": 48,
+              "frontHandicap": 999,
+              "back": [5, 6, 4, 5, 5, 3, 5, 6, 5],
+              "backGross": 44,
+              "backHandicap": 999
+            },
             "bayHarborGolfClub": {
               "course": "Bay Harbor Golf Club",
               "front": [5, 5, 7, 4, 7, 5, 7, 4, 6],
@@ -2501,6 +2650,15 @@
           "captain": false,
           "team": "blue",
           "scores": {
+            "bayHarborLinksQuarry": {
+              "course": "Bay Harbor Links Quarry",
+              "front": [5, 4, 5, 6, 5, 8, 6, 4, 6],
+              "frontGross": 49,
+              "frontHandicap": 999,
+              "back": [],
+              "backGross": 0,
+              "backHandicap": 999
+            },
             "boyneHighlandsArthurHills": {
               "course": "Arthur Hills at Boyne Highlands",
               "front": [4, 4, 5, 4, 4, 5, 3, 4, 3],
@@ -2986,6 +3144,15 @@
           "captain": false,
           "team": "green",
           "scores": {
+            "hiddenRiverGolfClub": {
+              "course": "Hidden River Golf Club",
+              "front": [8, 7, 4, 6, 6, 6, 9, 4, 4],
+              "frontGross": 54,
+              "frontHandicap": 999,
+              "back": [5, 8, 5, 3, 7, 2, 5, 5, 5],
+              "backGross": 45,
+              "backHandicap": 999
+            },
             "bayHarborPreserveLinks": {
               "course": "Bay Harbor Preserve Links",
               "front": [5, 7, 6, 5, 5, 7, 7, 6, 4],
@@ -3155,7 +3322,24 @@
                 }
               ]
             }
-          ]
+          ],
+          "stats": {
+            "gamesPlayed": 8,
+            "winPercentage": 37.5,
+            "pointsPerGame": 0.625,
+            "points": 5,
+            "wins": 3,
+            "ties": 0,
+            "losses": 5,
+            "grossPars": 20,
+            "netPars": 12,
+            "grossBirdies": 8,
+            "netBirdies": 10,
+            "grossEagles": 0,
+            "netEagles": 0,
+            "grossHolesInOne": 0,
+            "netHolesInOne": 0
+          }
         },
         "_2024": {
           "id": 2024,
@@ -3702,12 +3886,32 @@
           "captain": false,
           "team": "blue",
           "scores": {
+            "hiddenRiverGolfClub": {
+              "course": "Hidden River Golf Club",
+              "front": [7, 5, 6, 9, 6, 4, 7, 6, 6],
+              "frontGross": 56,
+              "frontHandicap": 999,
+              "back": [5, 4, 4, 6, 5, 4, 5, 5, 6],
+              "backGross": 44,
+              "backHandicap": 999
+            },
             "bayHarborPreserveLinks": {
               "course": "Bay Harbor Preserve Links",
               "front": [7, 7, 4, 9, 5, 8, 7, 6, 6],
+              "frontGross": 59,
               "frontHandicap": 999,
               "back": [5, 5, 3, 3, 6, 6, 8, 4, 6],
-              "backHandicap": 999
+              "backGross": 46,
+              "backHandicap": 999,
+              "grossScore": 105,
+              "grossPars": 0,
+              "netPars": 0,
+              "grossBirdies": 0,
+              "netBirdies": 0,
+              "grossEagles": 0,
+              "netEagles": 0,
+              "grossHolesInOne": 0,
+              "netHolesInOne": 0
             },
             "crookedTree": {
               "course": "Crooked Tree Golf Club",
@@ -3871,7 +4075,16 @@
                 }
               ]
             }
-          ]
+          ],
+          "stats": {
+            "gamesPlayed": 8,
+            "winPercentage": 62.5,
+            "pointsPerGame": 1.0,
+            "points": 8,
+            "wins": 5,
+            "ties": 1,
+            "losses": 2
+          }
         },
         "_2024": {
           "id": 2024,
@@ -3879,6 +4092,15 @@
           "captain": false,
           "team": "blue",
           "scores": {
+            "hiddenRiverGolfClub": {
+              "course": "Hidden River Golf Club",
+              "front": [5, 6, 5, 7, 9, 6, 6, 4, 4],
+              "frontGross": 52,
+              "frontHandicap": 999,
+              "back": [8, 6, 5, 6, 7, 3, 9, 6, 5],
+              "backGross": 55,
+              "backHandicap": 999
+            },
             "bayHarborGolfClub": {
               "course": "Bay Harbor Golf Club",
               "front": [9, 6, 5, 4, 8, 10, 8, 4, 6],
@@ -4056,6 +4278,15 @@
           "captain": false,
           "team": "blue",
           "scores": {
+            "bayHarborLinksQuarry": {
+              "course": "Bay Harbor Links Quarry",
+              "front": [8, 7, 7, 5, 8, 7, 6, 4, 6],
+              "frontGross": 58,
+              "frontHandicap": 999,
+              "back": [5, 6, 10, 8, 12, 6, 8, 5, 6],
+              "backGross": 66,
+              "backHandicap": 999
+            },
             "boyneHighlandsArthurHills": {
               "course": "Arthur Hills at Boyne Highlands",
               "front": [8, 7, 10, 8, 7, 8, 3, 7, 5],
@@ -4541,6 +4772,15 @@
           "captain": false,
           "team": "green",
           "scores": {
+            "hiddenRiverGolfClub": {
+              "course": "Hidden River Golf Club",
+              "front": [7, 5, 6, 7, 7, 4, 7, 5, 4],
+              "frontGross": 52,
+              "frontHandicap": 999,
+              "back": [4, 6, 5, 4, 6, 5, 6, 6, 6],
+              "backGross": 48,
+              "backHandicap": 999
+            },
             "bayHarborPreserveLinks": {
               "course": "Bay Harbor Preserve Links",
               "front": [5, 5, 7, 7, 6, 7, 6, 6, 4],
@@ -4718,6 +4958,15 @@
           "captain": false,
           "team": "green",
           "scores": {
+            "hiddenRiverGolfClub": {
+              "course": "Hidden River Golf Club",
+              "front": [4, 6, 3, 5, 7, 8, 8, 5, 3],
+              "frontGross": 49,
+              "frontHandicap": 999,
+              "back": [6, 8, 7, 5, 7, 4, 5, 7, 6],
+              "backGross": 54,
+              "backHandicap": 999
+            },
             "bayHarborGolfClub": {
               "course": "Bay Harbor Golf Club",
               "front": [7, 6, 6, 6, 7, 7, 7, 4, 6],
@@ -4895,6 +5144,15 @@
           "captain": false,
           "team": "green",
           "scores": {
+            "bayHarborLinksQuarry": {
+              "course": "Bay Harbor Links Quarry",
+              "front": [6, 4, 6, 4, 5, 7, 7, 5, 4],
+              "frontGross": 48,
+              "frontHandicap": 999,
+              "back": [6, 3, 7, 4, 9, 5, 6, 3, 6],
+              "backGross": 49,
+              "backHandicap": 999
+            },
             "boyneHighlandsArthurHills": {
               "course": "Arthur Hills at Boyne Highlands",
               "front": [4, 4, 5, 4, 4, 5, 3, 4, 3],
@@ -5381,6 +5639,15 @@
           "captain": false,
           "team": "blue",
           "scores": {
+            "hiddenRiverGolfClub": {
+              "course": "Hidden River Golf Club",
+              "front": [5, 5, 3, 4, 6, 5, 5, 5, 4],
+              "frontGross": 42,
+              "frontHandicap": 999,
+              "back": [4, 6, 6, 2, 4, 5, 5, 4, 4],
+              "backGross": 40,
+              "backHandicap": 999
+            },
             "bayHarborPreserveLinks": {
               "course": "Bay Harbor Preserve Links",
               "front": [3, 4, 4, 6, 4, 6, 4, 3, 4],
@@ -5558,6 +5825,15 @@
           "captain": false,
           "team": "blue",
           "scores": {
+            "hiddenRiverGolfClub": {
+              "course": "Hidden River Golf Club",
+              "front": [5, 5, 4, 5, 7, 4, 6, 5, 4],
+              "frontGross": 45,
+              "frontHandicap": 999,
+              "back": [3, 4, 4, 4, 6, 5, 5, 6, 5],
+              "backGross": 42,
+              "backHandicap": 999
+            },
             "bayHarborGolfClub": {
               "course": "Bay Harbor Golf Club",
               "front": [6, 4, 3, 3, 5, 4, 5, 4, 4],
@@ -5735,6 +6011,15 @@
           "captain": false,
           "team": "blue",
           "scores": {
+            "bayHarborLinksQuarry": {
+              "course": "Bay Harbor Links Quarry",
+              "front": [],
+              "frontGross": 0,
+              "frontHandicap": 999,
+              "back": [],
+              "backGross": 0,
+              "backHandicap": 999
+            },
             "boyneHighlandsArthurHills": {
               "course": "Arthur Hills at Boyne Highlands",
               "front": [4, 4, 5, 5, 4, 6, 3, 5, 4],
@@ -6220,6 +6505,15 @@
           "captain": false,
           "team": "blue",
           "scores": {
+            "hiddenRiverGolfClub": {
+              "course": "Hidden River Golf Club",
+              "front": [7, 4, 4, 5, 7, 5, 10, 6, 4],
+              "frontGross": 52,
+              "frontHandicap": 999,
+              "back": [5, 10, 7, 6, 6, 3, 6, 10, 5],
+              "backGross": 58,
+              "backHandicap": 999
+            },
             "bayHarborPreserveLinks": {
               "course": "Bay Harbor Preserve Links",
               "front": [7, 8, 5, 7, 6, 10, 7, 4, 5],
@@ -6397,6 +6691,15 @@
           "captain": false,
           "team": "blue",
           "scores": {
+            "hiddenRiverGolfClub": {
+              "course": "Hidden River Golf Club",
+              "front": [5, 7, 4, 7, 6, 6, 8, 5, 5],
+              "frontGross": 53,
+              "frontHandicap": 999,
+              "back": [7, 7, 7, 3, 5, 4, 9, 9, 5],
+              "backGross": 56,
+              "backHandicap": 999
+            },
             "bayHarborGolfClub": {
               "course": "Bay Harbor Golf Club",
               "front": [7, 5, 8, 5, 5, 5, 7, 5, 8],
@@ -7111,6 +7414,15 @@
           "captain": false,
           "team": "green",
           "scores": {
+            "hiddenRiverGolfClub": {
+              "course": "Hidden River Golf Club",
+              "front": [5, 4, 4, 5, 6, 5, 5, 4, 4],
+              "frontGross": 42,
+              "frontHandicap": 999,
+              "back": [4, 6, 3, 4, 4, 4, 7, 6, 5],
+              "backGross": 43,
+              "backHandicap": 999
+            },
             "bayHarborGolfClub": {
               "course": "Bay Harbor Golf Club",
               "front": [5, 6, 5, 3, 4, 5, 5, 5, 6],
@@ -7998,6 +8310,15 @@
           "captain": false,
           "team": "green",
           "scores": {
+            "hiddenRiverGolfClub": {
+              "course": "Hidden River Golf Club",
+              "front": [5, 5, 3, 6, 5, 4, 5, 4, 3],
+              "frontGross": 40,
+              "frontHandicap": 999,
+              "back": [4, 6, 5, 2, 5, 4, 4, 5, 4],
+              "backGross": 39,
+              "backHandicap": 999
+            },
             "bayHarborPreserveLinks": {
               "course": "Bay Harbor Preserve Links",
               "front": [6, 4, 4, 5, 4, 6, 3, 6, 3],
@@ -8175,6 +8496,15 @@
           "captain": true,
           "team": "green",
           "scores": {
+            "hiddenRiverGolfClub": {
+              "course": "Hidden River Golf Club",
+              "front": [4, 5, 3, 4, 7, 5, 6, 5, 3],
+              "frontGross": 42,
+              "frontHandicap": 999,
+              "back": [4, 6, 4, 4, 5, 4, 5, 5, 4],
+              "backGross": 41,
+              "backHandicap": 999
+            },
             "bayHarborGolfClub": {
               "course": "Bay Harbor Golf Club",
               "front": [5, 5, 4, 4, 5, 6, 7, 4, 5],
@@ -8352,6 +8682,15 @@
           "captain": false,
           "team": "green",
           "scores": {
+            "bayHarborLinksQuarry": {
+              "course": "Bay Harbor Links Quarry",
+              "front": [5, 5, 4, 4, 3, 4, 8, 4, 6],
+              "frontGross": 43,
+              "frontHandicap": 999,
+              "back": [],
+              "backGross": 0,
+              "backHandicap": 999
+            },
             "boyneHighlandsArthurHills": {
               "course": "Arthur Hills at Boyne Highlands",
               "front": [5, 4, 3, 4, 5, 6, 3, 5, 3],
@@ -8842,6 +9181,15 @@
           "captain": false,
           "team": "blue",
           "scores": {
+            "hiddenRiverGolfClub": {
+              "course": "Hidden River Golf Club",
+              "front": [7, 5, 4, 4, 5, 6, 6, 4, 2],
+              "frontGross": 43,
+              "frontHandicap": 999,
+              "back": [5, 7, 4, 3, 7, 4, 6, 6, 5],
+              "backGross": 47,
+              "backHandicap": 999
+            },
             "bayHarborPreserveLinks": {
               "course": "Bay Harbor Preserve Links",
               "front": [7, 5, 5, 7, 5, 7, 5, 6, 4],
@@ -9019,6 +9367,15 @@
           "captain": false,
           "team": "blue",
           "scores": {
+            "hiddenRiverGolfClub": {
+              "course": "Hidden River Golf Club",
+              "front": [5, 5, 4, 5, 8, 7, 8, 6, 3],
+              "frontGross": 51,
+              "frontHandicap": 999,
+              "back": [7, 5, 4, 4, 6, 4, 5, 6, 4],
+              "backGross": 45,
+              "backHandicap": 999
+            },
             "bayHarborGolfClub": {
               "course": "Bay Harbor Golf Club",
               "front": [4, 5, 5, 4, 3, 5, 5, 5, 6],
@@ -9202,6 +9559,15 @@
           "captain": false,
           "team": "blue",
           "scores": {
+            "bayHarborLinksQuarry": {
+              "course": "Bay Harbor Links Quarry",
+              "front": [6, 5, 5, 5, 5, 4, 7, 3, 5],
+              "frontGross": 45,
+              "frontHandicap": 999,
+              "back": [4, 5, 5, 6, 8, 5, 4, 5, 5],
+              "backGross": 47,
+              "backHandicap": 999
+            },
             "boyneHighlandsArthurHills": {
               "course": "Arthur Hills at Boyne Highlands",
               "front": [4, 4, 5, 4, 4, 5, 3, 4, 3],
@@ -9687,6 +10053,15 @@
           "captain": false,
           "team": "green",
           "scores": {
+            "hiddenRiverGolfClub": {
+              "course": "Hidden River Golf Club",
+              "front": [6, 4, 4, 6, 5, 6, 5, 4, 4],
+              "frontGross": 44,
+              "frontHandicap": 999,
+              "back": [4, 7, 8, 4, 6, 4, 5, 5, 5],
+              "backGross": 48,
+              "backHandicap": 999
+            },
             "bayHarborPreserveLinks": {
               "course": "Bay Harbor Preserve Links",
               "front": [5, 6, 6, 8, 4, 6, 5, 5, 3],
