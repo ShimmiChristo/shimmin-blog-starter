@@ -187,6 +187,54 @@ function MatchSummary2025() {
             score, when Green came back and lost the Cup on the last hole of the
             weekend.
           </p>
+          <h5 className="font-weight-bold">
+            Round 7 & 8 - Pinehurst & Singles
+          </h5>
+          <p>
+            This year, Pinehurst and Singles were held at Arthur Hills at Boyne
+            Highalnds. The course had some major tree damage from an ice storm
+            the previous winter, but it is still a group favorite. The course
+            played a lot different playing the afternoon. Greens were very fast
+            and fairways had more rollout. Also this year, there were some
+            change ups in the pairings. {gordon} moved up to play with {matt}{" "}
+            and {stephen} played with {curtis}.
+          </p>
+          <p>
+            The fist match of Pinehurst was {stephen} and {curtis} vs {dan} and{" "}
+            {evan}. {dan} and {evan} were paired together in Pinehurst for the
+            second straight year. Their record before this match was 0-1-5. 1
+            tie and 5 losses. Going into the match, Green was the heavy
+            favorite. Green started strong and was 2UP after 4 holes. Blue
+            fought back though and tied the match after 6 holes. Blue won holes
+            8 and 9 to win the match 2UP.
+          </p>
+          <p>
+            The second match of Pinehurst was the featured match. {chris} and{" "}
+            {derek} vs {craig} and {cam}. This match was neck and neck until
+            hole 7. Hole 7 will go down as one of the biggest collapses in cup
+            history. Craig sticks a perfect tee shot, maybe 2/3 feet to pin.
+            Green is short of the cup. {chris} chips up to 3 feet. {cam} then
+            has to make the putt to win the hole. He hits the lip and it goes
+            further than it started. Now {craig} who is fuming mad, goes up to
+            make the putt. He misses right. {derek} steps up and sinks the par
+            putt. Green walks away with a 1 point swing on the hole. Green is 2
+            up going into hole 8. It's hard to gain composure after a hole like
+            that. Green and Blue push on hole 8. Green wins the match 2&1.
+          </p>
+          <p>
+            The final match of Pinehurst was {matt} and {gordon} vs {dylan} and
+            {rj}. Green started with back to back birdies. Blue takes hole 3,
+            but Green wins hole 4. Green is 2 up through 5 holes. Blue then
+            fights back slowly and wins 2 of the next 3 holes. With the match AS
+            on the last hole, both teams bogey the par 3 to push the hole and
+            halve the match.
+          </p>
+          <p>
+            🟩🟦 Score Update. After 7 rounds, Green is up 12 to Blue 9. The
+            teams split Pinehurst, both getting 1.5 points. Going into the
+            singles round, Green needs just 1.5 points to retain the cup. Blue
+            needs 5 points (of the 6 available) to win the cup.
+          </p>
         </div>
 
         <div className="container mt-3">
