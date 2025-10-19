@@ -17,6 +17,7 @@ export const PlayerInfoPoints = () => {
         ...JakePlayerPoints
         ...MattPlayerPoints
         ...RJPlayerPoints
+        ...StephenPlayerPoints
         ...TravisPlayerPoints
       }
     }

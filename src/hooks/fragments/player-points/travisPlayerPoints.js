@@ -4,6 +4,10 @@ export const TravisPlayerPoints = graphql`
   fragment TravisPlayerPoints on PlayersUpdateJson {
     travis {
       name
+      cupRecord {
+        wins
+        losses
+      }
       handicap
       year {
         _2023 {

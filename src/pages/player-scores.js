@@ -1,5 +1,5 @@
 import React from "react"
-import { useSiteMetadata } from "../hooks/use-site-metadata"
+// import { useSiteMetadata } from "../hooks/use-site-metadata"
 import PropTypes from "prop-types"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
@@ -9,8 +9,8 @@ import "../styles/player-records.css"
 import PlayerPoints from "../components/records/player-points"
 
 const PlayerRecordsPage = ({ location }) => {
-  const { title } = useSiteMetadata()
-  const siteTitle = title || `BFBH Cup Player Scores`
+  // const { title } = useSiteMetadata()
+  const siteTitle = `BFBH Cup Player Scores`
 
   return (
     <Layout location={location} title={siteTitle}>
@@ -44,6 +44,7 @@ const PlayerRecordsPage = ({ location }) => {
         <PlayerPoints name="Jake" />
         <PlayerPoints name="Matt" />
         <PlayerPoints name="RJ" />
+        <PlayerPoints name="Stephen" />
         <PlayerPoints name="Travis" />
       </div>
     </Layout>
