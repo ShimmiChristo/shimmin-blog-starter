@@ -235,6 +235,64 @@ function MatchSummary2025() {
             singles round, Green needs just 1.5 points to retain the cup. Blue
             needs 5 points (of the 6 available) to win the cup.
           </p>
+          <p>
+            The first singles match was {curtis} vs {dan}. {dan} was on fire
+            today and {curtis} was struggling. {dan} was able to win 5&3. {dan}{" "}
+            won every match on day 2 and {curtis} lost every match on day 2.
+          </p>
+          <p>
+            The second singles match was, fill-in, {stephen} vs {evan}. {evan}{" "}
+            got 7 strokes in the matchup but it wasn't enough. After being down
+            1 through 7 holes, {stephen} was too much and won the last 2 holes
+            to win 1UP. The swing happened in the match on hole 5. {evan}{" "}
+            4-putted to push the hole.{" "}
+            <span className="bold>">
+              {" "}
+              Because {derek} won his match on hole 6, this was the cup
+              clinching point for Green on hole 9.
+            </span>
+            .
+          </p>
+          <p>
+            The third singles match part of the featured match, {derek} vs {cam}
+            . {derek} started off hot winning 4 straight holes. {cam} won the
+            next hole but {derek} was too much to handle and won easily 4&3.
+          </p>
+          <p>
+            The fourth singles match was {chris} vs {craig}. This was also a
+            featured match. This was a special match between the two. Up until
+            this point, both players were undefeated in singles play. This match
+            was a hard faught battle. {craig} had some great putts and shots and
+            he was able to hold off any comeback, parring the last 3 holes.{" "}
+            {craig} wins and stays undefeated in singles play, 1UP.
+          </p>
+          <p>
+            the fifth singles match was {gordon} vs {rj}. This was the first
+            time the two faced each other in singles play since 2022. {rj}{" "}
+            started strong winning the first 3 holes. {gordon} fought back and
+            won holes 5 and 6. The match came down to the last hole. {rj}{" "}
+            birdies the last hole and won 2UP. {rj} stays undefeated in singles
+            againts {gordon}.
+          </p>
+          <p>
+            The final singles match was {matt} vs {dylan}. This match had huge
+            implications on the cup. Green only needed 1.5 points in the singles
+            matches. The first 5 holes were scored holes. When this group was
+            tied on hole 6, Blue was leading 5 of the 6 matches. {matt} tied
+            hole 6 to tie the match AS. Then down the stretch, {matt} and{" "}
+            {dylan} pushed the last 3 holes. The match was halved. Thanks to{" "}
+            {stephen}, by this group teed off on the last hole, Green had
+            already clinched the cup.
+          </p>
+          <p>
+            🟩🟦 Score Update. Green wins! After 8 rounds, Green wins 14.5 to
+            Blue 12.5. Green team retains the BFBH Cup and becomes the first
+            team to win back to back years. Blue fought back hard on day 2, but
+            it wasn't enough. Congrats to Green team on a hard fought victory! 
+          </p>
+          <p>
+            See you back at Boyne Highlands in 2026 for the next BFBH Cup!
+          </p>
         </div>
 
         <div className="container mt-3">
