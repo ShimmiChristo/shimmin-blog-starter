@@ -5,6 +5,7 @@ import { usePlayersPosts } from "../hooks/use-player-posts"
 import { PlayerInfoUpdate } from "../hooks/get-player-info-UPDATE"
 import { CourseInfo } from "../hooks/get-course-info"
 import { v1 as uuidv1 } from "uuid"
+import { getCourseHandicap } from "../helpers/handicapHelper"
 
 /* 
 * To Do
@@ -379,35 +380,54 @@ const HandicapCalculator = ({ location }) => {
       }
     }) || []
   )
-  const teeOptions = [
-    "BLACK (Back)",
-    "BLUE (Championship)",
-    "WHITE (Regular)",
-    "YELLOW (Forward)",
-    "PURPLE (Front)",
-    "RED (Ladies)",
-  ]
+  const [selectedCourse, setSelectedCourse] = useState(
+    courses[0]?.courseName || ""
+  )
+
+  const selectedCourseData = courses.find(c => c.courseName === selectedCourse)
+  const teeNames = selectedCourseData
+    ? Object.keys(selectedCourseData?.tees)
+    : []
+  const teeData = selectedCourseData
+    ? Object.values(selectedCourseData?.tees)
+    : []
+
+  const teeOptions = teeData.map((data, index) => ({
+    name: teeNames[index],
+    ...data,
+  }))
+
+  // console.log("teeOptions - ", teeOptions)
 
   const removeGolfer = id => {
     setGolfers(golfers.filter(golfer => golfer.id !== id))
   }
 
   const updateGolferTee = (id, newTee) => {
+    setSelectedTee(newTee)
     setGolfers(
-      golfers.map(golfer =>
-        golfer.id === id ? { ...golfer, tee: newTee } : golfer
-      )
+      golfers.map(golfer => {
+        setCourseHandicap(handleCourseHandicap(golfer.handicapIndex))
+        return golfer.id === id
+          ? {
+              ...golfer,
+              tee: newTee,
+              courseHandicap: courseHandicap, // Calculate based on course data
+              playingHandicap: 0, // Calculate based on handicap allowance
+              shotsOff: 0, // Calculate based on lowest playing handicap
+            }
+          : golfer
+      })
     )
   }
 
   const [showModal, setShowModal] = useState(false)
   const [showCourseModal, setShowCourseModal] = useState(false)
   const [selectedPlayer, setSelectedPlayer] = useState("")
-  const [selectedCourse, setSelectedCourse] = useState(
-    courses[0]?.courseName || ""
-  )
   const [tempSelectedCourse, setTempSelectedCourse] = useState("")
-  const [selectedTee, setSelectedTee] = useState(teeOptions[0])
+  const [selectedTee, setSelectedTee] = useState("")
+  const [courseHandicap, setCourseHandicap] = useState(0)
+  console.log("selectedTee - ", selectedTee)
 
   const addGolfer = () => {
     setShowModal(true)
@@ -416,11 +436,32 @@ const HandicapCalculator = ({ location }) => {
   const handleModalClose = () => {
     setShowModal(false)
     setSelectedPlayer("")
-    setSelectedTee(teeOptions[0])
+    // setSelectedTee(teeOptions[0])
+  }
+
+  /* 
+  playerHandicap
+  courseSlope
+  courseRating - 9 hole rating
+  coursePar - 9 hole par
+  */
+  const handleCourseHandicap = playerHC => {
+    const tee = selectedTee.split(".")[0]
+    console.log("tee - ", tee)
+    const inOut = selectedTee.split(".")[1]
+    const teeObj = teeOptions.find(t => t.name === tee)
+    const slope = teeObj?.[inOut].slope
+    console.log("teeObj - ", teeObj)
+    const rating = teeObj?.[inOut].index
+    const par = teeObj?.[inOut].par
+    console.log("par - ", par)
+    setCourseHandicap(getCourseHandicap(playerHC, slope, rating, par))
+    return getCourseHandicap(playerHC, slope, rating, par)
   }
 
   const handleAddGolfer = e => {
     e.preventDefault()
+    console.log("handleAddGolfer")
 
     if (!selectedPlayer) return
 
@@ -439,7 +480,7 @@ const HandicapCalculator = ({ location }) => {
       name: player.name,
       tee: selectedTee,
       handicapIndex: player.handicap,
-      courseHandicap: 0, // Calculate based on course data
+      courseHandicap: handleCourseHandicap(player.handicap), // Calculate based on course data
       playingHandicap: 0, // Calculate based on handicap allowance
       shotsOff: 0, // Calculate based on lowest playing handicap
     }
@@ -450,6 +491,7 @@ const HandicapCalculator = ({ location }) => {
 
   const handleChangeCourse = e => {
     e.preventDefault()
+    console.log("handleChangeCourse")
     // Implement course change logic here
     if (!selectedCourse) return
 
@@ -476,6 +518,25 @@ const HandicapCalculator = ({ location }) => {
     // For now, this function updates golfers when course changes
   }
 
+  // const handleTeeChange = e => {
+  //   setSelectedTee(e.target.value)
+  //   // update selected golfer's tee and recalculate handicaps
+  //   const updateGolfer = golfers.map(golfer => {
+  //     console.log('golfer - ', golfer);
+  //     return golfer.id === selectedPlayer
+  //       ? {
+  //           ...golfer,
+  //           tee: e.target.value,
+  //           handicapIndex: golfer.handicap,
+  //           courseHandicap: handleCourseHandicap(golfer.handicap), // Calculate based on course data
+  //           playingHandicap: 0, // Calculate based on handicap allowance
+  //           shotsOff: 0, // Calculate based on lowest playing handicap
+  //         }
+  //       : golfer
+  //   })
+  //   setGolfers(updateGolfer)
+  // }
+
   const handleCourseModalClose = () => {
     setShowCourseModal(false)
     setTempSelectedCourse("")
@@ -483,6 +544,7 @@ const HandicapCalculator = ({ location }) => {
 
   const handleChangeCourseSubmit = e => {
     e.preventDefault()
+    console.log("handleCourseChange")
 
     if (!tempSelectedCourse) return
 
@@ -551,6 +613,7 @@ const HandicapCalculator = ({ location }) => {
               <InfoIcon>i</InfoIcon>
             </label>
             <select
+              data-name="handicap-allowance-select"
               value={handicapAllowance}
               onChange={e => setHandicapAllowance(e.target.value)}
             >
@@ -603,15 +666,30 @@ const HandicapCalculator = ({ location }) => {
                     <td>
                       <TeeSelect
                         value={golfer.tee}
+                        data-name="tee-select-td"
                         onChange={e =>
                           updateGolferTee(golfer.id, e.target.value)
                         }
                       >
-                        {teeOptions.map(tee => (
-                          <option key={uuidv1()} value={tee}>
-                            {tee}
-                          </option>
-                        ))}
+                        {teeOptions.map(tee => {
+                          return Object.keys(tee).map(teeData => {
+                            if (teeData === "in" || teeData === "out") {
+                              let inOut = teeData === "out" ? "Front" : "Back"
+                              const capitalizedTeeName =
+                                tee.name.charAt(0).toUpperCase() +
+                                tee.name.slice(1)
+                              return (
+                                <option
+                                  key={uuidv1()}
+                                  value={`${tee.name}.${teeData}`}
+                                >
+                                  {capitalizedTeeName} {inOut} --{" "}
+                                  {tee[teeData].index}\{tee[teeData].slope}
+                                </option>
+                              )
+                            }
+                          })
+                        })}
                       </TeeSelect>
                     </td>
                     <td>{golfer.handicapIndex}</td>
@@ -664,11 +742,26 @@ const HandicapCalculator = ({ location }) => {
                       value={selectedTee}
                       onChange={e => setSelectedTee(e.target.value)}
                     >
-                      {teeOptions.map(tee => (
-                        <option key={tee} value={tee}>
-                          {tee}
-                        </option>
-                      ))}
+                      <option>Select Tee</option>
+                      {teeOptions.map(tee => {
+                        return Object.keys(tee).map(teeData => {
+                          if (teeData === "in" || teeData === "out") {
+                            let inOut = teeData === "out" ? "Front" : "Back"
+                            const capitalizedTeeName =
+                              tee.name.charAt(0).toUpperCase() +
+                              tee.name.slice(1)
+                            return (
+                              <option
+                                key={uuidv1()}
+                                value={`${tee.name}.${teeData}`}
+                              >
+                                {capitalizedTeeName} {inOut} --{" "}
+                                {tee[teeData].index}\{tee[teeData].slope}
+                              </option>
+                            )
+                          }
+                        })
+                      })}
                     </select>
                   </FormGroup>
 

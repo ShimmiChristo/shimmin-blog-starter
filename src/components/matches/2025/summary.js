@@ -36,9 +36,9 @@ function MatchSummary2025() {
             Historically, the team that wins the first match has won the cup.
             We'll see what happens this year!
           </p>
-          <div className="mt-3 mb-4">
-            <h3>Day 1</h3>
-            <h4 className="h5">
+          <div className="mt-5 mb-4">
+            <h3 data-name="day">Day 1</h3>
+            <h4 className="h5 course-name">
               Bay Harbor Golf Club - Friday, September 26, 2025
             </h4>
           </div>
@@ -72,22 +72,58 @@ function MatchSummary2025() {
           </p>
           <p>
             The third match was {stephen} and {gordon} vs {evan} and {cam}. This
-            match was closer than everyone was expecting. Green started with
-            back to back wins to go 2UP after 2 holes. Blue fought back and won
-            holes 4 and 5. Then 6 and 7 were back to Green. Blue won 8 and the
-            third match came down to the last hole. Green held strong and halved
-            the hole to win the match 1UP.
+            match was closer than everyone expected. Green started with back to
+            back wins to go 2UP after 2 holes. Blue fought back and won holes 4
+            and 5. Then 6 and 7 were back to Green. Blue won 8 and the third
+            match came down to the last hole. Green held strong and halved the
+            hole to win the match 1UP.
+          </p>
+          <p>🟩🟦 Score Update. After 1 round, Green is up 3 to Blue 0.</p>
+          <p>
+            The group pairings stayed together on their way to the Links course,
+            where the groups played 2 best ball.
           </p>
           <p>
-            The group pairings stayed together on their way to the Links course.
+            On the back 9 on the Links, {dylan} and {dan} started off winning
+            hole 1, thanks to {dan}'s net birdie. On the second hole, {matt} and{" "}
+            {chris} took a point back, thanks to {chris}'s net birdie. Hole 3
+            was a wild one. {matt} and {chris} parred, {dan} birdied, and{" "}
+            {dylan} double bogeyed. With the pops, {chris} birdied and {dan} got
+            a net hole-in-one haha. The hole was pushed... crazy. Blue took hole
+            4 with both guys getting net birdies. Green came back and won hole 5
+            with another net birdie from {chris}. Then it was back to Blue,
+            winning hole 6 with two net pars. Then Green took over. They won
+            holes 7, 8 and 9 to the win the match 2UP.{" "}
+            <span className="bold">
+              A total of 9 net birdies, 1 net eagle, and 1 net hole-in-one were
+              recorded in the match!
+            </span>
           </p>
           <p>
-            The score won't show it, but all the matches were tight with 5 of
-            the 6 matches came down to the last hole.
+            The second match on the Links was {rj} and {craig} looking for their
+            revenge against {derek} and {curtis}. Green started hot again,
+            winning hole 1 by 4 strokes. Blue came back and won holes 2 and 3.
+            Green didn't quit, they won holes 5 and 6 to go up 1 with 3 holes to
+            play. This is where Blue got it going. They won holes 7 and 8 to go
+            1UP into hole 9. On the final hole, {rj} and {craig} both made gross
+            birdies to win the hole and match 2UP.
           </p>
-          <h4 className="h5">
-            Crooked Tree Golf Club - Friday, September 26, 2025
-          </h4>
+          <p>
+            The final match at Bay Harbor was, to put it simply, a blowout.{" "}
+            {gordon} and {stephen} beat {cam} and {evan} in 5 of the first 6
+            holes to win the match 5&3. Green takes another point. It would be
+            one of the more lopsided victories of the weekend.
+          </p>
+          <p>
+            🟩🟦 Score Update. After 2 rounds, Green is up 5 to Blue 1. The
+            score won't show it, but all the matches were tight. 5 of the 6
+            matches came down to the last hole.
+          </p>
+          <div className="mt-3 mb-4">
+            <h4 className="h5 course-name mt-5">
+              Crooked Tree Golf Club - Friday, September 26, 2025
+            </h4>
+          </div>
           <h5 className="font-weight-bold">
             Round 3 & 4 - Alt Shot & Scramble
           </h5>
@@ -118,6 +154,7 @@ function MatchSummary2025() {
             first 5 holes to go 5 and 4. This is one of the few 5&4 matches in
             cup history. Green won 5 over through 5 holes.
           </p>
+          <p>🟩🟦 Score Update. After 3 rounds, Green is up 7 to Blue 2.</p>
           <p>
             The final matches of the day were the scramble matches. The first
             match was {matt} and {derek} vs {craig} and {evan}. Green team was
@@ -144,14 +181,15 @@ function MatchSummary2025() {
             the match.
           </p>
           <p>
-            <span className="bold">After day 1</span>, Green team has a
-            commanding lead of <span className="bold">8.5 to 3.5</span>. With 15
-            points left, Green needs just 5 points on day 2 to clinch the cup.
+            🟩🟦 Score Update.<span className="bold">After day 1</span>, Green
+            team has a commanding lead of{" "}
+            <span className="bold">8.5 to 3.5</span>. With 15 points left, Green
+            needs just 5 points on day 2 to clinch the cup.
           </p>
-          <div className="mt-4 mb-4">
+          <div className="mt-5 course-name mb-4">
             <h3>Day 2</h3>
-            <h4 className="h5">
-              Boyne Highlands - Saturday, September 27, 2025
+            <h4 className="h5 course-name">
+              Boyne Highlands The Heather - Saturday, September 27, 2025
             </h4>
           </div>
           <h5 className="font-weight-bold">
@@ -183,7 +221,7 @@ function MatchSummary2025() {
             Blue won holes 4 and 7. Blue was able to hang on and win 1UP.
           </p>
           <p>
-            After the first round of the day, Green still has a commanding lead
+            🟩🟦 Score Update. After 5 rounds, Green still has a commanding lead
             of 9.5 to 5.5.
           </p>
           <p>
@@ -216,6 +254,11 @@ function MatchSummary2025() {
             score, when Green came back and lost the Cup on the last hole of the
             weekend.
           </p>
+          <div className="mt-3 mb-4">
+            <h4 className="h5 course-name mt-5">
+              Boyne Highlands Arthur Hills - Saturday, September 27, 2025
+            </h4>
+          </div>
           <h5 className="font-weight-bold">
             Round 7 & 8 - Pinehurst & Singles
           </h5>

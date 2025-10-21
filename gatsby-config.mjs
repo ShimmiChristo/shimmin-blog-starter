@@ -100,10 +100,10 @@ const config = {
         name: "News",
         link: "/news-media",
       },
-      // {
-      //   name: "Handicap Calculator",
-      //   link: "/golf-handicap-calculator",
-      // },
+      {
+        name: "Handicap Calculator",
+        link: "/handicap-calculator",
+      },
       {
         name: "Shop",
         link: "/shop",
