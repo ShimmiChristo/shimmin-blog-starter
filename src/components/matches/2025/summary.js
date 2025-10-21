@@ -48,9 +48,38 @@ function MatchSummary2025() {
           <p>
             The first day of the 2025 match was held at Bay Harbor Golf Club.
             The weather was perfect, with partly clear skies and a light breeze.
-            Green jumped out early, winning the first three matches to take a
-            3-0 lead.They continued theri momentum, winning 2 of the next 3
-            matches to take a commanding 5-1 lead into the lunch break.
+            Historically, who ever wins the first match has gone on to win the
+            cup. The match was a rematch from 2024's opening match, {matt} and{" "}
+            {chris} vs {dylan} and {dan}. Blue came out strong and won the first
+            hole, followed by a push on hole 2 and another win on hole 3. Then
+            Green got hot, winning the next 4 holes thanks to a 40 yard chip in
+            from {matt} on hole 7. After On hole 7, the match was dormie. Blue
+            needed to win 8 and 9 to halve the match. Blue won hole 8 thanks to
+            a nice birdie by {dylan}. However, on the final hole, {matt} had a
+            great tee shot and was putting for birdie. Green won hole 9 and the
+            match 2UP.
+          </p>
+          <p>
+            The second match at The Preserve was a tough matchup for Green. It
+            was {derek} and {curtis} vs {craig} and {rj}. Blue had a tough
+            opening hole with two triple bogeys. Green took advantage and won
+            the hole. After Blue tied the match on hole 3, Green took the next 2
+            holes with back to back net pars. Blue fought back and won hole 7.
+            Blue was 1 down going into the last hole. They needed to win the
+            hole to halve the match. Unfortunately for Blue, both Green players
+            were getting a stroke. In the end, all 4 players made bogey and
+            because of the pops, Green won the hole. Green won the match 2UP.
+          </p>
+          <p>
+            The third match was {stephen} and {gordon} vs {evan} and {cam}. This
+            match was closer than everyone was expecting. Green started with
+            back to back wins to go 2UP after 2 holes. Blue fought back and won
+            holes 4 and 5. Then 6 and 7 were back to Green. Blue won 8 and the
+            third match came down to the last hole. Green held strong and halved
+            the hole to win the match 1UP.
+          </p>
+          <p>
+            The group pairings stayed together on their way to the Links course.
           </p>
           <p>
             The score won't show it, but all the matches were tight with 5 of
@@ -288,11 +317,9 @@ function MatchSummary2025() {
             🟩🟦 Score Update. Green wins! After 8 rounds, Green wins 14.5 to
             Blue 12.5. Green team retains the BFBH Cup and becomes the first
             team to win back to back years. Blue fought back hard on day 2, but
-            it wasn't enough. Congrats to Green team on a hard fought victory! 
+            it wasn't enough. Congrats to Green team on a hard fought victory!
           </p>
-          <p>
-            See you back at Boyne Highlands in 2026 for the next BFBH Cup!
-          </p>
+          <p>See you back at Boyne Highlands in 2026 for the next BFBH Cup!</p>
         </div>
 
         <div className="container mt-3">
