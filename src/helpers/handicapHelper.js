@@ -79,15 +79,21 @@ function getHardestNineHandicap(score, hardestHoleNine) {
   }
 }
 
-// function getPlayingHandicap(gameplay, p1, p2, p3, p4) {
-//   let gameplayHandicap
-//   if (gameplay === "pinehurst") {
-//     gameplayHandicap = Math.round(0.6 * lowHCTeam1 + 0.4 * highHCTeam1)
-//   }
-//   // * account for negative handicaps
-//   if (playerHC < 0) {
-//   }
-// }
+// * added with handicap-calculator.js refactor
+// * params: unrounded course handicap, handicap allowance percentage, gameplay (optional)
+function getPlayingHandicap(unroundedCourseHC, handicapAllowance, gameplay) {
+  const courseHC = unroundedCourseHC * (handicapAllowance / 100);
+  const playerHC = Math.round(courseHC);
+  return playerHC;
+  
+  // let gameplayHandicap
+  // if (gameplay === "pinehurst") {
+  //   gameplayHandicap = Math.round(0.6 * lowHCTeam1 + 0.4 * highHCTeam1)
+  // }
+  // // * account for negative handicaps
+  // if (playerHC < 0) {
+  // }
+}
 
 // * handicaps param is the unrounded calculated course handicaps for 9 holes
 function getPlayerHandicap(player, gameplay, handicaps, hardestHoleNine) {
@@ -391,4 +397,5 @@ export {
   calcToLowestHandicap,
   getPlayerHandicap,
   getCourseHandicap,
+  getPlayingHandicap,
 }

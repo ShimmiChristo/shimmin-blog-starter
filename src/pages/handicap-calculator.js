@@ -5,7 +5,10 @@ import { usePlayersPosts } from "../hooks/use-player-posts"
 import { PlayerInfoUpdate } from "../hooks/get-player-info-UPDATE"
 import { CourseInfo } from "../hooks/get-course-info"
 import { v1 as uuidv1 } from "uuid"
-import { getCourseHandicap } from "../helpers/handicapHelper"
+import {
+  getCourseHandicap,
+  getPlayingHandicap,
+} from "../helpers/handicapHelper"
 
 /* 
 * To Do
@@ -374,6 +377,7 @@ const HandicapCalculator = ({ location }) => {
   const [tempSelectedCourse, setTempSelectedCourse] = useState("")
   const [selectedTee, setSelectedTee] = useState("")
   const [courseHandicap, setCourseHandicap] = useState(0)
+  const [playingHandicap, setPlayingHandicap] = useState(0)
 
   // * get list of tee options from course info
   // * use this to populate the select dropdown for tees
@@ -417,7 +421,7 @@ const HandicapCalculator = ({ location }) => {
               ...golfer,
               tee: newTee,
               courseHandicap: calculatedHandicap, // Calculate based on course data
-              playingHandicap: 0, // Calculate based on handicap allowance
+              playingHandicap: playingHandicap, // Calculate based on handicap allowance
               shotsOff: 0, // Calculate based on lowest playing handicap
             }
           : golfer
@@ -450,8 +454,18 @@ const HandicapCalculator = ({ location }) => {
     const rating = teeObj?.[inOut].index
     const par = teeObj?.[inOut].par
     const calculatedHandicap = getCourseHandicap(playerHC, slope, rating, par)
-    setCourseHandicap(calculatedHandicap)
-    return calculatedHandicap
+    setCourseHandicap(calculatedHandicap.toFixed(0))
+    return calculatedHandicap.toFixed(0)
+  }
+
+  const handlePlayingHandicap = (courseHandicap, handicapAllowance) => {
+    // Implement playing handicap calculation logic here
+    const playingHandicap = getPlayingHandicap(
+      courseHandicap,
+      handicapAllowance
+    )
+    setPlayingHandicap(playingHandicap)
+    return playingHandicap
   }
 
   const handleAddGolfer = e => {
@@ -470,13 +484,19 @@ const HandicapCalculator = ({ location }) => {
       return
     }
 
+    const courseHandicap = handleCourseHandicap(player.handicap)
+    const playingHandicap = handlePlayingHandicap(
+      courseHandicap,
+      handicapAllowance
+    )
+
     const newGolfer = {
       id: Date.now(), // Simple ID generation
       name: player.name,
       tee: selectedTee,
       handicapIndex: player.handicap,
-      courseHandicap: handleCourseHandicap(player.handicap), // Calculate based on course data
-      playingHandicap: 0, // Calculate based on handicap allowance
+      courseHandicap: courseHandicap, // Calculate based on course data
+      playingHandicap: playingHandicap, // Calculate based on handicap allowance
       shotsOff: 0, // Calculate based on lowest playing handicap
     }
 
@@ -503,7 +523,7 @@ const HandicapCalculator = ({ location }) => {
       ...golfer,
       tee: availableTees[0] || teeOptions[0],
       courseHandicap: 0, // Reset course handicap - will be recalculated
-      playingHandicap: 0, // Reset playing handicap - will be recalculated
+      playingHandicap: playingHandicap, // Reset playing handicap - will be recalculated
       shotsOff: 0, // Reset shots off - will be recalculated
     }))
 
@@ -556,7 +576,7 @@ const HandicapCalculator = ({ location }) => {
       ...golfer,
       tee: availableTees[0] || teeOptions[0],
       courseHandicap: 0, // Reset course handicap - will be recalculated
-      playingHandicap: 0, // Reset playing handicap - will be recalculated
+      playingHandicap: playingHandicap, // Reset playing handicap - will be recalculated
       shotsOff: 0, // Reset shots off - will be recalculated
     }))
 
