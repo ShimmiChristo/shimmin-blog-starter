@@ -368,6 +368,12 @@ const HandicapCalculator = ({ location }) => {
   const [holes, setHoles] = useState(9)
   const [handicapAllowance, setHandicapAllowance] = useState(100)
   const [golfers, setGolfers] = useState([])
+  const [showModal, setShowModal] = useState(false)
+  const [showCourseModal, setShowCourseModal] = useState(false)
+  const [selectedPlayer, setSelectedPlayer] = useState("")
+  const [tempSelectedCourse, setTempSelectedCourse] = useState("")
+  const [selectedTee, setSelectedTee] = useState("")
+  const [courseHandicap, setCourseHandicap] = useState(0)
 
   // * get list of tee options from course info
   // * use this to populate the select dropdown for tees
@@ -397,22 +403,20 @@ const HandicapCalculator = ({ location }) => {
     ...data,
   }))
 
-  // console.log("teeOptions - ", teeOptions)
-
   const removeGolfer = id => {
     setGolfers(golfers.filter(golfer => golfer.id !== id))
   }
 
-  const updateGolferTee = (id, newTee) => {
+  const updateGolferTee = async (id, newTee, golferHandicapIndex) => {
     setSelectedTee(newTee)
+    const calculatedHandicap = handleCourseHandicap(golferHandicapIndex, newTee)
     setGolfers(
       golfers.map(golfer => {
-        setCourseHandicap(handleCourseHandicap(golfer.handicapIndex))
         return golfer.id === id
           ? {
               ...golfer,
               tee: newTee,
-              courseHandicap: courseHandicap, // Calculate based on course data
+              courseHandicap: calculatedHandicap, // Calculate based on course data
               playingHandicap: 0, // Calculate based on handicap allowance
               shotsOff: 0, // Calculate based on lowest playing handicap
             }
@@ -420,14 +424,6 @@ const HandicapCalculator = ({ location }) => {
       })
     )
   }
-
-  const [showModal, setShowModal] = useState(false)
-  const [showCourseModal, setShowCourseModal] = useState(false)
-  const [selectedPlayer, setSelectedPlayer] = useState("")
-  const [tempSelectedCourse, setTempSelectedCourse] = useState("")
-  const [selectedTee, setSelectedTee] = useState("")
-  const [courseHandicap, setCourseHandicap] = useState(0)
-  console.log("selectedTee - ", selectedTee)
 
   const addGolfer = () => {
     setShowModal(true)
@@ -445,18 +441,17 @@ const HandicapCalculator = ({ location }) => {
   courseRating - 9 hole rating
   coursePar - 9 hole par
   */
-  const handleCourseHandicap = playerHC => {
-    const tee = selectedTee.split(".")[0]
-    console.log("tee - ", tee)
-    const inOut = selectedTee.split(".")[1]
+  const handleCourseHandicap = (playerHC, teeValue) => {
+    const teeToUse = teeValue || selectedTee
+    const tee = teeToUse.split(".")[0]
+    const inOut = teeToUse.split(".")[1]
     const teeObj = teeOptions.find(t => t.name === tee)
     const slope = teeObj?.[inOut].slope
-    console.log("teeObj - ", teeObj)
     const rating = teeObj?.[inOut].index
     const par = teeObj?.[inOut].par
-    console.log("par - ", par)
-    setCourseHandicap(getCourseHandicap(playerHC, slope, rating, par))
-    return getCourseHandicap(playerHC, slope, rating, par)
+    const calculatedHandicap = getCourseHandicap(playerHC, slope, rating, par)
+    setCourseHandicap(calculatedHandicap)
+    return calculatedHandicap
   }
 
   const handleAddGolfer = e => {
@@ -668,7 +663,11 @@ const HandicapCalculator = ({ location }) => {
                         value={golfer.tee}
                         data-name="tee-select-td"
                         onChange={e =>
-                          updateGolferTee(golfer.id, e.target.value)
+                          updateGolferTee(
+                            golfer.id,
+                            e.target.value,
+                            golfer.handicapIndex
+                          )
                         }
                       >
                         {teeOptions.map(tee => {
