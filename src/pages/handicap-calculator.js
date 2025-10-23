@@ -182,21 +182,25 @@ const GolfersTable = styled.table`
 
 const RemoveButton = styled.button`
   background: none;
-  border: 2px solid #dc3545;
-  border-radius: 50%;
-  width: 24px;
-  height: 24px;
-  color: #dc3545;
   cursor: pointer;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 14px;
-  line-height: 1;
+  border: none;
 
-  &:hover {
-    background: #dc3545;
-    color: white;
+  span {
+    font-size: 14px;
+    width: 1.5rem;
+    height: 1.5rem;
+    border: 2px solid #dc3545;
+    border-radius: 50%;
+    color: #dc3545;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 1;
+
+    &:hover {
+      background: #dc3545;
+      color: white;
+    }
   }
 `
 
@@ -364,7 +368,7 @@ const HandicapCalculator = ({ location }) => {
     .map(player => ({
       id: player.id,
       name: player.frontmatter.name,
-      handicap: playersUpdateJson[player.frontmatter.name]?.handicap || "N/A",
+      handicap: playersUpdateJson[player.frontmatter.name]?.handicap || 0,
       // Add other fields as necessary
     }))
 
@@ -411,16 +415,25 @@ const HandicapCalculator = ({ location }) => {
     setGolfers(golfers.filter(golfer => golfer.id !== id))
   }
 
-  const updateGolferTee = async (id, newTee, golferHandicapIndex) => {
+  const updateGolferTee = async (
+    id,
+    newTee,
+    golferHandicapIndex,
+    handicapAllowance
+  ) => {
     setSelectedTee(newTee)
     const calculatedHandicap = handleCourseHandicap(golferHandicapIndex, newTee)
+    const playingHandicap = handlePlayingHandicap(
+      calculatedHandicap,
+      handicapAllowance
+    )
     setGolfers(
       golfers.map(golfer => {
         return golfer.id === id
           ? {
               ...golfer,
               tee: newTee,
-              courseHandicap: calculatedHandicap, // Calculate based on course data
+              courseHandicap: calculatedHandicap.toFixed(0), // Calculate based on course data
               playingHandicap: playingHandicap, // Calculate based on handicap allowance
               shotsOff: 0, // Calculate based on lowest playing handicap
             }
@@ -453,9 +466,10 @@ const HandicapCalculator = ({ location }) => {
     const slope = teeObj?.[inOut].slope
     const rating = teeObj?.[inOut].index
     const par = teeObj?.[inOut].par
-    const calculatedHandicap = getCourseHandicap(playerHC, slope, rating, par)
-    setCourseHandicap(calculatedHandicap.toFixed(0))
-    return calculatedHandicap.toFixed(0)
+    const calculatedHandicap =
+      getCourseHandicap(playerHC, slope, rating, par) / 2
+    // setCourseHandicap(calculatedHandicap.toFixed(0))
+    return calculatedHandicap
   }
 
   const handlePlayingHandicap = (courseHandicap, handicapAllowance) => {
@@ -470,7 +484,7 @@ const HandicapCalculator = ({ location }) => {
 
   const handleAddGolfer = e => {
     e.preventDefault()
-    console.log("handleAddGolfer")
+    // console.log("handleAddGolfer")
 
     if (!selectedPlayer) return
 
@@ -495,7 +509,7 @@ const HandicapCalculator = ({ location }) => {
       name: player.name,
       tee: selectedTee,
       handicapIndex: player.handicap,
-      courseHandicap: courseHandicap, // Calculate based on course data
+      courseHandicap: courseHandicap.toFixed(0), // Calculate based on course data
       playingHandicap: playingHandicap, // Calculate based on handicap allowance
       shotsOff: 0, // Calculate based on lowest playing handicap
     }
@@ -506,7 +520,7 @@ const HandicapCalculator = ({ location }) => {
 
   const handleChangeCourse = e => {
     e.preventDefault()
-    console.log("handleChangeCourse")
+    // console.log("handleChangeCourse")
     // Implement course change logic here
     if (!selectedCourse) return
 
@@ -533,25 +547,6 @@ const HandicapCalculator = ({ location }) => {
     // For now, this function updates golfers when course changes
   }
 
-  // const handleTeeChange = e => {
-  //   setSelectedTee(e.target.value)
-  //   // update selected golfer's tee and recalculate handicaps
-  //   const updateGolfer = golfers.map(golfer => {
-  //     console.log('golfer - ', golfer);
-  //     return golfer.id === selectedPlayer
-  //       ? {
-  //           ...golfer,
-  //           tee: e.target.value,
-  //           handicapIndex: golfer.handicap,
-  //           courseHandicap: handleCourseHandicap(golfer.handicap), // Calculate based on course data
-  //           playingHandicap: 0, // Calculate based on handicap allowance
-  //           shotsOff: 0, // Calculate based on lowest playing handicap
-  //         }
-  //       : golfer
-  //   })
-  //   setGolfers(updateGolfer)
-  // }
-
   const handleCourseModalClose = () => {
     setShowCourseModal(false)
     setTempSelectedCourse("")
@@ -559,7 +554,7 @@ const HandicapCalculator = ({ location }) => {
 
   const handleChangeCourseSubmit = e => {
     e.preventDefault()
-    console.log("handleCourseChange")
+    // console.log("handleCourseChange")
 
     if (!tempSelectedCourse) return
 
@@ -589,6 +584,26 @@ const HandicapCalculator = ({ location }) => {
     setTempSelectedCourse(selectedCourse)
     setShowCourseModal(true)
   }
+
+  const handleAllowanceChange = handicapAllowance => {
+    // const calculatedHandicap = handleCourseHandicap(golferHandicapIndex, newTee)
+    // const playingHandicap = handlePlayingHandicap(
+    //   calculatedHandicap,
+    //   handicapAllowance
+    // )
+    const updatedGolfers = golfers.map(golfer => ({
+      ...golfer,
+      playingHandicap: handlePlayingHandicap(
+        golfer.courseHandicap,
+        handicapAllowance
+      ),
+    }))
+    setGolfers(updatedGolfers)
+  }
+
+  useEffect(() => {
+    handleAllowanceChange(handicapAllowance)
+  }, [handicapAllowance])
 
   return (
     <Layout location={location} title={title}>
@@ -686,7 +701,8 @@ const HandicapCalculator = ({ location }) => {
                           updateGolferTee(
                             golfer.id,
                             e.target.value,
-                            golfer.handicapIndex
+                            golfer.handicapIndex,
+                            handicapAllowance
                           )
                         }
                       >
@@ -717,7 +733,7 @@ const HandicapCalculator = ({ location }) => {
                     <td>{golfer.shotsOff}</td>
                     <td>
                       <RemoveButton onClick={() => removeGolfer(golfer.id)}>
-                        −
+                        <span>−</span>
                       </RemoveButton>
                     </td>
                   </tr>

@@ -1378,7 +1378,7 @@
         "wins": 2,
         "losses": 2
       },
-      "handicap": 14,
+      "handicap": 13.5,
       "year": {
         "_2025": {
           "id": 2025,
@@ -3910,7 +3910,7 @@
         "wins": 2,
         "losses": 3
       },
-      "handicap": 24,
+      "handicap": 23.9,
       "year": {
         "_2025": {
           "id": 2025,
@@ -8358,7 +8358,7 @@
         "wins": 3,
         "losses": 2
       },
-      "handicap": 3.0,
+      "handicap": 2.0,
       "year": {
         "_2025": {
           "id": 2025,
