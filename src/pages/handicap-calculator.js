@@ -33,6 +33,10 @@ const Container = styled.div`
   padding: 2rem;
   background: #f5f5f5;
   min-height: 100vh;
+
+  @media (max-width: 768px) {
+    padding: 1rem;
+  }
 `
 
 const Calculator = styled.div`
@@ -40,6 +44,10 @@ const Calculator = styled.div`
   border-radius: 12px;
   padding: 2rem;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+  @media (max-width: 768px) {
+    padding: 1rem;
+  }
 `
 
 const Header = styled.div`
@@ -49,6 +57,12 @@ const Header = styled.div`
   margin-bottom: 2rem;
   border-bottom: 1px solid #e0e0e0;
   padding-bottom: 1rem;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
 `
 
 const CourseInfoDiv = styled.div`
@@ -56,6 +70,10 @@ const CourseInfoDiv = styled.div`
     color: #2c5aa0;
     font-size: 1.5rem;
     margin: 0;
+
+    @media (max-width: 768px) {
+      font-size: 1.2rem;
+    }
   }
   button {
     color: #2c5aa0;
@@ -110,16 +128,44 @@ const HandicapSettings = styled.div`
   align-items: center;
   gap: 1rem;
   margin-bottom: 2rem;
+  padding: 1.5rem;
+  background: white;
+  border-radius: 8px;
+  border: 1px solid #e0e0e0;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    align-items: stretch;
+    padding: 1rem;
+  }
 
   label {
-    color: #666;
-    font-size: 0.9rem;
+    color: #333;
+    font-size: 1rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+
+    @media (max-width: 768px) {
+      font-size: 0.9rem;
+    }
   }
 
   select {
-    padding: 0.5rem;
-    border: 1px solid #ddd;
-    border-radius: 4px;
+    padding: 0.75rem 1rem;
+    border: 1px solid #2c5aa0;
+    border-radius: 6px;
+    font-size: 1rem;
+    color: #2c5aa0;
+    font-weight: 600;
+    cursor: pointer;
+    background: white;
+    min-width: 120px;
+
+    @media (max-width: 768px) {
+      width: 100%;
+    }
   }
 `
 
@@ -127,6 +173,11 @@ const GolfersSection = styled.div`
   background: #f8f9fa;
   border-radius: 8px;
   padding: 1.5rem;
+
+  @media (max-width: 768px) {
+    padding: 1rem;
+    background: transparent;
+  }
 `
 
 const GolfersHeader = styled.div`
@@ -149,6 +200,10 @@ const GolfersHeader = styled.div`
     text-decoration: underline;
     cursor: pointer;
     font-size: 0.9rem;
+
+    @media (max-width: 768px) {
+      font-size: 0.85rem;
+    }
   }
 `
 
@@ -158,6 +213,10 @@ const GolfersTable = styled.table`
   background: white;
   border-radius: 6px;
   overflow: hidden;
+
+  @media (max-width: 768px) {
+    display: none;
+  }
 
   th {
     background: #f8f9fa;
@@ -178,6 +237,86 @@ const GolfersTable = styled.table`
   tr:last-child td {
     border-bottom: none;
   }
+`
+
+// Mobile card view
+const GolferCards = styled.div`
+  display: none;
+
+  @media (max-width: 768px) {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+`
+
+const GolferCard = styled.div`
+  background: white;
+  border-radius: 8px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+`
+
+const GolferCardHeader = styled.div`
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 1rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #f0f0f0;
+`
+
+const GolferName = styled.h4`
+  margin: 0;
+  font-size: 1.1rem;
+  color: #333;
+  font-weight: 600;
+`
+
+const TeeSelectMobile = styled.select`
+  padding: 0.5rem 0.75rem;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  background: white;
+  font-size: 0.9rem;
+  color: #333;
+  text-transform: uppercase;
+  font-weight: 500;
+  cursor: pointer;
+  appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath fill='%23333' d='M6 9L1 4h10z'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 0.5rem center;
+  padding-right: 2rem;
+`
+
+const GolferStats = styled.div`
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  margin-bottom: 1rem;
+`
+
+const StatItem = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+`
+
+const StatLabel = styled.div`
+  font-size: 0.75rem;
+  color: #666;
+  text-transform: uppercase;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+`
+
+const StatValue = styled.div`
+  font-size: 1.25rem;
+  color: #333;
+  font-weight: 600;
 `
 
 const RemoveButton = styled.button`
@@ -740,6 +879,89 @@ const HandicapCalculator = ({ location }) => {
                 ))}
               </tbody>
             </GolfersTable>
+
+            <GolferCards>
+              {golfers.map(golfer => (
+                <GolferCard key={golfer.id}>
+                  <GolferCardHeader>
+                    <GolferName>{golfer.name}</GolferName>
+                    <TeeSelectMobile
+                      value={golfer.tee}
+                      onChange={e =>
+                        updateGolferTee(
+                          golfer.id,
+                          e.target.value,
+                          golfer.handicapIndex,
+                          handicapAllowance
+                        )
+                      }
+                    >
+                      {teeOptions.map(tee => {
+                        return Object.keys(tee).map(teeData => {
+                          if (teeData === "in" || teeData === "out") {
+                            let inOut = teeData === "out" ? "Front" : "Back"
+                            const capitalizedTeeName =
+                              tee.name.charAt(0).toUpperCase() +
+                              tee.name.slice(1)
+                            return (
+                              <option
+                                key={uuidv1()}
+                                value={`${tee.name}.${teeData}`}
+                              >
+                                {capitalizedTeeName} {inOut} --{" "}
+                                {tee[teeData].index}\{tee[teeData].slope}
+                              </option>
+                            )
+                          }
+                        })
+                      })}
+                    </TeeSelectMobile>
+                  </GolferCardHeader>
+                  <GolferStats>
+                    <StatItem>
+                      <StatLabel>
+                        <span className="d-none d-md-block">
+                          HANDICAP INDEX
+                        </span>
+                        <span className="d-block d-md-none">H.I.</span>
+                        <InfoIcon>i</InfoIcon>
+                      </StatLabel>
+                      <StatValue>{golfer.handicapIndex}</StatValue>
+                    </StatItem>
+                    <StatItem>
+                      <StatLabel>
+                        <span className="d-none d-md-block">
+                          COURSE HANDICAP
+                        </span>
+                        <span className="d-block d-md-none">C.H.</span>
+                        <InfoIcon>i</InfoIcon>
+                      </StatLabel>
+                      <StatValue>{golfer.courseHandicap}</StatValue>
+                    </StatItem>
+                    <StatItem>
+                      <StatLabel>
+                        
+                        <span className="d-none d-md-block">COURSE HANDICAP</span>
+                        <span className="d-block d-md-none">C.H.</span>
+                        <InfoIcon>i</InfoIcon>
+                      </StatLabel>
+                      <StatValue>{golfer.playingHandicap}</StatValue>
+                    </StatItem>
+                    <StatItem>
+                      <StatLabel>
+                      <span className="d-none d-md-block">SHOTS OFF</span>
+                      <span className="d-block d-md-none">S.O.</span>
+                        <InfoIcon>i</InfoIcon>
+                      </StatLabel>
+                      <StatValue>{golfer.shotsOff}</StatValue>
+                    </StatItem>
+                  </GolferStats>
+                  <RemoveButton onClick={() => removeGolfer(golfer.id)}>
+                    <span>−</span>
+                  </RemoveButton>
+                </GolferCard>
+              ))}
+            </GolferCards>
 
             <AddButton onClick={addGolfer}>ADD GOLFERS</AddButton>
           </GolfersSection>
