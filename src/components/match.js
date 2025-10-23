@@ -139,8 +139,9 @@ function Match({
   const playersUpdateJson = PlayerInfoUpdate()
   const { nodes } = usePlayersPosts()
   const posts = nodes
-  const courseMatchQuery = course[`${courseMatch}`]?.year
-    ? course[`${courseMatch}`]?.year
+  // get course info for match from courses.json
+  const courseMatchQuery = course[`${courseMatch}`][`${year}`]
+    ? course[`${courseMatch}`][`${year}`]
     : course[`${courseMatch}`]
   const player1Post = posts.filter(
     player => player.frontmatter?.name === player1.toLowerCase()
