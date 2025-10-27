@@ -264,10 +264,10 @@ function getPlayerHandicap(player, gameplay, handicaps, hardestHoleNine) {
     // let p2NineHoleHC = getHardestNineHandicap(p2PlayingHC / 2, hardestHoleNine)
     // let p3NineHoleHC = getHardestNineHandicap(p3PlayingHC / 2, hardestHoleNine)
     // let p4NineHoleHC = getHardestNineHandicap(p4PlayingHC / 2, hardestHoleNine)
-    let p1NineHoleHC = Math.round(p1PlayingHC / 2)
-    let p2NineHoleHC = Math.round(p2PlayingHC / 2)
-    let p3NineHoleHC = Math.round(p3PlayingHC / 2)
-    let p4NineHoleHC = Math.round(p4PlayingHC / 2)
+    let p1NineHoleHC = (p1PlayingHC / 2).toFixed(1)
+    let p2NineHoleHC = (p2PlayingHC / 2).toFixed(1)
+    let p3NineHoleHC = (p3PlayingHC / 2).toFixed(1)
+    let p4NineHoleHC = (p4PlayingHC / 2).toFixed(1)
 
     // * get the lowest 9 hole HC
     let lowPlayer = Math.min(
