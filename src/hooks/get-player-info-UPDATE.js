@@ -7,6 +7,10 @@ export const PlayerInfoUpdate = () => {
         blake {
           name
           appearances
+          cupRecord {
+            wins
+            losses
+          }
           handicap
           year {
             _2024 {
@@ -56,6 +60,10 @@ export const PlayerInfoUpdate = () => {
         cam {
           name
           appearances
+          cupRecord {
+            wins
+            losses
+          }
           handicap
           year {
             _2025 {
@@ -185,6 +193,10 @@ export const PlayerInfoUpdate = () => {
         chris {
           name
           appearances
+          cupRecord {
+            wins
+            losses
+          }
           handicap
           year {
             _2025 {
@@ -205,6 +217,9 @@ export const PlayerInfoUpdate = () => {
                   front
                   back
                   backHandicap
+                  useForHandicapIndex
+                  useFront
+                  useBack
                 }
                 crookedTree {
                   course
@@ -356,6 +371,10 @@ export const PlayerInfoUpdate = () => {
         craig {
           name
           appearances
+          cupRecord {
+            wins
+            losses
+          }
           handicap
           year {
             _2025 {
@@ -565,6 +584,10 @@ export const PlayerInfoUpdate = () => {
         curtis {
           name
           appearances
+          cupRecord {
+            wins
+            losses
+          }
           handicap
           year {
             _2025 {
@@ -736,6 +759,10 @@ export const PlayerInfoUpdate = () => {
         dan {
           name
           appearances
+          cupRecord {
+            wins
+            losses
+          }
           handicap
           year {
             _2025 {
@@ -945,6 +972,10 @@ export const PlayerInfoUpdate = () => {
         derek {
           name
           appearances
+          cupRecord {
+            wins
+            losses
+          }
           handicap
           year {
             _2025 {
@@ -1154,6 +1185,10 @@ export const PlayerInfoUpdate = () => {
         dylan {
           name
           appearances
+          cupRecord {
+            wins
+            losses
+          }
           handicap
           year {
             _2025 {
@@ -1363,6 +1398,10 @@ export const PlayerInfoUpdate = () => {
         evan {
           name
           appearances
+          cupRecord {
+            wins
+            losses
+          }
           handicap
           year {
             _2025 {
@@ -1534,6 +1573,10 @@ export const PlayerInfoUpdate = () => {
         gordon {
           name
           appearances
+          cupRecord {
+            wins
+            losses
+          }
           handicap
           year {
             _2025 {
@@ -1663,6 +1706,10 @@ export const PlayerInfoUpdate = () => {
         jake {
           name
           appearances
+          cupRecord {
+            wins
+            losses
+          }
           handicap
           year {
             _2024 {
@@ -1792,6 +1839,10 @@ export const PlayerInfoUpdate = () => {
         matt {
           name
           appearances
+          cupRecord {
+            wins
+            losses
+          }
           handicap
           year {
             _2025 {
@@ -2001,6 +2052,10 @@ export const PlayerInfoUpdate = () => {
         rj {
           name
           appearances
+          cupRecord {
+            wins
+            losses
+          }
           handicap
           year {
             _2025 {
@@ -2210,6 +2265,10 @@ export const PlayerInfoUpdate = () => {
         stephen {
           name
           appearances
+          cupRecord {
+            wins
+            losses
+          }
           handicap
           year {
             _2025 {
@@ -2259,6 +2318,10 @@ export const PlayerInfoUpdate = () => {
         stephen {
           name
           appearances
+          cupRecord {
+            wins
+            losses
+          }
           handicap
           year {
             _2025 {
@@ -2308,6 +2371,10 @@ export const PlayerInfoUpdate = () => {
         travis {
           name
           appearances
+          cupRecord {
+            wins
+            losses
+          }
           handicap
           year {
             _2023 {

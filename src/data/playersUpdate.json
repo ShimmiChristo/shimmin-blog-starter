@@ -414,7 +414,9 @@
               "frontHandicap": 999,
               "back": [6, 5, 8, 5, 7, 5, 5, 5, 99],
               "backGross": 46,
-              "backHandicap": 999
+              "backHandicap": 999,
+              "useForHandicapIndex": true,
+              "use18Holes": true
             },
             "boyneHighlandsMoor": {
               "course": "The Moor at Boyne Highlands",
@@ -441,7 +443,9 @@
               "frontHandicap": 999,
               "back": [7, 7, 3, 5, 5, 6, 6, 6, 5],
               "backGross": 50,
-              "backHandicap": 999
+              "backHandicap": 999,
+              "useForHandicapIndex": true,
+              "useBack": true
             }
           },
           "points": [
@@ -610,7 +614,9 @@
               "frontHandicap": 999,
               "back": [5, 6, 8, 4, 6, 7, 8, 10, 7],
               "backGross": 61,
-              "backHandicap": 999
+              "backHandicap": 999,
+              "useForHandicapIndex": true,
+              "use18Holes": true
             },
             "bayHarborPreserveLinks": {
               "course": "Bay Harbor Preserve Links",
@@ -619,7 +625,10 @@
               "frontHandicap": 999,
               "back": [6, 6, 7, 6, 8, 8, 10, 5, 8],
               "backGross": 64,
-              "backHandicap": 999
+              "backHandicap": 999,
+              "useForHandicapIndex": true,
+              "useFront": true,
+              "useBack": true
             },
             "crookedTree": {
               "course": "Crooked Tree Golf Club",
@@ -646,7 +655,9 @@
               "frontHandicap": 999,
               "back": [5, 8, 7, 7, 3, 6, 3, 99, 99],
               "backGross": 39,
-              "backHandicap": 999
+              "backHandicap": 999,
+              "useForHandicapIndex": true,
+              "useBack": true
             }
           },
           "points": [
@@ -821,7 +832,9 @@
               "frontHandicap": 999,
               "back": [],
               "backGross": 0,
-              "backHandicap": 999
+              "backHandicap": 999,
+              "useForHandicapIndex": true,
+              "useFront": true
             },
             "boyneHighlandsArthurHills": {
               "course": "Arthur Hills at Boyne Highlands",
@@ -830,7 +843,9 @@
               "frontHandicap": 999,
               "back": [8, 6, 7, 7, 4, 7, 5, 6, 7],
               "backGross": 57,
-              "backHandicap": 999
+              "backHandicap": 999,
+              "useForHandicapIndex": true,
+              "use18Holes": true
             },
             "boyneHighlandsDonaldRoss": {
               "course": "Donald Ross at Boyne Highlands",
@@ -857,7 +872,9 @@
               "frontHandicap": 999,
               "back": [4, 5, 3, 4, 4, 4, 4, 5, 4],
               "backGross": 37,
-              "backHandicap": 999
+              "backHandicap": 999,
+              "useForHandicapIndex": true,
+              "useBack": true
             }
           },
           "points": [
@@ -1393,7 +1410,9 @@
               "frontHandicap": 999,
               "back": [5, 8, 5, 4, 5, 5, 7, 6, 4],
               "backGross": 49,
-              "backHandicap": 999
+              "backHandicap": 999,
+              "useForHandicapIndex": true,
+              "use18Holes": true
             },
             "bayHarborPreserveLinks": {
               "course": "Bay Harbor Preserve Links",
@@ -1402,7 +1421,10 @@
               "frontHandicap": 999,
               "back": [5, 4, 4, 3, 4, 6, 6, 4, 4],
               "backGross": 40,
-              "backHandicap": 999
+              "backHandicap": 999,
+              "useForHandicapIndex": true,
+              "useFront": true,
+              "useBack": true
             },
             "crookedTree": {
               "course": "Crooked Tree Golf Club",
@@ -1429,7 +1451,9 @@
               "frontHandicap": 999,
               "back": [7, 7, 5, 6, 5, 4, 6, 4, 5],
               "backGross": 49,
-              "backHandicap": 999
+              "backHandicap": 999,
+              "useForHandicapIndex": true,
+              "useBack": true
             }
           },
           "points": [
@@ -1604,14 +1628,18 @@
               "frontHandicap": 999,
               "back": [5, 4, 5, 4, 6, 4, 4, 5, 4],
               "backGross": 41,
-              "backHandicap": 999
+              "backHandicap": 999,
+              "useForHandicapIndex": true,
+              "use18Holes": true
             },
             "bayHarborGolfClub": {
               "course": "Bay Harbor Golf Club",
               "front": [6, 6, 4, 4, 5, 4, 5, 4, 8],
               "frontHandicap": 999,
               "back": [7, 4, 6, 4, 5, 4, 5, 4, 5],
-              "backHandicap": 999
+              "backHandicap": 999,
+              "useForHandicapIndex": true,
+              "use18Holes": true
             },
             "boyneHighlandsMoor": {
               "course": "The Moor at Boyne Highlands",
@@ -1631,8 +1659,10 @@
               "course": "The Heather at Boyne Highlands",
               "front": [5, 5, 4, 4, 5, 4, 4, 6, 6],
               "frontHandicap": 999,
-              "back": [5, 5, 5, 6, 4, 6, 4, 10, 7],
-              "backHandicap": 999
+              "back": [5, 5, 5, 6, 4, 6, 4, 5, 7],
+              "backHandicap": 999,
+              "useForHandicapIndex": true,
+              "useBack": true
             }
           },
           "points": [
@@ -1790,14 +1820,18 @@
               "frontHandicap": 999,
               "back": [6, 5, 6, 6, 9, 4, 5, 5, 6],
               "backGross": 52,
-              "backHandicap": 999
+              "backHandicap": 999,
+              "useForHandicapIndex": true,
+              "use18Holes": true
             },
             "boyneHighlandsArthurHills": {
               "course": "Arthur Hills at Boyne Highlands",
               "front": [6, 6, 7, 6, 6, 6, 3, 4, 4],
               "frontHandicap": 999,
               "back": [5, 6, 8, 6, 5, 6, 4, 5, 7],
-              "backHandicap": 999
+              "backHandicap": 999,
+              "useForHandicapIndex": true,
+              "use18Holes": true
             },
             "boyneHighlandsDonaldRoss": {
               "course": "Donald Ross at Boyne Highlands",
@@ -1818,7 +1852,9 @@
               "front": [5, 5, 6, 4, 5, 4, 4, 5, 5],
               "frontHandicap": 999,
               "back": [6, 5, 3, 6, 5, 5, 3, 4, 4],
-              "backHandicap": 999
+              "backHandicap": 999,
+              "useForHandicapIndex": true,
+              "useBack": true
             }
           },
           "points": [
@@ -2299,7 +2335,10 @@
               "front": [7, 7, 4, 6, 6, 7, 5, 6, 4],
               "frontHandicap": 999,
               "back": [7, 4, 3, 6, 7, 5, 6, 4, 4],
-              "backHandicap": 999
+              "backHandicap": 999,
+              "useForHandicapIndex": true,
+              "useFront": true,
+              "useBack": true
             },
             "crookedTree": {
               "course": "Crooked Tree Golf Club",
@@ -2320,7 +2359,9 @@
               "front": [5, 5, 7, 4, 5, 7, 4, 5, 99],
               "frontHandicap": 999,
               "back": [8, 7, 4, 6, 4, 6, 3, 4, 5],
-              "backHandicap": 999
+              "backHandicap": 999,
+              "useForHandicapIndex": true,
+              "useBack": true
             }
           },
           "points": [
@@ -2495,14 +2536,18 @@
               "frontHandicap": 999,
               "back": [5, 6, 4, 5, 5, 3, 5, 6, 5],
               "backGross": 44,
-              "backHandicap": 999
+              "backHandicap": 999,
+              "useForHandicapIndex": true,
+              "use18Holes": true
             },
             "bayHarborGolfClub": {
               "course": "Bay Harbor Golf Club",
               "front": [5, 5, 7, 4, 7, 5, 7, 4, 6],
               "frontHandicap": 999,
               "back": [7, 6, 6, 6, 5, 6, 5, 4, 5],
-              "backHandicap": 999
+              "backHandicap": 999,
+              "useForHandicapIndex": true,
+              "use18Holes": true
             },
             "boyneHighlandsMoor": {
               "course": "The Moor at Boyne Highlands",
@@ -2523,7 +2568,9 @@
               "front": [4, 5, 4, 4, 8, 3, 5, 5, 99],
               "frontHandicap": 999,
               "back": [6, 6, 3, 6, 6, 7, 4, 5, 6],
-              "backHandicap": 999
+              "backHandicap": 999,
+              "useForHandicapIndex": true,
+              "useBack": true
             }
           },
           "points": [
@@ -2681,7 +2728,9 @@
               "frontHandicap": 999,
               "back": [],
               "backGross": 0,
-              "backHandicap": 999
+              "backHandicap": 999,
+              "useForHandicapIndex": true,
+              "use18Holes": true
             },
             "boyneHighlandsArthurHills": {
               "course": "Arthur Hills at Boyne Highlands",
@@ -2709,7 +2758,9 @@
               "front": [4, 4, 4, 3, 5, 3, 4, 4, 6],
               "frontHandicap": 999,
               "back": [4, 5, 3, 4, 4, 5, 3, 4, 4],
-              "backHandicap": 999
+              "backHandicap": 999,
+              "useForHandicapIndex": true,
+              "useBack": true
             }
           },
           "points": [
@@ -3179,14 +3230,19 @@
               "frontHandicap": 999,
               "back": [5, 8, 5, 3, 7, 2, 5, 5, 5],
               "backGross": 45,
-              "backHandicap": 999
+              "backHandicap": 999,
+              "useForHandicapIndex": true,
+              "use18Holes": true
             },
             "bayHarborPreserveLinks": {
               "course": "Bay Harbor Preserve Links",
               "front": [5, 7, 6, 5, 5, 7, 7, 6, 4],
               "frontHandicap": 999,
               "back": [5, 7, 8, 5, 6, 6, 8, 4, 8],
-              "backHandicap": 999
+              "backHandicap": 999,
+              "useForHandicapIndex": true,
+              "useFront": true,
+              "useBack": true
             },
             "crookedTree": {
               "course": "Crooked Tree Golf Club",
@@ -3207,7 +3263,9 @@
               "front": [5, 4, 6, 4, 7, 7, 4, 5, 5],
               "frontHandicap": 999,
               "back": [8, 8, 8, 6, 8, 7, 4, 6, 7],
-              "backHandicap": 999
+              "backHandicap": 999,
+              "useForHandicapIndex": true,
+              "useBack": true
             }
           },
           "points": [
@@ -3379,8 +3437,10 @@
               "course": "Bay Harbor Golf Club",
               "front": [6, 6, 10, 4, 4, 10, 8, 6, 10],
               "frontHandicap": 999,
-              "back": [6, 6, 7, 10, 7, 4, 7, 6, 99],
-              "backHandicap": 999
+              "back": [6, 6, 7, 10, 7, 4, 7, 6, 5],
+              "backHandicap": 999,
+              "useForHandicapIndex": true,
+              "use18Holes": true
             },
             "boyneHighlandsMoor": {
               "course": "The Moor at Boyne Highlands",
@@ -3401,7 +3461,9 @@
               "front": [4, 6, 6, 4, 7, 4, 5, 5, 7],
               "frontHandicap": 999,
               "back": [6, 7, 4, 7, 7, 6, 5, 7, 6],
-              "backHandicap": 999
+              "backHandicap": 999,
+              "useForHandicapIndex": true,
+              "useBack": true
             }
           },
           "points": [
@@ -3557,7 +3619,9 @@
               "front": [8, 7, 7, 6, 7, 7, 3, 6, 6],
               "frontHandicap": 999,
               "back": [7, 9, 8, 9, 4, 10, 3, 4, 5],
-              "backHandicap": 999
+              "backHandicap": 999,
+              "useForHandicapIndex": true,
+              "use18Holes": true
             },
             "boyneHighlandsDonaldRoss": {
               "course": "Donald Ross at Boyne Highlands",
@@ -3578,7 +3642,9 @@
               "front": [4, 5, 6, 4, 8, 5, 7, 6, 7],
               "frontHandicap": 999,
               "back": [6, 7, 6, 10, 6, 8, 5, 6, 4],
-              "backHandicap": 999
+              "backHandicap": 999,
+              "useForHandicapIndex": true,
+              "useBack": true
             }
           },
           "points": [
@@ -3925,7 +3991,9 @@
               "frontHandicap": 999,
               "back": [5, 4, 4, 6, 5, 4, 5, 5, 6],
               "backGross": 44,
-              "backHandicap": 999
+              "backHandicap": 999,
+              "useForHandicapIndex": true,
+              "use18Holes": true
             },
             "bayHarborPreserveLinks": {
               "course": "Bay Harbor Preserve Links",
@@ -3943,7 +4011,10 @@
               "grossEagles": 0,
               "netEagles": 0,
               "grossHolesInOne": 0,
-              "netHolesInOne": 0
+              "netHolesInOne": 0,
+              "useForHandicapIndex": true,
+              "useFront": true,
+              "useBack": true
             },
             "crookedTree": {
               "course": "Crooked Tree Golf Club",
@@ -3964,7 +4035,9 @@
               "front": [5, 5, 7, 8, 4, 6, 4, 5, 4],
               "frontHandicap": 999,
               "back": [6, 6, 6, 6, 5, 4, 5, 5, 7],
-              "backHandicap": 999
+              "backHandicap": 999,
+              "useForHandicapIndex": true,
+              "useBack": true
             }
           },
           "points": [
@@ -4131,14 +4204,18 @@
               "frontHandicap": 999,
               "back": [8, 6, 5, 6, 7, 3, 9, 6, 5],
               "backGross": 55,
-              "backHandicap": 999
+              "backHandicap": 999,
+              "useForHandicapIndex": true,
+              "use18Holes": true
             },
             "bayHarborGolfClub": {
               "course": "Bay Harbor Golf Club",
               "front": [9, 6, 5, 4, 8, 10, 8, 4, 6],
               "frontHandicap": 999,
               "back": [5, 6, 8, 8, 6, 7, 5, 7, 7],
-              "backHandicap": 999
+              "backHandicap": 999,
+              "useForHandicapIndex": true,
+              "use18Holes": true
             },
             "boyneHighlandsMoor": {
               "course": "The Moor at Boyne Highlands",
@@ -4159,7 +4236,9 @@
               "front": [3, 7, 6, 3, 6, 4, 6, 6, 9],
               "frontHandicap": 999,
               "back": [7, 8, 5, 6, 5, 5, 5, 6, 4],
-              "backHandicap": 999
+              "backHandicap": 999,
+              "useForHandicapIndex": true,
+              "useBack": true
             }
           },
           "points": [
@@ -4317,14 +4396,18 @@
               "frontHandicap": 999,
               "back": [5, 6, 10, 8, 12, 6, 8, 5, 6],
               "backGross": 66,
-              "backHandicap": 999
+              "backHandicap": 999,
+              "useForHandicapIndex": true,
+              "use18Holes": true
             },
             "boyneHighlandsArthurHills": {
               "course": "Arthur Hills at Boyne Highlands",
               "front": [8, 7, 10, 8, 7, 8, 3, 7, 5],
               "frontHandicap": 999,
               "back": [5, 7, 7, 9, 5, 8, 6, 9, 8],
-              "backHandicap": 999
+              "backHandicap": 999,
+              "useForHandicapIndex": true,
+              "use18Holes": true
             },
             "boyneHighlandsDonaldRoss": {
               "course": "Donald Ross at Boyne Highlands",
@@ -4345,7 +4428,9 @@
               "front": [6, 7, 5, 5, 6, 5, 6, 6, 8],
               "frontHandicap": 999,
               "back": [6, 7, 8, 7, 8, 9, 7, 7, 4],
-              "backHandicap": 999
+              "backHandicap": 999,
+              "useForHandicapIndex": true,
+              "useBack": true
             }
           },
           "points": [
@@ -4815,14 +4900,19 @@
               "frontHandicap": 999,
               "back": [4, 6, 5, 4, 6, 5, 6, 6, 6],
               "backGross": 48,
-              "backHandicap": 999
+              "backHandicap": 999,
+              "useForHandicapIndex": true,
+              "use18Holes": true
             },
             "bayHarborPreserveLinks": {
               "course": "Bay Harbor Preserve Links",
               "front": [5, 5, 7, 7, 6, 7, 6, 6, 4],
               "frontHandicap": 999,
               "back": [6, 6, 6, 5, 6, 4, 7, 4, 5],
-              "backHandicap": 999
+              "backHandicap": 999,
+              "useForHandicapIndex": true,
+              "useFront": true,
+              "useBack": true
             },
             "crookedTree": {
               "course": "Crooked Tree Golf Club",
@@ -4843,7 +4933,9 @@
               "front": [4, 5, 7, 5, 4, 6, 3, 5, 99],
               "frontHandicap": 999,
               "back": [4, 6, 5, 6, 4, 4, 5, 99, 99],
-              "backHandicap": 999
+              "backHandicap": 999,
+              "useForHandicapIndex": true,
+              "useBack": true
             }
           },
           "points": [
@@ -5001,14 +5093,18 @@
               "frontHandicap": 999,
               "back": [6, 8, 7, 5, 7, 4, 5, 7, 6],
               "backGross": 54,
-              "backHandicap": 999
+              "backHandicap": 999,
+              "useForHandicapIndex": true,
+              "use18Holes": true
             },
             "bayHarborGolfClub": {
               "course": "Bay Harbor Golf Club",
               "front": [7, 6, 6, 6, 7, 7, 7, 4, 6],
               "frontHandicap": 999,
-              "back": [7, 5, 7, 5, 7, 9, 8, 6, 99],
-              "backHandicap": 999
+              "back": [7, 5, 7, 5, 7, 9, 8, 6, 5],
+              "backHandicap": 999,
+              "useForHandicapIndex": true,
+              "use18Holes": true
             },
             "boyneHighlandsMoor": {
               "course": "The Moor at Boyne Highlands",
@@ -5029,7 +5125,9 @@
               "front": [5, 4, 6, 5, 6, 3, 5, 7, 99],
               "frontHandicap": 999,
               "back": [6, 5, 5, 6, 6, 5, 3, 5, 7],
-              "backHandicap": 999
+              "backHandicap": 999,
+              "useForHandicapIndex": true,
+              "useBack": true
             }
           },
           "points": [
@@ -5187,14 +5285,18 @@
               "frontHandicap": 999,
               "back": [6, 3, 7, 4, 9, 5, 6, 3, 6],
               "backGross": 49,
-              "backHandicap": 999
+              "backHandicap": 999,
+              "useForHandicapIndex": true,
+              "use18Holes": true
             },
             "boyneHighlandsArthurHills": {
               "course": "Arthur Hills at Boyne Highlands",
               "front": [4, 4, 5, 4, 4, 5, 3, 4, 3],
               "frontHandicap": 999,
               "back": [5, 8, 7, 8, 5, 5, 7, 6, 10],
-              "backHandicap": 999
+              "backHandicap": 999,
+              "useForHandicapIndex": true,
+              "use18Holes": true
             },
             "boyneHighlandsDonaldRoss": {
               "course": "Donald Ross at Boyne Highlands",
@@ -5215,7 +5317,9 @@
               "front": [4, 5, 6, 4, 8, 5, 7, 6, 7],
               "frontHandicap": 999,
               "back": [6, 5, 4, 5, 5, 8, 4, 6, 4],
-              "backHandicap": 999
+              "backHandicap": 999,
+              "useForHandicapIndex": true,
+              "useBack": true
             }
           },
           "points": [
@@ -5686,14 +5790,19 @@
               "frontHandicap": 999,
               "back": [4, 6, 6, 2, 4, 5, 5, 4, 4],
               "backGross": 40,
-              "backHandicap": 999
+              "backHandicap": 999,
+              "useForHandicapIndex": true,
+              "use18Holes": true
             },
             "bayHarborPreserveLinks": {
               "course": "Bay Harbor Preserve Links",
               "front": [3, 4, 4, 6, 4, 6, 4, 3, 4],
               "frontHandicap": 999,
               "back": [5, 4, 6, 2, 5, 4, 6, 4, 5],
-              "backHandicap": 999
+              "backHandicap": 999,
+              "useForHandicapIndex": true,
+              "useFront": true,
+              "useBack": true
             },
             "crookedTree": {
               "course": "Crooked Tree Golf Club",
@@ -5714,7 +5823,9 @@
               "front": [4, 4, 5, 5, 4, 5, 3, 4, 4],
               "frontHandicap": 999,
               "back": [5, 5, 5, 5, 3, 5, 3, 4, 5],
-              "backHandicap": 999
+              "backHandicap": 999,
+              "useForHandicapIndex": true,
+              "useBack": true
             }
           },
           "points": [
@@ -5872,14 +5983,18 @@
               "frontHandicap": 999,
               "back": [3, 4, 4, 4, 6, 5, 5, 6, 5],
               "backGross": 42,
-              "backHandicap": 999
+              "backHandicap": 999,
+              "useForHandicapIndex": true,
+              "use18Holes": true
             },
             "bayHarborGolfClub": {
               "course": "Bay Harbor Golf Club",
               "front": [6, 4, 3, 3, 5, 4, 5, 4, 4],
               "frontHandicap": 999,
               "back": [6, 4, 5, 4, 6, 5, 4, 5, 4],
-              "backHandicap": 999
+              "backHandicap": 999,
+              "useForHandicapIndex": true,
+              "use18Holes": true
             },
             "boyneHighlandsMoor": {
               "course": "The Moor at Boyne Highlands",
@@ -5900,7 +6015,9 @@
               "front": [4, 5, 4, 3, 5, 3, 5, 4, 6],
               "frontHandicap": 999,
               "back": [4, 5, 4, 4, 5, 5, 3, 5, 4],
-              "backHandicap": 999
+              "backHandicap": 999,
+              "useForHandicapIndex": true,
+              "useBack": true
             }
           },
           "points": [
@@ -6058,14 +6175,18 @@
               "frontHandicap": 999,
               "back": [],
               "backGross": 0,
-              "backHandicap": 999
+              "backHandicap": 999,
+              "useForHandicapIndex": true,
+              "use18Holes": true
             },
             "boyneHighlandsArthurHills": {
               "course": "Arthur Hills at Boyne Highlands",
               "front": [4, 4, 5, 5, 4, 6, 3, 5, 4],
               "frontHandicap": 999,
               "back": [4, 5, 6, 5, 4, 4, 4, 6, 6],
-              "backHandicap": 999
+              "backHandicap": 999,
+              "useForHandicapIndex": true,
+              "use18Holes": true
             },
             "boyneHighlandsDonaldRoss": {
               "course": "Donald Ross at Boyne Highlands",
@@ -6086,7 +6207,9 @@
               "front": [5, 6, 4, 3, 5, 2, 4, 5, 6],
               "frontHandicap": 999,
               "back": [3, 6, 3, 5, 5, 7, 3, 4, 4],
-              "backHandicap": 999
+              "backHandicap": 999,
+              "useForHandicapIndex": true,
+              "useBack": true
             }
           },
           "points": [
@@ -6556,14 +6679,19 @@
               "frontHandicap": 999,
               "back": [5, 10, 7, 6, 6, 3, 6, 10, 5],
               "backGross": 58,
-              "backHandicap": 999
+              "backHandicap": 999,
+              "useForHandicapIndex": true,
+              "use18Holes": true
             },
             "bayHarborPreserveLinks": {
               "course": "Bay Harbor Preserve Links",
               "front": [7, 8, 5, 7, 6, 10, 7, 4, 5],
               "frontHandicap": 999,
               "back": [6, 5, 7, 3, 6, 10, 8, 4, 9],
-              "backHandicap": 999
+              "backHandicap": 999,
+              "useForHandicapIndex": true,
+              "useFront": true,
+              "useBack": true
             },
             "crookedTree": {
               "course": "Crooked Tree Golf Club",
@@ -6577,7 +6705,9 @@
               "front": [5, 6, 7, 6, 8, 3, 5, 6, 7],
               "frontHandicap": 999,
               "back": [8, 7, 4, 9, 5, 6, 4, 7, 99],
-              "backHandicap": 999
+              "backHandicap": 999,
+              "useForHandicapIndex": true,
+              "useBack": true
             },
             "boyneHighlandsArthurHills": {
               "course": "Arthur Hills at Boyne Highlands",
@@ -6742,14 +6872,18 @@
               "frontHandicap": 999,
               "back": [7, 7, 7, 3, 5, 4, 9, 9, 5],
               "backGross": 56,
-              "backHandicap": 999
+              "backHandicap": 999,
+              "useForHandicapIndex": true,
+              "use18Holes": true
             },
             "bayHarborGolfClub": {
               "course": "Bay Harbor Golf Club",
               "front": [7, 5, 8, 5, 5, 5, 7, 5, 8],
               "frontHandicap": 999,
               "back": [7, 4, 9, 8, 6, 10, 9, 6, 7],
-              "backHandicap": 999
+              "backHandicap": 999,
+              "useForHandicapIndex": true,
+              "use18Holes": true
             },
             "boyneHighlandsMoor": {
               "course": "The Moor at Boyne Highlands",
@@ -6770,7 +6904,9 @@
               "front": [3, 7, 6, 3, 7, 4, 6, 7, 9],
               "frontHandicap": 999,
               "back": [10, 8, 5, 6, 7, 5, 5, 7, 6],
-              "backHandicap": 999
+              "backHandicap": 999,
+              "useForHandicapIndex": true,
+              "useBack": true
             }
           },
           "points": [
@@ -6926,7 +7062,9 @@
               "front": [5, 7, 11, 6, 7, 8, 4, 7, 5],
               "frontHandicap": 999,
               "back": [5, 6, 7, 7, 3, 5, 3, 4, 5],
-              "backHandicap": 999
+              "backHandicap": 999,
+              "useForHandicapIndex": true,
+              "use18Holes": true
             },
             "boyneHighlandsDonaldRoss": {
               "course": "Donald Ross at Boyne Highlands",
@@ -6947,7 +7085,9 @@
               "front": [6, 7, 5, 5, 6, 5, 6, 6, 8],
               "frontHandicap": 999,
               "back": [8, 6, 5, 5, 7, 8, 6, 6, 4],
-              "backHandicap": 999
+              "backHandicap": 999,
+              "useForHandicapIndex": true,
+              "useBack": true
             }
           },
           "points": [
@@ -7290,7 +7430,10 @@
               "front": [4, 4, 4, 7, 5, 5, 4, 6, 5],
               "frontHandicap": 999,
               "back": [4, 4, 5, 3, 4, 9, 6, 5, 6],
-              "backHandicap": 999
+              "backHandicap": 999,
+              "useForHandicapIndex": true,
+              "useFront": true,
+              "useBack": true
             },
             "crookedTree": {
               "course": "Crooked Tree Golf Club",
@@ -7311,7 +7454,9 @@
               "front": [3, 3, 6, 4, 4, 6, 3, 5, 4],
               "frontHandicap": 999,
               "back": [6, 8, 7, 7, 4, 4, 5, 5, 5],
-              "backHandicap": 999
+              "backHandicap": 999,
+              "useForHandicapIndex": true,
+              "useBack": true
             }
           },
           "points": [
@@ -7469,14 +7614,18 @@
               "frontHandicap": 999,
               "back": [4, 6, 3, 4, 4, 4, 7, 6, 5],
               "backGross": 43,
-              "backHandicap": 999
+              "backHandicap": 999,
+              "useForHandicapIndex": true,
+              "use18Holes": true
             },
             "bayHarborGolfClub": {
               "course": "Bay Harbor Golf Club",
               "front": [5, 6, 5, 3, 4, 5, 5, 5, 6],
               "frontHandicap": 999,
               "back": [4, 4, 6, 4, 6, 8, 6, 8, 6],
-              "backHandicap": 999
+              "backHandicap": 999,
+              "useForHandicapIndex": true,
+              "use18Holes": true
             },
             "boyneHighlandsMoor": {
               "course": "The Moor at Boyne Highlands",
@@ -7497,7 +7646,9 @@
               "front": [5, 4, 6, 5, 6, 3, 5, 7, 99],
               "frontHandicap": 999,
               "back": [8, 6, 3, 7, 6, 6, 3, 5, 5],
-              "backHandicap": 999
+              "backHandicap": 999,
+              "useForHandicapIndex": true,
+              "useBack": true
             }
           },
           "points": [
@@ -8373,14 +8524,19 @@
               "frontHandicap": 999,
               "back": [4, 6, 5, 2, 5, 4, 4, 5, 4],
               "backGross": 39,
-              "backHandicap": 999
+              "backHandicap": 999,
+              "useForHandicapIndex": true,
+              "use18Holes": true
             },
             "bayHarborPreserveLinks": {
               "course": "Bay Harbor Preserve Links",
               "front": [6, 4, 4, 5, 4, 6, 3, 6, 3],
               "frontHandicap": 999,
               "back": [5, 4, 4, 3, 5, 5, 4, 3, 5],
-              "backHandicap": 999
+              "backHandicap": 999,
+              "useForHandicapIndex": true,
+              "useFront": true,
+              "useBack": true
             },
             "crookedTree": {
               "course": "Crooked Tree Golf Club",
@@ -8401,7 +8557,9 @@
               "front": [3, 3, 6, 4, 4, 6, 3, 5, 4],
               "frontHandicap": 999,
               "back": [6, 5, 4, 6, 4, 4, 3, 4, 5],
-              "backHandicap": 999
+              "backHandicap": 999,
+              "useForHandicapIndex": true,
+              "useBack": true
             }
           },
           "points": [
@@ -8559,14 +8717,18 @@
               "frontHandicap": 999,
               "back": [4, 6, 4, 4, 5, 4, 5, 5, 4],
               "backGross": 41,
-              "backHandicap": 999
+              "backHandicap": 999,
+              "useForHandicapIndex": true,
+              "use18Holes": true
             },
             "bayHarborGolfClub": {
               "course": "Bay Harbor Golf Club",
               "front": [5, 5, 4, 4, 5, 6, 7, 4, 5],
               "frontHandicap": 999,
               "back": [4, 3, 6, 4, 5, 4, 5, 4, 5],
-              "backHandicap": 999
+              "backHandicap": 999,
+              "useForHandicapIndex": true,
+              "use18Holes": true
             },
             "boyneHighlandsMoor": {
               "course": "The Moor at Boyne Highlands",
@@ -8587,7 +8749,9 @@
               "front": [5, 5, 4, 4, 5, 4, 4, 6, 6],
               "frontHandicap": 999,
               "back": [5, 7, 3, 5, 5, 6, 4, 4, 6],
-              "backHandicap": 999
+              "backHandicap": 999,
+              "useForHandicapIndex": true,
+              "useBack": true
             }
           },
           "points": [
@@ -8745,14 +8909,18 @@
               "frontHandicap": 999,
               "back": [],
               "backGross": 0,
-              "backHandicap": 999
+              "backHandicap": 999,
+              "useForHandicapIndex": true,
+              "use18Holes": true
             },
             "boyneHighlandsArthurHills": {
               "course": "Arthur Hills at Boyne Highlands",
               "front": [5, 4, 3, 4, 5, 6, 3, 5, 3],
               "frontHandicap": 999,
               "back": [5, 7, 6, 6, 10, 6, 4, 4, 5],
-              "backHandicap": 999
+              "backHandicap": 999,
+              "useForHandicapIndex": true,
+              "use18Holes": true
             },
             "boyneHighlandsDonaldRoss": {
               "course": "Donald Ross at Boyne Highlands",
@@ -8773,7 +8941,9 @@
               "front": [5, 5, 6, 4, 5, 4, 4, 5, 5],
               "frontHandicap": 999,
               "back": [5, 4, 3, 4, 4, 5, 4, 4, 4],
-              "backHandicap": 999
+              "backHandicap": 999,
+              "useForHandicapIndex": true,
+              "useBack": true
             }
           },
           "points": [
@@ -9248,14 +9418,19 @@
               "frontHandicap": 999,
               "back": [5, 7, 4, 3, 7, 4, 6, 6, 5],
               "backGross": 47,
-              "backHandicap": 999
+              "backHandicap": 999,
+              "useForHandicapIndex": true,
+              "use18Holes": true
             },
             "bayHarborPreserveLinks": {
               "course": "Bay Harbor Preserve Links",
               "front": [7, 5, 5, 7, 5, 7, 5, 6, 4],
               "frontHandicap": 999,
               "back": [6, 5, 4, 4, 5, 5, 5, 3, 4],
-              "backHandicap": 999
+              "backHandicap": 999,
+              "useForHandicapIndex": true,
+              "useFront": true,
+              "useBack": true
             },
             "crookedTree": {
               "course": "Crooked Tree Golf Club",
@@ -9434,14 +9609,18 @@
               "frontHandicap": 999,
               "back": [7, 5, 4, 4, 6, 4, 5, 6, 4],
               "backGross": 45,
-              "backHandicap": 999
+              "backHandicap": 999,
+              "useForHandicapIndex": true,
+              "use18Holes": true
             },
             "bayHarborGolfClub": {
               "course": "Bay Harbor Golf Club",
               "front": [4, 5, 5, 4, 3, 5, 5, 5, 6],
               "frontHandicap": 999,
-              "back": [7, 5, 5, 6, 6, 7, 5, 3, 99],
-              "backHandicap": 999
+              "back": [7, 5, 5, 6, 6, 7, 5, 3, 4],
+              "backHandicap": 999,
+              "useForHandicapIndex": true,
+              "use18Holes": true
             },
             "boyneHighlandsMoor": {
               "course": "The Moor at Boyne Highlands",
@@ -9461,8 +9640,10 @@
               "course": "The Heather at Boyne Highlands",
               "front": [4, 5, 4, 3, 5, 3, 5, 4, 6],
               "frontHandicap": 999,
-              "back": [6, 6, 3, 6, 5, 6, 6, 99, 6],
-              "backHandicap": 999
+              "back": [6, 6, 3, 6, 5, 6, 6, 5, 6],
+              "backHandicap": 999,
+              "useForHandicapIndex": true,
+              "useBack": true
             }
           },
           "points": [
@@ -10124,7 +10305,9 @@
               "frontHandicap": 999,
               "back": [4, 7, 8, 4, 6, 4, 5, 5, 5],
               "backGross": 48,
-              "backHandicap": 999
+              "backHandicap": 999,
+              "useForHandicapIndex": true,
+              "use18Holes": true
             },
             "bayHarborPreserveLinks": {
               "course": "Bay Harbor Preserve Links",
@@ -10319,7 +10502,9 @@
               "front": [4, 4, 5, 4, 4, 5, 3, 4, 3],
               "frontHandicap": 999,
               "back": [5, 6, 6, 7, 10, 7, 6, 4, 5],
-              "backHandicap": 999
+              "backHandicap": 999,
+              "useForHandicapIndex": true,
+              "use18Holes": true
             },
             "boyneHighlandsDonaldRoss": {
               "course": "Donald Ross at Boyne Highlands",
@@ -10340,7 +10525,9 @@
               "front": [4, 4, 4, 3, 5, 4, 4, 4, 5],
               "frontHandicap": 999,
               "back": [4, 5, 3, 4, 4, 5, 4, 4, 10],
-              "backHandicap": 999
+              "backHandicap": 999,
+              "useForHandicapIndex": true,
+              "useBack": true
             }
           },
           "points": [
