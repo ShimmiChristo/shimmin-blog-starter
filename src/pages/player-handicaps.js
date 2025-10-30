@@ -5,12 +5,12 @@ import SEO from "../components/seo"
 import LandingPageHeader from "../components/landing-page-header"
 import { useSiteMetadata } from "../hooks/use-site-metadata"
 import { PlayerInfoUpdate } from "../hooks/get-player-info-UPDATE"
+import { CourseInfo } from "../hooks/get-course-info"
 import {
   calc18HoleHCDiff,
   calc9HoleHCDiff,
   calcHandicapDiffAvg,
 } from "../helpers/courseHandicapHelper"
-import { CourseInfo } from "../hooks/get-course-info"
 
 const Container = styled.div`
   max-width: 1200px;
@@ -164,18 +164,393 @@ const SortButton = styled.button`
   }
 `
 
+const ExpandButton = styled.button`
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #2c5aa0;
+  font-size: 1.2rem;
+  padding: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.2s;
+
+  &:hover {
+    background: #f0f0f0;
+    border-radius: 4px;
+  }
+
+  ${props => props.expanded && `
+    transform: rotate(180deg);
+  `}
+`
+
+const ExpandableRow = styled.tr`
+  td {
+    padding: 0 !important;
+    border-bottom: none !important;
+  }
+`
+
+const RoundsContainer = styled.div`
+  padding: 1.5rem;
+  background: #f8f9fa;
+  border-top: 1px solid #e0e0e0;
+`
+
+const YearSection = styled.div`
+  margin-bottom: 2rem;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+`
+
+const YearTitle = styled.h4`
+  color: #2c5aa0;
+  margin: 0 0 1rem 0;
+  font-size: 1.1rem;
+  font-weight: 600;
+`
+
+const RoundCard = styled.div`
+  background: white;
+  border-radius: 8px;
+  padding: 1.5rem;
+  margin-bottom: 1rem;
+  border-left: 4px solid #2c5aa0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+`
+
+const CourseName = styled.h5`
+  color: #2c5aa0;
+  margin: 0 0 1rem 0;
+  font-size: 1rem;
+  font-weight: 600;
+`
+
+const CourseDetails = styled.div`
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 1rem;
+  margin-bottom: 1rem;
+`
+
+const DetailItem = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+`
+
+const DetailLabel = styled.span`
+  font-size: 0.7rem;
+  color: #666;
+  text-transform: uppercase;
+  font-weight: 600;
+`
+
+const DetailValue = styled.span`
+  font-size: 0.9rem;
+  color: #333;
+  font-weight: 600;
+`
+
+const ScoreInfo = styled.div`
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 0.75rem;
+  padding-top: 1rem;
+  border-top: 1px solid #e0e0e0;
+`
+
+const NoRoundsMessage = styled.p`
+  color: #666;
+  font-style: italic;
+  text-align: center;
+  padding: 2rem;
+  margin: 0;
+`
+
+const MobileExpandButton = styled.button`
+  width: 100%;
+  background: #2c5aa0;
+  color: white;
+  border: none;
+  padding: 0.75rem 1rem;
+  border-radius: 6px;
+  margin-top: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+
+  &:hover {
+    background: #234a85;
+  }
+`
+
 const PlayerHandicaps = ({ location }) => {
   const { title } = useSiteMetadata()
   const playersUpdateJson = PlayerInfoUpdate()
   const { course } = CourseInfo()
-  const [sortBy, setSortBy] = useState("name") // 'name' or 'handicap'
-  const [sortOrder, setSortOrder] = useState("asc") // 'asc' or 'desc'
+  const [sortBy, setSortBy] = useState("name")
+  const [sortOrder, setSortOrder] = useState("asc")
+  const [expandedPlayers, setExpandedPlayers] = useState({})
+
+  const getCourseInfo = (courseKey, tees, side) => {
+    const courseInfo = course[courseKey]
+    if (!courseInfo) return null
+
+    const teeColor = tees || 'purple'
+    const slopeSide = side === 'front' ? 'out' : side === 'back' ? 'in' : 'total'
+
+    return {
+      name: courseInfo.name,
+      slope: courseInfo.totals?.tees?.[teeColor]?.[slopeSide]?.slope || 'N/A',
+      rating: courseInfo.totals?.tees?.[teeColor]?.[slopeSide]?.index || 'N/A',
+      par: courseInfo.totals?.tees?.[teeColor]?.[slopeSide]?.par || 'N/A',
+    }
+  }
+
+  const togglePlayerExpansion = (playerName) => {
+    setExpandedPlayers(prev => ({
+      ...prev,
+      [playerName]: !prev[playerName]
+    }))
+  }
+
+  const renderPlayerRounds = (playerName) => {
+    const playerData = playersUpdateJson[playerName.toLowerCase()]
+    if (!playerData) return <NoRoundsMessage>No rounds found</NoRoundsMessage>
+
+    const years = Object.keys(playerData.year).filter(y => y.startsWith('_'))
+    const hasRounds = years.some(year => {
+      const yearData = playerData.year[year]
+      return yearData.scores && Object.values(yearData.scores).some(
+        score => score.useForHandicapIndex
+      )
+    })
+
+    if (!hasRounds) {
+      return <NoRoundsMessage>No handicap index rounds found</NoRoundsMessage>
+    }
+
+    return years.map(year => {
+      const yearData = playerData.year[year]
+      const yearLabel = year.replace('_', '')
+      const rounds = Object.entries(yearData.scores || {})
+        .filter(([, score]) => score.useForHandicapIndex)
+
+      if (rounds.length === 0) return null
+
+      return (
+        <YearSection key={year}>
+          <YearTitle>{yearLabel} Season</YearTitle>
+
+          {rounds.map(([courseKey, scoreData]) => {
+            const tees = scoreData.frontTees || scoreData.backTees
+            const use18Holes = scoreData.use18Holes
+            const useFront = scoreData.useFront
+            const useBack = scoreData.useBack
+
+            let courseInfo
+            let holesUsed = ''
+            let handicapDiff = null
+            let frontDiff = null
+            let backDiff = null
+
+            // Get course data for differential calculation
+            const matchCourse = course[courseKey]
+
+            if (use18Holes) {
+              courseInfo = getCourseInfo(courseKey, tees, 'total')
+              holesUsed = '18 Holes'
+              
+              // Calculate 18-hole differential
+              if (matchCourse && matchCourse[year]) {
+                const totalScore = (scoreData.frontGross || 0) + (scoreData.backGross || 0)
+                const courseSlope = matchCourse[year].totals.tees[tees || 'purple'].total.slope
+                const courseRating = matchCourse[year].totals.tees[tees || 'purple'].total.index
+                handicapDiff = calc18HoleHCDiff(totalScore, courseSlope, courseRating)
+              }
+            } else if (useFront && useBack) {
+              holesUsed = 'Front & Back 9s'
+              courseInfo = {
+                name: getCourseInfo(courseKey, tees, 'front')?.name || scoreData.course,
+                frontSlope: getCourseInfo(courseKey, tees, 'front')?.slope,
+                frontRating: getCourseInfo(courseKey, tees, 'front')?.rating,
+                frontPar: getCourseInfo(courseKey, tees, 'front')?.par,
+                backSlope: getCourseInfo(courseKey, tees, 'back')?.slope,
+                backRating: getCourseInfo(courseKey, tees, 'back')?.rating,
+                backPar: getCourseInfo(courseKey, tees, 'back')?.par,
+              }
+
+              // Calculate front and back 9-hole differentials
+              if (matchCourse && matchCourse[year]) {
+                const frontTees = scoreData.frontTees || tees || 'purple'
+                const backTees = scoreData.backTees || tees || 'purple'
+                
+                const frontSlope = matchCourse[year].totals.tees[frontTees].out.slope
+                const frontRating = matchCourse[year].totals.tees[frontTees].out.index
+                const backSlope = matchCourse[year].totals.tees[backTees].in.slope
+                const backRating = matchCourse[year].totals.tees[backTees].in.index
+                
+                frontDiff = calc9HoleHCDiff(scoreData.frontGross || 0, frontSlope, frontRating)
+                backDiff = calc9HoleHCDiff(scoreData.backGross || 0, backSlope, backRating)
+              }
+            } else if (useFront) {
+              courseInfo = getCourseInfo(courseKey, tees, 'front')
+              holesUsed = 'Front 9'
+
+              // Calculate front 9-hole differential
+              if (matchCourse && matchCourse[year]) {
+                const frontSlope = matchCourse[year].totals.tees[tees || 'purple'].out.slope
+                const frontRating = matchCourse[year].totals.tees[tees || 'purple'].out.index
+                handicapDiff = calc9HoleHCDiff(scoreData.frontGross || 0, frontSlope, frontRating)
+              }
+            } else if (useBack) {
+              courseInfo = getCourseInfo(courseKey, tees, 'back')
+              holesUsed = 'Back 9'
+
+              // Calculate back 9-hole differential
+              if (matchCourse && matchCourse[year]) {
+                const backSlope = matchCourse[year].totals.tees[tees || 'purple'].in.slope
+                const backRating = matchCourse[year].totals.tees[tees || 'purple'].in.index
+                handicapDiff = calc9HoleHCDiff(scoreData.backGross || 0, backSlope, backRating)
+              }
+            }
+
+            if (!courseInfo) {
+              courseInfo = { name: scoreData.course, slope: 'N/A', rating: 'N/A', par: 'N/A' }
+            }
+
+            return (
+              <RoundCard key={courseKey}>
+                <CourseName>
+                  {courseInfo.name || scoreData.course}
+                </CourseName>
+
+                <CourseDetails>
+                  <DetailItem>
+                    <DetailLabel>Holes Used</DetailLabel>
+                    <DetailValue>{holesUsed}</DetailValue>
+                  </DetailItem>
+
+                  {useFront && useBack ? (
+                    <>
+                      <DetailItem>
+                        <DetailLabel>Front Slope/Rating</DetailLabel>
+                        <DetailValue>
+                          {courseInfo.frontSlope} / {courseInfo.frontRating}
+                        </DetailValue>
+                      </DetailItem>
+                      <DetailItem>
+                        <DetailLabel>Back Slope/Rating</DetailLabel>
+                        <DetailValue>
+                          {courseInfo.backSlope} / {courseInfo.backRating}
+                        </DetailValue>
+                      </DetailItem>
+                      <DetailItem>
+                        <DetailLabel>Front Par</DetailLabel>
+                        <DetailValue>{courseInfo.frontPar}</DetailValue>
+                      </DetailItem>
+                      <DetailItem>
+                        <DetailLabel>Back Par</DetailLabel>
+                        <DetailValue>{courseInfo.backPar}</DetailValue>
+                      </DetailItem>
+                    </>
+                  ) : (
+                    <>
+                      <DetailItem>
+                        <DetailLabel>Slope</DetailLabel>
+                        <DetailValue>{courseInfo.slope}</DetailValue>
+                      </DetailItem>
+                      <DetailItem>
+                        <DetailLabel>Rating</DetailLabel>
+                        <DetailValue>{courseInfo.rating}</DetailValue>
+                      </DetailItem>
+                      <DetailItem>
+                        <DetailLabel>Par</DetailLabel>
+                        <DetailValue>{courseInfo.par}</DetailValue>
+                      </DetailItem>
+                    </>
+                  )}
+
+                  {tees && (
+                    <DetailItem>
+                      <DetailLabel>Tees</DetailLabel>
+                      <DetailValue style={{ textTransform: 'capitalize' }}>
+                        {tees}
+                      </DetailValue>
+                    </DetailItem>
+                  )}
+                </CourseDetails>
+
+                <ScoreInfo>
+                  {(use18Holes || useFront) && (
+                    <DetailItem>
+                      <DetailLabel>Front Score</DetailLabel>
+                      <DetailValue>{scoreData.frontGross || 'N/A'}</DetailValue>
+                    </DetailItem>
+                  )}
+                  {(use18Holes || useBack) && (
+                    <DetailItem>
+                      <DetailLabel>Back Score</DetailLabel>
+                      <DetailValue>{scoreData.backGross || 'N/A'}</DetailValue>
+                    </DetailItem>
+                  )}
+                  {use18Holes && (
+                    <DetailItem>
+                      <DetailLabel>Total Score</DetailLabel>
+                      <DetailValue>
+                        {(scoreData.frontGross || 0) + (scoreData.backGross || 0)}
+                      </DetailValue>
+                    </DetailItem>
+                  )}
+                  {handicapDiff !== null && (
+                    <DetailItem>
+                      <DetailLabel>{use18Holes ? '18-Hole' : '9-Hole'} Differential</DetailLabel>
+                      <DetailValue style={{ color: '#dc3545' }}>
+                        {handicapDiff.toFixed(1)}
+                      </DetailValue>
+                    </DetailItem>
+                  )}
+                  {frontDiff !== null && (
+                    <DetailItem>
+                      <DetailLabel>Front 9 Differential</DetailLabel>
+                      <DetailValue style={{ color: '#dc3545' }}>
+                        {frontDiff.toFixed(1)}
+                      </DetailValue>
+                    </DetailItem>
+                  )}
+                  {backDiff !== null && (
+                    <DetailItem>
+                      <DetailLabel>Back 9 Differential</DetailLabel>
+                      <DetailValue style={{ color: '#dc3545' }}>
+                        {backDiff.toFixed(1)}
+                      </DetailValue>
+                    </DetailItem>
+                  )}
+                </ScoreInfo>
+              </RoundCard>
+            )
+          })}
+        </YearSection>
+      )
+    }).filter(Boolean)
+  }
 
   // Extract player data from JSON
   const players = Object.entries(playersUpdateJson)
     .filter(([key]) => !key.includes("example") && key !== "sample")
     .map(([key, player]) => {
-      // Get the most recent year data
       const years = Object.keys(player.year).filter(y => y.startsWith("_"))
       const latestYear = years.sort().reverse()[0]
       const latestYearData = player.year[latestYear]
@@ -190,16 +565,6 @@ const PlayerHandicaps = ({ location }) => {
       }
     })
 
-  /*
-   * ex: chris.year._2025.scores.hiddenRiverGolfClub
-   * get all matches we want for the cup index. Look for useForHandicapIndex = true
-   * then calculate the cup handicap from those scores
-   * some scores use 18 holes, some use 9 holes. Use 18 hole index during calculation
-   * use calcCourseDiff to each course differential
-   * then send array of course differentials to calcHandicapDiff to get cupCap
-   * get courseRating and courseSlope from the course data
-   * todo: need to update playersUpdateJson to include frontGross and backGross scores
-   */
   players.forEach(player => {
     const playerData = playersUpdateJson[player.name.toLowerCase()]
     const years = Object.keys(playerData.year).filter(
@@ -211,10 +576,6 @@ const PlayerHandicaps = ({ location }) => {
     years.forEach(yearKey => {
       const yearData = playerData.year[yearKey]
       const scores = yearData.scores
-      // get course info for match from courses.json
-      // const courseMatchQuery = course[`${courseMatch}`][`${year}`]
-      //   ? course[`${courseMatch}`][`${year}`]
-      //   : course[`${courseMatch}`]
 
       Object.entries(scores).forEach(scoreEntry => {
         let matchCourse = course[`${scoreEntry[0]}`]
@@ -271,7 +632,6 @@ const PlayerHandicaps = ({ location }) => {
     })
 
     const cupCap = calcHandicapDiffAvg(courseDiffs).toFixed(1)
-    console.log("cupCap - ", cupCap)
     player.cupCap = cupCap
   })
 
@@ -317,6 +677,7 @@ const PlayerHandicaps = ({ location }) => {
           <PlayerTable>
             <thead>
               <tr>
+                <th style={{ width: '40px' }}></th>
                 <th>
                   Player
                   <SortButton onClick={() => toggleSort("name")}>
@@ -354,45 +715,65 @@ const PlayerHandicaps = ({ location }) => {
             </thead>
             <tbody>
               {sortedPlayers.map(player => (
-                <tr key={player.name}>
-                  <td>
-                    <strong style={{ textTransform: "capitalize" }}>
-                      {player.name}
-                    </strong>
-                  </td>
-                  <td>
-                    <strong style={{ fontSize: "1.1rem", color: "#2c5aa0" }}>
-                      {player.handicap}
-                    </strong>
-                  </td>
-                  <td>
-                    <strong style={{ fontSize: "1.1rem", color: "#2c5aa0" }}>
-                      {player.cupCap}
-                    </strong>
-                  </td>
-                  <td>
-                    <TeamBadge team={player.latestTeam}>
-                      {player.latestTeam}
-                    </TeamBadge>
-                  </td>
-                  <td>
-                    {player.appearances.length} year
-                    {player.appearances.length !== 1 ? "s" : ""}
-                    <br />
-                    <span style={{ fontSize: "0.85rem", color: "#666" }}>
-                      ({player.appearances.join(", ")})
-                    </span>
-                  </td>
-                  <td>
-                    <span style={{ color: "#28a745", fontWeight: 600 }}>
-                      {player.cupRecord?.wins}W
-                    </span>
-                    {" - "}
-                    <span style={{ color: "#dc3545", fontWeight: 600 }}>
-                      {player.cupRecord?.losses}L
-                    </span>
-                  </td>
-                </tr>
+                <React.Fragment key={player.name}>
+                  <tr>
+                    <td>
+                      <ExpandButton
+                        expanded={expandedPlayers[player.name]}
+                        onClick={() => togglePlayerExpansion(player.name)}
+                        title={expandedPlayers[player.name] ? "Hide rounds" : "Show rounds"}
+                      >
+                        ▼
+                      </ExpandButton>
+                    </td>
+                    <td>
+                      <strong style={{ textTransform: "capitalize" }}>
+                        {player.name}
+                      </strong>
+                    </td>
+                    <td>
+                      <strong style={{ fontSize: "1.1rem", color: "#2c5aa0" }}>
+                        {player.handicap}
+                      </strong>
+                    </td>
+                    <td>
+                      <strong style={{ fontSize: "1.1rem", color: "#2c5aa0" }}>
+                        {player.cupCap}
+                      </strong>
+                    </td>
+                    <td>
+                      <TeamBadge team={player.latestTeam}>
+                        {player.latestTeam}
+                      </TeamBadge>
+                    </td>
+                    <td>
+                      {player.appearances.length} year
+                      {player.appearances.length !== 1 ? "s" : ""}
+                      <br />
+                      <span style={{ fontSize: "0.85rem", color: "#666" }}>
+                        ({player.appearances.join(", ")})
+                      </span>
+                    </td>
+                    <td>
+                      <span style={{ color: "#28a745", fontWeight: 600 }}>
+                        {player.cupRecord?.wins}W
+                      </span>
+                      {" - "}
+                      <span style={{ color: "#dc3545", fontWeight: 600 }}>
+                        {player.cupRecord?.losses}L
+                      </span>
+                    </td>
+                  </tr>
+                  {expandedPlayers[player.name] && (
+                    <ExpandableRow>
+                      <td colSpan="7">
+                        <RoundsContainer>
+                          {renderPlayerRounds(player.name)}
+                        </RoundsContainer>
+                      </td>
+                    </ExpandableRow>
+                  )}
+                </React.Fragment>
               ))}
             </tbody>
           </PlayerTable>
@@ -407,6 +788,12 @@ const PlayerHandicaps = ({ location }) => {
                     <StatLabel>Handicap</StatLabel>
                     <StatValue style={{ color: "#2c5aa0" }}>
                       {player.handicap}
+                    </StatValue>
+                  </StatItem>
+                  <StatItem>
+                    <StatLabel>Cup Handicap</StatLabel>
+                    <StatValue style={{ color: "#2c5aa0" }}>
+                      {player.cupCap}
                     </StatValue>
                   </StatItem>
                   <StatItem>
@@ -437,6 +824,16 @@ const PlayerHandicaps = ({ location }) => {
                     </StatValue>
                   </StatItem>
                 </PlayerStats>
+                <MobileExpandButton
+                  onClick={() => togglePlayerExpansion(player.name)}
+                >
+                  {expandedPlayers[player.name] ? '▲ Hide Rounds' : '▼ View Rounds'}
+                </MobileExpandButton>
+                {expandedPlayers[player.name] && (
+                  <RoundsContainer style={{ marginTop: '1rem' }}>
+                    {renderPlayerRounds(player.name)}
+                  </RoundsContainer>
+                )}
               </PlayerCard>
             ))}
           </PlayerCards>
