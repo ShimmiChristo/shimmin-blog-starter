@@ -5188,12 +5188,230 @@
                 "slope": 130.0,
                 "bogeyRating": 95.9
               }
-            }
+            },
+            "blue/white": {
+              "out": {
+                "yardage": 0,
+                "par": 36,
+                "index": 36.4,
+                "slope": 128.0,
+                "bogeyRating": 48.3
+              },
+              "in": {
+                "yardage": 0,
+                "par": 36,
+                "index": 35.4,
+                "slope": 131.0,
+                "bogeyRating": 47.6
+              },
+              "total": {
+                "yardage": 6555,
+                "par": 72,
+                "index": 71.8,
+                "slope": 126.0,
+                "bogeyRating": 95.9
+              }
             }
           }
         },
-        "_2025": {},
-        "_2024": {}
+        "_2025": {
+          "holes": [
+            {
+              "number": 1,
+              "tees": {
+                "blue": 340
+              },
+              "handicap": 13,
+              "par": 4
+            },
+            {
+              "number": 2,
+              "tees": {
+                "blue": 380
+              },
+              "handicap": 9,
+              "par": 4
+            },
+            {
+              "number": 3,
+              "tees": {
+                "blue": 166
+              },
+              "handicap": 17,
+              "par": 3
+            },
+            {
+              "number": 4,
+              "tees": {
+                "blue": 422
+              },
+              "handicap": 7,
+              "par": 4
+            },
+            {
+              "number": 5,
+              "tees": {
+                "blue": 527
+              },
+              "handicap": 11,
+              "par": 5
+            },
+            {
+              "number": 6,
+              "tees": {
+                "blue": 439
+              },
+              "handicap": 1,
+              "par": 4
+            },
+            {
+              "number": 7,
+              "tees": {
+                "blue": 600
+              },
+              "handicap": 5,
+              "par": 5
+            },
+            {
+              "number": 8,
+              "tees": {
+                "blue": 404
+              },
+              "handicap": 3,
+              "par": 4
+            },
+            {
+              "number": 9,
+              "tees": {
+                "blue": 148
+              },
+              "handicap": 15,
+              "par": 3
+            },
+            {
+              "number": 10,
+              "tees": {
+                "blue": 338
+              },
+              "handicap": 14,
+              "par": 4
+            },
+            {
+              "number": 11,
+              "tees": {
+                "blue": 499
+              },
+              "handicap": 18,
+              "par": 5
+            },
+            {
+              "number": 12,
+              "tees": {
+                "blue": 328
+              },
+              "handicap": 6,
+              "par": 4
+            },
+            {
+              "number": 13,
+              "tees": {
+                "blue": 199
+              },
+              "handicap": 12,
+              "par": 3
+            },
+            {
+              "number": 14,
+              "tees": {
+                "blue": 348
+              },
+              "handicap": 4,
+              "par": 4
+            },
+            {
+              "number": 15,
+              "tees": {
+                "blue": 213
+              },
+              "handicap": 16,
+              "par": 3
+            },
+            {
+              "number": 16,
+              "tees": {
+                "blue": 379
+              },
+              "handicap": 8,
+              "par": 4
+            },
+            {
+              "number": 17,
+              "tees": {
+                "blue": 503
+              },
+              "handicap": 2,
+              "par": 5
+            },
+            {
+              "number": 18,
+              "tees": {
+                "blue": 322
+              },
+              "handicap": 10,
+              "par": 4
+            }
+          ],
+          "totals": {
+            "tees": {
+              "blue": {
+                "out": {
+                  "yardage": 0,
+                  "par": 36,
+                  "index": 36.4,
+                  "slope": 128.0,
+                  "bogeyRating": 48.3
+                },
+                "in": {
+                  "yardage": 0,
+                  "par": 36,
+                  "index": 35.4,
+                  "slope": 131.0,
+                  "bogeyRating": 47.6
+                },
+                "total": {
+                  "yardage": 6555,
+                  "par": 72,
+                  "index": 71.8,
+                  "slope": 130.0,
+                  "bogeyRating": 95.9
+                }
+              },
+              "blue/white": {
+                "out": {
+                  "yardage": 0,
+                  "par": 36,
+                  "index": 36.4,
+                  "slope": 128.0,
+                  "bogeyRating": 48.3
+                },
+                "in": {
+                  "yardage": 0,
+                  "par": 36,
+                  "index": 35.4,
+                  "slope": 131.0,
+                  "bogeyRating": 47.6
+                },
+                "total": {
+                  "yardage": 6555,
+                  "par": 72,
+                  "index": 71.8,
+                  "slope": 126.0,
+                  "bogeyRating": 95.9
+                }
+              }
+            }
+          }
+        }
       },
       "tribute1": {
         "name": "The Tribute at Otsego Resort",
