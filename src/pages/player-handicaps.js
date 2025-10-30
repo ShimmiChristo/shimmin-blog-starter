@@ -5,7 +5,12 @@ import SEO from "../components/seo"
 import LandingPageHeader from "../components/landing-page-header"
 import { useSiteMetadata } from "../hooks/use-site-metadata"
 import { PlayerInfoUpdate } from "../hooks/get-player-info-UPDATE"
-import { calcCourseDiff, calcHandicapDiff } from "../helpers/handicapHelper"
+import {
+  calc18HoleHCDiff,
+  calc9HoleHCDiff,
+  calcHandicapDiffAvg,
+} from "../helpers/courseHandicapHelper"
+import { CourseInfo } from "../hooks/get-course-info"
 
 const Container = styled.div`
   max-width: 1200px;
@@ -162,6 +167,7 @@ const SortButton = styled.button`
 const PlayerHandicaps = ({ location }) => {
   const { title } = useSiteMetadata()
   const playersUpdateJson = PlayerInfoUpdate()
+  const { course } = CourseInfo()
   const [sortBy, setSortBy] = useState("name") // 'name' or 'handicap'
   const [sortOrder, setSortOrder] = useState("asc") // 'asc' or 'desc'
 
@@ -205,24 +211,68 @@ const PlayerHandicaps = ({ location }) => {
     years.forEach(yearKey => {
       const yearData = playerData.year[yearKey]
       const scores = yearData.scores
+      // get course info for match from courses.json
+      // const courseMatchQuery = course[`${courseMatch}`][`${year}`]
+      //   ? course[`${courseMatch}`][`${year}`]
+      //   : course[`${courseMatch}`]
 
-      Object.values(scores).forEach(scoreEntry => {
-        console.log("scoreEntry - ", scoreEntry)
-        if (scoreEntry.useForHandicapIndex) {
-          // const courseDiff = calcCourseDiff({
-          //   handicap: player.handicap,
-          //   courserating: scoreEntry.courserating,
-          //   courseslope: scoreEntry.courseslope,
-          //   eighteenholes: scoreEntry.eighteenholes,
-          //   nineholes: scoreEntry.nineholes,
-          // })
-          // courseDiffs.push(courseDiff)
+      Object.entries(scores).forEach(scoreEntry => {
+        let matchCourse = course[`${scoreEntry[0]}`]
+        const roundData = scoreEntry[1]
+        if (roundData.useForHandicapIndex && matchCourse) {
+          let frontTees = roundData?.frontTees ?? 0
+          let backTees = roundData?.backTees ?? frontTees
+          if (roundData.use18Holes) {
+            let scoreToUse = roundData.frontGross + roundData.backGross || 0
+            const courseSlope =
+              matchCourse[yearKey].totals.tees[`${frontTees}`].total.slope
+            const courseRating =
+              matchCourse[yearKey].totals.tees[`${frontTees}`].total.index
+            const courseDiff = calc18HoleHCDiff(
+              scoreToUse,
+              courseSlope,
+              courseRating
+            )
+            courseDiffs.push(courseDiff)
+          } else if (roundData.useFront && roundData.useBack) {
+            let frontSlope =
+              matchCourse[yearKey].totals.tees[`${frontTees}`].out.slope
+            let frontRating =
+              matchCourse[yearKey].totals.tees[`${frontTees}`].out.index
+            let backSlope =
+              matchCourse[yearKey].totals.tees[`${backTees}`].in.slope
+            let backRating =
+              matchCourse[yearKey].totals.tees[`${backTees}`].in.index
+            let frontScore = roundData.frontGross || 0
+            let backScore = roundData.backGross || 0
+            let frontDiff = calc9HoleHCDiff(frontScore, frontSlope, frontRating)
+            let backDiff = calc9HoleHCDiff(backScore, backSlope, backRating)
+            courseDiffs.push(frontDiff)
+            courseDiffs.push(backDiff)
+          } else if (roundData.useFront) {
+            let frontSlope =
+              matchCourse[yearKey].totals.tees[`${frontTees}`].out.slope
+            let frontRating =
+              matchCourse[yearKey].totals.tees[`${frontTees}`].out.index
+            let frontScore = roundData.frontGross || 0
+            let frontDiff = calc9HoleHCDiff(frontScore, frontSlope, frontRating)
+            courseDiffs.push(frontDiff)
+          } else if (roundData.useBack) {
+            let backSlope =
+              matchCourse[yearKey].totals.tees[`${backTees}`].in.slope
+            let backRating =
+              matchCourse[yearKey].totals.tees[`${backTees}`].in.index
+            let backScore = roundData.backGross || 0
+            let backDiff = calc9HoleHCDiff(backScore, backSlope, backRating)
+            courseDiffs.push(backDiff)
+          }
         }
       })
     })
 
-    // const cupCap = calcHandicapDiff(courseDiffs).toFixed(1)
-    // player.cupCap = cupCap
+    const cupCap = calcHandicapDiffAvg(courseDiffs).toFixed(1)
+    console.log("cupCap - ", cupCap)
+    player.cupCap = cupCap
   })
 
   // Sort players
@@ -317,7 +367,7 @@ const PlayerHandicaps = ({ location }) => {
                   </td>
                   <td>
                     <strong style={{ fontSize: "1.1rem", color: "#2c5aa0" }}>
-                      {player.handicap}
+                      {player.cupCap}
                     </strong>
                   </td>
                   <td>

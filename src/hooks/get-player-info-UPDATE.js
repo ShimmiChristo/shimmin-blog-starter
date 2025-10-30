@@ -215,7 +215,11 @@ export const PlayerInfoUpdate = () => {
                   course
                   frontHandicap
                   front
+                  frontTees
+                  frontGross
                   back
+                  backTees
+                  backGross
                   backHandicap
                   useForHandicapIndex
                   useFront
@@ -239,8 +243,14 @@ export const PlayerInfoUpdate = () => {
                   course
                   frontHandicap
                   front
+                  frontTees
+                  frontGross
                   back
+                  backTees
+                  backGross
                   backHandicap
+                  useForHandicapIndex
+                  useBack
                 }
               }
             }

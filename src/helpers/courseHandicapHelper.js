@@ -1,29 +1,43 @@
 // * https://www.usga.org/content/usga/home-page/handicapping/roh/Content/rules/5%201b%20Calculation%20of%20a%20Score%20Differential%209%20Hole.htm
-const calcCourseDiff = (playerScore, courseSlope, courseRating) => {
+const calc18HoleHCDiff = (playerScore, courseSlope, courseRating) => {
   /*
    *** FORMULA ****
    * score diff = (course slope / 113) * (adjusted gross score – Course Rating – PCC adjustment))
    * round to nearest whole number (based on USGA handicap)
    */
-  const formula = (113 / courseSlope) * (playerScore - courseRating)
-  return formula.toFixed(1)
+  const formula18Holes = (113 / courseSlope) * (playerScore - courseRating)
+  return parseFloat(formula18Holes.toFixed(1))
+}
+
+// * https://www.usga.org/handicapping/roh/Content/rules/5%201b%20Calculation%20of%20a%20Score%20Differential9Hole.htm
+const calc9HoleHCDiff = (playerScore, courseSlope, courseRating) => {
+  /*
+   * ** FORMULA ****
+   * score diff = (113 / 9 hole course slope) * (9 hole adjusted gross score – 9 hole Course Rating – (0.5 * PCC adjustment)))
+   * round to nearest whole number (based on USGA handicap)
+   *
+   * The 9-hole Score Differential remains unrounded until after it has been combined with the player’s expected score.
+   * The 18-hole Score Differential is then rounded to the nearest tenth, with .5 rounded upwards.
+   */
+  const formula9Holes = (113 / courseSlope) * (playerScore - courseRating)
+  return parseFloat((formula9Holes * 2).toFixed(1))
 }
 
 // * https://www.usga.org/handicapping/roh/Content/rules/5%202%20Calculation%20of%20a%20Handicap%20Index.htm
-const calcHandicapDiff = roundsArr => {
+const calcHandicapDiffAvg = roundsArr => {
   const roundsPlayed = roundsArr.length
   let arrCopy = [...roundsArr]
   let sortedArr = arrCopy.sort(function (a, b) {
-    return parseFloat(a.coursehandicap) - parseFloat(b.coursehandicap)
+    return parseFloat(a) - parseFloat(b)
   })
-  let scoreOne = parseFloat(sortedArr[0]?.coursehandicap)
-  let scoreTwo = parseFloat(sortedArr[1]?.coursehandicap)
-  let scoreThree = parseFloat(sortedArr[2]?.coursehandicap)
-  let scoreFour = parseFloat(sortedArr[3]?.coursehandicap)
-  let scoreFive = parseFloat(sortedArr[4]?.coursehandicap)
-  let scoreSix = parseFloat(sortedArr[5]?.coursehandicap)
-  let scoreSeven = parseFloat(sortedArr[6]?.coursehandicap)
-  let scoreEight = parseFloat(sortedArr[7]?.coursehandicap)
+  let scoreOne = parseFloat(sortedArr[0])
+  let scoreTwo = parseFloat(sortedArr[1])
+  let scoreThree = parseFloat(sortedArr[2])
+  let scoreFour = parseFloat(sortedArr[3])
+  let scoreFive = parseFloat(sortedArr[4])
+  let scoreSix = parseFloat(sortedArr[5])
+  let scoreSeven = parseFloat(sortedArr[6])
+  let scoreEight = parseFloat(sortedArr[7])
   switch (roundsPlayed) {
     case 3:
       // * return lowest 1 - 2.0
@@ -77,4 +91,4 @@ const calcHandicapDiff = roundsArr => {
   }
 }
 
-export { calcCourseDiff, calcHandicapDiff }
+export { calc18HoleHCDiff, calc9HoleHCDiff, calcHandicapDiffAvg }
