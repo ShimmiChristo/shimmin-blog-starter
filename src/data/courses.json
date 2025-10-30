@@ -3144,7 +3144,7 @@
             "tees": {
               "purple": 384,
               "orange": 379,
-              "blue:": 350
+              "blue": 350
             },
             "handicap": 6,
             "par": 4
@@ -3391,7 +3391,7 @@
               "tees": {
                 "purple": 384,
                 "orange": 379,
-                "blue:": 350
+                "blue": 350
               },
               "handicap": 6,
               "par": 4
@@ -3639,7 +3639,7 @@
               "tees": {
                 "purple": 384,
                 "orange": 379,
-                "blue:": 350
+                "blue": 350
               },
               "handicap": 6,
               "par": 4
