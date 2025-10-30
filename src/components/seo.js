@@ -10,7 +10,7 @@ import PropTypes from "prop-types"
 import { Helmet } from "react-helmet"
 import { useStaticQuery, graphql } from "gatsby"
 
-const SEO = ({ description, lang, meta, title }) => {
+const SEO = ({ description, lang, meta, title, image, pathname }) => {
   const { site } = useStaticQuery(
     graphql`
       query {
@@ -30,7 +30,15 @@ const SEO = ({ description, lang, meta, title }) => {
 
   const metaDescription = description || site.siteMetadata.description
   const defaultTitle = site.siteMetadata?.title
+  const siteUrl = site.siteMetadata?.siteUrl
   const siteLogo = site.siteMetadata?.logo
+
+  // Create absolute URL for image
+  const ogImage = image
+    ? `${siteUrl}${image}`
+    : `${siteUrl}/${site.siteMetadata.logo}`
+
+  const url = `${siteUrl}${pathname || ""}`
 
   return (
     <Helmet
@@ -45,6 +53,10 @@ const SEO = ({ description, lang, meta, title }) => {
           content: metaDescription,
         },
         {
+          property: `og:url`,
+          content: url,
+        },
+        {
           property: `og:title`,
           content: title,
         },
@@ -54,15 +66,27 @@ const SEO = ({ description, lang, meta, title }) => {
         },
         {
           property: `og:image`,
-          content: siteLogo,
+          content: ogImage,
+        },
+        {
+          property: `og:image:width`,
+          content: `1200`,
+        },
+        {
+          property: `og:image:height`,
+          content: `630`,
         },
         {
           property: `og:type`,
           content: `website`,
         },
         {
+          property: `og:site_name`,
+          content: defaultTitle,
+        },
+        {
           name: `twitter:card`,
-          content: `summary`,
+          content: `summary_large_image`,
         },
         {
           name: `twitter:creator`,
@@ -77,6 +101,10 @@ const SEO = ({ description, lang, meta, title }) => {
           content: metaDescription,
         },
         {
+          name: `twitter:image`,
+          content: ogImage,
+        },
+        {
           name: "format-detection",
           content: "telephone=no",
         },
@@ -89,6 +117,8 @@ SEO.defaultProps = {
   lang: `en`,
   meta: [],
   description: ``,
+  image: null,
+  pathname: ``,
 }
 
 SEO.propTypes = {
@@ -96,6 +126,8 @@ SEO.propTypes = {
   lang: PropTypes.string,
   meta: PropTypes.arrayOf(PropTypes.object),
   title: PropTypes.string.isRequired,
+  image: PropTypes.string,
+  pathname: PropTypes.string,
 }
 
 export default SEO

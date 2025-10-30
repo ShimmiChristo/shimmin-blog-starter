@@ -1,5 +1,5 @@
 import React from "react"
-// import styled from "styled-components"
+import PropTypes from "prop-types"
 import { useSiteMetadata } from "../hooks/use-site-metadata"
 // import { CourseInfo } from "../hooks/get-course-info"
 
@@ -30,7 +30,12 @@ const TopicPage = ({ data, location }) => {
 
   return (
     <Layout location={location} title={siteTitle}>
-      <SEO title="Boys From Back Home Cup" />
+      <SEO
+        title="Boys From Back Home Cup"
+        description="The BFBH Cup is an annual golf competition played at different courses throughout Michigan."
+        pathname={location.pathname}
+        image="/logo-black-circle.png"
+      />
       <h1 className="invisible">BFBH Cup | Boys From Back Home Cup</h1>
       {/* <HighlightCountdown
         startTime={startDate}
@@ -53,6 +58,14 @@ const TopicPage = ({ data, location }) => {
       </div>
     </Layout>
   )
+}
+
+TopicPage.propTypes = {
+  data: PropTypes.object,
+  location: PropTypes.shape({
+    pathname: PropTypes.string.isRequired,
+    hash: PropTypes.string,
+  }).isRequired,
 }
 
 export default TopicPage
