@@ -211,6 +211,19 @@ export const PlayerInfoUpdate = () => {
                 losses
               }
               scores {
+                hiddenRiverGolfClub {
+                  course
+                  frontHandicap
+                  front
+                  frontTees
+                  frontGross
+                  back
+                  backTees
+                  backGross
+                  backHandicap
+                  useForHandicapIndex
+                  use18Holes
+                }
                 bayHarborPreserveLinks {
                   course
                   frontHandicap

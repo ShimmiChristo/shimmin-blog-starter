@@ -1,22 +1,23 @@
 import { graphql } from "gatsby"
 
-export const CrookedTreeFragment = graphql`
-  fragment CrookedTreeFragment on CoursesJsonCourse {
-    crookedTree {
+export const HiddenRiverGolfFragment = graphql`
+  fragment HiddenRiverGolfFragment on CoursesJsonCourse {
+    hiddenRiverGolfClub {
       name
       link
       holes {
         number
         tees {
-          purple
-          orange
+          blue
+          blueWhite
+          white
         }
         handicap
         par
       }
       totals {
         tees {
-          purple {
+          blue {
             out {
               yardage
               par
@@ -36,7 +37,27 @@ export const CrookedTreeFragment = graphql`
               slope
             }
           }
-          orange {
+          blueWhite {
+            out {
+              yardage
+              par
+              index
+              slope
+            }
+            in {
+              yardage
+              par
+              index
+              slope
+            }
+            total {
+              yardage
+              par
+              index
+              slope
+            }
+          }
+          white {
             out {
               yardage
               par
@@ -62,15 +83,16 @@ export const CrookedTreeFragment = graphql`
         holes {
           number
           tees {
-            purple
-            orange
+            blue
+            blueWhite
+            white
           }
           handicap
           par
         }
         totals {
           tees {
-            purple {
+            blue {
               out {
                 yardage
                 par
@@ -90,7 +112,27 @@ export const CrookedTreeFragment = graphql`
                 slope
               }
             }
-            orange {
+            blueWhite {
+              out {
+                yardage
+                par
+                index
+                slope
+              }
+              in {
+                yardage
+                par
+                index
+                slope
+              }
+              total {
+                yardage
+                par
+                index
+                slope
+              }
+            }
+            white {
               out {
                 yardage
                 par

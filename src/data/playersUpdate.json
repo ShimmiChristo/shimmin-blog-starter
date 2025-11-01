@@ -1413,7 +1413,7 @@
               "backTees": "blue",
               "backGross": 49,
               "backHandicap": 999,
-              "useForHandicapIndex": false,
+              "useForHandicapIndex": true,
               "use18Holes": true
             },
             "bayHarborPreserveLinks": {
@@ -9406,8 +9406,8 @@
       "name": "rj",
       "appearances": [2021, 2022, 2023, 2024, 2025],
       "cupRecord": {
-        "wins": 3,
-        "losses": 2
+        "wins": 2,
+        "losses": 3
       },
       "handicap": 13,
       "year": {

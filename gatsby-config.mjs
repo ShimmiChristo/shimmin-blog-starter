@@ -105,6 +105,10 @@ const config = {
         link: "/handicap-calculator",
       },
       {
+        name: "Player Handicaps",
+        link: "/player-handicaps",
+      },
+      {
         name: "Shop",
         link: "/shop",
       },

@@ -12,6 +12,7 @@ export const CourseInfo = () => {
           ...BoyneHighlandsHeatherFragment
           ...BoyneHighlandsMoorFragment
           ...CrookedTreeFragment
+          ...HiddenRiverGolfFragment
           classic1 {
             name
             link
