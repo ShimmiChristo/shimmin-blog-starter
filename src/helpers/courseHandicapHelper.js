@@ -38,32 +38,29 @@ const calcHandicapDiffAvg = roundsArr => {
   let scoreSix = parseFloat(sortedArr[5])
   let scoreSeven = parseFloat(sortedArr[6])
   let scoreEight = parseFloat(sortedArr[7])
-  switch (roundsPlayed) {
-    case 3:
-      // * return lowest 1 - 2.0
+  switch (true) {
+    case roundsPlayed === 3:
       return scoreOne - 2.0
-    case 4:
-      // * return lowest 1 - 2.0
+    case roundsPlayed === 4:
       return scoreOne - 1.0
-    case 5:
-      // * return lowest 1 - 0
+    case roundsPlayed === 5:
       return scoreOne
-    case 6:
+    case roundsPlayed === 6:
       return (scoreOne + scoreTwo) / 2 - 1.0
-    case 7 || 8:
+    case roundsPlayed === 7 || roundsPlayed === 8:
       return (scoreOne + scoreTwo) / 2
-    case 9 || 10 || 11:
+    case roundsPlayed >= 9 && roundsPlayed <= 11:
       return (scoreOne + scoreTwo + scoreThree) / 3
-    case 12 || 13 || 14:
+    case roundsPlayed >= 12 && roundsPlayed <= 14:
       return (scoreOne + scoreTwo + scoreThree + scoreFour) / 4
-    case 15 || 16:
+    case roundsPlayed >= 15 && roundsPlayed <= 16:
       return (scoreOne + scoreTwo + scoreThree + scoreFour + scoreFive) / 5
-    case 17 || 18:
+    case roundsPlayed >= 17 && roundsPlayed <= 18:
       return (
         (scoreOne + scoreTwo + scoreThree + scoreFour + scoreFive + scoreSix) /
         6
       )
-    case 19:
+    case roundsPlayed === 19:
       return (
         (scoreOne +
           scoreTwo +
@@ -74,7 +71,7 @@ const calcHandicapDiffAvg = roundsArr => {
           scoreSeven) /
         7
       )
-    case 20:
+    case roundsPlayed >= 20:
       return (
         (scoreOne +
           scoreTwo +

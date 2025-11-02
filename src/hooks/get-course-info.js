@@ -6,6 +6,7 @@ export const CourseInfo = () => {
       coursesJson {
         course {
           ...BayHarborGolfClubFragment
+          ...BayHarborLinksQuarryFragment
           ...BayHarborPreserveLinksFragment
           ...BoyneHighlandsArthurHillsFragment
           ...BoyneHighlandsDonaldRossFragment

@@ -1,23 +1,22 @@
 import { graphql } from "gatsby"
 
-export const HiddenRiverGolfFragment = graphql`
-  fragment HiddenRiverGolfFragment on CoursesJsonCourse {
-    hiddenRiverGolfClub {
+export const BayHarborLinksQuarryFragment = graphql`
+  fragment BayHarborLinksQuarryFragment on CoursesJsonCourse {
+    bayHarborLinksQuarry {
       name
       link
       holes {
         number
         tees {
-          blue
-          blueWhite
-          white
+          purple
+          orange
         }
         handicap
         par
       }
       totals {
         tees {
-          blue {
+          purple {
             out {
               yardage
               par
@@ -37,7 +36,7 @@ export const HiddenRiverGolfFragment = graphql`
               slope
             }
           }
-          blueWhite {
+          orange {
             out {
               yardage
               par
@@ -55,102 +54,6 @@ export const HiddenRiverGolfFragment = graphql`
               par
               index
               slope
-            }
-          }
-          white {
-            out {
-              yardage
-              par
-              index
-              slope
-            }
-            in {
-              yardage
-              par
-              index
-              slope
-            }
-            total {
-              yardage
-              par
-              index
-              slope
-            }
-          }
-        }
-      }
-      _2025 {
-        holes {
-          number
-          tees {
-            blue
-            blueWhite
-            white
-          }
-          handicap
-          par
-        }
-        totals {
-          tees {
-            blue {
-              out {
-                yardage
-                par
-                index
-                slope
-              }
-              in {
-                yardage
-                par
-                index
-                slope
-              }
-              total {
-                yardage
-                par
-                index
-                slope
-              }
-            }
-            blueWhite {
-              out {
-                yardage
-                par
-                index
-                slope
-              }
-              in {
-                yardage
-                par
-                index
-                slope
-              }
-              total {
-                yardage
-                par
-                index
-                slope
-              }
-            }
-            white {
-              out {
-                yardage
-                par
-                index
-                slope
-              }
-              in {
-                yardage
-                par
-                index
-                slope
-              }
-              total {
-                yardage
-                par
-                index
-                slope
-              }
             }
           }
         }
@@ -159,16 +62,15 @@ export const HiddenRiverGolfFragment = graphql`
         holes {
           number
           tees {
-            blue
-            blueWhite
-            white
+            purple
+            orange
           }
           handicap
           par
         }
         totals {
           tees {
-            blue {
+            purple {
               out {
                 yardage
                 par
@@ -188,7 +90,7 @@ export const HiddenRiverGolfFragment = graphql`
                 slope
               }
             }
-            blueWhite {
+            orange {
               out {
                 yardage
                 par
@@ -208,7 +110,42 @@ export const HiddenRiverGolfFragment = graphql`
                 slope
               }
             }
-            white {
+          }
+        }
+      }
+      _2023 {
+        holes {
+          number
+          tees {
+            purple
+            orange
+          }
+          handicap
+          par
+        }
+        totals {
+          tees {
+            purple {
+              out {
+                yardage
+                par
+                index
+                slope
+              }
+              in {
+                yardage
+                par
+                index
+                slope
+              }
+              total {
+                yardage
+                par
+                index
+                slope
+              }
+            }
+            orange {
               out {
                 yardage
                 par

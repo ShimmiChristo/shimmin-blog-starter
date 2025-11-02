@@ -93,6 +93,12 @@ export const BayHarborPreserveLinksFragment = graphql`
                 index
                 slope
               }
+              in {
+                yardage
+                par
+                index
+                slope
+              }
               total {
                 yardage
                 par
