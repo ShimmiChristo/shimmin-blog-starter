@@ -2098,12 +2098,32 @@ export const PlayerInfoUpdate = () => {
                 losses
               }
               scores {
-                bayHarborPreserveLinks {
+                hiddenRiverGolfClub {
                   course
-                  frontHandicap
                   front
+                  frontHandicap
+                  frontGross
+                  frontTees
                   back
                   backHandicap
+                  backGross
+                  backTees
+                  useForHandicapIndex
+                  use18Holes
+                }
+                bayHarborPreserveLinks {
+                  course
+                  front
+                  frontHandicap
+                  frontGross
+                  frontTees
+                  back
+                  backHandicap
+                  backGross
+                  backTees
+                  useForHandicapIndex
+                  useFront
+                  useBack
                 }
                 crookedTree {
                   course
@@ -2121,10 +2141,16 @@ export const PlayerInfoUpdate = () => {
                 }
                 boyneHighlandsArthurHills {
                   course
-                  frontHandicap
                   front
+                  frontHandicap
+                  frontGross
+                  frontTees
                   back
                   backHandicap
+                  backGross
+                  backTees
+                  useForHandicapIndex
+                  useBack
                 }
               }
             }
@@ -2140,14 +2166,33 @@ export const PlayerInfoUpdate = () => {
                 losses
               }
               scores {
-                boyneHighlandsArthurHills {
+                hiddenRiverGolfClub {
                   course
-                  frontHandicap
                   front
+                  frontHandicap
+                  frontGross
+                  frontTees
                   back
                   backHandicap
+                  backGross
+                  backTees
+                  useForHandicapIndex
+                  use18Holes
                 }
                 bayHarborGolfClub {
+                  course
+                  front
+                  frontHandicap
+                  frontGross
+                  frontTees
+                  back
+                  backHandicap
+                  backGross
+                  backTees
+                  useForHandicapIndex
+                  use18Holes
+                }
+                boyneHighlandsArthurHills {
                   course
                   frontHandicap
                   front
@@ -2163,10 +2208,16 @@ export const PlayerInfoUpdate = () => {
                 }
                 boyneHighlandsHeather {
                   course
-                  frontHandicap
                   front
+                  frontHandicap
+                  frontGross
+                  frontTees
                   back
                   backHandicap
+                  backGross
+                  backTees
+                  useForHandicapIndex
+                  useBack
                 }
               }
             }
@@ -2182,12 +2233,27 @@ export const PlayerInfoUpdate = () => {
                 losses
               }
               scores {
+                bayHarborLinksQuarry {
+                  course
+                  front
+                  frontGross
+                  frontTees
+                  frontHandicap
+                  useForHandicapIndex
+                  useFront
+                }
                 boyneHighlandsArthurHills {
                   course
-                  frontHandicap
                   front
+                  frontHandicap
+                  frontGross
+                  frontTees
                   back
                   backHandicap
+                  backGross
+                  backTees
+                  useForHandicapIndex
+                  use18Holes
                 }
                 boyneHighlandsDonaldRoss {
                   course
@@ -2205,10 +2271,16 @@ export const PlayerInfoUpdate = () => {
                 }
                 boyneHighlandsHeather {
                   course
-                  frontHandicap
                   front
+                  frontHandicap
+                  frontGross
+                  frontTees
                   back
                   backHandicap
+                  backGross
+                  backTees
+                  useForHandicapIndex
+                  useBack
                 }
               }
             }
