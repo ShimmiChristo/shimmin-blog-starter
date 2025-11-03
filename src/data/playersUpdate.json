@@ -9127,7 +9127,7 @@
               "backGross": 37,
               "backTees": "purple",
               "backHandicap": 999,
-              "useForHandicapIndex": false,
+              "useForHandicapIndex": true,
               "useBack": true
             }
           },
