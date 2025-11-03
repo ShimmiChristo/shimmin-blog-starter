@@ -8689,7 +8689,7 @@
             "bayHarborPreserveLinks": {
               "course": "Bay Harbor Preserve Links",
               "front": [6, 4, 4, 5, 4, 6, 3, 6, 3],
-              "frontGross": 43,
+              "frontGross": 41,
               "frontHandicap": 999,
               "frontTees": "brown",
               "back": [5, 4, 4, 3, 5, 5, 4, 3, 5],
@@ -8721,7 +8721,7 @@
               "frontTees": "purple",
               "frontHandicap": 999,
               "back": [6, 5, 4, 6, 4, 4, 3, 4, 5],
-              "backGross": 37,
+              "backGross": 41,
               "backTees": "purple",
               "backHandicap": 999,
               "useForHandicapIndex": true,
@@ -9127,7 +9127,7 @@
               "backGross": 37,
               "backTees": "purple",
               "backHandicap": 999,
-              "useForHandicapIndex": true,
+              "useForHandicapIndex": false,
               "useBack": true
             }
           },
