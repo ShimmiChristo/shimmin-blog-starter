@@ -7636,8 +7636,12 @@
             "bayHarborPreserveLinks": {
               "course": "Bay Harbor Preserve Links",
               "front": [4, 4, 4, 7, 5, 5, 4, 6, 5],
+              "frontGross": 44,
+              "frontTees": "brown",
               "frontHandicap": 999,
               "back": [4, 4, 5, 3, 4, 9, 6, 5, 6],
+              "backGross": 46,
+              "backTees": "purple",
               "backHandicap": 999,
               "useForHandicapIndex": true,
               "useFront": true,
@@ -7660,8 +7664,12 @@
             "boyneHighlandsArthurHills": {
               "course": "Arthur Hills at Boyne Highlands",
               "front": [3, 3, 6, 4, 4, 6, 3, 5, 4],
+              "frontGross": 38,
+              "frontTees": "purple",
               "frontHandicap": 999,
               "back": [6, 8, 7, 7, 4, 4, 5, 5, 5],
+              "backGross": 51,
+              "backTees": "purple",
               "backHandicap": 999,
               "useForHandicapIndex": true,
               "useBack": true
@@ -7820,8 +7828,10 @@
               "front": [5, 4, 4, 5, 6, 5, 5, 4, 4],
               "frontGross": 42,
               "frontHandicap": 999,
+              "frontTees": "blue",
               "back": [4, 6, 3, 4, 4, 4, 7, 6, 5],
               "backGross": 43,
+              "backTees": "blue",
               "backHandicap": 999,
               "useForHandicapIndex": true,
               "use18Holes": true
@@ -7829,8 +7839,12 @@
             "bayHarborGolfClub": {
               "course": "Bay Harbor Golf Club",
               "front": [5, 6, 5, 3, 4, 5, 5, 5, 6],
+              "frontGross": 44,
+              "frontTees": "purple",
               "frontHandicap": 999,
               "back": [4, 4, 6, 4, 6, 8, 6, 8, 6],
+              "backGross": 52,
+              "backTees": "purple",
               "backHandicap": 999,
               "useForHandicapIndex": true,
               "use18Holes": true
@@ -7852,8 +7866,12 @@
             "boyneHighlandsHeather": {
               "course": "The Heather at Boyne Highlands",
               "front": [5, 4, 6, 5, 6, 3, 5, 7, 99],
+              "frontGross": 46,
+              "frontTees": "purple",
               "frontHandicap": 999,
               "back": [8, 6, 3, 7, 6, 6, 3, 5, 5],
+              "backGross": 49,
+              "backTees": "purple",
               "backHandicap": 999,
               "useForHandicapIndex": true,
               "useBack": true

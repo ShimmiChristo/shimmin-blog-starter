@@ -24,10 +24,17 @@ export const gordonFragment = graphql`
         scores {
           bayHarborPreserveLinks {
             course
-            frontHandicap
             front
+            frontHandicap
+            frontGross
+            frontTees
             back
             backHandicap
+            backGross
+            backTees
+            useForHandicapIndex
+            useFront
+            useBack
           }
           crookedTree {
             course
@@ -45,10 +52,16 @@ export const gordonFragment = graphql`
           }
           boyneHighlandsArthurHills {
             course
-            frontHandicap
             front
+            frontHandicap
+            frontGross
+            frontTees
             back
             backHandicap
+            backGross
+            backTees
+            useForHandicapIndex
+            useBack
           }
         }
       }
@@ -64,33 +77,58 @@ export const gordonFragment = graphql`
           losses
         }
         scores {
-          boyneHighlandsArthurHills {
+          hiddenRiverGolfClub {
             course
-            frontHandicap
             front
+            frontGross
+            frontTees
+            frontHandicap
             back
             backHandicap
+            backGross
+            backTees
+            useForHandicapIndex
+            use18Holes
           }
           bayHarborGolfClub {
             course
-            frontHandicap
             front
+            frontGross
+            frontTees
+            frontHandicap
+            back
+            backHandicap
+            backGross
+            backTees
+            useForHandicapIndex
+            use18Holes
+          }
+          boyneHighlandsArthurHills {
+            course
+            front
+            frontHandicap
             back
             backHandicap
           }
           boyneHighlandsMoor {
             course
-            frontHandicap
             front
+            frontHandicap
             back
             backHandicap
           }
           boyneHighlandsHeather {
             course
-            frontHandicap
             front
+            frontHandicap
+            frontGross
+            frontTees
             back
             backHandicap
+            backGross
+            backTees
+            useForHandicapIndex
+            useBack
           }
         }
       }
