@@ -1,7 +1,7 @@
 import { graphql } from "gatsby"
 
-export const craigFragment = graphql`
-  fragment CraigPlayerData on PlayersUpdateJsonCraig {
+export const derekFragment = graphql`
+  fragment DerekPlayerData on PlayersUpdateJsonDerek {
     name
     appearances
     cupRecord {
@@ -22,6 +22,19 @@ export const craigFragment = graphql`
           losses
         }
         scores {
+          hiddenRiverGolfClub {
+            course
+            front
+            frontHandicap
+            frontGross
+            frontTees
+            back
+            backHandicap
+            backGross
+            backTees
+            useForHandicapIndex
+            use18Holes
+          }
           bayHarborPreserveLinks {
             course
             front
@@ -54,8 +67,6 @@ export const craigFragment = graphql`
             course
             front
             frontHandicap
-            frontGross
-            frontTees
             back
             backHandicap
             backGross
@@ -105,8 +116,8 @@ export const craigFragment = graphql`
           }
           boyneHighlandsArthurHills {
             course
-            frontHandicap
             front
+            frontHandicap
             back
             backHandicap
           }
@@ -121,8 +132,6 @@ export const craigFragment = graphql`
             course
             front
             frontHandicap
-            frontGross
-            frontTees
             back
             backHandicap
             backGross
@@ -147,12 +156,15 @@ export const craigFragment = graphql`
           bayHarborLinksQuarry {
             course
             front
+            frontHandicap
             frontGross
             frontTees
-            frontHandicap
+            back
             backHandicap
+            backGross
+            backTees
             useForHandicapIndex
-            useFront
+            use18Holes
           }
           boyneHighlandsArthurHills {
             course
@@ -187,6 +199,10 @@ export const craigFragment = graphql`
             frontHandicap
             back
             backHandicap
+            backGross
+            backTees
+            useForHandicapIndex
+            useBack
           }
         }
       }

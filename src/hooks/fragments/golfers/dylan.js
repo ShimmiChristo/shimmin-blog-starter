@@ -1,7 +1,7 @@
 import { graphql } from "gatsby"
 
-export const craigFragment = graphql`
-  fragment CraigPlayerData on PlayersUpdateJsonCraig {
+export const dylanFragment = graphql`
+  fragment DylanPlayerData on PlayersUpdateJsonDylan {
     name
     appearances
     cupRecord {
@@ -22,6 +22,19 @@ export const craigFragment = graphql`
           losses
         }
         scores {
+          hiddenRiverGolfClub {
+            course
+            front
+            frontHandicap
+            frontGross
+            frontTees
+            back
+            backHandicap
+            backGross
+            backTees
+            useForHandicapIndex
+            use18Holes
+          }
           bayHarborPreserveLinks {
             course
             front
@@ -52,10 +65,10 @@ export const craigFragment = graphql`
           }
           boyneHighlandsArthurHills {
             course
-            front
             frontHandicap
-            frontGross
+            front
             frontTees
+            frontGross
             back
             backHandicap
             backGross
@@ -124,9 +137,9 @@ export const craigFragment = graphql`
             frontGross
             frontTees
             back
-            backHandicap
             backGross
             backTees
+            backHandicap
             useForHandicapIndex
             useBack
           }
@@ -144,16 +157,6 @@ export const craigFragment = graphql`
           losses
         }
         scores {
-          bayHarborLinksQuarry {
-            course
-            front
-            frontGross
-            frontTees
-            frontHandicap
-            backHandicap
-            useForHandicapIndex
-            useFront
-          }
           boyneHighlandsArthurHills {
             course
             front
@@ -165,7 +168,7 @@ export const craigFragment = graphql`
             backGross
             backTees
             useForHandicapIndex
-            useBack
+            use18Holes
           }
           boyneHighlandsDonaldRoss {
             course
@@ -185,8 +188,14 @@ export const craigFragment = graphql`
             course
             front
             frontHandicap
+            frontGross
+            frontTees
             back
             backHandicap
+            backGross
+            backTees
+            useForHandicapIndex
+            useBack
           }
         }
       }
@@ -230,8 +239,8 @@ export const craigFragment = graphql`
       }
       _2021 {
         handicap
-        team
         id
+        team
         points {
           game
           id

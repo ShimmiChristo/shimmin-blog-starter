@@ -1,7 +1,7 @@
 import { graphql } from "gatsby"
 
-export const craigFragment = graphql`
-  fragment CraigPlayerData on PlayersUpdateJsonCraig {
+export const danFragment = graphql`
+  fragment DanPlayerData on PlayersUpdateJsonDan {
     name
     appearances
     cupRecord {
@@ -22,16 +22,29 @@ export const craigFragment = graphql`
           losses
         }
         scores {
+          hiddenRiverGolfClub {
+            course
+            frontHandicap
+            front
+            frontTees
+            frontGross
+            back
+            backTees
+            backGross
+            backHandicap
+            useForHandicapIndex
+            use18Holes
+          }
           bayHarborPreserveLinks {
             course
-            front
             frontHandicap
-            frontGross
+            front
             frontTees
+            frontGross
             back
-            backHandicap
-            backGross
             backTees
+            backGross
+            backHandicap
             useForHandicapIndex
             useFront
             useBack
@@ -52,14 +65,14 @@ export const craigFragment = graphql`
           }
           boyneHighlandsArthurHills {
             course
-            front
             frontHandicap
-            frontGross
+            front
             frontTees
+            frontGross
             back
-            backHandicap
-            backGross
             backTees
+            backGross
+            backHandicap
             useForHandicapIndex
             useBack
           }
@@ -79,27 +92,14 @@ export const craigFragment = graphql`
         scores {
           hiddenRiverGolfClub {
             course
-            front
             frontHandicap
-            frontGross
-            frontTees
-            back
-            backHandicap
-            backGross
-            backTees
-            useForHandicapIndex
-            use18Holes
-          }
-          bayHarborGolfClub {
-            course
             front
-            frontHandicap
-            frontGross
             frontTees
+            frontGross
             back
-            backHandicap
-            backGross
             backTees
+            backGross
+            backHandicap
             useForHandicapIndex
             use18Holes
           }
@@ -110,6 +110,19 @@ export const craigFragment = graphql`
             back
             backHandicap
           }
+          bayHarborGolfClub {
+            course
+            frontHandicap
+            front
+            frontGross
+            frontTees
+            back
+            backHandicap
+            backGross
+            backTees
+            useForHandicapIndex
+            use18Holes
+          }
           boyneHighlandsMoor {
             course
             frontHandicap
@@ -119,14 +132,14 @@ export const craigFragment = graphql`
           }
           boyneHighlandsHeather {
             course
-            front
             frontHandicap
+            front
             frontGross
             frontTees
             back
-            backHandicap
             backGross
             backTees
+            backHandicap
             useForHandicapIndex
             useBack
           }
@@ -146,18 +159,8 @@ export const craigFragment = graphql`
         scores {
           bayHarborLinksQuarry {
             course
-            front
-            frontGross
-            frontTees
             frontHandicap
-            backHandicap
-            useForHandicapIndex
-            useFront
-          }
-          boyneHighlandsArthurHills {
-            course
             front
-            frontHandicap
             frontGross
             frontTees
             back
@@ -165,7 +168,20 @@ export const craigFragment = graphql`
             backGross
             backTees
             useForHandicapIndex
-            useBack
+            use18Holes
+          }
+          boyneHighlandsArthurHills {
+            course
+            frontHandicap
+            front
+            frontGross
+            frontTees
+            back
+            backHandicap
+            backGross
+            backTees
+            useForHandicapIndex
+            use18Holes
           }
           boyneHighlandsDonaldRoss {
             course
@@ -183,8 +199,8 @@ export const craigFragment = graphql`
           }
           boyneHighlandsHeather {
             course
-            front
             frontHandicap
+            front
             back
             backHandicap
           }

@@ -1,7 +1,7 @@
 import { graphql } from "gatsby"
 
-export const craigFragment = graphql`
-  fragment CraigPlayerData on PlayersUpdateJsonCraig {
+export const evanFragment = graphql`
+  fragment EvanPlayerData on PlayersUpdateJsonEvan {
     name
     appearances
     cupRecord {
@@ -90,10 +90,17 @@ export const craigFragment = graphql`
             useForHandicapIndex
             use18Holes
           }
-          bayHarborGolfClub {
+          boyneHighlandsArthurHills {
             course
             front
             frontHandicap
+            back
+            backHandicap
+          }
+          bayHarborGolfClub {
+            course
+            frontHandicap
+            front
             frontGross
             frontTees
             back
@@ -102,13 +109,6 @@ export const craigFragment = graphql`
             backTees
             useForHandicapIndex
             use18Holes
-          }
-          boyneHighlandsArthurHills {
-            course
-            frontHandicap
-            front
-            back
-            backHandicap
           }
           boyneHighlandsMoor {
             course
@@ -119,10 +119,8 @@ export const craigFragment = graphql`
           }
           boyneHighlandsHeather {
             course
-            front
             frontHandicap
-            frontGross
-            frontTees
+            front
             back
             backHandicap
             backGross
@@ -144,16 +142,6 @@ export const craigFragment = graphql`
           losses
         }
         scores {
-          bayHarborLinksQuarry {
-            course
-            front
-            frontGross
-            frontTees
-            frontHandicap
-            backHandicap
-            useForHandicapIndex
-            useFront
-          }
           boyneHighlandsArthurHills {
             course
             front
@@ -165,7 +153,7 @@ export const craigFragment = graphql`
             backGross
             backTees
             useForHandicapIndex
-            useBack
+            use18Holes
           }
           boyneHighlandsDonaldRoss {
             course
@@ -183,10 +171,14 @@ export const craigFragment = graphql`
           }
           boyneHighlandsHeather {
             course
-            front
             frontHandicap
+            front
             back
             backHandicap
+            backGross
+            backTees
+            useForHandicapIndex
+            useBack
           }
         }
       }
@@ -220,44 +212,6 @@ export const craigFragment = graphql`
             course
           }
           gullLakeWest {
-            back
-            backHandicap
-            front
-            course
-            frontHandicap
-          }
-        }
-      }
-      _2021 {
-        handicap
-        team
-        id
-        points {
-          game
-          id
-          wins
-          ties
-          losses
-        }
-        scores {
-          classic {
-            back
-            backHandicap
-            course
-            frontHandicap
-            front
-          }
-          jonesMasterPiece {
-            course
-          }
-          gaylordGolfClub {
-            back
-            backHandicap
-            frontHandicap
-            front
-            course
-          }
-          tribute {
             back
             backHandicap
             front

@@ -1,7 +1,7 @@
 import { graphql } from "gatsby"
 
-export const craigFragment = graphql`
-  fragment CraigPlayerData on PlayersUpdateJsonCraig {
+export const curtisFragment = graphql`
+  fragment CurtisPlayerData on PlayersUpdateJsonCurtis {
     name
     appearances
     cupRecord {
@@ -24,17 +24,10 @@ export const craigFragment = graphql`
         scores {
           bayHarborPreserveLinks {
             course
-            front
             frontHandicap
-            frontGross
-            frontTees
+            front
             back
             backHandicap
-            backGross
-            backTees
-            useForHandicapIndex
-            useFront
-            useBack
           }
           crookedTree {
             course
@@ -52,16 +45,10 @@ export const craigFragment = graphql`
           }
           boyneHighlandsArthurHills {
             course
-            front
             frontHandicap
-            frontGross
-            frontTees
+            front
             back
             backHandicap
-            backGross
-            backTees
-            useForHandicapIndex
-            useBack
           }
         }
       }
@@ -77,33 +64,14 @@ export const craigFragment = graphql`
           losses
         }
         scores {
-          hiddenRiverGolfClub {
+          boyneHighlandsArthurHills {
             course
-            front
             frontHandicap
-            frontGross
-            frontTees
+            front
             back
             backHandicap
-            backGross
-            backTees
-            useForHandicapIndex
-            use18Holes
           }
           bayHarborGolfClub {
-            course
-            front
-            frontHandicap
-            frontGross
-            frontTees
-            back
-            backHandicap
-            backGross
-            backTees
-            useForHandicapIndex
-            use18Holes
-          }
-          boyneHighlandsArthurHills {
             course
             frontHandicap
             front
@@ -119,16 +87,10 @@ export const craigFragment = graphql`
           }
           boyneHighlandsHeather {
             course
-            front
             frontHandicap
-            frontGross
-            frontTees
+            front
             back
             backHandicap
-            backGross
-            backTees
-            useForHandicapIndex
-            useBack
           }
         }
       }
@@ -144,28 +106,12 @@ export const craigFragment = graphql`
           losses
         }
         scores {
-          bayHarborLinksQuarry {
-            course
-            front
-            frontGross
-            frontTees
-            frontHandicap
-            backHandicap
-            useForHandicapIndex
-            useFront
-          }
           boyneHighlandsArthurHills {
             course
-            front
             frontHandicap
-            frontGross
-            frontTees
+            front
             back
             backHandicap
-            backGross
-            backTees
-            useForHandicapIndex
-            useBack
           }
           boyneHighlandsDonaldRoss {
             course
@@ -183,8 +129,8 @@ export const craigFragment = graphql`
           }
           boyneHighlandsHeather {
             course
-            front
             frontHandicap
+            front
             back
             backHandicap
           }
@@ -220,44 +166,6 @@ export const craigFragment = graphql`
             course
           }
           gullLakeWest {
-            back
-            backHandicap
-            front
-            course
-            frontHandicap
-          }
-        }
-      }
-      _2021 {
-        handicap
-        team
-        id
-        points {
-          game
-          id
-          wins
-          ties
-          losses
-        }
-        scores {
-          classic {
-            back
-            backHandicap
-            course
-            frontHandicap
-            front
-          }
-          jonesMasterPiece {
-            course
-          }
-          gaylordGolfClub {
-            back
-            backHandicap
-            frontHandicap
-            front
-            course
-          }
-          tribute {
             back
             backHandicap
             front
