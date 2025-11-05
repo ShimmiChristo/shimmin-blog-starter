@@ -171,12 +171,14 @@ export const chrisFragment = graphql`
             course
             frontHandicap
             front
-            frontTees
-            frontGross
             back
             backHandicap
+            frontTees
+            frontGross
             backGross
             backTees
+            useForHandicapIndex
+            use18Holes
           }
           boyneHighlandsDonaldRoss {
             course
@@ -194,10 +196,14 @@ export const chrisFragment = graphql`
           }
           boyneHighlandsHeather {
             course
-            frontHandicap
             front
+            frontHandicap
             back
+            backGross
             backHandicap
+            backTees
+            useForHandicapIndex
+            useBack
           }
         }
       }
