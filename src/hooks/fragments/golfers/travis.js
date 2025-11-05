@@ -24,10 +24,16 @@ export const travisFragment = graphql`
         scores {
           boyneHighlandsArthurHills {
             course
-            frontHandicap
             front
+            frontHandicap
+            frontGross
+            frontTees
             back
             backHandicap
+            backGross
+            backTees
+            useForHandicapIndex
+            use18Holes
           }
           boyneHighlandsDonaldRoss {
             course
@@ -44,11 +50,17 @@ export const travisFragment = graphql`
             backHandicap
           }
           boyneHighlandsHeather {
-            course
-            frontHandicap
+           course
             front
+            frontHandicap
+            frontGross
+            frontTees
             back
             backHandicap
+            backGross
+            backTees
+            useForHandicapIndex
+            useBack
           }
         }
       }
