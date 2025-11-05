@@ -8245,7 +8245,7 @@
               "backGross": 56,
               "backTees": "orange",
               "backHandicap": 999,
-              "useForHandicapIndex":true,
+              "useForHandicapIndex": true,
               "useBack": true
             }
           },
@@ -10619,9 +10619,11 @@
               "course": "Hidden River Golf Club",
               "front": [6, 4, 4, 6, 5, 6, 5, 4, 4],
               "frontGross": 44,
+              "frontTees": "blueWhite",
               "frontHandicap": 999,
               "back": [4, 7, 8, 4, 6, 4, 5, 5, 5],
               "backGross": 48,
+              "backTees": "blueWhite",
               "backHandicap": 999,
               "useForHandicapIndex": true,
               "use18Holes": true
@@ -10629,9 +10631,16 @@
             "bayHarborPreserveLinks": {
               "course": "Bay Harbor Preserve Links",
               "front": [5, 6, 6, 8, 4, 6, 5, 5, 3],
+              "frontGross": 48,
+              "frontTees": "purple",
               "frontHandicap": 999,
               "back": [5, 5, 6, 3, 4, 6, 7, 4, 6],
-              "backHandicap": 999
+              "backGross": 46,
+              "backTees": "orange",
+              "backHandicap": 999,
+              "useForHandicapIndex": true,
+              "useFront": true,
+              "useBack": true
             },
             "crookedTree": {
               "course": "Crooked Tree Golf Club",
@@ -10650,9 +10659,15 @@
             "boyneHighlandsArthurHills": {
               "course": "Arthur Hills at Boyne Highlands",
               "front": [5, 4, 6, 4, 7, 7, 4, 5, 5],
+              "frontGross": 47,
+              "frontTees": "orange",
               "frontHandicap": 999,
               "back": [5, 9, 5, 6, 4, 6, 6, 5, 5],
-              "backHandicap": 999
+              "backGross": 51,
+              "backTees": "orange",
+              "backHandicap": 999,
+              "useForHandicapIndex": true,
+              "useBack": true
             }
           },
           "points": [
