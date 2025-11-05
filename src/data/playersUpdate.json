@@ -1890,7 +1890,7 @@
               "frontTees": "purple",
               "frontHandicap": 999,
               "back": [6, 5, 3, 6, 5, 5, 3, 5, 5],
-              "backGross": 41,
+              "backGross": 43,
               "backTees": "purple",
               "backHandicap": 999,
               "useForHandicapIndex": true,
