@@ -22,14 +22,20 @@ export const jakeFragment = graphql`
           losses
         }
         scores {
-          boyneHighlandsArthurHills {
+          bayHarborGolfClub {
             course
-            frontHandicap
             front
+            frontHandicap
+            frontGross
+            frontTees
             back
             backHandicap
+            backGross
+            backTees
+            useForHandicapIndex
+            use18Holes
           }
-          bayHarborGolfClub {
+          boyneHighlandsArthurHills {
             course
             frontHandicap
             front
@@ -45,10 +51,16 @@ export const jakeFragment = graphql`
           }
           boyneHighlandsHeather {
             course
-            frontHandicap
             front
+            frontHandicap
+            frontGross
+            frontTees
             back
             backHandicap
+            backGross
+            backTees
+            useForHandicapIndex
+            useBack
           }
         }
       }
@@ -66,10 +78,16 @@ export const jakeFragment = graphql`
         scores {
           boyneHighlandsArthurHills {
             course
-            frontHandicap
             front
+            frontHandicap
+            frontGross
+            frontTees
             back
+            backGross
+            backTees
             backHandicap
+            useForHandicapIndex
+            use18Holes
           }
           boyneHighlandsDonaldRoss {
             course
@@ -86,11 +104,17 @@ export const jakeFragment = graphql`
             backHandicap
           }
           boyneHighlandsHeather {
-            course
-            frontHandicap
+           course
             front
+            frontHandicap
+            frontGross
+            frontTees
             back
+            backGross
+            backTees
             backHandicap
+            useForHandicapIndex
+            useBack
           }
         }
       }

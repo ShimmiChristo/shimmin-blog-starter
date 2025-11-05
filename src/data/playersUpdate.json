@@ -8211,9 +8211,15 @@
             "bayHarborGolfClub": {
               "course": "Bay Harbor Golf Club",
               "front": [6, 5, 5, 4, 5, 6, 7, 4, 5],
+              "frontGross": 47,
+              "frontTees": "orange",
               "frontHandicap": 999,
               "back": [6, 4, 7, 6, 10, 6, 10, 3, 7],
-              "backHandicap": 999
+              "backGross": 59,
+              "backTees": "orange",
+              "backHandicap": 999,
+              "useForHandicapIndex": true,
+              "use18Holes": true
             },
             "boyneHighlandsMoor": {
               "course": "The Moor at Boyne Highlands",
@@ -8232,9 +8238,15 @@
             "boyneHighlandsHeather": {
               "course": "The Heather at Boyne Highlands",
               "front": [4, 6, 6, 4, 7, 4, 5, 5, 7],
+              "frontGross": 48,
+              "frontTees": "orange",
               "frontHandicap": 999,
               "back": [7, 8, 6, 6, 7, 7, 4, 5, 6],
-              "backHandicap": 999
+              "backGross": 56,
+              "backTees": "orange",
+              "backHandicap": 999,
+              "useForHandicapIndex":true,
+              "useBack": true
             }
           },
           "points": [
@@ -8388,9 +8400,15 @@
             "boyneHighlandsArthurHills": {
               "course": "Arthur Hills at Boyne Highlands",
               "front": [6, 5, 8, 5, 5, 4, 4, 5, 3],
+              "frontGross": 45,
+              "frontTees": "orange",
               "frontHandicap": 999,
               "back": [6, 5, 8, 7, 4, 6, 3, 4, 5],
-              "backHandicap": 999
+              "backGross": 48,
+              "backTees": "orange",
+              "backHandicap": 999,
+              "useForHandicapIndex": true,
+              "use18Holes": true
             },
             "boyneHighlandsDonaldRoss": {
               "course": "Donald Ross at Boyne Highlands",
@@ -8409,9 +8427,15 @@
             "boyneHighlandsHeather": {
               "course": "The Heather at Boyne Highlands",
               "front": [4, 4, 4, 3, 5, 3, 4, 4, 5],
+              "frontGross": 36,
+              "frontTees": "orange",
               "frontHandicap": 999,
               "back": [4, 5, 3, 4, 4, 5, 3, 6, 6],
-              "backHandicap": 999
+              "backGross": 40,
+              "backTees": "orange",
+              "backHandicap": 999,
+              "useForHandicapIndex": true,
+              "useBack": true
             }
           },
           "points": [
