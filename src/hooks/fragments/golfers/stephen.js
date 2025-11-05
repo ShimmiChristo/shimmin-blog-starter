@@ -22,12 +22,32 @@ export const stephenFragment = graphql`
           losses
         }
         scores {
-          bayHarborPreserveLinks {
+          hiddenRiverGolfClub {
             course
-            frontHandicap
             front
+            frontHandicap
+            frontGross
+            frontTees
             back
             backHandicap
+            backGross
+            backTees
+            useForHandicapIndex
+            use18Holes
+          }
+          bayHarborPreserveLinks {
+            course
+            front
+            frontHandicap
+            frontGross
+            frontTees
+            back
+            backHandicap
+            backGross
+            backTees
+            useForHandicapIndex
+            useFront
+            useBack
           }
           crookedTree {
             course
@@ -44,11 +64,17 @@ export const stephenFragment = graphql`
             backHandicap
           }
           boyneHighlandsArthurHills {
-            course
-            frontHandicap
+          course
             front
+            frontHandicap
+            frontGross
+            frontTees
             back
             backHandicap
+            backGross
+            backTees
+            useForHandicapIndex
+            useBack
           }
         }
       }
