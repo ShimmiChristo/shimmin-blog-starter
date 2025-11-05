@@ -3295,9 +3295,11 @@
               "course": "Hidden River Golf Club",
               "front": [8, 7, 4, 6, 6, 6, 9, 4, 4],
               "frontGross": 54,
+              "frontTees": "white",
               "frontHandicap": 999,
               "back": [5, 8, 5, 3, 7, 2, 5, 5, 5],
               "backGross": 45,
+              "backTees": "white",
               "backHandicap": 999,
               "useForHandicapIndex": true,
               "use18Holes": true
@@ -3305,8 +3307,12 @@
             "bayHarborPreserveLinks": {
               "course": "Bay Harbor Preserve Links",
               "front": [5, 7, 6, 5, 5, 7, 7, 6, 4],
+              "frontGross": 52,
+              "frontTees": "purple",
               "frontHandicap": 999,
               "back": [5, 7, 8, 5, 6, 6, 8, 4, 8],
+              "backGross": 57,
+              "backTees": "orange",
               "backHandicap": 999,
               "useForHandicapIndex": true,
               "useFront": true,
@@ -3329,8 +3335,12 @@
             "boyneHighlandsArthurHills": {
               "course": "Arthur Hills at Boyne Highlands",
               "front": [5, 4, 6, 4, 7, 7, 4, 5, 5],
+              "frontGross": 47,
+              "frontTees": "orange",
               "frontHandicap": 999,
               "back": [8, 8, 8, 6, 8, 7, 4, 6, 7],
+              "backGross": 62,
+              "backTees": "orange",
               "backHandicap": 999,
               "useForHandicapIndex": true,
               "useBack": true
@@ -3504,8 +3514,12 @@
             "bayHarborGolfClub": {
               "course": "Bay Harbor Golf Club",
               "front": [6, 6, 10, 4, 4, 10, 8, 6, 10],
+              "frontGross": 64,
+              "frontTees": "orange",
               "frontHandicap": 999,
               "back": [6, 6, 7, 10, 7, 4, 7, 6, 5],
+              "backGross": 58,
+              "backTees": "orange",
               "backHandicap": 999,
               "useForHandicapIndex": true,
               "use18Holes": true
@@ -3527,8 +3541,12 @@
             "boyneHighlandsHeather": {
               "course": "The Heather at Boyne Highlands",
               "front": [4, 6, 6, 4, 7, 4, 5, 5, 7],
+              "frontGross": 48,
+              "frontTees": "orange",
               "frontHandicap": 999,
               "back": [6, 7, 4, 7, 7, 6, 5, 7, 6],
+              "backGross": 55,
+              "backTees": "orange",
               "backHandicap": 999,
               "useForHandicapIndex": true,
               "useBack": true
@@ -3685,8 +3703,12 @@
             "boyneHighlandsArthurHills": {
               "course": "Arthur Hills at Boyne Highlands",
               "front": [8, 7, 7, 6, 7, 7, 3, 6, 6],
+              "frontGross": 57,
+              "frontTees": "orange",
               "frontHandicap": 999,
               "back": [7, 9, 8, 9, 4, 10, 3, 4, 5],
+              "backGross": 59,
+              "backTees": "orange",
               "backHandicap": 999,
               "useForHandicapIndex": true,
               "use18Holes": true
@@ -3708,8 +3730,12 @@
             "boyneHighlandsHeather": {
               "course": "The Heather at Boyne Highlands",
               "front": [4, 5, 6, 4, 8, 5, 7, 6, 7],
+              "frontGross": 52,
+              "frontTees": "orange",
               "frontHandicap": 999,
               "back": [6, 7, 6, 10, 6, 8, 5, 6, 4],
+              "backGross": 58,
+              "backTees": "orange",
               "backHandicap": 999,
               "useForHandicapIndex": true,
               "useBack": true

@@ -7,16 +7,7 @@ export const CamPlayerPoints = graphql`
       handicap
       year {
         _2025 {
-          handicap
-          id
-          team
-          points {
-            game
-            id
-            wins
-            ties
-            losses
-          }
+          ..._2025Fragment
         }
         _2023 {
           handicap
