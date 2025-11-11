@@ -75,7 +75,7 @@ const TopicPage = ({ location }) => {
 
   const matchesArr = [
     {
-      matchId: " - Best Ball. Full handicap",
+      matchId: " - Best Ball. 90% HC",
       year: "_2025",
       courseMatch: "bayHarborPreserveLinks",
       holes: "front",
@@ -100,7 +100,7 @@ const TopicPage = ({ location }) => {
       p12Tees: playerTees.p12,
     },
     {
-      matchId: " - 2 Best Ball. Full handicap",
+      matchId: " - 2 Best Ball. 90% HC",
       year: "_2025",
       courseMatch: "bayHarborPreserveLinks",
       holes: "back",
@@ -175,7 +175,7 @@ const TopicPage = ({ location }) => {
       p12Tees: playerTees.p12,
     },
     {
-      matchId: " - Bramble. 80% HC",
+      matchId: " - Bramble. 75% HC",
       year: "_2025",
       courseMatch: "boyneHighlandsHeather",
       holes: "front",
@@ -200,7 +200,7 @@ const TopicPage = ({ location }) => {
       p12Tees: playerTees.p12,
     },
     {
-      matchId: " - 2 Ball Bramble. 80% HC",
+      matchId: " - 2 Ball Bramble. 75% HC",
       year: "_2025",
       courseMatch: "boyneHighlandsHeather",
       holes: "back",
@@ -250,7 +250,7 @@ const TopicPage = ({ location }) => {
       p12Tees: playerTees.p12,
     },
     {
-      matchId: " - Singles Match. Full HC",
+      matchId: " - Singles Match. 100% HC",
       year: "_2025",
       courseMatch: "boyneHighlandsArthurHills",
       holes: "back",
@@ -541,7 +541,7 @@ const TopicPage = ({ location }) => {
           player3Tees={matchesArr[0].p11Tees}
           player4Tees={matchesArr[0].p5Tees}
           player1MatchHandicap=""
-          player2MatchHandicap=""
+          player2MatchHandicap="20"
           player3MatchHandicap=""
           player4MatchHandicap=""
         />
