@@ -1,6 +1,6 @@
 // import MatchNav from "../components/match-nav"
 /*
- *    - Shamble (Bramble) - 80% of handicap (or 85% of combined team HC)
+ *    - Shamble (Bramble) - 80% of handicap (or 75% of combined team HC)
  *    - Foursomes (alternate shot) - 50% of combined team handicap
  *    - Greensomes (alternate shot and best drive) - 60% low handicap + 40% high handicap
  *    - Pinehurst - 60% low handicap + 40% high handicap
