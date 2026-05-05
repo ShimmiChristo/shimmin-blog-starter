@@ -24,9 +24,10 @@ const TopicPage = ({ data, location }) => {
   const siteTitle = title || `BFBH Cup Home Page`
   // const pageHash = location.hash
 
-  const startDate = "september, 26, 2025 8:30:00 EST"
-  const locationName = "Bay Harbor Golf Club"
-  const courseUrl = "https://www.bayharborgolf.com/courses/preserve-links"
+  const startDate = "september, 25, 2026 8:00:00 EST"
+  const locationName = "Crooked Tree Golf Club"
+  const courseUrl =
+    "https://www.boynegolf.com/eleven-courses/crooked-tree-golf-club"
 
   return (
     <Layout location={location} title={siteTitle}>
@@ -37,11 +38,11 @@ const TopicPage = ({ data, location }) => {
         image="/logo-black-circle.png"
       />
       <h1 className="invisible">BFBH Cup | Boys From Back Home Cup</h1>
-      {/* <HighlightCountdown
+      <HighlightCountdown
         startTime={startDate}
         location={locationName}
         courseUrl={courseUrl}
-      /> */}
+      />
 
       <h2 className="text-center bold my-5">BFBH Cup 2025 Score</h2>
       <MatchScore year="_2025" lastYearWinner="green" />
