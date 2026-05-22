@@ -26,9 +26,13 @@ const config = {
       google: ``,
     },
     nav: [
+      // {
+      //   name: "Scores",
+      //   link: "/scores#r1f-best-ball",
+      // },
       {
-        name: "Scores",
-        link: "/scores#r1f-best-ball",
+        name: "2025 Scores",
+        link: "/scores-2025#r4b-singles",
       },
       {
         name: "Players",
@@ -56,10 +60,10 @@ const config = {
         name: "History",
         link: "/past-scores",
         subnav: [
-          {
-            name: "2024 Scores",
-            link: "/scores-2024#r4b-singles",
-          },
+          // {
+          //   name: "2025 Scores",
+          //   link: "/scores-2025#r4b-singles",
+          // },
           // {
           //   name: "Matches",
           //   link: "/matches",

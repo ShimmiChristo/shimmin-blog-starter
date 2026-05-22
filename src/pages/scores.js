@@ -276,105 +276,6 @@ const TopicPage = ({ location }) => {
     },
   ]
 
-  // const matchesArr = [
-  //   {
-  //     matchId: " - Best Ball. 90% handicap",
-  //     year: "_2025",
-  //     courseMatch: "bayHarborPreserveLinks",
-  //     holes: "front",
-  //     matchHandicap: "full",
-  //     gameplay: "one-ball",
-  //     player1MatchHandicap: "",
-  //     player2MatchHandicap: "",
-  //     player3MatchHandicap: "",
-  //     player4MatchHandicap: "",
-  //   },
-  //   {
-  //     matchId: " - 2 Best Ball. 90% handicap",
-  //     year: "_2025",
-  //     courseMatch: "bayHarborPreserveLinks",
-  //     holes: "back",
-  //     matchHandicap: "full",
-  //     gameplay: "two-ball",
-  //     player1MatchHandicap: "",
-  //     player2MatchHandicap: "",
-  //     player3MatchHandicap: "",
-  //     player4MatchHandicap: "",
-  //   },
-  //   {
-  //     matchId: " - Alternate. 50% HC",
-  //     year: "_2025",
-  //     courseMatch: "crookedTree",
-  //     holes: "front",
-  //     matchHandicap: "full",
-  //     gameplay: "alternate",
-  //     player1MatchHandicap: "",
-  //     player2MatchHandicap: "",
-  //     player3MatchHandicap: "",
-  //     player4MatchHandicap: "",
-  //   },
-  //   {
-  //     matchId: " - Scramble. 35% low HC + 15% high HC",
-  //     year: "_2025",
-  //     courseMatch: "crookedTree",
-  //     holes: "back",
-  //     matchHandicap: "average",
-  //     gameplay: "scramble",
-  //     player1MatchHandicap: "",
-  //     player2MatchHandicap: "",
-  //     player3MatchHandicap: "",
-  //     player4MatchHandicap: "",
-  //   },
-  //   {
-  //     matchId: " - Bramble. 80% HC",
-  //     year: "_2025",
-  //     courseMatch: "boyneHighlandsHeather",
-  //     holes: "front",
-  //     matchHandicap: "full",
-  //     gameplay: "bramble",
-  //     player1MatchHandicap: "",
-  //     player2MatchHandicap: "",
-  //     player3MatchHandicap: "",
-  //     player4MatchHandicap: "",
-  //   },
-  //   {
-  //     matchId: " - 2 Ball Bramble. 80% HC",
-  //     year: "_2025",
-  //     courseMatch: "boyneHighlandsHeather",
-  //     holes: "back",
-  //     matchHandicap: "full",
-  //     gameplay: "two-ball-bramble",
-  //     player1MatchHandicap: "",
-  //     player2MatchHandicap: "",
-  //     player3MatchHandicap: "",
-  //     player4MatchHandicap: "",
-  //   },
-  //   {
-  //     matchId: " - Pinehurst. 60% low HC + 40% high HC",
-  //     year: "_2025",
-  //     courseMatch: "boyneHighlandsArthurHills",
-  //     holes: "front",
-  //     matchHandicap: "average",
-  //     gameplay: "pinehurst",
-  //     player1MatchHandicap: "",
-  //     player2MatchHandicap: "",
-  //     player3MatchHandicap: "",
-  //     player4MatchHandicap: "",
-  //   },
-  //   {
-  //     matchId: " - Singles Match. 100% HC",
-  //     year: "_2025",
-  //     courseMatch: "boyneHighlandsArthurHills",
-  //     holes: "back",
-  //     matchHandicap: "full",
-  //     gameplay: "singles",
-  //     player1MatchHandicap: "",
-  //     player2MatchHandicap: "",
-  //     player3MatchHandicap: "",
-  //     player4MatchHandicap: "",
-  //   },
-  // ]
-
   const day1 = {
     round1: {
       times: ["8:30 AM", "11:00 AM"],
@@ -403,62 +304,61 @@ const TopicPage = ({ location }) => {
       courseName: course["boyneHighlandsArthurHills"].name,
     },
   }
+  const matchNavData = [
+    {
+      name: `1 Best Ball`,
+      round: `Round 1.1`,
+      link: "r1f-best-ball",
+    },
+    {
+      name: "2 Best Ball",
+      round: "Round 1.2",
+      link: "r1b-two-best-ball",
+    },
+    {
+      name: "Alternate",
+      round: "Round 2.1",
+      link: "r2f-alternate",
+    },
+    {
+      name: "Scramble",
+      round: "Round 2.2",
+      link: "r2b-scramble",
+    },
+    {
+      name: "1 Ball Bramble",
+      round: "Round 3.1",
+      link: "r3f-bramble",
+    },
+    {
+      name: "2 Ball Bramble",
+      round: "Round 3.2",
+      link: "r3b-2-ball-bramble",
+    },
+    {
+      name: "Pinehurst",
+      round: "Round 4.1",
+      link: "r4f-pinehurst",
+    },
+    {
+      name: "Singles",
+      round: "Round 4.2",
+      link: "r4b-singles",
+    },
+  ]
+
   return (
     <Layout location={location} title={siteTitle}>
       <SEO title="Scores" />
       <LandingPageHeader title="Scores" />
 
-      {/* <HighlightCountdown
+      <HighlightCountdown
         startTime={startDate}
         location={locationName}
         courseUrl={courseUrl}
-      /> */}
-
-      <MatchNav
-        location={location}
-        titles={[
-          {
-            name: `1 Best Ball`,
-            round: `Round 1.1`,
-            link: "r1f-best-ball",
-          },
-          {
-            name: "2 Best Ball",
-            round: "Round 1.2",
-            link: "r1b-two-best-ball",
-          },
-          {
-            name: "Alternate",
-            round: "Round 2.1",
-            link: "r2f-alternate",
-          },
-          {
-            name: "Scramble",
-            round: "Round 2.2",
-            link: "r2b-scramble",
-          },
-          {
-            name: "1 Ball Bramble",
-            round: "Round 3.1",
-            link: "r3f-bramble",
-          },
-          {
-            name: "2 Ball Bramble",
-            round: "Round 3.2",
-            link: "r3b-2-ball-bramble",
-          },
-          {
-            name: "Pinehurst",
-            round: "Round 4.1",
-            link: "r4f-pinehurst",
-          },
-          {
-            name: "Singles",
-            round: "Round 4.2",
-            link: "r4b-singles",
-          },
-        ]}
       />
+
+      {/* <MatchNav location={location} titles={matchNavData} />
 
       <MatchScore year="_2025" lastYearWinner="green" location={location} />
       <MatchNavSection
@@ -1118,7 +1018,7 @@ const TopicPage = ({ location }) => {
           player1MatchHandicap=""
           player2MatchHandicap=""
         />
-      </MatchNavSection>
+      </MatchNavSection> */}
     </Layout>
   )
 }

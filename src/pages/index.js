@@ -5,14 +5,13 @@ import { useSiteMetadata } from "../hooks/use-site-metadata"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-// import LandingPageHeader from "../components/landing-page-header"
 import MatchScore from "../components/match-score"
 import Highlight2025 from "../components/highlights/highlight-2025"
 import Venue2025 from "../components/venues/venue-2025"
 import HighlightCountdown from "../components/highlights/coutdown-hightlight"
 // import HighlightDay from "../components/highlights/day-hightlights-2023"
 import MatchSummary2025 from "../components/matches/2025/summary"
-import Foreword2025 from "../components/matches/2025/foreword"
+import Foreword2026 from "../components/matches/2026/foreword"
 
 // import AboutSite from "../components/about-site"
 // import MatchNav from "../components/match-nav"
@@ -44,19 +43,23 @@ const TopicPage = ({ data, location }) => {
         courseUrl={courseUrl}
       />
 
-      <h2 className="text-center bold my-5">BFBH Cup 2025 Score</h2>
+      <div className="container col-lg-8 mt-5">
+        <Foreword2026 />
+      </div>
+
+      {/* <h2 className="text-center bold my-5">BFBH Cup 2025 Score</h2>
       <MatchScore year="_2025" lastYearWinner="green" />
       <div className="col-lg-6 offset-lg-3">
         <MatchSummary2025 />
-      </div>
+      </div> */}
       {/* <h2 className="text-center bold mt-5">BFBH Cup 2025</h2> */}
       {/* <Highlight2025 /> */}
       {/* <Highlight2024 /> */}
       {/* <hr /> */}
       {/* <br /> */}
-      <div className="py-3">
+      {/* <div className="py-3">
         <Venue2025 />
-      </div>
+      </div> */}
     </Layout>
   )
 }

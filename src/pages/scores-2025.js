@@ -47,8 +47,8 @@ const TopicPage = ({ location }) => {
   const p5 = "evan"
   const p6 = "dan"
   const p7 = "matt"
-  const p8 = "chris"
-  const p9 = "gordon"
+  const p8 = "gordon"
+  const p9 = "chris"
   const p10 = "derek"
   const p11 = "stephen"
   const p12 = "curtis"
@@ -70,12 +70,13 @@ const TopicPage = ({ location }) => {
 
   const matchesArr = [
     {
-      matchId: " - Best Ball. Full handicap",
+      matchId: " - Best Ball. 90% HC",
       year: "_2025",
       courseMatch: "bayHarborPreserveLinks",
       holes: "front",
       matchHandicap: "full",
       gameplay: "one-ball",
+      matchTees: ["brown", "purple"],
       player1MatchHandicap: "",
       player2MatchHandicap: "",
       player3MatchHandicap: "",
@@ -94,12 +95,13 @@ const TopicPage = ({ location }) => {
       p12Tees: playerTees.p12,
     },
     {
-      matchId: " - 2 Best Ball. Full handicap",
+      matchId: " - 2 Best Ball. 90% HC",
       year: "_2025",
       courseMatch: "bayHarborPreserveLinks",
       holes: "back",
       matchHandicap: "full",
       gameplay: "two-ball",
+      matchTees: ["purple", "orange"],
       player1MatchHandicap: "",
       player2MatchHandicap: "",
       player3MatchHandicap: "",
@@ -124,6 +126,7 @@ const TopicPage = ({ location }) => {
       holes: "front",
       matchHandicap: "full",
       gameplay: "alternate",
+      matchTees: ["purple", "orange"],
       player1MatchHandicap: "",
       player2MatchHandicap: "",
       player3MatchHandicap: "",
@@ -148,6 +151,7 @@ const TopicPage = ({ location }) => {
       holes: "back",
       matchHandicap: "average",
       gameplay: "scramble",
+      matchTees: ["purple", "orange"],
       player1MatchHandicap: "",
       player2MatchHandicap: "",
       player3MatchHandicap: "",
@@ -166,12 +170,13 @@ const TopicPage = ({ location }) => {
       p12Tees: playerTees.p12,
     },
     {
-      matchId: " - Bramble. 80% HC",
+      matchId: " - Bramble. 75% HC",
       year: "_2025",
       courseMatch: "boyneHighlandsHeather",
       holes: "front",
       matchHandicap: "full",
       gameplay: "bramble",
+      matchTees: ["purple", "orange"],
       player1MatchHandicap: "",
       player2MatchHandicap: "",
       player3MatchHandicap: "",
@@ -190,12 +195,13 @@ const TopicPage = ({ location }) => {
       p12Tees: playerTees.p12,
     },
     {
-      matchId: " - 2 Ball Bramble. 80% HC",
+      matchId: " - 2 Ball Bramble. 75% HC",
       year: "_2025",
       courseMatch: "boyneHighlandsHeather",
       holes: "back",
       matchHandicap: "full",
       gameplay: "two-ball-bramble",
+      matchTees: ["purple", "orange"],
       player1MatchHandicap: "",
       player2MatchHandicap: "",
       player3MatchHandicap: "",
@@ -220,6 +226,7 @@ const TopicPage = ({ location }) => {
       holes: "front",
       matchHandicap: "average",
       gameplay: "pinehurst",
+      matchTees: ["purple", "orange"],
       player1MatchHandicap: "",
       player2MatchHandicap: "",
       player3MatchHandicap: "",
@@ -238,12 +245,13 @@ const TopicPage = ({ location }) => {
       p12Tees: playerTees.p12,
     },
     {
-      matchId: " - Singles Match. Full HC",
+      matchId: " - Singles Match. 100% HC",
       year: "_2025",
       courseMatch: "boyneHighlandsArthurHills",
       holes: "back",
       matchHandicap: "full",
       gameplay: "singles",
+      matchTees: ["purple", "orange"],
       player1MatchHandicap: "",
       player2MatchHandicap: "",
       player3MatchHandicap: "",
@@ -262,39 +270,6 @@ const TopicPage = ({ location }) => {
       p12Tees: playerTees.p12,
     },
   ]
-
-  // const match1Matchups = [
-  //   {
-  //     player1: `${p7}`,
-  //     player2: `${p1}`,
-  //     player3: `${p8}`,
-  //     player4: `${p6}`,
-  //     p1Tees: `${playerTees.p7}`,
-  //     p2Tees: `${playerTees.p1}`,
-  //     p3Tees: `${playerTees.p8}`,
-  //     p4Tees: `${playerTees.p6}`,
-  //   },
-  //   {
-  //     player1: `${p7}`,
-  //     player2: `${p1}`,
-  //     player3: `${p8}`,
-  //     player4: `${p6}`,
-  //     p1Tees: `${playerTees.p7}`,
-  //     p2Tees: `${playerTees.p1}`,
-  //     p3Tees: `${playerTees.p8}`,
-  //     p4Tees: `${playerTees.p6}`,
-  //   },
-  //   {
-  //     player1: `${p7}`,
-  //     player2: `${p1}`,
-  //     player3: `${p8}`,
-  //     player4: `${p6}`,
-  //     p1Tees: `${playerTees.p7}`,
-  //     p2Tees: `${playerTees.p1}`,
-  //     p3Tees: `${playerTees.p8}`,
-  //     p4Tees: `${playerTees.p6}`,
-  //   },
-  // ]
 
   const day1 = {
     round1: {
@@ -325,55 +300,54 @@ const TopicPage = ({ location }) => {
     },
   }
 
+  const matchNavData = [
+    {
+      name: `1 Best Ball`,
+      round: `Round 1.1`,
+      link: "r1f-best-ball",
+    },
+    {
+      name: "2 Best Ball",
+      round: "Round 1.2",
+      link: "r1b-two-best-ball",
+    },
+    {
+      name: "Alternate",
+      round: "Round 2.1",
+      link: "r2f-alternate",
+    },
+    {
+      name: "Scramble",
+      round: "Round 2.2",
+      link: "r2b-scramble",
+    },
+    {
+      name: "1 Ball Bramble",
+      round: "Round 3.1",
+      link: "r3f-bramble",
+    },
+    {
+      name: "2 Ball Bramble",
+      round: "Round 3.2",
+      link: "r3b-2-ball-bramble",
+    },
+    {
+      name: "Pinehurst",
+      round: "Round 4.1",
+      link: "r4f-pinehurst",
+    },
+    {
+      name: "Singles",
+      round: "Round 4.2",
+      link: "r4b-singles",
+    },
+  ]
+
   return (
     <Layout location={location} title={siteTitle}>
       <SEO title="2025 Scores" />
       <LandingPageHeader title="2025 Scores" />
-      <MatchNav
-        location={location}
-        titles={[
-          {
-            name: `1 Best Ball`,
-            round: `Round 1.1`,
-            link: "r1f-best-ball",
-          },
-          {
-            name: "2 Best Ball",
-            round: "Round 1.2",
-            link: "r1b-two-best-ball",
-          },
-          {
-            name: "Alternate",
-            round: "Round 2.1",
-            link: "r2f-alternate",
-          },
-          {
-            name: "Scramble",
-            round: "Round 2.2",
-            link: "r2b-scramble",
-          },
-          {
-            name: "1 Ball Bramble",
-            round: "Round 3.1",
-            link: "r3f-bramble",
-          },
-          {
-            name: "2 Ball Bramble",
-            round: "Round 3.2",
-            link: "r3b-2-ball-bramble",
-          },
-          {
-            name: "Pinehurst",
-            round: "Round 4.1",
-            link: "r4f-pinehurst",
-          },
-          {
-            name: "Singles",
-            round: "Round 4.2",
-            link: "r4b-singles",
-          },
-        ]}
-      />
+      <MatchNav location={location} titles={matchNavData} />
 
       <MatchScore year="_2025" lastYearWinner="green" location={location} />
       <MatchNavSection
@@ -393,13 +367,14 @@ const TopicPage = ({ location }) => {
           holes={matchesArr[0].holes}
           matchHandicap={matchesArr[0].matchHandicap}
           gameplay={matchesArr[0].gameplay}
+          matchTees={matchesArr[0].matchTees}
           player1={p7}
           player2={p1}
-          player3={p8}
+          player3={p9}
           player4={p6}
           player1Tees={matchesArr[0].p7Tees}
           player2Tees={matchesArr[0].p1Tees}
-          player3Tees={matchesArr[0].p8Tees}
+          player3Tees={matchesArr[0].p9Tees}
           player4Tees={matchesArr[0].p6Tees}
           player1MatchHandicap=""
           player2MatchHandicap=""
@@ -413,13 +388,14 @@ const TopicPage = ({ location }) => {
           holes={matchesArr[0].holes}
           matchHandicap={matchesArr[0].matchHandicap}
           gameplay={matchesArr[0].gameplay}
+          matchTees={matchesArr[0].matchTees}
           player1={p10}
           player2={p2}
-          player3={p11}
+          player3={p12}
           player4={p3}
           player1Tees={matchesArr[0].p10Tees}
           player2Tees={matchesArr[0].p2Tees}
-          player3Tees={matchesArr[0].p11Tees}
+          player3Tees={matchesArr[0].p12Tees}
           player4Tees={matchesArr[0].p3Tees}
           player1MatchHandicap=""
           player2MatchHandicap=""
@@ -433,16 +409,17 @@ const TopicPage = ({ location }) => {
           holes={matchesArr[0].holes}
           matchHandicap={matchesArr[0].matchHandicap}
           gameplay={matchesArr[0].gameplay}
-          player1={p9}
+          matchTees={matchesArr[0].matchTees}
+          player1={p8}
           player2={p4}
-          player3={p12}
+          player3={p11}
           player4={p5}
-          player1Tees={matchesArr[0].p9Tees}
+          player1Tees={matchesArr[0].p8Tees}
           player2Tees={matchesArr[0].p4Tees}
-          player3Tees={matchesArr[0].p12Tees}
+          player3Tees={matchesArr[0].p11Tees}
           player4Tees={matchesArr[0].p5Tees}
           player1MatchHandicap=""
-          player2MatchHandicap=""
+          player2MatchHandicap="20"
           player3MatchHandicap=""
           player4MatchHandicap=""
         />
@@ -465,13 +442,14 @@ const TopicPage = ({ location }) => {
           holes={matchesArr[1].holes}
           matchHandicap={matchesArr[1].matchHandicap}
           gameplay={matchesArr[1].gameplay}
+          matchTees={matchesArr[1].matchTees}
           player1={p7}
           player2={p1}
-          player3={p8}
+          player3={p9}
           player4={p6}
           player1Tees={matchesArr[1].p7Tees}
           player2Tees={matchesArr[1].p1Tees}
-          player3Tees={matchesArr[1].p8Tees}
+          player3Tees={matchesArr[1].p9Tees}
           player4Tees={matchesArr[1].p6Tees}
           player1MatchHandicap=""
           player2MatchHandicap=""
@@ -485,13 +463,14 @@ const TopicPage = ({ location }) => {
           holes={matchesArr[1].holes}
           matchHandicap={matchesArr[1].matchHandicap}
           gameplay={matchesArr[1].gameplay}
+          matchTees={matchesArr[1].matchTees}
           player1={p10}
           player2={p2}
-          player3={p11}
+          player3={p12}
           player4={p3}
           player1Tees={matchesArr[1].p10Tees}
           player2Tees={matchesArr[1].p2Tees}
-          player3Tees={matchesArr[1].p11Tees}
+          player3Tees={matchesArr[1].p12Tees}
           player4Tees={matchesArr[1].p3Tees}
           player1MatchHandicap=""
           player2MatchHandicap=""
@@ -505,13 +484,14 @@ const TopicPage = ({ location }) => {
           holes={matchesArr[1].holes}
           matchHandicap={matchesArr[1].matchHandicap}
           gameplay={matchesArr[1].gameplay}
-          player1={p9}
+          matchTees={matchesArr[1].matchTees}
+          player1={p8}
           player2={p4}
-          player3={p12}
+          player3={p11}
           player4={p5}
-          player1Tees={matchesArr[1].p9Tees}
+          player1Tees={matchesArr[1].p8Tees}
           player2Tees={matchesArr[1].p4Tees}
-          player3Tees={matchesArr[1].p12Tees}
+          player3Tees={matchesArr[1].p11Tees}
           player4Tees={matchesArr[1].p5Tees}
           player1MatchHandicap=""
           player2MatchHandicap=""
@@ -530,21 +510,22 @@ const TopicPage = ({ location }) => {
           </span>
           <a href={day1.round2.courseLink}>{day1.round2.courseName}</a>
         </div>
-        {/* <Match
+        <Match
           matchId={`7 ${matchesArr[2].matchId}`}
           year={matchesArr[2].year}
           courseMatch={matchesArr[2].courseMatch}
           holes={matchesArr[2].holes}
           matchHandicap={matchesArr[2].matchHandicap}
           gameplay={matchesArr[2].gameplay}
-          player1={p8}
+          matchTees={matchesArr[2].matchTees}
+          player1={p7}
           player2={p3}
-          player3={p12}
-          player4={p4}
-          player1Tees={matchesArr[2].p8Tees}
+          player3={p11}
+          player4={p6}
+          player1Tees={matchesArr[2].p7Tees}
           player2Tees={matchesArr[2].p3Tees}
-          player3Tees={matchesArr[2].p12Tees}
-          player4Tees={matchesArr[2].p4Tees}
+          player3Tees={matchesArr[2].p11Tees}
+          player4Tees={matchesArr[2].p6Tees}
           player1MatchHandicap=""
           player2MatchHandicap=""
           player3MatchHandicap=""
@@ -557,12 +538,13 @@ const TopicPage = ({ location }) => {
           holes={matchesArr[2].holes}
           matchHandicap={matchesArr[2].matchHandicap}
           gameplay={matchesArr[2].gameplay}
-          player1={p7}
-          player2={p2}
+          matchTees={matchesArr[2].matchTees}
+          player1={p8}
+          player2={p1}
           player3={p10}
           player4={p5}
-          player1Tees={matchesArr[2].p7Tees}
-          player2Tees={matchesArr[2].p2Tees}
+          player1Tees={matchesArr[2].p8Tees}
+          player2Tees={matchesArr[2].p1Tees}
           player3Tees={matchesArr[2].p10Tees}
           player4Tees={matchesArr[2].p5Tees}
           player1MatchHandicap=""
@@ -577,19 +559,20 @@ const TopicPage = ({ location }) => {
           holes={matchesArr[2].holes}
           matchHandicap={matchesArr[2].matchHandicap}
           gameplay={matchesArr[2].gameplay}
+          matchTees={matchesArr[2].matchTees}
           player1={p9}
-          player2={p1}
-          player3={p11}
-          player4={p6}
+          player2={p2}
+          player3={p12}
+          player4={p4}
           player1Tees={matchesArr[2].p9Tees}
-          player2Tees={matchesArr[2].p1Tees}
-          player3Tees={matchesArr[2].p11Tees}
-          player4Tees={matchesArr[2].p6Tees}
+          player2Tees={matchesArr[2].p2Tees}
+          player3Tees={matchesArr[2].p12Tees}
+          player4Tees={matchesArr[2].p4Tees}
           player1MatchHandicap=""
           player2MatchHandicap=""
           player3MatchHandicap=""
           player4MatchHandicap=""
-        /> */}
+        />
       </MatchNavSection>
 
       <MatchNavSection
@@ -602,20 +585,21 @@ const TopicPage = ({ location }) => {
           </span>
           <a href={day1.round2.courseLink}>{day1.round2.courseName}</a>
         </div>
-        {/* <Match
+        <Match
           matchId={`10 ${matchesArr[3].matchId}`}
           year={matchesArr[3].year}
           courseMatch={matchesArr[3].courseMatch}
           holes={matchesArr[3].holes}
           matchHandicap={matchesArr[3].matchHandicap}
           gameplay={matchesArr[3].gameplay}
-          player1={p8}
+          matchTees={matchesArr[3].matchTees}
+          player1={p7}
           player2={p3}
-          player3={p11}
+          player3={p10}
           player4={p5}
-          player1Tees={matchesArr[3].p8Tees}
+          player1Tees={matchesArr[3].p7Tees}
           player2Tees={matchesArr[3].p3Tees}
-          player3Tees={matchesArr[3].p11Tees}
+          player3Tees={matchesArr[3].p10Tees}
           player4Tees={matchesArr[3].p5Tees}
           player1MatchHandicap=""
           player2MatchHandicap=""
@@ -629,14 +613,15 @@ const TopicPage = ({ location }) => {
           holes={matchesArr[3].holes}
           matchHandicap={matchesArr[3].matchHandicap}
           gameplay={matchesArr[3].gameplay}
-          player1={p7}
-          player2={p2}
-          player3={p12}
-          player4={p6}
-          player1Tees={matchesArr[3].p7Tees}
-          player2Tees={matchesArr[3].p2Tees}
-          player3Tees={matchesArr[3].p12Tees}
-          player4Tees={matchesArr[3].p6Tees}
+          matchTees={matchesArr[3].matchTees}
+          player1={p9}
+          player2={p1}
+          player3={p11}
+          player4={p4}
+          player1Tees={matchesArr[3].p9Tees}
+          player2Tees={matchesArr[3].p1Tees}
+          player3Tees={matchesArr[3].p11Tees}
+          player4Tees={matchesArr[3].p4Tees}
           player1MatchHandicap=""
           player2MatchHandicap=""
           player3MatchHandicap=""
@@ -649,19 +634,20 @@ const TopicPage = ({ location }) => {
           holes={matchesArr[3].holes}
           matchHandicap={matchesArr[3].matchHandicap}
           gameplay={matchesArr[3].gameplay}
-          player1={p9}
-          player2={p1}
-          player3={p10}
-          player4={p4}
-          player1Tees={matchesArr[3].p9Tees}
-          player2Tees={matchesArr[3].p1Tees}
-          player3Tees={matchesArr[3].p10Tees}
-          player4Tees={matchesArr[3].p4Tees}
+          matchTees={matchesArr[3].matchTees}
+          player1={p8}
+          player2={p2}
+          player3={p12}
+          player4={p6}
+          player1Tees={matchesArr[3].p8Tees}
+          player2Tees={matchesArr[3].p2Tees}
+          player3Tees={matchesArr[3].p12Tees}
+          player4Tees={matchesArr[3].p6Tees}
           player1MatchHandicap=""
           player2MatchHandicap=""
           player3MatchHandicap=""
           player4MatchHandicap=""
-        /> */}
+        />
       </MatchNavSection>
 
       <MatchNavSection
@@ -675,21 +661,22 @@ const TopicPage = ({ location }) => {
 
           <a href={day2.round1.courseLink}>{day2.round1.courseName}</a>
         </div>
-        {/* <Match
+        <Match
           matchId={`13 ${matchesArr[4].matchId}`}
           year={matchesArr[4].year}
           courseMatch={matchesArr[4].courseMatch}
           holes={matchesArr[4].holes}
           matchHandicap={matchesArr[4].matchHandicap}
           gameplay={matchesArr[4].gameplay}
-          player1={p9}
+          matchTees={matchesArr[4].matchTees}
+          player1={p7}
           player2={p1}
           player3={p12}
-          player4={p5}
-          player1Tees={matchesArr[4].p9Tees}
+          player4={p4}
+          player1Tees={matchesArr[4].p7Tees}
           player2Tees={matchesArr[4].p1Tees}
           player3Tees={matchesArr[4].p12Tees}
-          player4Tees={matchesArr[4].p5Tees}
+          player4Tees={matchesArr[4].p4Tees}
           player1MatchHandicap=""
           player2MatchHandicap=""
           player3MatchHandicap=""
@@ -702,14 +689,15 @@ const TopicPage = ({ location }) => {
           holes={matchesArr[4].holes}
           matchHandicap={matchesArr[4].matchHandicap}
           gameplay={matchesArr[4].gameplay}
-          player1={p7}
-          player2={p4}
-          player3={p11}
-          player4={p6}
-          player1Tees={matchesArr[4].p7Tees}
-          player2Tees={matchesArr[4].p4Tees}
-          player3Tees={matchesArr[4].p11Tees}
-          player4Tees={matchesArr[4].p6Tees}
+          matchTees={matchesArr[4].matchTees}
+          player1={p8}
+          player2={p3}
+          player3={p9}
+          player4={p5}
+          player1Tees={matchesArr[4].p8Tees}
+          player2Tees={matchesArr[4].p3Tees}
+          player3Tees={matchesArr[4].p9Tees}
+          player4Tees={matchesArr[4].p5Tees}
           player1MatchHandicap=""
           player2MatchHandicap=""
           player3MatchHandicap=""
@@ -722,19 +710,20 @@ const TopicPage = ({ location }) => {
           holes={matchesArr[4].holes}
           matchHandicap={matchesArr[4].matchHandicap}
           gameplay={matchesArr[4].gameplay}
-          player1={p8}
+          matchTees={matchesArr[4].matchTees}
+          player1={p10}
           player2={p2}
-          player3={p10}
-          player4={p3}
-          player1Tees={matchesArr[4].p8Tees}
+          player3={p11}
+          player4={p6}
+          player1Tees={matchesArr[4].p10Tees}
           player2Tees={matchesArr[4].p2Tees}
-          player3Tees={matchesArr[4].p10Tees}
-          player4Tees={matchesArr[4].p3Tees}
+          player3Tees={matchesArr[4].p11Tees}
+          player4Tees={matchesArr[4].p6Tees}
           player1MatchHandicap=""
           player2MatchHandicap=""
           player3MatchHandicap=""
           player4MatchHandicap=""
-        /> */}
+        />
       </MatchNavSection>
 
       <MatchNavSection
@@ -749,21 +738,22 @@ const TopicPage = ({ location }) => {
           </span>
           <a href={day2.round1.courseLink}>{day2.round1.courseName}</a>
         </div>
-        {/* <Match
+        <Match
           matchId={`16 ${matchesArr[5].matchId}`}
           year={matchesArr[5].year}
           courseMatch={matchesArr[5].courseMatch}
           holes={matchesArr[5].holes}
           matchHandicap={matchesArr[5].matchHandicap}
           gameplay={matchesArr[5].gameplay}
-          player1={p11}
-          player2={p5}
+          matchTees={matchesArr[5].matchTees}
+          player1={p8}
+          player2={p1}
           player3={p12}
-          player4={p6}
-          player1Tees={matchesArr[5].p11Tees}
-          player2Tees={matchesArr[5].p5Tees}
+          player4={p3}
+          player1Tees={matchesArr[5].p8Tees}
+          player2Tees={matchesArr[5].p1Tees}
           player3Tees={matchesArr[5].p12Tees}
-          player4Tees={matchesArr[5].p6Tees}
+          player4Tees={matchesArr[5].p3Tees}
           player1MatchHandicap=""
           player2MatchHandicap=""
           player3MatchHandicap=""
@@ -776,14 +766,15 @@ const TopicPage = ({ location }) => {
           holes={matchesArr[5].holes}
           matchHandicap={matchesArr[5].matchHandicap}
           gameplay={matchesArr[5].gameplay}
+          matchTees={matchesArr[5].matchTees}
           player1={p7}
-          player2={p1}
-          player3={p9}
-          player4={p3}
+          player2={p2}
+          player3={p10}
+          player4={p5}
           player1Tees={matchesArr[5].p7Tees}
-          player2Tees={matchesArr[5].p1Tees}
-          player3Tees={matchesArr[5].p9Tees}
-          player4Tees={matchesArr[5].p3Tees}
+          player2Tees={matchesArr[5].p2Tees}
+          player3Tees={matchesArr[5].p10Tees}
+          player4Tees={matchesArr[5].p5Tees}
           player1MatchHandicap=""
           player2MatchHandicap=""
           player3MatchHandicap=""
@@ -796,19 +787,20 @@ const TopicPage = ({ location }) => {
           holes={matchesArr[5].holes}
           matchHandicap={matchesArr[5].matchHandicap}
           gameplay={matchesArr[5].gameplay}
-          player1={p8}
-          player2={p2}
-          player3={p10}
-          player4={p4}
-          player1Tees={matchesArr[5].p8Tees}
-          player2Tees={matchesArr[5].p2Tees}
-          player3Tees={matchesArr[5].p10Tees}
-          player4Tees={matchesArr[5].p4Tees}
+          matchTees={matchesArr[5].matchTees}
+          player1={p9}
+          player2={p4}
+          player3={p11}
+          player4={p6}
+          player1Tees={matchesArr[5].p9Tees}
+          player2Tees={matchesArr[5].p4Tees}
+          player3Tees={matchesArr[5].p11Tees}
+          player4Tees={matchesArr[5].p6Tees}
           player1MatchHandicap=""
           player2MatchHandicap=""
           player3MatchHandicap=""
           player4MatchHandicap=""
-        /> */}
+        />
       </MatchNavSection>
 
       <MatchNavSection
@@ -822,13 +814,56 @@ const TopicPage = ({ location }) => {
           <a href={day2.round2.courseLink}>{day2.round2.courseName}</a>
         </div>
 
-        {/* <Match
+        <Match
           matchId={`19 ${matchesArr[6].matchId}`}
           year={matchesArr[6].year}
           courseMatch={matchesArr[6].courseMatch}
           holes={matchesArr[6].holes}
           matchHandicap={matchesArr[6].matchHandicap}
           gameplay={matchesArr[6].gameplay}
+          matchTees={matchesArr[6].matchTees}
+          player1={p11}
+          player2={p5}
+          player3={p12}
+          player4={p6}
+          player1Tees={matchesArr[6].p11Tees}
+          player2Tees={matchesArr[6].p5Tees}
+          player3Tees={matchesArr[6].p12Tees}
+          player4Tees={matchesArr[6].p6Tees}
+          player1MatchHandicap=""
+          player2MatchHandicap=""
+          player3MatchHandicap=""
+          player4MatchHandicap=""
+        />
+        <Match
+          matchId={`20 ${matchesArr[6].matchId}`}
+          year={matchesArr[6].year}
+          courseMatch={matchesArr[6].courseMatch}
+          holes={matchesArr[6].holes}
+          matchHandicap={matchesArr[6].matchHandicap}
+          gameplay={matchesArr[6].gameplay}
+          matchTees={matchesArr[6].matchTees}
+          player1={p9}
+          player2={p3}
+          player3={p10}
+          player4={p4}
+          player1Tees={matchesArr[6].p9Tees}
+          player2Tees={matchesArr[6].p3Tees}
+          player3Tees={matchesArr[6].p10Tees}
+          player4Tees={matchesArr[6].p4Tees}
+          player1MatchHandicap=""
+          player2MatchHandicap=""
+          player3MatchHandicap=""
+          player4MatchHandicap=""
+        />
+        <Match
+          matchId={`21 ${matchesArr[6].matchId}`}
+          year={matchesArr[6].year}
+          courseMatch={matchesArr[6].courseMatch}
+          holes={matchesArr[6].holes}
+          matchHandicap={matchesArr[6].matchHandicap}
+          gameplay={matchesArr[6].gameplay}
+          matchTees={matchesArr[6].matchTees}
           player1={p7}
           player2={p1}
           player3={p8}
@@ -842,46 +877,6 @@ const TopicPage = ({ location }) => {
           player3MatchHandicap=""
           player4MatchHandicap=""
         />
-        <Match
-          matchId={`20 ${matchesArr[6].matchId}`}
-          year={matchesArr[6].year}
-          courseMatch={matchesArr[6].courseMatch}
-          holes={matchesArr[6].holes}
-          matchHandicap={matchesArr[6].matchHandicap}
-          gameplay={matchesArr[6].gameplay}
-          player1={p9}
-          player2={p4}
-          player3={p12}
-          player4={p5}
-          player1Tees={matchesArr[6].p9Tees}
-          player2Tees={matchesArr[6].p4Tees}
-          player3Tees={matchesArr[6].p12Tees}
-          player4Tees={matchesArr[6].p5Tees}
-          player1MatchHandicap=""
-          player2MatchHandicap=""
-          player3MatchHandicap=""
-          player4MatchHandicap=""
-        />
-        <Match
-          matchId={`21 ${matchesArr[6].matchId}`}
-          year={matchesArr[6].year}
-          courseMatch={matchesArr[6].courseMatch}
-          holes={matchesArr[6].holes}
-          matchHandicap={matchesArr[6].matchHandicap}
-          gameplay={matchesArr[6].gameplay}
-          player1={p10}
-          player2={p3}
-          player3={p11}
-          player4={p6}
-          player1Tees={matchesArr[6].p10Tees}
-          player2Tees={matchesArr[6].p3Tees}
-          player3Tees={matchesArr[6].p11Tees}
-          player4Tees={matchesArr[6].p6Tees}
-          player1MatchHandicap=""
-          player2MatchHandicap=""
-          player3MatchHandicap=""
-          player4MatchHandicap=""
-        /> */}
       </MatchNavSection>
 
       <MatchNavSection
@@ -894,17 +889,18 @@ const TopicPage = ({ location }) => {
           </span>
           <a href={day2.round2.courseLink}>{day2.round2.courseName}</a>
         </div>
-        {/* <Match
+        <Match
           matchId={`22 ${matchesArr[7].matchId}`}
           year={matchesArr[7].year}
           courseMatch={matchesArr[7].courseMatch}
           holes={matchesArr[7].holes}
           matchHandicap={matchesArr[7].matchHandicap}
           gameplay={matchesArr[7].gameplay}
-          player1={p8}
-          player2={p2}
-          player1Tees={matchesArr[7].p8Tees}
-          player2Tees={matchesArr[7].p2Tees}
+          matchTees={matchesArr[7].matchTees}
+          player1={p12}
+          player2={p6}
+          player1Tees={matchesArr[7].p12Tees}
+          player2Tees={matchesArr[7].p6Tees}
           player1MatchHandicap=""
           player2MatchHandicap=""
         />
@@ -915,10 +911,11 @@ const TopicPage = ({ location }) => {
           holes={matchesArr[7].holes}
           matchHandicap={matchesArr[7].matchHandicap}
           gameplay={matchesArr[7].gameplay}
-          player1={p9}
-          player2={p4}
-          player1Tees={matchesArr[7].p9Tees}
-          player2Tees={matchesArr[7].p4Tees}
+          matchTees={matchesArr[7].matchTees}
+          player1={p11}
+          player2={p5}
+          player1Tees={matchesArr[7].p11Tees}
+          player2Tees={matchesArr[7].p5Tees}
           player1MatchHandicap=""
           player2MatchHandicap=""
         />
@@ -929,10 +926,11 @@ const TopicPage = ({ location }) => {
           holes={matchesArr[7].holes}
           matchHandicap={matchesArr[7].matchHandicap}
           gameplay={matchesArr[7].gameplay}
-          player1={p11}
-          player2={p3}
-          player1Tees={matchesArr[7].p11Tees}
-          player2Tees={matchesArr[7].p3Tees}
+          matchTees={matchesArr[7].matchTees}
+          player1={p10}
+          player2={p4}
+          player1Tees={matchesArr[7].p10Tees}
+          player2Tees={matchesArr[7].p4Tees}
           player1MatchHandicap=""
           player2MatchHandicap=""
         />
@@ -943,10 +941,11 @@ const TopicPage = ({ location }) => {
           holes={matchesArr[7].holes}
           matchHandicap={matchesArr[7].matchHandicap}
           gameplay={matchesArr[7].gameplay}
-          player1={p7}
-          player2={p1}
-          player1Tees={matchesArr[7].p7Tees}
-          player2Tees={matchesArr[7].p1Tees}
+          matchTees={matchesArr[7].matchTees}
+          player1={p9}
+          player2={p3}
+          player1Tees={matchesArr[7].p9Tees}
+          player2Tees={matchesArr[7].p3Tees}
           player1MatchHandicap=""
           player2MatchHandicap=""
         />
@@ -958,10 +957,11 @@ const TopicPage = ({ location }) => {
           holes={matchesArr[7].holes}
           matchHandicap={matchesArr[7].matchHandicap}
           gameplay={matchesArr[7].gameplay}
-          player1={p10}
-          player2={p5}
-          player1Tees={matchesArr[7].p10Tees}
-          player2Tees={matchesArr[7].p5Tees}
+          matchTees={matchesArr[7].matchTees}
+          player1={p8}
+          player2={p2}
+          player1Tees={matchesArr[7].p8Tees}
+          player2Tees={matchesArr[7].p2Tees}
           player1MatchHandicap=""
           player2MatchHandicap=""
         />
@@ -972,13 +972,14 @@ const TopicPage = ({ location }) => {
           holes={matchesArr[7].holes}
           matchHandicap={matchesArr[7].matchHandicap}
           gameplay={matchesArr[7].gameplay}
-          player1={p12}
-          player2={p6}
-          player1Tees={matchesArr[7].p12Tees}
-          player2Tees={matchesArr[7].p6Tees}
+          matchTees={matchesArr[7].matchTees}
+          player1={p7}
+          player2={p1}
+          player1Tees={matchesArr[7].p7Tees}
+          player2Tees={matchesArr[7].p1Tees}
           player1MatchHandicap=""
           player2MatchHandicap=""
-        /> */}
+        />
       </MatchNavSection>
     </Layout>
   )
