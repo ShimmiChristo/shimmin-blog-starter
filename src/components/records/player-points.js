@@ -104,10 +104,10 @@ const PlayerPoints = ({ name }) => {
           {record?.alternate?.losses ? record?.alternate?.losses : 0}
         </div>
         <div className="col-6 col-lg-1 text-center fontSize-0">
-          {record?.brambleAlternate?.wins ? record?.brambleAlternate?.wins : 0}-
-          {record?.brambleAlternate?.ties ? record?.brambleAlternate?.ties : 0}-
-          {record?.brambleAlternate?.losses
-            ? record?.brambleAlternate?.losses
+          {record?.greensomes?.wins ? record?.greensomes?.wins : 0}-
+          {record?.greensomes?.ties ? record?.greensomes?.ties : 0}-
+          {record?.greensomes?.losses
+            ? record?.greensomes?.losses
             : 0}
         </div>
         <div className="col-6 col-lg-1 text-center fontSize-0">

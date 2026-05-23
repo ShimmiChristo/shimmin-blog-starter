@@ -51,7 +51,7 @@ const TopicPage = ({ data, location }) => {
             link: "r1-two-ball-bramble",
           },
           {
-            name: "Bramble Alternate",
+            name: "Greensomes",
             round: "Round 2.1",
             link: "r2-bramble-alternate",
           },
@@ -155,7 +155,7 @@ const TopicPage = ({ data, location }) => {
           <a href={course["classic1"].link}>{course[`classic1`].name}</a>
         </div>
         <MatchOld
-          matchId="2.1 - Bramble Alternate. Average handicap"
+          matchId="2.1 - Greensomes. Average handicap"
           courseMatch="classic1"
           matchHandicap="average"
           gameplay=""
@@ -169,7 +169,7 @@ const TopicPage = ({ data, location }) => {
           player4Handicap="24"
         />
         <MatchOld
-          matchId="2.1 - Bramble Alternate. Average handicap"
+          matchId="2.1 - Greensomes. Average handicap"
           courseMatch="classic1"
           matchHandicap="average"
           gameplay=""

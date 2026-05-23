@@ -15,7 +15,7 @@ const LargestVictoryMargin = () => {
       bramble: 0,
       twoBallBramble: 0,
       alternate: 0,
-      brambleAlternate: 0,
+      greensomes: 0,
       pinehurst: 0,
       scramble: 0,
       singles: 0,

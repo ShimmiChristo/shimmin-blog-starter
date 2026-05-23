@@ -1,6 +1,6 @@
 [
   {
-    "_2025": {
+    "_2026": {
       "teams": {
         "team1": {
           "name": "green team",
@@ -57,8 +57,8 @@
               "losses": 0
             },
             {
-              "id": "brambleAlternate",
-              "game": "Bramble Alternate",
+              "id": "greensomes",
+              "game": "Greensomes",
               "wins": 0,
               "ties": 0,
               "losses": 0
@@ -141,8 +141,194 @@
               "losses": 1
             },
             {
-              "id": "brambleAlternate",
-              "game": "Bramble Alternate",
+              "id": "greensomes",
+              "game": "Greensomes",
+              "wins": 0,
+              "ties": 0,
+              "losses": 0
+            },
+            {
+              "id": "pinehurst",
+              "game": "Pinehurst",
+              "wins": 1,
+              "ties": 1,
+              "losses": 1
+            },
+            {
+              "id": "scramble",
+              "game": "Scramble",
+              "wins": 1,
+              "ties": 1,
+              "losses": 1
+            },
+            {
+              "id": "singles",
+              "game": "Singles",
+              "wins": 3,
+              "ties": 1,
+              "losses": 2
+            }
+          ]
+        }
+      },
+      "year": "2025",
+      "date": "Sept, 27 - Sept, 28",
+      "winner": "",
+      "location": "Bay Harbor, Boyne Highlands",
+      "gamesPlayed": [
+        "bestBall",
+        "twoBestBall",
+        "alternate",
+        "scramble",
+        "bramble",
+        "twoBallBramble",
+        "pinehurst",
+        "singles"
+      ]
+    },
+    "_2025": {
+      "teams": {
+        "team1": {
+          "name": "green team",
+          "nickname": "crohns crushers",
+          "players": ["Matt", "Gordon", "Chris", "Derek", "Stephen", "Curtis"],
+          "score": "14.5",
+          "scores": {
+            "dayone": "8.5",
+            "daytwo": "6",
+            "total": "14.5",
+            "round1": "3",
+            "round2": "5",
+            "round3": "7",
+            "round4": "8.5",
+            "round5": "9.5",
+            "round6": "10.5",
+            "round7": "12",
+            "round8": "14.5"
+          },
+          "points": [
+            {
+              "id": "bestBall",
+              "game": "Best Ball",
+              "wins": 3,
+              "ties": 0,
+              "losses": 0
+            },
+            {
+              "id": "twoBestBall",
+              "game": "Best Ball",
+              "wins": 2,
+              "ties": 0,
+              "losses": 1
+            },
+            {
+              "id": "bramble",
+              "game": "Bramble",
+              "wins": 1,
+              "ties": 0,
+              "losses": 2
+            },
+            {
+              "id": "twoBallBramble",
+              "game": "Bramble",
+              "wins": 1,
+              "ties": 0,
+              "losses": 2
+            },
+            {
+              "id": "alternate",
+              "game": "Alternate",
+              "wins": 1,
+              "ties": 2,
+              "losses": 0
+            },
+            {
+              "id": "greensomes",
+              "game": "Greensomes",
+              "wins": 0,
+              "ties": 0,
+              "losses": 0
+            },
+            {
+              "id": "pinehurst",
+              "game": "Pinehurst",
+              "wins": 1,
+              "ties": 1,
+              "losses": 1
+            },
+            {
+              "id": "scramble",
+              "game": "Scramble",
+              "wins": 1,
+              "ties": 1,
+              "losses": 1
+            },
+            {
+              "id": "singles",
+              "game": "Singles",
+              "wins": 2,
+              "ties": 1,
+              "losses": 3
+            }
+          ]
+        },
+        "team2": {
+          "name": "blue team",
+          "nickname": "team ramrod",
+          "players": ["Dylan", "RJ", "Craig", "Dan", "Cam", "Evan"],
+          "score": "12.5",
+          "scores": {
+            "dayone": "3.5",
+            "daytwo": "9",
+            "total": "12.5",
+            "round1": "0",
+            "round2": "1",
+            "round3": "2",
+            "round4": "3.5",
+            "round5": "5.5",
+            "round6": "7.5",
+            "round7": "9",
+            "round8": "12.5"
+          },
+          "points": [
+            {
+              "id": "bestBall",
+              "game": "Best Ball",
+              "wins": 0,
+              "ties": 0,
+              "losses": 3
+            },
+            {
+              "id": "twoBestBall",
+              "game": "Best Ball",
+              "wins": 1,
+              "ties": 0,
+              "losses": 2
+            },
+            {
+              "id": "bramble",
+              "game": "Bramble",
+              "wins": 2,
+              "ties": 0,
+              "losses": 1
+            },
+            {
+              "id": "twoBallBramble",
+              "game": "Bramble",
+              "wins": 2,
+              "ties": 0,
+              "losses": 1
+            },
+            {
+              "id": "alternate",
+              "game": "Alternate",
+              "wins": 0,
+              "ties": 2,
+              "losses": 1
+            },
+            {
+              "id": "greensomes",
+              "game": "Greensomes",
               "wins": 0,
               "ties": 0,
               "losses": 0
@@ -243,8 +429,8 @@
               "losses": 2
             },
             {
-              "id": "brambleAlternate",
-              "game": "Bramble Alternate",
+              "id": "greensomes",
+              "game": "Greensomes",
               "wins": 0,
               "ties": 0,
               "losses": 0
@@ -327,8 +513,8 @@
               "losses": 1
             },
             {
-              "id": "brambleAlternate",
-              "game": "Bramble Alternate",
+              "id": "greensomes",
+              "game": "Greensomes",
               "wins": 0,
               "ties": 0,
               "losses": 0
@@ -429,8 +615,8 @@
               "losses": 2
             },
             {
-              "id": "brambleAlternate",
-              "game": "Bramble Alternate",
+              "id": "greensomes",
+              "game": "Greensomes",
               "wins": 0,
               "ties": 0,
               "losses": 0
@@ -513,8 +699,8 @@
               "losses": 1
             },
             {
-              "id": "brambleAlternate",
-              "game": "Bramble Alternate",
+              "id": "greensomes",
+              "game": "Greensomes",
               "wins": 0,
               "ties": 0,
               "losses": 0
@@ -615,8 +801,8 @@
               "losses": 2
             },
             {
-              "id": "brambleAlternate",
-              "game": "Bramble Alternate",
+              "id": "greensomes",
+              "game": "Greensomes",
               "wins": 0,
               "ties": 0,
               "losses": 0
@@ -699,8 +885,8 @@
               "losses": 1
             },
             {
-              "id": "brambleAlternate",
-              "game": "Bramble Alternate",
+              "id": "greensomes",
+              "game": "Greensomes",
               "wins": 0,
               "ties": 0,
               "losses": 0
@@ -801,8 +987,8 @@
               "losses": 0
             },
             {
-              "id": "brambleAlternate",
-              "game": "Bramble Alternate",
+              "id": "greensomes",
+              "game": "Greensomes",
               "wins": 0,
               "ties": 0,
               "losses": 0
@@ -878,8 +1064,8 @@
               "losses": 2
             },
             {
-              "id": "brambleAlternate",
-              "game": "Bramble Alternate",
+              "id": "greensomes",
+              "game": "Greensomes",
               "wins": 0,
               "ties": 0,
               "losses": 0
@@ -944,8 +1130,8 @@
               "losses": 2
             },
             {
-              "id": "brambleAlternate",
-              "game": "Bramble Alternate",
+              "id": "greensomes",
+              "game": "Greensomes",
               "wins": 1,
               "ties": 1,
               "losses": 0
@@ -992,8 +1178,8 @@
               "losses": 0
             },
             {
-              "id": "brambleAlternate",
-              "game": "Bramble Alternate",
+              "id": "greensomes",
+              "game": "Greensomes",
               "wins": 0,
               "ties": 1,
               "losses": 1
@@ -1022,7 +1208,7 @@
       "gamesPlayed": [
         "bestBall",
         "bramble",
-        "brambleAlternate",
+        "greensomes",
         "scramble",
         "singles"
       ]

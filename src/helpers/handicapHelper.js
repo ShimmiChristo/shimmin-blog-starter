@@ -121,7 +121,7 @@ function getPlayerHandicap(player, gameplay, handicaps, hardestHoleNine) {
   // const highHCTeam2 = Math.max(p2, p4)
 
   // if (gameplay === "pinehurst" || gameplay === "scramble") {
-  if (gameplay === "pinehurst") {
+  if (gameplay === "pinehurst" || gameplay === "greensomes") {
     // * get 9 hole HC
     let p1NineHoleHC = p1 / 2
     let p2NineHoleHC = p2 / 2
@@ -325,7 +325,7 @@ function getMatchHandicap(
   const p3HC = player3HC !== undefined ? player3HC : 99
   const p4HC = player4HC !== undefined ? player4HC : 99
 
-  if (gameplay === "scramble" || gameplay === "pinehurst") {
+  if (gameplay === "greensomes" || gameplay === "pinehurst") {
     let lowHCTeam1 = Math.min(p1HC, p2HC)
     let highHCTeam1 = Math.max(p1HC, p2HC)
     let lowHCTeam2 = Math.min(p3HC, p4HC)

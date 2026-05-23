@@ -188,7 +188,7 @@ const TopicPage = ({ data, location }) => {
             </p>
             <p>Handicap allowance is 80% of combined team handicap</p>
 
-            <h3 className="h4 mt-4 pt-1">Bramble Alternate/Greensomes</h3>
+            <h3 className="h4 mt-4 pt-1">Greensomes/Greensomes</h3>
             <p>
               Bramble alternate/greensomes is a variation of Foursomes where
               both partners play from the teeing area and one of the two tee

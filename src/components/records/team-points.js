@@ -16,7 +16,7 @@ const TeamPoints = () => {
       bramble: 0,
       twoBallBramble: 0,
       alternate: 0,
-      brambleAlternate: 0,
+      greensomes: 0,
       pinehurst: 0,
       scramble: 0,
       singles: 0,
@@ -99,9 +99,9 @@ const TeamPoints = () => {
           </div>
         </div>
         <div className="row border-bottom py-2">
-          <div className="col-4 text-center fontSize-0">Bramble Alternate</div>
-          <div className="col-4 text-center fontSize-0">{team1.brambleAlternate}</div>
-          <div className="col-4 text-center fontSize-0">{team2.brambleAlternate}</div>
+          <div className="col-4 text-center fontSize-0">Greensomes</div>
+          <div className="col-4 text-center fontSize-0">{team1.greensomes}</div>
+          <div className="col-4 text-center fontSize-0">{team2.greensomes}</div>
         </div>
         <div className="row border-bottom py-2">
           <div className="col-4 text-center fontSize-0">Alternate</div>

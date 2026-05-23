@@ -59,7 +59,7 @@
             "ties": 0,
             "losses": 1
           },
-          "brambleAlternate": {
+          "greensomes": {
             "wins": 0,
             "ties": 0,
             "losses": 0
@@ -132,7 +132,7 @@
             "ties": 0,
             "losses": 0
           },
-          "brambleAlternate": {
+          "greensomes": {
             "wins": 0,
             "ties": 1,
             "losses": 0
@@ -213,7 +213,7 @@
             "ties": 1,
             "losses": 0
           },
-          "brambleAlternate": {
+          "greensomes": {
             "wins": 0,
             "ties": 0,
             "losses": 1
@@ -288,7 +288,7 @@
             "ties": 1,
             "losses": 0
           },
-          "brambleAlternate": {
+          "greensomes": {
             "wins": 0,
             "ties": 0,
             "losses": 0
@@ -370,7 +370,7 @@
             "ties": 0,
             "losses": 1
           },
-          "brambleAlternate": {
+          "greensomes": {
             "wins": 0,
             "ties": 1,
             "losses": 0
@@ -452,7 +452,7 @@
             "ties": 0,
             "losses": 0
           },
-          "brambleAlternate": {
+          "greensomes": {
             "wins": 0,
             "ties": 1,
             "losses": 0
@@ -533,7 +533,7 @@
             "ties": 1,
             "losses": 0
           },
-          "brambleAlternate": {
+          "greensomes": {
             "wins": 0,
             "ties": 0,
             "losses": 1
@@ -608,7 +608,7 @@
             "ties": 0,
             "losses": 1
           },
-          "brambleAlternate": {
+          "greensomes": {
             "wins": 0,
             "ties": 0,
             "losses": 0
@@ -683,7 +683,7 @@
             "ties": 0,
             "losses": 0
           },
-          "brambleAlternate": {
+          "greensomes": {
             "wins": 0,
             "ties": 0,
             "losses": 0
@@ -758,7 +758,7 @@
             "ties": 1,
             "losses": 0
           },
-          "brambleAlternate": {
+          "greensomes": {
             "wins": 0,
             "ties": 0,
             "losses": 0
@@ -839,7 +839,7 @@
             "ties": 0,
             "losses": 0
           },
-          "brambleAlternate": {
+          "greensomes": {
             "wins": 1,
             "ties": 0,
             "losses": 0
@@ -920,7 +920,7 @@
             "ties": 0,
             "losses": 1
           },
-          "brambleAlternate": {
+          "greensomes": {
             "wins": 0,
             "ties": 1,
             "losses": 0
@@ -1001,7 +1001,7 @@
             "ties": 0,
             "losses": 0
           },
-          "brambleAlternate": {
+          "greensomes": {
             "wins": 1,
             "ties": 0,
             "losses": 0

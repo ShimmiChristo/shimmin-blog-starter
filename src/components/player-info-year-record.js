@@ -93,7 +93,7 @@ function PlayerInfoThisYearRecord({ year, teamColor, post, playerData }) {
   const record = getOverallRecord(playerData)
   // const bestBallRecord = getGameRecord(playerData, "bestBall")
   // const brambleRecord = getGameRecord(playerData, "bramble")
-  // const brambleAltRecord = getGameRecord(playerData, "brambleAlternate")
+  // const brambleAltRecord = getGameRecord(playerData, "greensomes")
   // const scrambleRecord = getGameRecord(playerData, "scramble")
 
   return (

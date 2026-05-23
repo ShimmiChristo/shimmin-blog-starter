@@ -31,7 +31,7 @@ const PlayerRecordsPage = ({ location }) => {
           <div className="col-6 col-lg-1 text-center fontSize-0">Bramble</div>
           <div className="col-6 col-lg-1 text-center fontSize-0">2 Ball Bramble</div>
           <div className="col-6 col-lg-1 text-center fontSize-0">Alternate</div>
-          <div className="col-6 col-lg-1 text-center fontSize-0">Bramble Alternate</div>
+          <div className="col-6 col-lg-1 text-center fontSize-0">Greensomes</div>
           <div className="col-6 col-lg-1 text-center fontSize-0">Scramble</div>
           <div className="col-6 col-lg-1 text-center fontSize-0">Pinehurst</div>
           <div className="col-6 col-lg-1 text-center fontSize-0">Singles</div>
