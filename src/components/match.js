@@ -173,26 +173,26 @@ function Match({
   const p1Name = playerOne.name
   const playerOneHand = player1MatchHandicap
     ? parseInt(player1MatchHandicap)
-    : playerOne.year[`${year}`].handicap
+    : playerOne.year[`${year}`]?.handicap || playerOne.handicap
   const playerTwo = playersUpdateJson[`${player2}`]
   const p2Name = playerTwo.name
   const playerTwoHand = player2MatchHandicap
     ? parseInt(player2MatchHandicap)
-    : playerTwo.year[`${year}`].handicap
+    : playerTwo.year[`${year}`]?.handicap || playerTwo.handicap
   const playerThree = playersUpdateJson[`${player3}`] || undefined
   const p3Name = playerThree?.name
   const playerThreeHand = (() => {
     if (player3MatchHandicap) return parseInt(player3MatchHandicap)
-    else if (playerThree !== undefined && playerThree.year[`${year}`].handicap)
-      return playerThree?.year[`${year}`].handicap
+    else if (playerThree !== undefined && playerThree.year[`${year}`]?.handicap)
+      return playerThree?.year[`${year}`]?.handicap || playerThree.handicap
     else return 99
   })()
   const playerFour = playersUpdateJson[`${player4}`] || undefined
   const p4Name = playerFour?.name
   const playerFourHand = (() => {
     if (player4MatchHandicap) return parseInt(player4MatchHandicap)
-    else if (playerFour !== undefined && playerFour.year[`${year}`].handicap)
-      return playerFour.year[`${year}`].handicap
+    else if (playerFour !== undefined && playerFour.year[`${year}`]?.handicap)
+      return playerFour.year[`${year}`]?.handicap || playerFour.handicap
     else return 99
   })()
 
@@ -520,7 +520,7 @@ function Match({
     p2CourseHC
   ) {
     if (playerObj) {
-      const courseScores = playerObj?.year[`${year}`].scores?.[`${courseMatch}`]
+      const courseScores = playerObj?.year[`${year}`]?.scores?.[`${courseMatch}`]
       const matchScoresArr = [...courseScores[`${holes}`]]
       const totalScore = matchScoresArr.reduce(
         (a, b) => (a === 99 || b === 99 ? a + 0 : a + b),
