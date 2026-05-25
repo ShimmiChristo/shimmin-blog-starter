@@ -24,13 +24,13 @@ function calcTeamScore(
 
   const scoresArr = []
   let playerOneScore =
-    playersUpdateJson[`${player1Name}`]?.year[`${year}`].scores[
+    playersUpdateJson[`${player1Name}`]?.year[`${year}`]?.scores[
       `${courseMatch}`
     ][`${holes}`] // [scores]
   let playerOneHandicap = parseInt(player1HandicapParam)
   const playerTwo = player2Name !== undefined ? player2Name : undefined
   let playerTwoScore =
-    playersUpdateJson[`${playerTwo}`]?.year[`${year}`].scores[`${courseMatch}`][
+    playersUpdateJson[`${playerTwo}`]?.year[`${year}`]?.scores[`${courseMatch}`][
       `${holes}`
     ] // [scores]
 

@@ -5,7 +5,7 @@
         "team1": {
           "name": "green team",
           "nickname": "crohns crushers",
-          "players": ["Matt", "Gordon", "Chris", "Derek", "Stephen", "Curtis"],
+          "players": ["Matt", "Gordon", "Chris", "Derek", "Travis", "Curtis"],
           "score": "14.5",
           "scores": {
             "dayone": "8.5",
