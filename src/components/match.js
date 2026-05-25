@@ -1,3 +1,4 @@
+/* global process */
 import React, { useState } from "react"
 import { Link } from "gatsby"
 import { GatsbyImage, getImage } from "gatsby-plugin-image"
@@ -520,7 +521,17 @@ function Match({
     p2CourseHC
   ) {
     if (playerObj) {
-      const courseScores = playerObj?.year[`${year}`]?.scores?.[`${courseMatch}`]
+      const courseScores =
+        playerObj?.year[`${year}`]?.scores?.[`${courseMatch}`]
+      if (!courseScores && process.env.NODE_ENV === "development") {
+        console.error(
+          playerObj.name +
+            " does not have scores for " +
+            courseMatch +
+            " in " +
+            year
+        )
+      }
       const matchScoresArr = [...courseScores[`${holes}`]]
       const totalScore = matchScoresArr.reduce(
         (a, b) => (a === 99 || b === 99 ? a + 0 : a + b),

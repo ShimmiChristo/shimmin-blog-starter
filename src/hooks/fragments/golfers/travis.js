@@ -10,6 +10,61 @@ export const travisFragment = graphql`
     }
     handicap
     year {
+      _2026 {
+        handicap
+        id
+        team
+        points {
+          game
+          id
+          wins
+          ties
+          losses
+        }
+        scores {
+          hiddenRiverGolfClub {
+            course
+            frontHandicap
+            front
+            frontTees
+            frontGross
+            back
+            backTees
+            backGross
+            backHandicap
+            useForHandicapIndex
+            use18Holes
+          }
+          crookedTree {
+            course
+            frontHandicap
+            front
+            back
+            backHandicap
+          }
+          bayHarborPreserveLinks {
+            course
+            frontHandicap
+            front
+            back
+            backHandicap
+          }
+          boyneHighlandsArthurHills {
+            course
+            frontHandicap
+            front
+            back
+            backHandicap
+          }
+          boyneHighlandsDonaldRoss {
+            course
+            frontHandicap
+            front
+            back
+            backHandicap
+          }
+        }
+      }
       _2023 {
         handicap
         id
@@ -50,7 +105,7 @@ export const travisFragment = graphql`
             backHandicap
           }
           boyneHighlandsHeather {
-           course
+            course
             front
             frontHandicap
             frontGross
