@@ -6,7 +6,6 @@ function calcTeamScore(
   year,
   courseMatch,
   holes,
-  matchHandicap,
   gameplay,
   player1Param,
   player1HandicapParam,

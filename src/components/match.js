@@ -119,7 +119,6 @@ function Match({
   year,
   courseMatch,
   holes,
-  matchHandicap,
   gameplay,
   matchTees,
   player1,
@@ -136,6 +135,7 @@ function Match({
   player4MatchHandicap,
   ytVideo,
 }) {
+  const matchHandicap = "full"
   const { course } = CourseInfo()
   const playersUpdateJson = PlayerInfoUpdate()
   const { nodes } = usePlayersPosts()
@@ -330,7 +330,6 @@ function Match({
     year,
     courseMatch,
     holes,
-    matchHandicap,
     gameplay,
     player1,
     p1HCglobal,
@@ -346,7 +345,6 @@ function Match({
     year,
     courseMatch,
     holes,
-    matchHandicap,
     gameplay,
     player2,
     p2HCglobal,
@@ -392,7 +390,6 @@ function Match({
       year,
       courseMatch,
       holes,
-      matchHandicap,
       gameplay,
       player1,
       p1HCglobal,
@@ -403,7 +400,6 @@ function Match({
       year,
       courseMatch,
       holes,
-      matchHandicap,
       gameplay,
       player2,
       p2HCglobal,
@@ -666,7 +662,7 @@ function Match({
   return (
     <Section
       data-match={`${courseMatch}`}
-      data-handicap={`${matchHandicap}`}
+      // data-handicap={`${matchHandicap}`}
       className={`match__container ${sectionHeight}`}
     >
       <CloseBtn onClick={matchCardClick} tabIndex="0">
@@ -1000,7 +996,6 @@ Match.propTypes = {
   year: PropTypes.string,
   holes: PropTypes.string,
   courseMatch: PropTypes.string,
-  matchHandicap: PropTypes.string,
   gameplay: PropTypes.string,
   matchTees: PropTypes.arrayOf(PropTypes.string),
   player1: PropTypes.string,

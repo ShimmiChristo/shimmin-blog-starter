@@ -71,3 +71,8 @@ export const blake = (
     Blake
   </Link>
 )
+export const stephen = (
+  <Link to="/players/stephen/" className="green underline">
+    Stephen
+  </Link>
+)

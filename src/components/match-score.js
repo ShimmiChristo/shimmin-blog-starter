@@ -180,28 +180,28 @@ function MatchScore({ year, lastYearWinner, location }) {
   let team1RoundScore = currentYear.team1.scores.total
   let team2RoundScore = currentYear.team2.scores.total
 
-  if (location?.hash.includes("#r1f")) {
+  if (location?.hash.includes("#r1f") || location?.hash.includes("#round-1")) {
     team1RoundScore = currentYear.team1.scores.round1
     team2RoundScore = currentYear.team2.scores.round1
-  } else if (location?.hash.includes("#r1b")) {
+  } else if (location?.hash.includes("#r1b") || location?.hash.includes("#round-2")) {
     team1RoundScore = currentYear.team1.scores.round2
     team2RoundScore = currentYear.team2.scores.round2
-  } else if (location?.hash.includes("#r2f")) {
+  } else if (location?.hash.includes("#r2f") || location?.hash.includes("#round-3")) {
     team1RoundScore = currentYear.team1.scores.round3
     team2RoundScore = currentYear.team2.scores.round3
-  } else if (location?.hash.includes("#r2b")) {
+  } else if (location?.hash.includes("#r2b") || location?.hash.includes("#round-4")) {
     team1RoundScore = currentYear.team1.scores.round4
     team2RoundScore = currentYear.team2.scores.round4
-  } else if (location?.hash.includes("#r3f")) {
+  } else if (location?.hash.includes("#r3f") || location?.hash.includes("#round-5")) {
     team1RoundScore = currentYear.team1.scores.round5
     team2RoundScore = currentYear.team2.scores.round5
-  } else if (location?.hash.includes("#r3b")) {
+  } else if (location?.hash.includes("#r3b") || location?.hash.includes("#round-6")) {
     team1RoundScore = currentYear.team1.scores.round6
     team2RoundScore = currentYear.team2.scores.round6
-  } else if (location?.hash.includes("#r4f")) {
+  } else if (location?.hash.includes("#r4f") || location?.hash.includes("#round-7")) {
     team1RoundScore = currentYear.team1.scores.round7
     team2RoundScore = currentYear.team2.scores.round7
-  } else if (location?.hash.includes("#r4b")) {
+  } else if (location?.hash.includes("#r4b") || location?.hash.includes("#round-8")) {
     team1RoundScore = currentYear.team1.scores.round8
     team2RoundScore = currentYear.team2.scores.round8
   } else {
@@ -308,9 +308,7 @@ function MatchScore({ year, lastYearWinner, location }) {
       <ScoreTracker>
         <ScoreTrackerBar>
           <div>
-            <ScoreTeamOne className="h1">
-              {team1RoundScore}
-            </ScoreTeamOne>
+            <ScoreTeamOne className="h1">{team1RoundScore}</ScoreTeamOne>
             <ScoreTrackerTeamOne
               className="ScoreTrackerTeam team-one-color"
               data-team={currentYear.team1.name.split(" ")[0]}
@@ -318,9 +316,7 @@ function MatchScore({ year, lastYearWinner, location }) {
             ></ScoreTrackerTeamOne>
           </div>
           <div>
-            <ScoreTeamTwo className="h1">
-              {team2RoundScore}
-            </ScoreTeamTwo>
+            <ScoreTeamTwo className="h1">{team2RoundScore}</ScoreTeamTwo>
             <ScoreTrackerTeamTwo
               className="ScoreTrackerTeam team-two-color"
               data-team={currentYear.team2.name.split(" ")[0]}
