@@ -12,7 +12,15 @@ function calcPops(holes, score, p1HC, handicap, holePar) {
   // 20 is a random high number
   const actualScore = score < 20 ? score : holePar
   const total = actualScore - playerHCScore
-  if (total >= 2) {
+  if (total >= 3) {
+    return (
+      <>
+        <div className="pops pops--1"></div>
+        <div className="pops pops--2"></div>
+        <div className="pops pops--3"></div>
+      </>
+    )
+  } else if (total >= 2) {
     return (
       <>
         <div className="pops pops--1"></div>

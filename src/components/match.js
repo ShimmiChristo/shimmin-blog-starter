@@ -134,6 +134,8 @@ function Match({
   player3MatchHandicap,
   player4MatchHandicap,
   ytVideo,
+  matchPreview,
+  matchTime,
 }) {
   const matchHandicap = "full"
   const { course } = CourseInfo()
@@ -351,8 +353,9 @@ function Match({
     player4,
     p4HCglobal
   )
-  const totalNetTeamTwoScore = teamTwoScoreArray.reduce((a, b) =>
-    b === 99 || b === "-" ? a + 0 : a + b
+  const totalNetTeamTwoScore = teamTwoScoreArray.reduce(
+    (a, b) => (b === 99 || b === "-" ? a + 0 : a + b),
+    0
   )
 
   function calcHoleWinner(hole) {
@@ -366,6 +369,10 @@ function Match({
       team: "",
       teamOne: 0,
       teamTwo: 0,
+    }
+
+    if (gameplay.includes("strokeplay")) {
+      return teamWins
     }
 
     if (teamOneScoreArray[holeIndex] > teamTwoScoreArray[holeIndex]) {
@@ -415,52 +422,81 @@ function Match({
       holesRemaining: courseHoles.length,
     }
 
-    for (var i = 0; i < courseHoles.length; i++) {
-      holeIndex = i
-      teamWins.holesRemaining--
-      if (teamOneScoreArray[holeIndex] > teamTwoScoreArray[holeIndex]) {
-        teamWins.teamTwo++
-        if (teamWins.teamTwo - teamWins.teamOne > teamWins.holesRemaining) {
-          teamWins.winningTeam = "teamTwo"
-          teamWins.score = teamWins.teamTwo - teamWins.teamOne
-          return teamWins
-        } else if (
-          teamWins.teamTwo - teamWins.teamOne === 0 &&
-          teamWins.holesRemaining === 0
-        ) {
-          return teamWins
-        }
-      } else if (teamOneScoreArray[holeIndex] < teamTwoScoreArray[holeIndex]) {
-        teamWins.teamOne++
-        if (teamWins.teamOne - teamWins.teamTwo > teamWins.holesRemaining) {
-          teamWins.winningTeam = "teamOne"
-          teamWins.score = teamWins.teamOne - teamWins.teamTwo
-          return teamWins
-        } else if (
-          teamWins.teamOne - teamWins.teamTwo === 0 &&
-          teamWins.holesRemaining === 0
-        ) {
-          return teamWins
-        }
+    // strokeplay matches are decided by total net score, not holes won, so we return null for hole winner and winning team
+    if (gameplay.includes("strokeplay")) {
+      if (totalNetTeamOneScore < totalNetTeamTwoScore) {
+        teamWins.winningTeam = "teamOne"
+        teamWins.score = totalNetTeamOneScore - courseParP1
+        return teamWins
+      } else if (totalNetTeamTwoScore < totalNetTeamOneScore) {
+        teamWins.winningTeam = "teamTwo"
+        teamWins.score = totalNetTeamOneScore - courseParP2
+        return teamWins
       } else {
-        // checks for ties
-        if (teamWins.teamTwo - teamWins.teamOne > teamWins.holesRemaining) {
-          teamWins.winningTeam = "teamTwo"
-          teamWins.score = teamWins.teamTwo - teamWins.teamOne
+        if (totalNetTeamOneScore === 0 || totalNetTeamTwoScore === 0) {
+          teamWins.winningTeam = "AS"
+          teamWins.score = ""
           return teamWins
+        }
+        teamWins.winningTeam = "AS"
+        teamWins.score = `AS (${totalNetTeamOneScore - courseParP1})`
+        return teamWins
+      }
+    } else {
+      for (var i = 0; i < courseHoles.length; i++) {
+        holeIndex = i
+        teamWins.holesRemaining--
+        if (teamOneScoreArray[holeIndex] > teamTwoScoreArray[holeIndex]) {
+          teamWins.teamTwo++
+          if (teamWins.teamTwo - teamWins.teamOne > teamWins.holesRemaining) {
+            teamWins.winningTeam = "teamTwo"
+            teamWins.score = teamWins.teamTwo - teamWins.teamOne
+            return teamWins
+          } else if (
+            teamWins.teamTwo - teamWins.teamOne === 0 &&
+            teamWins.holesRemaining === 0
+          ) {
+            return teamWins
+          }
         } else if (
-          teamWins.teamOne - teamWins.teamTwo >
-          teamWins.holesRemaining
+          teamOneScoreArray[holeIndex] < teamTwoScoreArray[holeIndex]
         ) {
-          teamWins.winningTeam = "teamOne"
-          teamWins.score = teamWins.teamOne - teamWins.teamTwo
-          return teamWins
-        } else if (
-          teamWins.teamOne - teamWins.teamTwo === 0 &&
-          teamWins.teamTwo - teamWins.teamOne === 0 &&
-          teamWins.holesRemaining === 0
-        ) {
-          return teamWins
+          teamWins.teamOne++
+          if (teamWins.teamOne - teamWins.teamTwo > teamWins.holesRemaining) {
+            teamWins.winningTeam = "teamOne"
+            teamWins.score = teamWins.teamOne - teamWins.teamTwo
+            return teamWins
+          } else if (
+            teamWins.teamOne - teamWins.teamTwo === 0 &&
+            teamWins.holesRemaining === 0
+          ) {
+            return teamWins
+          }
+        } else {
+          if (totalNetTeamOneScore === 0 && totalNetTeamTwoScore === 0 && teamWins.holesRemaining === 0) {
+            teamWins.winningTeam = ""
+            return teamWins
+          }
+          // checks for ties
+          if (teamWins.teamTwo - teamWins.teamOne > teamWins.holesRemaining) {
+            teamWins.winningTeam = "teamTwo"
+            teamWins.score = teamWins.teamTwo - teamWins.teamOne
+            return teamWins
+          } else if (
+            teamWins.teamOne - teamWins.teamTwo >
+            teamWins.holesRemaining
+          ) {
+            teamWins.winningTeam = "teamOne"
+            teamWins.score = teamWins.teamOne - teamWins.teamTwo
+            return teamWins
+          } else if (
+            teamWins.teamOne - teamWins.teamTwo === 0 &&
+            teamWins.teamTwo - teamWins.teamOne === 0 &&
+            teamWins.holesRemaining === 0
+          ) {
+            teamWins.winningTeam = "AS"
+            return teamWins
+          }
         }
       }
     }
@@ -478,23 +514,36 @@ function Match({
       return `team-one-color text-white`
     } else if (teamFinalScores?.winningTeam === "teamTwo") {
       return `team-two-color text-white`
+    } else {
+      return "tie-color"
     }
   }
 
   function displayWinningTeam() {
-    if (teamFinalScores?.winningTeam === "AS") {
-      return teamFinalScores?.winningTeam
-    } else if (
-      teamFinalScores?.holesRemaining === 0 &&
-      teamFinalScores?.winningTeam !== "AS"
-    ) {
-      return teamFinalScores?.score + "UP"
+    // strokeplay matches display score as "X strokes under/over" rather than "X up with Y holes remaining"
+    if (gameplay.includes("strokeplay")) {
+      return teamFinalScores?.score
     } else {
-      return teamFinalScores?.score + "&" + teamFinalScores?.holesRemaining
+      if (teamFinalScores?.winningTeam === "") {
+        return ""
+      }
+      if (teamFinalScores?.winningTeam === "AS") {
+        return teamFinalScores?.winningTeam
+      } else if (
+        teamFinalScores?.holesRemaining === 0 &&
+        teamFinalScores?.winningTeam !== "AS"
+      ) {
+        return teamFinalScores?.score + "UP"
+      } else {
+        return teamFinalScores?.score + "&" + teamFinalScores?.holesRemaining
+      }
     }
   }
 
   function isMatchOver(hole) {
+    if (gameplay.includes("strokeplay")) {
+      return false
+    }
     // gray out holes once the score is irrelevant
     const winningHole = 9 - teamFinalScores?.holesRemaining
     if (hole > winningHole) {
@@ -537,7 +586,14 @@ function Match({
         .map((score, i) =>
           calcPlayerScore(score, p1HC, courseHoles[i].handicap, holes)
         )
-        .reduce((a, b) => (a === 99 || b === 99 ? a + 0 : a + b), 0)
+        .reduce((a, b) => {
+          if (a === 99 || b === 99 || a === "-" || b === "-") {
+            return a + 0
+          }
+          return a + b
+        }, 0)
+
+      // const totalNetScore = matchScoresArr.reduce((a, b) => (a === 99 || b === 99 ? a + 0 : a + b), 0)
       const oneScoreGameplay = ["scramble", "alternate", "pinehurst"].includes(
         gameplay
       )
@@ -700,8 +756,18 @@ function Match({
         </div>
 
         <div className="team__scores py-2">
-          <div className={"bk-gray font-weight-bold " + getWinningColor()}>
-            {displayWinningTeam()}
+          <div
+            className={
+              displayWinningTeam() === "" && !matchPreview
+                ? "d-none"
+                : "bk-gray font-weight-bold " + getWinningColor()
+            }
+          >
+            {matchPreview ? (
+              <div className="match-preview">{matchTime}</div>
+            ) : (
+              displayWinningTeam()
+            )}
           </div>
         </div>
 

@@ -170,10 +170,14 @@ body {
   margin: 0.5rem 1rem;
   padding: 1rem 2rem;
   text-align: center;
-  letter-spacing: 2px;
+  width: 100%;
+  font-size: 1.25rem;
 }
 .team__scores {
   display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 33%;
 }
 .pops {
   display: inline-block;
@@ -191,6 +195,10 @@ body {
 .pops--2 {
   top: 4px;
   right: 9px;
+}
+.pops--3 {
+  top: 4px;
+  right: 14px;
 }
 
 .scorecard-circle {
@@ -245,6 +253,7 @@ body {
   }
   .team__scores {
     flex-direction: column;
+    width: 100%;
   }
   .course-rating {
     position: absolute;

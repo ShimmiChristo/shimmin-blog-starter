@@ -999,7 +999,7 @@
       "year": {
         "_2026": {
           "id": 2026,
-          "handicap": 99,
+          "handicap": 20,
           "captain": false,
           "team": "blue",
           "scores": {
@@ -1028,7 +1028,7 @@
               "front": [99, 99, 99, 99, 99, 99, 99, 99, 99],
               "frontGross": 891,
               "frontHandicap": 999,
-              "back": [99, 99, 99, 99, 99, 99, 99, 99, 99],
+              "back": [4, 4, 4, 4, 4, 4, 4, 4, 4],
               "backGross": 891,
               "backHandicap": 999
             },
@@ -3158,7 +3158,7 @@
       "year": {
         "_2026": {
           "id": 2026,
-          "handicap": 99,
+          "handicap": 15,
           "captain": false,
           "team": "blue",
           "scores": {
@@ -3187,7 +3187,7 @@
               "front": [99, 99, 99, 99, 99, 99, 99, 99, 99],
               "frontGross": 891,
               "frontHandicap": 999,
-              "back": [99, 99, 99, 99, 99, 99, 99, 99, 99],
+              "back": [5,5,5,5,5,5,5,5,5],
               "backGross": 891,
               "backHandicap": 999
             },
@@ -5260,7 +5260,7 @@
       },
       "handicap": 23.9,
       "year": {
-       "_2026": {
+        "_2026": {
           "id": 2026,
           "handicap": 99,
           "captain": false,
@@ -6397,7 +6397,7 @@
       "year": {
         "_2026": {
           "id": 2026,
-          "handicap": 99,
+          "handicap": 20,
           "captain": false,
           "team": "green",
           "scores": {
@@ -6426,7 +6426,7 @@
               "front": [99, 99, 99, 99, 99, 99, 99, 99, 99],
               "frontGross": 891,
               "frontHandicap": 999,
-              "back": [99, 99, 99, 99, 99, 99, 99, 99, 99],
+              "back": [4, 4, 4, 4, 4, 4, 4, 4, 4],
               "backGross": 891,
               "backHandicap": 999
             },
@@ -9607,7 +9607,7 @@
       },
       "handicap": 11,
       "year": {
-         "_2026": {
+        "_2026": {
           "id": 2026,
           "handicap": 99,
           "captain": false,
@@ -10939,9 +10939,9 @@
       },
       "handicap": 2.0,
       "year": {
-         "_2026": {
+        "_2026": {
           "id": 2026,
-          "handicap": 99,
+          "handicap": 0,
           "captain": false,
           "team": "green",
           "scores": {
@@ -10970,7 +10970,7 @@
               "front": [99, 99, 99, 99, 99, 99, 99, 99, 99],
               "frontGross": 891,
               "frontHandicap": 999,
-              "back": [99, 99, 99, 99, 99, 99, 99, 99, 99],
+              "back": [4, 4, 4, 4, 4, 4, 4, 4, 4],
               "backGross": 891,
               "backHandicap": 999
             },
@@ -13397,7 +13397,7 @@
       },
       "handicap": 22,
       "year": {
-         "_2026": {
+        "_2026": {
           "id": 2026,
           "handicap": 99,
           "captain": false,

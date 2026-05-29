@@ -96,7 +96,7 @@ const TopicPage = ({ location }) => {
       matchId: " - Best Ball Strokeplay. 85% HC",
       matchName: "Best Ball Strokeplay",
       courseMatch: "bayHarborPreserveLinks",
-      gameplay: "bestBallStrokeplay",
+      gameplay: "one-ball-strokeplay",
       matchTees: ["purple", "orange"],
     },
     {
@@ -132,13 +132,25 @@ const TopicPage = ({ location }) => {
 
   const day1 = {
     round1: {
-      times: ["8:00 AM", "10:30 AM"],
+      times: ["8:00 AM", "8:10 AM", "8:20 AM"],
       date: "Friday Sept 25",
       courseLink: course["crookedTree"].link,
       courseName: course["crookedTree"].name,
     },
     round2: {
-      times: ["2:00 PM", "4:30 PM"],
+      times: ["10:30 AM", "10:40 AM", "10:50 AM"],
+      date: "Friday Sept 25",
+      courseLink: course["crookedTree"].link,
+      courseName: course["crookedTree"].name,
+    },
+    round3: {
+      times: ["2:00 PM", "2:10 PM", "2:20 PM"],
+      date: "Friday Sept 25",
+      courseLink: course["bayHarborPreserveLinks"].link,
+      courseName: course["bayHarborPreserveLinks"].name,
+    },
+    round4: {
+      times: ["4:30 PM", "4:40 PM", "4:50 PM"],
       date: "Friday Sept 25",
       courseLink: course["bayHarborPreserveLinks"].link,
       courseName: course["bayHarborPreserveLinks"].name,
@@ -146,13 +158,25 @@ const TopicPage = ({ location }) => {
   }
   const day2 = {
     round1: {
-      times: ["8:00 AM", "10:30 AM"],
+      times: ["8:00 AM", "8:10 AM", "8:20 AM"],
       date: "Saturday Sept 26",
       courseLink: course["boyneHighlandsArthurHills"].link,
       courseName: course["boyneHighlandsArthurHills"].name,
     },
     round2: {
-      times: ["2:00 PM", "4:30 PM"],
+      times: ["10:30 AM", "10:40 AM", "10:50 AM"],
+      date: "Saturday Sept 26",
+      courseLink: course["boyneHighlandsArthurHills"].link,
+      courseName: course["boyneHighlandsArthurHills"].name,
+    },
+    round3: {
+      times: ["2:00 PM", "2:10 PM", "2:20 PM"],
+      date: "Saturday Sept 26",
+      courseLink: course["boyneHighlandsDonaldRoss"].link,
+      courseName: course["boyneHighlandsDonaldRoss"].name,
+    },
+    round4: {
+      times: ["4:30 PM", "4:40 PM", "4:50 PM"],
       date: "Saturday Sept 26",
       courseLink: course["boyneHighlandsDonaldRoss"].link,
       courseName: course["boyneHighlandsDonaldRoss"].name,
@@ -239,6 +263,8 @@ const TopicPage = ({ location }) => {
           player2MatchHandicap=""
           player3MatchHandicap=""
           player4MatchHandicap=""
+          matchPreview={true}
+          matchTime={day1.round1.times[0]}
         />
         <Match
           matchId={`2 ${matchesArr[0].matchId}`}
@@ -260,6 +286,8 @@ const TopicPage = ({ location }) => {
           player2MatchHandicap=""
           player3MatchHandicap=""
           player4MatchHandicap=""
+          matchPreview={true}
+          matchTime={day1.round1.times[1]}
         />
         <Match
           matchId={`3 ${matchesArr[0].matchId}`}
@@ -281,6 +309,8 @@ const TopicPage = ({ location }) => {
           player2MatchHandicap=""
           player3MatchHandicap=""
           player4MatchHandicap=""
+          matchPreview={true}
+          matchTime={day1.round1.times[2]}
         />
       </MatchNavSection>
 
@@ -290,9 +320,9 @@ const TopicPage = ({ location }) => {
       >
         <div className="course__info">
           <span>
-            {day1.round1.date}, {day1.round1.times[1]} at{" "}
+            {day1.round2.date}, {day1.round2.times[0]} at{" "}
           </span>
-          <a href={day1.round1.courseLink}>{day1.round1.courseName}</a>
+          <a href={day1.round2.courseLink}>{day1.round2.courseName}</a>
         </div>
         <Match
           matchId={`4 ${matchesArr[1].matchId}`}
@@ -314,6 +344,8 @@ const TopicPage = ({ location }) => {
           player2MatchHandicap=""
           player3MatchHandicap=""
           player4MatchHandicap=""
+          matchPreview={true}
+          matchTime={day1.round2.times[0]}
         />
         <Match
           matchId={`5 ${matchesArr[1].matchId}`}
@@ -335,6 +367,8 @@ const TopicPage = ({ location }) => {
           player2MatchHandicap=""
           player3MatchHandicap=""
           player4MatchHandicap=""
+          matchPreview={true}
+          matchTime={day1.round2.times[1]}
         />
         <Match
           matchId={`6 ${matchesArr[1].matchId}`}
@@ -356,6 +390,8 @@ const TopicPage = ({ location }) => {
           player2MatchHandicap=""
           player3MatchHandicap=""
           player4MatchHandicap=""
+          matchPreview={true}
+          matchTime={day1.round2.times[2]}
         />
       </MatchNavSection>
 
@@ -365,9 +401,9 @@ const TopicPage = ({ location }) => {
       >
         <div className="course__info">
           <span>
-            {day1.round2.date}, {day1.round2.times[0]} at{" "}
+            {day1.round3.date}, {day1.round3.times[0]} at{" "}
           </span>
-          <a href={day1.round2.courseLink}>{day1.round2.courseName}</a>
+          <a href={day1.round3.courseLink}>{day1.round3.courseName}</a>
         </div>
         <Match
           matchId={`7 ${matchesArr[2].matchId}`}
@@ -440,9 +476,9 @@ const TopicPage = ({ location }) => {
       >
         <div className="course__info">
           <span>
-            {day1.round2.date}, {day1.round2.times[1]} at{" "}
+            {day1.round4.date}, {day1.round4.times[0]} at{" "}
           </span>
-          <a href={day1.round2.courseLink}>{day1.round2.courseName}</a>
+          <a href={day1.round4.courseLink}>{day1.round4.courseName}</a>
         </div>
         <Match
           matchId={`10 ${matchesArr[3].matchId}`}

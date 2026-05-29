@@ -32,7 +32,10 @@ function calcPlayerScore(s, pHand, hHand, holes) {
 
   if (score > "20") {
     return "-"
-  } else if (holes !== undefined && holes !== "total") {
+  } else if (score <= "0") {
+    return 0;
+  }
+   else if (holes !== undefined && holes !== "total") {
     if (Math.round(holeHandicap / 2) <= playerHandicap && score > -10) {
       playerHandicap = playerHandicap - 9
       score--
@@ -254,10 +257,24 @@ function getPlayerHandicap(player, gameplay, handicaps, hardestHoleNine) {
     newHC.player4 = p4NineHoleHC - lowHC
   } else {
     // * best ball games
-    let p1PlayingHC = p1 < 0 ? p1 / 0.9 : p1 * 0.9
-    let p2PlayingHC = p2 < 0 ? p2 / 0.9 : p2 * 0.9
-    let p3PlayingHC = p3 < 0 ? p3 / 0.9 : p3 * 0.9
-    let p4PlayingHC = p4 < 0 ? p4 / 0.9 : p4 * 0.9
+    let p1PlayingHC
+    let p2PlayingHC
+    let p3PlayingHC
+    let p4PlayingHC
+    let handicapPercentage
+    if (gameplay === "one-ball-strokeplay") {
+      handicapPercentage = .85
+      p1PlayingHC = p1 < 0 ? p1 / handicapPercentage : p1 * handicapPercentage
+      p2PlayingHC = p2 < 0 ? p2 / handicapPercentage : p2 * handicapPercentage
+      p3PlayingHC = p3 < 0 ? p3 / handicapPercentage : p3 * handicapPercentage
+      p4PlayingHC = p4 < 0 ? p4 / handicapPercentage : p4 * handicapPercentage
+    } else {
+      handicapPercentage = .90
+      p1PlayingHC = p1 < 0 ? p1 / handicapPercentage : p1 * handicapPercentage
+      p2PlayingHC = p2 < 0 ? p2 / handicapPercentage : p2 * handicapPercentage
+      p3PlayingHC = p3 < 0 ? p3 / handicapPercentage : p3 * handicapPercentage
+      p4PlayingHC = p4 < 0 ? p4 / handicapPercentage : p4 * handicapPercentage
+    }
 
     // * divide by 2 for 9 holes
     // let p1NineHoleHC = getHardestNineHandicap(p1PlayingHC / 2, hardestHoleNine)
