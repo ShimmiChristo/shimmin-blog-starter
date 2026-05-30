@@ -425,6 +425,7 @@ const TopicPage = ({ location }) => {
           player2MatchHandicap=""
           player3MatchHandicap=""
           player4MatchHandicap=""
+          matchTime={day1.round3.times[0]}
         />
         <Match
           matchId={`8 ${matchesArr[2].matchId}`}
@@ -446,6 +447,7 @@ const TopicPage = ({ location }) => {
           player2MatchHandicap=""
           player3MatchHandicap=""
           player4MatchHandicap=""
+          matchTime={day1.round3.times[1]}
         />
         <Match
           matchId={`9 ${matchesArr[2].matchId}`}
@@ -467,6 +469,7 @@ const TopicPage = ({ location }) => {
           player2MatchHandicap=""
           player3MatchHandicap=""
           player4MatchHandicap=""
+          matchTime={day1.round3.times[2]}
         />
       </MatchNavSection>
 
@@ -500,6 +503,7 @@ const TopicPage = ({ location }) => {
           player2MatchHandicap=""
           player3MatchHandicap=""
           player4MatchHandicap=""
+          matchTime={day1.round4.times[0]}
         />
         <Match
           matchId={`11 ${matchesArr[3].matchId}`}
@@ -521,6 +525,7 @@ const TopicPage = ({ location }) => {
           player2MatchHandicap=""
           player3MatchHandicap=""
           player4MatchHandicap=""
+          matchTime={day1.round4.times[1]}
         />
         <Match
           matchId={`12 ${matchesArr[3].matchId}`}
@@ -542,6 +547,7 @@ const TopicPage = ({ location }) => {
           player2MatchHandicap=""
           player3MatchHandicap=""
           player4MatchHandicap=""
+          matchTime={day1.round4.times[2]}
         />
       </MatchNavSection>
 
@@ -576,6 +582,7 @@ const TopicPage = ({ location }) => {
           player2MatchHandicap=""
           player3MatchHandicap=""
           player4MatchHandicap=""
+          matchTime={day2.round1.times[0]}
         />
         <Match
           matchId={`14 ${matchesArr[4].matchId}`}
@@ -597,6 +604,7 @@ const TopicPage = ({ location }) => {
           player2MatchHandicap=""
           player3MatchHandicap=""
           player4MatchHandicap=""
+          matchTime={day2.round1.times[1]}
         />
         <Match
           matchId={`15 ${matchesArr[4].matchId}`}
@@ -618,6 +626,7 @@ const TopicPage = ({ location }) => {
           player2MatchHandicap=""
           player3MatchHandicap=""
           player4MatchHandicap=""
+          matchTime={day2.round1.times[2]}
         />
       </MatchNavSection>
 
@@ -627,9 +636,9 @@ const TopicPage = ({ location }) => {
       >
         <div className="course__info">
           <span>
-            {day2.round1.date}, {day2.round1.times[1]} at{" "}
+            {day2.round2.date}, {day2.round2.times[0]} at{" "}
           </span>
-          <a href={day2.round1.courseLink}>{day2.round1.courseName}</a>
+          <a href={day2.round2.courseLink}>{day2.round2.courseName}</a>
         </div>
         <Match
           matchId={`16 ${matchesArr[5].matchId}`}
@@ -651,6 +660,7 @@ const TopicPage = ({ location }) => {
           player2MatchHandicap=""
           player3MatchHandicap=""
           player4MatchHandicap=""
+          matchTime={day2.round2.times[0]}
         />
         <Match
           matchId={`17 ${matchesArr[5].matchId}`}
@@ -672,6 +682,7 @@ const TopicPage = ({ location }) => {
           player2MatchHandicap=""
           player3MatchHandicap=""
           player4MatchHandicap=""
+          matchTime={day2.round2.times[1]}
         />
         <Match
           matchId={`18 ${matchesArr[5].matchId}`}
@@ -693,6 +704,7 @@ const TopicPage = ({ location }) => {
           player2MatchHandicap=""
           player3MatchHandicap=""
           player4MatchHandicap=""
+          matchTime={day2.round2.times[2]}
         />
       </MatchNavSection>
 
@@ -702,9 +714,9 @@ const TopicPage = ({ location }) => {
       >
         <div className="course__info">
           <span>
-            {day2.round2.date}, {day2.round2.times[0]} at{" "}
+            {day2.round3.date}, {day2.round3.times[0]} at{" "}
           </span>
-          <a href={day2.round2.courseLink}>{day2.round2.courseName}</a>
+          <a href={day2.round3.courseLink}>{day2.round3.courseName}</a>
         </div>
 
         <Match
@@ -727,6 +739,7 @@ const TopicPage = ({ location }) => {
           player2MatchHandicap=""
           player3MatchHandicap=""
           player4MatchHandicap=""
+          matchTime={day2.round3.times[0]}
         />
         <Match
           matchId={`20 ${matchesArr[6].matchId}`}
@@ -748,6 +761,7 @@ const TopicPage = ({ location }) => {
           player2MatchHandicap=""
           player3MatchHandicap=""
           player4MatchHandicap=""
+          matchTime={day2.round3.times[1]}
         />
         <Match
           matchId={`21 ${matchesArr[6].matchId}`}
@@ -769,6 +783,7 @@ const TopicPage = ({ location }) => {
           player2MatchHandicap=""
           player3MatchHandicap=""
           player4MatchHandicap=""
+          matchTime={day2.round3.times[2]}
         />
       </MatchNavSection>
 
@@ -778,9 +793,9 @@ const TopicPage = ({ location }) => {
       >
         <div className="course__info">
           <span>
-            {day2.round2.date}, {day2.round2.times[1]} at{" "}
+            {day2.round4.date}, {day2.round4.times[0]} at{" "}
           </span>
-          <a href={day2.round2.courseLink}>{day2.round2.courseName}</a>
+          <a href={day2.round4.courseLink}>{day2.round4.courseName}</a>
         </div>
         <Match
           matchId={`22 ${matchesArr[7].matchId}`}
@@ -796,6 +811,7 @@ const TopicPage = ({ location }) => {
           player2Tees={playerTees.p6}
           player1MatchHandicap=""
           player2MatchHandicap=""
+          matchTime={day2.round4.times[0]}
         />
         <Match
           matchId={`23 ${matchesArr[7].matchId}`}
@@ -811,6 +827,7 @@ const TopicPage = ({ location }) => {
           player2Tees={playerTees.p5}
           player1MatchHandicap=""
           player2MatchHandicap=""
+          matchTime={day2.round4.times[0]}
         />
         <Match
           matchId={`24 ${matchesArr[7].matchId}`}
@@ -826,6 +843,7 @@ const TopicPage = ({ location }) => {
           player2Tees={playerTees.p4}
           player1MatchHandicap=""
           player2MatchHandicap=""
+          matchTime={day2.round4.times[1]}
         />
         <Match
           matchId={`25 ${matchesArr[7].matchId}`}
@@ -841,6 +859,7 @@ const TopicPage = ({ location }) => {
           player2Tees={playerTees.p3}
           player1MatchHandicap=""
           player2MatchHandicap=""
+          matchTime={day2.round4.times[1]}
         />
 
         <Match
@@ -857,6 +876,7 @@ const TopicPage = ({ location }) => {
           player2Tees={playerTees.p2}
           player1MatchHandicap=""
           player2MatchHandicap=""
+          matchTime={day2.round4.times[2]}
         />
         <Match
           matchId={`27 ${matchesArr[7].matchId}`}
@@ -872,6 +892,7 @@ const TopicPage = ({ location }) => {
           player2Tees={playerTees.p1}
           player1MatchHandicap=""
           player2MatchHandicap=""
+          matchTime={day2.round4.times[2]}
         />
       </MatchNavSection>
     </Layout>
