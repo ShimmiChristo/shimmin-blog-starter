@@ -68,6 +68,16 @@ const PastScoresPage = ({ location }) => {
         </div>
 
         <PastScoresComponent
+          year="2026"
+          date="Sep, 25 - Sep, 26"
+          winner="green"
+          location="Bay Harbor GC, Crooked Tree GC, Boyne Highlands"
+          // score={MatchScore({ year: "_2026" })}
+          // summary={MatchSummary2026()}
+          // venue={MatchVenue2026()}
+          // players={MatchPlayers2026()}
+        />
+        <PastScoresComponent
           year="2025"
           date="Sep, 26 - Sep, 27"
           winner="green"

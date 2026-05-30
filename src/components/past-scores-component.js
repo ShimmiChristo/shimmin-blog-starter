@@ -19,7 +19,7 @@ const PastScoresComponent = ({
   const eventYear = year
   const eventDate = date
   const teamLocation = location ? location : scoreInfo[`_${year}`].location
-  const eventWinner = winner ? winner : scoreInfo[`_${year}`].winner
+  const eventWinner = winner && score ? winner : scoreInfo[`_${year}`].winner
   const teamOneScore = scoreInfo[`_${year}`].teams.team1.score
   const teamOneName = scoreInfo[`_${year}`].teams.team1.name
   const teamTwoScore = scoreInfo[`_${year}`].teams.team2.score
@@ -38,20 +38,22 @@ const PastScoresComponent = ({
           <Link to={`/scores-${eventYear}`}>{eventYear}</Link>
         </div>
         <div className="col-6 col-sm-3 text-capitalize">{eventDate}</div>
-        <div className="col-3 col-sm-2 text-capitalize">{eventWinner}</div>
+        <div className="col-3 col-sm-2 text-capitalize">{eventWinner ? eventWinner : 'TBD'}</div>
         <div className="col-5 col-sm-3 text-capitalize">{teamLocation}</div>
-        <div
-          className="col-4 col-sm-2 link-primary pointer"
-          onClick={openMoreInfoClick}
-        >
-          MORE{" "}
-          <span>
-            <FaChevronDown className={"collapse show" + open} size={"1em"} />
-          </span>
-          <span>
-            <FaChevronUp className={"collapse " + open} size={"1em"} />
-          </span>
-        </div>
+        {summary && score ? (
+          <div
+            className="col-4 col-sm-2 link-primary pointer"
+            onClick={openMoreInfoClick}
+          >
+            MORE{" "}
+            <span>
+              <FaChevronDown className={"collapse show" + open} size={"1em"} />
+            </span>
+            <span>
+              <FaChevronUp className={"collapse " + open} size={"1em"} />
+            </span>
+          </div>
+        ) : null}
       </div>
       <div className={"container collapse " + open}>
         <div className="row py-5">
