@@ -42,52 +42,6 @@ function generateTeamRoundsMain() {
       round: 1,
       matches: [
         {
-          teamA: ["1", "6"],
-        },
-        {
-          teamA: ["2", "3"],
-        },
-        {
-          teamA: ["4", "5"],
-        },
-        {
-          teamB: ["7", "9"],
-        },
-        {
-          teamB: ["10", "11"],
-        },
-        {
-          teamB: ["8", "12"],
-        },
-      ],
-    },
-    {
-      round: 2,
-      matches: [
-        {
-          teamA: ["1", "6"],
-        },
-        {
-          teamA: ["2", "3"],
-        },
-        {
-          teamA: ["4", "5"],
-        },
-        {
-          teamB: ["7", "9"],
-        },
-        {
-          teamB: ["10", "11"],
-        },
-        {
-          teamB: ["8", "12"],
-        },
-      ],
-    },
-    {
-      round: 3,
-      matches: [
-        {
           teamA: ["1", "2"],
         },
         {
@@ -109,7 +63,7 @@ function generateTeamRoundsMain() {
     },
 
     {
-      round: 4,
+      round: 2,
       matches: [
         {
           teamA: ["1", "2"],
@@ -128,6 +82,29 @@ function generateTeamRoundsMain() {
         },
         {
           teamB: ["11", "12"],
+        },
+      ],
+    },
+    {
+      round: 3,
+      matches: [
+        {
+          teamA: ["1", "4"],
+        },
+        {
+          teamA: ["2", "3"],
+        },
+        {
+          teamA: ["5", "6"],
+        },
+        {
+          teamB: ["7", "9"],
+        },
+        {
+          teamB: ["10", "11"],
+        },
+        {
+          teamB: ["8", "12"],
         },
       ],
     },
@@ -719,7 +696,7 @@ function generateTeamRoundsMain() {
     // }
 
     // * max variables
-    const maxPartnerVal = roundsInit.length < 3 ? 3 : 5
+    const maxPartnerVal = roundsInit.length < 3 ? 2 : 3
     const maxOpponentVal = roundsInit.length < 3 ? 4 : 5
 
     if (

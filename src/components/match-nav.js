@@ -88,7 +88,7 @@ function MatchNav({ location, titles }) {
           >
             <a href={`#${title.link}`}>
               <span className="block">{title.round}</span>
-              <span className="block">{title.name}</span>
+              <span className="inline-block">{title.name}</span>
             </a>
           </li>
         ))}
