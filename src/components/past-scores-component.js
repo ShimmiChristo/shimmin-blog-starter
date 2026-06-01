@@ -34,18 +34,18 @@ const PastScoresComponent = ({
   return (
     <>
       <div className="row py-3 border-bottom">
-        <div className="col-6 col-sm-2">
+        <div className="col-3 col-sm-2">
           <Link to={`/scores-${eventYear}`}>{eventYear}</Link>
         </div>
-        <div className="col-6 col-sm-3 text-capitalize">{eventDate}</div>
+        <div className="col-9 col-sm-3 text-capitalize">{eventDate}</div>
         <div className="col-3 col-sm-2 text-capitalize">{eventWinner ? eventWinner : 'TBD'}</div>
-        <div className="col-5 col-sm-3 text-capitalize">{teamLocation}</div>
+        <div className="col-7 col-sm-3 text-capitalize">{teamLocation}</div>
         {summary && score ? (
           <div
-            className="col-4 col-sm-2 link-primary pointer"
+            className="col-2 col-sm-2 link-primary pointer d-flex justify-content-center align-items-center"
             onClick={openMoreInfoClick}
           >
-            MORE{" "}
+            <span className="d-none d-md-inline me-1">MORE{" "}</span>
             <span>
               <FaChevronDown className={"collapse show" + open} size={"1em"} />
             </span>
