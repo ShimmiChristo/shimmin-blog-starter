@@ -173,31 +173,48 @@ function Match({
   // const courseLink = courseMatchQuery.link
 
   const playerOne = playersUpdateJson[`${player1}`]
-  const p1Name = playerOne.name
-  const playerOneHand = player1MatchHandicap
-    ? parseInt(player1MatchHandicap)
-    : playerOne.year[`${year}`]?.handicap || playerOne.handicap
+  const playerOneData = {
+    name: playerOne.name,
+    matchHandicap: player1MatchHandicap,
+    fallbackHandicap: playerOne.handicap,
+    yearHandicap: playerOne.year[`${year}`]?.handicap,
+  }
+  const playerOneHand = playerOneData.matchHandicap
+    ? parseInt(playerOneData.matchHandicap)
+    : playerOneData.yearHandicap ?? playerOneData.fallbackHandicap
+
   const playerTwo = playersUpdateJson[`${player2}`]
-  const p2Name = playerTwo.name
-  const playerTwoHand = player2MatchHandicap
-    ? parseInt(player2MatchHandicap)
-    : playerTwo.year[`${year}`]?.handicap || playerTwo.handicap
+  const playerTwoData = {
+    name: playerTwo.name,
+    matchHandicap: player2MatchHandicap,
+    fallbackHandicap: playerTwo.handicap,
+    yearHandicap: playerTwo.year[`${year}`]?.handicap,
+  }
+  const playerTwoHand = playerTwoData.matchHandicap
+    ? parseInt(playerTwoData.matchHandicap)
+    : playerTwoData.yearHandicap ?? playerTwoData.fallbackHandicap
+
   const playerThree = playersUpdateJson[`${player3}`] || undefined
-  const p3Name = playerThree?.name
-  const playerThreeHand = (() => {
-    if (player3MatchHandicap) return parseInt(player3MatchHandicap)
-    else if (playerThree !== undefined && playerThree.year[`${year}`]?.handicap)
-      return playerThree?.year[`${year}`]?.handicap || playerThree.handicap
-    else return 99
-  })()
+  const playerThreeData = {
+    name: playerThree?.name,
+    matchHandicap: player3MatchHandicap,
+    fallbackHandicap: playerThree?.handicap,
+    yearHandicap: playerThree?.year[`${year}`]?.handicap,
+  }
+  const playerThreeHand = playerThreeData.matchHandicap
+    ? parseInt(playerThreeData.matchHandicap)
+    : playerThreeData.yearHandicap ?? playerThreeData.fallbackHandicap
+
   const playerFour = playersUpdateJson[`${player4}`] || undefined
-  const p4Name = playerFour?.name
-  const playerFourHand = (() => {
-    if (player4MatchHandicap) return parseInt(player4MatchHandicap)
-    else if (playerFour !== undefined && playerFour.year[`${year}`]?.handicap)
-      return playerFour.year[`${year}`]?.handicap || playerFour.handicap
-    else return 99
-  })()
+  const playerFourData = {
+    name: playerFour?.name,
+    matchHandicap: player4MatchHandicap,
+    fallbackHandicap: playerFour?.handicap,
+    yearHandicap: playerFour?.year[`${year}`]?.handicap,
+  }
+  const playerFourHand = playerFourData.matchHandicap
+    ? parseInt(playerFourData.matchHandicap)
+    : playerFourData.yearHandicap ?? playerFourData.fallbackHandicap
 
   const matchNumber = matchId
   let playerOneTees = player1Tees
@@ -233,12 +250,12 @@ function Match({
       ?.yardage
   const p1TeesPar =
     courseMatchQuery?.totals?.tees?.[`${player1Tees}`]?.[`${holesPlayed}`]?.par
-  const p2TeesSlope =
-    courseMatchQuery?.totals?.tees?.[`${player2Tees}`]?.[`${holesPlayed}`]
-      ?.slope
-  const p2TeesIndex =
-    courseMatchQuery?.totals?.tees?.[`${player2Tees}`]?.[`${holesPlayed}`]
-      ?.index
+  // const p2TeesSlope =
+  //   courseMatchQuery?.totals?.tees?.[`${player2Tees}`]?.[`${holesPlayed}`]
+  //     ?.slope
+  // const p2TeesIndex =
+  //   courseMatchQuery?.totals?.tees?.[`${player2Tees}`]?.[`${holesPlayed}`]
+  //     ?.index
 
   const courseSlopeP1 =
     courseMatchQuery.totals.tees[`${playerOneTees}`]?.[`${holesPlayed}`]?.slope
@@ -473,7 +490,11 @@ function Match({
             return teamWins
           }
         } else {
-          if (totalNetTeamOneScore === 0 && totalNetTeamTwoScore === 0 && teamWins.holesRemaining === 0) {
+          if (
+            totalNetTeamOneScore === 0 &&
+            totalNetTeamTwoScore === 0 &&
+            teamWins.holesRemaining === 0
+          ) {
             teamWins.winningTeam = ""
             return teamWins
           }

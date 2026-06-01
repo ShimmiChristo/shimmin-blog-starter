@@ -171,17 +171,17 @@
           ]
         }
       },
-      "year": "2025",
-      "date": "Sept, 27 - Sept, 28",
+      "year": "2026",
+      "date": "Sept, 25 - Sept, 26",
       "winner": "",
       "location": "Bay Harbor, Boyne Highlands",
       "gamesPlayed": [
-        "bestBall",
+        "scramble",
+        "bestBallStrokeplay",
         "twoBestBall",
         "alternate",
-        "scramble",
+        "bestBall",
         "bramble",
-        "twoBallBramble",
         "pinehurst",
         "singles"
       ]

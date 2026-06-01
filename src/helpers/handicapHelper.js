@@ -170,10 +170,12 @@ function getPlayerHandicap(player, gameplay, handicaps, hardestHoleNine) {
     let highHCTeam2 = Math.max(p2NineHoleHC, p4NineHoleHC)
     let lowPlayingHCTeam1 =
       lowHCTeam1 < 0 ? lowHCTeam1 / 0.35 : lowHCTeam1 * 0.35
+    console.log('lowPlayingHCTeam1 - ', player + lowPlayingHCTeam1);
     let highPlayingHCTeam1 =
       highHCTeam1 < 0 ? highHCTeam1 / 0.15 : highHCTeam1 * 0.15
     let lowPlayingHCTeam2 =
       lowHCTeam2 < 0 ? lowHCTeam2 / 0.35 : lowHCTeam2 * 0.35
+      console.log('lowPlayingHCTeam2 - ', player + lowPlayingHCTeam2);
     let highPlayingHCTeam2 =
       highHCTeam2 < 0 ? highHCTeam2 / 0.15 : highHCTeam2 * 0.15
 
