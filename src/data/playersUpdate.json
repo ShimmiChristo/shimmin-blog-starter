@@ -4277,7 +4277,7 @@
       "year": {
         "_2026": {
           "id": 2026,
-          "handicap": 99,
+          "handicap": 26,
           "captain": false,
           "team": "green",
           "scores": {
@@ -7511,8 +7511,8 @@
       "year": {
         "_2026": {
           "id": 2026,
-          "handicap": -0.5,
-          "captain": false,
+          "handicap": 0.0,
+          "captain": true,
           "team": "blue",
           "scores": {
             "hiddenRiverGolfClub": {
@@ -7710,7 +7710,7 @@
         "_2025": {
           "id": 2025,
           "handicap": 0.0,
-          "captain": false,
+          "captain": true,
           "team": "blue",
           "scores": {
             "hiddenRiverGolfClub": {
@@ -7913,7 +7913,7 @@
         "_2024": {
           "id": 2024,
           "handicap": 0.3,
-          "captain": false,
+          "captain": true,
           "team": "blue",
           "scores": {
             "hiddenRiverGolfClub": {
@@ -8115,7 +8115,7 @@
         "_2023": {
           "id": 2022,
           "handicap": 1.8,
-          "captain": false,
+          "captain": true,
           "team": "blue",
           "scores": {
             "bayHarborLinksQuarry": {
@@ -8622,11 +8622,11 @@
         "wins": 1,
         "losses": 3
       },
-      "handicap": 23,
+      "handicap": 25,
       "year": {
         "_2026": {
           "id": 2026,
-          "handicap": 99,
+          "handicap": 25,
           "captain": false,
           "team": "blue",
           "scores": {
@@ -10942,7 +10942,7 @@
         "_2026": {
           "id": 2026,
           "handicap": 0.0,
-          "captain": false,
+          "captain": true,
           "team": "green",
           "scores": {
             "hiddenRiverGolfClub": {
@@ -11140,7 +11140,7 @@
         "_2025": {
           "id": 2025,
           "handicap": 3.0,
-          "captain": false,
+          "captain": true,
           "team": "green",
           "scores": {
             "hiddenRiverGolfClub": {
@@ -11545,7 +11545,7 @@
         "_2023": {
           "id": 2023,
           "handicap": 4.8,
-          "captain": false,
+          "captain": true,
           "team": "green",
           "scores": {
             "bayHarborLinksQuarry": {
