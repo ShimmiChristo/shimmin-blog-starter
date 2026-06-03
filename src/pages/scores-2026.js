@@ -58,7 +58,7 @@ const TopicPage = ({ location }) => {
   const playerTees = {
     p1: "purple",
     p2: "purple",
-    p3: "purple",
+    p3: "orange",
     p4: "orange",
     p5: "orange",
     p6: "orange",
@@ -68,6 +68,15 @@ const TopicPage = ({ location }) => {
     p10: "orange",
     p11: "orange",
     p12: "orange",
+  }
+  const backTeesPlayers = ["dylan", "rj", "matt", "chris", "gordon"]
+
+  const backTeesGuys = player => {
+    if (backTeesPlayers.includes(player)) {
+      return true
+    } else {
+      return false
+    }
   }
 
   const matchesArr = [
@@ -255,10 +264,10 @@ const TopicPage = ({ location }) => {
           player2={p1}
           player3={p9}
           player4={p4}
-          player1Tees={playerTees.p7}
-          player2Tees={playerTees.p1}
-          player3Tees={playerTees.p9}
-          player4Tees={playerTees.p4}
+          player1Tees={!backTeesGuys(p7) ? matchesArr[0].matchTees[1] : matchesArr[0].matchTees[0]}
+          player2Tees={!backTeesGuys(p1) ? matchesArr[0].matchTees[1] : matchesArr[0].matchTees[0]}
+          player3Tees={!backTeesGuys(p9) ? matchesArr[0].matchTees[1] : matchesArr[0].matchTees[0]}
+          player4Tees={!backTeesGuys(p4) ? matchesArr[0].matchTees[1] : matchesArr[0].matchTees[0]}
           player1MatchHandicap=""
           player2MatchHandicap=""
           player3MatchHandicap=""
@@ -278,10 +287,10 @@ const TopicPage = ({ location }) => {
           player2={p2}
           player3={p11}
           player4={p3}
-          player1Tees={playerTees.p10}
-          player2Tees={playerTees.p2}
-          player3Tees={playerTees.p11}
-          player4Tees={playerTees.p3}
+          player1Tees={!backTeesGuys(p10) ? matchesArr[0].matchTees[1] : matchesArr[0].matchTees[0]}
+          player2Tees={!backTeesGuys(p2) ? matchesArr[0].matchTees[1] : matchesArr[0].matchTees[0]}
+          player3Tees={!backTeesGuys(p11) ? matchesArr[0].matchTees[1] : matchesArr[0].matchTees[0]}
+          player4Tees={!backTeesGuys(p3) ? matchesArr[0].matchTees[1] : matchesArr[0].matchTees[0]}
           player1MatchHandicap=""
           player2MatchHandicap=""
           player3MatchHandicap=""
@@ -301,10 +310,10 @@ const TopicPage = ({ location }) => {
           player2={p5}
           player3={p12}
           player4={p6}
-          player1Tees={playerTees.p8}
-          player2Tees={playerTees.p5}
-          player3Tees={playerTees.p12}
-          player4Tees={playerTees.p6}
+          player1Tees={!backTeesGuys(p8) ? matchesArr[0].matchTees[1] : matchesArr[0].matchTees[0]}
+          player2Tees={!backTeesGuys(p5) ? matchesArr[0].matchTees[1] : matchesArr[0].matchTees[0]}
+          player3Tees={!backTeesGuys(p12) ? matchesArr[0].matchTees[1] : matchesArr[0].matchTees[0]}
+          player4Tees={!backTeesGuys(p6) ? matchesArr[0].matchTees[1] : matchesArr[0].matchTees[0]}
           player1MatchHandicap=""
           player2MatchHandicap=""
           player3MatchHandicap=""
@@ -417,10 +426,10 @@ const TopicPage = ({ location }) => {
           player2={p1}
           player3={p10}
           player4={p6}
-          player1Tees={playerTees.p7}
-          player2Tees={playerTees.p1}
-          player3Tees={playerTees.p10}
-          player4Tees={playerTees.p6}
+          player1Tees={!backTeesGuys(p7) ? matchesArr[0].matchTees[1] : matchesArr[0].matchTees[0]}
+          player2Tees={!backTeesGuys(p1) ? matchesArr[0].matchTees[1] : matchesArr[0].matchTees[0]}
+          player3Tees={!backTeesGuys(p10) ? matchesArr[0].matchTees[1] : matchesArr[0].matchTees[0]}
+          player4Tees={!backTeesGuys(p6) ? matchesArr[0].matchTees[1] : matchesArr[0].matchTees[0]}
           player1MatchHandicap=""
           player2MatchHandicap=""
           player3MatchHandicap=""
@@ -440,10 +449,10 @@ const TopicPage = ({ location }) => {
           player2={p2}
           player3={p12}
           player4={p5}
-          player1Tees={playerTees.p9}
-          player2Tees={playerTees.p2}
-          player3Tees={playerTees.p12}
-          player4Tees={playerTees.p5}
+          player1Tees={!backTeesGuys(p9) ? matchesArr[0].matchTees[1] : matchesArr[0].matchTees[0]}
+          player2Tees={!backTeesGuys(p2) ? matchesArr[0].matchTees[1] : matchesArr[0].matchTees[0]}
+          player3Tees={!backTeesGuys(p12) ? matchesArr[0].matchTees[1] : matchesArr[0].matchTees[0]}
+          player4Tees={!backTeesGuys(p5) ? matchesArr[0].matchTees[1] : matchesArr[0].matchTees[0]}
           player1MatchHandicap=""
           player2MatchHandicap=""
           player3MatchHandicap=""
@@ -463,10 +472,10 @@ const TopicPage = ({ location }) => {
           player2={p3}
           player3={p11}
           player4={p4}
-          player1Tees={playerTees.p8}
-          player2Tees={playerTees.p3}
-          player3Tees={playerTees.p11}
-          player4Tees={playerTees.p4}
+          player1Tees={!backTeesGuys(p8) ? matchesArr[0].matchTees[1] : matchesArr[0].matchTees[0]}
+          player2Tees={!backTeesGuys(p3) ? matchesArr[0].matchTees[1] : matchesArr[0].matchTees[0]}
+          player3Tees={!backTeesGuys(p11) ? matchesArr[0].matchTees[1] : matchesArr[0].matchTees[0]}
+          player4Tees={!backTeesGuys(p4) ? matchesArr[0].matchTees[1] : matchesArr[0].matchTees[0]}
           player1MatchHandicap=""
           player2MatchHandicap=""
           player3MatchHandicap=""
