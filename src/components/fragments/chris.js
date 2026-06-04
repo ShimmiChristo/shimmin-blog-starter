@@ -6,6 +6,10 @@ export const Chris = graphql`
     name
     appearances
     handicap
+    cupRecord {
+      wins
+      losses
+    }
     year {
       _2025 {
         id

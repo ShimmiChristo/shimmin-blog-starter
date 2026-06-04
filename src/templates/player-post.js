@@ -18,6 +18,7 @@ const PlayerPostTemplate = ({ data, location, children }) => {
   const playerData = data.playersUpdateJson[`${playerName}`]
   const playerHandicap = data.playersUpdateJson[`${playerName}`].handicap
   const appearances = data.playersUpdateJson[`${playerName}`].appearances
+  const cupRecord = data.playersUpdateJson[`${playerName}`].cupRecord
   const featuredImage = getImage(
     post.frontmatter.featuredImg?.childImageSharp?.gatsbyImageData
   )
@@ -125,8 +126,8 @@ const PlayerPostTemplate = ({ data, location, children }) => {
           <div className="info">
             {/* <b>AKA:</b> {playerNickname} <br /> */}
             <b>Handicap:</b> {playerHandicap} <br />
-            <b>Appearances:</b> {appearances?.length}
-            <b>Cup Record:</b> {playerData?.cupRecord ? playerData.cupRecord : "N/A"}
+            <b>Appearances:</b> {appearances?.length} <br />
+            <b>Cup Record:</b> {cupRecord ? cupRecord.wins + "-" + cupRecord.losses : "N/A"}
           </div>
         </Header>
         <section>
