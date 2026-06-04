@@ -126,6 +126,7 @@ const PlayerPostTemplate = ({ data, location, children }) => {
             {/* <b>AKA:</b> {playerNickname} <br /> */}
             <b>Handicap:</b> {playerHandicap} <br />
             <b>Appearances:</b> {appearances?.length}
+            <b>Cup Record:</b> {playerData?.cupRecord ? playerData.cupRecord : "N/A"}
           </div>
         </Header>
         <section>
