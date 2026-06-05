@@ -13,7 +13,6 @@ import {
   // MDBContainer,
 } from "mdb-react-ui-kit"
 
-
 const StyledSection = styled.section``
 
 function PlayerInfoThisYearRecord({ year, teamColor, post, playerData }) {
@@ -38,7 +37,10 @@ function PlayerInfoThisYearRecord({ year, teamColor, post, playerData }) {
         totalLosses: totalLosses,
         totalTies: totalTies,
       }
-    } else if (year !== undefined && playerData.year[`_${year}`] !== undefined) {
+    } else if (
+      year !== undefined &&
+      playerData.year[`_${year}`] !== undefined
+    ) {
       const years = playerData.year
       const yearProp = years[`_${year}`]
       let totalWins = 0
@@ -96,7 +98,7 @@ function PlayerInfoThisYearRecord({ year, teamColor, post, playerData }) {
   // const brambleAltRecord = getGameRecord(playerData, "greensomes")
   // const scrambleRecord = getGameRecord(playerData, "scramble")
 
-  return (
+  return playerData.year["_" + year] && year !== 'All Time' ? (
     <StyledSection>
       <MDBRow className="row-cols-1 text-center mt-3">
         <h2 className="h3">
@@ -156,6 +158,8 @@ function PlayerInfoThisYearRecord({ year, teamColor, post, playerData }) {
         </MDBCard>
       </MDBRow> */}
     </StyledSection>
+  ) : (
+    ""
   )
 }
 
