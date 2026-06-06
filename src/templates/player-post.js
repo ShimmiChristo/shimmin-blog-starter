@@ -4,7 +4,7 @@ import { graphql } from "gatsby"
 import styled from "styled-components"
 // import Image from "gatsby-image"
 import { GatsbyImage, getImage } from "gatsby-plugin-image"
-import PlayerInfoThisYearRecord from "../components/player-info-year-record"
+import PlayerYearByYearTable from "../components/player-year-by-year-table"
 import RecordPartners from "../components/records-partners"
 
 import Layout from "../components/layout"
@@ -141,64 +141,11 @@ const PlayerPostTemplate = ({ data, location, children }) => {
           </BioWrapper>
         </section>
         <hr />
-        <div className="row">
-          <div className="col-12 col-lg-6">
-            <PlayerInfoThisYearRecord
-              year="All Time"
-              teamColor="green"
-              post={post}
-              playerData={playerData}
-            />
+        <section>
+          <div className="container my-3">
+            <PlayerYearByYearTable playerData={playerData} />
           </div>
-          <div className="col-12 col-lg-6">
-            <PlayerInfoThisYearRecord
-              year="2025"
-              teamColor="green"
-              post={post}
-              playerData={playerData}
-            />
-          </div>
-        </div>
-        <div className="row">
-          <div className="col-12 offset-lg-6 col-lg-6">
-            <PlayerInfoThisYearRecord
-              year="2024"
-              teamColor=""
-              post={post}
-              playerData={playerData}
-            />
-          </div>
-        </div>
-        <div className="row">
-          <div className="col-12 offset-lg-6 col-lg-6">
-            <PlayerInfoThisYearRecord
-              year="2023"
-              teamColor=""
-              post={post}
-              playerData={playerData}
-            />
-          </div>
-        </div>
-        <div className="row">
-          <div className="col-12 offset-lg-6 col-lg-6">
-            <PlayerInfoThisYearRecord
-              year="2022"
-              teamColor=""
-              post={post}
-              playerData={playerData}
-            />
-          </div>
-        </div>
-        <div className="row">
-          <div className="col-12 offset-lg-6 col-lg-6">
-            <PlayerInfoThisYearRecord
-              year="2021"
-              teamColor=""
-              post={post}
-              playerData={playerData}
-            />
-          </div>
-        </div>
+        </section>
         <section>
           <div className="container my-3">
             <RecordPartners playerData={playerData} />
@@ -212,6 +159,7 @@ const PlayerPostTemplate = ({ data, location, children }) => {
 PlayerPostTemplate.propTypes = {
   data: PropTypes.object,
   location: PropTypes.object,
+  children: PropTypes.node,
   team: PropTypes.string,
 }
 
