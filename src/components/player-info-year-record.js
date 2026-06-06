@@ -98,7 +98,7 @@ function PlayerInfoThisYearRecord({ year, teamColor, post, playerData }) {
   // const brambleAltRecord = getGameRecord(playerData, "greensomes")
   // const scrambleRecord = getGameRecord(playerData, "scramble")
 
-  return playerData.year["_" + year] && year !== 'All Time' ? (
+  return playerData.year["_" + year] || year === 'All Time' ? (
     <StyledSection>
       <MDBRow className="row-cols-1 text-center mt-3">
         <h2 className="h3">

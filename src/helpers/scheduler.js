@@ -42,53 +42,6 @@ function generateTeamRoundsMain() {
       round: 1,
       matches: [
         {
-          teamA: ["1", "2"],
-        },
-        {
-          teamA: ["3", "4"],
-        },
-        {
-          teamA: ["5", "6"],
-        },
-        {
-          teamB: ["7", "8"],
-        },
-        {
-          teamB: ["9", "10"],
-        },
-        {
-          teamB: ["11", "12"],
-        },
-      ],
-    },
-
-    {
-      round: 2,
-      matches: [
-        {
-          teamA: ["1", "2"],
-        },
-        {
-          teamA: ["3", "4"],
-        },
-        {
-          teamA: ["5", "6"],
-        },
-        {
-          teamB: ["7", "8"],
-        },
-        {
-          teamB: ["9", "10"],
-        },
-        {
-          teamB: ["11", "12"],
-        },
-      ],
-    },
-    {
-      round: 3,
-      matches: [
-        {
           teamA: ["1", "4"],
         },
         {
@@ -108,6 +61,52 @@ function generateTeamRoundsMain() {
         },
       ],
     },
+    // {
+    //   round: 2,
+    //   matches: [
+    //     {
+    //       teamA: ["1", "2"],
+    //     },
+    //     {
+    //       teamA: ["3", "4"],
+    //     },
+    //     {
+    //       teamA: ["5", "6"],
+    //     },
+    //     {
+    //       teamB: ["7", "8"],
+    //     },
+    //     {
+    //       teamB: ["9", "10"],
+    //     },
+    //     {
+    //       teamB: ["11", "12"],
+    //     },
+    //   ],
+    // },
+    // {
+    //   round: 3,
+    //   matches: [
+    //     {
+    //       teamA: ["1", "2"],
+    //     },
+    //     {
+    //       teamA: ["3", "4"],
+    //     },
+    //     {
+    //       teamA: ["5", "6"],
+    //     },
+    //     {
+    //       teamB: ["7", "8"],
+    //     },
+    //     {
+    //       teamB: ["9", "10"],
+    //     },
+    //     {
+    //       teamB: ["11", "12"],
+    //     },
+    //   ],
+    // },
   ]
 
   // const roundsInit = [
@@ -159,7 +158,7 @@ function generateTeamRoundsMain() {
   //   },
   // ]
 
-  const totalRounds = 8 - roundsInit.length // 8 rounds total, 3 rounds already initialized
+  const totalRounds = 7 - roundsInit.length // 8 rounds total, 3 rounds already initialized
   const maxAttempts = 20
 
   const initPairMap = (players, teamName) => {
@@ -696,21 +695,39 @@ function generateTeamRoundsMain() {
     // }
 
     // * max variables
-    const maxPartnerVal = roundsInit.length < 3 ? 2 : 3
-    const maxOpponentVal = roundsInit.length < 3 ? 4 : 5
+    const maxPartnerVal = roundsInit.length < 2 ? 2 : 3
+    const maxOpponentVal = roundsInit.length < 2 ? 4 : 5
+    const opponentsThatCantPlayMoreThan3Times = [
+      "1-7",
+      "1-8",
+      "2-7",
+      "2-8",
+      "3-9",
+      "3-10",
+      "4-9",
+      "4-10",
+      "5-11",
+      "5-12",
+      "6-11",
+      "6-12",
+    ]
 
     if (
       maxNumberInArray(Object.values(partnerMaps.teamA)) > maxPartnerVal ||
       maxNumberInArray(Object.values(partnerMaps.teamB)) > maxPartnerVal
     ) {
-      console.log(
-        "----------------- ERROR: team map has more than " +
-          maxPartnerVal +
-          " -----------------"
-      )
+      // console.log(
+      //   "----------------- ERROR: team map has more than " +
+      //     maxPartnerVal +
+      //     " -----------------"
+      // )
       // console.log("rounds - ", rounds)
       return false
-    } else if (maxNumberInArray(Object.values(opponentMap)) > maxOpponentVal) {
+    } else if (maxNumberInArray(Object.values(opponentMap)) > maxOpponentVal ||
+      opponentsThatCantPlayMoreThan3Times.some(
+        opponent => opponentMap[opponent] > 3
+      )
+    ) {
       console.log(
         "----------------- ERROR: Opponent map more than " +
           maxOpponentVal +
@@ -786,4 +803,24 @@ function recursiveGenerateTeamRounds(iteration = 0) {
     recursiveGenerateTeamRounds(iteration + 1)
   }
 }
-recursiveGenerateTeamRounds()
+
+function generateTeamRounds(n) {
+  let sum = 0
+  for (let i = 1; i <= n; i++) {
+    // Safely handles millions of loops
+    if (generateTeamRoundsMain()) {
+      console.log("Generated rounds successfully." + ` Iteration: ${sum}`)
+      break
+    } else {
+      // console.log(
+      //   "Generated rounds successfully." + ` Iteration: ${sum + 1}`
+      // )
+      sum += i
+    }
+  }
+
+  return true
+}
+
+// recursiveGenerateTeamRounds()
+generateTeamRounds(50000)
