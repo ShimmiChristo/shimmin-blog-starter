@@ -95,13 +95,7 @@
               "ties": 0,
               "losses": 0
             },
-            {
-              "id": "greensomes",
-              "game": "Greensomes",
-              "wins": 0,
-              "ties": 0,
-              "losses": 0
-            },
+
             {
               "id": "pinehurst",
               "game": "Pinehurst",
@@ -260,6 +254,20 @@
               "losses": 0
             },
             {
+              "id": "alternate",
+              "game": "Alternate",
+              "wins": 0,
+              "ties": 0,
+              "losses": 0
+            },
+            {
+              "id": "scramble",
+              "game": "Scramble",
+              "wins": 0,
+              "ties": 0,
+              "losses": 0
+            },
+            {
               "id": "bramble",
               "game": "Bramble",
               "wins": 0,
@@ -274,29 +282,8 @@
               "losses": 0
             },
             {
-              "id": "alternate",
-              "game": "Alternate",
-              "wins": 0,
-              "ties": 0,
-              "losses": 0
-            },
-            {
-              "id": "greensomes",
-              "game": "Greensomes",
-              "wins": 0,
-              "ties": 0,
-              "losses": 0
-            },
-            {
               "id": "pinehurst",
               "game": "Pinehurst",
-              "wins": 0,
-              "ties": 0,
-              "losses": 0
-            },
-            {
-              "id": "scramble",
-              "game": "Scramble",
               "wins": 0,
               "ties": 0,
               "losses": 0
@@ -489,13 +476,7 @@
               "ties": 0,
               "losses": 0
             },
-            {
-              "id": "greensomes",
-              "game": "Greensomes",
-              "wins": 0,
-              "ties": 0,
-              "losses": 0
-            },
+
             {
               "id": "pinehurst",
               "game": "Pinehurst",
@@ -670,13 +651,6 @@
             {
               "id": "alternate",
               "game": "Alternate",
-              "wins": 0,
-              "ties": 0,
-              "losses": 0
-            },
-            {
-              "id": "greensomes",
-              "game": "Greensomes",
               "wins": 0,
               "ties": 0,
               "losses": 0
@@ -881,13 +855,6 @@
               "losses": 1
             },
             {
-              "id": "greensomes",
-              "game": "Greensomes",
-              "wins": 0,
-              "ties": 0,
-              "losses": 0
-            },
-            {
               "id": "pinehurst",
               "game": "Pinehurst",
               "wins": 1,
@@ -1083,13 +1050,7 @@
               "ties": 0,
               "losses": 0
             },
-            {
-              "id": "greensomes",
-              "game": "Greensomes",
-              "wins": 0,
-              "ties": 0,
-              "losses": 0
-            },
+
             {
               "id": "pinehurst",
               "game": "Pinehurst",
@@ -1276,6 +1237,20 @@
               "losses": 1
             },
             {
+              "id": "alternate",
+              "game": "Alternate",
+              "wins": 0,
+              "ties": 0,
+              "losses": 1
+            },
+            {
+              "id": "scramble",
+              "game": "Scramble",
+              "wins": 0,
+              "ties": 0,
+              "losses": 1
+            },
+            {
               "id": "bramble",
               "game": "Bramble",
               "wins": 1,
@@ -1289,30 +1264,10 @@
               "ties": 0,
               "losses": 0
             },
-            {
-              "id": "alternate",
-              "game": "Alternate",
-              "wins": 0,
-              "ties": 0,
-              "losses": 1
-            },
-            {
-              "id": "greensomes",
-              "game": "Greensomes",
-              "wins": 0,
-              "ties": 0,
-              "losses": 0
-            },
+
             {
               "id": "pinehurst",
               "game": "Pinehurst",
-              "wins": 0,
-              "ties": 0,
-              "losses": 1
-            },
-            {
-              "id": "scramble",
-              "game": "Scramble",
               "wins": 0,
               "ties": 0,
               "losses": 1
@@ -1518,13 +1473,7 @@
               "ties": 0,
               "losses": 1
             },
-            {
-              "id": "greensomes",
-              "game": "Greensomes",
-              "wins": 0,
-              "ties": 0,
-              "losses": 0
-            },
+
             {
               "id": "pinehurst",
               "game": "Pinehurst",
@@ -1709,13 +1658,7 @@
               "ties": 0,
               "losses": 1
             },
-            {
-              "id": "greensomes",
-              "game": "Greensomes",
-              "wins": 0,
-              "ties": 0,
-              "losses": 0
-            },
+
             {
               "id": "scramble",
               "game": "Scramble",
@@ -1803,189 +1746,6 @@
                   "wins": 1,
                   "ties": 0,
                   "losses": 3
-                }
-              ]
-            }
-          ]
-        },
-        "sample": {
-          "id": 2023,
-          "handicap": 2,
-          "captain": false,
-          "team": "blue",
-          "scores": {
-            "boyneHighlandsArthurHills": {
-              "course": "Arthur Hills at Boyne Highlands",
-              "front": [99, 99, 99, 99, 99, 99, 99, 99, 99],
-              "frontHandicap": 999,
-              "back": [99, 99, 99, 99, 99, 99, 99, 99, 99],
-              "backHandicap": 999
-            },
-            "boyneHighlandsDonaldRoss": {
-              "course": "Donald Ross at Boyne Highlands",
-              "front": [99, 99, 99, 99, 99, 99, 99, 99, 99],
-              "frontHandicap": 999,
-              "back": [99, 99, 99, 99, 99, 99, 99, 99, 99],
-              "backHandicap": 999
-            },
-            "boyneHighlandsMoor": {
-              "course": "The Moor at Boyne Highlands",
-              "front": [99, 99, 99, 99, 99, 99, 99, 99, 99],
-              "frontHandicap": 999,
-              "back": [99, 99, 99, 99, 99, 99, 99, 99, 99],
-              "backHandicap": 999
-            },
-            "boyneHighlandsHeather": {
-              "course": "The Heather at Boyne Highlands",
-              "front": [99, 99, 99, 99, 99, 99, 99, 99, 99],
-              "frontHandicap": 999,
-              "back": [99, 99, 99, 99, 99, 99, 99, 99, 99],
-              "backHandicap": 999
-            }
-          },
-          "points": [
-            {
-              "id": "bestBall",
-              "game": "Best Ball",
-              "wins": 0,
-              "ties": 0,
-              "losses": 0
-            },
-            {
-              "id": "twoBestBall",
-              "game": "Best Ball",
-              "wins": 0,
-              "ties": 0,
-              "losses": 0
-            },
-            {
-              "id": "bramble",
-              "game": "Bramble",
-              "wins": 0,
-              "ties": 0,
-              "losses": 0
-            },
-            {
-              "id": "twoBallBramble",
-              "game": "Bramble",
-              "wins": 0,
-              "ties": 0,
-              "losses": 0
-            },
-            {
-              "id": "alternate",
-              "game": "Alternate",
-              "wins": 0,
-              "ties": 0,
-              "losses": 0
-            },
-            {
-              "id": "greensomes",
-              "game": "Greensomes",
-              "wins": 0,
-              "ties": 0,
-              "losses": 0
-            },
-            {
-              "id": "pinehurst",
-              "game": "Pinehurst",
-              "wins": 0,
-              "ties": 0,
-              "losses": 0
-            },
-            {
-              "id": "scramble",
-              "game": "Scramble",
-              "wins": 0,
-              "ties": 0,
-              "losses": 0
-            },
-            {
-              "id": "singles",
-              "game": "Singles",
-              "wins": 0,
-              "ties": 0,
-              "losses": 0
-            }
-          ],
-          "records": [
-            {
-              "partners": [
-                {
-                  "name": "craig",
-                  "wins": 0,
-                  "ties": 0,
-                  "losses": 0
-                },
-                {
-                  "name": "dan",
-                  "wins": 0,
-                  "ties": 0,
-                  "losses": 0
-                },
-                {
-                  "name": "dylan",
-                  "wins": 0,
-                  "ties": 0,
-                  "losses": 0
-                },
-                {
-                  "name": "evan",
-                  "wins": 0,
-                  "ties": 0,
-                  "losses": 0
-                },
-                {
-                  "name": "rj",
-                  "wins": 0,
-                  "ties": 0,
-                  "losses": 0
-                }
-              ]
-            },
-            {
-              "opponents": [
-                {
-                  "name": "chris",
-                  "wins": 0,
-                  "ties": 0,
-                  "losses": 0
-                },
-                {
-                  "name": "curtis",
-                  "wins": 0,
-                  "ties": 0,
-                  "losses": 0
-                },
-                {
-                  "name": "derek",
-                  "wins": 0,
-                  "ties": 0,
-                  "losses": 0
-                },
-                {
-                  "name": "gordon",
-                  "wins": 0,
-                  "ties": 0,
-                  "losses": 0
-                },
-                {
-                  "name": "jake",
-                  "wins": 0,
-                  "ties": 0,
-                  "losses": 0
-                },
-                {
-                  "name": "matt",
-                  "wins": 0,
-                  "ties": 0,
-                  "losses": 0
-                },
-                {
-                  "name": "travis",
-                  "wins": 0,
-                  "ties": 0,
-                  "losses": 0
                 }
               ]
             }
@@ -2088,13 +1848,7 @@
               "ties": 0,
               "losses": 0
             },
-            {
-              "id": "greensomes",
-              "game": "Greensomes",
-              "wins": 0,
-              "ties": 0,
-              "losses": 0
-            },
+
             {
               "id": "pinehurst",
               "game": "Pinehurst",
@@ -2281,6 +2035,20 @@
               "losses": 0
             },
             {
+              "id": "alternate",
+              "game": "Alternate",
+              "wins": 1,
+              "ties": 0,
+              "losses": 0
+            },
+            {
+              "id": "scramble",
+              "game": "Scramble",
+              "wins": 1,
+              "ties": 0,
+              "losses": 0
+            },
+            {
               "id": "bramble",
               "game": "Bramble",
               "wins": 1,
@@ -2295,29 +2063,8 @@
               "losses": 1
             },
             {
-              "id": "alternate",
-              "game": "Alternate",
-              "wins": 1,
-              "ties": 0,
-              "losses": 0
-            },
-            {
-              "id": "greensomes",
-              "game": "Greensomes",
-              "wins": 0,
-              "ties": 0,
-              "losses": 0
-            },
-            {
               "id": "pinehurst",
               "game": "Pinehurst",
-              "wins": 1,
-              "ties": 0,
-              "losses": 0
-            },
-            {
-              "id": "scramble",
-              "game": "Scramble",
               "wins": 1,
               "ties": 0,
               "losses": 0
@@ -2503,6 +2250,20 @@
               "losses": 0
             },
             {
+              "id": "alternate",
+              "game": "Alternate",
+              "wins": 1,
+              "ties": 0,
+              "losses": 0
+            },
+            {
+              "id": "scramble",
+              "game": "Scramble",
+              "wins": 0,
+              "ties": 1,
+              "losses": 0
+            },
+            {
               "id": "bramble",
               "game": "Bramble",
               "wins": 0,
@@ -2517,32 +2278,11 @@
               "losses": 0
             },
             {
-              "id": "alternate",
-              "game": "Alternate",
-              "wins": 1,
-              "ties": 0,
-              "losses": 0
-            },
-            {
-              "id": "greensomes",
-              "game": "Greensomes",
-              "wins": 0,
-              "ties": 0,
-              "losses": 0
-            },
-            {
               "id": "pinehurst",
               "game": "Pinehurst",
               "wins": 0,
               "ties": 0,
               "losses": 1
-            },
-            {
-              "id": "scramble",
-              "game": "Scramble",
-              "wins": 0,
-              "ties": 1,
-              "losses": 0
             },
             {
               "id": "singles",
@@ -2631,7 +2371,7 @@
         },
         "_2023": {
           "id": 2023,
-          "handicap": 13.0,
+          "handicap": 13,
           "captain": false,
           "team": "green",
           "scores": {
@@ -2725,13 +2465,7 @@
               "ties": 0,
               "losses": 1
             },
-            {
-              "id": "greensomes",
-              "game": "Greensomes",
-              "wins": 0,
-              "ties": 0,
-              "losses": 0
-            },
+
             {
               "id": "pinehurst",
               "game": "Pinehurst",
@@ -2961,189 +2695,6 @@
               ]
             }
           ]
-        },
-        "sample": {
-          "id": 2023,
-          "handicap": 13,
-          "captain": false,
-          "team": "green",
-          "scores": {
-            "boyneHighlandsArthurHills": {
-              "course": "Arthur Hills at Boyne Highlands",
-              "front": [99, 99, 99, 99, 99, 99, 99, 99, 99],
-              "frontHandicap": 999,
-              "back": [99, 99, 99, 99, 99, 99, 99, 99, 99],
-              "backHandicap": 999
-            },
-            "boyneHighlandsDonaldRoss": {
-              "course": "Donald Ross at Boyne Highlands",
-              "front": [99, 99, 99, 99, 99, 99, 99, 99, 99],
-              "frontHandicap": 999,
-              "back": [99, 99, 99, 99, 99, 99, 99, 99, 99],
-              "backHandicap": 999
-            },
-            "boyneHighlandsMoor": {
-              "course": "The Moor at Boyne Highlands",
-              "front": [99, 99, 99, 99, 99, 99, 99, 99, 99],
-              "frontHandicap": 999,
-              "back": [99, 99, 99, 99, 99, 99, 99, 99, 99],
-              "backHandicap": 999
-            },
-            "boyneHighlandsHeather": {
-              "course": "The Heather at Boyne Highlands",
-              "front": [99, 99, 99, 99, 99, 99, 99, 99, 99],
-              "frontHandicap": 999,
-              "back": [99, 99, 99, 99, 99, 99, 99, 99, 99],
-              "backHandicap": 999
-            }
-          },
-          "points": [
-            {
-              "id": "bestBall",
-              "game": "Best Ball",
-              "wins": 0,
-              "ties": 0,
-              "losses": 0
-            },
-            {
-              "id": "twoBestBall",
-              "game": "Best Ball",
-              "wins": 0,
-              "ties": 0,
-              "losses": 0
-            },
-            {
-              "id": "bramble",
-              "game": "Bramble",
-              "wins": 0,
-              "ties": 0,
-              "losses": 0
-            },
-            {
-              "id": "twoBallBramble",
-              "game": "Bramble",
-              "wins": 0,
-              "ties": 0,
-              "losses": 0
-            },
-            {
-              "id": "alternate",
-              "game": "Alternate",
-              "wins": 0,
-              "ties": 0,
-              "losses": 0
-            },
-            {
-              "id": "greensomes",
-              "game": "Greensomes",
-              "wins": 0,
-              "ties": 0,
-              "losses": 0
-            },
-            {
-              "id": "pinehurst",
-              "game": "Pinehurst",
-              "wins": 0,
-              "ties": 0,
-              "losses": 0
-            },
-            {
-              "id": "scramble",
-              "game": "Scramble",
-              "wins": 0,
-              "ties": 0,
-              "losses": 0
-            },
-            {
-              "id": "singles",
-              "game": "Singles",
-              "wins": 0,
-              "ties": 0,
-              "losses": 0
-            }
-          ],
-          "records": [
-            {
-              "partners": [
-                {
-                  "name": "curtis",
-                  "wins": 0,
-                  "ties": 0,
-                  "losses": 0
-                },
-                {
-                  "name": "derek",
-                  "wins": 0,
-                  "ties": 0,
-                  "losses": 0
-                },
-                {
-                  "name": "gordon",
-                  "wins": 0,
-                  "ties": 0,
-                  "losses": 0
-                },
-                {
-                  "name": "jake",
-                  "wins": 0,
-                  "ties": 0,
-                  "losses": 0
-                },
-                {
-                  "name": "matt",
-                  "wins": 0,
-                  "ties": 0,
-                  "losses": 0
-                },
-                {
-                  "name": "travis",
-                  "wins": 0,
-                  "ties": 0,
-                  "losses": 0
-                }
-              ]
-            },
-            {
-              "opponents": [
-                {
-                  "name": "cam",
-                  "wins": 0,
-                  "ties": 0,
-                  "losses": 0
-                },
-                {
-                  "name": "craig",
-                  "wins": 0,
-                  "ties": 0,
-                  "losses": 0
-                },
-                {
-                  "name": "dan",
-                  "wins": 0,
-                  "ties": 0,
-                  "losses": 0
-                },
-                {
-                  "name": "dylan",
-                  "wins": 0,
-                  "ties": 0,
-                  "losses": 0
-                },
-                {
-                  "name": "evan",
-                  "wins": 0,
-                  "ties": 0,
-                  "losses": 0
-                },
-                {
-                  "name": "rj",
-                  "wins": 0,
-                  "ties": 0,
-                  "losses": 0
-                }
-              ]
-            }
-          ]
         }
       }
     },
@@ -3187,7 +2738,7 @@
               "front": [99, 99, 99, 99, 99, 99, 99, 99, 99],
               "frontGross": 891,
               "frontHandicap": 999,
-              "back": [5,5,5,5,5,5,5,5,5],
+              "back": [5, 5, 5, 5, 5, 5, 5, 5, 5],
               "backGross": 891,
               "backHandicap": 999
             },
@@ -3242,13 +2793,7 @@
               "ties": 0,
               "losses": 0
             },
-            {
-              "id": "greensomes",
-              "game": "Greensomes",
-              "wins": 0,
-              "ties": 0,
-              "losses": 0
-            },
+
             {
               "id": "pinehurst",
               "game": "Pinehurst",
@@ -3438,13 +2983,7 @@
               "ties": 1,
               "losses": 0
             },
-            {
-              "id": "greensomes",
-              "game": "Greensomes",
-              "wins": 0,
-              "ties": 0,
-              "losses": 0
-            },
+
             {
               "id": "pinehurst",
               "game": "Pinehurst",
@@ -3545,8 +3084,8 @@
           ],
           "stats": {
             "gamesPlayed": 8,
-            "winPercentage": 50.0,
-            "pointsPerGame": 1.0,
+            "winPercentage": 50,
+            "pointsPerGame": 1,
             "points": 8,
             "wins": 4,
             "ties": 2,
@@ -3657,13 +3196,7 @@
               "ties": 0,
               "losses": 0
             },
-            {
-              "id": "greensomes",
-              "game": "Greensomes",
-              "wins": 0,
-              "ties": 0,
-              "losses": 0
-            },
+
             {
               "id": "pinehurst",
               "game": "Pinehurst",
@@ -3857,13 +3390,7 @@
               "ties": 0,
               "losses": 1
             },
-            {
-              "id": "greensomes",
-              "game": "Greensomes",
-              "wins": 0,
-              "ties": 0,
-              "losses": 0
-            },
+
             {
               "id": "pinehurst",
               "game": "Pinehurst",
@@ -4040,13 +3567,7 @@
               "ties": 1,
               "losses": 0
             },
-            {
-              "id": "greensomes",
-              "game": "Greensomes",
-              "wins": 0,
-              "ties": 0,
-              "losses": 0
-            },
+
             {
               "id": "scramble",
               "game": "Scramble",
@@ -4361,13 +3882,7 @@
               "ties": 0,
               "losses": 0
             },
-            {
-              "id": "greensomes",
-              "game": "Greensomes",
-              "wins": 0,
-              "ties": 0,
-              "losses": 0
-            },
+
             {
               "id": "pinehurst",
               "game": "Pinehurst",
@@ -4570,13 +4085,7 @@
               "ties": 0,
               "losses": 0
             },
-            {
-              "id": "greensomes",
-              "game": "Greensomes",
-              "wins": 0,
-              "ties": 0,
-              "losses": 0
-            },
+
             {
               "id": "pinehurst",
               "game": "Pinehurst",
@@ -4776,13 +4285,7 @@
               "ties": 0,
               "losses": 1
             },
-            {
-              "id": "greensomes",
-              "game": "Greensomes",
-              "wins": 0,
-              "ties": 0,
-              "losses": 0
-            },
+
             {
               "id": "pinehurst",
               "game": "Pinehurst",
@@ -4965,13 +4468,7 @@
               "ties": 0,
               "losses": 0
             },
-            {
-              "id": "greensomes",
-              "game": "Greensomes",
-              "wins": 0,
-              "ties": 0,
-              "losses": 0
-            },
+
             {
               "id": "pinehurst",
               "game": "Pinehurst",
@@ -5148,13 +4645,7 @@
               "ties": 1,
               "losses": 0
             },
-            {
-              "id": "greensomes",
-              "game": "Greensomes",
-              "wins": 0,
-              "ties": 0,
-              "losses": 0
-            },
+
             {
               "id": "scramble",
               "game": "Scramble",
@@ -5346,13 +4837,7 @@
               "ties": 0,
               "losses": 0
             },
-            {
-              "id": "greensomes",
-              "game": "Greensomes",
-              "wins": 0,
-              "ties": 0,
-              "losses": 0
-            },
+
             {
               "id": "pinehurst",
               "game": "Pinehurst",
@@ -5564,13 +5049,7 @@
               "ties": 1,
               "losses": 0
             },
-            {
-              "id": "greensomes",
-              "game": "Greensomes",
-              "wins": 0,
-              "ties": 0,
-              "losses": 0
-            },
+
             {
               "id": "pinehurst",
               "game": "Pinehurst",
@@ -5672,7 +5151,7 @@
           "stats": {
             "gamesPlayed": 8,
             "winPercentage": 62.5,
-            "pointsPerGame": 1.0,
+            "pointsPerGame": 1,
             "points": 8,
             "wins": 5,
             "ties": 1,
@@ -5775,13 +5254,7 @@
               "ties": 0,
               "losses": 1
             },
-            {
-              "id": "greensomes",
-              "game": "Greensomes",
-              "wins": 0,
-              "ties": 0,
-              "losses": 0
-            },
+
             {
               "id": "pinehurst",
               "game": "Pinehurst",
@@ -5977,13 +5450,7 @@
               "ties": 0,
               "losses": 0
             },
-            {
-              "id": "greensomes",
-              "game": "Greensomes",
-              "wins": 0,
-              "ties": 0,
-              "losses": 0
-            },
+
             {
               "id": "pinehurst",
               "game": "Pinehurst",
@@ -6160,13 +5627,7 @@
               "ties": 0,
               "losses": 1
             },
-            {
-              "id": "greensomes",
-              "game": "Greensomes",
-              "wins": 0,
-              "ties": 0,
-              "losses": 0
-            },
+
             {
               "id": "scramble",
               "game": "Scramble",
@@ -6481,13 +5942,7 @@
               "ties": 0,
               "losses": 0
             },
-            {
-              "id": "greensomes",
-              "game": "Greensomes",
-              "wins": 0,
-              "ties": 0,
-              "losses": 0
-            },
+
             {
               "id": "pinehurst",
               "game": "Pinehurst",
@@ -6688,13 +6143,7 @@
               "ties": 1,
               "losses": 0
             },
-            {
-              "id": "greensomes",
-              "game": "Greensomes",
-              "wins": 0,
-              "ties": 0,
-              "losses": 0
-            },
+
             {
               "id": "pinehurst",
               "game": "Pinehurst",
@@ -6888,13 +6337,7 @@
               "ties": 0,
               "losses": 0
             },
-            {
-              "id": "greensomes",
-              "game": "Greensomes",
-              "wins": 0,
-              "ties": 0,
-              "losses": 0
-            },
+
             {
               "id": "pinehurst",
               "game": "Pinehurst",
@@ -7090,13 +6533,7 @@
               "ties": 0,
               "losses": 0
             },
-            {
-              "id": "greensomes",
-              "game": "Greensomes",
-              "wins": 0,
-              "ties": 0,
-              "losses": 0
-            },
+
             {
               "id": "pinehurst",
               "game": "Pinehurst",
@@ -7273,13 +6710,7 @@
               "ties": 0,
               "losses": 0
             },
-            {
-              "id": "greensomes",
-              "game": "Greensomes",
-              "wins": 0,
-              "ties": 0,
-              "losses": 0
-            },
+
             {
               "id": "scramble",
               "game": "Scramble",
@@ -7507,11 +6938,11 @@
         "wins": 2,
         "losses": 3
       },
-      "handicap": 0.0,
+      "handicap": 0,
       "year": {
         "_2026": {
           "id": 2026,
-          "handicap": 0.0,
+          "handicap": 0,
           "captain": true,
           "team": "blue",
           "scores": {
@@ -7595,13 +7026,7 @@
               "ties": 0,
               "losses": 0
             },
-            {
-              "id": "greensomes",
-              "game": "Greensomes",
-              "wins": 0,
-              "ties": 0,
-              "losses": 0
-            },
+
             {
               "id": "pinehurst",
               "game": "Pinehurst",
@@ -7709,7 +7134,7 @@
         },
         "_2025": {
           "id": 2025,
-          "handicap": 0.0,
+          "handicap": 0,
           "captain": true,
           "team": "blue",
           "scores": {
@@ -7804,13 +7229,7 @@
               "ties": 1,
               "losses": 0
             },
-            {
-              "id": "greensomes",
-              "game": "Greensomes",
-              "wins": 0,
-              "ties": 0,
-              "losses": 0
-            },
+
             {
               "id": "pinehurst",
               "game": "Pinehurst",
@@ -8006,13 +7425,7 @@
               "ties": 0,
               "losses": 0
             },
-            {
-              "id": "greensomes",
-              "game": "Greensomes",
-              "wins": 0,
-              "ties": 0,
-              "losses": 0
-            },
+
             {
               "id": "pinehurst",
               "game": "Pinehurst",
@@ -8206,13 +7619,7 @@
               "ties": 0,
               "losses": 0
             },
-            {
-              "id": "greensomes",
-              "game": "Greensomes",
-              "wins": 0,
-              "ties": 0,
-              "losses": 0
-            },
+
             {
               "id": "pinehurst",
               "game": "Pinehurst",
@@ -8389,13 +7796,7 @@
               "ties": 1,
               "losses": 0
             },
-            {
-              "id": "greensomes",
-              "game": "Greensomes",
-              "wins": 0,
-              "ties": 0,
-              "losses": 0
-            },
+
             {
               "id": "scramble",
               "game": "Scramble",
@@ -8710,13 +8111,7 @@
               "ties": 0,
               "losses": 0
             },
-            {
-              "id": "greensomes",
-              "game": "Greensomes",
-              "wins": 0,
-              "ties": 0,
-              "losses": 0
-            },
+
             {
               "id": "pinehurst",
               "game": "Pinehurst",
@@ -8923,13 +8318,7 @@
               "ties": 1,
               "losses": 0
             },
-            {
-              "id": "greensomes",
-              "game": "Greensomes",
-              "wins": 0,
-              "ties": 0,
-              "losses": 0
-            },
+
             {
               "id": "pinehurst",
               "game": "Pinehurst",
@@ -9125,13 +8514,7 @@
               "ties": 0,
               "losses": 0
             },
-            {
-              "id": "greensomes",
-              "game": "Greensomes",
-              "wins": 0,
-              "ties": 0,
-              "losses": 0
-            },
+
             {
               "id": "pinehurst",
               "game": "Pinehurst",
@@ -9314,13 +8697,7 @@
               "ties": 0,
               "losses": 0
             },
-            {
-              "id": "greensomes",
-              "game": "Greensomes",
-              "wins": 0,
-              "ties": 0,
-              "losses": 0
-            },
+
             {
               "id": "pinehurst",
               "game": "Pinehurst",
@@ -9497,13 +8874,7 @@
               "ties": 0,
               "losses": 1
             },
-            {
-              "id": "greensomes",
-              "game": "Greensomes",
-              "wins": 0,
-              "ties": 0,
-              "losses": 0
-            },
+
             {
               "id": "scramble",
               "game": "Scramble",
@@ -9693,13 +9064,7 @@
               "ties": 0,
               "losses": 0
             },
-            {
-              "id": "greensomes",
-              "game": "Greensomes",
-              "wins": 0,
-              "ties": 0,
-              "losses": 0
-            },
+
             {
               "id": "pinehurst",
               "game": "Pinehurst",
@@ -9889,13 +9254,7 @@
               "ties": 1,
               "losses": 0
             },
-            {
-              "id": "greensomes",
-              "game": "Greensomes",
-              "wins": 0,
-              "ties": 0,
-              "losses": 0
-            },
+
             {
               "id": "pinehurst",
               "game": "Pinehurst",
@@ -10091,13 +9450,7 @@
               "ties": 0,
               "losses": 1
             },
-            {
-              "id": "greensomes",
-              "game": "Greensomes",
-              "wins": 0,
-              "ties": 0,
-              "losses": 0
-            },
+
             {
               "id": "pinehurst",
               "game": "Pinehurst",
@@ -10268,13 +9621,7 @@
               "ties": 0,
               "losses": 0
             },
-            {
-              "id": "greensomes",
-              "game": "Greensomes",
-              "wins": 0,
-              "ties": 0,
-              "losses": 0
-            },
+
             {
               "id": "scramble",
               "game": "Scramble",
@@ -10463,13 +9810,7 @@
               "ties": 0,
               "losses": 1
             },
-            {
-              "id": "greensomes",
-              "game": "Greensomes",
-              "wins": 0,
-              "ties": 0,
-              "losses": 0
-            },
+
             {
               "id": "pinehurst",
               "game": "Pinehurst",
@@ -10652,13 +9993,7 @@
               "ties": 0,
               "losses": 1
             },
-            {
-              "id": "greensomes",
-              "game": "Greensomes",
-              "wins": 0,
-              "ties": 0,
-              "losses": 0
-            },
+
             {
               "id": "pinehurst",
               "game": "Pinehurst",
@@ -10829,13 +10164,7 @@
               "ties": 1,
               "losses": 0
             },
-            {
-              "id": "greensomes",
-              "game": "Greensomes",
-              "wins": 0,
-              "ties": 0,
-              "losses": 0
-            },
+
             {
               "id": "scramble",
               "game": "Scramble",
@@ -10937,11 +10266,11 @@
         "wins": 3,
         "losses": 2
       },
-      "handicap": 2.0,
+      "handicap": 2,
       "year": {
         "_2026": {
           "id": 2026,
-          "handicap": 0.0,
+          "handicap": 0,
           "captain": true,
           "team": "green",
           "scores": {
@@ -11025,13 +10354,7 @@
               "ties": 0,
               "losses": 0
             },
-            {
-              "id": "greensomes",
-              "game": "Greensomes",
-              "wins": 0,
-              "ties": 0,
-              "losses": 0
-            },
+
             {
               "id": "pinehurst",
               "game": "Pinehurst",
@@ -11139,7 +10462,7 @@
         },
         "_2025": {
           "id": 2025,
-          "handicap": 3.0,
+          "handicap": 3,
           "captain": true,
           "team": "green",
           "scores": {
@@ -11234,13 +10557,7 @@
               "ties": 1,
               "losses": 0
             },
-            {
-              "id": "greensomes",
-              "game": "Greensomes",
-              "wins": 0,
-              "ties": 0,
-              "losses": 0
-            },
+
             {
               "id": "pinehurst",
               "game": "Pinehurst",
@@ -11436,13 +10753,7 @@
               "ties": 0,
               "losses": 1
             },
-            {
-              "id": "greensomes",
-              "game": "Greensomes",
-              "wins": 0,
-              "ties": 0,
-              "losses": 0
-            },
+
             {
               "id": "pinehurst",
               "game": "Pinehurst",
@@ -11637,13 +10948,7 @@
               "ties": 0,
               "losses": 1
             },
-            {
-              "id": "greensomes",
-              "game": "Greensomes",
-              "wins": 0,
-              "ties": 0,
-              "losses": 0
-            },
+
             {
               "id": "pinehurst",
               "game": "Pinehurst",
@@ -11820,13 +11125,7 @@
               "ties": 0,
               "losses": 0
             },
-            {
-              "id": "greensomes",
-              "game": "Greensomes",
-              "wins": 0,
-              "ties": 0,
-              "losses": 0
-            },
+
             {
               "id": "scramble",
               "game": "Scramble",
@@ -12146,13 +11445,7 @@
               "ties": 0,
               "losses": 0
             },
-            {
-              "id": "greensomes",
-              "game": "Greensomes",
-              "wins": 0,
-              "ties": 0,
-              "losses": 0
-            },
+
             {
               "id": "pinehurst",
               "game": "Pinehurst",
@@ -12355,13 +11648,7 @@
               "ties": 0,
               "losses": 1
             },
-            {
-              "id": "greensomes",
-              "game": "Greensomes",
-              "wins": 0,
-              "ties": 0,
-              "losses": 0
-            },
+
             {
               "id": "pinehurst",
               "game": "Pinehurst",
@@ -12557,13 +11844,7 @@
               "ties": 0,
               "losses": 0
             },
-            {
-              "id": "greensomes",
-              "game": "Greensomes",
-              "wins": 0,
-              "ties": 0,
-              "losses": 0
-            },
+
             {
               "id": "pinehurst",
               "game": "Pinehurst",
@@ -12765,13 +12046,7 @@
               "ties": 0,
               "losses": 0
             },
-            {
-              "id": "greensomes",
-              "game": "Greensomes",
-              "wins": 0,
-              "ties": 0,
-              "losses": 0
-            },
+
             {
               "id": "pinehurst",
               "game": "Pinehurst",
@@ -12948,13 +12223,7 @@
               "ties": 0,
               "losses": 1
             },
-            {
-              "id": "greensomes",
-              "game": "Greensomes",
-              "wins": 0,
-              "ties": 0,
-              "losses": 0
-            },
+
             {
               "id": "scramble",
               "game": "Scramble",
@@ -13280,13 +12549,7 @@
               "ties": 1,
               "losses": 0
             },
-            {
-              "id": "greensomes",
-              "game": "Greensomes",
-              "wins": 0,
-              "ties": 0,
-              "losses": 0
-            },
+
             {
               "id": "pinehurst",
               "game": "Pinehurst",
@@ -13483,13 +12746,7 @@
               "ties": 0,
               "losses": 0
             },
-            {
-              "id": "greensomes",
-              "game": "Greensomes",
-              "wins": 0,
-              "ties": 0,
-              "losses": 0
-            },
+
             {
               "id": "pinehurst",
               "game": "Pinehurst",
@@ -13678,13 +12935,7 @@
               "ties": 0,
               "losses": 1
             },
-            {
-              "id": "greensomes",
-              "game": "Greensomes",
-              "wins": 0,
-              "ties": 0,
-              "losses": 0
-            },
+
             {
               "id": "pinehurst",
               "game": "Pinehurst",
@@ -13861,13 +13112,7 @@
               "ties": 0,
               "losses": 0
             },
-            {
-              "id": "greensomes",
-              "game": "Greensomes",
-              "wins": 0,
-              "ties": 0,
-              "losses": 0
-            },
+
             {
               "id": "scramble",
               "game": "Scramble",
