@@ -59,9 +59,14 @@ export const createPages = async ({ graphql, actions, reporter }) => {
   const posts = result.data.allMdx.nodes
 
   if (posts.length > 0) {
-    posts.forEach((post, index) => {
-      const previousPostId = index === 0 ? null : posts[index - 1].id
-      const nextPostId = index === posts.length - 1 ? null : posts[index + 1].id
+    const publishedPosts = posts.filter(
+      post => post.frontmatter.active !== false
+    )
+
+    publishedPosts.forEach((post, index) => {
+      const previousPostId = index === 0 ? null : publishedPosts[index - 1].id
+      const nextPostId =
+        index === publishedPosts.length - 1 ? null : publishedPosts[index + 1].id
       const template = post.frontmatter.category === 'media' ? mediaPost : playerPost
 
       createPage({

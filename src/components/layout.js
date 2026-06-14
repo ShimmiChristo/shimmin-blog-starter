@@ -7,7 +7,7 @@ import "mdb-react-ui-kit/dist/css/mdb.min.css"
 import "../styles/style.css"
 import "../styles/match.css"
 
-const Layout = ({ location, title, children }) => {
+const Layout = ({ location, title, sidebar, children }) => {
   const rootPath = `${__PATH_PREFIX__}/`
   const isRootPath = location.pathname === rootPath
 
@@ -29,7 +29,14 @@ const Layout = ({ location, title, children }) => {
         </script>
       </Helmet>
       <HeaderBootstrap></HeaderBootstrap>
-      <main className="global-wrapper container">{children}</main>
+      <main
+        className={
+          "global-wrapper container layout-v1" +
+          `${sidebar ? "sidebar-enabled" : ""}`
+        }
+      >
+        {children}
+      </main>
       <Footer></Footer>
     </div>
   )

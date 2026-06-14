@@ -1,6 +1,6 @@
 ---
-title: "Celebrating 50 Years of Excellence"
-date: "2025-10-05"
+title: "6 years and Counting"
+date: "2026-06-14"
 category: "media"
 description: "A look back at five decades of achievements as we celebrate our 50th anniversary"
 featuredImg: "../assets/50th-anniversary.jpg"
