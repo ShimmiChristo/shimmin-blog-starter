@@ -55,7 +55,7 @@ const PastScoresComponent = ({
           </div>
         ) : null}
       </div>
-      <div className={"container collapse " + open}>
+      <div className={"container px-0 collapse " + open}>
         <div className="row py-5">
           <div className="col-4 col-lg-3 h2">Final Score</div>
           <div
@@ -67,10 +67,10 @@ const PastScoresComponent = ({
           </div>
         </div>
         <div className="row pb-4">
-          <div className="col-12 col-lg-10">{summary}</div>
-          <div className="col-12 col-lg-10">{score}</div>
-          <div className="col-12 col-lg-10">{venue}</div>
-          <div className="col-12 col-lg-10">{players}</div>
+          <div className="col-12 px-0 col-lg-10">{summary}</div>
+          <div className="col-12 px-0 col-lg-10">{score}</div>
+          <div className="col-12 px-0 col-lg-10">{venue}</div>
+          <div className="col-12 px-0 col-lg-10">{players}</div>
         </div>
       </div>
     </>
