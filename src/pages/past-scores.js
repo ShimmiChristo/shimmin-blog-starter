@@ -7,15 +7,19 @@ import SEO from "../components/seo"
 import LandingPageHeader from "../components/landing-page-header"
 import PastScoresComponent from "../components/past-scores-component"
 
-import MatchSummary2021 from "../components/matches/2021/summary"
-import MatchScore2021 from "../components/matches/2021/score"
-import MatchPlayers2021 from "../components/matches/2021/players"
-import MatchVenue2021 from "../components/matches/2021/venue"
+import {
+  MatchSummary2021,
+  MatchScore2021,
+  MatchVenue2021,
+  MatchPlayers2021,
+} from "../components/matches/2021"
 
-import MatchSummary2022 from "../components/matches/2022/summary"
-import MatchScore2022 from "../components/matches/2022/score"
-import MatchPlayers2022 from "../components/matches/2022/players"
-import MatchVenue2022 from "../components/matches/2022/venue"
+import {
+  MatchSummary2022,
+  MatchScore2022,
+  MatchVenue2022,
+  MatchPlayers2022,
+} from "../components/matches/2022"
 
 import MatchScore from "../components/matches/match/score"
 
