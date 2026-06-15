@@ -1014,14 +1014,35 @@
           },
           "points": [
             {
-              "id": "bestBall",
-              "game": "Best Ball",
+              "id": "scramble",
+              "game": "Scramble",
+              "wins": 0,
+              "ties": 0,
+              "losses": 0
+            },
+            {
+              "id": "bestBallStrokeplay",
+              "game": "Best Ball Strokeplay",
               "wins": 0,
               "ties": 0,
               "losses": 0
             },
             {
               "id": "twoBestBall",
+              "game": "Best Ball",
+              "wins": 0,
+              "ties": 0,
+              "losses": 0
+            },
+            {
+              "id": "alternate",
+              "game": "Alternate",
+              "wins": 0,
+              "ties": 0,
+              "losses": 0
+            },
+            {
+              "id": "bestBall",
               "game": "Best Ball",
               "wins": 0,
               "ties": 0,
@@ -1035,30 +1056,8 @@
               "losses": 0
             },
             {
-              "id": "twoBallBramble",
-              "game": "Bramble",
-              "wins": 0,
-              "ties": 0,
-              "losses": 0
-            },
-            {
-              "id": "alternate",
-              "game": "Alternate",
-              "wins": 0,
-              "ties": 0,
-              "losses": 0
-            },
-
-            {
               "id": "pinehurst",
               "game": "Pinehurst",
-              "wins": 0,
-              "ties": 0,
-              "losses": 0
-            },
-            {
-              "id": "scramble",
-              "game": "Scramble",
               "wins": 0,
               "ties": 0,
               "losses": 0
@@ -1811,14 +1810,35 @@
           },
           "points": [
             {
-              "id": "bestBall",
-              "game": "Best Ball",
+              "id": "scramble",
+              "game": "Scramble",
+              "wins": 0,
+              "ties": 0,
+              "losses": 0
+            },
+            {
+              "id": "bestBallStrokeplay",
+              "game": "Best Ball Strokeplay",
               "wins": 0,
               "ties": 0,
               "losses": 0
             },
             {
               "id": "twoBestBall",
+              "game": "Best Ball",
+              "wins": 0,
+              "ties": 0,
+              "losses": 0
+            },
+            {
+              "id": "alternate",
+              "game": "Alternate",
+              "wins": 0,
+              "ties": 0,
+              "losses": 0
+            },
+            {
+              "id": "bestBall",
               "game": "Best Ball",
               "wins": 0,
               "ties": 0,
@@ -1832,30 +1852,8 @@
               "losses": 0
             },
             {
-              "id": "twoBallBramble",
-              "game": "Bramble",
-              "wins": 0,
-              "ties": 0,
-              "losses": 0
-            },
-            {
-              "id": "alternate",
-              "game": "Alternate",
-              "wins": 0,
-              "ties": 0,
-              "losses": 0
-            },
-
-            {
               "id": "pinehurst",
               "game": "Pinehurst",
-              "wins": 0,
-              "ties": 0,
-              "losses": 0
-            },
-            {
-              "id": "scramble",
-              "game": "Scramble",
               "wins": 0,
               "ties": 0,
               "losses": 0
@@ -2757,14 +2755,35 @@
           },
           "points": [
             {
-              "id": "bestBall",
-              "game": "Best Ball",
+              "id": "scramble",
+              "game": "Scramble",
+              "wins": 0,
+              "ties": 0,
+              "losses": 0
+            },
+            {
+              "id": "bestBallStrokeplay",
+              "game": "Best Ball Strokeplay",
               "wins": 0,
               "ties": 0,
               "losses": 0
             },
             {
               "id": "twoBestBall",
+              "game": "Best Ball",
+              "wins": 0,
+              "ties": 0,
+              "losses": 0
+            },
+            {
+              "id": "alternate",
+              "game": "Alternate",
+              "wins": 0,
+              "ties": 0,
+              "losses": 0
+            },
+            {
+              "id": "bestBall",
               "game": "Best Ball",
               "wins": 0,
               "ties": 0,
@@ -2778,30 +2797,8 @@
               "losses": 0
             },
             {
-              "id": "twoBallBramble",
-              "game": "Bramble",
-              "wins": 0,
-              "ties": 0,
-              "losses": 0
-            },
-            {
-              "id": "alternate",
-              "game": "Alternate",
-              "wins": 0,
-              "ties": 0,
-              "losses": 0
-            },
-
-            {
               "id": "pinehurst",
               "game": "Pinehurst",
-              "wins": 0,
-              "ties": 0,
-              "losses": 0
-            },
-            {
-              "id": "scramble",
-              "game": "Scramble",
               "wins": 0,
               "ties": 0,
               "losses": 0
@@ -3848,14 +3845,35 @@
           },
           "points": [
             {
-              "id": "bestBall",
-              "game": "Best Ball",
+              "id": "scramble",
+              "game": "Scramble",
+              "wins": 0,
+              "ties": 0,
+              "losses": 0
+            },
+            {
+              "id": "bestBallStrokeplay",
+              "game": "Best Ball Strokeplay",
               "wins": 0,
               "ties": 0,
               "losses": 0
             },
             {
               "id": "twoBestBall",
+              "game": "Best Ball",
+              "wins": 0,
+              "ties": 0,
+              "losses": 0
+            },
+            {
+              "id": "alternate",
+              "game": "Alternate",
+              "wins": 0,
+              "ties": 0,
+              "losses": 0
+            },
+            {
+              "id": "bestBall",
               "game": "Best Ball",
               "wins": 0,
               "ties": 0,
@@ -3869,30 +3887,8 @@
               "losses": 0
             },
             {
-              "id": "twoBallBramble",
-              "game": "Bramble",
-              "wins": 0,
-              "ties": 0,
-              "losses": 0
-            },
-            {
-              "id": "alternate",
-              "game": "Alternate",
-              "wins": 0,
-              "ties": 0,
-              "losses": 0
-            },
-
-            {
               "id": "pinehurst",
               "game": "Pinehurst",
-              "wins": 0,
-              "ties": 0,
-              "losses": 0
-            },
-            {
-              "id": "scramble",
-              "game": "Scramble",
               "wins": 0,
               "ties": 0,
               "losses": 0
@@ -4805,14 +4801,35 @@
           },
           "points": [
             {
-              "id": "bestBall",
-              "game": "Best Ball",
+              "id": "scramble",
+              "game": "Scramble",
+              "wins": 0,
+              "ties": 0,
+              "losses": 0
+            },
+            {
+              "id": "bestBallStrokeplay",
+              "game": "Best Ball Strokeplay",
               "wins": 0,
               "ties": 0,
               "losses": 0
             },
             {
               "id": "twoBestBall",
+              "game": "Best Ball",
+              "wins": 0,
+              "ties": 0,
+              "losses": 0
+            },
+            {
+              "id": "alternate",
+              "game": "Alternate",
+              "wins": 0,
+              "ties": 0,
+              "losses": 0
+            },
+            {
+              "id": "bestBall",
               "game": "Best Ball",
               "wins": 0,
               "ties": 0,
@@ -4826,30 +4843,8 @@
               "losses": 0
             },
             {
-              "id": "twoBallBramble",
-              "game": "Bramble",
-              "wins": 0,
-              "ties": 0,
-              "losses": 0
-            },
-            {
-              "id": "alternate",
-              "game": "Alternate",
-              "wins": 0,
-              "ties": 0,
-              "losses": 0
-            },
-
-            {
               "id": "pinehurst",
               "game": "Pinehurst",
-              "wins": 0,
-              "ties": 0,
-              "losses": 0
-            },
-            {
-              "id": "scramble",
-              "game": "Scramble",
               "wins": 0,
               "ties": 0,
               "losses": 0
@@ -5911,14 +5906,35 @@
           },
           "points": [
             {
-              "id": "bestBall",
-              "game": "Best Ball",
+              "id": "scramble",
+              "game": "Scramble",
+              "wins": 0,
+              "ties": 0,
+              "losses": 0
+            },
+            {
+              "id": "bestBallStrokeplay",
+              "game": "Best Ball Strokeplay",
               "wins": 0,
               "ties": 0,
               "losses": 0
             },
             {
               "id": "twoBestBall",
+              "game": "Best Ball",
+              "wins": 0,
+              "ties": 0,
+              "losses": 0
+            },
+            {
+              "id": "alternate",
+              "game": "Alternate",
+              "wins": 0,
+              "ties": 0,
+              "losses": 0
+            },
+            {
+              "id": "bestBall",
               "game": "Best Ball",
               "wins": 0,
               "ties": 0,
@@ -5932,30 +5948,8 @@
               "losses": 0
             },
             {
-              "id": "twoBallBramble",
-              "game": "Bramble",
-              "wins": 0,
-              "ties": 0,
-              "losses": 0
-            },
-            {
-              "id": "alternate",
-              "game": "Alternate",
-              "wins": 0,
-              "ties": 0,
-              "losses": 0
-            },
-
-            {
               "id": "pinehurst",
               "game": "Pinehurst",
-              "wins": 0,
-              "ties": 0,
-              "losses": 0
-            },
-            {
-              "id": "scramble",
-              "game": "Scramble",
               "wins": 0,
               "ties": 0,
               "losses": 0
@@ -6994,14 +6988,35 @@
           },
           "points": [
             {
-              "id": "bestBall",
-              "game": "Best Ball",
+              "id": "scramble",
+              "game": "Scramble",
+              "wins": 0,
+              "ties": 0,
+              "losses": 0
+            },
+            {
+              "id": "bestBallStrokeplay",
+              "game": "Best Ball Strokeplay",
               "wins": 0,
               "ties": 0,
               "losses": 0
             },
             {
               "id": "twoBestBall",
+              "game": "Best Ball",
+              "wins": 0,
+              "ties": 0,
+              "losses": 0
+            },
+            {
+              "id": "alternate",
+              "game": "Alternate",
+              "wins": 0,
+              "ties": 0,
+              "losses": 0
+            },
+            {
+              "id": "bestBall",
               "game": "Best Ball",
               "wins": 0,
               "ties": 0,
@@ -7015,30 +7030,8 @@
               "losses": 0
             },
             {
-              "id": "twoBallBramble",
-              "game": "Bramble",
-              "wins": 0,
-              "ties": 0,
-              "losses": 0
-            },
-            {
-              "id": "alternate",
-              "game": "Alternate",
-              "wins": 0,
-              "ties": 0,
-              "losses": 0
-            },
-
-            {
               "id": "pinehurst",
               "game": "Pinehurst",
-              "wins": 0,
-              "ties": 0,
-              "losses": 0
-            },
-            {
-              "id": "scramble",
-              "game": "Scramble",
               "wins": 0,
               "ties": 0,
               "losses": 0
@@ -8082,14 +8075,35 @@
           },
           "points": [
             {
-              "id": "bestBall",
-              "game": "Best Ball",
+              "id": "scramble",
+              "game": "Scramble",
+              "wins": 0,
+              "ties": 0,
+              "losses": 0
+            },
+            {
+              "id": "bestBallStrokeplay",
+              "game": "Best Ball Strokeplay",
               "wins": 0,
               "ties": 0,
               "losses": 0
             },
             {
               "id": "twoBestBall",
+              "game": "Best Ball",
+              "wins": 0,
+              "ties": 0,
+              "losses": 0
+            },
+            {
+              "id": "alternate",
+              "game": "Alternate",
+              "wins": 0,
+              "ties": 0,
+              "losses": 0
+            },
+            {
+              "id": "bestBall",
               "game": "Best Ball",
               "wins": 0,
               "ties": 0,
@@ -8103,30 +8117,8 @@
               "losses": 0
             },
             {
-              "id": "twoBallBramble",
-              "game": "Bramble",
-              "wins": 0,
-              "ties": 0,
-              "losses": 0
-            },
-            {
-              "id": "alternate",
-              "game": "Alternate",
-              "wins": 0,
-              "ties": 0,
-              "losses": 0
-            },
-
-            {
               "id": "pinehurst",
               "game": "Pinehurst",
-              "wins": 0,
-              "ties": 0,
-              "losses": 0
-            },
-            {
-              "id": "scramble",
-              "game": "Scramble",
               "wins": 0,
               "ties": 0,
               "losses": 0
@@ -9036,14 +9028,35 @@
           },
           "points": [
             {
-              "id": "bestBall",
-              "game": "Best Ball",
+              "id": "scramble",
+              "game": "Scramble",
+              "wins": 0,
+              "ties": 0,
+              "losses": 0
+            },
+            {
+              "id": "bestBallStrokeplay",
+              "game": "Best Ball Strokeplay",
               "wins": 0,
               "ties": 0,
               "losses": 0
             },
             {
               "id": "twoBestBall",
+              "game": "Best Ball",
+              "wins": 0,
+              "ties": 0,
+              "losses": 0
+            },
+            {
+              "id": "alternate",
+              "game": "Alternate",
+              "wins": 0,
+              "ties": 0,
+              "losses": 0
+            },
+            {
+              "id": "bestBall",
               "game": "Best Ball",
               "wins": 0,
               "ties": 0,
@@ -9057,30 +9070,8 @@
               "losses": 0
             },
             {
-              "id": "twoBallBramble",
-              "game": "Bramble",
-              "wins": 0,
-              "ties": 0,
-              "losses": 0
-            },
-            {
-              "id": "alternate",
-              "game": "Alternate",
-              "wins": 0,
-              "ties": 0,
-              "losses": 0
-            },
-
-            {
               "id": "pinehurst",
               "game": "Pinehurst",
-              "wins": 0,
-              "ties": 0,
-              "losses": 0
-            },
-            {
-              "id": "scramble",
-              "game": "Scramble",
               "wins": 0,
               "ties": 0,
               "losses": 0
@@ -10330,14 +10321,35 @@
           },
           "points": [
             {
-              "id": "bestBall",
-              "game": "Best Ball",
+              "id": "scramble",
+              "game": "Scramble",
+              "wins": 0,
+              "ties": 0,
+              "losses": 0
+            },
+            {
+              "id": "bestBallStrokeplay",
+              "game": "Best Ball Strokeplay",
               "wins": 0,
               "ties": 0,
               "losses": 0
             },
             {
               "id": "twoBestBall",
+              "game": "Best Ball",
+              "wins": 0,
+              "ties": 0,
+              "losses": 0
+            },
+            {
+              "id": "alternate",
+              "game": "Alternate",
+              "wins": 0,
+              "ties": 0,
+              "losses": 0
+            },
+            {
+              "id": "bestBall",
               "game": "Best Ball",
               "wins": 0,
               "ties": 0,
@@ -10351,30 +10363,8 @@
               "losses": 0
             },
             {
-              "id": "twoBallBramble",
-              "game": "Bramble",
-              "wins": 0,
-              "ties": 0,
-              "losses": 0
-            },
-            {
-              "id": "alternate",
-              "game": "Alternate",
-              "wins": 0,
-              "ties": 0,
-              "losses": 0
-            },
-
-            {
               "id": "pinehurst",
               "game": "Pinehurst",
-              "wins": 0,
-              "ties": 0,
-              "losses": 0
-            },
-            {
-              "id": "scramble",
-              "game": "Scramble",
               "wins": 0,
               "ties": 0,
               "losses": 0
@@ -11424,14 +11414,35 @@
           },
           "points": [
             {
-              "id": "bestBall",
-              "game": "Best Ball",
+              "id": "scramble",
+              "game": "Scramble",
+              "wins": 0,
+              "ties": 0,
+              "losses": 0
+            },
+            {
+              "id": "bestBallStrokeplay",
+              "game": "Best Ball Strokeplay",
               "wins": 0,
               "ties": 0,
               "losses": 0
             },
             {
               "id": "twoBestBall",
+              "game": "Best Ball",
+              "wins": 0,
+              "ties": 0,
+              "losses": 0
+            },
+            {
+              "id": "alternate",
+              "game": "Alternate",
+              "wins": 0,
+              "ties": 0,
+              "losses": 0
+            },
+            {
+              "id": "bestBall",
               "game": "Best Ball",
               "wins": 0,
               "ties": 0,
@@ -11445,30 +11456,8 @@
               "losses": 0
             },
             {
-              "id": "twoBallBramble",
-              "game": "Bramble",
-              "wins": 0,
-              "ties": 0,
-              "losses": 0
-            },
-            {
-              "id": "alternate",
-              "game": "Alternate",
-              "wins": 0,
-              "ties": 0,
-              "losses": 0
-            },
-
-            {
               "id": "pinehurst",
               "game": "Pinehurst",
-              "wins": 0,
-              "ties": 0,
-              "losses": 0
-            },
-            {
-              "id": "scramble",
-              "game": "Scramble",
               "wins": 0,
               "ties": 0,
               "losses": 0
@@ -12729,14 +12718,35 @@
           },
           "points": [
             {
-              "id": "bestBall",
-              "game": "Best Ball",
+              "id": "scramble",
+              "game": "Scramble",
+              "wins": 0,
+              "ties": 0,
+              "losses": 0
+            },
+            {
+              "id": "bestBallStrokeplay",
+              "game": "Best Ball Strokeplay",
               "wins": 0,
               "ties": 0,
               "losses": 0
             },
             {
               "id": "twoBestBall",
+              "game": "Best Ball",
+              "wins": 0,
+              "ties": 0,
+              "losses": 0
+            },
+            {
+              "id": "alternate",
+              "game": "Alternate",
+              "wins": 0,
+              "ties": 0,
+              "losses": 0
+            },
+            {
+              "id": "bestBall",
               "game": "Best Ball",
               "wins": 0,
               "ties": 0,
@@ -12750,30 +12760,8 @@
               "losses": 0
             },
             {
-              "id": "twoBallBramble",
-              "game": "Bramble",
-              "wins": 0,
-              "ties": 0,
-              "losses": 0
-            },
-            {
-              "id": "alternate",
-              "game": "Alternate",
-              "wins": 0,
-              "ties": 0,
-              "losses": 0
-            },
-
-            {
               "id": "pinehurst",
               "game": "Pinehurst",
-              "wins": 0,
-              "ties": 0,
-              "losses": 0
-            },
-            {
-              "id": "scramble",
-              "game": "Scramble",
               "wins": 0,
               "ties": 0,
               "losses": 0

@@ -6,7 +6,7 @@
           "name": "green team",
           "nickname": "crohns crushers",
           "players": ["Matt", "Gordon", "Chris", "Derek", "Travis", "Curtis"],
-          "score": "14.5",
+          "score": "0",
           "scores": {
             "dayone": "0",
             "daytwo": "0",
@@ -22,43 +22,43 @@
           },
           "points": [
             {
-              "id": "bestBall",
-              "game": "Best Ball",
-              "wins": 3,
+              "id": "scramble",
+              "game": "Scramble",
+              "wins": 0,
+              "ties": 0,
+              "losses": 0
+            },
+            {
+              "id": "bestBallStrokeplay",
+              "game": "Best Ball Strokeplay",
+              "wins": 0,
               "ties": 0,
               "losses": 0
             },
             {
               "id": "twoBestBall",
               "game": "Best Ball",
-              "wins": 2,
+              "wins": 0,
               "ties": 0,
-              "losses": 1
-            },
-            {
-              "id": "bramble",
-              "game": "Bramble",
-              "wins": 1,
-              "ties": 0,
-              "losses": 2
-            },
-            {
-              "id": "twoBallBramble",
-              "game": "Bramble",
-              "wins": 1,
-              "ties": 0,
-              "losses": 2
+              "losses": 0
             },
             {
               "id": "alternate",
               "game": "Alternate",
-              "wins": 1,
-              "ties": 2,
+              "wins": 0,
+              "ties": 0,
               "losses": 0
             },
             {
-              "id": "greensomes",
-              "game": "Greensomes",
+              "id": "bestBall",
+              "game": "Best Ball",
+              "wins": 0,
+              "ties": 0,
+              "losses": 0
+            },
+            {
+              "id": "bramble",
+              "game": "Bramble",
               "wins": 0,
               "ties": 0,
               "losses": 0
@@ -66,23 +66,16 @@
             {
               "id": "pinehurst",
               "game": "Pinehurst",
-              "wins": 1,
-              "ties": 1,
-              "losses": 1
-            },
-            {
-              "id": "scramble",
-              "game": "Scramble",
-              "wins": 1,
-              "ties": 1,
-              "losses": 1
+              "wins": 0,
+              "ties": 0,
+              "losses": 0
             },
             {
               "id": "singles",
               "game": "Singles",
-              "wins": 2,
-              "ties": 1,
-              "losses": 3
+              "wins": 0,
+              "ties": 0,
+              "losses": 0
             }
           ]
         },
@@ -90,7 +83,7 @@
           "name": "blue team",
           "nickname": "team ramrod",
           "players": ["Dylan", "RJ", "Craig", "Dan", "Cam", "Evan"],
-          "score": "12.5",
+          "score": "0",
           "scores": {
             "dayone": "0",
             "daytwo": "0",
@@ -106,43 +99,43 @@
           },
           "points": [
             {
-              "id": "bestBall",
-              "game": "Best Ball",
+              "id": "scramble",
+              "game": "Scramble",
               "wins": 0,
               "ties": 0,
-              "losses": 3
+              "losses": 0
+            },
+            {
+              "id": "bestBallStrokeplay",
+              "game": "Best Ball Strokeplay",
+              "wins": 0,
+              "ties": 0,
+              "losses": 0
             },
             {
               "id": "twoBestBall",
               "game": "Best Ball",
-              "wins": 1,
+              "wins": 0,
               "ties": 0,
-              "losses": 2
-            },
-            {
-              "id": "bramble",
-              "game": "Bramble",
-              "wins": 2,
-              "ties": 0,
-              "losses": 1
-            },
-            {
-              "id": "twoBallBramble",
-              "game": "Bramble",
-              "wins": 2,
-              "ties": 0,
-              "losses": 1
+              "losses": 0
             },
             {
               "id": "alternate",
               "game": "Alternate",
               "wins": 0,
-              "ties": 2,
-              "losses": 1
+              "ties": 0,
+              "losses": 0
             },
             {
-              "id": "greensomes",
-              "game": "Greensomes",
+              "id": "bestBall",
+              "game": "Best Ball",
+              "wins": 0,
+              "ties": 0,
+              "losses": 0
+            },
+            {
+              "id": "bramble",
+              "game": "Bramble",
               "wins": 0,
               "ties": 0,
               "losses": 0
@@ -150,23 +143,16 @@
             {
               "id": "pinehurst",
               "game": "Pinehurst",
-              "wins": 1,
-              "ties": 1,
-              "losses": 1
-            },
-            {
-              "id": "scramble",
-              "game": "Scramble",
-              "wins": 1,
-              "ties": 1,
-              "losses": 1
+              "wins": 0,
+              "ties": 0,
+              "losses": 0
             },
             {
               "id": "singles",
               "game": "Singles",
-              "wins": 3,
-              "ties": 1,
-              "losses": 2
+              "wins": 0,
+              "ties": 0,
+              "losses": 0
             }
           ]
         }

@@ -1751,10 +1751,10 @@
                 "slope": 142.0
               },
               "in": {
-                "yardage": 3250,
+                "yardage": 3116,
                 "par": 36,
-                "index": 36.1,
-                "slope": 139.0
+                "index": 37.2,
+                "slope": 141.0
               },
               "total": {
                 "yardage": 6628,
@@ -1951,8 +1951,8 @@
                 "in": {
                   "yardage": 3116,
                   "par": 36,
-                  "index": 35.3,
-                  "slope": 138.0
+                  "index": 37.2,
+                  "slope": 141.0
                 },
                 "total": {
                   "yardage": 6628,
