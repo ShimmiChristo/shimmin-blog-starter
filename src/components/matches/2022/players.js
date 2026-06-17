@@ -8,7 +8,7 @@ function MatchPlayers2022() {
       <h2>2022 Players</h2>
       <div className="mb-3">
         <div className="row">
-          <div className="col">
+          <div className="col-md-6 mb-3">
             <div className="card shadow-none border">
               <div className="card-header team-one-color-bg text-white">
                 Green Team
@@ -25,7 +25,7 @@ function MatchPlayers2022() {
               </ul>
             </div>
           </div>
-          <div className="col">
+          <div className="col-md-6 mb-3">
             <div className="card shadow-none border">
               <div className="card-header team-two-color-bg text-white">
                 Blue Team
