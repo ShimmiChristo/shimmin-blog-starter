@@ -225,7 +225,8 @@ function MatchSummary2023() {
           match ends in a push. Blue wins the 2023 BFBH cup 14 points to 13
           points.
         </p>
-
+      </div>
+      <div className="mt-5">
         <p>
           <div className="block mb-1">
             <span className="bold">MVP: </span>
@@ -242,11 +243,11 @@ function MatchSummary2023() {
           </div>
         </p>
       </div>
-      <div className="container col-lg-8">
+      <div className="my-3">
         <StaticImage
           src="../../../images/group/2023-group.jpg"
           alt="2023 bfbh cup players"
-          loading="eager"
+          loading="lazy"
           placeholder="blurred"
           layout="fullWidth"
         />

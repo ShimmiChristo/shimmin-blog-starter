@@ -21,7 +21,7 @@ function MatchSummary2025() {
   return (
     <>
       <div className="mb-3">
-        <div className="container">
+        <div className="">
           <h2>2025 BFBH Cup</h2>
           <p>
             The 2025 Boys From Back Home Cup was the 5th year of the annual golf
@@ -365,7 +365,7 @@ function MatchSummary2025() {
           <p>See you back at Boyne Highlands in 2026 for the next BFBH Cup!</p>
         </div>
 
-        <div className="container mt-3">
+        <div className="mt-5">
           <p>
             <div className="block mb-1">
               <span className="bold">MVP: </span>
@@ -381,11 +381,12 @@ function MatchSummary2025() {
             </div>
           </p>
         </div>
-        <div className="container col-lg-8 my-3">
+
+        <div className="my-3">
           <StaticImage
             src="../../../images/group/2025-group.jpg"
             alt="2025 bfbh cup players"
-            loading="eager"
+            loading="lazy"
             placeholder="blurred"
             layout="fullWidth"
           />

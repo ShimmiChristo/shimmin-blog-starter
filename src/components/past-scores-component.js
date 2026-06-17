@@ -67,10 +67,10 @@ const PastScoresComponent = ({
           </div>
         </div>
         <div className="row pb-4">
-          <div className="col-12 px-0 col-lg-10">{summary}</div>
-          <div className="col-12 px-0 col-lg-10">{score}</div>
-          <div className="col-12 px-0 col-lg-10">{venue}</div>
-          <div className="col-12 px-0 col-lg-10">{players}</div>
+          <div className="col-12 col-lg-8">{summary}</div>
+          <div className="col-12 col-lg-8">{score}</div>
+          <div className="col-12 col-lg-8">{venue}</div>
+          <div className="col-12 col-lg-8">{players}</div>
         </div>
       </div>
     </>

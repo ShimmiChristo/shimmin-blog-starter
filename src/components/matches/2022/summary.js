@@ -62,6 +62,8 @@ function MatchSummary2022() {
           Now just playing for more points, Blue won 2 of the 3 scrambles and 5
           of the 6 singles matches.
         </p>
+      </div>
+      <div className="mt-5">
         <p>
           <div className="block mb-1">
             <span className="bold">MVP: </span>
@@ -79,11 +81,11 @@ function MatchSummary2022() {
           </div>
         </p>
       </div>
-      <div className="container col-lg-8">
+      <div className="my-3">
         <StaticImage
           src="../../../images/group/2022-group.jpg"
           alt="2022 bfbh cup players"
-          loading="eager"
+          loading="lazy"
           placeholder="blurred"
           layout="fullWidth"
         />

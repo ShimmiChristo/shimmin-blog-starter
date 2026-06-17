@@ -43,6 +43,8 @@ function MatchSummary2021() {
           The blue team defeated the green team 9 to 5, holding cup for the
           first year.
         </p>
+      </div>
+      <div className="mt-5">
         <p>
           <div className="block mb-1">
             <span className="bold">MVP: </span>
@@ -58,11 +60,11 @@ function MatchSummary2021() {
           </div>
         </p>
       </div>
-      <div className="container col-lg-8">
+      <div className="my-3">
         <StaticImage
           src="../../../images/group/2021-group.jpg"
           alt="2021 bfbh cup players"
-          loading="eager"
+          loading="lazy"
           placeholder="blurred"
           layout="fullWidth"
         />

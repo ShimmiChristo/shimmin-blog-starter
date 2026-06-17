@@ -355,6 +355,8 @@ function MatchSummary2024() {
           {dylan} chips in on 9 to save a 0.5 point, and {derek} is the point
           that seals the win for the Green Team!
         </p>
+      </div>
+      <div className="mt-5">
         <p>
           <div className="block mb-1">
             <span className="bold">MVP: </span>
@@ -370,11 +372,12 @@ function MatchSummary2024() {
           </div>
         </p>
       </div>
-      <div className="container col-lg-8">
+
+      <div className="my-3">
         <StaticImage
           src="../../../images/group/2024-group.jpg"
           alt="2024 bfbh cup players"
-          loading="eager"
+          loading="lazy"
           placeholder="blurred"
           layout="fullWidth"
         />
