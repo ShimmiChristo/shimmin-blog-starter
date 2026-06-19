@@ -77,9 +77,8 @@ const TopicPage = ({ data, location }) => {
             </ol>
           </div>
         </div>
-        <div className="row my-3">
-          <hr />
-        </div>
+
+        <hr />
 
         <div className="row my-3">
           <div className="col-lg-9">
