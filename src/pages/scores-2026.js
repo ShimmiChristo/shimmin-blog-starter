@@ -44,8 +44,8 @@ const TopicPage = ({ location }) => {
 
   const p1 = "dylan"
   const p2 = "rj"
-  const p3 = "craig"
-  const p4 = "dan"
+  const p3 = "dan"
+  const p4 = "craig"
   const p5 = "cam"
   const p6 = "evan"
   const p7 = "matt"
@@ -102,7 +102,7 @@ const TopicPage = ({ location }) => {
       courseMatch: "crookedTree",
       matchTees: ["purple", "orange"],
       players: {
-        blue: [1, 4, 2, 3, 5, 6],
+        blue: [1, 3, 2, 4, 5, 6],
         green: [7, 9, 10, 11, 8, 12],
       },
     },
@@ -113,8 +113,8 @@ const TopicPage = ({ location }) => {
       courseMatch: "crookedTree",
       matchTees: ["purple", "orange"],
       players: {
-        blue: [3, 4, 2, 5, 1, 6],
-        green: [7, 11, 10, 12, 8, 9],
+        blue: [1, 4, 2, 5, 3, 6],
+        green: [9, 11, 8, 10, 7, 12],
       },
     },
     {
@@ -124,8 +124,8 @@ const TopicPage = ({ location }) => {
       courseMatch: "bayHarborPreserveLinks",
       matchTees: ["brown", "purple"],
       players: {
-        blue: [2, 5, 1, 3, 4, 6],
-        green: [7, 12, 9, 11, 8, 10],
+        blue: [1, 6, 2, 3, 4, 5],
+        green: [7, 10, 9, 12, 8, 11],
       },
     },
     {
@@ -135,19 +135,8 @@ const TopicPage = ({ location }) => {
       courseMatch: "bayHarborPreserveLinks",
       matchTees: ["purple", "orange"],
       players: {
-        blue: [1, 5, 2, 4, 3, 6],
-        green: [7, 8, 9, 12, 10, 11],
-      },
-    },
-    {
-      matchId: " - Best Ball. 90% HC",
-      matchName: "Best Ball",
-      gameplay: "one-ball",
-      courseMatch: "boyneHighlandsArthurHills",
-      matchTees: ["purple", "orange"],
-      players: {
-        blue: [1, 2, 3, 6, 4, 5],
-        green: [9, 10, 7, 12, 8, 11],
+        blue: [1, 2, 4, 6, 3, 5],
+        green: [10, 12, 8, 9, 7, 11],
       },
     },
     {
@@ -157,8 +146,19 @@ const TopicPage = ({ location }) => {
       courseMatch: "boyneHighlandsArthurHills",
       matchTees: ["purple", "orange"],
       players: {
-        blue: [2, 6, 3, 5, 1, 4],
-        green: [7, 10, 8, 9, 11, 12],
+        blue: [3, 4, 1, 5, 2, 6],
+        green: [7, 12, 8, 10, 9, 11],
+      },
+    },
+    {
+      matchId: " - Best Ball. 90% HC",
+      matchName: "Best Ball",
+      gameplay: "one-ball",
+      courseMatch: "boyneHighlandsArthurHills",
+      matchTees: ["purple", "orange"],
+      players: {
+        blue: [1, 4, 2, 5, 3, 6],
+        green: [10, 12, 7, 9, 8, 11],
       },
     },
 

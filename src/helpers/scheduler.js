@@ -88,10 +88,10 @@ function generateTeamRoundsMain() {
       round: 3,
       matches: [
         {
-          teamA: ["1", "4"],
+          teamA: ["1", "3"],
         },
         {
-          teamA: ["2", "3"],
+          teamA: ["2", "4"],
         },
         {
           teamA: ["5", "6"],
@@ -696,7 +696,7 @@ function generateTeamRoundsMain() {
 
     // * max variables
     const maxPartnerVal = roundsInit.length < 2 ? 2 : 3
-    const maxOpponentVal = roundsInit.length < 2 ? 4 : 5
+    const maxOpponentVal = roundsInit.length < 2 ? 4 : 4
     const opponentsThatCantPlayMoreThan_4_Times = [
       "1-7",
       "1-9",
