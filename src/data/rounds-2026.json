@@ -1,0 +1,231 @@
+[
+  {
+    "round": 1,
+    "gameplay": "scramble",
+    "course": "crookedTree",
+    "holes": "front",
+    "matches": [
+      {
+        "green": ["matt", "chris"],
+        "blue": ["dylan", "dan"],
+        "winner": "tie",
+        "scores": {
+          "matt": {
+            "holes": [99, 99, 99, 99, 99, 99, 99, 99, 99],
+            "frontGross": 999,
+            "backGross": 999,
+            "useForHandicapIndex": false,
+            "use18Holes": false,
+            "useFront": false
+          },
+          "chris": [99, 99, 99, 99, 99, 99, 99, 99, 99],
+          "dylan": [99, 99, 99, 99, 99, 99, 99, 99, 99],
+          "dan": [99, 99, 99, 99, 99, 99, 99, 99, 99]
+        }
+      },
+      {
+        "green": ["gordon", "derek"],
+        "blue": ["rj", "craig"],
+        "winner": "tie"
+      },
+      {
+        "green": ["travis", "curtis"],
+        "blue": ["cam", "evan"],
+        "winner": "tie"
+      }
+    ]
+  },
+  {
+    "round": 2,
+    "gameplay": "bestBallStrokeplay",
+    "course": "crookedTree",
+    "holes": "back",
+    "matches": [
+      {
+        "green": ["matt", "chris"],
+        "blue": ["dylan", "dan"],
+        "winner": "tie",
+        "scores": {
+          "matt": {
+            "holes": [99, 99, 99, 99, 99, 99, 99, 99, 99],
+            "frontGross": 999,
+            "backGross": 999,
+            "useForHandicapIndex": true,
+            "use18Holes": false,
+            "useBack": true
+          },
+          "chris": [99, 99, 99, 99, 99, 99, 99, 99, 99],
+          "dylan": [99, 99, 99, 99, 99, 99, 99, 99, 99],
+          "dan": [99, 99, 99, 99, 99, 99, 99, 99, 99]
+        }
+      },
+      {
+        "green": ["gordon", "derek"],
+        "blue": ["rj", "craig"],
+        "winner": "tie"
+      },
+      {
+        "green": ["travis", "curtis"],
+        "blue": ["cam", "evan"],
+        "winner": "tie"
+      }
+    ]
+  },
+  {
+    "round": 3,
+    "gameplay": "twoBestBall",
+    "course": "bayHarborPreserveLinks",
+    "holes": "front",
+    "matches": [
+      {
+        "green": ["matt", "derek"],
+        "blue": ["dylan", "evan"],
+        "winner": "tie"
+      },
+      {
+        "green": ["chris", "curtis"],
+        "blue": ["rj", "cam"],
+        "winner": "tie"
+      },
+      {
+        "green": ["gordon", "travis"],
+        "blue": ["craig", "dan"],
+        "winner": "tie"
+      }
+    ]
+  },
+  {
+    "round": 4,
+    "gameplay": "alternate",
+    "course": "bayHarborPreserveLinks",
+    "holes": "back",
+    "matches": [
+      {
+        "green": ["derek", "curtis"],
+        "blue": ["dylan", "rj"],
+        "winner": "tie"
+      },
+      {
+        "green": ["gordon", "chris"],
+        "blue": ["craig", "evan"],
+        "winner": "tie"
+      },
+      {
+        "green": ["matt", "travis"],
+        "blue": ["dan", "cam"],
+        "winner": "tie"
+      }
+    ]
+  },
+  {
+    "round": 5,
+    "gameplay": "bramble",
+    "course": "boyneHighlandsArthurHills",
+    "holes": "front",
+    "matches": [
+      {
+        "green": ["matt", "curtis"],
+        "blue": ["dan", "craig"],
+        "winner": "tie"
+      },
+      {
+        "green": ["gordon", "derek"],
+        "blue": ["dylan", "cam"],
+        "winner": "tie"
+      },
+      {
+        "green": ["chris", "travis"],
+        "blue": ["rj", "evan"],
+        "winner": "tie"
+      }
+    ]
+  },
+  {
+    "round": 6,
+    "gameplay": "bestBall",
+    "course": "boyneHighlandsArthurHills",
+    "holes": "back",
+    "matches": [
+      {
+        "green": ["derek", "curtis"],
+        "blue": ["dylan", "rj"],
+        "winner": "tie"
+      },
+      {
+        "green": ["matt", "chris"],
+        "blue": ["dan", "cam"],
+        "winner": "tie"
+      },
+      {
+        "green": ["gordon", "travis"],
+        "blue": ["craig", "evan"],
+        "winner": "tie"
+      }
+    ]
+  },
+  {
+    "round": 7,
+    "gameplay": "pinehurst",
+    "course": "boyneHighlandsDonaldRoss",
+    "holes": "front",
+    "matches": [
+      {
+        "green": ["matt", "gordon"],
+        "blue": ["dylan", "rj"],
+        "winner": "tie"
+      },
+      {
+        "green": ["chris", "derek"],
+        "blue": ["dan", "craig"],
+        "winner": "tie"
+      },
+      {
+        "green": ["travis", "curtis"],
+        "blue": ["cam", "evan"],
+        "winner": "tie"
+      }
+    ]
+  },
+  {
+    "round": 8,
+    "gameplay": "singles",
+    "course": "boyneHighlandsDonaldRoss",
+    "holes": "back",
+    "matches": [
+      {
+        "green": ["matt"],
+        "blue": ["dylan"],
+        "winner": "tie",
+        "scores": {
+          "matt": [99, 99, 99, 99, 99, 99, 99, 99, 99],
+          "dylan": [99, 99, 99, 99, 99, 99, 99, 99, 99]
+        }
+      },
+      {
+        "green": ["gordon"],
+        "blue": ["rj"],
+        "winner": "tie"
+      },
+      {
+        "green": ["chris"],
+        "blue": ["craig"],
+        "winner": "tie"
+      },
+      {
+        "green": ["derek"],
+        "blue": ["dan"],
+        "winner": "tie"
+      },
+      {
+        "green": ["travis"],
+        "blue": ["cam"],
+        "winner": "tie"
+      },
+      {
+        "green": ["curtis"],
+        "blue": ["evan"],
+        "winner": "tie"
+      }
+    ]
+  }
+]
