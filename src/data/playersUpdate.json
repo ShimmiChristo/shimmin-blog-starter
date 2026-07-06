@@ -119,84 +119,10 @@
           ],
           "records": [
             {
-              "partners": [
-                {
-                  "name": "chris",
-                  "wins": 0,
-                  "ties": 0,
-                  "losses": 0
-                },
-                {
-                  "name": "curtis",
-                  "wins": 0,
-                  "ties": 0,
-                  "losses": 0
-                },
-                {
-                  "name": "derek",
-                  "wins": 0,
-                  "ties": 0,
-                  "losses": 0
-                },
-                {
-                  "name": "gordon",
-                  "wins": 0,
-                  "ties": 0,
-                  "losses": 0
-                },
-                {
-                  "name": "matt",
-                  "wins": 0,
-                  "ties": 0,
-                  "losses": 0
-                },
-                {
-                  "name": "travis",
-                  "wins": 0,
-                  "ties": 0,
-                  "losses": 0
-                }
-              ]
+              "partners": []
             },
             {
-              "opponents": [
-                {
-                  "name": "cam",
-                  "wins": 0,
-                  "ties": 0,
-                  "losses": 0
-                },
-                {
-                  "name": "craig",
-                  "wins": 0,
-                  "ties": 0,
-                  "losses": 0
-                },
-                {
-                  "name": "dan",
-                  "wins": 0,
-                  "ties": 0,
-                  "losses": 0
-                },
-                {
-                  "name": "dylan",
-                  "wins": 0,
-                  "ties": 0,
-                  "losses": 0
-                },
-                {
-                  "name": "evan",
-                  "wins": 0,
-                  "ties": 0,
-                  "losses": 0
-                },
-                {
-                  "name": "rj",
-                  "wins": 0,
-                  "ties": 0,
-                  "losses": 0
-                }
-              ]
+              "opponents": []
             }
           ]
         },
@@ -499,84 +425,10 @@
           ],
           "records": [
             {
-              "partners": [
-                {
-                  "name": "cam",
-                  "wins": 0,
-                  "ties": 0,
-                  "losses": 0
-                },
-                {
-                  "name": "craig",
-                  "wins": 0,
-                  "ties": 0,
-                  "losses": 0
-                },
-                {
-                  "name": "dan",
-                  "wins": 0,
-                  "ties": 0,
-                  "losses": 0
-                },
-                {
-                  "name": "dylan",
-                  "wins": 0,
-                  "ties": 0,
-                  "losses": 0
-                },
-                {
-                  "name": "evan",
-                  "wins": 0,
-                  "ties": 0,
-                  "losses": 0
-                },
-                {
-                  "name": "rj",
-                  "wins": 0,
-                  "ties": 0,
-                  "losses": 0
-                }
-              ]
+              "partners": []
             },
             {
-              "opponents": [
-                {
-                  "name": "chris",
-                  "wins": 0,
-                  "ties": 0,
-                  "losses": 0
-                },
-                {
-                  "name": "curtis",
-                  "wins": 0,
-                  "ties": 0,
-                  "losses": 0
-                },
-                {
-                  "name": "derek",
-                  "wins": 0,
-                  "ties": 0,
-                  "losses": 0
-                },
-                {
-                  "name": "gordon",
-                  "wins": 0,
-                  "ties": 0,
-                  "losses": 0
-                },
-                {
-                  "name": "matt",
-                  "wins": 0,
-                  "ties": 0,
-                  "losses": 0
-                },
-                {
-                  "name": "travis",
-                  "wins": 0,
-                  "ties": 0,
-                  "losses": 0
-                }
-              ]
+              "opponents": []
             }
           ]
         },
@@ -960,11 +812,11 @@
         "wins": 1,
         "losses": 2
       },
-      "handicap": 20,
+      "handicap": 22,
       "year": {
         "_2026": {
           "id": 2026,
-          "handicap": 20,
+          "handicap": 22,
           "captain": false,
           "team": "blue",
           "scores": {
@@ -1073,18 +925,6 @@
           "records": [
             {
               "partners": [
-                {
-                  "name": "cam",
-                  "wins": 0,
-                  "ties": 0,
-                  "losses": 0
-                },
-                {
-                  "name": "craig",
-                  "wins": 0,
-                  "ties": 0,
-                  "losses": 0
-                },
                 {
                   "name": "dan",
                   "wins": 0,
@@ -1261,7 +1101,6 @@
               "ties": 0,
               "losses": 0
             },
-
             {
               "id": "pinehurst",
               "game": "Pinehurst",
@@ -1654,7 +1493,6 @@
               "ties": 0,
               "losses": 1
             },
-
             {
               "id": "scramble",
               "game": "Scramble",
@@ -1756,11 +1594,11 @@
         "wins": 2,
         "losses": 2
       },
-      "handicap": 13.5,
+      "handicap": 13,
       "year": {
         "_2026": {
           "id": 2026,
-          "handicap": 13.5,
+          "handicap": 13,
           "captain": false,
           "team": "green",
           "scores": {
@@ -1869,12 +1707,6 @@
           "records": [
             {
               "partners": [
-                {
-                  "name": "chris",
-                  "wins": 0,
-                  "ties": 0,
-                  "losses": 0
-                },
                 {
                   "name": "curtis",
                   "wins": 0,
@@ -2467,7 +2299,6 @@
               "ties": 0,
               "losses": 1
             },
-
             {
               "id": "pinehurst",
               "game": "Pinehurst",
@@ -2475,7 +2306,6 @@
               "ties": 1,
               "losses": 0
             },
-
             {
               "id": "singles",
               "game": "Singles",
@@ -2701,11 +2531,11 @@
         "wins": 2,
         "losses": 3
       },
-      "handicap": 17,
+      "handicap": 18,
       "year": {
         "_2026": {
           "id": 2026,
-          "handicap": 15,
+          "handicap": 18,
           "captain": false,
           "team": "blue",
           "scores": {
@@ -2815,25 +2645,7 @@
             {
               "partners": [
                 {
-                  "name": "cam",
-                  "wins": 0,
-                  "ties": 0,
-                  "losses": 0
-                },
-                {
-                  "name": "craig",
-                  "wins": 0,
-                  "ties": 0,
-                  "losses": 0
-                },
-                {
                   "name": "dan",
-                  "wins": 0,
-                  "ties": 0,
-                  "losses": 0
-                },
-                {
-                  "name": "dylan",
                   "wins": 0,
                   "ties": 0,
                   "losses": 0
@@ -2985,7 +2797,6 @@
               "ties": 0,
               "losses": 0
             },
-
             {
               "id": "pinehurst",
               "game": "Pinehurst",
@@ -2993,7 +2804,6 @@
               "ties": 0,
               "losses": 1
             },
-
             {
               "id": "singles",
               "game": "Singles",
@@ -3199,7 +3009,6 @@
               "ties": 0,
               "losses": 1
             },
-
             {
               "id": "pinehurst",
               "game": "Pinehurst",
@@ -3207,7 +3016,6 @@
               "ties": 0,
               "losses": 0
             },
-
             {
               "id": "singles",
               "game": "Singles",
@@ -3401,7 +3209,6 @@
               "ties": 0,
               "losses": 1
             },
-
             {
               "id": "singles",
               "game": "Singles",
@@ -3564,7 +3371,6 @@
               "ties": 1,
               "losses": 0
             },
-
             {
               "id": "scramble",
               "game": "Scramble",
@@ -3911,19 +3717,7 @@
                   "losses": 0
                 },
                 {
-                  "name": "curtis",
-                  "wins": 0,
-                  "ties": 0,
-                  "losses": 0
-                },
-                {
                   "name": "derek",
-                  "wins": 0,
-                  "ties": 0,
-                  "losses": 0
-                },
-                {
-                  "name": "gordon",
                   "wins": 0,
                   "ties": 0,
                   "losses": 0
@@ -4088,7 +3882,6 @@
               "ties": 0,
               "losses": 1
             },
-
             {
               "id": "pinehurst",
               "game": "Pinehurst",
@@ -4096,7 +3889,6 @@
               "ties": 0,
               "losses": 1
             },
-
             {
               "id": "singles",
               "game": "Singles",
@@ -4296,7 +4088,6 @@
               "ties": 0,
               "losses": 0
             },
-
             {
               "id": "singles",
               "game": "Singles",
@@ -4472,7 +4263,6 @@
               "ties": 0,
               "losses": 1
             },
-
             {
               "id": "pinehurst",
               "game": "Pinehurst",
@@ -4480,7 +4270,6 @@
               "ties": 1,
               "losses": 0
             },
-
             {
               "id": "singles",
               "game": "Singles",
@@ -4643,7 +4432,6 @@
               "ties": 1,
               "losses": 0
             },
-
             {
               "id": "scramble",
               "game": "Scramble",
@@ -4747,11 +4535,11 @@
         "wins": 2,
         "losses": 3
       },
-      "handicap": 18,
+      "handicap": 17,
       "year": {
         "_2026": {
           "id": 2026,
-          "handicap": 18,
+          "handicap": 17,
           "captain": false,
           "team": "blue",
           "scores": {
@@ -4873,25 +4661,7 @@
                   "losses": 0
                 },
                 {
-                  "name": "dan",
-                  "wins": 0,
-                  "ties": 0,
-                  "losses": 0
-                },
-                {
                   "name": "dylan",
-                  "wins": 0,
-                  "ties": 0,
-                  "losses": 0
-                },
-                {
-                  "name": "evan",
-                  "wins": 0,
-                  "ties": 0,
-                  "losses": 0
-                },
-                {
-                  "name": "rj",
                   "wins": 0,
                   "ties": 0,
                   "losses": 0
@@ -5053,7 +4823,6 @@
               "ties": 0,
               "losses": 0
             },
-
             {
               "id": "pinehurst",
               "game": "Pinehurst",
@@ -5061,7 +4830,6 @@
               "ties": 0,
               "losses": 0
             },
-
             {
               "id": "singles",
               "game": "Singles",
@@ -5259,7 +5027,6 @@
               "ties": 0,
               "losses": 1
             },
-
             {
               "id": "pinehurst",
               "game": "Pinehurst",
@@ -5267,7 +5034,6 @@
               "ties": 0,
               "losses": 1
             },
-
             {
               "id": "singles",
               "game": "Singles",
@@ -5625,7 +5391,6 @@
               "ties": 0,
               "losses": 1
             },
-
             {
               "id": "scramble",
               "game": "Scramble",
@@ -5856,7 +5621,7 @@
       "year": {
         "_2026": {
           "id": 2026,
-          "handicap": 20,
+          "handicap": 23,
           "captain": false,
           "team": "green",
           "scores": {
@@ -5978,12 +5743,6 @@
                   "losses": 0
                 },
                 {
-                  "name": "derek",
-                  "wins": 0,
-                  "ties": 0,
-                  "losses": 0
-                },
-                {
                   "name": "gordon",
                   "wins": 0,
                   "ties": 0,
@@ -5991,12 +5750,6 @@
                 },
                 {
                   "name": "matt",
-                  "wins": 0,
-                  "ties": 0,
-                  "losses": 0
-                },
-                {
-                  "name": "travis",
                   "wins": 0,
                   "ties": 0,
                   "losses": 0
@@ -6154,7 +5907,6 @@
               "ties": 0,
               "losses": 0
             },
-
             {
               "id": "singles",
               "game": "Singles",
@@ -6543,7 +6295,6 @@
               "ties": 1,
               "losses": 0
             },
-
             {
               "id": "singles",
               "game": "Singles",
@@ -6706,7 +6457,6 @@
               "ties": 0,
               "losses": 0
             },
-
             {
               "id": "scramble",
               "game": "Scramble",
@@ -6934,11 +6684,11 @@
         "wins": 2,
         "losses": 3
       },
-      "handicap": 0,
+      "handicap": 2,
       "year": {
         "_2026": {
           "id": 2026,
-          "handicap": 0,
+          "handicap": 2,
           "captain": true,
           "team": "blue",
           "scores": {
@@ -7054,19 +6804,7 @@
                   "losses": 0
                 },
                 {
-                  "name": "craig",
-                  "wins": 0,
-                  "ties": 0,
-                  "losses": 0
-                },
-                {
                   "name": "dan",
-                  "wins": 0,
-                  "ties": 0,
-                  "losses": 0
-                },
-                {
-                  "name": "dylan",
                   "wins": 0,
                   "ties": 0,
                   "losses": 0
@@ -7113,12 +6851,6 @@
                 },
                 {
                   "name": "matt",
-                  "wins": 0,
-                  "ties": 0,
-                  "losses": 0
-                },
-                {
-                  "name": "travis",
                   "wins": 0,
                   "ties": 0,
                   "losses": 0
@@ -7231,7 +6963,6 @@
               "ties": 0,
               "losses": 0
             },
-
             {
               "id": "pinehurst",
               "game": "Pinehurst",
@@ -7239,7 +6970,6 @@
               "ties": 1,
               "losses": 0
             },
-
             {
               "id": "singles",
               "game": "Singles",
@@ -7428,7 +7158,6 @@
               "ties": 0,
               "losses": 0
             },
-
             {
               "id": "pinehurst",
               "game": "Pinehurst",
@@ -7436,7 +7165,6 @@
               "ties": 0,
               "losses": 0
             },
-
             {
               "id": "singles",
               "game": "Singles",
@@ -7623,7 +7351,6 @@
               "ties": 1,
               "losses": 0
             },
-
             {
               "id": "pinehurst",
               "game": "Pinehurst",
@@ -7631,7 +7358,6 @@
               "ties": 1,
               "losses": 0
             },
-
             {
               "id": "singles",
               "game": "Singles",
@@ -7794,7 +7520,6 @@
               "ties": 1,
               "losses": 0
             },
-
             {
               "id": "scramble",
               "game": "Scramble",
@@ -8021,11 +7746,11 @@
         "wins": 1,
         "losses": 3
       },
-      "handicap": 25,
+      "handicap": 22,
       "year": {
         "_2026": {
           "id": 2026,
-          "handicap": 25,
+          "handicap": 22,
           "captain": false,
           "team": "blue",
           "scores": {
@@ -8147,19 +7872,7 @@
                   "losses": 0
                 },
                 {
-                  "name": "dan",
-                  "wins": 0,
-                  "ties": 0,
-                  "losses": 0
-                },
-                {
                   "name": "dylan",
-                  "wins": 0,
-                  "ties": 0,
-                  "losses": 0
-                },
-                {
-                  "name": "evan",
                   "wins": 0,
                   "ties": 0,
                   "losses": 0
@@ -8517,7 +8230,6 @@
               "ties": 0,
               "losses": 0
             },
-
             {
               "id": "pinehurst",
               "game": "Pinehurst",
@@ -8525,7 +8237,6 @@
               "ties": 0,
               "losses": 1
             },
-
             {
               "id": "singles",
               "game": "Singles",
@@ -8701,7 +8412,6 @@
               "ties": 0,
               "losses": 0
             },
-
             {
               "id": "pinehurst",
               "game": "Pinehurst",
@@ -8709,7 +8419,6 @@
               "ties": 1,
               "losses": 0
             },
-
             {
               "id": "singles",
               "game": "Singles",
@@ -8872,7 +8581,6 @@
               "ties": 0,
               "losses": 1
             },
-
             {
               "id": "scramble",
               "game": "Scramble",
@@ -9094,19 +8802,7 @@
                   "losses": 0
                 },
                 {
-                  "name": "curtis",
-                  "wins": 0,
-                  "ties": 0,
-                  "losses": 0
-                },
-                {
                   "name": "derek",
-                  "wins": 0,
-                  "ties": 0,
-                  "losses": 0
-                },
-                {
-                  "name": "gordon",
                   "wins": 0,
                   "ties": 0,
                   "losses": 0
@@ -9258,7 +8954,6 @@
               "ties": 0,
               "losses": 1
             },
-
             {
               "id": "pinehurst",
               "game": "Pinehurst",
@@ -9266,7 +8961,6 @@
               "ties": 1,
               "losses": 0
             },
-
             {
               "id": "singles",
               "game": "Singles",
@@ -9455,7 +9149,6 @@
               "ties": 0,
               "losses": 0
             },
-
             {
               "id": "pinehurst",
               "game": "Pinehurst",
@@ -9463,7 +9156,6 @@
               "ties": 0,
               "losses": 1
             },
-
             {
               "id": "singles",
               "game": "Singles",
@@ -9620,7 +9312,6 @@
               "ties": 0,
               "losses": 0
             },
-
             {
               "id": "scramble",
               "game": "Scramble",
@@ -9816,7 +9507,6 @@
               "ties": 0,
               "losses": 0
             },
-
             {
               "id": "pinehurst",
               "game": "Pinehurst",
@@ -9824,7 +9514,6 @@
               "ties": 0,
               "losses": 0
             },
-
             {
               "id": "singles",
               "game": "Singles",
@@ -10000,7 +9689,6 @@
               "ties": 0,
               "losses": 0
             },
-
             {
               "id": "pinehurst",
               "game": "Pinehurst",
@@ -10008,7 +9696,6 @@
               "ties": 0,
               "losses": 0
             },
-
             {
               "id": "singles",
               "game": "Singles",
@@ -10165,7 +9852,6 @@
               "ties": 1,
               "losses": 0
             },
-
             {
               "id": "scramble",
               "game": "Scramble",
@@ -10267,11 +9953,11 @@
         "wins": 3,
         "losses": 2
       },
-      "handicap": 2,
+      "handicap": 4,
       "year": {
         "_2026": {
           "id": 2026,
-          "handicap": 0,
+          "handicap": 4,
           "captain": true,
           "team": "green",
           "scores": {
@@ -10293,7 +9979,13 @@
               "front": [99, 99, 99, 99, 99, 99, 99, 99, 99],
               "frontHandicap": 999,
               "back": [99, 99, 99, 99, 99, 99, 99, 99, 99],
-              "backHandicap": 999
+              "backHandicap": 999,
+              "frontGross": 999,
+              "backGross": 999,
+              "useForHandicapIndex": true,
+              "use18Holes": false,
+              "useFront": false,
+              "useBack": true
             },
             "bayHarborPreserveLinks": {
               "course": "Bay Harbor Preserve Links",
@@ -10400,12 +10092,6 @@
                 },
                 {
                   "name": "gordon",
-                  "wins": 0,
-                  "ties": 0,
-                  "losses": 0
-                },
-                {
-                  "name": "matt",
                   "wins": 0,
                   "ties": 0,
                   "losses": 0
@@ -10564,7 +10250,6 @@
               "ties": 0,
               "losses": 0
             },
-
             {
               "id": "pinehurst",
               "game": "Pinehurst",
@@ -10572,7 +10257,6 @@
               "ties": 1,
               "losses": 0
             },
-
             {
               "id": "singles",
               "game": "Singles",
@@ -10761,7 +10445,6 @@
               "ties": 0,
               "losses": 1
             },
-
             {
               "id": "pinehurst",
               "game": "Pinehurst",
@@ -10769,7 +10452,6 @@
               "ties": 0,
               "losses": 1
             },
-
             {
               "id": "singles",
               "game": "Singles",
@@ -10957,7 +10639,6 @@
               "ties": 1,
               "losses": 0
             },
-
             {
               "id": "pinehurst",
               "game": "Pinehurst",
@@ -10965,7 +10646,6 @@
               "ties": 1,
               "losses": 0
             },
-
             {
               "id": "singles",
               "game": "Singles",
@@ -11128,7 +10808,6 @@
               "ties": 0,
               "losses": 0
             },
-
             {
               "id": "scramble",
               "game": "Scramble",
@@ -11360,7 +11039,7 @@
         "wins": 2,
         "losses": 3
       },
-      "handicap": 13,
+      "handicap": 12,
       "year": {
         "_2026": {
           "id": 2026,
@@ -11486,12 +11165,6 @@
                   "losses": 0
                 },
                 {
-                  "name": "dan",
-                  "wins": 0,
-                  "ties": 0,
-                  "losses": 0
-                },
-                {
                   "name": "dylan",
                   "wins": 0,
                   "ties": 0,
@@ -11499,12 +11172,6 @@
                 },
                 {
                   "name": "evan",
-                  "wins": 0,
-                  "ties": 0,
-                  "losses": 0
-                },
-                {
-                  "name": "rj",
                   "wins": 0,
                   "ties": 0,
                   "losses": 0
@@ -11657,7 +11324,6 @@
               "ties": 0,
               "losses": 1
             },
-
             {
               "id": "pinehurst",
               "game": "Pinehurst",
@@ -11665,7 +11331,6 @@
               "ties": 1,
               "losses": 0
             },
-
             {
               "id": "singles",
               "game": "Singles",
@@ -11854,7 +11519,6 @@
               "ties": 0,
               "losses": 1
             },
-
             {
               "id": "pinehurst",
               "game": "Pinehurst",
@@ -11862,7 +11526,6 @@
               "ties": 0,
               "losses": 0
             },
-
             {
               "id": "singles",
               "game": "Singles",
@@ -12057,7 +11720,6 @@
               "ties": 0,
               "losses": 1
             },
-
             {
               "id": "pinehurst",
               "game": "Pinehurst",
@@ -12065,7 +11727,6 @@
               "ties": 1,
               "losses": 0
             },
-
             {
               "id": "singles",
               "game": "Singles",
@@ -12228,7 +11889,6 @@
               "ties": 0,
               "losses": 1
             },
-
             {
               "id": "scramble",
               "game": "Scramble",
@@ -12561,7 +12221,6 @@
               "ties": 0,
               "losses": 1
             },
-
             {
               "id": "pinehurst",
               "game": "Pinehurst",
@@ -12569,7 +12228,6 @@
               "ties": 0,
               "losses": 1
             },
-
             {
               "id": "singles",
               "game": "Singles",
@@ -12664,11 +12322,11 @@
         "wins": 1,
         "losses": 2
       },
-      "handicap": 22,
+      "handicap": 26,
       "year": {
         "_2026": {
           "id": 2026,
-          "handicap": 22,
+          "handicap": 26,
           "captain": false,
           "team": "green",
           "scores": {
@@ -12790,12 +12448,6 @@
                   "losses": 0
                 },
                 {
-                  "name": "derek",
-                  "wins": 0,
-                  "ties": 0,
-                  "losses": 0
-                },
-                {
                   "name": "gordon",
                   "wins": 0,
                   "ties": 0,
@@ -12803,12 +12455,6 @@
                 },
                 {
                   "name": "matt",
-                  "wins": 0,
-                  "ties": 0,
-                  "losses": 0
-                },
-                {
-                  "name": "travis",
                   "wins": 0,
                   "ties": 0,
                   "losses": 0
@@ -12831,12 +12477,6 @@
                 },
                 {
                   "name": "dan",
-                  "wins": 0,
-                  "ties": 0,
-                  "losses": 0
-                },
-                {
-                  "name": "dylan",
                   "wins": 0,
                   "ties": 0,
                   "losses": 0
@@ -13116,7 +12756,6 @@
               "ties": 0,
               "losses": 0
             },
-
             {
               "id": "scramble",
               "game": "Scramble",

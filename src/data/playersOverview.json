@@ -1,0 +1,549 @@
+{
+  "green_example": {
+    "name": "player_name",
+    "appearances": [2025],
+    "cupRecord": {
+      "wins": 0,
+      "losses": 0
+    },
+    "handicap": 22,
+    "year": {
+      "_2026": {
+        "handicap": 99,
+        "team": "green",
+        "captain": false
+      },
+      "_2025": {
+        "handicap": 13,
+        "team": "green",
+        "captain": false
+      }
+    }
+  },
+  "blue_example": {
+    "name": "player_name",
+    "appearances": [2025],
+    "cupRecord": {
+      "wins": 0,
+      "losses": 0
+    },
+    "handicap": 99,
+    "year": {
+      "_2026": {
+        "handicap": 99,
+        "team": "blue",
+        "captain": false
+      },
+      "_2025": {
+        "handicap": 2,
+        "team": "blue",
+        "captain": false
+      }
+    }
+  },
+  "blake": {
+    "name": "blake",
+    "appearances": [2024],
+    "cupRecord": {
+      "wins": 0,
+      "losses": 1
+    },
+    "handicap": 16,
+    "year": {
+      "_2024": {
+        "handicap": 16,
+        "team": "blue",
+        "captain": false
+      }
+    }
+  },
+  "cam": {
+    "name": "cam",
+    "appearances": [2022, 2023, 2025],
+    "cupRecord": {
+      "wins": 1,
+      "losses": 2
+    },
+    "handicap": 22,
+    "year": {
+      "_2026": {
+        "handicap": 22,
+        "team": "blue",
+        "captain": false
+      },
+      "_2025": {
+        "handicap": 27,
+        "team": "blue",
+        "captain": false
+      },
+      "_2023": {
+        "handicap": 19,
+        "team": "blue",
+        "captain": false
+      },
+      "_2022": {
+        "handicap": 21,
+        "team": "blue",
+        "captain": false
+      }
+    }
+  },
+  "chris": {
+    "name": "chris",
+    "appearances": [2021, 2023, 2024, 2025],
+    "cupRecord": {
+      "wins": 2,
+      "losses": 2
+    },
+    "handicap": 13,
+    "year": {
+      "_2026": {
+        "handicap": 13,
+        "team": "green",
+        "captain": false
+      },
+      "_2025": {
+        "handicap": 14,
+        "team": "green",
+        "captain": false
+      },
+      "_2024": {
+        "handicap": 14,
+        "team": "green",
+        "captain": false
+      },
+      "_2023": {
+        "handicap": 13,
+        "team": "green",
+        "captain": false
+      },
+      "_2021": {
+        "handicap": 16,
+        "team": "green",
+        "captain": false
+      }
+    }
+  },
+  "craig": {
+    "name": "craig",
+    "appearances": [2021, 2022, 2023, 2024, 2025],
+    "cupRecord": {
+      "wins": 2,
+      "losses": 3
+    },
+    "handicap": 18,
+    "year": {
+      "_2026": {
+        "handicap": 18,
+        "team": "blue",
+        "captain": false
+      },
+      "_2025": {
+        "handicap": 17,
+        "team": "blue",
+        "captain": false
+      },
+      "_2024": {
+        "handicap": 20,
+        "team": "blue",
+        "captain": false
+      },
+      "_2023": {
+        "handicap": 20,
+        "team": "blue",
+        "captain": false
+      },
+      "_2022": {
+        "handicap": 2,
+        "team": "blue",
+        "captain": false
+      },
+      "_2021": {
+        "handicap": 22,
+        "team": "blue",
+        "captain": false
+      }
+    }
+  },
+  "curtis": {
+    "name": "curtis",
+    "appearances": [2022, 2023, 2024, 2025],
+    "cupRecord": {
+      "wins": 3,
+      "losses": 1
+    },
+    "handicap": 26,
+    "year": {
+      "_2026": {
+        "handicap": 26,
+        "team": "green",
+        "captain": false
+      },
+      "_2025": {
+        "handicap": 26,
+        "team": "green",
+        "captain": false
+      },
+      "_2024": {
+        "handicap": 26,
+        "team": "green",
+        "captain": false
+      },
+      "_2023": {
+        "handicap": 23,
+        "team": "green",
+        "captain": false
+      },
+      "_2022": {
+        "handicap": 10,
+        "team": "green",
+        "captain": false
+      }
+    }
+  },
+  "dan": {
+    "name": "dan",
+    "appearances": [2021, 2022, 2023, 2024, 2025],
+    "cupRecord": {
+      "wins": 2,
+      "losses": 3
+    },
+    "handicap": 17,
+    "year": {
+      "_2026": {
+        "handicap": 17,
+        "team": "blue",
+        "captain": false
+      },
+      "_2025": {
+        "handicap": 24,
+        "team": "blue",
+        "captain": false
+      },
+      "_2024": {
+        "handicap": 33,
+        "team": "blue",
+        "captain": false
+      },
+      "_2023": {
+        "handicap": 31,
+        "team": "blue",
+        "captain": false
+      },
+      "_2022": {
+        "handicap": 2,
+        "team": "blue",
+        "captain": false
+      },
+      "_2021": {
+        "handicap": 36,
+        "team": "blue",
+        "captain": false
+      }
+    }
+  },
+  "derek": {
+    "name": "derek",
+    "appearances": [2021, 2022, 2023, 2024, 2025],
+    "cupRecord": {
+      "wins": 3,
+      "losses": 2
+    },
+    "handicap": 23,
+    "year": {
+      "_2026": {
+        "handicap": 23,
+        "team": "green",
+        "captain": false
+      },
+      "_2025": {
+        "handicap": 23,
+        "team": "green",
+        "captain": false
+      },
+      "_2024": {
+        "handicap": 22,
+        "team": "green",
+        "captain": false
+      },
+      "_2023": {
+        "handicap": 27,
+        "team": "green",
+        "captain": false
+      },
+      "_2022": {
+        "handicap": 28,
+        "team": "green",
+        "captain": false
+      },
+      "_2021": {
+        "handicap": 28,
+        "team": "green",
+        "captain": false
+      }
+    }
+  },
+  "dylan": {
+    "name": "dylan",
+    "appearances": [2021, 2022, 2023, 2024, 2025],
+    "cupRecord": {
+      "wins": 2,
+      "losses": 3
+    },
+    "handicap": 2,
+    "year": {
+      "_2026": {
+        "handicap": 2,
+        "team": "blue",
+        "captain": true
+      },
+      "_2025": {
+        "handicap": 0,
+        "team": "blue",
+        "captain": true
+      },
+      "_2024": {
+        "handicap": 0.3,
+        "team": "blue",
+        "captain": true
+      },
+      "_2023": {
+        "handicap": 1.8,
+        "team": "blue",
+        "captain": true
+      },
+      "_2022": {
+        "handicap": 2,
+        "team": "blue",
+        "captain": true
+      },
+      "_2021": {
+        "handicap": 2,
+        "team": "blue",
+        "captain": true
+      }
+    }
+  },
+  "evan": {
+    "name": "evan",
+    "appearances": [2022, 2023, 2024, 2025],
+    "cupRecord": {
+      "wins": 1,
+      "losses": 3
+    },
+    "handicap": 22,
+    "year": {
+      "_2026": {
+        "handicap": 22,
+        "team": "blue",
+        "captain": false
+      },
+      "_2025": {
+        "handicap": 23,
+        "team": "blue",
+        "captain": false
+      },
+      "_2024": {
+        "handicap": 22,
+        "team": "blue",
+        "captain": false
+      },
+      "_2023": {
+        "handicap": 31,
+        "team": "blue",
+        "captain": false
+      },
+      "_2022": {
+        "handicap": 2,
+        "team": "blue",
+        "captain": false
+      }
+    }
+  },
+  "gordon": {
+    "name": "gordon",
+    "appearances": [2022, 2024, 2025],
+    "cupRecord": {
+      "wins": 3,
+      "losses": 0
+    },
+    "handicap": 11,
+    "year": {
+      "_2026": {
+        "handicap": 11,
+        "team": "green",
+        "captain": false
+      },
+      "_2025": {
+        "handicap": 11,
+        "team": "green",
+        "captain": false
+      },
+      "_2024": {
+        "handicap": 12,
+        "team": "green",
+        "captain": false
+      },
+      "_2022": {
+        "handicap": 10,
+        "team": "green",
+        "captain": false
+      }
+    }
+  },
+  "jake": {
+    "name": "jake",
+    "appearances": [2022, 2023, 2024],
+    "cupRecord": {
+      "wins": 2,
+      "losses": 1
+    },
+    "handicap": 23,
+    "year": {
+      "_2024": {
+        "handicap": 23,
+        "team": "green",
+        "captain": false
+      },
+      "_2023": {
+        "handicap": 19,
+        "team": "green",
+        "captain": false
+      },
+      "_2022": {
+        "handicap": 21,
+        "team": "green",
+        "captain": false
+      }
+    }
+  },
+  "matt": {
+    "name": "matt",
+    "appearances": [2021, 2022, 2023, 2024, 2025],
+    "cupRecord": {
+      "wins": 3,
+      "losses": 2
+    },
+    "handicap": 4,
+    "year": {
+      "_2026": {
+        "handicap": 4,
+        "team": "green",
+        "captain": true
+      },
+      "_2025": {
+        "handicap": 3,
+        "team": "green",
+        "captain": true
+      },
+      "_2024": {
+        "handicap": 7.6,
+        "team": "green",
+        "captain": true
+      },
+      "_2023": {
+        "handicap": 4.8,
+        "team": "green",
+        "captain": true
+      },
+      "_2022": {
+        "handicap": 10,
+        "team": "green",
+        "captain": true
+      },
+      "_2021": {
+        "handicap": 10,
+        "team": "green",
+        "captain": true
+      }
+    }
+  },
+  "rj": {
+    "name": "rj",
+    "appearances": [2021, 2022, 2023, 2024, 2025],
+    "cupRecord": {
+      "wins": 2,
+      "losses": 3
+    },
+    "handicap": 12,
+    "year": {
+      "_2026": {
+        "handicap": 12,
+        "team": "blue",
+        "captain": false
+      },
+      "_2025": {
+        "handicap": 13,
+        "team": "blue",
+        "captain": false
+      },
+      "_2024": {
+        "handicap": 11,
+        "team": "blue",
+        "captain": false
+      },
+      "_2023": {
+        "handicap": 13,
+        "team": "blue",
+        "captain": false
+      },
+      "_2022": {
+        "handicap": 12,
+        "team": "blue",
+        "captain": false
+      },
+      "_2021": {
+        "handicap": 16,
+        "team": "blue",
+        "captain": false
+      }
+    }
+  },
+  "stephen": {
+    "name": "stephen",
+    "appearances": [2025],
+    "cupRecord": {
+      "wins": 1,
+      "losses": 0
+    },
+    "handicap": 12,
+    "year": {
+      "_2025": {
+        "handicap": 12,
+        "team": "green",
+        "captain": false
+      }
+    }
+  },
+  "travis": {
+    "name": "travis",
+    "appearances": [2021, 2022, 2023],
+    "cupRecord": {
+      "wins": 1,
+      "losses": 2
+    },
+    "handicap": 26,
+    "year": {
+      "_2026": {
+        "handicap": 26,
+        "team": "green",
+        "captain": false
+      },
+      "_2023": {
+        "handicap": 20,
+        "team": "green",
+        "captain": false
+      },
+      "_2022": {
+        "handicap": 10,
+        "team": "green",
+        "captain": false
+      },
+      "_2021": {
+        "handicap": 22,
+        "team": "green",
+        "captain": false
+      }
+    }
+  }
+}

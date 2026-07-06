@@ -8,7 +8,7 @@
       {
         "green": ["matt", "chris"],
         "blue": ["dylan", "dan"],
-        "winner": "tie",
+        "winner": null,
         "scores": {
           "matt": {
             "holes": [99, 99, 99, 99, 99, 99, 99, 99, 99],
@@ -26,12 +26,12 @@
       {
         "green": ["gordon", "derek"],
         "blue": ["rj", "craig"],
-        "winner": "tie"
+        "winner": null
       },
       {
         "green": ["travis", "curtis"],
         "blue": ["cam", "evan"],
-        "winner": "tie"
+        "winner": null
       }
     ]
   },
@@ -44,7 +44,7 @@
       {
         "green": ["matt", "chris"],
         "blue": ["dylan", "dan"],
-        "winner": "tie",
+        "winner": null,
         "scores": {
           "matt": {
             "holes": [99, 99, 99, 99, 99, 99, 99, 99, 99],
@@ -62,12 +62,12 @@
       {
         "green": ["gordon", "derek"],
         "blue": ["rj", "craig"],
-        "winner": "tie"
+        "winner": null
       },
       {
         "green": ["travis", "curtis"],
         "blue": ["cam", "evan"],
-        "winner": "tie"
+        "winner": null
       }
     ]
   },
@@ -80,17 +80,17 @@
       {
         "green": ["matt", "derek"],
         "blue": ["dylan", "evan"],
-        "winner": "tie"
+        "winner": null
       },
       {
         "green": ["chris", "curtis"],
         "blue": ["rj", "cam"],
-        "winner": "tie"
+        "winner": null
       },
       {
         "green": ["gordon", "travis"],
         "blue": ["craig", "dan"],
-        "winner": "tie"
+        "winner": null
       }
     ]
   },
@@ -103,17 +103,17 @@
       {
         "green": ["derek", "curtis"],
         "blue": ["dylan", "rj"],
-        "winner": "tie"
+        "winner": null
       },
       {
         "green": ["gordon", "chris"],
         "blue": ["craig", "evan"],
-        "winner": "tie"
+        "winner": null
       },
       {
         "green": ["matt", "travis"],
         "blue": ["dan", "cam"],
-        "winner": "tie"
+        "winner": null
       }
     ]
   },
@@ -126,17 +126,17 @@
       {
         "green": ["matt", "curtis"],
         "blue": ["dan", "craig"],
-        "winner": "tie"
+        "winner": null
       },
       {
         "green": ["gordon", "derek"],
         "blue": ["dylan", "cam"],
-        "winner": "tie"
+        "winner": null
       },
       {
         "green": ["chris", "travis"],
         "blue": ["rj", "evan"],
-        "winner": "tie"
+        "winner": null
       }
     ]
   },
@@ -149,17 +149,17 @@
       {
         "green": ["derek", "curtis"],
         "blue": ["dylan", "rj"],
-        "winner": "tie"
+        "winner": null
       },
       {
         "green": ["matt", "chris"],
         "blue": ["dan", "cam"],
-        "winner": "tie"
+        "winner": null
       },
       {
         "green": ["gordon", "travis"],
         "blue": ["craig", "evan"],
-        "winner": "tie"
+        "winner": null
       }
     ]
   },
@@ -172,17 +172,17 @@
       {
         "green": ["matt", "gordon"],
         "blue": ["dylan", "rj"],
-        "winner": "tie"
+        "winner": null
       },
       {
         "green": ["chris", "derek"],
         "blue": ["dan", "craig"],
-        "winner": "tie"
+        "winner": null
       },
       {
         "green": ["travis", "curtis"],
         "blue": ["cam", "evan"],
-        "winner": "tie"
+        "winner": null
       }
     ]
   },
@@ -195,7 +195,7 @@
       {
         "green": ["matt"],
         "blue": ["dylan"],
-        "winner": "tie",
+        "winner": null,
         "scores": {
           "matt": [99, 99, 99, 99, 99, 99, 99, 99, 99],
           "dylan": [99, 99, 99, 99, 99, 99, 99, 99, 99]
@@ -204,27 +204,27 @@
       {
         "green": ["gordon"],
         "blue": ["rj"],
-        "winner": "tie"
+        "winner": null
       },
       {
         "green": ["chris"],
-        "blue": ["craig"],
-        "winner": "tie"
+        "blue": ["dan"],
+        "winner": null
       },
       {
         "green": ["derek"],
-        "blue": ["dan"],
-        "winner": "tie"
+        "blue": ["craig"],
+        "winner": null
       },
       {
         "green": ["travis"],
         "blue": ["cam"],
-        "winner": "tie"
+        "winner": null
       },
       {
         "green": ["curtis"],
         "blue": ["evan"],
-        "winner": "tie"
+        "winner": null
       }
     ]
   }

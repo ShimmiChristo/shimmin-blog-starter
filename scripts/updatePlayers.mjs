@@ -3,6 +3,71 @@ import process from "process"
 
 const DEFAULT_YEAR = "2026"
 const PLAYERS_PATH = "src/data/playersUpdate.json"
+const PLAYERS_OVERVIEW_PATH = "src/data/playersOverview.json"
+
+function assertValidOverview(playersOverview) {
+  if (
+    typeof playersOverview !== "object" ||
+    playersOverview === null ||
+    Array.isArray(playersOverview)
+  ) {
+    throw new Error("playersOverview.json must be an object keyed by player name.")
+  }
+}
+
+function syncPlayersOverviewIntoPlayersUpdate(playersObj, playersOverview) {
+  assertValidOverview(playersOverview)
+
+  for (const [playerName, overviewData] of Object.entries(playersOverview)) {
+    const playerData = playersObj[playerName]
+    if (!playerData) {
+      throw new Error(`playersOverview.json contains unknown player '${playerName}'.`)
+    }
+
+    if (overviewData?.name !== undefined) {
+      playerData.name = overviewData.name
+    }
+
+    if (Array.isArray(overviewData?.appearances)) {
+      playerData.appearances = [...overviewData.appearances]
+    }
+
+    if (overviewData?.cupRecord !== undefined) {
+      playerData.cupRecord = {
+        wins: overviewData.cupRecord?.wins ?? 0,
+        losses: overviewData.cupRecord?.losses ?? 0,
+      }
+    }
+
+    if (overviewData?.handicap !== undefined) {
+      playerData.handicap = overviewData.handicap
+    }
+
+    const yearOverview = overviewData?.year
+    if (yearOverview && typeof yearOverview === "object" && !Array.isArray(yearOverview)) {
+      for (const [yearKey, yearSummary] of Object.entries(yearOverview)) {
+        const yearData = playerData?.year?.[yearKey]
+        if (!yearData) {
+          throw new Error(
+            `playersOverview.json references ${yearKey} for '${playerName}', but playersUpdate.json is missing that year.`
+          )
+        }
+
+        if (yearSummary?.handicap !== undefined) {
+          yearData.handicap = yearSummary.handicap
+        }
+
+        if (yearSummary?.team !== undefined) {
+          yearData.team = yearSummary.team
+        }
+
+        if (yearSummary?.captain !== undefined) {
+          yearData.captain = yearSummary.captain
+        }
+      }
+    }
+  }
+}
 
 function parseCliArgs(argv) {
   let year = DEFAULT_YEAR
@@ -89,10 +154,11 @@ function buildKnownPlayersByTeam(playersObj, yearKey) {
 }
 
 function assertValidWinner(winner) {
-  const valid = winner === "green" || winner === "blue" || winner === "tie"
+  const valid =
+    winner === "green" || winner === "blue" || winner === "tie" || winner === null
   if (!valid) {
     throw new Error(
-      `Invalid match winner '${winner}'. Use 'green', 'blue', or 'tie'.`
+      `Invalid match winner '${winner}'. Use 'green', 'blue', 'tie', or null for unplayed.`
     )
   }
 }
@@ -364,6 +430,10 @@ function ensureRecordEntry(entries, name) {
 }
 
 function applyResultToCounter(counter, winner, team) {
+  if (winner === null) {
+    return
+  }
+
   if (winner === "tie") {
     counter.ties += 1
   } else if (winner === team) {
@@ -450,6 +520,8 @@ function main() {
   }
 
   const playersObj = playersRoot[0]
+  const playersOverview = readJson(PLAYERS_OVERVIEW_PATH)
+  syncPlayersOverviewIntoPlayersUpdate(playersObj, playersOverview)
   const rounds = readJson(roundsPath)
   const knownPlayersByTeam = buildKnownPlayersByTeam(playersObj, yearKey)
 
