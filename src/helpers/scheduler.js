@@ -838,5 +838,6 @@ function generateTeamRounds(n) {
 }
 
 // recursiveGenerateTeamRounds()
-const attempts = 50000
+const attempts = 100000
 generateTeamRounds(attempts)
+1``
