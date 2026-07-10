@@ -2,7 +2,9 @@
   {
     "round": 1,
     "gameplay": "scramble",
+    "gameplayName": "Scramble",
     "course": "crookedTree",
+    "courseName": "Crooked Tree Golf Club",
     "holes": "front",
     "matches": [
       {
@@ -38,7 +40,9 @@
   {
     "round": 2,
     "gameplay": "bestBallStrokeplay",
+    "gameplayName": "Best Ball Strokeplay",
     "course": "crookedTree",
+    "courseName": "Crooked Tree Golf Club",
     "holes": "back",
     "matches": [
       {
@@ -74,7 +78,9 @@
   {
     "round": 3,
     "gameplay": "twoBestBall",
+    "gameplayName": "Best Ball",
     "course": "bayHarborPreserveLinks",
+    "courseName": "Bay Harbor Preserve Links",
     "holes": "front",
     "matches": [
       {
@@ -97,7 +103,9 @@
   {
     "round": 4,
     "gameplay": "alternate",
+    "gameplayName": "Alternate",
     "course": "bayHarborPreserveLinks",
+    "courseName": "Bay Harbor Preserve Links",
     "holes": "back",
     "matches": [
       {
@@ -120,7 +128,9 @@
   {
     "round": 5,
     "gameplay": "bramble",
+    "gameplayName": "Bramble",
     "course": "boyneHighlandsArthurHills",
+    "courseName": "Arthur Hills at Boyne Highlands",
     "holes": "front",
     "matches": [
       {
@@ -143,7 +153,9 @@
   {
     "round": 6,
     "gameplay": "bestBall",
+    "gameplayName": "Best Ball",
     "course": "boyneHighlandsArthurHills",
+    "courseName": "Arthur Hills at Boyne Highlands",
     "holes": "back",
     "matches": [
       {
@@ -166,7 +178,9 @@
   {
     "round": 7,
     "gameplay": "pinehurst",
+    "gameplayName": "Pinehurst",
     "course": "boyneHighlandsDonaldRoss",
+    "courseName": "Donald Ross at Boyne Highlands",
     "holes": "front",
     "matches": [
       {
@@ -189,7 +203,9 @@
   {
     "round": 8,
     "gameplay": "singles",
+    "gameplayName": "Singles",
     "course": "boyneHighlandsDonaldRoss",
+    "courseName": "Donald Ross at Boyne Highlands",
     "holes": "back",
     "matches": [
       {
