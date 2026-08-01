@@ -40,7 +40,10 @@ const TopicPage = ({ data, location }) => {
               </ol>
               <li>White OB stakes</li>
               <ol type="a">
-                <li>All white stakes are played as red stakes.</li>
+                <li>
+                  Take a lateral drop within two club-lengths of where the ball
+                  crossed the OB line, no nearer the hole. One-stroke penalty.
+                </li>
               </ol>
               <li>"Gallery Drop" rule</li>
               <ol type="a">
