@@ -31,8 +31,8 @@ const config = {
       //   link: "/scores#r1f-best-ball",
       // },
       {
-        name: "2025 Scores",
-        link: "/scores-2025#r4b-singles",
+        name: "Scores",
+        link: "/scores/#round-1",
       },
       {
         name: "Players",

@@ -100,7 +100,7 @@ const TopicPage = ({ location }) => {
       matchName: "Scramble",
       gameplay: "scramble",
       courseMatch: "crookedTree",
-      matchTees: ["purple", "orange"],
+      matchTees: ["brown", "purple"],
       players: {
         blue: [1, 3, 2, 4, 5, 6],
         green: [7, 9, 10, 11, 8, 12],
@@ -111,7 +111,7 @@ const TopicPage = ({ location }) => {
       matchName: "Best Ball Strokeplay",
       gameplay: "one-ball-strokeplay",
       courseMatch: "crookedTree",
-      matchTees: ["purple", "orange"],
+      matchTees: ["brown", "purple"],
       players: {
         blue: [1, 4, 2, 5, 3, 6],
         green: [9, 11, 8, 10, 7, 12],
@@ -289,6 +289,7 @@ const TopicPage = ({ location }) => {
       <MatchNav location={location} titles={matchNavData} />
 
       <MatchScore year="_2026" lastYearWinner="green" location={location} />
+      
       <MatchNavSection
         data-visible={location.hash === "#round-1" ? "true" : "false"}
         data-link-id="round-1"

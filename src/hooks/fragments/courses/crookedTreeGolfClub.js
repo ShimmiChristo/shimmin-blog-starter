@@ -8,6 +8,7 @@ export const CrookedTreeFragment = graphql`
       holes {
         number
         tees {
+          brown
           purple
           orange
         }
@@ -16,6 +17,26 @@ export const CrookedTreeFragment = graphql`
       }
       totals {
         tees {
+          brown {
+            out {
+              yardage
+              par
+              index
+              slope
+            }
+            in {
+              yardage
+              par
+              index
+              slope
+            }
+            total {
+              yardage
+              par
+              index
+              slope
+            }
+          }
           purple {
             out {
               yardage
