@@ -3,13 +3,13 @@ import { v1 as uuidv1 } from "uuid"
 // import { StaticImage } from "gatsby-plugin-image"
 // import styled from "styled-components"
 
-const greenTeam = ["matt", "gordon", "chris", "derek", "stephen", "curtis"]
-const blueTeam = ["dylan", "rj", "craig", "cam", "evan", "dan"]
+const greenTeam = ["matt", "gordon", "chris", "derek", "travis", "curtis"]
+const blueTeam = ["dylan", "rj", "dan", "craig", "cam", "evan"]
 
-function MatchPlayers2025() {
+function MatchPlayers2026() {
   return (
     <>
-      <h2 className="h1 text-center mb-3">2025 Teams</h2>
+      <h2 className="h1 text-center mb-3">2026 Teams</h2>
       <div className="container mb-3 pb-3 col-lg-10">
         <div className="row">
           <div className="col-12 mb-1">
@@ -74,4 +74,4 @@ function MatchPlayers2025() {
   )
 }
 
-export default MatchPlayers2025
+export default MatchPlayers2026

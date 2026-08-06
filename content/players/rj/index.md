@@ -11,4 +11,6 @@ team: "Blue Team"
 handicap: 13
 ---
 
-Just a point machine for Blue. RJ is consistent and gets the job done when needed. He'll be a problem for Green in 2025.
+Just a point machine for Blue. RJ is consistent and gets the job done when needed. 
+
+In 2026, he's dropped his handicap some more and is looking to continue his success at the cup. 

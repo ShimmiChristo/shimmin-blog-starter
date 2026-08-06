@@ -1,7 +1,7 @@
 ---
 active: true
 published: true
-index: 11
+index: 12
 name: evan
 nickname: "Evan"
 description: ""
@@ -12,4 +12,6 @@ team: "Blue Team"
 handicap: 22
 ---
 
-After a MVP year in 2023. He had a solid showing in 2024. We'll see if he can continue to secure points for Blue.
+2025 was Evan's worst showing at the BFBH Cup. Some putts didn't roll his way but he'll back for his 5th year in a row. He's looking to get back to that 2023 form and secure some points for Blue. 
+
+2023 MVP.

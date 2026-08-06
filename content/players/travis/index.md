@@ -1,5 +1,5 @@
 ---
-active: false
+active: true
 index: 05
 name: travis
 nickname: "Travis"
@@ -8,7 +8,7 @@ category: players
 featuredImg: ./profile-pic.png
 thumbnail: ./thumbnail.png
 team: "Green Team"
-handicap: 20.4
+handicap: 24
 ---
 
-Travis is back in 2025 and ready to be major part to Green.
+Travis is back in 2026 and ready to be major part to Green.

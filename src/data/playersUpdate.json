@@ -6684,11 +6684,11 @@
         "wins": 2,
         "losses": 3
       },
-      "handicap": 2,
+      "handicap": 4,
       "year": {
         "_2026": {
           "id": 2026,
-          "handicap": 2,
+          "handicap": 4,
           "captain": true,
           "team": "blue",
           "scores": {
@@ -11039,11 +11039,11 @@
         "wins": 2,
         "losses": 3
       },
-      "handicap": 11,
+      "handicap": 10,
       "year": {
         "_2026": {
           "id": 2026,
-          "handicap": 11,
+          "handicap": 10,
           "captain": false,
           "team": "blue",
           "scores": {

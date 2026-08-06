@@ -1,6 +1,6 @@
 ---
 active: true
-index: 03
+index: 02
 name: gordon
 nickname: "Gordon"
 description: ""
@@ -11,7 +11,7 @@ team: "Green Team"
 handicap: 12
 ---
 
-Coming in at the 2 spot in 2025 for Green, Gordon is looking to tear through the compitition.
+Coming in at the 2 spot in 2026 for Green, Gordon is looking to tear through the compitition, again.
 
 <br/>
 

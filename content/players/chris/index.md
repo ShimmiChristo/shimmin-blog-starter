@@ -1,6 +1,6 @@
 ---
 active: true
-index: 02
+index: 03
 name: chris
 nickname: "Chris"
 description: "The developer"

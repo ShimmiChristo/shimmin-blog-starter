@@ -12,6 +12,8 @@ captain: true
 handicap: 4
 ---
 
-The captain of the Green Team, Matt is back for a 5th year! He's playing his best golf at the right time. His handicap might be a tad high for how well he's playing.
+The captain of the Green Team, Matt is back for a 6th year! He's playing his best golf at the right time. His handicap might be a tad high for how well he's playing.
 
 2022 MVP
+
+2026 MVP?
