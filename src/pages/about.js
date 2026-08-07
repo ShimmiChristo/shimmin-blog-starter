@@ -8,6 +8,7 @@ import AuthorBio from "../components/author-bio"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import LandingPageHeader from "../components/landing-page-header"
+import SocialLinks from "../components/social-links"
 // import MatchScore from "../components/match-score"
 // import BlogPostThumbnailImg from "../components/blog-post-thumbnail-img"
 
@@ -42,6 +43,10 @@ const TopicPage = ({ data, location }) => {
                 A group of brothers and friends who were all born and raised in
                 the great state of Michigan.
               </p>
+              <SocialLinks
+                youtubeUrl="https://www.youtube.com/@bfbhcup"
+                instagramUrl="https://www.instagram.com/bfbhcup"
+              />
             </div>
           </div>
         </div>
