@@ -130,7 +130,7 @@ const TopicPage = ({ location }) => {
       courseMatch: "bayHarborPreserveLinks",
       matchTees: ["brown", "purple"],
       players: {
-        blue: [1, 6, 2, 5, 3, 5],
+        blue: [1, 6, 2, 4, 3, 5],
         green: [7, 10, 9, 12, 8, 11],
       },
     },
