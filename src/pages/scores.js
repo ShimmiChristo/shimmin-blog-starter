@@ -119,8 +119,8 @@ const TopicPage = ({ location }) => {
       courseMatch: "crookedTree",
       matchTees: ["brown", "purple"],
       players: {
-        blue: [1, 4, 2, 5, 3, 6],
-        green: [9, 11, 8, 10, 7, 12],
+        blue: [3, 4, 2, 6, 1, 5],
+        green: [7, 11, 8, 9, 10, 12],
       },
     },
     {
@@ -130,7 +130,7 @@ const TopicPage = ({ location }) => {
       courseMatch: "bayHarborPreserveLinks",
       matchTees: ["brown", "purple"],
       players: {
-        blue: [1, 6, 2, 3, 4, 5],
+        blue: [1, 6, 2, 5, 3, 5],
         green: [7, 10, 9, 12, 8, 11],
       },
     },
@@ -141,8 +141,8 @@ const TopicPage = ({ location }) => {
       courseMatch: "bayHarborPreserveLinks",
       matchTees: ["purple", "orange"],
       players: {
-        blue: [1, 2, 4, 6, 3, 5],
-        green: [10, 12, 8, 9, 7, 11],
+        blue: [4, 6, 1, 2, 3, 5],
+        green: [7, 12, 9, 11, 8, 10],
       },
     },
     {
@@ -152,8 +152,8 @@ const TopicPage = ({ location }) => {
       courseMatch: "boyneHighlandsArthurHills",
       matchTees: ["purple", "orange"],
       players: {
-        blue: [3, 4, 1, 5, 2, 6],
-        green: [7, 12, 8, 10, 9, 11],
+        blue: [4, 5, 2, 3, 1, 6],
+        green: [7, 9, 10, 12, 8, 11],
       },
     },
     {
@@ -163,8 +163,8 @@ const TopicPage = ({ location }) => {
       courseMatch: "boyneHighlandsArthurHills",
       matchTees: ["purple", "orange"],
       players: {
-        blue: [1, 4, 2, 5, 3, 6],
-        green: [10, 12, 7, 9, 8, 11],
+        blue: [2, 5, 1, 4, 3, 6],
+        green: [7, 10, 8, 12, 9, 11],
       },
     },
 
@@ -302,7 +302,7 @@ const TopicPage = ({ location }) => {
       <MatchNav location={location} titles={matchNavData} />
 
       <MatchScore year="_2026" lastYearWinner="green" location={location} />
-      
+
       <MatchNavSection
         data-visible={location.hash === "#round-1" ? "true" : "false"}
         data-link-id="round-1"
