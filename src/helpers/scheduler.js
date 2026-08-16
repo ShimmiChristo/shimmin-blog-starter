@@ -84,30 +84,54 @@ function generateTeamRoundsMain() {
         },
       ],
     },
-    {
-      round: 3,
+    // {
+    //   round: 3,
+    //   matches: [
+    //     {
+    //       teamA: ["1", "3"],
+    //     },
+    //     {
+    //       teamA: ["2", "4"],
+    //     },
+    //     {
+    //       teamA: ["5", "6"],
+    //     },
+    //     {
+    //       teamB: ["7", "9"],
+    //     },
+    //     {
+    //       teamB: ["10", "11"],
+    //     },
+    //     {
+    //       teamB: ["8", "12"],
+    //     },
+    //   ],
+    // },
+  ]
+
+  /* 
+  {
+      round: 4,
       matches: [
         {
-          teamA: ["1", "3"],
+          teamA: ["1", "4"],
         },
         {
-          teamA: ["2", "4"],
+          teamA: ["2", "6"],
         },
         {
-          teamA: ["5", "6"],
+          teamA: ["3", "5"],
         },
         {
-          teamB: ["7", "9"],
+          teamB: ["8", "11"],
         },
         {
-          teamB: ["10", "11"],
+          teamB: ["9", "10"],
         },
         {
-          teamB: ["8", "12"],
+          teamB: ["7", "12"],
         },
-      ],
-    },
-  ]
+      */
 
   // const roundsInit = [
   //   {
@@ -696,7 +720,7 @@ function generateTeamRoundsMain() {
 
     // * max variables
     const maxPartnerVal = roundsInit.length < 2 ? 2 : 3
-    const maxOpponentVal = roundsInit.length < 2 ? 4 : 4
+    const maxOpponentVal = roundsInit.length < 2 ? 3 : 4
     const opponentsThatCantPlayMoreThan_4_Times = [
       "1-7",
       "1-9",
@@ -729,6 +753,40 @@ function generateTeamRoundsMain() {
       "6-10",
       "6-12",
     ]
+    const opponentsThatCantPlayMoreThan_3_Times = [
+      "1-7",
+      "2-8",
+      "3-9",
+      "4-10",
+      "5-11",
+      "6-12",
+      "1-9",
+      "1-10",
+      "1-11",
+      "1-12",
+      "2-9",
+      "2-10",
+      "2-11",
+      "2-12",
+      "3-7",
+      "3-8",
+      "3-11",
+      "3-12",
+      "4-7",
+      "4-8",
+      "4-11",
+      "4-12",
+      "5-7",
+      "5-8",
+      "5-9",
+      "5-10",
+      "6-7",
+      "6-8",
+      "6-9",
+      "6-10",
+    ]
+    // const opponentsThatCantPlayMoreThan_3_Times = ["1-9", "3-7"]
+
     // const opponentsThatCanPlayMoreThan_4_Times = [
     //   "1-8",
     //   "2-7",
@@ -743,15 +801,24 @@ function generateTeamRoundsMain() {
       maxNumberInArray(Object.values(partnerMaps.teamB)) > maxPartnerVal
     ) {
       return false
+    } else if (maxNumberInArray(Object.values(opponentMap)) > maxOpponentVal) {
+      console.log(
+        "------- ERROR: Opponent map more than " + maxOpponentVal + " -------"
+      )
+      return false
     } else if (
-      maxNumberInArray(Object.values(opponentMap)) > maxOpponentVal ||
       opponentsThatCantPlayMoreThan_4_Times.some(
         opponent => opponentMap[opponent] > 4
       )
     ) {
-      console.log(
-        "------- ERROR: Opponent map more than " + maxOpponentVal + " -------"
+      console.log("------- ERROR: Opponents cant play more than 4 -------")
+      return false
+    } else if (
+      opponentsThatCantPlayMoreThan_3_Times.some(
+        opponent => opponentMap[opponent] > 3
       )
+    ) {
+      console.log("------- ERROR: Opponents cant play more than 3 -------")
       return false
     } else if (minNumberInArray(Object.values(opponentMap)) === 0) {
       console.log("-------- ERROR: Opponent map has a 0 --------")
@@ -838,6 +905,5 @@ function generateTeamRounds(n) {
 }
 
 // recursiveGenerateTeamRounds()
-const attempts = 100000
+const attempts = 8000000
 generateTeamRounds(attempts)
-1``
