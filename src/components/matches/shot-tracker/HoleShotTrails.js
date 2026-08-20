@@ -56,7 +56,7 @@ const HoleLabel = styled.div`
 /**
  * Renders a birds-eye diagram for a single hole with each player's shots
  * connected in order. Coordinates are 0-100, tee at the bottom (y: 100),
- * green at the top (y: 0). See src/data/shot-tracker.README.md for the data
+ * green at the top (y: 0). See docs/shot-tracker.md for the data
  * format.
  */
 function HoleShotTrails({ holeNumber, par, image, shots, players }) {

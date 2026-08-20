@@ -1,8 +1,8 @@
 # Shot Tracker data format
 
 `shot-tracker.json` powers the "Shot Trails" panel shown on each match card
-(see [src/components/match.js](../components/match.js) and
-[src/components/matches/shot-tracker/](../components/matches/shot-tracker/)).
+(see [src/components/match.js](../src/components/match.js) and
+[src/components/matches/shot-tracker/](../src/components/matches/shot-tracker/)).
 
 It is intentionally hand-edited — fill it in after a round (or leave it out
 entirely; the panel just won't render for holes/years without data).
@@ -63,7 +63,6 @@ player's key. For example, an Alternate match with `player1="matt"`,
 }
 ```
 
-
 ## Coordinates
 
 - `x` and `y` are percentages from `0` to `100`, positioned as if looking
@@ -88,3 +87,15 @@ Portrait-oriented images (taller than wide) work best since holes are drawn
 tee-to-green top-to-bottom. If `image` is omitted, or the file doesn't exist
 yet, the panel falls back to a plain placeholder box so trails are still
 visible before you've sourced an image.
+
+## Why this doc lives in /docs, not /src/data
+
+`src/data/` is registered as a `gatsby-source-filesystem` source, and
+`gatsby-plugin-mdx` scans every sourced directory for `.md`/`.mdx` files. A
+loose markdown file with no frontmatter dropped in `src/data/` gets turned
+into a blog-post `Mdx` node with no `category`, which crashes
+[gatsby-node.mjs](../gatsby-node.mjs) `createPages` (`Cannot read properties
+of null (reading 'slug')`) because `onCreateNode` never sets `fields.slug`
+for it. Keep documentation markdown outside of `content/players`,
+`content/media`, `content/assets`, `src/data/`, and `src/images/` (or give it
+real frontmatter with a matching `category`) to avoid this.

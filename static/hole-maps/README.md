@@ -12,5 +12,5 @@ hole-maps/bayHarborPreserveLinks/hole-14.png
 
 Files in this folder are served as-is at `/hole-maps/<filename>` (no
 build-time processing). Portrait images work best — see
-[src/data/shot-tracker.README.md](../../src/data/shot-tracker.README.md) for
+[docs/shot-tracker.md](../../docs/shot-tracker.md) for
 the full data format used to plot shot trails on top of these images.
