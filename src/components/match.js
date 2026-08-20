@@ -17,6 +17,8 @@ import {
   getCourseHandicap,
 } from "../helpers/handicapHelper"
 import { calcPops, calcScorecardMarks } from "../helpers/matchHelper"
+import shotTrackerData from "../data/shot-tracker.json"
+import ShotTrailsPanel from "./matches/shot-tracker/ShotTrailsPanel"
 
 const CloseBtn = styled.span`
   display: block;
@@ -169,6 +171,45 @@ function Match({
       : courseMatchQuery.holes.slice(9)
   const hardestHole = courseMatchQuery.holes.filter(h => h.handicap === 1)[0]
     .number
+
+  // Shot Trails: feature-flagged off by default so it doesn't show on
+  // production until it's ready. Set GATSBY_SHOW_SHOT_TRAILS=true in
+  // .env.development (gitignored) to see it locally.
+  const shotTrailsEnabled = process.env.GATSBY_SHOW_SHOT_TRAILS === "true"
+  const holeShotData = shotTrailsEnabled
+    ? shotTrackerData[year]?.[courseMatch]
+    : undefined
+  const holesWithShotData = holeShotData
+    ? courseHoles.filter(hole => holeShotData[hole.number])
+    : []
+  // Scramble/alternate/pinehurst play one ball per team, so shot trails are
+  // tracked per-team (keyed "player1-player3") instead of per-player.
+  const isOneBallGameplay = ["scramble", "alternate", "pinehurst"].includes(
+    gameplay
+  )
+  const shotTrailPlayers = isOneBallGameplay
+    ? [
+        player1 && {
+          key: player3 ? `${player1}-${player3}` : player1,
+          label: player3 ? `${player1} & ${player3}` : player1,
+          color: "var(--green)",
+        },
+        player2 && {
+          key: player4 ? `${player2}-${player4}` : player2,
+          label: player4 ? `${player2} & ${player4}` : player2,
+          color: "var(--blue)",
+        },
+      ].filter(Boolean)
+    : [
+        player1 && { key: player1, label: player1, color: "var(--green)" },
+        player3 && {
+          key: player3,
+          label: player3,
+          color: "var(--green-light)",
+        },
+        player2 && { key: player2, label: player2, color: "var(--blue)" },
+        player4 && { key: player4, label: player4, color: "var(--blue-light)" },
+      ].filter(Boolean)
   // const courseName = courseMatchQuery.name
   // const courseLink = courseMatchQuery.link
 
@@ -1047,6 +1088,13 @@ function Match({
             </div>
           </div>
         </div>
+        {holesWithShotData.length > 0 ? (
+          <ShotTrailsPanel
+            holes={holesWithShotData}
+            holeShotData={holeShotData}
+            players={shotTrailPlayers}
+          />
+        ) : null}
         <div className="youtube__video m-3">
           {ytVideo ? (
             <a href={ytVideo} target="_blank" rel="noopener noreferrer">

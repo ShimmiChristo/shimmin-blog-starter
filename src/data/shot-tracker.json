@@ -1,0 +1,164 @@
+{
+  "_2027": {
+    "crookedTree": {
+      "1": {
+        "image": "/hole-maps/crookedTree/hole-1.png",
+        "shots": {
+          "chris": [
+            { "x": 50, "y": 96, "result": "tee" },
+            { "x": 42, "y": 55, "result": "fairway" },
+            { "x": 48, "y": 18, "result": "green" },
+            { "x": 50, "y": 8, "result": "hole" }
+          ],
+          "dylan": [
+            { "x": 50, "y": 96, "result": "tee" },
+            { "x": 58, "y": 60, "result": "rough" },
+            { "x": 50, "y": 30, "result": "bunker" },
+            { "x": 49, "y": 12, "result": "green" },
+            { "x": 50, "y": 8, "result": "hole" }
+          ]
+        }
+      },
+      "2": { "image": "/hole-maps/crookedTree/hole-2.png", "shots": {} },
+      "3": { "image": "/hole-maps/crookedTree/hole-3.png", "shots": {} },
+      "4": { "image": "/hole-maps/crookedTree/hole-4.png", "shots": {} },
+      "5": { "image": "/hole-maps/crookedTree/hole-5.png", "shots": {} },
+      "6": { "image": "/hole-maps/crookedTree/hole-6.png", "shots": {} },
+      "7": { "image": "/hole-maps/crookedTree/hole-7.png", "shots": {} },
+      "8": { "image": "/hole-maps/crookedTree/hole-8.png", "shots": {} },
+      "9": { "image": "/hole-maps/crookedTree/hole-9.png", "shots": {} },
+      "10": { "image": "/hole-maps/crookedTree/hole-10.png", "shots": {} },
+      "11": { "image": "/hole-maps/crookedTree/hole-11.png", "shots": {} },
+      "12": { "image": "/hole-maps/crookedTree/hole-12.png", "shots": {} },
+      "13": { "image": "/hole-maps/crookedTree/hole-13.png", "shots": {} },
+      "14": { "image": "/hole-maps/crookedTree/hole-14.png", "shots": {} },
+      "15": { "image": "/hole-maps/crookedTree/hole-15.png", "shots": {} },
+      "16": { "image": "/hole-maps/crookedTree/hole-16.png", "shots": {} },
+      "17": { "image": "/hole-maps/crookedTree/hole-17.png", "shots": {} },
+      "18": { "image": "/hole-maps/crookedTree/hole-18.png", "shots": {} }
+    }
+  },
+  "_2025": {
+    "crookedTree": {
+      "1": {
+        "image": "/hole-maps/crookedTree/hole-1.png",
+        "shots": {
+          "matt-stephen": [
+            { "x": 50, "y": 96, "result": "tee" },
+            { "x": 46, "y": 52, "result": "fairway" },
+            { "x": 49, "y": 15, "result": "green" },
+            { "x": 50, "y": 8, "result": "hole" }
+          ],
+          "craig-dan": [
+            { "x": 50, "y": 96, "result": "tee" },
+            { "x": 62, "y": 58, "result": "rough" },
+            { "x": 53, "y": 22, "result": "green" },
+            { "x": 50, "y": 8, "result": "hole" }
+          ],
+          "gordon-derek": [
+            { "x": 50, "y": 96, "result": "tee" },
+            { "x": 40, "y": 48, "result": "fairway" },
+            { "x": 47, "y": 20, "result": "bunker" },
+            { "x": 50, "y": 8, "result": "hole" }
+          ],
+          "dylan-evan": [
+            { "x": 50, "y": 96, "result": "tee" },
+            { "x": 58, "y": 50, "result": "fairway" },
+            { "x": 51, "y": 16, "result": "green" },
+            { "x": 50, "y": 8, "result": "hole" }
+          ],
+          "chris-curtis": [
+            { "x": 50, "y": 96, "result": "tee" },
+            { "x": 44, "y": 45, "result": "fairway" },
+            { "x": 49, "y": 14, "result": "green" },
+            { "x": 50, "y": 8, "result": "hole" }
+          ],
+          "rj-cam": [
+            { "x": 50, "y": 96, "result": "tee" },
+            { "x": 65, "y": 55, "result": "rough" },
+            { "x": 55, "y": 25, "result": "fairway" },
+            { "x": 50, "y": 15, "result": "green" },
+            { "x": 50, "y": 8, "result": "hole" }
+          ]
+        }
+      },
+      "2": {
+        "image": "/hole-maps/crookedTree/hole-2.png",
+        "shots": {
+          "matt-stephen": [
+            { "x": 50, "y": 96, "result": "tee" },
+            { "x": 48, "y": 20, "result": "green" },
+            { "x": 50, "y": 6, "result": "hole" }
+          ],
+          "craig-dan": [
+            { "x": 50, "y": 96, "result": "tee" },
+            { "x": 38, "y": 18, "result": "bunker" },
+            { "x": 50, "y": 6, "result": "hole" }
+          ],
+          "gordon-derek": [
+            { "x": 50, "y": 96, "result": "tee" },
+            { "x": 55, "y": 22, "result": "green" },
+            { "x": 50, "y": 6, "result": "hole" }
+          ],
+          "dylan-evan": [
+            { "x": 50, "y": 96, "result": "tee" },
+            { "x": 45, "y": 25, "result": "green" },
+            { "x": 50, "y": 6, "result": "hole" }
+          ],
+          "chris-curtis": [
+            { "x": 50, "y": 96, "result": "tee" },
+            { "x": 52, "y": 18, "result": "green" },
+            { "x": 50, "y": 6, "result": "hole" }
+          ],
+          "rj-cam": [
+            { "x": 50, "y": 96, "result": "tee" },
+            { "x": 62, "y": 30, "result": "rough" },
+            { "x": 50, "y": 6, "result": "hole" }
+          ]
+        }
+      },
+      "3": {
+        "image": "/hole-maps/crookedTree/hole-3.png",
+        "shots": {
+          "matt-stephen": [
+            { "x": 50, "y": 96, "result": "tee" },
+            { "x": 43, "y": 50, "result": "fairway" },
+            { "x": 48, "y": 15, "result": "green" },
+            { "x": 50, "y": 8, "result": "hole" }
+          ],
+          "craig-dan": [
+            { "x": 50, "y": 96, "result": "tee" },
+            { "x": 60, "y": 55, "result": "fairway" },
+            { "x": 55, "y": 18, "result": "green" },
+            { "x": 50, "y": 8, "result": "hole" }
+          ],
+          "gordon-derek": [
+            { "x": 50, "y": 96, "result": "tee" },
+            { "x": 35, "y": 45, "result": "rough" },
+            { "x": 45, "y": 20, "result": "bunker" },
+            { "x": 50, "y": 8, "result": "hole" }
+          ],
+          "dylan-evan": [
+            { "x": 50, "y": 96, "result": "tee" },
+            { "x": 52, "y": 48, "result": "fairway" },
+            { "x": 49, "y": 16, "result": "green" },
+            { "x": 50, "y": 8, "result": "hole" }
+          ],
+          "chris-curtis": [
+            { "x": 50, "y": 96, "result": "tee" },
+            { "x": 47, "y": 46, "result": "fairway" },
+            { "x": 50, "y": 14, "result": "green" },
+            { "x": 50, "y": 8, "result": "hole" }
+          ],
+          "rj-cam": [
+            { "x": 50, "y": 96, "result": "tee" },
+            { "x": 68, "y": 52, "result": "rough" },
+            { "x": 58, "y": 22, "result": "fairway" },
+            { "x": 50, "y": 15, "result": "green" },
+            { "x": 50, "y": 8, "result": "hole" }
+          ]
+        }
+      }
+    }
+  }
+}
