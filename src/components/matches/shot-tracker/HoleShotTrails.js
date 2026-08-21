@@ -2,25 +2,36 @@ import React, { useState } from "react"
 import PropTypes from "prop-types"
 import styled from "styled-components"
 
+// Minimum supported mobile viewport width is 375px (iPhone SE/8 baseline).
+// The image is sized by height (dynamic width, no cropping - see the width
+// rule below), so on narrow phones we cap width with an absolute vw-based
+// max-width rather than relying on percentage-based max-width resolving
+// through an auto-sized (shrink-to-fit) inline-block parent, and shrink the
+// height clamp so a near-square or landscape hole image can't force
+// horizontal overflow of the match card at 375px wide.
 const Frame = styled.div`
   position: relative;
-  width: 100%;
-  max-width: 420px;
-  aspect-ratio: 3 / 4;
-  margin: 0 auto;
+  display: inline-block;
+  height: clamp(18rem, 60vh, 30rem);
+  max-width: 100%;
   border-radius: 0.5rem;
   overflow: hidden;
   border: 1px solid var(--gray, #a0a0a0);
   background: var(--light-gray, #f5f5f5);
+
+  ${({ $hasImage }) => (!$hasImage ? "width: min(420px, 100%);" : "")}
+
+  @media (max-width: 768px) {
+    height: clamp(14rem, 120vw, 28rem);
+    max-width: calc(100vw - 3rem);
+  }
 `
 
 const HoleImage = styled.img`
-  position: absolute;
-  inset: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
   display: ${({ $hidden }) => ($hidden ? "none" : "block")};
+  height: 100%;
+  width: auto;
+  max-width: 100%;
 `
 
 const Placeholder = styled.div`
@@ -53,6 +64,10 @@ const HoleLabel = styled.div`
   margin-bottom: 0.5rem;
 `
 
+const Wrapper = styled.div`
+  text-align: center;
+`
+
 /**
  * Renders a birds-eye diagram for a single hole with each player's shots
  * connected in order. Coordinates are 0-100, tee at the bottom (y: 100),
@@ -64,12 +79,12 @@ function HoleShotTrails({ holeNumber, par, image, shots, players }) {
   const showPlaceholder = !image || imageFailed
 
   return (
-    <div>
+    <Wrapper>
       <HoleLabel>
         Hole {holeNumber}
         {par ? ` · Par ${par}` : ""}
       </HoleLabel>
-      <Frame>
+      <Frame $hasImage={!showPlaceholder}>
         {image ? (
           <HoleImage
             src={image}
@@ -145,7 +160,7 @@ function HoleShotTrails({ holeNumber, par, image, shots, players }) {
           })}
         </Overlay>
       </Frame>
-    </div>
+    </Wrapper>
   )
 }
 

@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<title>Shot Trail Picker — BFBH Cup</title>
+<style>
+  :root {
+    --green: #18453b;
+    --blue: #003c82;
+    --gray: #a0a0a0;
+    --light-gray: #f5f5f5;
+    --black: #202020;
+  }
+  * { box-sizing: border-box; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+    margin: 0;
+    padding: 1.5rem;
+    background: #fff;
+    color: var(--black);
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    align-items: flex-start;
+  }
+  h1 { font-size: 1.1rem; margin: 0 0 0.25rem; }
+  p.hint { margin: 0 0 1rem; font-size: 0.85rem; color: #555; max-width: 60ch; }
+
+  .stage-col {
+    flex: 0 0 auto;
+  }
+
+  .toolbar {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    align-items: center;
+    margin-bottom: 0.75rem;
+    max-width: 420px;
+  }
+  .toolbar label {
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    color: #555;
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+  }
+  .toolbar input[type="text"] {
+    padding: 0.35rem 0.5rem;
+    border: 1px solid var(--gray);
+    border-radius: 0.3rem;
+    font-size: 0.9rem;
+    width: 9rem;
+  }
+  .toolbar input[type="file"] { font-size: 0.8rem; }
+
+  .result-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.35rem;
+    margin-bottom: 0.75rem;
+    max-width: 420px;
+  }
+  .result-tags button {
+    padding: 0.3rem 0.6rem;
+    border-radius: 1rem;
+    border: 1px solid var(--gray);
+    background: #fff;
+    font-size: 0.8rem;
+    cursor: pointer;
+  }
+  .result-tags button.active {
+    background: var(--black);
+    color: #fff;
+    border-color: var(--black);
+  }
+
+  .actions {
+    display: flex;
+    gap: 0.5rem;
+    margin-bottom: 0.75rem;
+    flex-wrap: wrap;
+  }
+  .actions button {
+    padding: 0.4rem 0.75rem;
+    border-radius: 0.3rem;
+    border: 1px solid var(--gray);
+    background: #fff;
+    font-size: 0.8rem;
+    cursor: pointer;
+  }
+  .actions button:hover { background: var(--light-gray); }
+
+  .frame {
+    position: relative;
+    display: inline-block;
+    height: clamp(18rem, 60vh, 30rem);
+    max-width: 100%;
+    border-radius: 0.5rem;
+    overflow: hidden;
+    border: 1px solid var(--gray);
+    background: var(--light-gray);
+    cursor: crosshair;
+    user-select: none;
+  }
+  .frame:not(.has-image) {
+    width: min(420px, 100%);
+  }
+  /* Minimum supported mobile viewport width is 375px - cap with an
+     absolute vw-based max-width (rather than a percentage that depends on
+     this inline-block's own auto/shrink-to-fit width) and shrink the height
+     clamp so a near-square or landscape hole image can't overflow. */
+  @media (max-width: 480px) {
+    .frame {
+      height: clamp(14rem, 120vw, 28rem);
+      max-width: calc(100vw - 3rem);
+    }
+  }
+  .frame img {
+    display: block;
+    height: 100%;
+    width: auto;
+    max-width: 100%;
+    pointer-events: none;
+  }
+  .frame .placeholder {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 1rem;
+    font-size: 0.85rem;
+    color: var(--gray);
+  }
+  .frame svg {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+  }
+  .frame svg circle,
+  .frame svg path.marker {
+    cursor: pointer;
+  }
+
+  .hole-orientation {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: #888;
+    max-width: 420px;
+    margin-top: 0.35rem;
+  }
+
+  .side-col {
+    flex: 1 1 320px;
+    min-width: 320px;
+  }
+
+  .players-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+    margin-bottom: 1rem;
+    font-size: 0.85rem;
+  }
+  .players-list .player-row {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.35rem 0.5rem;
+    border-radius: 0.3rem;
+    background: var(--light-gray);
+  }
+  .players-list .swatch {
+    width: 0.8rem;
+    height: 0.8rem;
+    border-radius: 50%;
+    flex: 0 0 auto;
+  }
+  .players-list .player-row button {
+    margin-left: auto;
+    border: none;
+    background: none;
+    color: #a00;
+    cursor: pointer;
+    font-size: 0.8rem;
+  }
+
+  textarea#jsonOutput {
+    width: 100%;
+    min-height: 260px;
+    font-family: Menlo, Monaco, "Courier New", monospace;
+    font-size: 0.8rem;
+    padding: 0.75rem;
+    border-radius: 0.4rem;
+    border: 1px solid var(--gray);
+    background: #fafafa;
+    white-space: pre;
+  }
+
+  .copy-btn {
+    margin-top: 0.5rem;
+    padding: 0.5rem 1rem;
+    border-radius: 0.3rem;
+    border: none;
+    background: var(--green);
+    color: #fff;
+    font-size: 0.9rem;
+    cursor: pointer;
+  }
+  .copy-btn:hover { opacity: 0.9; }
+  .copy-status {
+    font-size: 0.8rem;
+    color: var(--green);
+    margin-left: 0.6rem;
+  }
+</style>
+</head>
+<body>
+
+<div class="stage-col">
+  <h1>Shot Trail Picker</h1>
+  <p class="hint">
+    Load a hole image, pick a result tag, then click on the image to drop
+    shots in order. This mirrors the site's frame (3:4, cropped to fill) so
+    coordinates line up with what actually renders. Nothing here is saved or
+    uploaded — copy the JSON out and paste it into
+    <code>src/data/shot-tracker.json</code> when you're done.
+  </p>
+
+  <div class="toolbar">
+    <label>
+      Hole image
+      <input type="file" id="imageInput" accept="image/*" />
+    </label>
+    <label>
+      Course key
+      <input type="text" id="courseKeyInput" placeholder="crookedTree" />
+    </label>
+    <label>
+      Hole #
+      <input type="text" id="holeNumberInput" placeholder="1" />
+    </label>
+    <label>
+      Player / team key
+      <input type="text" id="playerKeyInput" placeholder="matt-stephen" />
+    </label>
+  </div>
+
+  <div class="result-tags" id="resultTags">
+    <button data-result="tee" class="active">tee</button>
+    <button data-result="fairway">fairway</button>
+    <button data-result="rough">rough</button>
+    <button data-result="bunker">bunker</button>
+    <button data-result="green">green</button>
+    <button data-result="hole">hole (flag)</button>
+  </div>
+
+  <div class="actions">
+    <button id="undoBtn">Undo last shot</button>
+    <button id="clearPlayerBtn">Clear this player</button>
+    <button id="clearAllBtn">Clear all</button>
+  </div>
+
+  <div class="frame" id="frame">
+    <img id="holeImage" alt="" style="display:none" />
+    <div class="placeholder" id="placeholder">
+      Load a hole image above to start clicking shots
+    </div>
+    <svg id="overlay" viewBox="0 0 100 100" preserveAspectRatio="none"></svg>
+  </div>
+  <div class="hole-orientation">
+    <span>Green / flag</span>
+    <span>Tee ↓</span>
+  </div>
+</div>
+
+<div class="side-col">
+  <h1>Players in this hole</h1>
+  <div class="players-list" id="playersList"></div>
+
+  <h1>Copy into shot-tracker.json</h1>
+  <p class="hint">
+    Paste this as the <code>"shots"</code> value for
+    <code>&lt;year&gt; → &lt;courseKey&gt; → &lt;holeNumber&gt;</code> in
+    src/data/shot-tracker.json.
+  </p>
+  <textarea id="jsonOutput" readonly></textarea>
+  <div>
+    <button class="copy-btn" id="copyBtn">Copy JSON</button>
+    <span class="copy-status" id="copyStatus"></span>
+  </div>
+</div>
+
+<script>
+(function () {
+  const COLORS = [
+    "#18453b", // green
+    "#003c82", // blue
+    "#2c7e6c", // green-light
+    "#0054b5", // blue-light
+    "#b3541e", // orange
+    "#7a2f8f", // purple
+    "#a01d1d", // red
+    "#1d7a7a", // teal
+  ];
+
+  /** @type {Record<string, {x:number,y:number,result:string}[]>} */
+  let players = {};
+  let colorByPlayer = {};
+  let currentResult = "tee";
+
+  const imageInput = document.getElementById("imageInput");
+  const holeImage = document.getElementById("holeImage");
+  const placeholder = document.getElementById("placeholder");
+  const frame = document.getElementById("frame");
+  const overlay = document.getElementById("overlay");
+  const playerKeyInput = document.getElementById("playerKeyInput");
+  const playersList = document.getElementById("playersList");
+  const jsonOutput = document.getElementById("jsonOutput");
+  const resultTagsWrap = document.getElementById("resultTags");
+  const copyBtn = document.getElementById("copyBtn");
+  const copyStatus = document.getElementById("copyStatus");
+
+  imageInput.addEventListener("change", () => {
+    const file = imageInput.files && imageInput.files[0];
+    if (!file) return;
+    const url = URL.createObjectURL(file);
+    holeImage.src = url;
+    holeImage.style.display = "block";
+    placeholder.style.display = "none";
+    frame.classList.add("has-image");
+  });
+
+  resultTagsWrap.addEventListener("click", e => {
+    const btn = e.target.closest("button[data-result]");
+    if (!btn) return;
+    currentResult = btn.dataset.result;
+    [...resultTagsWrap.querySelectorAll("button")].forEach(b =>
+      b.classList.toggle("active", b === btn)
+    );
+  });
+
+  function currentPlayerKey() {
+    return playerKeyInput.value.trim() || "player1";
+  }
+
+  function colorFor(key) {
+    if (!colorByPlayer[key]) {
+      const used = Object.keys(colorByPlayer).length;
+      colorByPlayer[key] = COLORS[used % COLORS.length];
+    }
+    return colorByPlayer[key];
+  }
+
+  frame.addEventListener("click", e => {
+    if (holeImage.style.display === "none") return; // no image loaded yet
+    const rect = frame.getBoundingClientRect();
+    const x = Math.max(0, Math.min(100, ((e.clientX - rect.left) / rect.width) * 100));
+    const y = Math.max(0, Math.min(100, ((e.clientY - rect.top) / rect.height) * 100));
+    const key = currentPlayerKey();
+    if (!players[key]) players[key] = [];
+    players[key].push({ x: Math.round(x * 10) / 10, y: Math.round(y * 10) / 10, result: currentResult });
+    colorFor(key);
+    render();
+  });
+
+  document.getElementById("undoBtn").addEventListener("click", () => {
+    const key = currentPlayerKey();
+    if (players[key] && players[key].length) {
+      players[key].pop();
+      render();
+    }
+  });
+
+  document.getElementById("clearPlayerBtn").addEventListener("click", () => {
+    const key = currentPlayerKey();
+    delete players[key];
+    render();
+  });
+
+  document.getElementById("clearAllBtn").addEventListener("click", () => {
+    if (!confirm("Clear every player's shots on this hole?")) return;
+    players = {};
+    colorByPlayer = {};
+    render();
+  });
+
+  function removeShot(key, index) {
+    if (!players[key]) return;
+    players[key].splice(index, 1);
+    if (players[key].length === 0) delete players[key];
+    render();
+  }
+
+  function render() {
+    renderOverlay();
+    renderPlayersList();
+    renderJson();
+  }
+
+  function renderOverlay() {
+    overlay.innerHTML = "";
+    Object.keys(players).forEach(key => {
+      const shots = players[key];
+      if (!shots.length) return;
+      const color = colorFor(key);
+
+      const points = shots.map(s => `${s.x},${s.y}`).join(" ");
+      const polyline = document.createElementNS("http://www.w3.org/2000/svg", "polyline");
+      polyline.setAttribute("points", points);
+      polyline.setAttribute("fill", "none");
+      polyline.setAttribute("stroke", color);
+      polyline.setAttribute("stroke-width", "1");
+      polyline.setAttribute("stroke-linecap", "round");
+      polyline.setAttribute("stroke-linejoin", "round");
+      polyline.setAttribute("vector-effect", "non-scaling-stroke");
+      polyline.setAttribute("opacity", "0.85");
+      overlay.appendChild(polyline);
+
+      shots.forEach((shot, i) => {
+        const isLast = i === shots.length - 1;
+        const holedOut = isLast && shot.result === "hole";
+        let el;
+        if (holedOut) {
+          el = document.createElementNS("http://www.w3.org/2000/svg", "path");
+          el.setAttribute("class", "marker");
+          el.setAttribute("d", `M ${shot.x} ${shot.y} l -1.6 4 h 3.2 z`);
+          el.setAttribute("fill", color);
+          el.setAttribute("stroke", "#fff");
+          el.setAttribute("stroke-width", "0.3");
+        } else {
+          el = document.createElementNS("http://www.w3.org/2000/svg", "circle");
+          el.setAttribute("cx", shot.x);
+          el.setAttribute("cy", shot.y);
+          el.setAttribute("r", "1.6");
+          el.setAttribute("fill", color);
+          el.setAttribute("stroke", "#fff");
+          el.setAttribute("stroke-width", "0.4");
+        }
+        const title = document.createElementNS("http://www.w3.org/2000/svg", "title");
+        title.textContent = `${key} — shot ${i + 1} (${shot.result}) — click to remove`;
+        el.appendChild(title);
+        el.addEventListener("click", ev => {
+          ev.stopPropagation();
+          removeShot(key, i);
+        });
+        overlay.appendChild(el);
+
+        const label = document.createElementNS("http://www.w3.org/2000/svg", "text");
+        label.setAttribute("x", shot.x);
+        label.setAttribute("y", shot.y - 2.2);
+        label.setAttribute("font-size", "3");
+        label.setAttribute("text-anchor", "middle");
+        label.setAttribute("fill", color);
+        label.setAttribute("stroke", "#fff");
+        label.setAttribute("stroke-width", "0.15");
+        label.setAttribute("paint-order", "stroke");
+        label.textContent = String(i + 1);
+        overlay.appendChild(label);
+      });
+    });
+  }
+
+  function renderPlayersList() {
+    const keys = Object.keys(players);
+    if (keys.length === 0) {
+      playersList.innerHTML = '<span style="color:#888">No shots yet — type a player/team key above and click the image.</span>';
+      return;
+    }
+    playersList.innerHTML = "";
+    keys.forEach(key => {
+      const row = document.createElement("div");
+      row.className = "player-row";
+      const swatch = document.createElement("span");
+      swatch.className = "swatch";
+      swatch.style.background = colorFor(key);
+      const label = document.createElement("span");
+      label.textContent = `${key} (${players[key].length} shots)`;
+      const del = document.createElement("button");
+      del.textContent = "remove";
+      del.addEventListener("click", () => {
+        delete players[key];
+        render();
+      });
+      row.appendChild(swatch);
+      row.appendChild(label);
+      row.appendChild(del);
+      playersList.appendChild(row);
+    });
+  }
+
+  function renderJson() {
+    const shotsObj = {};
+    Object.keys(players).forEach(key => {
+      shotsObj[key] = players[key].map(({ x, y, result }) => ({ x, y, result }));
+    });
+    jsonOutput.value = JSON.stringify(shotsObj, null, 2);
+  }
+
+  copyBtn.addEventListener("click", async () => {
+    try {
+      await navigator.clipboard.writeText(jsonOutput.value);
+      copyStatus.textContent = "Copied!";
+    } catch (e) {
+      jsonOutput.select();
+      document.execCommand("copy");
+      copyStatus.textContent = "Copied!";
+    }
+    setTimeout(() => (copyStatus.textContent = ""), 2000);
+  });
+
+  render();
+})();
+</script>
+
+</body>
+</html>

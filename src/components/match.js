@@ -77,7 +77,7 @@ const Section = styled.section`
   }
 
   &.open {
-    max-height: 1000px;
+    max-height: 100%;
     box-shadow: 2px 2px 9px #cccccc;
 
     .match__header {

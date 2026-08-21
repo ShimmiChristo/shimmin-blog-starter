@@ -7,6 +7,38 @@
 It is intentionally hand-edited — fill it in after a round (or leave it out
 entirely; the panel just won't render for holes/years without data).
 
+## Picking coordinates without eyeballing percentages
+
+Guessing `x`/`y` percentages by eye is slow and imprecise. Use the click-to-place
+picker instead: open [tools/shot-picker.html](../tools/shot-picker.html)
+directly in a browser (double-click the file, or drag it into a browser tab —
+no server or build step needed).
+
+1. Click **Choose File** and load the hole image straight from
+   `static/hole-maps/<courseKey>/hole-<N>.png` — the picker sizes the frame
+   the same way as the live site (fixed height, full image visible, no
+   cropping), so what you see lines up exactly with what renders in the
+   Shot Trails panel.
+2. Type the player/team key you're recording (e.g. `chris` or
+   `matt-stephen` for one-ball formats — see below) into **Player / team
+   key**.
+3. Pick a result tag (tee, fairway, rough, bunker, green, or "hole" for the
+   final holed-out shot), then click on the image where that shot landed.
+   Repeat in order — the tool draws the numbered trail and connecting line
+   as you go, so it's easy to see the teeing area, fairway, green, and pin
+   at a glance and place shots relative to them.
+4. Switch the **Player / team key** field to record additional
+   players/teams on the same hole; each gets its own color.
+5. Click a marker on the image to remove just that shot, or use **Undo last
+   shot** / **Clear this player** / **Clear all**.
+6. Click **Copy JSON** and paste the result as the `"shots"` value for that
+   hole in `src/data/shot-tracker.json` (under the right `<year>` →
+   `<courseKey>` → `<holeNumber>`).
+
+Nothing typed or clicked in the picker is saved or uploaded anywhere — it's a
+throwaway coordinate calculator, so refreshing the page clears it. Always
+copy the JSON out before navigating away.
+
 ## Feature flag
 
 The panel is gated behind `GATSBY_SHOW_SHOT_TRAILS=true` and is **off by
@@ -87,6 +119,19 @@ Portrait-oriented images (taller than wide) work best since holes are drawn
 tee-to-green top-to-bottom. If `image` is omitted, or the file doesn't exist
 yet, the panel falls back to a plain placeholder box so trails are still
 visible before you've sourced an image.
+
+## Mobile
+
+The frame is sized by height (`clamp(18rem, 60vh, 30rem)`), with the image
+drawn at `height: 100%; width: auto` so nothing gets cropped. That's fine on
+desktop, but a portrait image scaled to a tall height can render wider than a
+narrow phone screen. Minimum supported viewport width is **375px** (iPhone
+SE/8), so below `768px` the frame switches to a `65vw`-based height clamp and
+an absolute `calc(100vw - 3rem)` max-width, guaranteeing the diagram can't
+force horizontal overflow of the match card. This is applied in both
+[HoleShotTrails.js](../src/components/matches/shot-tracker/HoleShotTrails.js)
+and mirrored in [tools/shot-picker.html](../tools/shot-picker.html) so the
+picker's frame still matches what's live.
 
 ## Why this doc lives in /docs, not /src/data
 
