@@ -812,11 +812,11 @@
         "wins": 1,
         "losses": 2
       },
-      "handicap": 22,
+      "handicap": 24,
       "year": {
         "_2026": {
           "id": 2026,
-          "handicap": 22,
+          "handicap": 23,
           "captain": false,
           "team": "blue",
           "scores": {
@@ -2531,11 +2531,11 @@
         "wins": 2,
         "losses": 3
       },
-      "handicap": 18,
+      "handicap": 15,
       "year": {
         "_2026": {
           "id": 2026,
-          "handicap": 18,
+          "handicap": 15,
           "captain": false,
           "team": "blue",
           "scores": {
@@ -4535,11 +4535,11 @@
         "wins": 2,
         "losses": 3
       },
-      "handicap": 16,
+      "handicap": 15,
       "year": {
         "_2026": {
           "id": 2026,
-          "handicap": 16,
+          "handicap": 15,
           "captain": false,
           "team": "blue",
           "scores": {
@@ -6684,11 +6684,11 @@
         "wins": 2,
         "losses": 3
       },
-      "handicap": 4,
+      "handicap": 3,
       "year": {
         "_2026": {
           "id": 2026,
-          "handicap": 4,
+          "handicap": 3,
           "captain": true,
           "team": "blue",
           "scores": {
@@ -7746,11 +7746,11 @@
         "wins": 1,
         "losses": 3
       },
-      "handicap": 26,
+      "handicap": 24,
       "year": {
         "_2026": {
           "id": 2026,
-          "handicap": 26,
+          "handicap": 24,
           "captain": false,
           "team": "blue",
           "scores": {
@@ -9953,11 +9953,11 @@
         "wins": 3,
         "losses": 2
       },
-      "handicap": 4,
+      "handicap": 3,
       "year": {
         "_2026": {
           "id": 2026,
-          "handicap": 4,
+          "handicap": 3,
           "captain": true,
           "team": "green",
           "scores": {
