@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react"
 import { Link } from "gatsby"
 import PropTypes from "prop-types"
+import styled from "styled-components"
 
 function HighlightCountdown({ startTime, location, courseUrl }) {
   const [days, setDays] = useState(0)
@@ -23,11 +24,20 @@ function HighlightCountdown({ startTime, location, courseUrl }) {
     return () => getTimeUntilEvent(startTime)
   }, [startTime])
 
+  const Container = styled.div`
+    min-height: 50px;
+    position: relative;
+    @media screen and (max-width: 767px) {
+      font-size: 0.8rem;
+    }
+  `
+
   return (
     <>
-      <div className="container py-3 pb-md-3 position-relative text-center">
-        <div className="position-absolute top-0 start-0 ">
+      <Container data-name="countdown-container" className=" mb-3 text-center">
+        <div className="top-0 start-0 ">
           <b>BFBH Cup starts in: </b>
+          <br></br>
           <span className="countdown__days">
             <em>{days} Days</em>
           </span>
@@ -46,7 +56,7 @@ function HighlightCountdown({ startTime, location, courseUrl }) {
             )}
           </span>
         </div>
-      </div>
+      </Container>
     </>
   )
 }

@@ -44,7 +44,7 @@ const TopicPage = ({ data, location }) => {
         courseUrl={courseUrl}
       />
 
-      <div className="container col-lg-8 mt-5">
+      <div className="container col-lg-8">
         <Foreword2026 />
       </div>
       <div className="container col-lg-8 mt-5">

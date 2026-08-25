@@ -22,6 +22,7 @@ const CustomContainer = styled.div`
   }
   @media (max-width: 767px) {
     padding: 0rem 0 0.5rem;
+    margin: 0 auto 1rem;
   }
 `
 

@@ -97,6 +97,7 @@ body {
   max-width: 1000px;
   font-style: italic;
   width: 98%;
+  font-size: clamp(0.7rem, 1.5vw, 1rem);
 }
 .match__column {
   width: 3rem;

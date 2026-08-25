@@ -299,9 +299,9 @@ const TopicPage = ({ location }) => {
         courseUrl={courseUrl}
       />
 
-      <MatchNav location={location} titles={matchNavData} />
-
       <MatchScore year="_2026" lastYearWinner="green" location={location} />
+
+      <MatchNav location={location} titles={matchNavData} />
 
       <MatchNavSection
         data-visible={location.hash === "#round-1" ? "true" : "false"}

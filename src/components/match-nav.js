@@ -1,6 +1,6 @@
 import React from "react"
 import styled from "styled-components"
-import { v1 as uuidv1 } from "uuid"
+import PropTypes from "prop-types"
 import "../styles/match.css"
 
 const Section = styled.section`
@@ -15,8 +15,9 @@ const Section = styled.section`
   max-height: 180px;
 
   @media screen and (max-width: 767px) {
-    padding: 0.2rem 0;
-    width: 90%;
+    padding: 0;
+    margin: 1rem auto 1rem;
+    width: 100%;
   }
   > * {
     padding: 0 1rem;
@@ -59,6 +60,7 @@ const Section = styled.section`
     box-sizing: border-box;
     margin-left: calc(100% - 95%);
     border: none;
+    padding: 0;
 
     @media screen and (min-width: 768px) {
       display: none;
@@ -110,4 +112,19 @@ function MatchNav({ location, titles }) {
   )
 }
 
+MatchNav.propTypes = {
+  location: PropTypes.shape({
+    hash: PropTypes.string,
+  }),
+  titles: PropTypes.arrayOf(
+    PropTypes.shape({
+      link: PropTypes.string,
+      round: PropTypes.string,
+      name: PropTypes.string,
+    })
+  ),
+}
+
 export default MatchNav
+
+

@@ -52,6 +52,11 @@ const ScoreTracker = styled.div`
   height: 90px;
   position: relative;
 
+  @media (max-width: 768px) {
+    margin: 0.5rem auto 0.5rem;
+    height: 60px;
+  }
+
   &:after,
   &:before {
     background: #000;
@@ -136,6 +141,7 @@ const ScoreTeamOne = styled.div`
   z-index: 1;
   color: #fff;
   font-size: 3rem !important;
+  margin: 0 !important;
 `
 const ScoreTrackerTeamTwo = styled.div`
   position: absolute;
@@ -148,6 +154,7 @@ const ScoreTeamTwo = styled.div`
   z-index: 1;
   color: #fff;
   font-size: 3rem !important;
+  margin: 0 !important;
 `
 const TeamPointsNum = styled.div`
   line-height: 1;
@@ -165,7 +172,17 @@ const TeamFlag = styled.div`
   font-size: 2rem;
   letter-spacing: 0;
   @media (max-width: 768px) {
-    font-size: 1rem;
+    display: none;
+  }
+`
+const TeamSwatch = styled.span`
+  display: none;
+
+  @media (max-width: 768px) {
+    display: inline-block;
+    width: 10%;
+    height: 50px;
+    margin: 0 0.75rem;
   }
 `
 const PointsNeeded = styled.h3`
@@ -183,25 +200,46 @@ function MatchScore({ year, lastYearWinner, location }) {
   if (location?.hash.includes("#r1f") || location?.hash.includes("#round-1")) {
     team1RoundScore = currentYear.team1.scores.round1
     team2RoundScore = currentYear.team2.scores.round1
-  } else if (location?.hash.includes("#r1b") || location?.hash.includes("#round-2")) {
+  } else if (
+    location?.hash.includes("#r1b") ||
+    location?.hash.includes("#round-2")
+  ) {
     team1RoundScore = currentYear.team1.scores.round2
     team2RoundScore = currentYear.team2.scores.round2
-  } else if (location?.hash.includes("#r2f") || location?.hash.includes("#round-3")) {
+  } else if (
+    location?.hash.includes("#r2f") ||
+    location?.hash.includes("#round-3")
+  ) {
     team1RoundScore = currentYear.team1.scores.round3
     team2RoundScore = currentYear.team2.scores.round3
-  } else if (location?.hash.includes("#r2b") || location?.hash.includes("#round-4")) {
+  } else if (
+    location?.hash.includes("#r2b") ||
+    location?.hash.includes("#round-4")
+  ) {
     team1RoundScore = currentYear.team1.scores.round4
     team2RoundScore = currentYear.team2.scores.round4
-  } else if (location?.hash.includes("#r3f") || location?.hash.includes("#round-5")) {
+  } else if (
+    location?.hash.includes("#r3f") ||
+    location?.hash.includes("#round-5")
+  ) {
     team1RoundScore = currentYear.team1.scores.round5
     team2RoundScore = currentYear.team2.scores.round5
-  } else if (location?.hash.includes("#r3b") || location?.hash.includes("#round-6")) {
+  } else if (
+    location?.hash.includes("#r3b") ||
+    location?.hash.includes("#round-6")
+  ) {
     team1RoundScore = currentYear.team1.scores.round6
     team2RoundScore = currentYear.team2.scores.round6
-  } else if (location?.hash.includes("#r4f") || location?.hash.includes("#round-7")) {
+  } else if (
+    location?.hash.includes("#r4f") ||
+    location?.hash.includes("#round-7")
+  ) {
     team1RoundScore = currentYear.team1.scores.round7
     team2RoundScore = currentYear.team2.scores.round7
-  } else if (location?.hash.includes("#r4b") || location?.hash.includes("#round-8")) {
+  } else if (
+    location?.hash.includes("#r4b") ||
+    location?.hash.includes("#round-8")
+  ) {
     team1RoundScore = currentYear.team1.scores.round8
     team2RoundScore = currentYear.team2.scores.round8
   } else {
@@ -228,13 +266,14 @@ function MatchScore({ year, lastYearWinner, location }) {
     <>
       <div className="d-flex justify-content-around align-items-center">
         <div
-          className="d-flex flex-column flex-md-row team align-items-center justify-content-md-center justify-content-start flex-basis-0 flex-grow-1"
+          className="d-flex flex-md-row team align-items-center justify-content-md-center justify-content-start flex-basis-0 flex-grow-1"
           data-team="green"
           data-guest="false"
         >
           <TeamFlag className="team-flag mx-3 team-one-color--text bold">
             GREEN
           </TeamFlag>
+          <TeamSwatch className="team-one-color" aria-label="Green team" />
           {(() => {
             if (lastYearWinner === "green") {
               return (
@@ -261,13 +300,9 @@ function MatchScore({ year, lastYearWinner, location }) {
             }
           })()}
         </div>
-        <PointsNeeded className="h5">
-          Points
-          <br />
-          Needed
-        </PointsNeeded>
+        <PointsNeeded className="h5">Points</PointsNeeded>
         <div
-          className="d-flex flex-column-reverse flex-md-row team align-items-center justify-content-md-center justify-content-end flex-basis-0 flex-grow-1"
+          className="d-flex flex-md-row team align-items-center justify-content-md-center justify-content-end flex-basis-0 flex-grow-1"
           data-team="blue"
           data-guest="false"
         >
@@ -303,10 +338,11 @@ function MatchScore({ year, lastYearWinner, location }) {
           <TeamFlag className="team-flag mx-3 team-two-color--text bold">
             BLUE
           </TeamFlag>
+          <TeamSwatch className="team-two-color" aria-label="Blue team" />
         </div>
       </div>
-      <ScoreTracker>
-        <ScoreTrackerBar>
+      <ScoreTracker data-name="score-tracker">
+        <ScoreTrackerBar data-name="score-tracker-bar">
           <div>
             <ScoreTeamOne className="h1">{team1RoundScore}</ScoreTeamOne>
             <ScoreTrackerTeamOne

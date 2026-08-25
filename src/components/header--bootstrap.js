@@ -20,6 +20,8 @@ import "../styles/navigation.css"
 import "../styles/custom.css"
 
 const HeaderContainer = styled.header`
+  padding: 3rem 0;
+
   .navbar-toggler {
     line-height: 20px;
     display: flex;
@@ -30,14 +32,20 @@ const HeaderContainer = styled.header`
     height: 20px;
     width: 20px;
   }
+
+  @media screen and (max-width: 767px) {
+    padding: 3rem 0 0;
+    margin-top: 0.5rem;
+  }
 `
 
 function HeaderBootstrap(location) {
   const { title, nav, logo } = useSiteMetadata()
-  let logoImg
+  let logoImgDesktop
+  let logoImgMobile
 
   if (logo) {
-    logoImg = (
+    logoImgDesktop = (
       <Link to="/">
         <StaticImage
           src="../images/logo-black.png"
@@ -48,12 +56,24 @@ function HeaderBootstrap(location) {
         />
       </Link>
     )
+    logoImgMobile = (
+      <Link to="/">
+        <StaticImage
+          src="../images/logo-black.png"
+          alt="site logo"
+          height={48}
+          loading="eager"
+          placeholder="blurred"
+        />
+      </Link>
+    )
   } else {
-    logoImg = <Link to="/">{title}</Link>
+    logoImgDesktop = <Link to="/">{title}</Link>
+    logoImgMobile = <Link to="/">{title}</Link>
   }
 
   return (
-    <HeaderContainer className="container py-lg-5 py-5 mb-3">
+    <HeaderContainer className="container mb-3">
       <Navbar bg="light" fixed="top" expand="lg" className="d-flex-row">
         <div className="container-fluid">
           <div className="container-fluid d-lg-none">
@@ -70,7 +90,7 @@ function HeaderBootstrap(location) {
               </div>
               <div className="col-8 text-center">
                 <Link to="/">
-                  <span className="h2">{logoImg}</span>
+                  <span className="h2">{logoImgMobile}</span>
                 </Link>
               </div>
             </div>
@@ -79,7 +99,7 @@ function HeaderBootstrap(location) {
           <Nav className="container px-0 d-none d-lg-flex justify-content-between align-items-center">
             <div className="d-flex align-items-center">
               <Link to="/">
-                <span className="h2 pe-3">{logoImg}</span>
+                <span className="h2 pe-3">{logoImgDesktop}</span>
               </Link>
               {nav.map(navMenu =>
                 navMenu.subnav ? (
@@ -123,7 +143,7 @@ function HeaderBootstrap(location) {
             <Offcanvas.Header closeButton>
               <Offcanvas.Title id="offcanvasNavbarLabel">
                 <Link to="/">
-                  <span className="h2">{logoImg}</span>
+                  <span className="h2">{logoImgMobile}</span>
                 </Link>
               </Offcanvas.Title>
             </Offcanvas.Header>
