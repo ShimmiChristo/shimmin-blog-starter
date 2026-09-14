@@ -126,13 +126,19 @@ const TooltipButton = styled.button`
   display: inline-flex;
   align-items: center;
   justify-content: center;
+
+  @media (max-width: 767px) {
+    width: 0.8rem;
+    height: 0.8rem;
+    font-size: 0.6rem;
+  }
 `
 
 const TooltipContent = styled.div`
   position: absolute;
   top: calc(100% + 0.5rem);
   left: 50%;
-  transform: translateX(-50%);
+  transform: translateX(-100%);
   min-width: 14rem;
   max-width: 18rem;
   background: var(--white, #fff);
@@ -318,9 +324,8 @@ const PlayerScoreCell = styled(Cell)`
 `
 
 function getRawScore(playerObj, year, courseMatch, holes, index) {
-  const scores = playerObj?.year?.[`${year}`]?.scores?.[`${courseMatch}`]?.[
-    `${holes}`
-  ]
+  const scores =
+    playerObj?.year?.[`${year}`]?.scores?.[`${courseMatch}`]?.[`${holes}`]
   const score = scores?.[index]
   return score === undefined || score > 20 ? "-" : score
 }
@@ -334,7 +339,14 @@ function getPlayerTotalScore(playerObj, year, courseMatch, holes, courseHoles) {
   }, 0)
 }
 
-function getPlayerPopCount(playerObj, year, courseMatch, holes, courseHoles, playerHC) {
+function getPlayerPopCount(
+  playerObj,
+  year,
+  courseMatch,
+  holes,
+  courseHoles,
+  playerHC
+) {
   return courseHoles.reduce((total, hole, index) => {
     const score = getRawScore(playerObj, year, courseMatch, holes, index)
     if (score === "-" || score === undefined || Number.isNaN(Number(score))) {
@@ -466,9 +478,8 @@ function MatchCondensed({
   const playerFourHand = resolveHandicap(playerFour, player4MatchHandicap)
 
   function resolveCourseHC(tees, playerHand) {
-    const totals = courseMatchQuery?.totals?.tees?.[`${tees}`]?.[
-      `${holesPlayedKey}`
-    ]
+    const totals =
+      courseMatchQuery?.totals?.tees?.[`${tees}`]?.[`${holesPlayedKey}`]
     return getCourseHandicap(
       playerHand,
       totals?.slope,
@@ -766,7 +777,11 @@ function MatchCondensed({
             <TeamPlayer>
               <TeamPlayerImage>
                 {playerOnePic ? (
-                  <GatsbyImage image={playerOnePic} alt={player1} loading="lazy" />
+                  <GatsbyImage
+                    image={playerOnePic}
+                    alt={player1}
+                    loading="lazy"
+                  />
                 ) : null}
               </TeamPlayerImage>
               <span>{player1}</span>
@@ -795,7 +810,11 @@ function MatchCondensed({
             <TeamPlayer>
               <TeamPlayerImage>
                 {playerTwoPic ? (
-                  <GatsbyImage image={playerTwoPic} alt={player2} loading="lazy" />
+                  <GatsbyImage
+                    image={playerTwoPic}
+                    alt={player2}
+                    loading="lazy"
+                  />
                 ) : null}
               </TeamPlayerImage>
               <span>{player2}</span>
@@ -804,7 +823,11 @@ function MatchCondensed({
               <TeamPlayer>
                 <TeamPlayerImage>
                   {playerFourPic ? (
-                    <GatsbyImage image={playerFourPic} alt={player4} loading="lazy" />
+                    <GatsbyImage
+                      image={playerFourPic}
+                      alt={player4}
+                      loading="lazy"
+                    />
                   ) : null}
                 </TeamPlayerImage>
                 <span>{player4}</span>
@@ -814,8 +837,8 @@ function MatchCondensed({
         </TeamLabel>
       </Header>
 
-      {(showTeamOneIndividual || showTeamTwoIndividual) && (
-        <ControlsRow>
+      <ControlsRow>
+        {(showTeamOneIndividual || showTeamTwoIndividual) && (
           <ToggleRow>
             <input
               type="checkbox"
@@ -824,39 +847,41 @@ function MatchCondensed({
             />
             Show individual scores
           </ToggleRow>
-          <TooltipWrapper>
-            <TooltipButton
-              type="button"
-              aria-label="Match handicap information"
-              onMouseEnter={() => setShowTooltip(true)}
-              onMouseLeave={() => setShowTooltip(false)}
-              onFocus={() => setShowTooltip(true)}
-              onBlur={() => setShowTooltip(false)}
-              onClick={() => setShowTooltip(value => !value)}
-            >
-              i
-            </TooltipButton>
-            {showTooltip ? (
-              <TooltipContent role="tooltip">
-                <TooltipTitle>Handicap info</TooltipTitle>
-                {playerHandicapInfo.map(team => (
-                  <TooltipSection key={team.label}>
-                    <TooltipTeam $team={team.team}>{team.label}</TooltipTeam>
-                    {team.players.map(player => (
-                      <TooltipPlayerRow key={`${team.label}-${player.name}`}>
-                        <TooltipPlayerName>{player.name}</TooltipPlayerName>
-                        <TooltipPlayerMeta>
-                          HC {player.actual} / CH {player.course} / PH {player.playing} / Pops {player.pops}
-                        </TooltipPlayerMeta>
-                      </TooltipPlayerRow>
-                    ))}
-                  </TooltipSection>
-                ))}
-              </TooltipContent>
-            ) : null}
-          </TooltipWrapper>
-        </ControlsRow>
-      )}
+        )}
+
+        <TooltipWrapper>
+          <TooltipButton
+            type="button"
+            aria-label="Match handicap information"
+            onMouseEnter={() => setShowTooltip(true)}
+            onMouseLeave={() => setShowTooltip(false)}
+            onFocus={() => setShowTooltip(true)}
+            onBlur={() => setShowTooltip(false)}
+            onClick={() => setShowTooltip(value => !value)}
+          >
+            i
+          </TooltipButton>
+          {showTooltip ? (
+            <TooltipContent role="tooltip">
+              <TooltipTitle>Handicap info</TooltipTitle>
+              {playerHandicapInfo.map(team => (
+                <TooltipSection key={team.label}>
+                  <TooltipTeam $team={team.team}>{team.label}</TooltipTeam>
+                  {team.players.map(player => (
+                    <TooltipPlayerRow key={`${team.label}-${player.name}`}>
+                      <TooltipPlayerName>{player.name}</TooltipPlayerName>
+                      <TooltipPlayerMeta>
+                        HC {player.actual} / CH {player.course} / PH{" "}
+                        {player.playing} / Pops {player.pops}
+                      </TooltipPlayerMeta>
+                    </TooltipPlayerRow>
+                  ))}
+                </TooltipSection>
+              ))}
+            </TooltipContent>
+          ) : null}
+        </TooltipWrapper>
+      </ControlsRow>
 
       <ScrollArea data-name="match-condensed-scrollarea">
         <Table data-name="match-condensed-table">
