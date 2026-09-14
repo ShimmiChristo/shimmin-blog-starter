@@ -816,7 +816,7 @@
       "year": {
         "_2026": {
           "id": 2026,
-          "handicap": 23,
+          "handicap": 24,
           "captain": false,
           "team": "blue",
           "scores": {
@@ -2531,11 +2531,11 @@
         "wins": 2,
         "losses": 3
       },
-      "handicap": 15,
+      "handicap": 13,
       "year": {
         "_2026": {
           "id": 2026,
-          "handicap": 15,
+          "handicap": 13,
           "captain": false,
           "team": "blue",
           "scores": {
@@ -4535,11 +4535,11 @@
         "wins": 2,
         "losses": 3
       },
-      "handicap": 15,
+      "handicap": 16,
       "year": {
         "_2026": {
           "id": 2026,
-          "handicap": 15,
+          "handicap": 16,
           "captain": false,
           "team": "blue",
           "scores": {
@@ -5617,11 +5617,11 @@
         "wins": 3,
         "losses": 2
       },
-      "handicap": 23,
+      "handicap": 24,
       "year": {
         "_2026": {
           "id": 2026,
-          "handicap": 23,
+          "handicap": 24,
           "captain": false,
           "team": "green",
           "scores": {
@@ -6684,11 +6684,11 @@
         "wins": 2,
         "losses": 3
       },
-      "handicap": 3,
+      "handicap": 0,
       "year": {
         "_2026": {
           "id": 2026,
-          "handicap": 3,
+          "handicap": 0,
           "captain": true,
           "team": "blue",
           "scores": {
@@ -8682,11 +8682,11 @@
         "wins": 3,
         "losses": 0
       },
-      "handicap": 11,
+      "handicap": 12,
       "year": {
         "_2026": {
           "id": 2026,
-          "handicap": 11,
+          "handicap": 12,
           "captain": false,
           "team": "green",
           "scores": {
@@ -9953,11 +9953,11 @@
         "wins": 3,
         "losses": 2
       },
-      "handicap": 3,
+      "handicap": 2,
       "year": {
         "_2026": {
           "id": 2026,
-          "handicap": 3,
+          "handicap": 2,
           "captain": true,
           "team": "green",
           "scores": {
