@@ -465,10 +465,10 @@
       "wins": 2,
       "losses": 3
     },
-    "handicap": 10,
+    "handicap": 11,
     "year": {
       "_2026": {
-        "handicap": 10,
+        "handicap": 11,
         "team": "blue",
         "captain": false
       },
