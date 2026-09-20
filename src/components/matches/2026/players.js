@@ -4,7 +4,7 @@ import { v1 as uuidv1 } from "uuid"
 // import styled from "styled-components"
 
 const greenTeam = ["matt", "gordon", "chris", "derek", "travis", "curtis"]
-const blueTeam = ["dylan", "rj", "dan", "craig", "cam", "evan"]
+const blueTeam = ["dylan", "rj", "craig", "dan", "evan", "cam"]
 
 function MatchPlayers2026() {
   return (
