@@ -185,7 +185,7 @@ function Match({
     : []
   // Scramble/alternate/pinehurst play one ball per team, so shot trails are
   // tracked per-team (keyed "player1-player3") instead of per-player.
-  const isOneBallGameplay = ["scramble", "alternate", "pinehurst"].includes(
+  const isOneBallGameplay = ["scramble", "alternate", "pinehurst", "greensomes"].includes(
     gameplay
   )
   const shotTrailPlayers = isOneBallGameplay
@@ -730,7 +730,7 @@ function Match({
         }, 0)
 
       // const totalNetScore = matchScoresArr.reduce((a, b) => (a === 99 || b === 99 ? a + 0 : a + b), 0)
-      const oneScoreGameplay = ["scramble", "alternate", "pinehurst"].includes(
+      const oneScoreGameplay = ["scramble", "alternate", "pinehurst", "greensomes"].includes(
         gameplay
       )
       return (
@@ -847,7 +847,7 @@ function Match({
   //   }
   // }
 
-  const oneScoreGameplay = ["scramble", "alternate", "pinehurst"].includes(
+  const oneScoreGameplay = ["scramble", "alternate", "pinehurst", "greensomes"].includes(
     gameplay
   )
 

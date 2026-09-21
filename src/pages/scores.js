@@ -124,9 +124,9 @@ const TopicPage = ({ location }) => {
       },
     },
     {
-      matchId: " - 2 Ball Combined Score. 90% HC",
-      matchName: `2 Best Ball`,
-      gameplay: "two-ball",
+      matchId: " - Best Ball. 90% HC",
+      matchName: "Best Ball",
+      gameplay: "one-ball",
       courseMatch: "bayHarborPreserveLinks",
       matchTees: ["brown", "purple"],
       players: {
@@ -135,9 +135,9 @@ const TopicPage = ({ location }) => {
       },
     },
     {
-      matchId: " - Alternate. 50% HC",
-      matchName: "Alternate",
-      gameplay: "alternate",
+      matchId: " - Greensomes. 60% low HC + 40% high HC",
+      matchName: "Greensomes",
+      gameplay: "greensomes",
       courseMatch: "bayHarborPreserveLinks",
       matchTees: ["purple", "orange"],
       players: {
