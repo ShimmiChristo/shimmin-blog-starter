@@ -127,6 +127,7 @@ function HandicapInfo({ teams }) {
                     HC {formatHandicap(player.actual)} / CH{" "}
                     {formatHandicap(player.course)} / PH{" "}
                     {formatHandicap(player.playing)} / Pops {player.pops}
+                    {player.tees ? ` / Tees ${player.tees}` : ""}
                   </PlayerMeta>
                 </PlayerRow>
               ))}
@@ -149,6 +150,7 @@ HandicapInfo.propTypes = {
           actual: PropTypes.number,
           course: PropTypes.number,
           playing: PropTypes.number,
+          tees: PropTypes.string,
           pops: PropTypes.number.isRequired,
         })
       ).isRequired,

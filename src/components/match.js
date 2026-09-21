@@ -419,6 +419,7 @@ function Match({
           actual: playerOneHand,
           course: playerOneCourseHC,
           playing: p1HCglobal,
+          tees: playerOneTees,
           pops: getPlayerPopCount(playerOne, p1HCglobal),
         },
         {
@@ -426,6 +427,7 @@ function Match({
           actual: playerThreeHand,
           course: playerThreeCourseHC,
           playing: p3HCglobal,
+          tees: playerThreeTees,
           pops: getPlayerPopCount(playerThree, p3HCglobal),
         },
       ].filter(player => player.name),
@@ -439,6 +441,7 @@ function Match({
           actual: playerTwoHand,
           course: playerTwoCourseHC,
           playing: p2HCglobal,
+          tees: playerTwoTees,
           pops: getPlayerPopCount(playerTwo, p2HCglobal),
         },
         {
@@ -446,6 +449,7 @@ function Match({
           actual: playerFourHand,
           course: playerFourCourseHC,
           playing: p4HCglobal,
+          tees: playerFourTees,
           pops: getPlayerPopCount(playerFour, p4HCglobal),
         },
       ].filter(player => player.name),
