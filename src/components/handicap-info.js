@@ -26,16 +26,16 @@ const Button = styled.button`
   justify-content: center;
 
   @media (max-width: 767px) {
-    width: 0.8rem;
-    height: 0.8rem;
+    width: 1rem;
+    height: 1rem;
     font-size: 0.6rem;
   }
 `
 
 const Content = styled.div`
   position: absolute;
-  top: calc(100% + 0.5rem);
-  right: 0;
+  bottom: calc(100% + 0.5rem);
+  left: 0;
   min-width: 14rem;
   max-width: 18rem;
   background: var(--white, #fff);

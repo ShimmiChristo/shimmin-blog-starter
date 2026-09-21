@@ -19,6 +19,7 @@ import {
 import { calcPops, calcScorecardMarks } from "../helpers/matchHelper"
 import shotTrackerData from "../data/shot-tracker.json"
 import ShotTrailsPanel from "./matches/shot-tracker/ShotTrailsPanel"
+import HandicapInfo from "./handicap-info"
 
 const CloseBtn = styled.span`
   display: block;
@@ -381,6 +382,75 @@ function Match({
     handicaps,
     hardestHoleNine
   )
+
+  function getPlayerPopCount(playerObj, playerHC) {
+    const scores =
+      playerObj?.year?.[`${year}`]?.scores?.[`${courseMatch}`]?.[`${holes}`]
+
+    return courseHoles.reduce((total, hole, index) => {
+      const score = scores?.[index]
+      if (score === undefined || score > 20 || Number.isNaN(Number(score))) {
+        return total
+      }
+
+      const handicapScore = calcPlayerScore(
+        score < 50 ? score : hole.par,
+        playerHC,
+        hole.handicap,
+        holes
+      )
+      const actualScore = score < 20 ? score : hole.par
+      const popTotal = actualScore - handicapScore
+
+      if (popTotal >= 3) return total + 3
+      if (popTotal >= 2) return total + 2
+      if (popTotal === 1) return total + 1
+      return total
+    }, 0)
+  }
+
+  const playerHandicapInfo = [
+    {
+      team: "one",
+      label: "Green",
+      players: [
+        {
+          name: player1,
+          actual: playerOneHand,
+          course: playerOneCourseHC,
+          playing: p1HCglobal,
+          pops: getPlayerPopCount(playerOne, p1HCglobal),
+        },
+        {
+          name: player3,
+          actual: playerThreeHand,
+          course: playerThreeCourseHC,
+          playing: p3HCglobal,
+          pops: getPlayerPopCount(playerThree, p3HCglobal),
+        },
+      ].filter(player => player.name),
+    },
+    {
+      team: "two",
+      label: "Blue",
+      players: [
+        {
+          name: player2,
+          actual: playerTwoHand,
+          course: playerTwoCourseHC,
+          playing: p2HCglobal,
+          pops: getPlayerPopCount(playerTwo, p2HCglobal),
+        },
+        {
+          name: player4,
+          actual: playerFourHand,
+          course: playerFourCourseHC,
+          playing: p4HCglobal,
+          pops: getPlayerPopCount(playerFour, p4HCglobal),
+        },
+      ].filter(player => player.name),
+    },
+  ]
 
   const [sectionHeight, setSectionHeight] = useState("closed")
   const [showHandicapScore, setShowHandicapScore] = useState(false)
@@ -1088,6 +1158,9 @@ function Match({
             </div>
           </div>
         </div>
+        <div className="handicap-info m-2 mt-3">
+          <HandicapInfo teams={playerHandicapInfo} />
+        </div>
         {holesWithShotData.length > 0 ? (
           <ShotTrailsPanel
             holes={holesWithShotData}
@@ -1095,16 +1168,7 @@ function Match({
             players={shotTrailPlayers}
           />
         ) : null}
-        <div className="youtube__video m-3">
-          {ytVideo ? (
-            <a href={ytVideo} target="_blank" rel="noopener noreferrer">
-              Link to YouTube video
-            </a>
-          ) : (
-            ""
-          )}
-        </div>
-        <div className="form-check form-switch my-3">
+        <div className="form-check form-switch">
           <input
             className="form-check-input"
             type="checkbox"
@@ -1120,6 +1184,15 @@ function Match({
           >
             Show scores with handicap applied
           </label>
+        </div>
+        <div className="youtube__video m-3">
+          {ytVideo ? (
+            <a href={ytVideo} target="_blank" rel="noopener noreferrer">
+              Link to YouTube video
+            </a>
+          ) : (
+            ""
+          )}
         </div>
       </div>
     </Section>
