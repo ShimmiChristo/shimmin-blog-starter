@@ -106,7 +106,7 @@ const TopicPage = ({ location }) => {
       matchName: "Scramble",
       gameplay: "scramble",
       courseMatch: "crookedTree",
-      matchTees: ["brown", "orange"],
+      matchTees: ["purple", "orange"],
       players: {
         blue: [1, 3, 2, 4, 5, 6],
         green: [7, 9, 10, 11, 8, 12],
@@ -117,7 +117,7 @@ const TopicPage = ({ location }) => {
       matchName: "Best Ball Strokeplay",
       gameplay: "one-ball-strokeplay",
       courseMatch: "crookedTree",
-      matchTees: ["brown", "orange"],
+      matchTees: ["purple", "orange"],
       players: {
         blue: [3, 4, 2, 6, 1, 5],
         green: [7, 11, 8, 9, 10, 12],
