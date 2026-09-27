@@ -835,9 +835,9 @@
             },
             "crookedTree": {
               "course": "Crooked Tree Golf Club",
-              "front": [5, 3, 4, 4, 3, 6, 4, 4, 6],
+              "front": [5, 3, 5, 5, 3, 6, 4, 4, 6],
               "frontHandicap": 999,
-              "back": [99, 99, 99, 99, 99, 99, 99, 99, 99],
+              "back": [5, 5, 8, 5, 8, 3, 6, 9, 6],
               "backHandicap": 999
             },
             "bayHarborPreserveLinks": {
@@ -875,7 +875,7 @@
             {
               "id": "bestBallStrokeplay",
               "game": "Best Ball Strokeplay",
-              "wins": 0,
+              "wins": 1,
               "ties": 0,
               "losses": 0
             },
@@ -920,6 +920,13 @@
               "wins": 0,
               "ties": 0,
               "losses": 0
+            },
+            {
+              "id": "greensomes",
+              "game": "greensomes",
+              "wins": 0,
+              "ties": 0,
+              "losses": 0
             }
           ],
           "records": [
@@ -945,7 +952,7 @@
                 },
                 {
                   "name": "rj",
-                  "wins": 0,
+                  "wins": 1,
                   "ties": 0,
                   "losses": 0
                 }
@@ -955,7 +962,7 @@
               "opponents": [
                 {
                   "name": "chris",
-                  "wins": 0,
+                  "wins": 1,
                   "ties": 0,
                   "losses": 0
                 },
@@ -973,7 +980,7 @@
                 },
                 {
                   "name": "gordon",
-                  "wins": 0,
+                  "wins": 1,
                   "ties": 0,
                   "losses": 1
                 },
@@ -1619,7 +1626,7 @@
               "course": "Crooked Tree Golf Club",
               "front": [4, 4, 4, 4, 3, 3, 4, 2, 5],
               "frontHandicap": 999,
-              "back": [99, 99, 99, 99, 99, 99, 99, 99, 99],
+              "back": [4, 4, 7, 5, 5, 4, 7, 5, 5],
               "backHandicap": 999
             },
             "bayHarborPreserveLinks": {
@@ -1659,7 +1666,7 @@
               "game": "Best Ball Strokeplay",
               "wins": 0,
               "ties": 0,
-              "losses": 0
+              "losses": 1
             },
             {
               "id": "twoBestBall",
@@ -1702,17 +1709,18 @@
               "wins": 0,
               "ties": 0,
               "losses": 0
+            },
+            {
+              "id": "greensomes",
+              "game": "greensomes",
+              "wins": 0,
+              "ties": 0,
+              "losses": 0
             }
           ],
           "records": [
             {
               "partners": [
-                {
-                  "name": "curtis",
-                  "wins": 0,
-                  "ties": 0,
-                  "losses": 0
-                },
                 {
                   "name": "derek",
                   "wins": 0,
@@ -1723,7 +1731,7 @@
                   "name": "gordon",
                   "wins": 0,
                   "ties": 0,
-                  "losses": 0
+                  "losses": 1
                 },
                 {
                   "name": "matt",
@@ -1745,7 +1753,7 @@
                   "name": "cam",
                   "wins": 0,
                   "ties": 0,
-                  "losses": 0
+                  "losses": 1
                 },
                 {
                   "name": "craig",
@@ -1775,7 +1783,7 @@
                   "name": "rj",
                   "wins": 0,
                   "ties": 0,
-                  "losses": 0
+                  "losses": 1
                 }
               ]
             }
@@ -2556,7 +2564,7 @@
               "course": "Crooked Tree Golf Club",
               "front": [4, 4, 4, 4, 4, 5, 5, 3, 5],
               "frontHandicap": 999,
-              "back": [99, 99, 99, 99, 99, 99, 99, 99, 99],
+              "back": [5, 3, 5, 8, 7, 3, 5, 8, 5],
               "backHandicap": 999
             },
             "bayHarborPreserveLinks": {
@@ -2595,7 +2603,7 @@
               "id": "bestBallStrokeplay",
               "game": "Best Ball Strokeplay",
               "wins": 0,
-              "ties": 0,
+              "ties": 1,
               "losses": 0
             },
             {
@@ -2639,6 +2647,13 @@
               "wins": 0,
               "ties": 0,
               "losses": 0
+            },
+            {
+              "id": "greensomes",
+              "game": "greensomes",
+              "wins": 0,
+              "ties": 0,
+              "losses": 0
             }
           ],
           "records": [
@@ -2647,7 +2662,7 @@
                 {
                   "name": "dan",
                   "wins": 0,
-                  "ties": 0,
+                  "ties": 1,
                   "losses": 0
                 },
                 {
@@ -2693,13 +2708,13 @@
                 {
                   "name": "matt",
                   "wins": 0,
-                  "ties": 0,
+                  "ties": 1,
                   "losses": 0
                 },
                 {
                   "name": "travis",
                   "wins": 0,
-                  "ties": 0,
+                  "ties": 1,
                   "losses": 0
                 }
               ]
@@ -3622,7 +3637,7 @@
               "course": "Crooked Tree Golf Club",
               "front": [5, 3, 5, 4, 3, 5, 5, 3, 5],
               "frontHandicap": 999,
-              "back": [99, 99, 99, 99, 99, 99, 99, 99, 99],
+              "back": [5, 4, 5, 8, 7, 4, 6, 8, 7],
               "backHandicap": 999
             },
             "bayHarborPreserveLinks": {
@@ -3662,7 +3677,7 @@
               "game": "Best Ball Strokeplay",
               "wins": 0,
               "ties": 0,
-              "losses": 0
+              "losses": 1
             },
             {
               "id": "twoBestBall",
@@ -3705,22 +3720,23 @@
               "wins": 0,
               "ties": 0,
               "losses": 0
+            },
+            {
+              "id": "greensomes",
+              "game": "greensomes",
+              "wins": 0,
+              "ties": 0,
+              "losses": 0
             }
           ],
           "records": [
             {
               "partners": [
                 {
-                  "name": "chris",
-                  "wins": 0,
-                  "ties": 0,
-                  "losses": 0
-                },
-                {
                   "name": "derek",
                   "wins": 1,
                   "ties": 0,
-                  "losses": 0
+                  "losses": 1
                 },
                 {
                   "name": "gordon",
@@ -3766,13 +3782,13 @@
                   "name": "dylan",
                   "wins": 0,
                   "ties": 0,
-                  "losses": 0
+                  "losses": 1
                 },
                 {
                   "name": "evan",
                   "wins": 1,
                   "ties": 0,
-                  "losses": 0
+                  "losses": 1
                 },
                 {
                   "name": "rj",
@@ -4566,7 +4582,7 @@
               "course": "Crooked Tree Golf Club",
               "front": [4, 3, 3, 5, 3, 4, 4, 3, 5],
               "frontHandicap": 999,
-              "back": [99, 99, 99, 99, 99, 99, 99, 99, 99],
+              "back": [6, 6, 4, 7, 7, 4, 5, 7, 5],
               "backHandicap": 999
             },
             "bayHarborPreserveLinks": {
@@ -4605,7 +4621,7 @@
               "id": "bestBallStrokeplay",
               "game": "Best Ball Strokeplay",
               "wins": 0,
-              "ties": 0,
+              "ties": 1,
               "losses": 0
             },
             {
@@ -4649,6 +4665,13 @@
               "wins": 0,
               "ties": 0,
               "losses": 0
+            },
+            {
+              "id": "greensomes",
+              "game": "greensomes",
+              "wins": 0,
+              "ties": 0,
+              "losses": 0
             }
           ],
           "records": [
@@ -4663,7 +4686,7 @@
                 {
                   "name": "craig",
                   "wins": 0,
-                  "ties": 0,
+                  "ties": 1,
                   "losses": 0
                 },
                 {
@@ -4671,6 +4694,12 @@
                   "wins": 0,
                   "ties": 0,
                   "losses": 1
+                },
+                {
+                  "name": "evan",
+                  "wins": 0,
+                  "ties": 0,
+                  "losses": 0
                 }
               ]
             },
@@ -4695,21 +4724,15 @@
                   "losses": 0
                 },
                 {
-                  "name": "gordon",
-                  "wins": 0,
-                  "ties": 0,
-                  "losses": 0
-                },
-                {
                   "name": "matt",
                   "wins": 0,
-                  "ties": 0,
+                  "ties": 1,
                   "losses": 1
                 },
                 {
                   "name": "travis",
                   "wins": 0,
-                  "ties": 0,
+                  "ties": 1,
                   "losses": 0
                 }
               ]
@@ -5646,9 +5669,9 @@
             },
             "crookedTree": {
               "course": "Crooked Tree Golf Club",
-              "front": [5, 4, 4, 4, 3, 4, 4, 3, 5],
+              "front": [5, 4, 5, 5, 3, 4, 5, 3, 5],
               "frontHandicap": 999,
-              "back": [99, 99, 99, 99, 99, 99, 99, 99, 99],
+              "back": [7, 5, 4, 7, 6, 4, 5, 8, 6],
               "backHandicap": 999
             },
             "bayHarborPreserveLinks": {
@@ -5688,7 +5711,7 @@
               "game": "Best Ball Strokeplay",
               "wins": 0,
               "ties": 0,
-              "losses": 0
+              "losses": 1
             },
             {
               "id": "twoBestBall",
@@ -5731,6 +5754,13 @@
               "wins": 0,
               "ties": 0,
               "losses": 0
+            },
+            {
+              "id": "greensomes",
+              "game": "greensomes",
+              "wins": 0,
+              "ties": 0,
+              "losses": 0
             }
           ],
           "records": [
@@ -5746,7 +5776,7 @@
                   "name": "curtis",
                   "wins": 1,
                   "ties": 0,
-                  "losses": 0
+                  "losses": 1
                 },
                 {
                   "name": "gordon",
@@ -5786,13 +5816,13 @@
                   "name": "dylan",
                   "wins": 0,
                   "ties": 0,
-                  "losses": 0
+                  "losses": 1
                 },
                 {
                   "name": "evan",
                   "wins": 0,
                   "ties": 0,
-                  "losses": 0
+                  "losses": 1
                 },
                 {
                   "name": "rj",
@@ -6715,7 +6745,7 @@
               "course": "Crooked Tree Golf Club",
               "front": [4, 3, 3, 5, 3, 4, 4, 3, 5],
               "frontHandicap": 999,
-              "back": [99, 99, 99, 99, 99, 99, 99, 99, 99],
+              "back": [4, 4, 6, 4, 5, 3, 6, 5, 4],
               "backHandicap": 999
             },
             "bayHarborPreserveLinks": {
@@ -6753,7 +6783,7 @@
             {
               "id": "bestBallStrokeplay",
               "game": "Best Ball Strokeplay",
-              "wins": 0,
+              "wins": 1,
               "ties": 0,
               "losses": 0
             },
@@ -6798,6 +6828,13 @@
               "wins": 0,
               "ties": 0,
               "losses": 0
+            },
+            {
+              "id": "greensomes",
+              "game": "greensomes",
+              "wins": 0,
+              "ties": 0,
+              "losses": 0
             }
           ],
           "records": [
@@ -6817,7 +6854,7 @@
                 },
                 {
                   "name": "evan",
-                  "wins": 0,
+                  "wins": 1,
                   "ties": 0,
                   "losses": 0
                 },
@@ -6839,13 +6876,13 @@
                 },
                 {
                   "name": "curtis",
-                  "wins": 0,
+                  "wins": 1,
                   "ties": 0,
                   "losses": 0
                 },
                 {
                   "name": "derek",
-                  "wins": 0,
+                  "wins": 1,
                   "ties": 0,
                   "losses": 0
                 },
@@ -7775,9 +7812,9 @@
             },
             "crookedTree": {
               "course": "Crooked Tree Golf Club",
-              "front": [5, 3, 4, 4, 3, 6, 4, 4, 6],
+              "front": [5, 3, 5, 5, 3, 6, 4, 4, 6],
               "frontHandicap": 999,
-              "back": [99, 99, 99, 99, 99, 99, 99, 99, 99],
+              "back": [7, 5, 5, 7, 7, 7, 7, 6, 5],
               "backHandicap": 999
             },
             "bayHarborPreserveLinks": {
@@ -7815,7 +7852,7 @@
             {
               "id": "bestBallStrokeplay",
               "game": "Best Ball Strokeplay",
-              "wins": 0,
+              "wins": 1,
               "ties": 0,
               "losses": 0
             },
@@ -7860,6 +7897,13 @@
               "wins": 0,
               "ties": 0,
               "losses": 0
+            },
+            {
+              "id": "greensomes",
+              "game": "greensomes",
+              "wins": 0,
+              "ties": 0,
+              "losses": 0
             }
           ],
           "records": [
@@ -7878,8 +7922,14 @@
                   "losses": 0
                 },
                 {
-                  "name": "dylan",
+                  "name": "dan",
                   "wins": 0,
+                  "ties": 0,
+                  "losses": 0
+                },
+                {
+                  "name": "dylan",
+                  "wins": 1,
                   "ties": 0,
                   "losses": 0
                 },
@@ -7901,13 +7951,13 @@
                 },
                 {
                   "name": "curtis",
-                  "wins": 0,
+                  "wins": 1,
                   "ties": 0,
                   "losses": 1
                 },
                 {
                   "name": "derek",
-                  "wins": 0,
+                  "wins": 1,
                   "ties": 0,
                   "losses": 0
                 },
@@ -7916,12 +7966,6 @@
                   "wins": 0,
                   "ties": 0,
                   "losses": 1
-                },
-                {
-                  "name": "matt",
-                  "wins": 0,
-                  "ties": 0,
-                  "losses": 0
                 },
                 {
                   "name": "travis",
@@ -8713,7 +8757,7 @@
               "course": "Crooked Tree Golf Club",
               "front": [5, 3, 5, 4, 3, 5, 5, 3, 5],
               "frontHandicap": 999,
-              "back": [99, 99, 99, 99, 99, 99, 99, 99, 99],
+              "back": [7, 3, 7, 5, 5, 4, 7, 6, 5],
               "backHandicap": 999
             },
             "bayHarborPreserveLinks": {
@@ -8753,7 +8797,7 @@
               "game": "Best Ball Strokeplay",
               "wins": 0,
               "ties": 0,
-              "losses": 0
+              "losses": 1
             },
             {
               "id": "twoBestBall",
@@ -8796,6 +8840,13 @@
               "wins": 0,
               "ties": 0,
               "losses": 0
+            },
+            {
+              "id": "greensomes",
+              "game": "greensomes",
+              "wins": 0,
+              "ties": 0,
+              "losses": 0
             }
           ],
           "records": [
@@ -8805,7 +8856,7 @@
                   "name": "chris",
                   "wins": 0,
                   "ties": 0,
-                  "losses": 0
+                  "losses": 1
                 },
                 {
                   "name": "curtis",
@@ -8839,16 +8890,10 @@
                   "name": "cam",
                   "wins": 1,
                   "ties": 0,
-                  "losses": 0
+                  "losses": 1
                 },
                 {
                   "name": "craig",
-                  "wins": 0,
-                  "ties": 0,
-                  "losses": 0
-                },
-                {
-                  "name": "dan",
                   "wins": 0,
                   "ties": 0,
                   "losses": 0
@@ -8869,7 +8914,7 @@
                   "name": "rj",
                   "wins": 0,
                   "ties": 0,
-                  "losses": 0
+                  "losses": 1
                 }
               ]
             }
@@ -9990,7 +10035,7 @@
               "course": "Crooked Tree Golf Club",
               "front": [4, 4, 4, 4, 3, 3, 4, 2, 5],
               "frontHandicap": 999,
-              "back": [99, 99, 99, 99, 99, 99, 99, 99, 99],
+              "back": [5, 4, 4, 5, 5, 4, 5, 5, 4],
               "backHandicap": 999,
               "frontGross": 999,
               "backGross": 999,
@@ -10035,7 +10080,7 @@
               "id": "bestBallStrokeplay",
               "game": "Best Ball Strokeplay",
               "wins": 0,
-              "ties": 0,
+              "ties": 1,
               "losses": 0
             },
             {
@@ -10079,6 +10124,13 @@
               "wins": 0,
               "ties": 0,
               "losses": 0
+            },
+            {
+              "id": "greensomes",
+              "game": "greensomes",
+              "wins": 0,
+              "ties": 0,
+              "losses": 0
             }
           ],
           "records": [
@@ -10111,7 +10163,7 @@
                 {
                   "name": "travis",
                   "wins": 0,
-                  "ties": 0,
+                  "ties": 1,
                   "losses": 0
                 }
               ]
@@ -10127,24 +10179,18 @@
                 {
                   "name": "craig",
                   "wins": 0,
-                  "ties": 0,
+                  "ties": 1,
                   "losses": 0
                 },
                 {
                   "name": "dan",
                   "wins": 1,
-                  "ties": 0,
+                  "ties": 1,
                   "losses": 0
                 },
                 {
                   "name": "dylan",
                   "wins": 1,
-                  "ties": 0,
-                  "losses": 0
-                },
-                {
-                  "name": "evan",
-                  "wins": 0,
                   "ties": 0,
                   "losses": 0
                 },
@@ -11076,7 +11122,7 @@
               "course": "Crooked Tree Golf Club",
               "front": [4, 4, 4, 4, 4, 5, 5, 3, 5],
               "frontHandicap": 999,
-              "back": [99, 99, 99, 99, 99, 99, 99, 99, 99],
+              "back": [4, 3, 5, 6, 5, 4, 6, 5, 5],
               "backHandicap": 999
             },
             "bayHarborPreserveLinks": {
@@ -11114,7 +11160,7 @@
             {
               "id": "bestBallStrokeplay",
               "game": "Best Ball Strokeplay",
-              "wins": 0,
+              "wins": 1,
               "ties": 0,
               "losses": 0
             },
@@ -11159,6 +11205,13 @@
               "wins": 0,
               "ties": 0,
               "losses": 0
+            },
+            {
+              "id": "greensomes",
+              "game": "greensomes",
+              "wins": 0,
+              "ties": 0,
+              "losses": 0
             }
           ],
           "records": [
@@ -11166,7 +11219,7 @@
               "partners": [
                 {
                   "name": "cam",
-                  "wins": 0,
+                  "wins": 1,
                   "ties": 0,
                   "losses": 0
                 },
@@ -11194,7 +11247,7 @@
               "opponents": [
                 {
                   "name": "chris",
-                  "wins": 0,
+                  "wins": 1,
                   "ties": 0,
                   "losses": 0
                 },
@@ -11212,7 +11265,7 @@
                 },
                 {
                   "name": "gordon",
-                  "wins": 0,
+                  "wins": 1,
                   "ties": 0,
                   "losses": 0
                 },
@@ -12359,7 +12412,7 @@
               "course": "Crooked Tree Golf Club",
               "front": [99, 99, 99, 99, 99, 99, 99, 99, 99],
               "frontHandicap": 999,
-              "back": [99, 99, 99, 99, 99, 99, 99, 99, 99],
+              "back": [6, 5, 6, 8, 5, 5, 6, 7, 5],
               "backHandicap": 999
             },
             "bayHarborPreserveLinks": {
@@ -12398,7 +12451,7 @@
               "id": "bestBallStrokeplay",
               "game": "Best Ball Strokeplay",
               "wins": 0,
-              "ties": 0,
+              "ties": 1,
               "losses": 0
             },
             {
@@ -12442,6 +12495,13 @@
               "wins": 0,
               "ties": 0,
               "losses": 0
+            },
+            {
+              "id": "greensomes",
+              "game": "greensomes",
+              "wins": 0,
+              "ties": 0,
+              "losses": 0
             }
           ],
           "records": [
@@ -12468,7 +12528,7 @@
                 {
                   "name": "matt",
                   "wins": 0,
-                  "ties": 0,
+                  "ties": 1,
                   "losses": 0
                 }
               ]
@@ -12484,13 +12544,13 @@
                 {
                   "name": "craig",
                   "wins": 0,
-                  "ties": 0,
+                  "ties": 1,
                   "losses": 0
                 },
                 {
                   "name": "dan",
                   "wins": 0,
-                  "ties": 0,
+                  "ties": 1,
                   "losses": 0
                 },
                 {

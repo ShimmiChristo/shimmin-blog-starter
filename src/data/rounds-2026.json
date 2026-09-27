@@ -101,7 +101,7 @@
   },
   {
     "round": 3,
-    "gameplay": "twoBestBall",
+    "gameplay": "bestBall",
     "gameplayName": "Best Ball",
     "course": "bayHarborPreserveLinks",
     "courseName": "Bay Harbor Preserve Links",
@@ -109,25 +109,25 @@
     "matches": [
       {
         "green": ["matt", "derek"],
-        "blue": ["dylan", "evan"],
+        "blue": ["dylan", "cam"],
         "winner": null
       },
       {
-        "green": ["chris", "curtis"],
-        "blue": ["rj", "cam"],
+        "green": ["gordon", "curtis"],
+        "blue": ["rj", "craig"],
         "winner": null
       },
       {
-        "green": ["gordon", "travis"],
-        "blue": ["craig", "dan"],
+        "green": ["chris", "travis"],
+        "blue": ["dan", "evan"],
         "winner": null
       }
     ]
   },
   {
     "round": 4,
-    "gameplay": "alternate",
-    "gameplayName": "Alternate",
+    "gameplay": "greensomes",
+    "gameplayName": "Greensomes",
     "course": "bayHarborPreserveLinks",
     "courseName": "Bay Harbor Preserve Links",
     "holes": "back",
