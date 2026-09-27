@@ -6,19 +6,19 @@
           "name": "green team",
           "nickname": "crohns crushers",
           "players": ["Matt", "Gordon", "Chris", "Derek", "Travis", "Curtis"],
-          "score": "0",
+          "score": "15",
           "scores": {
-            "dayone": "0",
-            "daytwo": "0",
-            "total": "0",
-            "round1": "0",
-            "round2": "0",
-            "round3": "0",
-            "round4": "0",
-            "round5": "0",
-            "round6": "0",
-            "round7": "0",
-            "round8": "0"
+            "dayone": "7",
+            "daytwo": "8",
+            "total": "15",
+            "round1": "3",
+            "round2": "0.5",
+            "round3": "2",
+            "round4": "1.5",
+            "round5": "1",
+            "round6": "3",
+            "round7": "1",
+            "round8": "3"
           },
           "points": [
             {
@@ -36,20 +36,6 @@
               "losses": 0
             },
             {
-              "id": "twoBestBall",
-              "game": "Best Ball",
-              "wins": 0,
-              "ties": 0,
-              "losses": 0
-            },
-            {
-              "id": "alternate",
-              "game": "Alternate",
-              "wins": 0,
-              "ties": 0,
-              "losses": 0
-            },
-            {
               "id": "bestBall",
               "game": "Best Ball",
               "wins": 0,
@@ -57,8 +43,22 @@
               "losses": 0
             },
             {
+              "id": "greensomes",
+              "game": "Greensomes",
+              "wins": 0,
+              "ties": 0,
+              "losses": 0
+            },
+            {
               "id": "bramble",
               "game": "Bramble",
+              "wins": 0,
+              "ties": 0,
+              "losses": 0
+            },
+            {
+              "id": "bestBall",
+              "game": "Best Ball",
               "wins": 0,
               "ties": 0,
               "losses": 0
@@ -85,17 +85,17 @@
           "players": ["Dylan", "RJ", "Craig", "Dan", "Cam", "Evan"],
           "score": "0",
           "scores": {
-            "dayone": "0",
-            "daytwo": "0",
-            "total": "0",
+            "dayone": "5",
+            "daytwo": "7",
+            "total": "12",
             "round1": "0",
-            "round2": "0",
-            "round3": "0",
-            "round4": "0",
-            "round5": "0",
+            "round2": "2.5",
+            "round3": "1",
+            "round4": "1.5",
+            "round5": "2",
             "round6": "0",
-            "round7": "0",
-            "round8": "0"
+            "round7": "2",
+            "round8": "3"
           },
           "points": [
             {
@@ -113,20 +113,6 @@
               "losses": 0
             },
             {
-              "id": "twoBestBall",
-              "game": "Best Ball",
-              "wins": 0,
-              "ties": 0,
-              "losses": 0
-            },
-            {
-              "id": "alternate",
-              "game": "Alternate",
-              "wins": 0,
-              "ties": 0,
-              "losses": 0
-            },
-            {
               "id": "bestBall",
               "game": "Best Ball",
               "wins": 0,
@@ -134,8 +120,22 @@
               "losses": 0
             },
             {
+              "id": "greensomes",
+              "game": "Greensomes",
+              "wins": 0,
+              "ties": 0,
+              "losses": 0
+            },
+            {
               "id": "bramble",
               "game": "Bramble",
+              "wins": 0,
+              "ties": 0,
+              "losses": 0
+            },
+            {
+              "id": "bestBall",
+              "game": "Best Ball",
               "wins": 0,
               "ties": 0,
               "losses": 0
@@ -164,10 +164,10 @@
       "gamesPlayed": [
         "scramble",
         "bestBallStrokeplay",
-        "twoBestBall",
-        "alternate",
         "bestBall",
+        "alternate",
         "bramble",
+        "bestBall",
         "pinehurst",
         "singles"
       ]
