@@ -12,13 +12,13 @@
             "daytwo": "8",
             "total": "15",
             "round1": "3",
-            "round2": "0.5",
-            "round3": "2",
-            "round4": "1.5",
-            "round5": "1",
-            "round6": "3",
-            "round7": "1",
-            "round8": "3"
+            "round2": "3.5",
+            "round3": "5.5",
+            "round4": "7",
+            "round5": "8",
+            "round6": "11",
+            "round7": "12",
+            "round8": "15"
           },
           "points": [
             {
@@ -90,12 +90,12 @@
             "total": "12",
             "round1": "0",
             "round2": "2.5",
-            "round3": "1",
-            "round4": "1.5",
-            "round5": "2",
+            "round3": "3.5",
+            "round4": "5",
+            "round5": "7",
             "round6": "0",
-            "round7": "2",
-            "round8": "3"
+            "round7": "9",
+            "round8": "12"
           },
           "points": [
             {
