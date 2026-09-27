@@ -349,7 +349,7 @@ const TopicPage = ({ location }) => {
           player2MatchHandicap=""
           player3MatchHandicap=""
           player4MatchHandicap=""
-          matchPreview={true}
+          matchPreview={false}
           matchTime={day1.round1.times[0]}
         />
         <Match
@@ -388,7 +388,7 @@ const TopicPage = ({ location }) => {
           player2MatchHandicap=""
           player3MatchHandicap=""
           player4MatchHandicap=""
-          matchPreview={true}
+          matchPreview={false}
           matchTime={day1.round1.times[1]}
         />
         <Match
@@ -427,7 +427,7 @@ const TopicPage = ({ location }) => {
           player2MatchHandicap=""
           player3MatchHandicap=""
           player4MatchHandicap=""
-          matchPreview={true}
+          matchPreview={false}
           matchTime={day1.round1.times[2]}
         />
       </MatchNavSection>
@@ -462,7 +462,7 @@ const TopicPage = ({ location }) => {
           player2MatchHandicap=""
           player3MatchHandicap=""
           player4MatchHandicap=""
-          matchPreview={true}
+          matchPreview={false}
           matchTime={day1.round2.times[0]}
         />
         <Match
@@ -485,7 +485,7 @@ const TopicPage = ({ location }) => {
           player2MatchHandicap=""
           player3MatchHandicap=""
           player4MatchHandicap=""
-          matchPreview={true}
+          matchPreview={false}
           matchTime={day1.round2.times[1]}
         />
         <Match
@@ -508,7 +508,7 @@ const TopicPage = ({ location }) => {
           player2MatchHandicap=""
           player3MatchHandicap=""
           player4MatchHandicap=""
-          matchPreview={true}
+          matchPreview={false}
           matchTime={day1.round2.times[2]}
         />
       </MatchNavSection>
@@ -559,7 +559,7 @@ const TopicPage = ({ location }) => {
           player2MatchHandicap=""
           player3MatchHandicap=""
           player4MatchHandicap=""
-          matchPreview={true}
+          matchPreview={false}
           matchTime={day1.round3.times[0]}
         />
         <Match
@@ -598,7 +598,7 @@ const TopicPage = ({ location }) => {
           player2MatchHandicap=""
           player3MatchHandicap=""
           player4MatchHandicap=""
-          matchPreview={true}
+          matchPreview={false}
           matchTime={day1.round3.times[1]}
         />
         <Match
@@ -637,7 +637,7 @@ const TopicPage = ({ location }) => {
           player2MatchHandicap=""
           player3MatchHandicap=""
           player4MatchHandicap=""
-          matchPreview={true}
+          matchPreview={false}
           matchTime={day1.round3.times[2]}
         />
       </MatchNavSection>
@@ -672,7 +672,7 @@ const TopicPage = ({ location }) => {
           player2MatchHandicap=""
           player3MatchHandicap=""
           player4MatchHandicap=""
-          matchPreview={true}
+          matchPreview={false}
           matchTime={day1.round4.times[0]}
         />
         <Match
@@ -695,7 +695,7 @@ const TopicPage = ({ location }) => {
           player2MatchHandicap=""
           player3MatchHandicap=""
           player4MatchHandicap=""
-          matchPreview={true}
+          matchPreview={false}
           matchTime={day1.round4.times[1]}
         />
         <Match
@@ -718,7 +718,7 @@ const TopicPage = ({ location }) => {
           player2MatchHandicap=""
           player3MatchHandicap=""
           player4MatchHandicap=""
-          matchPreview={true}
+          matchPreview={false}
           matchTime={day1.round4.times[2]}
         />
       </MatchNavSection>
@@ -754,7 +754,7 @@ const TopicPage = ({ location }) => {
           player2MatchHandicap=""
           player3MatchHandicap=""
           player4MatchHandicap=""
-          matchPreview={true}
+          matchPreview={false}
           matchTime={day2.round1.times[0]}
         />
         <Match
@@ -777,7 +777,7 @@ const TopicPage = ({ location }) => {
           player2MatchHandicap=""
           player3MatchHandicap=""
           player4MatchHandicap=""
-          matchPreview={true}
+          matchPreview={false}
           matchTime={day2.round1.times[1]}
         />
         <Match
@@ -800,7 +800,7 @@ const TopicPage = ({ location }) => {
           player2MatchHandicap=""
           player3MatchHandicap=""
           player4MatchHandicap=""
-          matchPreview={true}
+          matchPreview={false}
           matchTime={day2.round1.times[2]}
         />
       </MatchNavSection>
@@ -835,7 +835,7 @@ const TopicPage = ({ location }) => {
           player2MatchHandicap=""
           player3MatchHandicap=""
           player4MatchHandicap=""
-          matchPreview={true}
+          matchPreview={false}
           matchTime={day2.round2.times[0]}
         />
         <Match
@@ -858,7 +858,7 @@ const TopicPage = ({ location }) => {
           player2MatchHandicap=""
           player3MatchHandicap=""
           player4MatchHandicap=""
-          matchPreview={true}
+          matchPreview={false}
           matchTime={day2.round2.times[1]}
         />
         <Match
@@ -881,7 +881,7 @@ const TopicPage = ({ location }) => {
           player2MatchHandicap=""
           player3MatchHandicap=""
           player4MatchHandicap=""
-          matchPreview={true}
+          matchPreview={false}
           matchTime={day2.round2.times[2]}
         />
       </MatchNavSection>
@@ -917,7 +917,7 @@ const TopicPage = ({ location }) => {
           player2MatchHandicap=""
           player3MatchHandicap=""
           player4MatchHandicap=""
-          matchPreview={true}
+          matchPreview={false}
           matchTime={day2.round3.times[0]}
         />
         <Match
@@ -940,7 +940,7 @@ const TopicPage = ({ location }) => {
           player2MatchHandicap=""
           player3MatchHandicap=""
           player4MatchHandicap=""
-          matchPreview={true}
+          matchPreview={false}
           matchTime={day2.round3.times[1]}
         />
         <Match
@@ -963,7 +963,7 @@ const TopicPage = ({ location }) => {
           player2MatchHandicap=""
           player3MatchHandicap=""
           player4MatchHandicap=""
-          matchPreview={true}
+          matchPreview={false}
           matchTime={day2.round3.times[2]}
         />
       </MatchNavSection>
@@ -992,7 +992,7 @@ const TopicPage = ({ location }) => {
           player2Tees={playerTees["p" + matchesArr[6].players.blue[0]]}
           player1MatchHandicap=""
           player2MatchHandicap=""
-          matchPreview={true}
+          matchPreview={false}
           matchTime={day2.round4.times[0]}
         />
         <Match
@@ -1009,7 +1009,7 @@ const TopicPage = ({ location }) => {
           player2Tees={playerTees["p" + matchesArr[6].players.blue[1]]}
           player1MatchHandicap=""
           player2MatchHandicap=""
-          matchPreview={true}
+          matchPreview={false}
           matchTime={day2.round4.times[0]}
         />
         <Match
@@ -1026,7 +1026,7 @@ const TopicPage = ({ location }) => {
           player2Tees={playerTees["p" + matchesArr[6].players.blue[2]]}
           player1MatchHandicap=""
           player2MatchHandicap=""
-          matchPreview={true}
+          matchPreview={false}
           matchTime={day2.round4.times[1]}
         />
         <Match
@@ -1043,7 +1043,7 @@ const TopicPage = ({ location }) => {
           player2Tees={playerTees["p" + matchesArr[6].players.blue[3]]}
           player1MatchHandicap=""
           player2MatchHandicap=""
-          matchPreview={true}
+          matchPreview={false}
           matchTime={day2.round4.times[1]}
         />
 
@@ -1061,7 +1061,7 @@ const TopicPage = ({ location }) => {
           player2Tees={playerTees["p" + matchesArr[6].players.blue[4]]}
           player1MatchHandicap=""
           player2MatchHandicap=""
-          matchPreview={true}
+          matchPreview={false}
           matchTime={day2.round4.times[2]}
         />
         <Match
@@ -1078,7 +1078,7 @@ const TopicPage = ({ location }) => {
           player2Tees={playerTees["p" + matchesArr[6].players.blue[5]]}
           player1MatchHandicap=""
           player2MatchHandicap=""
-          matchPreview={true}
+          matchPreview={false}
           matchTime={day2.round4.times[2]}
         />
       </MatchNavSection>

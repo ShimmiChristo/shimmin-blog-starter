@@ -30,8 +30,8 @@
         "blue": ["rj", "craig"],
         "winner": "green",
         "scores": {
-          "curtis": [5, 4, 4, 4, 3, 4, 4, 3, 5],
-          "derek": [5, 4, 4, 4, 3, 4, 4, 3, 5],
+          "curtis": [5, 4, 5, 5, 3, 4, 5, 3, 5],
+          "derek": [5, 4, 5, 5, 3, 4, 5, 3, 5],
           "rj": [4, 4, 4, 4, 4, 5, 5, 3, 5],
           "craig": [4, 4, 4, 4, 4, 5, 5, 3, 5]
         }
@@ -43,8 +43,8 @@
         "scores": {
           "gordon": [5, 3, 5, 4, 3, 5, 5, 3, 5],
           "curtis": [5, 3, 5, 4, 3, 5, 5, 3, 5],
-          "cam": [5, 3, 4, 4, 3, 6, 4, 4, 6],
-          "evan": [5, 3, 4, 4, 3, 6, 4, 4, 6]
+          "cam": [5, 3, 5, 5, 3, 6, 4, 4, 6],
+          "evan": [5, 3, 5, 5, 3, 6, 4, 4, 6]
         }
       }
     ]
@@ -58,32 +58,44 @@
     "holes": "back",
     "matches": [
       {
-        "green": ["matt", "chris"],
-        "blue": ["dylan", "dan"],
-        "winner": null,
+        "green": ["matt", "travis"],
+        "blue": ["craig", "dan"],
+        "winner": "tie",
         "scores": {
           "matt": {
-            "holes": [99, 99, 99, 99, 99, 99, 99, 99, 99],
+            "holes": [5, 4, 4, 5, 5, 4, 5, 5, 4],
             "frontGross": 999,
             "backGross": 999,
             "useForHandicapIndex": true,
             "use18Holes": false,
             "useBack": true
           },
-          "chris": [99, 99, 99, 99, 99, 99, 99, 99, 99],
-          "dylan": [99, 99, 99, 99, 99, 99, 99, 99, 99],
-          "dan": [99, 99, 99, 99, 99, 99, 99, 99, 99]
+          "travis": [6, 5, 6, 8, 5, 5, 6, 7, 5],
+          "craig": [5, 3, 5, 8, 7, 3, 5, 8, 5],
+          "dan": [6, 6, 4, 7, 7, 4, 5, 7, 5]
         }
       },
       {
-        "green": ["gordon", "derek"],
-        "blue": ["rj", "craig"],
-        "winner": null
+        "green": ["gordon", "chris"],
+        "blue": ["rj", "cam"],
+        "winner": "blue",
+        "scores": {
+          "gordon": [7, 3, 7, 5, 5, 4, 7, 6, 5],
+          "chris": [4, 4, 7, 5, 5, 4, 7, 5, 5],
+          "rj": [4, 3, 5, 6, 5, 4, 6, 5, 5],
+          "cam": [5, 5, 8, 5, 8, 3, 6, 9, 6]
+        }
       },
       {
-        "green": ["travis", "curtis"],
-        "blue": ["cam", "evan"],
-        "winner": null
+        "green": ["derek", "curtis"],
+        "blue": ["dylan", "evan"],
+        "winner": "blue",
+        "scores": {
+          "derek": [7, 5, 4, 7, 6, 4, 5, 8, 6],
+          "curtis": [5, 4, 5, 8, 7, 4, 6, 8, 7],
+          "dylan": [4, 4, 6, 4, 5, 3, 6, 5, 4],
+          "evan": [7, 5, 5, 7, 7, 7, 7, 6, 5]
+        }
       }
     ]
   },
