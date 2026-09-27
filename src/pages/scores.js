@@ -64,7 +64,7 @@ const TopicPage = ({ location }) => {
   const playerTees = {
     p1: "purple",
     p2: "purple",
-    p3: "dan",
+    p3: "purple",
     p4: "orange",
     p5: "orange",
     p6: "orange",
