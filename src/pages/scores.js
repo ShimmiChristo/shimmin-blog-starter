@@ -55,8 +55,8 @@ const TopicPage = ({ location }) => {
   const p5 = "evan"
   const p6 = "cam"
   const p7 = "matt"
-  const p8 = "gordon"
-  const p9 = "chris"
+  const p8 = "chris"
+  const p9 = "gordon"
   const p10 = "derek"
   const p11 = "travis"
   const p12 = "curtis"
@@ -64,7 +64,7 @@ const TopicPage = ({ location }) => {
   const playerTees = {
     p1: "purple",
     p2: "purple",
-    p3: "orange",
+    p3: "dan",
     p4: "orange",
     p5: "orange",
     p6: "orange",
@@ -75,7 +75,7 @@ const TopicPage = ({ location }) => {
     p11: "orange",
     p12: "orange",
   }
-  const backTeesPlayers = ["dylan", "rj", "matt", "chris", "gordon"]
+  const backTeesPlayers = ["dylan", "rj", "matt", "chris", "gordon", "dan"]
 
   const backTeesGuys = player => {
     if (backTeesPlayers.includes(player)) {
@@ -109,7 +109,7 @@ const TopicPage = ({ location }) => {
       matchTees: ["purple", "orange"],
       players: {
         blue: [1, 3, 2, 4, 5, 6],
-        green: [7, 9, 10, 11, 8, 12],
+        green: [7, 8, 10, 11, 9, 12],
       },
     },
     {
