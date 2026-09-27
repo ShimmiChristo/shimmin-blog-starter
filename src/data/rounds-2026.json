@@ -10,30 +10,42 @@
       {
         "green": ["matt", "chris"],
         "blue": ["dylan", "dan"],
-        "winner": null,
+        "winner": "green",
         "scores": {
           "matt": {
-            "holes": [99, 99, 99, 99, 99, 99, 99, 99, 99],
+            "holes": [4, 4, 4, 4, 3, 3, 4, 2, 5],
             "frontGross": 999,
             "backGross": 999,
             "useForHandicapIndex": false,
             "use18Holes": false,
             "useFront": false
           },
-          "chris": [99, 99, 99, 99, 99, 99, 99, 99, 99],
-          "dylan": [99, 99, 99, 99, 99, 99, 99, 99, 99],
-          "dan": [99, 99, 99, 99, 99, 99, 99, 99, 99]
+          "chris": [4, 4, 4, 4, 3, 3, 4, 2, 5],
+          "dylan": [4, 3, 3, 5, 3, 4, 4, 3, 5],
+          "dan": [4, 3, 3, 5, 3, 4, 4, 3, 5]
         }
       },
       {
-        "green": ["gordon", "derek"],
+        "green": ["curtis", "derek"],
         "blue": ["rj", "craig"],
-        "winner": null
+        "winner": "green",
+        "scores": {
+          "curtis": [5, 4, 4, 4, 3, 4, 4, 3, 5],
+          "derek": [5, 4, 4, 4, 3, 4, 4, 3, 5],
+          "rj": [4, 4, 4, 4, 4, 5, 5, 3, 5],
+          "craig": [4, 4, 4, 4, 4, 5, 5, 3, 5]
+        }
       },
       {
-        "green": ["travis", "curtis"],
+        "green": ["gordon", "curtis"],
         "blue": ["cam", "evan"],
-        "winner": null
+        "winner": "green",
+        "scores": {
+          "gordon": [5, 3, 5, 4, 3, 5, 5, 3, 5],
+          "curtis": [5, 3, 5, 4, 3, 5, 5, 3, 5],
+          "cam": [5, 3, 4, 4, 3, 6, 4, 4, 6],
+          "evan": [5, 3, 4, 4, 3, 6, 4, 4, 6]
+        }
       }
     ]
   },
