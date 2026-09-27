@@ -293,11 +293,11 @@ const TopicPage = ({ location }) => {
       <SEO title="Scores" />
       <LandingPageHeader title="Scores" />
 
-      <HighlightCountdown
+      {/* <HighlightCountdown
         startTime={startDate}
         location={locationName}
         courseUrl={courseUrl}
-      />
+      /> */}
 
       <MatchScore year="_2026" lastYearWinner="green" location={location} />
 

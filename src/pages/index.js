@@ -38,11 +38,11 @@ const TopicPage = ({ data, location }) => {
         image="/logo-black-circle.png"
       />
       <h1 className="invisible">BFBH Cup | Boys From Back Home Cup</h1>
-      <HighlightCountdown
+      {/* <HighlightCountdown
         startTime={startDate}
         location={locationName}
         courseUrl={courseUrl}
-      />
+      /> */}
 
       <div className="container col-lg-8">
         <Foreword2026 />
