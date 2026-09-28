@@ -44,9 +44,9 @@ const TopicPage = ({ data, location }) => {
         courseUrl={courseUrl}
       /> */}
 
-      <div className="container col-lg-8">
+      {/* <div className="container col-lg-8">
         <Foreword2026 />
-      </div>
+      </div> */}
       <div className="container col-lg-8 mt-5">
         <MatchPlayers2026 />
       </div>
