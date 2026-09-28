@@ -186,8 +186,8 @@ const TopicPage = ({ location }) => {
       courseMatch: "boyneHighlandsDonaldRoss",
       matchTees: ["purple", "orange"],
       players: {
-        blue: [1, 2, 4, 3, 5, 6],
-        green: [7, 8, 9, 10, 11, 12],
+        blue: [1, 2, 3, 4, 5, 6],
+        green: [7, 8, 9, 10, 12, 11],
       },
     },
   ]
