@@ -186,7 +186,7 @@ const TopicPage = ({ location }) => {
       courseMatch: "boyneHighlandsDonaldRoss",
       matchTees: ["purple", "orange"],
       players: {
-        blue: [1, 2, 3, 4, 5, 6],
+        blue: [1, 2, 4, 3, 5, 6],
         green: [7, 8, 9, 10, 12, 11],
       },
     },
@@ -986,10 +986,10 @@ const TopicPage = ({ location }) => {
           matchHandicap={matchesArr[7].matchHandicap}
           gameplay={matchesArr[7].gameplay}
           matchTees={matchesArr[7].matchTees}
-          player1={playerById[matchesArr[6].players.green[0]]}
-          player2={playerById[matchesArr[6].players.blue[0]]}
-          player1Tees={playerTees["p" + matchesArr[6].players.green[0]]}
-          player2Tees={playerTees["p" + matchesArr[6].players.blue[0]]}
+          player1={playerById[matchesArr[7].players.green[0]]}
+          player2={playerById[matchesArr[7].players.blue[0]]}
+          player1Tees={playerTees["p" + matchesArr[7].players.green[0]]}
+          player2Tees={playerTees["p" + matchesArr[7].players.blue[0]]}
           player1MatchHandicap=""
           player2MatchHandicap=""
           matchPreview={false}
@@ -1003,10 +1003,10 @@ const TopicPage = ({ location }) => {
           matchHandicap={matchesArr[7].matchHandicap}
           gameplay={matchesArr[7].gameplay}
           matchTees={matchesArr[7].matchTees}
-          player1={playerById[matchesArr[6].players.green[1]]}
-          player2={playerById[matchesArr[6].players.blue[1]]}
-          player1Tees={playerTees["p" + matchesArr[6].players.green[1]]}
-          player2Tees={playerTees["p" + matchesArr[6].players.blue[1]]}
+          player1={playerById[matchesArr[7].players.green[1]]}
+          player2={playerById[matchesArr[7].players.blue[1]]}
+          player1Tees={playerTees["p" + matchesArr[7].players.green[1]]}
+          player2Tees={playerTees["p" + matchesArr[7].players.blue[1]]}
           player1MatchHandicap=""
           player2MatchHandicap=""
           matchPreview={false}
@@ -1020,10 +1020,10 @@ const TopicPage = ({ location }) => {
           matchHandicap={matchesArr[7].matchHandicap}
           gameplay={matchesArr[7].gameplay}
           matchTees={matchesArr[7].matchTees}
-          player1={playerById[matchesArr[6].players.green[2]]}
-          player2={playerById[matchesArr[6].players.blue[2]]}
-          player1Tees={playerTees["p" + matchesArr[6].players.green[2]]}
-          player2Tees={playerTees["p" + matchesArr[6].players.blue[2]]}
+          player1={playerById[matchesArr[7].players.green[2]]}
+          player2={playerById[matchesArr[7].players.blue[2]]}
+          player1Tees={playerTees["p" + matchesArr[7].players.green[2]]}
+          player2Tees={playerTees["p" + matchesArr[7].players.blue[2]]}
           player1MatchHandicap=""
           player2MatchHandicap=""
           matchPreview={false}
@@ -1037,10 +1037,10 @@ const TopicPage = ({ location }) => {
           matchHandicap={matchesArr[7].matchHandicap}
           gameplay={matchesArr[7].gameplay}
           matchTees={matchesArr[7].matchTees}
-          player1={playerById[matchesArr[6].players.green[3]]}
-          player2={playerById[matchesArr[6].players.blue[3]]}
-          player1Tees={playerTees["p" + matchesArr[6].players.green[3]]}
-          player2Tees={playerTees["p" + matchesArr[6].players.blue[3]]}
+          player1={playerById[matchesArr[7].players.green[3]]}
+          player2={playerById[matchesArr[7].players.blue[3]]}
+          player1Tees={playerTees["p" + matchesArr[7].players.green[3]]}
+          player2Tees={playerTees["p" + matchesArr[7].players.blue[3]]}
           player1MatchHandicap=""
           player2MatchHandicap=""
           matchPreview={false}
@@ -1055,10 +1055,10 @@ const TopicPage = ({ location }) => {
           matchHandicap={matchesArr[7].matchHandicap}
           gameplay={matchesArr[7].gameplay}
           matchTees={matchesArr[7].matchTees}
-          player1={playerById[matchesArr[6].players.green[4]]}
-          player2={playerById[matchesArr[6].players.blue[4]]}
-          player1Tees={playerTees["p" + matchesArr[6].players.green[4]]}
-          player2Tees={playerTees["p" + matchesArr[6].players.blue[4]]}
+          player1={playerById[matchesArr[7].players.green[4]]}
+          player2={playerById[matchesArr[7].players.blue[4]]}
+          player1Tees={playerTees["p" + matchesArr[7].players.green[4]]}
+          player2Tees={playerTees["p" + matchesArr[7].players.blue[4]]}
           player1MatchHandicap=""
           player2MatchHandicap=""
           matchPreview={false}
@@ -1072,10 +1072,10 @@ const TopicPage = ({ location }) => {
           matchHandicap={matchesArr[7].matchHandicap}
           gameplay={matchesArr[7].gameplay}
           matchTees={matchesArr[7].matchTees}
-          player1={playerById[matchesArr[6].players.green[5]]}
-          player2={playerById[matchesArr[6].players.blue[5]]}
-          player1Tees={playerTees["p" + matchesArr[6].players.green[5]]}
-          player2Tees={playerTees["p" + matchesArr[6].players.blue[5]]}
+          player1={playerById[matchesArr[7].players.green[5]]}
+          player2={playerById[matchesArr[7].players.blue[5]]}
+          player1Tees={playerTees["p" + matchesArr[7].players.green[5]]}
+          player2Tees={playerTees["p" + matchesArr[7].players.blue[5]]}
           player1MatchHandicap=""
           player2MatchHandicap=""
           matchPreview={false}
