@@ -842,25 +842,25 @@
             },
             "bayHarborPreserveLinks": {
               "course": "Bay Harbor Preserve Links",
-              "front": [99, 99, 99, 99, 99, 99, 99, 99, 99],
+              "front": [5, 8, 5, 8, 4, 6, 8, 8, 4],
               "frontGross": 891,
               "frontHandicap": 999,
-              "back": [99, 99, 99, 99, 99, 99, 99, 99, 99],
+              "back": [5, 5, 5, 5, 5, 5, 5, 4, 14],
               "backGross": 891,
               "backHandicap": 999
             },
             "boyneHighlandsArthurHills": {
               "course": "Arthur Hills at Boyne Highlands",
-              "front": [99, 99, 99, 99, 99, 99, 99, 99, 99],
+              "front": [5, 5, 6, 4, 6, 6, 3, 5, 3],
               "frontHandicap": 999,
-              "back": [99, 99, 99, 99, 99, 99, 99, 99, 99],
+              "back": [5, 9, 6, 5, 6, 6, 6, 4, 99],
               "backHandicap": 999
             },
             "boyneHighlandsDonaldRoss": {
               "course": "Donald Ross at Boyne Highlands",
-              "front": [99, 99, 99, 99, 99, 99, 99, 99, 99],
+              "front": [5, 7, 5, 6, 8, 6, 7, 4, 99],
               "frontHandicap": 999,
-              "back": [99, 99, 99, 99, 99, 99, 99, 99, 99],
+              "back": [7, 7, 3, 9, 10, 10, 7, 5, 9],
               "backHandicap": 999
             }
           },
@@ -919,7 +919,7 @@
               "game": "Singles",
               "wins": 0,
               "ties": 0,
-              "losses": 0
+              "losses": 1
             },
             {
               "id": "greensomes",
@@ -932,6 +932,12 @@
           "records": [
             {
               "partners": [
+                {
+                  "name": "craig",
+                  "wins": 0,
+                  "ties": 0,
+                  "losses": 0
+                },
                 {
                   "name": "dan",
                   "wins": 0,
@@ -994,7 +1000,7 @@
                   "name": "travis",
                   "wins": 0,
                   "ties": 0,
-                  "losses": 0
+                  "losses": 1
                 }
               ]
             }
@@ -1631,25 +1637,25 @@
             },
             "bayHarborPreserveLinks": {
               "course": "Bay Harbor Preserve Links",
-              "front": [99, 99, 99, 99, 99, 99, 99, 99, 99],
+              "front": [5, 6, 6, 9, 4, 7, 5, 5, 99],
               "frontGross": 891,
               "frontHandicap": 999,
-              "back": [99, 99, 99, 99, 99, 99, 99, 99, 99],
+              "back": [7, 5, 4, 2, 5, 4, 5, 4, 5],
               "backGross": 891,
               "backHandicap": 999
             },
             "boyneHighlandsArthurHills": {
               "course": "Arthur Hills at Boyne Highlands",
-              "front": [99, 99, 99, 99, 99, 99, 99, 99, 99],
+              "front": [5, 4, 6, 4, 6, 5, 3, 4, 3],
               "frontHandicap": 999,
-              "back": [99, 99, 99, 99, 99, 99, 99, 99, 99],
+              "back": [5, 8, 6, 6, 3, 5, 4, 4, 5],
               "backHandicap": 999
             },
             "boyneHighlandsDonaldRoss": {
               "course": "Donald Ross at Boyne Highlands",
-              "front": [99, 99, 99, 99, 99, 99, 99, 99, 99],
+              "front": [5, 5, 3, 4, 5, 4, 4, 99, 99],
               "frontHandicap": 999,
-              "back": [99, 99, 99, 99, 99, 99, 99, 99, 99],
+              "back": [5, 5, 2, 6, 6, 4, 6, 4, 5],
               "backHandicap": 999
             }
           },
@@ -1706,7 +1712,7 @@
             {
               "id": "singles",
               "game": "Singles",
-              "wins": 0,
+              "wins": 1,
               "ties": 0,
               "losses": 0
             },
@@ -1721,6 +1727,12 @@
           "records": [
             {
               "partners": [
+                {
+                  "name": "curtis",
+                  "wins": 0,
+                  "ties": 0,
+                  "losses": 0
+                },
                 {
                   "name": "derek",
                   "wins": 0,
@@ -1781,7 +1793,7 @@
                 },
                 {
                   "name": "rj",
-                  "wins": 0,
+                  "wins": 1,
                   "ties": 0,
                   "losses": 1
                 }
@@ -2569,25 +2581,25 @@
             },
             "bayHarborPreserveLinks": {
               "course": "Bay Harbor Preserve Links",
-              "front": [99, 99, 99, 99, 99, 99, 99, 99, 99],
+              "front": [7, 6, 5, 7, 5, 5, 4, 5, 99],
               "frontGross": 891,
               "frontHandicap": 999,
-              "back": [99, 99, 99, 99, 99, 99, 99, 99, 99],
+              "back": [5, 5, 5, 5, 5, 5, 5, 4, 14],
               "backGross": 891,
               "backHandicap": 999
             },
             "boyneHighlandsArthurHills": {
               "course": "Arthur Hills at Boyne Highlands",
-              "front": [99, 99, 99, 99, 99, 99, 99, 99, 99],
+              "front": [5, 4, 7, 5, 5, 6, 4, 6, 99],
               "frontHandicap": 999,
-              "back": [99, 99, 99, 99, 99, 99, 99, 99, 99],
+              "back": [6, 6, 5, 5, 6, 5, 3, 5, 8],
               "backHandicap": 999
             },
             "boyneHighlandsDonaldRoss": {
               "course": "Donald Ross at Boyne Highlands",
-              "front": [99, 99, 99, 99, 99, 99, 99, 99, 99],
+              "front": [5, 6, 3, 6, 7, 4, 4, 4, 4],
               "frontHandicap": 999,
-              "back": [99, 99, 99, 99, 99, 99, 99, 99, 99],
+              "back": [5, 5, 4, 6, 5, 5, 6, 4, 6],
               "backHandicap": 999
             }
           },
@@ -2644,7 +2656,7 @@
             {
               "id": "singles",
               "game": "Singles",
-              "wins": 0,
+              "wins": 1,
               "ties": 0,
               "losses": 0
             },
@@ -2660,9 +2672,21 @@
             {
               "partners": [
                 {
+                  "name": "cam",
+                  "wins": 0,
+                  "ties": 0,
+                  "losses": 0
+                },
+                {
                   "name": "dan",
                   "wins": 0,
                   "ties": 1,
+                  "losses": 0
+                },
+                {
+                  "name": "dylan",
+                  "wins": 0,
+                  "ties": 0,
                   "losses": 0
                 },
                 {
@@ -2701,7 +2725,7 @@
                 },
                 {
                   "name": "gordon",
-                  "wins": 0,
+                  "wins": 1,
                   "ties": 0,
                   "losses": 0
                 },
@@ -3642,25 +3666,25 @@
             },
             "bayHarborPreserveLinks": {
               "course": "Bay Harbor Preserve Links",
-              "front": [99, 99, 99, 99, 99, 99, 99, 99, 99],
+              "front": [7, 7, 4, 8, 5, 7, 4, 5, 99],
               "frontGross": 891,
               "frontHandicap": 999,
-              "back": [99, 99, 99, 99, 99, 99, 99, 99, 99],
+              "back": [5, 3, 5, 4, 3, 5, 5, 5, 5],
               "backGross": 891,
               "backHandicap": 999
             },
             "boyneHighlandsArthurHills": {
               "course": "Arthur Hills at Boyne Highlands",
-              "front": [99, 99, 99, 99, 99, 99, 99, 99, 99],
+              "front": [7, 5, 6, 6, 6, 7, 3, 6, 99],
               "frontHandicap": 999,
-              "back": [99, 99, 99, 99, 99, 99, 99, 99, 99],
+              "back": [5, 9, 5, 7, 5, 7, 4, 6, 5],
               "backHandicap": 999
             },
             "boyneHighlandsDonaldRoss": {
               "course": "Donald Ross at Boyne Highlands",
-              "front": [99, 99, 99, 99, 99, 99, 99, 99, 99],
+              "front": [7, 7, 5, 6, 10, 6, 7, 4, 99],
               "frontHandicap": 999,
-              "back": [99, 99, 99, 99, 99, 99, 99, 99, 99],
+              "back": [6, 7, 4, 7, 6, 6, 8, 3, 6],
               "backHandicap": 999
             }
           },
@@ -3719,7 +3743,7 @@
               "game": "Singles",
               "wins": 0,
               "ties": 0,
-              "losses": 0
+              "losses": 1
             },
             {
               "id": "greensomes",
@@ -3732,6 +3756,12 @@
           "records": [
             {
               "partners": [
+                {
+                  "name": "chris",
+                  "wins": 0,
+                  "ties": 0,
+                  "losses": 0
+                },
                 {
                   "name": "derek",
                   "wins": 1,
@@ -3788,7 +3818,7 @@
                   "name": "evan",
                   "wins": 1,
                   "ties": 0,
-                  "losses": 1
+                  "losses": 2
                 },
                 {
                   "name": "rj",
@@ -4587,25 +4617,25 @@
             },
             "bayHarborPreserveLinks": {
               "course": "Bay Harbor Preserve Links",
-              "front": [99, 99, 99, 99, 99, 99, 99, 99, 99],
+              "front": [5, 6, 7, 9, 7, 8, 5, 6, 99],
               "frontGross": 891,
               "frontHandicap": 999,
-              "back": [99, 99, 99, 99, 99, 99, 99, 99, 99],
+              "back": [4, 4, 3, 4, 6, 4, 5, 6, 7],
               "backGross": 891,
               "backHandicap": 999
             },
             "boyneHighlandsArthurHills": {
               "course": "Arthur Hills at Boyne Highlands",
-              "front": [99, 99, 99, 99, 99, 99, 99, 99, 99],
+              "front": [5, 5, 5, 6, 5, 5, 4, 4, 99],
               "frontHandicap": 999,
-              "back": [99, 99, 99, 99, 99, 99, 99, 99, 99],
+              "back": [7, 7, 5, 6, 5, 5, 6, 6, 99],
               "backHandicap": 999
             },
             "boyneHighlandsDonaldRoss": {
               "course": "Donald Ross at Boyne Highlands",
-              "front": [99, 99, 99, 99, 99, 99, 99, 99, 99],
+              "front": [5, 6, 3, 6, 7, 4, 4, 4, 4],
               "frontHandicap": 999,
-              "back": [99, 99, 99, 99, 99, 99, 99, 99, 99],
+              "back": [6, 4, 4, 6, 7, 6, 7, 4, 6],
               "backHandicap": 999
             }
           },
@@ -4662,7 +4692,7 @@
             {
               "id": "singles",
               "game": "Singles",
-              "wins": 0,
+              "wins": 1,
               "ties": 0,
               "losses": 0
             },
@@ -4700,6 +4730,12 @@
                   "wins": 0,
                   "ties": 0,
                   "losses": 0
+                },
+                {
+                  "name": "rj",
+                  "wins": 0,
+                  "ties": 0,
+                  "losses": 0
                 }
               ]
             },
@@ -4719,6 +4755,12 @@
                 },
                 {
                   "name": "derek",
+                  "wins": 1,
+                  "ties": 0,
+                  "losses": 0
+                },
+                {
+                  "name": "gordon",
                   "wins": 0,
                   "ties": 0,
                   "losses": 0
@@ -5676,25 +5718,25 @@
             },
             "bayHarborPreserveLinks": {
               "course": "Bay Harbor Preserve Links",
-              "front": [99, 99, 99, 99, 99, 99, 99, 99, 99],
+              "front": [4, 6, 5, 8, 4, 7, 4, 5, 4],
               "frontGross": 891,
               "frontHandicap": 999,
-              "back": [99, 99, 99, 99, 99, 99, 99, 99, 99],
+              "back": [7, 5, 4, 2, 5, 4, 5, 4, 5],
               "backGross": 891,
               "backHandicap": 999
             },
             "boyneHighlandsArthurHills": {
               "course": "Arthur Hills at Boyne Highlands",
-              "front": [99, 99, 99, 99, 99, 99, 99, 99, 99],
+              "front": [6, 6, 7, 6, 6, 7, 3, 5, 99],
               "frontHandicap": 999,
-              "back": [99, 99, 99, 99, 99, 99, 99, 99, 99],
+              "back": [4, 7, 6, 6, 5, 5, 5, 5, 7],
               "backHandicap": 999
             },
             "boyneHighlandsDonaldRoss": {
               "course": "Donald Ross at Boyne Highlands",
-              "front": [99, 99, 99, 99, 99, 99, 99, 99, 99],
+              "front": [6, 5, 4, 5, 6, 5, 5, 4, 6],
               "frontHandicap": 999,
-              "back": [99, 99, 99, 99, 99, 99, 99, 99, 99],
+              "back": [8, 5, 5, 7, 6, 6, 7, 6, 4],
               "backHandicap": 999
             }
           },
@@ -5753,7 +5795,7 @@
               "game": "Singles",
               "wins": 0,
               "ties": 0,
-              "losses": 0
+              "losses": 1
             },
             {
               "id": "greensomes",
@@ -5810,7 +5852,7 @@
                   "name": "dan",
                   "wins": 0,
                   "ties": 0,
-                  "losses": 0
+                  "losses": 1
                 },
                 {
                   "name": "dylan",
@@ -6750,25 +6792,25 @@
             },
             "bayHarborPreserveLinks": {
               "course": "Bay Harbor Preserve Links",
-              "front": [99, 99, 99, 99, 99, 99, 99, 99, 99],
+              "front": [5, 5, 4, 6, 3, 7, 5, 5, 3],
               "frontGross": 891,
               "frontHandicap": 999,
-              "back": [99, 99, 99, 99, 99, 99, 99, 99, 99],
+              "back": [4, 5, 4, 3, 4, 5, 5, 4, 4],
               "backGross": 891,
               "backHandicap": 999
             },
             "boyneHighlandsArthurHills": {
               "course": "Arthur Hills at Boyne Highlands",
-              "front": [99, 99, 99, 99, 99, 99, 99, 99, 99],
+              "front": [5, 4, 6, 3, 5, 5, 3, 3, 3],
               "frontHandicap": 999,
-              "back": [99, 99, 99, 99, 99, 99, 99, 99, 99],
+              "back": [4, 8, 5, 5, 6, 6, 4, 6, 8],
               "backHandicap": 999
             },
             "boyneHighlandsDonaldRoss": {
               "course": "Donald Ross at Boyne Highlands",
-              "front": [99, 99, 99, 99, 99, 99, 99, 99, 99],
+              "front": [6, 5, 2, 5, 6, 6, 5, 99, 99],
               "frontHandicap": 999,
-              "back": [99, 99, 99, 99, 99, 99, 99, 99, 99],
+              "back": [5, 4, 4, 7, 4, 4, 5, 3, 4],
               "backHandicap": 999
             }
           },
@@ -6827,7 +6869,7 @@
               "game": "Singles",
               "wins": 0,
               "ties": 0,
-              "losses": 0
+              "losses": 1
             },
             {
               "id": "greensomes",
@@ -6842,6 +6884,12 @@
               "partners": [
                 {
                   "name": "cam",
+                  "wins": 0,
+                  "ties": 0,
+                  "losses": 0
+                },
+                {
+                  "name": "craig",
                   "wins": 0,
                   "ties": 0,
                   "losses": 0
@@ -6896,7 +6944,13 @@
                   "name": "matt",
                   "wins": 0,
                   "ties": 0,
-                  "losses": 1
+                  "losses": 2
+                },
+                {
+                  "name": "travis",
+                  "wins": 0,
+                  "ties": 0,
+                  "losses": 0
                 }
               ]
             }
@@ -7819,25 +7873,25 @@
             },
             "bayHarborPreserveLinks": {
               "course": "Bay Harbor Preserve Links",
-              "front": [99, 99, 99, 99, 99, 99, 99, 99, 99],
+              "front": [5, 6, 6, 10, 6, 6, 6, 4, 99],
               "frontGross": 891,
               "frontHandicap": 999,
-              "back": [99, 99, 99, 99, 99, 99, 99, 99, 99],
+              "back": [4, 4, 3, 4, 6, 4, 5, 6, 7],
               "backGross": 891,
               "backHandicap": 999
             },
             "boyneHighlandsArthurHills": {
               "course": "Arthur Hills at Boyne Highlands",
-              "front": [99, 99, 99, 99, 99, 99, 99, 99, 99],
+              "front": [6, 6, 7, 6, 5, 6, 4, 5, 99],
               "frontHandicap": 999,
-              "back": [99, 99, 99, 99, 99, 99, 99, 99, 99],
+              "back": [5, 8, 6, 7, 5, 5, 5, 5, 7],
               "backHandicap": 999
             },
             "boyneHighlandsDonaldRoss": {
               "course": "Donald Ross at Boyne Highlands",
-              "front": [99, 99, 99, 99, 99, 99, 99, 99, 99],
+              "front": [5, 7, 5, 6, 8, 6, 7, 4, 99],
               "frontHandicap": 999,
-              "back": [99, 99, 99, 99, 99, 99, 99, 99, 99],
+              "back": [5, 5, 5, 6, 5, 6, 8, 5, 5],
               "backHandicap": 999
             }
           },
@@ -7894,7 +7948,7 @@
             {
               "id": "singles",
               "game": "Singles",
-              "wins": 0,
+              "wins": 1,
               "ties": 0,
               "losses": 0
             },
@@ -7951,7 +8005,7 @@
                 },
                 {
                   "name": "curtis",
-                  "wins": 1,
+                  "wins": 2,
                   "ties": 0,
                   "losses": 1
                 },
@@ -7966,6 +8020,12 @@
                   "wins": 0,
                   "ties": 0,
                   "losses": 1
+                },
+                {
+                  "name": "matt",
+                  "wins": 0,
+                  "ties": 0,
+                  "losses": 0
                 },
                 {
                   "name": "travis",
@@ -8762,25 +8822,25 @@
             },
             "bayHarborPreserveLinks": {
               "course": "Bay Harbor Preserve Links",
-              "front": [99, 99, 99, 99, 99, 99, 99, 99, 99],
+              "front": [4, 7, 5, 7, 5, 7, 5, 6, 99],
               "frontGross": 891,
               "frontHandicap": 999,
-              "back": [99, 99, 99, 99, 99, 99, 99, 99, 99],
+              "back": [6, 5, 6, 4, 5, 5, 7, 3, 6],
               "backGross": 891,
               "backHandicap": 999
             },
             "boyneHighlandsArthurHills": {
               "course": "Arthur Hills at Boyne Highlands",
-              "front": [99, 99, 99, 99, 99, 99, 99, 99, 99],
+              "front": [6, 5, 6, 6, 5, 5, 3, 4, 99],
               "frontHandicap": 999,
-              "back": [99, 99, 99, 99, 99, 99, 99, 99, 99],
+              "back": [5, 8, 3, 6, 4, 6, 4, 4, 99],
               "backHandicap": 999
             },
             "boyneHighlandsDonaldRoss": {
               "course": "Donald Ross at Boyne Highlands",
-              "front": [99, 99, 99, 99, 99, 99, 99, 99, 99],
+              "front": [6, 5, 4, 5, 6, 5, 5, 4, 6],
               "frontHandicap": 999,
-              "back": [99, 99, 99, 99, 99, 99, 99, 99, 99],
+              "back": [6, 4, 4, 5, 6, 6, 7, 4, 5],
               "backHandicap": 999
             }
           },
@@ -8839,7 +8899,7 @@
               "game": "Singles",
               "wins": 0,
               "ties": 0,
-              "losses": 0
+              "losses": 1
             },
             {
               "id": "greensomes",
@@ -8894,6 +8954,12 @@
                 },
                 {
                   "name": "craig",
+                  "wins": 0,
+                  "ties": 0,
+                  "losses": 1
+                },
+                {
+                  "name": "dan",
                   "wins": 0,
                   "ties": 0,
                   "losses": 0
@@ -10046,25 +10112,25 @@
             },
             "bayHarborPreserveLinks": {
               "course": "Bay Harbor Preserve Links",
-              "front": [99, 99, 99, 99, 99, 99, 99, 99, 99],
+              "front": [4, 5, 4, 7, 4, 5, 4, 3, 3],
               "frontGross": 891,
               "frontHandicap": 999,
-              "back": [99, 99, 99, 99, 99, 99, 99, 99, 99],
+              "back": [5, 3, 5, 4, 3, 5, 5, 5, 5],
               "backGross": 891,
               "backHandicap": 999
             },
             "boyneHighlandsArthurHills": {
               "course": "Arthur Hills at Boyne Highlands",
-              "front": [99, 99, 99, 99, 99, 99, 99, 99, 99],
+              "front": [4, 5, 5, 4, 4, 6, 3, 4, 99],
               "frontHandicap": 999,
-              "back": [99, 99, 99, 99, 99, 99, 99, 99, 99],
+              "back": [5, 6, 6, 5, 5, 5, 3, 4, 8],
               "backHandicap": 999
             },
             "boyneHighlandsDonaldRoss": {
               "course": "Donald Ross at Boyne Highlands",
-              "front": [99, 99, 99, 99, 99, 99, 99, 99, 99],
+              "front": [5, 5, 3, 4, 5, 4, 4, 99, 99],
               "frontHandicap": 999,
-              "back": [99, 99, 99, 99, 99, 99, 99, 99, 99],
+              "back": [5, 4, 3, 7, 5, 4, 5, 3, 4],
               "backHandicap": 999
             }
           },
@@ -10121,7 +10187,7 @@
             {
               "id": "singles",
               "game": "Singles",
-              "wins": 0,
+              "wins": 1,
               "ties": 0,
               "losses": 0
             },
@@ -10190,7 +10256,13 @@
                 },
                 {
                   "name": "dylan",
-                  "wins": 1,
+                  "wins": 2,
+                  "ties": 0,
+                  "losses": 0
+                },
+                {
+                  "name": "evan",
+                  "wins": 0,
                   "ties": 0,
                   "losses": 0
                 },
@@ -11127,25 +11199,25 @@
             },
             "bayHarborPreserveLinks": {
               "course": "Bay Harbor Preserve Links",
-              "front": [99, 99, 99, 99, 99, 99, 99, 99, 99],
+              "front": [7, 6, 4, 8, 5, 7, 5, 5, 99],
               "frontGross": 891,
               "frontHandicap": 999,
-              "back": [99, 99, 99, 99, 99, 99, 99, 99, 99],
+              "back": [4, 5, 4, 3, 4, 5, 5, 4, 4],
               "backGross": 891,
               "backHandicap": 999
             },
             "boyneHighlandsArthurHills": {
               "course": "Arthur Hills at Boyne Highlands",
-              "front": [99, 99, 99, 99, 99, 99, 99, 99, 99],
+              "front": [5, 6, 6, 5, 5, 5, 4, 4, 99],
               "frontHandicap": 999,
-              "back": [99, 99, 99, 99, 99, 99, 99, 99, 99],
+              "back": [5, 7, 4, 6, 4, 5, 4, 4, 7],
               "backHandicap": 999
             },
             "boyneHighlandsDonaldRoss": {
               "course": "Donald Ross at Boyne Highlands",
-              "front": [99, 99, 99, 99, 99, 99, 99, 99, 99],
+              "front": [6, 5, 2, 5, 6, 6, 5, 99, 99],
               "frontHandicap": 999,
-              "back": [99, 99, 99, 99, 99, 99, 99, 99, 99],
+              "back": [6, 4, 4, 6, 5, 5, 6, 3, 6],
               "backHandicap": 999
             }
           },
@@ -11204,7 +11276,7 @@
               "game": "Singles",
               "wins": 0,
               "ties": 0,
-              "losses": 0
+              "losses": 1
             },
             {
               "id": "greensomes",
@@ -11230,6 +11302,12 @@
                   "losses": 1
                 },
                 {
+                  "name": "dan",
+                  "wins": 0,
+                  "ties": 0,
+                  "losses": 0
+                },
+                {
                   "name": "dylan",
                   "wins": 0,
                   "ties": 0,
@@ -11249,7 +11327,7 @@
                   "name": "chris",
                   "wins": 1,
                   "ties": 0,
-                  "losses": 0
+                  "losses": 1
                 },
                 {
                   "name": "curtis",
@@ -12417,25 +12495,25 @@
             },
             "bayHarborPreserveLinks": {
               "course": "Bay Harbor Preserve Links",
-              "front": [99, 99, 99, 99, 99, 99, 99, 99, 99],
+              "front": [6, 6, 6, 10, 3, 7, 5, 8, 99],
               "frontGross": 891,
               "frontHandicap": 999,
-              "back": [99, 99, 99, 99, 99, 99, 99, 99, 99],
+              "back": [6, 5, 6, 4, 5, 5, 7, 3, 6],
               "backGross": 891,
               "backHandicap": 999
             },
             "boyneHighlandsArthurHills": {
               "course": "Arthur Hills at Boyne Highlands",
-              "front": [99, 99, 99, 99, 99, 99, 99, 99, 99],
+              "front": [6, 6, 8, 6, 8, 6, 4, 4, 4],
               "frontHandicap": 999,
-              "back": [99, 99, 99, 99, 99, 99, 99, 99, 99],
+              "back": [4, 5, 6, 7, 5, 8, 6, 4, 99],
               "backHandicap": 999
             },
             "boyneHighlandsDonaldRoss": {
               "course": "Donald Ross at Boyne Highlands",
-              "front": [99, 99, 99, 99, 99, 99, 99, 99, 99],
+              "front": [7, 7, 5, 6, 10, 6, 7, 4, 99],
               "frontHandicap": 999,
-              "back": [99, 99, 99, 99, 99, 99, 99, 99, 99],
+              "back": [7, 6, 5, 6, 7, 6, 6, 4, 6],
               "backHandicap": 999
             }
           },
@@ -12492,7 +12570,7 @@
             {
               "id": "singles",
               "game": "Singles",
-              "wins": 0,
+              "wins": 1,
               "ties": 0,
               "losses": 0
             },
@@ -12537,7 +12615,7 @@
               "opponents": [
                 {
                   "name": "cam",
-                  "wins": 0,
+                  "wins": 1,
                   "ties": 0,
                   "losses": 0
                 },
@@ -12551,6 +12629,12 @@
                   "name": "dan",
                   "wins": 0,
                   "ties": 1,
+                  "losses": 0
+                },
+                {
+                  "name": "dylan",
+                  "wins": 0,
+                  "ties": 0,
                   "losses": 0
                 },
                 {
