@@ -571,7 +571,7 @@ function Match({
           return teamWins
         }
         teamWins.winningTeam = "AS"
-        teamWins.score = `AS (${totalNetTeamOneScore - courseParP1})`
+        teamWins.score = `AS (+${totalNetTeamOneScore - courseParP1})`
         return teamWins
       }
     } else {
