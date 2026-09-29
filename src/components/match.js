@@ -558,11 +558,11 @@ function Match({
     if (gameplay.includes("strokeplay")) {
       if (totalNetTeamOneScore < totalNetTeamTwoScore) {
         teamWins.winningTeam = "teamOne"
-        teamWins.score = totalNetTeamOneScore - courseParP1
+        teamWins.score = "+" + (totalNetTeamOneScore - courseParP1)
         return teamWins
       } else if (totalNetTeamTwoScore < totalNetTeamOneScore) {
         teamWins.winningTeam = "teamTwo"
-        teamWins.score = totalNetTeamOneScore - courseParP2
+        teamWins.score = "+" + (totalNetTeamTwoScore - courseParP2)
         return teamWins
       } else {
         if (totalNetTeamOneScore === 0 || totalNetTeamTwoScore === 0) {
