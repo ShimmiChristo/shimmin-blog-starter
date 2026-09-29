@@ -110,7 +110,7 @@
       {
         "green": ["matt", "derek"],
         "blue": ["dylan", "cam"],
-        "winner": null,
+        "winner": "green",
         "scores": {
           "matt": [4, 5, 4, 7, 4, 5, 4, 3, 3],
           "derek": [4, 6, 5, 8, 4, 7, 4, 5, 4],
@@ -121,7 +121,7 @@
       {
         "green": ["gordon", "curtis"],
         "blue": ["rj", "craig"],
-        "winner": null,
+        "winner": "green",
         "scores": {
           "gordon": [4, 7, 5, 7, 5, 7, 5, 6, 99],
           "curtis": [7, 7, 4, 8, 5, 7, 4, 5, 99],
@@ -132,7 +132,7 @@
       {
         "green": ["chris", "travis"],
         "blue": ["dan", "evan"],
-        "winner": null,
+        "winner": "blue",
         "scores": {
           "chris": [5, 6, 6, 9, 4, 7, 5, 5, 99],
           "travis": [6, 6, 6, 10, 3, 7, 5, 8, 99],
@@ -153,7 +153,7 @@
       {
         "green": ["matt", "curtis"],
         "blue": ["craig", "cam"],
-        "winner": null,
+        "winner": "green",
         "scores": {
           "matt": [5, 3, 5, 4, 3, 5, 5, 5, 5],
           "curtis": [5, 3, 5, 4, 3, 5, 5, 5, 5],
@@ -164,7 +164,7 @@
       {
         "green": ["gordon", "travis"],
         "blue": ["dylan", "rj"],
-        "winner": null,
+        "winner": "blue",
         "scores": {
           "gordon": [6, 5, 6, 4, 5, 5, 7, 3, 6],
           "travis": [6, 5, 6, 4, 5, 5, 7, 3, 6],
@@ -175,7 +175,7 @@
       {
         "green": ["chris", "derek"],
         "blue": ["dan", "evan"],
-        "winner": null,
+        "winner": "tie",
         "scores": {
           "chris": [7, 5, 4, 2, 5, 4, 5, 4, 5],
           "derek": [7, 5, 4, 2, 5, 4, 5, 4, 5],
@@ -196,7 +196,7 @@
       {
         "green": ["matt", "gordon"],
         "blue": ["craig", "evan"],
-        "winner": null,
+        "winner": "green",
         "scores": {
           "matt": [4, 5, 5, 4, 4, 6, 3, 4, 99],
           "gordon": [6, 5, 6, 6, 5, 5, 3, 4, 99],
@@ -207,7 +207,7 @@
       {
         "green": ["derek", "curtis"],
         "blue": ["rj", "dan"],
-        "winner": null,
+        "winner": "blue",
         "scores": {
           "derek": [6, 6, 7, 6, 6, 7, 3, 5, 99],
           "curtis": [7, 5, 6, 6, 6, 7, 3, 6, 99],
@@ -218,7 +218,7 @@
       {
         "green": ["chris", "travis"],
         "blue": ["dylan", "cam"],
-        "winner": null,
+        "winner": "blue",
         "scores": {
           "chris": [5, 4, 6, 4, 6, 5, 3, 4, 3],
           "travis": [6, 6, 8, 6, 8, 6, 4, 4, 4],
@@ -239,7 +239,7 @@
       {
         "green": ["matt", "derek"],
         "blue": ["rj", "evan"],
-        "winner": null,
+        "winner": "green",
         "scores": {
           "matt": [5, 6, 6, 5, 5, 5, 3, 4, 8],
           "derek": [4, 7, 6, 6, 5, 5, 5, 5, 7],
@@ -250,7 +250,7 @@
       {
         "green": ["chris", "curtis"],
         "blue": ["dylan", "craig"],
-        "winner": null,
+        "winner": "green",
         "scores": {
           "chris": [5, 8, 6, 6, 3, 5, 4, 4, 5],
           "curtis": [5, 9, 5, 7, 5, 7, 4, 6, 5],
@@ -261,7 +261,7 @@
       {
         "green": ["gordon", "travis"],
         "blue": ["dan", "cam"],
-        "winner": null,
+        "winner": "green",
         "scores": {
           "gordon": [5, 8, 3, 6, 4, 6, 4, 4, 99],
           "travis": [4, 5, 6, 7, 5, 8, 6, 4, 99],
@@ -282,7 +282,7 @@
       {
         "green": ["matt", "chris"],
         "blue": ["dylan", "rj"],
-        "winner": null,
+        "winner": "green",
         "scores": {
           "matt": [5, 5, 3, 4, 5, 4, 4, 99, 99],
           "chris": [5, 5, 3, 4, 5, 4, 4, 99, 99],
@@ -293,7 +293,7 @@
       {
         "green": ["gordon", "derek"],
         "blue": ["craig", "dan"],
-        "winner": null,
+        "winner": "blue",
         "scores": {
           "gordon": [6, 5, 4, 5, 6, 5, 5, 4, 6],
           "derek": [6, 5, 4, 5, 6, 5, 5, 4, 6],
@@ -304,7 +304,7 @@
       {
         "green": ["curtis", "travis"],
         "blue": ["evan", "cam"],
-        "winner": null,
+        "winner": "blue",
         "scores": {
           "curtis": [7, 7, 5, 6, 10, 6, 7, 4, 99],
           "travis": [7, 7, 5, 6, 10, 6, 7, 4, 99],

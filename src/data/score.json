@@ -24,7 +24,7 @@
             {
               "id": "scramble",
               "game": "Scramble",
-              "wins": 0,
+              "wins": 3,
               "ties": 0,
               "losses": 0
             },
@@ -32,50 +32,50 @@
               "id": "bestBallStrokeplay",
               "game": "Best Ball Strokeplay",
               "wins": 0,
-              "ties": 0,
-              "losses": 0
+              "ties": 1,
+              "losses": 2
             },
             {
               "id": "bestBall",
               "game": "Best Ball",
-              "wins": 0,
+              "wins": 2,
               "ties": 0,
-              "losses": 0
+              "losses": 1
             },
             {
               "id": "greensomes",
               "game": "Greensomes",
-              "wins": 0,
-              "ties": 0,
-              "losses": 0
+              "wins": 1,
+              "ties": 1,
+              "losses": 1
             },
             {
               "id": "bramble",
               "game": "Bramble",
-              "wins": 0,
+              "wins": 1,
               "ties": 0,
-              "losses": 0
+              "losses": 2
             },
             {
               "id": "bestBall",
               "game": "Best Ball",
-              "wins": 0,
+              "wins": 3,
               "ties": 0,
               "losses": 0
             },
             {
               "id": "pinehurst",
               "game": "Pinehurst",
-              "wins": 0,
+              "wins": 1,
               "ties": 0,
-              "losses": 0
+              "losses": 2
             },
             {
               "id": "singles",
               "game": "Singles",
-              "wins": 0,
+              "wins": 3,
               "ties": 0,
-              "losses": 0
+              "losses": 3
             }
           ]
         },
@@ -103,56 +103,56 @@
               "game": "Scramble",
               "wins": 0,
               "ties": 0,
-              "losses": 0
+              "losses": 3
             },
             {
               "id": "bestBallStrokeplay",
               "game": "Best Ball Strokeplay",
-              "wins": 0,
-              "ties": 0,
+              "wins": 2,
+              "ties": 1,
               "losses": 0
             },
             {
               "id": "bestBall",
               "game": "Best Ball",
-              "wins": 0,
+              "wins": 1,
               "ties": 0,
-              "losses": 0
+              "losses": 2
             },
             {
               "id": "greensomes",
               "game": "Greensomes",
-              "wins": 0,
-              "ties": 0,
-              "losses": 0
+              "wins": 1,
+              "ties": 1,
+              "losses": 1
             },
             {
               "id": "bramble",
               "game": "Bramble",
-              "wins": 0,
+              "wins": 2,
               "ties": 0,
-              "losses": 0
+              "losses": 1
             },
             {
               "id": "bestBall",
               "game": "Best Ball",
               "wins": 0,
               "ties": 0,
-              "losses": 0
+              "losses": 3
             },
             {
               "id": "pinehurst",
               "game": "Pinehurst",
-              "wins": 0,
+              "wins": 1,
               "ties": 0,
-              "losses": 0
+              "losses": 2
             },
             {
               "id": "singles",
               "game": "Singles",
-              "wins": 0,
+              "wins": 3,
               "ties": 0,
-              "losses": 0
+              "losses": 3
             }
           ]
         }

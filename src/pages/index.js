@@ -54,12 +54,12 @@ const TopicPage = ({ data, location }) => {
         <Venue2026 />
       </div>
 
-      {/* <h2 className="text-center bold my-5">BFBH Cup 2025 Score</h2>
-      <MatchScore year="_2025" lastYearWinner="green" />
-      <div className="col-lg-6 offset-lg-3">
+      {/* <h2 className="text-center bold my-5">BFBH Cup 2026 Score</h2>
+      <MatchScore year="_2026" lastYearWinner="green" /> */}
+      {/* <div className="col-lg-6 offset-lg-3">
         <MatchSummary2025 />
-      </div> 
-      */}
+      </div>  */}
+     
       {/* <h2 className="text-center bold mt-5">BFBH Cup 2025</h2> */}
       {/* <Highlight2025 /> */}
       {/* <Highlight2024 /> */}
