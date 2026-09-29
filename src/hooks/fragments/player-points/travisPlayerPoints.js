@@ -10,6 +10,18 @@ export const TravisPlayerPoints = graphql`
       }
       handicap
       year {
+        _2026 {
+          handicap
+          id
+          team
+          points {
+            game
+            id
+            wins
+            ties
+            losses
+          }
+        }
         _2023 {
           handicap
           id

@@ -75,7 +75,7 @@
     "url": "git+https://github.com/gatsbyjs/gatsby-starter-blog.git"
   },
   "scripts": {
-    "prebuild": "npm run update:players",
+    "prebuild": "npm run update:players && npm run update:player-points",
     "build": "gatsby build",
     "develop": "gatsby develop",
     "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md}\"",
@@ -83,6 +83,7 @@
     "serve": "gatsby serve",
     "clean": "gatsby clean",
     "update:players": "node scripts/updatePlayers.mjs",
+    "update:player-points": "node scripts/updatePlayerPoints.mjs",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
   }
 }
