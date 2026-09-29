@@ -2715,7 +2715,7 @@
                   "name": "curtis",
                   "wins": 0,
                   "ties": 0,
-                  "losses": 4
+                  "losses": 3
                 },
                 {
                   "name": "derek",
@@ -2739,7 +2739,7 @@
                   "name": "travis",
                   "wins": 0,
                   "ties": 1,
-                  "losses": 0
+                  "losses": 1
                 }
               ]
             }
@@ -3692,7 +3692,7 @@
             {
               "id": "scramble",
               "game": "Scramble",
-              "wins": 2,
+              "wins": 1,
               "ties": 0,
               "losses": 0
             },
@@ -3764,7 +3764,7 @@
                 },
                 {
                   "name": "derek",
-                  "wins": 1,
+                  "wins": 0,
                   "ties": 0,
                   "losses": 2
                 },
@@ -3798,7 +3798,7 @@
                 },
                 {
                   "name": "craig",
-                  "wins": 4,
+                  "wins": 3,
                   "ties": 0,
                   "losses": 0
                 },
@@ -3822,7 +3822,7 @@
                 },
                 {
                   "name": "rj",
-                  "wins": 2,
+                  "wins": 1,
                   "ties": 0,
                   "losses": 1
                 }
@@ -5816,7 +5816,7 @@
                 },
                 {
                   "name": "curtis",
-                  "wins": 1,
+                  "wins": 0,
                   "ties": 0,
                   "losses": 2
                 },
@@ -5829,6 +5829,12 @@
                 {
                   "name": "matt",
                   "wins": 2,
+                  "ties": 0,
+                  "losses": 0
+                },
+                {
+                  "name": "travis",
+                  "wins": 1,
                   "ties": 0,
                   "losses": 0
                 }
@@ -11333,7 +11339,7 @@
                   "name": "curtis",
                   "wins": 1,
                   "ties": 0,
-                  "losses": 2
+                  "losses": 1
                 },
                 {
                   "name": "derek",
@@ -11357,7 +11363,7 @@
                   "name": "travis",
                   "wins": 1,
                   "ties": 0,
-                  "losses": 0
+                  "losses": 1
                 }
               ]
             }
@@ -12488,7 +12494,7 @@
             },
             "crookedTree": {
               "course": "Crooked Tree Golf Club",
-              "front": [99, 99, 99, 99, 99, 99, 99, 99, 99],
+              "front": [5, 4, 5, 5, 3, 4, 5, 3, 5],
               "frontHandicap": 999,
               "back": [6, 5, 6, 8, 5, 5, 6, 7, 5],
               "backHandicap": 999
@@ -12521,7 +12527,7 @@
             {
               "id": "scramble",
               "game": "Scramble",
-              "wins": 0,
+              "wins": 1,
               "ties": 0,
               "losses": 0
             },
@@ -12598,6 +12604,12 @@
                   "losses": 1
                 },
                 {
+                  "name": "derek",
+                  "wins": 1,
+                  "ties": 0,
+                  "losses": 0
+                },
+                {
                   "name": "gordon",
                   "wins": 1,
                   "ties": 0,
@@ -12621,7 +12633,7 @@
                 },
                 {
                   "name": "craig",
-                  "wins": 0,
+                  "wins": 1,
                   "ties": 1,
                   "losses": 0
                 },
@@ -12645,7 +12657,7 @@
                 },
                 {
                   "name": "rj",
-                  "wins": 0,
+                  "wins": 1,
                   "ties": 0,
                   "losses": 1
                 }

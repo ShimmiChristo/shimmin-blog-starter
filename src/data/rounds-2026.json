@@ -26,11 +26,11 @@
         }
       },
       {
-        "green": ["curtis", "derek"],
+        "green": ["travis", "derek"],
         "blue": ["rj", "craig"],
         "winner": "green",
         "scores": {
-          "curtis": [5, 4, 5, 5, 3, 4, 5, 3, 5],
+          "travis": [5, 4, 5, 5, 3, 4, 5, 3, 5],
           "derek": [5, 4, 5, 5, 3, 4, 5, 3, 5],
           "rj": [4, 4, 4, 4, 4, 5, 5, 3, 5],
           "craig": [4, 4, 4, 4, 4, 5, 5, 3, 5]
