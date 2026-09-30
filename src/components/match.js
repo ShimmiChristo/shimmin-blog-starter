@@ -556,22 +556,26 @@ function Match({
 
     // strokeplay matches are decided by total net score, not holes won, so we return null for hole winner and winning team
     if (gameplay.includes("strokeplay")) {
+      const formatStrokeplayScore = (score, par) => {
+        const difference = score - par
+        return difference === 0
+          ? "E"
+          : difference > 0
+          ? `+${difference}`
+          : `${difference}`
+      }
+      teamWins.score = `${formatStrokeplayScore(
+        totalNetTeamOneScore,
+        courseParP1
+      )}:${formatStrokeplayScore(totalNetTeamTwoScore, courseParP2)}`
       if (totalNetTeamOneScore < totalNetTeamTwoScore) {
         teamWins.winningTeam = "teamOne"
-        teamWins.score = "+" + (totalNetTeamOneScore - courseParP1)
         return teamWins
       } else if (totalNetTeamTwoScore < totalNetTeamOneScore) {
         teamWins.winningTeam = "teamTwo"
-        teamWins.score = "+" + (totalNetTeamTwoScore - courseParP2)
         return teamWins
       } else {
-        if (totalNetTeamOneScore === 0 || totalNetTeamTwoScore === 0) {
-          teamWins.winningTeam = "AS"
-          teamWins.score = ""
-          return teamWins
-        }
         teamWins.winningTeam = "AS"
-        teamWins.score = `AS (+${totalNetTeamOneScore - courseParP1})`
         return teamWins
       }
     } else {
