@@ -6,6 +6,7 @@ import styled from "styled-components"
 import { GatsbyImage, getImage } from "gatsby-plugin-image"
 import PlayerYearByYearTable from "../components/player-year-by-year-table"
 import RecordPartners from "../components/records-partners"
+import PlayerMatchStats from "../components/player-match-stats"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
@@ -144,6 +145,11 @@ const PlayerPostTemplate = ({ data, location, children }) => {
         <section>
           <div className="container my-3">
             <PlayerYearByYearTable playerData={playerData} />
+          </div>
+        </section>
+        <section>
+          <div className="container my-3">
+            <PlayerMatchStats playerName={playerName} />
           </div>
         </section>
         <section>

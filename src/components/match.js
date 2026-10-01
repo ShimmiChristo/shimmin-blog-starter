@@ -20,6 +20,8 @@ import { calcPops, calcScorecardMarks } from "../helpers/matchHelper"
 import shotTrackerData from "../data/shot-tracker.json"
 import ShotTrailsPanel from "./matches/shot-tracker/ShotTrailsPanel"
 import HandicapInfo from "./handicap-info"
+import MatchStats from "./match-stats"
+import { buildMatchStats } from "../helpers/matchStats"
 
 const CloseBtn = styled.span`
   display: block;
@@ -455,6 +457,34 @@ function Match({
       ].filter(player => player.name),
     },
   ]
+
+  const matchStatsRows = buildMatchStats({
+    year,
+    courseMatch,
+    holes,
+    gameplay,
+    courseHoles,
+    teams: [
+      {
+        team: "one",
+        players: [
+          { name: player1, playerObj: playerOne, playingHandicap: p1HCglobal },
+          {
+            name: player3,
+            playerObj: playerThree,
+            playingHandicap: p3HCglobal,
+          },
+        ],
+      },
+      {
+        team: "two",
+        players: [
+          { name: player2, playerObj: playerTwo, playingHandicap: p2HCglobal },
+          { name: player4, playerObj: playerFour, playingHandicap: p4HCglobal },
+        ],
+      },
+    ],
+  })
 
   const [sectionHeight, setSectionHeight] = useState("closed")
   const [showHandicapScore, setShowHandicapScore] = useState(false)
@@ -1169,6 +1199,7 @@ function Match({
         <div className="handicap-info m-2 mt-3">
           <HandicapInfo teams={playerHandicapInfo} />
         </div>
+        <MatchStats rows={matchStatsRows} />
         {holesWithShotData.length > 0 ? (
           <ShotTrailsPanel
             holes={holesWithShotData}

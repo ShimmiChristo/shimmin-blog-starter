@@ -8,6 +8,8 @@ import { calcPops } from "../helpers/matchHelper"
 import { CourseInfo } from "../hooks/get-course-info"
 import { PlayerInfoUpdate } from "../hooks/get-player-info-UPDATE"
 import { usePlayersPosts } from "../hooks/use-player-posts"
+import { buildMatchStats } from "../helpers/matchStats"
+import MatchStats from "./match-stats"
 import {
   calcPlayerScore,
   getPlayerHandicap,
@@ -623,6 +625,34 @@ function MatchCondensed({
     },
   ]
 
+  const matchStatsRows = buildMatchStats({
+    year,
+    courseMatch,
+    holes,
+    gameplay,
+    courseHoles,
+    teams: [
+      {
+        team: "one",
+        players: [
+          { name: player1, playerObj: playerOne, playingHandicap: p1HCglobal },
+          {
+            name: player3,
+            playerObj: playerThree,
+            playingHandicap: p3HCglobal,
+          },
+        ],
+      },
+      {
+        team: "two",
+        players: [
+          { name: player2, playerObj: playerTwo, playingHandicap: p2HCglobal },
+          { name: player4, playerObj: playerFour, playingHandicap: p4HCglobal },
+        ],
+      },
+    ],
+  })
+
   const isOneBallGameplay = ["scramble", "alternate", "pinehurst"].includes(
     gameplay
   )
@@ -968,6 +998,7 @@ function MatchCondensed({
           ))}
         </Table>
       </ScrollArea>
+      <MatchStats rows={matchStatsRows} />
     </Wrapper>
   )
 }
