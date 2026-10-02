@@ -10,7 +10,7 @@ import SEO from "../components/seo"
 import Venue2026 from "../components/venues/venue-2026"
 import HighlightCountdown from "../components/highlights/coutdown-hightlight"
 // import HighlightDay from "../components/highlights/day-hightlights-2023"
-// import MatchSummary2025 from "../components/matches/2025/summary"
+import MatchSummary2026 from "../components/matches/2026/summary"
 import Foreword2026 from "../components/matches/2026/foreword"
 import MatchPlayers2026 from "../components/matches/2026/players"
 
@@ -44,9 +44,9 @@ const TopicPage = ({ data, location }) => {
         courseUrl={courseUrl}
       /> */}
 
-      {/* <div className="container col-lg-8">
-        <Foreword2026 />
-      </div> */}
+      <div className="container col-lg-8">
+        <MatchSummary2026 />
+      </div>
       <div className="container col-lg-8 mt-5">
         <MatchPlayers2026 />
       </div>
@@ -59,7 +59,7 @@ const TopicPage = ({ data, location }) => {
       {/* <div className="col-lg-6 offset-lg-3">
         <MatchSummary2025 />
       </div>  */}
-     
+
       {/* <h2 className="text-center bold mt-5">BFBH Cup 2025</h2> */}
       {/* <Highlight2025 /> */}
       {/* <Highlight2024 /> */}

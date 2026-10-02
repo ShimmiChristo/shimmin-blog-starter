@@ -10150,9 +10150,9 @@
               "losses": 0
             },
             {
-              "id": "twoBestBall",
+              "id": "bestBall",
               "game": "Best Ball",
-              "wins": 0,
+              "wins": 1,
               "ties": 0,
               "losses": 0
             },
@@ -10166,7 +10166,7 @@
             {
               "id": "bestBall",
               "game": "Best Ball",
-              "wins": 2,
+              "wins": 1,
               "ties": 0,
               "losses": 0
             },

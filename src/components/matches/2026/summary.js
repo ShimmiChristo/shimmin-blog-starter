@@ -12,77 +12,95 @@ import {
   dylan,
   evan,
   gordon,
-  stephen,
+  travis,
   matt,
   rj,
 } from "../../../helpers/playerLinks"
 
-function MatchSummary2025() {
+function MatchSummary2026() {
   return (
     <>
       <div className="mb-3">
         <div className="container">
-          <h2>2025 BFBH Cup</h2>
+          <h2>2026 BFBH Cup</h2>
           <p>
-            The 2025 Boys From Back Home Cup was the 5th year of the annual golf
-            tradition. It was held for the third straight year at Boyne
+            The 2026 Boys From Back Home Cup was the 6h year of the annual golf
+            tradition. It was held for the fourth straight year at Boyne
             Highlands in Harbor Springs, MI. The cup is a 2-day event, 8 9-hole
-            matches, Ryder Cup style. To contiue the tradition, we played our
-            practice round the day before at Hidden River Golf and Casting Club.
-            Along with the practice round, we also added the par 3 course, Doon
-            Brae on Saturday night.
+            matches, Ryder Cup style. To contiue the tradition, the boys played
+            the practice round the day before at Hidden River Golf and Casting
+            Club.
           </p>
-          <p>
-            Historically, the team that wins the first match has won the cup.
-            We'll see what happens this year!
-          </p>
+
           <div className="mt-5 mb-4">
             <h3 data-name="day">Day 1</h3>
             <h4 className="h5 course-name">
-              Bay Harbor Golf Club - Friday, September 26, 2025
+              Crooked Tree Golf Club- Friday, September 25, 2026
             </h4>
           </div>
           <h5 className="font-weight-bold">
-            Round 1 & 2 - Best Ball & 2 Best Ball
+            Round 1 & 2 - Scramble and Best Ball Stroke Play
           </h5>
           <p>
-            The first day of the 2025 match was held at Bay Harbor Golf Club.
-            The weather was perfect, with partly clear skies and a light breeze.
-            Historically, who ever wins the first match has gone on to win the
-            cup. The match was a rematch from 2024's opening match, {matt} and{" "}
-            {chris} vs {dylan} and {dan}. Blue came out strong and won the first
-            hole, followed by a push on hole 2 and another win on hole 3. Then
-            Green got hot, winning the next 4 holes thanks to a 40 yard chip in
-            from {matt} on hole 7. After On hole 7, the match was dormie. Blue
-            needed to win 8 and 9 to halve the match. Blue won hole 8 thanks to
-            a nice birdie by {dylan}. However, on the final hole, {matt} had a
-            great tee shot and was putting for birdie. Green won hole 9 and the
-            match 2UP.
+            A big change, that will most likely stay for the remaining cups, was
+            the scramble format for the first round. Everyone is little tired, a
+            little sore from the night before, and it was a good way to ease
+            into the competition.
           </p>
           <p>
-            The second match at The Preserve was a tough matchup for Green. It
-            was {derek} and {curtis} vs {craig} and {rj}. Blue had a tough
-            opening hole with two triple bogeys. Green took advantage and won
-            the hole. After Blue tied the match on hole 3, Green took the next 2
-            holes with back to back net pars. Blue fought back and won hole 7.
-            Blue was 1 down going into the last hole. They needed to win the
-            hole to halve the match. Unfortunately for Blue, both Green players
-            were getting a stroke. In the end, all 4 players made bogey and
-            because of the pops, Green won the hole. Green won the match 2UP.
+            I said it last year and I'll say it again, every year in cup
+            history, whoever wins the first match has gone on to win the cup.
+            We'll see if it holds true this year.
           </p>
           <p>
-            The third match was {stephen} and {gordon} vs {evan} and {cam}. This
-            match was closer than everyone expected. Green started with back to
-            back wins to go 2UP after 2 holes. Blue fought back and won holes 4
-            and 5. Then 6 and 7 were back to Green. Blue won 8 and the third
-            match came down to the last hole. Green held strong and halved the
-            hole to win the match 1UP.
+            For the third straght year, the opening match was the same
+            groupings. It was {matt} and {chris} vs {dylan} and {dan}. The first
+            hole was a short par 4. Green hit both of their shots in the trash,
+            one long and one short in the woods. Green was able to get up and
+            down and Blue missed their birdies putts. A gift for Green early.
+            The next two holes were Blue's with a par, birdie. {matt} and{" "}
+            {chris} were down 2 after 3 holes; the same as last year. Green
+            responsed and won the next hole with a pop, even though they didn't
+            need it. Then on hole 6, {matt} made a cluthc Eagle putt to tie the
+            match. Hole 7 was a push. Then on hole 8, was the turning point in
+            the match. It was a par 3, both groups had a ball on the green.
+            Green had a 35/40 footer while Blue had a 15/20 footer. Right before
+            the putt, {dylan} said, "I've seen Green make these putts before".{" "}
+            {chris} went first and, unbelievably, made his putt to make birdie.
+            Blue missed their putts and Green took the lead on the hole. Hole 9
+            ended in a push, giving Green the win for the first match.
+          </p>
+
+          <p>
+            The seond match was {derek} and returning member {travis}. They
+            faced off against {craig} and {rj}. {rj} was Blue's 2 and {craig}{" "}
+            was their 3. Blue was the favorite going into the match. Blue jumped
+            out quick and won the first hole. Unfortunately for Blue, that would
+            be the only hole they would win in the match. Green won holes 4, 5
+            and 6. Green went on to win the match, 2&1.
+          </p>
+
+          <p>
+            In the third match, we actually had a fill-in player for Blue.{cam}{" "}
+            overslept and missed the opening 2 rounds. Max stayed with us the
+            night before and he was able to fill in last minute. A huge shout
+            out to Max for saving Blue! On the scorcard, it showed the final
+            match of round 1 was {gordon} and {curtis} vs {evan} and {cam}. This
+            match started off evenly, 4 of the first 5 holes were pushed. Blue
+            won hole 3 and were ahead until hole 6. Then it was back and forth.
+            Green won, then Blue won, then Green won. Going into the final hole,
+            the match was all square. Green ended with a par and Blue ended up
+            with a bogey, giving Green the win for the third match.
+          </p>
+
+          <p>
+            After the first three matches, Green had taken a commanding lead,
+            3-0. The first round was the same as last year. The difference was
+            Blue remained in high spirits and continued to fight hard in the
+            remaining matches.
           </p>
           <p>🟩🟦 Score Update. After 1 round, Green is up 3 to Blue 0.</p>
-          <p>
-            The group pairings stayed together on their way to the Links course,
-            where the groups played 2 best ball.
-          </p>
+          {/* 
           <p>
             On the back 9 on the Links, {dylan} and {dan} started off winning
             hole 1, thanks to {dan}'s net birdie. On the second hole, {matt} and{" "}
@@ -110,7 +128,7 @@ function MatchSummary2025() {
           </p>
           <p>
             The final match at Bay Harbor was, to put it simply, a blowout.{" "}
-            {gordon} and {stephen} beat {cam} and {evan} in 5 of the first 6
+            {gordon} and {travis} beat {cam} and {evan} in 5 of the first 6
             holes to win the match 5&3. Green takes another point. It would be
             one of the more lopsided victories of the weekend.
           </p>
@@ -121,7 +139,7 @@ function MatchSummary2025() {
           </p>
           <div className="mt-3 mb-4">
             <h4 className="h5 course-name mt-5">
-              Crooked Tree Golf Club - Friday, September 26, 2025
+              Bay Harbor Golf Club - Friday, September 26, 2026
             </h4>
           </div>
           <h5 className="font-weight-bold">
@@ -136,7 +154,7 @@ function MatchSummary2025() {
           </p>
           <p>
             The first match of alt shot was a nail biter. It was {matt} and{" "}
-            {stephen} vs {craig} and {dan}. 7 of the 9 holes were halved, with
+            {travis} vs {craig} and {dan}. 7 of the 9 holes were halved, with
             the match all square going into the 9th hole. In the end, they
             halved the last hole to halve the match. It was the weekend's first
             halved match.
@@ -164,7 +182,7 @@ function MatchSummary2025() {
             to push the match and give Blue a 1/2 point.
           </p>
           <p>
-            The next match was {dylan} and {cam} vs {stephen} and {chris}. Blue
+            The next match was {dylan} and {cam} vs {travis} and {chris}. Blue
             was the slight favorite at the start of the cup. With a record of
             4-1, {dylan} is the Cup's best scramble player. To litle surprise,
             Blue was able jump out to a 1 up lead after 4 holes. However, what
@@ -179,17 +197,19 @@ function MatchSummary2025() {
             total birdies. With the match all square going into the 9th hole,{" "}
             {dan} was able to make a clutch birdie putt to win the hole and the
             the match.
-          </p>
-          <p>
+          </p> */}
+          {/* <p>
             🟩🟦 Score Update.<span className="bold">After day 1</span>, Green
             team has a commanding lead of{" "}
             <span className="bold">8.5 to 3.5</span>. With 15 points left, Green
             needs just 5 points on day 2 to clinch the cup.
-          </p>
-          <div className="mt-5 course-name mb-4">
+          </p> */}
+
+          {/* DAY 2 */}
+          {/* <div className="mt-5 course-name mb-4">
             <h3>Day 2</h3>
             <h4 className="h5 course-name">
-              Boyne Highlands The Heather - Saturday, September 27, 2025
+              Boyne Highlands The Heather - Saturday, September 27, 2026
             </h4>
           </div>
           <h5 className="font-weight-bold">
@@ -216,7 +236,7 @@ function MatchSummary2025() {
             easily, 3&2.
           </p>
           <p>
-            In the 3rd match of the round, {rj} and {dan} vs {stephen} and{" "}
+            In the 3rd match of the round, {rj} and {dan} vs {travis} and{" "}
             {derek}. This match only had 3 holes won. Green won hole 3, but then
             Blue won holes 4 and 7. Blue was able to hang on and win 1UP.
           </p>
@@ -239,7 +259,7 @@ function MatchSummary2025() {
           </p>
           <p>
             The final match of the Heather was the featured match. {chris} and{" "}
-            {stephen} vs {cam} and {dan}. The match started with a push on hole
+            {travis} vs {cam} and {dan}. The match started with a push on hole
             1, but that would be the only halved hole of the match. Cam had his
             best 9 of the cup in this match. Luckily for him, it was recorded.
             Blue won hole 2 with par-birdie. Then Green won hole 3, Blue won
@@ -256,7 +276,7 @@ function MatchSummary2025() {
           </p>
           <div className="mt-3 mb-4">
             <h4 className="h5 course-name mt-5">
-              Boyne Highlands Arthur Hills - Saturday, September 27, 2025
+              Boyne Highlands Arthur Hills - Saturday, September 27, 2026
             </h4>
           </div>
           <h5 className="font-weight-bold">
@@ -269,10 +289,10 @@ function MatchSummary2025() {
             played a lot different playing the afternoon. Greens were very fast
             and fairways had more rollout. Also this year, there were some
             change ups in the pairings. {gordon} moved up to play with {matt}{" "}
-            and {stephen} played with {curtis}.
+            and {travis} played with {curtis}.
           </p>
           <p>
-            The fist match of Pinehurst was {stephen} and {curtis} vs {dan} and{" "}
+            The fist match of Pinehurst was {travis} and {curtis} vs {dan} and{" "}
             {evan}. {dan} and {evan} were paired together in Pinehurst for the
             second straight year. Their record before this match was 0-1-5. 1
             tie and 5 losses. Going into the match, Green was the heavy
@@ -313,9 +333,9 @@ function MatchSummary2025() {
             won every match on day 2 and {curtis} lost every match on day 2.
           </p>
           <p>
-            The second singles match was, fill-in, {stephen} vs {evan}. {evan}{" "}
+            The second singles match was, fill-in, {travis} vs {evan}. {evan}{" "}
             got 7 strokes in the matchup but it wasn't enough. After being down
-            1 through 7 holes, {stephen} was too much and won the last 2 holes
+            1 through 7 holes, {travis} was too much and won the last 2 holes
             to win 1UP. The swing happened in the match on hole 5. {evan}{" "}
             4-putted to push the hole.{" "}
             <span className="bold>">
@@ -353,7 +373,7 @@ function MatchSummary2025() {
             tied on hole 6, Blue was leading 5 of the 6 matches. {matt} tied
             hole 6 to tie the match AS. Then down the stretch, {matt} and{" "}
             {dylan} pushed the last 3 holes. The match was halved. Thanks to{" "}
-            {stephen}, by this group teed off on the last hole, Green had
+            {travis}, by this group teed off on the last hole, Green had
             already clinched the cup.
           </p>
           <p>
@@ -362,29 +382,25 @@ function MatchSummary2025() {
             team to win back to back years. Blue fought back hard on day 2, but
             it wasn't enough. Congrats to Green team on a hard fought victory!
           </p>
-          <p>See you back at Boyne Highlands in 2026 for the next BFBH Cup!</p>
+          <p>See you back at Boyne Highlands in 2026 for the next BFBH Cup!</p> */}
         </div>
 
         <div className="container mt-3">
           <p>
             <div className="block mb-1">
               <span className="bold">MVP: </span>
-              <Link to="/players/{cam}">{cam}</Link> (for Green)
-            </div>
-            <div className="block mb-1">
-              <span className="bold">Biggest Surprise: </span>
-              <Link to="/players/{cam}">{cam}</Link> (Score: 2-1-6),{" "}
+              <Link to="/players/{matt}">{matt}</Link> (Score: 7-1-0)
             </div>
             <div className="block mb-1">
               <span className="bold">Most Points Scored: </span>
-              <Link to="/players/{chris}">{chris}</Link> 6 (6-0-2)
+              <Link to="/players/{matt}">{matt}</Link> 7.5 (7-1-0)
             </div>
           </p>
         </div>
         <div className="container col-lg-8 my-3">
           <StaticImage
-            src="../../../images/group/2025-group.jpg"
-            alt="2025 bfbh cup players"
+            src="../../../images/group/2026-group.jpg"
+            alt="2026 bfbh cup players"
             loading="eager"
             placeholder="blurred"
             layout="fullWidth"
@@ -395,4 +411,4 @@ function MatchSummary2025() {
   )
 }
 
-export default MatchSummary2025
+export default MatchSummary2026
