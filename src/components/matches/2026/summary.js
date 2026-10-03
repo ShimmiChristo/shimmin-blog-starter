@@ -100,6 +100,58 @@ function MatchSummary2026() {
             remaining matches.
           </p>
           <p>🟩🟦 Score Update. After 1 round, Green is up 3 to Blue 0.</p>
+          <p>
+            The second round of matches was the back 9 at Crooked Tree Golf
+            Club. The gameplay was a new format in 2026. Traditionally we've
+            only played match play games, but this game was best ball
+            strokeplay. Since it's strokeplay, if both partner have a bad hole
+            on the same hole, it can really hurt the team's overall score
+            (foreshadowing).
+          </p>
+          <p>
+            The first of the round was {matt} and {travis} vs {craig} and {dan}.
+            A lot of pops were given on the back 9. With the help of the pops
+            are good play, Blue was able to go up 3 strokes through the first 3
+            holes. {matt} and {travis} fought back and the match managed to come
+            down to the last hole. The match came down to the last putt on the
+            last hole. {craig} found himself face-to-face with an easy 3/4 foot
+            putt for net birdie and to win the match (which was recorded). He
+            pushed it right and it lipped out, giving {matt} and {travis} the
+            tie for the match. Green and Blue both shot a net 40, while
+            individually,{matt} shot a 41 and the next closest was {craig} at
+            44.
+          </p>
+          <p>
+            The next match was {chris} and {gordon} vs {rj} and {cam}'s fill-in,
+            Max. The match was competitive and closely contested. {rj} played
+            some really good, consistent golf, and Max contributed on some holes
+            to help keep Blue ahead. Green had a couple blow up holes, which
+            unfortunately, were the same holes; {chris} and {gordon} had tripled
+            the same holes, twice in the match. Because of the strokeplay
+            format, it felt close, but in reality, Blue maintained the lead the
+            entire match and never lost a hole. Blue won net 39 to Green's 44.{" "}
+            {rj} individually shot a 43, while {chris} shot a 46.
+          </p>
+          <p>
+            The last match at Crooked Tree was between {derek} and {curtis} and{" "}
+            {dylan} and {evan}. This was a match of high and lows, there were
+            eagles, birdies, and double bogeys throughout.{derek} was able to
+            get a net eagle on hole 3 to give Green a score of 2 under through
+            3. Blue responded with {evan} making birdie on hole 3 and then{" "}
+            {dylan} making birdie on hole 4 to keep the match close. On the last
+            3 holes, the match started getting crazy. On hole 7, Green was even
+            while Blue made double to go +2. Then on hole 8, Green made double
+            to also go +2 and Blue made par. Going into hole 9, the match was
+            tied +2 for both teams and each player, besides {dyaln} was getting
+            2 pops. The match would come down to a putt off between {derek} and{" "}
+            {evan}. {derek} made net par to give Green a +2 but {evan} was able
+            to make his last putt for a net birdie and secure the win for
+            Blue.The final score was Blue +1 (37) to Green +2 (38).
+            Individually, {derek} shot a 41, {curtis} shot a 42, {dylan} shot a
+            41, and {evan} shot a 45.
+          </p>
+          <p>🟩🟦 Score Update. After 2 rounds, Green is up 3.5 to Blue 2.5.</p>
+
           {/* 
           <p>
             On the back 9 on the Links, {dylan} and {dan} started off winning

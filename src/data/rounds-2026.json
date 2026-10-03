@@ -142,23 +142,27 @@
         "scores": {
           "gordon": {
             "holes": [7, 3, 7, 5, 5, 4, 7, 6, 5],
-            "useForHandicapIndex": false,
-            "useBack": true
+            "useForHandicapIndex": true,
+            "useBack": true,
+            "backGross": 49
           },
           "chris": {
             "holes": [4, 4, 7, 5, 5, 4, 7, 5, 5],
-            "useForHandicapIndex": false,
-            "useBack": true
+            "useForHandicapIndex": true,
+            "useBack": true,
+            "backGross": 46
           },
           "rj": {
             "holes": [4, 3, 5, 6, 5, 4, 6, 5, 5],
-            "useForHandicapIndex": false,
-            "useBack": true
+            "useForHandicapIndex": true,
+            "useBack": true,
+            "backGross": 43
           },
           "cam": {
             "holes": [5, 5, 8, 5, 8, 3, 6, 9, 6],
-            "useForHandicapIndex": false,
-            "useBack": true
+            "useForHandicapIndex": true,
+            "useBack": true,
+            "backGross": 55
           }
         }
       },
@@ -169,19 +173,27 @@
         "scores": {
           "derek": {
             "holes": [7, 5, 4, 7, 6, 4, 5, 8, 6],
-            "useForHandicapIndex": false
+            "useForHandicapIndex": true,
+            "useBack": true,
+            "backGross": 52
           },
           "curtis": {
             "holes": [5, 4, 5, 8, 7, 4, 6, 8, 7],
-            "useForHandicapIndex": false
+            "useForHandicapIndex": true,
+            "useBack": true,
+            "backGross": 54
           },
           "dylan": {
             "holes": [4, 4, 6, 4, 5, 3, 6, 5, 4],
-            "useForHandicapIndex": false
+            "useForHandicapIndex": true,
+            "useBack": true,
+            "backGross": 41
           },
           "evan": {
             "holes": [7, 5, 5, 7, 7, 7, 7, 6, 5],
-            "useForHandicapIndex": false
+            "useForHandicapIndex": true,
+            "useBack": true,
+            "backGross": 56
           }
         }
       }

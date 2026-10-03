@@ -839,8 +839,9 @@
               "frontHandicap": 999,
               "back": [5, 5, 8, 5, 8, 3, 6, 9, 6],
               "backHandicap": 999,
-              "useForHandicapIndex": false,
-              "useBack": true
+              "useForHandicapIndex": true,
+              "useBack": true,
+              "backGross": 55
             },
             "bayHarborPreserveLinks": {
               "course": "Bay Harbor Preserve Links",
@@ -1633,8 +1634,8 @@
               "back": [4, 4, 7, 5, 5, 4, 7, 5, 5],
               "backHandicap": 999,
               "frontGross": 33,
-              "backGross": 999,
-              "useForHandicapIndex": false,
+              "backGross": 46,
+              "useForHandicapIndex": true,
               "use18Holes": false,
               "useFront": false,
               "useBack": true
@@ -3662,7 +3663,9 @@
               "frontHandicap": 999,
               "back": [5, 4, 5, 8, 7, 4, 6, 8, 7],
               "backHandicap": 999,
-              "useForHandicapIndex": false
+              "useForHandicapIndex": true,
+              "backGross": 54,
+              "useBack": true
             },
             "bayHarborPreserveLinks": {
               "course": "Bay Harbor Preserve Links",
@@ -5713,7 +5716,9 @@
               "frontHandicap": 999,
               "back": [7, 5, 4, 7, 6, 4, 5, 8, 6],
               "backHandicap": 999,
-              "useForHandicapIndex": false
+              "useForHandicapIndex": true,
+              "backGross": 52,
+              "useBack": true
             },
             "bayHarborPreserveLinks": {
               "course": "Bay Harbor Preserve Links",
@@ -6791,10 +6796,11 @@
               "back": [4, 4, 6, 4, 5, 3, 6, 5, 4],
               "backHandicap": 999,
               "frontGross": 34,
-              "backGross": 999,
-              "useForHandicapIndex": false,
+              "backGross": 41,
+              "useForHandicapIndex": true,
               "use18Holes": false,
-              "useFront": false
+              "useFront": false,
+              "useBack": true
             },
             "bayHarborPreserveLinks": {
               "course": "Bay Harbor Preserve Links",
@@ -7872,7 +7878,9 @@
               "frontHandicap": 999,
               "back": [7, 5, 5, 7, 7, 7, 7, 6, 5],
               "backHandicap": 999,
-              "useForHandicapIndex": false
+              "useForHandicapIndex": true,
+              "backGross": 56,
+              "useBack": true
             },
             "bayHarborPreserveLinks": {
               "course": "Bay Harbor Preserve Links",
@@ -8818,8 +8826,9 @@
               "frontHandicap": 999,
               "back": [7, 3, 7, 5, 5, 4, 7, 6, 5],
               "backHandicap": 999,
-              "useForHandicapIndex": false,
-              "useBack": true
+              "useForHandicapIndex": true,
+              "useBack": true,
+              "backGross": 49
             },
             "bayHarborPreserveLinks": {
               "course": "Bay Harbor Preserve Links",
@@ -10152,7 +10161,7 @@
             {
               "id": "bestBall",
               "game": "Best Ball",
-              "wins": 1,
+              "wins": 2,
               "ties": 0,
               "losses": 0
             },
@@ -10166,7 +10175,7 @@
             {
               "id": "bestBall",
               "game": "Best Ball",
-              "wins": 1,
+              "wins": 0,
               "ties": 0,
               "losses": 0
             },
@@ -11189,8 +11198,9 @@
               "frontHandicap": 999,
               "back": [4, 3, 5, 6, 5, 4, 6, 5, 5],
               "backHandicap": 999,
-              "useForHandicapIndex": false,
-              "useBack": true
+              "useForHandicapIndex": true,
+              "useBack": true,
+              "backGross": 43
             },
             "bayHarborPreserveLinks": {
               "course": "Bay Harbor Preserve Links",
