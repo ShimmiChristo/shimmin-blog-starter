@@ -169,6 +169,29 @@ function MatchSummary2026() {
             {derek} finished with a net 35 (47), {dylan} finished with a 43 and{" "}
             {cam} finished with a net 44 (56).
           </p>
+          <p>
+            The middle match was {gordon} and {curtis} vs {rj} and {craig}.
+            Green jumped out to a quick lead after hole 1 with a net par. Then
+            they took another win on hole 3, thanks to {curtis}'s net birdie.{" "}
+            {curtis} then wins hole 5 with a net bogey. On hole 6, Green is up 3
+            with 4 to play. With Blue's back against the wall, {craig} puts
+            together a par and wins the hole. Green was up 2 with 3 holes left.
+            Blue needed to win 2 of the 3 holes just to push the match. Holes 7
+            and 8 ended in a push. Green won 2&1.
+          </p>
+          <p>
+            The third and final match at the Preserve was {chris}, {travis} and{" "}
+            {dan}, {evan}. On hole 1, Blue jumped out to a quick 1UP lead,
+            thanks to {evan}'s net par. Hole 4 was a blow up hole for all 4 guys
+            -- 2 9s and 2 10s. Somehow that hole was pushed. The next hole was a
+            170 par 3. {travis} had a great tee shot (using his driver), he
+            stuck the green and had an easy 2 putt for par. The next hole,{" "}
+            {evan} had a great approach shot and won the hole with a bogey. On
+            hole 8, Green was 1 down and had to tie or win the hole to extend
+            the match. Again, {evan} had a great approach and made par to win
+            the hole and the match. Blue won 2&1.
+          </p>
+          <p>🟩🟦 Score Update. After 3 rounds, Green is up 5.5 to Blue 3.5.</p>
 
           {/* 
           <p>
