@@ -151,7 +151,17 @@ function MatchSummary2026() {
             41, and {evan} shot a 45.
           </p>
           <p>🟩🟦 Score Update. After 2 rounds, Green is up 3.5 to Blue 2.5.</p>
+          <p>
+            Round 3 was supposed to be best combined score, but there was a
+            change last minute to 1 best ball. This was to keep the pace of play
+            up and increase enjoyment. It did one of those for most players.
+            Round 3 and 4 were played at Bay Harbor Preserve/Links respectfully.
+          </p>
+          {/* <p>
+            The opening match was between {matt}, {derek} and {dylan}, {cam}.
+          </p> */}
 
+          
           {/* 
           <p>
             On the back 9 on the Links, {dylan} and {dan} started off winning
