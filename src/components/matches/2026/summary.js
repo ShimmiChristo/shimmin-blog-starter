@@ -157,11 +157,19 @@ function MatchSummary2026() {
             up and increase enjoyment. It did one of those for most players.
             Round 3 and 4 were played at Bay Harbor Preserve/Links respectfully.
           </p>
-          {/* <p>
+          <p>
             The opening match was between {matt}, {derek} and {dylan}, {cam}.
-          </p> */}
+            This was a wild match. {derek} and {cam} both got 12 pops, {matt}{" "}
+            got 1, there were 7 birdies collectively and the match ended 2&1.
+            The match started with {derek} making a net birdie on hole 1. That
+            was enough to give Green the lead until hole 4 where Blue took the
+            hole with a net bogey.The match remained tied until hole 7 where{" "}
+            {derek} made another net birdie. Then on the next hole, {matt} made
+            birdie to secure the win 2&1. {matt} finished with a net 38 (39),{" "}
+            {derek} finished with a net 35 (47), {dylan} finished with a 43 and{" "}
+            {cam} finished with a net 44 (56).
+          </p>
 
-          
           {/* 
           <p>
             On the back 9 on the Links, {dylan} and {dan} started off winning

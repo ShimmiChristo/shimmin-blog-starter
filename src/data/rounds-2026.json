@@ -217,7 +217,7 @@
             "useForHandicapIndex": false
           },
           "derek": {
-            "holes": [4, 6, 5, 8, 4, 7, 4, 5, 4],
+            "holes": [4, 6, 5, 8, 4, 7, 4, 5, 5],
             "useForHandicapIndex": false
           },
           "dylan": {
@@ -225,7 +225,7 @@
             "useForHandicapIndex": false
           },
           "cam": {
-            "holes": [5, 8, 5, 8, 4, 6, 8, 8, 4],
+            "holes": [5, 8, 5, 8, 4, 6, 8, 8, 5],
             "useForHandicapIndex": false
           }
         }

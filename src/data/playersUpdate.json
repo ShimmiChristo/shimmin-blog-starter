@@ -845,7 +845,7 @@
             },
             "bayHarborPreserveLinks": {
               "course": "Bay Harbor Preserve Links",
-              "front": [5, 8, 5, 8, 4, 6, 8, 8, 4],
+              "front": [5, 8, 5, 8, 4, 6, 8, 8, 5],
               "frontGross": 891,
               "frontHandicap": 999,
               "back": [5, 5, 5, 5, 5, 5, 5, 4, 14],
@@ -5722,7 +5722,7 @@
             },
             "bayHarborPreserveLinks": {
               "course": "Bay Harbor Preserve Links",
-              "front": [4, 6, 5, 8, 4, 7, 4, 5, 4],
+              "front": [4, 6, 5, 8, 4, 7, 4, 5, 5],
               "frontGross": 891,
               "frontHandicap": 999,
               "back": [7, 5, 4, 2, 5, 4, 5, 4, 5],
