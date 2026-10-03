@@ -142,7 +142,7 @@ function MatchSummary2026() {
             3 holes, the match started getting crazy. On hole 7, Green was even
             while Blue made double to go +2. Then on hole 8, Green made double
             to also go +2 and Blue made par. Going into hole 9, the match was
-            tied +2 for both teams and each player, besides {dyaln} was getting
+            tied +2 for both teams and each player, besides {dylan} was getting
             2 pops. The match would come down to a putt off between {derek} and{" "}
             {evan}. {derek} made net par to give Green a +2 but {evan} was able
             to make his last putt for a net birdie and secure the win for
