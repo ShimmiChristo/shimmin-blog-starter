@@ -190,17 +190,17 @@ const TopicPage = ({ data, location }) => {
             </p>
             <p>Handicap allowance is 80% of combined team handicap</p>
 
-            <h3 className="h4 mt-4 pt-1">Greensomes/Greensomes</h3>
+            <h3 className="h4 mt-4 pt-1">Greensomes/Alt shot shamble</h3>
             <p>
-              Bramble alternate/greensomes is a variation of Foursomes where
-              both partners play from the teeing area and one of the two tee
-              shots is selected. The partner whose tee shot was not selected
-              then plays the next stroke and each subsequent stroke is made in
-              alternating order until the ball is holed. For example, if the tee
-              shot of player A is selected at the first hole, Player B will play
-              the next stroke, then Player A plays and so on until the ball is
-              holed. Both players then play from the teeing area of the second
-              hole and the process is repeated.
+              Greensomes is a variation of Foursomes where both partners play
+              from the teeing area and one of the two tee shots is selected. The
+              partner whose tee shot was not selected then plays the next stroke
+              and each subsequent stroke is made in alternating order until the
+              ball is holed. For example, if the tee shot of player A is
+              selected at the first hole, Player B will play the next stroke,
+              then Player A plays and so on until the ball is holed. Both
+              players then play from the teeing area of the second hole and the
+              process is repeated.
             </p>
             <p>Handicap allowance is 60% low handicap + 40% high handicap</p>
 
