@@ -27,7 +27,7 @@ function MatchSummary2026() {
             The 2026 Boys From Back Home Cup was the 6h year of the annual golf
             tradition. It was held for the fourth straight year at Boyne
             Highlands in Harbor Springs, MI. The cup is a 2-day event, 8 9-hole
-            matches, Ryder Cup style. To contiue the tradition, the boys played
+            matches, Ryder Cup style. To continue the tradition, the boys played
             the practice round the day before at Hidden River Golf and Casting
             Club.
           </p>
@@ -53,15 +53,15 @@ function MatchSummary2026() {
             We'll see if it holds true this year.
           </p>
           <p>
-            For the third straght year, the opening match was the same
+            For the third straight year, the opening match was the same
             groupings. It was {matt} and {chris} vs {dylan} and {dan}. The first
             hole was a short par 4. Green hit both of their shots in the trash,
             one long and one short in the woods. Green was able to get up and
             down and Blue missed their birdies putts. A gift for Green early.
             The next two holes were Blue's with a par, birdie. {matt} and{" "}
             {chris} were down 2 after 3 holes; the same as last year. Green
-            responsed and won the next hole with a pop, even though they didn't
-            need it. Then on hole 6, {matt} made a cluthc Eagle putt to tie the
+            responded and won the next hole with a pop, even though they didn't
+            need it. Then on hole 6, {matt} made a clutch Eagle putt to tie the
             match. Hole 7 was a push. Then on hole 8, was the turning point in
             the match. It was a par 3, both groups had a ball on the green.
             Green had a 35/40 footer while Blue had a 15/20 footer. Right before
@@ -72,7 +72,7 @@ function MatchSummary2026() {
           </p>
 
           <p>
-            The seond match was {derek} and returning member {travis}. They
+            The second match was {derek} and returning member {travis}. They
             faced off against {craig} and {rj}. {rj} was Blue's 2 and {craig}{" "}
             was their 3. Blue was the favorite going into the match. Blue jumped
             out quick and won the first hole. Unfortunately for Blue, that would
@@ -84,7 +84,7 @@ function MatchSummary2026() {
             In the third match, we actually had a fill-in player for Blue.{cam}{" "}
             overslept and missed the opening 2 rounds. Max stayed with us the
             night before and he was able to fill in last minute. A huge shout
-            out to Max for saving Blue! On the scorcard, it showed the final
+            out to Max for saving Blue! On the scorecard, it showed the final
             match of round 1 was {gordon} and {curtis} vs {evan} and {cam}. This
             match started off evenly, 4 of the first 5 holes were pushed. Blue
             won hole 3 and were ahead until hole 6. Then it was back and forth.
@@ -103,9 +103,9 @@ function MatchSummary2026() {
           <p>
             The second round of matches was the back 9 at Crooked Tree Golf
             Club. The gameplay was a new format in 2026. Traditionally we've
-            only played match play games, but this game was best ball
-            strokeplay. Since it's strokeplay, if both partner have a bad hole
-            on the same hole, it can really hurt the team's overall score
+            only played match play games, but this game was best ball stroke
+            play. Since it's stroke play, if both partner have a bad hole on the
+            same hole, it can really hurt the team's overall score
             (foreshadowing).
           </p>
           <p>
@@ -127,7 +127,7 @@ function MatchSummary2026() {
             some really good, consistent golf, and Max contributed on some holes
             to help keep Blue ahead. Green had a couple blow up holes, which
             unfortunately, were the same holes; {chris} and {gordon} had tripled
-            the same holes, twice in the match. Because of the strokeplay
+            the same holes, twice in the match. Because of the stroke play
             format, it felt close, but in reality, Blue maintained the lead the
             entire match and never lost a hole. Blue won net 39 to Green's 44.{" "}
             {rj} individually shot a 43, while {chris} shot a 46.
@@ -193,38 +193,79 @@ function MatchSummary2026() {
           </p>
           <p>🟩🟦 Score Update. After 3 rounds, Green is up 5.5 to Blue 3.5.</p>
 
+          <p>
+            Round 4 was a game we brought back in place of alt shot --
+            greensomes. Greensomes is pick the team's best drive, then alt shot
+            from there, also known as, alt shot with select drive, scotch
+            foursomes, modified Pinehurst. It's more forgiving and gives
+            everyone a shot on the tee ball. We played greensomes once in 2021
+            and I think it will be here to stay for years to come.
+          </p>
+          <p>
+            Match 1 was between {matt} and {curtis} against {craig} and {cam}.
+            This match went down to the last hole and unfortunate circumstances.
+            The match was a fell fought battle, with both teams scoring back and
+            forth. Blue was able to tie the match on hole 8 with a bogey on the
+            long par 3. Then 9 happened. For context, hole 9 is a short par 5
+            with water in front of the tee and and water in front of the second
+            shot, along with water down the entire right side. If you don't get
+            over, you're dropping and hitting another. From what I can recall,
+            after Blue and Green got over on tee balls. {cam} hit the next shot,
+            but he pushed it right into the drink. {craig} drops and hits, and
+            doesn't get over the water. {cam} drops from the same spot, he hits
+            it in the trash again. Then {craig} gets up again, takes a drop and
+            hits in the trash again. {cam} drops one more, and hits it back in
+            the water. After hitting 5 balls into the water, Blue conceded the
+            hole and Green won the match.
+          </p>
+          <p>
+            Match 2 was between {gordon}, {travis} and {dylan}, {rj}. Despite
+            Blue being heavily favored in this match, it was a back and forth
+            battle, all but one hole was scored. Blue won the first hole, but
+            then Green won the second. Blue won the next two holes and probably
+            felt good about running away with it. But hole 5 was a push and then
+            Green won hole 6, the hardest HC hole on the Links. Blue got 7 back
+            and then Green won the long par 3, hole 8. Blue was 1 up going into
+            9. Green still had a change to push the match if they won hole 9.
+            Unfortunately for Green, Blue birdied the hole and won the match,
+            2UP. {dylan} and {rj} finished with a 38. Very nice Greensomes
+            gentlemen!
+          </p>
+          <p>
+            The last match of the day was a rollercoaster and nice comeback by
+            Green -- "keep shoveling". Luckily we got this match on camera.The
+            matchup was {chris} and {derek} vs {dan} and {evan}. Blue started
+            hot in this match, winning the first 3 holes, going par, par,
+            birdie. Then Green rebounded on the par 3, hole 4 with their own
+            birdie. Then Green won hole 5 with bogey. On hole 6, the teams had
+            the same score but Blue had a pop, so they took the hole. Blue was
+            up 2 with 3 to play. On hole 7, the match came down to the putting.
+            If Blue wins the hole, the match is over, 3&2, but if Green wins or
+            ties the hole, the match is extended. {derek} missed his putt for
+            birdie, then {evan} makes his for par. {dan} thinks the match is
+            over so he goes to shake hands, but {evan} quickly corrects him.{" "}
+            {chris} cleans it up for par and the match goes to hole 8, but Green
+            is pumped for new life. Blue is dormie with 2 holes left. Hole 8,
+            Green gets up there and hits a ball near the green and puts the
+            pressure on. Blue gets up there and duffs one tee ball and skies the
+            other. Blue doesn't hit on and Green wins the hole with a bogey.
+            Hole 9, Blue is up 1 with a pop. Green tees off first and hits 2
+            balls in the fairway over the water. Blue gets up and hits 2 balls
+            in the water... Now both teams are lying the same on the other side
+            of the water. Green gets up and hits safely over. Blue hits in the
+            water on the right side. Green hits a safe approach, wins the hole
+            and pushes the match. Although it was a half point, Green felt like
+            they just won a full point. A big boost to end the day.
+          </p>
+
+          <p>
+            🟩🟦 Score Update.<span className="bold">After day 1</span> Green is
+            up 2 with a score of <span className="bold">7 to 5</span>. With day
+            2 having 15 more points, it's still either team's cup.
+          </p>
+
           {/* 
-          <p>
-            On the back 9 on the Links, {dylan} and {dan} started off winning
-            hole 1, thanks to {dan}'s net birdie. On the second hole, {matt} and{" "}
-            {chris} took a point back, thanks to {chris}'s net birdie. Hole 3
-            was a wild one. {matt} and {chris} parred, {dan} birdied, and{" "}
-            {dylan} double bogeyed. With the pops, {chris} birdied and {dan} got
-            a net hole-in-one haha. The hole was pushed... crazy. Blue took hole
-            4 with both guys getting net birdies. Green came back and won hole 5
-            with another net birdie from {chris}. Then it was back to Blue,
-            winning hole 6 with two net pars. Then Green took over. They won
-            holes 7, 8 and 9 to the win the match 2UP.{" "}
-            <span className="bold">
-              A total of 9 net birdies, 1 net eagle, and 1 net hole-in-one were
-              recorded in the match!
-            </span>
-          </p>
-          <p>
-            The second match on the Links was {rj} and {craig} looking for their
-            revenge against {derek} and {curtis}. Green started hot again,
-            winning hole 1 by 4 strokes. Blue came back and won holes 2 and 3.
-            Green didn't quit, they won holes 5 and 6 to go up 1 with 3 holes to
-            play. This is where Blue got it going. They won holes 7 and 8 to go
-            1UP into hole 9. On the final hole, {rj} and {craig} both made gross
-            birdies to win the hole and match 2UP.
-          </p>
-          <p>
-            The final match at Bay Harbor was, to put it simply, a blowout.{" "}
-            {gordon} and {travis} beat {cam} and {evan} in 5 of the first 6
-            holes to win the match 5&3. Green takes another point. It would be
-            one of the more lopsided victories of the weekend.
-          </p>
+         
           <p>
             🟩🟦 Score Update. After 2 rounds, Green is up 5 to Blue 1. The
             score won't show it, but all the matches were tight. 5 of the 6
@@ -239,32 +280,7 @@ function MatchSummary2026() {
             Round 3 & 4 - Alt Shot & Scramble
           </h5>
           <p>
-            For the first year, we played our second round at Crooked Tree Golf
-            Club. The course was in great shape and provided a good challenge
-            for both teams. The weather was again perfect, with sunny skies and
-            a light breeze. The greens were fast and firm, making putting a
-            challenge.
-          </p>
-          <p>
-            The first match of alt shot was a nail biter. It was {matt} and{" "}
-            {travis} vs {craig} and {dan}. 7 of the 9 holes were halved, with
-            the match all square going into the 9th hole. In the end, they
-            halved the last hole to halve the match. It was the weekend's first
-            halved match.
-          </p>
-          <p>
-            The next match was {gordon} and {derek} vs {dylan} and {evan}. This
-            match was the opposite of the first match. Green and Blue were going
-            back and forth in scoring. 8 of the 9 holes were won by a team. It
-            came down to the 9th hole with Green up. Blue was able to get par to
-            win the hole and halve the match. Another tie on alt shot.
-          </p>
-          <p>
-            The final match of alt shot was {curtis} and {chris} vs {rj} and
-            {cam}. This match was one of a kind. It was all Green. They won the
-            first 5 holes to go 5 and 4. This is one of the few 5&4 matches in
-            cup history. Green won 5 over through 5 holes.
-          </p>
+         
           <p>🟩🟦 Score Update. After 3 rounds, Green is up 7 to Blue 2.</p>
           <p>
             The final matches of the day were the scramble matches. The first
@@ -277,7 +293,7 @@ function MatchSummary2026() {
           <p>
             The next match was {dylan} and {cam} vs {travis} and {chris}. Blue
             was the slight favorite at the start of the cup. With a record of
-            4-1, {dylan} is the Cup's best scramble player. To litle surprise,
+            4-1, {dylan} is the Cup's best scramble player. To little surprise,
             Blue was able jump out to a 1 up lead after 4 holes. However, what
             was a big surprise was {cam} falling in the woods on hole 4 and
             getting up on banging home a par putt to win the hole. In the end,{" "}
@@ -322,7 +338,7 @@ function MatchSummary2026() {
             of the cup.
           </p>
           <p>
-            The next match was the featuerd match, {gordon} and {chris} vs{" "}
+            The next match was the featured match, {gordon} and {chris} vs{" "}
             {craig} and {evan}. Blue was able to jump out to a 1UP lead on the
             first hole. Then Green got it going and won the next 4 holes.{" "}
             {gordon} was on fire and made clutch drives. Green was able to win
@@ -342,7 +358,7 @@ function MatchSummary2026() {
             was {gordon} and {curtis} vs {dylan} and {craig}. Blue was able to
             win the first hole, but then Green took the next 2 holes to go
             1UP.Blue got things going and won 3 of the next 4 holes to go 2UP
-            through 7 holes. Hole 8 was havled and Blue won the match, 2&1.
+            through 7 holes. Hole 8 was halved and Blue won the match, 2&1.
           </p>
           <p>
             THe next match {matt} and {derek} vs {rj} and {evan}. This match
@@ -350,17 +366,7 @@ function MatchSummary2026() {
             the first hole, but Blue fought back and the match was tied through
             6. Green won holes 7 and 8 to win the match 2&1.
           </p>
-          <p>
-            The final match of the Heather was the featured match. {chris} and{" "}
-            {travis} vs {cam} and {dan}. The match started with a push on hole
-            1, but that would be the only halved hole of the match. Cam had his
-            best 9 of the cup in this match. Luckily for him, it was recorded.
-            Blue won hole 2 with par-birdie. Then Green won hole 3, Blue won
-            hole 4, then Green won hole 5. This is where the back and fourth
-            ended. Blue won the next 3 holes wiht a combined 9 strokes ahead of
-            Green. With greate performances by {dan} and {cam}, Blue won the
-            match 3&1.
-          </p>
+         
           <p>
             🟩🟦 Score Update. After 6 rounds, Green is up 10.5 to Blue 7.5.
             Blue fought back and narrowed the gap. The score is at the 2023
@@ -419,55 +425,6 @@ function MatchSummary2026() {
             teams split Pinehurst, both getting 1.5 points. Going into the
             singles round, Green needs just 1.5 points to retain the cup. Blue
             needs 5 points (of the 6 available) to win the cup.
-          </p>
-          <p>
-            The first singles match was {curtis} vs {dan}. {dan} was on fire
-            today and {curtis} was struggling. {dan} was able to win 5&3. {dan}{" "}
-            won every match on day 2 and {curtis} lost every match on day 2.
-          </p>
-          <p>
-            The second singles match was, fill-in, {travis} vs {evan}. {evan}{" "}
-            got 7 strokes in the matchup but it wasn't enough. After being down
-            1 through 7 holes, {travis} was too much and won the last 2 holes
-            to win 1UP. The swing happened in the match on hole 5. {evan}{" "}
-            4-putted to push the hole.{" "}
-            <span className="bold>">
-              {" "}
-              Because {derek} won his match on hole 6, this was the cup
-              clinching point for Green on hole 9.
-            </span>
-            .
-          </p>
-          <p>
-            The third singles match part of the featured match, {derek} vs {cam}
-            . {derek} started off hot winning 4 straight holes. {cam} won the
-            next hole but {derek} was too much to handle and won easily 4&3.
-          </p>
-          <p>
-            The fourth singles match was {chris} vs {craig}. This was also a
-            featured match. This was a special match between the two. Up until
-            this point, both players were undefeated in singles play. This match
-            was a hard faught battle. {craig} had some great putts and shots and
-            he was able to hold off any comeback, parring the last 3 holes.{" "}
-            {craig} wins and stays undefeated in singles play, 1UP.
-          </p>
-          <p>
-            the fifth singles match was {gordon} vs {rj}. This was the first
-            time the two faced each other in singles play since 2022. {rj}{" "}
-            started strong winning the first 3 holes. {gordon} fought back and
-            won holes 5 and 6. The match came down to the last hole. {rj}{" "}
-            birdies the last hole and won 2UP. {rj} stays undefeated in singles
-            againts {gordon}.
-          </p>
-          <p>
-            The final singles match was {matt} vs {dylan}. This match had huge
-            implications on the cup. Green only needed 1.5 points in the singles
-            matches. The first 5 holes were scored holes. When this group was
-            tied on hole 6, Blue was leading 5 of the 6 matches. {matt} tied
-            hole 6 to tie the match AS. Then down the stretch, {matt} and{" "}
-            {dylan} pushed the last 3 holes. The match was halved. Thanks to{" "}
-            {travis}, by this group teed off on the last hole, Green had
-            already clinched the cup.
           </p>
           <p>
             🟩🟦 Score Update. Green wins! After 8 rounds, Green wins 14.5 to
