@@ -32,15 +32,15 @@ function MatchSummary2026() {
             Club.
           </p>
 
-          <div className="mt-5 mb-4">
+          <div className="mt-4 mb-3">
             <h3 data-name="day">Day 1</h3>
             <h4 className="h5 course-name">
               Crooked Tree Golf Club- Friday, September 25, 2026
             </h4>
+            <h5 className="font-weight-bold">
+              Round 1 & 2 - Scramble and Best Ball Stroke Play
+            </h5>
           </div>
-          <h5 className="font-weight-bold">
-            Round 1 & 2 - Scramble and Best Ball Stroke Play
-          </h5>
           <p>
             A big change, that will most likely stay for the remaining cups, was
             the scramble format for the first round. Everyone is little tired, a
@@ -151,6 +151,15 @@ function MatchSummary2026() {
             41, and {evan} shot a 45.
           </p>
           <p>🟩🟦 Score Update. After 2 rounds, Green is up 3.5 to Blue 2.5.</p>
+
+          <div className="mt-4 mb-3">
+            <h4 className="h5 course-name">
+              Bay Harbor Golf Club: Preserve/Links - Friday, September 25, 2026
+            </h4>
+            <h5 className="font-weight-bold">
+              Round 3 & 4 - Best Ball & Greensomes
+            </h5>
+          </div>
           <p>
             Round 3 was supposed to be best combined score, but there was a
             change last minute to 1 best ball. This was to keep the pace of play
@@ -259,10 +268,57 @@ function MatchSummary2026() {
           </p>
 
           <p>
-            🟩🟦 Score Update.<span className="bold">After day 1</span> Green is
-            up 2 with a score of <span className="bold">7 to 5</span>. With day
-            2 having 15 more points, it's still either team's cup.
+            🟩🟦 Score Update. <span className="bold">After day 1</span> Green
+            is up 2 with a score of <span className="bold">7 to 5</span>. With
+            day 2 having 15 more points, it's still either team's cup. The
+            biggest surprises of day 1 were {craig} going winless and {matt} not
+            losing a match.
           </p>
+
+          <div className="mt-4 mb-3">
+            <h3 data-name="day">Day 2</h3>
+            <h4 className="h5 course-name">
+              Boyne Highlands Arthur Hills - Saturday, September 26, 2026
+            </h4>
+            <h5 className="font-weight-bold">
+              Round 5 & 6 - Bramble & Best Ball
+            </h5>
+          </div>
+          <p>
+            Round 5 & 6 were played at the players course,{" "}
+            <a href="https://www.boynegolf.com/eleven-courses/arthur-hills">
+              Arthur Hills
+            </a>
+            . The first match was {matt} and {gordon} vs {craig} and {evan}.{" "}
+            {craig} was looking for his first win and {matt} was trying not to
+            get his first loss. Unfortunately for {craig}, {matt} and {gordon}{" "}
+            were lights out in the morning round. {matt} was 2 over through 8
+            and Green won 2&1.
+          </p>
+          <p>
+            Match 2 was a different story for Blue. Green started with 2 great
+            drives on hole 1 and the match seemed promising, but they pushed the
+            hole. Blue won holes 3, 5, and 6 to go dormie. Green was able to win
+            the par 3 but blue finished them off with a win on hole 8. Blue won
+            3&1.
+          </p>
+          <p>
+            Match 3 was one of the weirdest match I've been apart of at the cup.
+            It was {chris} and {travis} vs {dylan} and {cam}. A hole wasn't won
+            until hole 5. Blue won hole 5 with a par from 2 pops. Then the Blue
+            won hole 7 after a great up and down by {cam}. Green played good
+            golf but never won a hole. Blue took the full point 2&1.
+          </p>
+
+          {/* <div className="mt-4 mb-3">
+            <h4 className="h5 course-name">
+              Boyne Highlands Donald Ross - Saturday, September 26,
+              2026
+            </h4>
+            <h5 className="font-weight-bold">
+              Round 7 & 8 - Pinehurst & Singles
+            </h5>
+          </div> */}
 
           {/* 
          
