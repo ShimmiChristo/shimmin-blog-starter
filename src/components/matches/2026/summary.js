@@ -309,6 +309,8 @@ function MatchSummary2026() {
             won hole 7 after a great up and down by {cam}. Green played good
             golf but never won a hole. Blue took the full point 2&1.
           </p>
+          <p>🟩🟦 Score Update. After round 5, Blue is one point away with a score of Green 8 to Blue 7.</p>
+
 
           {/* <div className="mt-4 mb-3">
             <h4 className="h5 course-name">
