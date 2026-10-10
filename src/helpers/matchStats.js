@@ -69,8 +69,9 @@ function buildMatchStats({
   teams,
 }) {
   const isOneBall = ONE_BALL_GAMEPLAY.includes(gameplay)
+  const isCombined = ["two-ball", "two-ball-bramble"].includes(gameplay)
 
-  return teams.flatMap(({ team, players }) => {
+  const teamData = teams.map(({ team, players }) => {
     const activePlayers = players.filter(p => p.name && p.playerObj)
     const entries = isOneBall
       ? activePlayers.slice(0, 1).map(p => ({
@@ -79,21 +80,84 @@ function buildMatchStats({
         }))
       : activePlayers.map(p => ({ ...p, label: p.name }))
 
-    return entries
-      .map(({ label, playerObj, playingHandicap }) => ({
-        label,
-        team,
+    return {
+      team,
+      holesWon: 0,
+      holesHalved: 0,
+      holesLost: 0,
+      entries: entries.map(({ label, playerObj, playingHandicap }) => {
+        const scores = playerObj?.year?.[year]?.scores?.[courseMatch]?.[holes]
+        return {
+          label,
+          team,
+          holesWon: 0,
+          scores,
+          playingHandicap,
+          netScores: courseHoles.map((hole, index) => {
+            const score = Number(scores?.[index])
+            return Number.isFinite(score) && score > 0 && score <= 20
+              ? calcPlayerScore(score, playingHandicap, hole.handicap, holes)
+              : null
+          }),
+        }
+      }),
+    }
+  })
+
+  let matchEnd = courseHoles.length
+  courseHoles.forEach((hole, index) => {
+    if (index >= matchEnd) return
+    const scores = teamData.map(({ entries }) => {
+      const validScores = entries
+        .map(entry => entry.netScores[index])
+        .filter(score => score !== null)
+      if (!validScores.length) return null
+      if (isCombined && validScores.length !== entries.length) return null
+      return isCombined
+        ? validScores.reduce((total, score) => total + score, 0)
+        : Math.min(...validScores)
+    })
+    if (scores.length !== 2 || scores.some(score => score === null)) return
+
+    teamData.forEach((team, teamIndex) => {
+      const score = scores[teamIndex]
+      const opponentScore = scores[1 - teamIndex]
+      if (score === opponentScore) {
+        team.holesHalved++
+      } else if (score > opponentScore) {
+        team.holesLost++
+      } else {
+        team.holesWon++
+        team.entries.forEach(entry => {
+          if (isCombined || entry.netScores[index] === score) entry.holesWon++
+        })
+      }
+    })
+    const lead = Math.abs(teamData[0].holesWon - teamData[1].holesWon)
+    const remaining = courseHoles.length - index - 1
+    if (!gameplay.includes("strokeplay") && lead > remaining) {
+      matchEnd = index + 1
+    }
+  })
+
+  return teamData.flatMap(team =>
+    team.entries
+      .map(({ netScores, scores, playingHandicap, ...entry }) => ({
+        ...entry,
         ...calcHoleStats(
-          playerObj?.year?.[`${year}`]?.scores?.[`${courseMatch}`]?.[
-            `${holes}`
-          ],
-          courseHoles,
+          scores,
+          courseHoles.slice(0, matchEnd),
           playingHandicap,
           holes
         ),
+        teamResults: {
+          holesWon: team.holesWon,
+          holesHalved: team.holesHalved,
+          holesLost: team.holesLost,
+        },
       }))
-      .filter(row => row.holesPlayed > 0)
-  })
+      .filter(entry => entry.holesPlayed > 0)
+  )
 }
 
 function getMatchCourse(course, match) {

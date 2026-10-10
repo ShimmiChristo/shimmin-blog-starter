@@ -24,8 +24,15 @@ const Scroll = styled.div`
 const Table = styled.table`
   border-collapse: collapse;
   width: 100%;
+  margin: 0;
   text-align: center;
   border: 1px solid #d9d9d9;
+
+  caption {
+    caption-side: top;
+    padding: 0.25rem 0;
+    text-align: left;
+  }
 
   th,
   td {
@@ -60,15 +67,54 @@ const PlayerCell = styled.td`
 
 function MatchStats({ rows, title = "Match stats", open = false }) {
   if (!rows.length) return null
+  const teamRows = rows.filter(
+    (row, index) =>
+      row.teamResults && rows.findIndex(other => other.team === row.team) === index
+  )
 
   return (
     <Details open={open}>
       <summary>{title}</summary>
+      {teamRows.length > 0 && (
+        <Scroll>
+          <Table>
+            <caption>Team hole results (net)</caption>
+            <thead>
+              <tr>
+                <th scope="col">Team</th>
+                <th scope="col">Won</th>
+                <th scope="col">Halved</th>
+                <th scope="col">Lost</th>
+              </tr>
+            </thead>
+            <tbody>
+              {teamRows.map(row => (
+                <tr key={row.team}>
+                  <PlayerCell $team={row.team}>
+                    {row.team === "one" ? "Green" : "Blue"}
+                  </PlayerCell>
+                  <td>{row.teamResults.holesWon}</td>
+                  <td>{row.teamResults.holesHalved}</td>
+                  <td>{row.teamResults.holesLost}</td>
+                </tr>
+              ))}
+            </tbody>
+          </Table>
+        </Scroll>
+      )}
       <Scroll>
         <Table>
           <thead>
             <tr>
-              <th rowSpan={2}></th>
+              <th rowSpan={2} scope="col">Player / Team</th>
+              <th rowSpan={2} scope="col">Played</th>
+              <th
+                rowSpan={2}
+                scope="col"
+                title="Winning team holes using this player's net score. Tied best balls credit both partners; combined scores credit both. Shared-ball formats credit the team."
+              >
+                Win contributions
+              </th>
               {STAT_CATEGORIES.map(({ key, label }) => (
                 <th key={key} colSpan={2}>
                   {label}
@@ -88,6 +134,8 @@ function MatchStats({ rows, title = "Match stats", open = false }) {
             {rows.map(row => (
               <tr key={`${row.team}-${row.label}`}>
                 <PlayerCell $team={row.team}>{row.label}</PlayerCell>
+                <td>{row.holesPlayed}</td>
+                <td>{row.holesWon}</td>
                 {STAT_CATEGORIES.map(({ key }) => (
                   <React.Fragment key={key}>
                     <td>{row.gross[key]}</td>
@@ -121,6 +169,13 @@ MatchStats.propTypes = {
       team: PropTypes.oneOf(["one", "two"]),
       gross: countsShape.isRequired,
       net: countsShape.isRequired,
+      holesPlayed: PropTypes.number,
+      holesWon: PropTypes.number,
+      teamResults: PropTypes.shape({
+        holesWon: PropTypes.number.isRequired,
+        holesHalved: PropTypes.number.isRequired,
+        holesLost: PropTypes.number.isRequired,
+      }),
     })
   ).isRequired,
 }

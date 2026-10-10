@@ -309,8 +309,32 @@ function MatchSummary2026() {
             won hole 7 after a great up and down by {cam}. Green played good
             golf but never won a hole. Blue took the full point 2&1.
           </p>
-          <p>🟩🟦 Score Update. After round 5, Blue is one point away with a score of Green 8 to Blue 7.</p>
+          <p>
+            🟩🟦 Score Update. After round 5, Blue is one point away with a
+            score of Green 8 to Blue 7.
+          </p>
 
+          <p>
+            Round 6 was another best ball matchup. The opening match was {matt}{" "}
+            and {derek} vs {rj} and {evan}. This was a battle until the last
+            hole. {matt} was out of the hole and {rj} and {evan} were sitting
+            100 yards away a stroke ahead of {derek}. Blue choked and both
+            players made net bogey. {derek} had a good approach and pushed the
+            hole. Green hung on and won the match 1UP.
+          </p>
+          <p>
+            The second match was the featured match. {chris} and {curtis} vs{" "}
+            {dylan} and {craig}. Like the first match, this one also went down
+            to the last hole. Blue had two bad tee balls and Green finished with
+            two pars, for net birdies. Green won 2UP.
+          </p>
+          <p>
+            The third match was {gordon} and {travis} vs {dan} and {cam}. The
+            match highly favored Green because The U of M football game was on
+            and {cam} was more focused on that than the task at hand. Green won
+            the first 3 holes. Blue won 2 of the next 4 but it was too late.
+            Green won the match ended 3&2.
+          </p>
 
           {/* <div className="mt-4 mb-3">
             <h4 className="h5 course-name">
