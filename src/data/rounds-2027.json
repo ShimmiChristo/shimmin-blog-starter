@@ -1,0 +1,114 @@
+[
+  {
+    "round": 1,
+    "date": "2027-09-24",
+    "teeTime": {
+      "start": "8:00am",
+      "end": "8:20am"
+    },
+    "gameplay": null,
+    "gameplayName": null,
+    "course": "treetopsSignature",
+    "courseName": "Treetops Signature",
+    "holes": "front",
+    "matches": []
+  },
+  {
+    "round": 2,
+    "date": "2027-09-24",
+    "teeTime": {
+      "start": "8:00am",
+      "end": "8:20am"
+    },
+    "gameplay": null,
+    "gameplayName": null,
+    "course": "treetopsSignature",
+    "courseName": "Treetops Signature",
+    "holes": "back",
+    "matches": []
+  },
+  {
+    "round": 3,
+    "date": "2027-09-24",
+    "teeTime": {
+      "start": "2:00pm",
+      "end": "2:20pm"
+    },
+    "gameplay": null,
+    "gameplayName": null,
+    "course": "treetopsTradition",
+    "courseName": "Treetops Tradition",
+    "holes": "front",
+    "matches": []
+  },
+  {
+    "round": 4,
+    "date": "2027-09-24",
+    "teeTime": {
+      "start": "2:00pm",
+      "end": "2:20pm"
+    },
+    "gameplay": null,
+    "gameplayName": null,
+    "course": "treetopsTradition",
+    "courseName": "Treetops Tradition",
+    "holes": "back",
+    "matches": []
+  },
+  {
+    "round": 5,
+    "date": "2027-09-25",
+    "teeTime": {
+      "start": "8:00am",
+      "end": "8:20am"
+    },
+    "gameplay": null,
+    "gameplayName": null,
+    "course": "treetopsMasterpiece",
+    "courseName": "Treetops Masterpiece",
+    "holes": "front",
+    "matches": []
+  },
+  {
+    "round": 6,
+    "date": "2027-09-25",
+    "teeTime": {
+      "start": "8:00am",
+      "end": "8:20am"
+    },
+    "gameplay": null,
+    "gameplayName": null,
+    "course": "treetopsMasterpiece",
+    "courseName": "Treetops Masterpiece",
+    "holes": "back",
+    "matches": []
+  },
+  {
+    "round": 7,
+    "date": "2027-09-25",
+    "teeTime": {
+      "start": "2:00pm",
+      "end": "2:20pm"
+    },
+    "gameplay": null,
+    "gameplayName": null,
+    "course": "treetopsPremier",
+    "courseName": "Treetops Premier",
+    "holes": "front",
+    "matches": []
+  },
+  {
+    "round": 8,
+    "date": "2027-09-25",
+    "teeTime": {
+      "start": "2:00pm",
+      "end": "2:20pm"
+    },
+    "gameplay": null,
+    "gameplayName": null,
+    "course": "treetopsPremier",
+    "courseName": "Treetops Premier",
+    "holes": "back",
+    "matches": []
+  }
+]
