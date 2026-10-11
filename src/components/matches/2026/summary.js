@@ -473,8 +473,9 @@ function MatchSummary2026() {
             Point was a good time, the hottub was hot again, driving a van up
             together, the amazing weather, Max filling in last minute, the
             yellow house, Hidden River, Boyne, everyone winning at least a
-            couple matches, the comptetive golf, the vibes, the original group
-            together for the first time. 2026 was a great year!
+            couple matches, best ball strokeplay, greensomes, the comptetive
+            golf, the vibes, the original group together for the first time.
+            2026 was a great year!
           </p>
           <p>See you all back in 2027... at Treetops Resort!</p>
         </div>

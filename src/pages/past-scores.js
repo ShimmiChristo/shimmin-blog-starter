@@ -41,6 +41,12 @@ import {
   MatchPlayers2025,
 } from "../components/matches/2025"
 
+import {
+  MatchSummary2026,
+  MatchVenue2026,
+  MatchPlayers2026,
+} from "../components/matches/2026"
+
 import "../styles/match.css"
 
 const PastScoresPage = ({ location }) => {
@@ -76,10 +82,10 @@ const PastScoresPage = ({ location }) => {
           date="Sep, 25 - Sep, 26"
           winner="green"
           location="Bay Harbor GC, Crooked Tree GC, Boyne Highlands"
-          // score={MatchScore({ year: "_2026" })}
-          // summary={MatchSummary2026()}
-          // venue={MatchVenue2026()}
-          // players={MatchPlayers2026()}
+          score={MatchScore({ year: "_2026" })}
+          summary={MatchSummary2026()}
+          venue={MatchVenue2026()}
+          players={MatchPlayers2026()}
         />
         <PastScoresComponent
           year="2025"

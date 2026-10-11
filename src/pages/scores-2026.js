@@ -8,8 +8,8 @@ import { CourseInfo } from "../hooks/get-course-info"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import LandingPageHeader from "../components/landing-page-header"
-// import Match from "../components/match"
-import MatchCondensed from "../components/match-condensed"
+import Match from "../components/match"
+// import MatchCondensed from "../components/match-condensed"
 import MatchScore from "../components/match-score"
 import MatchNav from "../components/match-nav"
 import "../styles/match.css"
@@ -47,11 +47,11 @@ const TopicPage = ({ location }) => {
   const p2 = "rj"
   const p3 = "dan"
   const p4 = "craig"
-  const p5 = "cam"
-  const p6 = "evan"
+  const p5 = "evan"
+  const p6 = "cam"
   const p7 = "matt"
-  const p8 = "gordon"
-  const p9 = "chris"
+  const p8 = "chris"
+  const p9 = "gordon"
   const p10 = "derek"
   const p11 = "travis"
   const p12 = "curtis"
@@ -59,7 +59,7 @@ const TopicPage = ({ location }) => {
   const playerTees = {
     p1: "purple",
     p2: "purple",
-    p3: "orange",
+    p3: "purple",
     p4: "orange",
     p5: "orange",
     p6: "orange",
@@ -70,7 +70,7 @@ const TopicPage = ({ location }) => {
     p11: "orange",
     p12: "orange",
   }
-  const backTeesPlayers = ["dylan", "rj", "matt", "chris", "gordon"]
+  const backTeesPlayers = ["dylan", "rj", "matt", "chris", "gordon", "dan"]
 
   const backTeesGuys = player => {
     if (backTeesPlayers.includes(player)) {
@@ -101,10 +101,10 @@ const TopicPage = ({ location }) => {
       matchName: "Scramble",
       gameplay: "scramble",
       courseMatch: "crookedTree",
-      matchTees: ["brown", "purple"],
+      matchTees: ["purple", "orange"],
       players: {
         blue: [1, 3, 2, 4, 5, 6],
-        green: [7, 9, 10, 11, 8, 12],
+        green: [7, 8, 10, 11, 9, 12],
       },
     },
     {
@@ -112,27 +112,27 @@ const TopicPage = ({ location }) => {
       matchName: "Best Ball Strokeplay",
       gameplay: "one-ball-strokeplay",
       courseMatch: "crookedTree",
-      matchTees: ["brown", "purple"],
+      matchTees: ["purple", "orange"],
       players: {
         blue: [3, 4, 2, 6, 1, 5],
         green: [7, 11, 8, 9, 10, 12],
       },
     },
     {
-      matchId: " - 2 Ball Combined Score. 90% HC",
-      matchName: `2 Best Ball`,
-      gameplay: "two-ball",
+      matchId: " - Best Ball. 90% HC",
+      matchName: "Best Ball",
+      gameplay: "one-ball",
       courseMatch: "bayHarborPreserveLinks",
-      matchTees: ["brown", "purple"],
+      matchTees: ["brown", "orange"],
       players: {
         blue: [1, 6, 2, 4, 3, 5],
         green: [7, 10, 9, 12, 8, 11],
       },
     },
     {
-      matchId: " - Alternate. 50% HC",
-      matchName: "Alternate",
-      gameplay: "alternate",
+      matchId: " - Greensomes. 60% low HC + 40% high HC",
+      matchName: "Greensomes",
+      gameplay: "greensomes",
       courseMatch: "bayHarborPreserveLinks",
       matchTees: ["purple", "orange"],
       players: {
@@ -181,12 +181,12 @@ const TopicPage = ({ location }) => {
       courseMatch: "boyneHighlandsDonaldRoss",
       matchTees: ["purple", "orange"],
       players: {
-        blue: [1, 2, 3, 4, 5, 6],
-        green: [7, 8, 9, 10, 11, 12],
+        blue: [1, 2, 4, 3, 5, 6],
+        green: [7, 8, 9, 10, 12, 11],
       },
     },
   ]
-  
+
   const day1 = {
     round1: {
       times: ["8:00 AM", "8:10 AM", "8:20 AM"],
@@ -290,7 +290,7 @@ const TopicPage = ({ location }) => {
       <MatchNav location={location} titles={matchNavData} />
 
       <MatchScore year="_2026" lastYearWinner="green" location={location} />
-      
+
       <MatchNavSection
         data-visible={location.hash === "#round-1" ? "true" : "false"}
         data-link-id="round-1"
@@ -301,7 +301,7 @@ const TopicPage = ({ location }) => {
           </span>
           <a href={day1.round1.courseLink}>{day1.round1.courseName}</a>
         </div>
-        <MatchCondensed
+        <Match
           matchId={`1 ${matchesArr[0].matchId}`}
           year={cupYear}
           courseMatch={matchesArr[0].courseMatch}
@@ -340,7 +340,7 @@ const TopicPage = ({ location }) => {
           matchPreview={true}
           matchTime={day1.round1.times[0]}
         />
-        <MatchCondensed
+        <Match
           matchId={`2 ${matchesArr[0].matchId}`}
           year={cupYear}
           courseMatch={matchesArr[0].courseMatch}
@@ -379,7 +379,7 @@ const TopicPage = ({ location }) => {
           matchPreview={true}
           matchTime={day1.round1.times[1]}
         />
-        <MatchCondensed
+        <Match
           matchId={`3 ${matchesArr[0].matchId}`}
           year={cupYear}
           courseMatch={matchesArr[0].courseMatch}
@@ -430,7 +430,7 @@ const TopicPage = ({ location }) => {
           </span>
           <a href={day1.round2.courseLink}>{day1.round2.courseName}</a>
         </div>
-        <MatchCondensed
+        <Match
           matchId={`4 ${matchesArr[1].matchId}`}
           year={cupYear}
           courseMatch={matchesArr[1].courseMatch}
@@ -453,7 +453,7 @@ const TopicPage = ({ location }) => {
           matchPreview={true}
           matchTime={day1.round2.times[0]}
         />
-        <MatchCondensed
+        <Match
           matchId={`5 ${matchesArr[1].matchId}`}
           year={cupYear}
           courseMatch={matchesArr[1].courseMatch}
@@ -476,7 +476,7 @@ const TopicPage = ({ location }) => {
           matchPreview={true}
           matchTime={day1.round2.times[1]}
         />
-        <MatchCondensed
+        <Match
           matchId={`6 ${matchesArr[1].matchId}`}
           year={cupYear}
           courseMatch={matchesArr[1].courseMatch}
@@ -511,7 +511,7 @@ const TopicPage = ({ location }) => {
           </span>
           <a href={day1.round3.courseLink}>{day1.round3.courseName}</a>
         </div>
-        <MatchCondensed
+        <Match
           matchId={`7 ${matchesArr[2].matchId}`}
           year={cupYear}
           courseMatch={matchesArr[2].courseMatch}
@@ -550,7 +550,7 @@ const TopicPage = ({ location }) => {
           matchPreview={true}
           matchTime={day1.round3.times[0]}
         />
-        <MatchCondensed
+        <Match
           matchId={`8 ${matchesArr[2].matchId}`}
           year={cupYear}
           courseMatch={matchesArr[2].courseMatch}
@@ -589,7 +589,7 @@ const TopicPage = ({ location }) => {
           matchPreview={true}
           matchTime={day1.round3.times[1]}
         />
-        <MatchCondensed
+        <Match
           matchId={`9 ${matchesArr[2].matchId}`}
           year={cupYear}
           courseMatch={matchesArr[2].courseMatch}
@@ -640,7 +640,7 @@ const TopicPage = ({ location }) => {
           </span>
           <a href={day1.round4.courseLink}>{day1.round4.courseName}</a>
         </div>
-        <MatchCondensed
+        <Match
           matchId={`10 ${matchesArr[3].matchId}`}
           year={cupYear}
           courseMatch={matchesArr[3].courseMatch}
@@ -663,7 +663,7 @@ const TopicPage = ({ location }) => {
           matchPreview={true}
           matchTime={day1.round4.times[0]}
         />
-        <MatchCondensed
+        <Match
           matchId={`11 ${matchesArr[3].matchId}`}
           year={cupYear}
           courseMatch={matchesArr[3].courseMatch}
@@ -686,7 +686,7 @@ const TopicPage = ({ location }) => {
           matchPreview={true}
           matchTime={day1.round4.times[1]}
         />
-        <MatchCondensed
+        <Match
           matchId={`12 ${matchesArr[3].matchId}`}
           year={cupYear}
           courseMatch={matchesArr[3].courseMatch}
@@ -722,7 +722,7 @@ const TopicPage = ({ location }) => {
 
           <a href={day2.round1.courseLink}>{day2.round1.courseName}</a>
         </div>
-        <MatchCondensed
+        <Match
           matchId={`13 ${matchesArr[4].matchId}`}
           year={cupYear}
           courseMatch={matchesArr[4].courseMatch}
@@ -745,7 +745,7 @@ const TopicPage = ({ location }) => {
           matchPreview={true}
           matchTime={day2.round1.times[0]}
         />
-        <MatchCondensed
+        <Match
           matchId={`14 ${matchesArr[4].matchId}`}
           year={cupYear}
           courseMatch={matchesArr[4].courseMatch}
@@ -768,7 +768,7 @@ const TopicPage = ({ location }) => {
           matchPreview={true}
           matchTime={day2.round1.times[1]}
         />
-        <MatchCondensed
+        <Match
           matchId={`15 ${matchesArr[4].matchId}`}
           year={cupYear}
           courseMatch={matchesArr[4].courseMatch}
@@ -803,7 +803,7 @@ const TopicPage = ({ location }) => {
           </span>
           <a href={day2.round2.courseLink}>{day2.round2.courseName}</a>
         </div>
-        <MatchCondensed
+        <Match
           matchId={`16 ${matchesArr[5].matchId}`}
           year={cupYear}
           courseMatch={matchesArr[5].courseMatch}
@@ -826,7 +826,7 @@ const TopicPage = ({ location }) => {
           matchPreview={true}
           matchTime={day2.round2.times[0]}
         />
-        <MatchCondensed
+        <Match
           matchId={`17 ${matchesArr[5].matchId}`}
           year={cupYear}
           courseMatch={matchesArr[5].courseMatch}
@@ -849,7 +849,7 @@ const TopicPage = ({ location }) => {
           matchPreview={true}
           matchTime={day2.round2.times[1]}
         />
-        <MatchCondensed
+        <Match
           matchId={`18 ${matchesArr[5].matchId}`}
           year={cupYear}
           courseMatch={matchesArr[5].courseMatch}
@@ -885,7 +885,7 @@ const TopicPage = ({ location }) => {
           <a href={day2.round3.courseLink}>{day2.round3.courseName}</a>
         </div>
 
-        <MatchCondensed
+        <Match
           matchId={`19 ${matchesArr[6].matchId}`}
           year={cupYear}
           courseMatch={matchesArr[6].courseMatch}
@@ -908,7 +908,7 @@ const TopicPage = ({ location }) => {
           matchPreview={true}
           matchTime={day2.round3.times[0]}
         />
-        <MatchCondensed
+        <Match
           matchId={`20 ${matchesArr[6].matchId}`}
           year={cupYear}
           courseMatch={matchesArr[6].courseMatch}
@@ -931,7 +931,7 @@ const TopicPage = ({ location }) => {
           matchPreview={true}
           matchTime={day2.round3.times[1]}
         />
-        <MatchCondensed
+        <Match
           matchId={`21 ${matchesArr[6].matchId}`}
           year={cupYear}
           courseMatch={matchesArr[6].courseMatch}
@@ -966,7 +966,7 @@ const TopicPage = ({ location }) => {
           </span>
           <a href={day2.round4.courseLink}>{day2.round4.courseName}</a>
         </div>
-        <MatchCondensed
+        <Match
           matchId={`22 ${matchesArr[7].matchId}`}
           year={cupYear}
           courseMatch={matchesArr[7].courseMatch}
@@ -983,7 +983,7 @@ const TopicPage = ({ location }) => {
           matchPreview={true}
           matchTime={day2.round4.times[0]}
         />
-        <MatchCondensed
+        <Match
           matchId={`23 ${matchesArr[7].matchId}`}
           year={cupYear}
           courseMatch={matchesArr[7].courseMatch}
@@ -1000,7 +1000,7 @@ const TopicPage = ({ location }) => {
           matchPreview={true}
           matchTime={day2.round4.times[0]}
         />
-        <MatchCondensed
+        <Match
           matchId={`24 ${matchesArr[7].matchId}`}
           year={cupYear}
           courseMatch={matchesArr[7].courseMatch}
@@ -1017,7 +1017,7 @@ const TopicPage = ({ location }) => {
           matchPreview={true}
           matchTime={day2.round4.times[1]}
         />
-        <MatchCondensed
+        <Match
           matchId={`25 ${matchesArr[7].matchId}`}
           year={cupYear}
           courseMatch={matchesArr[7].courseMatch}
@@ -1035,7 +1035,7 @@ const TopicPage = ({ location }) => {
           matchTime={day2.round4.times[1]}
         />
 
-        <MatchCondensed
+        <Match
           matchId={`26 ${matchesArr[7].matchId}`}
           year={cupYear}
           courseMatch={matchesArr[7].courseMatch}
@@ -1052,7 +1052,7 @@ const TopicPage = ({ location }) => {
           matchPreview={true}
           matchTime={day2.round4.times[2]}
         />
-        <MatchCondensed
+        <Match
           matchId={`27 ${matchesArr[7].matchId}`}
           year={cupYear}
           courseMatch={matchesArr[7].courseMatch}
