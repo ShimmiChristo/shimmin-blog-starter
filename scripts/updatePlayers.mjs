@@ -386,31 +386,6 @@ function applyRoundScoresToPlayers(playersObj, rounds, yearKey) {
   })
 }
 
-function emptyPointsTemplateFromExisting(points) {
-  return (Array.isArray(points) ? points : []).map(point => ({
-    id: point.id,
-    game: point.game || GAME_NAME_MAP[point.id] || point.id,
-    wins: 0,
-    ties: 0,
-    losses: 0,
-  }))
-}
-
-function ensurePointEntry(points, gameplay) {
-  let entry = points.find(point => point.id === gameplay)
-  if (!entry) {
-    entry = {
-      id: gameplay,
-      game: GAME_NAME_MAP[gameplay] || gameplay,
-      wins: 0,
-      ties: 0,
-      losses: 0,
-    }
-    points.push(entry)
-  }
-  return entry
-}
-
 function ensureRecordBucket(records, key) {
   let bucket = records.find(record => Array.isArray(record?.[key]))
   if (!bucket) {
@@ -448,7 +423,7 @@ function resetYearData(playersObj, yearKey) {
     const yearData = player?.year?.[yearKey]
     if (!yearData) continue
 
-    yearData.points = emptyPointsTemplateFromExisting(yearData.points)
+    yearData.points = []
     yearData.records = [{ partners: [] }, { opponents: [] }]
   }
 }
@@ -472,8 +447,15 @@ function updateYearFromRounds(playersObj, rounds, yearKey) {
           const yearData = playersObj[playerName]?.year?.[yearKey]
           if (!yearData) return
 
-          const pointsEntry = ensurePointEntry(yearData.points, gameplay)
+          const pointsEntry = {
+            id: gameplay,
+            game: GAME_NAME_MAP[gameplay] || gameplay,
+            wins: 0,
+            ties: 0,
+            losses: 0,
+          }
           applyResultToCounter(pointsEntry, winner, teamName)
+          yearData.points.push(pointsEntry)
 
           const partners = ensureRecordBucket(yearData.records, "partners")
           const opponents = ensureRecordBucket(yearData.records, "opponents")

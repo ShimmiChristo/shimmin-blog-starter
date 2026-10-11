@@ -59,64 +59,7 @@
               "backHandicap": 999
             }
           },
-          "points": [
-            {
-              "id": "scramble",
-              "game": "Scramble",
-              "wins": 0,
-              "ties": 0,
-              "losses": 0
-            },
-            {
-              "id": "bestBallStrokeplay",
-              "game": "Best Ball Strokeplay",
-              "wins": 0,
-              "ties": 0,
-              "losses": 0
-            },
-            {
-              "id": "bestBall",
-              "game": "Best Ball",
-              "wins": 0,
-              "ties": 0,
-              "losses": 0
-            },
-            {
-              "id": "greensomes",
-              "game": "Greensomes",
-              "wins": 0,
-              "ties": 0,
-              "losses": 0
-            },
-            {
-              "id": "bramble",
-              "game": "Bramble",
-              "wins": 0,
-              "ties": 0,
-              "losses": 0
-            },
-            {
-              "id": "bestBall",
-              "game": "Best Ball",
-              "wins": 0,
-              "ties": 0,
-              "losses": 0
-            },
-            {
-              "id": "pinehurst",
-              "game": "Pinehurst",
-              "wins": 0,
-              "ties": 0,
-              "losses": 0
-            },
-            {
-              "id": "singles",
-              "game": "Singles",
-              "wins": 0,
-              "ties": 0,
-              "losses": 0
-            }
-          ],
+          "points": [],
           "records": [
             {
               "partners": []
@@ -365,64 +308,7 @@
               "backHandicap": 999
             }
           },
-          "points": [
-            {
-              "id": "scramble",
-              "game": "Scramble",
-              "wins": 0,
-              "ties": 0,
-              "losses": 0
-            },
-            {
-              "id": "bestBallStrokeplay",
-              "game": "Best Ball Strokeplay",
-              "wins": 0,
-              "ties": 0,
-              "losses": 0
-            },
-            {
-              "id": "bestBall",
-              "game": "Best Ball",
-              "wins": 0,
-              "ties": 0,
-              "losses": 0
-            },
-            {
-              "id": "greensomes",
-              "game": "Greensomes",
-              "wins": 0,
-              "ties": 0,
-              "losses": 0
-            },
-            {
-              "id": "bramble",
-              "game": "Bramble",
-              "wins": 0,
-              "ties": 0,
-              "losses": 0
-            },
-            {
-              "id": "bestBall",
-              "game": "Best Ball",
-              "wins": 0,
-              "ties": 0,
-              "losses": 0
-            },
-            {
-              "id": "pinehurst",
-              "game": "Pinehurst",
-              "wins": 0,
-              "ties": 0,
-              "losses": 0
-            },
-            {
-              "id": "singles",
-              "game": "Singles",
-              "wins": 0,
-              "ties": 0,
-              "losses": 0
-            }
-          ],
+          "points": [],
           "records": [
             {
               "partners": []

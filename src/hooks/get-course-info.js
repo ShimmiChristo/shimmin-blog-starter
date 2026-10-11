@@ -30,6 +30,7 @@ export const CourseInfo = () => {
           ...OtsegoTributeFragment
           ...StoatinBraeFragment
           ...StoneHedgeSouthFragment
+          ...TreetopsCoursesFragment
         }
       }
     }
