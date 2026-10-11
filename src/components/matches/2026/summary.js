@@ -329,192 +329,154 @@ function MatchSummary2026() {
             two pars, for net birdies. Green won 2UP.
           </p>
           <p>
-            The third match was {gordon} and {travis} vs {dan} and {cam}. The
-            match highly favored Green because The U of M football game was on
-            and {cam} was more focused on that than the task at hand. Green won
-            the first 3 holes. Blue won 2 of the next 4 but it was too late.
+            The third match was {gordon} and {travis} vs {dan} and {cam}. Green
+            won the first 3 holes. Blue won 2 of the next 4 but it was too late.
             Green won the match ended 3&2.
           </p>
+          <p>
+            🟩🟦 Score Update. After round 6 and winning all best ball matches,
+            Green takes a big lead 11-7. The biggest lead going into the round 2
+            rounds since 2022.
+          </p>
 
-          {/* <div className="mt-4 mb-3">
+          <div className="mt-4 mb-3">
             <h4 className="h5 course-name">
-              Boyne Highlands Donald Ross - Saturday, September 26,
-              2026
+              Boyne Highlands Donald Ross - Saturday, September 26, 2026
             </h4>
             <h5 className="font-weight-bold">
               Round 7 & 8 - Pinehurst & Singles
             </h5>
-          </div> */}
+          </div>
 
-          {/* 
-         
           <p>
-            🟩🟦 Score Update. After 2 rounds, Green is up 5 to Blue 1. The
-            score won't show it, but all the matches were tight. 5 of the 6
-            matches came down to the last hole.
-          </p>
-          <div className="mt-3 mb-4">
-            <h4 className="h5 course-name mt-5">
-              Bay Harbor Golf Club - Friday, September 26, 2026
-            </h4>
-          </div>
-          <h5 className="font-weight-bold">
-            Round 3 & 4 - Alt Shot & Scramble
-          </h5>
-          <p>
-         
-          <p>🟩🟦 Score Update. After 3 rounds, Green is up 7 to Blue 2.</p>
-          <p>
-            The final matches of the day were the scramble matches. The first
-            match was {matt} and {derek} vs {craig} and {evan}. Green team was
-            the high favorite in the match. Green came out early with a 2 hole
-            lead after 2 holes. Blue stayed in the fight though and was dormie
-            after 7 holes. Blue put together back to back net birdies on 8 and 9
-            to push the match and give Blue a 1/2 point.
+            The opening match was a rematch from 2024 Pinehurst. {matt} and{" "}
+            {chris} vs {dylan} and {rj}. In 2024, Blue won 1UP. Green jumped out
+            to a quick lead, winning hole 1 with a bogey. Blue tied the match on
+            hole 3 with a nice birdie on the par 3. Then it was all Green. Green
+            won holes 4, 5, 6 and 7 with 4 pars to win the match 4&2. A 4&2 is
+            the largest Pinehurst victory in cup history.
           </p>
           <p>
-            The next match was {dylan} and {cam} vs {travis} and {chris}. Blue
-            was the slight favorite at the start of the cup. With a record of
-            4-1, {dylan} is the Cup's best scramble player. To little surprise,
-            Blue was able jump out to a 1 up lead after 4 holes. However, what
-            was a big surprise was {cam} falling in the woods on hole 4 and
-            getting up on banging home a par putt to win the hole. In the end,{" "}
-            {cam} couldn't recover and Green was too much to handle.Green won
-            2&1.
+            In match 2, {gordon} and {derek}, have never won together, were up
+            against {dan} and {craig}. Green was actually getting 2 pops, hole 5
+            and hole 9. The match was back and forth with Green 1UP after 5
+            holes.Then Blue won back to back holes on 6,7, followed by a push on
+            the par 3, 8. Going into hole 9, Blue was 1UP, Green needed to win
+            the hole and they were getting a pop. Blue played the hole great,
+            they finished with a birdie while Green had a bogey, net par. Blue
+            won 2UP.
           </p>
           <p>
-            The third and final match of the day was {gordon} and {curtis} vs{" "}
-            {rj} and {dan}. The straight up match was back and forth with 5
-            total birdies. With the match all square going into the 9th hole,{" "}
-            {dan} was able to make a clutch birdie putt to win the hole and the
-            the match.
-          </p> */}
-          {/* <p>
-            🟩🟦 Score Update.<span className="bold">After day 1</span>, Green
-            team has a commanding lead of{" "}
-            <span className="bold">8.5 to 3.5</span>. With 15 points left, Green
-            needs just 5 points on day 2 to clinch the cup.
-          </p> */}
+            The last round before the singles was {travis}, {curtis} and {evan},{" "}
+            {cam}. This was an interesting match, only 2 holes were scored, the
+            lowest score was a bogey and there were only 3 of them (2 on a par
+            3). On hole 1, Blue took one of those pointed holes with a bogey.
+            The teams pushed 2,3, and 4. On the par 5, hole 5, Blue won another
+            hole, this time with a triple bogey. The teams pushed the next three
+            holes. Blue won 2&1.
+          </p>
 
-          {/* DAY 2 */}
-          {/* <div className="mt-5 course-name mb-4">
-            <h3>Day 2</h3>
-            <h4 className="h5 course-name">
-              Boyne Highlands The Heather - Saturday, September 27, 2026
-            </h4>
-          </div>
-          <h5 className="font-weight-bold">
-            Round 5 & 6 - Best Ball Bramble & 2 Best Ball Bramble
-          </h5>
           <p>
-            Rounds 5 and 6 were held at The Heather at Boyne Highlands. The
-            weather was perfect again, with sunny skies and a light breeze. The
-            course was in great shape, with fast greens and firm fairways.
+            🟩🟦 Score update. After 7 rounds, Green is up 12 to Blue 9. Blue
+            won 2 of the 3 Pinehurst matches. The scores are the same as 2025,
+            going into the singles matches. Green needs 1 1/2 points to retain
+            the cup and Blue needs 5 points (of the 6 available) to win the cup.
           </p>
+
           <p>
-            With Blue finding themselves down 5 points, they needed a big day to
-            have a chance at winning the cup. They came out strong in the first
-            match of the day, with {dylan} and {cam} vs {matt} and {curtis}.
-            Blue won 2UP in a back and forth match. {cam} was able to seal his
-            first point of the weekend and {dylan} was able to get his first win
-            of the cup.
+            For the first time in cup history, the opening match was played by
+            the two captains, {matt} and {dylan}. Historically, they've gone
+            last and frequently, their matches haven't mattered. {matt} was
+            getting 1 pop on the back nine, and it came into play for this
+            match. The match started close, tying the first two holes. Then{" "}
+            {matt} won hole 3 with a par on the par 3. Then the next hole was
+            the pop hole. Hole 4 was a very fast and the pin was middle front of
+            the green. {matt} was in the front, greenside bunker and {dylan} was
+            off in front of the bunker. {matt} chunked his first bunker shot
+            then had a "moment" after hitting his second bunker shot perfectly
+            (but he didn't realize it). {dylan} was having a hard time with the
+            speed of the green and ended up 4 putting. They both walked away
+            with doubles, only to realize in the cart that {matt} won the hole
+            with a pop. The next hole, {dylan} rebounded and won, getting the
+            match back to 1DN. The boys parred the last 4 holes. {matt} wins
+            1UP, even though he stated it should have been a push.
           </p>
+          <p>🟩🟦 Score update. Green 13, Blue 9.</p>
+
           <p>
-            The next match was the featured match, {gordon} and {chris} vs{" "}
-            {craig} and {evan}. Blue was able to jump out to a 1UP lead on the
-            first hole. Then Green got it going and won the next 4 holes.{" "}
-            {gordon} was on fire and made clutch drives. Green was able to win
-            easily, 3&2.
+            The second match was between {chris} and {rj}. Up to this point,{" "}
+            {chris} was 3-0-0 against {rj} in singles. Green only needed a push
+            to retain the BFBH Cup. {chris} won the first hole, followed by {rj}
+            . Then {chris} went back to 1UP with a birdie on hole 3. Hole 4,{" "}
+            {rj} had a great recovery hole. He lost his tee ball left, then had
+            a great approach shot and made a long putt to walk away with bogey.{" "}
+            {chris} had 2 great shots to be up near the green in two on the par
+            5. Then took 3 putts to make it near the cup and missed the tap in
+            to make bogey and push the hole. {rj} then won the next hole to go
+            AS in the match. Then {chris} bounced back to win hole 6 to back
+            1UP. They tied 7, and {rj} won hole 8 on the par 3. Going into hole
+            9, the match was tied. {rj} had a left tee ball that barely stayed
+            out of the trees and {chris} flushed it to stay just short of the
+            water. {rj} then hit his ball in the water and {chris} hit short of
+            the green but cleared the water. {chris} won the hole and the match
+            1UP. And with that, the cup stayed with Green for another year!
           </p>
+          <p>🟩🟦 Score update. Green 14, Blue 9.</p>
           <p>
-            In the 3rd match of the round, {rj} and {dan} vs {travis} and{" "}
-            {derek}. This match only had 3 holes won. Green won hole 3, but then
-            Blue won holes 4 and 7. Blue was able to hang on and win 1UP.
+            The third match was the rematch of {gordon} and {craig}. {craig} has
+            never lost in singles and {gordon} has never won in singlges.{" "}
+            {gordon} played well in the first half, going 1UP after 4 holes.
+            Then {craig} played his most consistent golf of the weekend. {craig}{" "}
+            won the next 3 holes and pushed hole 8. {craig} stayed undefeated
+            and won 2&1.
           </p>
+          <p>🟩🟦 Score update. Green 14, Blue 10.</p>
           <p>
-            🟩🟦 Score Update. After 5 rounds, Green still has a commanding lead
-            of 9.5 to 5.5.
+            The fourth match was a rematch from 2023, {derek} and{dan}. Up to
+            this point, {derek} had never lost in singles, he had 4 wins and 1
+            tie. {dan} had also done well, he only had 1 loss in singles and it
+            was against {derek} in 2023. {derek} was getting 4 pops on the back
+            9. {dan} jumped out to a big lead, quickly, winning the first 3
+            holes. {derek} was able to get one back on hole 5 but that was it.{" "}
+            {dan} was able to get his revenge, he won the match 3&1.
           </p>
+          <p>🟩🟦 Score update. Green 14, Blue 11.</p>
           <p>
-            The second round of the day was 2 best ball bramble. The first match
-            was {gordon} and {curtis} vs {dylan} and {craig}. Blue was able to
-            win the first hole, but then Green took the next 2 holes to go
-            1UP.Blue got things going and won 3 of the next 4 holes to go 2UP
-            through 7 holes. Hole 8 was halved and Blue won the match, 2&1.
+            The fifth match was between {curtis} and {evan}, a rematch from
+            2023. {curtis} has never won or tied a singles match. This match
+            came down to the end but {evan} jumped out to a 2 hole lead after 2.{" "}
+            {curtis} won the next hole to cut it 1. Then {evan} won hole 5.
+            After pushing the next 2 holes, it was hole 8 and {evan} was dormie.{" "}
+            {curtis} didn't quit and he won 8 with a nice par to go 1DN with 1
+            to play. {evan} played better on the last hole, won the hole and the
+            match, 1UP. {evan} and {curtis} both finished with 4 wins on the
+            weekend. Good playing boys!
           </p>
+          <p>🟩🟦 Score update. Green 14, Blue 12.</p>
           <p>
-            THe next match {matt} and {derek} vs {rj} and {evan}. This match
-            played out very similar to the first match, but for Green. Green won
-            the first hole, but Blue fought back and the match was tied through
-            6. Green won holes 7 and 8 to win the match 2&1.
+            The sixth and final match was {travis} and {cam}. Lucky for {travis}
+            , the U of M game started at 3:30, so {cam} was fully engaged in
+            football and could care less about the match at hand. The match was
+            over before it began. The first hole was a push, then {travis} won
+            the second hole, but {cam} came back and won hole three with a par.
+            Then it was all {travis}. He won the next 4 holes and won the match
+            4&2.
           </p>
-         
+          <p>🟩🟦 Final score update. Green 15, Blue 12.</p>
+
           <p>
-            🟩🟦 Score Update. After 6 rounds, Green is up 10.5 to Blue 7.5.
-            Blue fought back and narrowed the gap. The score is at the 2023
-            score, when Green came back and lost the Cup on the last hole of the
-            weekend.
+            Green retains the cup and completes the three-peat! The cup was
+            close this year, the differentiator was the best ball matches, Green
+            won 5 of the 6 matches. {matt} played great, becoming the first
+            player to win 7 matches and also the first player to go loss-less.
+            Some other highlights include: the practice practice round at Harbor
+            Point was a good time, the hottub was hot again, driving a van up
+            together, the amazing weather, Max filling in last minute, the
+            yellow house, Hidden River, Boyne, everyone winning at least a
+            couple matches, the comptetive golf, the vibes, the original group
+            together for the first time. 2026 was a great year!
           </p>
-          <div className="mt-3 mb-4">
-            <h4 className="h5 course-name mt-5">
-              Boyne Highlands Arthur Hills - Saturday, September 27, 2026
-            </h4>
-          </div>
-          <h5 className="font-weight-bold">
-            Round 7 & 8 - Pinehurst & Singles
-          </h5>
-          <p>
-            This year, Pinehurst and Singles were held at Arthur Hills at Boyne
-            Highalnds. The course had some major tree damage from an ice storm
-            the previous winter, but it is still a group favorite. The course
-            played a lot different playing the afternoon. Greens were very fast
-            and fairways had more rollout. Also this year, there were some
-            change ups in the pairings. {gordon} moved up to play with {matt}{" "}
-            and {travis} played with {curtis}.
-          </p>
-          <p>
-            The fist match of Pinehurst was {travis} and {curtis} vs {dan} and{" "}
-            {evan}. {dan} and {evan} were paired together in Pinehurst for the
-            second straight year. Their record before this match was 0-1-5. 1
-            tie and 5 losses. Going into the match, Green was the heavy
-            favorite. Green started strong and was 2UP after 4 holes. Blue
-            fought back though and tied the match after 6 holes. Blue won holes
-            8 and 9 to win the match 2UP.
-          </p>
-          <p>
-            The second match of Pinehurst was the featured match. {chris} and{" "}
-            {derek} vs {craig} and {cam}. This match was neck and neck until
-            hole 7. Hole 7 will go down as one of the biggest collapses in cup
-            history. Craig sticks a perfect tee shot, maybe 2/3 feet to pin.
-            Green is short of the cup. {chris} chips up to 3 feet. {cam} then
-            has to make the putt to win the hole. He hits the lip and it goes
-            further than it started. Now {craig} who is fuming mad, goes up to
-            make the putt. He misses right. {derek} steps up and sinks the par
-            putt. Green walks away with a 1 point swing on the hole. Green is 2
-            up going into hole 8. It's hard to gain composure after a hole like
-            that. Green and Blue push on hole 8. Green wins the match 2&1.
-          </p>
-          <p>
-            The final match of Pinehurst was {matt} and {gordon} vs {dylan} and
-            {rj}. Green started with back to back birdies. Blue takes hole 3,
-            but Green wins hole 4. Green is 2 up through 5 holes. Blue then
-            fights back slowly and wins 2 of the next 3 holes. With the match AS
-            on the last hole, both teams bogey the par 3 to push the hole and
-            halve the match.
-          </p>
-          <p>
-            🟩🟦 Score Update. After 7 rounds, Green is up 12 to Blue 9. The
-            teams split Pinehurst, both getting 1.5 points. Going into the
-            singles round, Green needs just 1.5 points to retain the cup. Blue
-            needs 5 points (of the 6 available) to win the cup.
-          </p>
-          <p>
-            🟩🟦 Score Update. Green wins! After 8 rounds, Green wins 14.5 to
-            Blue 12.5. Green team retains the BFBH Cup and becomes the first
-            team to win back to back years. Blue fought back hard on day 2, but
-            it wasn't enough. Congrats to Green team on a hard fought victory!
-          </p>
-          <p>See you back at Boyne Highlands in 2026 for the next BFBH Cup!</p> */}
+          <p>See you all back in 2027... at Treetops Resort!</p>
         </div>
 
         <div className="container mt-3">
