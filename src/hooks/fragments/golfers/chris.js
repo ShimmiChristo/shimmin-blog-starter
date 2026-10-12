@@ -55,7 +55,6 @@ export const chrisFragment = graphql`
             back
             backHandicap
             frontGross
-            backGross
             frontTees
             useForHandicapIndex
             useFront
@@ -81,6 +80,21 @@ export const chrisFragment = graphql`
             backTees
             useForHandicapIndex
             useBack
+          }
+        }
+        captain
+        records {
+          partners {
+            name
+            wins
+            ties
+            losses
+          }
+          opponents {
+            name
+            wins
+            ties
+            losses
           }
         }
       }

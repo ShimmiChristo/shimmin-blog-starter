@@ -1,5 +1,6 @@
 import { readFileSync, writeFileSync } from "fs"
 import process from "process"
+import { prepareGolferFragmentUpdates } from "./updateGolferFragments.mjs"
 
 const DEFAULT_YEAR = "2026"
 const PLAYERS_PATH = "src/data/playersUpdate.json"
@@ -589,6 +590,7 @@ function main() {
   updateYearFromRounds(playersObj, rounds, yearKey)
   sortRecordEntries(playersObj, yearKey)
   updateAppearancesAndCupRecords(playersObj, playersOverview, rounds, yearKey)
+  const fragmentUpdates = prepareGolferFragmentUpdates(playersObj, rounds, yearKey)
 
   const prettyJson = JSON.stringify(playersRoot, null, 2)
   const inlineScoreArrays = prettyJson.replace(
@@ -604,7 +606,11 @@ function main() {
   )
 
   writeFileSync(PLAYERS_PATH, inlineScoreArrays + "\n")
+  for (const { filePath, source } of fragmentUpdates) {
+    writeFileSync(filePath, source)
+  }
   console.log(`Updated ${PLAYERS_PATH} using ${roundsPath} for ${yearKey}.`)
+  console.log(`Updated ${fragmentUpdates.length} golfer fragments for ${yearKey}.`)
 }
 
 main()

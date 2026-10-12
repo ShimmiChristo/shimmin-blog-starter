@@ -40,6 +40,14 @@ Run `npm run update:players` to import the default year's rounds (2026) into
 [`playersUpdate.json`](./src/data/playersUpdate.json). Use `-- --year 2026` to
 select a year or `-- --rounds path/to/rounds.json` to select a rounds file.
 
+The same command synchronizes existing golfer fragments in
+`src/hooks/fragments/golfers/` with the selected year's player data, adding missing
+year, points, scores (including tees and handicap flags), and records selections.
+It preserves existing selections and other years, and only adds fields with
+non-null data that Gatsby can infer. Every round participant must have an existing
+golfer fragment; missing or malformed fragments stop the import before files
+are written. Repeated runs do not duplicate selections.
+
 For a score entry with `useFront: true` or `useBack: true`, the script sums its
 `holes` array into `frontGross` or `backGross`, respectively, overriding any
 explicit gross value for that side. If the array contains `99`, the stored gross

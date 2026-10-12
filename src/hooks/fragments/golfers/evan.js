@@ -77,6 +77,21 @@ export const evanFragment = graphql`
             useBack
           }
         }
+        captain
+        records {
+          partners {
+            name
+            wins
+            ties
+            losses
+          }
+          opponents {
+            name
+            wins
+            ties
+            losses
+          }
+        }
       }
       _2025 {
         handicap

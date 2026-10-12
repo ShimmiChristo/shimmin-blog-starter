@@ -3,6 +3,7 @@ const fs = require("node:fs")
 const os = require("node:os")
 const path = require("node:path")
 const { execFileSync } = require("node:child_process")
+const { parse } = require("gatsby/graphql")
 
 const directory = fs.mkdtempSync(path.join(os.tmpdir(), "update-players-test-"))
 const dataDirectory = path.join(directory, "src/data")
@@ -46,6 +47,23 @@ const cases = [
 
 try {
   fs.mkdirSync(dataDirectory, { recursive: true })
+  const fragmentsDirectory = path.join(directory, "src/hooks/fragments/golfers")
+  fs.mkdirSync(fragmentsDirectory, { recursive: true })
+  for (const name of ["green", "blue"]) {
+    fs.writeFileSync(path.join(fragmentsDirectory, `${name}.js`), `import { graphql } from "gatsby"
+
+export const ${name}Fragment = graphql\`
+  fragment ${name}PlayerData on PlayersUpdateJson${name} {
+    name
+    year {
+      _2025 {
+        team
+      }
+    }
+  }
+\`
+`)
+  }
   const scores = Object.fromEntries(cases.map((_, index) => [
     `course${index}`,
     { frontGross: 70, backGross: 80 },
@@ -59,6 +77,18 @@ try {
     cupRecord: { wins: 0, losses: 1 },
     year: { _2026: { team: "green", scores: {} } },
   }
+  const absentFragmentPath = path.join(fragmentsDirectory, "absent.js")
+  const absentFragment = `export const absentFragment = graphql\`
+  fragment AbsentPlayerData on PlayersUpdateJsonAbsent {
+    year {
+      _2026 {
+        team
+      }
+    }
+  }
+\`
+`
+  fs.writeFileSync(absentFragmentPath, absentFragment)
   const rounds = cases.map(({ entry }, index) => ({
     round: index + 1,
     gameplay: "bestBall",
@@ -89,6 +119,7 @@ try {
   }
   assert.deepEqual(updated.absent.appearances, [2024])
   assert.deepEqual(updated.absent.cupRecord, { wins: 0, losses: 1 })
+  assert.doesNotMatch(fs.readFileSync(absentFragmentPath, "utf8"), /points \{|scores \{|records \{/)
   cases.forEach(({ entry, expected }, index) => {
     const course = updated.green.year._2026.scores[`course${index}`]
     assert.equal(course.frontGross, expected.frontGross, `Case ${index + 1}: frontGross`)
@@ -101,8 +132,25 @@ try {
     })
   })
   const firstRun = fs.readFileSync(playersPath, "utf8")
+  const fragmentPath = path.join(fragmentsDirectory, "green.js")
+  const firstFragment = fs.readFileSync(fragmentPath, "utf8")
+  const fragmentDocument = parse(firstFragment.match(/graphql`([\s\S]*?)`/)[1])
+  const rootFields = fragmentDocument.definitions[0].selectionSet.selections
+  const yearFields = rootFields.find(field => field.name.value === "year").selectionSet.selections
+  assert.equal(yearFields.filter(field => field.name.value === "_2026").length, 1)
+  assert.match(firstFragment, /_2025 \{\n        team\n      \}/)
+  const selectedYear = yearFields.find(field => field.name.value === "_2026")
+  const selectedScores = selectedYear.selectionSet.selections.find(field => field.name.value === "scores")
+  assert.equal(selectedScores.selectionSet.selections.length, 8)
+  assert.match(firstFragment, /frontGross/)
+  assert.match(firstFragment, /backGross/)
+  assert.match(firstFragment, /points \{/)
+  assert.doesNotMatch(firstFragment, /partners \{/)
+  assert.match(firstFragment, /opponents \{/)
+  assert.match(firstFragment, /cupRecord \{/)
   execFileSync(process.execPath, [script], { cwd: directory })
   assert.equal(fs.readFileSync(playersPath, "utf8"), firstRun)
+  assert.equal(fs.readFileSync(fragmentPath, "utf8"), firstFragment)
 
   const flagPairs = [[true, false], [false, true], [false, false], [undefined, undefined]]
   const eligibilityRounds = rounds.map((round, index) => {
@@ -133,6 +181,7 @@ try {
   execFileSync(process.execPath, [script], { cwd: directory })
   const recalculated = JSON.parse(fs.readFileSync(playersPath, "utf8"))[0]
   assert.equal(recalculated.green.year._2026.scores.course0.useForHandicapIndex, false)
+  assert.match(fs.readFileSync(fragmentPath, "utf8"), /useForHandicapIndex/)
   const runCup = winners => {
     rounds.forEach((round, index) => {
       round.matches[0].winner = winners[index]
@@ -180,7 +229,60 @@ try {
     error => error.stderr.toString().includes("Missing 2025 Cup results")
   )
   assert.equal(fs.readFileSync(playersPath, "utf8"), beforeFailure)
-  console.log("Verified scores, eligibility, appearances, Cup results, ties, and stable reruns.")
+  const blueFragmentPath = path.join(fragmentsDirectory, "blue.js")
+  const blueFragment = fs.readFileSync(blueFragmentPath, "utf8")
+  fs.unlinkSync(blueFragmentPath)
+  assert.throws(
+    () => runCup(Array(8).fill("green")),
+    error => error.stderr.toString().includes("No golfer fragment found for 'blue'")
+  )
+  assert.equal(fs.readFileSync(playersPath, "utf8"), beforeFailure)
+  fs.writeFileSync(blueFragmentPath, "not a fragment")
+  assert.throws(
+    () => runCup(Array(8).fill("green")),
+    error => error.stderr.toString().includes("does not contain an exported GraphQL fragment")
+  )
+  assert.equal(fs.readFileSync(playersPath, "utf8"), beforeFailure)
+  fs.writeFileSync(blueFragmentPath, blueFragment)
+  const futurePlayers = JSON.parse(fs.readFileSync(playersPath, "utf8"))
+  for (const team of ["green", "blue"]) {
+    futurePlayers[0][team].year._2027 = {
+      team,
+      scores: Object.fromEntries(cases.map((_, index) => [
+        `course${index}`,
+        { frontTees: "white", backTees: "blue", frontGross: null, backGross: null },
+      ])),
+    }
+  }
+  fs.writeFileSync(playersPath, JSON.stringify(futurePlayers))
+  const year2026Source = fs.readFileSync(fragmentPath, "utf8")
+  const absentBeforeFutureImport = fs.readFileSync(absentFragmentPath, "utf8")
+  execFileSync(process.execPath, [script, "--year", "2027", "--rounds", roundsPath], {
+    cwd: directory, stdio: "pipe",
+  })
+  const futureFragment = fs.readFileSync(fragmentPath, "utf8")
+  const getYearSource = (source, year) => {
+    const query = source.match(/graphql`([\s\S]*?)`/)[1]
+    const yearField = parse(query).definitions[0].selectionSet.selections
+      .find(field => field.name.value === "year").selectionSet.selections
+      .find(field => field.name.value === year)
+    return query.slice(yearField.loc.start, yearField.loc.end)
+  }
+  assert.equal(getYearSource(futureFragment, "_2026"), getYearSource(year2026Source, "_2026"))
+  assert.match(getYearSource(futureFragment, "_2027"), /frontTees/)
+  assert.match(getYearSource(futureFragment, "_2027"), /backTees/)
+  const futureScores = parse(`fragment Future on Player { ${getYearSource(futureFragment, "_2027")} }`)
+    .definitions[0].selectionSet.selections[0].selectionSet.selections
+    .find(field => field.name.value === "scores").selectionSet.selections
+  const noGrossCourse = futureScores.find(field => field.name.value === "course5")
+  assert.equal(noGrossCourse.selectionSet.selections.some(field =>
+    field.name.value === "frontGross" || field.name.value === "backGross"), false)
+  assert.equal(fs.readFileSync(absentFragmentPath, "utf8"), absentBeforeFutureImport)
+  execFileSync(process.execPath, [script, "--year", "2027", "--rounds", roundsPath], {
+    cwd: directory, stdio: "pipe",
+  })
+  assert.equal(fs.readFileSync(fragmentPath, "utf8"), futureFragment)
+  console.log("Verified scores, eligibility, appearances, Cup results, and year-aware fragment synchronization.")
 } finally {
   fs.rmSync(directory, { recursive: true, force: true })
 }

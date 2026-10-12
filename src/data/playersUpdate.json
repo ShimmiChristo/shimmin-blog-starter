@@ -1532,13 +1532,14 @@
             },
             "bayHarborPreserveLinks": {
               "course": "Bay Harbor Preserve Links",
-              "front": [5, 6, 6, 9, 4, 7, 5, 5, 99],
+              "front": [5, 6, 6, 9, 4, 7, 5, 5, 4],
               "frontHandicap": 999,
               "back": [7, 5, 4, 2, 5, 4, 5, 4, 5],
               "backHandicap": 999,
               "frontTees": "brown",
               "useForHandicapIndex": true,
-              "useFront": true
+              "useFront": true,
+              "frontGross": 51
             },
             "boyneHighlandsArthurHills": {
               "course": "Arthur Hills at Boyne Highlands",
@@ -4528,8 +4529,8 @@
             },
             "bayHarborPreserveLinks": {
               "course": "Bay Harbor Preserve Links",
-              "front": [5, 6, 7, 9, 7, 8, 5, 6, 99],
-              "frontGross": 891,
+              "front": [5, 6, 7, 9, 7, 8, 5, 6, 5],
+              "frontGross": 58,
               "frontHandicap": 999,
               "back": [4, 4, 3, 4, 6, 4, 5, 6, 7],
               "backGross": 891,
@@ -7805,8 +7806,8 @@
             },
             "bayHarborPreserveLinks": {
               "course": "Bay Harbor Preserve Links",
-              "front": [5, 6, 6, 10, 6, 6, 6, 4, 99],
-              "frontGross": 891,
+              "front": [5, 6, 6, 10, 6, 6, 6, 4, 5],
+              "frontGross": 54,
               "frontHandicap": 999,
               "back": [4, 4, 3, 4, 6, 4, 5, 6, 7],
               "backGross": 891,
@@ -12442,8 +12443,8 @@
             },
             "bayHarborPreserveLinks": {
               "course": "Bay Harbor Preserve Links",
-              "front": [6, 6, 6, 10, 3, 7, 5, 8, 99],
-              "frontGross": 891,
+              "front": [6, 6, 6, 10, 3, 7, 5, 8, 5],
+              "frontGross": 56,
               "frontHandicap": 999,
               "back": [6, 5, 6, 4, 5, 5, 7, 3, 6],
               "backGross": 891,

@@ -63,6 +63,7 @@ export const travisFragment = graphql`
             back
             backHandicap
             useForHandicapIndex
+            backGross
             useBack
           }
           boyneHighlandsDonaldRoss {
@@ -74,6 +75,21 @@ export const travisFragment = graphql`
             backGross
             useForHandicapIndex
             useBack
+          }
+        }
+        captain
+        records {
+          partners {
+            name
+            wins
+            ties
+            losses
+          }
+          opponents {
+            name
+            wins
+            ties
+            losses
           }
         }
       }

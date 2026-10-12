@@ -67,6 +67,7 @@ export const danFragment = graphql`
             backHandicap
             useForHandicapIndex
             useBack
+            backGross
           }
           boyneHighlandsDonaldRoss {
             course
@@ -77,6 +78,21 @@ export const danFragment = graphql`
             backGross
             useForHandicapIndex
             useBack
+          }
+        }
+        captain
+        records {
+          partners {
+            name
+            wins
+            ties
+            losses
+          }
+          opponents {
+            name
+            wins
+            ties
+            losses
           }
         }
       }

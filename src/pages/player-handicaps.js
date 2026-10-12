@@ -830,8 +830,7 @@ const PlayerHandicaps = ({ location }) => {
       const years = Object.keys(playerData.year).filter(
         y =>
           y.startsWith("_2026") ||
-          y.startsWith("_2025") ||
-          y.startsWith("_2024") 
+          y.startsWith("_2025")
       )
       let courseDiffs = []
 
