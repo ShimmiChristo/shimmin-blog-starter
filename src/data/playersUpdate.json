@@ -2459,15 +2459,13 @@
           "scores": {
             "hiddenRiverGolfClub": {
               "course": "Hidden River Golf Club",
-              "front": [99, 99, 99, 99, 99, 99, 99, 99, 99],
-              "frontGross": 53,
-              "frontHandicap": 999,
-              "frontTees": "white",
-              "back": [99, 99, 99, 99, 99, 99, 99, 99, 99],
-              "backGross": 61,
-              "backTees": "white",
-              "backHandicap": 999,
-              "useForHandicapIndex": false,
+              "front": [5, 5, 4, 4, 6, 6, 8, 6, 5],
+              "frontGross": 49,
+              "frontTees": "blueWhite",
+              "back": [6, 6, 6, 5, 5, 4, 6, 6, 6, 4],
+              "backGross": 48,
+              "backTees": "blueWhite",
+              "useForHandicapIndex": true,
               "use18Holes": true
             },
             "crookedTree": {
@@ -3548,15 +3546,14 @@
           "scores": {
             "hiddenRiverGolfClub": {
               "course": "Hidden River Golf Club",
-              "front": [99, 99, 99, 99, 99, 99, 99, 99, 99],
-              "frontGross": 53,
-              "frontHandicap": 999,
-              "frontTees": "white",
-              "back": [99, 99, 99, 99, 99, 99, 99, 99, 99],
-              "backGross": 61,
-              "backTees": "white",
+              "front": [5, 6, 6, 7, 6, 5, 5, 6, 4],
+              "frontGross": 50,
+              "frontTees": "blueWhite",
+              "back": [5, 7, 7, 4, 7, 4, 5, 8, 7],
+              "backGross": 54,
+              "backTees": "blueWhite",
               "backHandicap": 999,
-              "useForHandicapIndex": false,
+              "useForHandicapIndex": true,
               "use18Holes": true
             },
             "crookedTree": {
@@ -4503,15 +4500,13 @@
           "scores": {
             "hiddenRiverGolfClub": {
               "course": "Hidden River Golf Club",
-              "front": [99, 99, 99, 99, 99, 99, 99, 99, 99],
-              "frontGross": 53,
-              "frontHandicap": 999,
-              "frontTees": "white",
-              "back": [99, 99, 99, 99, 99, 99, 99, 99, 99],
-              "backGross": 61,
-              "backTees": "white",
-              "backHandicap": 999,
-              "useForHandicapIndex": false,
+              "front": [5, 6, 4, 7, 8, 5, 8, 5, 4],
+              "frontGross": 52,
+              "frontTees": "blueWhite",
+              "back": [6, 5, 4, 3, 5, 4, 6, 7, 6],
+              "backGross": 46,
+              "backTees": "blueWhite",
+              "useForHandicapIndex": true,
               "use18Holes": true
             },
             "crookedTree": {
@@ -5611,15 +5606,13 @@
           "scores": {
             "hiddenRiverGolfClub": {
               "course": "Hidden River Golf Club",
-              "front": [99, 99, 99, 99, 99, 99, 99, 99, 99],
-              "frontGross": 53,
-              "frontHandicap": 999,
-              "frontTees": "white",
-              "back": [99, 99, 99, 99, 99, 99, 99, 99, 99],
-              "backGross": 61,
-              "backTees": "white",
-              "backHandicap": 999,
-              "useForHandicapIndex": false,
+              "front": [6, 6, 5, 5, 7, 7, 7, 4, 5],
+              "frontGross": 52,
+              "frontTees": "blueWhite",
+              "back": [5, 7, 4, 4, 6, 5, 6, 6, 5],
+              "backGross": 48,
+              "backTees": "blueWhite",
+              "useForHandicapIndex": true,
               "use18Holes": true
             },
             "crookedTree": {
@@ -6695,15 +6688,13 @@
           "scores": {
             "hiddenRiverGolfClub": {
               "course": "Hidden River Golf Club",
-              "front": [99, 99, 99, 99, 99, 99, 99, 99, 99],
-              "frontGross": 53,
-              "frontHandicap": 999,
-              "frontTees": "white",
-              "back": [99, 99, 99, 99, 99, 99, 99, 99, 99],
-              "backGross": 61,
-              "backTees": "white",
-              "backHandicap": 999,
-              "useForHandicapIndex": false,
+              "front": [5, 4, 4, 5, 6, 4, 6, 5, 3],
+              "frontGross": 42,
+              "frontTees": "blue",
+              "back": [5, 5, 4, 3, 4, 2, 5, 4, 5],
+              "backGross": 37,
+              "backTees": "blue",
+              "useForHandicapIndex": true,
               "use18Holes": true
             },
             "crookedTree": {
@@ -7783,15 +7774,13 @@
           "scores": {
             "hiddenRiverGolfClub": {
               "course": "Hidden River Golf Club",
-              "front": [99, 99, 99, 99, 99, 99, 99, 99, 99],
-              "frontGross": 53,
-              "frontHandicap": 999,
+              "front": [3, 5, 5, 5, 9, 5, 7, 4, 5],
+              "frontGross": 48,
               "frontTees": "white",
-              "back": [99, 99, 99, 99, 99, 99, 99, 99, 99],
-              "backGross": 61,
+              "back": [7, 7, 6, 3, 7, 4, 6, 6, 6],
+              "backGross": 52,
               "backTees": "white",
-              "backHandicap": 999,
-              "useForHandicapIndex": false,
+              "useForHandicapIndex": true,
               "use18Holes": true
             },
             "crookedTree": {
@@ -8736,15 +8725,13 @@
           "scores": {
             "hiddenRiverGolfClub": {
               "course": "Hidden River Golf Club",
-              "front": [99, 99, 99, 99, 99, 99, 99, 99, 99],
-              "frontGross": 53,
-              "frontHandicap": 999,
-              "frontTees": "white",
-              "back": [99, 99, 99, 99, 99, 99, 99, 99, 99],
-              "backGross": 61,
-              "backTees": "white",
-              "backHandicap": 999,
-              "useForHandicapIndex": false,
+              "front": [5, 4, 4, 7, 6, 4, 7, 5, 5],
+              "frontGross": 47,
+              "frontTees": "blueWhite",
+              "back": [6, 7, 5, 5, 6, 4, 5, 5, 5],
+              "backGross": 48,
+              "backTees": "blueWhite",
+              "useForHandicapIndex": true,
               "use18Holes": true
             },
             "crookedTree": {
@@ -10024,15 +10011,13 @@
           "scores": {
             "hiddenRiverGolfClub": {
               "course": "Hidden River Golf Club",
-              "front": [99, 99, 99, 99, 99, 99, 99, 99, 99],
-              "frontGross": 53,
-              "frontHandicap": 999,
-              "frontTees": "white",
-              "back": [99, 99, 99, 99, 99, 99, 99, 99, 99],
-              "backGross": 61,
-              "backTees": "white",
-              "backHandicap": 999,
-              "useForHandicapIndex": false,
+              "front": [4, 4, 5, 5, 6, 4, 5, 6, 4],
+              "frontGross": 43,
+              "frontTees": "blue",
+              "back": [5, 4, 6, 3, 5, 3, 6, 5, 5],
+              "backGross": 42,
+              "backTees": "blue",
+              "useForHandicapIndex": true,
               "use18Holes": true
             },
             "crookedTree": {
@@ -11120,15 +11105,13 @@
           "scores": {
             "hiddenRiverGolfClub": {
               "course": "Hidden River Golf Club",
-              "front": [99, 99, 99, 99, 99, 99, 99, 99, 99],
-              "frontGross": 53,
-              "frontHandicap": 999,
-              "frontTees": "white",
-              "back": [99, 99, 99, 99, 99, 99, 99, 99, 99],
-              "backGross": 61,
-              "backTees": "white",
-              "backHandicap": 999,
-              "useForHandicapIndex": false,
+              "front": [5, 3, 4, 8, 7, 4, 7, 5, 5],
+              "frontGross": 48,
+              "frontTees": "blueWhite",
+              "back": [6, 6, 5, 4, 5, 3, 5, 4, 5],
+              "backGross": 43,
+              "backTees": "blueWhite",
+              "useForHandicapIndex": true,
               "use18Holes": true
             },
             "crookedTree": {
@@ -12422,12 +12405,10 @@
               "course": "Hidden River Golf Club",
               "front": [99, 99, 99, 99, 99, 99, 99, 99, 99],
               "frontGross": 53,
-              "frontHandicap": 999,
               "frontTees": "white",
               "back": [99, 99, 99, 99, 99, 99, 99, 99, 99],
               "backGross": 61,
               "backTees": "white",
-              "backHandicap": 999,
               "useForHandicapIndex": false,
               "use18Holes": true
             },
