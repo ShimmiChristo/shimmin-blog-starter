@@ -79,6 +79,82 @@ export const HiddenRiverGolfFragment = graphql`
           }
         }
       }
+      _2026 {
+        holes {
+          number
+          tees {
+            blue
+            blueWhite
+            white
+          }
+          handicap
+          par
+        }
+        totals {
+          tees {
+            blue {
+              out {
+                yardage
+                par
+                index
+                slope
+              }
+              in {
+                yardage
+                par
+                index
+                slope
+              }
+              total {
+                yardage
+                par
+                index
+                slope
+              }
+            }
+            blueWhite {
+              out {
+                yardage
+                par
+                index
+                slope
+              }
+              in {
+                yardage
+                par
+                index
+                slope
+              }
+              total {
+                yardage
+                par
+                index
+                slope
+              }
+            }
+            white {
+              out {
+                yardage
+                par
+                index
+                slope
+              }
+              in {
+                yardage
+                par
+                index
+                slope
+              }
+              total {
+                yardage
+                par
+                index
+                slope
+              }
+            }
+          }
+        }
+      }
       _2025 {
         holes {
           number

@@ -34,6 +34,27 @@
 - writing blog before release
 - social media buttons
 - social media share options (react-share)
+## Updating player data
+
+Run `npm run update:players` to import the default year's rounds (2026) into
+[`playersUpdate.json`](./src/data/playersUpdate.json). Use `-- --year 2026` to
+select a year or `-- --rounds path/to/rounds.json` to select a rounds file.
+
+For a score entry with `useFront: true` or `useBack: true`, the script sums its
+`holes` array into `frontGross` or `backGross`, respectively, overriding any
+explicit gross value for that side. If the array contains `99`, the stored gross
+for that side is left unchanged. Without a true side flag, explicitly supplied
+gross values are still imported as before.
+
+For each player's course, `useForHandicapIndex` is true if any imported round
+for that course sets it to true. A later false does not override a true.
+Eligibility is recalculated on each run from the explicitly supplied flags;
+if all supplied flags are false, the course becomes false. If no flag is
+supplied for a course, its existing value is preserved.
+
+Run `node scripts/testUpdatePlayers.cjs` to test this behavior without modifying
+the project's player data.
+
 ## About Me
 
 I’m a web developer based in New York City.

@@ -73,6 +73,82 @@ export const BayHarborPreserveLinksFragment = graphql`
           }
         }
       }
+      _2026 {
+        holes {
+          number
+          tees {
+            purple
+            orange
+            brown
+          }
+          handicap
+          par
+        }
+        totals {
+          tees {
+            purple {
+              out {
+                yardage
+                par
+                index
+                slope
+              }
+              in {
+                yardage
+                par
+                index
+                slope
+              }
+              total {
+                yardage
+                par
+                index
+                slope
+              }
+            }
+            orange {
+              out {
+                yardage
+                par
+                index
+                slope
+              }
+              in {
+                yardage
+                par
+                index
+                slope
+              }
+              total {
+                yardage
+                par
+                index
+                slope
+              }
+            }
+            brown {
+              out {
+                yardage
+                par
+                index
+                slope
+              }
+              in {
+                yardage
+                par
+                index
+                slope
+              }
+              total {
+                yardage
+                par
+                index
+                slope
+              }
+            }
+          }
+        }
+      }
       _2025 {
         holes {
           number

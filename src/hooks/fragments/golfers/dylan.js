@@ -41,6 +41,12 @@ export const dylanFragment = graphql`
             front
             back
             backHandicap
+            frontGross
+            backGross
+            useForHandicapIndex
+            use18Holes
+            useFront
+            useBack
           }
           bayHarborPreserveLinks {
             course
@@ -48,6 +54,10 @@ export const dylanFragment = graphql`
             front
             back
             backHandicap
+            frontGross
+            backGross
+            useForHandicapIndex
+            useFront
           }
           boyneHighlandsArthurHills {
             course
@@ -55,6 +65,9 @@ export const dylanFragment = graphql`
             frontHandicap
             back
             backHandicap
+            backGross
+            useForHandicapIndex
+            useBack
           }
           boyneHighlandsDonaldRoss {
             course
@@ -62,6 +75,9 @@ export const dylanFragment = graphql`
             front
             back
             backHandicap
+            backGross
+            useForHandicapIndex
+            useBack
           }
         }
       }

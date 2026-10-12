@@ -1765,6 +1765,245 @@
             }
           }
         },
+        "_2026": {
+          "holes": [
+            {
+              "number": 1,
+              "tees": {
+                "purple": 352,
+                "orange": 352,
+                "brown": 391
+              },
+              "handicap": 11,
+              "par": 4
+            },
+            {
+              "number": 2,
+              "tees": {
+                "purple": 322,
+                "orange": 322,
+                "brown": 341
+              },
+              "handicap": 13,
+              "par": 4
+            },
+            {
+              "number": 3,
+              "tees": {
+                "purple": 403,
+                "orange": 403,
+                "brown": 423
+              },
+              "handicap": 3,
+              "par": 4
+            },
+            {
+              "number": 4,
+              "tees": {
+                "purple": 542,
+                "orange": 542,
+                "brown": 577
+              },
+              "handicap": 7,
+              "par": 5
+            },
+            {
+              "number": 5,
+              "tees": {
+                "purple": 169,
+                "orange": 169,
+                "brown": 191
+              },
+              "handicap": 9,
+              "par": 3
+            },
+            {
+              "number": 6,
+              "tees": {
+                "purple": 467,
+                "orange": 467,
+                "brown": 493
+              },
+              "handicap": 1,
+              "par": 5
+            },
+            {
+              "number": 7,
+              "tees": {
+                "purple": 381,
+                "orange": 381,
+                "brown": 404
+              },
+              "handicap": 15,
+              "par": 4
+            },
+            {
+              "number": 8,
+              "tees": {
+                "purple": 343,
+                "orange": 343,
+                "brown": 372
+              },
+              "handicap": 17,
+              "par": 4
+            },
+            {
+              "number": 9,
+              "tees": {
+                "purple": 171,
+                "orange": 171,
+                "brown": 186
+              },
+              "handicap": 5,
+              "par": 3
+            },
+            {
+              "number": 10,
+              "tees": {
+                "purple": 405,
+                "orange": 375
+              },
+              "handicap": 6,
+              "par": 4
+            },
+            {
+              "number": 11,
+              "tees": {
+                "purple": 420,
+                "orange": 383
+              },
+              "handicap": 10,
+              "par": 4
+            },
+            {
+              "number": 12,
+              "tees": {
+                "purple": 368,
+                "orange": 368
+              },
+              "handicap": 8,
+              "par": 4
+            },
+            {
+              "number": 13,
+              "tees": {
+                "purple": 151,
+                "orange": 151
+              },
+              "handicap": 18,
+              "par": 3
+            },
+            {
+              "number": 14,
+              "tees": {
+                "purple": 332,
+                "orange": 332
+              },
+              "handicap": 12,
+              "par": 4
+            },
+            {
+              "number": 15,
+              "tees": {
+                "purple": 388,
+                "orange": 352
+              },
+              "handicap": 2,
+              "par": 4
+            },
+            {
+              "number": 16,
+              "tees": {
+                "purple": 490,
+                "orange": 490
+              },
+              "handicap": 14,
+              "par": 5
+            },
+            {
+              "number": 17,
+              "tees": {
+                "purple": 206,
+                "orange": 175
+              },
+              "handicap": 16,
+              "par": 3
+            },
+            {
+              "number": 18,
+              "tees": {
+                "purple": 490,
+                "orange": 490
+              },
+              "handicap": 4,
+              "par": 5
+            }
+          ],
+          "totals": {
+            "tees": {
+              "purple": {
+                "out": {
+                  "yardage": 3150,
+                  "par": 36,
+                  "index": 35.4,
+                  "slope": 140.0
+                },
+                "in": {
+                  "yardage": 3250,
+                  "par": 36,
+                  "index": 36.1,
+                  "slope": 139.0
+                },
+                "total": {
+                  "yardage": 6400,
+                  "par": 72,
+                  "index": 71.5,
+                  "slope": 140.0
+                }
+              },
+              "orange": {
+                "out": {
+                  "yardage": 3150,
+                  "par": 36,
+                  "index": 35.4,
+                  "slope": 140.0
+                },
+                "in": {
+                  "yardage": 3116,
+                  "par": 36,
+                  "index": 35.3,
+                  "slope": 138.0
+                },
+                "total": {
+                  "yardage": 6266,
+                  "par": 72,
+                  "index": 70.7,
+                  "slope": 139
+                }
+              },
+              "brown": {
+                "out": {
+                  "yardage": 3378,
+                  "par": 36,
+                  "index": 36.4,
+                  "slope": 142.0
+                },
+                "in": {
+                  "yardage": 3116,
+                  "par": 36,
+                  "index": 37.2,
+                  "slope": 141.0
+                },
+                "total": {
+                  "yardage": 6628,
+                  "par": 72,
+                  "index": 72.9,
+                  "slope": 140.5
+                }
+              }
+            }
+          }
+        },
         "_2025": {
           "holes": [
             {
@@ -2250,6 +2489,254 @@
                 "par": 73,
                 "index": 69.3,
                 "slope": 128
+              }
+            }
+          }
+        },
+        "_2026": {
+          "holes": [
+            {
+              "number": 1,
+              "tees": {
+                "purple": 395,
+                "orange": 355,
+                "blue": 355
+              },
+              "handicap": 9,
+              "par": 4
+            },
+            {
+              "number": 2,
+              "tees": {
+                "purple": 341,
+                "orange": 311,
+                "blue": 311
+              },
+              "handicap": 17,
+              "par": 4
+            },
+            {
+              "number": 3,
+              "tees": {
+                "purple": 529,
+                "orange": 494,
+                "blue": 467
+              },
+              "handicap": 5,
+              "par": 5
+            },
+            {
+              "number": 4,
+              "tees": {
+                "purple": 386,
+                "orange": 367,
+                "blue": 367
+              },
+              "handicap": 7,
+              "par": 4
+            },
+            {
+              "number": 5,
+              "tees": {
+                "purple": 456,
+                "orange": 417,
+                "blue": 365
+              },
+              "handicap": 1,
+              "par": 4
+            },
+            {
+              "number": 6,
+              "tees": {
+                "purple": 547,
+                "orange": 487,
+                "blue": 456
+              },
+              "handicap": 13,
+              "par": 5
+            },
+            {
+              "number": 7,
+              "tees": {
+                "purple": 156,
+                "orange": 136,
+                "blue": 136
+              },
+              "handicap": 15,
+              "par": 3
+            },
+            {
+              "number": 8,
+              "tees": {
+                "purple": 397,
+                "orange": 361,
+                "blue": 361
+              },
+              "handicap": 3,
+              "par": 4
+            },
+            {
+              "number": 9,
+              "tees": {
+                "purple": 178,
+                "orange": 166,
+                "blue": 154
+              },
+              "handicap": 11,
+              "par": 3
+            },
+            {
+              "number": 10,
+              "tees": {
+                "purple": 325,
+                "orange": 285,
+                "blue": 285
+              },
+              "handicap": 18,
+              "par": 4
+            },
+            {
+              "number": 11,
+              "tees": {
+                "purple": 545,
+                "orange": 531,
+                "blue": 494
+              },
+              "handicap": 4,
+              "par": 5
+            },
+            {
+              "number": 12,
+              "tees": {
+                "purple": 375,
+                "orange": 331,
+                "blue": 331
+              },
+              "handicap": 8,
+              "par": 4
+            },
+            {
+              "number": 13,
+              "tees": {
+                "purple": 539,
+                "orange": 516,
+                "blue": 516
+              },
+              "handicap": 14,
+              "par": 5
+            },
+            {
+              "number": 14,
+              "tees": {
+                "purple": 176,
+                "orange": 160,
+                "blue": 154
+              },
+              "handicap": 12,
+              "par": 3
+            },
+            {
+              "number": 15,
+              "tees": {
+                "purple": 427,
+                "orange": 401,
+                "blue": 375
+              },
+              "handicap": 2,
+              "par": 4
+            },
+            {
+              "number": 16,
+              "tees": {
+                "purple": 188,
+                "orange": 151,
+                "blue": 151
+              },
+              "handicap": 16,
+              "par": 3
+            },
+            {
+              "number": 17,
+              "tees": {
+                "purple": 405,
+                "orange": 385,
+                "blue": 351
+              },
+              "handicap": 6,
+              "par": 4
+            },
+            {
+              "number": 18,
+              "tees": {
+                "purple": 554,
+                "orange": 498,
+                "blue": 498
+              },
+              "handicap": 10,
+              "par": 5
+            }
+          ],
+          "totals": {
+            "tees": {
+              "purple": {
+                "out": {
+                  "yardage": 3385,
+                  "par": 36,
+                  "index": 36.4,
+                  "slope": 141.0
+                },
+                "in": {
+                  "yardage": 3534,
+                  "par": 37,
+                  "index": 37.3,
+                  "slope": 144.0
+                },
+                "total": {
+                  "yardage": 6919,
+                  "par": 73,
+                  "index": 73.7,
+                  "slope": 143
+                }
+              },
+              "orange": {
+                "out": {
+                  "yardage": 3094,
+                  "par": 36,
+                  "index": 35.1,
+                  "slope": 131.0
+                },
+                "in": {
+                  "yardage": 3258,
+                  "par": 37,
+                  "index": 35.7,
+                  "slope": 136.0
+                },
+                "total": {
+                  "yardage": 6352,
+                  "par": 73,
+                  "index": 70.8,
+                  "slope": 134
+                }
+              },
+              "blue": {
+                "out": {
+                  "yardage": 2972,
+                  "par": 36,
+                  "index": 34.7,
+                  "slope": 128.0
+                },
+                "in": {
+                  "yardage": 3155,
+                  "par": 37,
+                  "index": 34.6,
+                  "slope": 128.0
+                },
+                "total": {
+                  "yardage": 6127,
+                  "par": 73,
+                  "index": 69.3,
+                  "slope": 128
+                }
               }
             }
           }
@@ -3224,6 +3711,254 @@
                 "par": 72,
                 "index": 69.7,
                 "slope": 134.0
+              }
+            }
+          }
+        },
+        "_2026": {
+          "holes": [
+            {
+              "number": 1,
+              "tees": {
+                "purple": 364,
+                "orange": 351,
+                "blue": 351
+              },
+              "handicap": 11,
+              "par": 4
+            },
+            {
+              "number": 2,
+              "tees": {
+                "purple": 326,
+                "orange": 317,
+                "blue": 317
+              },
+              "handicap": 13,
+              "par": 4
+            },
+            {
+              "number": 3,
+              "tees": {
+                "purple": 185,
+                "orange": 174,
+                "blue": 146
+              },
+              "handicap": 5,
+              "par": 3
+            },
+            {
+              "number": 4,
+              "tees": {
+                "purple": 422,
+                "orange": 399,
+                "blue": 377
+              },
+              "handicap": 9,
+              "par": 4
+            },
+            {
+              "number": 5,
+              "tees": {
+                "purple": 593,
+                "orange": 561,
+                "blue": 476
+              },
+              "handicap": 1,
+              "par": 5
+            },
+            {
+              "number": 6,
+              "tees": {
+                "purple": 376,
+                "orange": 365,
+                "blue": 365
+              },
+              "handicap": 7,
+              "par": 4
+            },
+            {
+              "number": 7,
+              "tees": {
+                "purple": 328,
+                "orange": 311,
+                "blue": 311
+              },
+              "handicap": 17,
+              "par": 4
+            },
+            {
+              "number": 8,
+              "tees": {
+                "purple": 181,
+                "orange": 167,
+                "blue": 167
+              },
+              "handicap": 15,
+              "par": 3
+            },
+            {
+              "number": 9,
+              "tees": {
+                "purple": 484,
+                "orange": 467,
+                "blue": 467
+              },
+              "handicap": 3,
+              "par": 5
+            },
+            {
+              "number": 10,
+              "tees": {
+                "purple": 413,
+                "orange": 404,
+                "blue": 347
+              },
+              "handicap": 4,
+              "par": 4
+            },
+            {
+              "number": 11,
+              "tees": {
+                "purple": 330,
+                "orange": 309,
+                "blue": 309
+              },
+              "handicap": 16,
+              "par": 4
+            },
+            {
+              "number": 12,
+              "tees": {
+                "purple": 159,
+                "orange": 147,
+                "blue": 147
+              },
+              "handicap": 18,
+              "par": 3
+            },
+            {
+              "number": 13,
+              "tees": {
+                "purple": 502,
+                "orange": 458,
+                "blue": 458
+              },
+              "handicap": 2,
+              "par": 5
+            },
+            {
+              "number": 14,
+              "tees": {
+                "purple": 410,
+                "orange": 394,
+                "blue": 325
+              },
+              "handicap": 8,
+              "par": 4
+            },
+            {
+              "number": 15,
+              "tees": {
+                "purple": 400,
+                "orange": 354,
+                "blue": 368
+              },
+              "handicap": 10,
+              "par": 4
+            },
+            {
+              "number": 16,
+              "tees": {
+                "purple": 533,
+                "orange": 513,
+                "blue": 513
+              },
+              "handicap": 14,
+              "par": 5
+            },
+            {
+              "number": 17,
+              "tees": {
+                "purple": 184,
+                "orange": 167,
+                "blue": 167
+              },
+              "handicap": 12,
+              "par": 3
+            },
+            {
+              "number": 18,
+              "tees": {
+                "purple": 407,
+                "orange": 375,
+                "blue": 375
+              },
+              "handicap": 6,
+              "par": 4
+            }
+          ],
+          "totals": {
+            "tees": {
+              "purple": {
+                "out": {
+                  "yardage": 3259,
+                  "par": 36,
+                  "index": 36.3,
+                  "slope": 146.0
+                },
+                "in": {
+                  "yardage": 3304,
+                  "par": 36,
+                  "index": 36.0,
+                  "slope": 133.0
+                },
+                "total": {
+                  "yardage": 6563,
+                  "par": 72,
+                  "index": 72.3,
+                  "slope": 140
+                }
+              },
+              "orange": {
+                "out": {
+                  "yardage": 3112,
+                  "par": 36,
+                  "index": 35.9,
+                  "slope": 143.0
+                },
+                "in": {
+                  "yardage": 3121,
+                  "par": 36,
+                  "index": 35.2,
+                  "slope": 129.0
+                },
+                "total": {
+                  "yardage": 6233,
+                  "par": 72,
+                  "index": 71.1,
+                  "slope": 136.0
+                }
+              },
+              "blue": {
+                "out": {
+                  "yardage": 2977,
+                  "par": 36,
+                  "index": 34.9,
+                  "slope": 134.0
+                },
+                "in": {
+                  "yardage": 2995,
+                  "par": 36,
+                  "index": 34.8,
+                  "slope": 134.0
+                },
+                "total": {
+                  "yardage": 5972,
+                  "par": 72,
+                  "index": 69.7,
+                  "slope": 134.0
+                }
               }
             }
           }
@@ -5484,6 +6219,272 @@
             }
           }
         },
+        "_2026": {
+          "holes": [
+            {
+              "number": 1,
+              "tees": {
+                "brown": 367,
+                "purple": 342,
+                "orange": 342,
+                "blue": 338
+              },
+              "handicap": 7,
+              "par": 4
+            },
+            {
+              "number": 2,
+              "tees": {
+                "brown": 171,
+                "purple": 163,
+                "orange": 149,
+                "blue": 149
+              },
+              "handicap": 11,
+              "par": 3
+            },
+            {
+              "number": 3,
+              "tees": {
+                "brown": 423,
+                "purple": 405,
+                "orange": 382,
+                "blue": 382
+              },
+              "handicap": 3,
+              "par": 4
+            },
+            {
+              "number": 4,
+              "tees": {
+                "brown": 415,
+                "purple": 391,
+                "orange": 379,
+                "blue": 379
+              },
+              "handicap": 1,
+              "par": 4
+            },
+            {
+              "number": 5,
+              "tees": {
+                "brown": 186,
+                "purple": 168,
+                "orange": 168,
+                "blue": 158
+              },
+              "handicap": 13,
+              "par": 3
+            },
+            {
+              "number": 6,
+              "tees": {
+                "brown": 531,
+                "purple": 486,
+                "orange": 486,
+                "blue": 458
+              },
+              "handicap": 9,
+              "par": 5
+            },
+            {
+              "number": 7,
+              "tees": {
+                "brown": 396,
+                "purple": 388,
+                "orange": 368,
+                "blue": 368
+              },
+              "handicap": 5,
+              "par": 4
+            },
+            {
+              "number": 8,
+              "tees": {
+                "brown": 180,
+                "purple": 163,
+                "orange": 129,
+                "blue": 129
+              },
+              "handicap": 15,
+              "par": 3
+            },
+            {
+              "number": 9,
+              "tees": {
+                "brown": 473,
+                "purple": 455,
+                "orange": 455,
+                "blue": 421
+              },
+              "handicap": 17,
+              "par": 5
+            },
+            {
+              "number": 10,
+              "tees": {
+                "brown": 464,
+                "purple": 429,
+                "orange": 395,
+                "blue": 395
+              },
+              "handicap": 8,
+              "par": 4
+            },
+            {
+              "number": 11,
+              "tees": {
+                "brown": 186,
+                "purple": 174,
+                "orange": 166,
+                "blue": 166
+              },
+              "handicap": 14,
+              "par": 3
+            },
+            {
+              "number": 12,
+              "tees": {
+                "brown": 417,
+                "purple": 407,
+                "orange": 386,
+                "blue": 386
+              },
+              "handicap": 2,
+              "par": 4
+            },
+            {
+              "number": 13,
+              "tees": {
+                "brown": 556,
+                "purple": 524,
+                "orange": 514,
+                "blue": 514
+              },
+              "handicap": 6,
+              "par": 5
+            },
+            {
+              "number": 14,
+              "tees": {
+                "brown": 391,
+                "purple": 380,
+                "orange": 380,
+                "blue": 372
+              },
+              "handicap": 12,
+              "par": 4
+            },
+            {
+              "number": 15,
+              "tees": {
+                "brown": 178,
+                "purple": 170,
+                "orange": 144,
+                "blue": 144
+              },
+              "handicap": 16,
+              "par": 3
+            },
+            {
+              "number": 16,
+              "tees": {
+                "brown": 382,
+                "purple": 344,
+                "orange": 335,
+                "blue": 335
+              },
+              "handicap": 10,
+              "par": 4
+            },
+            {
+              "number": 17,
+              "tees": {
+                "brown": 519,
+                "purple": 475,
+                "orange": 475,
+                "blue": 427
+              },
+              "handicap": 18,
+              "par": 5
+            },
+            {
+              "number": 18,
+              "tees": {
+                "brown": 405,
+                "purple": 373,
+                "orange": 341,
+                "blue": 341
+              },
+              "handicap": 4,
+              "par": 4
+            }
+          ],
+          "totals": {
+            "tees": {
+              "brown": {
+                "out": {
+                  "yardage": 3142,
+                  "par": 35,
+                  "index": 35.6,
+                  "slope": 131.0
+                },
+                "in": {
+                  "yardage": 3498,
+                  "par": 36,
+                  "index": 37.6,
+                  "slope": 142.0
+                },
+                "total": {
+                  "yardage": 6640,
+                  "par": 71,
+                  "index": 73.2,
+                  "slope": 137.0
+                }
+              },
+              "purple": {
+                "out": {
+                  "yardage": 2961,
+                  "par": 35,
+                  "index": 34.6,
+                  "slope": 129.0
+                },
+                "in": {
+                  "yardage": 3276,
+                  "par": 36,
+                  "index": 36.3,
+                  "slope": 138.0
+                },
+                "total": {
+                  "yardage": 6237,
+                  "par": 71,
+                  "index": 70.9,
+                  "slope": 134.0
+                }
+              },
+              "orange": {
+                "out": {
+                  "yardage": 2858,
+                  "par": 35,
+                  "index": 34.0,
+                  "slope": 127.0
+                },
+                "in": {
+                  "yardage": 3136,
+                  "par": 36,
+                  "index": 35.3,
+                  "slope": 133.0
+                },
+                "total": {
+                  "yardage": 5994,
+                  "par": 71,
+                  "index": 69.3,
+                  "slope": 130.0
+                }
+              }
+            }
+          }
+        },
         "_2025": {
           "holes": [
             {
@@ -5987,6 +6988,263 @@
                 "index": 68.9,
                 "slope": 124.0,
                 "bogeyRating": 91.8
+              }
+            }
+          }
+        },
+        "_2026": {
+          "holes": [
+            {
+              "number": 1,
+              "tees": {
+                "blue": 340,
+                "blueWhite": 340,
+                "white": 320
+              },
+              "handicap": 13,
+              "par": 4
+            },
+            {
+              "number": 2,
+              "tees": {
+                "blue": 380,
+                "blueWhite": 380,
+                "white": 321
+              },
+              "handicap": 9,
+              "par": 4
+            },
+            {
+              "number": 3,
+              "tees": {
+                "blue": 166,
+                "blueWhite": 166,
+                "white": 146
+              },
+              "handicap": 17,
+              "par": 3
+            },
+            {
+              "number": 4,
+              "tees": {
+                "blue": 422,
+                "blueWhite": 387,
+                "white": 387
+              },
+              "handicap": 7,
+              "par": 4
+            },
+            {
+              "number": 5,
+              "tees": {
+                "blue": 527,
+                "blueWhite": 486,
+                "white": 486
+              },
+              "handicap": 11,
+              "par": 5
+            },
+            {
+              "number": 6,
+              "tees": {
+                "blue": 439,
+                "blueWhite": 388,
+                "white": 388
+              },
+              "handicap": 1,
+              "par": 4
+            },
+            {
+              "number": 7,
+              "tees": {
+                "blue": 600,
+                "blueWhite": 569,
+                "white": 569
+              },
+              "handicap": 5,
+              "par": 5
+            },
+            {
+              "number": 8,
+              "tees": {
+                "blue": 404,
+                "blueWhite": 341,
+                "white": 341
+              },
+              "handicap": 3,
+              "par": 4
+            },
+            {
+              "number": 9,
+              "tees": {
+                "blue": 148,
+                "blueWhite": 148,
+                "white": 142
+              },
+              "handicap": 15,
+              "par": 3
+            },
+            {
+              "number": 10,
+              "tees": {
+                "blue": 338,
+                "blueWhite": 338,
+                "white": 322
+              },
+              "handicap": 14,
+              "par": 4
+            },
+            {
+              "number": 11,
+              "tees": {
+                "blue": 499,
+                "blueWhite": 499,
+                "white": 468
+              },
+              "handicap": 18,
+              "par": 5
+            },
+            {
+              "number": 12,
+              "tees": {
+                "blue": 328,
+                "blueWhite": 328,
+                "white": 320
+              },
+              "handicap": 6,
+              "par": 4
+            },
+            {
+              "number": 13,
+              "tees": {
+                "blue": 199,
+                "blueWhite": 185,
+                "white": 185
+              },
+              "handicap": 12,
+              "par": 3
+            },
+            {
+              "number": 14,
+              "tees": {
+                "blue": 348,
+                "blueWhite": 348,
+                "white": 333
+              },
+              "handicap": 4,
+              "par": 4
+            },
+            {
+              "number": 15,
+              "tees": {
+                "blue": 213,
+                "blueWhite": 132,
+                "white": 132
+              },
+              "handicap": 16,
+              "par": 3
+            },
+            {
+              "number": 16,
+              "tees": {
+                "blue": 379,
+                "blueWhite": 379,
+                "white": 366
+              },
+              "handicap": 8,
+              "par": 4
+            },
+            {
+              "number": 17,
+              "tees": {
+                "blue": 503,
+                "blueWhite": 503,
+                "white": 486
+              },
+              "handicap": 2,
+              "par": 5
+            },
+            {
+              "number": 18,
+              "tees": {
+                "blue": 322,
+                "blueWhite": 322,
+                "white": 290
+              },
+              "handicap": 10,
+              "par": 4
+            }
+          ],
+          "totals": {
+            "tees": {
+              "blue": {
+                "out": {
+                  "yardage": 0,
+                  "par": 36,
+                  "index": 36.4,
+                  "slope": 128.0,
+                  "bogeyRating": 48.3
+                },
+                "in": {
+                  "yardage": 0,
+                  "par": 36,
+                  "index": 35.4,
+                  "slope": 131.0,
+                  "bogeyRating": 47.6
+                },
+                "total": {
+                  "yardage": 6555,
+                  "par": 72,
+                  "index": 71.8,
+                  "slope": 130.0,
+                  "bogeyRating": 95.9
+                }
+              },
+              "blueWhite": {
+                "out": {
+                  "yardage": 0,
+                  "par": 36,
+                  "index": 35.3,
+                  "slope": 124.0,
+                  "bogeyRating": 46.8
+                },
+                "in": {
+                  "yardage": 0,
+                  "par": 36,
+                  "index": 34.8,
+                  "slope": 127.0,
+                  "bogeyRating": 46.6
+                },
+                "total": {
+                  "yardage": 6239,
+                  "par": 72,
+                  "index": 70.1,
+                  "slope": 126.0,
+                  "bogeyRating": 93.4
+                }
+              },
+              "white": {
+                "out": {
+                  "yardage": 0,
+                  "par": 36,
+                  "index": 34.7,
+                  "slope": 123.0,
+                  "bogeyRating": 46.1
+                },
+                "in": {
+                  "yardage": 0,
+                  "par": 36,
+                  "index": 34.2,
+                  "slope": 124.0,
+                  "bogeyRating": 45.7
+                },
+                "total": {
+                  "yardage": 6002,
+                  "par": 72,
+                  "index": 68.9,
+                  "slope": 124.0,
+                  "bogeyRating": 91.8
+                }
               }
             }
           }

@@ -251,10 +251,14 @@ function normalizePlayerScoreEntry(scoreEntry, label) {
     throw new Error(`${label}.useBack must be a boolean when provided.`)
   }
 
+  const gross = holes.includes(99)
+    ? undefined
+    : holes.reduce((total, score) => total + score, 0)
+
   return {
     holes,
-    frontGross: scoreEntry.frontGross,
-    backGross: scoreEntry.backGross,
+    frontGross: scoreEntry.useFront ? gross : scoreEntry.frontGross,
+    backGross: scoreEntry.useBack ? gross : scoreEntry.backGross,
     useForHandicapIndex: scoreEntry.useForHandicapIndex,
     use18Holes: scoreEntry.use18Holes,
     useFront: scoreEntry.useFront,
@@ -322,6 +326,8 @@ function validateRounds(rounds, knownPlayersByTeam, yearKey, roundsPath) {
 }
 
 function applyRoundScoresToPlayers(playersObj, rounds, yearKey) {
+  const handicapEligibility = new Map()
+
   rounds.forEach(round => {
     const holeKey = round.holes
     const courseKey = round.course
@@ -367,7 +373,11 @@ function applyRoundScoresToPlayers(playersObj, rounds, yearKey) {
         }
 
         if (normalizedEntry.useForHandicapIndex !== undefined) {
-          courseData.useForHandicapIndex = normalizedEntry.useForHandicapIndex
+          const eligible =
+            handicapEligibility.get(courseData) === true ||
+            normalizedEntry.useForHandicapIndex
+          handicapEligibility.set(courseData, eligible)
+          courseData.useForHandicapIndex = eligible
         }
 
         if (normalizedEntry.use18Holes !== undefined) {

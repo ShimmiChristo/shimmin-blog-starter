@@ -732,12 +732,13 @@
             "bayHarborPreserveLinks": {
               "course": "Bay Harbor Preserve Links",
               "front": [5, 8, 5, 8, 4, 6, 8, 8, 5],
-              "frontGross": 891,
+              "frontGross": 57,
               "frontHandicap": 999,
               "back": [5, 5, 5, 5, 5, 5, 5, 4, 14],
               "backGross": 891,
               "backHandicap": 999,
-              "useForHandicapIndex": false
+              "useForHandicapIndex": true,
+              "useFront": true
             },
             "boyneHighlandsArthurHills": {
               "course": "Arthur Hills at Boyne Highlands",
@@ -745,7 +746,8 @@
               "frontHandicap": 999,
               "back": [5, 9, 6, 5, 6, 6, 6, 4, 99],
               "backHandicap": 999,
-              "useForHandicapIndex": false
+              "useForHandicapIndex": true,
+              "useBack": true
             },
             "boyneHighlandsDonaldRoss": {
               "course": "Donald Ross at Boyne Highlands",
@@ -753,7 +755,9 @@
               "frontHandicap": 999,
               "back": [7, 7, 3, 9, 10, 10, 7, 5, 9],
               "backHandicap": 999,
-              "useForHandicapIndex": false
+              "useForHandicapIndex": true,
+              "backGross": 67,
+              "useBack": true
             }
           },
           "points": [
@@ -1502,15 +1506,15 @@
           "scores": {
             "hiddenRiverGolfClub": {
               "course": "Hidden River Golf Club",
-              "front": [99, 99, 99, 99, 99, 99, 99, 99, 99],
-              "frontGross": 53,
+              "front": [6, 5, 2, 5, 5, 5, 7, 3, 4],
+              "frontGross": 42,
               "frontHandicap": 999,
-              "frontTees": "white",
-              "back": [99, 99, 99, 99, 99, 99, 99, 99, 99],
-              "backGross": 61,
-              "backTees": "white",
+              "frontTees": "blueWhite",
+              "back": [4, 5, 5, 5, 4, 3, 5, 6, 4],
+              "backGross": 41,
+              "backTees": "blueWhite",
               "backHandicap": 999,
-              "useForHandicapIndex": false,
+              "useForHandicapIndex": true,
               "use18Holes": true
             },
             "crookedTree": {
@@ -1534,7 +1538,9 @@
               "back": [7, 5, 4, 2, 5, 4, 5, 4, 5],
               "backGross": 891,
               "backHandicap": 999,
-              "useForHandicapIndex": false
+              "frontTees": "brown",
+              "useForHandicapIndex": true,
+              "useFront": true
             },
             "boyneHighlandsArthurHills": {
               "course": "Arthur Hills at Boyne Highlands",
@@ -1542,7 +1548,10 @@
               "frontHandicap": 999,
               "back": [5, 8, 6, 6, 3, 5, 4, 4, 5],
               "backHandicap": 999,
-              "useForHandicapIndex": false
+              "backTees": "purple",
+              "useForHandicapIndex": true,
+              "useBack": true,
+              "backGross": 46
             },
             "boyneHighlandsDonaldRoss": {
               "course": "Donald Ross at Boyne Highlands",
@@ -1550,7 +1559,10 @@
               "frontHandicap": 999,
               "back": [5, 5, 2, 6, 6, 4, 6, 4, 5],
               "backHandicap": 999,
-              "useForHandicapIndex": false
+              "backTees": "purple",
+              "useForHandicapIndex": true,
+              "useBack": true,
+              "backGross": 43
             }
           },
           "points": [
@@ -2471,13 +2483,14 @@
             },
             "bayHarborPreserveLinks": {
               "course": "Bay Harbor Preserve Links",
-              "front": [7, 6, 5, 7, 5, 5, 4, 5, 99],
-              "frontGross": 891,
+              "front": [7, 6, 5, 7, 5, 5, 4, 5, 4],
+              "frontGross": 48,
               "frontHandicap": 999,
               "back": [5, 5, 5, 5, 5, 5, 5, 4, 14],
               "backGross": 891,
               "backHandicap": 999,
-              "useForHandicapIndex": false
+              "useForHandicapIndex": true,
+              "useFront": true
             },
             "boyneHighlandsArthurHills": {
               "course": "Arthur Hills at Boyne Highlands",
@@ -2485,7 +2498,9 @@
               "frontHandicap": 999,
               "back": [6, 6, 5, 5, 6, 5, 3, 5, 8],
               "backHandicap": 999,
-              "useForHandicapIndex": false
+              "useForHandicapIndex": true,
+              "backGross": 49,
+              "useBack": true
             },
             "boyneHighlandsDonaldRoss": {
               "course": "Donald Ross at Boyne Highlands",
@@ -2493,7 +2508,9 @@
               "frontHandicap": 999,
               "back": [5, 5, 4, 6, 5, 5, 6, 4, 6],
               "backHandicap": 999,
-              "useForHandicapIndex": false
+              "useForHandicapIndex": true,
+              "backGross": 46,
+              "useBack": true
             }
           },
           "points": [
@@ -3555,13 +3572,14 @@
             },
             "bayHarborPreserveLinks": {
               "course": "Bay Harbor Preserve Links",
-              "front": [7, 7, 4, 8, 5, 7, 4, 5, 99],
-              "frontGross": 891,
+              "front": [7, 7, 4, 8, 5, 7, 4, 5, 5],
+              "frontGross": 52,
               "frontHandicap": 999,
               "back": [5, 3, 5, 4, 3, 5, 5, 5, 5],
               "backGross": 891,
               "backHandicap": 999,
-              "useForHandicapIndex": false
+              "useForHandicapIndex": true,
+              "useFront": true
             },
             "boyneHighlandsArthurHills": {
               "course": "Arthur Hills at Boyne Highlands",
@@ -3569,7 +3587,9 @@
               "frontHandicap": 999,
               "back": [5, 9, 5, 7, 5, 7, 4, 6, 5],
               "backHandicap": 999,
-              "useForHandicapIndex": false
+              "useForHandicapIndex": true,
+              "backGross": 53,
+              "useBack": true
             },
             "boyneHighlandsDonaldRoss": {
               "course": "Donald Ross at Boyne Highlands",
@@ -3577,7 +3597,9 @@
               "frontHandicap": 999,
               "back": [6, 7, 4, 7, 6, 6, 8, 3, 6],
               "backHandicap": 999,
-              "useForHandicapIndex": false
+              "useForHandicapIndex": true,
+              "backGross": 53,
+              "useBack": true
             }
           },
           "points": [
@@ -4514,7 +4536,8 @@
               "back": [4, 4, 3, 4, 6, 4, 5, 6, 7],
               "backGross": 891,
               "backHandicap": 999,
-              "useForHandicapIndex": false
+              "useForHandicapIndex": true,
+              "useFront": true
             },
             "boyneHighlandsArthurHills": {
               "course": "Arthur Hills at Boyne Highlands",
@@ -4522,7 +4545,8 @@
               "frontHandicap": 999,
               "back": [7, 7, 5, 6, 5, 5, 6, 6, 99],
               "backHandicap": 999,
-              "useForHandicapIndex": false
+              "useForHandicapIndex": true,
+              "useBack": true
             },
             "boyneHighlandsDonaldRoss": {
               "course": "Donald Ross at Boyne Highlands",
@@ -4530,7 +4554,9 @@
               "frontHandicap": 999,
               "back": [6, 4, 4, 6, 7, 6, 7, 4, 6],
               "backHandicap": 999,
-              "useForHandicapIndex": false
+              "useForHandicapIndex": true,
+              "backGross": 50,
+              "useBack": true
             }
           },
           "points": [
@@ -5609,12 +5635,13 @@
             "bayHarborPreserveLinks": {
               "course": "Bay Harbor Preserve Links",
               "front": [4, 6, 5, 8, 4, 7, 4, 5, 5],
-              "frontGross": 891,
+              "frontGross": 48,
               "frontHandicap": 999,
               "back": [7, 5, 4, 2, 5, 4, 5, 4, 5],
               "backGross": 891,
               "backHandicap": 999,
-              "useForHandicapIndex": false
+              "useForHandicapIndex": true,
+              "useFront": true
             },
             "boyneHighlandsArthurHills": {
               "course": "Arthur Hills at Boyne Highlands",
@@ -5622,7 +5649,9 @@
               "frontHandicap": 999,
               "back": [4, 7, 6, 6, 5, 5, 5, 5, 7],
               "backHandicap": 999,
-              "useForHandicapIndex": false
+              "useForHandicapIndex": true,
+              "backGross": 50,
+              "useBack": true
             },
             "boyneHighlandsDonaldRoss": {
               "course": "Donald Ross at Boyne Highlands",
@@ -5630,7 +5659,9 @@
               "frontHandicap": 999,
               "back": [8, 5, 5, 7, 6, 6, 7, 6, 4],
               "backHandicap": 999,
-              "useForHandicapIndex": false
+              "useForHandicapIndex": true,
+              "backGross": 54,
+              "useBack": true
             }
           },
           "points": [
@@ -6691,12 +6722,13 @@
             "bayHarborPreserveLinks": {
               "course": "Bay Harbor Preserve Links",
               "front": [5, 5, 4, 6, 3, 7, 5, 5, 3],
-              "frontGross": 891,
+              "frontGross": 43,
               "frontHandicap": 999,
               "back": [4, 5, 4, 3, 4, 5, 5, 4, 4],
               "backGross": 891,
               "backHandicap": 999,
-              "useForHandicapIndex": false
+              "useForHandicapIndex": true,
+              "useFront": true
             },
             "boyneHighlandsArthurHills": {
               "course": "Arthur Hills at Boyne Highlands",
@@ -6704,7 +6736,9 @@
               "frontHandicap": 999,
               "back": [4, 8, 5, 5, 6, 6, 4, 6, 8],
               "backHandicap": 999,
-              "useForHandicapIndex": false
+              "useForHandicapIndex": true,
+              "backGross": 52,
+              "useBack": true
             },
             "boyneHighlandsDonaldRoss": {
               "course": "Donald Ross at Boyne Highlands",
@@ -6712,7 +6746,9 @@
               "frontHandicap": 999,
               "back": [5, 4, 4, 7, 4, 4, 5, 3, 4],
               "backHandicap": 999,
-              "useForHandicapIndex": false
+              "useForHandicapIndex": true,
+              "backGross": 40,
+              "useBack": true
             }
           },
           "points": [
@@ -7776,7 +7812,8 @@
               "back": [4, 4, 3, 4, 6, 4, 5, 6, 7],
               "backGross": 891,
               "backHandicap": 999,
-              "useForHandicapIndex": false
+              "useForHandicapIndex": true,
+              "useFront": true
             },
             "boyneHighlandsArthurHills": {
               "course": "Arthur Hills at Boyne Highlands",
@@ -7784,7 +7821,9 @@
               "frontHandicap": 999,
               "back": [5, 8, 6, 7, 5, 5, 5, 5, 7],
               "backHandicap": 999,
-              "useForHandicapIndex": false
+              "useForHandicapIndex": true,
+              "backGross": 53,
+              "useBack": true
             },
             "boyneHighlandsDonaldRoss": {
               "course": "Donald Ross at Boyne Highlands",
@@ -7792,7 +7831,9 @@
               "frontHandicap": 999,
               "back": [5, 5, 5, 6, 5, 6, 8, 5, 5],
               "backHandicap": 999,
-              "useForHandicapIndex": false
+              "useForHandicapIndex": true,
+              "backGross": 50,
+              "useBack": true
             }
           },
           "points": [
@@ -8718,13 +8759,14 @@
             },
             "bayHarborPreserveLinks": {
               "course": "Bay Harbor Preserve Links",
-              "front": [4, 7, 5, 7, 5, 7, 5, 6, 99],
-              "frontGross": 891,
+              "front": [4, 7, 5, 7, 5, 7, 5, 6, 4],
+              "frontGross": 50,
               "frontHandicap": 999,
               "back": [6, 5, 6, 4, 5, 5, 7, 3, 6],
               "backGross": 891,
               "backHandicap": 999,
-              "useForHandicapIndex": false
+              "useForHandicapIndex": true,
+              "useFront": true
             },
             "boyneHighlandsArthurHills": {
               "course": "Arthur Hills at Boyne Highlands",
@@ -8732,7 +8774,8 @@
               "frontHandicap": 999,
               "back": [5, 8, 3, 6, 4, 6, 4, 4, 99],
               "backHandicap": 999,
-              "useForHandicapIndex": false
+              "useForHandicapIndex": true,
+              "useBack": true
             },
             "boyneHighlandsDonaldRoss": {
               "course": "Donald Ross at Boyne Highlands",
@@ -8740,7 +8783,9 @@
               "frontHandicap": 999,
               "back": [6, 4, 4, 5, 6, 6, 7, 4, 5],
               "backHandicap": 999,
-              "useForHandicapIndex": false
+              "useForHandicapIndex": true,
+              "backGross": 47,
+              "useBack": true
             }
           },
           "points": [
@@ -9995,8 +10040,10 @@
               "frontHandicap": 999,
               "back": [5, 4, 4, 5, 5, 4, 5, 5, 4],
               "backHandicap": 999,
-              "frontGross": 999,
+              "frontGross": 33,
               "backGross": 41,
+              "frontTees": "purple",
+              "backTees": "purple",
               "useForHandicapIndex": true,
               "use18Holes": false,
               "useFront": false,
@@ -10005,12 +10052,13 @@
             "bayHarborPreserveLinks": {
               "course": "Bay Harbor Preserve Links",
               "front": [4, 5, 4, 7, 4, 5, 4, 3, 3],
-              "frontGross": 891,
+              "frontGross": 39,
               "frontHandicap": 999,
               "back": [5, 3, 5, 4, 3, 5, 5, 5, 5],
               "backGross": 891,
               "backHandicap": 999,
-              "useForHandicapIndex": false
+              "useForHandicapIndex": true,
+              "useFront": true
             },
             "boyneHighlandsArthurHills": {
               "course": "Arthur Hills at Boyne Highlands",
@@ -10018,7 +10066,9 @@
               "frontHandicap": 999,
               "back": [5, 6, 6, 5, 5, 5, 3, 4, 8],
               "backHandicap": 999,
-              "useForHandicapIndex": false
+              "useForHandicapIndex": true,
+              "backGross": 47,
+              "useBack": true
             },
             "boyneHighlandsDonaldRoss": {
               "course": "Donald Ross at Boyne Highlands",
@@ -10026,7 +10076,9 @@
               "frontHandicap": 999,
               "back": [5, 4, 3, 7, 5, 4, 5, 3, 4],
               "backHandicap": 999,
-              "useForHandicapIndex": false
+              "useForHandicapIndex": true,
+              "backGross": 40,
+              "useBack": true
             }
           },
           "points": [
@@ -11090,13 +11142,14 @@
             },
             "bayHarborPreserveLinks": {
               "course": "Bay Harbor Preserve Links",
-              "front": [7, 6, 4, 8, 5, 7, 5, 5, 99],
-              "frontGross": 891,
+              "front": [7, 6, 4, 8, 5, 7, 5, 5, 4],
+              "frontGross": 51,
               "frontHandicap": 999,
               "back": [4, 5, 4, 3, 4, 5, 5, 4, 4],
               "backGross": 891,
               "backHandicap": 999,
-              "useForHandicapIndex": false
+              "useForHandicapIndex": true,
+              "useFront": true
             },
             "boyneHighlandsArthurHills": {
               "course": "Arthur Hills at Boyne Highlands",
@@ -11104,7 +11157,9 @@
               "frontHandicap": 999,
               "back": [5, 7, 4, 6, 4, 5, 4, 4, 7],
               "backHandicap": 999,
-              "useForHandicapIndex": false
+              "useForHandicapIndex": true,
+              "backGross": 46,
+              "useBack": true
             },
             "boyneHighlandsDonaldRoss": {
               "course": "Donald Ross at Boyne Highlands",
@@ -11112,7 +11167,9 @@
               "frontHandicap": 999,
               "back": [6, 4, 4, 6, 5, 5, 6, 3, 6],
               "backHandicap": 999,
-              "useForHandicapIndex": false
+              "useForHandicapIndex": true,
+              "backGross": 45,
+              "useBack": true
             }
           },
           "points": [
@@ -12391,7 +12448,8 @@
               "back": [6, 5, 6, 4, 5, 5, 7, 3, 6],
               "backGross": 891,
               "backHandicap": 999,
-              "useForHandicapIndex": false
+              "useForHandicapIndex": true,
+              "useFront": true
             },
             "boyneHighlandsArthurHills": {
               "course": "Arthur Hills at Boyne Highlands",
@@ -12399,7 +12457,8 @@
               "frontHandicap": 999,
               "back": [4, 5, 6, 7, 5, 8, 6, 4, 99],
               "backHandicap": 999,
-              "useForHandicapIndex": false
+              "useForHandicapIndex": true,
+              "useBack": true
             },
             "boyneHighlandsDonaldRoss": {
               "course": "Donald Ross at Boyne Highlands",
@@ -12407,7 +12466,9 @@
               "frontHandicap": 999,
               "back": [7, 6, 5, 6, 7, 6, 6, 4, 6],
               "backHandicap": 999,
-              "useForHandicapIndex": false
+              "useForHandicapIndex": true,
+              "backGross": 53,
+              "useBack": true
             }
           },
           "points": [

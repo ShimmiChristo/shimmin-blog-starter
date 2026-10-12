@@ -15,7 +15,6 @@
           "matt": {
             "holes": [4, 4, 4, 4, 3, 3, 4, 2, 5],
             "frontGross": 33,
-            "backGross": 999,
             "useForHandicapIndex": false,
             "use18Holes": false,
             "useFront": false
@@ -23,7 +22,6 @@
           "chris": {
             "holes": [4, 4, 4, 4, 3, 3, 4, 2, 5],
             "frontGross": 33,
-            "backGross": 999,
             "useForHandicapIndex": false,
             "use18Holes": false,
             "useFront": false
@@ -31,7 +29,6 @@
           "dylan": {
             "holes": [4, 3, 3, 5, 3, 4, 4, 3, 5],
             "frontGross": 34,
-            "backGross": 999,
             "useForHandicapIndex": false,
             "use18Holes": false,
             "useFront": false
@@ -39,7 +36,6 @@
           "dan": {
             "holes": [4, 3, 3, 5, 3, 4, 4, 3, 5],
             "frontGross": 34,
-            "backGross": 999,
             "useForHandicapIndex": false,
             "use18Holes": false,
             "useFront": false
@@ -109,28 +105,31 @@
         "scores": {
           "matt": {
             "holes": [5, 4, 4, 5, 5, 4, 5, 5, 4],
-            "frontGross": 999,
             "backGross": 41,
             "useForHandicapIndex": true,
             "use18Holes": false,
+            "backTees": "purple",
             "useBack": true
           },
           "travis": {
             "holes": [6, 5, 6, 8, 5, 5, 6, 7, 5],
             "backGross": 53,
             "useForHandicapIndex": true,
+            "backTees": "orange",
             "useBack": true
           },
           "craig": {
             "holes": [5, 3, 5, 8, 7, 3, 5, 8, 5],
             "backGross": 49,
             "useForHandicapIndex": true,
+            "backTees": "orange",
             "useBack": true
           },
           "dan": {
             "holes": [6, 6, 4, 7, 7, 4, 5, 7, 5],
             "backGross": 51,
             "useForHandicapIndex": true,
+            "backTees": "purple",
             "useBack": true
           }
         }
@@ -144,24 +143,28 @@
             "holes": [7, 3, 7, 5, 5, 4, 7, 6, 5],
             "useForHandicapIndex": true,
             "useBack": true,
+            "backTees": "purple",
             "backGross": 49
           },
           "chris": {
             "holes": [4, 4, 7, 5, 5, 4, 7, 5, 5],
             "useForHandicapIndex": true,
             "useBack": true,
+            "backTees": "purple",
             "backGross": 46
           },
           "rj": {
             "holes": [4, 3, 5, 6, 5, 4, 6, 5, 5],
             "useForHandicapIndex": true,
             "useBack": true,
+            "backTees": "purple",
             "backGross": 43
           },
           "cam": {
             "holes": [5, 5, 8, 5, 8, 3, 6, 9, 6],
             "useForHandicapIndex": true,
             "useBack": true,
+            "backTees": "orange",
             "backGross": 55
           }
         }
@@ -175,24 +178,28 @@
             "holes": [7, 5, 4, 7, 6, 4, 5, 8, 6],
             "useForHandicapIndex": true,
             "useBack": true,
+            "backTees": "orange",
             "backGross": 52
           },
           "curtis": {
             "holes": [5, 4, 5, 8, 7, 4, 6, 8, 7],
             "useForHandicapIndex": true,
             "useBack": true,
+            "backTees": "orange",
             "backGross": 54
           },
           "dylan": {
             "holes": [4, 4, 6, 4, 5, 3, 6, 5, 4],
             "useForHandicapIndex": true,
             "useBack": true,
+            "backTees": "purple",
             "backGross": 41
           },
           "evan": {
             "holes": [7, 5, 5, 7, 7, 7, 7, 6, 5],
             "useForHandicapIndex": true,
             "useBack": true,
+            "backTees": "orange",
             "backGross": 56
           }
         }
@@ -214,19 +221,27 @@
         "scores": {
           "matt": {
             "holes": [4, 5, 4, 7, 4, 5, 4, 3, 3],
-            "useForHandicapIndex": false
+            "useFront": true,
+            "frontTees": "brown",
+            "useForHandicapIndex": true
           },
           "derek": {
             "holes": [4, 6, 5, 8, 4, 7, 4, 5, 5],
-            "useForHandicapIndex": false
+            "useFront": true,
+            "frontTees": "orange",
+            "useForHandicapIndex": true
           },
           "dylan": {
             "holes": [5, 5, 4, 6, 3, 7, 5, 5, 3],
-            "useForHandicapIndex": false
+            "useFront": true,
+            "frontTees": "brown",
+            "useForHandicapIndex": true
           },
           "cam": {
             "holes": [5, 8, 5, 8, 4, 6, 8, 8, 5],
-            "useForHandicapIndex": false
+            "useFront": true,
+            "frontTees": "orange",
+            "useForHandicapIndex": true
           }
         }
       },
@@ -236,20 +251,28 @@
         "winner": "green",
         "scores": {
           "gordon": {
-            "holes": [4, 7, 5, 7, 5, 7, 5, 6, 99],
-            "useForHandicapIndex": false
+            "holes": [4, 7, 5, 7, 5, 7, 5, 6, 4],
+            "useFront": true,
+            "frontTees": "brown",
+            "useForHandicapIndex": true
           },
           "curtis": {
-            "holes": [7, 7, 4, 8, 5, 7, 4, 5, 99],
-            "useForHandicapIndex": false
+            "holes": [7, 7, 4, 8, 5, 7, 4, 5, 5],
+            "useFront": true,
+            "frontTees": "orange",
+            "useForHandicapIndex": true
           },
           "rj": {
-            "holes": [7, 6, 4, 8, 5, 7, 5, 5, 99],
-            "useForHandicapIndex": false
+            "holes": [7, 6, 4, 8, 5, 7, 5, 5, 4],
+            "useFront": true,
+            "frontTees": "brown",
+            "useForHandicapIndex": true
           },
           "craig": {
-            "holes": [7, 6, 5, 7, 5, 5, 4, 5, 99],
-            "useForHandicapIndex": false
+            "holes": [7, 6, 5, 7, 5, 5, 4, 5, 4],
+            "useFront": true,
+            "frontTees": "orange",
+            "useForHandicapIndex": true
           }
         }
       },
@@ -260,19 +283,27 @@
         "scores": {
           "chris": {
             "holes": [5, 6, 6, 9, 4, 7, 5, 5, 99],
-            "useForHandicapIndex": false
+            "useFront": true,
+            "frontTees": "brown",
+            "useForHandicapIndex": true
           },
           "travis": {
             "holes": [6, 6, 6, 10, 3, 7, 5, 8, 99],
-            "useForHandicapIndex": false
+            "useFront": true,
+            "frontTees": "orange",
+            "useForHandicapIndex": true
           },
           "dan": {
             "holes": [5, 6, 7, 9, 7, 8, 5, 6, 99],
-            "useForHandicapIndex": false
+            "useFront": true,
+            "frontTees": "brown",
+            "useForHandicapIndex": true
           },
           "evan": {
             "holes": [5, 6, 6, 10, 6, 6, 6, 4, 99],
-            "useForHandicapIndex": false
+            "useFront": true,
+            "frontTees": "orange",
+            "useForHandicapIndex": true
           }
         }
       }
@@ -451,19 +482,27 @@
         "scores": {
           "matt": {
             "holes": [5, 6, 6, 5, 5, 5, 3, 4, 8],
-            "useForHandicapIndex": false
+            "useForHandicapIndex": true,
+            "backTees": "purple",
+            "useBack": true
           },
           "derek": {
             "holes": [4, 7, 6, 6, 5, 5, 5, 5, 7],
-            "useForHandicapIndex": false
+            "useForHandicapIndex": true,
+            "backTees": "orange",
+            "useBack": true
           },
           "rj": {
             "holes": [5, 7, 4, 6, 4, 5, 4, 4, 7],
-            "useForHandicapIndex": false
+            "useForHandicapIndex": true,
+            "backTees": "purple",
+            "useBack": true
           },
           "evan": {
             "holes": [5, 8, 6, 7, 5, 5, 5, 5, 7],
-            "useForHandicapIndex": false
+            "useForHandicapIndex": true,
+            "backTees": "orange",
+            "useBack": true
           }
         }
       },
@@ -474,19 +513,27 @@
         "scores": {
           "chris": {
             "holes": [5, 8, 6, 6, 3, 5, 4, 4, 5],
-            "useForHandicapIndex": false
+            "useForHandicapIndex": true,
+            "backTees": "purple",
+            "useBack": true
           },
           "curtis": {
             "holes": [5, 9, 5, 7, 5, 7, 4, 6, 5],
-            "useForHandicapIndex": false
+            "useForHandicapIndex": true,
+            "backTees": "orange",
+            "useBack": true
           },
           "dylan": {
             "holes": [4, 8, 5, 5, 6, 6, 4, 6, 8],
-            "useForHandicapIndex": false
+            "useForHandicapIndex": true,
+            "backTees": "purple",
+            "useBack": true
           },
           "craig": {
             "holes": [6, 6, 5, 5, 6, 5, 3, 5, 8],
-            "useForHandicapIndex": false
+            "useForHandicapIndex": true,
+            "backTees": "orange",
+            "useBack": true
           }
         }
       },
@@ -497,19 +544,27 @@
         "scores": {
           "gordon": {
             "holes": [5, 8, 3, 6, 4, 6, 4, 4, 99],
-            "useForHandicapIndex": false
+            "useForHandicapIndex": true,
+            "backTees": "purple",
+            "useBack": true
           },
           "travis": {
             "holes": [4, 5, 6, 7, 5, 8, 6, 4, 99],
-            "useForHandicapIndex": false
+            "useForHandicapIndex": true,
+            "backTees": "orange",
+            "useBack": true
           },
           "dan": {
             "holes": [7, 7, 5, 6, 5, 5, 6, 6, 99],
-            "useForHandicapIndex": false
+            "useForHandicapIndex": true,
+            "backTees": "purple",
+            "useBack": true
           },
           "cam": {
             "holes": [5, 9, 6, 5, 6, 6, 6, 4, 99],
-            "useForHandicapIndex": false
+            "useForHandicapIndex": true,
+            "backTees": "orange",
+            "useBack": true
           }
         }
       }
@@ -609,11 +664,15 @@
         "scores": {
           "matt": {
             "holes": [5, 4, 3, 7, 5, 4, 5, 3, 4],
-            "useForHandicapIndex": false
+            "useForHandicapIndex": true,
+            "useBack": true,
+            "backTees": "purple"
           },
           "dylan": {
             "holes": [5, 4, 4, 7, 4, 4, 5, 3, 4],
-            "useForHandicapIndex": false
+            "useForHandicapIndex": true,
+            "useBack": true,
+            "backTees": "purple"
           }
         }
       },
@@ -624,11 +683,15 @@
         "scores": {
           "chris": {
             "holes": [5, 5, 2, 6, 6, 4, 6, 4, 5],
-            "useForHandicapIndex": false
+            "useForHandicapIndex": true,
+            "useBack": true,
+            "backTees": "purple"
           },
           "rj": {
             "holes": [6, 4, 4, 6, 5, 5, 6, 3, 6],
-            "useForHandicapIndex": false
+            "useForHandicapIndex": true,
+            "useBack": true,
+            "backTees": "purple"
           }
         }
       },
@@ -639,11 +702,15 @@
         "scores": {
           "gordon": {
             "holes": [6, 4, 4, 5, 6, 6, 7, 4, 5],
-            "useForHandicapIndex": false
+            "useForHandicapIndex": true,
+            "useBack": true,
+            "backTees": "purple"
           },
           "craig": {
             "holes": [5, 5, 4, 6, 5, 5, 6, 4, 6],
-            "useForHandicapIndex": false
+            "useForHandicapIndex": true,
+            "useBack": true,
+            "backTees": "orange"
           }
         }
       },
@@ -654,11 +721,15 @@
         "scores": {
           "derek": {
             "holes": [8, 5, 5, 7, 6, 6, 7, 6, 4],
-            "useForHandicapIndex": false
+            "useForHandicapIndex": true,
+            "useBack": true,
+            "backTees": "orange"
           },
           "dan": {
             "holes": [6, 4, 4, 6, 7, 6, 7, 4, 6],
-            "useForHandicapIndex": false
+            "useForHandicapIndex": true,
+            "useBack": true,
+            "backTees": "purple"
           }
         }
       },
@@ -669,11 +740,15 @@
         "scores": {
           "curtis": {
             "holes": [6, 7, 4, 7, 6, 6, 8, 3, 6],
-            "useForHandicapIndex": false
+            "useForHandicapIndex": true,
+            "useBack": true,
+            "backTees": "orange"
           },
           "evan": {
             "holes": [5, 5, 5, 6, 5, 6, 8, 5, 5],
-            "useForHandicapIndex": false
+            "useForHandicapIndex": true,
+            "useBack": true,
+            "backTees": "orange"
           }
         }
       },
@@ -684,11 +759,15 @@
         "scores": {
           "travis": {
             "holes": [7, 6, 5, 6, 7, 6, 6, 4, 6],
-            "useForHandicapIndex": false
+            "useForHandicapIndex": true,
+            "useBack": true,
+            "backTees": "orange"
           },
           "cam": {
             "holes": [7, 7, 3, 9, 10, 10, 7, 5, 9],
-            "useForHandicapIndex": false
+            "useForHandicapIndex": true,
+            "useBack": true,
+            "backTees": "orange"
           }
         }
       }
