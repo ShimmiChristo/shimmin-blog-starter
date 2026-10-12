@@ -735,7 +735,6 @@
               "frontGross": 57,
               "frontHandicap": 999,
               "back": [5, 5, 5, 5, 5, 5, 5, 4, 14],
-              "backGross": 891,
               "backHandicap": 999,
               "useForHandicapIndex": true,
               "useFront": true
@@ -1534,10 +1533,8 @@
             "bayHarborPreserveLinks": {
               "course": "Bay Harbor Preserve Links",
               "front": [5, 6, 6, 9, 4, 7, 5, 5, 99],
-              "frontGross": 891,
               "frontHandicap": 999,
               "back": [7, 5, 4, 2, 5, 4, 5, 4, 5],
-              "backGross": 891,
               "backHandicap": 999,
               "frontTees": "brown",
               "useForHandicapIndex": true,
