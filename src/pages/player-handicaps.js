@@ -12,6 +12,8 @@ import {
   calcHandicapDiffAvg,
 } from "../helpers/courseHandicapHelper"
 
+const HANDICAP_YEARS = ["_2025", "_2026"]
+
 const Container = styled.div`
   max-width: 1200px;
   margin: 0 auto;
@@ -382,7 +384,9 @@ const PlayerHandicaps = ({ location }) => {
     const playerData = playersUpdateJson[playerName.toLowerCase()]
     if (!playerData) return <NoRoundsMessage>No rounds found</NoRoundsMessage>
 
-    const years = Object.keys(playerData.year).filter(y => y.startsWith("_"))
+    const years = Object.keys(playerData.year).filter(year =>
+      HANDICAP_YEARS.includes(year)
+    )
     const hasRounds = years.some(year => {
       const yearData = playerData.year[year]
       return (
@@ -827,10 +831,8 @@ const PlayerHandicaps = ({ location }) => {
   const calcCupCaps = () => {
     players.forEach(player => {
       const playerData = playersUpdateJson[player.name.toLowerCase()]
-      const years = Object.keys(playerData.year).filter(
-        y =>
-          y.startsWith("_2026") ||
-          y.startsWith("_2025")
+      const years = Object.keys(playerData.year).filter(year =>
+        HANDICAP_YEARS.includes(year)
       )
       let courseDiffs = []
 
