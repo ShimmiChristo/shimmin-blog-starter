@@ -48,6 +48,11 @@ non-null data that Gatsby can infer. Every round participant must have an existi
 golfer fragment; missing or malformed fragments stop the import before files
 are written. Repeated runs do not duplicate selections.
 
+Score entries can include `frontTees` and `backTees` as non-empty strings.
+Provided tee values are copied to the player's course scores regardless of
+handicap flags or which nine the round uses. Omitted tee fields preserve the
+stored values; the script does not guess tees or copy them between nines.
+
 For a score entry with `useFront: true` or `useBack: true`, the script sums its
 `holes` array into `frontGross` or `backGross`, respectively, overriding any
 explicit gross value for that side. If the array contains `99`, the stored gross

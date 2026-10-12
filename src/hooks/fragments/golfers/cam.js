@@ -44,6 +44,7 @@ export const camFragment = graphql`
             backGross
             useForHandicapIndex
             useBack
+            backTees
           }
           bayHarborPreserveLinks {
             course
@@ -54,6 +55,7 @@ export const camFragment = graphql`
             frontGross
             useForHandicapIndex
             useFront
+            frontTees
           }
           boyneHighlandsArthurHills {
             course
@@ -64,6 +66,7 @@ export const camFragment = graphql`
             useForHandicapIndex
             useBack
             backGross
+            backTees
           }
           boyneHighlandsDonaldRoss {
             course
@@ -74,6 +77,7 @@ export const camFragment = graphql`
             backGross
             useForHandicapIndex
             useBack
+            backTees
           }
         }
         captain

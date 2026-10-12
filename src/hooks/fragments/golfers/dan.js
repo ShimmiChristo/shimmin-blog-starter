@@ -47,6 +47,7 @@ export const danFragment = graphql`
             use18Holes
             useFront
             useBack
+            backTees
           }
           bayHarborPreserveLinks {
             course
@@ -58,6 +59,7 @@ export const danFragment = graphql`
             backGross
             useForHandicapIndex
             useFront
+            frontTees
           }
           boyneHighlandsArthurHills {
             course
@@ -68,6 +70,7 @@ export const danFragment = graphql`
             useForHandicapIndex
             useBack
             backGross
+            backTees
           }
           boyneHighlandsDonaldRoss {
             course
@@ -78,6 +81,7 @@ export const danFragment = graphql`
             backGross
             useForHandicapIndex
             useBack
+            backTees
           }
         }
         captain

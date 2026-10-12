@@ -219,6 +219,15 @@ function normalizePlayerScoreEntry(scoreEntry, label) {
   const holes = scoreEntry.holes
   assertValidNineHoleScores(holes, `${label}.holes`)
 
+  for (const field of ["frontTees", "backTees"]) {
+    if (
+      scoreEntry[field] !== undefined &&
+      (typeof scoreEntry[field] !== "string" || !scoreEntry[field].trim())
+    ) {
+      throw new Error(`${label}.${field} must be a non-empty string when provided.`)
+    }
+  }
+
   if (
     scoreEntry.frontGross !== undefined &&
     (typeof scoreEntry.frontGross !== "number" || Number.isNaN(scoreEntry.frontGross))
@@ -260,6 +269,8 @@ function normalizePlayerScoreEntry(scoreEntry, label) {
     holes,
     frontGross: scoreEntry.useFront ? gross : scoreEntry.frontGross,
     backGross: scoreEntry.useBack ? gross : scoreEntry.backGross,
+    frontTees: scoreEntry.frontTees,
+    backTees: scoreEntry.backTees,
     useForHandicapIndex: scoreEntry.useForHandicapIndex,
     use18Holes: scoreEntry.use18Holes,
     useFront: scoreEntry.useFront,
@@ -364,6 +375,12 @@ function applyRoundScoresToPlayers(playersObj, rounds, yearKey) {
         )
 
         courseData[holeKey] = [...normalizedEntry.holes]
+
+        for (const field of ["frontTees", "backTees"]) {
+          if (normalizedEntry[field] !== undefined) {
+            courseData[field] = normalizedEntry[field]
+          }
+        }
 
         if (normalizedEntry.frontGross !== undefined) {
           courseData.frontGross = normalizedEntry.frontGross

@@ -12,15 +12,15 @@ const complete = [4, 5, 3, 4, 5, 4, 3, 5, 4]
 const incomplete = [4, 5, 3, 4, 99, 4, 3, 5, 4]
 const cases = [
   {
-    entry: { holes: complete, useBack: true, backGross: 999 },
+    entry: { holes: complete, useBack: true, backGross: 999, backTees: "orange" },
     expected: { frontGross: 70, backGross: 37 },
   },
   {
-    entry: { holes: complete, useFront: true },
+    entry: { holes: complete, useFront: true, frontTees: "purple" },
     expected: { frontGross: 37, backGross: 80 },
   },
   {
-    entry: { holes: incomplete, useBack: true, backGross: 999 },
+    entry: { holes: incomplete, useBack: true, backGross: 999, frontTees: "white", backTees: "blue" },
     expected: { frontGross: 70, backGross: 80 },
   },
   {
@@ -66,7 +66,7 @@ export const ${name}Fragment = graphql\`
   }
   const scores = Object.fromEntries(cases.map((_, index) => [
     `course${index}`,
-    { frontGross: 70, backGross: 80 },
+    { frontGross: 70, backGross: 80, frontTees: "gold", backTees: "gold" },
   ]))
   const players = Object.fromEntries(["green", "blue"].map(team => [
     team,
@@ -124,11 +124,15 @@ export const ${name}Fragment = graphql\`
     const course = updated.green.year._2026.scores[`course${index}`]
     assert.equal(course.frontGross, expected.frontGross, `Case ${index + 1}: frontGross`)
     assert.equal(course.backGross, expected.backGross, `Case ${index + 1}: backGross`)
+    assert.equal(course.frontTees, entry.frontTees ?? "gold", `Case ${index + 1}: frontTees`)
+    assert.equal(course.backTees, entry.backTees ?? "gold", `Case ${index + 1}: backTees`)
     const side = rounds[index].holes
     assert.deepEqual(course[side], Array.isArray(entry) ? entry : entry.holes)
     assert.deepEqual(updated.blue.year._2026.scores[`course${index}`], {
       frontGross: 70,
       backGross: 80,
+      frontTees: "gold",
+      backTees: "gold",
     })
   })
   const firstRun = fs.readFileSync(playersPath, "utf8")
@@ -144,6 +148,8 @@ export const ${name}Fragment = graphql\`
   assert.equal(selectedScores.selectionSet.selections.length, 8)
   assert.match(firstFragment, /frontGross/)
   assert.match(firstFragment, /backGross/)
+  assert.match(firstFragment, /frontTees/)
+  assert.match(firstFragment, /backTees/)
   assert.match(firstFragment, /points \{/)
   assert.doesNotMatch(firstFragment, /partners \{/)
   assert.match(firstFragment, /opponents \{/)
@@ -151,6 +157,20 @@ export const ${name}Fragment = graphql\`
   execFileSync(process.execPath, [script], { cwd: directory })
   assert.equal(fs.readFileSync(playersPath, "utf8"), firstRun)
   assert.equal(fs.readFileSync(fragmentPath, "utf8"), firstFragment)
+  for (const field of ["frontTees", "backTees"]) {
+    for (const value of [null, "", "   ", 42, false]) {
+      const originalEntry = rounds[0].matches[0].scores.green
+      rounds[0].matches[0].scores.green = { holes: complete, [field]: value }
+      fs.writeFileSync(path.join(dataDirectory, "rounds-2026.json"), JSON.stringify(rounds))
+      assert.throws(
+        () => execFileSync(process.execPath, [script], { cwd: directory, stdio: "pipe" }),
+        error => error.stderr.toString().includes(`${field} must be a non-empty string`)
+      )
+      assert.equal(fs.readFileSync(playersPath, "utf8"), firstRun)
+      assert.equal(fs.readFileSync(fragmentPath, "utf8"), firstFragment)
+      rounds[0].matches[0].scores.green = originalEntry
+    }
+  }
 
   const flagPairs = [[true, false], [false, true], [false, false], [undefined, undefined]]
   const eligibilityRounds = rounds.map((round, index) => {
@@ -181,6 +201,8 @@ export const ${name}Fragment = graphql\`
   execFileSync(process.execPath, [script], { cwd: directory })
   const recalculated = JSON.parse(fs.readFileSync(playersPath, "utf8"))[0]
   assert.equal(recalculated.green.year._2026.scores.course0.useForHandicapIndex, false)
+  assert.equal(recalculated.green.year._2026.scores.course0.frontTees, "gold")
+  assert.equal(recalculated.green.year._2026.scores.course0.backTees, "orange")
   assert.match(fs.readFileSync(fragmentPath, "utf8"), /useForHandicapIndex/)
   const runCup = winners => {
     rounds.forEach((round, index) => {

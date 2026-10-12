@@ -60,6 +60,7 @@ export const mattFragment = graphql`
             backGross
             useForHandicapIndex
             useFront
+            frontTees
           }
           boyneHighlandsArthurHills {
             course
@@ -70,6 +71,7 @@ export const mattFragment = graphql`
             backGross
             useForHandicapIndex
             useBack
+            backTees
           }
           boyneHighlandsDonaldRoss {
             course
@@ -80,6 +82,7 @@ export const mattFragment = graphql`
             backGross
             useForHandicapIndex
             useBack
+            backTees
           }
         }
         captain

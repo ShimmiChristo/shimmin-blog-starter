@@ -47,6 +47,7 @@ export const chrisFragment = graphql`
             use18Holes
             useFront
             useBack
+            backTees
           }
           bayHarborPreserveLinks {
             course
