@@ -24,14 +24,12 @@ export const derekFragment = graphql`
         scores {
           hiddenRiverGolfClub {
             course
-            frontHandicap
             front
             frontTees
             frontGross
             back
             backTees
             backGross
-            backHandicap
             useForHandicapIndex
             use18Holes
           }
@@ -162,6 +160,21 @@ export const derekFragment = graphql`
             useBack
           }
         }
+        captain
+        records {
+          partners {
+            name
+            wins
+            ties
+            losses
+          }
+          opponents {
+            name
+            wins
+            ties
+            losses
+          }
+        }
       }
       _2024 {
         handicap
@@ -227,6 +240,21 @@ export const derekFragment = graphql`
             useBack
           }
         }
+        captain
+        records {
+          partners {
+            name
+            wins
+            ties
+            losses
+          }
+          opponents {
+            name
+            wins
+            ties
+            losses
+          }
+        }
       }
       _2023 {
         handicap
@@ -290,6 +318,23 @@ export const derekFragment = graphql`
             backTees
             useForHandicapIndex
             useBack
+            frontGross
+            frontTees
+          }
+        }
+        captain
+        records {
+          partners {
+            name
+            wins
+            ties
+            losses
+          }
+          opponents {
+            name
+            wins
+            ties
+            losses
           }
         }
       }
@@ -314,6 +359,10 @@ export const derekFragment = graphql`
           }
           stonehedgeSouth {
             course
+            front
+            frontHandicap
+            back
+            backHandicap
           }
           gullLakeEast {
             back
@@ -328,6 +377,22 @@ export const derekFragment = graphql`
             front
             course
             frontHandicap
+          }
+        }
+        captain
+        records {
+          partners {
+            name
+            wins
+            ties
+            losses
+          }
+          opponents {
+            name
+            wins
+            ties
+            losses
+            id
           }
         }
       }
@@ -352,6 +417,10 @@ export const derekFragment = graphql`
           }
           jonesMasterPiece {
             course
+            front
+            frontHandicap
+            back
+            backHandicap
           }
           gaylordGolfClub {
             back
@@ -366,6 +435,21 @@ export const derekFragment = graphql`
             front
             course
             frontHandicap
+          }
+        }
+        captain
+        records {
+          partners {
+            name
+            wins
+            ties
+            losses
+          }
+          opponents {
+            name
+            wins
+            ties
+            losses
           }
         }
       }

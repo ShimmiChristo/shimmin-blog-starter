@@ -24,14 +24,12 @@ export const danFragment = graphql`
         scores {
           hiddenRiverGolfClub {
             course
-            frontHandicap
             front
             frontTees
             frontGross
             back
             backTees
             backGross
-            backHandicap
             useForHandicapIndex
             use18Holes
           }
@@ -138,6 +136,15 @@ export const danFragment = graphql`
             useForHandicapIndex
             useFront
             useBack
+            grossScore
+            grossPars
+            netPars
+            grossBirdies
+            netBirdies
+            grossEagles
+            netEagles
+            grossHolesInOne
+            netHolesInOne
           }
           crookedTree {
             course
@@ -166,6 +173,30 @@ export const danFragment = graphql`
             useForHandicapIndex
             useBack
           }
+        }
+        captain
+        records {
+          partners {
+            name
+            wins
+            ties
+            losses
+          }
+          opponents {
+            name
+            wins
+            ties
+            losses
+          }
+        }
+        stats {
+          gamesPlayed
+          winPercentage
+          pointsPerGame
+          points
+          wins
+          ties
+          losses
         }
       }
       _2024 {
@@ -234,6 +265,21 @@ export const danFragment = graphql`
             useBack
           }
         }
+        captain
+        records {
+          partners {
+            name
+            wins
+            ties
+            losses
+          }
+          opponents {
+            name
+            wins
+            ties
+            losses
+          }
+        }
       }
       _2023 {
         handicap
@@ -293,6 +339,27 @@ export const danFragment = graphql`
             front
             back
             backHandicap
+            frontGross
+            frontTees
+            backGross
+            backTees
+            useForHandicapIndex
+            useBack
+          }
+        }
+        captain
+        records {
+          partners {
+            name
+            wins
+            ties
+            losses
+          }
+          opponents {
+            name
+            wins
+            ties
+            losses
           }
         }
       }
@@ -317,6 +384,10 @@ export const danFragment = graphql`
           }
           stonehedgeSouth {
             course
+            front
+            frontHandicap
+            back
+            backHandicap
           }
           gullLakeEast {
             back
@@ -331,6 +402,21 @@ export const danFragment = graphql`
             front
             course
             frontHandicap
+          }
+        }
+        captain
+        records {
+          partners {
+            name
+            wins
+            ties
+            losses
+          }
+          opponents {
+            name
+            wins
+            ties
+            losses
           }
         }
       }
@@ -355,6 +441,10 @@ export const danFragment = graphql`
           }
           jonesMasterPiece {
             course
+            front
+            frontHandicap
+            back
+            backHandicap
           }
           gaylordGolfClub {
             back
@@ -369,6 +459,21 @@ export const danFragment = graphql`
             front
             course
             frontHandicap
+          }
+        }
+        captain
+        records {
+          partners {
+            name
+            wins
+            ties
+            losses
+          }
+          opponents {
+            name
+            wins
+            ties
+            losses
           }
         }
       }

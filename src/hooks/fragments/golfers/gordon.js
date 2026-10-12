@@ -24,14 +24,12 @@ export const gordonFragment = graphql`
         scores {
           hiddenRiverGolfClub {
             course
-            frontHandicap
             front
             frontTees
             frontGross
             back
             backTees
             backGross
-            backHandicap
             useForHandicapIndex
             use18Holes
           }
@@ -151,6 +149,21 @@ export const gordonFragment = graphql`
             useBack
           }
         }
+        captain
+        records {
+          partners {
+            name
+            wins
+            ties
+            losses
+          }
+          opponents {
+            name
+            wins
+            ties
+            losses
+          }
+        }
       }
       _2024 {
         handicap
@@ -218,6 +231,21 @@ export const gordonFragment = graphql`
             useBack
           }
         }
+        captain
+        records {
+          partners {
+            name
+            wins
+            ties
+            losses
+          }
+          opponents {
+            name
+            wins
+            ties
+            losses
+          }
+        }
       }
       _2022 {
         handicap
@@ -240,6 +268,10 @@ export const gordonFragment = graphql`
           }
           stonehedgeSouth {
             course
+            front
+            frontHandicap
+            back
+            backHandicap
           }
           gullLakeEast {
             back
@@ -254,6 +286,22 @@ export const gordonFragment = graphql`
             front
             course
             frontHandicap
+          }
+        }
+        captain
+        records {
+          partners {
+            name
+            wins
+            ties
+            losses
+          }
+          opponents {
+            name
+            wins
+            ties
+            losses
+            id
           }
         }
       }

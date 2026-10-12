@@ -24,14 +24,12 @@ export const rjFragment = graphql`
         scores {
           hiddenRiverGolfClub {
             course
-            frontHandicap
             front
             frontTees
             frontGross
             back
             backTees
             backGross
-            backHandicap
             useForHandicapIndex
             use18Holes
           }
@@ -164,6 +162,21 @@ export const rjFragment = graphql`
             useBack
           }
         }
+        captain
+        records {
+          partners {
+            name
+            wins
+            ties
+            losses
+          }
+          opponents {
+            name
+            wins
+            ties
+            losses
+          }
+        }
       }
       _2024 {
         handicap
@@ -229,6 +242,21 @@ export const rjFragment = graphql`
             backHandicap
             useForHandicapIndex
             useBack
+          }
+        }
+        captain
+        records {
+          partners {
+            name
+            wins
+            ties
+            losses
+          }
+          opponents {
+            name
+            wins
+            ties
+            losses
           }
         }
       }
@@ -298,6 +326,21 @@ export const rjFragment = graphql`
             useBack
           }
         }
+        captain
+        records {
+          partners {
+            name
+            wins
+            ties
+            losses
+          }
+          opponents {
+            name
+            wins
+            ties
+            losses
+          }
+        }
       }
       _2022 {
         handicap
@@ -320,6 +363,10 @@ export const rjFragment = graphql`
           }
           stonehedgeSouth {
             course
+            front
+            frontHandicap
+            back
+            backHandicap
           }
           gullLakeEast {
             back
@@ -334,6 +381,21 @@ export const rjFragment = graphql`
             front
             course
             frontHandicap
+          }
+        }
+        captain
+        records {
+          partners {
+            name
+            wins
+            ties
+            losses
+          }
+          opponents {
+            name
+            wins
+            ties
+            losses
           }
         }
       }
@@ -358,6 +420,10 @@ export const rjFragment = graphql`
           }
           jonesMasterPiece {
             course
+            front
+            frontHandicap
+            back
+            backHandicap
           }
           gaylordGolfClub {
             back
@@ -372,6 +438,21 @@ export const rjFragment = graphql`
             front
             course
             frontHandicap
+          }
+        }
+        captain
+        records {
+          partners {
+            name
+            wins
+            ties
+            losses
+          }
+          opponents {
+            name
+            wins
+            ties
+            losses
           }
         }
       }

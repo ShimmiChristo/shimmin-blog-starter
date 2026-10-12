@@ -48,6 +48,10 @@ non-null data that Gatsby can infer. Every round participant must have an existi
 golfer fragment; missing or malformed fragments stop the import before files
 are written. Repeated runs do not duplicate selections.
 
+Run `npm run sync:golfers` to synchronize every golfer fragment from all player
+data in `playersUpdate.json`. This adds missing selectable fields and removes
+selections that are absent from the corresponding player data.
+
 Score entries can include `frontTees` and `backTees` as non-empty strings.
 Provided tee values are copied to the player's course scores regardless of
 handicap flags or which nine the round uses. Omitted tee fields preserve the

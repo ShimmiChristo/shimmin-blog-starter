@@ -141,6 +141,8 @@ export const camFragment = graphql`
             front
             back
             backHandicap
+            frontGross
+            backGross
           }
           boyneHighlandsHeather {
             course
@@ -148,6 +150,8 @@ export const camFragment = graphql`
             front
             back
             backHandicap
+            frontGross
+            backGross
           }
           boyneHighlandsArthurHills {
             course
@@ -159,7 +163,41 @@ export const camFragment = graphql`
             backTees
             useForHandicapIndex
             useBack
+            frontGross
+            frontTees
           }
+        }
+        captain
+        records {
+          partners {
+            name
+            wins
+            ties
+            losses
+          }
+          opponents {
+            name
+            wins
+            ties
+            losses
+          }
+        }
+        stats {
+          gamesPlayed
+          winPercentage
+          pointsPerGame
+          points
+          wins
+          ties
+          losses
+          grossPars
+          netPars
+          grossBirdies
+          netBirdies
+          grossEagles
+          netEagles
+          grossHolesInOne
+          netHolesInOne
         }
       }
       _2023 {
@@ -183,6 +221,7 @@ export const camFragment = graphql`
             backHandicap
             useForHandicapIndex
             useFront
+            backGross
           }
           boyneHighlandsArthurHills {
             course
@@ -203,6 +242,8 @@ export const camFragment = graphql`
             front
             back
             backHandicap
+            frontGross
+            backGross
           }
           boyneHighlandsMoor {
             course
@@ -210,6 +251,8 @@ export const camFragment = graphql`
             front
             back
             backHandicap
+            frontGross
+            backGross
           }
           boyneHighlandsHeather {
             course
@@ -222,6 +265,22 @@ export const camFragment = graphql`
             backTees
             useForHandicapIndex
             useBack
+            frontTees
+          }
+        }
+        captain
+        records {
+          partners {
+            name
+            wins
+            ties
+            losses
+          }
+          opponents {
+            name
+            wins
+            ties
+            losses
           }
         }
       }
@@ -243,9 +302,17 @@ export const camFragment = graphql`
             course
             frontHandicap
             front
+            frontGross
+            backGross
           }
           stonehedgeSouth {
             course
+            front
+            frontGross
+            frontHandicap
+            back
+            backGross
+            backHandicap
           }
           gullLakeEast {
             back
@@ -253,6 +320,8 @@ export const camFragment = graphql`
             frontHandicap
             front
             course
+            frontGross
+            backGross
           }
           gullLakeWest {
             back
@@ -260,6 +329,23 @@ export const camFragment = graphql`
             front
             course
             frontHandicap
+            frontGross
+            backGross
+          }
+        }
+        captain
+        records {
+          partners {
+            name
+            wins
+            ties
+            losses
+          }
+          opponents {
+            name
+            wins
+            ties
+            losses
           }
         }
       }

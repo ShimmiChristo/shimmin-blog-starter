@@ -24,7 +24,6 @@ export const curtisFragment = graphql`
         scores {
           hiddenRiverGolfClub {
             course
-            frontHandicap
             front
             frontTees
             frontGross
@@ -164,6 +163,38 @@ export const curtisFragment = graphql`
             useBack
           }
         }
+        captain
+        records {
+          partners {
+            name
+            wins
+            ties
+            losses
+          }
+          opponents {
+            name
+            wins
+            ties
+            losses
+          }
+        }
+        stats {
+          gamesPlayed
+          winPercentage
+          pointsPerGame
+          points
+          wins
+          ties
+          losses
+          grossPars
+          netPars
+          grossBirdies
+          netBirdies
+          grossEagles
+          netEagles
+          grossHolesInOne
+          netHolesInOne
+        }
       }
       _2024 {
         handicap
@@ -216,6 +247,21 @@ export const curtisFragment = graphql`
             backTees
             useForHandicapIndex
             useBack
+          }
+        }
+        captain
+        records {
+          partners {
+            name
+            wins
+            ties
+            losses
+          }
+          opponents {
+            name
+            wins
+            ties
+            losses
           }
         }
       }
@@ -272,6 +318,21 @@ export const curtisFragment = graphql`
             useBack
           }
         }
+        captain
+        records {
+          partners {
+            name
+            wins
+            ties
+            losses
+          }
+          opponents {
+            name
+            wins
+            ties
+            losses
+          }
+        }
       }
       _2022 {
         handicap
@@ -294,6 +355,10 @@ export const curtisFragment = graphql`
           }
           stonehedgeSouth {
             course
+            front
+            frontHandicap
+            back
+            backHandicap
           }
           gullLakeEast {
             back
@@ -308,6 +373,22 @@ export const curtisFragment = graphql`
             front
             course
             frontHandicap
+          }
+        }
+        captain
+        records {
+          partners {
+            name
+            wins
+            ties
+            losses
+          }
+          opponents {
+            name
+            wins
+            ties
+            losses
+            id
           }
         }
       }

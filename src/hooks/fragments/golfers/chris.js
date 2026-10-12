@@ -144,6 +144,8 @@ export const chrisFragment = graphql`
             front
             back
             backHandicap
+            frontGross
+            backGross
           }
           boyneHighlandsHeather {
             course
@@ -151,6 +153,8 @@ export const chrisFragment = graphql`
             front
             back
             backHandicap
+            frontGross
+            backGross
           }
           boyneHighlandsArthurHills {
             course
@@ -165,6 +169,38 @@ export const chrisFragment = graphql`
             useForHandicapIndex
             useBack
           }
+        }
+        captain
+        records {
+          partners {
+            name
+            wins
+            ties
+            losses
+          }
+          opponents {
+            name
+            wins
+            ties
+            losses
+          }
+        }
+        stats {
+          gamesPlayed
+          winPercentage
+          pointsPerGame
+          points
+          wins
+          ties
+          losses
+          grossPars
+          netPars
+          grossBirdies
+          netBirdies
+          grossEagles
+          netEagles
+          grossHolesInOne
+          netHolesInOne
         }
       }
       _2024 {
@@ -198,6 +234,9 @@ export const chrisFragment = graphql`
             front
             back
             backHandicap
+            frontGross
+            frontTees
+            backGross
           }
           bayHarborGolfClub {
             course
@@ -217,6 +256,7 @@ export const chrisFragment = graphql`
             front
             back
             backHandicap
+            frontTees
           }
           boyneHighlandsHeather {
             course
@@ -228,6 +268,23 @@ export const chrisFragment = graphql`
             backTees
             useForHandicapIndex
             useBack
+            frontGross
+            frontTees
+          }
+        }
+        captain
+        records {
+          partners {
+            name
+            wins
+            ties
+            losses
+          }
+          opponents {
+            name
+            wins
+            ties
+            losses
           }
         }
       }
@@ -293,6 +350,23 @@ export const chrisFragment = graphql`
             backTees
             useForHandicapIndex
             useBack
+            frontGross
+            frontTees
+          }
+        }
+        captain
+        records {
+          partners {
+            name
+            wins
+            ties
+            losses
+          }
+          opponents {
+            name
+            wins
+            ties
+            losses
           }
         }
       }
@@ -317,6 +391,10 @@ export const chrisFragment = graphql`
           }
           jonesMasterPiece {
             course
+            front
+            frontHandicap
+            back
+            backHandicap
           }
           gaylordGolfClub {
             back
@@ -331,6 +409,21 @@ export const chrisFragment = graphql`
             front
             course
             frontHandicap
+          }
+        }
+        captain
+        records {
+          partners {
+            name
+            wins
+            ties
+            losses
+          }
+          opponents {
+            name
+            wins
+            ties
+            losses
           }
         }
       }

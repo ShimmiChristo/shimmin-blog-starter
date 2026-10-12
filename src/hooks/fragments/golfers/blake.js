@@ -28,6 +28,8 @@ export const blakeFragment = graphql`
             front
             back
             backHandicap
+            frontGross
+            backGross
           }
           bayHarborGolfClub {
             course
@@ -35,6 +37,10 @@ export const blakeFragment = graphql`
             front
             back
             backHandicap
+            frontGross
+            backGross
+            useForHandicapIndex
+            use18Holes
           }
           boyneHighlandsMoor {
             course
@@ -42,6 +48,8 @@ export const blakeFragment = graphql`
             front
             back
             backHandicap
+            frontGross
+            backGross
           }
           boyneHighlandsHeather {
             course
@@ -49,6 +57,25 @@ export const blakeFragment = graphql`
             front
             back
             backHandicap
+            frontGross
+            backGross
+            useForHandicapIndex
+            useBack
+          }
+        }
+        captain
+        records {
+          partners {
+            name
+            wins
+            ties
+            losses
+          }
+          opponents {
+            name
+            wins
+            ties
+            losses
           }
         }
       }

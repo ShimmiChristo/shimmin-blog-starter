@@ -24,14 +24,12 @@ export const evanFragment = graphql`
         scores {
           hiddenRiverGolfClub {
             course
-            frontHandicap
             front
             frontTees
             frontGross
             back
             backTees
             backGross
-            backHandicap
             useForHandicapIndex
             use18Holes
           }
@@ -136,6 +134,10 @@ export const evanFragment = graphql`
             front
             back
             backHandicap
+            frontGross
+            frontTees
+            backGross
+            backTees
           }
           boyneHighlandsArthurHills {
             course
@@ -149,6 +151,34 @@ export const evanFragment = graphql`
             backTees
             useForHandicapIndex
             useBack
+          }
+          hiddenRiverGolfClub {
+            course
+            front
+            frontGross
+            frontTees
+            frontHandicap
+            back
+            backGross
+            backTees
+            backHandicap
+            useForHandicapIndex
+            use18Holes
+          }
+        }
+        captain
+        records {
+          partners {
+            name
+            wins
+            ties
+            losses
+          }
+          opponents {
+            name
+            wins
+            ties
+            losses
           }
         }
       }
@@ -214,6 +244,23 @@ export const evanFragment = graphql`
             backTees
             useForHandicapIndex
             useBack
+            frontGross
+            frontTees
+          }
+        }
+        captain
+        records {
+          partners {
+            name
+            wins
+            ties
+            losses
+          }
+          opponents {
+            name
+            wins
+            ties
+            losses
           }
         }
       }
@@ -266,6 +313,23 @@ export const evanFragment = graphql`
             backTees
             useForHandicapIndex
             useBack
+            frontGross
+            frontTees
+          }
+        }
+        captain
+        records {
+          partners {
+            name
+            wins
+            ties
+            losses
+          }
+          opponents {
+            name
+            wins
+            ties
+            losses
           }
         }
       }
@@ -290,6 +354,10 @@ export const evanFragment = graphql`
           }
           stonehedgeSouth {
             course
+            front
+            frontHandicap
+            back
+            backHandicap
           }
           gullLakeEast {
             back
@@ -304,6 +372,21 @@ export const evanFragment = graphql`
             front
             course
             frontHandicap
+          }
+        }
+        captain
+        records {
+          partners {
+            name
+            wins
+            ties
+            losses
+          }
+          opponents {
+            name
+            wins
+            ties
+            losses
           }
         }
       }
