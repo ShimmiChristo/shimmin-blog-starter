@@ -543,25 +543,25 @@
         "winner": "green",
         "scores": {
           "gordon": {
-            "holes": [5, 8, 3, 6, 4, 6, 4, 4, 99],
+            "holes": [5, 8, 3, 6, 4, 6, 4, 4, 7],
             "useForHandicapIndex": true,
             "backTees": "purple",
             "useBack": true
           },
           "travis": {
-            "holes": [4, 5, 6, 7, 5, 8, 6, 4, 99],
+            "holes": [4, 5, 6, 7, 5, 8, 6, 4, 7],
             "useForHandicapIndex": true,
             "backTees": "orange",
             "useBack": true
           },
           "dan": {
-            "holes": [7, 7, 5, 6, 5, 5, 6, 6, 99],
+            "holes": [7, 7, 5, 6, 5, 5, 6, 6, 7],
             "useForHandicapIndex": true,
             "backTees": "purple",
             "useBack": true
           },
           "cam": {
-            "holes": [5, 9, 6, 5, 6, 6, 6, 4, 99],
+            "holes": [5, 9, 6, 5, 6, 6, 6, 4, 7],
             "useForHandicapIndex": true,
             "backTees": "orange",
             "useBack": true

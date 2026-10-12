@@ -744,10 +744,11 @@
               "course": "Arthur Hills at Boyne Highlands",
               "front": [5, 5, 6, 4, 6, 6, 3, 5, 3],
               "frontHandicap": 999,
-              "back": [5, 9, 6, 5, 6, 6, 6, 4, 99],
+              "back": [5, 9, 6, 5, 6, 6, 6, 4, 7],
               "backHandicap": 999,
               "useForHandicapIndex": true,
-              "useBack": true
+              "useBack": true,
+              "backGross": 54
             },
             "boyneHighlandsDonaldRoss": {
               "course": "Donald Ross at Boyne Highlands",
@@ -4543,10 +4544,11 @@
               "course": "Arthur Hills at Boyne Highlands",
               "front": [5, 5, 5, 6, 5, 5, 4, 4, 99],
               "frontHandicap": 999,
-              "back": [7, 7, 5, 6, 5, 5, 6, 6, 99],
+              "back": [7, 7, 5, 6, 5, 5, 6, 6, 7],
               "backHandicap": 999,
               "useForHandicapIndex": true,
-              "useBack": true
+              "useBack": true,
+              "backGross": 54
             },
             "boyneHighlandsDonaldRoss": {
               "course": "Donald Ross at Boyne Highlands",
@@ -8772,10 +8774,11 @@
               "course": "Arthur Hills at Boyne Highlands",
               "front": [6, 5, 6, 6, 5, 5, 3, 4, 99],
               "frontHandicap": 999,
-              "back": [5, 8, 3, 6, 4, 6, 4, 4, 99],
+              "back": [5, 8, 3, 6, 4, 6, 4, 4, 7],
               "backHandicap": 999,
               "useForHandicapIndex": true,
-              "useBack": true
+              "useBack": true,
+              "backGross": 47
             },
             "boyneHighlandsDonaldRoss": {
               "course": "Donald Ross at Boyne Highlands",
@@ -12455,10 +12458,11 @@
               "course": "Arthur Hills at Boyne Highlands",
               "front": [6, 6, 8, 6, 8, 6, 4, 4, 4],
               "frontHandicap": 999,
-              "back": [4, 5, 6, 7, 5, 8, 6, 4, 99],
+              "back": [4, 5, 6, 7, 5, 8, 6, 4, 7],
               "backHandicap": 999,
               "useForHandicapIndex": true,
-              "useBack": true
+              "useBack": true,
+              "backGross": 52
             },
             "boyneHighlandsDonaldRoss": {
               "course": "Donald Ross at Boyne Highlands",
