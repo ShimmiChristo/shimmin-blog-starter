@@ -12,7 +12,7 @@ import {
   calcHandicapDiffAvg,
 } from "../helpers/courseHandicapHelper"
 
-const HANDICAP_YEARS = ["_2025", "_2026"]
+const HANDICAP_YEARS = ["_2024", "_2025", "_2026"]
 
 const Container = styled.div`
   max-width: 1200px;
@@ -385,7 +385,7 @@ const PlayerHandicaps = ({ location }) => {
     if (!playerData) return <NoRoundsMessage>No rounds found</NoRoundsMessage>
 
     const years = Object.keys(playerData.year).filter(year =>
-      HANDICAP_YEARS.includes(year)
+      HANDICAP_YEARS.includes(year),
     )
     const hasRounds = years.some(year => {
       const yearData = playerData.year[year]
@@ -405,7 +405,7 @@ const PlayerHandicaps = ({ location }) => {
       years.forEach(year => {
         const yearData = playerData.year[year]
         const rounds = Object.entries(yearData.scores || {}).filter(
-          ([, score]) => score.useForHandicapIndex
+          ([, score]) => score.useForHandicapIndex,
         )
 
         rounds.forEach(([courseKey, scoreData]) => {
@@ -431,7 +431,7 @@ const PlayerHandicaps = ({ location }) => {
               handicapDiff = calc18HoleHCDiff(
                 totalScore,
                 courseSlope,
-                courseRating
+                courseRating,
               )
             }
           } else if (useFront && useBack) {
@@ -450,12 +450,12 @@ const PlayerHandicaps = ({ location }) => {
               frontDiff = calc9HoleHCDiff(
                 scoreData.frontGross || 0,
                 frontSlope,
-                frontRating
+                frontRating,
               )
               backDiff = calc9HoleHCDiff(
                 scoreData.backGross || 0,
                 backSlope,
-                backRating
+                backRating,
               )
             }
           } else if (useFront) {
@@ -467,7 +467,7 @@ const PlayerHandicaps = ({ location }) => {
               handicapDiff = calc9HoleHCDiff(
                 scoreData.frontGross || 0,
                 frontSlope,
-                frontRating
+                frontRating,
               )
             }
           } else if (useBack) {
@@ -479,7 +479,7 @@ const PlayerHandicaps = ({ location }) => {
               handicapDiff = calc9HoleHCDiff(
                 scoreData.backGross || 0,
                 backSlope,
-                backRating
+                backRating,
               )
             }
           }
@@ -553,7 +553,7 @@ const PlayerHandicaps = ({ location }) => {
             const yearData = playerData.year[year]
             const yearLabel = year.replace("_", "")
             const rounds = Object.entries(yearData.scores || {}).filter(
-              ([, score]) => score.useForHandicapIndex
+              ([, score]) => score.useForHandicapIndex,
             )
 
             if (rounds.length === 0) return null
@@ -592,7 +592,7 @@ const PlayerHandicaps = ({ location }) => {
                       handicapDiff = calc18HoleHCDiff(
                         totalScore,
                         courseSlope,
-                        courseRating
+                        courseRating,
                       )
                     }
                   } else if (useFront && useBack) {
@@ -628,12 +628,12 @@ const PlayerHandicaps = ({ location }) => {
                       frontDiff = calc9HoleHCDiff(
                         scoreData.frontGross || 0,
                         frontSlope,
-                        frontRating
+                        frontRating,
                       )
                       backDiff = calc9HoleHCDiff(
                         scoreData.backGross || 0,
                         backSlope,
-                        backRating
+                        backRating,
                       )
                     }
                   } else if (useFront) {
@@ -650,7 +650,7 @@ const PlayerHandicaps = ({ location }) => {
                       handicapDiff = calc9HoleHCDiff(
                         scoreData.frontGross || 0,
                         frontSlope,
-                        frontRating
+                        frontRating,
                       )
                     }
                   } else if (useBack) {
@@ -665,7 +665,7 @@ const PlayerHandicaps = ({ location }) => {
                       handicapDiff = calc9HoleHCDiff(
                         scoreData.backGross || 0,
                         backSlope,
-                        backRating
+                        backRating,
                       )
                     }
                   }
@@ -832,7 +832,7 @@ const PlayerHandicaps = ({ location }) => {
     players.forEach(player => {
       const playerData = playersUpdateJson[player.name.toLowerCase()]
       const years = Object.keys(playerData.year).filter(year =>
-        HANDICAP_YEARS.includes(year)
+        HANDICAP_YEARS.includes(year),
       )
       let courseDiffs = []
 
@@ -857,7 +857,7 @@ const PlayerHandicaps = ({ location }) => {
               const courseDiff = calc18HoleHCDiff(
                 scoreToUse,
                 courseSlope,
-                courseRating
+                courseRating,
               )
               courseDiffs.push(courseDiff)
             } else if (roundData.useFront && roundData.useBack) {
@@ -874,7 +874,7 @@ const PlayerHandicaps = ({ location }) => {
               let frontDiff = calc9HoleHCDiff(
                 frontScore,
                 frontSlope,
-                frontRating
+                frontRating,
               )
               let backDiff = calc9HoleHCDiff(backScore, backSlope, backRating)
               courseDiffs.push(frontDiff, backDiff)
@@ -888,7 +888,7 @@ const PlayerHandicaps = ({ location }) => {
               let frontDiff = calc9HoleHCDiff(
                 frontScore,
                 frontSlope,
-                frontRating
+                frontRating,
               )
               courseDiffs.push(frontDiff)
             } else if (roundData.useBack && !roundData.useFront) {
