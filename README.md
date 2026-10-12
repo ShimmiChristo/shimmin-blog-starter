@@ -82,6 +82,15 @@ Reruns start from the overview baseline, so results are not double-counted.
 Run `node scripts/testUpdatePlayers.cjs` to test this behavior without modifying
 the project's player data.
 
+## Player handicaps
+
+The [player-handicaps page](./src/pages/player-handicaps.js) uses the same sortable
+table on desktop and mobile. On screens up to 768px wide, the page removes its
+inner container padding and uses compact text, wrapped columns, and smaller round
+details to keep all data visible. The table region supports horizontal scrolling
+if needed, including arrow keys when focused. Use a player's arrow button to show
+or hide their handicap rounds.
+
 ## About Me
 
 I’m a web developer based in New York City.

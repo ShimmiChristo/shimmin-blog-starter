@@ -22,7 +22,7 @@ const Container = styled.div`
   min-height: 100vh;
 
   @media (max-width: 768px) {
-    padding: 1rem;
+    padding: 0;
   }
 `
 
@@ -33,7 +33,9 @@ const Content = styled.div`
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 
   @media (max-width: 768px) {
-    padding: 1rem;
+    padding: 0;
+    border-radius: 0;
+    box-shadow: none;
   }
 `
 
@@ -49,6 +51,34 @@ const Header = styled.div`
     flex-direction: column;
     align-items: flex-start;
     gap: 1rem;
+    margin-bottom: 0.5rem;
+    padding-bottom: 0.5rem;
+
+    h2 {
+      font-size: 1.1rem;
+    }
+  }
+`
+
+const ScrollHint = styled.p`
+  display: none;
+
+  @media (max-width: 768px) {
+    display: block;
+    color: #666;
+    font-size: 0.7rem;
+    margin: 0 0 0.5rem;
+  }
+`
+
+const TableWrap = styled.div`
+  max-width: 100%;
+  overflow-x: auto;
+  border-radius: 6px;
+
+  &:focus-visible {
+    outline: 2px solid #2c5aa0;
+    outline-offset: 2px;
   }
 `
 
@@ -59,10 +89,6 @@ const PlayerTable = styled.table`
   border-radius: 6px;
   overflow: hidden;
 
-  @media (max-width: 768px) {
-    display: none;
-  }
-
   th {
     background: #f8f9fa;
     padding: 1rem;
@@ -72,6 +98,10 @@ const PlayerTable = styled.table`
     font-weight: 600;
     text-transform: uppercase;
     border-bottom: 1px solid #e0e0e0;
+  }
+
+  th:first-child {
+    width: 40px;
   }
 
   td {
@@ -86,57 +116,46 @@ const PlayerTable = styled.table`
   tr:hover {
     background: #f8f9fa;
   }
-`
-
-const PlayerCards = styled.div`
-  display: none;
 
   @media (max-width: 768px) {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
+    table-layout: fixed;
+    font-size: 0.7rem;
+    line-height: 1.3;
+
+    th,
+    td {
+      padding: 0.4rem 0.15rem;
+      overflow-wrap: anywhere;
+      vertical-align: top;
+    }
+
+    th {
+      font-size: 0.6rem;
+      text-transform: none;
+    }
+
+    th:first-child {
+      width: 28px;
+    }
   }
 `
 
-const PlayerCard = styled.div`
-  background: white;
-  border-radius: 8px;
-  padding: 1.5rem;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  border-left: 4px solid
-    ${props => (props.team === "green" ? "#28a745" : "#007bff")};
-`
-
-const PlayerName = styled.h3`
-  margin: 0 0 1rem 0;
-  font-size: 1.2rem;
-  color: #333;
-  text-transform: capitalize;
-`
-
-const PlayerStats = styled.div`
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 1rem;
-`
-
-const StatItem = styled.div`
-  display: flex;
-  flex-direction: column;
-  gap: 0.25rem;
-`
-
-const StatLabel = styled.div`
-  font-size: 0.75rem;
-  color: #666;
-  text-transform: uppercase;
-  font-weight: 600;
-`
-
-const StatValue = styled.div`
+const HandicapValue = styled.strong`
   font-size: 1.1rem;
-  color: #333;
-  font-weight: 600;
+  color: #2c5aa0;
+
+  @media (max-width: 768px) {
+    font-size: 0.8rem;
+  }
+`
+
+const AppearanceYears = styled.span`
+  font-size: 0.85rem;
+  color: #666;
+
+  @media (max-width: 768px) {
+    font-size: 0.6rem;
+  }
 `
 
 const TeamBadge = styled.span`
@@ -148,6 +167,11 @@ const TeamBadge = styled.span`
   text-transform: uppercase;
   background: ${props => (props.team === "green" ? "#28a745" : "#007bff")};
   color: white;
+
+  @media (max-width: 768px) {
+    padding: 0.15rem 0.25rem;
+    font-size: 0.6rem;
+  }
 `
 
 const SortButton = styled.button`
@@ -163,6 +187,14 @@ const SortButton = styled.button`
 
   &:hover {
     color: #2c5aa0;
+  }
+
+  @media (max-width: 768px) {
+    display: block;
+    min-width: 24px;
+    min-height: 24px;
+    margin-left: 0;
+    font-size: 0.75rem;
   }
 `
 
@@ -184,10 +216,17 @@ const ExpandButton = styled.button`
   }
 
   ${props =>
-    props.expanded &&
+    props.$expanded &&
     `
     transform: rotate(180deg);
   `}
+
+  @media (max-width: 768px) {
+    min-width: 24px;
+    min-height: 24px;
+    padding: 0;
+    font-size: 0.8rem;
+  }
 `
 
 const ExpandableRow = styled.tr`
@@ -201,6 +240,10 @@ const RoundsContainer = styled.div`
   padding: 1.5rem;
   background: #f8f9fa;
   border-top: 1px solid #e0e0e0;
+
+  @media (max-width: 768px) {
+    padding: 0;
+  }
 `
 
 const HandicapSummary = styled.div`
@@ -214,6 +257,8 @@ const HandicapSummary = styled.div`
 
   @media (max-width: 768px) {
     gap: 1rem;
+    padding: 0.5rem;
+    margin-bottom: 0.75rem;
   }
 `
 
@@ -221,6 +266,7 @@ const SummaryItem = styled.div`
   display: flex;
   flex-direction: column;
   gap: 0.25rem;
+  min-width: 0;
 `
 
 const SummaryLabel = styled.span`
@@ -228,12 +274,30 @@ const SummaryLabel = styled.span`
   color: #666;
   text-transform: uppercase;
   font-weight: 600;
+
+  @media (max-width: 768px) {
+    font-size: 0.6rem;
+  }
 `
 
 const SummaryValue = styled.span`
   font-size: 1.25rem;
   color: #2c5aa0;
   font-weight: 700;
+
+  @media (max-width: 768px) {
+    font-size: 0.85rem;
+  }
+`
+
+const DifferentialScores = styled(SummaryValue)`
+  font-size: 1rem;
+  line-height: 1.6;
+
+  @media (max-width: 768px) {
+    font-size: 0.7rem;
+    line-height: 1.4;
+  }
 `
 
 const YearSection = styled.div`
@@ -242,6 +306,10 @@ const YearSection = styled.div`
   &:last-child {
     margin-bottom: 0;
   }
+
+  @media (max-width: 768px) {
+    margin-bottom: 1rem;
+  }
 `
 
 const YearTitle = styled.h4`
@@ -249,6 +317,11 @@ const YearTitle = styled.h4`
   margin: 0 0 1rem 0;
   font-size: 1.1rem;
   font-weight: 600;
+
+  @media (max-width: 768px) {
+    margin-bottom: 0.5rem;
+    font-size: 0.9rem;
+  }
 `
 
 const RoundCard = styled.div`
@@ -262,6 +335,12 @@ const RoundCard = styled.div`
   &:last-child {
     margin-bottom: 0;
   }
+
+  @media (max-width: 768px) {
+    padding: 0.5rem;
+    margin-bottom: 0.5rem;
+    border-left-width: 2px;
+  }
 `
 
 const CourseName = styled.h5`
@@ -269,6 +348,11 @@ const CourseName = styled.h5`
   margin: 0 0 1rem 0;
   font-size: 1rem;
   font-weight: 600;
+
+  @media (max-width: 768px) {
+    margin-bottom: 0.5rem;
+    font-size: 0.8rem;
+  }
 `
 
 const CourseDetails = styled.div`
@@ -276,6 +360,12 @@ const CourseDetails = styled.div`
   grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
   gap: 1rem;
   margin-bottom: 1rem;
+
+  @media (max-width: 768px) {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 0.5rem;
+    margin-bottom: 0.5rem;
+  }
 `
 
 const DetailItem = styled.div`
@@ -289,12 +379,20 @@ const DetailLabel = styled.span`
   color: #666;
   text-transform: uppercase;
   font-weight: 600;
+
+  @media (max-width: 768px) {
+    font-size: 0.6rem;
+  }
 `
 
 const DetailValue = styled.span`
   font-size: 0.9rem;
   color: #333;
   font-weight: 600;
+
+  @media (max-width: 768px) {
+    font-size: 0.75rem;
+  }
 `
 
 const ScoreInfo = styled.div`
@@ -303,6 +401,12 @@ const ScoreInfo = styled.div`
   gap: 0.75rem;
   padding-top: 1rem;
   border-top: 1px solid #e0e0e0;
+
+  @media (max-width: 768px) {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 0.5rem;
+    padding-top: 0.5rem;
+  }
 `
 
 const NoRoundsMessage = styled.p`
@@ -311,26 +415,6 @@ const NoRoundsMessage = styled.p`
   text-align: center;
   padding: 2rem;
   margin: 0;
-`
-
-const MobileExpandButton = styled.button`
-  width: 100%;
-  background: #2c5aa0;
-  color: white;
-  border: none;
-  padding: 0.75rem 1rem;
-  border-radius: 6px;
-  margin-top: 1rem;
-  font-weight: 600;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 0.5rem;
-
-  &:hover {
-    background: #234a85;
-  }
 `
 
 const PlayerHandicaps = ({ location }) => {
@@ -521,7 +605,7 @@ const PlayerHandicaps = ({ location }) => {
             <SummaryLabel>
               Best Differentials (Used in Calculation)
             </SummaryLabel>
-            <SummaryValue style={{ fontSize: "1rem", lineHeight: "1.6" }}>
+            <DifferentialScores>
               {summary.allScores.map((score, index) => {
                 const isUsed = index < summary.scoresUsedCount
                 return (
@@ -539,7 +623,7 @@ const PlayerHandicaps = ({ location }) => {
                   </span>
                 )
               })}
-            </SummaryValue>
+            </DifferentialScores>
           </SummaryItem>
           <SummaryItem>
             <SummaryLabel>Scores Used</SummaryLabel>
@@ -957,176 +1041,154 @@ const PlayerHandicaps = ({ location }) => {
             </h2>
           </Header>
 
-          {/* Desktop Table View */}
-          <PlayerTable>
-            <thead>
-              <tr>
-                <th style={{ width: "40px" }}></th>
-                <th>
-                  Player
-                  <SortButton onClick={() => toggleSort("name")}>
-                    {sortBy === "name"
-                      ? sortOrder === "asc"
-                        ? "↑"
-                        : "↓"
-                      : "⇅"}
-                  </SortButton>
-                </th>
-                <th>
-                  Handicap
-                  <SortButton onClick={() => toggleSort("handicap")}>
-                    {sortBy === "handicap"
-                      ? sortOrder === "asc"
-                        ? "↑"
-                        : "↓"
-                      : "⇅"}
-                  </SortButton>
-                </th>
-                <th>
-                  Cup Handicap
-                  <SortButton onClick={() => toggleSort("cupCap")}>
-                    {sortBy === "cupCap"
-                      ? sortOrder === "asc"
-                        ? "↑"
-                        : "↓"
-                      : "⇅"}
-                  </SortButton>
-                </th>
-                <th>Latest Team</th>
-                <th>Appearances</th>
-                <th>Cup Record</th>
-              </tr>
-            </thead>
-            <tbody>
-              {sortedPlayers.map(player => (
-                <React.Fragment key={player.name}>
-                  <tr>
-                    <td>
-                      <ExpandButton
-                        expanded={expandedPlayers[player.name]}
-                        onClick={() => togglePlayerExpansion(player.name)}
-                        title={
-                          expandedPlayers[player.name]
-                            ? "Hide rounds"
-                            : "Show rounds"
-                        }
-                      >
-                        ▼
-                      </ExpandButton>
-                    </td>
-                    <td>
-                      <strong style={{ textTransform: "capitalize" }}>
-                        {player.name}
-                      </strong>
-                    </td>
-                    <td>
-                      <strong style={{ fontSize: "1.1rem", color: "#2c5aa0" }}>
-                        {player.handicap}
-                      </strong>
-                    </td>
-                    <td>
-                      <strong style={{ fontSize: "1.1rem", color: "#2c5aa0" }}>
-                        {player.cupCap}
-                      </strong>
-                    </td>
-                    <td>
-                      <TeamBadge team={player.latestTeam}>
-                        {player.latestTeam}
-                      </TeamBadge>
-                    </td>
-                    <td>
-                      {player.appearances.length} year
-                      {player.appearances.length !== 1 ? "s" : ""}
-                      <br />
-                      <span style={{ fontSize: "0.85rem", color: "#666" }}>
-                        ({player.appearances.join(", ")})
-                      </span>
-                    </td>
-                    <td>
-                      <span style={{ color: "#28a745", fontWeight: 600 }}>
-                        {player.cupRecord?.wins}W
-                      </span>
-                      {" - "}
-                      <span style={{ color: "#dc3545", fontWeight: 600 }}>
-                        {player.cupRecord?.losses}L
-                      </span>
-                    </td>
-                  </tr>
-                  {expandedPlayers[player.name] && (
-                    <ExpandableRow>
-                      <td colSpan="7">
-                        <RoundsContainer>
-                          {renderPlayerRounds(player.name)}
-                        </RoundsContainer>
+          <ScrollHint>
+            Tap a player&apos;s arrow to view handicap rounds.
+          </ScrollHint>
+          <TableWrap role="region" aria-label="Player handicaps" tabIndex={0}>
+            <PlayerTable aria-label="Player handicaps">
+              <thead>
+                <tr>
+                  <th scope="col" aria-label="Rounds"></th>
+                  <th
+                    scope="col"
+                    aria-sort={
+                      sortBy === "name"
+                        ? sortOrder === "asc"
+                          ? "ascending"
+                          : "descending"
+                        : "none"
+                    }
+                  >
+                    Player
+                    <SortButton
+                      aria-label="Sort by player"
+                      onClick={() => toggleSort("name")}
+                    >
+                      {sortBy === "name"
+                        ? sortOrder === "asc"
+                          ? "↑"
+                          : "↓"
+                        : "⇅"}
+                    </SortButton>
+                  </th>
+                  <th
+                    scope="col"
+                    aria-sort={
+                      sortBy === "handicap"
+                        ? sortOrder === "asc"
+                          ? "ascending"
+                          : "descending"
+                        : "none"
+                    }
+                  >
+                    Handicap
+                    <SortButton
+                      aria-label="Sort by handicap"
+                      onClick={() => toggleSort("handicap")}
+                    >
+                      {sortBy === "handicap"
+                        ? sortOrder === "asc"
+                          ? "↑"
+                          : "↓"
+                        : "⇅"}
+                    </SortButton>
+                  </th>
+                  <th
+                    scope="col"
+                    aria-sort={
+                      sortBy === "cupCap"
+                        ? sortOrder === "asc"
+                          ? "ascending"
+                          : "descending"
+                        : "none"
+                    }
+                  >
+                    Cup Handicap
+                    <SortButton
+                      aria-label="Sort by cup handicap"
+                      onClick={() => toggleSort("cupCap")}
+                    >
+                      {sortBy === "cupCap"
+                        ? sortOrder === "asc"
+                          ? "↑"
+                          : "↓"
+                        : "⇅"}
+                    </SortButton>
+                  </th>
+                  <th scope="col">Latest Team</th>
+                  <th scope="col">Appearances</th>
+                  <th scope="col">Cup Record</th>
+                </tr>
+              </thead>
+              <tbody>
+                {sortedPlayers.map(player => (
+                  <React.Fragment key={player.name}>
+                    <tr>
+                      <td>
+                        <ExpandButton
+                          $expanded={expandedPlayers[player.name]}
+                          aria-expanded={!!expandedPlayers[player.name]}
+                          aria-label={`${
+                            expandedPlayers[player.name] ? "Hide" : "Show"
+                          } rounds for ${player.name}`}
+                          onClick={() => togglePlayerExpansion(player.name)}
+                          title={
+                            expandedPlayers[player.name]
+                              ? "Hide rounds"
+                              : "Show rounds"
+                          }
+                        >
+                          ▼
+                        </ExpandButton>
                       </td>
-                    </ExpandableRow>
-                  )}
-                </React.Fragment>
-              ))}
-            </tbody>
-          </PlayerTable>
-
-          {/* Mobile Card View */}
-          <PlayerCards>
-            {sortedPlayers.map(player => (
-              <PlayerCard key={player.name} team={player.latestTeam}>
-                <PlayerName>{player.name}</PlayerName>
-                <PlayerStats>
-                  <StatItem>
-                    <StatLabel>Handicap</StatLabel>
-                    <StatValue style={{ color: "#2c5aa0" }}>
-                      {player.handicap}
-                    </StatValue>
-                  </StatItem>
-                  <StatItem>
-                    <StatLabel>Cup Handicap</StatLabel>
-                    <StatValue style={{ color: "#2c5aa0" }}>
-                      {player.cupCap}
-                    </StatValue>
-                  </StatItem>
-                  <StatItem>
-                    <StatLabel>Latest Team</StatLabel>
-                    <StatValue>
-                      <TeamBadge team={player.latestTeam}>
-                        {player.latestTeam}
-                      </TeamBadge>
-                    </StatValue>
-                  </StatItem>
-                  <StatItem>
-                    <StatLabel>Appearances</StatLabel>
-                    <StatValue>
-                      {player.appearances.length} year
-                      {player.appearances.length !== 1 ? "s" : ""}
-                    </StatValue>
-                  </StatItem>
-                  <StatItem>
-                    <StatLabel>Cup Record</StatLabel>
-                    <StatValue>
-                      <span style={{ color: "#28a745" }}>
-                        {player.cupRecord?.wins}W
-                      </span>
-                      {" - "}
-                      <span style={{ color: "#dc3545" }}>
-                        {player.cupRecord?.losses}L
-                      </span>
-                    </StatValue>
-                  </StatItem>
-                </PlayerStats>
-                <MobileExpandButton
-                  onClick={() => togglePlayerExpansion(player.name)}
-                >
-                  {expandedPlayers[player.name]
-                    ? "▲ Hide Rounds"
-                    : "▼ View Rounds"}
-                </MobileExpandButton>
-                {expandedPlayers[player.name] && (
-                  <RoundsContainer style={{ marginTop: "1rem" }}>
-                    {renderPlayerRounds(player.name)}
-                  </RoundsContainer>
-                )}
-              </PlayerCard>
-            ))}
-          </PlayerCards>
+                      <td>
+                        <strong style={{ textTransform: "capitalize" }}>
+                          {player.name}
+                        </strong>
+                      </td>
+                      <td>
+                        <HandicapValue>{player.handicap}</HandicapValue>
+                      </td>
+                      <td>
+                        <HandicapValue>{player.cupCap}</HandicapValue>
+                      </td>
+                      <td>
+                        <TeamBadge team={player.latestTeam}>
+                          {player.latestTeam}
+                        </TeamBadge>
+                      </td>
+                      <td>
+                        {player.appearances.length} year
+                        {player.appearances.length !== 1 ? "s" : ""}
+                        <br />
+                        <AppearanceYears>
+                          ({player.appearances.join(", ")})
+                        </AppearanceYears>
+                      </td>
+                      <td>
+                        <span style={{ color: "#28a745", fontWeight: 600 }}>
+                          {player.cupRecord?.wins}W
+                        </span>
+                        {" - "}
+                        <span style={{ color: "#dc3545", fontWeight: 600 }}>
+                          {player.cupRecord?.losses}L
+                        </span>
+                      </td>
+                    </tr>
+                    {expandedPlayers[player.name] && (
+                      <ExpandableRow>
+                        <td colSpan="7">
+                          <RoundsContainer>
+                            {renderPlayerRounds(player.name)}
+                          </RoundsContainer>
+                        </td>
+                      </ExpandableRow>
+                    )}
+                  </React.Fragment>
+                ))}
+              </tbody>
+            </PlayerTable>
+          </TableWrap>
         </Content>
       </Container>
     </Layout>
