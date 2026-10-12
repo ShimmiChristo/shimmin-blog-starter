@@ -693,10 +693,10 @@
     },
     "cam": {
       "name": "cam",
-      "appearances": [2022, 2023, 2025],
+      "appearances": [2022, 2023, 2025, 2026],
       "cupRecord": {
         "wins": 1,
-        "losses": 2
+        "losses": 3
       },
       "handicap": 24,
       "year": {
@@ -1491,9 +1491,9 @@
     },
     "chris": {
       "name": "chris",
-      "appearances": [2021, 2023, 2024, 2025],
+      "appearances": [2021, 2023, 2024, 2025, 2026],
       "cupRecord": {
-        "wins": 2,
+        "wins": 3,
         "losses": 2
       },
       "handicap": 11,
@@ -2445,10 +2445,10 @@
     },
     "craig": {
       "name": "craig",
-      "appearances": [2021, 2022, 2023, 2024, 2025],
+      "appearances": [2021, 2022, 2023, 2024, 2025, 2026],
       "cupRecord": {
         "wins": 2,
-        "losses": 3
+        "losses": 4
       },
       "handicap": 13,
       "year": {
@@ -3534,9 +3534,9 @@
     },
     "curtis": {
       "name": "curtis",
-      "appearances": [2022, 2023, 2024, 2025],
+      "appearances": [2022, 2023, 2024, 2025, 2026],
       "cupRecord": {
-        "wins": 3,
+        "wins": 4,
         "losses": 1
       },
       "handicap": 26,
@@ -4489,10 +4489,10 @@
     },
     "dan": {
       "name": "dan",
-      "appearances": [2021, 2022, 2023, 2024, 2025],
+      "appearances": [2021, 2022, 2023, 2024, 2025, 2026],
       "cupRecord": {
         "wins": 2,
-        "losses": 3
+        "losses": 4
       },
       "handicap": 16,
       "year": {
@@ -5596,9 +5596,9 @@
     },
     "derek": {
       "name": "derek",
-      "appearances": [2021, 2022, 2023, 2024, 2025],
+      "appearances": [2021, 2022, 2023, 2024, 2025, 2026],
       "cupRecord": {
-        "wins": 3,
+        "wins": 4,
         "losses": 2
       },
       "handicap": 24,
@@ -6680,10 +6680,10 @@
     },
     "dylan": {
       "name": "dylan",
-      "appearances": [2021, 2022, 2023, 2024, 2025],
+      "appearances": [2021, 2022, 2023, 2024, 2025, 2026],
       "cupRecord": {
         "wins": 2,
-        "losses": 3
+        "losses": 4
       },
       "handicap": 0,
       "year": {
@@ -7768,10 +7768,10 @@
     },
     "evan": {
       "name": "evan",
-      "appearances": [2022, 2023, 2024, 2025],
+      "appearances": [2022, 2023, 2024, 2025, 2026],
       "cupRecord": {
         "wins": 1,
-        "losses": 3
+        "losses": 4
       },
       "handicap": 24,
       "year": {
@@ -8721,9 +8721,9 @@
     },
     "gordon": {
       "name": "gordon",
-      "appearances": [2022, 2024, 2025],
+      "appearances": [2022, 2024, 2025, 2026],
       "cupRecord": {
-        "wins": 3,
+        "wins": 4,
         "losses": 0
       },
       "handicap": 12,
@@ -10008,9 +10008,9 @@
     },
     "matt": {
       "name": "matt",
-      "appearances": [2021, 2022, 2023, 2024, 2025],
+      "appearances": [2021, 2022, 2023, 2024, 2025, 2026],
       "cupRecord": {
-        "wins": 3,
+        "wins": 4,
         "losses": 2
       },
       "handicap": 2,
@@ -11104,10 +11104,10 @@
     },
     "rj": {
       "name": "rj",
-      "appearances": [2021, 2022, 2023, 2024, 2025],
+      "appearances": [2021, 2022, 2023, 2024, 2025, 2026],
       "cupRecord": {
         "wins": 2,
-        "losses": 3
+        "losses": 4
       },
       "handicap": 11,
       "year": {
@@ -12404,9 +12404,9 @@
     },
     "travis": {
       "name": "travis",
-      "appearances": [2021, 2022, 2023],
+      "appearances": [2021, 2022, 2023, 2026],
       "cupRecord": {
-        "wins": 1,
+        "wins": 2,
         "losses": 2
       },
       "handicap": 24,

@@ -52,6 +52,16 @@ Eligibility is recalculated on each run from the explicitly supplied flags;
 if all supplied flags are false, the course becomes false. If no flag is
 supplied for a course, its existing value is preserved.
 
+Appearances and Cup records use `playersOverview.json` as the historical baseline.
+Each participant in the selected year's rounds gets that year added to their
+appearances once, in chronological order. Once every match has a winner (including
+ties), the team with the most points earns a Cup win and the other team a loss.
+A tied Cup goes to the defending champion, using previous results in `score.json`.
+Unplayed matches (`winner: null`) prevent a Cup win/loss from being added.
+If the selected year is already in a player's overview appearances, its Cup
+result is assumed to be included in their overview record and is not added again.
+Reruns start from the overview baseline, so results are not double-counted.
+
 Run `node scripts/testUpdatePlayers.cjs` to test this behavior without modifying
 the project's player data.
 

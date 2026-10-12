@@ -504,6 +504,72 @@ function sortRecordEntries(playersObj, yearKey) {
   }
 }
 
+function getPreviousCupWinner(year) {
+  const scores = readJson("src/data/score.json")[0]
+  for (let previousYear = year - 1; ; previousYear -= 1) {
+    const cup = scores?.[`_${previousYear}`]
+    if (!cup) {
+      throw new Error(`Missing ${previousYear} Cup results needed to resolve a tied Cup.`)
+    }
+    if (cup.winner === "green" || cup.winner === "blue") {
+      return cup.winner
+    }
+    const greenScore = cup.teams?.team1?.score
+    const blueScore = cup.teams?.team2?.score
+    if (
+      greenScore === undefined || blueScore === undefined ||
+      String(greenScore).trim() === "" || String(blueScore).trim() === "" ||
+      !Number.isFinite(Number(greenScore)) || !Number.isFinite(Number(blueScore))
+    ) {
+      throw new Error(`Invalid ${previousYear} Cup scores needed to resolve a tied Cup.`)
+    }
+    if (Number(greenScore) !== Number(blueScore)) {
+      return Number(greenScore) > Number(blueScore) ? "green" : "blue"
+    }
+  }
+}
+
+function updateAppearancesAndCupRecords(playersObj, playersOverview, rounds, yearKey) {
+  const year = Number(yearKey.slice(1))
+  const participants = new Set()
+  const points = { green: 0, blue: 0 }
+  let complete = true
+
+  for (const round of rounds) {
+    for (const match of round.matches) {
+      match.green.forEach(name => participants.add(name))
+      match.blue.forEach(name => participants.add(name))
+      if (match.winner === null) {
+        complete = false
+      } else if (match.winner === "tie") {
+        points.green += 0.5
+        points.blue += 0.5
+      } else {
+        points[match.winner] += 1
+      }
+    }
+  }
+
+  const winner = !complete
+    ? null
+    : points.green === points.blue
+      ? getPreviousCupWinner(year)
+      : points.green > points.blue ? "green" : "blue"
+
+  for (const name of participants) {
+    const overview = playersOverview[name]
+    if (!Array.isArray(overview?.appearances) || !overview?.cupRecord) {
+      throw new Error(`Missing appearances or Cup record baseline for '${name}' in playersOverview.json.`)
+    }
+    const player = playersObj[name]
+    player.appearances = [...new Set([...overview.appearances, year])].sort((a, b) => a - b)
+    if (winner && !overview.appearances.includes(year)) {
+      const result = player.year[yearKey].team === winner ? "wins" : "losses"
+      player.cupRecord[result] += 1
+    }
+  }
+}
+
 function main() {
   const { yearKey, roundsPath } = parseCliArgs(process.argv.slice(2))
   const playersRoot = readJson(PLAYERS_PATH)
@@ -522,6 +588,7 @@ function main() {
   resetYearData(playersObj, yearKey)
   updateYearFromRounds(playersObj, rounds, yearKey)
   sortRecordEntries(playersObj, yearKey)
+  updateAppearancesAndCupRecords(playersObj, playersOverview, rounds, yearKey)
 
   const prettyJson = JSON.stringify(playersRoot, null, 2)
   const inlineScoreArrays = prettyJson.replace(

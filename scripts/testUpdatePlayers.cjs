@@ -54,6 +54,11 @@ try {
     team,
     { year: { _2026: { team, scores } } },
   ]))
+  players.absent = {
+    appearances: [2024],
+    cupRecord: { wins: 0, losses: 1 },
+    year: { _2026: { team: "green", scores: {} } },
+  }
   const rounds = cases.map(({ entry }, index) => ({
     round: index + 1,
     gameplay: "bestBall",
@@ -68,11 +73,22 @@ try {
   }))
   const playersPath = path.join(dataDirectory, "playersUpdate.json")
   fs.writeFileSync(playersPath, JSON.stringify([players]))
-  fs.writeFileSync(path.join(dataDirectory, "playersOverview.json"), "{}")
+  const overview = Object.fromEntries(["green", "blue"].map(team => [
+    team,
+    { appearances: [2024, 2025], cupRecord: { wins: 1, losses: 1 } },
+  ]))
+  const overviewPath = path.join(dataDirectory, "playersOverview.json")
+  fs.writeFileSync(overviewPath, JSON.stringify(overview))
   fs.writeFileSync(path.join(dataDirectory, "rounds-2026.json"), JSON.stringify(rounds))
 
   execFileSync(process.execPath, [script], { cwd: directory })
   const updated = JSON.parse(fs.readFileSync(playersPath, "utf8"))[0]
+  for (const team of ["green", "blue"]) {
+    assert.deepEqual(updated[team].appearances, [2024, 2025, 2026])
+    assert.deepEqual(updated[team].cupRecord, { wins: 1, losses: 1 })
+  }
+  assert.deepEqual(updated.absent.appearances, [2024])
+  assert.deepEqual(updated.absent.cupRecord, { wins: 0, losses: 1 })
   cases.forEach(({ entry, expected }, index) => {
     const course = updated.green.year._2026.scores[`course${index}`]
     assert.equal(course.frontGross, expected.frontGross, `Case ${index + 1}: frontGross`)
@@ -117,7 +133,54 @@ try {
   execFileSync(process.execPath, [script], { cwd: directory })
   const recalculated = JSON.parse(fs.readFileSync(playersPath, "utf8"))[0]
   assert.equal(recalculated.green.year._2026.scores.course0.useForHandicapIndex, false)
-  console.log("Verified gross totals, incomplete scores, eligibility merging, and recalculation.")
+  const runCup = winners => {
+    rounds.forEach((round, index) => {
+      round.matches[0].winner = winners[index]
+    })
+    fs.writeFileSync(roundsPath, JSON.stringify(rounds))
+    execFileSync(process.execPath, [script], { cwd: directory, stdio: "pipe" })
+    return JSON.parse(fs.readFileSync(playersPath, "utf8"))[0]
+  }
+  const greenWin = runCup(Array(8).fill("green"))
+  assert.deepEqual(greenWin.green.cupRecord, { wins: 2, losses: 1 })
+  assert.deepEqual(greenWin.blue.cupRecord, { wins: 1, losses: 2 })
+  const completedRun = fs.readFileSync(playersPath, "utf8")
+  runCup(Array(8).fill("green"))
+  assert.equal(fs.readFileSync(playersPath, "utf8"), completedRun)
+  const blueWin = runCup(Array(8).fill("blue"))
+  assert.deepEqual(blueWin.green.cupRecord, { wins: 1, losses: 2 })
+  assert.deepEqual(blueWin.blue.cupRecord, { wins: 2, losses: 1 })
+  const unplayed = runCup(["green", "green", "green", "green", "green", "green", "green", null])
+  assert.deepEqual(unplayed.green.cupRecord, { wins: 1, losses: 1 })
+
+  const scorePath = path.join(dataDirectory, "score.json")
+  fs.writeFileSync(scorePath, JSON.stringify([{
+    _2025: { teams: { team1: { score: "13.5" }, team2: { score: "13.5" } } },
+    _2024: { winner: "blue" },
+  }]))
+  const tied = runCup(Array(8).fill("tie"))
+  assert.deepEqual(tied.blue.cupRecord, { wins: 2, losses: 1 })
+  assert.deepEqual(tied.green.cupRecord, { wins: 1, losses: 2 })
+  fs.writeFileSync(scorePath, JSON.stringify([{
+    _2025: { teams: { team1: { score: "14.5" }, team2: { score: "12.5" } } },
+  }]))
+  assert.deepEqual(runCup(Array(8).fill("tie")).green.cupRecord, { wins: 2, losses: 1 })
+
+  overview.green.appearances.push(2026)
+  overview.green.cupRecord = { wins: 2, losses: 1 }
+  fs.writeFileSync(overviewPath, JSON.stringify(overview))
+  const alreadyCounted = runCup(Array(8).fill("green"))
+  assert.deepEqual(alreadyCounted.green.appearances, [2024, 2025, 2026])
+  assert.deepEqual(alreadyCounted.green.cupRecord, { wins: 2, losses: 1 })
+  assert.equal(fs.readFileSync(overviewPath, "utf8"), JSON.stringify(overview))
+  fs.writeFileSync(scorePath, JSON.stringify([{}]))
+  const beforeFailure = fs.readFileSync(playersPath, "utf8")
+  assert.throws(
+    () => runCup(Array(8).fill("tie")),
+    error => error.stderr.toString().includes("Missing 2025 Cup results")
+  )
+  assert.equal(fs.readFileSync(playersPath, "utf8"), beforeFailure)
+  console.log("Verified scores, eligibility, appearances, Cup results, ties, and stable reruns.")
 } finally {
   fs.rmSync(directory, { recursive: true, force: true })
 }
