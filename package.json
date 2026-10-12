@@ -85,6 +85,7 @@
     "clean": "gatsby clean",
     "image:convert": "bash scripts/convert-heic-to-jpg.sh",
     "update:players": "node scripts/updatePlayers.mjs",
+    "sync:golfers": "node scripts/syncGolferFragments.mjs",
     "update:player-points": "node scripts/updatePlayerPoints.mjs",
     "extract:matches": "node scripts/extractMatches.mjs",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
