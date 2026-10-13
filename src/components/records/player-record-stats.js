@@ -36,3 +36,12 @@ export const getAllPlayerStats = (players, team) =>
 
 export const topBy = (stats, valueFn, count = 5) =>
   [...stats].sort((a, b) => valueFn(b) - valueFn(a)).slice(0, count)
+
+export const getPlayerTeamStats = players =>
+  [
+    { id: "green", label: "Green Team", colorClass: "team-one-color-bg" },
+    { id: "blue", label: "Blue Team", colorClass: "team-two-color-bg" },
+  ].map(team => ({
+    ...team,
+    stats: getAllPlayerStats(players, team.id),
+  }))

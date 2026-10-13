@@ -2,20 +2,34 @@ import React from "react"
 import PropTypes from "prop-types"
 import { PlayerInfoPoints } from "../../hooks/get-player-info-points"
 import { FORMATS } from "./points-by-format"
-import { getAllPlayerStats, topBy } from "./player-record-stats"
+import {
+  getAllPlayerStats,
+  getPlayerTeamStats,
+  topBy,
+} from "./player-record-stats"
 import Leaderboard from "./leaderboard"
 
-const MostPlayerMatches = ({ team }) => {
-  const stats = getAllPlayerStats(PlayerInfoPoints(), team)
+const MostPlayerMatches = ({ team, byTeam = false }) => {
+  const players = PlayerInfoPoints()
+  const stats = getAllPlayerStats(players, team)
+  const teams = byTeam ? getPlayerTeamStats(players) : null
+  const rows = (playerStats, value, count = 5) =>
+    topBy(playerStats, value, count).map(p => ({
+      name: p.name,
+      value: value(p),
+    }))
+  const teamRows = value =>
+    teams?.map(({ stats: teamStats, ...teamInfo }) => ({
+      ...teamInfo,
+      rows: rows(teamStats, value),
+    }))
 
   const winsBoard = (id, title) => (
     <Leaderboard
       key={id}
       title={title}
-      rows={topBy(stats, p => p[id].wins).map(p => ({
-        name: p.name,
-        value: p[id].wins,
-      }))}
+      rows={rows(stats, p => p[id].wins)}
+      teams={teamRows(p => p[id].wins)}
     />
   )
 
@@ -23,10 +37,8 @@ const MostPlayerMatches = ({ team }) => {
     <>
       <Leaderboard
         title="Most Matches Played"
-        rows={topBy(stats, p => p.matches, 8).map(p => ({
-          name: p.name,
-          value: p.matches,
-        }))}
+        rows={rows(stats, p => p.matches, 8)}
+        teams={teamRows(p => p.matches)}
       />
       {winsBoard("total", "Most Matches Won")}
       {FORMATS.map(({ id, label }) =>
@@ -38,6 +50,7 @@ const MostPlayerMatches = ({ team }) => {
 
 MostPlayerMatches.propTypes = {
   team: PropTypes.oneOf(["green", "blue"]),
+  byTeam: PropTypes.bool,
 }
 
 export default MostPlayerMatches

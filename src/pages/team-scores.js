@@ -11,11 +11,6 @@ import LargestVictoryMargin from "../components/records/largest-victory-margin"
 import MostPlayerPoints from "../components/records/most-player-points"
 import MostPlayerMatches from "../components/records/most-player-matches"
 
-const TEAMS = [
-  { id: "green", label: "Green Team", colorClass: "team-one-color-bg" },
-  { id: "blue", label: "Blue Team", colorClass: "team-two-color-bg" },
-]
-
 const TeamRecordsPage = ({ location }) => {
   const { title } = useSiteMetadata()
   const siteTitle = title || `BFBH Cup Player Scores`
@@ -27,17 +22,8 @@ const TeamRecordsPage = ({ location }) => {
 
       <TeamPoints />
       {/* <LargestVictoryMargin /> */}
-      {TEAMS.map(({ id, label, colorClass }) => (
-        <React.Fragment key={id}>
-          <div
-            className={`container col-12 col-md-6 mt-5 text-center text-white py-2 h4 ${colorClass}`}
-          >
-            {label}
-          </div>
-          <MostPlayerPoints team={id} />
-          <MostPlayerMatches team={id} />
-        </React.Fragment>
-      ))}
+      <MostPlayerPoints byTeam />
+      <MostPlayerMatches byTeam />
     </Layout>
   )
 }
